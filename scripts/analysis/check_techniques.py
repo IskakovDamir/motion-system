@@ -10,7 +10,10 @@ techniques.json: {"video": "v5", "techniques": [record, ...]}, one record per in
   moves              [{"element", "property", "from", "to", "unit", "frames", "delay", "stagger", "ease"}]
                      every movement of the technique with the timeline's measured numbers
   look               neutral description of the elements involved (shapes, text roles, layering, blur)
-  typography         null, or {"closest_free", "weight", "size_pct_h", "tracking", "case", "reveal_unit", "reveal_method", "speed"}
+  typography         null, or {"role", "closest_free", "original", "weight", "size_pct_h", "size_range_pct_h",
+                     "tracking_em", "case", "align", "reveal_unit", "reveal_method", "frames_per_unit", "stagger"}:
+                     role one of ROLES; size_pct_h = cap height in % of frame height (number, from a still);
+                     tracking_em a number (negative = tight); frames_per_unit / stagger in frames or null
   sound              null or the sync note
   uncertain          null or what is uncertain, with the reason and range
 
@@ -24,6 +27,7 @@ from common import load_json, load_registry
 import validate_analysis
 
 REQ = ["id", "concept", "segments", "reference_frames", "curve_id", "curve_property", "moves", "look"]
+ROLES = {"display", "headline", "subhead", "body", "ui", "label", "caption", "counter", "code"}
 
 
 def check(v) -> list[str]:
@@ -59,6 +63,16 @@ def check(v) -> list[str]:
         c = r.get("concept") or ""
         if not (1 <= len(c.split()) <= 6):
             errs.append(f"{tid}: concept {c!r} should be 2-5 words")
+        ty = r.get("typography")
+        if ty is not None:
+            if not isinstance(ty, dict):
+                errs.append(f"{tid}: typography must be null or an object")
+            else:
+                if ty.get("role") not in ROLES:
+                    errs.append(f"{tid}: typography.role {ty.get('role')!r} not in {sorted(ROLES)}")
+                for k in ("size_pct_h", "tracking_em"):
+                    if ty.get(k) is not None and not isinstance(ty.get(k), (int, float)):
+                        errs.append(f"{tid}: typography.{k} must be a number or null")
         rf = r.get("reference_frames")
         if not (isinstance(rf, list) and len(rf) == 2 and all(isinstance(x, int) for x in rf) and rf[0] <= rf[1]):
             errs.append(f"{tid}: reference_frames must be [first, last] ints")

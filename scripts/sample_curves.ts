@@ -4,13 +4,15 @@
 //  - techniques: per measured technique, the built progress per frame (60 fps) from progressAt(),
 //    the same function the components render with
 //  - styleDemo: the shot list StyleDemo is cut from
-// Run: npx tsx scripts/sample_curves.ts
-import {progressAt} from '../src/motion/engine/progress';
-import {COMPONENTS} from '../src/motion/primitives/index';
-import {SPECS} from '../src/motion/primitives/specs';
+// Run: npx tsx scripts/sample_curves.ts             every registered primitive (verify.py)
+//      npx tsx scripts/sample_curves.ts --group g   only src/motion/primitives/<g>/*.spec.ts, imported one
+//                                                   by one, so other groups' files cannot break it (check_group.py)
+import fs from 'node:fs';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
 import {PROBE_LEAD} from '../src/compositions/probe';
-import {SHOWCASE_ORDER} from '../src/compositions/showcaseOrder';
-import {STYLE_DEMO_FPS, STYLE_DEMO_SHOTS} from '../src/compositions/styleDemoShots';
+import {progressAt} from '../src/motion/engine/progress';
+import type {PrimitiveSpec} from '../src/motion/primitives/types';
 import type {Motion} from '../src/motion/tokens/easing';
 
 const settledLength = (m: Motion): number => {
@@ -27,12 +29,30 @@ const settledLength = (m: Motion): number => {
 	return f + 1;
 };
 
+const groupAt = process.argv.indexOf('--group');
+const group = groupAt > 0 ? process.argv[groupAt + 1] : undefined;
+const problems: string[] = [];
+
+const groupSpecs = async (g: string): Promise<PrimitiveSpec[]> => {
+	const dir = path.join(path.dirname(new URL(import.meta.url).pathname), '..', 'src', 'motion', 'primitives', g);
+	const out: PrimitiveSpec[] = [];
+	for (const f of fs.readdirSync(dir).filter((n) => n.endsWith('.spec.ts')).sort()) {
+		try {
+			out.push((await import(pathToFileURL(path.join(dir, f)).href)).spec as PrimitiveSpec);
+		} catch (err) {
+			problems.push(`${g}/${f}: ${err instanceof Error ? err.message : String(err)}`);
+		}
+	}
+	return out;
+};
+
+const specs: PrimitiveSpec[] = group ? await groupSpecs(group) : (await import('../src/motion/primitives/specs')).SPECS;
+
 type Entry = {primitive: string; variant: string; property: string | null};
 const catalogue: Record<string, Entry> = {};
 const techniques: Record<string, Entry & {progress: number[]}> = {};
-const problems: string[] = [];
 
-for (const spec of SPECS) {
+for (const spec of specs) {
 	for (const [variant, v] of Object.entries(spec.variants)) {
 		for (const [property, ids] of Object.entries(v.reproduces ?? {})) {
 			const m = v.motions[property];
@@ -55,18 +75,24 @@ for (const spec of SPECS) {
 	}
 }
 
-const withComponent = SPECS.map((s) => s.name).filter((n) => n in COMPONENTS);
-for (const s of SPECS) if (!(s.name in COMPONENTS)) problems.push(`spec ${s.name} has no component`);
-for (const n of Object.keys(COMPONENTS)) if (!SPECS.some((s) => s.name === n)) problems.push(`component ${n} has no spec`);
-
-console.log(
-	JSON.stringify({
-		primitives: withComponent,
-		showcase: SHOWCASE_ORDER,
-		catalogue,
-		techniques,
-		probeLead: PROBE_LEAD,
-		styleDemo: {fps: STYLE_DEMO_FPS, shots: STYLE_DEMO_SHOTS},
-		problems,
-	}),
-);
+if (group) {
+	console.log(JSON.stringify({group, primitives: specs.map((s) => s.name), specs, catalogue, techniques, probeLead: PROBE_LEAD, problems}));
+} else {
+	const {COMPONENTS} = await import('../src/motion/primitives/index');
+	const {SHOWCASE_ORDER} = await import('../src/compositions/showcaseOrder');
+	const {STYLE_DEMO_FPS, STYLE_DEMO_SHOTS} = await import('../src/compositions/styleDemoShots');
+	const withComponent = specs.map((s) => s.name).filter((n) => n in COMPONENTS);
+	for (const s of specs) if (!(s.name in COMPONENTS)) problems.push(`spec ${s.name} has no component`);
+	for (const n of Object.keys(COMPONENTS)) if (!specs.some((s) => s.name === n)) problems.push(`component ${n} has no spec`);
+	console.log(
+		JSON.stringify({
+			primitives: withComponent,
+			showcase: SHOWCASE_ORDER,
+			catalogue,
+			techniques,
+			probeLead: PROBE_LEAD,
+			styleDemo: {fps: STYLE_DEMO_FPS, shots: STYLE_DEMO_SHOTS},
+			problems,
+		}),
+	);
+}
