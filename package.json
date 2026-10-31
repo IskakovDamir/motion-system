@@ -12,7 +12,12 @@
     "verify": ".venv/bin/python scripts/verify.py"
   },
   "dependencies": {
+    "@fontsource-variable/archivo": "^5.3.0",
+    "@fontsource-variable/inter": "^5.3.0",
     "@fontsource/inter": "^5.3.0",
+    "@fontsource/inter-tight": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "@fontsource/unbounded": "^5.3.0",
     "@react-three/fiber": "9.8.2",
     "@remotion/bundler": "4.0.539",
     "@remotion/cli": "4.0.539",
