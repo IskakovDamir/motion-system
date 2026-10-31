@@ -1,0 +1,122 @@
+{
+  "grid_fps": 60,
+  "videos": [
+    {
+      "key": "v1",
+      "stem": "OiI9hOSLr0yYLKnq",
+      "ref_name": "OiI9hOSLr0yYLKnq.mp4",
+      "kind": "cfr60",
+      "crop": null,
+      "masks": []
+    },
+    {
+      "key": "v2",
+      "stem": "U34UrnYU5VT-pRXi",
+      "ref_name": "U34UrnYU5VT-pRXi.mp4",
+      "kind": "cfr60",
+      "crop": null,
+      "masks": []
+    },
+    {
+      "key": "v3",
+      "stem": "yI-1xclfzqMRrqfA",
+      "ref_name": "yI-1xclfzqMRrqfA.mp4",
+      "kind": "cfr60",
+      "crop": null,
+      "masks": []
+    },
+    {
+      "key": "v4",
+      "stem": "Z4upJDBR5KbFtmrL",
+      "ref_name": "Z4upJDBR5KbFtmrL.mp4",
+      "kind": "cfr60",
+      "crop": null,
+      "masks": []
+    },
+    {
+      "key": "v5",
+      "stem": "Screen_Recording_2026-10-31_at_16.20.37",
+      "ref_name": "Screen Recording 2026-10-31 at 16.20.37.mp4",
+      "kind": "vfr-screen",
+      "crop": [
+        0,
+        18,
+        1622,
+        918
+      ],
+      "masks": [
+        [
+          1545,
+          837,
+          68,
+          68
+        ]
+      ],
+      "mask_note": "X video player speaker icon (56 px disc centred ~1579,871 in the cropped picture), burned in by the screen capture; excluded from motion stats and ignored as a graphic element"
+    },
+    {
+      "key": "v6",
+      "stem": "Screen_Recording_2026-10-31_at_16.25.03",
+      "ref_name": "Screen Recording 2026-10-31 at 16.25.03.mp4",
+      "kind": "vfr-screen",
+      "crop": [
+        0,
+        18,
+        1622,
+        918
+      ],
+      "masks": [
+        [
+          1545,
+          837,
+          68,
+          68
+        ]
+      ],
+      "mask_note": "X video player speaker icon (56 px disc centred ~1579,871 in the cropped picture), burned in by the screen capture; excluded from motion stats and ignored as a graphic element"
+    },
+    {
+      "key": "v7",
+      "stem": "Screen_Recording_2026-10-31_at_16.29.19",
+      "ref_name": "Screen Recording 2026-10-31 at 16.29.19.mp4",
+      "kind": "vfr-screen",
+      "crop": [
+        0,
+        18,
+        1622,
+        918
+      ],
+      "masks": [
+        [
+          1545,
+          837,
+          68,
+          68
+        ]
+      ],
+      "mask_note": "X video player speaker icon (56 px disc centred ~1579,871 in the cropped picture), burned in by the screen capture; excluded from motion stats and ignored as a graphic element"
+    },
+    {
+      "key": "v8",
+      "stem": "Screen_Recording_2026-10-31_at_16.31.33",
+      "ref_name": "Screen Recording 2026-10-31 at 16.31.33.mp4",
+      "kind": "vfr-screen",
+      "crop": [
+        0,
+        18,
+        1622,
+        918
+      ],
+      "masks": [
+        [
+          1545,
+          837,
+          68,
+          68
+        ]
+      ],
+      "mask_note": "X video player speaker icon (56 px disc centred ~1579,871 in the cropped picture), burned in by the screen capture; excluded from motion stats and ignored as a graphic element"
+    }
+  ],
+  "frame_convention": "analysis frame = round((pts - first_video_pts) * 60); work.mp4 frame n == analysis frame n"
+}

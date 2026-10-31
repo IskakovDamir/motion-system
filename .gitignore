@@ -1,0 +1,27 @@
+# reference videos are third-party material: never committed
+reference/*
+!reference/README.md
+
+# python / node
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+.tmp/
+
+# heavy or frame-derived analysis files (rebuilt by scripts/analysis/*.py)
+analysis/*/source.mp4
+analysis/*/work.mp4
+analysis/*/audio.wav
+analysis/*/sheets/
+analysis/*/detail/
+analysis/*/type/
+analysis/*/crops/
+analysis/*/scratch/
+analysis/compare/**/*.jpg
+analysis/compare/**/*.png
+analysis/verify/frames/
+
+# renders
+out/
+.DS_Store
