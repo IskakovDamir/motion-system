@@ -1,0 +1,135 @@
+{
+  "level": 12,
+  "min_px": 4,
+  "width": 640,
+  "gaps": [
+    {
+      "segment": "S02",
+      "class": "GRAPHICS",
+      "start": 223,
+      "end": 225,
+      "frames": 3,
+      "pictures": 3,
+      "peak_px": 2070,
+      "peak_frame": 223,
+      "bbox_pct": [
+        3.1,
+        0.6,
+        97.0,
+        99.4
+      ]
+    },
+    {
+      "segment": "S03",
+      "class": "GRAPHICS",
+      "start": 417,
+      "end": 417,
+      "frames": 1,
+      "pictures": 1,
+      "peak_px": 223,
+      "peak_frame": 417,
+      "bbox_pct": [
+        21.9,
+        46.9,
+        29.7,
+        50.0
+      ]
+    },
+    {
+      "segment": "S03",
+      "class": "GRAPHICS",
+      "start": 472,
+      "end": 476,
+      "frames": 5,
+      "pictures": 3,
+      "peak_px": 5,
+      "peak_frame": 472,
+      "bbox_pct": [
+        56.4,
+        55.6,
+        68.8,
+        56.1
+      ]
+    },
+    {
+      "segment": "S03",
+      "class": "GRAPHICS",
+      "start": 552,
+      "end": 552,
+      "frames": 1,
+      "pictures": 1,
+      "peak_px": 228,
+      "peak_frame": 552,
+      "bbox_pct": [
+        9.4,
+        24.2,
+        97.7,
+        82.5
+      ]
+    },
+    {
+      "segment": "S04",
+      "class": "GRAPHICS",
+      "start": 580,
+      "end": 580,
+      "frames": 1,
+      "pictures": 1,
+      "peak_px": 1286,
+      "peak_frame": 580,
+      "bbox_pct": [
+        2.0,
+        9.4,
+        96.2,
+        82.8
+      ]
+    },
+    {
+      "segment": "S04",
+      "class": "GRAPHICS",
+      "start": 740,
+      "end": 777,
+      "frames": 38,
+      "pictures": 20,
+      "peak_px": 158,
+      "peak_frame": 777,
+      "bbox_pct": [
+        4.2,
+        24.2,
+        95.0,
+        69.2
+      ]
+    },
+    {
+      "segment": "S06",
+      "class": "GRAPHICS",
+      "start": 896,
+      "end": 899,
+      "frames": 4,
+      "pictures": 4,
+      "peak_px": 235,
+      "peak_frame": 896,
+      "bbox_pct": [
+        45.5,
+        28.1,
+        54.5,
+        42.5
+      ]
+    },
+    {
+      "segment": "S06",
+      "class": "GRAPHICS",
+      "start": 918,
+      "end": 918,
+      "frames": 1,
+      "pictures": 1,
+      "peak_px": 6,
+      "peak_frame": 918,
+      "bbox_pct": [
+        50.0,
+        35.6,
+        52.3,
+        36.1
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-punch-in-whip-up.i2",
+  "file": "curves/v7.trans-punch-in-whip-up.i2.csv",
+  "property": "position-y",
+  "unit": "% of frame height (large timecode label in the close-up; 47.5% -> 21.5% H)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p5_tc.csv",
+  "column": "cy_pct",
+  "sampled_frames": [
+    2091,
+    2120
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 47.549,
+  "to_value": 21.514,
+  "active_frames": [
+    2091,
+    2120
+  ],
+  "measured_duration_frames": 29,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.6347,
+    "x2": 0.6716,
+    "y2": 0.9805,
+    "durationInFrames": 27,
+    "delay": 1.757,
+    "built_duration_frames": 24,
+    "rmse": 0.0399
+  },
+  "spring": {
+    "stiffness": 133.07,
+    "damping": 26.017,
+    "mass": 1,
+    "damping_ratio": 1.1277,
+    "built_duration_frames": 30,
+    "rmse": 0.0464
+  },
+  "recommended": "bezier",
+  "note": "incoming half of the punch-in whip P4 -> P5: the hard cut at f2091 jumps to a x1.75 closer framing of the timeline area (ghost outlines and track headers) that arrives 239 px (26.0% H) below its rest, already moving up at ~22 px/frame (2.4% H) with strong vertical motion blur, and decelerates to rest by ~f2120; x and scale constant (template scale 1.00); about 2.5x faster than the outgoing pan at the cut (0.55% H/frame x 1.75 zoom = 0.96% H/frame); template on the large timecode label (ref f2111); motion starts at the cut (first sample = from-value)"
+}

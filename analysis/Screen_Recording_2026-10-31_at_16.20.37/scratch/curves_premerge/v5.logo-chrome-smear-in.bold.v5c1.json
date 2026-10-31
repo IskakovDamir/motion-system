@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.logo-chrome-smear-in.bold.v5c1",
+  "file": "curves/v5.logo-chrome-smear-in.bold.v5c1.csv",
+  "property": "position-x",
+  "unit": "% of frame width",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c1fix_bold_band.csv",
+  "column": "x_left_pct",
+  "sampled_frames": [
+    202,
+    212
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 88.47,
+  "to_value": 20.315,
+  "active_frames": [
+    202,
+    210
+  ],
+  "measured_duration_frames": 8,
+  "bezier": {
+    "x1": 0.4556,
+    "y1": 1.0024,
+    "x2": 0.376,
+    "y2": 1.011,
+    "durationInFrames": 11,
+    "delay": -0.0,
+    "built_duration_frames": 7,
+    "rmse": 0.053
+  },
+  "spring": {
+    "stiffness": 1907.616,
+    "damping": 77.313,
+    "mass": 1,
+    "damping_ratio": 0.8851,
+    "built_duration_frames": 7,
+    "rmse": 0.012
+  },
+  "recommended": "spring",
+  "note": "bold line (line 1, icon + word) of the lockup: left end of its horizontal smear band (rows 330-420, frame minus f200 > 10 luma) entering from the right edge (first visible f202) and sweeping left to the line's start (x 331/328 px at f210/f212); start truncated at the first visible picture; afterwards the line sits 20-35 px left of its scale-only position (f212-f220) and drifts back right with the lockup settle"
+}

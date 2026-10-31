@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-whip-push-left.i13",
+  "file": "curves/v7.trans-whip-push-left.i13.csv",
+  "property": "position-x",
+  "unit": "% of frame width (line-2 app icon centre in the wide view; 20.8% -> 16.0% W at the last picture before the cut)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p3_icon2_3134-3213.csv",
+  "column": "cx_pct",
+  "sampled_frames": [
+    3186,
+    3211
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 20.838,
+  "to_value": 15.999,
+  "active_frames": [
+    3191,
+    3211
+  ],
+  "measured_duration_frames": 20,
+  "bezier": {
+    "x1": 0.6827,
+    "y1": 0.0101,
+    "x2": 1.0,
+    "y2": 0.7889,
+    "durationInFrames": 23,
+    "delay": -3.0,
+    "built_duration_frames": 20,
+    "rmse": 0.0087
+  },
+  "spring": {
+    "stiffness": 172.605,
+    "damping": 166.637,
+    "mass": 1,
+    "damping_ratio": 6.3418,
+    "built_duration_frames": 27,
+    "rmse": 0.3905
+  },
+  "recommended": "bezier",
+  "note": "outgoing half of the whip P3 -> P4: the wide view of both lines slides left again from rest (~f3191) while the last word of line 2 types, accelerating to ~12 px/frame (0.75% W) with horizontal motion blur at the last wide picture f3211; hard cut f3214 into a x1.86 closer framing of the end of line 2 (no settle on this half: to-value = last picture); template on the line-2 app icon (ref f3160, score 0.84-0.99)"
+}

@@ -1,0 +1,1403 @@
+{
+  "video": "Screen_Recording_2026-10-31_at_16.25.03",
+  "key": "v6",
+  "chunk": "v6c2",
+  "frames": [
+    889,
+    1808
+  ],
+  "cut_decisions": [
+    {
+      "id": "c034",
+      "frame": 911,
+      "status": "confirmed",
+      "reason": "anchor of the vertical push f903-f936: the 2-line title accelerates out of the top edge with vertical motion blur; hidden swap 913|916"
+    },
+    {
+      "id": "c035",
+      "frame": 983,
+      "status": "rejected",
+      "reason": "reflow 2 inside the phone layout: line 1 slides left with horizontal blur while the phone mock-up starts its punch-in (same composition)"
+    },
+    {
+      "id": "c036",
+      "frame": 993,
+      "status": "rejected",
+      "reason": "reflow 2: line 2 slides right and turns grey, the arrow slides in from the left edge, the phone mock-up punches in x1.22, echo outlines appear (same composition)"
+    },
+    {
+      "id": "c037",
+      "frame": 1008,
+      "status": "rejected",
+      "reason": "phone-screen content swap with a two-pulse luminance flicker (f998-f1008); phone, headline and layout unchanged"
+    },
+    {
+      "id": "c038",
+      "frame": 1063,
+      "status": "rejected",
+      "reason": "the headline lines start to whip out in a split (line 1 to the left word by word, line 2 to the right; start of the zoom-through's outgoing half); no picture replacement"
+    },
+    {
+      "id": "c039",
+      "frame": 1076,
+      "status": "rejected",
+      "reason": "inside the zoom-through: the phone pulls back with blur (x0.69) and the lines are streaks; the replacement happens at f1081"
+    },
+    {
+      "id": "c040",
+      "frame": 1081,
+      "status": "confirmed",
+      "reason": "anchor and swap picture of the zoom-through f1058-f1091: the phone grid lands at x1.14 with radial zoom blur"
+    },
+    {
+      "id": "c041",
+      "frame": 1123,
+      "status": "rejected",
+      "reason": "speed burst of the camera pull-back over the same phone grid (template score >= 0.98 across f1116-f1138)"
+    },
+    {
+      "id": "c042",
+      "frame": 1171,
+      "status": "rejected",
+      "reason": "accelerating pan of the same grid (outgoing half of the whip)"
+    },
+    {
+      "id": "c043",
+      "frame": 1181,
+      "status": "confirmed",
+      "reason": "anchor of the horizontal whip f1156-f1206 at its blur peak; hidden swap 1186|1188"
+    },
+    {
+      "id": "c044",
+      "frame": 1191,
+      "status": "rejected",
+      "reason": "incoming headline words still whipping in from the right (same composition as f1188)"
+    },
+    {
+      "id": "c045",
+      "frame": 1231,
+      "status": "rejected",
+      "reason": "headline shrinks and slides aside while the dial slides in from the right edge (elements entering inside the segment)"
+    },
+    {
+      "id": "c046",
+      "frame": 1306,
+      "status": "rejected",
+      "reason": "fired on the accelerating pull-back (x0.80) of the dial layout; the picture is replaced at f1311, a hard cut the detectors missed"
+    },
+    {
+      "id": "c047",
+      "frame": 1321,
+      "status": "rejected",
+      "reason": "lockup build: letters flying in from the frame edges (same composition)"
+    },
+    {
+      "id": "c048",
+      "frame": 1498,
+      "status": "rejected",
+      "reason": "anticipation exit of the lockup (whip up with vertical blur); the field is empty by f1508 and the cut is at f1517"
+    },
+    {
+      "id": "c049",
+      "frame": 1517,
+      "status": "confirmed",
+      "reason": "hard cut 1512|1517: the X player loops; the empty end field is replaced by the promo's first frame (f1517-f1808 = f15-f301 of this recording)"
+    },
+    {
+      "id": "c050",
+      "frame": 1540,
+      "status": "rejected",
+      "reason": "replayed lockup build: label drop and pill rise (same composition)"
+    },
+    {
+      "id": "c051",
+      "frame": 1635,
+      "status": "confirmed",
+      "reason": "anchor of the vertical push f1621-f1660 (replay of f113-f153): the lockup accelerates out of the top edge; same picture as v6c1's anchor c008 f128"
+    },
+    {
+      "id": "c052",
+      "frame": 1641,
+      "status": "rejected",
+      "reason": "inside the push f1621-f1660 (outgoing lockup leaving with vertical blur)"
+    },
+    {
+      "id": "c053",
+      "frame": 1645,
+      "status": "rejected",
+      "reason": "inside the push f1621-f1660 (incoming headline appearing from below with vertical blur)"
+    },
+    {
+      "id": "c054",
+      "frame": 1657,
+      "status": "rejected",
+      "reason": "incoming headline darkening back after its opacity blink, end of the push"
+    },
+    {
+      "id": "c055",
+      "frame": 1677,
+      "status": "rejected",
+      "reason": "pan across the huge headline while its third word types on letter by letter (same composition)"
+    },
+    {
+      "id": "c056",
+      "frame": 1692,
+      "status": "rejected",
+      "reason": "zoom-out of the same line with its opacity blink (same composition)"
+    },
+    {
+      "id": "c057",
+      "frame": 1725,
+      "status": "confirmed",
+      "reason": "anchor of the split morph f1715-f1730 (replay of f206-f223): footage cards zoom in between the split words"
+    },
+    {
+      "id": "c058",
+      "frame": 1737,
+      "status": "rejected",
+      "reason": "re-layout inside the card-row composition (top words shrink into the corner, lower word slides left)"
+    },
+    {
+      "id": "c059",
+      "frame": 1767,
+      "status": "rejected",
+      "reason": "card-row scroll with horizontal motion blur (speed ramp) inside the same composition"
+    }
+  ],
+  "boundaries": [
+    {
+      "start": 903,
+      "end": 936,
+      "type": "push",
+      "frames": 34,
+      "shared": "upward motion and the light field: the 2-line title accelerates out of the top edge (edge -95 px = -10.3% H, f903-f913, ease-in); hidden swap 913|916; the phone mock-up rises from below the bottom edge (top 607 px = 66.1% H at f916 -> 54 px = 5.9% H by f946) with an opacity blink (darkest luma 122/197/172/90/19/1 at f916-f929) and the headline words follow 5-6 f apart; no graphic element shared",
+      "technique": "v6.trans-push-up",
+      "curve": "v6.trans-push-up.v6c2",
+      "detail": "detail/soft_903-936",
+      "anchor_cut": "c034",
+      "note": "curve v6.trans-push-up.v6c2 joins both halves into one in-out scroll in % H; v6c1's curve of the same id (v6.trans-push-up.v6c1) is the incoming headline alone in px (ease-out), so they are not the same measurement (see the technique entry)"
+    },
+    {
+      "start": 1058,
+      "end": 1091,
+      "type": "zoom-through",
+      "frames": 34,
+      "shared": "a phone mock-up at x 50% W and a shrinking phone scale on both sides of the cut: the lines whip out in a split (line 2 to the right from f1061, line 1 to the left word by word from f1061-f1063, the arrow to the right from f1066) while the single phone pulls back x1.0 -> x0.40 with an accelerating ease-in (last picture f1078: 228 x 473 px centred (810, 477) px); swap 1078|1081; the phone grid lands with oversized phones packed close (centre phone x1.14, 279 px wide, centre (811, 547) px) under radial zoom blur; its phones shrink to x1.0 by f1093 while the grid's spacing opens (column pitch 336 px at f1083 -> 395 px at f1093 -> 403 px at f1106), so the outer phones move outward; the layout itself does not shrink until f1108",
+      "technique": "v6.trans-zoom-through",
+      "curve": "v6.trans-zoom-through.v6c2",
+      "curve_outgoing": "v6.cam-pull-back-cut.v6c2",
+      "detail": "detail/soft_1058-1091",
+      "anchor_cut": "c040",
+      "curve_outgoing_lines": "v6.layout-split-whip-out.v6c2",
+      "curve_incoming_spacing": "v6.grid-spread-out.v6c2"
+    },
+    {
+      "start": 1156,
+      "end": 1206,
+      "type": "whip",
+      "frames": 51,
+      "shared": "leftward motion and the light field: the grid pans left with a 30 f accelerating ease-in (grid phone x 560 -> 320 px, f1156-f1181), becomes a multi-exposure smear (f1183, block right edge 1375 px) and slides out over the empty field (right edge 1044 px at f1186); hidden swap 1186|1188; the new headline's words whip in from the right in reading order and decelerate (settled f1208)",
+      "technique": "v6.trans-whip-left",
+      "curve": "v6.trans-whip-left.v6c2",
+      "curve_incoming": "v6.text-word-whip-in.v6c2",
+      "detail": "detail/soft_1156-1206",
+      "anchor_cut": "c043",
+      "note": "curve v6.trans-whip-left.v6c2 is the outgoing half (ease-in pan); v6c1's v6.trans-whip-left.v6c1 is an incoming half (ease-out); the incoming half here is curve_incoming (see the technique entry)"
+    },
+    {
+      "frame": 1311,
+      "type": "hard-cut",
+      "note": "missed by all detectors (c046 fired on the pull-back at f1306); last picture f1308 at x0.69 and still accelerating (v6.cam-pull-back-cut); shares the light field and the soft blob at the bottom right (low-pass luma 208 at f1308, 215 at f1311); the incoming letters fly in from the frame edges"
+    },
+    {
+      "frame": 1517,
+      "type": "hard-cut",
+      "anchor_cut": "c049",
+      "note": "player loop: the promo ends (empty near-white field f1508-f1512, pill remnant at the top edge) and the X player restarts the post; f1517-f1808 repeat f15-f301 of this recording picture for picture (offset 1507 f, mean |diff| 0.06-0.49 luma at 203x115) and the soundtrack restarts with them (onset-novelty correlation peak at lag 1506.5-1507 f); 5-frame capture gap 1512->1517"
+    },
+    {
+      "start": 1621,
+      "end": 1660,
+      "type": "push",
+      "frames": 40,
+      "shared": "upward motion and the light field (replay of v6c1's push f113-f153): the lockup dips (pill 801 -> 835 px, f1621-f1630) and accelerates out of the top edge (per picture -12/-47/-99/-169/-236/-196 px, f1632-f1645) while the 2-word headline rises from below (ink centre 737.8 px at f1645 -> 462.6 px at f1662) with an opacity blink (darkest luma 73/138/202/89/0 at f1645-f1655)",
+      "technique": "v6.trans-push-up",
+      "curve": "v6.trans-push-up.v6c1",
+      "curve_outgoing": "v6.layout-anticipate-exit-up.v6c1",
+      "detail": "detail/soft_1621-1660",
+      "anchor_cut": "c051",
+      "note": "replay; measured values re-verified on the replayed pictures"
+    },
+    {
+      "start": 1715,
+      "end": 1730,
+      "type": "morph",
+      "frames": 16,
+      "shared": "the headline words and the light field (replay of v6c1's split morph f206-f223): the centred line (rows 411-509 px at f1712) splits, words 1-2 rise to the top band (rows 48-144 px at f1730) while word 3 drops and grows; footage cards appear as specks (f1720) and zoom into a curved row (f1722-f1727)",
+      "technique": "v6.trans-split-morph",
+      "curve": "v6.trans-split-morph.v6c1",
+      "detail": "detail/soft_1715-1730",
+      "anchor_cut": "c057",
+      "note": "replay"
+    }
+  ],
+  "segments": [
+    {
+      "id": "P10",
+      "start": 889,
+      "end": 919,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": true,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "closing part of v6c1's P10 (f839-f919): 2-line title (grey figure + word / black word) and a letter-spaced caption hold with a +0.03%/frame push-in drift, then push up out of the top edge (f903-f913)"
+    },
+    {
+      "id": "P11",
+      "start": 920,
+      "end": 1074,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "phone mock-up rises in with a 3-word headline whose words rise from below 5-6 f apart; two reflows (words rise one line while line 2 rises in black; lines split to the left and right edges as an arrow slides in, line 2 turns grey in a left-to-right tone sweep and the phone punches in x1.22 with a one-picture speed step); echo outlines are revealed down from the top edge, widen with the punch-in and soften into shaded shapes; phone-screen swap with a luminance flicker; slow push-in drift; then the lines whip out in a split (line 1 left word by word, line 2 and the arrow right) while the phone pulls back into the zoom-through"
+    },
+    {
+      "id": "P12",
+      "start": 1075,
+      "end": 1181,
+      "class": "MIXED",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "grid of phone mock-ups whose screens carry product UI with footage thumbnails: lands with oversized phones (x1.14) under radial blur that shrink while the grid's spacing opens (outer phones move outward, f1083-f1106); from f1108 a uniform camera pull-back with a speed ramp (x0.97 -> x0.61, burst f1116-f1126), short hold, then an accelerating pan left into a whip"
+    },
+    {
+      "id": "P13",
+      "start": 1182,
+      "end": 1310,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "2-line headline (grey / black) whips in word by word from the right over a plain dotted field, then shrinks x0.64 and slides aside as a dial slides in from the right edge while soft background blobs fade in (top left from f1223, bottom right about f1236); the dial's knob travels 175 deg while counter digits roll with a fast-forward burst; slow drift, then an accelerating pull-back cut at x0.69"
+    },
+    {
+      "id": "P14",
+      "start": 1311,
+      "end": 1516,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "closing title of the promo, re-running the opening lockup build (letters converge from the frame edges from the cut picture f1311, brand icon stroke draw-on f1313-f1323, label drop, pill rise, brand row type-on, braces spring in); long hold with a slow zoom-out drift, background blobs and dots fade out, the wordmark dims, anticipation dip and exit up, empty field"
+    },
+    {
+      "id": "P15",
+      "start": 1517,
+      "end": 1640,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "player loop: picture-for-picture replay of v6c1's P04 (f15-f133): lockup build (letters, brand icon draw-on f1525-f1532, label, pill, brand row, braces), hold with drift, anticipation exit into the push"
+    },
+    {
+      "id": "P16",
+      "start": 1641,
+      "end": 1722,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "replay of v6c1's P05 (f134-f214): huge 2-word headline rises with a blink, pans while the third word types on letter by letter at the leading edge (about 5 f per letter), zooms out to a centred line with a blink, then splits"
+    },
+    {
+      "id": "P17",
+      "start": 1723,
+      "end": 1808,
+      "class": "MIXED",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "replay of v6c1's P06 (f216-f301): words around a curved row of footage cards; re-layout, sub-caption type-on, card row scroll with a speed ramp; the recording ends inside it"
+    }
+  ],
+  "techniques": [
+    {
+      "id": "v6.trans-push-up",
+      "category": "trans",
+      "description": "vertical push: the outgoing layout accelerates out of the top edge (ease-in, motion blur), hidden swap, the incoming layout rises from below the bottom edge and decelerates, with an opacity blink on the incoming element. This instance differs from v6c1's (f113-f153, replayed here at f1621-f1660) and the stored curves measure different things: v6.trans-push-up.v6c2 joins both halves into one in-out scroll in % H (bezier(0.811, -0.040, 0.000, 0.971) D=33), v6.trans-push-up.v6c1 is the incoming headline alone in px (ease-out spring, active 15 f), so neither can stand for the other as the technique's token. Half by half: the incoming halves agree (visible part 15 f in both: phone top 607 -> 54 px, within 2% of rest from f931, against v6c1's f138-f153); the outgoing halves differ (here a plain ease-in without an anticipation dip, -1/-4/-9/-21/-60 px per picture, 10 f to the swap; v6c1 first dips 36 px, v6.layout-anticipate-exit-up); 34 f against 41 f overall. The no-dip outgoing may make this a second technique",
+      "instances": [
+        [
+          903,
+          936
+        ],
+        [
+          1621,
+          1660
+        ]
+      ],
+      "reference_frames": [
+        903,
+        936
+      ],
+      "measured": {
+        "duration_frames": 23,
+        "easing": "bezier(0.811, -0.040, 0.000, 0.971) D=33 rmse 0.043 / spring {352.0, 34.06} rmse 0.095 (virtual push of both halves, f903-f936); replay instance = v6c1 curves",
+        "values": "outgoing edge 0 -> -10.3% H in f903-f913 (per picture -1/-4/-9/-21/-60 px); incoming phone top 66.1% H (f916) -> 5.9% H (f946); scroll progress 0.4/3.8/10.3% (f906/911/913) -> 39.8/86.4/92.4/95.8/97.7/98.9/99.6% (f916/921/923/927/929/931/934)"
+      },
+      "curves": [
+        "v6.trans-push-up.v6c2"
+      ]
+    },
+    {
+      "id": "v6.fx-opacity-dip",
+      "category": "fx",
+      "description": "the incoming element goes nearly transparent during the fastest part of its move and returns to full contrast within 10-13 f",
+      "instances": [
+        [
+          916,
+          929
+        ],
+        [
+          1645,
+          1655
+        ],
+        [
+          1687,
+          1700
+        ]
+      ],
+      "reference_frames": [
+        916,
+        929
+      ],
+      "measured": {
+        "duration_frames": 13,
+        "easing": "dip (values, no fit)",
+        "values": "darkest luma 122/197/172/90/19/1 at f916/918/921/923/927/929 (phone); 73/138/202/89/0 at f1645/1648/1650/1652/1655; 0/25/81/197/89/0 at f1687/1690/1692/1695/1697/1700"
+      },
+      "curves": []
+    },
+    {
+      "id": "v6.text-word-rise-stagger",
+      "category": "text",
+      "description": "words rise one after another (5-6 f stagger), each with a steep in-out of 15-18 f; at the push they rise from below the frame, at the reflow they rise one line while a new line rises from below behind them",
+      "instances": [
+        [
+          918,
+          946
+        ],
+        [
+          948,
+          976
+        ]
+      ],
+      "reference_frames": [
+        948,
+        976
+      ],
+      "measured": {
+        "duration_frames": 18,
+        "easing": "bezier(0.817, -0.000, 0.109, 1.000) D=22 rmse 0.025 (word 3); word 1 (1.000, -0.168, 0.112, 1.013) D=26 rmse 0.037; word 2 (0.912, -0.003, 0.004, 1.004) D=24 rmse 0.029",
+        "values": "reflow: 170-172 px (18.5-18.7% H) per word, half-way at ~f954/f959/f965; push: bottom edges 55/51/47 px from rest at f923/f929/f934; line 2 bottom 885/860/850/846/844 px at f963-f974"
+      },
+      "curves": [
+        "v6.text-word-rise-stagger.v6c2"
+      ]
+    },
+    {
+      "id": "v6.layout-line-split-shift",
+      "category": "layout",
+      "description": "a centred 2-line block splits horizontally: line 1 slides to the left edge, line 2 (7 f later) to the right edge, steep in-out, and an arrow slides into the gap",
+      "instances": [
+        [
+          978,
+          1016
+        ]
+      ],
+      "reference_frames": [
+        981,
+        1013
+      ],
+      "measured": {
+        "duration_frames": 20,
+        "easing": "bezier(1.000, -0.036, 0.000, 0.966) D=28 rmse 0.033 (line 2); line 1 bezier(0.878, -0.199, 0.064, 0.988) D=33 rmse 0.037 (not stored)",
+        "values": "line 1 left edge 240 -> 58 px (-11.2% W); line 2 right edge 1237 -> 1598 px (+22.3% W); half-way f985 / f992"
+      },
+      "curves": [
+        "v6.layout-line-split-shift.v6c2"
+      ]
+    },
+    {
+      "id": "v6.ui-mockup-punch-in",
+      "category": "ui",
+      "description": "a device mock-up (with its screen content and the echo outlines behind it) scales up about its upper middle while the headline beside it keeps its size: a slow creep, then one blurred picture that carries most of the growth, then an ease-out; it lands together with a line split",
+      "instances": [
+        [
+          976,
+          1011
+        ]
+      ],
+      "reference_frames": [
+        976,
+        987,
+        989,
+        1011
+      ],
+      "measured": {
+        "duration_frames": 27,
+        "easing": "bezier(1.000, -0.008, 0.000, 0.964) D=41 rmse 0.025 / spring {2327.2, 97.01} rmse 0.208",
+        "values": "outline width (median over rows 150-450) 480 px (f976) -> 482/484/490/499/561/570/575/578/580/582/584 -> 586 px at f978/981/983/987/989/991/993/996/998/1001/1003/1011 = x1.000 -> 1.221; f987 -> f989 carries 58% of the growth; centre x 805 px; outline top 63.6 -> 21.7 px; scale centre about x 805-823, y 242-260 px; preceded by a creep 472 -> 480 px (f943-f976, about +0.05%/frame), followed by the layout drift 586 -> 594 px (f1011-f1053); headline cap 134-137 px throughout (scratch/v6c2_P11_phone_scale.csv)"
+      },
+      "curves": [
+        "v6.ui-mockup-punch-in.v6c2"
+      ]
+    },
+    {
+      "id": "v6.text-tone-sweep",
+      "category": "text",
+      "description": "a line that entered black turns grey through a left-to-right tone sweep while it slides sideways (it becomes the secondary line); related to v6.text-dim-out but swept across the line and shorter",
+      "instances": [
+        [
+          987,
+          1003
+        ]
+      ],
+      "reference_frames": [
+        987,
+        989,
+        1003
+      ],
+      "measured": {
+        "duration_frames": 16,
+        "easing": "values (the front is readable only at f989; f991-f996 are motion-blurred by the slide)",
+        "values": "ink median luma 26-27 (f969-f987; 26-29 during the rise f963-f967) -> 90, core 87-88 (from f1003); f989: 60 px strips from x 380 px 99/93/88/82/79/107/68/45/34/31/27 (to x 1040 px), front about x 680-860 px; word 1 at 90 from f998, word 2 from f1003 (scratch/v6c2_P11_line2_tone.csv, scratch/v6c2_P11_line2_tone_f989_strips.csv)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v6.shape-arrow-slide-in",
+      "category": "shape",
+      "description": "long thin arrow with an open chevron head slides in from the left edge with chevron ghost trails and settles in the gap left by the split",
+      "instances": [
+        [
+          991,
+          1008
+        ]
+      ],
+      "reference_frames": [
+        991,
+        1008
+      ],
+      "measured": {
+        "duration_frames": 17,
+        "easing": "ease-out (values)",
+        "values": "smeared from x 0 at f991-f996; tip 625/642/652/657/659 px and tail 29 -> 65 px at f998/1001/1003/1006/1008; length 594 px (36.6% W)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v6.shape-echo-outlines",
+      "category": "shape",
+      "description": "enlarged rounded-rectangle outlines behind a device mock-up: thin dark-grey strokes revealed down from the top edge one after another (left L1, left L2, right R1, right R2), widening together with the mock-up's punch-in (they share its scale about x 810 px); they then soften into light-grey shaded shapes (a thin dark line becomes a light ridge between two soft dark bands, the field next to it darkens), hold, and leave with the exit",
+      "instances": [
+        [
+          976,
+          1068
+        ]
+      ],
+      "reference_frames": [
+        976,
+        987,
+        989,
+        1003,
+        1011
+      ],
+      "measured": {
+        "duration_frames": 27,
+        "easing": "entry: bezier(1.000, -0.007, 0.000, 0.968) D=40 (L1 side x; shape rmse 0.085 because the outline does not exist before f976, per-picture residuals <= 0.021; same shape as v6.ui-mockup-punch-in) / spring {2047.7, 98.51} rmse 0.182; softening: values",
+        "values": "L1 side x 419 / 417 / 414 / 410 / 398 (double stroke 399 + 368) / 353 / 345 / 341 / 338 / 336 / 335 / 334 / 333 px at f976/978/981/983/987/989/991/993/996/998/1001/1003/1006, visible lower end 10 / 27 / 55 / 116 px (f976-f983), bottom 380 -> 412 px (f987-f998); L2 side 229 -> 200 px (f989-f1006), bottom 143-147 px; R1 lower end 28 / 96 px (f989/991), complete f993 (bottom 418 px), side 1295 -> 1314 px (f989-f1003); R2 from f996 (x 1275-1280 px near the top); softening, p99.5 gradient: L2 288 / 192 / 88 / 44 (f993-f1001), R1 236 / 134 / 44 / 32 (f1001-f1008), L1 214 / 97 / 33 (f1003-f1008); stroke minimum 121-145 -> 168-188 luma, split into two edges 9-10 px apart; edge pixels hold 6400-8100 (f1008-f1058), 4558 / 1778 / 366 at f1063/1066/1068 (scratch/v6c2_P11_echo_entry_defocus.csv, scratch/v6c2_P11_echo_outlines.csv)"
+      },
+      "curves": [
+        "v6.shape-echo-outlines.v6c2"
+      ]
+    },
+    {
+      "id": "v6.ui-screen-swap-flicker",
+      "category": "ui",
+      "description": "the phone screen's content swaps (white screen with a UI label -> dark gradient screen with a miniature lockup) through a two-pulse luminance flicker; the UI label moves to the top of the screen and lightens",
+      "instances": [
+        [
+          996,
+          1008
+        ]
+      ],
+      "reference_frames": [
+        996,
+        1008
+      ],
+      "measured": {
+        "duration_frames": 10,
+        "easing": "stepped (values)",
+        "values": "screen mean luma 248/170/75/148/155/62 at f996/998/1001/1003/1006/1008"
+      },
+      "curves": []
+    },
+    {
+      "id": "v6.cam-slow-zoom-drift",
+      "category": "cam",
+      "description": "holds keep a slow linear scale drift of the whole layout (v6c1 technique)",
+      "instances": [
+        [
+          876,
+          901
+        ],
+        [
+          1011,
+          1056
+        ],
+        [
+          1256,
+          1291
+        ],
+        [
+          1366,
+          1481
+        ],
+        [
+          1575,
+          1621
+        ]
+      ],
+      "reference_frames": [
+        1366,
+        1481
+      ],
+      "measured": {
+        "duration_frames": 115,
+        "easing": "linear",
+        "values": "+0.030 / +0.033 / -0.057 / -0.041 / -0.042% per frame (template scale)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v6.cam-pull-back-cut",
+      "category": "cam",
+      "description": "accelerating zoom-out (pure ease-in) with growing blur, cut at its fastest picture (v6c1 technique; these instances go deeper: x0.69-0.40 instead of x0.905)",
+      "instances": [
+        [
+          1058,
+          1078
+        ],
+        [
+          1293,
+          1308
+        ]
+      ],
+      "reference_frames": [
+        1058,
+        1078
+      ],
+      "measured": {
+        "duration_frames": 20,
+        "easing": "bezier(1.000, 0.113, 1.000, 0.820) D=22 rmse 0.008",
+        "values": "x1.00/0.98/0.95/0.92/0.87/0.80/0.69/0.40 at f1061/1063/1066/1068/1071/1073/1076/1078; x0.99/0.98/0.95/0.92/0.87/0.80/0.69 at f1293/1296/1298/1301/1303/1306/1308"
+      },
+      "curves": [
+        "v6.cam-pull-back-cut.v6c2"
+      ]
+    },
+    {
+      "id": "v6.trans-zoom-through",
+      "category": "trans",
+      "description": "the outgoing element pulls back into a cut while the other elements whip out; the next grid lands with oversized phones (x1.14) packed close under radial zoom blur: the phones shrink to x1.0 in 10 f while the grid's spacing opens (v6.grid-spread-out), so the item scale keeps shrinking across the cut while the incoming layout spreads outward",
+      "instances": [
+        [
+          1058,
+          1091
+        ]
+      ],
+      "reference_frames": [
+        1081,
+        1093
+      ],
+      "measured": {
+        "duration_frames": 10,
+        "easing": "bezier(0.092, 0.910, 0.246, 0.363) D=8 rmse 0.034 / spring {903.2, 66.93} rmse 0.116 (incoming phones' item scale, 5 samples)",
+        "values": "incoming phones (item scale, not the layout) x1.14/1.06/1.04/1.02/1.01/1.00 at f1081/1083/1086/1088/1091/1093 (0.002-step re-track, mean of 3 phones: 1.081/1.051/1.030/1.011/1.000 at f1083-f1093), then a slow tail 0.991/0.984/0.979/0.976/0.973/0.970 at f1096-f1108; meanwhile the column pitch grows 336 -> 395 px (f1083-f1093) -> 403 px (f1103-f1106)"
+      },
+      "curves": [
+        "v6.trans-zoom-through.v6c2"
+      ]
+    },
+    {
+      "id": "v6.layout-split-whip-out",
+      "category": "layout",
+      "description": "a split 2-line block leaves in its split directions: line 2 and then the connecting arrow whip out to the right, line 1 whips out to the left word after word, all pure ease-ins with growing motion blur, while the central element pulls back",
+      "instances": [
+        [
+          1061,
+          1078
+        ]
+      ],
+      "reference_frames": [
+        1061,
+        1068,
+        1073
+      ],
+      "measured": {
+        "duration_frames": 7,
+        "easing": "bezier(0.725, 0.164, 0.819, -0.000) D=7 rmse 0.012 (line 2 left edge, ease-in cut at its last picture; 4 moving samples) / spring rmse 0.632",
+        "values": "line 2 left edge 734 -> 737/766/848/1256 px and ink centroid 1187 -> 1193/1216/1264/1505 px at f1061/1063/1066/1068, gone by f1071; line 1 word 1 left edge 48 -> 45/22/0 px (f1061-f1066), word 2 left edge 626 -> 622/596/543 px (f1063-f1068), word 3 left edge 824 -> 819/790 px (f1066/1068), right edge 1214 px to f1063; first moves f1061 / f1063 / f1066 (2-3 f apart), streak end 1190/1126 px (f1071/f1073), about 950 px over the phone (f1076, crop), remnant at x 0-45 px (f1078); arrow shaft left end 53 -> 56/89/190 px and tip 657 -> 663/703/818 px (f1066-f1071), light streak from 484 px to the right edge (f1073), remnant at x >= 1575 px (f1076) (scratch/v6c2_P11_exit_split.csv)"
+      },
+      "curves": [
+        "v6.layout-split-whip-out.v6c2"
+      ]
+    },
+    {
+      "id": "v6.grid-spread-out",
+      "category": "grid",
+      "description": "a grid of mock-ups lands with its items packed close and spreads out from the centre item with a strong ease-out while every item shrinks, so the outer items drift outward although the scene seems to pull back; cell offsets and item size animate separately, then the whole grid scales as one (v6.cam-pull-back-ramp)",
+      "instances": [
+        [
+          1081,
+          1108
+        ]
+      ],
+      "reference_frames": [
+        1083,
+        1093,
+        1108
+      ],
+      "measured": {
+        "duration_frames": 23,
+        "easing": "bezier(0.000, 1.005, 0.856, 0.992) D=25 rmse 0.052 (shape rule; per-picture residuals <= 0.011; starts 2 f after the swap with the spacing already moving) / spring {274.4, 33.51} rmse 0.092",
+        "values": "column pitch 336 -> 367.5/382/390/395/398/400/401.5/403 -> 402.5 px (f1083-f1108); pitch / phone scale 311 -> 350/371/386/395/401.5/406.5/410/413/414 -> 415 px (spread factor 0.749 -> 1.0), then constant 414.4-417.2 px through the pull-back (f1108-f1146); row pitch (label to label) 646/671/686/694 px (f1086-f1093), row pitch / phone scale 615 -> 694 px and 727-730 px (f1116-f1126); outer phone centres 473 -> 406.5 px and 1145 -> 1212.5 px (f1083-f1103) while the phones shrink 1.081 -> 0.976 (scratch/v6c2_P12_grid_pitch.csv)"
+      },
+      "curves": [
+        "v6.grid-spread-out.v6c2"
+      ]
+    },
+    {
+      "id": "v6.cam-pull-back-ramp",
+      "category": "cam",
+      "description": "uniform pull-back of the whole grid (phones and spacing together) once its spread has settled, with a speed ramp: slow start, a short burst, a stop",
+      "instances": [
+        [
+          1108,
+          1138
+        ]
+      ],
+      "reference_frames": [
+        1108,
+        1138
+      ],
+      "measured": {
+        "duration_frames": 25,
+        "easing": "bezier(0.803, 0.202, 0.004, 0.920) D=29 rmse 0.020 (uniform part from f1108)",
+        "values": "phones 0.970 (f1108) -> 0.965/0.955/0.940/0.915/0.850/0.710/0.660/0.640/0.625/0.615/0.610 at f1111/1113/1116/1118/1121/1123/1126/1128/1131/1136/1138; column pitch 402.5 -> 254.5 px with pitch / phone scale constant at 414.4-417.2 px (scratch/v6c2_P12_grid_pitch.csv); before f1108 only the phones shrink (1.000 -> 0.970, f1093-f1108) while the spacing still opens, which is not part of this move"
+      },
+      "curves": [
+        "v6.cam-pull-back-ramp.v6c2"
+      ]
+    },
+    {
+      "id": "v6.trans-whip-left",
+      "category": "trans",
+      "description": "horizontal whip: 30 f accelerating pan of the outgoing layout into a multi-exposure smear, hidden swap, the incoming words whip in from the right (v6c1 technique). This instance differs from v6c1's (f823-f853) and the stored curves measure opposite halves: v6.trans-whip-left.v6c2 is the outgoing pan (ease-in, bezier(0.507, -0.001, 1.000, 0.335) D=24), v6.trans-whip-left.v6c1 the incoming figure (ease-out, bezier(0.000, 0.377, 0.443, 1.003) D=13), so neither can stand for the other as the technique's token. Half by half: the incoming halves agree (ease-outs from the seam, 15 f here = v6.text-word-whip-in.v6c2 D=16, 12 f in v6c1); the outgoing halves differ (here a 25 f slow-build pan, -14 px in its first 8 f, then the smear and the swap at 30 f; v6c1's stack leaves in 13-15 f, -17 px in its first 4 f); 51 f against 31 f overall. The slow-build outgoing pan may make this a second technique",
+      "instances": [
+        [
+          1156,
+          1206
+        ]
+      ],
+      "reference_frames": [
+        1156,
+        1188
+      ],
+      "measured": {
+        "duration_frames": 23,
+        "easing": "bezier(0.507, -0.001, 1.000, 0.335) D=24 rmse 0.041 (outgoing ease-in to the cut)",
+        "values": "grid phone x 560/557/553/546/537/525/508/485/454/407/320 px at f1156/1158/1162/1164/1166/1169/1171/1173/1176/1178/1181; block right edge 1375 px (f1183), 1044 px (f1186)"
+      },
+      "curves": [
+        "v6.trans-whip-left.v6c2"
+      ]
+    },
+    {
+      "id": "v6.text-word-whip-in",
+      "category": "text",
+      "description": "words whip in from the right in reading order and decelerate; the first word lands 4 px past rest (v6c1 technique)",
+      "instances": [
+        [
+          1186,
+          1208
+        ]
+      ],
+      "reference_frames": [
+        1188,
+        1208
+      ],
+      "measured": {
+        "duration_frames": 15,
+        "easing": "bezier(0.210, 0.842, 0.000, 0.881) D=16 rmse 0.005 (line 2, from the seam)",
+        "values": "line 2 left edge 952/559/484/450/430/417/409/405/403 px at f1188-f1208; word 1 437 -> 407 -> 411 px; word 2 882 -> 815 px"
+      },
+      "curves": [
+        "v6.text-word-whip-in.v6c2"
+      ]
+    },
+    {
+      "id": "v6.layout-slide-make-room",
+      "category": "layout",
+      "description": "a settled headline shrinks and slides aside (steep in-out) while a new element slides in from the opposite edge",
+      "instances": [
+        [
+          1213,
+          1246
+        ]
+      ],
+      "reference_frames": [
+        1216,
+        1241
+      ],
+      "measured": {
+        "duration_frames": 25,
+        "easing": "bezier(0.823, 0.007, 0.152, 0.996) D=34 rmse 0.016 (position); scale bezier(0.905, 0.095, 0.267, 0.877) D=29 rmse 0.022 (not stored)",
+        "values": "centre x 800 -> 372 px (-26.4% W), scale 1.00 -> 0.64 (cap 159 -> 101 px)"
+      },
+      "curves": [
+        "v6.layout-slide-make-room.v6c2"
+      ]
+    },
+    {
+      "id": "v6.ui-dial-slide-in",
+      "category": "ui",
+      "description": "a circular dial (tick ring, progress ring, knob, counter) slides in from the right edge with motion blur and a fast ease-out, without scaling",
+      "instances": [
+        [
+          1231,
+          1253
+        ]
+      ],
+      "reference_frames": [
+        1231,
+        1253
+      ],
+      "measured": {
+        "duration_frames": 15,
+        "easing": "bezier(0.000, 0.779, 0.273, 0.971) D=18 rmse 0.013",
+        "values": "left edge 1500/1047/911/852/819/799/788/782/779/778 px at f1231/1233/1236/1238/1241/1243/1246/1248/1251/1253 (-44.5% W); dial geometry at rest (f1253, polar sampling, scratch/v6c2_P13_dial_geometry.csv): tick-ring centre fitted to the tick centroids (1148.8, 460.1) px (the knob track uses (1153, 460)); 60 ticks every 6 deg, every 5th long: short ticks r 351.8-362.5 px (10.7 px long), long ticks r 348.8-369.7 px (21.0 px), so the long ticks' outer ends make the rest left edge 778-779 px; light-grey progress ring r 298-325 px (p5-p95, median 312 px) inside the ticks; dark knob r 284-339 px; radii shrink with the layout drift (tick mid-radius 357.6 -> 352.7 px, f1253-f1288)"
+      },
+      "curves": [
+        "v6.ui-dial-slide-in.v6c2"
+      ]
+    },
+    {
+      "id": "v6.counter-dial-fastforward",
+      "category": "counter",
+      "description": "a knob travels counter-clockwise around a progress ring while counter digits count down and a timer label counts up; one eased move whose middle is a fast-forward burst",
+      "instances": [
+        [
+          1238,
+          1298
+        ]
+      ],
+      "reference_frames": [
+        1246,
+        1293
+      ],
+      "measured": {
+        "duration_frames": 38,
+        "easing": "bezier(1.000, 0.144, 0.000, 0.966) D=51 rmse 0.011",
+        "values": "knob angle -1.5 -> -176 deg; about 1-4 deg/frame (f1246-f1267), 26 deg/frame (f1267-f1271), 0.25 deg/frame at the end; digits roll every picture, fastest in f1266-f1272, frozen from about f1298"
+      },
+      "curves": [
+        "v6.counter-dial-fastforward.v6c2"
+      ]
+    },
+    {
+      "id": "v6.text-letter-converge",
+      "category": "text",
+      "description": "(v6c1) wordmark letters fly in from all four frame edges and assemble; here re-run as the closing title (from the cut picture f1311, which matches P04's f16 stage: the first letter's fragment at the left edge) and replayed after the loop",
+      "instances": [
+        [
+          1311,
+          1351
+        ],
+        [
+          1517,
+          1560
+        ]
+      ],
+      "reference_frames": [
+        1311,
+        1316,
+        1351
+      ],
+      "measured": {
+        "duration_frames": 40,
+        "easing": "values; v6c1 curve",
+        "values": "first letter's fragment at the left edge on the cut picture f1311 (x 0-23 px, y 446-490 px, still type/v6c2-P14-1_f01311.png), moving in at f1313; ink below luma 200 in x 0-120, y 380-600: 0/0/1005/1556/8345 px at f1306/1308/1311/1313/1316, of which 954/1516/8320 px are the letter (scratch/v6c2_P14_first_letter_left.csv; P15's first picture f1517: 2340 px, scratch/v6c2_P15_first_letter_left.csv); slot coverage 50% at f1321-f1328 left to right, >= 95% by f1338-f1351 (scratch/v6c2_P14_build_slots.csv): 10-17 f to half and 27-40 f to settle from f1311; f1311 matches P04's f16 stage (fragment x 0-23 px here, x 0-11 px at f16, x 0-124 px at f18); P04's first pictures f13-f15 (a streak at x 0-87 px, replayed at f1517) have no counterpart in P14 because the cut comes one picture later (crops/crop_0_340_300x300_01308-01318.jpg, crops/crop_0_340_300x300_00013-00023.jpg)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v6.logo-stroke-draw-on",
+      "category": "logo",
+      "description": "(v6c1) the brand icon draws on in place as one stroke (trim path) while its stroke thickens: a short grey dash grows into a hook, an S-curve, an S-curve with an open loop and the complete icon, 10 f from the dash to the complete, full-weight icon, while the wordmark letters fly in; re-run in the closing title (P14) and replayed after the loop (P15)",
+      "instances": [
+        [
+          1313,
+          1323
+        ],
+        [
+          1525,
+          1532
+        ]
+      ],
+      "reference_frames": [
+        1313,
+        1316,
+        1318,
+        1321,
+        1323
+      ],
+      "measured": {
+        "duration_frames": 10,
+        "easing": "values (5 pictures, no fit, as v6c1): drawn length 29/57/92/100% at f1316/1318/1321/1323, fastest f1316-f1321 (+14% then +12% of the length per frame)",
+        "values": "P14: light-grey dash 10 x 9 px at x 780-789, y 234-242 px, darkest luma 164 (f1313, scratch/v6c2_P14_brandicon_dash.csv) -> ink box 26 x 24 (f1316) -> 45 x 42 (f1318) -> 60 x 59 (f1321) -> complete icon 64 x 60 px at x 773-836, y 199-258 px (f1323); ink area (< 125 luma) 0/152/499/1093/1470 px2 at f1313/1316/1318/1321/1323, 2 px of each are dot-grid dots (scratch/v6c2_P14_brandicon_drawon.csv); skeleton length 57/114/183/200 px, mean stroke width 2.6/4.4/6.0/7.3 px, widest 4.0/6.0/7.2/11.2 px (scratch/v6c2_brandicon_drawon_length.csv; crops/crop_765_192_85x75_01311-01338.jpg); P04 by the same measures: length 4/42/84/94/100% and widest 2.8/6.0/6.4/8.0/11.2 px at f18/21/23/26/28, so both take 10 f from the dash to full weight and P14's middle stages are about 1 f behind P04's at matched pictures (offset 1295 f), inside the picture spacing. P15: ink area 12/304/876/1306 px2 at f1525/1527/1530/1532 and 1483 px2 at f1535 against P04's 12/309/878/1300/1485 at f18/21/23/26/28 (scratch/v6c2_P15_brandicon_drawon.csv). Sound: P14 dash f1313 (beat f1301: +12), complete f1323 (beat f1328: -5); P15 f1525 / f1532 (beat f1537: -12 / -5)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v6.text-label-drop",
+      "category": "text",
+      "description": "(v6c1) the monospace label pops in over the wordmark and drops into its slot",
+      "instances": [
+        [
+          1321,
+          1333
+        ],
+        [
+          1535,
+          1549
+        ]
+      ],
+      "reference_frames": [
+        1321,
+        1333
+      ],
+      "measured": {
+        "duration_frames": 12,
+        "easing": "values",
+        "values": "slot coverage 67/89/99% at f1328/1331/1333"
+      },
+      "curves": []
+    },
+    {
+      "id": "v6.ui-pill-rise",
+      "category": "ui",
+      "description": "(v6c1) the pill rises from below the bottom edge",
+      "instances": [
+        [
+          1328,
+          1341
+        ],
+        [
+          1540,
+          1550
+        ]
+      ],
+      "reference_frames": [
+        1328,
+        1341
+      ],
+      "measured": {
+        "duration_frames": 13,
+        "easing": "values; v6c1 curve",
+        "values": "pill-box coverage 51/74/90/95/99% at f1331/1333/1336/1341/1361"
+      },
+      "curves": []
+    },
+    {
+      "id": "v6.text-type-recenter",
+      "category": "text",
+      "description": "(v6c1) the brand row types on while re-centring, after the icon draw-on (v6.logo-stroke-draw-on)",
+      "instances": [
+        [
+          1326,
+          1358
+        ],
+        [
+          1533,
+          1570
+        ]
+      ],
+      "reference_frames": [
+        1326,
+        1331,
+        1341,
+        1358
+      ],
+      "measured": {
+        "duration_frames": 32,
+        "easing": "stepwise",
+        "values": "icon left edge 773 (f1323, just drawn) -> 762/747 px at f1326/1328, echo trail at f1331 (fragments x 716-778 px), 647/639/635 -> 632-633 px at f1333/1336/1338/1341-1346 (scratch/v6c2_P14_brandicon_recentre.csv; P04 776 -> 633 px, f26-f43); letters from f1331; row coverage 26/41/50/67/79/97/101% at f1326/1331/1336/1341/1351/1356/1358 (scratch/v6c2_P14_build_slots.csv; its first 1-25% at f1313-f1323 is the icon drawing on)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v6.text-bracket-spring-in",
+      "category": "text",
+      "description": "(v6c1) light-grey braces slide in from both sides, fade in and settle with an overshoot",
+      "instances": [
+        [
+          1351,
+          1371
+        ],
+        [
+          1560,
+          1590
+        ]
+      ],
+      "reference_frames": [
+        1351,
+        1371
+      ],
+      "measured": {
+        "duration_frames": 17,
+        "easing": "damped overshoot about 20% (values; own fit failed, rmse 0.18-0.19)",
+        "values": "left brace 453/541/573/593/601/592/581/574/573 px at f1351/1353/1356/1358/1361/1363/1366/1368/1371 (rest ~576); right brace 1147/1043/1010/1014/1019/1028/1040/1047/1048 px (rest ~1044)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v6.bg-clear-fade",
+      "category": "bg",
+      "description": "the field's soft blobs and dot grid fade out together and leave a plain near-white field before the exit",
+      "instances": [
+        [
+          1418,
+          1436
+        ]
+      ],
+      "reference_frames": [
+        1418,
+        1436
+      ],
+      "measured": {
+        "duration_frames": 18,
+        "easing": "S-shaped (values; fit rmse 0.10, not stored)",
+        "values": "top-left low-pass luma 208.5/215/225/236/243/246/248 at f1416/1421/1423/1426/1428/1431/1436; dot count 255 -> 0 (f1416-f1431)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v6.bg-blob-fade-in",
+      "category": "bg",
+      "description": "after a transition lands on a plain field (dot grid only), the soft grey background blobs fade in a beat later while the new layout builds, one corner after another; the other corners stay plain and the dot grid is unchanged (the reverse of v6.bg-clear-fade without the dots)",
+      "instances": [
+        [
+          946,
+          971
+        ],
+        [
+          1223,
+          1253
+        ]
+      ],
+      "reference_frames": [
+        1221,
+        1223,
+        1236,
+        1253
+      ],
+      "measured": {
+        "duration_frames": 25,
+        "easing": "values (a bezier fit on the P13 top-left series gives rmse 0.060, above 0.05: the fade is only 9 luma deep and the region first brightens by up to 0.45 luma at f1216-f1221; not stored)",
+        "values": "P13 (scratch/v6c2_P13_bg_blobs.csv): all four corners at median non-ink luma 248 f1188-f1221; top left (x0-250, y0-200, mean of 25 px block medians) 248.0 -> 247.6/246.7/244.3/241.6/240.6/240.2/239.6/239.4/239.1/239.0 -> 238.8 at f1223/1226/1228/1231/1233/1236/1238/1241/1243/1246/1253, active f1221-f1246 = 25 f by the duration rule; bottom right (x1450-1540, y760-830) 248.0 to f1231 -> 244.9/241.9/239.3/237.4/236.3/236.0 -> 235.8 at f1238/1241/1243/1246/1248/1251/1253 (f1233-f1236 covered by the sliding dial), about 13-15 f after the top left; both then darken slowly (238.8 -> 237.4 and 235.8 -> 233.2 by f1293); top-right and bottom-left corners stay 248. Sound: f1223 (beat f1213: +10), f1236 (beat f1244: -8), settled f1253 (+9). P11: left band 248 -> 239 and top right 248 -> 236 during f946-f971 after a plain field at f916-f943 (values in P11's Layers)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v6.text-dim-out",
+      "category": "text",
+      "description": "the big wordmark lightens from dark grey to light grey in a near-linear ramp while the other lockup elements keep their tone",
+      "instances": [
+        [
+          1473,
+          1491
+        ]
+      ],
+      "reference_frames": [
+        1473,
+        1491
+      ],
+      "measured": {
+        "duration_frames": 18,
+        "easing": "near-linear (values)",
+        "values": "mean ink luma 95 (f1471) -> 111/141.5/170/175 at f1476/1481/1486/1491"
+      },
+      "curves": []
+    },
+    {
+      "id": "v6.layout-anticipate-exit-up",
+      "category": "layout",
+      "description": "(v6c1) the whole lockup dips about 3.8% H, then accelerates up out of the frame with vertical blur",
+      "instances": [
+        [
+          1481,
+          1512
+        ],
+        [
+          1617,
+          1645
+        ]
+      ],
+      "reference_frames": [
+        1481,
+        1508
+      ],
+      "measured": {
+        "duration_frames": 27,
+        "easing": "values; v6c1 curve",
+        "values": "pill centre 800 -> 835 px (f1481-f1493), then -9/-43/-96/-156/-235/-204 px per picture (f1496-f1508); replay 799 -> 835 (f1617-f1630), -12/-47/-99/-169/-236/-196 px (f1632-f1645)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v6.cam-text-pan",
+      "category": "cam",
+      "description": "(v6c1) replayed: pan across the huge headline while its third word types on letter by letter at the leading edge (v6.text-type-on-pan)",
+      "instances": [
+        [
+          1655,
+          1683
+        ]
+      ],
+      "reference_frames": [
+        1655,
+        1683
+      ],
+      "measured": {
+        "duration_frames": 25,
+        "easing": "v6c1 curve",
+        "values": "replay of f148-f176"
+      },
+      "curves": []
+    },
+    {
+      "id": "v6.text-type-on-pan",
+      "category": "text",
+      "description": "the next word of a huge line types on one letter at a time just inside the leading frame edge while the camera pans across the line; each letter cuts on at full tone and then rides the pan (slower than v6.text-type-on: about 5 f per letter instead of 0.6-1.6 f)",
+      "instances": [
+        [
+          1667,
+          1677
+        ]
+      ],
+      "reference_frames": [
+        1665,
+        1667,
+        1672,
+        1677
+      ],
+      "measured": {
+        "duration_frames": 10,
+        "easing": "stepped, about 5 f per letter",
+        "values": "rightmost ink 1328 px (f1665, no third word) -> letter 1 at f1667 (x 1267-1566 px, 55 px inside the right edge) -> letter 2 at f1672 (x 1411-1476 px, 145 px inside; 193 px inside at f1675) -> letter 3 at f1677 (from x 1451 px, cut by the edge); new letters median ink 0 on their first picture; replay of f160 / f165 / f170 (scratch/v6c2_P16_word3_letters.csv)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v6.cam-zoom-out",
+      "category": "cam",
+      "description": "(v6c1) replayed: close-up to full line",
+      "instances": [
+        [
+          1683,
+          1710
+        ]
+      ],
+      "reference_frames": [
+        1683,
+        1710
+      ],
+      "measured": {
+        "duration_frames": 23,
+        "easing": "v6c1 curve",
+        "values": "cap 243/233/214/166/112/106/101/99 px at f1685/1687/1690/1692/1697/1700/1705/1710"
+      },
+      "curves": []
+    },
+    {
+      "id": "v6.trans-split-morph",
+      "category": "trans",
+      "description": "(v6c1) replayed: the centred line splits to open a band for footage cards",
+      "instances": [
+        [
+          1715,
+          1730
+        ]
+      ],
+      "reference_frames": [
+        1715,
+        1730
+      ],
+      "measured": {
+        "duration_frames": 16,
+        "easing": "v6c1 curve",
+        "values": "words 1-2 rows 411-509 px (f1712) -> 48-144 px (f1730)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v6.card-scatter-zoom-in",
+      "category": "card",
+      "description": "(v6c1) replayed: cards appear as specks and zoom into a curved row",
+      "instances": [
+        [
+          1720,
+          1730
+        ]
+      ],
+      "reference_frames": [
+        1720,
+        1730
+      ],
+      "measured": {
+        "duration_frames": 10,
+        "easing": "values (v6c1)",
+        "values": "replay of f213-f223"
+      },
+      "curves": []
+    },
+    {
+      "id": "v6.layout-reflow-slide",
+      "category": "layout",
+      "description": "(v6c1) replayed: top words shrink into the corner, lower word slides left and grows",
+      "instances": [
+        [
+          1733,
+          1750
+        ]
+      ],
+      "reference_frames": [
+        1733,
+        1750
+      ],
+      "measured": {
+        "duration_frames": 12,
+        "easing": "v6c1 curve",
+        "values": "top words cap 95 px (f1730) -> 60 px (f1760)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v6.text-type-on",
+      "category": "text",
+      "description": "(v6c1) replayed: sub-caption types on",
+      "instances": [
+        [
+          1743,
+          1758
+        ]
+      ],
+      "reference_frames": [
+        1743,
+        1758
+      ],
+      "measured": {
+        "duration_frames": 15,
+        "easing": "values (v6c1)",
+        "values": "replay of f236-f251"
+      },
+      "curves": []
+    },
+    {
+      "id": "v6.card-carousel-speed-ramp",
+      "category": "card",
+      "description": "(v6c1) replayed: curved card row scrolls with a speed ramp; the recording ends during it",
+      "instances": [
+        [
+          1738,
+          1808
+        ]
+      ],
+      "reference_frames": [
+        1738,
+        1805
+      ],
+      "measured": {
+        "duration_frames": 60,
+        "easing": "v6c1 curve",
+        "values": "replay of f231-f301"
+      },
+      "curves": []
+    },
+    {
+      "id": "v6.bg-soft-field",
+      "category": "bg",
+      "description": "(v6c1) near-white field with soft grey blobs and a faint dot grid; after the P10 -> P11 push and the P12 -> P13 whip the field starts plain and the blobs fade in (v6.bg-blob-fade-in); the bottom-right blob darkens further during P13's exit pull-back",
+      "instances": [
+        [
+          889,
+          1808
+        ]
+      ],
+      "reference_frames": [
+        1298,
+        1311
+      ],
+      "measured": {
+        "duration_frames": 0,
+        "easing": "-",
+        "values": "P11 left band 248 -> 239 and top-right 248 -> 236 (f946-f971); P13 bottom-right 239 -> 208 (f1298-f1308)"
+      },
+      "curves": []
+    }
+  ],
+  "typography_stills": [
+    "type/v6c2-P10-1_f00891.png",
+    "type/v6c2-P10-1_f00906.png",
+    "type/v6c2-P11-1_f00923.png",
+    "type/v6c2-P11-1_f00948.png",
+    "type/v6c2-P11-1_f00978.png",
+    "type/v6c2-P11-1_f01011.png",
+    "type/v6c2-P11-1_f01063.png",
+    "type/v6c2-P11-2_f00941.png",
+    "type/v6c2-P11-2_f01003.png",
+    "type/v6c2-P11-2_f01013.png",
+    "type/v6c2-P12-1_f01093.png",
+    "type/v6c2-P13-1_f01188.png",
+    "type/v6c2-P13-1_f01211.png",
+    "type/v6c2-P13-1_f01241.png",
+    "type/v6c2-P13-1_f01301.png",
+    "type/v6c2-P13-2_f01236.png",
+    "type/v6c2-P13-2_f01248.png",
+    "type/v6c2-P13-2_f01293.png",
+    "type/v6c2-P14-1_f01311.png",
+    "type/v6c2-P14-1_f01321.png",
+    "type/v6c2-P14-1_f01341.png",
+    "type/v6c2-P14-1_f01371.png",
+    "type/v6c2-P14-1_f01491.png",
+    "type/v6c2-P14-2_f01313.png",
+    "type/v6c2-P14-2_f01318.png",
+    "type/v6c2-P14-2_f01323.png",
+    "type/v6c2-P15-1_f01527.png",
+    "type/v6c2-P15-1_f01580.png",
+    "type/v6c2-P15-1_f01630.png",
+    "type/v6c2-P16-1_f01645.png",
+    "type/v6c2-P16-1_f01657.png",
+    "type/v6c2-P16-1_f01681.png",
+    "type/v6c2-P16-1_f01705.png",
+    "type/v6c2-P16-1_f01719.png",
+    "type/v6c2-P17-1_f01730.png",
+    "type/v6c2-P17-1_f01745.png",
+    "type/v6c2-P17-1_f01760.png",
+    "type/v6c2-P17-1_f01807.png",
+    "type/v6c2-P16-2_f01665.png",
+    "type/v6c2-P16-2_f01667.png",
+    "type/v6c2-P16-2_f01672.png",
+    "type/v6c2-P16-2_f01677.png"
+  ],
+  "uncertain": [
+    {
+      "what": "original typefaces",
+      "range": "f889-f1808",
+      "reason": "no specimen to compare; closest free fonts are judged from letter shapes and width ratios on the stills"
+    },
+    {
+      "what": "virtual-push normalisation of v6.trans-push-up.v6c2",
+      "range": "f903-f936",
+      "reason": "outgoing and incoming halves are joined by assuming the incoming panel starts one picture height (918 px) below its rest; both halves are measured, the joint offset is a model choice"
+    },
+    {
+      "what": "zoom-through landing curve",
+      "range": "f1081-f1093",
+      "reason": "only 5 pictures between the swap and the rest; the first two carry heavy radial blur (template score 0.84)"
+    },
+    {
+      "what": "whip outgoing half after f1181",
+      "range": "f1183-f1186",
+      "reason": "the grid is a multi-exposure smear; only its block edge (1375 px, 1044 px) is measurable, not its displacement"
+    },
+    {
+      "what": "knob angle at f1269",
+      "range": "f1267-f1271",
+      "reason": "knob smeared over about 100 deg in one picture (template score 0.56); sample dropped from the fit"
+    },
+    {
+      "what": "brace overshoot curve",
+      "range": "f1351-f1371",
+      "reason": "the braces are invisible before f1351 and enter mid-flight, so neither a bezier nor a spring from rest fits (rmse 0.18-0.19); values only"
+    },
+    {
+      "what": "background clear curve",
+      "range": "f1413-f1436",
+      "reason": "S-shaped fade with a 2-picture shoulder at f1431-f1433; fits stay above rmse 0.10, values only"
+    },
+    {
+      "what": "difference between the closing build (P14) and the opening build (P04)",
+      "range": "f1311-f1408",
+      "reason": "same timing within +-2 f and identical background, but the lockup box differs by 0.9-7.3 mean luma; the cause (re-render, slight scale or tone) was not located"
+    },
+    {
+      "what": "pictures lost at the loop seam",
+      "range": "f1512-f1517",
+      "reason": "5-frame capture gap; whether the promo had more pictures between its empty end field and the restart cannot be seen"
+    },
+    {
+      "what": "grid spacing at the swap picture",
+      "range": "f1081",
+      "reason": "radial zoom blur; the outer-phone templates score 0.18-0.24, so the spread curve (v6.grid-spread-out.v6c2) starts at f1083 with the spacing already moving"
+    },
+    {
+      "what": "how the echo outlines are revealed",
+      "range": "f976-f987",
+      "reason": "the visible stroke grows down from the top edge with a plain lower end and no corner until f987; a stroke draw-on and a top-down mask look the same"
+    },
+    {
+      "what": "line 2's tone between f991 and f996",
+      "range": "f991-f996",
+      "reason": "the line moves up to 215 px per picture and is motion-blurred, so its ink tone mixes blur and the sweep; only f989 shows the sweep front"
+    },
+    {
+      "what": "line 1's streak over the phone's dark screen and the layer order of line 1 and the phone",
+      "range": "f1073-f1078",
+      "reason": "the streak crosses the phone's dark screen; its right end at f1076 (about 950 px) is read off crops/crop_0_480_1622x400_01061-01078.jpg, not tracked"
+    },
+    {
+      "what": "letters 4 and later of P16's third word",
+      "range": "f1677-f1690",
+      "reason": "they lie beyond the right edge until the zoom-out reveals them; whether they are typed on there cannot be seen"
+    },
+    {
+      "what": "start of P13's bottom-right blob fade-in",
+      "range": "f1231-f1238",
+      "reason": "the sliding dial's motion-blurred ring and ticks cross the measured region (x1450-1540, y760-830) at f1233-f1236; the blob is first measurable at f1238 (244.9 luma), so it starts somewhere in f1233-f1238"
+    },
+    {
+      "what": "drawn length of the brand icon during its draw-on",
+      "range": "f1313-f1323",
+      "reason": "measured as the skeleton length of the ink below 125 luma; thinning adds short spurs on thick, soft strokes (the complete icon measures 197-205 px across the P04, P14 and P15 pictures), and the first dash (darkest luma 164) is lighter than the ink threshold, so its length is not measured"
+    }
+  ],
+  "notes": [
+    "The promo runs f13-f1512 (1500 frames, 25.0 s); its closing title (P14) re-runs the opening title build (P04) as a bookend, and the X player then loops: f1517-f1808 are the same pictures as f15-f301 (scratch/v6c2_loop_match.csv) with the soundtrack restarting at the same lag (onset-novelty correlation peak at 1506.5-1507 f, 0.18-0.37 vs median 0.00). P15-P17 are tiled with v6c1's technique ids and curves; no new curves were fitted on them.",
+    "Recurring easing in this half: steep in-out bezier about (0.8-1.0, 0, 0-0.15, 1) for word rises, line splits and slide-asides (v6.text-word-rise-stagger, v6.layout-line-split-shift, v6.layout-slide-make-room, v6.counter-dial-fastforward); pure ease-ins for exits cut at their fastest picture (v6.cam-pull-back-cut, v6.trans-whip-left); fast ease-outs for entrances from an edge (v6.text-word-whip-in, v6.ui-dial-slide-in, v6.trans-zoom-through).",
+    "The two pull-back-cut instances in this chunk use the same per-picture scale steps (x1.00/0.98/0.95/0.92/0.87/0.80/0.69); they reach x0.69-0.40 before the cut, deeper than v6c1's f431-f443 instance (x0.905); if the merge wants depth as a separate token, these could become their own id.",
+    "Capture: pictures arrive on the 3:2 cadence except gaps at f1508-f1512-f1517-f1522 (4-5 f) and 13-17 pictures per second from f1795; the X player's speaker icon is ignored in all measurements (masked where it overlapped a region of interest).",
+    "Ids: segment ids continue v6c1's provisional P-numbering (P10 continues); stills are tagged v6c2-P<nn>-<n>; tracker CSVs use working names (v6c2_B1/T1 = push f903-f936, R1/R2 = P11 reflows, S2 = P11, S3/T2 = P12, S4/T3/T4 = P13, S5 = P14, S6 = P15 exit).",
+    "P11 phone geometry: the push rows' 'top edge' values (607 -> 54 px) are the top of the push tracker's 490 x 150 px template box (scratch/v6c2_B1_phone_top.csv), 14 px above the outline itself (outline top 68 px at f946, track.py edge on columns 790-820); displacements are unaffected.",
+    "P11 exit: the line-1 right-edge values read earlier at f1076 / f1078 (1015 / 927 px) are the shrinking phone's right edge (1005 / 923 px at row 300); line 1 is then a streak whose end is about 950 px (f1076) and a remnant at x 0-45 px (f1078).",
+    "P12: the grid's motion has two layers that a rebuild must keep apart: item scale (curves v6.trans-zoom-through.v6c2 for the landing, v6.cam-pull-back-ramp.v6c2 for the uniform part from f1108) and cell spacing (v6.grid-spread-out.v6c2, spacing / item scale). Animating the grid as one scale would move the outer phones inward between f1086 and f1106; in the video they move outward about 35 px each.",
+    "P16 replays v6c1's P05 picture for picture (offset +1507 f): the third word's letter type-on found at f1667 / f1672 / f1677 is the same event as f160 / f165 / f170 in v6c1, where P05 records word 3 as a line revealed by the pan; the merge should carry v6.text-type-on-pan to that instance too.",
+    "P14 re-runs the opening's brand icon stroke draw-on (v6.logo-stroke-draw-on, f1313-f1323) and P15 replays it (f1525-f1532); P14's letter fly-in starts on the cut picture f1311, which matches P04's f16 stage (the first letter's fragment at the left edge), so the closing title enters its build one picture later than the opening (P04's f13-f15 streak pictures have no counterpart).",
+    "Whip and push curves against v6c1's: v6.trans-whip-left.v6c2 is the outgoing half (ease-in pan) and v6.trans-whip-left.v6c1 the incoming half (ease-out); v6.trans-push-up.v6c2 joins both halves into one in-out scroll in % H and v6.trans-push-up.v6c1 is the incoming headline alone in px. Like halves: the incoming halves agree (whip 15 f vs 12 f ease-outs, here curve v6.text-word-whip-in.v6c2; push 15 f in both), the outgoing halves differ (whip: a 25-30 f slow-build pan vs a 13-15 f exit; push: no anticipation dip vs a 36 px dip). A merge must not use either curve as the token of the other; the slow-build whip and the no-dip push may be second techniques.",
+    "P13 and P11 open on a plain dotted field after their transitions and the background blobs fade in during the new layout's build (v6.bg-blob-fade-in); P14 has the reverse (v6.bg-clear-fade)."
+  ]
+}

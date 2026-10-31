@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.fx-exposure-recover.v5c6",
+  "file": "curves/v5.fx-exposure-recover.v5c6.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (mean of a background region x1150-1530 y620-820)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c6_recover_bg.csv",
+  "column": "mean",
+  "sampled_frames": [
+    4015,
+    4032
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 185.2,
+  "to_value": 26.6,
+  "active_frames": [
+    4015,
+    4025
+  ],
+  "measured_duration_frames": 10,
+  "bezier": {
+    "x1": 0.0795,
+    "y1": 0.6136,
+    "x2": 0.9934,
+    "y2": 0.7372,
+    "durationInFrames": 7,
+    "delay": 0.263,
+    "built_duration_frames": 7,
+    "rmse": 0.0965
+  },
+  "spring": {
+    "stiffness": 17758.25,
+    "damping": 30.19,
+    "mass": 1,
+    "damping_ratio": 0.1133,
+    "built_duration_frames": 15,
+    "rmse": 0.1694
+  },
+  "recommended": "bezier",
+  "note": "second half of the white flash: the incoming 3D card close-up fades down from white and racks into focus at the same time (frame median luma 224 -> 78, brand-mark sharpness 1.1 -> 24, both settled by f4025); measured on a background patch that holds still after the flash; the card keeps a slow orbit drift (about -0.13% W per frame)"
+}

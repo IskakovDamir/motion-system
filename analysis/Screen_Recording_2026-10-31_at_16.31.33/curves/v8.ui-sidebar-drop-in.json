@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.ui-sidebar-drop-in",
+ "file": "curves/v8.ui-sidebar-drop-in.csv",
+ "property": "position-y",
+ "unit": "% of frame height relative to the chat panel (header avatar)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c1_s05_sidebar_entry_650-698.csv",
+ "column": "label_cy_rel_chat_pctH",
+ "sampled_frames": [
+  659,
+  694
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": -3.4237,
+ "to_value": 1.2516,
+ "active_frames": [
+  659,
+  680
+ ],
+ "measured_duration_frames": 21,
+ "bezier": {
+  "x1": 0.0136,
+  "y1": 1.0839,
+  "x2": 0.5942,
+  "y2": 0.9423,
+  "durationInFrames": 30,
+  "delay": -0.0,
+  "built_duration_frames": 24,
+  "rmse": 0.0246
+ },
+ "spring": {
+  "stiffness": 433.911,
+  "damping": 61.671,
+  "mass": 1,
+  "damping_ratio": 1.4803,
+  "built_duration_frames": 17,
+  "rmse": 0.1874
+ },
+ "recommended": "bezier",
+ "note": "S05 sidebar header label pops in at f659 at full ink (motion-blurred) above its rest and drops into place; the list card follows from f662 with the same drop; from-value = first picture f659",
+ "chunk_curve_id": "v8.ui-sidebar-drop-in.v8c1"
+}

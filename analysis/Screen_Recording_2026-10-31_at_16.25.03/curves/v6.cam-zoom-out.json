@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.cam-zoom-out",
+  "file": "curves/v6.cam-zoom-out.csv",
+  "property": "scale",
+  "unit": "scale factor of the headline relative to its rest size at f206",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_headline_zoomout_template.csv",
+  "column": "scale",
+  "sampled_frames": [
+    171,
+    206
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 2.54,
+  "to_value": 1.01,
+  "active_frames": [
+    176,
+    197
+  ],
+  "measured_duration_frames": 21,
+  "bezier": {
+    "x1": 0.6144,
+    "y1": 0.0,
+    "x2": 0.3731,
+    "y2": 1.0,
+    "durationInFrames": 24,
+    "delay": -2.116,
+    "built_duration_frames": 18,
+    "rmse": 0.0416
+  },
+  "spring": {
+    "stiffness": 221.488,
+    "damping": 24.437,
+    "mass": 1,
+    "damping_ratio": 0.821,
+    "built_duration_frames": 16,
+    "rmse": 0.0891
+  },
+  "recommended": "bezier",
+  "note": "zoom-out from the huge close-up to the full line, re-tracked with a multi-scale template of the middle letters (ref f206, scales 0.96-2.60 step 0.005; normalised cross-correlation, so the opacity dip f181-f193 does not bias it; score 0.90-1.00): x2.55 / 2.54 / 2.53 (f171-f176) -> 2.475 / 2.375 / 2.17 / 1.735 / 1.445 / 1.16 / 1.08 / 1.04 / 1.02 / 1.01 / 1.01 / 1.00 at f178-f206, about the line centre (810, 461) px; the previous fit used the thresholded ink height, which the opacity dip biased"
+}

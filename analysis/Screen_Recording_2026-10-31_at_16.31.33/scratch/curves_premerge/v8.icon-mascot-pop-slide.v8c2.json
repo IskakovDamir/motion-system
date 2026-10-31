@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.icon-mascot-pop-slide.v8c2",
+  "file": "curves/v8.icon-mascot-pop-slide.v8c2.csv",
+  "property": "scale",
+  "unit": "scale factor (area-equivalent size sqrt(ink area) / rest 77.3 px)",
+  "source_samples": "/Users/damir/dev/motion-system/analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c2_S05_mascot_vs_layout.csv",
+  "column": "scale_area_equiv",
+  "sampled_frames": [
+    1327,
+    1366
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.2041,
+  "to_value": 1.0,
+  "active_frames": [
+    1327,
+    1336
+  ],
+  "measured_duration_frames": 9,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.2385,
+    "x2": 0.0,
+    "y2": 0.9067,
+    "durationInFrames": 10,
+    "delay": 0.088,
+    "built_duration_frames": 9,
+    "rmse": 0.0084
+  },
+  "spring": {
+    "stiffness": 1626.644,
+    "damping": 83.837,
+    "mass": 1,
+    "damping_ratio": 1.0393,
+    "built_duration_frames": 9,
+    "rmse": 0.1539
+  },
+  "recommended": "bezier",
+  "note": "S05 mascot at the hard cut f1327: area-equivalent size (square root of the dark-ink area, luma < 200, ROI x 140-315 / y 190-350 that excludes the name label; scratch/v8c2_S05_mascot_vs_layout.csv) over its rest value 77.3 px (mean f1346-f1370). It appears as a 20 x 19 px dot (scale 0.20) and grows to 91 x 98 px; the ink height (free of the horizontal motion blur) gives the same progress (19 -> 59 -> 78 -> 88 -> 94 -> 96 -> 98 px at f1327/1328/1330/1332/1334/1336/1338). Re-fitted because the earlier curve used the mascot's left edge (260 -> 183 px), which mixed this growth with the whole layout's cut-in slide (47 px left, v8.cam-slide-in-left-settle.v8c2): relative to the layout (ghost band left edge) the mascot's ink centre only moves 46.2 -> 50.0 px (f1327 -> f1334, then 49.7-50.6), so it grows about a point fixed in the layout while riding the slide. From-value = first picture f1327; to-value = rest"
+}

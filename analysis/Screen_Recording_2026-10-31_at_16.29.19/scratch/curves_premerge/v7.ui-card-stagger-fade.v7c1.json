@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.ui-card-stagger-fade.v7c1",
+  "file": "curves/v7.ui-card-stagger-fade.v7c1.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 inside the 4th thumbnail card (window background 11)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s5_cards_luma_riding.csv",
+  "column": "card4",
+  "sampled_frames": [
+    484,
+    506
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 11.0,
+  "to_value": 106.0,
+  "active_frames": [
+    489,
+    502
+  ],
+  "measured_duration_frames": 13,
+  "bezier": {
+    "x1": 0.775,
+    "y1": 1.044,
+    "x2": 0.1937,
+    "y2": 0.6393,
+    "durationInFrames": 13,
+    "delay": 0.45,
+    "built_duration_frames": 13,
+    "rmse": 0.0344
+  },
+  "spring": {
+    "stiffness": 400.295,
+    "damping": 34.664,
+    "mass": 1,
+    "damping_ratio": 0.8663,
+    "built_duration_frames": 14,
+    "rmse": 0.0328
+  },
+  "recommended": "spring",
+  "note": "S5 window contents build on after the cut: four thumbnail cards fade in left to right (50% points f487.6, f489.0, f490.4, f494.0 = ~2.1 f stagger), then the six chips below (f491-f506); ROI rides with the window's measured vertical offset (bottom edge tracker); curve = 4th card"
+}

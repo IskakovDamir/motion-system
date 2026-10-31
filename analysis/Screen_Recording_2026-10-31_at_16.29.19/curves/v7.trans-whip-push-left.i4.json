@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-whip-push-left.i4",
+  "file": "curves/v7.trans-whip-push-left.i4.csv",
+  "property": "position-x",
+  "unit": "px of 1622 (window traffic-light centre; 777 = 47.9% W -> 337 = 20.8% W)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_whip_in_1487.csv",
+  "column": "cx",
+  "sampled_frames": [
+    1487,
+    1519
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 777.0,
+  "to_value": 337.0,
+  "active_frames": [
+    1487,
+    1514
+  ],
+  "measured_duration_frames": 27,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 1.037,
+    "x2": 0.957,
+    "y2": 0.9705,
+    "durationInFrames": 30,
+    "delay": 0.161,
+    "built_duration_frames": 26,
+    "rmse": 0.0079
+  },
+  "spring": {
+    "stiffness": 206.57,
+    "damping": 34.139,
+    "mass": 1,
+    "damping_ratio": 1.1876,
+    "built_duration_frames": 25,
+    "rmse": 0.1606
+  },
+  "recommended": "bezier",
+  "note": "incoming half of the leftward whip into the file browser: after the hard cut at f1487 the window arrives already moving left (87 px/frame over the first two pictures) with horizontal motion blur and decelerates into a slow drift (~2 px/frame) by ~f1514; template on the traffic-light dots (ref f1516; f1487 by global search); motion starts at the cut, the slow drift continues after"
+}

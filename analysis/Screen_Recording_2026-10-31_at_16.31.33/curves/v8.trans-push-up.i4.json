@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.trans-push-up.i4",
+ "file": "curves/v8.trans-push-up.i4.csv",
+ "property": "position-y",
+ "unit": "% of frame height",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c4_S2_headline_word1.csv",
+ "column": "cy_pct",
+ "sampled_frames": [
+  2358,
+  2402
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 40.959,
+ "to_value": 15.577,
+ "active_frames": [
+  2367,
+  2402
+ ],
+ "measured_duration_frames": 35,
+ "bezier": {
+  "x1": 0.6866,
+  "y1": 0.0054,
+  "x2": 0.9998,
+  "y2": 0.7637,
+  "durationInFrames": 40,
+  "delay": -5.0,
+  "built_duration_frames": 33,
+  "rmse": 0.0216
+ },
+ "spring": {
+  "stiffness": 47.031,
+  "damping": 109.621,
+  "mass": 1,
+  "damping_ratio": 7.9924,
+  "built_duration_frames": 51,
+  "rmse": 0.4199
+ },
+ "recommended": "bezier",
+ "note": "c4 T3 outgoing half (f2366-f2402): centre y of the S2 chat block (template on the headline's first word, scratch/v8c4_S2_headline_word1.csv). Out of a slow linear drift up (0.6-0.8 px per frame = 0.08% H per frame, f2300-f2366) the whole block accelerates upward with growing vertical motion blur: 1.5 px/f (f2372) -> 3 (f2378) -> 9 (f2394) -> 12.5 (f2398) -> about 43 px/f (f2402, template blurred); no settle, to-value = last picture f2402; the picture is replaced between f2402 and f2404 (hidden cut, f2403 repeats f2402).",
+ "chunk_curve_id": "v8.trans-push-up-out.v8c4"
+}

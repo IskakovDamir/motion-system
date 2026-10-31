@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.trans-zoom-out-morph",
+ "file": "curves/v8.trans-zoom-out-morph.csv",
+ "property": "scale",
+ "unit": "scale factor",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c3_hero_height_2004-2060.csv",
+ "column": "scale_from_height",
+ "sampled_frames": [
+  2004,
+  2036
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 1.0,
+ "to_value": 0.528,
+ "active_frames": [
+  2008,
+  2028
+ ],
+ "measured_duration_frames": 20,
+ "bezier": {
+  "x1": 0.6111,
+  "y1": 0.0115,
+  "x2": 0.0029,
+  "y2": 0.4987,
+  "durationInFrames": 24,
+  "delay": -3.572,
+  "built_duration_frames": 21,
+  "rmse": 0.0214
+ },
+ "spring": {
+  "stiffness": 227.837,
+  "damping": 28.952,
+  "mass": 1,
+  "damping_ratio": 0.959,
+  "built_duration_frames": 22,
+  "rmse": 0.0716
+ },
+ "recommended": "bezier",
+ "note": "S06 -> S07 morph, phase A: the full-frame product page shrinks into the front card of a 3D screen stack. Height of the dark page in x 500-1100 (row-mean dark-run scan, scratch/v8c3_hero_yruns_2000-2060.csv -> scratch/v8c3_hero_height_2004-2060.csv) over its height at f2006 (899 px, the largest visible height; the page never rests); f2006-f2010 are a mask inset (5 -> 34 px a side, scratch/v8c3r_S06_frame_edges_1996-2016.csv) over the unscaled content, which is still rising, and the content itself shrinks from f2012; to-value = mean of f2031-f2034. Strong radial zoom blur peaks at f2012-f2014 (30% of the scale change in one picture); from about f2022 the card also yaws (its right side recedes) while about 11 more screen layers fan out behind it (phase B, v8.3d-stack-fan-out), so the tail mixes in perspective; centre y stays at 460-502 px (50-55% H).",
+ "chunk_curve_id": "v8.trans-zoom-out-morph.v8c3"
+}

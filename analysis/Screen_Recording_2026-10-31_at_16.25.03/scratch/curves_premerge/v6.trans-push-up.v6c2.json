@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.trans-push-up.v6c2",
+  "file": "curves/v6.trans-push-up.v6c2.csv",
+  "property": "position-y",
+  "unit": "% of frame height scrolled upward (virtual push: outgoing rest 0 -> incoming rest 100)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c2_T1_scroll_no918.csv",
+  "column": "scroll_pct_h",
+  "sampled_frames": [
+    896,
+    958
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 100.0,
+  "active_frames": [
+    908,
+    931
+  ],
+  "measured_duration_frames": 23,
+  "bezier": {
+    "x1": 0.8114,
+    "y1": -0.04,
+    "x2": 0.0,
+    "y2": 0.9706,
+    "durationInFrames": 33,
+    "delay": -5.937,
+    "built_duration_frames": 21,
+    "rmse": 0.0429
+  },
+  "spring": {
+    "stiffness": 351.966,
+    "damping": 34.062,
+    "mass": 1,
+    "damping_ratio": 0.9078,
+    "built_duration_frames": 16,
+    "rmse": 0.0948
+  },
+  "recommended": "bezier",
+  "note": "P10->P11 push f903-f936 (vertical push) with a hidden swap at 913|916. Outgoing 2-line headline edge (track.py edge, x700-920) rises 0->10.3% H over f903-f913 (ease-in); incoming phone mock-up top (template x560-1050 y55-205 ref f941) placed as the next panel one picture height below: scroll = (918+54-y)/918. Sample f918 dropped (phone smeared to a light ghost, template lags); the virtual-push normalisation assumes the incoming panel starts one picture height below its rest."
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v2.trans-sphere-collapse",
+  "file": "curves/v2.trans-sphere-collapse.csv",
+  "property": "scale",
+  "unit": "scale factor (1 = flat field filling the frame, 0 = vanished)",
+  "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c1_T1_size.csv",
+  "column": "collapse_scale",
+  "sampled_frames": [
+    86,
+    116
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 1.0,
+  "to_value": 0.0,
+  "active_frames": [
+    100,
+    113
+  ],
+  "measured_duration_frames": 13,
+  "bezier": {
+    "x1": 0.7813,
+    "y1": -0.0148,
+    "x2": 0.4978,
+    "y2": 0.5054,
+    "durationInFrames": 15,
+    "delay": -2.8,
+    "built_duration_frames": 12,
+    "rmse": 0.04
+  },
+  "spring": {
+    "stiffness": 475.737,
+    "damping": 32.924,
+    "mass": 1,
+    "damping_ratio": 0.7548,
+    "built_duration_frames": 16,
+    "rmse": 0.3553
+  },
+  "recommended": "bezier",
+  "note": "honeycomb field bends into a globe and shrinks to a point at the frame centre (960, 540): f86-f104 centre magnification (ECC on a 400x400 centre ROI), f105-f113 silhouette size = sqrt(covered area / full-frame field area); field gone at f114 (first word of the next layout appears in the same frame)"
+}

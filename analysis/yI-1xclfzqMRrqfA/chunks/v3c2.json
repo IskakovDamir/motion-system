@@ -1,0 +1,448 @@
+{
+  "video": "yI-1xclfzqMRrqfA",
+  "key": "v3",
+  "chunk": "v3c2",
+  "frames": [
+    827,
+    1468
+  ],
+  "cut_decisions": [],
+  "cut_decisions_note": "no cut candidates lie in f827-f1468 (c001 f249, c002 f335, c003 f404 are in chunk v3c1); both boundaries of this chunk are soft transitions found on the overview sheets, scene_metrics.csv and motion.csv",
+  "boundaries": [
+    {
+      "start": 892,
+      "end": 903,
+      "type": "dip-to-bg (ease-in fade-out of the text card, 1 empty frame f899, next layout pops in: badge row f900 already scrolling, heading f903)",
+      "frames": 12,
+      "shared": "nothing but the empty background (single empty frame f899); both layouts are centred on x 960; outgoing headline and sub line fade with no scale or move (8 f, identical per frame), the incoming badge row appears complete at full contrast and already moving 9.333 px/f, the 1-word heading pops 3 f later",
+      "technique": "v3.trans-dip-to-bg",
+      "curve": "v3.trans-dip-to-bg.v3c2",
+      "detail": "detail/soft_892-903",
+      "midpoint_rule": "previous segment ends f897, next starts f898"
+    },
+    {
+      "start": 1126,
+      "end": 1224,
+      "type": "morph (badge-to-hexagon swap f1126-f1150, gather of 8 black hexagons into a 7-cell honeycomb f1143-f1191, hold f1192-f1198, collapse of the outer cells into the centre cell f1199-f1224)",
+      "frames": 99,
+      "shared": "the hexagons: each black hexagon is born on its marquee badge centre (y 659.5), keeps its size (188 x 170 px) and orientation through the gather, and the centre cell (from the third badge) stays at (959.5, 379.5) and becomes the brand mark at 0.90 scale; the end card is built on that exact position (mark y 379.5 = 35.1% H through the later slide)",
+      "technique": "v3.trans-hex-gather",
+      "curve": "v3.trans-hex-gather.v3c2",
+      "detail": "detail/soft_1126-1224",
+      "extra_curves": [
+        "v3.icon-badge-to-hex.v3c2",
+        "v3.icon-badge-to-hex.label-scale.v3c2",
+        "v3.icon-badge-to-hex.label-opacity.v3c2",
+        "v3.text-fade-out.slow.v3c2",
+        "v3.shape-hex-collapse.v3c2"
+      ],
+      "midpoint_rule": "previous segment ends f1175, next starts f1176",
+      "note": "kept as one boundary: the complete honeycomb holds only 7 frames (f1192-f1198) and its centre cell continues as the brand mark; the merge may split it into gather [f1126, f1191] and collapse [f1199, f1224] if a separate honeycomb segment is wanted"
+    }
+  ],
+  "segments": [
+    {
+      "id": "v3c2-S1",
+      "start": 827,
+      "end": 897,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": true,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "note": "segment start lies in v3c1: the headline pops in one frame at f791 after 3 empty frames (f788-f790) that end v3c1's transition; only f827-f897 described here",
+      "summary": "centred text card on the flat grey background: a 1-word headline (already on screen) and a 2-word sub line whose words pop in one frame each, 7 f apart; both lines then fade out together in place (ease-in, 8 f, no scale)"
+    },
+    {
+      "id": "v3c2-S2",
+      "start": 898,
+      "end": 1175,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "logo marquee: a row of agent logo icons on white rounded flat-top hexagon plates (one dark plate with the brand mark) and grey labels scrolls left at a constant 9.333 px/f under a centred heading; the 1-word heading fades out and a 2-word heading pops word by word; the row stops dead after exactly 7 slots and T2 begins"
+    },
+    {
+      "id": "v3c2-S3",
+      "start": 1176,
+      "end": 1468,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "end card built from the honeycomb's centre cell: the cells collapse into one black hexagon (end of T2), its two eye bars pop as dashes and open, the mark slides left with an ease-in-out, the 2-word wordmark, the 2-word tagline and the URL line pop in one frame each; static hold to the last frame, no fade"
+    }
+  ],
+  "techniques": [
+    {
+      "id": "v3.text-word-pop",
+      "category": "text",
+      "description": "words (or a single-word heading, or a whole short line) of a pre-laid, centred line appear in one frame at full opacity in their final place; no move, scale or fade; later words follow at 7-13 f",
+      "instances": [
+        [
+          844,
+          844
+        ],
+        [
+          851,
+          851
+        ],
+        [
+          903,
+          903
+        ],
+        [
+          1069,
+          1069
+        ],
+        [
+          1078,
+          1078
+        ],
+        [
+          1290,
+          1290
+        ],
+        [
+          1298,
+          1298
+        ],
+        [
+          1319,
+          1319
+        ],
+        [
+          1332,
+          1332
+        ],
+        [
+          1370,
+          1370
+        ]
+      ],
+      "reference_frames": [
+        844,
+        851
+      ],
+      "measured": {
+        "duration_frames": 0,
+        "easing": "step (one frame; 99.9% of settled ink in the first frame, codec residue only after)",
+        "values": "gaps between words of one line: sub line 7 f (f844, f851), heading 9 f (f1069, f1078), wordmark 8 f (f1290, f1298), tagline 13 f (f1319, f1332); between lines/elements of the end card: slide end -> wordmark 6 f, wordmark -> tagline 21 f, tagline -> URL 38 f; word spaces 29-30 px (0.29-0.35 x cap), wordmark 50 px"
+      },
+      "curves": []
+    },
+    {
+      "id": "v3.trans-dip-to-bg",
+      "category": "trans",
+      "description": "outgoing text card fades out in place with an ease-in (no scale, no move) to the empty background; after one empty frame the next layout appears complete in one frame (here a row already scrolling) and its heading pops 3 f later",
+      "instances": [
+        [
+          892,
+          903
+        ]
+      ],
+      "reference_frames": [
+        892,
+        903
+      ],
+      "measured": {
+        "duration_frames": 12,
+        "easing": "fade bezier(0.178, 0.046, 0.551, -0.079) D=8 (rmse 0.032) / spring {797.4, 38.29, mass 1} (0.499)",
+        "values": "opacity 0.972, 0.961, 0.887, 0.789, 0.654, 0.472, 0.236, 0.000 (f892-f899); scale 1.000 and centres (965, 430) / (965, 655) fixed (scaled template, score >= 0.9997); empty f899; row in f900; heading f903"
+      },
+      "curves": [
+        "v3.trans-dip-to-bg.v3c2"
+      ]
+    },
+    {
+      "id": "v3.ui-logo-marquee",
+      "category": "ui",
+      "description": "horizontal logo marquee: agent logo icons on white rounded flat-top hexagon plates (216 x 195 px) with grey labels, 300 px pitch, 9 badges per 2,700 px loop, scrolling left at constant speed from its first picture to a dead stop; travels exactly 7 slots so the badges land symmetric about the frame centre",
+      "instances": [
+        [
+          900,
+          1125
+        ]
+      ],
+      "reference_frames": [
+        900,
+        1125
+      ],
+      "measured": {
+        "duration_frames": 225,
+        "easing": "linear: bezier(0, 0, 0.645, 0.645) D=225 (rmse 0.0001); no ease-in or ease-out",
+        "values": "offset 0 -> -2100 px (-109.4% W); integer steps 9, 10, 9 px = 28 px per 3 f = 9.333 px/f = 0.486% W/f = 560 px/s; dy 0.00; f1125 -> f1126 0.0 px; badge centres on x 209.5 + 300k at f900 and f1125; no internal icon animation"
+      },
+      "curves": [
+        "v3.ui-logo-marquee.v3c2"
+      ]
+    },
+    {
+      "id": "v3.text-fade-out",
+      "category": "text",
+      "description": "text fades out in place with an ease-in, no move and no scale; the same curve shape is used at different lengths (5 f heading swap, 12 f heading exit during T2; the 8 f text-card exit of T1 has the same shape)",
+      "instances": [
+        [
+          1062,
+          1067
+        ],
+        [
+          1135,
+          1146
+        ]
+      ],
+      "reference_frames": [
+        1062,
+        1067
+      ],
+      "measured": {
+        "duration_frames": 5,
+        "easing": "bezier(0.191, 0.062, 0.612, 0.163) D=5 (rmse 0.010); slow instance bezier(0.131, 0.044, 0.531, -0.074) D=12 (rmse 0.006)",
+        "values": "heading 1: 0.996, 0.922, 0.802, 0.617, 0.350, 0.000 (f1062-f1067), then 2 empty frames before the next heading; heading 2: 0.986, 0.968, 0.950, 0.905, 0.864, 0.792, 0.695, 0.596, 0.475, 0.354, 0.174, 0.000 (f1135-f1146); ink bbox constant"
+      },
+      "curves": [
+        "v3.text-fade-out.v3c2",
+        "v3.text-fade-out.slow.v3c2"
+      ]
+    },
+    {
+      "id": "v3.icon-badge-to-hex",
+      "category": "icon",
+      "description": "each marquee badge is swapped for a plain black hexagon: the old plate and icon shrink toward the badge centre and fade while a black hexagon grows in over them from 0.62 to 1.0 (ease-out) and turns opaque; the badge label scales 1.00 -> 0.62 about a point on the badge axis 35 px below the plate centre, so it rises 4.35% H toward the plate, and fades out, both ease-out over 12 f from the badge's start; badges change centre-out, alternating left and right",
+      "instances": [
+        [
+          1126,
+          1141
+        ],
+        [
+          1128,
+          1141
+        ],
+        [
+          1129,
+          1146
+        ],
+        [
+          1131,
+          1146
+        ],
+        [
+          1133,
+          1148
+        ],
+        [
+          1135,
+          1150
+        ]
+      ],
+      "reference_frames": [
+        1126,
+        1139
+      ],
+      "measured": {
+        "duration_frames": 13,
+        "easing": "hexagon scale bezier(0.436, 1.003, 0.805, 0.910) D=13 (rmse 0.006) / spring {438.9, 38.18, mass 1} (0.062); label scale bezier(0.000, 0.076, 0.442, 0.982) D=12 (rmse 0.021) / spring {404.3, 33.88, mass 1} (0.050); label opacity bezier(0.386, 0.789, 0.646, 0.804) D=12 (rmse 0.019) / spring {351.6, 32.90, mass 1} (0.044)",
+        "values": "black hexagon scale 0.62 (first visible), 0.68, 0.735, 0.79, 0.83, 0.865, 0.90, 0.925, 0.945, 0.96, 0.975, 0.98, 0.99, 1.00 (f1126-f1139); plate-ring luma 252, 251, 250, 129, 103, 86, 69, 55, 45, 37, 30, 24, 22, 19, 18, 17 (f1126-f1141); white plate width 215.6 -> 202, 188, 164, 153 px (f1126-f1129) then covered; third badge label: scale 0.94, 0.88, 0.835, 0.79, 0.755, 0.72, 0.685, 0.67, 0.65, 0.635, 0.625, 0.62 (f1126-f1137; ink width 224 -> 139 px = 11.7% -> 7.2% W) about a point on the badge axis at y 695 (124 px above the label centre, 35 px below the plate centre), so its centre y goes 811.0, 805.0, 798.0, 793.0, 788.5, 784.0, 780.5, 778.0, 775.5, 774.5, 772.5, 772.0 (from 819.0 = 75.8% H to 71.5% H, -47 px = -4.35% H; x fixed); opacity corrected for the scale 0.89, 0.73, 0.60, 0.50, 0.39, 0.32, 0.24, 0.18, 0.15, 0.10, 0.05, 0.02 (f1126-f1137), gone f1138; every label repeats both curves from its own start (fitted f1125.2, 1126.9, 1128.8, 1130.6, 1132.4, 1134.2 for the third, fourth, second, fifth, first, sixth label; last ink f1137, 1139, 1140, 1141, 1144, 1146; end scale 0.62-0.63, rise 46-48 px); the dark brand-mark plate first lightens (ring luma 17 -> 115, f1129-f1132) while shrinking 217 -> 163 px; starts f1126, 1128, 1129, 1131, 1133, 1135 (third, fourth, second, fifth, first, sixth badge; mean 1.8 f); the sixth badge repeats the scale values 9 f later"
+      },
+      "curves": [
+        "v3.icon-badge-to-hex.v3c2",
+        "v3.icon-badge-to-hex.label-scale.v3c2",
+        "v3.icon-badge-to-hex.label-opacity.v3c2"
+      ]
+    },
+    {
+      "id": "v3.trans-hex-gather",
+      "category": "trans",
+      "description": "morph from the marquee to the brand mark: the 8 black hexagons (6 visible slots and the 2 slots just off-screen) fly in straight lines into a 7-cell honeycomb centred on the future mark position (the two off-screen ones land on the same cell); one shared ease-in-out with equal durations, so speed scales with distance; size, orientation and luma constant; then a 7-frame hold and the collapse",
+      "instances": [
+        [
+          1126,
+          1224
+        ]
+      ],
+      "reference_frames": [
+        1146,
+        1170
+      ],
+      "measured": {
+        "duration_frames": 31,
+        "easing": "bezier(0.581, 0.043, 0.403, 0.982) D=31 (rmse 0.015) / spring {100.1, 15.73, mass 1} (0.112); all 8 hexagons fit bezier about (0.585, 0.03, 0.40, 0.99) with D 31-32",
+        "values": "honeycomb centre (959.5, 379.5), pitch 204.5 px (18.9% H), columns at +-177.3 px, cells 188 x 170 px; fitted starts f1142.8, 1144.7, 1147.3, 1149.5, 1152.0, 1154.3, 1156.9, 1159.3 (mean 2.4 f, swap order: third, fourth, second, fifth, first, sixth slot, then off-screen left and right); path lengths 318, 180, 456, 652, 689, 893, 1285, 953 px; visible peak speeds 25.1, 14.5, 36.6, 52.1, 55.7, 70.3 px/f; paths straight within 1.4 px; complete f1191, hold f1192-f1198"
+      },
+      "curves": [
+        "v3.trans-hex-gather.v3c2"
+      ]
+    },
+    {
+      "id": "v3.shape-hex-collapse",
+      "category": "shape",
+      "description": "the six outer honeycomb cells shrink into the centre cell one after another (counter-clockwise from the upper right, 3 f apart), each scaling toward a point inside the centre cell, while the centre cell eases from 1.00 to 0.90 and becomes the brand mark",
+      "instances": [
+        [
+          1199,
+          1224
+        ]
+      ],
+      "reference_frames": [
+        1201,
+        1224
+      ],
+      "measured": {
+        "duration_frames": 24,
+        "easing": "centre cell bezier(0.562, 0.063, 0.356, 1.003) D=27 (rmse 0.030) / spring {137.3, 18.62, mass 1} (0.123); outer cell visible part fits the gather shape (0.585, 0.03, 0.40, 0.99) with D 14.5-14.7 (rms 0.003) if it ends at 0",
+        "values": "centre width 188.0 -> 169.0 px, height 169.6 -> 152.3 px (f1200-f1224); outer starts f1199, 1202, 1205, 1208, 1211, 1214; top cell scale 0.99, 0.98, 0.95, 0.89, 0.82, 0.71, 0.57, 0.40 and centre distance 203.5, 201.5, 197, 189.5, 178, 162.5, 142.5, 118.5 px (f1202-f1209), then hidden inside the centre cell; the scaling pivot sits about 61 px from the centre-cell centre"
+      },
+      "curves": [
+        "v3.shape-hex-collapse.v3c2"
+      ]
+    },
+    {
+      "id": "v3.logo-eyes-open",
+      "category": "logo",
+      "description": "the brand mark's two white rounded bars appear as closed 4-px dashes in one frame, hold, then open vertically about their own centre to full height",
+      "instances": [
+        [
+          1238,
+          1254
+        ]
+      ],
+      "reference_frames": [
+        1243,
+        1254
+      ],
+      "measured": {
+        "duration_frames": 10,
+        "easing": "spring {1044.1, 65.03, mass 1} (zeta 1.01, rmse 0.025) / bezier(0.316, 0.994, 0.874, 0.931) D=10 (0.043)",
+        "values": "dashes 16 x 4 px pop f1238 at (965.5, 361.5) and (996.8, 361.5), hold f1238-f1243; heights 10, 22, 30, 36, 42, 46, 48, 50, 52, 53, 54 px (f1244-f1254); width 16 px constant; bars 31 px apart, right of and 18 px above the hexagon centre"
+      },
+      "curves": [
+        "v3.logo-eyes-open.v3c2"
+      ]
+    },
+    {
+      "id": "v3.logo-lockup-slide",
+      "category": "logo",
+      "description": "the brand mark slides left from the frame centre to the place where mark + wordmark form a centred lockup, with a symmetric ease-in-out; the wordmark words pop after it stops",
+      "instances": [
+        [
+          1258,
+          1284
+        ]
+      ],
+      "reference_frames": [
+        1258,
+        1284
+      ],
+      "measured": {
+        "duration_frames": 26,
+        "easing": "bezier(0.588, 0.025, 0.412, 0.975) D=26 (rmse 0.009) / spring {140.5, 18.49, mass 1} (0.130)",
+        "values": "x 960 -> 412 px (50.0% -> 21.46% W, -28.5% W), y 380 fixed; per-frame steps 1, 2, 4, 7, 8, 12, 16, 20, 24, 29, 36, 41, 48, 52, 48, 41, 36, 29, 24, 20, 16, 12, 8, 7, 4, 2, 1 px; peak 52 px/f at f1271"
+      },
+      "curves": [
+        "v3.logo-lockup-slide.v3c2"
+      ]
+    }
+  ],
+  "typography_stills": [
+    "type/c2A-text_f00791.png",
+    "type/c2A-text_f00830.png",
+    "type/c2A-text_f00844.png",
+    "type/c2A-text_f00851.png",
+    "type/c2A-text_f00870.png",
+    "type/c2A-text_f00892.png",
+    "type/c2A-text_f00895.png",
+    "type/c2B-badges_f00960.png",
+    "type/c2B-badges_f01125.png",
+    "type/c2B-heading1_f00903.png",
+    "type/c2B-heading1_f00960.png",
+    "type/c2B-heading1_f01062.png",
+    "type/c2B-heading1_f01064.png",
+    "type/c2B-heading2_f01069.png",
+    "type/c2B-heading2_f01078.png",
+    "type/c2B-heading2_f01100.png",
+    "type/c2B-heading2_f01135.png",
+    "type/c2B-heading2_f01140.png",
+    "type/c2C-lockup_f01290.png",
+    "type/c2C-lockup_f01298.png",
+    "type/c2C-lockup_f01319.png",
+    "type/c2C-lockup_f01332.png",
+    "type/c2C-lockup_f01370.png",
+    "type/c2C-lockup_f01468.png",
+    "type/c2C-mark_f01230.png",
+    "type/c2C-mark_f01238.png",
+    "type/c2C-mark_f01241.png",
+    "type/c2C-mark_f01246.png",
+    "type/c2C-mark_f01257.png",
+    "type/c2C-mark_f01270.png",
+    "type/c2T2-labels_f01126.png",
+    "type/c2T2-labels_f01137.png",
+    "type/c2T2-labels_f01146.png",
+    "type/c2T2-morph_f01131.png",
+    "type/c2T2-morph_f01166.png",
+    "type/c2T2-morph_f01176.png",
+    "type/c2T2-morph_f01195.png",
+    "type/c2T2-morph_f01208.png",
+    "type/c2T2-morph_f01216.png"
+  ],
+  "uncertain": [
+    {
+      "what": "start values of the badge swap (black hexagon scale and opacity before its first visible frame)",
+      "range": "f1125-f1126 (and the same offset for every badge)",
+      "reason": "the black hexagon is first measurable at f1126 at scale 0.62 (template score 0.77) under the shrinking plate and icon; the curve uses 0.62 as its start"
+    },
+    {
+      "what": "how far the old white plate and icon shrink",
+      "range": "f1129-f1134",
+      "reason": "from about scale 0.71 (f1129) the plate is hidden under the growing black hexagon; the icon is seen through it for 6-7 f but its own scale/opacity cannot be separated from the overlay"
+    },
+    {
+      "what": "badge label scale after its last visible frame",
+      "range": "f1138-f1147 (third to sixth label)",
+      "reason": "once a label reaches scale 0.62 its opacity is below 0.02 and only codec block residue (up to 4 luma levels) remains; the label-scale curve ends at 0.62, the value held in the last 1-4 visible frames (fourth label 0.620 f1138-f1141, first f1144-f1146, sixth f1146-f1148), so a designed move that continues under full transparency cannot be ruled out; last-ink frames carry +-1 f for the same reason"
+    },
+    {
+      "what": "start and swap of the two off-screen hexagons",
+      "range": "before f1159 (left) and f1162 (right)",
+      "reason": "they start outside the frame; their origins (x -90.5 and 2009.5, the next marquee slots) come from extending their measured straight paths to the row line, and their starts f1156.9 / f1159.3 from fitting the shared curve shape; the left one is also hidden behind other cells f1176-f1179"
+    },
+    {
+      "what": "whether the upper-right honeycomb cell holds one or two hexagons during the collapse",
+      "range": "f1190-f1206",
+      "reason": "both off-screen hexagons land on it and coincide exactly; the cell then collapses like a single cell"
+    },
+    {
+      "what": "end of each outer-cell collapse",
+      "range": "f1209-f1224",
+      "reason": "each cell is visible down to scale 0.40 (plus a 2-3 frame remnant), then it is inside the centre cell; its final scale and position cannot be measured (the ease-in-out with D about 14.6 to scale 0 is a fit to the visible part only)"
+    },
+    {
+      "what": "white plate corner radius",
+      "range": "S2",
+      "reason": "the plate is only 7 luma levels above the background; circle fits to its vertex contour give 18-38 px"
+    },
+    {
+      "what": "original typeface",
+      "range": "all text",
+      "reason": "not identified; closest free: Inter Tight (neo-grotesque, single-storey g, straight-tailed y, slanted t top), weight 400 everywhere (stem 0.12 x cap)"
+    },
+    {
+      "what": "real start of segment v3c2-S1",
+      "range": "f785-f826",
+      "reason": "decided by chunk v3c1 (its transition ends with 3 empty frames f788-f790 and the headline pop at f791)"
+    }
+  ],
+  "notes": [
+    "All three segments are GRAPHICS; no footage anywhere in f827-f1468 (checked on every overview sheet sheets/overview_00816-00861.jpg .. overview_01440-01467.jpg; also overview_00768-00813.jpg for the edge).",
+    "No cut candidates in range; detector misses: T1 f892-f903 (dip to background) and T2 f1126-f1224 (morph). Peak windows opened: peak_f00900 (T1), peak_f01172 (gather), peak_f01271 (lockup slide). Detail windows made: detail/soft_892-903, detail/soft_1126-1224. Dense sheets: detail/dense_01122-01157_00.jpg, dense_01158-01199_00.jpg + _01, dense_01197-01232_00.jpg. Crops: crops/crop_380_540_1460x320_01126-01134.jpg (swap), crops/crop_680_740_560x110_01124-01142.jpg and crops/crop_1540_740_340x110_01133-01150.jpg (label leave: third + fourth, sixth), crops/crop_640_140_760x420_01172-01192.jpg (two hexagons converging on the upper-right cell), crops/crop_860_280_200x200_01234-01258.jpg (eyes).",
+    "Holds are truly static (no slow camera drift): f870 vs f891 and f1370 vs f1468 phase shift 0.000 px; the small diffs every 15 frames in the end card are codec GOP refreshes.",
+    "Per-hexagon gather tracks: template peaks of a single black hexagon (score >= 0.45, sub-pixel), linked frame to frame (scratch/v3c2_gather_tracks.csv); the six visible hexagons were detected in every frame f1144-f1200; off-screen entries before full visibility use the visible width at the frame edge (centre = width - 94.5 px). The centre-cell hexagon was cross-checked with track.py template (scratch/v3c2_gather_centrecell_tmpl.csv): within 1.6 px of the peak track in every frame f1138-f1200.",
+    "Shared motion language in this chunk: one symmetric ease-in-out of about bezier(0.58, 0.03, 0.40, 0.98) drives every positional move (gather D 31-32, outer-cell shrink D about 14.6, centre shrink D 27, lockup slide D 26); text exits are ease-in fades (5, 8, 12 f); entrances are one-frame pops; the only continuous motion is the linear marquee.",
+    "Stagger order is centre-out alternating left/right and is the same for the swap (mean 1.8 f) and the gather (mean 2.4 f): third, fourth, second, fifth, first, sixth slot, then the two off-screen slots; the collapse runs counter-clockwise from the upper right at 3 f.",
+    "The honeycomb is centred on (959.5, 379.5), the exact position of the brand mark until the slide; the lockup row (mark + wordmark) ends up centred on x 962 with the wordmark caps centred on the mark centre line.",
+    "The dark plate in the marquee carries the brand mark itself (two white bars, 60 x 67 px span at plate scale); after the swap it becomes the bottom honeycomb cell, not the mark; the mark comes from the third (centre-left) slot.",
+    "Typography stills are named type/c2A-* (v3c2-S1), type/c2B-* (v3c2-S2), type/c2T2-* (T2), type/c2C-* (v3c2-S3).",
+    "Curve ids written: v3.trans-dip-to-bg.v3c2, v3.ui-logo-marquee.v3c2, v3.text-fade-out.v3c2, v3.text-fade-out.slow.v3c2, v3.icon-badge-to-hex.v3c2, v3.icon-badge-to-hex.label-scale.v3c2, v3.icon-badge-to-hex.label-opacity.v3c2, v3.trans-hex-gather.v3c2, v3.shape-hex-collapse.v3c2, v3.logo-eyes-open.v3c2, v3.logo-lockup-slide.v3c2 (a first fit under v3.logo-mark-slide-left.v3c2 was removed after renaming the technique).",
+    "The interrupted reviewer log (scratch/attempt1_critic_v3c2.md) was read; every value here was re-measured in this pass.",
+    "Badge-label leave re-measured after review: the first pass lost the label below a fixed ink threshold at f1131 (scale 0.80, rise 26 px). A multi-scale template from the rest frame f1125 with a contrast regression (scratch/v3c2_tools/labelfit.py -> scratch/v3c2_label1..6_scale_opacity.csv; thresholded ink box in scratch/v3c2_label3_bbox_t10.csv) follows every label to its last letter-shaped ink: each scales 1.00 -> 0.62 about y 695 (fitted pivot y 693.8-696.8 for the six labels, residual <= 1.4 px), rises 46-48 px and fades out over 12 f, starting with its badge; amplified differences against f1160 show only blocky codec residue after the last-ink frames."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-zoom-through-cut.i2",
+  "file": "curves/v7.trans-zoom-through-cut.i2.csv",
+  "property": "scale",
+  "unit": "ln(scale factor) of the editor close-up (0.004 = x1.004 at f3649 -> 0.525 = x1.691 at the last picture before the cut f3686; 0 = f3600)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p5_cam_scale.csv",
+  "column": "lnscale",
+  "sampled_frames": [
+    3642,
+    3686
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0041,
+  "to_value": 0.5254,
+  "active_frames": [
+    3656,
+    3686
+  ],
+  "measured_duration_frames": 30,
+  "bezier": {
+    "x1": 0.6827,
+    "y1": 0.0105,
+    "x2": 1.0,
+    "y2": 0.9101,
+    "durationInFrames": 35,
+    "delay": -5.0,
+    "built_duration_frames": 30,
+    "rmse": 0.0118
+  },
+  "spring": {
+    "stiffness": 66.291,
+    "damping": 62.878,
+    "mass": 1,
+    "damping_ratio": 3.8614,
+    "built_duration_frames": 42,
+    "rmse": 0.3769
+  },
+  "recommended": "bezier",
+  "note": "outgoing half of the zoom-through cut P5 -> P6 (P5 exit): after the click the camera pushes in about the frame centre, (811, 461) px (0.1 px rms; the action button sits there), accelerating from rest (about f3651) to 4.8-5.2% per frame over the last intervals (x1.412 / 1.525 / 1.691 at f3681 / 3684 / 3686) while the 3D pointer flies off to the right; hard cut f3690 at full speed (no settle: to-value = last picture); scale = distance between two UI-label template centres relative to f3600, f3686 from the panel label's ink width (224 vs 133 px at f3649; scratch/v7c5_p5_cam_scale.csv)"
+}

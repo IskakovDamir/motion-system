@@ -1,0 +1,26 @@
+frame,unique,cx_px,cy_px,cx_pct,cy_pct,pose,source
+1031,1,1288,850,79.41,92.59,entering bottom edge blurred,dense_01029-01084 tile r0c0
+1033,1,1546,616,95.31,67.10,blurred,dense_01029-01084 tile r0c1
+1035,1,1487,340,91.68,37.04,points down-left blurred,dense_01029-01084 tile r0c2
+1037,1,1385,276,85.39,30.07,points left,dense_01029-01084 tile r0c3
+1040,1,1305,234,80.46,25.49,points up-left,dense_01029-01084 tile r0c4
+1042,1,1267,221,78.11,24.07,points up,dense_01029-01084 tile r1c0
+1045,1,1229,221,75.77,24.07,points up,dense_01029-01084 tile r1c1
+1047,1,1212,208,74.72,22.66,points up,dense_01029-01084 tile r1c2
+1050,1,1195,208,73.67,22.66,points up-right,dense_01029-01084 tile r1c3
+1052,1,1200,208,73.98,22.66,points right,dense_01029-01084 tile r1c4
+1055,1,1183,196,72.93,21.35,points down,dense_01029-01084 tile r2c0
+1057,1,1293,162,79.72,17.65,spin blur,dense_01029-01084 tile r2c1
+1060,1,1381,225,85.14,24.51,spin blur,dense_01029-01084 tile r2c2
+1062,1,1428,238,88.04,25.93,points left,dense_01029-01084 tile r2c3
+1065,1,1432,196,88.29,21.35,points up-left,dense_01029-01084 tile r2c4
+1067,1,1457,178,89.83,19.39,points up,dense_01029-01084 tile r3c0
+1070,1,1440,170,88.78,18.52,points up,dense_01029-01084 tile r3c1
+1072,1,1339,212,82.55,23.09,dive blur,dense_01029-01084 tile r3c2
+1075,1,1090,327,67.20,35.62,dive,dense_01029-01084 tile r3c3
+1077,1,988,412,60.91,44.88,dive,dense_01029-01084 tile r3c4
+1080,1,938,442,57.83,48.15,lands,dense_01029-01084 tile r4c0
+1082,1,912,450,56.23,49.02,click,dense_01029-01084 tile r4c1
+1085,1,883,467,54.44,50.87,on button,cut_c035 sheet tile r0c4
+1087,1,887,463,54.69,50.44,on button,cut_c035 sheet tile r1c0
+1090,1,900,484,55.49,52.72,on button,cut_c035 sheet tile r1c1

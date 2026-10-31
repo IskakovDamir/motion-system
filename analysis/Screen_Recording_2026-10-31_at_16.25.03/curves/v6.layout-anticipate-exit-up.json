@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.layout-anticipate-exit-up",
+  "file": "curves/v6.layout-anticipate-exit-up.csv",
+  "property": "position-y",
+  "unit": "px (picture 918 px high)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_title_exit_pill.csv",
+  "column": "cy",
+  "sampled_frames": [
+    103,
+    138
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 797.5,
+  "to_value": 66.5,
+  "active_frames": [
+    126,
+    138
+  ],
+  "measured_duration_frames": 12,
+  "bezier": {
+    "x1": 0.6729,
+    "y1": -0.2071,
+    "x2": 0.6627,
+    "y2": 0.2254,
+    "durationInFrames": 21,
+    "delay": -8.993,
+    "built_duration_frames": 11,
+    "rmse": 0.0379
+  },
+  "spring": {
+    "stiffness": 106.864,
+    "damping": 5.069,
+    "mass": 1,
+    "damping_ratio": 0.2452,
+    "built_duration_frames": 82,
+    "rmse": 0.6422
+  },
+  "recommended": "bezier",
+  "note": "outgoing title lockup of the push transition, tracked on the pill (template ref f111, score 1.00 -> 0.43 as motion blur grows): anticipation dip down 36 px (797.5 -> 833.5 px, f111-f123), then accelerating exit upward (12 / 49 / 106 / 173 / 252 / 175 px per picture), last tracked f138 at 66.5 px (7.2% H) before it leaves the top edge; values after f123 are the visible part of a move that continues off-frame"
+}

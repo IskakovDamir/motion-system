@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.trans-tile-hex-morph.i5",
+  "file": "curves/v4.trans-tile-hex-morph.i5.csv",
+  "property": "opacity",
+  "unit": "opacity 0-1 of the hexagon layer",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/c2_r1_t6_morph_model.csv",
+  "column": "cor71_hex_opacity",
+  "sampled_frames": [
+    1302,
+    1335
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 0.0,
+  "to_value": 1.0,
+  "active_frames": [
+    1309,
+    1326
+  ],
+  "measured_duration_frames": 17,
+  "bezier": {
+    "x1": 0.3793,
+    "y1": 1.06,
+    "x2": 0.9499,
+    "y2": 0.9599,
+    "durationInFrames": 18,
+    "delay": 0.7,
+    "built_duration_frames": 17,
+    "rmse": 0.047
+  },
+  "spring": {
+    "stiffness": 296.651,
+    "damping": 33.142,
+    "mass": 1,
+    "damping_ratio": 0.9621,
+    "built_duration_frames": 19,
+    "rmse": 0.0262
+  },
+  "recommended": "spring",
+  "note": "top-left corner node (71,166), same model fit; the hexagon stays sharp (fitted Gaussian blur 0.0-1.1 px from f1312); the centre node (1030,575) gives spring {271, 30.6} 15 f earlier"
+}

@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.ui-list-step-scroll",
+ "file": "curves/v8.ui-list-step-scroll.csv",
+ "property": "position-y",
+ "unit": "px (picture 918 px high)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c2_S02_row1.csv",
+ "column": "cy",
+ "sampled_frames": [
+  948,
+  976
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 481.0,
+ "to_value": 225.0,
+ "active_frames": [
+  951,
+  972
+ ],
+ "measured_duration_frames": 21,
+ "bezier": {
+  "x1": 0.2717,
+  "y1": 0.4514,
+  "x2": 0.0684,
+  "y2": 0.9014,
+  "durationInFrames": 23,
+  "delay": -0.03,
+  "built_duration_frames": 20,
+  "rmse": 0.0165
+ },
+ "spring": {
+  "stiffness": 364.717,
+  "damping": 45.47,
+  "mass": 1,
+  "damping_ratio": 1.1905,
+  "built_duration_frames": 19,
+  "rmse": 0.0652
+ },
+ "recommended": "bezier",
+ "note": "S02 agent row 1 (mascot + name label) template centre y (scratch/v8c2_S02_row1.csv); the feed scrolls up one row while the next agent row slides in from the lower left; a slow base drift (1-4 px/f) runs before and after",
+ "chunk_curve_id": "v8.ui-list-step-scroll.v8c2"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.cursor-glide-click.v5c5",
+  "file": "curves/v5.cursor-glide-click.v5c5.csv",
+  "property": "position-y",
+  "unit": "% of frame height (cursor template centre)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_A_cursor_all.csv",
+  "column": "cy_pct",
+  "sampled_frames": [
+    3177,
+    3210
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 55.229,
+  "to_value": 92.702,
+  "active_frames": [
+    3185,
+    3205
+  ],
+  "measured_duration_frames": 20,
+  "bezier": {
+    "x1": 0.8001,
+    "y1": 0.2908,
+    "x2": 0.1775,
+    "y2": 0.7764,
+    "durationInFrames": 19,
+    "delay": 1.831,
+    "built_duration_frames": 18,
+    "rmse": 0.0534
+  },
+  "spring": {
+    "stiffness": 217.575,
+    "damping": 22.556,
+    "mass": 1,
+    "damping_ratio": 0.7646,
+    "built_duration_frames": 23,
+    "rmse": 0.323
+  },
+  "recommended": "bezier",
+  "note": "UI arrow cursor glides from the right card down to the send button (x 68.6 -> 80.9 %W, y 55.3 -> 92.9 %H), then presses it (scale 1.00 -> 0.70 -> 1.00, f3210-3225, see .press); template ref f3183, scores 0.89-1.0 except the motion-blurred pictures f3197 (0.70) and f3200 (0.81), kept because they sit on the path"
+}

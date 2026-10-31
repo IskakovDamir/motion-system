@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.text-headline-fade-out",
+  "file": "curves/v4.text-headline-fade-out.csv",
+  "property": "opacity",
+  "unit": "opacity 0-1 (least-squares scale of the settled headline's darkness)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/c2_hlB_out.csv",
+  "column": "opacity",
+  "sampled_frames": [
+    1108,
+    1130
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 1.0,
+  "to_value": 0.0,
+  "active_frames": [
+    1114,
+    1125
+  ],
+  "measured_duration_frames": 11,
+  "bezier": {
+    "x1": 0.5193,
+    "y1": 0.0135,
+    "x2": 0.7758,
+    "y2": 0.4791,
+    "durationInFrames": 12,
+    "delay": -1.0,
+    "built_duration_frames": 11,
+    "rmse": 0.0025
+  },
+  "spring": {
+    "stiffness": 305.47,
+    "damping": 23.171,
+    "mass": 1,
+    "damping_ratio": 0.6629,
+    "built_duration_frames": 21,
+    "rmse": 0.4981
+  },
+  "recommended": "bezier",
+  "note": "headline 2 leaves in place (no move, no blur): opacity from a template projection over x 600-1320, y 25-125"
+}

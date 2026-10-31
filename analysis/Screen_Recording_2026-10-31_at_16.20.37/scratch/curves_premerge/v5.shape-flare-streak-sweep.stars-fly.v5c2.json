@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.shape-flare-streak-sweep.stars-fly.v5c2",
+  "file": "curves/v5.shape-flare-streak-sweep.stars-fly.v5c2.csv",
+  "property": "position-y",
+  "unit": "% of frame height (bottom-left star centre)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_E_stars.csv",
+  "column": "bl_y_pct",
+  "sampled_frames": [
+    1380,
+    1412
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 50.7081,
+  "to_value": 86.7102,
+  "active_frames": [
+    1382,
+    1402
+  ],
+  "measured_duration_frames": 20,
+  "bezier": {
+    "x1": 0.6846,
+    "y1": 0.282,
+    "x2": 0.217,
+    "y2": 0.6392,
+    "durationInFrames": 18,
+    "delay": 1.306,
+    "built_duration_frames": 18,
+    "rmse": 0.0295
+  },
+  "spring": {
+    "stiffness": 199.305,
+    "damping": 22.281,
+    "mass": 1,
+    "damping_ratio": 0.7891,
+    "built_duration_frames": 16,
+    "rmse": 0.1055
+  },
+  "recommended": "bezier",
+  "note": "c2S3 sparkle stars fly from the ends of the flare streak to opposite corners, mirror-symmetric and synchronous; bottom-left star template (ref f1410, scale search 0.40-1.30, scores 0.85-1.00 from f1382): x/y % 6.57/50.71 (f1382) -> 5.18/52.02 (f1385) -> 6.04/54.90 (f1387) -> 7.12/60.46 (f1390) -> 7.95/69.55 (f1392) -> 8.57/77.94 (f1395) -> 9.00/82.68 (f1397) -> 9.40/85.19 (f1400) -> 9.71/86.38 (f1402) -> 9.96/86.93 (f1405) -> 10.14/86.93 (f1407); top-right star (template from f1392, cut by the right frame edge before f1400) 96.64/31.48 (f1392) -> 96.02/23.37 -> 95.62/18.90 -> 95.28/16.45 (f1400) -> 95.01/15.20 -> 94.79/14.81 (f1405) -> 94.54/14.87 (f1407), the same progress as the bottom-left star on every picture; then both drift inward about 0.7 px/frame to f1431 (scratch/v5c2_E_stars.csv)"
+}

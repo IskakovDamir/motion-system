@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.ui-card-stretch-in-blur.v8c4",
+  "file": "curves/v8.ui-card-stretch-in-blur.v8c4.csv",
+  "property": "width",
+  "unit": "% of frame width",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c4_S2_attachment_width.csv",
+  "column": "width_pct",
+  "sampled_frames": [
+    2274,
+    2330
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 25.894,
+  "to_value": 77.25,
+  "active_frames": [
+    2274,
+    2297
+  ],
+  "measured_duration_frames": 23,
+  "bezier": {
+    "x1": 0.1318,
+    "y1": 1.0571,
+    "x2": 1.0,
+    "y2": 0.9676,
+    "durationInFrames": 23,
+    "delay": 1.177,
+    "built_duration_frames": 21,
+    "rmse": 0.0489
+  },
+  "spring": {
+    "stiffness": 255.916,
+    "damping": 32.337,
+    "mass": 1,
+    "damping_ratio": 1.0107,
+    "built_duration_frames": 22,
+    "rmse": 0.0776
+  },
+  "recommended": "bezier",
+  "note": "attachment card (light-grey rounded row, left edge fixed at 15.7% W) widens to the right while its content deblurs; VISIBLE PART ONLY: it enters during the scroll at 25.9% W (f2274, about half opacity), the start is hidden below the frame"
+}

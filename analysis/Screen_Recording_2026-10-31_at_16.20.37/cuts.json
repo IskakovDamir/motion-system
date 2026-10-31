@@ -37,8 +37,9 @@
       "ffmpeg_scene": 0.125,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c001"
+      "status": "rejected",
+      "id": "c001",
+      "reason": "inside S01, not a boundary: inside footage shot 1: motion inside the footage and a slight camera pull-back, the picture is never replaced (checked every 2nd frame f0-f38, crops/crop_0_0_1622x918_00000-00038.jpg) (v5c1)"
     },
     {
       "frame": 17,
@@ -53,8 +54,9 @@
       "ffmpeg_scene": 0.0007,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c002"
+      "status": "rejected",
+      "id": "c002",
+      "reason": "inside S01, not a boundary: same footage shot 1, motion inside the footage and camera move (motion peak f17) (v5c1)"
     },
     {
       "frame": 30,
@@ -69,8 +71,9 @@
       "ffmpeg_scene": 0.165,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c003"
+      "status": "rejected",
+      "id": "c003",
+      "reason": "inside S01, not a boundary: same footage shot 1; the first caption letters begin to show at f27-f30 (v5c1)"
     },
     {
       "frame": 192,
@@ -86,8 +89,9 @@
       "ffmpeg_scene": 0.3712,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c004"
+      "status": "confirmed",
+      "id": "c004",
+      "reason": "anchor of the soft flash transition T01 f166-f200 (S01 -> S02): anchor of the soft star-flash transition f166-f200 (frame mean luma peak 137.8 at f192 while the two split stars cover most of the frame); the same static framing of footage shot 1 continues, dimmed, behind it (v5c1)"
     },
     {
       "frame": 270,
@@ -102,8 +106,9 @@
       "ffmpeg_scene": 0.1916,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c005"
+      "status": "confirmed",
+      "id": "c005",
+      "reason": "hard cut T02 (S02 -> S03): hard cut of the footage layer (static shot 1 at f268 -> motion-blurred shot 2 at f270); the brand wordmark, sparkles and halftone rings above it continue unchanged (v5c1)"
     },
     {
       "frame": 282,
@@ -118,8 +123,9 @@
       "ffmpeg_scene": 0.0111,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c006"
+      "status": "rejected",
+      "id": "c006",
+      "reason": "inside S03, not a boundary: motion blur settling inside shot 2 (camera move inside the footage), the wordmark above is static (v5c1)"
     },
     {
       "frame": 290,
@@ -134,8 +140,9 @@
       "ffmpeg_scene": 0.0051,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c007"
+      "status": "rejected",
+      "id": "c007",
+      "reason": "inside S03, not a boundary: same: the blurred camera move inside shot 2 settles by about f290 (v5c1)"
     },
     {
       "frame": 316,
@@ -150,8 +157,9 @@
       "ffmpeg_scene": 0.1019,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c008"
+      "status": "confirmed",
+      "id": "c008",
+      "reason": "anchor of the soft zoom-through transition T03 f302-f323 (S03 -> S04): anchor of the soft zoom-through f302-f323; the footage is replaced between pictures f312 and f316 under radial blur (v5c1)"
     },
     {
       "frame": 330,
@@ -166,8 +174,9 @@
       "ffmpeg_scene": 0.0293,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c009"
+      "status": "rejected",
+      "id": "c009",
+      "reason": "inside S04, not a boundary: camera push-in and motion inside footage shot 3 after the zoom-through has cleared (f323) (v5c1)"
     },
     {
       "frame": 355,
@@ -184,8 +193,9 @@
       "ffmpeg_scene": 0.4161,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c010"
+      "status": "confirmed",
+      "id": "c010",
+      "reason": "hard cut T04 (S04 -> S05): hard cut, footage shot 3 (f352) -> shot 4 (f355) (v5c1)"
     },
     {
       "frame": 378,
@@ -200,8 +210,9 @@
       "ffmpeg_scene": 0.0036,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c011"
+      "status": "rejected",
+      "id": "c011",
+      "reason": "inside S05, not a boundary: camera dolly and motion inside footage shot 4 (v5c1)"
     },
     {
       "frame": 387,
@@ -216,8 +227,9 @@
       "ffmpeg_scene": 0.0124,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c012"
+      "status": "rejected",
+      "id": "c012",
+      "reason": "inside S05, not a boundary: same footage shot 4, camera dolly (v5c1)"
     },
     {
       "frame": 415,
@@ -234,8 +246,9 @@
       "ffmpeg_scene": 0.6254,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c013"
+      "status": "confirmed",
+      "id": "c013",
+      "reason": "hard cut T05 (S05 -> S06): hard cut, footage shot 4 (f412) -> shot 5 (f415) (v5c1)"
     },
     {
       "frame": 430,
@@ -250,8 +263,9 @@
       "ffmpeg_scene": 0.0688,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c014"
+      "status": "rejected",
+      "id": "c014",
+      "reason": "inside S06, not a boundary: fast camera push-in inside footage shot 5; caption 3 is revealing at the same time (v5c1)"
     },
     {
       "frame": 542,
@@ -266,8 +280,9 @@
       "ffmpeg_scene": 0.0424,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c015"
+      "status": "rejected",
+      "id": "c015",
+      "reason": "inside S06, not a boundary: fast camera pull-back inside the same shot: framing changes smoothly picture to picture f527-f560 (detail/cut_c015, cut_c016 sheets); caption 4 keeps drifting through it (v5c1)"
     },
     {
       "frame": 552,
@@ -282,8 +297,9 @@
       "ffmpeg_scene": 0.0269,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c016"
+      "status": "rejected",
+      "id": "c016",
+      "reason": "inside S06, not a boundary: same pull-back, end of the motion blur (v5c1)"
     },
     {
       "frame": 650,
@@ -300,8 +316,9 @@
       "ffmpeg_scene": 0.611,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c017"
+      "status": "confirmed",
+      "id": "c017",
+      "reason": "hard cut T06 (S06 -> S07): hard cut, footage shot 5 (f647) -> shot 6 (f650) (v5c1)"
     },
     {
       "frame": 683,
@@ -316,8 +333,9 @@
       "ffmpeg_scene": 0.0118,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c018"
+      "status": "rejected",
+      "id": "c018",
+      "reason": "inside S07, not a boundary: motion inside footage shot 6 (v5c1)"
     },
     {
       "frame": 702,
@@ -334,8 +352,9 @@
       "ffmpeg_scene": 0.5649,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c019"
+      "status": "confirmed",
+      "id": "c019",
+      "reason": "hard cut T07 (S07 -> S08): hard cut from footage (f700) to a black GRAPHICS title card (f702); boundary sits exactly on the chunk edge, both sides checked (f672-f732); the next segment belongs to v5c2 / hard cut from footage (last picture f700) to the black GRAPHICS title card (f702, first headline line already sliding in); chunk edge, both sides checked f687-f717; the footage before it belongs to v5c1 (v5c1, v5c2)"
     },
     {
       "frame": 716,
@@ -351,8 +370,9 @@
       "ffmpeg_scene": 0.1247,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c020"
+      "status": "rejected",
+      "id": "c020",
+      "reason": "inside S08, not a boundary: text appearing: headline line 2 pops in with a glow inside the same title card (v5c2)"
     },
     {
       "frame": 722,
@@ -367,8 +387,9 @@
       "ffmpeg_scene": 0.0045,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c021"
+      "status": "rejected",
+      "id": "c021",
+      "reason": "inside S08, not a boundary: text motion: line 2 whoosh, flare streak sweeps and the line-1 size morph (v5c2)"
     },
     {
       "frame": 767,
@@ -384,8 +405,9 @@
       "ffmpeg_scene": 0.2202,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c022"
+      "status": "rejected",
+      "id": "c022",
+      "reason": "inside S08, not a boundary: camera snap zoom x1.60 inside the same layout (headline and pill continue, directional blur on f767) (v5c2)"
     },
     {
       "frame": 797,
@@ -400,8 +422,9 @@
       "ffmpeg_scene": 0.0061,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c023"
+      "status": "rejected",
+      "id": "c023",
+      "reason": "inside S08, not a boundary: typewriter text appearing in the pill (v5c2)"
     },
     {
       "frame": 842,
@@ -416,8 +439,9 @@
       "ffmpeg_scene": 0.0407,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c024"
+      "status": "rejected",
+      "id": "c024",
+      "reason": "inside S08, not a boundary: camera snap zoom x2.9 onto the first chip of the same layout (v5c2)"
     },
     {
       "frame": 867,
@@ -432,8 +456,9 @@
       "ffmpeg_scene": 0.0053,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c025"
+      "status": "rejected",
+      "id": "c025",
+      "reason": "inside S08, not a boundary: chip 1 presses (x0.82) and its dropdown opens with motion blur while the camera pulls back x0.60 and tilts, inside the same layout (v5c2)"
     },
     {
       "frame": 902,
@@ -448,8 +473,9 @@
       "ffmpeg_scene": 0.0434,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c026"
+      "status": "rejected",
+      "id": "c026",
+      "reason": "inside S08, not a boundary: vertical camera whip-tilt (content down, f887-f913) and dropdown collapse inside the same layout (v5c2)"
     },
     {
       "frame": 937,
@@ -464,8 +490,9 @@
       "ffmpeg_scene": 0.0172,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c027"
+      "status": "rejected",
+      "id": "c027",
+      "reason": "inside S08, not a boundary: second dropdown opens: chip 2 presses x0.81 and springs back while the camera only tilts (chip 1 / chip 3 keep their size, no push-in) (v5c2)"
     },
     {
       "frame": 967,
@@ -480,8 +507,9 @@
       "ffmpeg_scene": 0.0473,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c028"
+      "status": "rejected",
+      "id": "c028",
+      "reason": "inside S08, not a boundary: vertical camera whip-tilt back (content down, f957-f977, no pull-back) and dropdown collapse (v5c2)"
     },
     {
       "frame": 1002,
@@ -497,8 +525,9 @@
       "ffmpeg_scene": 0.1248,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c029"
+      "status": "rejected",
+      "id": "c029",
+      "reason": "inside S08, not a boundary: snap zoom-out x0.30 to the whole card (same elements and states, blurred jump picture) (v5c2)"
     },
     {
       "frame": 1042,
@@ -513,8 +542,9 @@
       "ffmpeg_scene": 0.0392,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c030"
+      "status": "rejected",
+      "id": "c030",
+      "reason": "inside S08, not a boundary: 3D camera swing toward the button with the 3D cursor flying in (v5c2)"
     },
     {
       "frame": 1062,
@@ -529,8 +559,9 @@
       "ffmpeg_scene": 0.012,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c031"
+      "status": "rejected",
+      "id": "c031",
+      "reason": "inside S08, not a boundary: 3D cursor spin/turn (v5c2)"
     },
     {
       "frame": 1085,
@@ -546,8 +577,9 @@
       "ffmpeg_scene": 0.0907,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c032"
+      "status": "rejected",
+      "id": "c032",
+      "reason": "inside S08, not a boundary: click tile burst starts around the pressed button (v5c2)"
     },
     {
       "frame": 1090,
@@ -562,8 +594,9 @@
       "ffmpeg_scene": 0.1364,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c033"
+      "status": "rejected",
+      "id": "c033",
+      "reason": "inside S08, not a boundary: tile burst expanding (v5c2)"
     },
     {
       "frame": 1095,
@@ -579,8 +612,9 @@
       "ffmpeg_scene": 0.1233,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c034"
+      "status": "rejected",
+      "id": "c034",
+      "reason": "inside S08, not a boundary: tile burst + button glow (v5c2)"
     },
     {
       "frame": 1105,
@@ -595,8 +629,9 @@
       "ffmpeg_scene": 0.0,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c035"
+      "status": "rejected",
+      "id": "c035",
+      "reason": "inside S08, not a boundary: camera push-in through the cursor and button (v5c2)"
     },
     {
       "frame": 1112,
@@ -612,8 +647,9 @@
       "ffmpeg_scene": 0.1829,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c036"
+      "status": "rejected",
+      "id": "c036",
+      "reason": "inside S08, not a boundary: horizontal flare bloom building before the cut (v5c2)"
     },
     {
       "frame": 1120,
@@ -629,8 +665,9 @@
       "ffmpeg_scene": 0.3375,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c037"
+      "status": "confirmed",
+      "id": "c037",
+      "reason": "hard cut T08 (S08 -> S09): hard cut from the exit bloom (brightest picture f1117, frame mean luma 128.8) to footage at normal exposure (57.7) (v5c2)"
     },
     {
       "frame": 1177,
@@ -645,8 +682,9 @@
       "ffmpeg_scene": 0.0993,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c038"
+      "status": "rejected",
+      "id": "c038",
+      "reason": "inside S09, not a boundary: camera move inside one footage shot (v5c2)"
     },
     {
       "frame": 1202,
@@ -661,8 +699,9 @@
       "ffmpeg_scene": 0.0438,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c039"
+      "status": "rejected",
+      "id": "c039",
+      "reason": "inside S09, not a boundary: continuous camera move inside the same footage shot (caption 2 on) (v5c2)"
     },
     {
       "frame": 1258,
@@ -677,8 +716,9 @@
       "ffmpeg_scene": 0.0673,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c040"
+      "status": "rejected",
+      "id": "c040",
+      "reason": "inside S09, not a boundary: camera pull-back inside the same footage shot (v5c2)"
     },
     {
       "frame": 1272,
@@ -693,8 +733,9 @@
       "ffmpeg_scene": 0.0172,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c041"
+      "status": "rejected",
+      "id": "c041",
+      "reason": "inside S09, not a boundary: same continuous move inside footage (v5c2)"
     },
     {
       "frame": 1277,
@@ -710,8 +751,9 @@
       "ffmpeg_scene": 0.2462,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c042"
+      "status": "rejected",
+      "id": "c042",
+      "reason": "inside S09, not a boundary: repeated picture at f1275 (diff 0.0006) makes the ffmpeg score spike; same continuous shot (v5c2)"
     },
     {
       "frame": 1292,
@@ -726,8 +768,9 @@
       "ffmpeg_scene": 0.0667,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c043"
+      "status": "rejected",
+      "id": "c043",
+      "reason": "inside S09, not a boundary: camera move inside footage (v5c2)"
     },
     {
       "frame": 1327,
@@ -742,8 +785,9 @@
       "ffmpeg_scene": 0.0484,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c044"
+      "status": "rejected",
+      "id": "c044",
+      "reason": "inside S09, not a boundary: motion inside footage (v5c2)"
     },
     {
       "frame": 1362,
@@ -760,8 +804,9 @@
       "ffmpeg_scene": 0.3148,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c045"
+      "status": "confirmed",
+      "id": "c045",
+      "reason": "hard cut T09 (S09 -> S10): hard cut from footage (last picture f1359) to the dark title card with a flare point at the left edge (f1362) (v5c2)"
     },
     {
       "frame": 1372,
@@ -776,8 +821,9 @@
       "ffmpeg_scene": 0.0723,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c046"
+      "status": "rejected",
+      "id": "c046",
+      "reason": "inside S10, not a boundary: flare streak peak + word slide-in inside the title card (v5c2)"
     },
     {
       "frame": 1390,
@@ -792,8 +838,9 @@
       "ffmpeg_scene": 0.0262,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c047"
+      "status": "rejected",
+      "id": "c047",
+      "reason": "inside S10, not a boundary: logo spheres fly in and the headline lifts (v5c2)"
     },
     {
       "frame": 1457,
@@ -808,8 +855,9 @@
       "ffmpeg_scene": 0.0318,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c048"
+      "status": "confirmed",
+      "id": "c048",
+      "reason": "anchor of the soft whip-tilt transition T10 f1442-f1470 (S10 -> S11): hidden cut f1455 -> f1457 inside a vertical whip-tilt; anchor of the soft transition f1442-f1470 (v5c2)"
     },
     {
       "frame": 1477,
@@ -824,8 +872,9 @@
       "ffmpeg_scene": 0.0201,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c049"
+      "status": "rejected",
+      "id": "c049",
+      "reason": "inside S11, not a boundary: the merged sphere glow collapses over the chip while the camera pushes in x1.15 (re-frame f1472-f1487) (v5c2)"
     },
     {
       "frame": 1540,
@@ -841,8 +890,9 @@
       "ffmpeg_scene": 0.0641,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c050"
+      "status": "rejected",
+      "id": "c050",
+      "reason": "inside S11, not a boundary: horizontal whip pan along the same prompt card; it lands on the right end of the same card. Its jump picture (f1537 -> f1540) also re-frames the card (x1.25, centre 13.2% H up, measured on the card rims), but the layout and every element continue, so it is a camera move inside S11 (v5.cam-whip-pan-reframe), not a boundary (v5c2)"
     },
     {
       "frame": 1622,
@@ -857,8 +907,9 @@
       "ffmpeg_scene": 0.0015,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c051"
+      "status": "rejected",
+      "id": "c051",
+      "reason": "inside S11, not a boundary: dropdown collapse + prompt-box group snap inside the UI segment; send button tracked continuously through it (template score 0.85-0.99), no picture replacement (v5c3)"
     },
     {
       "frame": 1662,
@@ -873,8 +924,9 @@
       "ffmpeg_scene": 0.0865,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c052"
+      "status": "rejected",
+      "id": "c052",
+      "reason": "inside S11, not a boundary: concentric ring burst growing out of the pressed send button inside the UI segment (v5c3)"
     },
     {
       "frame": 1677,
@@ -889,8 +941,9 @@
       "ffmpeg_scene": 0.0347,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c053"
+      "status": "rejected",
+      "id": "c053",
+      "reason": "inside S11, not a boundary: ring remnants leave the frame and the push-in on the send button starts; same UI composition (v5c3)"
     },
     {
       "frame": 1690,
@@ -906,8 +959,9 @@
       "ffmpeg_scene": 0.4793,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c054"
+      "status": "confirmed",
+      "id": "c054",
+      "reason": "hard cut T11 (S11 -> S12): hard cut UI -> full-frame footage (consecutive-picture match 0.41; mean luma 35 -> 99), at the end of an accelerating push-in (v5c3)"
     },
     {
       "frame": 1697,
@@ -922,8 +976,9 @@
       "ffmpeg_scene": 0.0112,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c055"
+      "status": "rejected",
+      "id": "c055",
+      "reason": "inside S12, not a boundary: camera push-in inside the footage (consecutive match 0.98-0.99 at scale 0.84-0.92 per picture; close-up carries native detail: spectral energy above 0.35 Nyquist 0.0117 at f1720 vs 0.0026 at f1690) while caption line 1 fades in (v5c3)"
     },
     {
       "frame": 1705,
@@ -938,8 +993,9 @@
       "ffmpeg_scene": 0.0038,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c056"
+      "status": "rejected",
+      "id": "c056",
+      "reason": "inside S12, not a boundary: same in-footage push-in; caption line 2 starts its cascade (v5c3)"
     },
     {
       "frame": 1753,
@@ -955,8 +1011,9 @@
       "ffmpeg_scene": 0.0852,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c057"
+      "status": "confirmed",
+      "id": "c057",
+      "reason": "anchor of the soft whip-pan transition T12 f1748-f1785 (S12 -> S13): anchor of the soft whip transition f1748-1785 (exit half: content accelerates left 13 -> 148 px/f with horizontal blur) (v5c3)"
     },
     {
       "frame": 1777,
@@ -971,8 +1028,9 @@
       "ffmpeg_scene": 0.0264,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c058"
+      "status": "rejected",
+      "id": "c058",
+      "reason": "inside the soft whip-pan transition T12 f1748-f1785, not a boundary: landing half of the same whip (content decelerates left 115 -> 0 px/f); the boundary is recorded once as the soft transition f1748-1785 (v5c3)"
     },
     {
       "frame": 1825,
@@ -989,8 +1047,9 @@
       "ffmpeg_scene": 0.5568,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c059"
+      "status": "confirmed",
+      "id": "c059",
+      "reason": "hard cut T13 (S13 -> S14): hard cut footage -> dark graphic (match 0.385; mean luma 112 -> 18); headline words already in flight in the first picture (v5c3)"
     },
     {
       "frame": 1835,
@@ -1005,8 +1064,9 @@
       "ffmpeg_scene": 0.0265,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c060"
+      "status": "rejected",
+      "id": "c060",
+      "reason": "inside S14, not a boundary: footage card flying in from the bottom-right corner + headline settling + 3D cursor entering from the same corner (blurred streak at f1835), same composition (v5c3)"
     },
     {
       "frame": 1895,
@@ -1021,8 +1081,9 @@
       "ffmpeg_scene": 0.0232,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c061"
+      "status": "confirmed",
+      "id": "c061",
+      "reason": "anchor of the soft morph transition T14 f1872-f1907 (S14 -> S15): anchor of the soft morph transition f1872-1907 (tile-field flash peak and child cards arriving; the footage card is the shared element) (v5c3)"
     },
     {
       "frame": 2052,
@@ -1039,8 +1100,9 @@
       "ffmpeg_scene": 0.6382,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c062"
+      "status": "confirmed",
+      "id": "c062",
+      "reason": "hard cut T15 (S15 -> S16): hard cut tree layout -> full-frame footage (match 0.51; mean luma 44 -> 77) (v5c3)"
     },
     {
       "frame": 2155,
@@ -1056,8 +1118,9 @@
       "ffmpeg_scene": 0.1448,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c063"
+      "status": "rejected",
+      "id": "c063",
+      "reason": "inside S16, not a boundary: camera push inside the footage (scale 0.92-0.98 per picture, match >= 0.977) while caption C line 1 fades in (v5c3)"
     },
     {
       "frame": 2162,
@@ -1072,8 +1135,9 @@
       "ffmpeg_scene": 0.0507,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c064"
+      "status": "rejected",
+      "id": "c064",
+      "reason": "inside S16, not a boundary: same in-footage push (match 0.987-0.988) (v5c3)"
     },
     {
       "frame": 2205,
@@ -1088,8 +1152,9 @@
       "ffmpeg_scene": 0.0,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c065"
+      "status": "rejected",
+      "id": "c065",
+      "reason": "inside S16, not a boundary: movement inside the footage (match 0.98, scale 1.0) while caption C lines fade out (v5c3)"
     },
     {
       "frame": 2285,
@@ -1104,8 +1169,9 @@
       "ffmpeg_scene": 0.093,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c066"
+      "status": "rejected",
+      "id": "c066",
+      "reason": "inside S16, not a boundary: fast camera pull-back inside the footage (scale 1.04-1.20 per picture over f2282-2307, match >= 0.953; the close shot carries native detail: energy above 0.35 Nyquist 0.0064 at f2280 vs 0.0207 at f2320, a 3.6x digital crop would have ~0) (v5c3)"
     },
     {
       "frame": 2305,
@@ -1121,8 +1187,9 @@
       "ffmpeg_scene": 0.0293,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c067"
+      "status": "rejected",
+      "id": "c067",
+      "reason": "inside S16, not a boundary: end of the same in-footage pull-back (match 0.97) (v5c3)"
     },
     {
       "frame": 2390,
@@ -1137,8 +1204,9 @@
       "ffmpeg_scene": 0.054,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c068"
+      "status": "rejected",
+      "id": "c068",
+      "reason": "inside S16, not a boundary: movement inside the footage (match 0.94-0.97, scale 0.98); no graphic on screen (v5c3)"
     },
     {
       "frame": 2415,
@@ -1155,8 +1223,9 @@
       "ffmpeg_scene": 0.5962,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c069"
+      "status": "confirmed",
+      "id": "c069",
+      "reason": "hard cut T16 (S16 -> S17): hard cut footage -> black graphic with a typing headline (match 0.226; mean luma 72 -> 1). Chunk edge: f2415 is the first frame of v5c4, decided here by looking 15 frames past the edge / hard cut: footage (last picture f2412, mean luma 72.4) -> black graphic canvas (f2415, luma 1.3) with the headline already typing and swinging in; chunk-edge boundary shared with v5c3, checked f2400-f2430 (v5c3, v5c4)"
     },
     {
       "frame": 2453,
@@ -1172,8 +1241,9 @@
       "ffmpeg_scene": 0.1279,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c070"
+      "status": "rejected",
+      "id": "c070",
+      "reason": "inside S17, not a boundary: motion-blur peak of whip 1 (3D camera yaw + push-in over the same card canvas); card 1 and headline continuous f2451-f2458 (v5c4)"
     },
     {
       "frame": 2497,
@@ -1189,8 +1259,9 @@
       "ffmpeg_scene": 0.1694,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c071"
+      "status": "rejected",
+      "id": "c071",
+      "reason": "inside S17, not a boundary: motion-blur peak of whip 2 while card 2 seam-reveals; card 1 continuous, same canvas (v5c4)"
     },
     {
       "frame": 2547,
@@ -1206,8 +1277,9 @@
       "ffmpeg_scene": 0.2901,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c072"
+      "status": "rejected",
+      "id": "c072",
+      "reason": "inside S17, not a boundary: motion-blur peak of whip 3; card 2 continuous to f2552, card 3 enters on the same canvas (v5c4)"
     },
     {
       "frame": 2605,
@@ -1223,8 +1295,9 @@
       "ffmpeg_scene": 0.08,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c073"
+      "status": "rejected",
+      "id": "c073",
+      "reason": "inside S17, not a boundary: motion-blur peak of the pull-back whip; the full card row is revealed on the same canvas (v5c4)"
     },
     {
       "frame": 2645,
@@ -1239,8 +1312,9 @@
       "ffmpeg_scene": 0.1231,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c074"
+      "status": "confirmed",
+      "id": "c074",
+      "reason": "anchor of the soft whip-tilt transition T17 f2622-f2668 (S17 -> S18): anchor of soft transition f2622-f2668 (vertical whip: card row exits up, wide card arrives from below); f2645 = transition midpoint (v5c4)"
     },
     {
       "frame": 2650,
@@ -1255,8 +1329,9 @@
       "ffmpeg_scene": 0.1427,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c075"
+      "status": "rejected",
+      "id": "c075",
+      "reason": "inside the soft whip-tilt transition T17 f2622-f2668, not a boundary: second detector hit inside the same soft transition f2622-f2668 (wide card arriving); anchor is c074 (v5c4)"
     },
     {
       "frame": 2740,
@@ -1273,8 +1348,9 @@
       "ffmpeg_scene": 0.5946,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c076"
+      "status": "confirmed",
+      "id": "c076",
+      "reason": "hard cut T18 (S18 -> S19): hard cut: graphic canvas with the wide card (f2737, luma 23.9) -> full-frame footage (f2740, luma 80.4); first caption line starts fading in on f2740 (v5c4)"
     },
     {
       "frame": 2760,
@@ -1289,8 +1365,9 @@
       "ffmpeg_scene": 0.028,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c077"
+      "status": "rejected",
+      "id": "c077",
+      "reason": "inside S19, not a boundary: camera move inside the footage (pull-back starts ~f2756); same shot, caption continuous (v5c4)"
     },
     {
       "frame": 2787,
@@ -1305,8 +1382,9 @@
       "ffmpeg_scene": 0.0132,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c078"
+      "status": "rejected",
+      "id": "c078",
+      "reason": "inside S19, not a boundary: camera move inside the footage plus a caption line change; same shot (v5c4)"
     },
     {
       "frame": 2907,
@@ -1321,8 +1399,9 @@
       "ffmpeg_scene": 0.0091,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c079"
+      "status": "rejected",
+      "id": "c079",
+      "reason": "inside S19, not a boundary: motion inside the footage; same shot, caption continuous (v5c4)"
     },
     {
       "frame": 2938,
@@ -1337,8 +1416,9 @@
       "ffmpeg_scene": 0.0112,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c080"
+      "status": "rejected",
+      "id": "c080",
+      "reason": "inside S19, not a boundary: fast motion inside the footage; same shot (v5c4)"
     },
     {
       "frame": 2945,
@@ -1353,8 +1433,9 @@
       "ffmpeg_scene": 0.0043,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c081"
+      "status": "rejected",
+      "id": "c081",
+      "reason": "inside S19, not a boundary: fast motion inside the footage; same shot (v5c4)"
     },
     {
       "frame": 2952,
@@ -1370,8 +1451,9 @@
       "ffmpeg_scene": 0.1643,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c082"
+      "status": "rejected",
+      "id": "c082",
+      "reason": "inside S19, not a boundary: luminance burst inside the footage (flash in shot, not a graphic); same shot (v5c4)"
     },
     {
       "frame": 2972,
@@ -1386,8 +1468,9 @@
       "ffmpeg_scene": 0.0026,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c083"
+      "status": "rejected",
+      "id": "c083",
+      "reason": "inside S19, not a boundary: luminance settling inside the footage as caption 4 begins; same shot (v5c4)"
     },
     {
       "frame": 2992,
@@ -1402,8 +1485,9 @@
       "ffmpeg_scene": 0.0506,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c084"
+      "status": "rejected",
+      "id": "c084",
+      "reason": "inside S19, not a boundary: push-in with motion blur inside the footage; same shot, caption continuous (v5c4)"
     },
     {
       "frame": 3007,
@@ -1418,8 +1502,9 @@
       "ffmpeg_scene": 0.0111,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c085"
+      "status": "rejected",
+      "id": "c085",
+      "reason": "inside S19, not a boundary: push-in continues inside the footage; same shot (v5c4)"
     },
     {
       "frame": 3042,
@@ -1436,8 +1521,9 @@
       "ffmpeg_scene": 0.6155,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c086"
+      "status": "confirmed",
+      "id": "c086",
+      "reason": "hard cut T19 (S19 -> S20): hard cut: footage (f3040, luma 75.2) -> black title canvas with a warped 2-line headline forming (f3042, luma 2.1); chunk-edge boundary shared with v5c5, checked f3027-f3057 / hard cut: full-frame footage (f3040) -> dark canvas with the headline's liquid smears (f3042); first frame of this chunk, both sides seen here (v5c4, v5c5)"
     },
     {
       "frame": 3085,
@@ -1453,8 +1539,9 @@
       "ffmpeg_scene": 0.255,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c087"
+      "status": "rejected",
+      "id": "c087",
+      "reason": "inside S20, not a boundary: camera tilt down from the headline to the card row on the same canvas; card 2 rising huge into frame (v5c5)"
     },
     {
       "frame": 3092,
@@ -1470,8 +1557,9 @@
       "ffmpeg_scene": 0.2567,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c088"
+      "status": "rejected",
+      "id": "c088",
+      "reason": "inside S20, not a boundary: same tilt: cards settling while the headline leaves at the top (v5c5)"
     },
     {
       "frame": 3132,
@@ -1486,8 +1574,9 @@
       "ffmpeg_scene": 0.0084,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c089"
+      "status": "rejected",
+      "id": "c089",
+      "reason": "inside S20, not a boundary: headline line 2, held cut off by the top edge since f3107, leaves upward in this picture step (lowest ink row 37 -> 5, gone f3135) while the card row makes the reframe's fastest step (1.85 % H) and the prompt pill starts to fade in; no picture replacement (v5c5)"
     },
     {
       "frame": 3167,
@@ -1503,8 +1592,9 @@
       "ffmpeg_scene": 0.0199,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c090"
+      "status": "rejected",
+      "id": "c090",
+      "reason": "inside S20, not a boundary: UI cursor enters from the right edge, a prompt word appears, a card glows (v5c5)"
     },
     {
       "frame": 3190,
@@ -1519,8 +1609,9 @@
       "ffmpeg_scene": 0.0869,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c091"
+      "status": "rejected",
+      "id": "c091",
+      "reason": "inside S20, not a boundary: camera pull-back with motion blur; send button pops in (v5c5)"
     },
     {
       "frame": 3200,
@@ -1535,8 +1626,9 @@
       "ffmpeg_scene": 0.0266,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c092"
+      "status": "rejected",
+      "id": "c092",
+      "reason": "inside S20, not a boundary: pull-back settling; cursor gliding to the send button (v5c5)"
     },
     {
       "frame": 3230,
@@ -1551,8 +1643,9 @@
       "ffmpeg_scene": 0.0801,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c093"
+      "status": "confirmed",
+      "id": "c093",
+      "reason": "anchor of the soft whip-tilt transition T20 f3225-f3242 (S20 -> S21): anchor of the whip-tilt soft transition f3225-f3242 (board exits up, curved footage panel arrives from below on the same canvas) (v5c5)"
     },
     {
       "frame": 3237,
@@ -1567,8 +1660,9 @@
       "ffmpeg_scene": 0.2067,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c094"
+      "status": "rejected",
+      "id": "c094",
+      "reason": "inside the soft whip-tilt transition T20 f3225-f3242, not a boundary: second detector hit inside the same whip-tilt f3225-f3242 (panel landing, motion blur); anchored at c093 (v5c5)"
     },
     {
       "frame": 3302,
@@ -1583,8 +1677,9 @@
       "ffmpeg_scene": 0.0245,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c095"
+      "status": "confirmed",
+      "id": "c095",
+      "reason": "anchor of the soft whip-tilt transition T21 f3292-f3310 (S21 -> S22): anchor of the whip-tilt exit f3292-f3310 (panel rises out of the top edge; empty canvas where the next labels form) (v5c5)"
     },
     {
       "frame": 3347,
@@ -1599,8 +1694,9 @@
       "ffmpeg_scene": 0.002,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c096"
+      "status": "rejected",
+      "id": "c096",
+      "reason": "inside S22, not a boundary: thumbnails flying in from depth and the selector frame moving over the long strip inside the 3D layout (v5c5)"
     },
     {
       "frame": 3362,
@@ -1615,8 +1711,9 @@
       "ffmpeg_scene": 0.062,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c097"
+      "status": "rejected",
+      "id": "c097",
+      "reason": "inside S22, not a boundary: snap pull-back with motion blur (layout flattens) and the particle ring; same composition (v5c5)"
     },
     {
       "frame": 3370,
@@ -1631,8 +1728,9 @@
       "ffmpeg_scene": 0.0485,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c098"
+      "status": "rejected",
+      "id": "c098",
+      "reason": "inside S22, not a boundary: headline lines sliding in with horizontal motion blur (v5c5)"
     },
     {
       "frame": 3507,
@@ -1649,8 +1747,9 @@
       "ffmpeg_scene": 0.5686,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c099"
+      "status": "confirmed",
+      "id": "c099",
+      "reason": "hard cut T22 (S22 -> S23): hard cut: graphic layout -> full-frame footage with captions (v5c5)"
     },
     {
       "frame": 3592,
@@ -1665,8 +1764,9 @@
       "ffmpeg_scene": 0.0007,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c100"
+      "status": "rejected",
+      "id": "c100",
+      "reason": "inside S23, not a boundary: continuous camera move inside the footage (no picture replacement); caption between phrases (v5c5)"
     },
     {
       "frame": 3600,
@@ -1681,8 +1781,9 @@
       "ffmpeg_scene": 0.002,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c101"
+      "status": "rejected",
+      "id": "c101",
+      "reason": "inside S23, not a boundary: same footage camera move; caption phrase 2 starting to fade in (v5c5)"
     },
     {
       "frame": 3610,
@@ -1697,8 +1798,9 @@
       "ffmpeg_scene": 0.0022,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c102"
+      "status": "rejected",
+      "id": "c102",
+      "reason": "inside S23, not a boundary: same footage camera move; caption words of phrase 2 (v5c5)"
     },
     {
       "frame": 3620,
@@ -1713,8 +1815,9 @@
       "ffmpeg_scene": 0.0039,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c103"
+      "status": "rejected",
+      "id": "c103",
+      "reason": "inside S23, not a boundary: same footage camera move (v5c5)"
     },
     {
       "frame": 3710,
@@ -1731,8 +1834,9 @@
       "ffmpeg_scene": 0.4075,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c104"
+      "status": "confirmed",
+      "id": "c104",
+      "reason": "hard cut T23 (S23 -> S24): hard cut: full-frame footage -> empty dark background (S24) (v5c5)"
     },
     {
       "frame": 3722,
@@ -1747,8 +1851,9 @@
       "ffmpeg_scene": 0.0288,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c105"
+      "status": "rejected",
+      "id": "c105",
+      "reason": "inside S24, not a boundary: footage card 1 landing and card 2 entering inside S24 (v5c5)"
     },
     {
       "frame": 3920,
@@ -1763,8 +1868,9 @@
       "ffmpeg_scene": 0.2704,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c106"
+      "status": "confirmed",
+      "id": "c106",
+      "reason": "anchor of the soft melt-implode transition T24 f3905-f3937 (S24 -> S25): anchor of the soft melt-implode transition f3905-f3937 (the two-card layer collapses into a point flare; picture replaced through the transition) (v5c6)"
     },
     {
       "frame": 3930,
@@ -1779,8 +1885,9 @@
       "ffmpeg_scene": 0.059,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c107"
+      "status": "rejected",
+      "id": "c107",
+      "reason": "inside the soft melt-implode transition T24 f3905-f3937, not a boundary: inside the melt-implode transition (point flare shrinking), anchored by c106 (v5c6)"
     },
     {
       "frame": 3950,
@@ -1795,8 +1902,9 @@
       "ffmpeg_scene": 0.0284,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c108"
+      "status": "rejected",
+      "id": "c108",
+      "reason": "inside S25, not a boundary: origami cranes and a particle trail moving inside the 3D space scene during the camera whip-tilt; background glow pattern continuous (v5c6)"
     },
     {
       "frame": 3960,
@@ -1811,8 +1919,9 @@
       "ffmpeg_scene": 0.0216,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c109"
+      "status": "rejected",
+      "id": "c109",
+      "reason": "inside S25, not a boundary: large crane flying close past the camera inside the same 3D scene (v5c6)"
     },
     {
       "frame": 3965,
@@ -1827,8 +1936,9 @@
       "ffmpeg_scene": 0.0166,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c110"
+      "status": "rejected",
+      "id": "c110",
+      "reason": "inside S25, not a boundary: first shockwave ring appears and cranes motion-blur inside the same 3D scene (v5c6)"
     },
     {
       "frame": 3987,
@@ -1843,8 +1953,9 @@
       "ffmpeg_scene": 0.1303,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c111"
+      "status": "rejected",
+      "id": "c111",
+      "reason": "inside S25, not a boundary: second ring expanding and bokeh trail moving inside the same 3D scene (v5c6)"
     },
     {
       "frame": 4005,
@@ -1859,8 +1970,9 @@
       "ffmpeg_scene": 0.1916,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c112"
+      "status": "rejected",
+      "id": "c112",
+      "reason": "inside the soft flash transition T25 f4000-f4025, not a boundary: bloom ramp of the white flash (ring 3); the picture is not yet replaced; flash transition anchored by c113 (v5c6)"
     },
     {
       "frame": 4015,
@@ -1875,8 +1987,9 @@
       "ffmpeg_scene": 0.0542,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c113"
+      "status": "confirmed",
+      "id": "c113",
+      "reason": "anchor of the soft flash transition T25 f4000-f4025 (S25 -> S26): anchor of the white flash transition f4000-f4025 (picture replaced under the white between the pictures f4012 and f4015) (v5c6)"
     },
     {
       "frame": 4025,
@@ -1891,8 +2004,9 @@
       "ffmpeg_scene": 0.1395,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c114"
+      "status": "rejected",
+      "id": "c114",
+      "reason": "inside the soft flash transition T25 f4000-f4025, not a boundary: exposure/focus settling and slow camera orbit on the 3D card close-up, no cut (v5c6)"
     },
     {
       "frame": 4035,
@@ -1909,8 +2023,9 @@
       "ffmpeg_scene": 0.4505,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c115"
+      "status": "confirmed",
+      "id": "c115",
+      "reason": "hard cut T26 (S26 -> S27): hard cut: brand-side close-up of the 3D card -> text-side close-up (v5c6)"
     },
     {
       "frame": 4057,
@@ -1926,8 +2041,9 @@
       "ffmpeg_scene": 0.4507,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c116"
+      "status": "confirmed",
+      "id": "c116",
+      "reason": "hard cut T27 (S27 -> S28): hard cut into motion: the card spinning about Y, brand side near frontal with motion blur (v5c6)"
     },
     {
       "frame": 4067,
@@ -1942,8 +2058,9 @@
       "ffmpeg_scene": 0.125,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c117"
+      "status": "rejected",
+      "id": "c117",
+      "reason": "inside S28, not a boundary: card spin continues (motion blur), no cut (v5c6)"
     },
     {
       "frame": 4085,
@@ -1958,8 +2075,9 @@
       "ffmpeg_scene": 0.0553,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c118"
+      "status": "rejected",
+      "id": "c118",
+      "reason": "inside S28, not a boundary: card push-back at peak speed with motion blur, no cut (v5c6)"
     },
     {
       "frame": 4092,
@@ -1974,8 +2092,9 @@
       "ffmpeg_scene": 0.16,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c119"
+      "status": "rejected",
+      "id": "c119",
+      "reason": "inside S28, not a boundary: glowing square tiles burst behind the card; card unchanged (v5c6)"
     },
     {
       "frame": 4100,
@@ -1991,8 +2110,9 @@
       "ffmpeg_scene": 0.1566,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c120"
+      "status": "rejected",
+      "id": "c120",
+      "reason": "inside S28, not a boundary: tiles flying out to the frame edges and fading; card unchanged (v5c6)"
     },
     {
       "frame": 4167,
@@ -2009,8 +2129,9 @@
       "ffmpeg_scene": 0.3054,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c121"
+      "status": "confirmed",
+      "id": "c121",
+      "reason": "hard cut T28 (S28 -> S29): hard cut on matched upward motion: the card leaves through the top, the footage window + caption group rises from below (v5c6)"
     },
     {
       "frame": 4202,
@@ -2026,8 +2147,9 @@
       "ffmpeg_scene": 0.1071,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c122"
+      "status": "rejected",
+      "id": "c122",
+      "reason": "inside S29, not a boundary: footage inside the masked window lights up (content change in footage); window and caption unchanged (caption template score 0.97) (v5c6)"
     },
     {
       "frame": 4220,
@@ -2042,8 +2164,9 @@
       "ffmpeg_scene": 0.0071,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c123"
+      "status": "rejected",
+      "id": "c123",
+      "reason": "inside S29, not a boundary: footage motion inside the window; window and caption unchanged (v5c6)"
     },
     {
       "frame": 4245,
@@ -2058,8 +2181,9 @@
       "ffmpeg_scene": 0.0075,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c124"
+      "status": "rejected",
+      "id": "c124",
+      "reason": "inside S29, not a boundary: footage motion inside the window (an object turns edge-on and back); window and caption unchanged (v5c6)"
     },
     {
       "frame": 4355,
@@ -2076,8 +2200,9 @@
       "ffmpeg_scene": 0.8302,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c125"
+      "status": "confirmed",
+      "id": "c125",
+      "reason": "hard cut T29 (S29 -> S30): hard cut from the window + caption layout to full-frame footage (v5c6)"
     },
     {
       "frame": 4420,
@@ -2092,8 +2217,9 @@
       "ffmpeg_scene": 0.0024,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c126"
+      "status": "rejected",
+      "id": "c126",
+      "reason": "inside S30, not a boundary: 1-line caption snaps on and the footage darkens inside the same continuing shot (no picture replacement) (v5c6)"
     },
     {
       "frame": 4447,
@@ -2108,8 +2234,9 @@
       "ffmpeg_scene": 0.0019,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c127"
+      "status": "rejected",
+      "id": "c127",
+      "reason": "inside S30, not a boundary: slow camera pull-back inside footage, same shot (v5c6)"
     },
     {
       "frame": 4470,
@@ -2124,8 +2251,9 @@
       "ffmpeg_scene": 0.0012,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c128"
+      "status": "rejected",
+      "id": "c128",
+      "reason": "inside S30, not a boundary: slow camera pull-back inside footage, same shot (v5c6)"
     },
     {
       "frame": 4492,
@@ -2140,8 +2268,9 @@
       "ffmpeg_scene": 0.0025,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c129"
+      "status": "rejected",
+      "id": "c129",
+      "reason": "inside S30, not a boundary: slow camera pull-back inside footage, same shot (v5c6)"
     },
     {
       "frame": 4510,
@@ -2156,8 +2285,9 @@
       "ffmpeg_scene": 0.0014,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c130"
+      "status": "rejected",
+      "id": "c130",
+      "reason": "inside S30, not a boundary: slow camera pull-back inside footage, same shot (v5c6)"
     },
     {
       "frame": 4517,
@@ -2172,8 +2302,9 @@
       "ffmpeg_scene": 0.0015,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c131"
+      "status": "rejected",
+      "id": "c131",
+      "reason": "inside S30, not a boundary: same shot; irregular capture cadence around f4517-f4532 (v5c6)"
     },
     {
       "frame": 4525,
@@ -2188,8 +2319,9 @@
       "ffmpeg_scene": 0.0017,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c132"
+      "status": "rejected",
+      "id": "c132",
+      "reason": "inside S30, not a boundary: same shot; irregular capture cadence (v5c6)"
     },
     {
       "frame": 4535,
@@ -2204,8 +2336,9 @@
       "ffmpeg_scene": 0.0006,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c133"
+      "status": "rejected",
+      "id": "c133",
+      "reason": "inside S30, not a boundary: same shot; the screen-capture tool's dashed selection frame appears at f4531 (capture artifact) (v5c6)"
     },
     {
       "frame": 4542,
@@ -2220,8 +2353,9 @@
       "ffmpeg_scene": 0.0044,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c134"
+      "status": "rejected",
+      "id": "c134",
+      "reason": "inside S30, not a boundary: same shot, camera pull-back inside footage (v5c6)"
     },
     {
       "frame": 4550,
@@ -2236,8 +2370,9 @@
       "ffmpeg_scene": 0.0015,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c135"
+      "status": "rejected",
+      "id": "c135",
+      "reason": "inside S30, not a boundary: same shot, camera pull-back inside footage (v5c6)"
     },
     {
       "frame": 4588,
@@ -2254,8 +2389,9 @@
       "ffmpeg_scene": 0.3951,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c136"
+      "status": "confirmed",
+      "id": "c136",
+      "reason": "hard cut T30 (S30 -> S31): hard cut to a wide footage shot without the caption (after a 6-frame capture gap f4582-f4588) (v5c6)"
     },
     {
       "frame": 4596,
@@ -2270,10 +2406,118 @@
       "ffmpeg_scene": 0.1015,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c137"
+      "status": "rejected",
+      "id": "c137",
+      "reason": "inside S31, not a boundary: fast camera push-in inside the footage (motion blur), same shot (v5c6)"
     }
   ],
-  "soft_transitions": [],
-  "notes": []
+  "soft_transitions": [
+    {
+      "id": "T01",
+      "start": 166,
+      "end": 200,
+      "frames": 35,
+      "type": "flash (star split: the sparkle that dropped to the centre doubles into two mirror-image bevelled stars that slide apart with accelerating speed and leave past the left and right edges; frame luma peaks at 137.8 on f192 while they cover the frame)",
+      "shared": "the frame centre and the same static framing of footage shot 1: a 4-point star drops to the frame centre (x 50.0 %W, y 49.5 %H) while the footage dims to 0.39-0.40 of its luma; at f185 it doubles into two mirror-image stars that slide apart horizontally, symmetric about x 806-809 px (centre spacing 2.7 / 8.7 / 24.0 / 54.4 %W at f185 / 187 / 190 / 192, >= 90 %W at f195) and leave past the left and right edges by f200; the gap between them on row y380 opens 0 -> 14.4 / 60.5 / 93.9 / 100 %W at f192 / 195 / 197 / 200; frame luma peaks at 137.8 (f192) while the stars cover most of the frame; the dimmed shot 1, the serif line's chrome smear (entering at the left edge from f187), the halftone orbit rings (first visible f190, drawn over the stars) and a chrome shard rising at the lower right (f187-f190) are already there while the stars split",
+      "technique": "v5.trans-star-flash",
+      "detail": "detail/soft_166-200"
+    },
+    {
+      "id": "T03",
+      "start": 302,
+      "end": 323,
+      "frames": 22,
+      "type": "zoom-through (radial: the title accelerates toward the camera about the frame centre, its fill fades to a glowing outline, radial streaks grow, the footage cuts under the strongest streaks and the new shot recovers from one dark vignetted picture)",
+      "shared": "the frame centre as zoom origin: the wordmark scales 1.035 -> 1.521 about (801, 455) px (f300-f312), its fill fades to a glowing hollow outline (f300-f310) and radial streaks grow (0.20 / 0.23 of the radius at f310 / f312); its last picture f312 is held to f315; the footage cut lands at f316 under the strongest streaks (0.47 of the radius, longest 23.4 %W); the new shot passes through one dark vignetted picture (f318: frame luma 20.8, outer 8 grid cells 17.2 vs centre cell 49.6) and recovers (frame luma 59.3 at f320, 73.9 at f323, 80.5 at f325)",
+      "technique": "v5.trans-zoom-through-radial",
+      "detail": "detail/soft_302-323"
+    },
+    {
+      "id": "T10",
+      "start": 1442,
+      "end": 1470,
+      "frames": 29,
+      "type": "whip-tilt (vertical whip with a hidden cut f1455 -> f1457 at the speed peak: the old layout exits up with an ease-in, the new card arrives from below at full speed and decelerates)",
+      "shared": "the three logo spheres keep falling across the hidden cut (same objects, same downward direction, vertical blur) and the camera keeps tilting down (content moving up) on both sides: the headline leaves through the top edge at f1455 while the prompt card enters from below at f1457",
+      "technique": "v5.trans-whip-tilt",
+      "detail": "detail/soft_1442-1470"
+    },
+    {
+      "id": "T12",
+      "start": 1748,
+      "end": 1785,
+      "frames": 38,
+      "type": "whip-pan (horizontal whip between two footage shots: the outgoing shot accelerates left with growing blur, f1760-f1770 is a blurred blend, the incoming shot lands decelerating)",
+      "shared": "leftward horizontal motion in both halves (one virtual pan to the right); exit half accelerates 13 -> 30 -> 92 -> 148 px/f with growing horizontal blur, f1760-1770 is a blurred blend of both shots, landing half decelerates 115 -> 53 -> 54 -> 18 -> 10 -> 0 px/f; the caption layer above is not whipped (keeps its slow drift and fades out by f1766)",
+      "technique": "v5.trans-whip-pan",
+      "detail": "detail/soft_1748-1785"
+    },
+    {
+      "id": "T14",
+      "start": 1872,
+      "end": 1907,
+      "frames": 36,
+      "type": "morph (the footage card shrinks 1.0 -> 0.34 and rises to become the parent node of a tree layout while connectors draw, a tile field flashes and the child cards arrive)",
+      "shared": "the rounded footage card (same content, rim and corner shape) shrinks 1.0 -> 0.34 and rises from 59.3 to 20.1 %H at x 49.9 %W to become the parent node of the next layout; the cursor continues its swoop to the right and lands at 88.0 %W, 42.8 %H",
+      "technique": "v5.trans-morph-tree",
+      "detail": "detail/soft_1872-1907"
+    },
+    {
+      "id": "T17",
+      "start": 2622,
+      "end": 2668,
+      "frames": 47,
+      "type": "whip-tilt (one rigid canvas tilts 86.8 %H: the card row exits up, the wide card arrives from below; the next layout's halftone ribbons appear inside the move)",
+      "shared": "one rigid canvas tilts: the 3-card row and headline slide up out of frame while the wide card and its 1-word label slide in from below (row labels still at the top edge f2650-f2652); background not the same: the black ground and the screen-locked corner vignettes carry on, but a new layer of halftone-dot ribbons belonging to the next layout appears inside the move (first faint dots f2645, clear f2647 in margins that were pure black through S17, filled by ~f2668) and rises with the canvas (0.8-1.0x of its travel) while it brightens; content moves up at ~131 px/f (14% H/f) at f2645-f2647 with heavy vertical blur f2642-f2650",
+      "technique": "v5.trans-whip-tilt",
+      "detail": "detail/soft_2622-2668"
+    },
+    {
+      "id": "T20",
+      "start": 3225,
+      "end": 3242,
+      "frames": 18,
+      "type": "whip-tilt (one rigid canvas, layouts 95.9 %H apart: the board exits up, the curved footage panel arrives from below; the cursor stays screen-fixed)",
+      "shared": "UI cursor stays screen-fixed at (80.9 % W, 92.8 % H) through the move; board and curved footage panel sit on one rigid canvas 880 px (95.9 % H) apart, both moving up; same dark halftone background",
+      "technique": "v5.trans-whip-tilt",
+      "detail": "detail/soft_3225-3242"
+    },
+    {
+      "id": "T21",
+      "start": 3292,
+      "end": 3310,
+      "frames": 19,
+      "type": "whip-tilt exit (the panel rises out of the top edge onto an empty canvas where the next labels form; its outline goes soft and wobbles on the way out)",
+      "shared": "upward motion and the dark halftone background only; the panel rises out of the top edge (width +2.8 %, vertical motion blur) and the next labels form in place on the empty canvas (first blob f3305 while the panel's last sliver is still in y 0-6 % H)",
+      "technique": "v5.trans-whip-tilt",
+      "detail": "detail/soft_3292-3310"
+    },
+    {
+      "id": "T24",
+      "start": 3905,
+      "end": 3937,
+      "frames": 33,
+      "type": "melt-implode (the whole layer warps and blooms, merges into one glowing blob that rotates clockwise and collapses onto the frame centre, pops into a point flare with a horizontal streak that dies on black)",
+      "shared": "the frame centre: the whole two-card layer warps and blooms (luma 41 -> 144), merges into one glowing blob that rotates clockwise and collapses onto x 50%, y 50% (where the next scene's cranes converge and its rings are born) into a point flare with a horizontal anamorphic streak; the next scene's first crane is already visible at x 47%, y 71-76% from f3932 while the flare dies (gone by f3937-f3940)",
+      "technique": "v5.trans-melt-implode",
+      "detail": "detail/soft_3905-3937"
+    },
+    {
+      "id": "T25",
+      "start": 4000,
+      "end": 4025,
+      "frames": 26,
+      "type": "flash (white: ring 3 blooms from the centre into a radial white-out with a cross-shaped glare, the picture is replaced under the white, the new shot comes down from white and racks into focus)",
+      "shared": "a full white frame and a centre-out radial light: ring 3 blooms from the crane convergence point to near white (median luma 0 -> 224 by f4015), the picture is replaced under the white between f4012 and f4015, then the 3D card close-up comes down from white and racks into focus by f4025; the forward camera push-in runs into the white (still accelerating at f4000: 1.22% scale per frame over f3995-f4000; whether it goes on under the white is UNCERTAIN, the stars are lost after f4002)",
+      "technique": "v5.trans-flash-white",
+      "detail": "detail/soft_4000-4025"
+    }
+  ],
+  "notes": [
+    "Merged from chunks v5c1 (f0-f701), v5c2 (f702-f1599), v5c3 (f1600-f2414), v5c4 (f2415-f3041), v5c5 (f3042-f3886) and v5c6 (f3887-f4608). Every one of the 137 detector candidates was decided by the chunk that covers it; c019, c069 and c086 sit on chunk edges and were decided by both neighbouring chunks (same verdict, reasons joined with ' / ').",
+    "30 boundaries (segments.json transitions T01-T30): 20 hard cuts and 10 soft transitions; every boundary has exactly one confirmed anchor candidate. No hard cut was found outside the candidate list, so there are no manual entries.",
+    "Not boundaries, recorded as techniques: the plain cuts of the footage inside one card window at f1987 and f2020 (S15, v5.footage-window-swap), the one-picture camera jumps f765|f767, f837|f840, f1000|f1002 (v5.cam-snap-zoom) and f1537|f1540 (v5.cam-whip-pan-reframe), and the possible hidden cut f3952-f3955 inside the S25 camera whip-tilt (treated as one camera move; UNCERTAIN).",
+    "T02 (c005, f270) replaces only the footage under the held title (v5.layout-overlay-holds-across-cut); it is kept as a boundary because the footage composition changes.",
+    "The chunk edges f1600 and f3887 have no boundary (the layouts continue, checked on sheets/overview_01584-01629.jpg and sheets/overview_03840-03885.jpg / overview_03888-03933.jpg), so S11 and S24 each span two chunks."
+  ]
 }

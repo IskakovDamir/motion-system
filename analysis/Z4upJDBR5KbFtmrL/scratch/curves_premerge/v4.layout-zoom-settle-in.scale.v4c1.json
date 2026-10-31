@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.layout-zoom-settle-in.scale.v4c1",
+  "file": "curves/v4.layout-zoom-settle-in.scale.v4c1.csv",
+  "property": "scale",
+  "unit": "scale factor about the hub centre (958, 575)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/t3_hub_entrance.csv",
+  "column": "scale_h",
+  "sampled_frames": [
+    732,
+    770
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 1.1119,
+  "to_value": 1.0,
+  "active_frames": [
+    732,
+    758
+  ],
+  "measured_duration_frames": 26,
+  "bezier": {
+    "x1": 0.4283,
+    "y1": 1.1025,
+    "x2": 0.9686,
+    "y2": 0.9448,
+    "durationInFrames": 28,
+    "delay": 0.061,
+    "built_duration_frames": 26,
+    "rmse": 0.0044
+  },
+  "spring": {
+    "stiffness": 111.495,
+    "damping": 19.844,
+    "mass": 1,
+    "damping_ratio": 0.9396,
+    "built_duration_frames": 29,
+    "rmse": 0.0276
+  },
+  "recommended": "bezier",
+  "note": "S4 hub entrance zoom-settle, measured from the top-left tile height (edge tracks); f732 is the first visible frame (already moving at -0.0094 per frame), so the curve covers the visible part only"
+}

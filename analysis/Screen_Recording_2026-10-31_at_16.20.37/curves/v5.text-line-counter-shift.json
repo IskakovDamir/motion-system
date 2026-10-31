@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-line-counter-shift",
+  "file": "curves/v5.text-line-counter-shift.csv",
+  "property": "position-x",
+  "unit": "% of frame width (left ink edge of headline line 1, row 668-676)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_C_head_shift.csv",
+  "column": "l1_left_pct",
+  "sampled_frames": [
+    3378,
+    3402
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 40.71,
+  "to_value": 37.423,
+  "active_frames": [
+    3383,
+    3390
+  ],
+  "measured_duration_frames": 7,
+  "bezier": {
+    "x1": 0.2955,
+    "y1": 1.0,
+    "x2": 0.1548,
+    "y2": 0.914,
+    "durationInFrames": 8,
+    "delay": 0.551,
+    "built_duration_frames": 7,
+    "rmse": 0.0803
+  },
+  "spring": {
+    "stiffness": 4029.87,
+    "damping": 194.28,
+    "mass": 1,
+    "damping_ratio": 1.5302,
+    "built_duration_frames": 6,
+    "rmse": 0.0568
+  },
+  "recommended": "spring",
+  "note": "settled 2-line headline: line 1 shifts left 3.3% W while line 2 shifts right 3.9% W (letter runs move as a block, letter heights unchanged), one motion-blurred picture f3385; a quick counter-slide of the two lines, not a camera move (strip and thumbnails move < 0.3% W); only 2 pictures inside the move (24 fps), so the shape is coarse"
+}

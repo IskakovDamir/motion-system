@@ -1,0 +1,540 @@
+{
+ "video": "Screen_Recording_2026-10-31_at_16.31.33",
+ "key": "v8",
+ "fps": 60,
+ "frame_count": 3627,
+ "segments": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 129,
+   "length_frames": 130,
+   "class": "GRAPHICS",
+   "boundary_in": "video-start",
+   "boundary_out": "T01",
+   "summary": "opening lockup on a light field with soft darker blobs and a faint dot grid: a brand-icon + 2-word wordmark springs into place, six blob mascots pop in staggered, the group slides left while an app-icon + 1-word wordmark builds letter by letter with an x separator, one word dims and returns, a tag pill types in while rising and its outline draws on; slow linear push-in, then the mascots converge into the centre and the camera zooms through into a cross-dissolve"
+  },
+  {
+   "id": "S02",
+   "start": 130,
+   "end": 182,
+   "length_frames": 53,
+   "class": "MIXED",
+   "boundary_in": "T01",
+   "boundary_out": "T02",
+   "summary": "3D one-point-perspective panel tunnel with the camera flying forward; the six mascots float out of the vanishing point, slow to a hover in a ring around the centre, swap eye glyphs, then accelerate past the camera while the walls pale to white; from f174 a frame-aspect footage card (masked window carrying footage) appears at the vanishing point and starts its zoom (5.1% -> 68.6% W by f182), so the segment is MIXED (the card's zoom continues in S03)"
+  },
+  {
+   "id": "S03",
+   "start": 183,
+   "end": 511,
+   "length_frames": 329,
+   "class": "MIXED",
+   "boundary_in": "T02",
+   "boundary_out": "T03",
+   "summary": "a frame-aspect footage card emerges at the centre on white and zooms to full frame; over the full-frame footage a white prompt pill (plus circle, text, black mic button) rises in from below with an overshoot, types two sentences with a light trailing fade, the mic button presses in and a soft grey pixel smear sweeps right to left behind the text, then the pill lifts and drops out of frame; footage only from f451 to the cut"
+  },
+  {
+   "id": "S04",
+   "start": 512,
+   "end": 602,
+   "length_frames": 91,
+   "class": "GRAPHICS",
+   "boundary_in": "T03",
+   "boundary_out": "T04",
+   "summary": "chat close-up on a light page (user bubble, agent avatar row, 2-line reply) arrives blurred after a hard cut and settles up; only the bubble and the avatar arrive with the cut: the 2-line reply fades in as a block while rising 3.3% H, the bold agent name is revealed by a soft left-to-right front, darkens and slides right 16 px, a check icon fades in and a light status word is revealed by a soft left-to-right wipe; the avatar's eyes glance left and back; the view then accelerates right into a blur whip"
+  },
+  {
+   "id": "S05",
+   "start": 603,
+   "end": 697,
+   "length_frames": 95,
+   "class": "GRAPHICS",
+   "boundary_in": "T04",
+   "boundary_out": "T05",
+   "summary": "the same chat panel, re-framed wider (x0.66), arrives moving right and decelerates while sharpening; its header row builds after the cut (avatar grows from a speck, name and subtitle revealed by soft left-to-right fronts that slide right, divider line draws on right to left); the composer rises into place and builds (button grows from a dot, plus disc fades in, the 3-word placeholder is revealed by a soft left-to-right front while sliding right, glyphs appear); the light status word in the agent row shimmers: a lighter band crosses it left to right at constant speed and loops every 62-63 f (pass 1 to f673, pass 2 from f674); the avatar's eye glyphs swap; the camera pans right, the sidebar header and then its empty list card drop in as the pan lands; a mascot drops into that card as the view accelerates down into a second blur whip"
+  },
+  {
+   "id": "S06",
+   "start": 698,
+   "end": 910,
+   "length_frames": 213,
+   "class": "GRAPHICS",
+   "boundary_in": "T05",
+   "boundary_out": "T06",
+   "summary": "zoomed views of the app's sidebar list on the light page: the close-up of the sidebar header, search icon and list card (x2.64) arrives with the T05 whip blurred and moving down, decelerates and sharpens while a mascot that dropped into the card settles with a damped bounce; then each new row's mascot darts in from the lower left, the list scrolls up one row in an ease-in-out step on the off-beat through a screen-locked highlight slot, and the row's 2-line label streams in, darkens and slides right; mascot eyes swap glyphs; the additions accelerate (gaps 28, 32, 16, 8 f, the last step a double-row flick at 84 px/f); a last 1-line row appears with a cell-by-cell grid icon, then the list whips up out (T06)"
+  },
+  {
+   "id": "S07",
+   "start": 911,
+   "end": 1005,
+   "length_frames": 95,
+   "class": "GRAPHICS",
+   "boundary_in": "T06",
+   "boundary_out": "T07",
+   "summary": "zoomed chat panel of the same app: arrives with the whip (rising, blurred, ease-out), a status word types on beside the agent name, the row 1 mascot's eyes glide 8.5 px down inside its blob (f932-f944), the feed scrolls one row up while a second agent row's mascot darts in and its 2-line message streams in left to right, then the feed accelerates up and blurs out into the blur-through whip f980-f1030 (hidden cut f1004)"
+  },
+  {
+   "id": "S08",
+   "start": 1006,
+   "end": 1265,
+   "length_frames": 260,
+   "class": "MIXED",
+   "boundary_in": "T07",
+   "boundary_out": "T08",
+   "summary": "dark post card (carrying a still photo) on the light page: it arrives with the whip f980-f1030, rises and de-blurs, a status pill + mascot drop in from the upper right, the card yaws about 26 deg in 3D and recedes left, from f1074 a background dot grid fades in behind the cards (denser at the centre, drifting left at a constant rate whatever the camera does, off within one picture at f1202); then a card deck flips a new card onto a 3D stack every 4 f while the camera zooms out and pushes in with an accelerating ease-in; the last card lands oversized, the camera pulls back, the stack collapses into the front card, the pill rises in tilted and levels out, hold and slow drift up; a page-white shimmer band sweeps the status pill each time it comes to rest (f1042-f1057, f1240-f1254)"
+  },
+  {
+   "id": "S09",
+   "start": 1266,
+   "end": 1326,
+   "length_frames": 61,
+   "class": "MIXED",
+   "boundary_in": "T08",
+   "boundary_out": "T09",
+   "summary": "x2.5 punch-in on the same card's lower left (photo panel bottom and stats row): the close-up rises with an ease-out while a status pill with a new label and a lighter mascot drop in from the upper right; short hold, then the card slides out left with an ease-in while the pill stays and the mascot's eyes glide 11 px up inside its blob (f1312-f1324); a shimmer band sweeps the pill as the drop-in settles (f1284-f1302)"
+  },
+  {
+   "id": "S10",
+   "start": 1327,
+   "end": 1421,
+   "length_frames": 95,
+   "class": "MIXED",
+   "boundary_in": "T09",
+   "boundary_out": "T10",
+   "summary": "agent message block on the light page under a ghosted band of the previous card (its faded photo sliver is the only footage): the whole layout arrives sliding left and settles (47 px in 25 f) while the mascot grows from a dot, the header row fades in, a 1-line heading and a sub-line stream in left to right, then three checklist lines with spinners stream in one after another; long hold during which the mascot's eyes glance 15 px left and back (f1364-f1411), then an ease-in drift up into a punch-in (eyes swap to dashes at f1420); from f1388 a lightening front crawls across the header's status word left to right (about 4 px/f) until the cut"
+  },
+  {
+   "id": "S11",
+   "start": 1422,
+   "end": 1469,
+   "length_frames": 48,
+   "class": "GRAPHICS",
+   "boundary_in": "T10",
+   "boundary_out": "T11",
+   "summary": "x2.38 punch-in (hard cut T10) on the checklist's last lines: the block rises with an ease-out, a new agent row (mascot + 1-line message) streams in fast and darkens while the older lines dim and the mascot's eyes glide 7 px right and back; the drift accelerates again (5 -> 15 px per picture) into the hard cut f1470"
+  },
+  {
+   "id": "S12",
+   "start": 1470,
+   "end": 1672,
+   "length_frames": 203,
+   "class": "MIXED",
+   "boundary_in": "T11",
+   "boundary_out": "T12",
+   "summary": "dark thread panel (70% W, photo avatars and a media still) lands from a whip after the cut; three replies arrive one after another: avatar grows from a disc (the thread connector of replies 1 and 2 draws down from under it; reply 1's while the panel lands), name row fades in, text streams left to right at 39-50 px/f, action row fades in (and the link row under reply 2 appears in its reserved slot and fades in), and the thread steps up one reply with an ease-in-out; then an unbroken 84-frame accelerating scroll pushes the panel out"
+  },
+  {
+   "id": "S13",
+   "start": 1673,
+   "end": 1828,
+   "length_frames": 156,
+   "class": "MIXED",
+   "boundary_in": "T12",
+   "boundary_out": "T13",
+   "summary": "masonry wall of dark post cards: three columns rise in one picture apart and their upper cards fan out from behind, then the wall zooms out in two eased pulses on a linear drift (x0.53, new columns at the edges with radial blur), then accelerates downward into a whip"
+  },
+  {
+   "id": "S14",
+   "start": 1829,
+   "end": 1926,
+   "length_frames": 98,
+   "class": "MIXED",
+   "boundary_in": "T13",
+   "boundary_out": "T14",
+   "summary": "a vertical reel of large post cards whips down and lands one card centred (49% W) in 29 f, holds about 10 f, then the card eases in to the left with horizontal blur into a whip"
+  },
+  {
+   "id": "S15",
+   "start": 1927,
+   "end": 1985,
+   "length_frames": 59,
+   "class": "GRAPHICS",
+   "boundary_in": "T14",
+   "boundary_out": "T15",
+   "summary": "answer block on the light page: bold headline revealed left to right while sliding in from the right, the mascot pill and header row slide in 5x farther on the same timing, sub-line and three numbered items cascade in; with no hold the block accelerates up, fades, and a product page pushes in from below"
+  },
+  {
+   "id": "S16",
+   "start": 1986,
+   "end": 2022,
+   "length_frames": 37,
+   "class": "MIXED",
+   "boundary_in": "T15",
+   "boundary_out": "T16",
+   "summary": "dark full-frame product page (hero still, big 2-line title, countdown card, thumbnail row) rises in with a strong ease-out, an arrow cursor glides up-left over it; with no hold the page's mask insets while the content is still rising (f2006-f2010), then the page shrinks with radial blur and turns into 3D"
+  },
+  {
+   "id": "S17",
+   "start": 2023,
+   "end": 2235,
+   "length_frames": 213,
+   "class": "MIXED",
+   "boundary_in": "T16",
+   "boundary_out": "T17",
+   "summary": "3D stack of 10-12 app screens (several carrying photographs) fanned toward the upper right on the light page: the layers slide out behind the front page while a soft dark halo builds around the stack, a status label fades and de-blurs in at the top left, 7 callouts (mascot icon + 3-word label on a light pill, leader line, white anchor dot) each arrive as a dot -> line -> pill chain and later leave as the reverse chain in a rolling order, over a slow linear pull-back; then the camera pushes in and the stack yaws flat (T17) while the title fades out"
+  },
+  {
+   "id": "S18",
+   "start": 2236,
+   "end": 2403,
+   "length_frames": 168,
+   "class": "MIXED",
+   "boundary_in": "T17",
+   "boundary_out": "T18",
+   "summary": "chat block under the flattened page band (photograph = footage): the page scrolls up 69.6% H with a fast-in/slow-out, the 1-line headline and the sub line stream in letter by letter, an attachment card stretches in from its left edge with blur, the mascot avatar pops with overshoot, the status row types on, a light shimmer band sweeps the card; slow drift, then an ease-in push-up exit; on the band a toast (check icon + 1-line label) fades in linearly as the page lands, rides the scroll and fades out while sliding 10 px down against the page just before the exit, and an arrow cursor glides down-right on the page (2.2-3.2 px/f) while the scroll carries it out of the frame top"
+  },
+  {
+   "id": "S19",
+   "start": 2404,
+   "end": 2500,
+   "length_frames": 97,
+   "class": "GRAPHICS",
+   "boundary_in": "T18",
+   "boundary_out": "T19",
+   "summary": "second chat block arrives from below (push-up) and decelerates; its avatar tile grows from a dot, the headline streams in about 8 f, two sub lines cascade (the last one ending with dots typed 4 f apart); after a hold the lines dissolve letter-wise while the avatar tile flies off (T19)"
+  },
+  {
+   "id": "S20",
+   "start": 2501,
+   "end": 2637,
+   "length_frames": 137,
+   "class": "GRAPHICS",
+   "boundary_in": "T19",
+   "boundary_out": "T20",
+   "summary": "mascot field on the light page: two mascots split apart, shrinking back from 1.5x oversize, and settle symmetric about the centre, then two radial bursts (ease-in outward flight, new mascots appear in one picture, small overshoot, shrinking sizes) build a mirror-symmetric field of 22; it implodes into one tiny mascot (T20)"
+  },
+  {
+   "id": "S21",
+   "start": 2638,
+   "end": 2830,
+   "length_frames": 193,
+   "class": "MIXED",
+   "boundary_in": "T20",
+   "boundary_out": "T21",
+   "summary": "third chat block: the tiny mascot lands in its avatar slot while the block rises and its lines stream in a 2 f cascade, a lighter shimmer band runs across the text, the thread scrolls up one step and an upright phone card fades in below (linear) and starts playing an app screen recording (footage); then the card zooms to the centre while the text exits up (T21)"
+  },
+  {
+   "id": "S22",
+   "start": 2831,
+   "end": 3046,
+   "length_frames": 216,
+   "class": "MIXED",
+   "boundary_in": "T21",
+   "boundary_out": "T22",
+   "summary": "a dark phone card with product UI centred on the white page: it finishes its x2.0 zoom to the centre (T21), its screen recording fades back in, holds and changes screens with a one-picture crossfade; a tap ripple selects a filter chip, the grid empties and refills with thumbnails sliding in with directional blur, the camera pushes in x1.43 about a point below the frame, a mascot sweeps in from the bottom edge on an arc and a status pill grows out of it while its label types; the device page crossfades and slides to a detail page; then the whole layer pushes up out (T22) while the mascot and pill smear vertically"
+  },
+  {
+   "id": "S23",
+   "start": 3047,
+   "end": 3078,
+   "length_frames": 32,
+   "class": "MIXED",
+   "boundary_in": "T22",
+   "boundary_out": "T23",
+   "summary": "a frame-aspect rounded footage card (71% of the frame) rises in from below with vertical motion blur (the push-up's incoming half), rests about 2 pictures centred on the white page (f3062-f3063), then starts to zoom about the frame centre; the zoom-fill morph f3064-f3092 carries it into S24"
+  },
+  {
+   "id": "S24",
+   "start": 3079,
+   "end": 3241,
+   "length_frames": 163,
+   "class": "MIXED",
+   "boundary_in": "T23",
+   "boundary_out": "T24",
+   "summary": "full-bleed footage: the zoom-fill's second half (the card's edges leave the frame by f3088, its top edge by f3092), footage only f3092-f3163, then a second status pill with a grey mascot whips up through the bottom edge, floats with the footage foreground and gets a light shimmer sweep; the mascot's star-shaped eye glyphs glance 17.5 px left and 4.8 px down inside its static blob, hold and glide back (f3192-f3238)"
+  },
+  {
+   "id": "S25",
+   "start": 3242,
+   "end": 3371,
+   "length_frames": 130,
+   "class": "MIXED",
+   "boundary_in": "T24",
+   "boundary_out": "T25",
+   "summary": "a row of portrait footage cards on a white page arrives after a hard cut at 290 px/f, brakes into a constant leftward marquee (7.5 px/f), then sinks with an ease-in into a hidden two-step cut (whip-down f3348-f3394: the end card's background replaces the page under the row at f3379, the row is removed at f3380; by the tiling rule its last sinking pictures f3372-f3379 open S26)"
+  },
+  {
+   "id": "S26",
+   "start": 3372,
+   "end": 3560,
+   "length_frames": 189,
+   "class": "GRAPHICS",
+   "boundary_in": "T25",
+   "boundary_out": "T26",
+   "summary": "opens with the card row's last sinking pictures (f3372-f3379, inside the whip-down transition: on S25's white page to f3376, on the end card's background at f3379; the row is removed at f3380); end card on a light gradient with faint rounded outlines and a faint static dot grid: the brand icon and two wordmark words drop in from above with spring overshoots, the tag types on from a fixed left edge while rising inside an outline drawn as a stroke from the first letter's picture on, six mascots pop in, label 2's app glyph grows from a dot at the right while sliding 180 px left into its slot (9 px overshoot) over a tile that pops in place, then its letters build one by one, separator fades in, one word dims and returns; then a hold while the foreground group (lockup, tag, mascots) keeps a linear x1.064 scale creep (f3380-f3556) over the static background, and idle mascots"
+  },
+  {
+   "id": "S27",
+   "start": 3561,
+   "end": 3626,
+   "length_frames": 66,
+   "class": "GRAPHICS",
+   "boundary_in": "T26",
+   "boundary_out": "video-end",
+   "summary": "the player's replay of the video's own opening (ends with the video at f3626): empty background, the brand icon flies up from below the frame with an overshoot, the wordmark follows 8 f later; from f3580 the replay matches f0-f47 of S01"
+  }
+ ],
+ "transitions": [
+  {
+   "id": "T01",
+   "type": "zoom-through",
+   "start": 115,
+   "end": 143,
+   "frames": 29,
+   "from": "S01",
+   "to": "S02",
+   "technique": "v8.trans-zoom-through-dissolve"
+  },
+  {
+   "id": "T02",
+   "type": "zoom-through",
+   "start": 164,
+   "end": 200,
+   "frames": 37,
+   "from": "S02",
+   "to": "S03",
+   "technique": "v8.trans-tunnel-exit-zoom-through"
+  },
+  {
+   "id": "T03",
+   "type": "hard-cut",
+   "start": 512,
+   "end": 512,
+   "frames": 0,
+   "from": "S03",
+   "to": "S04",
+   "technique": "v8.cam-cut-in-settle"
+  },
+  {
+   "id": "T04",
+   "type": "whip",
+   "start": 570,
+   "end": 634,
+   "frames": 65,
+   "from": "S04",
+   "to": "S05",
+   "technique": "v8.trans-blur-whip-reframe"
+  },
+  {
+   "id": "T05",
+   "type": "whip",
+   "start": 668,
+   "end": 726,
+   "frames": 59,
+   "from": "S05",
+   "to": "S06",
+   "technique": "v8.trans-blur-whip-reframe"
+  },
+  {
+   "id": "T06",
+   "type": "whip",
+   "start": 887,
+   "end": 934,
+   "frames": 48,
+   "from": "S06",
+   "to": "S07",
+   "technique": "v8.trans-whip-up"
+  },
+  {
+   "id": "T07",
+   "type": "whip",
+   "start": 980,
+   "end": 1030,
+   "frames": 51,
+   "from": "S07",
+   "to": "S08",
+   "technique": "v8.trans-whip-up"
+  },
+  {
+   "id": "T08",
+   "type": "hard-cut",
+   "start": 1266,
+   "end": 1266,
+   "frames": 0,
+   "from": "S08",
+   "to": "S09",
+   "technique": "v8.cam-punch-in-cut-settle"
+  },
+  {
+   "id": "T09",
+   "type": "hard-cut",
+   "start": 1327,
+   "end": 1327,
+   "frames": 0,
+   "from": "S09",
+   "to": "S10",
+   "technique": "v8.cam-slide-in-left-settle"
+  },
+  {
+   "id": "T10",
+   "type": "hard-cut",
+   "start": 1422,
+   "end": 1422,
+   "frames": 0,
+   "from": "S10",
+   "to": "S11",
+   "technique": "v8.cam-punch-in-cut-settle"
+  },
+  {
+   "id": "T11",
+   "type": "hard-cut",
+   "start": 1470,
+   "end": 1470,
+   "frames": 0,
+   "from": "S11",
+   "to": "S12",
+   "technique": "v8.cam-whip-in-settle"
+  },
+  {
+   "id": "T12",
+   "type": "push",
+   "start": 1648,
+   "end": 1696,
+   "frames": 49,
+   "from": "S12",
+   "to": "S13",
+   "technique": "v8.trans-push-up-columns"
+  },
+  {
+   "id": "T13",
+   "type": "whip",
+   "start": 1800,
+   "end": 1857,
+   "frames": 58,
+   "from": "S13",
+   "to": "S14",
+   "technique": "v8.trans-whip-down"
+  },
+  {
+   "id": "T14",
+   "type": "whip",
+   "start": 1900,
+   "end": 1953,
+   "frames": 54,
+   "from": "S14",
+   "to": "S15",
+   "technique": "v8.trans-whip-left"
+  },
+  {
+   "id": "T15",
+   "type": "push",
+   "start": 1962,
+   "end": 2008,
+   "frames": 47,
+   "from": "S15",
+   "to": "S16",
+   "technique": "v8.trans-push-up"
+  },
+  {
+   "id": "T16",
+   "type": "morph",
+   "start": 2009,
+   "end": 2035,
+   "frames": 27,
+   "from": "S16",
+   "to": "S17",
+   "technique": "v8.trans-zoom-out-morph"
+  },
+  {
+   "id": "T17",
+   "type": "morph",
+   "start": 2212,
+   "end": 2258,
+   "frames": 47,
+   "from": "S17",
+   "to": "S18",
+   "technique": "v8.trans-stack-push-flatten"
+  },
+  {
+   "id": "T18",
+   "type": "push",
+   "start": 2367,
+   "end": 2440,
+   "frames": 74,
+   "from": "S18",
+   "to": "S19",
+   "technique": "v8.trans-push-up"
+  },
+  {
+   "id": "T19",
+   "type": "morph",
+   "start": 2478,
+   "end": 2522,
+   "frames": 45,
+   "from": "S19",
+   "to": "S20",
+   "technique": "v8.trans-avatar-fly-split"
+  },
+  {
+   "id": "T20",
+   "type": "morph",
+   "start": 2604,
+   "end": 2670,
+   "frames": 67,
+   "from": "S20",
+   "to": "S21",
+   "technique": "v8.trans-mascot-converge-fly"
+  },
+  {
+   "id": "T21",
+   "type": "morph",
+   "start": 2800,
+   "end": 2860,
+   "frames": 61,
+   "from": "S21",
+   "to": "S22",
+   "technique": "v8.trans-card-zoom-to-center"
+  },
+  {
+   "id": "T22",
+   "type": "push",
+   "start": 3029,
+   "end": 3064,
+   "frames": 36,
+   "from": "S22",
+   "to": "S23",
+   "technique": "v8.trans-push-up"
+  },
+  {
+   "id": "T23",
+   "type": "morph",
+   "start": 3064,
+   "end": 3092,
+   "frames": 29,
+   "from": "S23",
+   "to": "S24",
+   "technique": "v8.trans-card-zoom-fill"
+  },
+  {
+   "id": "T24",
+   "type": "hard-cut",
+   "start": 3242,
+   "end": 3242,
+   "frames": 0,
+   "from": "S24",
+   "to": "S25",
+   "technique": "v8.layout-marquee-whip-in"
+  },
+  {
+   "id": "T25",
+   "type": "whip",
+   "start": 3348,
+   "end": 3394,
+   "frames": 47,
+   "from": "S25",
+   "to": "S26",
+   "technique": "v8.trans-whip-down"
+  },
+  {
+   "id": "T26",
+   "type": "hard-cut",
+   "start": 3561,
+   "end": 3561,
+   "frames": 0,
+   "from": "S26",
+   "to": "S27",
+   "technique": null
+  }
+ ]
+}

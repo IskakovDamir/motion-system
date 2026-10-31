@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.logo-chrome-smear-in",
+  "file": "curves/v5.logo-chrome-smear-in.csv",
+  "property": "scale",
+  "unit": "scale factor (1.0 = size at f240)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/logo_l1_scale_fine2.csv",
+  "column": "scale",
+  "sampled_frames": [
+    210,
+    245
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.86,
+  "to_value": 1.0,
+  "active_frames": [
+    210,
+    235
+  ],
+  "measured_duration_frames": 25,
+  "bezier": {
+    "x1": 0.6304,
+    "y1": 0.441,
+    "x2": 0.0,
+    "y2": 0.9483,
+    "durationInFrames": 26,
+    "delay": 0.861,
+    "built_duration_frames": 21,
+    "rmse": 0.0495
+  },
+  "spring": {
+    "stiffness": 346.415,
+    "damping": 34.688,
+    "mass": 1,
+    "damping_ratio": 0.9319,
+    "built_duration_frames": 17,
+    "rmse": 0.0854
+  },
+  "recommended": "bezier",
+  "note": "brand wordmark line 1 (icon + bold word) resolves from a horizontal chrome smear (f207-f212) and grows 0.86 -> 1.00 while its centre moves right ~30 px (template cx 855 -> 885); template match of the f240 line (830x180 px), scale step 0.002; afterwards a slow creep 1.000 -> 1.035 over f237-f300 (not in this curve)"
+}

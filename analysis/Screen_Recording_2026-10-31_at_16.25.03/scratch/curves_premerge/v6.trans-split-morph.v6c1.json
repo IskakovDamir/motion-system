@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.trans-split-morph.v6c1",
+  "file": "curves/v6.trans-split-morph.v6c1.csv",
+  "property": "position-y",
+  "unit": "px (picture 918 px high)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_P05_words12_morph.csv",
+  "column": "cy",
+  "sampled_frames": [
+    203,
+    226
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 460.0,
+  "to_value": 97.0,
+  "active_frames": [
+    206,
+    218
+  ],
+  "measured_duration_frames": 12,
+  "bezier": {
+    "x1": 0.8334,
+    "y1": 0.3217,
+    "x2": 0.1123,
+    "y2": 0.5222,
+    "durationInFrames": 12,
+    "delay": 0.363,
+    "built_duration_frames": 12,
+    "rmse": 0.0273
+  },
+  "spring": {
+    "stiffness": 1393.128,
+    "damping": 76.146,
+    "mass": 1,
+    "damping_ratio": 1.0201,
+    "built_duration_frames": 10,
+    "rmse": 0.2452
+  },
+  "recommended": "bezier",
+  "note": "split morph: the centred 3-word line splits, its first two words rise 363 px (39.5% H) to the top band (y 460 -> 97 px = 50.1% -> 10.6% H, x unchanged, scale 1.00) while the third word drops 323.5 px (+35.2% H, 460 -> 783.5 px) and grows x1.10, opening the middle band where the footage cards zoom in (f213-f221); template of the first two words, ref f206, score 0.71-1.00"
+}

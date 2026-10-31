@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.ui-drag-group-out.v7c3",
+  "file": "curves/v7.ui-drag-group-out.v7c3.csv",
+  "property": "position-x",
+  "unit": "% of frame width (left edge of the file-tile grid, row 1; 19.1% -> 53.8% W at the last trackable picture f1636)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p1_grid_leftedge_dedup.csv",
+  "column": "pos_pct",
+  "sampled_frames": [
+    1596,
+    1636
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 19.05,
+  "to_value": 53.82,
+  "active_frames": [
+    1606,
+    1636
+  ],
+  "measured_duration_frames": 30,
+  "bezier": {
+    "x1": 0.6608,
+    "y1": 0.0098,
+    "x2": 1.0,
+    "y2": 0.8738,
+    "durationInFrames": 33,
+    "delay": -3.0,
+    "built_duration_frames": 28,
+    "rmse": 0.025
+  },
+  "spring": {
+    "stiffness": 70.374,
+    "damping": 59.085,
+    "mass": 1,
+    "damping_ratio": 3.5216,
+    "built_duration_frames": 41,
+    "rmse": 0.4032
+  },
+  "recommended": "bezier",
+  "note": "P1 file-tile grid (5x5 placeholder tiles) slides right inside the window, accelerating from rest (~f1602) with growing horizontal motion blur, and keeps going out past the window's right border (streaks over the background at f1641); 30%-level crossing tracker on tile row 1 (y 160-250), valid to f1636; near-duplicate captures (diff < 0.0003) excluded; to-value = last valid picture (open-ended exit, no settle); starts in v7c2's range (f1602)"
+}

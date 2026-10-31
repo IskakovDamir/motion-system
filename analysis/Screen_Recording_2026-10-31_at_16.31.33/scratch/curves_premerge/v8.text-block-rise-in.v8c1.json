@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.text-block-rise-in.v8c1",
+  "file": "curves/v8.text-block-rise-in.v8c1.csv",
+  "property": "position-y",
+  "unit": "% of frame height, reply block ink centroid relative to the agent avatar's ink centroid (0 = rest)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c1_s04_text_reveal_512-572.csv",
+  "column": "reply_offset_pctH",
+  "sampled_frames": [
+    512,
+    572
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 3.2597,
+  "to_value": 0.0,
+  "active_frames": [
+    512,
+    535
+  ],
+  "measured_duration_frames": 23,
+  "bezier": {
+    "x1": 0.2117,
+    "y1": 0.5949,
+    "x2": 0.2093,
+    "y2": 0.9996,
+    "durationInFrames": 30,
+    "delay": -0.045,
+    "built_duration_frames": 22,
+    "rmse": 0.0323
+  },
+  "spring": {
+    "stiffness": 249.495,
+    "damping": 31.675,
+    "mass": 1,
+    "damping_ratio": 1.0027,
+    "built_duration_frames": 23,
+    "rmse": 0.075
+  },
+  "recommended": "bezier",
+  "note": "S04 2-line reply rises into place relative to the UI while it fades in as a block (ink mass 7% f512 -> 47% f516 -> 92% f527 -> 100% f551); from-value = first picture f512 (faint, already rising)"
+}

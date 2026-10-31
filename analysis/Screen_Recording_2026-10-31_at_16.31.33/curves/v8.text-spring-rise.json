@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.text-spring-rise",
+ "file": "curves/v8.text-spring-rise.csv",
+ "property": "position-y",
+ "unit": "px (picture 918 px high)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c5r_Se_open2.csv",
+ "column": "word_cy",
+ "sampled_frames": [
+  3574,
+  3594
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 869.0,
+ "to_value": 460.5,
+ "active_frames": [
+  3574,
+  3591
+ ],
+ "measured_duration_frames": 17,
+ "bezier": {
+  "x1": 0.0,
+  "y1": 0.5014,
+  "x2": 0.2356,
+  "y2": 1.3993,
+  "durationInFrames": 16,
+  "delay": 0.0,
+  "built_duration_frames": 16,
+  "rmse": 0.029
+ },
+ "spring": {
+  "stiffness": 513.901,
+  "damping": 26.649,
+  "mass": 1,
+  "damping_ratio": 0.5878,
+  "built_duration_frames": 16,
+  "rmse": 0.1674
+ },
+ "recommended": "bezier",
+ "note": "S-e (the video's own opening, replayed by the player loop): the 2-word wordmark of label 1 (78 px tall ink, x 37.6-63.5% W) rises from below the bottom edge (first picture f3574: top 35 px visible, centre = top + 39 px) with vertical motion blur, overshoots 40 px (4.4% H) above its rest at f3583 (= v8c1 f4) and settles to 50.2% H by about f3593 (dark-ink component over x 610-1030, scratch/v8c5r_Se_open2.csv). It starts 8 frames after the icon. This is the full move of v8c1's v8.text-spring-rise, whose start was before the recording's first frame (f0 = f3579 here). Samples after f3594 are mixed with the mascots popping in below.",
+ "chunk_curve_id": "v8.text-spring-rise.v8c5"
+}

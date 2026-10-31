@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.layout-zoom-fade-out.i2",
+  "file": "curves/v4.layout-zoom-fade-out.i2.csv",
+  "property": "scale",
+  "unit": "scale factor about the frame centre",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/t1_s1_exit.csv",
+  "column": "scale",
+  "sampled_frames": [
+    208,
+    224
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 1.0,
+  "to_value": 1.0315,
+  "active_frames": [
+    215,
+    224
+  ],
+  "measured_duration_frames": 9,
+  "bezier": {
+    "x1": 0.0037,
+    "y1": 0.143,
+    "x2": 0.4503,
+    "y2": -0.1993,
+    "durationInFrames": 9,
+    "delay": -0.016,
+    "built_duration_frames": 9,
+    "rmse": 0.0057
+  },
+  "spring": {
+    "stiffness": 122.311,
+    "damping": 0.5,
+    "mass": 1,
+    "damping_ratio": 0.0226,
+    "built_duration_frames": 154,
+    "rmse": 0.9741
+  },
+  "recommended": "bezier",
+  "note": "S1 exit zoom measured from the distance between agent logo icon 3 and headline word 1 (template tracks); f224 is the last visible frame, so the end value 1.0315 is the last measured scale, not a settled value"
+}

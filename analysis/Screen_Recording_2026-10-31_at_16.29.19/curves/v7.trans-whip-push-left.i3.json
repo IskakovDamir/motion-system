@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-whip-push-left.i3",
+  "file": "curves/v7.trans-whip-push-left.i3.csv",
+  "property": "position-x",
+  "unit": "px of 1622 (3D pointer centre; 486 = 30.0% W -> 116 = 7.2% W at the last picture before the cut)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_pointer_tmpl.csv",
+  "column": "cx",
+  "sampled_frames": [
+    1421,
+    1484
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 486.0,
+  "to_value": 116.0,
+  "active_frames": [
+    1433,
+    1484
+  ],
+  "measured_duration_frames": 51,
+  "bezier": {
+    "x1": 0.744,
+    "y1": 0.0456,
+    "x2": 1.0,
+    "y2": 0.9355,
+    "durationInFrames": 59,
+    "delay": -8.0,
+    "built_duration_frames": 51,
+    "rmse": 0.0098
+  },
+  "spring": {
+    "stiffness": 17.227,
+    "damping": 40.088,
+    "mass": 1,
+    "damping_ratio": 4.8294,
+    "built_duration_frames": 82,
+    "rmse": 0.3896
+  },
+  "recommended": "bezier",
+  "note": "outgoing half of the leftward whip out of the pointer scene: the whole scene slides left (and up 5.6% H) accelerating from a slow drift to ~24 px/frame with growing horizontal blur, hard cut at f1487 at full speed (no settle); template on the 3D pointer (ref f1344, scale 0.72 locked)"
+}

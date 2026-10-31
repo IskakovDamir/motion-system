@@ -1,0 +1,8 @@
+frame,unique,size_px,size_pct_w,scale_rel,how
+1650,1,124.0,7.64,1.0000,button top/bottom edge peaks y 397/521 (no ring yet)
+1653,1,124.0,7.64,1.0000,"button top edge peak y 398, unchanged (no ring yet)"
+1655,1,151.0,9.31,1.2177,outer outline ring: vertical peaks y 384/535 (right side hidden by the echo trail)
+1657,1,239.0,14.73,1.9274,"vertical 342/578 = 236, right peak x 928 - centre 807 = 121 -> 242; mean"
+1660,1,403.5,24.88,3.2540,"vertical 260/661 = 401, right 1012 - 809 = 203 -> 406; mean"
+1662,1,666.5,41.09,5.3750,"vertical 129/794 = 665, right 1146 - 812 = 334 -> 668; mean"
+1665,1,1094.0,67.45,8.8226,right peak x 1359 - centre 812 = 547 -> 1094 (top/bottom out of frame); outermost ring leaves the frame after this picture

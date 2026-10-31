@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.ui-node-pop-in",
+  "file": "curves/v6.ui-node-pop-in.csv",
+  "property": "scale",
+  "unit": "scale factor (dark ink width / 193 px rest width of the icon; 0 = not visible)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_P08_lefticon_scale.csv",
+  "column": "scale_w_from0",
+  "sampled_frames": [
+    481,
+    523
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 1.0,
+  "active_frames": [
+    486,
+    511
+  ],
+  "measured_duration_frames": 25,
+  "bezier": {
+    "x1": 0.1732,
+    "y1": 1.3639,
+    "x2": 0.6417,
+    "y2": 1.0243,
+    "durationInFrames": 26,
+    "delay": -0.007,
+    "built_duration_frames": 23,
+    "rmse": 0.0236
+  },
+  "spring": {
+    "stiffness": 571.893,
+    "damping": 39.358,
+    "mass": 1,
+    "damping_ratio": 0.8229,
+    "built_duration_frames": 10,
+    "rmse": 0.3421
+  },
+  "recommended": "bezier",
+  "note": "S08 diagram, brand icon inside the left card (the cleanest node pop-in: the icon spans 11 pictures, the cards only 3-5): not visible at f481-f486 (card interior uniform, 209-211 luma at f486; taken as scale 0), a complete small icon at x0.45 at f488 (not a stroke draw-on), then it scales up about its centre (226, 568) px with an overshoot: dark ink (luma < 110) width 86 / 141 / 175 / 193 / 201 / 203 / 202 / 199 / 198 / 195 / 193 px at f488/491/493/496/498/501/503/506/508/511/513 = x0.45 / 0.73 / 0.91 / 1.00 / 1.04 / 1.05 (peak f501) / 1.05 / 1.03 / 1.03 / 1.01 / 1.00; heights 78 -> 184 (f501) -> 174 px agree (uniform scale); rest 193 x 174 px from f513; the onset lies between the pictures f486 and f488. Fitted from f488 alone (start value x0.45) the curve is bezier(0.068, 1.331, 0.432, 1.116) D=23 with rmse 0.088 / spring 0.158, so the from-zero version is kept"
+}

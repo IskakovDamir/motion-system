@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.card-rise-drop-in.i3",
+  "file": "curves/v5.card-rise-drop-in.i3.csv",
+  "property": "position-y",
+  "unit": "% of frame height (vertical centre of footage card 1: mean of its top and bottom edges at x300 and x700)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_E_cards_settle.csv",
+  "column": "c1_cy_pct",
+  "sampled_frames": [
+    3720,
+    3770
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 34.668,
+  "to_value": 60.812,
+  "active_frames": [
+    3720,
+    3737
+  ],
+  "measured_duration_frames": 17,
+  "bezier": {
+    "x1": 0.006,
+    "y1": 1.0573,
+    "x2": 0.478,
+    "y2": 1.1756,
+    "durationInFrames": 17,
+    "delay": 0.038,
+    "built_duration_frames": 16,
+    "rmse": 0.0118
+  },
+  "spring": {
+    "stiffness": 5353.563,
+    "damping": 146.762,
+    "mass": 1,
+    "damping_ratio": 1.0029,
+    "built_duration_frames": 5,
+    "rmse": 0.2754
+  },
+  "recommended": "bezier",
+  "note": "rounded footage card 1 (left, 44 % W) drops in from above the frame: first visible f3717 as a sliver at the top edge, first full picture f3720 (taken as the start value: the move is already fast), lands with an overshoot of 1.9 % H (17 px) at f3730, a 0.3 % H undershoot at f3740-3742 and rests by f3747; vertical motion blur f3717-3720. The centre is used because the perspective swing f3730-3742 moves the card's edges unevenly (left side +14 px taller, right side -28 px shorter): the earlier top-edge reading at x300-420 counted 22 px of 'overshoot'"
+}

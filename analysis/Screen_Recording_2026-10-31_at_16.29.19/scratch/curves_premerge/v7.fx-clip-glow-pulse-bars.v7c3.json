@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.fx-clip-glow-pulse-bars.v7c3",
+  "file": "curves/v7.fx-clip-glow-pulse-bars.v7c3.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (median of clip 1's lower band, the clip bar's own fill)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p5_clip_bands.csv",
+  "column": "clip1_lower",
+  "sampled_frames": [
+    2146,
+    2206
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 136.0,
+  "to_value": 211.0,
+  "active_frames": [
+    2150,
+    2206
+  ],
+  "measured_duration_frames": 56,
+  "bezier": {
+    "x1": 1.0,
+    "y1": 0.8295,
+    "x2": 0.3207,
+    "y2": 0.3412,
+    "durationInFrames": 58,
+    "delay": -1.78,
+    "built_duration_frames": 56,
+    "rmse": 0.0179
+  },
+  "spring": {
+    "stiffness": 12.901,
+    "damping": 9.857,
+    "mass": 1,
+    "damping_ratio": 1.3722,
+    "built_duration_frames": 95,
+    "rmse": 0.2431
+  },
+  "recommended": "bezier",
+  "note": "P5 glow on the clip bars themselves (the halo above the strip is curves/v7.fx-clip-glow-pulse.v7c3): the bar fill brightens from the dock f2146 (lower band 136, label-band background 102) to the peak f2206 (211 / 202, the end value here), then holds at 208-210 to f2220 (not in this fit: the 3-luma dip after the peak would push the 2% window end past the peak); near-linear rise with an abrupt top, about 1.2 luma per frame f2146-f2181 and 1.5 per frame f2181-f2206; sampled in columns x 262-328 of clip 1 (v7c3_tools/clip_bar_luma.py); the window is still settling from the pull-back until f2181 (scale 0.52 -> 0.40), the band rows are re-found per picture"
+}

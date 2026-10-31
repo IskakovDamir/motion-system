@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.ui-selector-frame-hop",
+  "file": "curves/v5.ui-selector-frame-hop.csv",
+  "property": "position-x",
+  "unit": "% of frame width (centre of the phone-shaped selector frame on the thumbnail row)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_C_selector.csv",
+  "column": "centre_pct",
+  "sampled_frames": [
+    3397,
+    3470
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 77.05,
+  "to_value": 40.506,
+  "active_frames": [
+    3410,
+    3433
+  ],
+  "measured_duration_frames": 23,
+  "bezier": {
+    "x1": 1.0,
+    "y1": -0.0817,
+    "x2": 0.0,
+    "y2": 0.8933,
+    "durationInFrames": 36,
+    "delay": -9.465,
+    "built_duration_frames": 21,
+    "rmse": 0.0156
+  },
+  "spring": {
+    "stiffness": 395.964,
+    "damping": 39.997,
+    "mass": 1,
+    "damping_ratio": 1.005,
+    "built_duration_frames": 18,
+    "rmse": 0.1273
+  },
+  "recommended": "bezier",
+  "note": "3D phone-shaped rounded frame (bright rim with side buttons) that highlights one footage tile: hop from the right thumbnail to the left one (2 tiles, 36.5% W), easing in from f3405, motion-blurred and not measurable at f3417-3425, landing on the left tile by f3438; earlier hops: long strip -> middle tile (f3342-3357, a vertical drop with vertical motion blur and shrink 600 -> 400 px wide), middle -> right tile (f3383-3397, 16.3% W, blurred f3385-3390); sides located as full-height bright columns (luma > 180) in rows 440-560"
+}

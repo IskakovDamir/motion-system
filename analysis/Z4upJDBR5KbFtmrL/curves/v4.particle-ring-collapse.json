@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.particle-ring-collapse",
+  "file": "curves/v4.particle-ring-collapse.csv",
+  "property": "scale",
+  "unit": "px equivalent width of the centre hexagon (area-based; 59 px = 3.1% W -> 106.6 px = 5.6% W)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/c2_s4_centre_cell.csv",
+  "column": "equiv_w",
+  "sampled_frames": [
+    1376,
+    1461
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 59.02,
+  "to_value": 106.63,
+  "active_frames": [
+    1393,
+    1449
+  ],
+  "measured_duration_frames": 56,
+  "bezier": {
+    "x1": 0.6347,
+    "y1": 0.0178,
+    "x2": 0.4615,
+    "y2": 0.8411,
+    "durationInFrames": 68,
+    "delay": -8.653,
+    "built_duration_frames": 56,
+    "rmse": 0.0074
+  },
+  "spring": {
+    "stiffness": 14.8,
+    "damping": 5.491,
+    "mass": 1,
+    "damping_ratio": 0.7137,
+    "built_duration_frames": 90,
+    "rmse": 0.3548
+  },
+  "recommended": "bezier",
+  "note": "honeycomb collapses ring by ring (84 -> 55 -> 31 -> 19 -> 7 -> 1 cells, steps about 9 f apart) while every surviving cell grows; this is the centre cell, which becomes the brand mark"
+}

@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.text-label-fade-slide",
+ "file": "curves/v8.text-label-fade-slide.csv",
+ "property": "opacity",
+ "unit": "ink mass fraction of the settled label (f670)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c1_s05_header_composer_604-673.csv",
+ "column": "name_mass_frac",
+ "sampled_frames": [
+  608,
+  673
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 0.0,
+ "to_value": 1.0,
+ "active_frames": [
+  608,
+  659
+ ],
+ "measured_duration_frames": 51,
+ "bezier": {
+  "x1": 0.1226,
+  "y1": 0.8534,
+  "x2": 0.608,
+  "y2": 0.9228,
+  "durationInFrames": 56,
+  "delay": 0.945,
+  "built_duration_frames": 51,
+  "rmse": 0.0257
+ },
+ "spring": {
+  "stiffness": 42.584,
+  "damping": 29.75,
+  "mass": 1,
+  "damping_ratio": 2.2794,
+  "built_duration_frames": 53,
+  "rmse": 0.0856
+ },
+ "recommended": "bezier",
+ "note": "S05 header name (1 word): soft left-to-right front then slow darkening; thirds reach 50% at f614 / f618 / f623; subtitle follows 3-4 f later; left edge slides right 14 px",
+ "chunk_curve_id": "v8.text-label-fade-slide.v8c1"
+}

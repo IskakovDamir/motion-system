@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.trans-tile-hex-morph.tile-out.v4c2",
+  "file": "curves/v4.trans-tile-hex-morph.tile-out.v4c2.csv",
+  "property": "opacity",
+  "unit": "opacity 0-1 of the tile layer (two-layer model fit: tile scaled about its centre and faded, hexagon scaled and faded in front)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/c2_r1_t6_morph_model.csv",
+  "column": "cor71_tile_opacity",
+  "sampled_frames": [
+    1302,
+    1335
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 1.0,
+  "to_value": 0.0,
+  "active_frames": [
+    1309,
+    1325
+  ],
+  "measured_duration_frames": 16,
+  "bezier": {
+    "x1": 0.4683,
+    "y1": 1.1729,
+    "x2": 1.0,
+    "y2": 0.9538,
+    "durationInFrames": 19,
+    "delay": 0.436,
+    "built_duration_frames": 16,
+    "rmse": 0.0294
+  },
+  "spring": {
+    "stiffness": 230.59,
+    "damping": 27.324,
+    "mass": 1,
+    "damping_ratio": 0.8997,
+    "built_duration_frames": 19,
+    "rmse": 0.0362
+  },
+  "recommended": "bezier",
+  "note": "top-left corner tile (71,166), 979 px from the wave centre, the last node of the wave: per frame the settled tile (f1294) and the settled hexagon (f1335) are scaled about the node centre and composited (hexagon in front), and their scales, opacities and the hexagon blur are fitted to the frame (residual 2-8 luma levels); from f1325 the tile is too faint to size and its scale is held at 0.57 while only its opacity is fitted; the centre tile (1030,575) gives the same values 14.5 f earlier but a noisier tail"
+}

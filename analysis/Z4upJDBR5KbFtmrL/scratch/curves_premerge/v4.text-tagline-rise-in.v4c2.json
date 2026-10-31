@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.text-tagline-rise-in.v4c2",
+  "file": "curves/v4.text-tagline-rise-in.v4c2.csv",
+  "property": "opacity",
+  "unit": "opacity 0-1 (template projection of the settled line)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/c2_tagline_in.csv",
+  "column": "opacity",
+  "sampled_frames": [
+    1532,
+    1575
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 0.0,
+  "to_value": 0.9997,
+  "active_frames": [
+    1537,
+    1558
+  ],
+  "measured_duration_frames": 21,
+  "bezier": {
+    "x1": 0.2569,
+    "y1": 1.2156,
+    "x2": 0.5555,
+    "y2": 0.9459,
+    "durationInFrames": 36,
+    "delay": 0.538,
+    "built_duration_frames": 20,
+    "rmse": 0.0211
+  },
+  "spring": {
+    "stiffness": 247.262,
+    "damping": 31.453,
+    "mass": 1,
+    "damping_ratio": 1.0001,
+    "built_duration_frames": 23,
+    "rmse": 0.0296
+  },
+  "recommended": "bezier",
+  "note": "end-card tagline (1 line, small grey) fades in under the wordmark while rising 13 px"
+}

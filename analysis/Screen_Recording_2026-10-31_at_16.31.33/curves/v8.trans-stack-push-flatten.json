@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.trans-stack-push-flatten",
+ "file": "curves/v8.trans-stack-push-flatten.csv",
+ "property": "position-x",
+ "unit": "% of frame width",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c4_T1_frontcard_edge.csv",
+ "column": "x0_pct",
+ "sampled_frames": [
+  2206,
+  2266
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 23.305,
+ "to_value": 3.699,
+ "active_frames": [
+  2227,
+  2258
+ ],
+ "measured_duration_frames": 31,
+ "bezier": {
+  "x1": 0.8051,
+  "y1": -0.004,
+  "x2": 0.4681,
+  "y2": 0.8151,
+  "durationInFrames": 40,
+  "delay": -7.863,
+  "built_duration_frames": 31,
+  "rmse": 0.0108
+ },
+ "spring": {
+  "stiffness": 61.741,
+  "damping": 11.481,
+  "mass": 1,
+  "damping_ratio": 0.7305,
+  "built_duration_frames": 44,
+  "rmse": 0.3519
+ },
+ "recommended": "bezier",
+ "note": "c4 T1 (3D screen stack -> flat page, f2212-f2258): left edge of the stack's front card (first column with >30 dark px, luma<150; scratch/v8c4_T1_frontcard_edge.csv) while the camera pushes in and the stack yaws toward the camera: 23.37% W (f2212-f2218) -> 3.70% W (f2262). The far end of the stack starts first (right extent 1272 -> 1325 px f2210-f2220 and the top edge rises 262 -> 246 px, scratch/v8c4_T1_stack_bbox.csv), the front edge follows from f2220; the front card's left-edge height grows 213 -> 705 px (f2208-f2250, scratch/v8c4_T1_frontcard_leftedge.csv) and the card ends flat at 92.0% W x 91.5% H (f2258); the page scroll of the next segment starts at f2256.",
+ "chunk_curve_id": "v8.trans-stack-push-flatten.v8c4"
+}

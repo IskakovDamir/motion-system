@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.3d-origami-converge",
+  "file": "curves/v5.3d-origami-converge.csv",
+  "property": "position-x",
+  "unit": "% of frame width",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c6_craneC_r2_locked.csv",
+  "column": "cx_pct_locked",
+  "sampled_frames": [
+    3965,
+    4000
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 69.76,
+  "to_value": 58.446,
+  "active_frames": [
+    3965,
+    3992
+  ],
+  "measured_duration_frames": 27,
+  "bezier": {
+    "x1": 0.4435,
+    "y1": 1.0,
+    "x2": 0.7466,
+    "y2": 0.6621,
+    "durationInFrames": 27,
+    "delay": -0.035,
+    "built_duration_frames": 27,
+    "rmse": 0.0131
+  },
+  "spring": {
+    "stiffness": 91.57,
+    "damping": 79.01,
+    "mass": 1,
+    "damping_ratio": 4.1283,
+    "built_duration_frames": 36,
+    "rmse": 0.072
+  },
+  "recommended": "bezier",
+  "note": "metallic origami crane entering from the lower right (already moving at its first locked picture f3965) flies into depth toward the vanishing point at the frame centre: re-tracked on the crane body only (track.py template, ref f3980, bbox 944 484 96 132 without the trail, scales 0.6-1.6 step 0.01, pad 120 -> scratch/v5c6_craneC_r2.csv); pictures without a lock (score < 0.6: f3960, f3962, and f3985 where ring 2 crosses the crane) are left out (scratch/v5c6_craneC_r2_locked.csv). Body centre x 69.76 -> 58.45 % W, y 64.9 -> 57.4-58.6 % H, template scale 1.45 -> 0.90 (f3965-f3987, then held at 0.90 while the crane blurs into its trail). It slows from 0.94 to 0.34 % W per frame, nearly stops at f3980-f3982 (0.03 % W per frame), moves again at 0.19-0.37 % W per frame over f3982-f3992 and holds on screen from f3992; these are on-screen positions and include the camera: the whip-tilt tail lifts the field 5.0% H over f3965-f3976, the push-in from f3976 carries the crane's place outward (about 0.08% W per frame at f3980-f3982, 0.6% W over f3992-f4000), so relative to the star field the crane slows 0.53-0.60 -> 0.30-0.33 -> 0.15-0.17% W per frame and does not stop (scratch/v5c6_craneC_starframe.csv; camera curve curves/v5.cam-push-in-accelerate.i2.csv)"
+}

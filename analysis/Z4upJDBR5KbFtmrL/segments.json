@@ -1,0 +1,160 @@
+{
+  "video": "Z4upJDBR5KbFtmrL",
+  "key": "v4",
+  "fps": 60,
+  "frame_count": 1688,
+  "segments": [
+    {
+      "id": "S01",
+      "start": 0,
+      "end": 231,
+      "length_frames": 232,
+      "class": "GRAPHICS",
+      "boundary_in": "video-start",
+      "boundary_out": "T01",
+      "summary": "left-aligned 2-line headline builds word by word (rise 18 px + fade, 4.2 f stagger) beside a cluster of six agent logo icons on hexagon cells over a masked hex-outline grid; small black dots hop between icon centres (24 f ease-in-out), the icons pulse to 1.05-1.06 in turn every 25.2 f; the whole layer zooms 3% and fades out"
+    },
+    {
+      "id": "S02",
+      "start": 232,
+      "end": 510,
+      "length_frames": 279,
+      "class": "GRAPHICS",
+      "boundary_in": "T01",
+      "boundary_out": "T02",
+      "summary": "chat window (left) and dark terminal window (right) under a centred 1-line headline: a prompt is typed into the chat input, the send button presses, the message bubble rises in, the list steps up for a status line, the terminal prints its work line by line in one-frame steps, the status flips and a reply rises in after a one-frame list jump; the headline fades and the terminal slides out right through a fade"
+    },
+    {
+      "id": "S03",
+      "start": 511,
+      "end": 742,
+      "length_frames": 232,
+      "class": "GRAPHICS",
+      "boundary_in": "T02",
+      "boundary_out": "T03",
+      "summary": "same two-window layout with a second agent's terminal (slid in from the left during T02) and a 2-word headline: a shorter prompt is typed slower, sent with the same press, bubble, status and step-scroll devices; the terminal prints a review in one-frame steps and the reply rises in; both windows then shrink and fade"
+    },
+    {
+      "id": "S04",
+      "start": 743,
+      "end": 980,
+      "length_frames": 238,
+      "class": "GRAPHICS",
+      "boundary_in": "T03",
+      "boundary_out": "T04",
+      "summary": "hub diagram (white centre card, six dark agent tiles, dashed connectors, 1-word label, centred headline) zoom-settles in from 1.11; dark packets fly out to the tiles every 6 f (23 f each), each landing prints a command line, then results return as grey or dark packets every 16-17 f and step a reply counter; from f922 to f944 it holds completely still, then the headline fades out in place (f945-f956) as the pull-back morph begins"
+    },
+    {
+      "id": "S05",
+      "start": 981,
+      "end": 1152,
+      "length_frames": 172,
+      "class": "GRAPHICS",
+      "boundary_in": "T04",
+      "boundary_out": "T05",
+      "summary": "two-team network at canvas scale 0.553 (two white hubs with 1-word labels, 12 dark icon tiles, dashed connectors) under a new 1-line headline; the first packet hop already crosses the top row in T04 (f990-f1021); camera settles f1015, then packet dots hop node to node and connectors darken with traffic; headline fades out from f1114"
+    },
+    {
+      "id": "S06",
+      "start": 1153,
+      "end": 1310,
+      "length_frames": 158,
+      "class": "GRAPHICS",
+      "boundary_in": "T05",
+      "boundary_out": "T06",
+      "summary": "4x3 grid of 12 teams (12 hubs, 72 tiles) at canvas scale 0.284 of S04 behind a centred 1-line headline; packets hop again from f1160 during the zoom, camera at rest from f1188, dense packet traffic (11-29 dots); at f1294 every dot and long connector is cut in one frame, from f1295 each card shrinks and fades while a hexagon grows in its place, labels, spokes and headline fade"
+    },
+    {
+      "id": "S07",
+      "start": 1311,
+      "end": 1462,
+      "length_frames": 152,
+      "class": "GRAPHICS",
+      "boundary_in": "T06",
+      "boundary_out": "T07",
+      "summary": "84 dark hexagons only: short hold, outward-staggered swarm into a honeycomb disc at the frame centre, ring-by-ring collapse into one growing cell that holds from f1445"
+    },
+    {
+      "id": "S08",
+      "start": 1463,
+      "end": 1687,
+      "length_frames": 225,
+      "class": "GRAPHICS",
+      "boundary_in": "T07",
+      "boundary_out": "video-end",
+      "summary": "end card: brand mark (hexagon) arrives by a jump cut with closed eye bars that open, slides left while the 1-word wordmark's letters fade in and rise 17 px one after another, 1-line grey tagline rises in below, static hold to the last frame"
+    }
+  ],
+  "transitions": [
+    {
+      "id": "T01",
+      "type": "dip-to-bg",
+      "start": 214,
+      "end": 248,
+      "frames": 35,
+      "from": "S01",
+      "to": "S02",
+      "technique": "v4.trans-dip-to-bg"
+    },
+    {
+      "id": "T02",
+      "type": "panel-swap",
+      "start": 495,
+      "end": 525,
+      "frames": 31,
+      "from": "S02",
+      "to": "S03",
+      "technique": "v4.trans-panel-swap"
+    },
+    {
+      "id": "T03",
+      "type": "dip-to-bg",
+      "start": 719,
+      "end": 766,
+      "frames": 48,
+      "from": "S03",
+      "to": "S04",
+      "technique": "v4.trans-dip-to-bg"
+    },
+    {
+      "id": "T04",
+      "type": "pull-back-morph",
+      "start": 945,
+      "end": 1015,
+      "frames": 71,
+      "from": "S04",
+      "to": "S05",
+      "technique": "v4.trans-pullback-morph"
+    },
+    {
+      "id": "T05",
+      "type": "pull-back-reveal",
+      "start": 1114,
+      "end": 1190,
+      "frames": 77,
+      "from": "S05",
+      "to": "S06",
+      "technique": "v4.trans-pullback-reveal"
+    },
+    {
+      "id": "T06",
+      "type": "morph",
+      "start": 1294,
+      "end": 1327,
+      "frames": 34,
+      "from": "S06",
+      "to": "S07",
+      "technique": "v4.trans-tile-hex-morph"
+    },
+    {
+      "id": "T07",
+      "type": "hard-cut",
+      "start": 1463,
+      "end": 1463,
+      "frames": 0,
+      "from": "S07",
+      "to": "S08",
+      "technique": null
+    }
+  ]
+}

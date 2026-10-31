@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-whip-push-left.v7c4",
+  "file": "curves/v7.trans-whip-push-left.v7c4.csv",
+  "property": "position-x",
+  "unit": "% of frame width",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_logo1_cx_spin_2342-2440_newpic.csv",
+  "column": "cx_pct",
+  "sampled_frames": [
+    2342,
+    2371
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 58.662,
+  "to_value": 49.877,
+  "active_frames": [
+    2342,
+    2371
+  ],
+  "measured_duration_frames": 29,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.5454,
+    "x2": 0.4322,
+    "y2": 0.9,
+    "durationInFrames": 29,
+    "delay": 0.829,
+    "built_duration_frames": 27,
+    "rmse": 0.0225
+  },
+  "spring": {
+    "stiffness": 125.435,
+    "damping": 30.181,
+    "mass": 1,
+    "damping_ratio": 1.3474,
+    "built_duration_frames": 31,
+    "rmse": 0.0782
+  },
+  "recommended": "bezier",
+  "note": "incoming half of the leftward whip at the hard cut f2342 (the outgoing product-UI window only drifts left, 0.6 -> 5 px/frame without blur, f2301-f2340: v7c3's v7.cam-drift-accelerating-exit, not a whip-out): the agent logo arrives already moving left (19.5 px/frame over the first two pictures) with horizontal motion blur on f2342-f2345 and decelerates into a slow drift (~1.6 px/frame) by ~f2366; logo bbox centre from ink components (threshold 70), f2342 centre biased by the blur smear; motion starts at the cut (no rest before); the same keyframes repeat at f2941 (+599 frames, within 1 px)"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.ui-dropdown-fill-darken.v7c6",
+  "file": "curves/v7.ui-dropdown-fill-darken.v7c6.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 of the menu panel fill (median of x 1490-1550, y 95-125, inside the panel's top-right)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c6_p3_menu_page_4216-4279.csv",
+  "column": "menu_fill_luma",
+  "sampled_frames": [
+    4216,
+    4249
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 96.0,
+  "to_value": 39.0,
+  "active_frames": [
+    4216,
+    4231
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.9972,
+    "y1": 0.898,
+    "x2": 0.033,
+    "y2": -0.0833,
+    "durationInFrames": 13,
+    "delay": 1.344,
+    "built_duration_frames": 13,
+    "rmse": 0.0354
+  },
+  "spring": {
+    "stiffness": 298.187,
+    "damping": 149.167,
+    "mass": 1,
+    "damping_ratio": 4.3191,
+    "built_duration_frames": 21,
+    "rmse": 0.2454
+  },
+  "recommended": "bezier",
+  "note": "P3 dropdown panel arrives light grey and darkens to its rest fill while it scales in: 96 / 90 / 81 / 72 / 60 / 46 / 39 at f4216 / 4219 / 4221 / 4224 / 4226 / 4229 / 4231; the page behind is black (11), so this is a fill/brightness animation, not an opacity fade; first sample = from-value (cut on motion)"
+}

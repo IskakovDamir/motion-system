@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.text-word-rise-stagger.v6c2",
+  "file": "curves/v6.text-word-rise-stagger.v6c2.csv",
+  "property": "position-y",
+  "unit": "px of the 918 px picture height (word top edge, 702 -> 531 = -18.6% H)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c2_R1_INTO.csv",
+  "column": "y0",
+  "sampled_frames": [
+    946,
+    983
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 702.0,
+  "to_value": 531.0,
+  "active_frames": [
+    956,
+    974
+  ],
+  "measured_duration_frames": 18,
+  "bezier": {
+    "x1": 0.8165,
+    "y1": -0.0,
+    "x2": 0.1088,
+    "y2": 1.0,
+    "durationInFrames": 22,
+    "delay": -1.829,
+    "built_duration_frames": 15,
+    "rmse": 0.0249
+  },
+  "spring": {
+    "stiffness": 1343.625,
+    "damping": 74.547,
+    "mass": 1,
+    "damping_ratio": 1.0169,
+    "built_duration_frames": 10,
+    "rmse": 0.2312
+  },
+  "recommended": "bezier",
+  "note": "P11 reflow 1: the three words of the 1-line headline rise one line (171 px) one after another to make room for line 2 rising from below; this is word 3 (bbox top, ROI x1060-1390 y470-917); words 1/2/3 cross half-way at ~f954/f959/f965 (stagger ~5 f), each 15-18 f active, all with the same bezier (word 1 bezier(1.000,-0.168,0.112,1.013) D=26 rmse 0.037; word 2 (0.912,-0.003,0.004,1.004) D=24 rmse 0.029); the same staggered word rise brings the words in from below the frame during the push at f916-f946"
+}

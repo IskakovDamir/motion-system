@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.cam-pan-reveal.v8c1",
+  "file": "curves/v8.cam-pan-reveal.v8c1.csv",
+  "property": "position-x",
+  "unit": "% of frame width (user bubble text centre)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c1_s05_bubble_630-698.csv",
+  "column": "cx_pct",
+  "sampled_frames": [
+    630,
+    680
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 59.433,
+  "to_value": 73.983,
+  "active_frames": [
+    636,
+    666
+  ],
+  "measured_duration_frames": 30,
+  "bezier": {
+    "x1": 0.939,
+    "y1": 0.6023,
+    "x2": 0.1304,
+    "y2": 0.7177,
+    "durationInFrames": 27,
+    "delay": 3.257,
+    "built_duration_frames": 26,
+    "rmse": 0.0632
+  },
+  "spring": {
+    "stiffness": 104.495,
+    "damping": 16.275,
+    "mass": 1,
+    "damping_ratio": 0.7961,
+    "built_duration_frames": 21,
+    "rmse": 0.1606
+  },
+  "recommended": "bezier",
+  "note": "camera pans so the whole chat UI slides right 14.3% W and the sidebar enters from the left; horizontal motion blur f646-f656 lowers the template score to 0.64-0.76, capture jitter at f653/f654; per-sample residuals <= 0.045 (template on the bubble text, scratch/v8c1_s05_bubble_630-698.csv)"
+}

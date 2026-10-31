@@ -1,0 +1,40 @@
+{
+  "technique_id": "v2.ui-list-item-rise-fade.v2c1",
+  "file": "curves/v2.ui-list-item-rise-fade.v2c1.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (mean of the message row area in window coordinates; 253 = empty, 241.4 = settled)",
+  "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c1_S11_msgs.csv",
+  "column": "m5_mean",
+  "sampled_frames": [
+    864,
+    886
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 253.0,
+  "to_value": 241.333,
+  "active_frames": [
+    871,
+    878
+  ],
+  "measured_duration_frames": 7,
+  "bezier": {
+    "x1": 0.2093,
+    "y1": 0.8839,
+    "x2": 0.2948,
+    "y2": 0.9861,
+    "durationInFrames": 10,
+    "delay": 0.169,
+    "built_duration_frames": 7,
+    "rmse": 0.0259
+  },
+  "spring": {
+    "stiffness": 3357.061,
+    "damping": 123.737,
+    "mass": 1,
+    "damping_ratio": 1.0678,
+    "built_duration_frames": 7,
+    "rmse": 0.0337
+  },
+  "recommended": "bezier",
+  "note": "4th chat message appearing (avatar, name line, text): fade-in measured on the row mean luma with the push-in removed; co-timed rise of 13 px in window coordinates (top edge 658, 652, 649, 647, 646, 645 f872-f877); the four messages are first visible at f796, f821, f847, f872 (25, 26, 25 f apart; rise 9-13 px); fitted with this curve their fades start at f795.6, f820.8, f846.0, f871.2, one every 25.2 f (scratch/v2c1_S11_msg_starts.csv)"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v1.cam-slow-push-in.i2",
+  "file": "curves/v1.cam-slow-push-in.i2.csv",
+  "property": "scale",
+  "unit": "scale factor of the whole network about the frame centre (f830 = 1.0; 0.98990 at the cut f788 -> 1.00897 at f868 = x1.0193)",
+  "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/s5_pushin_cells.csv",
+  "column": "scale",
+  "sampled_frames": [
+    788,
+    868
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 0.9899,
+  "to_value": 1.009,
+  "active_frames": [
+    789,
+    866
+  ],
+  "measured_duration_frames": 77,
+  "bezier": {
+    "x1": 0.3755,
+    "y1": 0.3721,
+    "x2": 0.8259,
+    "y2": 0.8297,
+    "durationInFrames": 79,
+    "delay": -0.819,
+    "built_duration_frames": 77,
+    "rmse": 0.0027
+  },
+  "spring": {
+    "stiffness": 7.412,
+    "damping": 7.169,
+    "mass": 1,
+    "damping_ratio": 1.3166,
+    "built_duration_frames": 125,
+    "rmse": 0.2099
+  },
+  "recommended": "bezier",
+  "note": "S05 push-in: least-squares uniform scale about the frame centre fitted to 23-26 sub-pixel cell tracks outside the headline band (residual 0.03-0.06 px). Already moving at the cut f788 and still moving at f868 (no rest at either end), constant rate 0.00024/f (linear); from f869 the T05 zoom-through takes over. Normalised by the end samples, so the fitted duration is the visible span, not a designed duration. Differs in easing from the S02 instance (ease-out)."
+}

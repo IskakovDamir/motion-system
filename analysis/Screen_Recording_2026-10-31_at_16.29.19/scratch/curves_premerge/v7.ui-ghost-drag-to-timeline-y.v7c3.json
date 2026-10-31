@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.ui-ghost-drag-to-timeline-y.v7c3",
+  "file": "curves/v7.ui-ghost-drag-to-timeline-y.v7c3.csv",
+  "property": "position-y",
+  "unit": "% of frame height at the P4 framing (offset of the ghost grid's row 2/3 gutter below the large timecode label; after the cut f2091 close-up px / 1.762)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p45_ghost_y.csv",
+  "column": "gutter_rel_label_p4_pct",
+  "sampled_frames": [
+    2061,
+    2114
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": -32.026,
+  "to_value": 12.892,
+  "active_frames": [
+    2066,
+    2106
+  ],
+  "measured_duration_frames": 40,
+  "bezier": {
+    "x1": 0.1799,
+    "y1": 0.0052,
+    "x2": 0.2443,
+    "y2": 0.9921,
+    "durationInFrames": 44,
+    "delay": 0.145,
+    "built_duration_frames": 36,
+    "rmse": 0.0233
+  },
+  "spring": {
+    "stiffness": 53.792,
+    "damping": 13.121,
+    "mass": 1,
+    "damping_ratio": 0.8945,
+    "built_duration_frames": 37,
+    "rmse": 0.0205
+  },
+  "recommended": "spring",
+  "note": "P4-P5 y component of the ghost drag, relative to the timeline (the window's own tilt removed): rest f2061-f2064, moves from f2066, crosses the punch-in cut at about 7-10 px per frame (P4 px), keeps sliding down in the close-up with an ease-out and is within 2% of rest from f2106 (the last 1% creeps to f2114, 0.3-0.7 px per frame); x is settled by f2086-f2089. Samples: P4 template track on picture minus f2059 (v7c3_p4_ghost_box_r2059.csv) + 288.0 px; P5 profile peaks of picture minus f2116 (v7c3_p45_ghost_rows.csv). Across the cut the offset grows 52 px (P4) in 5 frames, against 6.9 px per frame before and 4.3 after: the close-up is about 25 px ahead of a smooth continuation (see uncertain)."
+}

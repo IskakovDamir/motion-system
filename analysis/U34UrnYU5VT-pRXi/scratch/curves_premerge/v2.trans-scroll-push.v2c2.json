@@ -1,0 +1,40 @@
+{
+  "technique_id": "v2.trans-scroll-push.v2c2",
+  "file": "curves/v2.trans-scroll-push.v2c2.csv",
+  "property": "position-y",
+  "unit": "px of upward travel (0 -> 1200 px = 111% H; page and network on one vertical strip, hub 940 px below the page reference line)",
+  "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c2_T3_strip.csv",
+  "column": "strip_offset",
+  "sampled_frames": [
+    1596,
+    1640
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 0.0,
+  "to_value": 1200.0,
+  "active_frames": [
+    1605,
+    1622
+  ],
+  "measured_duration_frames": 17,
+  "bezier": {
+    "x1": 0.647,
+    "y1": 0.0051,
+    "x2": 0.3562,
+    "y2": 0.9917,
+    "durationInFrames": 23,
+    "delay": -3.037,
+    "built_duration_frames": 17,
+    "rmse": 0.0027
+  },
+  "spring": {
+    "stiffness": 245.969,
+    "damping": 25.095,
+    "mass": 1,
+    "damping_ratio": 0.8001,
+    "built_duration_frames": 15,
+    "rmse": 0.1103
+  },
+  "recommended": "bezier",
+  "note": "scroll-push from the article page to the network diagram: f1596-f1615 page figure-caption line (track.py template), f1615-f1640 network hub (largest dark blob, scratch/v2c2_T3_hub_cc.csv); the two tracks agree at the hand-off (f1614 hub partly visible at the predicted place); peak 152 px/f at f1613-f1614"
+}

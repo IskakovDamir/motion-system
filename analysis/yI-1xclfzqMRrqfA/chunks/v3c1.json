@@ -1,0 +1,1084 @@
+{
+ "video": "yI-1xclfzqMRrqfA",
+ "key": "v3",
+ "chunk": "v3c1",
+ "frames": [
+  0,
+  826
+ ],
+ "cut_decisions": [
+  {
+   "id": "c001",
+   "frame": 249,
+   "status": "rejected",
+   "reason": "UI step inside S03, not a cut: the chat message list jumps up 170 px in one frame (request bubble y 811-928 -> 641-758) to make room for a status row and a code block that fade in f250-f257, and a dispatch dot appears above the bubble; headline, terminals and every other pixel unchanged (only ffmpeg_scene fired, 0.154; content_val 9.3)"
+  },
+  {
+   "id": "c002",
+   "frame": 335,
+   "status": "rejected",
+   "reason": "same UI step inside S03: list jumps up 170 px in one frame (bubble 641-758 -> 471-588) for the second status row + code block (fade f336-f343) while a dispatch dot leaves for the lower terminal; nothing else changes (ffmpeg_scene 0.169)"
+  },
+  {
+   "id": "c003",
+   "frame": 404,
+   "status": "rejected",
+   "reason": "same UI step inside S03, 92 px (bubble 471-588 -> 379-496), for the reply row (avatar + pill fade f405-f412, words pop f408 and f411); nothing else changes (ffmpeg_scene 0.158)"
+  }
+ ],
+ "boundaries": [
+  {
+   "start": 101,
+   "end": 122,
+   "type": "morph (title swap over the persistent node network)",
+   "frames": 22,
+   "shared": "the whole node network (4 nodes, 4 connectors, packets in flight) stays and keeps animating; the new 3-word headline takes the same slot (centred, cap 85 px, baseline y 582); outgoing headline fades in place f101-f110 and the labels f102-f115; pull-back of the network starts f109 (first change), new headline word 1 pops f116, two new nodes pop in at the midpoints of the top/bottom connectors f117/f118 (opaque f121-f122, overshoot settled f128)",
+   "technique": "v3.trans-morph-title-swap",
+   "curve": "v3.text-fade-out.v3c1",
+   "detail": "detail/soft_101-122",
+   "extra_curves": [
+    "v3.cam-network-pullback.v3c1",
+    "v3.icon-node-pop-in.v3c1"
+   ]
+  },
+  {
+   "start": 216,
+   "end": 241,
+   "type": "dip-to-bg (pure fade-out 8 f, empty f224, staggered panel grow-fade-in)",
+   "frames": 26,
+   "shared": "nothing but the empty background (f224 empty; f225 only the white chat panel at 1/7 of its contrast); outgoing network + headline fade together with no scale (zoom fit k 0.9994-1.0000); incoming panels fade in while growing 0.973 -> 1.000 about their own centres, chat panel f225, top terminal f227, bottom terminal f229 (2 f stagger); headline word 1 pops f228",
+   "technique": "v3.trans-dip-to-bg",
+   "curve": "v3.trans-dip-to-bg.v3c1",
+   "detail": "detail/soft_216-241",
+   "extra_curves": [
+    "v3.ui-panel-grow-fade-in.v3c1",
+    "v3.ui-panel-grow-fade-in-scale.v3c1"
+   ],
+   "measured_out": "layer opacity 0.98, 0.95, 0.90, 0.84, 0.74, 0.60, 0.46, 0.24, 0.00 (f216-f224)"
+  },
+  {
+   "start": 441,
+   "end": 452,
+   "type": "dip-to-bg (panel shrink-fade-out 9 f, empty f450-f451, one-frame word pop f452)",
+   "frames": 12,
+   "shared": "nothing but the background (2 empty frames); panels fade while shrinking 1.000 -> 0.969 about their own centres, the headline fades in place 1 f ahead (gone f449); the incoming single word appears complete in one frame at the frame centre",
+   "technique": "v3.trans-dip-to-bg",
+   "curve": "v3.ui-panel-shrink-fade-out.v3c1",
+   "detail": "detail/soft_441-452",
+   "extra_curves": [
+    "v3.ui-panel-shrink-fade-out-scale.v3c1"
+   ]
+  },
+  {
+   "start": 499,
+   "end": 512,
+   "type": "dip-to-bg (word fade-out 7 f, empty f506-f507, brand-mark pop-in)",
+   "frames": 14,
+   "shared": "nothing but the background (2 empty frames); the outgoing single word fades in place (bbox fixed); the incoming brand mark pops in on x 960 above where the word was (mark centre y 325 vs word centre y 546), opaque at f512, overshoot settled f517",
+   "technique": "v3.trans-dip-to-bg",
+   "curve": "v3.trans-dip-to-bg.v3c1",
+   "detail": "detail/soft_499-512",
+   "extra_curves": [
+    "v3.logo-mark-pop-in.v3c1"
+   ],
+   "measured_out": "word opacity 0.94, 0.88, 0.81, 0.67, 0.51, 0.27, 0.02, 0.00 (f499-f506)"
+  },
+  {
+   "start": 611,
+   "end": 638,
+   "type": "dip-to-bg (group fade-out 7 f, empty f618 (f619 near-empty), left-to-right staggered build)",
+   "frames": 28,
+   "shared": "nothing but the background; outgoing mark + line + URL fade together in place (bboxes fixed); incoming UI builds left to right: left device label f619, chat panel f621-f622, headline word 1 f622, middle terminal f623, right device label f625, right terminal f626 (panels grow 0.975 -> 1.000 while fading in, 13 f each)",
+   "technique": "v3.trans-dip-to-bg",
+   "curve": "v3.trans-dip-to-bg.v3c1",
+   "detail": "detail/soft_611-638",
+   "extra_curves": [
+    "v3.ui-panel-grow-fade-in.v3c1",
+    "v3.ui-panel-grow-fade-in-scale.v3c1"
+   ]
+  },
+  {
+   "start": 778,
+   "end": 791,
+   "type": "dip-to-bg (panel shrink-fade-out 10 f, empty f788-f790, one-frame word pop f791)",
+   "frames": 14,
+   "shared": "nothing but the background (3 empty frames, residue <= 11 luma); panels and device labels shrink 1.000 -> 0.965 about their own centres while fading, the headline fades in place (gone f787); the incoming word pops complete at f791, centred on x 965 and placed above the frame centre (y 362-495)",
+   "technique": "v3.trans-dip-to-bg",
+   "curve": "v3.ui-panel-shrink-fade-out.v3c1",
+   "detail": "detail/soft_778-791",
+   "extra_curves": [
+    "v3.ui-panel-shrink-fade-out-scale.v3c1"
+   ],
+   "measured_out": "middle terminal opacity 0.996, 0.974, 0.952, 0.908, 0.847, 0.760, 0.651, 0.507, 0.336, 0.122, 0 (f778-f788); width scale 0.9998 -> 0.9649 (f787)"
+  }
+ ],
+ "segments": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 111,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "four agent nodes (white rounded hexagon badges carrying logo icons) at the corners pop in with overshoot, four gray labels and a centred 7-word headline pop in word by word, four connectors draw on, dots relay from node to node along the connectors; the headline then fades in place while the network persists"
+  },
+  {
+   "id": "S02",
+   "start": 112,
+   "end": 228,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "the persistent network gains two midpoint nodes and a 3-word headline in the same slot while the network plane pulls back 1.000 -> 0.291 about the frame centre (log-space ease-in-out, 90 f), revealing a triangular node lattice: the inner nodes slide in across the frame edges, the outer nodes of the four half-lattice rows pop in place in 10 mirrored pairs (f158-f195, lower half 4-5 f ahead) and the connectors draw on in mirrored 5-frame waves until f206; dots keep relaying; a soft knock-out glow keeps the headline clean; everything fades out together"
+  },
+  {
+   "id": "S03",
+   "start": 229,
+   "end": 446,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "product UI: two dark terminal windows stacked on the left and a white chat panel on the right grow-fade in (2 f stagger) under a centred 5-word headline popping word by word; a request bubble fades in, the message list steps up in single frames while new rows fade in, dots carry each message between chat and terminals (15 f per hop), terminal lines and streamed words pop (the bottom terminal's first line on a full-width row highlight band, f350 to the exit), status timers count; panels shrink-fade out"
+  },
+  {
+   "id": "S04",
+   "start": 447,
+   "end": 505,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "a single large centred word pops in after two empty frames, holds 47 f, fades out in place"
+  },
+  {
+   "id": "S05",
+   "start": 506,
+   "end": 624,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "brand mark pops in with a small overshoot, a centred 2-word line pops word by word below it, then a gray monospace URL line pops below; the group holds and fades out in place"
+  },
+  {
+   "id": "S06",
+   "start": 625,
+   "end": 784,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "product UI built left to right (two gray device labels, a narrow chat panel, two dark terminals) under a centred 7-word headline; the S03 chat/terminal choreography with three windows (chat -> terminal -> terminal -> terminal -> chat packet hops); panels shrink-fade out"
+  },
+  {
+   "id": "S07",
+   "start": 785,
+   "end": 826,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": true,
+   "live_confirmed_on": [],
+   "summary": "a single large centred word (placed above the frame centre) pops in one frame after three empty frames and holds; its sub line arrives in v3c2 (f844)"
+  }
+ ],
+ "techniques": [
+  {
+   "id": "v3.text-word-pop",
+   "category": "text",
+   "description": "words of a pre-laid (centred) line appear one at a time in their final positions, each in a single frame: no fade, no slide, no scale",
+   "instances": [
+    [
+     9,
+     18
+    ],
+    [
+     11,
+     47
+    ],
+    [
+     116,
+     133
+    ],
+    [
+     228,
+     248
+    ],
+    [
+     452,
+     452
+    ],
+    [
+     514,
+     522
+    ],
+    [
+     540,
+     540
+    ],
+    [
+     622,
+     651
+    ],
+    [
+     791,
+     791
+    ]
+   ],
+   "reference_frames": [
+    11,
+    47
+   ],
+   "measured": {
+    "duration_frames": 0,
+    "easing": "step (word darkness 0 -> 0.995-0.999 of settled in one frame)",
+    "values": "stagger per word: S01 headline 6 f (f11, f17, f23, f29, f35, f41, f47); S01 labels 3 f per word with labels 3 f apart (f9, f12, f15, f18); S02 headline 8-9 f (f116, f124, f133); S03 headline 5 f (f228, f233, f238, f243, f248); S05 line 8 f (f514, f522), URL line 18 f later (f540); S06 headline 5 f (one 4 f: f622, f627, f632, f637, f641, f646, f651); single-word cards pop complete (f452, f791)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v3.text-fade-out",
+   "category": "text",
+   "description": "a headline fades out in place, all words together, no scale or move (bbox fixed)",
+   "instances": [
+    [
+     101,
+     110
+    ],
+    [
+     102,
+     116
+    ]
+   ],
+   "reference_frames": [
+    101,
+    110
+   ],
+   "measured": {
+    "duration_frames": 9,
+    "easing": "bezier(0.265, 0.072, 0.492, -0.002) D=9 (rmse 0.049) / spring {678.9, 38.31} (0.423)",
+    "values": "S01 headline opacity 0.99, 0.96, 0.93, 0.87, 0.77, 0.66, 0.50, 0.33, 0.12, 0.00 (f101-f110); S01 labels 0.986 at f102 -> 0.096 at f115, gone f116"
+   },
+   "curves": [
+    "v3.text-fade-out.v3c1"
+   ]
+  },
+  {
+   "id": "v3.icon-node-pop-in",
+   "category": "icon",
+   "description": "a node (white rounded hexagon badge 282x257 px with an agent logo icon, or a dark badge) fades in over 5 f while scaling up from about 0.87 with a 2.25-2.75% overshoot, settled after 11-12 f; in S02 the same pop runs inside the pulled-back plane (scale relative to the plane)",
+   "instances": [
+    [
+     1,
+     12
+    ],
+    [
+     1,
+     12
+    ],
+    [
+     3,
+     14
+    ],
+    [
+     6,
+     18
+    ],
+    [
+     117,
+     128
+    ],
+    [
+     118,
+     128
+    ],
+    [
+     158,
+     170
+    ],
+    [
+     158,
+     170
+    ],
+    [
+     163,
+     175
+    ],
+    [
+     163,
+     175
+    ],
+    [
+     172,
+     184
+    ],
+    [
+     172,
+     184
+    ],
+    [
+     177,
+     189
+    ],
+    [
+     177,
+     189
+    ],
+    [
+     178,
+     190
+    ],
+    [
+     178,
+     190
+    ],
+    [
+     182,
+     194
+    ],
+    [
+     182,
+     194
+    ],
+    [
+     187,
+     199
+    ],
+    [
+     187,
+     199
+    ],
+    [
+     190,
+     202
+    ],
+    [
+     190,
+     202
+    ],
+    [
+     192,
+     204
+    ],
+    [
+     192,
+     204
+    ],
+    [
+     195,
+     207
+    ],
+    [
+     195,
+     207
+    ],
+    [
+     178,
+     190
+    ]
+   ],
+   "reference_frames": [
+    1,
+    12
+   ],
+   "measured": {
+    "duration_frames": 11,
+    "easing": "scale bezier(0.257, 1.274, 0.492, 1.360) D=11 (rmse 0.012); opacity bezier(0.002, 0.010, 0.536, 1.027) D=5 (rmse 0.001); S02 lattice instance (scale relative to the plane, from the first visible frame) bezier(0.319, 1.532, 0.558, 1.194) D=12 (rmse 0.010), the same device",
+    "values": "top-right node: scale 0.8675 (first visible f1, opacity 0.34), 0.9225, 0.960, 0.9925, 1.0075, 1.0225 (f6-f9), 1.015, 1.0075, 1.000 (f12); opacity 0.34, 0.61, 0.82, 0.95, 1.00 (f1-f5). Starts: top-left f1, top-right f1, bottom-left f3, bottom-right f6; S02 midpoint nodes bottom f117 (0.79 of the pull-back scale), top f118 (0.84), peak 1.016-1.027 f122-f125, settled f128; S02 outer lattice nodes (scratch/v3c1_lattice_nodes_140-215.csv, v3c1_lattice_popfine_*.csv): 10 mirrored pairs of the half-lattice rows pop in place, onsets by final position f158 (y 792.9, x 480.5/1439.8), f163 (y 287.1, x 480.5/1439.8), f172 (y 792.9, x 288.6/1631.7), f177 (y 287.1, x 288.6/1631.7), f178 (y 961.5, x 384.6/1535.7), f182 (y 118.5, x 384.6/1535.7), f187 (y 792.9, x 96.8/1823.5), f190 (y 961.5, x 192.7/1727.6), f192 (y 287.1, x 96.8/1823.5), f195 (y 118.5, x 192.7/1727.6); plus (192.7, 455.7) in place at f178; lower half 4-5 f ahead of the upper half, 14-15 f between pairs along rows y 792.9/287.1, 12-13 f along y 961.5/118.5; node (384.6, 961.7): opacity 0.23, 0.50, 0.71, 0.91, 0.98 (f178-f182), scale relative to the plane 0.8475, 0.9025, 0.950, 0.980, 1.005, 1.0175, 1.0275 (f184-f185), 1.020, 1.020, 1.0125, 1.005, 1.000 (f190) = bezier(0.319, 1.532, 0.558, 1.194) D=12 (curve v3.icon-node-pop-in.lattice.v3c1, same device as S01); upper-half nodes that pop while crossing an edge fade in as they slide in: (576.4, 455.7) f146-f149, (672.4, 287.2) and (1247.9, 287.2) f151-f154, (384.6, 455.7) f162-f165, (576.4, 118.6) and (1343.9, 118.6) f172-f175, three nodes at x 192.7/1727.6 beside the headline f174-f177"
+   },
+   "curves": [
+    "v3.icon-node-pop-in.v3c1",
+    "v3.icon-node-pop-in-opacity.v3c1",
+    "v3.icon-node-pop-in.lattice.v3c1"
+   ]
+  },
+  {
+   "id": "v3.logo-mark-pop-in",
+   "category": "logo",
+   "description": "the brand mark alone on the background pops in: 4-5 f fade with a scale-up from 0.92 and a 1.25% overshoot",
+   "instances": [
+    [
+     508,
+     517
+    ]
+   ],
+   "reference_frames": [
+    508,
+    517
+   ],
+   "measured": {
+    "duration_frames": 9,
+    "easing": "scale bezier(0.185, 1.177, 0.880, 1.401) D=9 (rmse 0.022) / spring {1043.4, 32.81} (0.128)",
+    "values": "scale 0.920, 0.955, 0.978, 0.988, 0.998, 1.010 (f513-f516), 0.998 settled f517 (template grid 0.0025); opacity 0.22, 0.54, 0.78, 0.96, 1.00 (f508-f512); mark 150x146 px centred (960, 325)"
+   },
+   "curves": [
+    "v3.logo-mark-pop-in.v3c1"
+   ]
+  },
+  {
+   "id": "v3.shape-connector-draw-on",
+   "category": "shape",
+   "description": "a connector line grows from one node badge edge to the next: horizontals (rows) left to right, verticals and diagonals top to bottom; 4 px and 9-10 f (horizontal) / 6 f (vertical) in S01, about 1.2 px and 5 f in the S02 lattice",
+   "instances": [
+    [
+     15,
+     24
+    ],
+    [
+     18,
+     28
+    ],
+    [
+     24,
+     30
+    ],
+    [
+     27,
+     33
+    ],
+    [
+     150,
+     155
+    ],
+    [
+     153,
+     157
+    ],
+    [
+     157,
+     162
+    ],
+    [
+     169,
+     174
+    ],
+    [
+     172,
+     176
+    ],
+    [
+     179,
+     183
+    ],
+    [
+     183,
+     189
+    ],
+    [
+     189,
+     194
+    ],
+    [
+     198,
+     203
+    ],
+    [
+     201,
+     206
+    ]
+   ],
+   "reference_frames": [
+    15,
+    24
+   ],
+   "measured": {
+    "duration_frames": 9,
+    "easing": "bezier(0.446, 0.165, 0.551, 0.830) D=9 (rmse 0.0025); S02 lattice connectors bezier(0.500, 0.356, 0.611, 0.692) D=5 (shape rmse 0.044, per-sample residual < 0.001), a shorter variant",
+    "values": "top connector end x 441 -> 1478 (1037 px = 54.0% W): 495, 591, 714, 869, 1049, 1203, 1327, 1423, 1478 (f16-f24); bottom f19-f28 (10 f); right vertical y 387, 444, 495, 592, 658, 702 (f28-f33, 325 px); left vertical f25-f30; first-visible starts f16, f19, f25, f28. S02 lattice connectors (every connector sampled along its predicted line, scratch/v3c1_lattice_edges_140-215.csv; fronts in scratch/v3c1_lattice_edge_*.csv): 5 f each, drawn fraction 0.05, 0.22, 0.43, 0.67, 0.89, 1.00 (f201-f206) = bezier(0.500, 0.356, 0.611, 0.692) D=5 (curve v3.shape-connector-draw-on.lattice.v3c1); mirrored left/right waves start f150, f153, f157-f158, f169-f170, f172, f179, f183-f185, f189, f198, f201, the last complete f206; upper and lower halves draw in the same frames; rows grow left to right and diagonals top to bottom, so a connector starts at a newly popped node only when it is the left or upper end; a pair's first connectors start 11-12 f after a lower-half pop and 6-7 f after the matching upper-half pop (node (288.6, 287.2) pops f177: f183-f188 and f185-f189; corner node (192.7, 118.6) pops f195: f201-f206)"
+   },
+   "curves": [
+    "v3.shape-connector-draw-on.v3c1",
+    "v3.shape-connector-draw-on.lattice.v3c1"
+   ]
+  },
+  {
+   "id": "v3.particle-packet-relay",
+   "category": "particle",
+   "description": "30 px dots (black luma ~17 or gray ~136) hop along the connectors from node centre to node centre with a symmetric ease-in-out, several in flight; a packet arriving at a node is replaced by the next packet leaving it (instance starts hidden behind a glyph are inferred from the measured 20-f hop length)",
+   "instances": [
+    [
+     21,
+     43
+    ],
+    [
+     26,
+     47
+    ],
+    [
+     43,
+     63
+    ],
+    [
+     53,
+     73
+    ],
+    [
+     62,
+     84
+    ],
+    [
+     72,
+     94
+    ],
+    [
+     80,
+     101
+    ],
+    [
+     112,
+     222
+    ]
+   ],
+   "reference_frames": [
+    62,
+    84
+   ],
+   "measured": {
+    "duration_frames": 20,
+    "easing": "bezier(0.573, 0.107, 0.407, 0.932) D=20 (tool rmse 0.067 because the first 3 f are hidden; per-sample residual <= 0.004) / spring {178.0, 19.85} (0.215)",
+    "values": "horizontal hop 1319 px: x 379, 423, 481, 556, 650, 763, 899, 1050, 1180, 1290, 1379, 1451, 1506, 1548, 1578, 1599, 1611, 1617, 1619, 1619 (f65-f84), peak 151 px/f; vertical hop 580 px also about 20 f, peak 68 px/f; arrival rests 1-2 f then vanishes; dots lose about half their contrast behind the headline"
+   },
+   "curves": [
+    "v3.particle-packet-relay.v3c1"
+   ]
+  },
+  {
+   "id": "v3.particle-packet-dispatch",
+   "category": "particle",
+   "description": "a 28 px dot appears in one frame on the sender UI row, holds 1 f, travels a straight line to the receiver with the house ease-in-out and vanishes on arrival; the receiver updates (terminal line, status swap) on the arrival frame, 15 f after the dot appeared",
+   "instances": [
+    [
+     249,
+     264
+    ],
+    [
+     312,
+     327
+    ],
+    [
+     335,
+     350
+    ],
+    [
+     386,
+     401
+    ],
+    [
+     636,
+     651
+    ],
+    [
+     666,
+     681
+    ],
+    [
+     717,
+     732
+    ],
+    [
+     735,
+     750
+    ]
+   ],
+   "reference_frames": [
+    312,
+    327
+   ],
+   "measured": {
+    "duration_frames": 14,
+    "easing": "bezier(0.582, 0.080, 0.416, 0.922) D=12 (rmse 0.019) / spring {540.5, 35.07} (0.274)",
+    "values": "S03 terminal -> chat: (419.5, 459.6) f312-f313 -> (1249.5, 699.7) f327, 864 px (45.0% W); along-path 11.7, 18.9, 38.3, 76.2, 138.7, 231.8, 361.9, 523.5, 653.6, 746.6, 809.1, 846.8, 866.5, 873.8, 874.7 (f313-f327), peak 162 px/f; gray dot (136) visible on the dark panel, dark dots (17) vanish over dark panels"
+   },
+   "curves": [
+    "v3.particle-packet-dispatch.v3c1"
+   ]
+  },
+  {
+   "id": "v3.cam-network-pullback",
+   "category": "cam",
+   "description": "the node-network plane pulls back (scales down) about the frame centre while the headline stays locked to the screen; interpolated in log scale with the house ease-in-out; the inner lattice nodes slide in across the frame edges already at full contrast, while the outer nodes pop in place (v3.icon-node-pop-in) and the connectors draw on (v3.shape-connector-draw-on)",
+   "instances": [
+    [
+     109,
+     208
+    ]
+   ],
+   "reference_frames": [
+    109,
+    208
+   ],
+   "measured": {
+    "duration_frames": 90,
+    "easing": "on ln(scale): bezier(0.584, 0.059, 0.417, 0.942) D=90 starting f113 (rmse 0.005) / spring {9.9, 4.76} (0.303)",
+    "values": "scale 1.000 -> 0.2907 (lattice spacing 660 -> 191.9 px, row pitch 580 -> 168.6 px); per-frame factor min 0.967 at f159; first change f109, settled f208 (factor 1.000 from f209); 0.991 f117, 0.879 f136, 0.718 f148, 0.526 f159, 0.409 f168, 0.332 f180, 0.301 f192, 0.293 f200"
+   },
+   "curves": [
+    "v3.cam-network-pullback.v3c1"
+   ]
+  },
+  {
+   "id": "v3.bg-headline-knockout",
+   "category": "bg",
+   "description": "a soft background-coloured knock-out glow behind the network headlines: connectors and dots passing behind the text dim or vanish, opaque near the text centre, fading toward the text ends and with feathered top/bottom edges",
+   "instances": [
+    [
+     11,
+     110
+    ],
+    [
+     116,
+     223
+    ]
+   ],
+   "reference_frames": [
+    60,
+    212
+   ],
+   "measured": {
+    "duration_frames": 0,
+    "easing": "static",
+    "values": "S01: connector luma 182-183 outside, 213-217 inside y 500-590 at x 300 and x 1620 (52% of the contrast left), feathers y 452-500 and 590-630; a black dot crossing reads luma 79-154. S02 end (f212): row 84 px above the text axis hidden over x 640-1280, partly visible x 256-640 and 1280-1673; verticals through the band hidden at x 576-1344, visible at x 193"
+   },
+   "curves": []
+  },
+  {
+   "id": "v3.trans-morph-title-swap",
+   "category": "trans",
+   "description": "headline swap over a persistent graphic: the outgoing headline fades in place, the network keeps animating and starts its pull-back, new nodes pop in, the new headline pops word by word into the same slot",
+   "instances": [
+    [
+     101,
+     122
+    ]
+   ],
+   "reference_frames": [
+    101,
+    122
+   ],
+   "measured": {
+    "duration_frames": 22,
+    "easing": "outgoing headline: bezier(0.265, 0.072, 0.492, -0.002) D=9; pull-back and node pop as their own techniques",
+    "values": "headline out f101-f110, labels out f102-f115, 5 f without a headline (f110-f115), word 1 f116, nodes f117/f118"
+   },
+   "curves": [
+    "v3.text-fade-out.v3c1"
+   ]
+  },
+  {
+   "id": "v3.trans-dip-to-bg",
+   "category": "trans",
+   "description": "the outgoing layout fades out (ease-in, 7-10 f; UI panels also shrink, see v3.ui-panel-shrink-fade-out), 1-3 empty background frames, then the incoming layout pops in one frame (single words) or builds in (grow-fade panels, mark pop-in)",
+   "instances": [
+    [
+     216,
+     241
+    ],
+    [
+     441,
+     452
+    ],
+    [
+     499,
+     512
+    ],
+    [
+     611,
+     638
+    ],
+    [
+     778,
+     791
+    ]
+   ],
+   "reference_frames": [
+    611,
+    618
+   ],
+   "measured": {
+    "duration_frames": 8,
+    "easing": "bezier(0.212, 0.161, 0.414, -0.068) D=7 (rmse 0.026) / spring {523.9, 27.23} (0.499)",
+    "values": "fitted instance S05 group: 0.97, 0.92, 0.86, 0.76, 0.59, 0.41, 0.17, 0 (f611-f618). Other fade-outs: S02 8 f (f216-f224), S03 9 f, single word 7 f, S06 10 f; empty frames: 1 (f224), 2 (f450-f451), 2 (f506-f507), 1-2 (f618-f619), 3 (f788-f790)"
+   },
+   "curves": [
+    "v3.trans-dip-to-bg.v3c1"
+   ]
+  },
+  {
+   "id": "v3.ui-panel-grow-fade-in",
+   "category": "ui",
+   "description": "a UI panel (terminal window, chat panel, device label) fades in while growing from 0.973 to 1.000 about its own centre, 13 f, staggered 2-3 f across panels",
+   "instances": [
+    [
+     225,
+     234
+    ],
+    [
+     227,
+     240
+    ],
+    [
+     229,
+     241
+    ],
+    [
+     619,
+     632
+    ],
+    [
+     622,
+     629
+    ],
+    [
+     623,
+     635
+    ],
+    [
+     625,
+     638
+    ],
+    [
+     626,
+     638
+    ]
+   ],
+   "reference_frames": [
+    227,
+    240
+   ],
+   "measured": {
+    "duration_frames": 13,
+    "easing": "opacity spring {804.2, 55.19, mass 1} (rmse 0.012) / bezier(0.306, 0.972, 0.668, 0.979) D=13 (0.060); scale bezier(0.290, 0.693, 0.455, 0.954) D=12 (rmse 0.028)",
+    "values": "S03 top terminal opacity 0.05, 0.26, 0.44, 0.57, 0.69, 0.78, 0.85, 0.90, 0.93, 0.96, 0.98, 0.99, 1.00, 1.00 (f227-f240); width scale 0.9726, 0.9779, 0.9828, 0.9871, 0.9905, 0.9934, 0.9953, 0.9970, 0.9979, 0.9987, 0.9995, 0.9997, 1.0000 (f227-f239); S06 middle terminal 0.15 -> 1.00 (f623-f635), scale 0.9748 -> 1.000"
+   },
+   "curves": [
+    "v3.ui-panel-grow-fade-in.v3c1",
+    "v3.ui-panel-grow-fade-in-scale.v3c1"
+   ]
+  },
+  {
+   "id": "v3.ui-panel-shrink-fade-out",
+   "category": "ui",
+   "description": "all UI panels fade out while shrinking about their own centres (ease-in), the headline fades in place 1 f ahead",
+   "instances": [
+    [
+     441,
+     449
+    ],
+    [
+     778,
+     787
+    ]
+   ],
+   "reference_frames": [
+    441,
+    449
+   ],
+   "measured": {
+    "duration_frames": 9,
+    "easing": "opacity bezier(0.180, 0.028, 0.605, -0.004) D=10 (rmse 0.003); scale (visible part) bezier(0.000, 0.121, 0.470, -0.155) D=8 (rmse 0.006)",
+    "values": "S03 opacity 0.99, 0.97, 0.93, 0.88, 0.81, 0.71, 0.57, 0.43, 0.23, 0 (f441-f450); width scale 0.9995, 0.9983, 0.9972, 0.9953, 0.9923, 0.9882, 0.9830, 0.9770, 0.9693 (f441-f449); S06 10 f, scale 0.9649 at f787"
+   },
+   "curves": [
+    "v3.ui-panel-shrink-fade-out.v3c1",
+    "v3.ui-panel-shrink-fade-out-scale.v3c1"
+   ]
+  },
+  {
+   "id": "v3.ui-row-fade-in",
+   "category": "ui",
+   "description": "a chat row (request bubble, status row + code block, reply avatar + pill) fades in place, no slide",
+   "instances": [
+    [
+     235,
+     243
+    ],
+    [
+     250,
+     257
+    ],
+    [
+     336,
+     343
+    ],
+    [
+     405,
+     412
+    ],
+    [
+     625,
+     634
+    ],
+    [
+     637,
+     643
+    ],
+    [
+     755,
+     762
+    ]
+   ],
+   "reference_frames": [
+    249,
+    257
+   ],
+   "measured": {
+    "duration_frames": 8,
+    "easing": "bezier(0.291, 0.757, 0.858, 0.906) D=8 (rmse 0.026) / spring {763.5, 48.39} (0.053)",
+    "values": "rows after the f249 step: 0.22, 0.42, 0.55, 0.69, 0.79, 0.84, 0.93, 0.98, 0.99 (f250-f258); request bubble 0.21, 0.39, 0.56, 0.69, 0.81, 0.89, 0.95, 0.99, 1.00 (f235-f243); reply avatar 0.24 -> 1.00 (f405-f412); text line edges fixed to 0.1 px"
+   },
+   "curves": [
+    "v3.ui-row-fade-in.v3c1"
+   ]
+  },
+  {
+   "id": "v3.ui-chat-step-scroll",
+   "category": "ui",
+   "description": "the chat message list jumps up by the height of the incoming rows in a single frame (no interpolation); the new rows then fade in below",
+   "instances": [
+    [
+     249,
+     249
+    ],
+    [
+     335,
+     335
+    ],
+    [
+     404,
+     404
+    ],
+    [
+     636,
+     636
+    ],
+    [
+     754,
+     754
+    ]
+   ],
+   "reference_frames": [
+    248,
+    249
+   ],
+   "measured": {
+    "duration_frames": 0,
+    "easing": "step",
+    "values": "S03 -170 px (f249), -170 px (f335), -92 px (f404); S06 -296 px (f636), -139 px (f754); bubble height 117 px"
+   },
+   "curves": []
+  },
+  {
+   "id": "v3.ui-text-stream",
+   "category": "ui",
+   "description": "UI text arrives without fades: whole terminal lines pop in one frame, response text streams word by word; the first line of the S03 bottom terminal pops together with a full-width row highlight band",
+   "instances": [
+    [
+     264,
+     282
+    ],
+    [
+     350,
+     383
+    ],
+    [
+     408,
+     411
+    ],
+    [
+     651,
+     732
+    ],
+    [
+     699,
+     726
+    ],
+    [
+     744,
+     752
+    ],
+    [
+     758,
+     766
+    ]
+   ],
+   "reference_frames": [
+    370,
+    381
+   ],
+   "measured": {
+    "duration_frames": 0,
+    "easing": "step",
+    "values": "lines pop f264, f276, f282 (6 f apart), f350, f359; streamed words f370, f373, f376, f378, f381 (2-3 f per word), reply f408, f411, S06 right terminal f699-f725, middle f744-f752, reply f758, f760, f763, f766; S03 bottom terminal f350: the first line arrives with a row highlight band in the same frame (luma 17 -> 33-34, x 30-959 = 48.4% W, y 729-779 = 51 px = 4.7% H, square corners flush with the panel sides, line ink y 741-769 centred), held f350-f440, gone with the panel exit from f441 (scratch/v3c1_s03_band.csv); no band on any other terminal line (S03 top terminal f264-f282, bottom f359; S06 f651, f681)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v3.counter-elapsed-timer",
+   "category": "counter",
+   "description": "a status-row timer (one decimal, seconds) counts up in real time while a request is pending and freezes when the reply arrives",
+   "instances": [
+    [
+     250,
+     327
+    ],
+    [
+     336,
+     401
+    ],
+    [
+     637,
+     750
+    ]
+   ],
+   "reference_frames": [
+    270,
+    285
+   ],
+   "measured": {
+    "duration_frames": 6,
+    "easing": "linear steps",
+    "values": "+0.1 per 6 f (ticks f271, f277, f283 ...; S06 f645, f651 ... f747); final values 1.3 s, 1.1 s, 1.9 s"
+   },
+   "curves": []
+  },
+  {
+   "id": "v3.icon-dot-spinner",
+   "category": "icon",
+   "description": "a small dot-cluster spinner before the pending status text steps through glyph frames",
+   "instances": [
+    [
+     250,
+     327
+    ],
+    [
+     336,
+     401
+    ],
+    [
+     637,
+     750
+    ]
+   ],
+   "reference_frames": [
+    270,
+    285
+   ],
+   "measured": {
+    "duration_frames": 5,
+    "easing": "step",
+    "values": "pattern changes about every 5 f (f274, f279, f285)"
+   },
+   "curves": []
+  }
+ ],
+ "typography_stills": [
+  "type/S01-h1_f00011.png",
+  "type/S01-h1_f00047.png",
+  "type/S01-h1_f00102.png",
+  "type/S01-labels_f00009.png",
+  "type/S01-labels_f00018.png",
+  "type/S01-labels_f00108.png",
+  "type/S02-h2_f00116.png",
+  "type/S02-h2_f00133.png",
+  "type/S02-h2_f00215.png",
+  "type/S03-h3_f00228.png",
+  "type/S03-h3_f00248.png",
+  "type/S03-h3_f00300.png",
+  "type/S03-h3_f00430.png",
+  "type/S03-h3_f00441.png",
+  "type/S03-ui-band_f00349.png",
+  "type/S03-ui-band_f00350.png",
+  "type/S03-ui-stream_f00370.png",
+  "type/S03-ui-stream_f00381.png",
+  "type/S03-ui-stream_f00405.png",
+  "type/S03-ui-stream_f00411.png",
+  "type/S04-word_f00452.png",
+  "type/S04-word_f00498.png",
+  "type/S05-oss_f00508.png",
+  "type/S05-oss_f00514.png",
+  "type/S05-oss_f00522.png",
+  "type/S05-oss_f00540.png",
+  "type/S05-oss_f00610.png",
+  "type/S06-devlabel_f00619.png",
+  "type/S06-devlabel_f00638.png",
+  "type/S06-h4_f00622.png",
+  "type/S06-h4_f00651.png",
+  "type/S06-h4_f00700.png",
+  "type/S06-h4_f00777.png",
+  "type/S06-ui-stream_f00699.png",
+  "type/S06-ui-stream_f00726.png",
+  "type/S06-ui-stream_f00756.png",
+  "type/S06-ui-stream_f00766.png",
+  "type/S07-word_f00791.png",
+  "type/S07-word_f00826.png"
+ ],
+ "uncertain": [
+  {
+   "what": "network packet hop start",
+   "range": "f62-f65 (and every S01/S02 hop start)",
+   "reason": "the departing dot sits over a same-luma glyph or under the arriving dot; curve v3.particle-packet-relay.v3c1 starts from the first clean sample f65 (tool shape rmse 0.067, per-sample residual <= 0.004; fitted start 3.3 f before f65)"
+  },
+  {
+   "what": "node pop-in start scale",
+   "range": "f0-f1",
+   "reason": "f0 is empty and the first visible frame f1 is already at scale 0.8675 / opacity 0.34; the scale curve is fitted from f1"
+  },
+  {
+   "what": "S02 packet traffic and the multi-dot burst",
+   "range": "f146-f215",
+   "reason": "the pull-back moves every element so frame differencing cannot isolate single packets; a burst of 3-4 dots leaving one node at once is visible on crops/crop_560_150_800x780_00150-00180.jpg (f176-f180) but its paths and timing were not measured"
+  },
+  {
+   "what": "lattice connector draw-on at the picture edge and under the glow",
+   "range": "f154, f173-f174; after about f172",
+   "reason": "a connector lying on the first or last pixel row of the picture reads as drawn for one frame (edge artefact, ignored); connectors that slide under the knock-out glow (rows beside the headline near the centre, verticals at x 384-1536) cannot be followed"
+  },
+  {
+   "what": "pop of the inner lattice nodes",
+   "range": "f140-f171",
+   "reason": "they enter the picture already at full contrast; whether and when they popped outside the frame cannot be seen"
+  },
+  {
+   "what": "knock-out glow shape",
+   "range": "S01-S02",
+   "reason": "only anchor values (line/node contrast at sampled points); the exact outline (ellipse vs rounded rectangle) and opacity profile were not measured continuously"
+  },
+  {
+   "what": "chat panel fade timing",
+   "range": "f225-f234, f621-f629",
+   "reason": "the white panel differs from the background by 7 luma levels, so its opacity has 1/7 resolution (+-1 f)"
+  },
+  {
+   "what": "segment split at T1",
+   "range": "f101-f122",
+   "reason": "recorded as a morph boundary (headline replaced, labels removed, nodes added, camera move begins); the merge may prefer one segment with a title swap inside"
+  },
+  {
+   "what": "dispatch hop starts over dark panels",
+   "range": "f386, f636, f666, f717, f735",
+   "reason": "dark dots are invisible over the dark terminals; start frames are taken as arrival minus 15 f (the measured hop length) and from region-change logs"
+  },
+  {
+   "what": "fonts",
+   "range": "all text",
+   "reason": "sans matches Inter Tight closely (straight-tailed y, slanted t top, single-storey g, x-height 0.75-0.77 of cap) but the original is not identified; the monospace UI typeface is not identified"
+  },
+  {
+   "what": "packet luminance rule",
+   "range": "S01-S03",
+   "reason": "dots are black (~17) or mid-gray (~136); which trips use which was not established"
+  }
+ ],
+ "notes": [
+  "No footage anywhere in f0-f826 (checked on overview sheets 00000-00045 .. 00816-00861); one agent logo icon is a pre-rendered soft 3D-looking character inside its badge and never moves.",
+  "Background flat luma 246 in every segment. Ink: text 15-17, node badges 253, connectors 181-183, gray labels 87-91, gray packet 136, terminal panels 17, terminal row highlight band 33-34, chat panels 253, code blocks 239, reply pill 240, terminal text 246-250, gray mono path 144, status text 102, placeholder 127, URL 86-88. Panels carry a faint shadow (235-238 next to their edges).",
+  "One house easing: the pull-back (log scale, D=90), the dispatch hop (D=12) and the relay hop (D=20) all fit bezier ~(0.58, 0.07, 0.42, 0.93); v3c2 found the same shape for its gather and lockup slide.",
+  "Rhythm: every exit starts 5-11 f after a beat (T2 f216 +11, T3 f441 +7, T4 f499 +9, T5 f611 +8, T6 f778 +5) and the first element of the next layout lands 6-10 f before the following beat (f228 -6, f452 -8, f508 -10, f622 -8, f791 -7). On-beat events: labels f9 (0), headline-2 words f124/f133 (on strong onsets), lattice entry f150 (0), S03 headline word 2 f233 (onset 0), terminal line f264 (-1), lower-terminal line f350 (0), S06 word f744 (0).",
+  "Headline sizes by layout: network titles cap 85 px (7.9% H, baseline y 582), S03 UI title 72 px, S06 UI title 60 px, single-word cards 128 px (11.9% H), S05 line 107 px; all centred (ink centres x 961-968).",
+  "Codec effects ignored: 2-frame blips of <= 50 px every 15 f; the S03 bubble's bottom edge row (y 589) alternates 189/251 luma f342-f358.",
+  "Chunk edges: f0 is an empty background frame (first icons f1); f812-f842 is static (the sub line pops at f844 in v3c2), so no boundary sits on f0 or f827.",
+  "Tracker CSVs: scratch/v3c1_*.csv (global stats, zoom scale, icon pops, line draw, dots, fades, panels); review images in detail/review_v3c1/; S02 lattice nodes and connectors: scratch/v3c1_lattice_nodes_140-215.csv, v3c1_lattice_edges_140-215.csv (+ v3c1_lattice_edges_summary.txt), v3c1_lattice_pop_*.csv, v3c1_lattice_popfine_*.csv, v3c1_lattice_edge_*.csv (scripts in scratch/v3c1_tools/); S03 terminal band: scratch/v3c1_s03_band.csv."
+ ]
+}

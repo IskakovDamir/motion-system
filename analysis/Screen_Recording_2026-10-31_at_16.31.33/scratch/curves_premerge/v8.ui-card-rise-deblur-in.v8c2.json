@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.ui-card-rise-deblur-in.v8c2",
+  "file": "curves/v8.ui-card-rise-deblur-in.v8c2.csv",
+  "property": "position-y",
+  "unit": "px (picture 918 px high)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c2_S03_card_rise_yawfree.csv",
+  "column": "top_mean",
+  "sampled_frames": [
+    1004,
+    1060
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 145.0,
+  "to_value": 79.66,
+  "active_frames": [
+    1004,
+    1030
+  ],
+  "measured_duration_frames": 26,
+  "bezier": {
+    "x1": 0.1253,
+    "y1": 0.6926,
+    "x2": 0.3405,
+    "y2": 0.7811,
+    "durationInFrames": 25,
+    "delay": 0.031,
+    "built_duration_frames": 24,
+    "rmse": 0.0205
+  },
+  "spring": {
+    "stiffness": 187.672,
+    "damping": 32.436,
+    "mass": 1,
+    "damping_ratio": 1.1839,
+    "built_duration_frames": 26,
+    "rmse": 0.1085
+  },
+  "recommended": "bezier",
+  "note": "S03 entrance after the hidden cut f1004 (incoming half of the whip f980-f1030): top edge of the dark post card as the mean of its left and right top corners (card mask luma < 90; scratch/v8c2_S03_card_rise_yawfree.csv built from scratch/v8c2_S03_card_geom_no1007.csv, f1007 dropped because the sliding status pill overlaps the card top there). The mean of both corners is insensitive to the card's yaw, which starts at f1024 and lifts the left top corner (l_top 80 -> 74 px while r_top 82 -> 85 px, f1028-f1046); the previous fit on the left corner alone ran into the yaw (42 f, y2 1.15) and is replaced. The card arrives 65 px (7.1% H) low, Gaussian-blurred (sigma 6.5 px = 0.40% W at f1004, 1.0 px at f1010, scratch/v8c2_S03_entry_blur.csv) and about 4% narrow (width 852 px at f1008 -> 884 px by f1028), and rises with a strong ease-out, no overshoot: settled (2% rule) at f1030; card bottom (mean of both corners) 898 -> 841.3 px settles at f1024. From-value = first picture f1004; to-value = rest mean f1032-f1060 (79.66 px; 79.0-80.5 from the 1 px corner quantisation)"
+}

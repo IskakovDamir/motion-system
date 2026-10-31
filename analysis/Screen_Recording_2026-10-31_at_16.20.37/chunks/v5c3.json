@@ -1,0 +1,1042 @@
+{
+ "video": "Screen_Recording_2026-10-31_at_16.20.37",
+ "key": "v5",
+ "chunk": "v5c3",
+ "frames": [
+  1600,
+  2414
+ ],
+ "provisional_segment_ids": "P01..P06 (chunk-local; the merge assigns S-numbers)",
+ "cut_decisions": [
+  {
+   "id": "c051",
+   "frame": 1622,
+   "status": "rejected",
+   "reason": "dropdown collapse + prompt-box group snap inside the UI segment; send button tracked continuously through it (template score 0.85-0.99), no picture replacement"
+  },
+  {
+   "id": "c052",
+   "frame": 1662,
+   "status": "rejected",
+   "reason": "concentric ring burst growing out of the pressed send button inside the UI segment"
+  },
+  {
+   "id": "c053",
+   "frame": 1677,
+   "status": "rejected",
+   "reason": "ring remnants leave the frame and the push-in on the send button starts; same UI composition"
+  },
+  {
+   "id": "c054",
+   "frame": 1690,
+   "status": "confirmed",
+   "reason": "hard cut UI -> full-frame footage (consecutive-picture match 0.41; mean luma 35 -> 99), at the end of an accelerating push-in"
+  },
+  {
+   "id": "c055",
+   "frame": 1697,
+   "status": "rejected",
+   "reason": "camera push-in inside the footage (consecutive match 0.98-0.99 at scale 0.84-0.92 per picture; close-up carries native detail: spectral energy above 0.35 Nyquist 0.0117 at f1720 vs 0.0026 at f1690) while caption line 1 fades in"
+  },
+  {
+   "id": "c056",
+   "frame": 1705,
+   "status": "rejected",
+   "reason": "same in-footage push-in; caption line 2 starts its cascade"
+  },
+  {
+   "id": "c057",
+   "frame": 1753,
+   "status": "confirmed",
+   "reason": "anchor of the soft whip transition f1748-1785 (exit half: content accelerates left 13 -> 148 px/f with horizontal blur)"
+  },
+  {
+   "id": "c058",
+   "frame": 1777,
+   "status": "rejected",
+   "reason": "landing half of the same whip (content decelerates left 115 -> 0 px/f); the boundary is recorded once as the soft transition f1748-1785"
+  },
+  {
+   "id": "c059",
+   "frame": 1825,
+   "status": "confirmed",
+   "reason": "hard cut footage -> dark graphic (match 0.385; mean luma 112 -> 18); headline words already in flight in the first picture"
+  },
+  {
+   "id": "c060",
+   "frame": 1835,
+   "status": "rejected",
+   "reason": "footage card flying in from the bottom-right corner + headline settling + 3D cursor entering from the same corner (blurred streak at f1835), same composition"
+  },
+  {
+   "id": "c061",
+   "frame": 1895,
+   "status": "confirmed",
+   "reason": "anchor of the soft morph transition f1872-1907 (tile-field flash peak and child cards arriving; the footage card is the shared element)"
+  },
+  {
+   "id": "c062",
+   "frame": 2052,
+   "status": "confirmed",
+   "reason": "hard cut tree layout -> full-frame footage (match 0.51; mean luma 44 -> 77)"
+  },
+  {
+   "id": "c063",
+   "frame": 2155,
+   "status": "rejected",
+   "reason": "camera push inside the footage (scale 0.92-0.98 per picture, match >= 0.977) while caption C line 1 fades in"
+  },
+  {
+   "id": "c064",
+   "frame": 2162,
+   "status": "rejected",
+   "reason": "same in-footage push (match 0.987-0.988)"
+  },
+  {
+   "id": "c065",
+   "frame": 2205,
+   "status": "rejected",
+   "reason": "movement inside the footage (match 0.98, scale 1.0) while caption C lines fade out"
+  },
+  {
+   "id": "c066",
+   "frame": 2285,
+   "status": "rejected",
+   "reason": "fast camera pull-back inside the footage (scale 1.04-1.20 per picture over f2282-2307, match >= 0.953; the close shot carries native detail: energy above 0.35 Nyquist 0.0064 at f2280 vs 0.0207 at f2320, a 3.6x digital crop would have ~0)"
+  },
+  {
+   "id": "c067",
+   "frame": 2305,
+   "status": "rejected",
+   "reason": "end of the same in-footage pull-back (match 0.97)"
+  },
+  {
+   "id": "c068",
+   "frame": 2390,
+   "status": "rejected",
+   "reason": "movement inside the footage (match 0.94-0.97, scale 0.98); no graphic on screen"
+  },
+  {
+   "id": "c069",
+   "frame": 2415,
+   "status": "confirmed",
+   "reason": "hard cut footage -> black graphic with a typing headline (match 0.226; mean luma 72 -> 1). Chunk edge: f2415 is the first frame of v5c4, decided here by looking 15 frames past the edge"
+  }
+ ],
+ "boundaries": [
+  {
+   "frame": 1690,
+   "type": "hard-cut",
+   "note": "cut lands at full speed of a push-in on the send button (v5.trans-push-in-cut, curve v5.trans-push-in-cut.v5c3); the footage after the cut keeps zooming in (in-footage, not analysed)"
+  },
+  {
+   "start": 1748,
+   "end": 1785,
+   "type": "whip",
+   "frames": 38,
+   "shared": "leftward horizontal motion in both halves (one virtual pan to the right); exit half accelerates 13 -> 30 -> 92 -> 148 px/f with growing horizontal blur, f1760-1770 is a blurred blend of both shots, landing half decelerates 115 -> 53 -> 54 -> 18 -> 10 -> 0 px/f; the caption layer above is not whipped (keeps its slow drift and fades out by f1766)",
+   "technique": "v5.trans-whip",
+   "curve": "v5.trans-whip.v5c3",
+   "detail": "detail/soft_1748-1785"
+  },
+  {
+   "frame": 1825,
+   "type": "hard-cut",
+   "note": "first picture already holds the headline words mid-flight with heavy horizontal motion blur (v5.text-converge-slide)"
+  },
+  {
+   "start": 1872,
+   "end": 1907,
+   "type": "morph",
+   "frames": 36,
+   "shared": "the rounded footage card (same content, rim and corner shape) shrinks 1.0 -> 0.34 and rises from 59.3 to 20.1 %H at x 49.9 %W to become the parent node of the next layout; the cursor continues its swoop to the right and lands at 88.0 %W, 42.8 %H",
+   "technique": "v5.trans-morph-tree",
+   "curve": "v5.trans-morph-tree.v5c3",
+   "detail": "detail/soft_1872-1907"
+  },
+  {
+   "frame": 2052,
+   "type": "hard-cut",
+   "note": "first footage picture already shows caption B line 1 faintly (caption cut in with the shot)"
+  },
+  {
+   "frame": 2415,
+   "type": "hard-cut",
+   "note": "chunk edge; segment P06 ends at f2414, f2415 opens v5c4"
+  }
+ ],
+ "segments": [
+  {
+   "id": "P01",
+   "start": 1600,
+   "end": 1689,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": true,
+   "continues_into_next_chunk": false,
+   "summary": "close-up of a dark prompt-box UI (label chip, light send button, 2-option dropdown above the box): dropdown collapses while the box group creeps then snaps down-left, box slides left to centre the button, press with echo trail -> concentric rounded-square ring burst + square-tile sweep, accelerating push-in on the button into a hard cut",
+   "note": "segment start lies in v5c2 (same UI view already on overview_01536-01581.jpg); only f1600-1689 described here"
+  },
+  {
+   "id": "P02",
+   "start": 1690,
+   "end": 1766,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "summary": "full-frame footage (own fast push-in, not analysed) with a 3-line staircase caption at the right (1/1/1 words): per-letter blur+fade cascade in, constant drift left and slightly up, line-by-line blur+fade out; leaves through a leftward whip"
+  },
+  {
+   "id": "P03",
+   "start": 1767,
+   "end": 1824,
+   "class": "LIVE",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [
+    "sheets/overview_01728-01773.jpg",
+    "sheets/overview_01776-01821.jpg",
+    "sheets/overview_01824-01869.jpg",
+    "detail/dense_01746-01785_00.jpg",
+    "detail/dense_01746-01785_01.jpg",
+    "detail/dense_01806-01835_00.jpg",
+    "detail/cut_c059_f01825/sheet.jpg"
+   ],
+   "summary": "full-frame footage only (whip landing, then a held shot); caption A's last line is invisible from f1767 (high-pass check)"
+  },
+  {
+   "id": "P04",
+   "start": 1825,
+   "end": 1889,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "summary": "near-black backdrop with halftone-dot corners: 3-word extended heavy headline with a perspective size taper converges in from both sides with motion blur, two 4-point star glints draw along it, a rounded footage card flies in from beyond the bottom-right corner, a 3D arrow cursor flies in on its own from beyond the same corner and lands on the card's corner, then swoops right; morphs out"
+  },
+  {
+   "id": "P05",
+   "start": 1890,
+   "end": 2051,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "summary": "tree diagram: shrunken footage card as top-centre parent node, bracket connectors to three footage cards (middle and right rise from below the frame, left drops from above; outer two turned toward the centre in 3D, 1-word label pills), tile flash behind while it builds; second 3-word headline (reverse size taper) slides + types on at the bottom; cursor parked at right; footage swaps inside card windows at f1987 and f2020; no static hold: the whole layout group (not the cursor, not the background) keeps receding linearly about the frame centre (scale 1.000 at f1920 -> 0.957 at f2050) into the hard cut"
+  },
+  {
+   "id": "P06",
+   "start": 2052,
+   "end": 2414,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "summary": "full-frame footage (own push and fast pull-back, not analysed) with four kinetic caption groups at the upper left (1/2/3, 1/2/2, 1/1, 1/2/2 words) using the same cascade-in / drift / line fade-out device; nothing graphic after f2366; hard cut at f2415"
+  }
+ ],
+ "techniques": [
+  {
+   "id": "v5.ui-group-reframe",
+   "category": "ui",
+   "description": "the whole prompt-box group (box, chip, button, open dropdown) first creeps slowly down-left while scaling down, then snaps down-left as the dropdown collapses; background stays still (bottom band corr 0.999 at zero shift)",
+   "instances": [
+    [
+     1597,
+     1630
+    ]
+   ],
+   "reference_frames": [
+    1597,
+    1615,
+    1628
+   ],
+   "measured": {
+    "duration_frames": 31,
+    "easing": "creep f1597-1615 linear (~3.6 px/f left, 3.0 px/f down, scale 1.02 -> 0.93); snap f1615-1628 bezier(0.706, 0.713, 0.010, 0.785) D=14, rmse 0.001 (spring 568/42.1 rmse 0.031)",
+    "values": "send-button centre (89.0, 29.5) % -> (85.0, 35.3) % in the creep -> (75.7, 50.1) % after the snap; scale 1.02 -> 0.93 (held from f1612)"
+   },
+   "curves": [
+    "v5.ui-group-reframe.v5c3"
+   ]
+  },
+  {
+   "id": "v5.ui-dropdown-collapse",
+   "category": "ui",
+   "description": "open dropdown panel shrinks toward its trigger chip (top-right), blurs and fades, accelerating: a squashed motion-blurred bar at f1622, a small dash at f1626, gone at f1628 (ends with the group snap)",
+   "instances": [
+    [
+     1615,
+     1628
+    ]
+   ],
+   "reference_frames": [
+    1615,
+    1617,
+    1620,
+    1622,
+    1626,
+    1628
+   ],
+   "measured": {
+    "duration_frames": 13,
+    "easing": "UNCERTAIN: no curve. Accelerating collapse: group-relative width 0.99 (f1615), 0.90 (f1617), 0.73 (f1620), <= 0.29 (f1622), 0.03 (f1626), 0 (f1628); the last two traces are motion-blurred ink boxes whose sizes include blur, so a fit would mix template scale (f1612-1620) and blurred ink boxes",
+    "values": "panel scale 0.92 -> 0.84 (f1617) -> 0.68 (f1620) (template, scratch/v5c3_ui_menu.csv); f1622: squashed motion-blurred bar 268 x 67 px (16.5 %W x 7.2 %H) at x 878-1146, y 530-596 px, peak luma 97 over the box interior's 24 (<= 0.27 x 0.20 of the panel, blur included); f1626: dash 30 x 10 px at x 1104-1133, y 531-540 px (lower right of the chip), peak luma 65; f1628: nothing (ink boxes at luma > box + 20 in the region x 700-1180, y 495-660; crops/crop_700_480_480x180_01615-01630.jpg); duration 13 f to gone (f1615-1628), 11 f to the last trace (f1626); relative to the group 1.0 -> 0.73 (f1620); panel centre moves +115 px right and -38 px up relative to the group (toward the chip); panel 61.9 %W x 36.8 %H at f1600"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.ui-box-slide",
+   "category": "ui",
+   "description": "prompt box slides left over the still background until the send button sits at frame centre; horizontal motion blur at peak speed",
+   "instances": [
+    [
+     1630,
+     1655
+    ]
+   ],
+   "reference_frames": [
+    1630,
+    1640,
+    1655
+   ],
+   "measured": {
+    "duration_frames": 25,
+    "easing": "bezier(0.601, 0.435, 0.143, 0.841) D=24, rmse 0.027 (spring 200.5/24.9 rmse 0.054)",
+    "values": "button x 75.7 -> 50.0 %W (-417 px), y fixed 50.1 %H; peak ~35-42 px/f (2.2-2.6 %W/f) around f1637-1642 (30 px/f mean over f1635-1645)"
+   },
+   "curves": [
+    "v5.ui-box-slide.v5c3"
+   ]
+  },
+  {
+   "id": "v5.ui-button-press",
+   "category": "ui",
+   "description": "send button gets a bright outline glow and a short echo trail of ghost copies (behind its last motion), then shrinks as if pressed",
+   "instances": [
+    [
+     1655,
+     1667
+    ]
+   ],
+   "reference_frames": [
+    1655,
+    1657,
+    1665
+   ],
+   "measured": {
+    "duration_frames": 10,
+    "easing": "UNCERTAIN: no curve. Re-tracked twice and both fits still fail the rmse rule: fill width from edge crossings bezier 0.098 / spring 0.060; template in 0.005 scale steps bezier 0.061 / spring 0.065. Fast start, then ease-out; only 4 moving pictures with +-1 f capture jitter",
+    "values": "echo: ~8-10 ghost copies trailing right of the button, edges 5-7 px apart, trail up to ~118 px (7.3 %W) long, f1655-1656; fill width 125.7 px (rest, f1653) -> 123.7 (f1655) -> 107.9 (f1657) -> 88.0 (f1660) -> 76.8 (f1662) -> 73.3 px = 4.5 %W (f1665), scale 1.0 -> 0.984 -> 0.858 -> 0.700 -> 0.611 -> 0.583, held f1665-1667 (73.2 px), recovering from f1670 with the push-in (scratch/v5c3_ui_btn_width.csv, scratch/v5c3_ui_btnscale_fine.csv)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.ui-ring-burst",
+   "category": "ui",
+   "description": "the echo copies become 8-10 concentric glowing rounded-square outlines that expand from the button past the frame edges, easing in over two pictures to a near-constant zoom rate, outer rings rotating clockwise as they grow",
+   "instances": [
+    [
+     1653,
+     1677
+    ]
+   ],
+   "reference_frames": [
+    1655,
+    1660,
+    1665,
+    1672
+   ],
+   "measured": {
+    "duration_frames": 12,
+    "easing": "bezier(0.822, 0.360, 0.587, 0.310) D=10, rmse 0.026 on the linear scale factor (ease-in that ends at full speed when the outer ring leaves the frame); spring fails (0.908). In log scale: growth per picture x1.22, x1.58, then x1.64-1.69 (near-constant log rate from f1657, about x1.22 per frame)",
+    "values": "outermost ring line, centre to centre (luma peaks through the button centre; echo trail excluded): 124 px = button size (f1653) -> 151 (f1655) -> 239 (f1657) -> 404 (f1660) -> 667 (f1662) -> 1094 px = 67.4 %W (f1665; its glow reaches 1190 px = 73.4 %W), then out of frame; scale factor 1.0 -> 8.82; rotation of the outer rings (Hough, near-vertical edges) 0 deg (f1657) -> 0.9 (f1660) -> 2.4 (f1662) -> 4.0 (f1665) -> 9.0 (f1667) -> 13.6 (f1670) -> 17 deg clockwise (f1672); last straight ring edges leave by f1677 (scratch/v5c3_ui_ring_outer_peaks.csv)"
+   },
+   "curves": [
+    "v5.ui-ring-burst.v5c3"
+   ]
+  },
+  {
+   "id": "v5.fx-pixel-sweep",
+   "category": "fx",
+   "description": "a band of glowing square tiles (20-40 px) spawns around the button and sweeps left across the prompt box over the label, then vanishes",
+   "instances": [
+    [
+     1662,
+     1680
+    ]
+   ],
+   "reference_frames": [
+    1662,
+    1670,
+    1677
+   ],
+   "measured": {
+    "duration_frames": 18,
+    "easing": "near-linear after a 3-frame start (no curve kept: median-position fit rmse 0.09, tile scatter)",
+    "values": "median tile x 717 px (44.2 %W, f1662) -> 690 (f1665) -> 580 (f1667) -> 491 (f1670) -> 423 (f1672) -> 350 (f1675) -> 268 (f1677) -> 201 px (12.4 %W, f1680); ~2.1 %W/f after f1665"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.trans-push-in-cut",
+   "category": "trans",
+   "description": "button recovers from the press while the whole UI pushes in on it, accelerating, with zoom blur and a bulge warp of the box outline; hard cut at full speed into footage that keeps zooming in",
+   "instances": [
+    [
+     1667,
+     1690
+    ]
+   ],
+   "reference_frames": [
+    1667,
+    1680,
+    1685,
+    1687
+   ],
+   "measured": {
+    "duration_frames": 20,
+    "easing": "bezier(0.181, 0.093, 1.000, 0.108) D=18, rmse 0.023 (strong ease-in, ends at the cut)",
+    "values": "button scale 0.58 -> 0.98 (f1680) -> 1.18 -> 1.54 -> 2.46 (f1687, button 19 %W wide); box scale vs rest ~1.04 (f1672) -> 1.31 (f1680) -> 1.59 (f1685) -> ~2.7 (f1687); per-picture zoom x1.20, x1.31, x1.60 in the last 3 steps; pivot = button centre, drifting from (50.6 %W, 49.0 %H) at f1680 to (50.0 %W, 47.5 %H) at f1687; button bright-box width 124 px at rest -> 307 px (18.9 %W) at f1687"
+   },
+   "curves": [
+    "v5.trans-push-in-cut.v5c3"
+   ]
+  },
+  {
+   "id": "v5.text-caption-letter-fade",
+   "category": "text",
+   "description": "kinetic caption lines reveal letter by letter left to right, each letter going from blurred/transparent to sharp; the cascade runs on from one line into the next (staircase lines)",
+   "instances": [
+    [
+     1690,
+     1737
+    ],
+    [
+     2052,
+     2088
+    ],
+    [
+     2152,
+     2186
+    ],
+    [
+     2226,
+     2256
+    ],
+    [
+     2296,
+     2332
+    ]
+   ],
+   "reference_frames": [
+    2307,
+    2315,
+    2322,
+    2330
+   ],
+   "measured": {
+    "duration_frames": 36,
+    "easing": "line envelope bezier(0.986, 1.102, 0.507, 0.893) D=34, rmse 0.038 (caption E line 2, ~9 letters)",
+    "values": "letters start ~1.8 f apart; one letter ~10 f from 10% to 90%; line n+1 starts 8-13 f after line n (A: 1690/1702/1712, B: 2052/2064/2072, C: 2152/2160/2172, D: 2226/2238, E: 2296/2308/2318); line 1 of a group appears with the first picture of its shot (f1690, f2052)"
+   },
+   "curves": [
+    "v5.text-caption-letter-fade.v5c3"
+   ]
+  },
+  {
+   "id": "v5.text-caption-drift",
+   "category": "text",
+   "description": "the whole caption block drifts at constant velocity left and slightly up through reveal, hold and exit (no easing)",
+   "instances": [
+    [
+     1690,
+     1766
+    ],
+    [
+     2052,
+     2120
+    ],
+    [
+     2152,
+     2216
+    ],
+    [
+     2226,
+     2284
+    ],
+    [
+     2296,
+     2366
+    ]
+   ],
+   "reference_frames": [
+    1700,
+    1735
+   ],
+   "measured": {
+    "duration_frames": 74,
+    "easing": "linear (caption A line 1 moves exactly 15 px per 24-fps source picture)",
+    "values": "vx -6.0 px/f = -0.37 %W/f, vy -0.70 px/f = -0.076 %H/f (A, f1700-1735); B -5.1/-0.54, C -5.2/-0.56, D -5.1/-0.39, E -4.5/-0.51 px/f; direction 6-7 deg above horizontal-left"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.text-caption-line-fade-out",
+   "category": "text",
+   "description": "caption lines leave one at a time, first line first, each line as one unit with blur + fade while still drifting",
+   "instances": [
+    [
+     1722,
+     1766
+    ],
+    [
+     2088,
+     2120
+    ],
+    [
+     2186,
+     2216
+    ],
+    [
+     2264,
+     2284
+    ],
+    [
+     2334,
+     2366
+    ]
+   ],
+   "reference_frames": [
+    2338,
+    2343,
+    2347,
+    2350
+   ],
+   "measured": {
+    "duration_frames": 12,
+    "easing": "bezier(0.804, 1.015, 0.390, 0.878) D=13, rmse 0.009 (caption E line 2)",
+    "values": "line exits 8-11 f apart (A 1722/1733/1740, B 2088/2098/2106, C 2186/2196/2204, D 2264/2274, E 2334/2344/2352); each line ~8-12 f; caption A's last line stretched to ~18 f under the whip; hold of line 1 fully visible ~28-30 f (B-E), 17 f (A)"
+   },
+   "curves": [
+    "v5.text-caption-line-fade-out.v5c3"
+   ]
+  },
+  {
+   "id": "v5.trans-whip",
+   "category": "trans",
+   "description": "whip transition between two footage shots: outgoing shot accelerates left with growing horizontal motion blur, ~10 f blurred blend, incoming shot lands decelerating",
+   "instances": [
+    [
+     1748,
+     1785
+    ]
+   ],
+   "reference_frames": [
+    1748,
+    1757,
+    1765,
+    1772,
+    1782
+   ],
+   "measured": {
+    "duration_frames": 38,
+    "easing": "landing half bezier(0.003, 0.271, 0.545, 1.028) D=12, rmse 0.030 (spring 584/45.0 rmse 0.075); exit half measured only",
+    "values": "exit speeds 13 (f1748-1750), 30, 92, 148, ~141 px/f (f1757-1760); landing 229, 159, 107, 55, 19, -1 px per picture over f1770-1785 = 35.05 %W total; midpoint f1766"
+   },
+   "curves": [
+    "v5.trans-whip.v5c3"
+   ]
+  },
+  {
+   "id": "v5.text-converge-slide",
+   "category": "text",
+   "description": "headline words fly in horizontally from opposite sides with heavy motion blur and land almost instantly: the big first word from the left, the two smaller words from the right one picture earlier",
+   "instances": [
+    [
+     1825,
+     1837
+    ]
+   ],
+   "reference_frames": [
+    1825,
+    1827,
+    1830,
+    1837
+   ],
+   "measured": {
+    "duration_frames": 5,
+    "easing": "words 2-3: bezier(0.000, 1.064, 0.000, 0.965) D=10 (built 5 f), rmse 0.015 - lands within 5 f, first picture already mid-flight",
+    "values": "words 2-3 ink centroid 83.5 %W (f1825) -> 66.2 (f1827) -> 64.7 (f1830) -> 64.4 %W (rest); word 1 3.3 %W (f1825, mostly off-left) -> 25.8 (f1827) -> 35.0 (f1830, +9 px overshoot) -> 34.4 %W by f1837; smear length ~600 px at f1825-1827"
+   },
+   "curves": [
+    "v5.text-converge-slide.v5c3"
+   ]
+  },
+  {
+   "id": "v5.fx-sparkle-glint",
+   "category": "fx",
+   "description": "thin bright streak runs along the headline edge and blooms into a 4-point star at its end; one at the top-left of the first word, a mirrored one under the last word",
+   "instances": [
+    [
+     1827,
+     1840
+    ],
+    [
+     1837,
+     1847
+    ],
+    [
+     1905,
+     1915
+    ]
+   ],
+   "reference_frames": [
+    1827,
+    1832,
+    1840
+   ],
+   "measured": {
+    "duration_frames": 13,
+    "easing": "bezier(0.000, 1.421, 0.378, 0.627) D=10, rmse 0.020 (top-left streak left end)",
+    "values": "top-left streak left end 35.9 %W (f1827) -> 19.9 (f1830) -> 19.7 (f1835) -> 18.6 (f1837) -> 17.8 %W (f1842+), star at ~(18.8 %W, 20.5 %H) full by f1840; bottom-right streak grows right x 1224 -> 1348 px (75.5 -> 83.1 %W) f1837-1845, star at ~(81.7 %W, 37.0 %H); headline 2 gets one under its last letters f1905-1915"
+   },
+   "curves": [
+    "v5.fx-sparkle-glint.v5c3"
+   ]
+  },
+  {
+   "id": "v5.footage-card-fly-in",
+   "category": "footage",
+   "description": "rounded footage card (bright rim, soft glow) enters from beyond the bottom-right corner on a straight diagonal: a slow drift-in for two pictures, then a snap with motion blur and a long hard ease-out into place under the headline",
+   "instances": [
+    [
+     1825,
+     1853
+    ]
+   ],
+   "reference_frames": [
+    1825,
+    1827,
+    1830,
+    1832,
+    1840,
+    1853
+   ],
+   "measured": {
+    "duration_frames": 28,
+    "easing": "two phases: drift f1825-1830 (corner y 873 -> 811 -> 743 px, x 1210 -> 1112 px f1827-1830: ~23-31 px/f in y, ~33 px/f in x; measured only), then snap + ease-out from f1830: bezier(0.003, 0.984, 0.667, 0.970) D=21, rmse 0.007 on the centre x (y: bezier(0.091, 0.923, 0.437, 0.949) rmse 0.0045); spring fails (0.155)",
+    "values": "top-left rim corner matched with a motion-blurred corner template (blur 0-120 px along the 30.5 deg path, scores 0.95-1.00): f1825 top edge at 95.1 %H (only the corner in frame); centre (96.5, 108.1) % f1827 -> (90.4, 100.6) f1830 -> (68.7, 80.6) f1832 (blurred, best blur 120 px) -> (60.5, 70.0) f1835 -> (56.2, 65.8) f1837 -> (53.8, 63.3) f1840 -> (51.2, 60.7) f1845 -> (50.1, 59.6) f1850 -> (49.9, 59.4) % rest by f1853; x and y progress together (straight path); between f1830 and f1832 the card covers 54 % of the remaining travel (~176 px/f in x, 5x the drift speed); scale 1.0; card 43.8 %W x 39.3 %H, corner radius ~78 px (4.8 %W) (scratch/v5c3_P04_card_corner.csv)"
+   },
+   "curves": [
+    "v5.footage-card-fly-in.v5c3"
+   ]
+  },
+  {
+   "id": "v5.cursor-fly-in",
+   "category": "cursor",
+   "description": "beveled 3D arrow cursor flies in on its own (not riding the card) from beyond the bottom-right corner along a near-straight diagonal, motion-blurred and tilted counter-clockwise, decelerating hard onto the footage card's bottom-right corner and untilting as it lands",
+   "instances": [
+    [
+     1835,
+     1860
+    ]
+   ],
+   "reference_frames": [
+    1835,
+    1837,
+    1840,
+    1845,
+    1850,
+    1855,
+    1860
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "bezier(0.002, 0.484, 0.275, 1.007) D=19 (built 15 f), rmse 0.0082 on the distance of the cursor centre to its rest point, from the first visible picture f1835 (already in flight; the start of the move is outside the frame); spring fails (rmse 0.119); x alone: bezier(0.001, 0.510, 0.314, 1.004) D=19, rmse 0.040 (y settles first)",
+    "values": "cursor centre (86.9, 91.6) % f1835 (motion-blurred streak x 1353-1505, y 814-905 px at luma > 40, right of and below the card's corner; streak luma centroid (1422, 856) px) -> (75.2, 82.7) f1837 -> (69.9, 78.8) f1840 -> (66.9, 76.9) f1842 -> (65.0, 75.8) f1845 -> (63.9, 75.3) f1847 -> (63.1, 75.2) f1850 -> (62.8, 75.1) f1853 -> rest (62.6, 75.3) % from f1855 (within 1 px from f1857); not readable at f1832 (the blurred card covers that corner); path 26.0 %W (dx -24.3 %W, dy -16.3 %H), 23 deg above horizontal at entry flattening to ~5 deg at the end; steps 208, 92, 52, 32, 20, 12, 6, 1 px per picture (~104 px/f at f1835-1837, 2 px/f by f1850-1853); in-plane tilt counter-clockwise ~30 deg (f1835-1837, weak) -> 24 (f1840) -> 18 (f1842) -> 14 (f1845) -> 10 (f1847) -> 8 (f1850) -> 6 (f1853-1855) -> 4 (f1857) -> 0 deg (f1860; fits at 0 deg score 0.64-0.95 vs 0.92-0.996 at the best tilt); template scale 0.88-1.0 (weakly determined); the card moves only 10.6 %W in x (centre 60.5 -> 49.9 %W) over the same frames and lands at f1853, the cursor at f1855. Masked template from the resting cursor (f1860) searched over scale, tilt and a line motion blur (scratch/v5c3_P04_cursor_entry.csv; crops/crop_950_600_672x318_01832-01862.jpg)"
+   },
+   "curves": [
+    "v5.cursor-fly-in.v5c3"
+   ]
+  },
+  {
+   "id": "v5.cursor-swoop",
+   "category": "cursor",
+   "description": "beveled 3D arrow cursor parked on the card's bottom-right corner winds up slightly left, then swoops right and up while tilting, and lands upright beside the new layout",
+   "instances": [
+    [
+     1862,
+     1892
+    ]
+   ],
+   "reference_frames": [
+    1862,
+    1867,
+    1875,
+    1880,
+    1892
+   ],
+   "measured": {
+    "duration_frames": 20,
+    "easing": "bezier(0.552, -0.320, 0.055, 0.967) D=29, rmse 0.037 (anticipation dip); spring 453/42.8 rmse 0.039",
+    "values": "(62.8, 75.7) % rest -> anticipation 61.6 %W at f1867 (-21 px) -> (74.8, 53.4) f1875 -> (83.1, 47.6) f1880 -> (88.0, 42.8) % rest by f1892; peak ~52 px/f at f1872-1877; tilt clockwise up to ~40-60 deg in flight (20-deg search steps), 0 deg at landing; cursor ~6 %W"
+   },
+   "curves": [
+    "v5.cursor-swoop.v5c3"
+   ]
+  },
+  {
+   "id": "v5.trans-morph-tree",
+   "category": "trans",
+   "description": "morph from single card + headline to a tree diagram: the footage card shrinks and rises to become the parent node, the headline shrinks, tilts and blurs out, connector lines draw out, a tile field flashes and the child cards and second headline arrive",
+   "instances": [
+    [
+     1872,
+     1907
+    ]
+   ],
+   "reference_frames": [
+    1872,
+    1880,
+    1882,
+    1885,
+    1892,
+    1907
+   ],
+   "measured": {
+    "duration_frames": 36,
+    "easing": "card scale bezier(0.995, 0.354, 0.000, 1.256) D=19, rmse 0.011 (strong ease-in, abrupt stop with undershoot)",
+    "values": "card scale 1.0 -> 0.99 (f1872) -> 0.95 -> 0.89 -> 0.75 (f1880) -> 0.34 (f1882) -> 0.31 (f1885) -> 0.34 (f1892); centre y 59.3 -> 57.1 -> 53.8 -> 46.6 -> 23.8 -> 20.3 -> 20.1 %H, x 49.9 %W fixed; headline width 65.0 -> 61.9 (f1875) -> 56.8 (f1877) -> 45.7 %W (f1880), gone by f1885"
+   },
+   "curves": [
+    "v5.trans-morph-tree.v5c3"
+   ]
+  },
+  {
+   "id": "v5.shape-connector-draw",
+   "category": "shape",
+   "description": "thin light connector line: first stretches from both sides of the shrinking card (right end following the cursor), then draws out as the tree bracket from the parent node with rounded 90-degree turns down to the outer cards and a short stem to the middle card",
+   "instances": [
+    [
+     1875,
+     1895
+    ]
+   ],
+   "reference_frames": [
+    1877,
+    1885,
+    1887,
+    1892
+   ],
+   "measured": {
+    "duration_frames": 10,
+    "easing": "UNCERTAIN (tiles overlap the line f1887-1890; no curve)",
+    "values": "horizontal run from the parent card edge 0 (f1882) -> 107-112 px (f1885) -> 158-178 px (f1887, overshoot or tile contamination) -> 130-145 px (8.0-8.9 %W) settled f1892; line ~3 px with a soft glow"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.fx-tile-flash",
+   "category": "fx",
+   "description": "field of semi-transparent glowing squares flashes up in a ring around the parent node, spreads over the background and fades while the tree builds",
+   "instances": [
+    [
+     1885,
+     1905
+    ]
+   ],
+   "reference_frames": [
+    1887,
+    1892,
+    1897,
+    1905
+   ],
+   "measured": {
+    "duration_frames": 18,
+    "easing": "rise 5 f, hold ~3 f, ease-out decay ~10 f (no curve kept: 5 decay samples, rmse 0.09)",
+    "values": "background-region luma (left of the tree) 13.4 (f1885) -> 17.7 -> 27.9 (f1890) -> 78.5 (f1892) -> 75.8 (f1895) -> 49.0 -> 31.6 (f1900) -> 21.3 -> 15.6 (f1905); right region peaks later, 59.5 at f1895 (left-to-right spread)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.card-rise-stagger",
+   "category": "card",
+   "description": "three child footage cards arrive vertically from opposite sides into a row, with motion blur along the move and no scale change: the middle card rises from below the frame first, drifting in for two pictures, then snapping up with a hard ease-out; the right card repeats that one picture later; the left card drops from above into place and settles first; the outer cards end turned toward the centre",
+   "instances": [
+    [
+     1885,
+     1907
+    ]
+   ],
+   "reference_frames": [
+    1885,
+    1887,
+    1890,
+    1892,
+    1895,
+    1900,
+    1902,
+    1907
+   ],
+   "measured": {
+    "duration_frames": 20,
+    "easing": "middle card: drift-in f1885-1890 (measured only), then snap + settle bezier(0.001, 0.518, 0.043, 0.972) D=13 (built 10 f), rmse 0.0046 from f1890 (spring fails 0.335); one curve over f1885-1920 fails (bezier 0.126, spring 0.193) because the move has two phases. Right card: same snap and settle one picture later, own fit from f1892 bezier(0.185, 0.970, 0.292, 0.843) D=10 rmse 0.018, a similar hard ease-out with the same 10 f active window (progress 0.86 / 0.94 / 0.98 at 5 / 8 / 10 f after its snap start vs 0.88 / ~0.96 / 0.98 for the middle card), so no separate curve. Left card (visible part of the drop, bottom rim): spring {942.9, 62.34} rmse 0.046 / bezier(0.163, 0.347, 0.159, 0.466) D=8 rmse 0.055",
+    "values": "start order: middle card top rim over the bottom edge at f1885 (not in frame at f1882), right card rim at f1890 (not at f1887), left card first visible at f1890 high in frame (not at f1887). Middle card top rim (50 % crossing) 912.7 px = 99.4 %H (f1885) -> 892.2 (f1887) -> 802.7 (f1890) -> 428.1 (f1892) -> 335.1 (f1895) -> 297.8 (f1897) -> 279.5 (f1900) -> 270.9 (f1902) -> 269.0 px = 29.3 %H (f1905, rest); steps 20, 90, 375, 93, 37, 18, 9, 2 px per picture; centre = rim + 177.7 px: 118.8 -> 48.7 %H (70.0 %H of travel); width between the side rims 263-265 px (16.2-16.3 %W) on every picture f1892-f1920 (260 at f1890), height 355-362 px: scale 1.0 (the template scale 1.04 -> 1.16 of the earlier track was vertical motion blur). Right card top rim ~914 (f1890) -> 803.4 (f1892) -> 434.9 (f1895) -> 343.1 (f1897) -> 301.9 (f1900) -> 281.3 (f1902) -> 272.1 (f1905) -> 270.1 px (f1907, rest); steps 111, 368, 92, 41, 21, 9, 2 px; rest centre 48.8 %H (rims 270.7 / 625.4 px). Left card centre (rim midpoint) 297.5 px = 32.4 %H (f1890, smeared: rims 88 / 507 px, 419 px tall vs 370 at rest) -> 371.7 (f1892) -> 411.7 (f1895) -> 430.6 (f1897) -> 439.7 (f1900) -> 441.6 px = 48.1 %H (f1902, rest): drop 143.5 px = 15.6 %H, steps 74, 40, 19, 9, 2 px; x 528 -> 511 px (32.6 -> 31.5 %W); width 264 px at f1890 (0.98x of 269 at rest), 283 at f1897, 269 from f1915; inner / outer rim heights 345 / 369 px (f1895) -> 323 / 390 px (f1920): it turns further toward the centre while landing. Settled within 2 %: left f1900, middle f1900, right f1902; within 1 px: left f1902, middle f1905, right f1907 (scratch/v5c3_P05_cards_edges.csv: row profiles, 50 % crossings; crops/crop_560_800_760x118_01880-01897.jpg, crops/crop_340_40_380x620_01887-01905.jpg)"
+   },
+   "curves": [
+    "v5.card-rise-stagger.v5c3",
+    "v5.card-rise-stagger.left.v5c3"
+   ]
+  },
+  {
+   "id": "v5.text-type-on",
+   "category": "text",
+   "description": "second headline: first six letters arrive as a blurred slide from the left (landing horizontally stretched, see v5.text-tracking-settle), then the rest type on one letter per source picture, the newest letter flashing white before settling to the metallic grey",
+   "instances": [
+    [
+     1897,
+     1915
+    ]
+   ],
+   "reference_frames": [
+    1897,
+    1900,
+    1905,
+    1912
+   ],
+   "measured": {
+    "duration_frames": 12,
+    "easing": "bezier(0.000, 0.094, 1.000, 0.906) D=12, rmse 0.015 (letters 6 -> 11, ~linear staircase)",
+    "values": "letters revealed: 0 (smear, f1897) -> 6 (f1900) -> 7 (f1902) -> 8 (f1905) -> 9 (f1907) -> 10 (f1910) -> 11 (f1912) = 2.4 f per letter; glint under the last letters f1905-1915"
+   },
+   "curves": [
+    "v5.text-type-on.v5c3"
+   ]
+  },
+  {
+   "id": "v5.text-tracking-settle",
+   "category": "text",
+   "description": "a line that slid in lands horizontally stretched (extra spacing in the gaps of the slid-in letters, growing toward the right part of the line) and tightens leftward into place with an ease-out while further letters type on at its end at about the current offset and ride along; the left end barely moves",
+   "instances": [
+    [
+     1902,
+     1917
+    ]
+   ],
+   "reference_frames": [
+    1902,
+    1905,
+    1907,
+    1910,
+    1912,
+    1917,
+    1920
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "bezier(0.002, 0.176, 0.454, 1.022) D=14, rmse 0.015 on the offset of letter 7 from its first sharp picture f1905 (spring 477.4/41.35 rmse 0.057); letter 5 follows the same normalised curve (0.36/0.62/0.82/0.93/0.99 vs 0.35/0.62/0.82/0.93/0.98)",
+    "values": "per-letter template track (scores >= 0.94 from f1905): offset of letter 7 right of its rest place +115 px (f1902, blurred, ink box) -> +51.1 px = 3.2 %W (f1905) -> +33.0 (f1907) -> +19.2 (f1910) -> +9.3 (f1912) -> +3.7 (f1915) -> +0.8 (f1917) -> 0 (f1920); at f1905 letters 1-8 sit +7.8/+17.3/+27.6/+36.7/+44.3/+49.5/+51.1/+51.2 px out (gap excess +9.5, +10.3, +9.1, +7.6, +5.2, +1.6 px for gaps 1-2 .. 6-7); letter 1 (left end) moves only 8-10 px; line width +4.1 % (f1907) -> +1.5 % (f1910) -> +0.5 % (f1912) over rest; letter heights constant within 3 px, letters 0-4 px low at f1905-1907 and 1 px at f1910-1912 (scratch/v5c3_P05_hl2_letter_dx.csv)"
+   },
+   "curves": [
+    "v5.text-tracking-settle.v5c3"
+   ]
+  },
+  {
+   "id": "v5.footage-window-swap",
+   "category": "footage",
+   "description": "footage inside a card window changes by a plain cut while the layout around it keeps its slow recede (no pause)",
+   "instances": [
+    [
+     1987,
+     1987
+    ],
+    [
+     2020,
+     2020
+    ]
+   ],
+   "reference_frames": [
+    1987,
+    2020
+   ],
+   "measured": {
+    "duration_frames": 0,
+    "easing": "hard cut (no curve)",
+    "values": "left child card f1987 (window diff 31 luma), middle child card f2020 (diff 52 luma); parent and right cards keep playing"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.layout-slow-recede",
+   "category": "layout",
+   "description": "after landing, the whole graphic group (cards, connectors, headline, glints) keeps shrinking linearly about the frame centre until the cut, with no static hold; the cursor and the background are on separate layers and do not scale; same device as v5c6",
+   "instances": [
+    [
+     1837,
+     1870
+    ],
+    [
+     1892,
+     2051
+    ]
+   ],
+   "reference_frames": [
+    1837,
+    1870,
+    1892,
+    1920,
+    1985,
+    2050
+   ],
+   "measured": {
+    "duration_frames": 159,
+    "easing": "linear (no rest at either end, no curve): P05 headline-2 template scale slope -0.0331 %/f over f1920-2050 (residual rms 0.0007, n=53), right card -0.0325 %/f, parent card -0.0327 %/f over f1892-2050; P04 headline 1 -0.032 %/f over f1837-1870 (residual rms 0.0005), card -0.035 %/f over f1853-1870",
+    "values": "P05: scale 1.009 (f1892, from the parent card y drift 0.091 px/f) -> 1.000 (f1920) -> 0.957 (f2050); pivot from element shifts (49.7 %W, 50.5 %H), spread 49.3-50.2 %W / 49.9-51.2 %H (frame centre); f1920 -> f2050 child-card row x 376-1236 -> 395-1218 px, parent-card top 125 -> 139 px, headline-2 baseline 809 -> 794 px; cursor template 1.000 at (1427.5, 390) px on every picture f1900-2050. P04: headline 1 1.007 (f1837) -> 0.997 (f1870), card 1.003 (f1853) -> 0.997 (f1870). The same rate before and after the morph suggests one recede from the cut f1825 to the cut f2051 (scratch/v5c3_P05_pull_*.csv, scratch/v5c3_P04_hl1_rest_scale.csv, scratch/v5c3_P04_card_rest_scale.csv)"
+   },
+   "curves": []
+  }
+ ],
+ "typography_stills": [
+  "type/v5c3-P01-1_f01600.png",
+  "type/v5c3-P01-1_f01617.png",
+  "type/v5c3-P01-1_f01665.png",
+  "type/v5c3-P01-1_f01687.png",
+  "type/v5c3-P02-1_f01697.png",
+  "type/v5c3-P02-1_f01727.png",
+  "type/v5c3-P02-1_f01733.png",
+  "type/v5c3-P04-1_f01827.png",
+  "type/v5c3-P04-1_f01840.png",
+  "type/v5c3-P04-1_f01877.png",
+  "type/v5c3-P05-1_f01900.png",
+  "type/v5c3-P05-1_f01905.png",
+  "type/v5c3-P05-1_f01912.png",
+  "type/v5c3-P05-1_f01920.png",
+  "type/v5c3-P05-1_f02050.png",
+  "type/v5c3-P05-2_f01897.png",
+  "type/v5c3-P05-2_f01920.png",
+  "type/v5c3-P06-1_f02058.png",
+  "type/v5c3-P06-1_f02084.png",
+  "type/v5c3-P06-1_f02092.png",
+  "type/v5c3-P06-2_f02156.png",
+  "type/v5c3-P06-2_f02182.png",
+  "type/v5c3-P06-2_f02190.png",
+  "type/v5c3-P06-3_f02234.png",
+  "type/v5c3-P06-3_f02258.png",
+  "type/v5c3-P06-3_f02268.png",
+  "type/v5c3-P06-4_f02302.png",
+  "type/v5c3-P06-4_f02330.png",
+  "type/v5c3-P06-4_f02340.png"
+ ],
+ "uncertain": [
+  {
+   "what": "start of the UI segment P01",
+   "range": "before f1600",
+   "reason": "lies in v5c2; this chunk only sees the same UI view from f1536 on the overview"
+  },
+  {
+   "what": "dropdown collapse easing",
+   "range": "f1615-1628",
+   "reason": "no curve: of the 5 readable pictures, the last two (f1622 squashed bar, f1626 dash) are motion-blurred ink boxes whose sizes include blur; values given; the end lies between the last trace (f1626) and the first empty picture (f1628)"
+  },
+  {
+   "what": "button press curve",
+   "range": "f1655-1665",
+   "reason": "no curve kept: after re-tracking (edge-crossing fill width, template in 0.005 scale steps) both fits still fail (bezier 0.098 / spring 0.060; 0.061 / 0.065); the press spans only 4 pictures with +-1 f capture jitter; values kept as measured"
+  },
+  {
+   "what": "rotation of the inner rings",
+   "range": "f1655-1672",
+   "reason": "Hough angles come from the longest (outer) ring edges only"
+  },
+  {
+   "what": "box zoom during f1657-1670",
+   "range": "f1657-1670",
+   "reason": "box edges hidden by the rings; the push-in start is placed at f1667 from the button scale"
+  },
+  {
+   "what": "pixel-sweep and tile-flash curves",
+   "range": "f1662-1680, f1892-1905",
+   "reason": "scattered tiles make the position/luma samples noisy (rmse 0.09); measured values kept, curves dropped"
+  },
+  {
+   "what": "whip middle",
+   "range": "f1760-1770",
+   "reason": "blurred blend of both shots, no reliable displacement; whether the whip is generated inside the footage or applied in the edit is not provable (two different shots are joined, so it is treated as an edit transition)"
+  },
+  {
+   "what": "end of caption A's last line",
+   "range": "f1765-1768",
+   "reason": "whip blur masks the end of its blur fade; high-pass check shows nothing from f1767 (+-2 f)"
+  },
+  {
+   "what": "caption blur radius",
+   "range": "all caption reveals/exits",
+   "reason": "blur and opacity change together and cannot be separated on the busy footage backgrounds"
+  },
+  {
+   "what": "per-letter fade duration",
+   "range": "f2305-2332",
+   "reason": "~10 f per letter read from 6 horizontal bins over a busy background (+-3 f)"
+  },
+  {
+   "what": "left child card start",
+   "range": "f1887-1890",
+   "reason": "first visible at f1890 already high in frame and smeared vertically (419 px tall vs 370 at rest), not in frame at f1887 (only flash tiles there); whether it came from beyond the top edge within one picture or was revealed under the tile flash cannot be read; its f1890 centre carries about +-25 px (rim midpoint 297.5 px; the bottom rim alone implies 322, the top rim alone 273), which is why its curve is fitted on the bottom rim"
+  },
+  {
+   "what": "start of the middle and right child cards",
+   "range": "before f1885 / before f1890",
+   "reason": "both rise from below the frame: the middle card's rim first shows at f1885, the right card's at f1890; where and when they start below the edge is not visible (the middle card's slow first steps, 20 then 90 px per picture, suggest a near-rest start)"
+  },
+  {
+   "what": "left child card width",
+   "range": "f1890-1915",
+   "reason": "width between the side rims 264 -> 283 -> 269 px (f1890-1897-1915) while the card turns further toward the centre (inner / outer rim heights 345 / 369 -> 323 / 390 px); scale and 3D turn cannot be separated in the projected width"
+  },
+  {
+   "what": "cursor tilt angles",
+   "range": "f1865-1887",
+   "reason": "rotation search in 20-degree steps on a motion-blurred cursor"
+  },
+  {
+   "what": "headline typeface",
+   "range": "f1825-2051",
+   "reason": "extended heavy grotesque; original not identifiable from grayscale frames"
+  },
+  {
+   "what": "durations in general",
+   "range": "f1600-2414",
+   "reason": "24 fps material on the 60 fps grid: +-1 frame capture jitter and 2-3 frame quantisation"
+  },
+  {
+   "what": "start of the slow recede",
+   "range": "f1825-1837 and f1872-1892",
+   "reason": "the fly-ins and the morph move the same elements much faster; the recede is measured f1837-1870 and f1892-2051 at the same rate, so it most likely runs without a break from the cut f1825"
+  },
+  {
+   "what": "background halftone light",
+   "range": "f1837-2051",
+   "reason": "the dot grid stays put, but the brightness of its lit patches drifts slowly and unevenly (top-left patch dot-energy centroid x 107 -> 201 -> 95 px over f1905-1987-2035; top-right patch dot energy 2.3 -> 5.8 -> 4.5); not tracked further"
+  },
+  {
+   "what": "card fly-in x on the first picture",
+   "range": "f1825",
+   "reason": "only 46 px of the card (its rounded corner) are in frame; the top edge (95.1 %H) is measurable, the left edge lies on the corner arc"
+  },
+  {
+   "what": "cursor fly-in start and in-flight scale",
+   "range": "f1832-1837",
+   "reason": "the cursor comes from beyond the frame, so its start position and start frame are outside the picture; f1835-1837 are motion-blurred (position +-10 px); its template scale in flight (0.88-1.0) is weakly determined (0.03 score difference)"
+  }
+ ],
+ "notes": [
+  "Footage camera moves were checked and left out (rule 1): push-in f1690-1712 (x~3.5), push f2147-2167, pull-back f2282-2307 (x~3.6). Spectral test: the close frames keep native detail above 0.35 Nyquist, so these are moves inside the footage, not digital scaling.",
+  "Caption groups are cut in with their shot: line 1 is already faintly visible in the first picture after the cuts at f1690 and f2052.",
+  "The caption layer is independent of the edit: during the whip f1748-1785 the footage whips but the caption keeps its slow linear drift and fades out.",
+  "Both headlines use the same extended heavy capitals with a continuous perspective size taper on a common baseline (headline 1 shrinks left->right 11.4 -> 6.1 %H, headline 2 grows left->right 5.9 -> 11.4 %H) and a vertical metallic gradient fill (headline 1: luma ~235 top -> ~165 bottom with a bright base rim; headline 2: ~200-208 top -> ~100-135 at the base, no rim).",
+  "Sound sync is loose: hard cuts sit -5, +15, -9 and +14 frames from the nearest beat (beat period 32.7 f); the morph start (-2), the second headline's 7th letter (-1) and caption lines C2 (+1), D1 (+2), D2 (+2 to a strong onset) land near beats/onsets; captions most likely follow the voice-over.",
+  "Pacing in this chunk: P01 part 90 f, P02 77 f, P03 58 f, P04 65 f, P05 162 f, P06 363 f; the graphic beats are short (65-90 f) between longer footage stretches.",
+  "Speaker icon of the X player (x 1545-1613, y 837-905) ignored everywhere.",
+  "Stills from earlier ad-hoc tags in this chunk were replaced by the final v5c3-P0n-m set.",
+  "Holds are not static here: the landed graphic group recedes linearly (-0.032 to -0.033 %/f) about the frame centre in P04 (f1837-1870) and P05 (f1892-2051, to 0.957 at the cut); the cursor and the background are separate layers that do not scale.",
+  "Two-phase entries: the P04 footage card and the P05 middle and right child cards all drift in slowly for 1-2 pictures, then snap with a hard ease-out; their curves cover the snap phase and the drift is given as measured values.",
+  "The P04 cursor fly-in (v5.cursor-fly-in) looks like the entry phase of v5c5's v5.cursor-glide-click (a cursor enters from a frame edge and decelerates onto a card); kept as its own id here for the merge to reconcile."
+ ]
+}

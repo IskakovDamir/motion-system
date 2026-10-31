@@ -1,0 +1,1523 @@
+{
+  "video": "Screen_Recording_2026-10-31_at_16.31.33",
+  "key": "v8",
+  "chunk": "v8c1",
+  "frames": [
+    0,
+    733
+  ],
+  "cut_decisions": [
+    {
+      "id": "c001",
+      "frame": 2,
+      "status": "rejected",
+      "reason": "first pictures of the recording inside one composition: the label 1 wordmark finishes a vertical rise (motion blur at f0) and the first mascots pop in from dots; nothing is replaced"
+    },
+    {
+      "id": "c002",
+      "frame": 134,
+      "status": "confirmed",
+      "reason": "anchor of the zoom-through f115-f143: the lockup zooms on the frame centre with growing blur and the tunnel cross-dissolves in from f136 (darkest tunnel pixel 180 -> 0 luma f136-f143)"
+    },
+    {
+      "id": "c003",
+      "frame": 144,
+      "status": "rejected",
+      "reason": "tunnel fly-through inside S02: wall panels stream past the camera, mascots grow; same composition"
+    },
+    {
+      "id": "c004",
+      "frame": 154,
+      "status": "rejected",
+      "reason": "tunnel fly-through inside S02 (wall panels streaming past)"
+    },
+    {
+      "id": "c005",
+      "frame": 158,
+      "status": "rejected",
+      "reason": "tunnel fly-through inside S02 (a pale wall panel passes the left edge)"
+    },
+    {
+      "id": "c006",
+      "frame": 163,
+      "status": "rejected",
+      "reason": "tunnel fly-through inside S02; f163 repeats f162 (30 fps capture run)"
+    },
+    {
+      "id": "c007",
+      "frame": 168,
+      "status": "rejected",
+      "reason": "inside the tunnel-exit transition: walls pale toward white while the mascots accelerate past the camera; the background swap is at f174 (c008)"
+    },
+    {
+      "id": "c008",
+      "frame": 176,
+      "status": "confirmed",
+      "reason": "anchor of the tunnel-exit zoom-through f164-f200: the background swaps at f174 (first picture with the tiny footage card on white; detector index 2 frames late), mascots continue across the swap"
+    },
+    {
+      "id": "c009",
+      "frame": 182,
+      "status": "rejected",
+      "reason": "footage card zooming to full frame (scale 0.60 -> 0.69 W), same composition"
+    },
+    {
+      "id": "c010",
+      "frame": 187,
+      "status": "rejected",
+      "reason": "footage card zooming to full frame (0.75 -> 0.81 W)"
+    },
+    {
+      "id": "c011",
+      "frame": 190,
+      "status": "rejected",
+      "reason": "footage card zooming to full frame (0.85 -> 0.89 W)"
+    },
+    {
+      "id": "c012",
+      "frame": 233,
+      "status": "rejected",
+      "reason": "prompt pill rises in from below the frame with vertical motion blur; the footage behind is continuous"
+    },
+    {
+      "id": "c013",
+      "frame": 238,
+      "status": "rejected",
+      "reason": "prompt pill still rising/settling (overshoot to f247)"
+    },
+    {
+      "id": "c014",
+      "frame": 262,
+      "status": "rejected",
+      "reason": "typing inside the pill plus a camera move inside the footage"
+    },
+    {
+      "id": "c015",
+      "frame": 338,
+      "status": "rejected",
+      "reason": "typing of sentence 2 inside the pill plus a camera move inside the footage"
+    },
+    {
+      "id": "c016",
+      "frame": 353,
+      "status": "rejected",
+      "reason": "near-identical pictures (content value 0.13, adaptive false positive); footage camera move continues, pill static"
+    },
+    {
+      "id": "c017",
+      "frame": 364,
+      "status": "rejected",
+      "reason": "camera move inside the footage; pill static"
+    },
+    {
+      "id": "c018",
+      "frame": 369,
+      "status": "rejected",
+      "reason": "camera move inside the footage; pill static"
+    },
+    {
+      "id": "c019",
+      "frame": 378,
+      "status": "rejected",
+      "reason": "camera move inside the footage (continuous tilt down); pill static"
+    },
+    {
+      "id": "c020",
+      "frame": 392,
+      "status": "rejected",
+      "reason": "camera move inside the footage; the mic button shrinks (press) inside the pill"
+    },
+    {
+      "id": "c021",
+      "frame": 408,
+      "status": "rejected",
+      "reason": "camera move inside the footage; the pixel smear sweeps through the pill"
+    },
+    {
+      "id": "c022",
+      "frame": 422,
+      "status": "rejected",
+      "reason": "camera move inside the footage; smear fading out"
+    },
+    {
+      "id": "c023",
+      "frame": 429,
+      "status": "rejected",
+      "reason": "camera move inside the footage; the pill's anticipation lift starts f429"
+    },
+    {
+      "id": "c024",
+      "frame": 444,
+      "status": "rejected",
+      "reason": "the prompt pill drops out of frame with vertical motion blur; footage continuous"
+    },
+    {
+      "id": "c025",
+      "frame": 476,
+      "status": "rejected",
+      "reason": "continuous footage: phase correlation of a fixed ROI (x 0-400, y 100-800) between consecutive pictures stays locked across f474->f476 (response 0.70, shift -6.1/-4.0 px between the neighbouring shifts -3.8/-1.4 px, response 0.54, and -2.9/-3.5 px, response 0.82); the higher whole-picture abs diff (8.7 luma against 5.0 on both sides) comes from motion inside the footage; no picture replacement (scratch/v8c1_footage_tail_phasecorr_462-510.csv)"
+    },
+    {
+      "id": "c026",
+      "frame": 486,
+      "status": "rejected",
+      "reason": "continuous footage (same ROI: response 0.84, shift -2.0/-4.7 px between -2.6/-4.5 and -2.0/-5.7 px; whole-picture abs diff 3.8 luma like its neighbours 4.0 and 3.7)"
+    },
+    {
+      "id": "c027",
+      "frame": 492,
+      "status": "rejected",
+      "reason": "continuous footage (same ROI: response 0.86, shift -1.9/-5.7 px between -2.0/-5.7 and -2.4/-6.9 px; whole-picture abs diff 3.1 luma like its neighbours 3.7 and 2.8)"
+    },
+    {
+      "id": "c028",
+      "frame": 508,
+      "status": "rejected",
+      "reason": "f508 repeats f506 (diff 0.0001); continuous footage"
+    },
+    {
+      "id": "c029",
+      "frame": 512,
+      "status": "confirmed",
+      "reason": "hard cut from footage (last picture f510) to the blurred chat UI (first picture f512); ffmpeg scene 1.0"
+    },
+    {
+      "id": "c030",
+      "frame": 515,
+      "status": "rejected",
+      "reason": "same cut as c029: pictures f514 and f515 are identical (motion.csv diff 0.00003); the content detector index is offset"
+    }
+  ],
+  "boundaries": [
+    {
+      "start": 115,
+      "end": 143,
+      "type": "zoom-through",
+      "frames": 29,
+      "cut_frame": 136,
+      "shared": "forward zoom on the frame centre (x 50.5%, y 50.0%): the lockup grows exponentially (x1.02 at f115 -> x3.14 at f132) with growing blur, the tunnel cross-dissolves in under the still-growing lockup fragments from f136 (darkest tunnel pixel 180 / 112 / 43 / 0 luma at f136 / f138 / f140 / f143) and keeps the forward motion as a fly-through toward its vanishing point near the frame centre; the six mascots, which converged into the lockup centre, reappear small at the vanishing point; light luminance on both sides",
+      "technique": "v8.trans-zoom-through-dissolve",
+      "curve": "v8.trans-zoom-through-dissolve.v8c1",
+      "detail": "detail/soft_115-143",
+      "anchor_cut": "c002",
+      "tiling": "soft-transition rule: S01 ends at floor((115+143)/2) = f129, S02 starts f130; the first picture with the tunnel is f136 (cut_frame), so the last lockup zoom pictures f130-f135 sit in S02",
+      "preceded_by": "mascot convergence f84-f124 (v8.particle-mascot-converge) and a linear camera creep x1.016 f30-f112 (v8.cam-slow-push)"
+    },
+    {
+      "start": 164,
+      "end": 200,
+      "type": "zoom-through",
+      "frames": 37,
+      "cut_frame": 174,
+      "shared": "frame centre: the tunnel's vanishing point is where the footage card appears (82 x 46 px, centred x 49.9% / y 50.2%, with a soft zoom-blur halo); forward motion continues (mascots fly past the camera and out of frame f164-f179, the card zooms from 5.1% W to full frame f174-f200, ease-out); the tunnel walls pale to white (pure 248 from f179), which is the field around the card",
+      "technique": "v8.trans-tunnel-exit-zoom-through",
+      "curve": "v8.footage-card-zoom-to-full.v8c1",
+      "detail": "detail/soft_164-200",
+      "anchor_cut": "c008",
+      "tiling": "soft-transition rule: S02 ends at floor((164+200)/2) = f182, S03 starts f183; the background swap (first picture with the footage card) is f174 (cut_frame), so the card's first pictures f174-f182 sit in S02, which is therefore MIXED"
+    },
+    {
+      "frame": 512,
+      "type": "hard-cut",
+      "anchor_cut": "c029",
+      "shared": "nothing graphic: dark footage (mean luma 61) -> light chat page (246); the incoming UI is blurred (sigma 0.43% W), x0.94 and 5.3% H low, and settles in (v8.cam-cut-in-settle)",
+      "entry_technique": "v8.cam-cut-in-settle"
+    },
+    {
+      "start": 570,
+      "end": 634,
+      "type": "whip",
+      "subtype": "blur whip-reframe hiding a picture replacement: zoom-out x0.66, rightward",
+      "frames": 65,
+      "cut_frame": 608,
+      "shared": "the same chat UI on the same white page and rightward motion across the cut: the close-up accelerates right (ease-in 36 f) while blurring, the picture is replaced between f606 and f608 (f607 repeats f606) with a zoom-out to x0.66 (text-width ratios 0.643-0.672), and the wide panel arrives still moving right and decelerates (ease-out 26 f) while its blur clears (edge sigma 0.60% W at f608 -> baseline at f625)",
+      "technique": "v8.trans-blur-whip-reframe",
+      "curve": "v8.trans-blur-whip-reframe.v8c1",
+      "curves": [
+        "v8.trans-blur-whip-reframe-out.v8c1",
+        "v8.trans-blur-whip-reframe.v8c1",
+        "v8.trans-blur-whip-reframe-blur.v8c1"
+      ],
+      "detail": "detail/soft_570-634",
+      "anchor_cut": null,
+      "origin": "missed by all three detectors (light frames, blur both sides); found on overview_00576-00621.jpg, motion peak f608 (detail/peak_f00608) and the tracker CSVs",
+      "tiling": "soft-transition rule: S04 ends at floor((570+634)/2) = f602, S05 starts f603; the picture is replaced between f606 and f608 (cut_frame f608; f607 repeats f606), so the last blurred close-up pictures f603-f607 sit in S05"
+    },
+    {
+      "start": 668,
+      "end": 726,
+      "type": "whip",
+      "subtype": "blur whip-reframe hiding a picture replacement: punch-in x2.64, downward; the incoming card leads by one picture (f699)",
+      "frames": 59,
+      "cut_frame": 699,
+      "shared": "the same product UI and downward motion across the cut: the panel accelerates down (ease-in 28 f) while blurring, the picture is replaced between f696 and f700 (f697-f698 repeat f696) with a punch-in x2.64 on the sidebar card (card 410 -> 1085 px wide); f699 shows only the incoming card layer (card x 16.2%-83.0% W, y 7.8%-34.2% H, with the header label and search icon above it, at the close-up scale and 31-36 px higher than in f700) over the outgoing panel, which has moved another 16 px (1.7% H) down since f696 (the old list card with its mascot at x 6-16% W, the old bubble's right end at x 83-91% W and the old agent row, reply and composer below the card stay visible), so the incoming card leads the cut by one picture and f700 is the first full close-up picture; the close-up then arrives still moving down and decelerates (ease-out, f703-f722) while the blur clears (sharp by f720); the mascot that dropped into the card at f694-f698 is inside it",
+      "technique": "v8.trans-blur-whip-reframe",
+      "curve": "v8.trans-blur-whip-reframe-2.v8c1",
+      "curves": [
+        "v8.trans-blur-whip-reframe-2-out.v8c1",
+        "v8.trans-blur-whip-reframe-2.v8c1"
+      ],
+      "detail": "detail/soft_668-726",
+      "anchor_cut": null,
+      "origin": "missed by all three detectors; found on overview_00672-00717.jpg, motion peak f701 (detail/peak_f00701), detail/dense_00694-00712_00.jpg and the tracker CSVs",
+      "tiling": "soft-transition rule: S05 ends at floor((668+726)/2) = f697, S06 starts f698; the picture is replaced between f696 and f700 (cut_frame f699, the first picture with incoming content: the incoming card over the still-moving outgoing panel; first full close-up picture f700), so f698, a repeat of the outgoing panel, sits in S06",
+      "f699_check": "f698 moved down 15.5-16 px matches f699 outside the incoming card (mean abs luma diff 1.4 at the old bubble's right end x 1350-1480 / y 240-340, 0.6 below the card x 300-1300 / y 330-900, 6.3 at the moving sidebar mascot x 100-260 / y 140-320) far better than f700 (9.7 / 2.4 / 18.1); inside the card (x 600-1000 / y 120-300) f699 matches f700 (0.4) and not f698 (21.2); f696 = f697 = f698 (diff 0.002 / 0.000), f699 differs from f698 by 4.6 and from f700 by 3.3 (scratch/v8c1_f699_layer_check.csv, scratch/v8c1_f699_layer_map.png, crops/crop_0_0_1622x400_00698-00700.jpg, detail/dense_00694-00712_00.jpg)"
+    }
+  ],
+  "segments": [
+    {
+      "id": "v8c1-S01",
+      "start": 0,
+      "end": 129,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "opening lockup on a light field with soft darker blobs and a faint dot grid: a brand-icon + 2-word wordmark springs into place, six blob mascots pop in staggered, the group slides left while an app-icon + 1-word wordmark builds letter by letter with an x separator, one word dims and returns, a tag pill types in while rising and its outline draws on; slow linear push-in, then the mascots converge into the centre and the camera zooms through into a cross-dissolve"
+    },
+    {
+      "id": "v8c1-S02",
+      "start": 130,
+      "end": 182,
+      "class": "MIXED",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "3D one-point-perspective panel tunnel with the camera flying forward; the six mascots float out of the vanishing point, slow to a hover in a ring around the centre, swap eye glyphs, then accelerate past the camera while the walls pale to white; from f174 a frame-aspect footage card (masked window carrying footage) appears at the vanishing point and starts its zoom (5.1% -> 68.6% W by f182), so the segment is MIXED (the card's zoom continues in S03)"
+    },
+    {
+      "id": "v8c1-S03",
+      "start": 183,
+      "end": 511,
+      "class": "MIXED",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "a frame-aspect footage card emerges at the centre on white and zooms to full frame; over the full-frame footage a white prompt pill (plus circle, text, black mic button) rises in from below with an overshoot, types two sentences with a light trailing fade, the mic button presses in and a soft grey pixel smear sweeps right to left behind the text, then the pill lifts and drops out of frame; footage only from f451 to the cut"
+    },
+    {
+      "id": "v8c1-S04",
+      "start": 512,
+      "end": 602,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "chat close-up on a light page (user bubble, agent avatar row, 2-line reply) arrives blurred after a hard cut and settles up; only the bubble and the avatar arrive with the cut: the 2-line reply fades in as a block while rising 3.3% H, the bold agent name is revealed by a soft left-to-right front, darkens and slides right 16 px, a check icon fades in and a light status word is revealed by a soft left-to-right wipe; the avatar's eyes glance left and back; the view then accelerates right into a blur whip"
+    },
+    {
+      "id": "v8c1-S05",
+      "start": 603,
+      "end": 697,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "the same chat panel, re-framed wider (x0.66), arrives moving right and decelerates while sharpening; its header row builds after the cut (avatar grows from a speck, name and subtitle revealed by soft left-to-right fronts that slide right, divider line draws on right to left); the composer rises into place and builds (button grows from a dot, plus disc fades in, the 3-word placeholder is revealed by a soft left-to-right front while sliding right, glyphs appear); the light status word in the agent row shimmers: a lighter band crosses it left to right at constant speed and loops every 62-63 f (pass 1 to f673, pass 2 from f674); the avatar's eye glyphs swap; the camera pans right, the sidebar header and then its empty list card drop in as the pan lands; a mascot drops into that card as the view accelerates down into a second blur whip"
+    },
+    {
+      "id": "v8c1-S06",
+      "start": 698,
+      "end": 733,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": true,
+      "live_confirmed_on": [],
+      "summary": "close-up (x2.64) of the sidebar header, search icon and list card arrives blurred and moving down (its card, header label and search icon already lie over the outgoing panel in f699; full close-up from f700), decelerates and sharpens; the mascot settles inside the card with a damped bounce; continues in v8c2 (card title fades in from f741)"
+    }
+  ],
+  "techniques": [
+    {
+      "id": "v8.text-spring-rise",
+      "category": "text",
+      "description": "a wordmark rises into place from below its icon with a large overshoot and settles while the whole label settles down; the video starts mid-move",
+      "instances": [
+        [
+          0,
+          26
+        ]
+      ],
+      "reference_frames": [
+        0,
+        2,
+        4,
+        12,
+        26
+      ],
+      "measured": {
+        "duration_frames": 26,
+        "easing": "UNCERTAIN: damped spring look; the first picture f0 is already moving (vertical motion blur), not fitted",
+        "values": "text relative to its icon +26 px (+2.8% H, f0) -> -31 px (-3.4% H, f4-f6) -> +3 px (f18-f22) -> +2 px (rest f26), i.e. 3.6% H above rest at the peak; icon (label) y 47.1% (f0) -> 50.3% H (f12) (template scratch/v8c1_icon1_0-118.csv + ink centroid, scratch/v8c1_word1_0-12.csv)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v8.icon-mascot-pop-in",
+      "category": "icon",
+      "description": "flat blob mascots pop in from nothing with a springy overshoot and undershoot, staggered",
+      "instances": [
+        [
+          2,
+          26
+        ],
+        [
+          2,
+          26
+        ],
+        [
+          8,
+          32
+        ],
+        [
+          14,
+          36
+        ]
+      ],
+      "reference_frames": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        14,
+        18,
+        26
+      ],
+      "measured": {
+        "duration_frames": 20,
+        "easing": "flower: bezier(0.361, 2.110, 0.416, 0.738) D=20 (rmse 0.032); spring {566.9, 21.35, mass 1} (rmse 0.051); 4-lobe: spring {563.3, 22.19} (rmse 0.056)",
+        "values": "bbox width 0 -> 8.7-9.1% W (x1.18-1.22 of rest) -> 7.1-7.3% (x0.96-0.98) -> 7.4-7.5% W at rest; pop-ins at f2 (4-lobe), f2-f4 (rounded square), f8 (flower), f14 (round blob): stagger 6 f (scratch/v8c1_mascot_*_0-40.csv)"
+      },
+      "curves": [
+        "v8.icon-mascot-pop-in.v8c1"
+      ]
+    },
+    {
+      "id": "v8.icon-mascot-idle-bounce",
+      "category": "icon",
+      "description": "idle mascots pulse in size and swap their eye glyphs (blink, closed, crossed) at staggered times",
+      "instances": [
+        [
+          0,
+          110
+        ],
+        [
+          156,
+          163
+        ]
+      ],
+      "reference_frames": [
+        4,
+        16,
+        22,
+        28,
+        34,
+        156,
+        158
+      ],
+      "measured": {
+        "duration_frames": 14,
+        "easing": "not fitted",
+        "values": "bbox width pulses of +15-30% lasting 12-16 f (triangle 103 -> 141 px f0-f4 and 114 -> 150 px f12-f28 -> 119 px f36; bulb 97 -> 129 px f8-f16; round blob 123 -> 148 px f28-f34), not on the beat"
+      },
+      "curves": []
+    },
+    {
+      "id": "v8.layout-lockup-recenter",
+      "category": "layout",
+      "description": "a centred lockup re-centres as a group when content is inserted: it slides sideways while a second label builds, and moves up when a tag is added below",
+      "instances": [
+        [
+          5,
+          26
+        ],
+        [
+          40,
+          60
+        ]
+      ],
+      "reference_frames": [
+        5,
+        14,
+        26,
+        40,
+        50,
+        60
+      ],
+      "measured": {
+        "duration_frames": 21,
+        "easing": "slide: bezier(0.568, 0.224, 0.103, 1.006) D=26 (rmse 0.019); rise: bezier(0.507, 0.009, 0.436, 0.825) D=23 (rmse 0.007)",
+        "values": "slide: label 1 icon x 30.9% -> 16.0% W (-14.9% W) f5-f26, horizontal motion blur f10-f16, label 2 icon 76.6% (f8) -> 59.2% W (f26); rise: both icons y 50.3% -> 44.8% H (-5.6% H) f40-f60 (scratch/v8c1_icon1_0-118.csv, v8c1_icon2_0-118.csv)"
+      },
+      "curves": [
+        "v8.layout-lockup-recenter-slide.v8c1",
+        "v8.layout-lockup-recenter-rise.v8c1"
+      ]
+    },
+    {
+      "id": "v8.text-letter-pop-tighten",
+      "category": "text",
+      "description": "an app glyph pops from a dot and its tile fades in; the word's letters pop in at loose spacing that tightens as new letters are inserted, glyphs morph on their first pictures and i-dots drop in from above",
+      "instances": [
+        [
+          2,
+          45
+        ]
+      ],
+      "reference_frames": [
+        2,
+        6,
+        10,
+        16,
+        22,
+        30,
+        36,
+        42
+      ],
+      "measured": {
+        "duration_frames": 40,
+        "easing": "stepped (still crops crops/crop_900_330_722x220_00002-00022.jpg, crop_600_380_900x140_00022-00046.jpg)",
+        "values": "glyph dot f2 -> full f6; tile fade f10-f13; 10 letters f6-f42 = 3.6 f per letter; rest letter gaps 2-8 px (0.03-0.13 cap), cap 6.6% H"
+      },
+      "curves": []
+    },
+    {
+      "id": "v8.shape-separator-fade-in",
+      "category": "shape",
+      "description": "a thin x-shaped separator fades in between the two labels",
+      "instances": [
+        [
+          18,
+          24
+        ]
+      ],
+      "reference_frames": [
+        18,
+        20,
+        22,
+        24
+      ],
+      "measured": {
+        "duration_frames": 6,
+        "easing": "not fitted (3 pictures)",
+        "values": "darkest pixel 248 -> 186 (f20) -> 157 (f22) -> 151 luma (f30); size 1.7% W at x 52.5% (scratch/v8c1_times_14-40.csv)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v8.text-word-dim-toggle",
+      "category": "text",
+      "description": "one word of a wordmark dims to light grey while another element builds, then returns to black",
+      "instances": [
+        [
+          28,
+          50
+        ]
+      ],
+      "reference_frames": [
+        26,
+        30,
+        36,
+        42,
+        50
+      ],
+      "measured": {
+        "duration_frames": 8,
+        "easing": "not fitted (4 pictures each way)",
+        "values": "darkest pixel 0 -> 38 (f30) -> 86 -> 119 -> 151 (f36), hold to f40-f42, -> 119 (f44) -> 39 (f48) -> 0 (f52) (scratch/v8c1_word2dim_16-72.csv)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v8.text-tag-type-rise",
+      "category": "text",
+      "description": "tag text is typed on while it rises into place under the lockup",
+      "instances": [
+        [
+          46,
+          73
+        ]
+      ],
+      "reference_frames": [
+        46,
+        50,
+        56,
+        66,
+        76
+      ],
+      "measured": {
+        "duration_frames": 27,
+        "easing": "bezier(0.239, 0.969, 0.419, 1.091) D=30 (rmse 0.011), ease-out with a 4 px overshoot",
+        "values": "first letters y 74.2% (f46, first picture, moving) -> 59.4% (f68) -> 59.8% H (rest f76): -14.4% H; characters 3 (f46) -> 6 -> 8 -> 11 -> 14 -> 16 (f56), about 1.6 characters per frame; cap 3.6% H (scratch/v8c1_tagAlw_44-80.csv)"
+      },
+      "curves": [
+        "v8.text-tag-type-rise.v8c1"
+      ]
+    },
+    {
+      "id": "v8.ui-pill-outline-draw",
+      "category": "ui",
+      "description": "the tag pill's outline stroke draws on around the text: bottom line left to right, then left cap and top, closing at the right",
+      "instances": [
+        [
+          48,
+          60
+        ]
+      ],
+      "reference_frames": [
+        48,
+        52,
+        54,
+        56,
+        58,
+        60
+      ],
+      "measured": {
+        "duration_frames": 12,
+        "easing": "stepped (still crops crops/crop_560_440_520x260_00042-00062.jpg)",
+        "values": "bottom line f48-f52, left cap and top f54-f58, closed f60; pill at rest x 34.9%-65.1% W, y 54.1%-62.9% H (f100), stroke about 2 px"
+      },
+      "curves": []
+    },
+    {
+      "id": "v8.cam-slow-push",
+      "category": "cam",
+      "description": "slow linear push-in on the frame centre while the lockup holds",
+      "instances": [
+        [
+          30,
+          112
+        ]
+      ],
+      "reference_frames": [
+        30,
+        60,
+        90,
+        112
+      ],
+      "measured": {
+        "duration_frames": 82,
+        "easing": "linear (values)",
+        "values": "icon spacing 699 px (f30) -> 710 px (f112) = x1.016 about x 50.5% / y 50% (scratch/v8c1_icon1_0-118.csv, v8c1_icon2_0-118.csv)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v8.particle-mascot-converge",
+      "category": "particle",
+      "description": "the mascots wind up toward the centre and then snap into the lockup centre while shrinking",
+      "instances": [
+        [
+          84,
+          124
+        ]
+      ],
+      "reference_frames": [
+        84,
+        101,
+        112,
+        115,
+        116,
+        118,
+        124
+      ],
+      "measured": {
+        "duration_frames": 40,
+        "easing": "UNCERTAIN: ease-in drift f84-f115 then a snap (112 px between f115 and f116, capture jitter) and a short settle; fits rejected (rmse > 0.07)",
+        "values": "triangle x 11.7% (f84) -> 22.4% (f112) -> 41.0% (f118) -> 47.2% W (f124), y 82.5% -> 63.9% H, scale 0.98 -> 0.90 (f112) -> 0.58 (f118) -> 0.18 (f124), then absorbed (scratch/v8c1_tri_60-126.csv)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v8.trans-zoom-through-dissolve",
+      "category": "trans",
+      "description": "exponential zoom on the frame centre into a short cross-dissolve to the next scene, which continues the forward motion",
+      "instances": [
+        [
+          115,
+          143
+        ]
+      ],
+      "reference_frames": [
+        115,
+        120,
+        126,
+        130,
+        132,
+        134,
+        136,
+        138,
+        143
+      ],
+      "measured": {
+        "duration_frames": 29,
+        "easing": "zoom in log2 scale: bezier(1.000, 0.399, 1.000, 0.410) D=15 (shape rmse 0.090, per-sample residual <= 0.03), exponential ease-in",
+        "values": "scale x1.00 (f112) -> 1.02 (f115) -> 1.14 (f120) -> 1.48 (f126) -> 2.22 (f130) -> 3.14 (f132) about x 50.5% / y 50.0%; dissolve: darkest tunnel pixel 180 / 112 / 43 / 0 luma at f136 / f138 / f140 / f143 (scratch/v8c1_zoom_icon2f_106-133.csv, v8c1_t1_tunnelvis_132-146.csv)"
+      },
+      "curves": [
+        "v8.trans-zoom-through-dissolve.v8c1"
+      ]
+    },
+    {
+      "id": "v8.3d-tunnel-flythrough",
+      "category": "3d",
+      "description": "camera dollies through a one-point-perspective tunnel of light panels; flat mascots float out of the vanishing point, slow to a hover in a ring and later fly past",
+      "instances": [
+        [
+          136,
+          173
+        ]
+      ],
+      "reference_frames": [
+        138,
+        144,
+        150,
+        160,
+        164
+      ],
+      "measured": {
+        "duration_frames": 27,
+        "easing": "mascot approach: spring {162.9, 25.40, mass 1} (rmse 0.050); bezier(0.491, 0.855, 0.111, 0.614) D=26 (rmse 0.059)",
+        "values": "triangle scale x0.35 (f138) -> 0.90 (f150) -> 1.05 (f162); x 60.3% -> 78.0% W, y 56.5% -> 44.1% H; vanishing point about x 49%, y 51% (still f160); wall flow 0.8-2.3% W per frame (motion.csv) (scratch/v8c1_tunnel_tri_138-177.csv)"
+      },
+      "curves": [
+        "v8.3d-tunnel-flythrough.v8c1"
+      ]
+    },
+    {
+      "id": "v8.trans-tunnel-exit-zoom-through",
+      "category": "trans",
+      "description": "tunnel exit: mascots fly past the camera, the walls pale to white, a footage card appears at the vanishing point and zooms to full frame (incoming half = v8.footage-card-zoom-to-full)",
+      "instances": [
+        [
+          164,
+          200
+        ]
+      ],
+      "reference_frames": [
+        164,
+        168,
+        172,
+        174,
+        176,
+        179,
+        190,
+        200
+      ],
+      "measured": {
+        "duration_frames": 37,
+        "easing": "outgoing fly-past UNCERTAIN (template steps); incoming card zoom bezier(0.001, 0.322, 0.336, 0.978) D=29 (rmse 0.018)",
+        "values": "triangle mascot x1.10 (f164) -> 1.50 (f168) -> 1.60 (f172) -> 1.9 (f174, x 90.0%) -> out of frame by f179; walls pure white from f179; card 82 x 46 px at f174 -> full frame f200-f204"
+      },
+      "curves": [
+        "v8.footage-card-zoom-to-full.v8c1"
+      ]
+    },
+    {
+      "id": "v8.footage-card-zoom-to-full",
+      "category": "footage",
+      "description": "a frame-aspect footage card emerges small at the centre on white (zoom-blur halo) and grows to fill the frame with a strong ease-out; its edges carry motion blur proportional to their speed",
+      "instances": [
+        [
+          174,
+          204
+        ]
+      ],
+      "reference_frames": [
+        174,
+        176,
+        180,
+        185,
+        190,
+        199,
+        202
+      ],
+      "measured": {
+        "duration_frames": 26,
+        "easing": "bezier(0.001, 0.322, 0.336, 0.978) D=29 (rmse 0.018); spring {149.5, 30.13} (rmse 0.065)",
+        "values": "width 5.1% (f174) -> 34.5% (f176) -> 60.5% (f180) -> 75.3% (f185) -> 88.6% (f190) -> 97.8% (f199) -> 100% W (f202), centred x 49.9% / y 50.2%; edge 10-90% width 22 px (f180) -> 3 px (f200), about 0.6-0.9 x the per-frame edge displacement (scratch/v8c1_card_scale_174-206.csv); its first pictures f174-f182 (to 68.6% W) fall in S02 by the tiling rule and make S02 MIXED"
+      },
+      "curves": [
+        "v8.footage-card-zoom-to-full.v8c1"
+      ]
+    },
+    {
+      "id": "v8.ui-prompt-pill-rise-in",
+      "category": "ui",
+      "description": "a white prompt pill rises in from below the frame edge with vertical motion blur, overshoots upward and settles",
+      "instances": [
+        [
+          233,
+          252
+        ]
+      ],
+      "reference_frames": [
+        233,
+        234,
+        236,
+        240,
+        247,
+        252
+      ],
+      "measured": {
+        "duration_frames": 18,
+        "easing": "bezier(0.000, 1.203, 0.702, 1.192) D=16 (rmse 0.051) on the visible part (first picture already moving)",
+        "values": "centre y below frame (f233) -> 89.2% (f234) -> 70.6% (f240) -> 68.5% (f247, 2.1% H overshoot) -> 70.5% H (f252); pill 65.7% W x 17.4% H at x 8.4%-74.1% (scratch/v8c1_pill_entry_y.csv)"
+      },
+      "curves": [
+        "v8.ui-prompt-pill-rise-in.v8c1"
+      ]
+    },
+    {
+      "id": "v8.text-type-on-fade-trail",
+      "category": "text",
+      "description": "prompt text typed on left to right, about two characters per captured picture, the newest 2-3 characters light grey and darkening over 2-4 frames",
+      "instances": [
+        [
+          247,
+          264
+        ],
+        [
+          322,
+          340
+        ]
+      ],
+      "reference_frames": [
+        248,
+        252,
+        256,
+        264,
+        324,
+        332,
+        340
+      ],
+      "measured": {
+        "duration_frames": 17,
+        "easing": "stepped, near-linear (ink right edge per picture)",
+        "values": "sentence 1: ink right edge 20.2% (f248) -> 39.3% W (f264), 20 characters, 0.85 f per character; sentence 2: 39.3% (f322) -> 60.5% W (f340), 18 characters, 1.0 f per character; cap 3.2% H (scratch/v8c1_type1_244-270.csv, v8c1_type2_318-348.csv)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v8.ui-button-press",
+      "category": "ui",
+      "description": "a round button shrinks (press), holds at its smallest size and springs back",
+      "instances": [
+        [
+          387,
+          406
+        ]
+      ],
+      "reference_frames": [
+        387,
+        390,
+        392,
+        394,
+        396,
+        398,
+        402,
+        404,
+        406
+      ],
+      "measured": {
+        "duration_frames": 19,
+        "easing": "not fitted (values)",
+        "values": "diameter 83 px (5.1% W, f387) -> 80 (f388) -> 71 (f390) -> 53 (f392) -> 47 (f394) -> 45 px = x0.54 (f396); the f398 picture (45 px) stays on screen to f401 because no picture arrives at f400 -> 57 (f402) -> 76 (f404) -> 83 px (f406): shrink f387-f396 (9 f), hold f396-f401 (6 grid frames on screen; the designed hold is 2-6 f), release f401-f406 (5 f) (scratch/v8c1_micbutton_380-428.csv; half-depth re-measure 46 px at f394, 45 px f396-f401, 57 / 75 / 83 px at f402 / f404 / f406, scratch/v8c1_micbutton_halfdepth_384-412.csv)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v8.fx-pixel-smear-sweep",
+      "category": "fx",
+      "description": "a soft, slightly blurred band of grey pixel blocks is born at the pressed button and sweeps right to left behind the text, fading out",
+      "instances": [
+        [
+          396,
+          424
+        ]
+      ],
+      "reference_frames": [
+        396,
+        398,
+        402,
+        406,
+        408,
+        412,
+        418,
+        422
+      ],
+      "measured": {
+        "duration_frames": 22,
+        "easing": "bezier(0.532, 0.363, 0.000, 0.717) D=24 (rmse 0.023), ease-out",
+        "values": "band centre x 62.6% (f398) -> 59.5% (f402) -> 50.9% (f406) -> 45.7% (f412) -> 42.3% W (f422); band 250-300 px wide, blocks about 30-40 px; energy peaks f408, gone f424 (scratch/v8c1_glitchband_380-429.csv)"
+      },
+      "curves": [
+        "v8.fx-pixel-smear-sweep.v8c1"
+      ]
+    },
+    {
+      "id": "v8.ui-pill-anticipate-drop-out",
+      "category": "ui",
+      "description": "the pill lifts slightly (anticipation) and then drops out of the bottom of the frame with an ease-in and vertical motion blur",
+      "instances": [
+        [
+          429,
+          451
+        ]
+      ],
+      "reference_frames": [
+        429,
+        434,
+        438,
+        440,
+        444,
+        446,
+        450
+      ],
+      "measured": {
+        "duration_frames": 22,
+        "easing": "lift bezier(0.618, 0.192, 0.326, 0.909) D=10 (rmse 0.0002); drop bezier(0.700, 0.125, 0.725, 0.241) D=5 to the last full picture (rmse 0.031)",
+        "values": "centre y 70.5% -> 64.9% H (-5.6% H) f429-f438, then 64.9% (f440) -> 72.8% (f444) -> 86.7% (f446) -> top edge only (f450) -> gone (f452) (scratch/v8c1_pill_228-456.csv, v8c1_pillexit_426-456.csv)"
+      },
+      "curves": [
+        "v8.ui-pill-anticipate-drop-out-up.v8c1",
+        "v8.ui-pill-anticipate-drop-out.v8c1"
+      ]
+    },
+    {
+      "id": "v8.cam-cut-in-settle",
+      "category": "cam",
+      "description": "after a hard cut the new UI arrives blurred, slightly small and low, and settles up to rest while it sharpens",
+      "instances": [
+        [
+          512,
+          551
+        ]
+      ],
+      "reference_frames": [
+        512,
+        516,
+        520,
+        524,
+        530,
+        542,
+        551
+      ],
+      "measured": {
+        "duration_frames": 39,
+        "easing": "position: bezier(0.181, 0.724, 0.257, 0.999) D=46 (rmse 0.050); blur not fitted",
+        "values": "agent icon y 61.7% -> 56.4% H (-5.3% H), scale x0.94 -> x1.00 by f523; blur sigma (10-90% edge width / 2.563) 0.43% W (f512) -> 0.38 (f516) -> 0.29 (f520) -> 0.12 (f524) -> 0.10% W baseline (f527) (scratch/v8c1_s04_icon_512-606.csv, v8c1_edge_s04icon_512-606.csv)"
+      },
+      "curves": [
+        "v8.cam-cut-in-settle.v8c1"
+      ]
+    },
+    {
+      "id": "v8.text-block-rise-in",
+      "category": "text",
+      "description": "a 2-line reply block fades in as one block while it rises into place relative to the UI with an ease-out (v8c4 id; here a block fade instead of a stream)",
+      "instances": [
+        [
+          512,
+          551
+        ]
+      ],
+      "reference_frames": [
+        512,
+        514,
+        516,
+        520,
+        524,
+        528,
+        532,
+        541,
+        551
+      ],
+      "measured": {
+        "duration_frames": 23,
+        "easing": "rise: bezier(0.212, 0.595, 0.209, 1.000) D=30 (rmse 0.032), built 22 f; spring {249.5, 31.68} rmse 0.075; fade not fitted",
+        "values": "ink mass vs f570: 7% (f512, faint haze) -> 31% (f514) -> 47% (f516) -> 67% (f520) -> 83% (f524) -> 92% (f527) -> 97% (f532) -> 100% (f551), all four quarters of line 1 together; offset of the block's ink centroid from the mascot icon's: +29.9 px = 3.3% H below rest (f512) -> +22.8 (f514) -> +16.0 (f516) -> +8.2 (f520) -> +4.2 (f524) -> +2.0 (f528) -> +0.7 (f532) -> 0 (f541) (scratch/v8c1_s04_text_reveal_512-572.csv)"
+      },
+      "curves": [
+        "v8.text-block-rise-in.v8c1"
+      ]
+    },
+    {
+      "id": "v8.text-label-fade-slide",
+      "category": "text",
+      "description": "a label appears with a soft left-to-right front, keeps darkening for 43-56 f and slides 11-16 px to the right; a second line follows 3-4 f later; the S05 composer placeholder (3 words) uses the same device (v8c2 id)",
+      "instances": [
+        [
+          514,
+          566
+        ],
+        [
+          610,
+          666
+        ],
+        [
+          614,
+          666
+        ],
+        [
+          625,
+          668
+        ]
+      ],
+      "reference_frames": [
+        514,
+        516,
+        520,
+        528,
+        541,
+        560,
+        566,
+        610,
+        614,
+        618,
+        623,
+        625,
+        626,
+        628,
+        630,
+        636,
+        640,
+        644,
+        656,
+        659,
+        666,
+        668
+      ],
+      "measured": {
+        "duration_frames": 51,
+        "easing": "S05 header name ink mass: bezier(0.123, 0.853, 0.608, 0.923) D=56 (rmse 0.026), built 51 f; spring {42.6, 29.75} rmse 0.086; S04 name and S05 subtitle not fitted (values); the S05 composer placeholder's whole-line ink follows the stored header-name curve started at f625.25 within rmse 0.029 (its tail ends about 6 f sooner), so it is not stored separately",
+        "values": "S04 agent name (absent at the cut f512): ink mass vs f570 11.5% (f514) -> 26.5% (f516) -> 45% (f520) -> 58% (f524) -> 67% (f528) -> 74% (f532) -> 85% (f541) -> 92% (f551) -> 97.5% (f560) -> 99.5% (f566); thirds at 50% on f517 / f522 / f529 (front about 8.6 px/f); darkest pixel 222 (f514) -> 99 (f528) -> 22 (f551) -> 0 (f566); left edge 52 -> 68 px right of the icon centroid (f518 -> f566), +16 px = 1.0% W (scratch/v8c1_s04_text_reveal_512-572.csv). S05 header name (absent at the hidden cut f608): 11% (f610) -> 27% (f612) -> 45% (f616) -> 57% (f620) -> 73% (f626) -> 83% (f636) -> 91% (f644) -> 98% (f659) -> 100% (f666) of its f670 ink; thirds at 50% on f614 / f618 / f623 (front about 11 px/f); left edge 14 px left of rest at f614 -> rest by f632. S05 subtitle: under 3% to f612 -> 17% (f616) -> 40% (f620) -> 62% (f626) -> 78% (f636) -> 85% (f644) -> 98% (f659) -> 100% (f666); thirds at 50% on f618 / f621 / f627, 3-4 f after the name; left edge 11 px left of rest at f618 (scratch/v8c1_s05_header_composer_604-673.csv). S05 composer placeholder (3 words; absent to f622; the window holds only the rising composer outline f612-f618): ink per sixth of the line vs f670-f673, each picture aligned on the agent name: 16/3/0/0/0/0% (f625) -> 34/28/9/0/0/0 (f626) -> 34/36/25/19/0/0 (f628) -> 42/45/36/32/17/7 (f630) -> 61/68/60/62/50/34 (f636) -> 72/80/78/79/65/62 (f644) -> 87/91/96/94/91/87 (f656) -> 95/99/96/98/94/95 (f664) -> 100% (f668-f670); whole line 4% (f625) -> 13 (f626) -> 31 (f630) -> 56 (f636) -> 73 (f644) -> 91 (f656) -> 97 (f664) -> 100% (f670); first ink reaches the last sixth at f630 (front about 35 px/f), sixths at half ink f631 / f631 / f634 / f634 / f636 / f640 (about 20 px/f), 90% at f654-f660; first letter's left edge 13 px (0.8% W) left of rest at f626 -> 10 (f630) -> 7 (f636) -> 5 (f640-f644) -> 1.6 (f660) -> rest (f668) while the composer outline's left cap stays at x 609 px; ink centroid y 6 px (0.6% H) low at f625 -> rest by f648 with the end of the composer's rise (scratch/v8c1_s05_placeholder_reveal_608-696.csv, crops/crop_340_760_420x70_00622-00646.jpg for the line before the pan, crops/crop_600_770_340x70_00622-00672.jpg for its right end before the pan and the whole line after it)"
+      },
+      "curves": [
+        "v8.text-label-fade-slide.v8c1"
+      ]
+    },
+    {
+      "id": "v8.text-status-fade-sweep",
+      "category": "text",
+      "description": "a soft lighter band crosses a light-grey status word left to right at constant speed and loops about once a second: the letters under it fall to about 0.28 of their ink and darken again behind it, so it is a looping shimmer band, not a fade-out wipe (v8c2 id; in v8c1 the re-darkening behind the band is visible, which settles v8c2's UNCERTAIN note on the same device)",
+      "instances": [
+        [
+          608,
+          673
+        ],
+        [
+          674,
+          698
+        ]
+      ],
+      "reference_frames": [
+        620,
+        626,
+        636,
+        642,
+        660,
+        670,
+        674,
+        684,
+        692
+      ],
+      "measured": {
+        "duration_frames": 63,
+        "easing": "constant speed (linear): loop model ink = 1 - 0.725 x Gaussian(x - 841.8 px - 3.54 px/f x (t - 640 - k x 62.7 f)), sigma 35.6 px, fitted to the word's ink in 8 bins on all 28 sharp pictures (f620-f642, f660-f692), rmse 0.040; pass 2 alone 3.75 px/f; no curve stored (fit_easing on the per-picture band centre gives a noisy near-linear bezier that is not a real ease)",
+        "values": "status word 1 word of 11 letters, x 802-897 px (49.4%-55.3% W) at f670 in the wide framing, cap 12 px = 1.3% H. Ink per eighth of the word (sum of 248 - luma over y 352-382 after aligning each picture on the agent name; template score 0.94-0.99 outside the pan blur f644-f658) relative to that eighth's rest (mean of its 3 highest sharp values): pass 1 is already on the left end at the hidden cut (left eighth 0.55-0.60 f608-f618 under the incoming blur, 0.46 at f620); f626 0.32/0.44/0.60/0.86/0.90/0.97/1.00/0.97; f636 0.29/0.30/0.35/0.46/0.55/0.69/0.84/0.90; f642 0.54/0.45/0.35/0.31/0.34/0.38/0.42/0.50; f650 (pan blur) 0.76/0.72/0.58/0.46/0.33/0.28/0.28/0.29; f660 1.00/0.96/0.94/0.92/0.81/0.64/0.55/0.40; f670 0.99/1.00/1.00/0.99/1.00/0.94/0.92/0.83; pass 2: f674 0.90/0.88/0.96/1.00/1.00/0.98/0.97/0.94; f684 0.55/0.70/0.80/0.91/0.96/1.00/0.99/0.99; f692 0.20/0.35/0.44/0.58/0.73/0.83/0.92/1.00; f694-f696 (whip blur) left eighth 0.21-0.22, then the cut f699. Half-ink crossings of eighths 1-8, pass 1: leading f619 / f626 / f628 / f633 / f637 / f639 / f641 / f644, trailing f641 / f643 / f646 / f652 / f654 / f658 / f660 / f663 (f646-f656 under the pan blur), i.e. 20-22 f below half ink per eighth; pass 2 leading f685 / f688 / f690 / f693 (eighths 1-4), 62 / 62 / 60.5 f after pass 1 on eighths 2-4. Band: depth 0.725 (0.20-0.30 of rest measured at the centre), sigma 35.6 px (FWHM 84 px = 5.2% W = 0.87 word widths), 3.54 px/f (0.22% W per frame, about 2.5 f per letter), centre at the word's left end f629 and right end f656 (pass 1), left end f691 (pass 2); period 62.7 f, band spacing 222 px = 2.3 word widths, so the word is almost even only around f664-f673. Darkest pixel per eighth about 140-160 at rest, 215-225 at the band centre. Controls aligned the same way stay level: agent name 0.98-1.03, reply 0.98-1.01, bubble text 0.99-1.02 of f670 (f622-f642, f660-f692); header name, subtitle and placeholder 0.97-1.03 over f664-f692, so it is not a camera or blur effect (scratch/v8c1_s05_status_shimmer_608-696.csv; crops/crop_520_325_420x70_00616-00698.jpg, crops/crop_520_330_420x110_00616-00698.jpg)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v8.icon-mascot-eye-glance",
+      "category": "icon",
+      "description": "a mascot's eye glyphs glide sideways inside the static blob, hold, and glide back; the blob does not move or rotate",
+      "instances": [
+        [
+          552,
+          597
+        ]
+      ],
+      "reference_frames": [
+        551,
+        556,
+        560,
+        566,
+        578,
+        584,
+        592,
+        597
+      ],
+      "measured": {
+        "duration_frames": 45,
+        "easing": "not fitted (bezier and spring fits of the outgoing half had rmse 0.07-0.17 and were dropped)",
+        "values": "eyes' ink centroid minus the blob's, x: -0.6 px (f551) -> -4.7 (f556) -> -10.9 (f560) -> -13.6 (f564) -> -14.1 px (hold f566-f578; 14% of the 100 px blob = 0.87% W) -> -12.2 (f584) -> -8.3 (f588) -> -4.6 (f592) -> -3.4 px (f597-f602); y +2.5 -> +6.3 -> +2.8 px; out 14 f, hold 12 f, back 19 f; blob orientation 56.4-57.2 deg throughout (scratch/v8c1_s04_avatar_eyes_524-604.csv, crops/crop_170_440_160x160_00512-00606.jpg)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v8.text-gradient-wipe-reveal",
+      "category": "text",
+      "description": "a check icon fades in, then a light-grey status word is revealed by a soft-edged left-to-right wipe and darkens slightly",
+      "instances": [
+        [
+          521,
+          580
+        ]
+      ],
+      "reference_frames": [
+        521,
+        527,
+        535,
+        541,
+        551,
+        560,
+        570,
+        576,
+        580
+      ],
+      "measured": {
+        "duration_frames": 41,
+        "easing": "decelerating front (6.6 -> 3.9 px per frame), not fitted",
+        "values": "check icon darkest pixel 248 -> 94 (f521-f532); word ink right edge 32.5% (f535) -> 37.2% (f551) -> 41.9% W (f576), 11 letters = 3.7 f per letter; darkest pixel 151 (f560) -> 116 (f580); cap 2.3% H (scratch/v8c1_statuslabel_520-600.csv, v8c1_checkicon_520-600.csv)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v8.trans-blur-whip-reframe",
+      "category": "trans",
+      "description": "the camera accelerates across the UI while it blurs, cuts at speed to a re-framed view of the same UI (zoom-out or punch-in), and the new view arrives still moving in the same direction, decelerating while the blur clears; at the second cut (f699) the incoming card, with its header label and search icon, appears one picture early, already at the close-up scale, over the outgoing panel, which keeps moving (16 px further down than f696); the full close-up follows at f700",
+      "instances": [
+        [
+          570,
+          634
+        ],
+        [
+          668,
+          726
+        ]
+      ],
+      "reference_frames": [
+        570,
+        597,
+        604,
+        606,
+        608,
+        612,
+        620,
+        625,
+        634,
+        668,
+        688,
+        696,
+        699,
+        700,
+        708,
+        720,
+        726
+      ],
+      "measured": {
+        "duration_frames": 65,
+        "easing": "T3 outgoing bezier(0.708, 0.052, 0.863, 0.193) D=42 (rmse 0.016); incoming bezier(0.174, 0.984, 0.536, 0.922) D=28 (rmse 0.006); blur clear bezier(1.000, 0.920, 0.170, 0.230) D=16 (rmse 0.044); T4 outgoing bezier(0.577, 0.106, 0.820, 0.231) D=28 (rmse 0.022); incoming bezier(0.001, 0.231, 0.302, 1.004) D=23 (rmse 0.027)",
+        "values": "T3: x 14.5% -> 19.7% W (f570-f606, ease-in 36 f), cut f606 -> f608, zoom-out x0.66 (text widths 0.643-0.672), x 14.4% -> 24.5% W (f608-f634, ease-out 26 f); blur edge sigma 0.07% (f600) -> 0.34% (f606) -> 0.60% (f608) -> 0.10% W baseline (f625), sharp f632. T4: y 25.8% -> 30.7% H (f668-f696, ease-in 28 f), cut f696 -> f699 (incoming card, header label and search icon over the outgoing panel, which has moved another 16 px down) -> f700 (full close-up), punch-in x2.64, y 7.5% -> 24.7% H (f702-f726, ease-out 19-24 f); blur from f688 (Laplacian sharpness 1664 -> 288 at f697), clear by f720 (scratch/v8c1_s04_icon_512-606.csv, v8c1_t3_icon_post_606-640.csv, v8c1_edgey_t3pre_580-606.csv, v8c1_edgey_t3post_608-640.csv, v8c1_s05_bubble_630-698.csv, v8c1_t4_search_699-770.csv, v8c1_blur_t4pre_676-698.csv, v8c1_blur_t4post_699-745.csv)"
+      },
+      "curves": [
+        "v8.trans-blur-whip-reframe-out.v8c1",
+        "v8.trans-blur-whip-reframe.v8c1",
+        "v8.trans-blur-whip-reframe-blur.v8c1",
+        "v8.trans-blur-whip-reframe-2-out.v8c1",
+        "v8.trans-blur-whip-reframe-2.v8c1"
+      ]
+    },
+    {
+      "id": "v8.icon-mascot-pop-slide",
+      "category": "icon",
+      "description": "at a hidden cut a header mascot grows from a speck about its fixed centre while it rides the incoming whip, fading in over its first frames; no overshoot (v8c2 id)",
+      "instances": [
+        [
+          608,
+          636
+        ]
+      ],
+      "reference_frames": [
+        608,
+        610,
+        612,
+        614,
+        616,
+        620,
+        625,
+        630,
+        636
+      ],
+      "measured": {
+        "duration_frames": 22,
+        "easing": "area-equivalent scale: bezier(0.206, 1.040, 0.678, 0.974) D=29 (rmse 0.035), built 22 f; spring {231.2, 34.41} rmse 0.105",
+        "values": "a 0.7%-ink speck at f608; area-equivalent scale (square root of the ink mass vs rest) 0.34 (f610) -> 0.51 (f612) -> 0.64 (f614) -> 0.74 (f616) -> 0.87 (f620) -> 0.94 (f625) -> 0.98 (f630) -> 1.0 (f636); ink-spread scale deblurred against the agent avatar 0.48 (f610) -> 0.57 (f612) -> 0.69 (f614) -> 0.78 (f616) -> 0.87 (f620) -> 0.95 (f626) -> 1.0 (f636), so opacity is about 0.5 (f610), 0.8 (f612), 0.9 (f614-f616), 1 by f620; centre fixed 17.9 px right of the agent avatar's (scratch/v8c1_s05_header_composer_604-673.csv)"
+      },
+      "curves": [
+        "v8.icon-mascot-pop-slide.v8c1"
+      ]
+    },
+    {
+      "id": "v8.shape-divider-draw-on",
+      "category": "shape",
+      "description": "a hairline divider under a header draws on from its right end toward the left",
+      "instances": [
+        [
+          612,
+          648
+        ]
+      ],
+      "reference_frames": [
+        612,
+        620,
+        626,
+        630,
+        636,
+        640,
+        644,
+        648
+      ],
+      "measured": {
+        "duration_frames": 36,
+        "easing": "not fitted (about 23 px/f, uneven per picture)",
+        "values": "y 16.2% H; right end fixed at 77.1% W; left end in the panel's x 71.6% (f612) -> 58.1% (f620) -> 50.4% (f626) -> 43.7% (f630) -> 36.5% (f636) -> 30.7% (f640) -> 24.8% (f644) -> 19.7% W (f648, meets the vertical divider) (crops/crop_300_130_1100x40_00610-00650.jpg; row-149 ink extent per picture)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v8.icon-mascot-eye-swap",
+      "category": "icon",
+      "description": "a UI avatar mascot's eye glyphs swap instantly between dashes, rings, chevrons and dots (v8c2 id; the idle mascots of S01-S02 swap glyphs as part of v8.icon-mascot-idle-bounce)",
+      "instances": [
+        [
+          628,
+          628
+        ],
+        [
+          648,
+          654
+        ],
+        [
+          674,
+          674
+        ]
+      ],
+      "reference_frames": [
+        626,
+        628,
+        646,
+        656,
+        673,
+        674
+      ],
+      "measured": {
+        "duration_frames": 0,
+        "easing": "stepped (instant)",
+        "values": "S05 agent-row avatar: dashes (f616-f626) -> rings (f628-f646; they drift up 4 px f634-f644) -> chevrons (first readable f656; the swap falls inside the pan blur f648-f654) -> dots (from f674); about 22-24 f apart; the header avatar keeps its chevrons (crops/crop_330_50_200x360_00612-00698.jpg, crops/crop_560_320_120x100_00644-00680.jpg, scratch/v8c1_s05_avatar_eyes_612-696.csv)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v8.ui-composer-build",
+      "category": "ui",
+      "description": "a chat composer builds in: its outline appears below its rest and rises into place, then the send button grows from a dot and the light plus disc fades in while the placeholder is revealed by a soft left-to-right front and slides right (v8.text-label-fade-slide), then the mic and plus glyphs appear",
+      "instances": [
+        [
+          612,
+          659
+        ]
+      ],
+      "reference_frames": [
+        612,
+        614,
+        616,
+        620,
+        625,
+        630,
+        636,
+        642,
+        646,
+        650,
+        659
+      ],
+      "measured": {
+        "duration_frames": 47,
+        "easing": "outline rise bezier(0.076, 0.941, 0.093, 1.138) D=60 (rmse 0.029; 90% of the move by f626, rest f636; the 2% rule stretches the window to f668 over a 0.4 px tail); spring {413.9, 42.11} rmse 0.301; button growth ease-out (values)",
+        "values": "outline not on screen f608-f611, appears f612 at full width (no draw-on), blurred with the picture, centre y 90.6% H (f612) -> 89.8% (f614) -> 88.9% (f616) -> 88.0% (f620) -> 87.5% (f626) -> 87.2% H (f636): a 31 px = 3.4% H rise (scratch/v8c1_s05_header_composer_604-673.csv); button diameter 12 px (f625) -> 29 (f630) -> 38 (f636) -> 41 px = 2.5% W (f642); placeholder: soft left-to-right front f625-f668 with a 13 px slide, recorded under v8.text-label-fade-slide (its darkest pixel 234 -> 184 at f625-f642 hid the front); light plus disc fill 248 -> 242 (f642) -> 239 (f654); plus glyph darkest pixel 197 (f642) -> 93 (f659); mic glyph f642-f650 (scratch/v8c1_sendbtn_620-642.csv, v8c1_placeholder_620-642.csv)"
+      },
+      "curves": [
+        "v8.ui-composer-build.v8c1"
+      ]
+    },
+    {
+      "id": "v8.cam-pan-reveal",
+      "category": "cam",
+      "description": "the whole UI pans sideways with motion blur; the vertical divider rides in with it, while the sidebar's contents appear only as the pan lands (v8.ui-sidebar-drop-in)",
+      "instances": [
+        [
+          636,
+          670
+        ]
+      ],
+      "reference_frames": [
+        636,
+        644,
+        650,
+        654,
+        660,
+        666,
+        670
+      ],
+      "measured": {
+        "duration_frames": 30,
+        "easing": "bezier(0.939, 0.602, 0.130, 0.718) D=27 (rmse 0.063; per-sample residuals <= 0.045, blur and capture jitter)",
+        "values": "bubble text x 59.4% -> 74.0% W (+14.5% W), peak speed about 22 px per frame at f650-f654, horizontal motion blur f646-f656 (scratch/v8c1_s05_bubble_630-698.csv); the vertical divider rides the pan from x 20.6% W (f640) to 34.5% W (f670); no ink of the sidebar's contents in x 0-520, y 0-330 at f654-f658 (scratch/v8c1_s05_sidebar_entry_650-698.csv)"
+      },
+      "curves": [
+        "v8.cam-pan-reveal.v8c1"
+      ]
+    },
+    {
+      "id": "v8.ui-sidebar-drop-in",
+      "category": "ui",
+      "description": "as a pan lands, the newly revealed sidebar's header row (light label + search icon) pops in at full ink above its rest and drops into place with an ease-out and vertical motion blur; the empty list card pops in at full fill 3 f later and drops the same way",
+      "instances": [
+        [
+          659,
+          680
+        ],
+        [
+          662,
+          682
+        ]
+      ],
+      "reference_frames": [
+        654,
+        658,
+        659,
+        660,
+        662,
+        664,
+        666,
+        670,
+        673,
+        680
+      ],
+      "measured": {
+        "duration_frames": 21,
+        "easing": "label: bezier(0.014, 1.084, 0.594, 0.942) D=30 (rmse 0.025), built 24 f; spring {433.9, 61.67} rmse 0.187; 91% of the drop by f670; card not fitted (same drop, 3 f later)",
+        "values": "no ink of the sidebar's contents in x 0-520, y 0-330 at f654-f658; label and icon appear at f659 at full ink (mass 93-100% of settled; darkest pixel 195 -> 160 -> 139 -> 126 -> 117 luma at f659 / f660 / f662 / f666 / f670 from vertical motion blur clearing) near their landing x (they ride the last 28 px of the pan); label centre y 7.0% H (f659) -> 8.7% (f660) -> 9.7% (f662) -> 10.8% (f666) -> 11.4% H (f670), relative to the chat panel -3.42% -> +1.24% H (rest f680-f692), a 4.7% H drop, while the panel itself does not move vertically (header avatar y 95.2-96.9 px f659-f670); search icon centre y 6.8% (f659) -> 10.9% H (f670); list card fill 231 from its first picture f662 (no fade), top edge 13.2% (f662) -> 14.6% (f664) -> 15.6% (f666) -> 16.8% (f670) -> 17.2% H (f673), relative to the panel 25.5 -> 66.5 px (4.5% H, rest about f682) (scratch/v8c1_s05_sidebar_entry_650-698.csv; the earlier fade reading of scratch/v8c1_sidecard_650-676.csv was a fixed ROI the moving card slid into)"
+      },
+      "curves": [
+        "v8.ui-sidebar-drop-in.v8c1"
+      ]
+    },
+    {
+      "id": "v8.icon-mascot-drop-into-card",
+      "category": "icon",
+      "description": "a mascot drops into a card from above, clipped by the card's top edge, and settles inside it with a damped bounce and a sideways swing",
+      "instances": [
+        [
+          694,
+          732
+        ]
+      ],
+      "reference_frames": [
+        694,
+        696,
+        702,
+        708,
+        711,
+        720,
+        726,
+        732
+      ],
+      "measured": {
+        "duration_frames": 38,
+        "easing": "damped bounce (values), not fitted",
+        "values": "first sliver at the card's top edge f694, lower half visible f696-f698; in the close-up, position relative to the card centre y -99 px (f702) -> -13 (f708) -> +21 (f718-f722) -> +5.5 px (f732), x 461 -> 348 (f720) -> 385 px (f732) (scratch/v8c1_edge_t4post_mascot_702-733.csv centroids + v8c1_t4_search_699-770.csv)"
+      },
+      "curves": []
+    }
+  ],
+  "typography_stills": [
+    "type/v8c1-S01-1_f00000.png",
+    "type/v8c1-S01-1_f00004.png",
+    "type/v8c1-S01-1_f00030.png",
+    "type/v8c1-S01-1_f00124.png",
+    "type/v8c1-S01-2_f00008.png",
+    "type/v8c1-S01-2_f00016.png",
+    "type/v8c1-S01-2_f00045.png",
+    "type/v8c1-S01-2_f00124.png",
+    "type/v8c1-S01-3_f00048.png",
+    "type/v8c1-S01-3_f00052.png",
+    "type/v8c1-S01-3_f00060.png",
+    "type/v8c1-S01-3_f00124.png",
+    "type/v8c1-S01-4_f00026.png",
+    "type/v8c1-S01-4_f00036.png",
+    "type/v8c1-S01-4_f00052.png",
+    "type/v8c1-S03-1_f00248.png",
+    "type/v8c1-S03-1_f00300.png",
+    "type/v8c1-S03-1_f00441.png",
+    "type/v8c1-S03-2_f00326.png",
+    "type/v8c1-S03-2_f00342.png",
+    "type/v8c1-S03-2_f00441.png",
+    "type/v8c1-S04-1_f00512.png",
+    "type/v8c1-S04-1_f00522.png",
+    "type/v8c1-S04-1_f00560.png",
+    "type/v8c1-S04-1_f00604.png",
+    "type/v8c1-S04-2_f00548.png",
+    "type/v8c1-S04-2_f00580.png",
+    "type/v8c1-S04-2_f00604.png",
+    "type/v8c1-S04-3_f00514.png",
+    "type/v8c1-S04-3_f00520.png",
+    "type/v8c1-S04-3_f00560.png",
+    "type/v8c1-S04-4_f00512.png",
+    "type/v8c1-S04-4_f00516.png",
+    "type/v8c1-S04-4_f00532.png",
+    "type/v8c1-S05-1_f00608.png",
+    "type/v8c1-S05-1_f00636.png",
+    "type/v8c1-S05-1_f00690.png",
+    "type/v8c1-S05-1_f00696.png",
+    "type/v8c1-S05-2_f00659.png",
+    "type/v8c1-S05-2_f00660.png",
+    "type/v8c1-S05-2_f00670.png",
+    "type/v8c1-S05-2_f00690.png",
+    "type/v8c1-S05-3_f00610.png",
+    "type/v8c1-S05-3_f00620.png",
+    "type/v8c1-S05-3_f00640.png",
+    "type/v8c1-S05-3_f00666.png",
+    "type/v8c1-S06-1_f00700.png",
+    "type/v8c1-S06-1_f00712.png",
+    "type/v8c1-S06-1_f00733.png",
+    "type/v8c1-S05-4_f00626.png",
+    "type/v8c1-S05-4_f00642.png",
+    "type/v8c1-S05-4_f00660.png",
+    "type/v8c1-S05-4_f00670.png",
+    "type/v8c1-S05-4_f00692.png",
+    "type/v8c1-S05-5_f00626.png",
+    "type/v8c1-S05-5_f00632.png",
+    "type/v8c1-S05-5_f00640.png",
+    "type/v8c1-S05-5_f00668.png"
+  ],
+  "uncertain": [
+    {
+      "what": "opening wordmark spring and label settle easing",
+      "range": "f0-f26",
+      "reason": "the recording starts mid-move (f0 already has vertical motion blur); values only"
+    },
+    {
+      "what": "mascot convergence easing",
+      "range": "f84-f124",
+      "reason": "capture jitter (pictures f115/f116 one frame apart carry a 112 px step) and motion blur; bezier and spring fits had rmse > 0.07 and were dropped"
+    },
+    {
+      "what": "zoom-through curve shape metric",
+      "range": "f115-f132",
+      "reason": "exponential ease-in: the fitted log2 curve matches every sample within 0.03 but the duration-normalised shape rmse is 0.090 because the built curve's 2% start comes 2 frames later than the samples'"
+    },
+    {
+      "what": "tunnel dolly speed, roll and wall texture",
+      "range": "f136-f173",
+      "reason": "wall panels are textureless or blurred and stream through every ROI; only the motion.csv flow magnitude (0.8-2.3% W per frame) is available; the walls carry blurred photographic texture whose origin (footage or stills) is not determinable; S02 is MIXED anyway because of the footage card in its last pictures f174-f182"
+    },
+    {
+      "what": "tunnel-exit fly-past easing",
+      "range": "f164-f179",
+      "reason": "template scale steps of 0.05 and a mismatch at f166; the mascots leave the frame by f179; values only"
+    },
+    {
+      "what": "footage card corner radius",
+      "range": "f180-f200",
+      "reason": "apparent rounding (up to 20 px = 1.3% W at f180) shrinks with the edge motion blur; once sharp the radius is <= 3.4 px (0.2% W), so a radius animation cannot be separated from blur"
+    },
+    {
+      "what": "prompt pill rise-in start",
+      "range": "f226-f234",
+      "reason": "the pill enters from below the frame edge; the first measurable picture (f234) is already moving, so the curve covers only the visible part (rmse 0.051)"
+    },
+    {
+      "what": "reveal pan curve",
+      "range": "f636-f670",
+      "reason": "motion blur lowers the template score to 0.64-0.76 and f653/f654 carry capture jitter; shape rmse 0.063 (per-sample residuals <= 0.045)"
+    },
+    {
+      "what": "zoom factor of the first whip-reframe",
+      "range": "f606-f608",
+      "reason": "text-width ratios vary 0.643-0.672 and the avatar 0.57 (its shape animates), so the UI may be re-laid out rather than purely scaled; reported as x0.66"
+    },
+    {
+      "what": "blur magnitude of the second whip-reframe",
+      "range": "f688-f720",
+      "reason": "the Laplacian-matched sigma (2.9 px at f700) saturates above about 2.5 px and underestimates large blur (on the first whip it gave 2.6 px where the edge width gave 9.8 px); timing is reliable, magnitude is not; the mascot edge in the close-up is slanted and moving"
+    },
+    {
+      "what": "f699: the incoming card leading the cut over the outgoing panel",
+      "range": "f699",
+      "reason": "one picture only: f699 holds the incoming card, header label and search icon at the close-up scale over the outgoing panel, which has moved another 16 px down (not the stale f698 picture, so not a top/bottom capture tear); it is recorded as a one-picture lead of the incoming card, but with a single captured picture (cadence 1-3 grid frames) the designed length of the lead cannot be measured; first full close-up picture f700"
+    },
+    {
+      "what": "jump cuts in the footage tail",
+      "range": "f474-f508",
+      "reason": "motion inside the footage raises the whole-picture abs diff at f476 (8.7 luma against 3-5 elsewhere), but the phase correlation of a fixed left ROI (x 0-400, y 100-800) stays locked on every picture pair from f473 (response 0.54-0.86, shifts changing smoothly), so no picture is replaced; decided continuous footage (c025-c028 rejected; scratch/v8c1_footage_tail_phasecorr_462-510.csv)"
+    },
+    {
+      "what": "reveal speeds",
+      "range": "f6-f42, f46-f56, f247-f340, f535-f576",
+      "reason": "captured pictures arrive every 1-2 frames with +-1 frame jitter, so per-character rates carry about +-10%"
+    },
+    {
+      "what": "designed hold of the mic button press",
+      "range": "f396-f402",
+      "reason": "no picture arrives at f400: the 45 px picture of f398 stays on screen to f401 and the next picture (f402) is already 57 px, so the 45 px state is on screen for 6 grid frames (f396-f401) but the designed hold lies between 2 and 6 f"
+    },
+    {
+      "what": "scale of the S04 cut-in settle",
+      "range": "f512-f523",
+      "reason": "the template match reports x0.94 at f512 rising to x1.00 by f522, but the ink-centroid distances avatar-bubble (874 / 215 px at f512 against 862 / 218 px at rest) and avatar-reply (464 against 461 px) stay within 1.5% of rest, so the x0.94 may be a blur effect on the template; the S04 text-reveal values are therefore measured in screen pixels without a scale correction, and the avatar (about 80%) and bubble (88%) ink deficit at f512 reads as a fade that is complete by f527"
+    },
+    {
+      "what": "S05 composer outline position at its first pictures",
+      "range": "f612-f614",
+      "reason": "the blurred outline lines are only 3-4 luma deep and quantised, so the centre y of f612-f614 (90.6% / 89.8% H) carries about +-2 px; from f616 the lines are 10+ luma deep"
+    },
+    {
+      "what": "S05 header avatar size at the cut",
+      "range": "f608-f610",
+      "reason": "at f608 the avatar is a 0.7%-ink speck and the deblurred ink spread is noise-dominated (0.24); the curve uses the area-equivalent scale (square root of ink mass), which also contains its fade-in"
+    },
+    {
+      "what": "rings -> chevrons eye swap of the S05 agent avatar",
+      "range": "f646-f656",
+      "reason": "the swap happens inside the pan's motion blur (f648-f654); rings are readable to f646 and chevrons from f656"
+    },
+    {
+      "what": "start of pass 1 of the status-word shimmer",
+      "range": "f592-f618",
+      "reason": "at the hidden cut f608 the left end of the word is already lighter (left eighth 0.55-0.60 of rest under the incoming blur f608-f618); in the last close-up pictures the left eighth already falls to 0.95 / 0.87 / 0.83 / 0.76 of its f590 ink (f597 / f598 / f600 / f602) while the agent name holds 0.99-1.00, but the right end keeps darkening to 1.3-1.4x (the S04 reveal had not settled at f590) and the outgoing whip's blur grows over the same pictures, so pass 1 starts somewhere between about f592 and f608"
+    },
+    {
+      "what": "shimmer band shape and centre outside the word",
+      "range": "f618-f626, f660-f673, f674-f688",
+      "reason": "the Gaussian band fits to rmse 0.040, but its leading side is longer than a Gaussian (model residuals +0.09 to +0.12 on eighths 1-3 at f620-f622), so the band is somewhat asymmetric; per-picture band-centre estimates while the centre is outside the word depend on that shape: they move 2.2-2.4 px/f on the leading side (f618-f626, f674-f688) and 3.8 px/f on the trailing side (f660-f673), against 3.4 px/f while the centre is inside the word (f628-f656) and 3.54 px/f for the loop model"
+    }
+  ],
+  "notes": [
+    "Timing: VFR screen recording on the 60 fps grid; in this chunk pictures arrive mostly every 2 frames (30 fps, every other grid frame a repeat) with runs of 1-2 frame intervals (motion.csv local_fps 38-43 at f134-f190, f338-f368, f500-f560, f696-f730); durations carry +-1 frame of capture jitter.",
+    "Boundaries in v8c1: 4 soft transitions stored in the schema form (zoom-through with dissolve f115-f143, cut_frame f136; tunnel-exit zoom-through f164-f200, swap picture f174; blur whip-reframes f570-f634 and f668-f726 as type 'whip', each hiding a picture replacement, cut_frame f608 and f699) and 1 hard cut (f512). The two hidden cuts were missed by all three detectors (light frames, blur on both sides) and found on the overview sheets, the off-cut motion peaks f608 and f701, and the trackers.",
+    "Segments are provisional ids v8c1-S01..S06, tiled by the protocol's soft-transition rule floor((a+b)/2): S01 ends f129, S02 ends f182, S04 ends f602, S05 ends f697 (each boundary keeps its switch picture as cut_frame). S06 continues into v8c2 (no boundary within 15 frames past f733; checked to f790 in detail/soft_668-726).",
+    "The two blur whip-reframes keep the same product UI on both sides of the cut (only scale and position jump); the merge may prefer to treat them as camera cuts inside one UI scene, in which case S04-S06 join.",
+    "The PySceneDetect content index is offset against the pictures here (c030 reports the f512 cut at f515; c008 reports the f174 swap at f176); ffmpeg's scene score fires on the right picture (c029). Decisions were made on the pictures.",
+    "Blur values: 'edge sigma' = 10-90% width of a strong edge / 2.563 (Gaussian sigma), measured perpendicular to the motion; 'Laplacian-matched sigma' = Gaussian sigma that brings the reference still's Laplacian variance down to the frame's (reliable for timing, saturates above about 2.5 px). Scripts were run from the session scratchpad; their CSVs are in scratch/v8c1_*.csv.",
+    "Mascots are designed blob characters with glyph eyes (graphic elements). Footage content is not described; the footage card and the full-frame footage in S03 are analysed only as a graphic window (position, scale, edges).",
+    "The composer in S05 reuses the parts of the S03 prompt pill (plus circle, black mic button), and the mascots of S01-S02 reappear as UI avatars in S04-S06.",
+    "Off-cut motion-peak windows in range were all opened: peak_f00014, f00134, f00163, f00191, f00201, f00215, f00251, f00341, f00395, f00431, f00475, f00608, f00653, f00701 directly; f00260, f00365, f00373, f00380, f00404, f00414, f00423 cover the same pictures as cut_c014, c016, c019 and c021 and peak_f00395/f00431, which were opened.",
+    "Review fixes (S04-S05 text and UI behaviour): in S04 only the bubble and the mascot icon arrive with the cut; the reply fades in as a block while rising (v8.text-block-rise-in) and the agent name is revealed by a soft left-to-right front, darkens and slides right (v8.text-label-fade-slide); in S05 the header row is not on screen at the hidden cut f608 and builds afterwards (v8.icon-mascot-pop-slide, v8.text-label-fade-slide, v8.shape-divider-draw-on) while the composer outline appears at f612 and rises (v8.ui-composer-build). Ink masses are blur-invariant: sums of (248 - luma) over windows that follow the UI, compared with a settled picture.",
+    "v8.ui-card-fade-in was replaced by v8.ui-sidebar-drop-in: the card's fill is 231 from its first picture f662; the earlier 248 -> 231 reading came from a fixed ROI (scratch/v8c1_sidecard_650-676.csv: minimum 230-231 from f662, std 5.5-8.1) that the moving card slid into. The sidebar header and icon also pop in at full ink (constant ink mass); their darkening darkest pixel is motion blur clearing.",
+    "New trackers of this revision: scratch/v8c1_s04_text_reveal_512-572.csv, v8c1_s04_avatar_eyes_524-604.csv, v8c1_s05_header_composer_604-673.csv, v8c1_s05_sidebar_entry_650-698.csv, v8c1_s05_avatar_eyes_612-696.csv, v8c1_micbutton_halfdepth_384-412.csv, v8c1_footage_tail_phasecorr_462-510.csv; new curves v8.text-block-rise-in.v8c1, v8.text-label-fade-slide.v8c1, v8.icon-mascot-pop-slide.v8c1, v8.ui-composer-build.v8c1, v8.ui-sidebar-drop-in.v8c1; new stills type/v8c1-S04-3_*, v8c1-S04-4_*, v8c1-S05-3_*, v8c1-S05-2_f00659/f00670; dense window detail/dense_00656-00680_00.jpg; crops crop_300_130_1100x40_00610-00650, crop_250_740_1100x140_00608-00640, crop_280_480_260x80_00514-00570, crop_560_320_120x100_00644-00680.",
+    "Review fixes (S05 status word and placeholder, f699, S02 class): the S05 status word shimmers in a loop (v8.text-status-fade-sweep: lighter band at 3.54 px/f, FWHM 84 px, depth 0.725, period 62.7 f; pass 1 to f673, pass 2 from f674; letters darken again behind the band); the composer placeholder is revealed by a soft left-to-right front with a 13 px slide (v8.text-label-fade-slide), not a block fade; f699 is the incoming card layer over the still-moving outgoing panel (16 px further down than f696), not a top/bottom torn picture; S02 is MIXED because its last pictures f174-f182 carry the footage card. New trackers scratch/v8c1_s05_status_shimmer_608-696.csv, scratch/v8c1_s05_placeholder_reveal_608-696.csv, scratch/v8c1_f699_layer_check.csv (+ scratch/v8c1_f699_layer_map.png); new stills type/v8c1-S05-4_* and type/v8c1-S05-5_*; new crops crops/crop_520_330_420x110_00616-00698.jpg and crops/crop_600_770_340x70_00622-00672.jpg; no new curve (the shimmer runs at constant speed, the placeholder follows the stored header-name curve)."
+  ]
+}

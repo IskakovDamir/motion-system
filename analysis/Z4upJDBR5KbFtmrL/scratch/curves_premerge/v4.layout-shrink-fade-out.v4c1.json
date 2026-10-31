@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.layout-shrink-fade-out.v4c1",
+  "file": "curves/v4.layout-shrink-fade-out.v4c1.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (right card interior; 23.5 = opaque with its content, 246 = gone)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/t3_exit.csv",
+  "column": "interior_luma",
+  "sampled_frames": [
+    712,
+    731
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 23.48,
+  "to_value": 246.0,
+  "active_frames": [
+    720,
+    731
+  ],
+  "measured_duration_frames": 11,
+  "bezier": {
+    "x1": 0.26,
+    "y1": 0.0615,
+    "x2": 0.6175,
+    "y2": 0.073,
+    "durationInFrames": 12,
+    "delay": -0.756,
+    "built_duration_frames": 11,
+    "rmse": 0.0261
+  },
+  "spring": {
+    "stiffness": 453.058,
+    "damping": 237.978,
+    "mass": 1,
+    "damping_ratio": 5.5902,
+    "built_duration_frames": 17,
+    "rmse": 0.3839
+  },
+  "recommended": "bezier",
+  "note": "S3 exit: both windows fade out f719-f731 while each scales about its own centre 1.000 -> 0.944 (f731, last visible frame; left card measured from two landmarks, right card from edges), ease-in; gone at f732"
+}

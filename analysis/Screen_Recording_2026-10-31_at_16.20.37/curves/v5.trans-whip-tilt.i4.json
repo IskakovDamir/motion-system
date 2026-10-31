@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.trans-whip-tilt.i4",
+  "file": "curves/v5.trans-whip-tilt.i4.csv",
+  "property": "position-y",
+  "unit": "% of frame height (canvas offset, negative = up)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_AB_whip_canvas.csv",
+  "column": "offset_pct",
+  "sampled_frames": [
+    3212,
+    3256
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": -95.806,
+  "active_frames": [
+    3225,
+    3242
+  ],
+  "measured_duration_frames": 17,
+  "bezier": {
+    "x1": 0.7134,
+    "y1": -0.0004,
+    "x2": 0.1701,
+    "y2": 1.0042,
+    "durationInFrames": 20,
+    "delay": -1.161,
+    "built_duration_frames": 14,
+    "rmse": 0.0522
+  },
+  "spring": {
+    "stiffness": 530.537,
+    "damping": 37.687,
+    "mass": 1,
+    "damping_ratio": 0.8181,
+    "built_duration_frames": 11,
+    "rmse": 0.1406
+  },
+  "recommended": "bezier",
+  "note": "vertical whip from the prompt board to the curved footage panel on one rigid canvas: board exits up (title template, ref f3216) while the panel arrives from below (panel top/bottom edges, luma > 14 in columns x600-1000); canvas gap between the two layouts 880 +- 10 px (95.9% H) from f3232 and f3235 where both are visible; f3232-3235 edges are motion-blurred (up to about 8% H uncertainty); UI cursor stays fixed on screen above the whip"
+}

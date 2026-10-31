@@ -1,0 +1,40 @@
+{
+  "technique_id": "v3.particle-packet-dispatch",
+  "file": "curves/v3.particle-packet-dispatch.csv",
+  "property": "position",
+  "unit": "px along the straight path (864 px = 45.0% W)",
+  "source_samples": "../../analysis/yI-1xclfzqMRrqfA/scratch/v3c1_dot_trip_beta.csv",
+  "column": "along_px",
+  "sampled_frames": [
+    312,
+    327
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 11.68,
+  "to_value": 873.83,
+  "active_frames": [
+    314,
+    325
+  ],
+  "measured_duration_frames": 11,
+  "bezier": {
+    "x1": 0.5824,
+    "y1": 0.0795,
+    "x2": 0.4155,
+    "y2": 0.9221,
+    "durationInFrames": 12,
+    "delay": -0.487,
+    "built_duration_frames": 10,
+    "rmse": 0.0189
+  },
+  "spring": {
+    "stiffness": 540.452,
+    "damping": 35.072,
+    "mass": 1,
+    "damping_ratio": 0.7543,
+    "built_duration_frames": 15,
+    "rmse": 0.2737
+  },
+  "recommended": "bezier",
+  "note": "S03 dispatch dot: appears in one frame at (419.5,459.6) inside the top terminal f312, holds 1 f, travels a straight line to (1249.5,699.7) on the chat bubble, arrives f327, vanishes f328; the chat status row switches to answered at f327"
+}

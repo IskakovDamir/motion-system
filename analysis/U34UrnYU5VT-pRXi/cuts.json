@@ -24,6 +24,21 @@
   },
   "cuts": [
     {
+      "frame": 1,
+      "time_s": 0.0167,
+      "last_frame_before": 0,
+      "sources": [],
+      "content_val": 3.96,
+      "delta_lum": 7.61,
+      "adaptive_ratio": null,
+      "ffmpeg_scene": 0.072,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m001",
+      "reason": "hard cut T01 (S01 -> S02), missed by the detectors (gray diff 32.7e-3): f0 is a one-frame poster of the settled S03 layout (headline + logo ring, identical to f181), f1-f6 are the empty background and the honeycomb starts at f7 (v2c1; sheets/overview_00000-00045.jpg)"
+    },
+    {
       "frame": 103,
       "time_s": 1.7167,
       "last_frame_before": 102,
@@ -36,8 +51,114 @@
       "ffmpeg_scene": 0.0719,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c001"
+      "status": "confirmed",
+      "id": "c001",
+      "reason": "anchor of the soft sphere-collapse transition T02 f95-f114 (S02 -> S03), not a hard replacement: f102 -> f103 is continuous (the honeycomb is wrapping into a globe; silhouette 1920 -> 1845 px wide, centre magnification 0.960 -> 0.935); the content detector fired on the fast change (v2c1)"
+    },
+    {
+      "frame": 226,
+      "time_s": 3.7667,
+      "last_frame_before": 225,
+      "sources": [],
+      "content_val": 3.1,
+      "delta_lum": 4.84,
+      "adaptive_ratio": 3.5,
+      "ffmpeg_scene": 0.01,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m002",
+      "reason": "hard cut T03 (S03 -> S04), staggered, missed by the detectors: the headline is removed in one frame at f225 while the logo ring keeps turning, the ring at f226 (one empty frame), the mascot pops in at the frame centre from f227 (v2c1)"
+    },
+    {
+      "frame": 339,
+      "time_s": 5.65,
+      "last_frame_before": 338,
+      "sources": [],
+      "content_val": 1.85,
+      "delta_lum": 4.3,
+      "adaptive_ratio": 255.0,
+      "ffmpeg_scene": 0.0373,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m003",
+      "reason": "hard cut T04 (S04 -> S05), missed by the detectors: logo lockup -> text card (gray diff 17.0e-3, 0 on both neighbours) (v2c1)"
+    },
+    {
+      "frame": 395,
+      "time_s": 6.5833,
+      "last_frame_before": 394,
+      "sources": [],
+      "content_val": 1.2,
+      "delta_lum": 3.61,
+      "adaptive_ratio": 255.0,
+      "ffmpeg_scene": 0.0301,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m004",
+      "reason": "hard cut T05 (S05 -> S06), missed by the detectors: text card -> text card at the same size and band (gray diff 13.7e-3) (v2c1)"
+    },
+    {
+      "frame": 451,
+      "time_s": 7.5167,
+      "last_frame_before": 450,
+      "sources": [],
+      "content_val": 2.39,
+      "delta_lum": 6.64,
+      "adaptive_ratio": 43.8,
+      "ffmpeg_scene": 0.0595,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m005",
+      "reason": "hard cut T06 (S06 -> S07), missed by the detectors: text card -> top headline + UI dialog (gray diff 26.3e-3) (v2c1)"
+    },
+    {
+      "frame": 564,
+      "time_s": 9.4,
+      "last_frame_before": 563,
+      "sources": [],
+      "content_val": 1.7,
+      "delta_lum": 4.47,
+      "adaptive_ratio": 255.0,
+      "ffmpeg_scene": 0.0431,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m006",
+      "reason": "hard cut T07 (S07 -> S08), missed by the detectors: headline + UI dialog -> headline + chat input (gray diff 18.9e-3) (v2c1)"
+    },
+    {
+      "frame": 676,
+      "time_s": 11.2667,
+      "last_frame_before": 675,
+      "sources": [],
+      "content_val": 4.89,
+      "delta_lum": 13.21,
+      "adaptive_ratio": 14.96,
+      "ffmpeg_scene": 0.1156,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m007",
+      "reason": "hard cut T08 (S08 -> S09), missed by the detectors: chat input -> full-bleed agent-app UI (gray diff 52.2e-3); content continuity only: the prompt typed in S08 is the sent bubble at the top of S09, with no positional match (v2c1)"
+    },
+    {
+      "frame": 733,
+      "time_s": 12.2167,
+      "last_frame_before": 732,
+      "sources": [],
+      "content_val": 4.08,
+      "delta_lum": 10.72,
+      "adaptive_ratio": 110.28,
+      "ffmpeg_scene": 0.0922,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m008",
+      "reason": "hard cut T09 (S09 -> S10), missed by the detectors: agent-app UI -> text card (gray diff 41.9e-3) (v2c1)"
     },
     {
       "frame": 789,
@@ -54,8 +175,9 @@
       "ffmpeg_scene": 0.2769,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c002"
+      "status": "confirmed",
+      "id": "c002",
+      "reason": "hard cut T10 (S10 -> S11): f788 is the settled 3-word text card, f789 the complete team-chat window (gray diff 125.3e-3 in one frame, 0 before, 0.8e-3 after from the push-in) (v2c1)"
     },
     {
       "frame": 901,
@@ -72,8 +194,69 @@
       "ffmpeg_scene": 0.309,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c003"
+      "status": "confirmed",
+      "id": "c003",
+      "reason": "hard cut T11 (S11 -> S12) exactly on the chunk edge, found by both chunks: f900 is the static chat window with 4 messages, f901 the empty canvas with the next centred line's first word at full ink (diff 140.4e-3; f902-f908 unchanged, second word f909); no shared element (detail/cut_c003_f00901/sheet.jpg, sheets/overview_00864-00909.jpg)"
+    },
+    {
+      "frame": 958,
+      "time_s": 15.9667,
+      "last_frame_before": 957,
+      "sources": [],
+      "content_val": 2.85,
+      "delta_lum": 5.53,
+      "adaptive_ratio": 65.19,
+      "ffmpeg_scene": 0.0519,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m009",
+      "reason": "hard cut T12 (S12 -> S13), missed by the detectors: complete 1-line headline -> repository UI panel at scale 1.000 (content_val 2.85, adaptive 65.2; detail/peak_f00959) (v2c2)"
+    },
+    {
+      "frame": 1098,
+      "time_s": 18.3,
+      "last_frame_before": 1097,
+      "sources": [],
+      "content_val": 7.97,
+      "delta_lum": 7.14,
+      "adaptive_ratio": 255.0,
+      "ffmpeg_scene": 0.0794,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m010",
+      "reason": "hard cut T13 (S13 -> S14), missed by the detectors: repository UI at scale 1.0296 -> empty canvas + top headline word 1 (content_val 7.97, adaptive 255; detail/peak_f01097) (v2c2)"
+    },
+    {
+      "frame": 1351,
+      "time_s": 22.5167,
+      "last_frame_before": 1350,
+      "sources": [],
+      "content_val": 3.13,
+      "delta_lum": 7.18,
+      "adaptive_ratio": 255.0,
+      "ffmpeg_scene": 0.0623,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m011",
+      "reason": "hard cut T16 (S16 -> S17), missed by the detectors: zooming app panel + caption -> empty canvas + headline word 1 (adaptive 255; detail/hard_1351) (v2c2)"
+    },
+    {
+      "frame": 1408,
+      "time_s": 23.4667,
+      "last_frame_before": 1407,
+      "sources": [],
+      "content_val": 0.64,
+      "delta_lum": 1.92,
+      "adaptive_ratio": 10.92,
+      "ffmpeg_scene": 0.0162,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m012",
+      "reason": "hard cut T17 (S17 -> S18), missed by the detectors: complete headline -> empty canvas for 1 frame, first mascot of the scatter at f1409 (content_val 0.64, adaptive 10.9; detail/dense_01402-01425_00.jpg) (v2c2)"
     },
     {
       "frame": 1492,
@@ -90,10 +273,86 @@
       "ffmpeg_scene": 0.3764,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c004"
+      "status": "confirmed",
+      "id": "c004",
+      "reason": "hard cut T18 (S18 -> S19): f1491 holds the mascot scatter with its headline, f1492 is the article page with caption word 1; nothing carries over (detail/cut_c004_f01492/sheet.jpg) (v2c2)"
+    },
+    {
+      "frame": 1689,
+      "time_s": 28.15,
+      "last_frame_before": 1688,
+      "sources": [],
+      "content_val": 2.74,
+      "delta_lum": 6.66,
+      "adaptive_ratio": 20.02,
+      "ffmpeg_scene": 0.0581,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m013",
+      "reason": "hard cut T20 (S20 -> S21), missed by the detectors: network diagram -> empty canvas for 3 frames (f1689-f1691), the next line's word 1 at f1692 (adaptive 20.0; detail/hard_1689) (v2c2)"
+    },
+    {
+      "frame": 1801,
+      "time_s": 30.0167,
+      "last_frame_before": 1800,
+      "sources": [],
+      "content_val": 2.17,
+      "delta_lum": 6.5,
+      "adaptive_ratio": 37.31,
+      "ffmpeg_scene": 0.055,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m014",
+      "reason": "hard cut T21 (S21 -> S22), missed by the detectors: 2-line headline -> empty canvas for 1 frame, the end-card logo first visible at f1802 (adaptive 37.3; detail/hard_1801) (v2c2)"
     }
   ],
-  "soft_transitions": [],
-  "notes": []
+  "soft_transitions": [
+    {
+      "id": "T02",
+      "start": 95,
+      "end": 114,
+      "frames": 20,
+      "type": "sphere-collapse (the flat honeycomb wraps into a globe that shrinks into a point at the frame centre; the dot vanishes in the frame the next layout appears, no empty frame)",
+      "shared": "nothing: the honeycomb wraps into a globe that shrinks into a point at the frame centre (960, 540; 22 px at f113) and is gone at f114, the same frame the next layout's first word appears left of centre (x 560-746, caps y 490-577); no empty frame; the logo ring starts popping in at f115",
+      "technique": "v2.trans-sphere-collapse",
+      "detail": "detail/soft_95-114"
+    },
+    {
+      "id": "T14",
+      "start": 1163,
+      "end": 1183,
+      "frames": 21,
+      "type": "morph (9 logo icons converge on straight lines into a centred row of 6 hex mascots, shrink 1.00 -> 0.64 and crossfade into them; the top headline is swapped for the next headline's word 1 in the last frame)",
+      "shared": "the icons become the mascots of the next layout: each travels on a straight line to a row slot (icon 1 (465, 450) -> (584, 757)) on one ease-in-out; f1182 shows the finished mascot row under the old headline, f1183 the same row under the new word 1",
+      "technique": "v2.trans-icon-converge-morph",
+      "detail": "detail/soft_1163-1183"
+    },
+    {
+      "id": "T15",
+      "start": 1217,
+      "end": 1235,
+      "frames": 19,
+      "type": "morph / fly-in (the mascot row flies on a rising wave into the matching avatar slots of an app sidebar panel that fades in behind it; the headline is cut at f1221)",
+      "shared": "the 6 mascots become the panel's avatars: the black one (885, 757) w126 -> tile logo (960, 160) w94, the grey ones -> the 5 row avatars at x 735-741 (w56) in row order (fills 129, 105, 133, 100, 131 = row mascots 1, 2, 4, 5, 6); the panel's own faint avatars are already in place as landing targets (toolbar fade 250 -> 239 f1219-f1235)",
+      "technique": "v2.trans-hex-fly-into-ui",
+      "detail": "detail/soft_1217-1235"
+    },
+    {
+      "id": "T19",
+      "start": 1602,
+      "end": 1627,
+      "frames": 26,
+      "type": "push (vertical scroll-push: the article page and the network diagram lie on one strip 940 px apart; it scrolls 1200 px up)",
+      "shared": "one continuous upward motion: the page accelerates out of the top while the network rises in from the bottom and decelerates; at the changeover (f1613-f1614, 152 px/f) both are on screen with an empty gap between them; no element is shared",
+      "technique": "v2.trans-scroll-push",
+      "detail": "detail/soft_1602-1627"
+    }
+  ],
+  "notes": [
+    "Merged 2026-11-01 from chunks v2c1 (f0-f900) and v2c2 (f901-f1970). All four auto candidates are confirmed: c002 f789, c003 f901 and c004 f1492 are hard cuts, c001 f103 is the anchor of the soft sphere-collapse T02 f95-f114. c003 sits exactly on the chunk edge; both chunks found it, and f900 / f901 share nothing (detail/cut_c003_f00901/sheet.jpg, sheets/overview_00864-00909.jpg), so no segment continues across the edge.",
+    "Detector misses: 14 hard cuts (manual entries m001-m014: f1, f226, f339, f395, f451, f564, f676, f733, f958, f1098, f1351, f1408, f1689, f1801) are light canvas to light canvas or card to card (content_val 0.64-7.97, ffmpeg_scene 0.010-0.116); v2c1 found its eight in motion.csv as single-frame gray-diff spikes with zero diff on both neighbours, v2c2 its six on the overview sheets and in the off-cut motion-peak and hard_ / dense_ detail windows. Three of the four soft transitions (T14, T15, T19) read as ordinary motion to the detectors (content_val under 6); T02 was caught only in its middle (c001). The detector fields of the manual entries are the scene_metrics.csv values at the cut frame; their confidence is 'manual'.",
+    "Soft transition ids match the transition ids in segments.json (T02, T14, T15, T19); every hard cut's reason names its T id too."
+  ]
 }

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.cam-push-in-blur.i2",
+  "file": "curves/v7.cam-push-in-blur.i2.csv",
+  "property": "scale",
+  "unit": "ln(scale factor) of the whole canvas about the picture card (0 = card 943.7 px wide at f3299-f3301; 0.484 = x1.622, card 1530.3 px = 94.3% W at rest f3376)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p4_pushin_width.csv",
+  "column": "lnscale",
+  "sampled_frames": [
+    3296,
+    3379
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 0.4836,
+  "active_frames": [
+    3306,
+    3364
+  ],
+  "measured_duration_frames": 58,
+  "bezier": {
+    "x1": 0.9512,
+    "y1": 0.2934,
+    "x2": 0.0422,
+    "y2": 0.6715,
+    "durationInFrames": 60,
+    "delay": -0.44,
+    "built_duration_frames": 54,
+    "rmse": 0.0187
+  },
+  "spring": {
+    "stiffness": 42.463,
+    "damping": 11.118,
+    "mass": 1,
+    "damping_ratio": 0.8531,
+    "built_duration_frames": 38,
+    "rmse": 0.1807
+  },
+  "recommended": "bezier",
+  "note": "P4 camera push-in from wide view 2 (two rows + picture card) into the card until it nearly fills the frame: card width 943.7 -> 1530.3 px (x1.622, eased in log space: scale = exp(0.484 * ease)); slow acceleration f3304-f3334 (+16.7%), then the fastest interval f3334-f3336 (x1.141 in one picture, card and rows smeared by radial and vertical motion blur), then a long deceleration to rest at about f3374; the rows leave through the top edge (row 1 gone by f3334, row 2 by f3344); card width = distance between the card's left and right edges, sub-pixel crossings halfway between the canvas (luma 17) and the card, median over 15 rows of the card's middle band (scratch/v7c5_tools/cardedges2.py; left-edge row spread under 1 px, right edge 2-50 px where the picture is dark near it)"
+}

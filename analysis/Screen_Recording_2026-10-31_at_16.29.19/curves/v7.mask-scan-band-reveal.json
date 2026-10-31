@@ -1,0 +1,68 @@
+{
+  "technique_id": "v7.mask-scan-band-reveal",
+  "file": "curves/v7.mask-scan-band-reveal.csv",
+  "property": "mask",
+  "unit": "% of the picture card's width (reveal front = trailing edge of the light band, card x 47-1577 px)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p4_scan1_front.csv",
+  "column": "front_card_pct",
+  "sampled_frames": [
+    3364,
+    3391
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 100.0,
+  "active_frames": [
+    3371,
+    3386
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.5382,
+    "y1": -0.0781,
+    "x2": 0.6054,
+    "y2": 0.9285,
+    "durationInFrames": 16,
+    "delay": -1.461,
+    "built_duration_frames": 14,
+    "rmse": 0.0197,
+    "rmse_raw_time": 0.0172,
+    "fit": "shape metric (lower of tune_tokens.tune_bezier and the shapefit.py search, scratch/v7c5_tools/refit_shape.py)"
+  },
+  "spring": {
+    "stiffness": 215.219,
+    "damping": 23.129,
+    "mass": 1,
+    "damping_ratio": 0.7883,
+    "built_duration_frames": 15,
+    "rmse": 0.099,
+    "rmse_raw_time": 0.0283,
+    "fit": "shape metric (tune_tokens.tune_spring via scratch/v7c5_tools/refit_shape.py)"
+  },
+  "recommended": "bezier",
+  "note": "P4 edit reveal inside the full-frame picture card: a light vertical scan band (about 130-200 px = 8-12% W wide at mid-card, vertical streak texture, brighter at the card edges) sweeps left to right across the card in ~13 f (f3371 entry glow at the left edge -> f3384 compressed against the right edge, gone f3386) and the edited version of the picture is revealed behind it; trailing edge at 0 / 5.6 / 24.8 / 49.5 / 74.5 / 93.9 % of the card at f3371 / 3374 / 3376 / 3379 / 3381 / 3384, band absent before f3371 and from f3386; column-profile excess over the before/after pictures (scratch/v7c5_p4_scan1.csv); the same band asset repeats at f3426-f3441 and f3484-f3498. Refit on the shape metric (scratch/v7c5_tools/refit_shape.py): fit_easing.py's raw-time fits match the samples (raw-time RMSE bezier 0.006, spring 0.0232) but both shape RMSEs stay above 0.05 (bezier 0.0687, spring 0.2856) because the 7 pictures of the measured 15-f window sit 2-4 frames apart, so the measured 2% window and a raw-time fit's own window differ by 1-3 frames; the stored bezier and spring are now fitted with the build-side rule (curvekit.shape_rmse, built duration within 1 f of the measured 15 f); the original fits are kept under raw_time_fit.",
+  "raw_time_fit": {
+    "tool": "fit_easing.py",
+    "bezier": {
+      "x1": 1.0,
+      "y1": 0.9636,
+      "x2": 0.3478,
+      "y2": 0.5885,
+      "durationInFrames": 12,
+      "delay": 2.179,
+      "built_duration_frames": 12,
+      "rmse": 0.0687,
+      "rmse_raw_time": 0.006
+    },
+    "spring": {
+      "stiffness": 230.028,
+      "damping": 22.62,
+      "mass": 1,
+      "damping_ratio": 0.7457,
+      "built_duration_frames": 23,
+      "rmse": 0.2856,
+      "rmse_raw_time": 0.0232
+    },
+    "recommended": "bezier"
+  }
+}

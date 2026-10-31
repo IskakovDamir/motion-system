@@ -1,0 +1,1042 @@
+{
+  "video": "Screen_Recording_2026-10-31_at_16.31.33",
+  "key": "v8",
+  "chunk": "v8c4",
+  "frames": [
+    2193,
+    2897
+  ],
+  "cut_decisions": [
+    {
+      "id": "c071",
+      "frame": 2252,
+      "status": "confirmed",
+      "reason": "anchor of the soft transition T1 (3D stack push-in + yaw to a flat page, f2212-f2258): the front card covers the other layers here; continuous push-in, no picture replacement between f2250 and f2252"
+    },
+    {
+      "id": "c072",
+      "frame": 2270,
+      "status": "rejected",
+      "reason": "inside S02: the flattened page scrolls up with vertical motion blur (ffmpeg score from the blur); same composition"
+    },
+    {
+      "id": "c073",
+      "frame": 2284,
+      "status": "rejected",
+      "reason": "inside S02: page scroll while the attachment card stretches in and the text streams; same composition"
+    },
+    {
+      "id": "c074",
+      "frame": 2298,
+      "status": "rejected",
+      "reason": "inside S02: avatar pop-in and streaming text; same composition"
+    },
+    {
+      "id": "c075",
+      "frame": 2857,
+      "status": "rejected",
+      "reason": "end of T6: the phone card settles at the frame centre; no picture replacement between f2854 and f2857"
+    }
+  ],
+  "boundaries": [
+    {
+      "start": 2212,
+      "end": 2258,
+      "type": "morph",
+      "subtype": "3D stack push-in + yaw to a flat page",
+      "frames": 47,
+      "anchor_cut": "c071",
+      "shared": "the front screen card of the 3D stack becomes the flat page band at the top of S02 (same content, light page 248) under a forward camera push: the far end swings out first (right extent 1272 -> 1325 px, f2210-f2220), the front card's left edge holds at 23.4% W to f2218 and accelerates to 3.7% W (f2262), its left-edge height 213 -> 705 px (f2208-f2250), flat card 1492 x 840 px (92.0% W x 91.5% H) at f2258; soft focus f2236-f2250; the header title fades out and is covered; the S02 scroll starts at f2256",
+      "technique": "v8.trans-stack-push-flatten",
+      "curve": "v8.trans-stack-push-flatten.v8c4",
+      "detail": "detail/soft_2212-2258",
+      "origin": "c071 fired inside it (content_weak); the transition itself was not detected as such"
+    },
+    {
+      "start": 2367,
+      "end": 2440,
+      "type": "push",
+      "subtype": "push-up with a hidden cut",
+      "frames": 74,
+      "cut_frame": 2404,
+      "shared": "upward motion with vertical motion blur and the same light page (248): the S02 chat block accelerates up out of a 0.73 px/f drift (ease-in, 35 f, about 43 px/f at the last picture f2402); the picture is replaced between f2402 and f2404 (f2403 repeats f2402; f2404 shows only a faint sliver at the bottom edge); the S03 block of the same chat grid (avatar column 10.3% W, text column 15.9% W) arrives from below rising 36 px/f and decelerates in 34 f to 42.7% H, where the outgoing headline sat (41.0% H) when its exit began",
+      "technique": "v8.trans-push-up",
+      "curve": "v8.trans-push-up.v8c4",
+      "curves": [
+        "v8.trans-push-up-out.v8c4",
+        "v8.trans-push-up.v8c4"
+      ],
+      "detail": "detail/soft_2367-2440",
+      "origin": "missed by all three detectors (similar light frames)",
+      "tiling": "segments tiled at the hidden cut (S02 ends f2403, S03 starts f2404), the convention v8c2 uses for its whip with a hidden cut"
+    },
+    {
+      "start": 2478,
+      "end": 2522,
+      "type": "morph",
+      "subtype": "shared-element fly + split, with a letter dissolve",
+      "frames": 45,
+      "shared": "the avatar tile (light rounded square with chevron eyes) leaves its slot (10.3% W, 35.8% H), swoops down-right through 55.3% H, crosses the frame centre at about 75 px/f while growing with an ease-in (81 px slot -> 304 px at f2505 -> 388 px at f2507 = x4.76, vertical 50% height), and settles at 69.1% W while a dark round-eared mascot slides out from behind it to 30.7% W (separation 38.4% W) and both shrink back from x1.50 to x1.0 of their final size (258 px tile, f2507-f2522, ease-out); the chat text dissolves letter-wise (left parts first, f2478-f2497); light page stays",
+      "technique": "v8.trans-avatar-fly-split",
+      "curve": "v8.trans-avatar-fly-split.v8c4",
+      "curves": [
+        "v8.trans-avatar-fly-split.v8c4",
+        "v8.trans-avatar-fly-split-scale.v8c4",
+        "v8.particle-mascot-split.v8c4",
+        "v8.particle-mascot-split-scale.v8c4",
+        "v8.text-dissolve-out.v8c4"
+      ],
+      "detail": "detail/soft_2478-2522",
+      "origin": "missed by all three detectors"
+    },
+    {
+      "start": 2604,
+      "end": 2670,
+      "type": "morph",
+      "subtype": "particle converge + shared-element fly into the next layout",
+      "frames": 67,
+      "shared": "the 22-mascot field converges on the centre (ease-in, radial blur, f2606-f2623), the cluster snaps down to one tiny light mascot (40 px, x0.18, f2632), which flies on a dipping arc (lowest 56.6% H at f2654, peak about 55 px/f) into the avatar slot of the S05 chat block (10.25% W) growing x2.0, while that block's status row and headline stream in and the block rises; light page stays",
+      "technique": "v8.trans-mascot-converge-fly",
+      "curve": "v8.trans-mascot-converge-fly.v8c4",
+      "curves": [
+        "v8.particle-mascot-converge.v8c4",
+        "v8.trans-mascot-converge-fly.v8c4",
+        "v8.text-block-rise-in.v8c4"
+      ],
+      "detail": "detail/soft_2604-2670",
+      "origin": "missed by all three detectors"
+    },
+    {
+      "start": 2800,
+      "end": 2860,
+      "type": "morph",
+      "subtype": "shared-element card zoom to the centre",
+      "frames": 61,
+      "shared": "the phone card: its screen cuts to black at f2800 (black to f2818), it leaves its slot under the text from f2806 and zooms x2.0 to the frame centre (width 16.95% -> 33.97% W, centre x 24.3% -> 50.0% W, top 55.4% -> 12.1% H; active f2812-f2860), its screen recording fades back in f2818-f2836; the text block above accelerates up out of frame with vertical blur (f2791-f2832); light page stays",
+      "technique": "v8.trans-card-zoom-to-center",
+      "curve": "v8.trans-card-zoom-to-center.v8c4",
+      "curves": [
+        "v8.trans-card-zoom-to-center.v8c4",
+        "v8.text-block-exit-up.v8c4",
+        "v8.footage-card-content-fade-in.v8c4"
+      ],
+      "detail": "detail/soft_2800-2860",
+      "origin": "missed by all three detectors (c075 f2857 fired on its settle)"
+    }
+  ],
+  "segments": [
+    {
+      "id": "v8c4-S01",
+      "start": 2193,
+      "end": 2235,
+      "class": "MIXED",
+      "continues_from_previous_chunk": true,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "3D stack of about 11 screen layers (several carrying photographs) with a header title and three leader-line callouts (starts in v8c3): the stack recedes slowly, each callout swells 5-7.5% and collapses into its leader anchor (18-20 f, staggered 14 / 10 f) while its leader line retracts; then the camera pushes in and the stack yaws flat (T1) as the title fades out"
+    },
+    {
+      "id": "v8c4-S02",
+      "start": 2236,
+      "end": 2403,
+      "class": "MIXED",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "chat block under the flattened page band (photograph = footage): the page scrolls up 69.6% H with a fast-in/slow-out, the 1-line headline and the sub line stream in letter by letter, an attachment card stretches in from its left edge with blur, the mascot avatar pops with overshoot, the status row types on, a light shimmer band sweeps the card; slow drift, then an ease-in push-up exit; on the band a toast (check icon + 1-line label) fades in linearly as the page lands, rides the scroll and fades out while sliding 10 px down against the page just before the exit, and an arrow cursor glides down-right on the page (2.2-3.2 px/f) while the scroll carries it out of the frame top"
+    },
+    {
+      "id": "v8c4-S03",
+      "start": 2404,
+      "end": 2500,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "second chat block arrives from below (push-up) and decelerates; its avatar tile grows from a dot, the headline streams in about 8 f, two sub lines cascade (the last one ending with dots typed 4 f apart); after a hold the lines dissolve letter-wise while the avatar tile flies off (T4)"
+    },
+    {
+      "id": "v8c4-S04",
+      "start": 2501,
+      "end": 2637,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "mascot field on the light page: two mascots split apart, shrinking back from 1.5x oversize, and settle symmetric about the centre, then two radial bursts (ease-in outward flight, new mascots appear in one picture, small overshoot, shrinking sizes) build a mirror-symmetric field of 22; it implodes into one tiny mascot (T5)"
+    },
+    {
+      "id": "v8c4-S05",
+      "start": 2638,
+      "end": 2830,
+      "class": "MIXED",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "third chat block: the tiny mascot lands in its avatar slot while the block rises and its lines stream in a 2 f cascade, a lighter shimmer band runs across the text, the thread scrolls up one step and an upright phone card fades in below (linear) and starts playing an app screen recording (footage); then the card zooms to the centre while the text exits up (T6)"
+    },
+    {
+      "id": "v8c4-S06",
+      "start": 2831,
+      "end": 2897,
+      "class": "MIXED",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": true,
+      "live_confirmed_on": [],
+      "summary": "the phone card alone at the frame centre (34% W wide) finishes its x2.0 zoom, its screen recording fades back in, holds, and changes screens with a one-picture crossfade plus a 2.4% H rise of the incoming content; continues into v8c5"
+    }
+  ],
+  "techniques": [
+    {
+      "id": "v8.cam-slow-pull-back",
+      "category": "cam",
+      "description": "slow linear pull-back of the 3D stack while the callouts drift sideways with it (v8c3's id); here its last part, until the T1 push takes over",
+      "instances": [
+        [
+          2193,
+          2211
+        ]
+      ],
+      "reference_frames": [
+        2194,
+        2210
+      ],
+      "measured": {
+        "duration_frames": 19,
+        "easing": "linear (not fitted); continues v8c3's instance [2076, 2192] (about -0.0009 per frame there, about -0.0006 per frame here)",
+        "values": "stack bbox width 905 -> 896 px (-1.0%), left edge 372 -> 377 px (f2194-f2210, scratch/v8c4_T1_stack_bbox.csv); callouts drift right about 2 px/f with it; T1 starts at f2212"
+      },
+      "curves": []
+    },
+    {
+      "id": "v8.ui-callout-collapse-out",
+      "category": "ui",
+      "description": "after a 5-7.5% swell, a callout pill (mascot icon + label) collapses to zero toward its leader anchor with an ease-in, the last pictures squashed into a blurred line; its leader line retracts into the anchor dot, which vanishes 2-4 f later",
+      "instances": [
+        [
+          2190,
+          2208
+        ],
+        [
+          2204,
+          2222
+        ],
+        [
+          2214,
+          2234
+        ]
+      ],
+      "reference_frames": [
+        2204,
+        2222
+      ],
+      "measured": {
+        "duration_frames": 18,
+        "easing": "bezier(0.810, 0.099, 0.600, 0.597) D=20 (rmse 0.026); spring {99.2, 10.94} rmse 0.53",
+        "values": "scale 1.03 -> 0 (ink width / rest), stagger 14 / 10 f; ink 240 x 44 -> 18 x 2 px (callout B)"
+      },
+      "curves": [
+        "v8.ui-callout-collapse-out.v8c4"
+      ]
+    },
+    {
+      "id": "v8.text-fade-out",
+      "category": "text",
+      "description": "title fades out evenly (no blur) with an ease-in opacity ramp while the next layout pushes in over it and covers it",
+      "instances": [
+        [
+          2225,
+          2252
+        ]
+      ],
+      "reference_frames": [
+        2227,
+        2250
+      ],
+      "measured": {
+        "duration_frames": 26,
+        "easing": "bezier(0.208, 0.178, 0.345, -0.088) D=24 (rmse 0.032), ease-in: about 0.011 opacity per frame f2225-f2234, then 0.03-0.05 per frame; spring {102.1, 21.23} rmse 0.363; visible part only (window f2224-f2250, to-value = the last visible picture)",
+        "values": "glyph-core opacity 1.0 (to f2224) -> 0.978 (f2227, first changed picture) -> 0.939 (f2230) -> 0.893 (f2234) -> 0.775 (f2238) -> 0.538 (f2244) -> 0.268 (f2250), then covered by the incoming page corner at f2252; glyph-core luma 41.2 -> 188.3; even across the line (8 bands within 0.03); starts 13-15 f after T1 (f2212); scratch/v8c4_S1_header_core.csv"
+      },
+      "curves": [
+        "v8.text-fade-out.v8c4"
+      ]
+    },
+    {
+      "id": "v8.trans-stack-push-flatten",
+      "category": "trans",
+      "description": "camera pushes into a 3D stack of screen cards while the stack yaws toward it: the far end swings out first, the layers spread, the front card's left edge accelerates across the frame and the card ends as a flat page at 92% W; soft focus mid-move",
+      "instances": [
+        [
+          2212,
+          2258
+        ]
+      ],
+      "reference_frames": [
+        2212,
+        2258
+      ],
+      "measured": {
+        "duration_frames": 31,
+        "easing": "bezier(0.805, -0.004, 0.468, 0.815) D=40 (rmse 0.011)",
+        "values": "front-card left edge 23.4% -> 3.7% W (active f2227-f2258; far end from f2212); left-edge height 213 -> 705 px; flat card 92.0% W x 91.5% H"
+      },
+      "curves": [
+        "v8.trans-stack-push-flatten.v8c4"
+      ]
+    },
+    {
+      "id": "v8.cam-scroll-up-settle",
+      "category": "cam",
+      "description": "the flattened page scrolls up to reveal the chat block below it with a fast-in, long slow-out, then a slow linear drift",
+      "instances": [
+        [
+          2256,
+          2300
+        ]
+      ],
+      "reference_frames": [
+        2258,
+        2300
+      ],
+      "measured": {
+        "duration_frames": 42,
+        "easing": "bezier(0.351, 0.153, 0.099, 1.000) D=51 (rmse 0.015); spring {77.2, 17.11} (zeta 0.97, rmse 0.057)",
+        "values": "88.78% -> 19.17% H (639 px), peak about 36 px/f with vertical blur; drift 0.73 px/f after"
+      },
+      "curves": [
+        "v8.cam-scroll-up-settle.v8c4"
+      ]
+    },
+    {
+      "id": "v8.ui-toast-fade-in",
+      "category": "ui",
+      "description": "a toast (rounded rectangle with a check icon in a white circle and a 1-line label) fades in on the page with a linear opacity ramp; no slide or scale of its own (it rides the page, here still flattening)",
+      "instances": [
+        [
+          2246,
+          2258
+        ]
+      ],
+      "reference_frames": [
+        2248,
+        2252,
+        2258
+      ],
+      "measured": {
+        "duration_frames": 12,
+        "easing": "linear ramp, about 0.085 opacity per frame (not fitted: both fits fail the shape rule, bezier rmse 0.071-0.080 / spring 0.24-0.32, because the start falls between f2244 and f2248 and the f2255 picture sits 1 f before f2256, 0.08 under the line: capture jitter)",
+        "values": "opacity 0 (f2244) -> 0.04 (f2246, faint) -> 0.20 (f2248) -> 0.37 (f2250) -> 0.57 (f2252) -> 0.75 (f2255) -> 0.91 (f2256) -> 1.0 (f2258); fill luma 40 -> 103 over the page's 22-24; template scale 0.81 -> 1.0 with the page's flatten, as the thumbnail chip; toast x 387-732 px (23.9-45.1% W), 54 px (5.9% H) tall, corner radius about 12 px at f2258; scratch/v8c4_S2_toast_fadein.csv, scratch/v8c4_S2_toast_in_tmpl.csv"
+      },
+      "curves": []
+    },
+    {
+      "id": "v8.ui-toast-fade-slide-out",
+      "category": "ui",
+      "description": "the toast fades out (slow start, then about 0.09 per frame) while it slides a little down against the page; the page drifts up, so the toast holds its place in the frame",
+      "instances": [
+        [
+          2358,
+          2374
+        ]
+      ],
+      "reference_frames": [
+        2358,
+        2364,
+        2370
+      ],
+      "measured": {
+        "duration_frames": 16,
+        "easing": "bezier(0.689, 0.623, 0.501, 1.038) D=17 (built 14 f, rmse 0.037); spring {157.6, 17.58} rmse 0.312",
+        "values": "opacity 1.0 (to f2358) -> 0.94 (f2360) -> 0.83 (f2362) -> 0.66 (f2364) -> 0.47 (f2367) -> 0.28 (f2368) -> 0.15 (f2370) -> 0.02 (f2372) -> 0 (f2374); its bottom edge holds at y 19.6-22.0 px while the band's bottom edge rises 196 -> 187 px: 10.3 px (1.1% H) down against the page by f2370; before the fade it rides the page (bottom edge 175 +-0.5 px above the band's bottom edge, f2292-f2358; within 5 px through the scroll) and the frame top cuts it from about f2312; scratch/v8c4_S2_toast_out.csv"
+      },
+      "curves": [
+        "v8.ui-toast-fade-slide-out.v8c4"
+      ]
+    },
+    {
+      "id": "v8.cursor-glide",
+      "category": "cursor",
+      "description": "an arrow cursor glides across the page at a near-constant speed, no click (v8c3's id); here it glides down-right on the flattened page in a straight line while the page's scroll carries it up and out of the frame top",
+      "instances": [
+        [
+          2250,
+          2280
+        ]
+      ],
+      "reference_frames": [
+        2252,
+        2258,
+        2264,
+        2270,
+        2276,
+        2280
+      ],
+      "measured": {
+        "duration_frames": 28,
+        "easing": "near-constant speed along the path (not fitted: no rest in view): 2.2 px/f f2255-f2266, 3.2 px/f f2266-f2278 (0.14-0.20% W per frame)",
+        "values": "on the page (x against the countdown digits' centre, y against the light button's bottom edge): (+23.3, +2.3) px (f2255) -> (+30.9, +5.5) (f2258) -> (+42.7, +11.6) (f2264) -> (+54.0, +21.3) (f2270) -> (+66.3, +29.0) (f2274) -> (+76.3, +35.2) px (f2278), 32 deg below horizontal; in the frame (1366, 496) px = 84.2% W, 54.0% H (f2255) -> (1453, 6) px = 89.6% W, 0.6% H (f2280, cut by the frame top), gone by f2284; soft from f2250; white part about 13 px wide; scratch/v8c4_S2_cursor_glide.csv"
+      },
+      "curves": []
+    },
+    {
+      "id": "v8.text-stream-reveal",
+      "category": "text",
+      "description": "text streams in left to right letter by letter, the newest 1-2 letters light and fading in; lines stream in parallel or cascade; S03's block slows line by line and its last line eases out; a trailing ellipsis types one dot per 4 f",
+      "instances": [
+        [
+          2255,
+          2328
+        ],
+        [
+          2404,
+          2458
+        ],
+        [
+          2659,
+          2677
+        ]
+      ],
+      "reference_frames": [
+        2270,
+        2312,
+        2418,
+        2448
+      ],
+      "measured": {
+        "duration_frames": 56,
+        "easing": "near-linear fronts in S02 and S05 (not fitted here; v8c2's curve); S03 sub line 2 eases out: bezier(0.207, 0.729, 0.688, 0.998) D=41 (built 35 f, rmse 0.020), spring {64.4, 18.13} (zeta 1.13, rmse 0.034), stored as v8.text-stream-reveal-2.v8c4: probably a second technique (an ease-out stream)",
+        "values": "S02 headline 11.6 px/f = 2.1 f/letter, sub line 13.1 px/f = 1.45 f/letter; S03 headline 100-155 px/f; S03 sub line 1 73 px/f; S03 sub line 2 42 -> 22 -> 12 px/f (2.7 -> 1.4 -> 0.7 characters per frame over f2418-f2424-f2434-f2448), then one dot per 4 f (f2450, f2454, f2458): the S03 block types with a progressive slow-down (scratch/v8c4_S3_sub2_front.csv); S05 headline 78 px/f; S05 sub lines 100-120 px/f, cascade 2 f apart"
+      },
+      "curves": [
+        "v8.text-stream-reveal-2.v8c4"
+      ]
+    },
+    {
+      "id": "v8.text-status-type-on",
+      "category": "text",
+      "description": "status row: the bold word's letters fade in left to right, then the light grey word or label fades in as one block",
+      "instances": [
+        [
+          2304,
+          2325
+        ],
+        [
+          2406,
+          2418
+        ],
+        [
+          2648,
+          2695
+        ]
+      ],
+      "reference_frames": [
+        2304,
+        2325
+      ],
+      "measured": {
+        "duration_frames": 21,
+        "easing": "stepped letters + linear block fade (not fitted)",
+        "values": "1.5-2.4 f per letter; grey part fades over 11-14 f"
+      },
+      "curves": []
+    },
+    {
+      "id": "v8.ui-card-stretch-in-blur",
+      "category": "ui",
+      "description": "a card stretches horizontally from its fixed left edge together with its content while de-blurring and fading in",
+      "instances": [
+        [
+          2274,
+          2300
+        ]
+      ],
+      "reference_frames": [
+        2274,
+        2300
+      ],
+      "measured": {
+        "duration_frames": 23,
+        "easing": "bezier(0.132, 1.057, 1.000, 0.968) D=23 (rmse 0.049), visible part only",
+        "values": "width 25.9% -> 77.25% W; label darkest luma 239 -> 7"
+      },
+      "curves": [
+        "v8.ui-card-stretch-in-blur.v8c4"
+      ]
+    },
+    {
+      "id": "v8.icon-mascot-pop-in",
+      "category": "icon",
+      "description": "a mascot pops from nothing to an overshoot, undershoots slightly and rests (same device as v8c1)",
+      "instances": [
+        [
+          2292,
+          2318
+        ]
+      ],
+      "reference_frames": [
+        2294,
+        2318
+      ],
+      "measured": {
+        "duration_frames": 26,
+        "easing": "no v8c4 curve: both fits fail the shape rule, also on the re-track (outline width / height at the 50% level and eye spacing, scratch/v8c4_S2_avatar_w50.csv: bezier shape rmse 0.080, spring 0.145; window 26 f against 21-23 f built) because no picture falls between f2292 and f2294 or between f2314 and f2318; same shape as v8c1's instance: see curves/v8.icon-mascot-pop-in.v8c1.csv bezier(0.361, 2.110, 0.416, 0.738) D=20 (rmse 0.032)",
+        "values": "0 (f2292) -> 0.53 (f2294, blurred) -> 0.89 (f2297) -> 1.19 (f2300, +8 f as in v8c1) -> 1.10 (f2304) -> 0.97 (f2311-f2312, 1-2 f later than v8c1's dip) -> 0.976 (f2314) -> 1.0 (f2318); rest 63.7 x 59.0 px outline, eyes 23.0 px apart; window 23-26 f"
+      },
+      "curves": []
+    },
+    {
+      "id": "v8.fx-shimmer-sweep",
+      "category": "fx",
+      "description": "a soft light band sweeps left to right across a filled card, fading in at its left end and out at its right end",
+      "instances": [
+        [
+          2308,
+          2352
+        ]
+      ],
+      "reference_frames": [
+        2314,
+        2346
+      ],
+      "measured": {
+        "duration_frames": 32,
+        "easing": "bezier(0.171, 0.030, 0.741, 0.838) D=33 (rmse 0.022)",
+        "values": "band centre 16.65% -> 91.8% W, FWHM 13% W, +9 luma over the 239 fill"
+      },
+      "curves": [
+        "v8.fx-shimmer-sweep.v8c4"
+      ]
+    },
+    {
+      "id": "v8.trans-push-up",
+      "category": "trans",
+      "description": "the block accelerates up out of a slow drift with vertical motion blur, the picture is replaced (hidden cut), the next block arrives from below the frame already rising and decelerates to rest in the same grid position",
+      "instances": [
+        [
+          2367,
+          2440
+        ]
+      ],
+      "reference_frames": [
+        2402,
+        2404
+      ],
+      "measured": {
+        "duration_frames": 74,
+        "easing": "out: bezier(0.687, 0.005, 1.000, 0.764) D=40 (rmse 0.022, ease-in, no settle); in: bezier(0.241, 1.217, 0.822, 0.939) D=49 (rmse 0.003)",
+        "values": "out 40.96% -> 15.58% H, to about 43 px/f; in 86.17% -> 42.70% H from 36 px/f to rest in 34 f"
+      },
+      "curves": [
+        "v8.trans-push-up-out.v8c4",
+        "v8.trans-push-up.v8c4"
+      ]
+    },
+    {
+      "id": "v8.icon-mascot-pop-slide",
+      "category": "icon",
+      "description": "the avatar grows from a dot to full size and fades in while it rides the incoming layout's movement (same device as v8c2)",
+      "instances": [
+        [
+          2406,
+          2430
+        ]
+      ],
+      "reference_frames": [
+        2408,
+        2430
+      ],
+      "measured": {
+        "duration_frames": 24,
+        "easing": "spring {251.9, 31.55} (zeta 0.99, rmse 0.023); bezier(0.312, 1.114, 0.450, 0.962) D=33 (rmse 0.038)",
+        "values": "width 7 -> 84 px (5.2% W), darkest luma 238 -> 0"
+      },
+      "curves": [
+        "v8.icon-mascot-pop-slide.v8c4"
+      ]
+    },
+    {
+      "id": "v8.text-dissolve-out",
+      "category": "text",
+      "description": "all lines dissolve letter-wise, left parts first and the sub lines slightly ahead of the headline, while the block drifts up",
+      "instances": [
+        [
+          2478,
+          2497
+        ]
+      ],
+      "reference_frames": [
+        2482,
+        2494
+      ],
+      "measured": {
+        "duration_frames": 19,
+        "easing": "bezier(0.690, 0.466, 0.000, 0.246) D=17 (rmse 0.031)",
+        "values": "headline summed ink 2213 -> 42; at f2486 left halves at 48% and right halves at 65% of their start"
+      },
+      "curves": [
+        "v8.text-dissolve-out.v8c4"
+      ]
+    },
+    {
+      "id": "v8.trans-avatar-fly-split",
+      "category": "trans",
+      "description": "the avatar leaves its slot, swoops through the frame centre at peak speed while growing with an ease-in, and continues to its mirror position while a second mascot slides out from behind it; the pair then shrinks back from its oversize",
+      "instances": [
+        [
+          2478,
+          2522
+        ]
+      ],
+      "reference_frames": [
+        2488,
+        2519
+      ],
+      "measured": {
+        "duration_frames": 31,
+        "easing": "position bezier(0.703, 0.362, 0.149, 0.975) D=36 (rmse 0.024); scale (growth) bezier(0.769, 0.009, 1.000, 0.867) D=30 (built 25 f, rmse 0.025), ease-in to a cusp at f2507",
+        "values": "tile centre x 10.30% -> 69.13% W, dip to 55.3% H, peak 75 px/f at the centre; tile height (vertical 50% crossings) 81 px slot -> 304 px (f2505, x3.73) -> 388 px (f2507, x4.76, the largest picture) -> 258 px (f2524, x3.17; x3.07 by the earlier bbox)"
+      },
+      "curves": [
+        "v8.trans-avatar-fly-split.v8c4",
+        "v8.trans-avatar-fly-split-scale.v8c4"
+      ]
+    },
+    {
+      "id": "v8.particle-mascot-split",
+      "category": "particle",
+      "description": "one mascot becomes two: the hidden one slides out from behind the moving one until both sit mirror-symmetric about the centre; both come out oversized and shrink back while they separate",
+      "instances": [
+        [
+          2505,
+          2524
+        ]
+      ],
+      "reference_frames": [
+        2505,
+        2522
+      ],
+      "measured": {
+        "duration_frames": 17,
+        "easing": "separation bezier(0.121, 1.174, 0.982, 0.965) D=23 (rmse 0.010); scale bezier(0.000, 0.618, 0.896, 1.008) D=16 (built 15 f, rmse 0.016), ease-out from full speed, active f2507-f2522",
+        "values": "separation 0 -> 38.4% W (623 px); scale of both x1.50 (f2507, tile 388 px) -> 1.36 (f2508, eye spacing 97.7 / 97.9 px) -> 1.26 (f2510) -> 1.18 (f2513) -> 1.08 (f2516) -> 1.02 (f2520) -> 1.0 (f2524, tile 258 px, eyes 72.0 px); scratch/v8c4_S4_pair_scale.csv"
+      },
+      "curves": [
+        "v8.particle-mascot-split.v8c4",
+        "v8.particle-mascot-split-scale.v8c4"
+      ]
+    },
+    {
+      "id": "v8.icon-mascot-eye-swap",
+      "category": "icon",
+      "description": "mascot eye glyphs swap instantly (same device as v8c2)",
+      "instances": [
+        [
+          2507,
+          2508
+        ]
+      ],
+      "reference_frames": [
+        2505,
+        2508
+      ],
+      "measured": {
+        "duration_frames": 0,
+        "easing": "stepped",
+        "values": "chevrons -> dots via one blurred picture"
+      },
+      "curves": []
+    },
+    {
+      "id": "v8.particle-mascot-burst-ring",
+      "category": "particle",
+      "description": "the mascot field flies outward with an ease-in, new mascots appear in one picture on radial positions, the field overshoots and settles while every mascot shrinks",
+      "instances": [
+        [
+          2528,
+          2564
+        ],
+        [
+          2568,
+          2598
+        ]
+      ],
+      "reference_frames": [
+        2568,
+        2598
+      ],
+      "measured": {
+        "duration_frames": 28,
+        "easing": "bezier(0.833, 0.531, 0.214, 1.592) D=25 (rmse 0.028) (burst 2)",
+        "values": "burst 1: 2 -> 9 mascots, extent 627 -> 1248 (overshoot +11%) -> 1125 px, sizes x0.41; burst 2: 10 -> 22 mascots, extent 1127 -> 1434 (+3.5%) -> 1386 px, sizes x0.56"
+      },
+      "curves": [
+        "v8.particle-mascot-burst-ring.v8c4"
+      ]
+    },
+    {
+      "id": "v8.particle-mascot-converge",
+      "category": "particle",
+      "description": "all mascots converge on the centre with an ease-in and radial blur, then the merged cluster snaps down to one tiny mascot (same device as v8c1)",
+      "instances": [
+        [
+          2604,
+          2632
+        ]
+      ],
+      "reference_frames": [
+        2606,
+        2632
+      ],
+      "measured": {
+        "duration_frames": 17,
+        "easing": "bezier(0.876, 0.083, 0.513, 0.445) D=20 (rmse 0.004), ends at full speed",
+        "values": "outermost centre distance 1390 -> 0 px (f2606-f2623); cluster 224 -> 40 px (x0.18) in 9 f"
+      },
+      "curves": [
+        "v8.particle-mascot-converge.v8c4"
+      ]
+    },
+    {
+      "id": "v8.trans-mascot-converge-fly",
+      "category": "trans",
+      "description": "after converging, the single tiny mascot flies on a dipping arc into the avatar slot of the next layout, growing, while that layout's text streams in",
+      "instances": [
+        [
+          2604,
+          2670
+        ]
+      ],
+      "reference_frames": [
+        2637,
+        2670
+      ],
+      "measured": {
+        "duration_frames": 33,
+        "easing": "bezier(0.824, 0.092, 0.229, 0.995) D=45 (rmse 0.011)",
+        "values": "x 49.69% -> 10.25% W, lowest 56.6% H, peak about 55 px/f, size 40 -> 80 px"
+      },
+      "curves": [
+        "v8.trans-mascot-converge-fly.v8c4"
+      ]
+    },
+    {
+      "id": "v8.text-block-rise-in",
+      "category": "text",
+      "description": "the new text block rises into place with an ease-out while its lines stream in",
+      "instances": [
+        [
+          2648,
+          2690
+        ]
+      ],
+      "reference_frames": [
+        2648,
+        2690
+      ],
+      "measured": {
+        "duration_frames": 42,
+        "easing": "bezier(0.141, 1.089, 1.000, 0.949) D=44 (rmse 0.039); spring {68.0, 19.23} (rmse 0.056)",
+        "values": "53.60% -> 39.65% H (from-value = first picture, already rising)"
+      },
+      "curves": [
+        "v8.text-block-rise-in.v8c4"
+      ]
+    },
+    {
+      "id": "v8.text-shimmer-sweep",
+      "category": "text",
+      "description": "after the text has streamed, one lighter band runs left to right across all lines at constant speed and vanishes",
+      "instances": [
+        [
+          2672,
+          2703
+        ]
+      ],
+      "reference_frames": [
+        2672,
+        2702
+      ],
+      "measured": {
+        "duration_frames": 31,
+        "easing": "near-linear (not fitted)",
+        "values": "ink inside the band 0.48-0.58 of final; 18 px/f on the headline, 23 px/f on the sub lines"
+      },
+      "curves": []
+    },
+    {
+      "id": "v8.ui-thread-step-scroll",
+      "category": "ui",
+      "description": "the thread scrolls up one step with an ease-in-out to make room for an appended item (same device as v8c3)",
+      "instances": [
+        [
+          2691,
+          2735
+        ]
+      ],
+      "reference_frames": [
+        2691,
+        2735
+      ],
+      "measured": {
+        "duration_frames": 44,
+        "easing": "bezier(0.651, 0.001, 0.212, 1.062) D=61 (rmse 0.018)",
+        "values": "40.09% -> 24.07% H (147 px), peak 8 px/f, then 0.4 px/f drift"
+      },
+      "curves": [
+        "v8.ui-thread-step-scroll.v8c4"
+      ]
+    },
+    {
+      "id": "v8.card-rise-fade-in",
+      "category": "card",
+      "description": "a dark card fades in from the page colour to its black fill with a linear ramp while rising slightly relative to the text",
+      "instances": [
+        [
+          2702,
+          2722
+        ]
+      ],
+      "reference_frames": [
+        2704,
+        2722
+      ],
+      "measured": {
+        "duration_frames": 20,
+        "easing": "linear (fitted bezier(0.699, 0.657, 0.000, 0.047) D=20, near-linear, rmse 0.022)",
+        "values": "opacity 0.11 -> 1.0 (0.05 per frame); rises 43 px (4.7% H) relative to the text"
+      },
+      "curves": [
+        "v8.card-rise-fade-in.v8c4"
+      ]
+    },
+    {
+      "id": "v8.footage-card-content-fade-in",
+      "category": "footage",
+      "description": "the card's screen recording fades in from the card's black fill",
+      "instances": [
+        [
+          2735,
+          2750
+        ],
+        [
+          2818,
+          2836
+        ]
+      ],
+      "reference_frames": [
+        2818,
+        2836
+      ],
+      "measured": {
+        "duration_frames": 18,
+        "easing": "near-linear: bezier(1.000, 1.001, 0.820, 0.533) D=16 (rmse 0.039)",
+        "values": "99th-percentile luma inside 37 -> 241"
+      },
+      "curves": [
+        "v8.footage-card-content-fade-in.v8c4"
+      ]
+    },
+    {
+      "id": "v8.ui-screen-crossfade-slide",
+      "category": "ui",
+      "description": "the carried screen changes with one mixed picture and the incoming screen's content rises slightly into place",
+      "instances": [
+        [
+          2784,
+          2787
+        ],
+        [
+          2870,
+          2882
+        ]
+      ],
+      "reference_frames": [
+        2870,
+        2882
+      ],
+      "measured": {
+        "duration_frames": 12,
+        "easing": "ease-out (not fitted: 6 pictures, fit rmse 0.12)",
+        "values": "one mixed picture; incoming content rises 22 px (2.4% H) in 12 f"
+      },
+      "curves": []
+    },
+    {
+      "id": "v8.text-block-exit-up",
+      "category": "text",
+      "description": "the text block leaves upward with an ease-in and growing vertical blur, no settle",
+      "instances": [
+        [
+          2791,
+          2832
+        ]
+      ],
+      "reference_frames": [
+        2800,
+        2824
+      ],
+      "measured": {
+        "duration_frames": 33,
+        "easing": "bezier(0.149, 0.087, 0.721, -0.194) D=37 (rmse 0.008), ease-in only",
+        "values": "headline centre 22.11% -> 4.90% H (last tracked picture), 1.8 -> 12.8 px/f"
+      },
+      "curves": [
+        "v8.text-block-exit-up.v8c4"
+      ]
+    },
+    {
+      "id": "v8.trans-card-zoom-to-center",
+      "category": "trans",
+      "description": "the card leaves its slot, its screen dips to black, and it zooms x2.0 to the frame centre with a strong ease-in-out while the text exits up; its content fades back in mid-move",
+      "instances": [
+        [
+          2800,
+          2866
+        ]
+      ],
+      "reference_frames": [
+        2812,
+        2860
+      ],
+      "measured": {
+        "duration_frames": 48,
+        "easing": "bezier(0.860, 0.042, 0.252, 0.937) D=65 (rmse 0.011); spring {54.1, 12.27} rmse 0.18",
+        "values": "width 16.95% -> 33.97% W, centre x 24.3% -> 50.0% W, top 55.4% -> 12.1% H, peak at f2833-f2836"
+      },
+      "curves": [
+        "v8.trans-card-zoom-to-center.v8c4"
+      ]
+    }
+  ],
+  "typography_stills": [
+    "type/v8c4-S1-1_f02194.png",
+    "type/v8c4-S1-1_f02199.png",
+    "type/v8c4-S1-1_f02214.png",
+    "type/v8c4-S1-1_f02227.png",
+    "type/v8c4-S1-1_f02236.png",
+    "type/v8c4-S1-1_f02248.png",
+    "type/v8c4-S2-1_f02274.png",
+    "type/v8c4-S2-1_f02280.png",
+    "type/v8c4-S2-1_f02306.png",
+    "type/v8c4-S2-1_f02318.png",
+    "type/v8c4-S2-1_f02325.png",
+    "type/v8c4-S2-1_f02328.png",
+    "type/v8c4-S2-1_f02398.png",
+    "type/v8c4-S2-toast_f02248.png",
+    "type/v8c4-S2-toast_f02258.png",
+    "type/v8c4-S2-toast_f02350.png",
+    "type/v8c4-S2-toast_f02364.png",
+    "type/v8c4-S2-cursor_f02256.png",
+    "type/v8c4-S2-cursor_f02264.png",
+    "type/v8c4-S2-cursor_f02276.png",
+    "type/v8c4-S3-1_f02406.png",
+    "type/v8c4-S3-1_f02408.png",
+    "type/v8c4-S3-1_f02410.png",
+    "type/v8c4-S3-1_f02418.png",
+    "type/v8c4-S3-2_f02424.png",
+    "type/v8c4-S3-2_f02434.png",
+    "type/v8c4-S3-1_f02450.png",
+    "type/v8c4-S3-2_f02458.png",
+    "type/v8c4-S3-1_f02482.png",
+    "type/v8c4-S3-1_f02490.png",
+    "type/v8c4-S5-1_f02648.png",
+    "type/v8c4-S5-1_f02662.png",
+    "type/v8c4-S5-1_f02668.png",
+    "type/v8c4-S5-1_f02680.png",
+    "type/v8c4-S5-1_f02700.png",
+    "type/v8c4-S5-1_f02806.png",
+    "type/v8c4-S5-1_f02822.png",
+    "type/v8c4-S6-1_f02860.png",
+    "type/v8c4-S6-1_f02871.png",
+    "type/v8c4-S6-1_f02890.png"
+  ],
+  "uncertain": [
+    {
+      "what": "yaw angle of the 3D stack layers",
+      "range": "f2193-f2258",
+      "reason": "the cards' true aspect and right edges are hidden; only the front card's left-edge position and height were measured"
+    },
+    {
+      "what": "amount of defocus blur during T1",
+      "range": "f2236-f2250",
+      "reason": "the Laplacian-variance drop (429 -> 85) mixes blur with a content change (busy screens -> one large photograph)"
+    },
+    {
+      "what": "start of the S02 headline stream",
+      "range": "<= f2255",
+      "reason": "the line is still below the frame when its first letters appear"
+    },
+    {
+      "what": "start of the S02 attachment card stretch",
+      "range": "<= f2274",
+      "reason": "it enters during the scroll from below the frame at 25.9% W and half opacity; the curve covers the visible part only"
+    },
+    {
+      "what": "duration of the S02 avatar pop-in (v8c4 curve dropped)",
+      "range": "f2292-f2318",
+      "reason": "no picture falls between f2292 (absent) and f2294 (x0.53) or between f2314 (x0.976) and f2318 (x0.999), so the window is 23-26 f; with these gaps both fits fail the shape rule (re-tracked on outline width, height and eye spacing: bezier 0.080 / spring 0.145, 26 f against 21-23 f built); v8c1's curve stands for the technique"
+    },
+    {
+      "what": "end of the S01 header title fade",
+      "range": "f2252-",
+      "reason": "the incoming page corner covers the title from f2252 at about 0.27 opacity; the curve covers the visible part only"
+    },
+    {
+      "what": "scale of the dark mascot at f2507",
+      "range": "f2507",
+      "reason": "it is still mostly behind the tile and smeared; from f2508 its eye spacing equals the tile's (97.9 / 97.7 px)"
+    },
+    {
+      "what": "S03 avatar tile scale vs opacity, and its eye glyph",
+      "range": "f2406-f2430",
+      "reason": "the width measure mixes growth and fade-in; the bars/wedges seen on its eyes during the rise are read as vertical motion blur, not a glyph swap"
+    },
+    {
+      "what": "leader-line retraction timing",
+      "range": "f2196-f2236",
+      "reason": "the lines are too faint and drift with the stack to be tracked; frames read off frame-numbered crops"
+    },
+    {
+      "what": "burst 1 easing",
+      "range": "f2528-f2564",
+      "reason": "a fit across the pair flight and the ring appearance gave rmse 0.071 and was dropped; burst 2 is the fitted instance"
+    },
+    {
+      "what": "phone card full height",
+      "range": "f2704-f2897",
+      "reason": "its bottom edge stays below the frame"
+    },
+    {
+      "what": "cause of the cut to black inside the phone card",
+      "range": "f2800",
+      "reason": "possibly the carried recording restarting (screen A returns after the fade-in); recorded as part of T6"
+    },
+    {
+      "what": "whether the S02 cursor already sits on the 3D stack's front card",
+      "range": "f2193-f2249",
+      "reason": "the spot under that card's button label is 3-5 px and blurred (crops/crop_505_560_60x50_02194-02218.jpg); the cursor first resolves, soft, at f2250"
+    },
+    {
+      "what": "start of the toast fade-in",
+      "range": "f2244-f2248",
+      "reason": "no picture falls between f2244 (no toast) and f2248 (0.20); f2246 shows a faint 0.04 patch within the photograph's own luma variation, read at a placement extrapolated from f2248-f2252"
+    },
+    {
+      "what": "cursor position under the scroll blur",
+      "range": "f2266-f2280",
+      "reason": "centroids of the arrow's brightest core under up to 36 px/f of vertical blur; f2280 is cut by the frame top, so only its x is used"
+    }
+  ],
+  "notes": [
+    "Segments tile at the midpoints of T1, T4, T5 and T6 and at the hidden cut f2404 of T3 (v8c2's convention for a whip with a hidden cut).",
+    "Photographs inside screen cards are classed as footage (MIXED), the rule v8c2 used for its post cards; the phone card's screen recording counts the same way. S03 and S04 carry no footage.",
+    "First-attempt curves were kept, refitted or renamed to shared ids: v8.trans-whip-push-up-in -> v8.trans-push-up (refit with a new note); v8.trans-whip-push-up-out dropped and refitted as v8.trans-push-up-out (start past the idle drift); v8.icon-avatar-pop-overshoot -> v8.icon-mascot-pop-in (re-tracked with a half-max size measure, scratch/v8c4_S2_avatar_size.csv; dropped in the review fix); v8.icon-avatar-grow-in -> v8.icon-mascot-pop-slide; v8.trans-mascot-implode -> v8.particle-mascot-converge; v8.trans-mascot-fly-to-slot -> v8.trans-mascot-converge-fly; v8.cam-scroll-make-room -> v8.ui-thread-step-scroll; v8.trans-stack-push-flatten refitted on scratch/v8c4_T1_frontcard_edge.csv. Review fix: v8.text-fade-out, v8.trans-avatar-fly-split-scale and v8.particle-mascot-split-scale added, v8.icon-mascot-pop-in dropped; Review fix 2: v8.text-stream-reveal-2 and v8.ui-toast-fade-slide-out added (v8.ui-toast-fade-in fitted and dropped, both fits fail the shape rule); all 25 v8c4 curves are cited here.",
+    "Shared technique ids: v8.text-stream-reveal, v8.text-status-type-on, v8.icon-mascot-eye-swap, v8.icon-mascot-pop-slide (v8c2); v8.icon-mascot-pop-in, v8.particle-mascot-converge (v8c1); v8.ui-thread-step-scroll, v8.trans-push-up, v8.cursor-glide, v8.cam-slow-pull-back (v8c3 ids). T3 resembles v8c2's v8.trans-whip-up but the incoming block arrives from below the frame (44% H low, not 8.6% H), hence the push-up id.",
+    "detail/soft_2354-2446 and detail/soft_2604-2680 are first-attempt working windows, superseded by detail/soft_2367-2440 and detail/soft_2604-2670.",
+    "The chat UI keeps one grid in S02, S03 and S05: avatar column centred at 10.3% W, text column at x 257-258 px (15.9% W); headline cap 40-41 px, sub lines 26 px, status rows 23 px.",
+    "Hidden cut f2404 lands on beat f2404 (+0) and the burst-2 appearance f2584 on beat f2584 (+0); the card settles f2860 on the strong onset f2856 (+4).",
+    "Review fixes (2026-11-01): (1) T4/S04 size change measured on the tile height at vertical 50% crossings and the eye spacing of both mascots (scratch/v8c4_T4_tile_height.csv, scratch/v8c4_S4_pair_scale.csv): the tile grows to x4.76 of its slot by f2507, then the pair shrinks from x1.50 to x1.0 of its final size by f2522; the reviewer's x1.35 at f2508 is the second picture of the shrink. (2) The header title fade was read from the darkest single pixel, which lags (title pixels at luma <= 20: 964 at f2224, 477 at f2227, 61 at f2230, 2 at f2234); on the glyph cores (scratch/v8c4_S1_header_core.csv) it starts at f2225-f2227 with an ease-in; its sound sync is now f2227 = beat f2231 -4 (f2225 = -6). (3) v8.icon-mascot-pop-in.v8c4 dropped; v8c1's curve stands for the technique (as in v8c5). The new tracker CSVs mark captured pictures that repeat the previous one exactly (motion.csv diff_mean < 1e-4) as unique 0, so the new fits skip them.",
+    "Review fixes 2 (2026-11-01): (1) the arrow cursor and the toast on the S02 page band were missing; both are measured now (cursor: scratch/v8c4_S2_cursor_glide.csv with scratch/v8c4_S2_cursor_tmpl.csv and the page anchor scratch/v8c4_S2_digits_anchor.csv; toast: scratch/v8c4_S2_toast_in_tmpl.csv, scratch/v8c4_S2_toast_fadein.csv, scratch/v8c4_S2_toast_out.csv, scratch/v8c4_S2_toast_tmpl.csv, which locks only to f2266) as v8.cursor-glide (v8c3's id), v8.ui-toast-fade-in and v8.ui-toast-fade-slide-out. The reviewer's cursor numbers were anchored on the toast, on the page's left side, which holds still while the right side keeps widening with the flatten to f2262 (countdown digits 1343 -> 1371 px): against nearby page parts the cursor glides at a near-constant 2.2-3.2 px/f instead of slowing from 10 px/f, and it moves down the page (+33 px by f2278) instead of keeping its vertical offset. The reviewer's toast fade-in values (0 at f2248, 0.10 at f2250) do not match a scale-tracked measure: at f2248 the toast still grows with the page (scale 0.81) and its right end sits at about 683 px, 49 px left of its f2258 place, so a box at the f2258 right end reads the page there; tracked with its scale it is 0.20 at f2248 and 0.37 at f2250. (2) S03 sub line 2 re-tracked with the dots (scratch/v8c4_S3_sub2_front.csv): an ease-out, not near-linear; curve v8.text-stream-reveal-2.v8c4. (3) The S01 stack recede carries v8c3's v8.cam-slow-pull-back with the instance [2193, 2211]. The scripts that wrote the new CSVs are kept in scratch/rv8c4_r2/."
+  ]
+}

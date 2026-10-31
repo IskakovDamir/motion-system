@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.text-spring-rise.i2",
+ "file": "curves/v8.text-spring-rise.i2.csv",
+ "property": "position-y",
+ "unit": "px (picture 918 px high)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c5r_Se_open2.csv",
+ "column": "icon_cy",
+ "sampled_frames": [
+  3566,
+  3590
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 929.5,
+ "to_value": 459.5,
+ "active_frames": [
+  3566,
+  3585
+ ],
+ "measured_duration_frames": 19,
+ "bezier": {
+  "x1": 0.091,
+  "y1": 1.4835,
+  "x2": 0.6074,
+  "y2": 1.0212,
+  "durationInFrames": 20,
+  "delay": -0.001,
+  "built_duration_frames": 18,
+  "rmse": 0.0145
+ },
+ "spring": {
+  "stiffness": 1153.012,
+  "damping": 48.421,
+  "mass": 1,
+  "damping_ratio": 0.713,
+  "built_duration_frames": 11,
+  "rmse": 0.2093
+ },
+ "recommended": "bezier",
+ "note": "S-e (the video's own opening, replayed by the player loop; frames before the recording's f0 = f3579): the dark brand-mark icon (113 px = 7.0% W, centre x 31.3% W) flies up from below the bottom edge with vertical motion blur (f3566 only its top 35 px visible, centre estimated as top edge + 56.5 px; f3567 blurred 145 px tall), overshoots 42 px (4.6% H) above its rest at f3575 and settles down to 50.1% H by f3589 (dark-ink component over x 445-575, scratch/v8c5r_Se_open2.csv). v8c1 saw only the settle (47.1% -> 50.3% H from its f0 = f3579). From about f3586 the label also slides left (v8c1 v8.layout-lockup-recenter), so samples after f3590 are not used.",
+ "chunk_curve_id": "v8.text-spring-rise-icon.v8c5"
+}

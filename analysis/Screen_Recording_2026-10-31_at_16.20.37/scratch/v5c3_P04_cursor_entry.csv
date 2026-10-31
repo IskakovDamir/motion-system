@@ -1,0 +1,13 @@
+frame,unique,cx,cy,cx_pct,cy_pct,dist_to_rest_px,dist_to_rest_pctW,angle_ccw_deg,scale,blur_px,score,method
+1835,1,1410.0,841.0,86.93,91.612,421.6,25.993,30,0.9-1.0 (weak),40,0.7709,"streak: card area blanked to background, blurred+rotated masked template; streak luma centroid (1422, 856)"
+1837,1,1219.0,759.0,75.154,82.68,214.1,13.2,28,not determined,40,0.7826,blurred masked template; position spread 1214-1227 / 755-762 over scale/angle grids
+1840,1,1134.0,723.0,69.914,78.758,122.3,7.54,24,0.88,16,0.9225,"masked template (scale 0.86-1.10 / 0.02, angle -6..30 / 2 deg, line blur 0-60 px along 21 deg)"
+1842,1,1085.0,706.0,66.893,76.906,70.6,4.353,18,0.88,16,0.9302,"masked template (scale 0.86-1.10 / 0.02, angle -6..30 / 2 deg, line blur 0-60 px along 21 deg)"
+1845,1,1055.0,696.0,65.043,75.817,39.3,2.423,14,0.94,8,0.945,"masked template (scale 0.86-1.10 / 0.02, angle -6..30 / 2 deg, line blur 0-60 px along 21 deg)"
+1847,1,1036.0,691.0,63.872,75.272,20.0,1.233,10,0.96,0,0.9642,"masked template (scale 0.86-1.10 / 0.02, angle -6..30 / 2 deg, line blur 0-60 px along 21 deg)"
+1850,1,1024.0,690.0,63.132,75.163,8.1,0.499,8,0.98,0,0.9849,"masked template (scale 0.86-1.10 / 0.02, angle -6..30 / 2 deg, line blur 0-60 px along 21 deg)"
+1853,1,1018.0,689.0,62.762,75.054,2.8,0.173,6,0.98,0,0.9925,"masked template (scale 0.86-1.10 / 0.02, angle -6..30 / 2 deg, line blur 0-60 px along 21 deg)"
+1855,1,1017.0,690.0,62.7,75.163,1.4,0.086,6,1.0,0,0.9947,"masked template (scale 0.86-1.10 / 0.02, angle -6..30 / 2 deg, line blur 0-60 px along 21 deg)"
+1857,1,1016.0,691.0,62.639,75.272,0.0,0.0,4,1.0,0,0.9957,"masked template (scale 0.86-1.10 / 0.02, angle -6..30 / 2 deg, line blur 0-60 px along 21 deg)"
+1860,1,1016.0,691.0,62.639,75.272,0.0,0.0,0,1.0,0,1.0,"masked template (scale 0.86-1.10 / 0.02, angle -6..30 / 2 deg, line blur 0-60 px along 21 deg)"
+1862,1,1014.0,690.0,62.515,75.163,2.2,0.136,-6,0.98,0,0.9899,"masked template (scale 0.86-1.10 / 0.02, angle -6..30 / 2 deg, line blur 0-60 px along 21 deg)"

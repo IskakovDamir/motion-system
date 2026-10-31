@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.trans-card-zoom-fill",
+ "file": "curves/v8.trans-card-zoom-fill.csv",
+ "property": "scale",
+ "unit": "scale factor of the footage card (width / 1151 px = 71.0% W)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c5r_T1_in.csv",
+ "column": "card_scale",
+ "sampled_frames": [
+  3052,
+  3094
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 1.0,
+ "to_value": 1.4092,
+ "active_frames": [
+  3065,
+  3086
+ ],
+ "measured_duration_frames": 21,
+ "bezier": {
+  "x1": 0.6069,
+  "y1": -0.0098,
+  "x2": 0.3084,
+  "y2": 0.7255,
+  "durationInFrames": 26,
+  "delay": -3.558,
+  "built_duration_frames": 21,
+  "rmse": 0.0248
+ },
+ "spring": {
+  "stiffness": 127.223,
+  "damping": 17.877,
+  "mass": 1,
+  "damping_ratio": 0.7925,
+  "built_duration_frames": 19,
+  "rmse": 0.1079
+ },
+ "recommended": "bezier",
+ "note": "v8c5 soft transition S02 -> S03 (morph f3064-f3092, renamed from v8.footage-card-zoom-fill.v8c5): the landscape footage card (rounded corners about 30 px = 1.8% W, same aspect as the frame) zooms about the frame centre (centre x 809.5-810.5, y 460.5 px constant from f3072) from 1151 px (71.0% W) to the full 1622 px; the width reaches the frame edges at f3088 and the height at f3090-f3092 (x1.409); edges motion-blurred while fast (f3072-f3082). Box from the non-white mask, scratch/v8c5r_Sb_card.csv -> v8c5r_T1_in.csv. The zoom starts while the card is still finishing its rise (centre y 473.5 at f3064 -> 460.5 at f3072).",
+ "chunk_curve_id": "v8.trans-card-zoom-fill.v8c5"
+}

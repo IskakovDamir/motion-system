@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.ui-ghost-drag-to-timeline",
+  "file": "curves/v7.ui-ghost-drag-to-timeline.csv",
+  "property": "position-x",
+  "unit": "% of frame width (centre of the top-right ghost outline box; 60.1% -> 76.0% W)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p4_ghost_box_r2059.csv",
+  "column": "cx_pct",
+  "sampled_frames": [
+    2061,
+    2089
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 60.142,
+  "to_value": 76.048,
+  "active_frames": [
+    2064,
+    2086
+  ],
+  "measured_duration_frames": 22,
+  "bezier": {
+    "x1": 0.4049,
+    "y1": 0.1039,
+    "x2": 0.1936,
+    "y2": 1.1236,
+    "durationInFrames": 29,
+    "delay": -0.249,
+    "built_duration_frames": 19,
+    "rmse": 0.0381
+  },
+  "spring": {
+    "stiffness": 201.763,
+    "damping": 23.643,
+    "mass": 1,
+    "damping_ratio": 0.8323,
+    "built_duration_frames": 18,
+    "rmse": 0.0596
+  },
+  "recommended": "bezier",
+  "note": "P4 drag of all 9 clips into the timeline: at f2061 thin light outline boxes (one per thumbnail, about 182 x 170 px between outline centres, semi-transparent fill) appear around the 3x3 thumbnail grid and hold until f2065, then the whole ghost grid travels down-right along a curved path (mostly right first, then mostly down) and lands over the timeline tracks as the window pans up into the punch-in cut; x component shown (window has no x motion); x settles by ~f2086 (the close-up after the cut keeps the right column at 76.2-76.3% W in P4 terms, f2094-f2114); y component: curves/v7.ui-ghost-drag-to-timeline-y.v7c3. Tracked by template matching on motion-compensated difference images (picture minus f2059, the last ghost-free picture, shifted by the window pan), ref box f2076; re-measured after review (the first version used f2061, which already holds the outlines)"
+}

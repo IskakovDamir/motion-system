@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.text-tag-type-rise.v8c5",
+  "file": "curves/v8.text-tag-type-rise.v8c5.csv",
+  "property": "position-y",
+  "unit": "px (picture 918 px high)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c5r_Sd_tagtext.csv",
+  "column": "first_letters_cy",
+  "sampled_frames": [
+    3382,
+    3438
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 602.0,
+  "to_value": 531.5,
+  "active_frames": [
+    3382,
+    3410
+  ],
+  "measured_duration_frames": 28,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.3221,
+    "x2": 0.3142,
+    "y2": 1.0272,
+    "durationInFrames": 35,
+    "delay": 0.804,
+    "built_duration_frames": 27,
+    "rmse": 0.0222
+  },
+  "spring": {
+    "stiffness": 112.997,
+    "damping": 63.991,
+    "mass": 1,
+    "damping_ratio": 3.0099,
+    "built_duration_frames": 32,
+    "rmse": 0.0468
+  },
+  "recommended": "bezier",
+  "note": "S-d end card tag (3 words joined by hyphens, 16 characters): ink centre of the first letters (x 640-700, dark < 90, scratch/v8c5r_Sd_tagtext.csv) rises 70.5 px (7.7% H) from 65.6% to 57.9% H while the line types on at about 2.2 frames per character (1 character f3382 -> 6 at f3393-f3394 -> 9 at f3401 -> 14 at f3410 -> 16 at f3416, counted on the frame-numbered montage); the outline draws on around it (bottom line grows right-to-left from x 64% W f3388-f3402, then the top line left-to-right f3401-f3412, closed by f3414). from-value = first picture f3382 (1 letter)."
+}

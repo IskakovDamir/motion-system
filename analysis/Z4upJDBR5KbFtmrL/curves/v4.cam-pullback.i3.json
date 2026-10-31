@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.cam-pullback.i3",
+  "file": "curves/v4.cam-pullback.i3.csv",
+  "property": "scale",
+  "unit": "scale factor (canvas, about x 960 / y 575 px)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/c2_t2_camera.csv",
+  "column": "scale",
+  "sampled_frames": [
+    1110,
+    1200
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 1.0,
+  "to_value": 0.5128,
+  "active_frames": [
+    1135,
+    1179
+  ],
+  "measured_duration_frames": 44,
+  "bezier": {
+    "x1": 0.543,
+    "y1": 0.1561,
+    "x2": 0.3621,
+    "y2": 0.9931,
+    "durationInFrames": 54,
+    "delay": -2.777,
+    "built_duration_frames": 43,
+    "rmse": 0.0079
+  },
+  "spring": {
+    "stiffness": 29.041,
+    "damping": 8.406,
+    "mass": 1,
+    "damping_ratio": 0.78,
+    "built_duration_frames": 39,
+    "rmse": 0.0954
+  },
+  "recommended": "bezier",
+  "note": "T05 pull-back (no pan): distance between the first hub's sphere and the far right middle tile (template tracks), pivot measured at x 960.0 +-1 px, y 575"
+}

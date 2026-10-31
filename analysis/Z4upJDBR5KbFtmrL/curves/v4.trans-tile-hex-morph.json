@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.trans-tile-hex-morph",
+  "file": "curves/v4.trans-tile-hex-morph.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 at the hexagon centre (135 = agent icon on the tile, 17 = solid hexagon)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/c2_t3_centre_tile.csv",
+  "column": "hex_centre_luma",
+  "sampled_frames": [
+    1294,
+    1322
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 135.1,
+  "to_value": 17.0,
+  "active_frames": [
+    1295,
+    1313
+  ],
+  "measured_duration_frames": 18,
+  "bezier": {
+    "x1": 0.3194,
+    "y1": 0.3081,
+    "x2": 0.4603,
+    "y2": 0.8895,
+    "durationInFrames": 18,
+    "delay": 0.631,
+    "built_duration_frames": 17,
+    "rmse": 0.0201
+  },
+  "spring": {
+    "stiffness": 164.178,
+    "damping": 20.761,
+    "mass": 1,
+    "damping_ratio": 0.8101,
+    "built_duration_frames": 18,
+    "rmse": 0.0083
+  },
+  "recommended": "spring",
+  "note": "centre tile (889,575) of the wave, the first to morph: the icon tile shrinks and fades while a dark hexagon grows and fades in at its centre (the T06 two-layer model fits keep its edges sharp: fitted blur 0-1.1 px); earlier frames f1289-f1293 carry a packet over the tile and are excluded"
+}

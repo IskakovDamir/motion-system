@@ -1,0 +1,40 @@
+{
+  "technique_id": "v2.ui-list-item-rise-fade",
+  "file": "curves/v2.ui-list-item-rise-fade.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (mean of the row's text area; 253 = empty, 232.7 = settled)",
+  "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c2_S14_luma_r1.csv",
+  "column": "mean",
+  "sampled_frames": [
+    990,
+    1006
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 253.0,
+  "to_value": 232.712,
+  "active_frames": [
+    996,
+    1001
+  ],
+  "measured_duration_frames": 5,
+  "bezier": {
+    "x1": 0.3021,
+    "y1": 1.0601,
+    "x2": 0.4456,
+    "y2": 0.9592,
+    "durationInFrames": 7,
+    "delay": -0.0,
+    "built_duration_frames": 5,
+    "rmse": 0.0014
+  },
+  "spring": {
+    "stiffness": 6662.325,
+    "damping": 163.278,
+    "mass": 1,
+    "damping_ratio": 1.0002,
+    "built_duration_frames": 5,
+    "rmse": 0.0231
+  },
+  "recommended": "bezier",
+  "note": "PR list row 1 fade-in (track.py luma x310-940 y590-670); co-timed rise of 6-7 px (y0 602,598,596,595 f997-f1000)"
+}

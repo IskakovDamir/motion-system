@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-caption-word-fade.v5c4",
+  "file": "curves/v5.text-caption-word-fade.v5c4.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (p95 of the word box over a black background; includes defocus)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c4_cap3_word1_luma.csv",
+  "column": "p95",
+  "sampled_frames": [
+    2865,
+    2897
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 240.0,
+  "active_frames": [
+    2865,
+    2895
+  ],
+  "measured_duration_frames": 30,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.3092,
+    "x2": 0.7727,
+    "y2": 1.003,
+    "durationInFrames": 30,
+    "delay": -0.014,
+    "built_duration_frames": 28,
+    "rmse": 0.0284
+  },
+  "spring": {
+    "stiffness": 41.403,
+    "damping": 10.149,
+    "mass": 1,
+    "damping_ratio": 0.7887,
+    "built_duration_frames": 34,
+    "rmse": 0.0856
+  },
+  "recommended": "bezier",
+  "note": "caption word fade + defocus-in: caption 3 line 1 (single word) over a black area of the footage, box moving with the caption's linear drift (-2.1, -3.0 px/frame); p95 luma 0 -> 240"
+}

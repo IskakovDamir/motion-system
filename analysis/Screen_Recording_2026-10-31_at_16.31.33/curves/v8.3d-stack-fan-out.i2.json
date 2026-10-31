@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.3d-stack-fan-out.i2",
+ "file": "curves/v8.3d-stack-fan-out.i2.csv",
+ "property": "opacity",
+ "unit": "halo darkness, first build: 0 = no halo (f2022-f2026), 1 = its hold level at f2050-f2056 (0.75 of the level it keeps from f2080); value = mean over rows 300-700 (every 4th) of the summed (248 - luma) 8-210 px left of the row's stack edge",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c3r3_S07_halo_edge_2008-2192.csv",
+ "column": "left_tall_darkness",
+ "sampled_frames": [
+  2017,
+  2050
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 605.0,
+ "to_value": 5100.0,
+ "active_frames": [
+  2026,
+  2050
+ ],
+ "measured_duration_frames": 24,
+ "bezier": {
+  "x1": 0.2164,
+  "y1": 0.006,
+  "x2": 1.0,
+  "y2": 0.8578,
+  "durationInFrames": 23,
+  "delay": -0.312,
+  "built_duration_frames": 22,
+  "rmse": 0.0348
+ },
+ "spring": {
+  "stiffness": 98.644,
+  "damping": 58.318,
+  "mass": 1,
+  "damping_ratio": 2.9359,
+  "built_duration_frames": 35,
+  "rmse": 0.2761
+ },
+ "recommended": "bezier",
+ "note": "S07 soft dark halo around the 3D stack, measured left of the front layer, edge found per row at luma 120, so the stack's drift does not move the band (scratch/v8c3r3_S07_halo_edge_2008-2192.csv, column left_tall_darkness). The halo builds in step with v8.3d-stack-fan-out: near-linear from f2028 (0.05) to f2050 (1.0), about 0.045 per frame; holds f2050-f2056 (0.94-1.01); then two one-picture steps, f2059 (+25%, lower left) and f2073-f2074 (+23%, upper left), each partly decaying over 5-7 f, lift it to its final level (1.31-1.40 of this curve's 1, about 6700-7150) from about f2080, where it holds relative to the stack's edge to f2192. One ease over the whole build (f2022-f2100) fits badly (bezier rmse 0.11, spring 0.07), so only the first build is fitted; the steps are given as numbers. Pre-level 605 is the blurred edge of the shrinking page.",
+ "chunk_curve_id": "v8.3d-stack-fan-out-halo.v8c3"
+}

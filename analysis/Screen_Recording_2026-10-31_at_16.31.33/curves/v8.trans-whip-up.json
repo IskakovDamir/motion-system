@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.trans-whip-up",
+ "file": "curves/v8.trans-whip-up.csv",
+ "property": "position-y",
+ "unit": "px (picture 918 px high)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c2_S02_row1.csv",
+ "column": "cy",
+ "sampled_frames": [
+  914,
+  937
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 599.0,
+ "to_value": 520.0,
+ "active_frames": [
+  914,
+  934
+ ],
+ "measured_duration_frames": 20,
+ "bezier": {
+  "x1": 0.1687,
+  "y1": 1.0332,
+  "x2": 0.9101,
+  "y2": 0.9771,
+  "durationInFrames": 22,
+  "delay": 0.348,
+  "built_duration_frames": 19,
+  "rmse": 0.0147
+ },
+ "spring": {
+  "stiffness": 305.336,
+  "damping": 35.229,
+  "mass": 1,
+  "damping_ratio": 1.0081,
+  "built_duration_frames": 21,
+  "rmse": 0.0802
+ },
+ "recommended": "bezier",
+ "note": "S02 entrance after the hidden cut f914: agent row 1 template centre y (scratch/v8c2_S02_row1.csv); the chat arrives 79 px (8.6% H) below its rest still moving up (12 px per frame, vertical motion blur) and decelerates; from-value = first picture f914, to-value = rest f934-f937 before the base drift resumes",
+ "chunk_curve_id": "v8.trans-whip-up.v8c2"
+}

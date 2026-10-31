@@ -1,0 +1,816 @@
+{
+  "video": "Z4upJDBR5KbFtmrL",
+  "key": "v4",
+  "chunk": "v4c1",
+  "frames": [
+    0,
+    929
+  ],
+  "cut_decisions": [
+    {
+      "id": "c001",
+      "frame": 681,
+      "status": "rejected",
+      "reason": "chat-list step scroll inside the chat window: the message list jumps up 84 px in one frame (first bubble top 376.5 -> 292.5, scratch/scroll_678.csv) as a reply bubble starts its rise-fade (f681-f695); the two-window layout, headline and terminal are unchanged (detail/cut_c001_f00681/sheet.jpg, detail/peak_f00682/sheet.jpg)"
+    }
+  ],
+  "boundaries": [
+    {
+      "start": 214,
+      "end": 248,
+      "type": "dip-to-bg (zoom-fade exit, near-empty f225, rise-scale-fade entrance, headline drop)",
+      "frames": 35,
+      "shared": "nothing but the empty background (f225 practically empty); the S01 layer zooms 1.000 -> 1.032 about the frame centre while fading out (ease-in f214-f225); the chat window (f225, first visible f226) and the terminal window (f228, first visible f229) rise 30 px, scale 0.970 -> 1.000 and fade in on one ease-out curve; the headline drops 10-12 px into place f234-f248",
+      "technique": "v4.trans-dip-to-bg",
+      "curve": "v4.layout-zoom-fade-out.v4c1",
+      "detail": "detail/soft_214-248",
+      "extra_curves": [
+        "v4.layout-zoom-fade-out.scale.v4c1",
+        "v4.card-rise-scale-fade-in.v4c1",
+        "v4.text-headline-drop-in.v4c1"
+      ]
+    },
+    {
+      "start": 495,
+      "end": 525,
+      "type": "panel-slide-swap (one window replaced through a lateral slide-fade, headline swapped)",
+      "frames": 31,
+      "shared": "the chat window holds unchanged; same window frame (800 x 760 px at x 1009.5) and one left-to-right motion: the old terminal slides +21.2 px while fading to 0.11 (f497-f507, ease-in) and is removed at f508, the new one appears at -20.9 px / opacity 0.12 at f508 and settles f521; the headline fades out in place f495-f507, the new one drops in f509-f525",
+      "technique": "v4.trans-panel-swap",
+      "curve": "v4.card-slide-swap.v4c1",
+      "detail": "detail/soft_495-525",
+      "extra_curves": [
+        "v4.card-slide-swap.out.v4c1",
+        "v4.card-slide-swap.out-x.v4c1",
+        "v4.text-headline-fade-out.v4c1",
+        "v4.text-headline-drop-in.v4c1"
+      ]
+    },
+    {
+      "start": 719,
+      "end": 766,
+      "type": "dip-to-bg (shrink-fade exit, no empty frame, zoom-settle entrance, headline drop)",
+      "frames": 48,
+      "shared": "nothing but the background; both windows shrink to 0.944 about their own centres and fade out (f719-f731, ease-in), the headline fades in place (f720-f731); f731 old layout at about 0.05, f732 the hub layer at 0.135 already scaled 1.112 about the hub centre (958, 575), fade done f748, zoom settles f766; new headline drops in f743-f757",
+      "technique": "v4.trans-dip-to-bg",
+      "curve": "v4.layout-zoom-settle-in.v4c1",
+      "detail": "detail/soft_719-766",
+      "extra_curves": [
+        "v4.layout-zoom-settle-in.scale.v4c1",
+        "v4.layout-shrink-fade-out.v4c1",
+        "v4.layout-shrink-fade-out.scale.v4c1",
+        "v4.text-headline-fade-out.v4c1",
+        "v4.text-headline-drop-in.v4c1"
+      ]
+    }
+  ],
+  "segments": [
+    {
+      "id": "S01",
+      "start": 0,
+      "end": 231,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "left-aligned 2-line headline builds word by word (rise 18 px + fade, 4.2 f stagger) beside a cluster of six agent icons on hexagon cells over a masked hex-outline grid; small black dots hop between icon centres (24 f ease-in-out), icons pulse to 1.05-1.06 in turn every 25.2 f; the whole layer zooms 3% and fades out"
+    },
+    {
+      "id": "S02",
+      "start": 232,
+      "end": 510,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "chat window (left) and dark terminal window (right) under a centred 1-line headline: a prompt is typed into the chat input, the send button presses, the message bubble rises in, the list steps up for a status line, the terminal prints its work line by line in one-frame steps, the status flips and a reply rises in after a one-frame list jump"
+    },
+    {
+      "id": "S03",
+      "start": 511,
+      "end": 742,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "same two-window layout with a second agent's terminal (slid in during T2) and a 2-word headline: a shorter prompt is typed slower, sent with the same press, bubble, status and step-scroll devices; the terminal prints a review in one-frame steps and the reply rises in; both windows then shrink and fade"
+    },
+    {
+      "id": "S04",
+      "start": 743,
+      "end": 929,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": true,
+      "live_confirmed_on": [],
+      "summary": "hub diagram (centre chat card, six dark agent tiles, dashed connectors, 1-word label, centred headline) zoom-settles in from 1.11; dark packets fly out to the tiles every 6 f (23 f each), each landing prints a command line, then results return as grey or dark packets every 16-17 f and step a reply counter; from f922 it holds completely still (no spinner left) and continues static into v4c2"
+    }
+  ],
+  "techniques": [
+    {
+      "id": "v4.text-word-rise-fade",
+      "category": "text",
+      "description": "words of a left-aligned 2-line headline (cap 5.0% H) each rise 18 px (1.67% H) and fade from 0 to 1 on one ease-out curve; constant 4.2 f stagger that runs straight across the line break; positions snap to whole pixels",
+      "instances": [
+        [
+          9,
+          67
+        ]
+      ],
+      "reference_frames": [
+        10,
+        68
+      ],
+      "measured": {
+        "duration_frames": 20,
+        "easing": "opacity bezier(0.247, 1.200, 0.536, 0.957) D=36 (rmse 0.0044) / spring {266.8, 33.10, mass 1} (0.051); y offset = 18 px x (1 - progress)",
+        "values": "word starts f9.0, 13.2, 17.3, 21.5, 25.8, 29.9, 34.2, 38.3, 42.5, 46.8 (opacity extrapolated to 0); first visible frame of each word at opacity 0.03-0.13 and 15-18 px low; word 1 offsets 16, 14, 12, 10, 9, 7, 6, 5, 4, 4, 3, 2, 2, 1, 1, 1, 1, 0 px at f10-f27"
+      },
+      "curves": [
+        "v4.text-word-rise-fade.v4c1"
+      ]
+    },
+    {
+      "id": "v4.icon-pulse",
+      "category": "icon",
+      "description": "one icon at a time scales up about its centre to 1.05-1.06, holds, and returns (ease-out up, ease-in down); the six icons take turns at a steady 25.2 f interval, independent of the packet dots",
+      "instances": [
+        [
+          22,
+          38
+        ],
+        [
+          47,
+          62
+        ],
+        [
+          72,
+          88
+        ],
+        [
+          98,
+          113
+        ],
+        [
+          122,
+          139
+        ],
+        [
+          148,
+          164
+        ]
+      ],
+      "reference_frames": [
+        122,
+        139
+      ],
+      "measured": {
+        "duration_frames": 17,
+        "easing": "up bezier(0.617, 1.118, 0.664, 0.856) D=7 (rmse 0.0077) / spring {1894.9, 81.28, mass 1} (0.029); down ease-in 6-7 f",
+        "values": "agent logo icon 5 (cell centre (1240, 748)) scale (ink area) 1.000, 1.014, 1.027, 1.039, 1.048, 1.053, 1.055, 1.057 (f122-f129), hold to f133, 1.056, 1.054, 1.050, 1.042, 1.033, 1.018, 1.001 (f133-f139); icon 3 (1420, 644) ink width 114 -> 120 px f72-f78, back f84-f88; icon 1 (1240, 332) ink span 118 -> 124 px f22-f38; peaks 1.05-1.06 on all six"
+      },
+      "curves": [
+        "v4.icon-pulse.v4c1"
+      ]
+    },
+    {
+      "id": "v4.particle-edge-packets",
+      "category": "particle",
+      "description": "a small round dot pops on at a node at full size, travels a straight line to another node with an ease-in-out of 22-24 f (whatever the distance), and pops off; drawn above everything (dark dots vanish over dark shapes and blank out bubble letters; grey dots show over dark tiles). S01: 18 px black dots hop between the hexagon icons with no connector lines, 1-3 in flight, about 16 hops f37-f215. S04: 24 px dots on the dashed hub connectors, outbound dark dots from the hub centre to each tile every 6 f, return dots from each tile every 16-17 f (f813, f830, f846, f863, f880, f897: 16.8 f average; luma 137 from three tiles, 17-19 from the other three); each return dot is gone from the hub centre 24 f after it starts (f837, f854, f870, f887, f904, f921); the same bezier shape as v4c2's packets",
+      "instances": [
+        [
+          37,
+          215
+        ],
+        [
+          759,
+          812
+        ],
+        [
+          813,
+          921
+        ]
+      ],
+      "reference_frames": [
+        72,
+        96,
+        813,
+        836
+      ],
+      "measured": {
+        "duration_frames": 23,
+        "easing": "S04 return bezier(0.599, -0.004, 0.400, 1.005) D=22 (rmse 0.019) / spring {190.0, 20.33, mass 1} (0.277); S01 hop bezier(0.585, 0.024, 0.398, 1.000) D=24 (rmse 0.012); S01 long hop bezier(0.583, 0.084, 0.410, 0.939) D=22",
+        "values": "S04 return 671 px tile centre (359.5, 274.9) -> hub centre (959.5, 574.9) f813-f836, peak 79.6 px/f; outbound mirror speeds 54.7, 61.2, 73.8, 79.5, 67.4 px/f at 126-462 px; S01 360 px hop f72-f96 peak 37.6 px/f, 624 px hop f97-f121 peak 66 px/f (scratch/s1_dot_hop_79.csv, s1_dot_hop_long.csv, s4_packet_back_TL.csv, s4_packet_out_TL.csv)"
+      },
+      "curves": [
+        "v4.particle-edge-packets.v4c1",
+        "v4.particle-edge-packets.hop.v4c1"
+      ]
+    },
+    {
+      "id": "v4.layout-zoom-fade-out",
+      "category": "layout",
+      "description": "exit: the whole layout (text, icons, grid) scales up about the frame centre while fading out, both accelerating (ease-in), gone after 11 f",
+      "instances": [
+        [
+          214,
+          225
+        ]
+      ],
+      "reference_frames": [
+        214,
+        224
+      ],
+      "measured": {
+        "duration_frames": 11,
+        "easing": "opacity bezier(0.358, 0.021, 0.686, 0.208) D=11 (rmse 0.0019); scale bezier(0.004, 0.143, 0.450, -0.199) D=9 (rmse 0.0057, normalised to the last visible value)",
+        "values": "scale 1.0004, 1.0017, 1.0025, 1.0037, 1.0062, 1.0095, 1.0133, 1.0186, 1.0244, 1.0315 (f215-f224) about (959, about 540); icon 6 interior luma 17, 19, 23, 31, 40, 53, 72, 94, 122, 157, 197, 246 (f214-f225)"
+      },
+      "curves": [
+        "v4.layout-zoom-fade-out.v4c1",
+        "v4.layout-zoom-fade-out.scale.v4c1"
+      ]
+    },
+    {
+      "id": "v4.card-rise-scale-fade-in",
+      "category": "card",
+      "description": "entrance of UI windows: each rises 30 px (2.8% H), scales 0.970 -> 1.000 about its centre and fades 0 -> 1, all on one ease-out curve; the second window starts 3 f after the first",
+      "instances": [
+        [
+          225,
+          241
+        ],
+        [
+          228,
+          244
+        ]
+      ],
+      "reference_frames": [
+        229,
+        244
+      ],
+      "measured": {
+        "duration_frames": 16,
+        "easing": "bezier(0.318, 1.001, 0.718, 0.974) D=16 (rmse 0.024) / spring {512.7, 44.11, mass 1} (0.064)",
+        "values": "terminal window first visible f229: scale 0.9753, centre +24.7 px, opacity 0.18; scale 0.9873 / +12.9 px at opacity 0.57 (f232); start values 0.970 / +30 px follow from offset/(1-progress); interior luma 204, 169, 140, 115, 93, 76, 61, 51, 40, 33, 28, 24, 22, 19, 18, 17 (f229-f244); chat window identical 3 f earlier"
+      },
+      "curves": [
+        "v4.card-rise-scale-fade-in.v4c1"
+      ]
+    },
+    {
+      "id": "v4.text-headline-drop-in",
+      "category": "text",
+      "description": "centred 1-line headline (cap 3.8% H) fades in while dropping 10-12 px into place in whole-pixel steps, ease-out; arrives after the layout it titles",
+      "instances": [
+        [
+          234,
+          248
+        ],
+        [
+          509,
+          525
+        ],
+        [
+          743,
+          757
+        ]
+      ],
+      "reference_frames": [
+        235,
+        246
+      ],
+      "measured": {
+        "duration_frames": 14,
+        "easing": "opacity bezier(0.274, 1.077, 0.546, 0.981) D=21 (rmse 0.0033) / spring {546.2, 46.89, mass 1} (0.058)",
+        "values": "y offset -10, -8, -6, -5, -4, -3, -2, -2, -1, -1, -1, 0 px (f235-f246); S03 and S04 -10, -8, -7, -5, -4, -3, -3, -2, -1, -1, -1, 0 (f510-f521, f744-f755); first visible at opacity 0.14-0.19, so the start offset is about -12 px"
+      },
+      "curves": [
+        "v4.text-headline-drop-in.v4c1"
+      ]
+    },
+    {
+      "id": "v4.text-headline-fade-out",
+      "category": "text",
+      "description": "headline fades out in place (no move, no blur), accelerating",
+      "instances": [
+        [
+          495,
+          507
+        ],
+        [
+          720,
+          731
+        ]
+      ],
+      "reference_frames": [
+        495,
+        507
+      ],
+      "measured": {
+        "duration_frames": 12,
+        "easing": "bezier(0.648, -0.012, 0.832, 0.638) D=13 (shape rmse 0.068, per-frame residual under 0.007)",
+        "values": "headline ink 22.52, 22.26, 22.19, 21.60, 20.68, 19.82, 18.60, 16.90, 14.77, 12.21, 9.00, 5.25, 1.23, 0.05 (f494-f507); S03 headline 6.05 -> 0.29 (f719-f731)"
+      },
+      "curves": [
+        "v4.text-headline-fade-out.v4c1"
+      ]
+    },
+    {
+      "id": "v4.text-typewriter-input",
+      "category": "text",
+      "description": "chat input: placeholder clears in one frame, then letters appear at a constant rate with 1-2 f pauses every 2-5 letters; no caret; text beyond the field width is clipped",
+      "instances": [
+        [
+          237,
+          289
+        ],
+        [
+          519,
+          548
+        ]
+      ],
+      "reference_frames": [
+        238,
+        289
+      ],
+      "measured": {
+        "duration_frames": 52,
+        "easing": "linear: bezier(0.463, 0.525, 0.492, 0.544) D=52 (rmse 0.013)",
+        "values": "S02 13.3 px/f, about 62 visible characters in 51 f = 0.85 f/char (about 1.18 characters/f), clipped at x 849; S03 9.9 px/f, about 25 characters in 29 f = 1.2 f/char"
+      },
+      "curves": [
+        "v4.text-typewriter-input.v4c1"
+      ]
+    },
+    {
+      "id": "v4.ui-button-press",
+      "category": "ui",
+      "description": "send button (44 px dark disc with chevron) scales down about its centre and back, 6-8 f after the last typed letter; the input resets during the release",
+      "instances": [
+        [
+          297,
+          306
+        ],
+        [
+          554,
+          563
+        ]
+      ],
+      "reference_frames": [
+        297,
+        306
+      ],
+      "measured": {
+        "duration_frames": 9,
+        "easing": "down bezier(0.015, 0.483, 0.561, 0.822) D=3 (rmse 0.024); up bezier(0.636, 0.233, 0.703, 0.842) D=4 (rmse 0.056, 4-frame move)",
+        "values": "1.000, 0.941, 0.899, 0.872, 0.862, 0.865, 0.886, 0.923, 0.976, 1.000 (f297-f306); S03 0.955, 0.909, 0.878, 0.863, 0.863, 0.879, 0.912, 0.961, 1.001 (f555-f563)"
+      },
+      "curves": [
+        "v4.ui-button-press.v4c1",
+        "v4.ui-button-press.release.v4c1"
+      ]
+    },
+    {
+      "id": "v4.ui-chat-item-rise-fade-in",
+      "category": "ui",
+      "description": "each new chat item (user bubble, status line, reply bubble with avatar) rises 9-14 px into its slot and fades in, ease-out 11-14 f, starting in the frame the list makes room",
+      "instances": [
+        [
+          303,
+          316
+        ],
+        [
+          315,
+          326
+        ],
+        [
+          465,
+          478
+        ],
+        [
+          561,
+          573
+        ],
+        [
+          572,
+          584
+        ],
+        [
+          681,
+          695
+        ]
+      ],
+      "reference_frames": [
+        304,
+        316,
+        573,
+        584
+      ],
+      "measured": {
+        "duration_frames": 12,
+        "easing": "user bubble bezier(0.274, 0.769, 0.532, 0.964) D=13 (rmse 0.028) / spring {790.6, 56.35, mass 1} (0.048); status line bezier(0.225, 0.422, 0.285, 0.913) D=12 (rmse 0.0041) / spring {904.8, 60.55, mass 1} (0.031)",
+        "values": "user bubble top 696 -> 683 (13 px) with fill 205 -> 17 (f304-f316); S03 bubble 734.3 -> 720.7 (13.6 px); status line centroid 781.7 -> 768.3 (13.4 px, f573-f586); reply about 9 px, avatar luma 253 -> 53 in 13 f"
+      },
+      "curves": [
+        "v4.ui-chat-item-rise-fade-in.v4c1",
+        "v4.ui-chat-item-rise-fade-in.status.v4c1"
+      ]
+    },
+    {
+      "id": "v4.ui-chat-list-step-scroll",
+      "category": "ui",
+      "description": "the bottom-anchored message list moves up by the inserted item's height plus gap in a single frame (no easing)",
+      "instances": [
+        [
+          315,
+          316
+        ],
+        [
+          465,
+          465
+        ],
+        [
+          561,
+          561
+        ],
+        [
+          573,
+          573
+        ],
+        [
+          681,
+          681
+        ]
+      ],
+      "reference_frames": [
+        464,
+        465
+      ],
+      "measured": {
+        "duration_frames": 0,
+        "easing": "step (the first one, f315-f316, takes 2 frames: -16.6 then -34.1 px)",
+        "values": "-50 px (status line), -122 px (2-line reply), -84 px (1-line bubble), -50 px (status line), -84 px (1-line reply); edge tracks scratch/scroll_462.csv, scroll_558.csv, scroll_570.csv, scroll_678.csv, s2_bubble_top.csv"
+      },
+      "curves": []
+    },
+    {
+      "id": "v4.ui-terminal-line-step",
+      "category": "ui",
+      "description": "terminal and agent-tile output appears one whole line (or block) per frame at fixed positions, never scrolling; irregular gaps; in the hub each tile's line fires 1 f after a packet lands",
+      "instances": [
+        [
+          321,
+          448
+        ],
+        [
+          579,
+          663
+        ],
+        [
+          783,
+          897
+        ]
+      ],
+      "reference_frames": [
+        354,
+        368
+      ],
+      "measured": {
+        "duration_frames": 0,
+        "easing": "step",
+        "values": "S02 lines f321, 330, 354, 359, 363, 365, 368, 387, 392, 411, 432, 447 (gaps 9, 24, 5, 4, 2, 3, 19, 5, 19, 21, 15 f); S03 f579, 588, 609, 613, 636, 640, 663; S04 command lines f783, 789, 795, 801, 807, 813, status lines +3 f, result lines f813, 830, 846, 863, 880, 897"
+      },
+      "curves": []
+    },
+    {
+      "id": "v4.ui-spinner-glyph-cycle",
+      "category": "ui",
+      "description": "status spinners swap glyphs in steps, in two variants that follow the agent (different glyph set and step, so arguably two devices): (a) a star glyph, light grey on dark (dot, plus, thin star, six-point star, asterisk, heavy asterisk and back: 10 steps = 60 f per cycle), every 6 f, on the first agent's S02 terminal working line and its three hub tiles (top-left, bottom-left, middle-right); (b) a braille-style dot spinner (3-4 dots of a 2 x 4 cell running round: 10 patterns = 50 f per turn), every 5 f, on the second agent's S03 terminal working line and its three hub tiles (middle-left, top-right, bottom-right), on the hub centre status and the S03 chat status, and with 5, 4, 6 f steps (5 f average, 12 per s) on the S02 chat status; the terminal working lines also step an elapsed-seconds digit 60-61 f after they appear",
+      "instances": [
+        [
+          316,
+          456
+        ],
+        [
+          331,
+          447
+        ],
+        [
+          573,
+          672
+        ],
+        [
+          588,
+          663
+        ],
+        [
+          759,
+          902
+        ],
+        [
+          786,
+          896
+        ]
+      ],
+      "reference_frames": [
+        331,
+        352,
+        588,
+        638
+      ],
+      "measured": {
+        "duration_frames": 0,
+        "easing": "step",
+        "values": "star glyph, 6 f: S02 terminal changes f337, 343, 349, 355 ... 445; tiles top-left f792, 798, 804, 810, bottom-left f804-f840, middle-right f816-f876; dot spinner, 5 f: S03 terminal changes f593, 598, 603 ... 658; tiles middle-left f797-f827, top-right f809-f859, bottom-right f821-f896; hub dots every 5 f (f764-f899); S03 chat dots every 5 f (f583-f668); S02 chat dots 6, 5, 4 f repeating (f331-f451); seconds +1 at f391 and f648 (frame diffs of each glyph cell; crops/crop_1034_766_20x22_00331-00446.jpg, crop_1034_764_20x24_00588-00662.jpg, crop_221_310_20x22_00786-00812.jpg, crop_221_610_20x22_00792-00829.jpg, crop_221_910_20x22_00798-00845.jpg, crop_1421_310_20x22_00804-00862.jpg, crop_1421_610_20x22_00810-00879.jpg, crop_1421_910_20x22_00816-00896.jpg, crop_246_754_20x26_00331-00390.jpg, crop_813_638_20x24_00760-00819.jpg)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v4.ui-label-swap",
+      "category": "ui",
+      "description": "UI text replaced in one frame: input text <-> placeholder, waiting status -> done status, hub status label appears and later swaps to its final state",
+      "instances": [
+        [
+          237,
+          237
+        ],
+        [
+          303,
+          304
+        ],
+        [
+          457,
+          457
+        ],
+        [
+          561,
+          561
+        ],
+        [
+          672,
+          673
+        ],
+        [
+          759,
+          759
+        ],
+        [
+          903,
+          903
+        ]
+      ],
+      "reference_frames": [
+        457,
+        903
+      ],
+      "measured": {
+        "duration_frames": 0,
+        "easing": "step (f303 shows typed text and placeholder together for one frame)",
+        "values": "-"
+      },
+      "curves": []
+    },
+    {
+      "id": "v4.counter-step",
+      "category": "counter",
+      "description": "a reply counter inside a grey status label steps +1 in the frame each returning packet dot is gone from the hub centre (1 f after it lands); the steps are 17, 16, 17 f apart; the label then swaps to its final done state 16 f later, in the landing frame of the fifth dot (16.5 f average over the five events)",
+      "instances": [
+        [
+          837,
+          903
+        ]
+      ],
+      "reference_frames": [
+        836,
+        837
+      ],
+      "measured": {
+        "duration_frames": 0,
+        "easing": "step",
+        "values": "+1 at f837, f854, f870, f887 (gaps 17, 16, 17 f); final label f903 (16 f later; 16.5 f average); return dots gone from the hub centre f837, f854, f870, f887, f904, f921, so the swap comes 1 f before the fifth dot leaves (scratch/s4_counter_digit.csv, s4_status_icon.csv, s4_hub_landing.csv; crops/crop_812_634_236x32_00834-00906.jpg, crops/crop_920_545_100x60_00898-00923.jpg)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v4.card-slide-swap",
+      "category": "card",
+      "description": "one window is replaced inside a held layout: the old one slides 21 px right while fading out (ease-in 10 f), is removed at about 11% opacity, and in the same frame the new one appears 21 px left of rest at the same opacity and slides right into place while fading in (ease-out 13 f); no vertical move, no scale",
+      "instances": [
+        [
+          497,
+          521
+        ]
+      ],
+      "reference_frames": [
+        507,
+        508
+      ],
+      "measured": {
+        "duration_frames": 13,
+        "easing": "incoming bezier(0.333, 0.957, 0.682, 0.956) D=13 (rmse 0.049, first sample at 0.12); outgoing ease-in, fitted to its last visible values (removed at f508 before it settles, like the T1 and T3 exits): x bezier(0.200, 0.023, 0.620, -0.006) D=10 (rmse 0.0022), opacity bezier(0.034, 0.048, 0.562, -0.079) D=9 (rmse 0.0046); x and opacity share the progress (0.410 / 0.408 at f504, 0.760 / 0.760 at f506)",
+        "values": "outgoing x +0.2, 0.7, 1.3, 2.3, 3.9, 6.0, 8.8, 12.0, 16.3, 21.2 px (f498-f507, left edge), window centre (both edges) +0.2, 0.7, 1.2, 2.3, 3.9, 6.0, 8.8, 12.0, 16.3, 21.4 px, width 800 px throughout, interior luma 17.7 -> 221.0 = opacity 1 -> 0.11 (scratch/fix_t2_out.csv); incoming left edge 988.6 -> 1009.5 (f508-f521), interior luma 218 -> 17"
+      },
+      "curves": [
+        "v4.card-slide-swap.v4c1",
+        "v4.card-slide-swap.out.v4c1",
+        "v4.card-slide-swap.out-x.v4c1"
+      ]
+    },
+    {
+      "id": "v4.layout-shrink-fade-out",
+      "category": "layout",
+      "description": "exit: each window scales down about its own centre and fades out, ease-in, gone after 12 f",
+      "instances": [
+        [
+          719,
+          731
+        ]
+      ],
+      "reference_frames": [
+        719,
+        731
+      ],
+      "measured": {
+        "duration_frames": 12,
+        "easing": "opacity bezier(0.260, 0.061, 0.618, 0.073) D=12 (rmse 0.026); scale bezier(0.365, 0.014, 0.655, 0.138) D=13 (rmse 0.0024, normalised to the last visible value)",
+        "values": "scale 0.9997, 0.9993, 0.9980, 0.9969, 0.9947, 0.9919, 0.9881, 0.9836, 0.9779, 0.9711, 0.9630, 0.9541, 0.9437 (f719-f731); terminal interior luma 23.5 -> 235.3"
+      },
+      "curves": [
+        "v4.layout-shrink-fade-out.v4c1",
+        "v4.layout-shrink-fade-out.scale.v4c1"
+      ]
+    },
+    {
+      "id": "v4.layout-zoom-settle-in",
+      "category": "layout",
+      "description": "entrance: the new layout appears already enlarged about its own centre and settles to 1.0 with a long ease-out while its fade-in finishes in half the time",
+      "instances": [
+        [
+          731,
+          766
+        ]
+      ],
+      "reference_frames": [
+        732,
+        766
+      ],
+      "measured": {
+        "duration_frames": 34,
+        "easing": "opacity bezier(0.284, 1.035, 0.664, 0.989) D=18 (rmse 0.064, truncated start); scale (visible part) bezier(0.428, 1.103, 0.969, 0.945) D=28 (rmse 0.0044) / spring {111.5, 19.84, mass 1} (0.028)",
+        "values": "scale 1.112, 1.103, 1.093, 1.085, 1.078, 1.070, 1.063, 1.056, 1.050, 1.045, 1.040, 1.036, 1.032 ... 1.000 (f732-f766) about (958, 575); tile luma 215 -> 17 (f732-f749)"
+      },
+      "curves": [
+        "v4.layout-zoom-settle-in.v4c1",
+        "v4.layout-zoom-settle-in.scale.v4c1"
+      ]
+    },
+    {
+      "id": "v4.trans-dip-to-bg",
+      "category": "trans",
+      "description": "scene change through the empty background: the old layout leaves with an accelerating fade plus a 3-6% scale change (zoom up in T1, shrink in T3), at most one near-empty frame, then the new layout fades in with an ease-out settle (rise + grow in T1, zoom-down in T3) and its headline drops in last",
+      "instances": [
+        [
+          214,
+          248
+        ],
+        [
+          719,
+          766
+        ]
+      ],
+      "reference_frames": [
+        225,
+        732
+      ],
+      "measured": {
+        "duration_frames": 35,
+        "easing": "component curves: T1 out v4.layout-zoom-fade-out.v4c1 (+ .scale), in v4.card-rise-scale-fade-in.v4c1 and v4.text-headline-drop-in.v4c1; T3 out v4.layout-shrink-fade-out.v4c1 (+ .scale) and v4.text-headline-fade-out.v4c1, in v4.layout-zoom-settle-in.v4c1 (+ .scale) and v4.text-headline-drop-in.v4c1",
+        "values": "T1 35 f (exit 11 f, empty f225, windows +0/+3 f, headline +9 f); T3 48 f (exit 12 f, no empty frame, hub fade 17 f, zoom 34 f, headline +12 f)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v4.trans-panel-swap",
+      "category": "trans",
+      "description": "partial scene change: one window and the headline are replaced (lateral slide-through fade of the window, fade-out/drop-in of the headline) while the other window stays untouched",
+      "instances": [
+        [
+          495,
+          525
+        ]
+      ],
+      "reference_frames": [
+        507,
+        508
+      ],
+      "measured": {
+        "duration_frames": 31,
+        "easing": "component curves: v4.card-slide-swap.v4c1 (window), v4.text-headline-fade-out.v4c1 and v4.text-headline-drop-in.v4c1 (headline)",
+        "values": "headline out f495-f507, window out f497-f507, window in f508-f521, headline in f509-f525"
+      },
+      "curves": []
+    }
+  ],
+  "typography_stills": [
+    "type/S1-1_f00010.png",
+    "type/S1-1_f00068.png",
+    "type/S1-1_f00214.png",
+    "type/S1-layout_f00000.png",
+    "type/S1-layout_f00060.png",
+    "type/S2-1_f00235.png",
+    "type/S2-1_f00250.png",
+    "type/S2-1_f00495.png",
+    "type/S2-2_f00238.png",
+    "type/S2-2_f00289.png",
+    "type/S2-2_f00303.png",
+    "type/S2-3_f00321.png",
+    "type/S2-3_f00354.png",
+    "type/S2-3_f00447.png",
+    "type/S2-bubble_f00304.png",
+    "type/S2-bubble_f00314.png",
+    "type/S2-bubble_f00317.png",
+    "type/S2-reply_f00456.png",
+    "type/S2-reply_f00466.png",
+    "type/S2-reply_f00480.png",
+    "type/S3-1_f00510.png",
+    "type/S3-1_f00525.png",
+    "type/S3-1_f00720.png",
+    "type/S3-2_f00519.png",
+    "type/S3-2_f00548.png",
+    "type/S3-2_f00561.png",
+    "type/S3-3_f00579.png",
+    "type/S3-3_f00663.png",
+    "type/S3-3_f00681.png",
+    "type/S4-1_f00744.png",
+    "type/S4-1_f00760.png",
+    "type/S4-2_f00732.png",
+    "type/S4-2_f00766.png",
+    "type/S4-3_f00759.png",
+    "type/S4-3_f00783.png",
+    "type/S4-3_f00786.png",
+    "type/S4-3_f00813.png",
+    "type/S4-4_f00836.png",
+    "type/S4-4_f00837.png",
+    "type/S4-4_f00903.png",
+    "type/S4-4_f00904.png",
+    "type/S4-hub_f00733.png",
+    "type/S4-hub_f00744.png",
+    "type/S4-hub_f00760.png",
+    "type/S4-hub_f00829.png",
+    "type/T1_f00226.png",
+    "type/T1_f00229.png",
+    "type/T1_f00236.png",
+    "type/T1_f00246.png"
+  ],
+  "uncertain": [
+    {
+      "what": "start values of the entrances (word rise 18 px, window scale 0.970 and rise 30 px, headline drop 12 px, hub zoom above 1.112)",
+      "range": "f9-f10, f225-f229, f234-f235, f731-f732",
+      "reason": "the first visible frame already shows 12-19% opacity; the invisible start is derived from offset/(1-progress) (consistent to 1 px), not observed"
+    },
+    {
+      "what": "end values of the exits (S01 zoom 1.0315, S03 shrink 0.944, outgoing terminal +21.2 px)",
+      "range": "f224-f225, f731-f732, f507-f508",
+      "reason": "the layers are removed at 0-11% opacity while still moving, so no settled end exists"
+    },
+    {
+      "what": "typed characters after the input field clip",
+      "range": "f289-f296",
+      "reason": "text right of x 849 is hidden; whether typing continues after f289 cannot be seen (the bubble later shows the full message)"
+    },
+    {
+      "what": "monospace cap height",
+      "range": "S02-S04 terminal and tile text",
+      "reason": "two capitals measured 13 px and 16 px (1.2-1.5% H); letters differ in this small size"
+    },
+    {
+      "what": "S01 hop start frames for dots that leave dark icons",
+      "range": "f37-f215",
+      "reason": "black dots are invisible over the dark agent logo icons 3, 4 and 6; hop count about 16 is a lower bound"
+    },
+    {
+      "what": "why the first list shift takes 2 frames",
+      "range": "f315-f316",
+      "reason": "-16.6 px then -34.1 px while every later list jump is a single frame; it overlaps the end of the bubble's own rise"
+    },
+    {
+      "what": "original typefaces",
+      "range": "all text",
+      "reason": "neo-grotesque sans and a monospace; not identifiable from the frames, closest free fonts given"
+    }
+  ],
+  "notes": [
+    "All four segments are GRAPHICS; no footage anywhere (checked on every overview sheet sheets/overview_00000-00045.jpg .. sheets/overview_00912-00957.jpg); agent logo icons 2 and 4 are pre-rendered stills, not footage.",
+    "Detector misses: T1 f214-f248, T2 f495-f525 and T3 f719-f766 were found on the sheets and measured with luma, edge and template tracks; the only candidate, c001 f681, is a chat-list step scroll (rejected).",
+    "All 12 off-cut peak windows in range were opened: f224 and f232 (T1), f305 and f315 (send + list shift), f466 (reply), f505 and f512 (T2), f562 and f574 (second send + status), f682 (second reply), f730 and f738 (T3).",
+    "Edge margins: f0-f9 are identical (S01 already formed, no fade-in from the background); the last return dot is gone at f921 and f922-f944 are completely static (no spinner is left: every tile shows its result line from f897 and the hub label is final from f903; frame diffs show only one-frame encoder flickers of a few pixels on the I-frames f928 and f943), so the S04 boundary falls in v4c2 (headline fade from f945).",
+    "T2 is kept as a boundary because the headline and the right window are replaced (a new scene beat) even though the chat window and the conversation continue; if the merge only cuts on whole-composition changes, S02 and S03 can be joined and T2 becomes an in-segment panel swap.",
+    "Technique ids aligned with v4c2 where the device is the same: v4.text-headline-drop-in, v4.text-headline-fade-out, v4.particle-edge-packets (v4c2's packet bezier (0.583, 0.024, 0.397, 0.998) matches S01's (0.585, 0.024, 0.398, 1.000) and S04's (0.599, -0.004, 0.400, 1.005)); the S04 hub centre (958-960, 575) is the pivot v4c2 reports for its pull-backs.",
+    "Card layering: the terminal window sits above the chat window (its shadow darkens the chat window's right 70 px from 253 to 245); dots and packets are drawn above everything.",
+    "The terminal output layout overlaps itself near the bottom (working line drawn over the test result line at f447, summary line drawn over the prompt box): it is the source design, not a capture artefact.",
+    "Stretched views and measurement sheets made for this pass: scratch/t1_stretched.jpg, scratch/s4_status_steps.jpg, scratch/diff_130_212.png; dense crops in crops/ (crop_*_000xx-00xxx.jpg listed in the md).",
+    "Review fixes: S04 step frames re-read frame by frame (result lines f813, f830, f846, f863, f880, f897; counter f837, f854, f870, f887; final label f903) on crops/crop_812_634_236x32_00834-00906.jpg, crops/crop_920_545_100x60_00898-00923.jpg and luma tracks scratch/s4_result_row_TL.csv .. s4_result_row_BR.csv, s4_counter_digit.csv, s4_status_icon.csv, s4_hub_landing.csv; S01 icons renamed to agent logo icons 1-6 (rule 7).",
+    "Review fixes (round 2): two spinner variants recorded from frame diffs of each glyph cell (star glyph every 6 f on the first agent's S02 terminal and tiles top-left, bottom-left, middle-right; braille-style dot spinner every 5 f on the second agent's S03 terminal and tiles middle-left, top-right, bottom-right); the T2 outgoing window is fitted (curves v4.card-slide-swap.out.v4c1 opacity and v4.card-slide-swap.out-x.v4c1 position-x, from scratch/fix_t2_out.csv, both normalised to the last visible values at f507); the v4.icon-pulse.v4c1 note now gives the measured peaks of icons 3 (x1.053) and 4 (x1.059) instead of the ink-area under-reads x1.017 / x1.027 (scratch/fix_icon1_pulse_tmpl.csv .. fix_icon6_pulse_tmpl.csv, fix_icon3_ink_bbox.csv, fix_icon4_top.csv, fix_icon4_bottom.csv); the curve sidecars name the S01 icons as agent logo icons 1-6 (rule 7; the icon 5 area track is now scratch/s1_icon5_area.csv); curves/index.json rebuilt."
+  ]
+}

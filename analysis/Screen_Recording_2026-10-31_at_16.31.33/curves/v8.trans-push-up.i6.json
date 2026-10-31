@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.trans-push-up.i6",
+ "file": "curves/v8.trans-push-up.i6.csv",
+ "property": "position-y",
+ "unit": "px (picture 918 px high)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c5r_T1_out.csv",
+ "column": "device_bottom_y",
+ "sampled_frames": [
+  3016,
+  3046
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 729.5,
+ "to_value": 128.0,
+ "active_frames": [
+  3029,
+  3046
+ ],
+ "measured_duration_frames": 17,
+ "bezier": {
+  "x1": 0.7523,
+  "y1": 0.0986,
+  "x2": 0.9198,
+  "y2": 0.1445,
+  "durationInFrames": 19,
+  "delay": -2.0,
+  "built_duration_frames": 17,
+  "rmse": 0.01
+ },
+ "spring": {
+  "stiffness": 110.916,
+  "damping": 0.5,
+  "mass": 1,
+  "damping_ratio": 0.0237,
+  "built_duration_frames": 186,
+  "rmse": 1.0318
+ },
+ "recommended": "bezier",
+ "note": "T1 outgoing half: bottom edge of the device card (last non-white row over x 300-1300, scratch/v8c5r_T1_edges.csv; f3042/f3044 from the title template + 201 px offset, f3046 from the dark-run scan; -> scratch/v8c5r_T1_out.csv). The whole device layer (card, mascot, pill) drifts up out of rest from f3024 (1-3 px/f) and accelerates: 5.7 px/f (f3034-f3037), 23 (f3038), 25 (f3040-f3042), 51 (f3042-f3044), 170 px/f (f3044-f3046); gone after f3047; ease-in only, to-value = last picture (13.9% H).",
+ "chunk_curve_id": "v8.trans-push-up-out.v8c5"
+}

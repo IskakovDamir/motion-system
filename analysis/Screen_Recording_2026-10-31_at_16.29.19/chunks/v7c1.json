@@ -1,0 +1,1429 @@
+{
+ "video": "Screen_Recording_2026-10-31_at_16.29.19",
+ "key": "v7",
+ "chunk": "v7c1",
+ "frames": [
+  0,
+  709
+ ],
+ "cut_decisions": [
+  {
+   "id": "c001",
+   "frame": 6,
+   "status": "rejected",
+   "reason": "opening build of the label inside one composition: the box grows (19.5% -> 28.5% W between pictures f4 and f6) and its fill darkens while the halftone dot ring and the blurred background spheres move; nothing is replaced"
+  },
+  {
+   "id": "c002",
+   "frame": 16,
+   "status": "rejected",
+   "reason": "the label box widens with horizontal motion blur (f14 -> f16) and the arrow enters as a vertical blur streak; same composition"
+  },
+  {
+   "id": "c003",
+   "frame": 151,
+   "status": "rejected",
+   "reason": "second ripple ring restores the luminance polarity (inverted -> normal) inside S01; an fx inside the shot: label, mascot balls and shards stay in place"
+  },
+  {
+   "id": "c004",
+   "frame": 162,
+   "status": "confirmed",
+   "reason": "anchor of the soft iris-to-white transition f144-f168: the white disc covers the whole frame at f162 (the S01 picture is gone)"
+  },
+  {
+   "id": "c005",
+   "frame": 168,
+   "status": "rejected",
+   "reason": "inside the iris-to-white transition anchored by c004: the change is the next layout's first picture (f169) appearing on the white field; PySceneDetect labels it 1 frame early"
+  },
+  {
+   "id": "c006",
+   "frame": 172,
+   "status": "rejected",
+   "reason": "S02 menu UI settling (zoom-out with motion blur, f171 -> f174); same composition"
+  },
+  {
+   "id": "c007",
+   "frame": 413,
+   "status": "rejected",
+   "reason": "PySceneDetect index offset on this VFR file: pictures f410-f417 are the same S03 page pulling back with blur; the replacement is at f419 (c008)"
+  },
+  {
+   "id": "c008",
+   "frame": 419,
+   "status": "confirmed",
+   "reason": "hard cut S03 -> S04: light page (mean luma 242) replaced by the dark panel UI (102) between pictures f417 and f419, on motion (zoom-out continues across the cut)"
+  },
+  {
+   "id": "c009",
+   "frame": 486,
+   "status": "confirmed",
+   "reason": "hard cut S04 -> S05; the picture is replaced between f481 and f484 (ffmpeg score fires at f484, PySceneDetect labels f486): boundary frame 484"
+  },
+  {
+   "id": "c010",
+   "frame": 531,
+   "status": "rejected",
+   "reason": "S05 page content scrolling inside the static window (momentum scroll f509-f617)"
+  },
+  {
+   "id": "c011",
+   "frame": 536,
+   "status": "rejected",
+   "reason": "S05 in-window scroll, 28-36 px per picture; window and background static"
+  },
+  {
+   "id": "c012",
+   "frame": 540,
+   "status": "rejected",
+   "reason": "S05 in-window scroll near peak speed (41 px per picture)"
+  },
+  {
+   "id": "c013",
+   "frame": 544,
+   "status": "rejected",
+   "reason": "S05 in-window scroll at peak speed (49 px per picture)"
+  },
+  {
+   "id": "c014",
+   "frame": 547,
+   "status": "rejected",
+   "reason": "S05 in-window scroll at peak speed (51 px per picture)"
+  },
+  {
+   "id": "c015",
+   "frame": 554,
+   "status": "rejected",
+   "reason": "S05 in-window scroll decelerating (50 px per picture)"
+  },
+  {
+   "id": "c016",
+   "frame": 560,
+   "status": "rejected",
+   "reason": "S05 in-window scroll decelerating (43 px per picture)"
+  },
+  {
+   "id": "c017",
+   "frame": 626,
+   "status": "rejected",
+   "reason": "pictures f622-f629 are identical (S05 at rest); PySceneDetect echo of the f631 cut (c018)"
+  },
+  {
+   "id": "c018",
+   "frame": 631,
+   "status": "confirmed",
+   "reason": "hard cut S05 (product UI window, at rest since f617) -> S06 footage"
+  },
+  {
+   "id": "c019",
+   "frame": 706,
+   "status": "confirmed",
+   "reason": "hard cut S06 footage -> S07 footage (picture replaced between f705 and f706)"
+  },
+  {
+   "id": "c020",
+   "frame": 710,
+   "status": "rejected",
+   "reason": "chunk-edge candidate decided by looking to f727: f706-f727 is one continuous shot (work.mp4 f709 vs f710 identical); PySceneDetect echo of the f706 cut; the voice badge (f709) and caption (f712) are overlay entrances, not cuts"
+  }
+ ],
+ "boundaries": [
+  {
+   "start": 144,
+   "end": 168,
+   "type": "mask-wipe",
+   "frames": 25,
+   "shared": "the white field: a soft-edged white disc grows from the label centre (x 49.9%, y 50.2%; it starts on the lightest mascot ball) until the frame is white luma 248 at f162 = the background of S02; white hold f162-f168, the next layout (menu UI) appears on that white at f169, entering from the top-left, scaled x1.59 and blurred",
+   "technique": "v7.trans-iris-white",
+   "curve": "v7.trans-iris-white.v7c1",
+   "detail": "detail/soft_144-168",
+   "anchor_cut": "c004"
+  },
+  {
+   "frame": 289,
+   "type": "hard-cut",
+   "shares": "upward motion with vertical motion blur and the same white page (luma 248): the S02 menu accelerates up (ease-in, 17 f, last picture f286 at 2.45% H per frame), the picture is replaced between f286 and f289 (f287-f288 repeat f286), and the S03 page arrives 8.6% H below its rest still moving up (1.5% H per frame) and decelerates (15 f)",
+   "technique": "v7.trans-whip-push-up",
+   "transition": {
+    "start": 269,
+    "end": 304,
+    "type": "whip",
+    "frames": 36,
+    "cut_frame": 289,
+    "curve": "v7.trans-whip-push-up.v7c1",
+    "curves": [
+     "v7.trans-whip-push-up-out.v7c1",
+     "v7.trans-whip-push-up.v7c1"
+    ],
+    "detail": "detail/soft_269-304"
+   },
+   "origin": "missed by all three detectors (similar white frames); found on overview_00288-00333.jpg and in the tracker CSVs",
+   "tiling": "segments tiled at the hidden cut (S02 ends f288, S03 starts f289), the convention v7c2 and v5c6 use for whips with a hidden cut"
+  },
+  {
+   "frame": 419,
+   "type": "hard-cut",
+   "shares": "zoom-out direction across the cut: S03 pulls back (scale 1.0 -> 0.835, accelerating, blurred) into the cut and S04 opens zoomed in (camera x1.19 or more, app tile x2.2, blurred) and keeps zooming out to rest; luminance flips light page -> dark panel"
+  },
+  {
+   "frame": 484,
+   "type": "hard-cut",
+   "shares": "cut on motion with direction reversal: S04 exits accelerating up (2.6% H per frame at f481), S05's window enters moving down (2.3% H per frame at f484) and decelerates; both have the grey diagonal-split background; dark panel -> dark window; vertical motion blur on both sides of the cut (S04: the whole layout; S05 f484: only the sidebar, small brand label and input bar, 20-25 px, the headline and pill sharp)"
+  },
+  {
+   "frame": 631,
+   "type": "hard-cut",
+   "shares": "nothing graphic; S05 held still f617-f630 (UI -> footage)"
+  },
+  {
+   "frame": 706,
+   "type": "hard-cut",
+   "shares": "nothing graphic (footage -> footage); S07's voice badge pops in 3 frames later (f709)"
+  }
+ ],
+ "transitions": [
+  {
+   "start": 144,
+   "end": 168,
+   "type": "mask-wipe (iris to white + white hold)",
+   "frames": 25,
+   "cut_frame": null,
+   "technique": "v7.trans-iris-white",
+   "curve": "v7.trans-iris-white.v7c1",
+   "detail": "detail/soft_144-168",
+   "preceded_by": "two inverting ripple rings f129-f151 (v7.fx-ripple-invert) and a punch-in x1.23 f131-f136 inside S01"
+  },
+  {
+   "start": 269,
+   "end": 304,
+   "type": "whip (vertical, push up)",
+   "frames": 36,
+   "cut_frame": 289,
+   "technique": "v7.trans-whip-push-up",
+   "curves": [
+    "v7.trans-whip-push-up-out.v7c1",
+    "v7.trans-whip-push-up.v7c1"
+   ],
+   "detail": "detail/soft_269-304"
+  }
+ ],
+ "segments": [
+  {
+   "id": "v7c1-S01",
+   "start": 0,
+   "end": 156,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "opening title card on a light field with blurred grey spheres and a halftone dot ring that expands out through the frame edges (f0-f56): a black label box pops in with two corner handles flying out of its corners, widens with overshoot and types/decodes a 2-line title (brand mark + 2 words: the brand mark and the typed word slide apart to admit the decoded word, then the line rises for line 2; then chevrons + app icon + 2 words); a thin down-arrow drops in at the right; a 5-ball mascot chain arcs in from the left and dives into the label centre, two expanding halo rings invert then restore the luminance, shards burst outward, and a white iris covers the frame"
+  },
+  {
+   "id": "v7c1-S02",
+   "start": 157,
+   "end": 288,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "product UI menu on white: after a 7-frame white hold the menu drops in zoomed (x1.59, blurred) and settles while its 5 rows pop in one per picture; camera pans up and zooms slightly so the 4th row reaches the upper half, a hover pill fades in on it, then the whole layout whips up out of frame"
+  },
+  {
+   "id": "v7c1-S03",
+   "start": 289,
+   "end": 418,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "product UI page (title, subtitle, search field) arrives on the whip and settles, camera pushes in x1.81 with motion blur onto the field, a query types on, the page scrolls up while a result row stretches in from a speck with overshoot while its CTA button arrives oversized and settles on its own, the row gets a hover lift (button grows back, card outline and shadow fade in), then the page pulls back with blur into a hard cut"
+  },
+  {
+   "id": "v7c1-S04",
+   "start": 419,
+   "end": 483,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "dark side-panel UI over a two-tone diagonal grey background: camera settles out of a close-up while an app tile shrinks from x2.2 to rest and its glyph spins into place on a spring, a label types on beside it, then the whole layout accelerates upward into a hard cut"
+  },
+  {
+   "id": "v7c1-S05",
+   "start": 484,
+   "end": 630,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "dark product UI window (rounded, 82.5% W) on a grey background with light diagonal bands: the window drops in from above and settles (its sidebar, small brand label and input bar motion-blurred on the first pictures, the headline sharp), its thumbnail cards and chips fade in left to right, then the page content scrolls up about one screen inside the static window with an ease-in-out momentum curve while the window creeps slightly closer; rest, hard cut"
+  },
+  {
+   "id": "v7c1-S06",
+   "start": 631,
+   "end": 705,
+   "class": "LIVE",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [
+    "sheets/overview_00624-00669.jpg",
+    "sheets/overview_00672-00717.jpg"
+   ],
+   "summary": "footage only; no caption, logo, frame or overlay on any picture f631-f705 (also checked detail/peak_f00648, detail/peak_f00681, detail/cut_c018_f00631, detail/cut_c020_f00710); the player's speaker icon is ignored"
+  },
+  {
+   "id": "v7c1-S07",
+   "start": 706,
+   "end": 709,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": true,
+   "live_confirmed_on": [],
+   "summary": "footage shot that runs into v7c2: f706-f707 footage only; the voice badge (translucent disc, outline ring, brand glyph, level bars, centre about 49.9% W / 80.9% H) pops in at f709, faint and about half size; a 1-word caption follows at f712 (both analysed in v7c2)"
+  }
+ ],
+ "techniques": [
+  {
+   "id": "v7.ui-label-pop-in",
+   "category": "ui",
+   "description": "the title label box pops in from a small bar about the frame centre, ease-out, while its fill darkens; the video starts mid-pop",
+   "instances": [
+    [
+     0,
+     11
+    ]
+   ],
+   "reference_frames": [
+    0,
+    1,
+    6,
+    11
+   ],
+   "measured": {
+    "duration_frames": 11,
+    "easing": "UNCERTAIN: ease-out (key steps 260 / 146 / 66 px); only 4 key poses, the first picture f0 is already mid-move",
+    "values": "width 3.5% -> 19.5% -> 28.5% -> 32.6% W and height 2.9% -> 16.3% -> 24.0% -> 24.9% H at f0 / f1 / f6 / f11 (edge tracker, scratch/v7c1_box_leftedge_0-172.csv + extent profiles); centre fixed at x 49.9%, y 50.2%; poses on twos after f1 (f1 = f4, f6 = f9)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.ui-label-widen-overshoot",
+   "category": "ui",
+   "description": "the label box resizes symmetrically to admit new content: widens with a 4% overshoot when the left word arrives, later grows taller for the second line; animated on twos (a new pose every 5 frames)",
+   "instances": [
+    [
+     11,
+     36
+    ],
+    [
+     36,
+     56
+    ]
+   ],
+   "reference_frames": [
+    11,
+    16,
+    21,
+    36,
+    41,
+    46,
+    51,
+    56
+   ],
+   "measured": {
+    "duration_frames": 25,
+    "easing": "bezier(0.378, 1.339, 0.000, 1.122) D=27 (shape rmse 0.016); spring {471.2, 25.63} rmse 0.158",
+    "values": "width 32.6% (f11) -> 58.0% (f21, horizontal motion blur f16-f19) -> 55.8% W (f36); height 18.5% (f36) -> 21.8% (f41) -> 23.6% (f46) -> 24.1% (f51) -> 24.2% H (f56), centre fixed; content inside shrinks from cap 8.3% H (f14) to 6.2% (f24) and 6.0% (f34) while the box widens; inside the box the content also slides apart (v7.layout-slide-make-room, f16-f29) and line 1 rises for line 2 (v7.layout-rise-make-room, f34-f51)"
+   },
+   "curves": [
+    "v7.ui-label-widen-overshoot.v7c1"
+   ]
+  },
+  {
+   "id": "v7.layout-slide-make-room",
+   "category": "layout",
+   "description": "a word is inserted inside a line of the label: the element before the gap (brand mark icon) slides left and the word after it shifts right, on every picture (24 fps), with a slow start, one big motion-blurred step and a short ease-out, while the box widens and the content shrinks",
+   "instances": [
+    [
+     16,
+     29
+    ]
+   ],
+   "reference_frames": [
+    16,
+    19,
+    21,
+    24,
+    26,
+    29
+   ],
+   "measured": {
+    "duration_frames": 10,
+    "easing": "bezier(0.882, 0.016, 0.129, 0.772) D=13 (shape rmse 0.024, built 11 f); spring {2422.5, 98.51} rmse 0.220",
+    "values": "word 2 left ink edge (sub-pixel) 51.0% (f16) -> 51.4% (f19) -> 53.2% (f21, blurred) -> 54.1% (f24) -> 54.3% (f26) -> 54.4% W (f29): +3.3% W while the content shrinks x0.75 (cap 8.3% -> 6.2% H; scaling about the box centre alone would move this edge 0.3% W left); brand mark icon centre 42.7% (f16) -> 40.4% (f19, blurred, motion blur 44 px) -> 31.7% (f21, blurred, 28 px) -> 28.9% (f24) -> 28.0% (f26) -> 27.7% W (f29): -15.0% W, fastest step f19-f21 (9% W in 2 f), icon scale x1.14 -> 1.0 (f16 -> f26); icon progress 0.16 / 0.74 / 0.93 / 0.99 at f19 / f21 / f24 / f26 against the curve's 0.12 / 0.65 / 0.92 / 0.98 (within the blur uncertainty); word 1's first glyph appears at f19 at x 41.6-43.6% W, where the icon sat; sound: start f16 = beat f15 +1 (onset f14 +2)"
+   },
+   "curves": [
+    "v7.layout-slide-make-room.v7c1"
+   ]
+  },
+  {
+   "id": "v7.layout-rise-make-room",
+   "category": "layout",
+   "description": "the first line of the label rises to make room before a second line appears below it, on every picture (24 fps), while the box grows taller on twos; same slow-start, big-step shape as v7.layout-slide-make-room but 17 f instead of 10 f, so kept as a second technique",
+   "instances": [
+    [
+     34,
+     51
+    ]
+   ],
+   "reference_frames": [
+    34,
+    36,
+    39,
+    41,
+    44,
+    46,
+    49,
+    51
+   ],
+   "measured": {
+    "duration_frames": 17,
+    "easing": "bezier(0.709, 0.224, 0.000, 0.818) D=18 (shape rmse 0.024, built 16 f); spring {932.0, 63.46} rmse 0.138",
+    "values": "line 1 (brand mark icon ink centroid, sub-pixel) 48.7% (f34) -> 48.5% (f36) -> 48.0% (f39) -> 46.4% (f41) -> 45.4% (f44) -> 45.1% (f46) -> 44.9% (f49) -> 44.8% H (f51-f66): -3.9% H, fastest step f39-f41 (1.5% H); word 2 rises the same 3.9% H (49.6% -> 45.7% H); a 0.2% H creep f29-f34 precedes it; the box top edge rises only 2.8% H (40.9% -> 38.1% H) in steps at f36 / f41 / f46 / f51 / f56; line 2 appears from f49; sound: start f34 = beat f43 -9"
+   },
+   "curves": [
+    "v7.layout-rise-make-room.v7c1"
+   ]
+  },
+  {
+   "id": "v7.ui-label-fill-darken",
+   "category": "ui",
+   "description": "the label box fill builds up in two stages, light grey -> mid grey while it grows, hold, then mid grey -> black as the text completes",
+   "instances": [
+    [
+     0,
+     21
+    ],
+    [
+     29,
+     44
+    ]
+   ],
+   "reference_frames": [
+    0,
+    11,
+    21,
+    29,
+    34,
+    44
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "stage 2: spring {456.9, 45.68} built 17 f (rmse 0.032) / bezier(0.427, 0.793, 0.276, 0.723) D=15 (rmse 0.034)",
+    "values": "fill luma 207 (f1) -> 147 (f11) -> 111 (f14) -> 90 (f21), hold 90 f21-f29, -> 39 (f34) -> 8 (f41) -> 0.5 (f44-f46) (scratch/v7c1_box_luma_0-60.csv)"
+   },
+   "curves": [
+    "v7.ui-label-fill-darken.v7c1"
+   ]
+  },
+  {
+   "id": "v7.text-type-on",
+   "category": "text",
+   "description": "letters appear one at a time left to right in their final places; variants: per-letter fade (title word 2), per-letter horizontal stretch-in with a gap that closes (title line 2), 2 letters per picture after the placeholder clears (search query), 1 letter per picture (side-panel label)",
+   "instances": [
+    [
+     4,
+     36
+    ],
+    [
+     49,
+     69
+    ],
+    [
+     319,
+     334
+    ],
+    [
+     421,
+     445
+    ]
+   ],
+   "reference_frames": [
+    4,
+    36,
+    49,
+    64,
+    69,
+    324,
+    334,
+    421,
+    445
+   ],
+   "measured": {
+    "duration_frames": 32,
+    "easing": "stepped (one letter per key); no curve",
+    "values": "letter speeds are span / letter intervals. title word 2: 9 letters f4-f36 (keys f4 2 letters, f9, f11, f16, f21, f24, f29, f36), 4.6 f per letter, each new letter faint on its first picture; line-2 word: 7 letters f49-f64, 2.5 f per letter, each letter appears at 0.49 of its width with a 20 px gap (0.36 cap) and widens to full while the gap closes to 4 px over 14 f (f55 -> f69); search query: placeholder cleared f319, field empty f321, then 2 letters per picture: 2 (f324), 4 (f326), 6 (f329), 8 (f331), 10 (f334) = 8 letters in 10 f, 1.25 f per letter (1.3 counted from the empty f321); panel label: 1 letter per picture, 1 (f421) then one more on f424, f426, f429, f431, f434, f436, f439, f441 and f445 = 9 intervals in 24 f, 2.67 f per letter (2.5 f per letter f421-f441; the last interval f441-f445 is 4 f)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.text-scramble-decode",
+   "category": "text",
+   "description": "a word resolves out of order: letters and placeholder bars/dots appear at random positions and settle into the word, inside the gap that v7.layout-slide-make-room opens",
+   "instances": [
+    [
+     19,
+     46
+    ]
+   ],
+   "reference_frames": [
+    19,
+    24,
+    31,
+    41,
+    46
+   ],
+   "measured": {
+    "duration_frames": 27,
+    "easing": "stepped; no curve",
+    "values": "title word 1 (10 letters) f19-f46: first glyph f19 at x 41.6-43.6% W, where the brand mark icon sat (the smear beside it at f19-f21 is the icon sliding left, not the word), partial letters with bar and dot placeholders f21-f39, complete f46; 2.7 f per letter on average"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.text-glyph-slide-in",
+   "category": "text",
+   "description": "punctuation glyphs flanking the second title line converge from both sides: the left double chevron slides in from the left edge of the box, the small word between scales up from a dot, the right double chevron slides in from the right as blurred wedges and tightens",
+   "instances": [
+    [
+     51,
+     66
+    ],
+    [
+     66,
+     81
+    ]
+   ],
+   "reference_frames": [
+    51,
+    60,
+    63,
+    66,
+    71,
+    77,
+    81
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "not fitted (5 pictures per glyph)",
+    "values": "left chevron x 24.0% -> 31.3% W (f51 -> f60), second chevron joins f63, small word dot -> full f60-f66; right chevrons: first wedge at the box edge f66, first in place f71, second f77, tightened f81"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.icon-glow-in",
+   "category": "icon",
+   "description": "the app icon on the second title line appears as a soft glowing dot that grows into the sharp icon",
+   "instances": [
+    [
+     49,
+     64
+    ]
+   ],
+   "reference_frames": [
+    49,
+    51,
+    55,
+    56,
+    59,
+    64
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "not fitted",
+    "values": "blurred dot about 1% W at f49 -> glowing icon f56 -> sharp f64 (same cap band as the text, 6.0% H)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.icon-mark-fade-in",
+   "category": "icon",
+   "description": "a small white double-triangle mark fades in above the label's top edge",
+   "instances": [
+    [
+     77,
+     86
+    ]
+   ],
+   "reference_frames": [
+    77,
+    81,
+    86
+   ],
+   "measured": {
+    "duration_frames": 9,
+    "easing": "not fitted (4 pictures)",
+    "values": "at x about 40% W, y 36% H, about 2.5% W wide; one triangle f77, two f81, full f86, stays until the ripple (f131)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.ui-corner-handles",
+   "category": "ui",
+   "description": "two small grey squares fly out diagonally from opposite corners of the label with its pop (motion-blurred smears f1-f4), sit just outside the corners at 37 px (f6-f14), follow the corners while the label widens and shrink x0.74 with the content to 27-28 px, then shrink out; poses on twos with the box",
+   "instances": [
+    [
+     1,
+     66
+    ]
+   ],
+   "reference_frames": [
+    1,
+    6,
+    11,
+    16,
+    21,
+    31,
+    56,
+    61,
+    66
+   ],
+   "measured": {
+    "duration_frames": 5,
+    "easing": "not fitted: entrance in 2 poses on twos (f1 = f4 diagonal smears, f6 = f9 sharp); follow and resize on twos; shrink-out 3 pictures",
+    "values": "entrance f1-f6: diagonal motion-blur smears about 45 px long run outward from the top-left and bottom-right box corners at f1-f4; f6: sharp squares 37 x 37 px (2.3% W) touching the corners diagonally outside them (top-left x 540.8-577.6, y 314.0-351.1 px, box corner at 578, 351; bottom-right about 1043-1078 x 572-608 px, on a grey sphere), luma 218-221 on 243-245; 39.5 x 37.6 px at f11-f14 (top-left x 506-546, y 308-346); horizontal smears following the widen f16-f19; 28.9 px (f21) -> 27.4 px (f26) -> 27-28 px = 1.7% W (f31-f55), x0.74 = the content scale-down; at rest centres x 21.1% / y 36.6% (top-left) and x 78.6% / y 63.7% (bottom-right); exit: top-left gone by f61, bottom-right 26 -> 11 px (f56 -> f61) -> gone f66 (sizes at the 50% luma level, scratch/v7c1_s1_handle_tl_6-55.csv)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.shape-arrow-drop-in",
+   "category": "shape",
+   "description": "a thin vertical down-arrow drops in from the top as a motion-blur streak and decelerates into place right of the label",
+   "instances": [
+    [
+     16,
+     44
+    ]
+   ],
+   "reference_frames": [
+    16,
+    19,
+    21,
+    24,
+    31,
+    41
+   ],
+   "measured": {
+    "duration_frames": 22,
+    "easing": "bezier(0.000, 0.167, 0.198, 1.008) D=26 (shape rmse 0.014); spring {230.4, 45.38} rmse 0.089",
+    "values": "arrowhead tip y 55.7% (f19) -> 67.3% H (f41-f44), x 89.4% -> 86.2% W, length 32.4% H at rest (y 35.0-67.3%), grey -> black; on ones; drifts outward with the push-in (x 87.1% -> 90.9% W f116-f134) and is gone at f136"
+   },
+   "curves": [
+    "v7.shape-arrow-drop-in.v7c1"
+   ]
+  },
+  {
+   "id": "v7.shape-pixel-pair-converge",
+   "category": "shape",
+   "description": "two small grey squares slide diagonally toward each other into a corner-to-corner pixel pair (on twos)",
+   "instances": [
+    [
+     16,
+     36
+    ]
+   ],
+   "reference_frames": [
+    16,
+    21,
+    26,
+    31,
+    36
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "not fitted (key poses every 5 f)",
+    "values": "enters f16 as a blurred bar; squares 2.1% and 1.7% W at centres x 10.3% / y 76.4% and x 16.3% / y 83.6% (f21) -> touching at x 13.3%, y 80.2% (f36); then holds, drifts outward with the push-in to x 10.1%, y 82.8% (f131)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.bg-halftone-ring-burst",
+   "category": "bg",
+   "description": "opening background: a soft ring band of halftone dots over a static square dot grid (pitch 14.5 px = 0.89% W) is centred on the label centre and expands with a strong ease-out until it leaves through the frame edges (left/right edges by f46, corners at f56) without fading; blurred grey spheres rearrange behind it on twos (f0-f26) and afterwards only drift",
+   "instances": [
+    [
+     0,
+     56
+    ]
+   ],
+   "reference_frames": [
+    0,
+    6,
+    16,
+    31,
+    46,
+    56,
+    61,
+    69
+   ],
+   "measured": {
+    "duration_frames": 56,
+    "easing": "bezier(0.110, 0.139, 0.051, 0.683) D=56 (shape rmse 0.024), ease-out only (video starts mid-move, the band leaves the frame still moving); spring {28.0, 20.02} rmse 0.052",
+    "values": "inner edge of the band (50% of its dot-texture peak, median of the sectors that can see it) 152 px = 9.4% W (f0) -> 187 (f1) -> 264 (f4) -> 388 = 23.9% W (f6) -> 491 (f11) -> 573 = 35.3% W (f16) -> 621 (f21) -> 711 = 43.8% W (f31) -> 757 (f36) -> 818 = 50.4% W (f46) -> 831 (f51) -> 856 px = 52.8% W (f56); outer edge 242 (f0) -> 386 (f4) -> 590 (f6) -> 672 (f11) -> 854 px (f16), past the corners (915-930 px) at f19-f21; speed 39 px/f (f0-f6), 18.5 (f6-f16), 9.2 (f16-f31), 7.1 (f31-f46), 3.9 (f46-f56), biggest steps on the twos poses f6 / f11 / f16 / f21; dot grid static (phase shift <= 0.5 px f16-f46); soft inner edge (dot texture 10% -> 90% over about 100-250 px); dot texture (high-pass luma) 0.5 (f0) -> 0.8 (f6) -> 1.4-1.8 (f16-f39), no fade while in frame; dot-grid power in the left/right edge strips 24-27 (f16-f31) -> 0.4 (f46), in the corners 22-38 (f21-f39) -> 3-5 (f56, 10-15%) -> 1.3-3.5 (f61, 6-9%) -> under 3 by f66-f69 (corners before the ring 0-2); spheres: background change per key 5-20 luma (f0-f21), 1-4 luma per 10 f afterwards"
+   },
+   "curves": [
+    "v7.bg-halftone-ring-burst.v7c1"
+   ]
+  },
+  {
+   "id": "v7.particle-mascot-chain-arc",
+   "category": "particle",
+   "description": "a chain of 5 balls with glyph eyes (tones light grey at the tail to near-black at the lead, 5.4% W) follows its leader along an arc from the left edge and dives into the label centre; poses on twos, followers about 160 px apart",
+   "instances": [
+    [
+     81,
+     154
+    ]
+   ],
+   "reference_frames": [
+    81,
+    96,
+    106,
+    116,
+    121,
+    131,
+    141,
+    154
+   ],
+   "measured": {
+    "duration_frames": 47,
+    "easing": "path progress: bezier(0.931, 1.221, 0.732, 0.703) D=47 (shape rmse 0.033); spring rmse 0.130",
+    "values": "lead ball x 0.7% / y 64.8% (f81) -> peak x 33.9% / y 18.5% (f106) -> label centre x 49.8% / y 49.4% (f131); path 1123 px in 50 f: about 30 px per frame f86-f101, slowing to 13 px per frame during the dive f116-f131; followers stack above the centre and sink in one after another f136-f154"
+   },
+   "curves": [
+    "v7.particle-mascot-chain-arc.v7c1"
+   ]
+  },
+  {
+   "id": "v7.cam-push-in-accelerating",
+   "category": "cam",
+   "description": "slow accelerating push-in on the title while the chain arcs in, ending in a fast punch-in when the lead ball lands",
+   "instances": [
+    [
+     89,
+     156
+    ]
+   ],
+   "reference_frames": [
+    89,
+    111,
+    131,
+    136,
+    144,
+    156
+   ],
+   "measured": {
+    "duration_frames": 42,
+    "easing": "slow part: bezier(0.744, 0.050, 0.920, 0.654) D=42 (shape rmse 0.039); punch not fitted",
+    "values": "label width 55.8% -> 61.1% W (x1.095, f89-f131, on twos), punch to 75.3% (x1.35) at f136 in 5 f with blur, then 79.2% (f144) -> 81.3% (f146) -> 86.4% W (x1.55, f156)"
+   },
+   "curves": [
+    "v7.cam-push-in-accelerating.v7c1"
+   ]
+  },
+  {
+   "id": "v7.fx-ripple-invert",
+   "category": "fx",
+   "description": "a soft white halo ring is born at the landing point and expands over the frame; everything inside it is luminance-inverted (black label turns white, light background turns black); a second ring restores the normal polarity",
+   "instances": [
+    [
+     129,
+     146
+    ],
+    [
+     139,
+     151
+    ]
+   ],
+   "reference_frames": [
+    129,
+    134,
+    139,
+    141,
+    144,
+    151
+   ],
+   "measured": {
+    "duration_frames": 20,
+    "easing": "ring 1 radius: bezier(0.445, 0.220, 0.359, -0.165) D=18 (shape rmse 0.049); accelerating",
+    "values": "ring 1 radius 50 (f129) -> 78 (f131) -> 120 (f134) -> 219 (f136) -> 413 (f139) -> 606 (f141) -> 865 (f144) -> beyond the corners 932 px (57.5% W, f146); ring 2 radius 62 (f139) -> 160 (f144) -> 424 (f149) -> 805 px (f151); frame mean luma 207 -> 97 (f144) -> 137 (f151)"
+   },
+   "curves": [
+    "v7.fx-ripple-invert.v7c1"
+   ]
+  },
+  {
+   "id": "v7.particle-shard-burst",
+   "category": "particle",
+   "description": "angular flat shards fly radially out from the centre and grow, toned light during the inverted phase and dark after the polarity flips back",
+   "instances": [
+    [
+     139,
+     159
+    ]
+   ],
+   "reference_frames": [
+    141,
+    144,
+    149,
+    154,
+    159
+   ],
+   "measured": {
+    "duration_frames": 18,
+    "easing": "not fitted",
+    "values": "approx (blob detection, shards inside the label area masked): 5-11 shards at radius 300-470 px (f141-f146) -> 500-700 px (f154-f159), areas about 2000 -> 5000-14000 px"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.trans-iris-white",
+   "category": "trans",
+   "description": "transition: a soft-edged white disc grows from the hero point until the frame is white (the next layout's background), holds white, and the next layout drops onto it",
+   "instances": [
+    [
+     144,
+     168
+    ]
+   ],
+   "reference_frames": [
+    144,
+    149,
+    154,
+    156,
+    159,
+    162,
+    168,
+    169
+   ],
+   "measured": {
+    "duration_frames": 16,
+    "easing": "bezier(0.000, 0.029, 0.886, -0.063) D=18 (shape rmse 0.005): exponential-like ease-in; spring rmse 0.555",
+    "values": "white disc radius 13 (f144) -> 30 (f146) -> 53 (f149) -> 89 (f151) -> 160 (f154) -> 254 (f156) -> 431 (f159) -> covers the frame (f162, luma 248); hold white f162-f168 (7 f)"
+   },
+   "curves": [
+    "v7.trans-iris-white.v7c1"
+   ]
+  },
+  {
+   "id": "v7.cam-zoom-out-settle-in",
+   "category": "cam",
+   "description": "a new layout enters already zoomed in (scaled and blurred) and the camera settles out to rest with a strong ease-out",
+   "instances": [
+    [
+     169,
+     206
+    ],
+    [
+     419,
+     454
+    ]
+   ],
+   "reference_frames": [
+    169,
+    171,
+    174,
+    179,
+    186,
+    199,
+    426,
+    454
+   ],
+   "measured": {
+    "duration_frames": 26,
+    "easing": "S02: bezier(0.000, 0.489, 0.292, 0.984) D=31 (shape rmse 0.027); spring {178.5, 51.81} rmse 0.138; S04 (scale from f426): bezier(0.623, 1.230, 1.000, 0.751) D=20 rmse 0.018 (test fit, not stored)",
+    "values": "S02 header scale 1.59 (f171) -> 1.0 (f199), header centre x 30.1% / y 9.3% -> x 34.2% / y 19.7%; S04 label cap 8.8% (f426) -> 7.4% H (f454) = x1.19 -> 1.0, panel left edge 36.7% (f421) -> 40.0% W (f454)"
+   },
+   "curves": [
+    "v7.cam-zoom-out-settle-in.v7c1"
+   ]
+  },
+  {
+   "id": "v7.ui-list-stagger-in",
+   "category": "ui",
+   "description": "menu rows pop in top to bottom, one per picture, each blurred on arrival and converging into place with the settling zoom",
+   "instances": [
+    [
+     169,
+     199
+    ]
+   ],
+   "reference_frames": [
+    169,
+    174,
+    176,
+    179,
+    181,
+    186
+   ],
+   "measured": {
+    "duration_frames": 17,
+    "easing": "stepped; no curve",
+    "values": "header f169, rows at f174 / f176 / f179 / f181 / f186 (stagger 2-5 f, mean 3.0 f), each at full darkness on its first picture (row min luma 9-14)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.cam-pan-up-zoom",
+   "category": "cam",
+   "description": "camera pans the whole UI up and zooms in slightly to bring a lower row to the upper half",
+   "instances": [
+    [
+     206,
+     236
+    ]
+   ],
+   "reference_frames": [
+    206,
+    216,
+    226,
+    236
+   ],
+   "measured": {
+    "duration_frames": 30,
+    "easing": "bezier(0.434, 0.348, 0.185, 0.996) D=35 (shape rmse 0.025); spring {102.4, 17.35} rmse 0.078",
+    "values": "header y 19.7% -> 6.0% H, x 34.4% -> 33.2% W, scale 0.99 -> 1.06; then slow drift f236-f269 (y -> 5.1% H, scale -> 1.09)"
+   },
+   "curves": [
+    "v7.cam-pan-up-zoom.v7c1"
+   ]
+  },
+  {
+   "id": "v7.ui-hover-highlight",
+   "category": "ui",
+   "description": "hover state on a menu row: a rounded light-grey pill fades in behind the row with a small dark dot at its right end and widens slightly",
+   "instances": [
+    [
+     236,
+     256
+    ]
+   ],
+   "reference_frames": [
+    236,
+    239,
+    241,
+    244,
+    256
+   ],
+   "measured": {
+    "duration_frames": 8,
+    "easing": "fade over 3 pictures; curve dropped (shape rmse 0.10-0.13, too few samples)",
+    "values": "pill luma 248 -> 242 (f239) -> 228 (f241) -> 225 (f244) -> 220 (f251); size 53.3% W x 12.7% H (f241) -> 59.2% x 14.1% (f256): x1.11 while the camera zooms only x1.02"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.trans-whip-push-up",
+   "category": "trans",
+   "description": "vertical whip transition: the outgoing layout accelerates upward with growing motion blur, the picture is replaced at full speed, the incoming layout arrives below its rest still moving up and decelerates",
+   "instances": [
+    [
+     269,
+     304
+    ]
+   ],
+   "reference_frames": [
+    269,
+    279,
+    286,
+    289,
+    296,
+    304
+   ],
+   "measured": {
+    "duration_frames": 36,
+    "easing": "outgoing: bezier(0.420, -0.014, 1.000, 0.481) D=18 (shape rmse 0.035, 17 f); incoming: bezier(0.001, 0.248, 0.465, 0.974) D=15 (shape rmse 0.023, 15 f), spring {465.6, 43.48} rmse 0.061",
+    "values": "outgoing pill centre 59.0% -> 47.1% H (f269 -> f286), 2.45% H per frame at the end; hidden cut f289; incoming title 47.4% -> 38.8% H (f289 -> f304), 1.5% H per frame at the start"
+   },
+   "curves": [
+    "v7.trans-whip-push-up-out.v7c1",
+    "v7.trans-whip-push-up.v7c1"
+   ]
+  },
+  {
+   "id": "v7.cam-push-in-blur",
+   "category": "cam",
+   "description": "camera pushes in on a UI region with directional motion blur at peak speed",
+   "instances": [
+    [
+     304,
+     341
+    ]
+   ],
+   "reference_frames": [
+    304,
+    309,
+    314,
+    319,
+    329,
+    336
+   ],
+   "measured": {
+    "duration_frames": 32,
+    "easing": "bezier(0.423, 0.402, 0.036, 0.999) D=36 (shape rmse 0.036); spring {208.8, 28.44} rmse 0.052",
+    "values": "scale 1.0 -> 1.81, page title centre x 17.3% / y 38.8% -> x 26.0% / y 12.8% (f329), motion blur f309-f319; the field placeholder clears at f319"
+   },
+   "curves": [
+    "v7.cam-push-in-blur.v7c1"
+   ]
+  },
+  {
+   "id": "v7.cam-scroll-up",
+   "category": "cam",
+   "description": "the whole page scrolls up with a slight zoom-out and vertical motion blur at peak speed",
+   "instances": [
+    [
+     348,
+     371
+    ]
+   ],
+   "reference_frames": [
+    348,
+    354,
+    359,
+    365,
+    371
+   ],
+   "measured": {
+    "duration_frames": 23,
+    "easing": "bezier(0.296, 0.007, 0.310, 0.993) D=27 (shape rmse 0.035); spring {134.5, 20.02} rmse 0.069",
+    "values": "search query centre y 49.9% -> 23.5% H, x 26.8% -> 21.7% W, scale 1.0 -> 0.88 (relative to f348), blur f354-f361"
+   },
+   "curves": [
+    "v7.cam-scroll-up.v7c1"
+   ]
+  },
+  {
+   "id": "v7.ui-row-stretch-in",
+   "category": "ui",
+   "description": "a result row grows out of a blurred speck about its centre, horizontal stretch leading, overshoots and settles",
+   "instances": [
+    [
+     351,
+     386
+    ]
+   ],
+   "reference_frames": [
+    351,
+    354,
+    356,
+    359,
+    362,
+    366,
+    371,
+    376,
+    386
+   ],
+   "measured": {
+    "duration_frames": 30,
+    "easing": "bezier(0.495, 0.807, 0.196, 1.161) D=35 (shape rmse 0.037); spring {109.0, 14.43} rmse 0.079",
+    "values": "ink width 0 (f351 speck at x 55.2%, y 76.5%) -> 22.3% (f356) -> 56.9% (f362) -> 80.4% (f369) -> 82.2% (f371) -> 84.5% (f376-f378, +5% overshoot) -> 80.6% W (f386-f389); height 4.8% -> 13% H incl. blur; the 5% overshoot of the ink width is mostly the CTA button's own settle (v7.ui-button-oversize-settle): over f376-f386 the icon tile (140 -> 136 px) and the title + description block (799 -> 779 px wide, 126 -> 123 px tall) change only -2.5 to -3% while the button shrinks 21%"
+   },
+   "curves": [
+    "v7.ui-row-stretch-in.v7c1"
+   ]
+  },
+  {
+   "id": "v7.ui-button-oversize-settle",
+   "category": "ui",
+   "description": "a button arrives inside a stretching-in row about 30% too big (relative to the row) and settles to its rest size about its own centre while the rest of the row barely changes; its label scales with it",
+   "instances": [
+    [
+     366,
+     386
+    ]
+   ],
+   "reference_frames": [
+    371,
+    375,
+    376,
+    380,
+    382,
+    384,
+    386
+   ],
+   "measured": {
+    "duration_frames": 9,
+    "easing": "not fitted: 5 distinct pictures (f375, f376, f380, f382, f384; f375 and f376 one frame apart; f372-f373 and f377-f378 repeat f371 and f376); ease-out",
+    "values": "button scale relative to the row's text block (camera and row overshoot removed, 1.0 = f386): x1.25 (f366, blurred) -> x1.27 (f369) -> x1.30 (f371-f375) -> x1.23 (f376) -> x1.10 (f380) -> x1.02 (f382) -> x1.0 (f384-f386); on screen 296 x 65-66 px = 18.2% W x 7.2% H (f371-f375) -> 290 x 64 (f376) -> 259 x 56 (f380) -> 238 x 52 (f382) -> 230 x 50 px = 14.2% W x 5.4% H (f384); centre y fixed at 50.7% H; then the hover lift (v7.ui-hover-lift) grows it back to x1.30; sound: settle start f375 = beat f371 +4 (strong onset f371 +4); scratch/v7c1_s3_button_rel_366-412.csv, crops/crop_100_380_1460x170_00366-00412.jpg, type/v7c1-S03-3_f00372.png (button still x1.30)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.ui-hover-lift",
+   "category": "ui",
+   "description": "hover lift on a card: the dark CTA button grows about its own centre (back to the size it arrived with), a rounded card outline and a soft drop shadow fade in around the row",
+   "instances": [
+    [
+     386,
+     406
+    ]
+   ],
+   "reference_frames": [
+    386,
+    391,
+    396,
+    401,
+    406
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "bezier(0.538, 0.639, 0.398, 1.135) D=19 (shape rmse 0.035, built 17 f; 2% window f386-f406); spring {217.5, 21.55} rmse 0.151",
+    "values": "button scale relative to the row's text block (1.0 = f386): x1.0 (f386) -> x1.03 (f389) -> x1.08 (f391) -> x1.15 (f394) -> x1.22 (f396) -> x1.28 (f399) -> x1.30 (f401), holding x1.29-1.30 through f410 while the exit pull-back scales the page; on screen 230 x 50 -> 299 x 66 px = 14.2% -> 18.4% W, 5.4% -> 7.2% H, centre fixed; the text block changes under 0.5% over f384-f401; shadow luma under the card 248 -> 239 (f396-f406); re-tracked as button width over text block width (scratch/v7c1_s3_button_rel_366-412.csv) so the samples after the peak are free of the camera scale"
+   },
+   "curves": [
+    "v7.ui-hover-lift.v7c1"
+   ]
+  },
+  {
+   "id": "v7.cam-pull-back-blur-exit",
+   "category": "cam",
+   "description": "exit move into a hard cut: the page pulls back about a point near the frame centre with growing motion blur, accelerating (ease-in) until the cut",
+   "instances": [
+    [
+     399,
+     417
+    ]
+   ],
+   "reference_frames": [
+    401,
+    406,
+    410,
+    413,
+    414,
+    417
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "bezier(0.498, 0.049, 1.000, 0.465) D=15 (shape rmse 0.019, built 14 f) on re-timed pictures; spring rmse 0.800 (no spring form for an ease-in into a cut); with the captured stamps rmse 0.103; dropping f414 instead: bezier(0.609, 0.292, 0.864, 0.000) D=13, rmse 0.021",
+    "values": "scale (icon tile to CTA button span, scale-search templates, / its f401 value) 1.0 (f401) -> 0.994 (f404) -> 0.985 (f406) -> 0.970 (f410) -> 0.949 (f413) -> 0.912 (f414) -> 0.835 (f417, last picture); per-picture steps 0.006, 0.009, 0.014, 0.022, 0.037, 0.077 grow smoothly when the pictures are equally spaced, so the captures f410 / f413 / f417 are placed at f409 / f411 / f416 (3:2 cadence of f389-f406 continued to f414 and the cut f419; captured stamps kept in the CSV column captured_frame, scratch/v7c1_s3_exit_scale_retimed_389-417.csv); fixed point near x 48.7% W, y 50.4% H; query centre x 21.7% -> 26.1% W, y 23.5% -> 27.7% H; no settle (cut f419)"
+   },
+   "curves": [
+    "v7.cam-pull-back-blur-exit.v7c1"
+   ]
+  },
+  {
+   "id": "v7.icon-tile-scale-down-in",
+   "category": "icon",
+   "description": "an app tile appears at the cut oversized and blurred and shrinks about its centre to rest, ease-out with a fast start",
+   "instances": [
+    [
+     419,
+     447
+    ]
+   ],
+   "reference_frames": [
+    419,
+    421,
+    424,
+    431,
+    447
+   ],
+   "measured": {
+    "duration_frames": 28,
+    "easing": "bezier(0.072, 1.138, 0.785, 0.942) D=33 (shape rmse 0.018); spring {274.0, 37.16} rmse 0.166",
+    "values": "scale 2.20 (f419) -> 1.72 (f421) -> 1.49 (f424) -> 1.16 (f431) -> 1.0 (f454); rest 215 px = 13.3% W, centre x 49.4%, y 50.3%"
+   },
+   "curves": [
+    "v7.icon-tile-scale-down-in.v7c1"
+   ]
+  },
+  {
+   "id": "v7.icon-glyph-spin-pop",
+   "category": "icon",
+   "description": "the glyph inside the app tile spins into its orientation and grows past its size on a damped spring",
+   "instances": [
+    [
+     419,
+     472
+    ]
+   ],
+   "reference_frames": [
+    419,
+    424,
+    429,
+    434,
+    436,
+    454,
+    467,
+    472
+   ],
+   "measured": {
+    "duration_frames": 37,
+    "easing": "rotation: bezier(0.371, 1.539, 0.244, 1.322) D=38 (shape rmse 0.016); spring {94.0, 8.05} rmse 0.093",
+    "values": "rotation offset +80 deg (f419) -> -18.5 deg (f436) -> +1 deg (f467) -> 0 (rest about f472); size 0.47 -> 1.40 (f434) -> 0.98 (f467) -> 1.0 of its rest size (125 px = 7.7% W)"
+   },
+   "curves": [
+    "v7.icon-glyph-spin-pop.v7c1"
+   ]
+  },
+  {
+   "id": "v7.cam-whip-exit-up",
+   "category": "cam",
+   "description": "exit move into a hard cut: the whole layout accelerates upward with growing vertical motion blur; no settle",
+   "instances": [
+    [
+     456,
+     481
+    ]
+   ],
+   "reference_frames": [
+    456,
+    465,
+    472,
+    479,
+    481
+   ],
+   "measured": {
+    "duration_frames": 25,
+    "easing": "bezier(0.757, -0.009, 1.000, 0.878) D=27 (shape rmse 0.038); ease-in only",
+    "values": "tile centre y 50.4% -> 32.4% H (f456 -> f481), 2.6% H per frame at the last picture; the S02 exit is the same device but shorter and steeper (17 f, curve v7.trans-whip-push-up-out.v7c1)"
+   },
+   "curves": [
+    "v7.cam-whip-exit-up.v7c1"
+   ]
+  },
+  {
+   "id": "v7.bg-diagonal-split",
+   "category": "bg",
+   "description": "flat background of two grey tones split by a steep diagonal (S04) or light diagonal bands (S05); static in S05, moves with the camera in S04",
+   "instances": [
+    [
+     419,
+     630
+    ]
+   ],
+   "reference_frames": [
+    431,
+    500
+   ],
+   "measured": {
+    "duration_frames": 0,
+    "easing": "static",
+    "values": "S05 margins change by under 0.1 luma between pictures f484-f629; S04 background moves with the camera settle (f419-f441) and the exit (f465-f481)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.ui-window-drop-in",
+   "category": "ui",
+   "description": "a product UI window enters at the cut from above, already moving down, and decelerates into place; x fixed; on the first pictures only some layers carry a forward vertical motion blur (sidebar icons and labels, the small brand label above the headline, the bottom input bar) while the window edges, 2-line headline, play pill, section label, cards and chips stay sharp",
+   "instances": [
+    [
+     484,
+     514
+    ]
+   ],
+   "reference_frames": [
+    484,
+    486,
+    489,
+    494,
+    500,
+    502,
+    514
+   ],
+   "measured": {
+    "duration_frames": 30,
+    "easing": "bezier(0.001, 0.695, 0.573, 0.990) D=35 (shape rmse 0.012); spring {125.9, 28.69} rmse 0.103",
+    "values": "window bottom edge 82.6% -> 95.7% H (2.3% H per frame at f484; 21.5 px/f f484-f486, 6.3 px/f f486-f489); window at rest x 8.7%-91.2% W, y 4.3%-95.7% H; selective blur: sidebar, small brand label and input bar smear down from the window's position (forward, in the direction of travel) by 20-25 px = 1.2-1.5% W (f484: sidebar 24, brand label 25, input bar 20) -> 7-11 (f486) -> 7 (f489) -> 5-6 (f491) -> 4 (f494) -> 3 (f496) -> 1-3 px (f500-f502), about half the travel to the next picture (180 deg shutter at 24 fps); they ride the same drop (smear start within 1.5 px of the window from f486; 6-10 px below it at f484); headline, pill, window edges, section label, cards and chips: blur <= 1 px (vertical/horizontal gradient ratio 0.97-1.02 of rest); input bar also fades in, fill contrast (blur fit) 0.73 (f484) -> 0.86 (f486) -> 0.97 (f489) -> 0.99 (f491) -> 1.0"
+   },
+   "curves": [
+    "v7.ui-window-drop-in.v7c1"
+   ]
+  },
+  {
+   "id": "v7.ui-card-stagger-fade",
+   "category": "ui",
+   "description": "content of the new window fades in left to right: four thumbnail cards, then a row of six chips",
+   "instances": [
+    [
+     484,
+     504
+    ]
+   ],
+   "reference_frames": [
+    484,
+    487,
+    489,
+    491,
+    494,
+    504
+   ],
+   "measured": {
+    "duration_frames": 13,
+    "easing": "card 4: spring {400.3, 34.66} built 14 f (rmse 0.033) / bezier(0.775, 1.044, 0.194, 0.639) D=13 (rmse 0.034)",
+    "values": "card luma 11 -> 106-121; 50% points f487.2 / f489.0 / f490.5 / f494.0 (stagger 1.8 / 1.5 / 3.5 f, mean 2.3 f); chips appear left to right f491-f504; ROIs ride the window's measured offset"
+   },
+   "curves": [
+    "v7.ui-card-stagger-fade.v7c1"
+   ]
+  },
+  {
+   "id": "v7.ui-page-scroll-momentum",
+   "category": "ui",
+   "description": "page content scrolls about one screen inside a static window with a smooth ease-in-out (momentum) curve",
+   "instances": [
+    [
+     509,
+     617
+    ]
+   ],
+   "reference_frames": [
+    509,
+    531,
+    549,
+    571,
+    599,
+    617
+   ],
+   "measured": {
+    "duration_frames": 83,
+    "easing": "bezier(0.469, 0.091, 0.311, 0.947) D=102 (shape rmse 0.009); spring {8.0, 4.48} rmse 0.073",
+    "values": "content offset 0 -> -104.1% H (956 px), peak about 2.8% H per frame around f547-f551, long deceleration to rest at f617 (SAD shift search per picture, scratch/v7c1_s5_scroll_sad_500-630.csv)"
+   },
+   "curves": [
+    "v7.ui-page-scroll-momentum.v7c1"
+   ]
+  },
+  {
+   "id": "v7.cam-slow-push-creep",
+   "category": "cam",
+   "description": "a very slow push-in on the window while its content scrolls",
+   "instances": [
+    [
+     521,
+     629
+    ]
+   ],
+   "reference_frames": [
+    521,
+    560,
+    600,
+    629
+   ],
+   "measured": {
+    "duration_frames": 108,
+    "easing": "near-linear, slowing at the end (0.15 -> 0.06 px per frame on the left edge); not fitted",
+    "values": "window left edge 8.67% -> 7.85% W, top 4.3% -> 3.5% H, bottom 95.7% -> 96.6% H: x1.02 over 108 f"
+   },
+   "curves": []
+  }
+ ],
+ "typography_stills": [
+  "type/v7c1-S01-1_f00004.png",
+  "type/v7c1-S01-1_f00024.png",
+  "type/v7c1-S01-1_f00046.png",
+  "type/v7c1-S01-1_f00134.png",
+  "type/v7c1-S01-2_f00049.png",
+  "type/v7c1-S01-2_f00059.png",
+  "type/v7c1-S01-2_f00084.png",
+  "type/v7c1-S01-2_f00136.png",
+  "type/v7c1-S02-1_f00171.png",
+  "type/v7c1-S02-1_f00200.png",
+  "type/v7c1-S02-1_f00279.png",
+  "type/v7c1-S03-1_f00289.png",
+  "type/v7c1-S03-1_f00300.png",
+  "type/v7c1-S03-1_f00354.png",
+  "type/v7c1-S03-2_f00324.png",
+  "type/v7c1-S03-2_f00336.png",
+  "type/v7c1-S03-2_f00414.png",
+  "type/v7c1-S03-3_f00359.png",
+  "type/v7c1-S03-3_f00372.png",
+  "type/v7c1-S03-3_f00386.png",
+  "type/v7c1-S03-3_f00414.png",
+  "type/v7c1-S04-1_f00421.png",
+  "type/v7c1-S04-1_f00447.png",
+  "type/v7c1-S04-1_f00476.png",
+  "type/v7c1-S05-1_f00484.png",
+  "type/v7c1-S05-1_f00500.png",
+  "type/v7c1-S05-1_f00536.png"
+ ],
+ "uncertain": [
+  {
+   "what": "opening label pop-in easing",
+   "range": "f0-f11",
+   "reason": "the video starts mid-move and only 4 key poses exist (f0, f1, f6, f11); values only"
+  },
+  {
+   "what": "background sphere drift",
+   "range": "f21-f136",
+   "reason": "the blurred spheres carry no trackable texture (flow median 0); only luma differences of 1-4 per 10 frames were measured"
+  },
+  {
+   "what": "shard burst positions and speeds",
+   "range": "f139-f159",
+   "reason": "crude blob detection; shards that cross the label area are masked out"
+  },
+  {
+   "what": "S02 row convergence",
+   "range": "f174-f199",
+   "reason": "rows converge individually (implied scale anchors differ per row), so the menu is not a single uniform scale; only the header was tracked"
+  },
+  {
+   "what": "source times of the S03 exit's last pictures",
+   "range": "f409-f417",
+   "reason": "inferred, not captured: f410, f413 and f417 are taken as 1, 2 and 1 frames late (3:2 cadence of f389-f406 continued to f414 and the cut f419; equally spaced, their scale steps grow smoothly); the stored curve uses those times; dropping f414 instead keeps the captured stamps and gives bezier(0.609, 0.292, 0.864, 0.000) D=13 (rmse 0.021), which creeps earlier, lags in the second half and ends steeper"
+  },
+  {
+   "what": "S04 camera settle start",
+   "range": "f419-f424",
+   "reason": "the label is 1-2 letters long and overlaps the oversized tile, so the camera scale is measurable only from f426 (x1.19)"
+  },
+  {
+   "what": "travel during the whip's hidden cut",
+   "range": "f286-f289",
+   "reason": "one captured picture is missing between the two halves; outgoing speed 2.45% H per frame vs incoming 1.5% H per frame, so the two halves were not stitched"
+  },
+  {
+   "what": "halftone ring inner edge at the start",
+   "range": "f0-f4",
+   "reason": "rests on 2-8 sectors (the label box masks the rest; f1 only the top and bottom sectors); from f6 on 4-7 sectors agree within about 30 px"
+  },
+  {
+   "what": "halftone ring exit frame",
+   "range": "f56-f69",
+   "reason": "the last dots in the corners (10-15% of the texture at f56, 6-9% at f61, under 10% in the top-right corner to about f69) are close to the pre-ring corner level; exit given as f56"
+  },
+  {
+   "what": "S05 blur start offset at the cut",
+   "range": "f484",
+   "reason": "the blur fits put the smear start of the sidebar, brand label and input bar 6-10 px below the window's position on this picture only (within 1.5 px from f486); a small extra offset cannot be told from fit error"
+  },
+  {
+   "what": "original typefaces",
+   "range": "f0-f630",
+   "reason": "not identifiable from the grayscale capture; closest free families given"
+  },
+  {
+   "what": "sound-sync offsets",
+   "range": "f0-f709",
+   "reason": "beats tracked at 114.8 bpm on captured system audio; screen-capture audio delay unknown"
+  }
+ ],
+ "notes": [
+  "Timing: VFR screen recording on the 60 fps grid; 24 fps material (pictures 2-3 frames apart) with 60 Hz duplicate-capture runs at f162-f199, f343-f378, f523-f560, f704-f727 (motion.csv local_fps 34-42 there, but content still changes about every 2.5 frames); durations carry +-1 frame jitter and 2-3 frame quantisation.",
+  "S01 is animated partly on twos: the label geometry, corner handles, mascot balls, pixel pair and background change pose every 5 analysis frames (12 fps, phase f1 + 5k), while the arrow, fills, letters and the title content's slide-apart and rise change on every captured picture (24 fps).",
+  "The PySceneDetect content/adaptive index drifts against the pictures on this file (c005 1 frame early, c007 6 early, c009 2 late, c017 5 early, c020 4 late); the ffmpeg scene score fires on the right picture. Decisions were made on the pictures (work.mp4 matches source.mp4 at the same analysis frames).",
+  "Boundaries in v7c1: 1 soft transition (iris to white f144-f168) and 5 hard cuts (f289 hidden inside the vertical whip f269-f304, f419, f484, f631, f706). The S02 -> S03 whip was missed by all detectors.",
+  "Segments are provisional ids v7c1-S01..S07. The whip is tiled at its hidden cut (S02 ends f288), the iris by the mid-point rule (S01 ends f156).",
+  "Off-cut motion-peak windows opened: f33, f100, f110, f116, f126, f136 (S01), f216, f288 (S02), f315, f355, f365 (S03), f525, f560, f570, f577 (S05), f648, f681 (S06). Every cut-candidate window c001-c020 opened. Dense sheets made for f0-f50, f126-f186, f272-f300, f401-f432, f474-f506.",
+  "S07 continues into v7c2: its voice badge appears at f709 (faint, about half size) and the caption at f712; v7c2 measures both (v7.icon-voice-badge-pop, v7.text-word-blur-rise).",
+  "Directional pattern of the UI part: entrances settle (zoom-out settle, drop-in) and exits accelerate into cuts (whip up, pull-back); S03 -> S04 continues the zoom-out across the cut, S04 -> S05 reverses direction (up then down).",
+  "Helper measurements beyond track.py were made with scratchpad scripts (connected components, radial luma profiles, SAD shift search, glyph second moments); their outputs are the scratch/v7c1_*.csv files cited in the curve sidecars.",
+  "Footage content is not described; the physical prop label inside the S06 footage is part of the footage, not a designed element. The player's speaker icon is ignored.",
+  "Review fixes: the halftone ring was re-measured as a radial profile of dot texture (high-pass luma, sigma 2.5 px) in 8 sectors, inner edge at 50% of the band's peak (scratch/v7c1_s1_halftone_ring_0-71.csv, curve v7.bg-halftone-ring-burst.v7c1; dot-grid FFT power in corner and edge patches confirms the exit; crops/crop_1100_560_522x358_00006-00061.jpg, crops/crop_0_0_240x140_00036-00071.jpg, crops/crop_1382_0_240x140_00036-00071.jpg). Type-on letter counts per picture: scratch/v7c1_s3_query_glyphs_314-340.csv and scratch/v7c1_s4_label_glyphs_419-452.csv; letter speeds are span / letter intervals everywhere. S05 layer blur: forward box-blur fits of column profiles against the sharp f504 picture shifted by the window offset, plus vertical/horizontal gradient ratios (scratch/v7c1_s5_layer_blur_484-504.csv; template tracks scratch/v7c1_s5_headline1_481-508.csv, v7c1_s5_brandlabel_481-508.csv, v7c1_s5_sidebar_481-508.csv, v7c1_s5_pill_481-508.csv; crops/crop_130_40_1070x380_00484-00491.jpg, crops/crop_880_690_600x228_00484-00504.jpg).",
+  "Review fixes, round 2: (1) S01 title re-layout added (v7.layout-slide-make-room, v7.layout-rise-make-room): brand mark icon template track scratch/v7c1_s1_brandicon_11-36.csv (ref f26, scales 0.9-1.5; blurred f19 / f21 score 0.60) and a motion-blur-aware re-match scratch/v7c1_s1_brandicon_blur_11-36.csv (sharp f26 template, scale x horizontal box-blur search; f19 / f21 score 0.80 / 0.74, blur 44 / 28 px); word 2 template scratch/v7c1_s1_word2_11-51.csv and sub-pixel left edge scratch/v7c1_s1_slide_apart_11-36.csv; line-1 rise scratch/v7c1_s1_brandicon_y_29-66.csv and sub-pixel ink centroids scratch/v7c1_s1_line1_rise_29-66.csv; crops/crop_380_390_620x110_00014-00029.jpg, crops/crop_300_300_1022x300_00034-00056.jpg; the f19 smear once read as word 1's scramble is the sliding icon. (2) Corner handles start with the pop: crops/crop_470_270_200x160_00000-00021.jpg, crops/crop_960_500_200x160_00000-00021.jpg, sizes in scratch/v7c1_s1_handle_tl_6-55.csv. (3) Exit pull-back re-tracked (scratch/v7c1_s3_exit_tile_389-417.csv, scratch/v7c1_s3_exit_btn_389-417.csv) and re-timed (scratch/v7c1_s3_exit_scale_retimed_389-417.csv); hover lift re-measured camera-free as button width over the row text block's width (scratch/v7c1_s3_button_rel_366-412.csv); both curves now pass (0.019 / 0.035). (4) The CTA button's settle is its own (v7.ui-button-oversize-settle): crops/crop_100_380_1460x170_00366-00412.jpg; settled still type/v7c1-S03-3_f00386.png (f372 is mid-settle, button still x1.30)."
+ ]
+}

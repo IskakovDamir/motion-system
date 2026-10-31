@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.ui-prompt-word-stream.v7c2",
+  "file": "curves/v7.ui-prompt-word-stream.v7c2.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (mean of the last prompt word ROI, drift-compensated)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_prompt_words.csv",
+  "column": "w7",
+  "sampled_frames": [
+    1089,
+    1129
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 45.0,
+  "to_value": 82.32,
+  "active_frames": [
+    1098,
+    1119
+  ],
+  "measured_duration_frames": 21,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.1865,
+    "x2": 0.5244,
+    "y2": 0.981,
+    "durationInFrames": 21,
+    "delay": -0.0,
+    "built_duration_frames": 19,
+    "rmse": 0.0382
+  },
+  "spring": {
+    "stiffness": 144.373,
+    "damping": 21.285,
+    "mass": 1,
+    "damping_ratio": 0.8857,
+    "built_duration_frames": 22,
+    "rmse": 0.0511
+  },
+  "recommended": "bezier",
+  "note": "prompt bar streams its 7-word line word by word: the last word fades in while de-blurring (Gaussian sigma 5 -> 0 px) and rising 5 px (0.5% H), f1099-f1119; ROI shifted per frame by the measured bar drift (phase correlation); words 4-7 start 3-5 frames apart and each takes ~18 frames, so 3-4 words are mid-fade at once"
+}

@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.icon-avatar-grow-in.i2",
+ "file": "curves/v8.icon-avatar-grow-in.i2.csv",
+ "property": "height",
+ "unit": "% of frame height (thread connector length)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c3r_S02_connector2_1500-1546.csv",
+ "column": "conn2_len_corr_pct",
+ "sampled_frames": [
+  1500,
+  1543
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 0.0,
+ "to_value": 24.946,
+ "active_frames": [
+  1509,
+  1530
+ ],
+ "measured_duration_frames": 21,
+ "bezier": {
+  "x1": 0.1222,
+  "y1": 1.1154,
+  "x2": 1.0,
+  "y2": 0.9557,
+  "durationInFrames": 24,
+  "delay": -0.009,
+  "built_duration_frames": 21,
+  "rmse": 0.0193
+ },
+ "spring": {
+  "stiffness": 287.505,
+  "damping": 36.624,
+  "mass": 1,
+  "damping_ratio": 1.08,
+  "built_duration_frames": 21,
+  "rmse": 0.1192
+ },
+ "recommended": "bezier",
+ "note": "S02 reply 2: the thread connector (thin light vertical line in the avatar column, x about 360 px) draws down from under the growing avatar. Bright run of the horizontal top-hat residual (1 x 15 px opening, max over x 352-368, >= 12 luma; scratch/v8c3r_S02_connector2_1500-1546.csv): absent to f1509; raw 84 px (f1510), 135, 168, 186, 199 (f1518), 207, 213, 217, 221, 223 (f1529), 225, 227, 228, 229 px (f1536) = reply 1's connector at rest (229-231 px). The thread scrolls up to 60 px per picture at f1510-f1516 and its vertical motion blur lengthens reply 1's static connector by 20-28 px there (2-7 px at f1518-f1526); the fitted column subtracts that excess (corrected 58 px at f1510 -> 229 px). Against the avatar centre in the same picture (bbox top + width / 2, scratch/v8c3r_S02_avatar2.csv) the line's top stays 65-74 px below the centre while its lower end goes from 150 to 298 px below it (f1510-f1530), so it is drawn on, not scaled with the disc (a 0.29x group scale at f1510 would put it at 686-751 px; it sits at 732-815 px).",
+ "chunk_curve_id": "v8.icon-avatar-grow-in-connector.v8c3"
+}

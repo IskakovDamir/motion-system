@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.ui-scroll-settle.v7c2",
+  "file": "curves/v7.ui-scroll-settle.v7c2.csv",
+  "property": "position-y",
+  "unit": "px of 918 (content offset; -896 px = -97.6% H)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_ui_scroll_phase.csv",
+  "column": "cum_y",
+  "sampled_frames": [
+    1080,
+    1134
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": -896.0,
+  "active_frames": [
+    1080,
+    1121
+  ],
+  "measured_duration_frames": 41,
+  "bezier": {
+    "x1": 0.0717,
+    "y1": 0.223,
+    "x2": 0.3582,
+    "y2": 0.9666,
+    "durationInFrames": 46,
+    "delay": -0.018,
+    "built_duration_frames": 40,
+    "rmse": 0.0196
+  },
+  "spring": {
+    "stiffness": 50.648,
+    "damping": 15.859,
+    "mass": 1,
+    "damping_ratio": 1.1142,
+    "built_duration_frames": 49,
+    "rmse": 0.0425
+  },
+  "recommended": "bezier",
+  "note": "product UI list scrolls up one row behind the fixed prompt bar: the cut at f1079 lands mid-scroll (first step 117 px in 2 frames = 6.4% H per frame) and the list decelerates to rest at ~f1126; phase correlation of the content strip above the bar (y 0-372), integrated (scratch/v7c2_ui_scroll_phase.csv); motion starts at the cut"
+}

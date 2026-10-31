@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.footage-window-rise.v5c6",
+  "file": "curves/v5.footage-window-rise.v5c6.csv",
+  "property": "position-y",
+  "unit": "% of frame height (offset of the window group below its rest position)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c6_window_rise_offset.csv",
+  "column": "offset_pct_h",
+  "sampled_frames": [
+    4167,
+    4200
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 47.82,
+  "to_value": 0.0,
+  "active_frames": [
+    4167,
+    4190
+  ],
+  "measured_duration_frames": 23,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.6016,
+    "x2": 0.0,
+    "y2": 0.9272,
+    "durationInFrames": 24,
+    "delay": 1.968,
+    "built_duration_frames": 20,
+    "rmse": 0.0493
+  },
+  "spring": {
+    "stiffness": 528.115,
+    "damping": 47.018,
+    "mass": 1,
+    "damping_ratio": 1.023,
+    "built_duration_frames": 16,
+    "rmse": 0.1642
+  },
+  "recommended": "bezier",
+  "note": "rounded footage window (68.5% W x 73.5% H, centred) and its 3-word caption rise together from below as one group right after the hard cut c121 (cut on the same upward motion as the card leaving the top), strong ease-out; sampled as the top edge of the bright pack inside the window (track.py bbox, luma > 45); the first picture f4167 is motion-blurred, so its offset (47.8% H) is a lower bound; the caption bottom moves by the same amount (caption bottom minus pack top constant at 634-641 px)"
+}

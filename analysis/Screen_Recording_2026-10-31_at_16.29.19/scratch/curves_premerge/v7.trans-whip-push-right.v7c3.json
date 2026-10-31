@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-whip-push-right.v7c3",
+  "file": "curves/v7.trans-whip-push-right.v7c3.csv",
+  "property": "position-x",
+  "unit": "% of frame width (midpoint of two window panel labels; 38.8% -> 51.8% W)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p4_window.csv",
+  "column": "mid_x_pct",
+  "sampled_frames": [
+    2007,
+    2049
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 38.779,
+  "to_value": 51.819,
+  "active_frames": [
+    2007,
+    2039
+  ],
+  "measured_duration_frames": 32,
+  "bezier": {
+    "x1": 0.0002,
+    "y1": 0.0681,
+    "x2": 0.1101,
+    "y2": 0.9976,
+    "durationInFrames": 38,
+    "delay": 0.0,
+    "built_duration_frames": 30,
+    "rmse": 0.0191
+  },
+  "spring": {
+    "stiffness": 111.25,
+    "damping": 31.264,
+    "mass": 1,
+    "damping_ratio": 1.4821,
+    "built_duration_frames": 33,
+    "rmse": 0.076
+  },
+  "recommended": "bezier",
+  "note": "incoming half of a rightward whip into the editor window with timeline (P4): after the hard cut from footage at f2007 the window arrives 212 px (13.0% W) left of its rest, already moving right at ~28 px/frame with horizontal motion blur, and decelerates to rest by ~f2041; no scale or vertical change during the slide (label distance 651 +-1 px); the outgoing footage shot does not move (incoming half only); template on two panel labels (ref f2045, scale search 0.85-1.20); motion starts at the cut (first sample = from-value)"
+}

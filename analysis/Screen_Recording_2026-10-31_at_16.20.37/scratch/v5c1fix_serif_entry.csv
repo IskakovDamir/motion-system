@@ -1,0 +1,13 @@
+frame,unique,cap_left_px,cap_right_px,cap_cx_px,cap_cx_pct,cap_w_px,head_tip_x_px,source
+187,1,,,,,,140,"read off a 2x ruler crop of x 0-400 y 400-530 (crops/crop_0_380_760x220_00195-00212.jpg family; +-10 px): striped chrome streak entering at the left edge, pointed tip at x 140 y 480"
+190,1,,,,,,,"same streak visible x 0-210 y 420-520 left of the left star; its tip is hidden behind the star"
+192,1,,,,,,,"hidden behind the left star"
+195,1,,,,,,1167,"thin bright streak y about 475 from the left star's edge (x about 270) to a pointed tip at x 1167 (2x ruler crop x 1080-1320 y 410-550, +-5 px)"
+197,1,25,235,130,8.01,210,1242,"capital = stretched striped chrome letter, base 25-235 (1x ruler crop x 0-800 y 390-590, +-10 px); head = chrome blade tip x 1242 (2x crop)"
+200,1,262,400,331,20.41,138,1262,"capital base 262-400 (+-10 px); head = tailed sparkle, horizontal ray tip x 1262"
+202,1,432,545,488,30.09,113,1280,"capital base 432-545 (2x crop x 400-780 y 430-580, +-5 px); head ray tip x 1280"
+205,1,525,635,580,35.76,110,1285,"extruded chrome capital base 525-635, apex x 584 (script: topmost pixel >= 170 in x 560-720 y 450-520); head ray tip x 1285"
+207,1,580,680,630,38.84,100,1280,"flat capital base 580-680, apex x 622; head ray tip x 1280"
+210,1,597,695,646,39.83,98,1280,"capital base 597-695 (1x and 2x crops), apex x 633; head ray tip x 1280"
+212,1,597,692,644.5,39.74,95,1270,"capital base 597-692; head ray tip x 1270"
+215,1,595,690,642.5,39.61,95,1275,"capital base 595-690; head ray tip x 1275 (the lockup settle starts here)"

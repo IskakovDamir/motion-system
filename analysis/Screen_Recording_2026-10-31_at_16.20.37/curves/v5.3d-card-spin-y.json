@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.3d-card-spin-y",
+  "file": "curves/v5.3d-card-spin-y.csv",
+  "property": "rotation",
+  "unit": "degrees (Y axis; 0 = brand side facing camera, 180 = text side facing camera)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c6_spin_angle.csv",
+  "column": "angle_deg",
+  "sampled_frames": [
+    4057,
+    4075
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 9.6,
+  "to_value": 180.0,
+  "active_frames": [
+    4057,
+    4075
+  ],
+  "measured_duration_frames": 18,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.584,
+    "x2": 0.5314,
+    "y2": 0.994,
+    "durationInFrames": 16,
+    "delay": 2.171,
+    "built_duration_frames": 14,
+    "rmse": 0.0756
+  },
+  "spring": {
+    "stiffness": 399.845,
+    "damping": 40.601,
+    "mass": 1,
+    "damping_ratio": 1.0152,
+    "built_duration_frames": 18,
+    "rmse": 0.0271
+  },
+  "recommended": "spring",
+  "note": "3D card half-turn about its vertical axis, starting mid-spin on the hard cut c116 (f4057, heavy horizontal motion blur, horizontal light streaks left and right of the card at about 26-36% H) and braking to face the camera by f4075; angle = acos(w / 1208 px) from the bright-pixel width of the card in a band y600-780 px (track.py bbox), back face visible from f4062 so angle = 180 - acos; +-10 degrees near 0 and 180 where the width barely changes; f4057 width is inflated by motion blur (true angle probably larger)"
+}

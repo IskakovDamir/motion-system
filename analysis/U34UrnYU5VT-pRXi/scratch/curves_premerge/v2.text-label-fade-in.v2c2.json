@@ -1,0 +1,40 @@
+{
+  "technique_id": "v2.text-label-fade-in.v2c2",
+  "file": "curves/v2.text-label-fade-in.v2c2.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (mean of the label area x 630-1290, y 600-650; 250 = empty, 177 = settled)",
+  "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c2_S11_url_luma.csv",
+  "column": "mean",
+  "sampled_frames": [
+    1830,
+    1870
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 250.0,
+  "to_value": 176.856,
+  "active_frames": [
+    1837,
+    1851
+  ],
+  "measured_duration_frames": 14,
+  "bezier": {
+    "x1": 0.3439,
+    "y1": 1.0893,
+    "x2": 0.7617,
+    "y2": 0.9857,
+    "durationInFrames": 18,
+    "delay": 0.12,
+    "built_duration_frames": 14,
+    "rmse": 0.0102
+  },
+  "spring": {
+    "stiffness": 402.611,
+    "damping": 37.408,
+    "mass": 1,
+    "damping_ratio": 0.9322,
+    "built_duration_frames": 16,
+    "rmse": 0.0458
+  },
+  "recommended": "bezier",
+  "note": "end-card URL label (1 line, 1 token) fades in under the logo with no movement (bbox x 636-1285, y 593-646 constant from f1838)"
+}

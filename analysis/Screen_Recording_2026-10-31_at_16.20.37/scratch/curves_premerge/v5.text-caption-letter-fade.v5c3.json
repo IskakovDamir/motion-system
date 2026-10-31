@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-caption-letter-fade.v5c3",
+  "file": "curves/v5.text-caption-letter-fade.v5c3.csv",
+  "property": "opacity",
+  "unit": "normalised top-hat ink of one caption line (opacity x sharpness)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c3_capE_L2_bins.csv",
+  "column": "mean",
+  "sampled_frames": [
+    2297,
+    2338
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.065,
+  "to_value": 0.95,
+  "active_frames": [
+    2302,
+    2338
+  ],
+  "measured_duration_frames": 36,
+  "bezier": {
+    "x1": 0.9865,
+    "y1": 1.1016,
+    "x2": 0.5067,
+    "y2": 0.8934,
+    "durationInFrames": 34,
+    "delay": 2.008,
+    "built_duration_frames": 31,
+    "rmse": 0.0376
+  },
+  "spring": {
+    "stiffness": 26.358,
+    "damping": 6.364,
+    "mass": 1,
+    "damping_ratio": 0.6198,
+    "built_duration_frames": 68,
+    "rmse": 0.3071
+  },
+  "recommended": "bezier",
+  "note": "caption E line 2 (2 words, ~9 letters): envelope of a left-to-right per-letter blur+fade cascade (letters start ~1.8 f apart, each ~10 f); block drifts -4.5 px/f x, -0.5 px/f y (tracked and compensated)"
+}

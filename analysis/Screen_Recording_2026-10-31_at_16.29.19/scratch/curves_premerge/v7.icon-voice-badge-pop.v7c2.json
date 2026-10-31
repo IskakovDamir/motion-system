@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.icon-voice-badge-pop.v7c2",
+  "file": "curves/v7.icon-voice-badge-pop.v7c2.csv",
+  "property": "scale",
+  "unit": "disc radius px (final 32.9 px = 2.0% W; scale = r/32.9)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_icon_pop.csv",
+  "column": "radius_px",
+  "sampled_frames": [
+    704,
+    789
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 32.87,
+  "active_frames": [
+    707,
+    744
+  ],
+  "measured_duration_frames": 37,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.4065,
+    "x2": 0.0,
+    "y2": 0.8024,
+    "durationInFrames": 38,
+    "delay": 0.0,
+    "built_duration_frames": 35,
+    "rmse": 0.0199
+  },
+  "spring": {
+    "stiffness": 108.323,
+    "damping": 24.619,
+    "mass": 1,
+    "damping_ratio": 1.1827,
+    "built_duration_frames": 33,
+    "rmse": 0.1688
+  },
+  "recommended": "bezier",
+  "note": "round voice badge pops in above the caption, scale from 0 with a long ease-out; f709 value from template scale (ring too faint), f712+ from the radial luma profile ring; absent at f707"
+}

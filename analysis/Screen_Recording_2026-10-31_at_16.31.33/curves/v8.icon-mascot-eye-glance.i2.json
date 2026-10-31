@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.icon-mascot-eye-glance.i2",
+ "file": "curves/v8.icon-mascot-eye-glance.i2.csv",
+ "property": "position-x",
+ "unit": "px, eye-pair centre minus the mascot blob's centroid (blob 153-154 x 132-133 px)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c5r_Sb_mascot2_eyes.csv",
+ "column": "eyes_dx_tm",
+ "sampled_frames": [
+  3183,
+  3214
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 3.92,
+ "to_value": -13.58,
+ "active_frames": [
+  3192,
+  3208
+ ],
+ "measured_duration_frames": 16,
+ "bezier": {
+  "x1": 0.6802,
+  "y1": 0.0077,
+  "x2": 0.3635,
+  "y2": 0.7607,
+  "durationInFrames": 16,
+  "delay": -1.287,
+  "built_duration_frames": 14,
+  "rmse": 0.0336
+ },
+ "spring": {
+  "stiffness": 519.158,
+  "damping": 38.357,
+  "mass": 1,
+  "damping_ratio": 0.8417,
+  "built_duration_frames": 11,
+  "rmse": 0.1234
+ },
+ "recommended": "bezier",
+ "note": "S03 mascot 2 (fill 149), outgoing glide of its eye glance: the two star-shaped eye glyphs glide left (and 4.7 px down) inside the static blob; eye pair by sub-pixel template match (score 0.90-1.00), blob by its filled-mask centroid (bbox 153-154 x 132-133 px, orientation 21.8-22.4 deg: no scale, no rotation); exact repeat pictures skipped (scratch/v8c5r_Sb_mascot2_eyes.csv, crops/crop_490_590_190x205_03184-03240.jpg). Rest +3.9 px (f3183-f3192) -> -13.6 px hold (f3208-f3222). The return glide (-13.2 at f3222 -> -0.6 f3236 -> -0.1 px f3238) fits only to rmse 0.09-0.12 (only 2 pictures after it settles before the cut f3242) and is not stored.",
+ "chunk_curve_id": "v8.icon-mascot-eye-glance.v8c5"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.icon-mascot-pop-slide.v8c1",
+  "file": "curves/v8.icon-mascot-pop-slide.v8c1.csv",
+  "property": "scale",
+  "unit": "scale factor, area-equivalent (sqrt of the avatar's ink mass vs rest; includes its fade-in)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c1_s05_header_composer_604-673.csv",
+  "column": "hdr_avatar_area_scale",
+  "sampled_frames": [
+    608,
+    640
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 1.0,
+  "active_frames": [
+    608,
+    630
+  ],
+  "measured_duration_frames": 22,
+  "bezier": {
+    "x1": 0.2057,
+    "y1": 1.0398,
+    "x2": 0.6784,
+    "y2": 0.9743,
+    "durationInFrames": 29,
+    "delay": -0.526,
+    "built_duration_frames": 22,
+    "rmse": 0.0346
+  },
+  "spring": {
+    "stiffness": 231.222,
+    "damping": 34.411,
+    "mass": 1,
+    "damping_ratio": 1.1315,
+    "built_duration_frames": 24,
+    "rmse": 0.1053
+  },
+  "recommended": "bezier",
+  "note": "S05 header avatar grows from a speck at the hidden cut f608 while riding the incoming whip; deblurred ink-spread scale 0.48 (f610) -> 0.69 (f614) -> 0.87 (f620) -> 0.95 (f626) -> 1.0 (f636), so part of the early ink deficit is a fade-in (opacity about 0.5 at f610, 0.85 at f612-f614, 1 by f620); range ends before the pan blur (f640)"
+}

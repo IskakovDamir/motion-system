@@ -1,0 +1,9 @@
+frame,unique,ring_r_px,ring_r_pct_w,source
+1080,1,0,0.000,no tiles (ring.py: no luma peak above the dark background)
+1082,1,0,0.000,no tiles (button pressed down; ring.py peak luma 10.8)
+1085,1,150,9.248,ring.py radial luma peak around (815,528)
+1087,1,230,14.180,ring.py
+1090,1,350,21.578,ring.py
+1092,1,450,27.744,ring.py
+1095,1,590,36.375,ring.py
+1097,1,890,54.871,ring.py (peak at the outer bin; tiles at the frame edges)

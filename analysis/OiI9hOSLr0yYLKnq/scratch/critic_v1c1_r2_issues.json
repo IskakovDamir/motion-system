@@ -1,0 +1,26 @@
+[
+ {
+  "kind": "other",
+  "frames": "S03 f420-f428 and f456-f460; S04 f647-f664 and f692-f700; S02 f180-f185; S05 f820-f829",
+  "description": "Wrong layer order for the packet dots. The md layer lists for S03 and S04 (cards > device labels > packet dots > background) and for S05 (hex network > packet dots > background) put the dots behind the cards and the network. S02 lists them last inside the network group. On screen the dots are drawn in front of everything they cross. In S03 the grey 34 px outbound dot is visible over card 1's dark interior, and the black return dot covers card 2's grey sub-label. In S04 the outbound dot crosses card 1's dark interior and then the white card 2, and the return dot passes over the bubble's first word and over the avatar. The S04 movement row also says the return dot slides 'under the avatar', but it passes in front of it. In S02 and S05 the dots sit on top of icons and badges while they dwell. A rebuild that follows the listed order would hide most of each hop and every dwell.",
+  "evidence": "scratch/review_r2/s3_packet_416-439.jpg (dot at about (780,460) inside card 1, which spans x 40-940, y 220-900); scratch/review_r2/s3_return_packet_450-473_stretched.jpg; scratch/review_r2/s4_packet_644-667.jpg; scratch/review_r2/s4_return_dot_avatar_694-701.jpg (f696 dot over the first bubble word, f698-f699 over the avatar); scratch/review_r2/s2_first_packet_174-193.jpg (black dot on the icon centred about (640,540), f180-f185); scratch/review_r2/s5_packet_820-843.jpg (black dot on the icon at about (735,150), f820-f827; grey dot over the asterisk badge, f827-f829)"
+ },
+ {
+  "kind": "wrong-number",
+  "frames": "S01 f12-f101 (measured at f90; placeholder at f10-f11)",
+  "description": "The S01 prompt typography is mis-measured. The table gives a cap height of 5.7% (61 px, 63 px with overshoot) and a stem of 10 px (0.16 x cap), and from that calls the prompt 400-500, 'heavier than the headlines'. The measuring bbox in scratch/cap_S1_prompt_S.csv (x 271-324, y 514-576) takes in the first capital plus the descender of the next lowercase glyph. Glyph runs at f90 give: first capital y 514-566 (53 px with overshoot), digit y 515-565 (51 px flat cap), x-height 40 px (527-566), descenders to 576-577. Vertical stems are 6-7 px (digit stem profile at y 540-550; lowercase stems 6 px). Correct values: cap about 51 px = 4.7% H, stem/cap about 0.13. That is regular weight, the same class as the headlines (0.12), not heavier. The placeholder's first capital at f10-f11 is also 51 px, so the placeholder and the typed prompt are the same size; the table implies the prompt is 15% larger.",
+  "evidence": "scratch/review_r2/s1_prompt_cap_f90.jpg (2x crop; the yellow box is the inspector's bbox, which runs down to the descender line); scratch/cap_S1_prompt_S.csv; type/S1-prompt_f00072.png"
+ },
+ {
+  "kind": "wrong-number",
+  "frames": "S04 f647-f665",
+  "description": "The S04 outbound packet hop is recorded as an estimate: start 'about f648', 16 frames 'about', 'arrival seen f658-f664', end 'about (1150, 400)'. The JSON instance is [648, 664]. The grey 34 px dot is visible on every frame from f647 over the dark card 1 and then over the white card 2, so the hop can be measured. Difference-blob track: f647 (799.6, 519.4), a dwell through f649 (1.3 and 4.1 px steps), ease-in-out with a peak of 57 px/f at f655-f656, arrival (1149.5, 399.5) at f663-f664, gone at f665 when the request block appears. The path is (+350, -120) px, a steeper angle and a lower start than the S03 instance (780,460) -> (1139,360). The start frame is f647, and the numbers should replace the estimates.",
+  "evidence": "scratch/review_r2/s4_packet_644-667.jpg; per-frame centres from differencing against f646 (34 px blob, f647-f664)"
+ },
+ {
+  "kind": "other",
+  "frames": "S06 f900-f916",
+  "description": "Two errors in the blink curve's metadata. The note in curves/v1.logo-blink.v1c1.json says the eyes close to 'dashes at the top of the eye area' and reopen 'f907-f918'. The inspector's own scratch/s6_blink_eye_extent.csv shows the closed dashes at y 360-363, centred on the bar centre y 361.5 (f900-f906), with the bars back to 54 px at f916. That matches the md and technique text (scaleY about the bar centre, settled f916). The curve's property is labelled 'height', but the samples are eye-pixel area in px squared (scratch/s6_blink_eyes.csv, column area). The fitted shape is fine because area is proportional to height here. The note and the property label should be corrected so the build does not anchor the blink at the top.",
+  "evidence": "curves/v1.logo-blink.v1c1.json (note, property, source_samples); scratch/s6_blink_eye_extent.csv rows f899-f916; scratch/review_r2/s6_blink_896-912.jpg"
+ }
+]

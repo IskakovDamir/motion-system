@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.cam-whip-tilt",
+  "file": "curves/v5.cam-whip-tilt.csv",
+  "property": "position-y",
+  "unit": "px (content y, chip-2 label template centre)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_E_chip_scales.csv",
+  "column": "c2_cy",
+  "sampled_frames": [
+    885,
+    920
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 177.0,
+  "to_value": 472.0,
+  "active_frames": [
+    887,
+    913
+  ],
+  "measured_duration_frames": 26,
+  "bezier": {
+    "x1": 0.7184,
+    "y1": 0.288,
+    "x2": 0.1375,
+    "y2": 0.952,
+    "durationInFrames": 26,
+    "delay": 1.891,
+    "built_duration_frames": 21,
+    "rmse": 0.0395
+  },
+  "spring": {
+    "stiffness": 225.254,
+    "damping": 24.963,
+    "mass": 1,
+    "damping_ratio": 0.8316,
+    "built_duration_frames": 17,
+    "rmse": 0.1458
+  },
+  "recommended": "bezier",
+  "note": "menu-1 close: vertical camera whip (content moves down), chip-2 label template (ref f911, scale 1.000 throughout, x constant 1430 px): y 185 (f880) -> 179 -> 177 (f885, highest; the content had been rising since f862) -> 179 (f887) -> 184 -> 194 -> 213 -> 250 (f897) -> 327.5 (f900, vertical blur) -> 403 (f902) -> 438 -> 456 -> 466 (f911) -> 471 (f913) -> 472 px (f915-f920, during the horizontal whip pan that starts at f913); 294 px = 32.1 % H; peak 75-77 px per picture (f897-f902); scratch/v5c2_E_chip_scales.csv"
+}

@@ -1,0 +1,22 @@
+frame,end_x,length_px,note
+10,441.0,0.0,no line pixels: zero length (end = start x 441)
+11,441.0,0.0,no line pixels: zero length (end = start x 441)
+12,441.0,0.0,no line pixels: zero length (end = start x 441)
+13,441.0,0.0,no line pixels: zero length (end = start x 441)
+14,441.0,0.0,no line pixels: zero length (end = start x 441)
+15,441.0,0.0,no line pixels: zero length (end = start x 441)
+16,495.0,54.0,
+17,591.0,150.0,
+18,714.0,273.0,
+19,869.0,428.0,
+20,1049.0,608.0,
+21,1203.0,762.0,
+22,1327.0,886.0,
+23,1423.0,982.0,
+24,1478.0,1037.0,
+25,1478.0,1037.0,
+26,1478.0,1037.0,
+27,1478.0,1037.0,
+28,1478.0,1037.0,
+29,1478.0,1037.0,
+30,1478.0,1037.0,

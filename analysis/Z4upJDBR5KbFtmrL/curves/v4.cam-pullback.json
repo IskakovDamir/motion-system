@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.cam-pullback",
+  "file": "curves/v4.cam-pullback.csv",
+  "property": "scale",
+  "unit": "scale factor (canvas, about the hub centre)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/c2_t1_camera.csv",
+  "column": "scale",
+  "sampled_frames": [
+    945,
+    1030
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 1.0,
+  "to_value": 0.5527,
+  "active_frames": [
+    965,
+    1004
+  ],
+  "measured_duration_frames": 39,
+  "bezier": {
+    "x1": 0.5409,
+    "y1": 0.0889,
+    "x2": 0.3532,
+    "y2": 1.0574,
+    "durationInFrames": 53,
+    "delay": -3.678,
+    "built_duration_frames": 39,
+    "rmse": 0.0092
+  },
+  "spring": {
+    "stiffness": 37.583,
+    "damping": 9.618,
+    "mass": 1,
+    "damping_ratio": 0.7845,
+    "built_duration_frames": 34,
+    "rmse": 0.1203
+  },
+  "recommended": "bezier",
+  "note": "T04 pull-back: canvas scale from the hub label (template) and the top-left card corner (bbox), mean of x and y estimates; hub centre stays at y 575 px"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.cam-whip-pullback.i2",
+  "file": "curves/v5.cam-whip-pullback.i2.csv",
+  "property": "scale",
+  "unit": "scale factor (card 1 to card 3 centre distance / distance at f3165)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_A_pullback_span.csv",
+  "column": "span_scale",
+  "sampled_frames": [
+    3161,
+    3222
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.0,
+  "to_value": 0.7353,
+  "active_frames": [
+    3175,
+    3207
+  ],
+  "measured_duration_frames": 32,
+  "bezier": {
+    "x1": 0.8777,
+    "y1": 0.0045,
+    "x2": 0.1149,
+    "y2": 0.9978,
+    "durationInFrames": 42,
+    "delay": -6.05,
+    "built_duration_frames": 28,
+    "rmse": 0.056
+  },
+  "spring": {
+    "stiffness": 241.98,
+    "damping": 27.305,
+    "mass": 1,
+    "damping_ratio": 0.8776,
+    "built_duration_frames": 18,
+    "rmse": 0.1589
+  },
+  "recommended": "bezier",
+  "note": "camera pull-back revealing headline + card row + prompt bar together (no whip): distance between card 1 and card 3 template centres relative to f3165 (52.4% W -> 38.5% W); row centre moves 37.0 -> 53.8% H; direct bezier residual max 0.013; shape rmse inflated by the slow ease tails between sparse 24 fps pictures"
+}

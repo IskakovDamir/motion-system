@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.fx-footage-dim.i2",
+  "file": "curves/v5.fx-footage-dim.i2.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (mean of footage region x0-1540 y0-400)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c6_dim_luma_top.csv",
+  "column": "mean",
+  "sampled_frames": [
+    4405,
+    4432
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 108.0,
+  "to_value": 28.2,
+  "active_frames": [
+    4412,
+    4427
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.8568,
+    "y1": 1.1878,
+    "x2": 0.71,
+    "y2": 0.852,
+    "durationInFrames": 13,
+    "delay": 1.861,
+    "built_duration_frames": 13,
+    "rmse": 0.0817
+  },
+  "spring": {
+    "stiffness": 265.658,
+    "damping": 26.074,
+    "mass": 1,
+    "damping_ratio": 0.7999,
+    "built_duration_frames": 14,
+    "rmse": 0.0462
+  },
+  "recommended": "spring",
+  "note": "full-frame footage darkens to about 27% of its brightness while a 1-line caption snaps on (hard on, full white in the picture f4420, no fade); the footage keeps its slow camera pull-back, and its own luma drifts slowly before (112 -> 107 over f4397-f4412) and after (28.4 -> 24.8 over f4430-f4450). Whether the darkening is a designed scrim or the footage's own lighting change cannot be separated (it is uniform: lower region 121 -> 34 at the same time)"
+}

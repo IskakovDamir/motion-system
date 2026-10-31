@@ -1,0 +1,888 @@
+{
+ "video": "U34UrnYU5VT-pRXi",
+ "key": "v2",
+ "chunk": "v2c2",
+ "frames": [
+  901,
+  1970
+ ],
+ "cut_decisions": [
+  {
+   "id": "c003",
+   "frame": 901,
+   "status": "confirmed",
+   "reason": "hard cut on the chunk edge: f900 is the static chat-app window (v2c1 S11), f901 is the empty light canvas with headline word 1 already at full ink; no shared element (detail/cut_c003_f00901/sheet.jpg). v2c1 records the same cut."
+  },
+  {
+   "id": "c004",
+   "frame": 1492,
+   "status": "confirmed",
+   "reason": "hard cut: f1491 holds the mascot scatter with its headline, f1492 is the article page with caption word 1; nothing carries over (detail/cut_c004_f01492/sheet.jpg)."
+  }
+ ],
+ "boundaries": [
+  {
+   "frame": 901,
+   "type": "hard-cut",
+   "cut_id": "c003",
+   "note": "chunk edge; c2S1 starts with word 1 of its headline in the cut frame; +5 f after beat f896"
+  },
+  {
+   "frame": 958,
+   "type": "hard-cut",
+   "found": "missed by the detectors (content_val 2.85, adaptive 65.2); overview + detail/peak_f00959",
+   "note": "headline -> repository UI panel at scale 1.000; +9 f after beat f949"
+  },
+  {
+   "frame": 1098,
+   "type": "hard-cut",
+   "found": "missed (content_val 7.97, adaptive 255); detail/peak_f01097",
+   "note": "repository UI at scale 1.0296 -> empty canvas + top headline word 1; +6 f after beat f1092"
+  },
+  {
+   "start": 1163,
+   "end": 1183,
+   "type": "morph (9 logo icons converge into a centred row of 6 hex mascots, shrink 1.00 -> 0.64 and crossfade into them; the top headline is swapped for the next headline's word 1 in the last frame)",
+   "frames": 21,
+   "shared": "the icons become the mascots of the next layout: each travels on a straight line to a row slot (icon 1 (465, 450) -> (584, 757)) on one ease-in-out; f1182 shows the finished mascot row under the old headline, f1183 the same row under the new word 1",
+   "technique": "v2.trans-icon-converge-morph",
+   "curve": "v2.trans-icon-converge-morph.v2c2",
+   "detail": "detail/soft_1163-1183"
+  },
+  {
+   "start": 1217,
+   "end": 1235,
+   "type": "morph / fly-in (the mascot row flies on a rising wave into the matching avatar slots of an app sidebar panel that fades in behind it; the headline is cut at f1221)",
+   "frames": 19,
+   "shared": "the 6 mascots become the panel's avatars: black one (885, 757) w126 -> tile logo (960, 160) w94, grey ones -> the 5 row avatars at x 735-741 (w56) in row order (fills 129, 105, 133, 100, 131 = row mascots 1, 2, 4, 5, 6); the panel's own faint avatars are already in place as landing targets (fade 250 -> 239 on the toolbar f1219-f1235)",
+   "technique": "v2.trans-hex-fly-into-ui",
+   "curve": "v2.trans-hex-fly-into-ui.v2c2",
+   "detail": "detail/soft_1217-1235"
+  },
+  {
+   "frame": 1351,
+   "type": "hard-cut",
+   "found": "missed (adaptive 255); detail/hard_1351",
+   "note": "zooming app panel + caption -> empty canvas + headline word 1; +5 f after beat f1346, +6 after strong onset f1345"
+  },
+  {
+   "frame": 1408,
+   "type": "hard-cut",
+   "found": "missed (content_val 0.64, adaptive 10.9); detail/dense_01402-01425_00.jpg",
+   "note": "headline -> empty canvas for 1 frame; first mascot of the scatter at f1409; +9 f after beat f1399"
+  },
+  {
+   "frame": 1492,
+   "type": "hard-cut",
+   "cut_id": "c004",
+   "note": "mascot scatter -> article page + caption word 1; +10 f after beat f1482"
+  },
+  {
+   "start": 1602,
+   "end": 1627,
+   "type": "push (vertical scroll-push: the article page and the network diagram lie on one strip 940 px apart; it scrolls 1200 px up)",
+   "frames": 26,
+   "shared": "one continuous upward motion: the page accelerates out of the top while the network rises in from the bottom and decelerates; at the changeover (f1613-f1614, 152 px/f) both are on screen with an empty gap between them; no element is shared",
+   "technique": "v2.trans-scroll-push",
+   "curve": "v2.trans-scroll-push.v2c2",
+   "detail": "detail/soft_1602-1627"
+  },
+  {
+   "frame": 1689,
+   "type": "hard-cut",
+   "found": "missed (adaptive 20.0); detail/hard_1689",
+   "note": "network diagram -> empty canvas for 3 frames (f1689-f1691); word 1 at f1692; +8 f after beat f1681"
+  },
+  {
+   "frame": 1801,
+   "type": "hard-cut",
+   "found": "missed (adaptive 37.3); detail/hard_1801",
+   "note": "2-line headline -> empty canvas for 1 frame; end-card logo first visible f1802; +5 f after beat f1796"
+  }
+ ],
+ "segments": [
+  {
+   "id": "v2c2-c2S1",
+   "start": 901,
+   "end": 957,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "one centred big headline line (3 words) built by one-frame word pops at its final layout (f901, f909, f916), then held still"
+  },
+  {
+   "id": "v2c2-c2S2",
+   "start": 958,
+   "end": 1097,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "code-repository panel (pull-request list) slowly pushing in 3.0% from the cut; 3 pinned cards then 4 list rows fade in with a 6-7 px rise every 11.3 f, and one beat after each item its status pill swaps state with a shrink-out / scale-pop-in"
+  },
+  {
+   "id": "v2c2-c2S3",
+   "start": 1098,
+   "end": 1173,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "small top headline word pops; 9 agent logo icons in two centred rows (4 + 5) pop in (fade + scale from 0.5) every 3.6 f in reading order; from f1163 they converge into a mascot row (T1)"
+  },
+  {
+   "id": "v2c2-c2S4",
+   "start": 1174,
+   "end": 1226,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "row of 6 hex mascots (one black) under a big centred headline built by 6 f word pops; the mascots glance down-left as a left-to-right wave, glance back together and fly off into the next layout (T2)"
+  },
+  {
+   "id": "v2c2-c2S5",
+   "start": 1227,
+   "end": 1350,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "app sidebar panel with mascot avatars pushing in 4% about (959, 449) under a screen-fixed bottom caption built by 6 f word pops; three eye-glance waves run from the tile logo down the 5 avatars (look down-left f1247, right f1277, up f1319), each faster than the last (4.2, 3.0, 1.8 f per step), and the avatars blink in pairs between waves 2 and 3"
+  },
+  {
+   "id": "v2c2-c2S6",
+   "start": 1351,
+   "end": 1407,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "one centred big headline line (3 words) by one-frame word pops (8, 7 f), held"
+  },
+  {
+   "id": "v2c2-c2S7",
+   "start": 1408,
+   "end": 1491,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "after one empty frame, 30 hex mascots of 4 tones pop in at random spots around a big 2-word headline, one every 1.5 f; from f1432, while the births still run, each mascot glances once (19-43 f after its own birth) and three of them blink"
+  },
+  {
+   "id": "v2c2-c2S8",
+   "start": 1492,
+   "end": 1614,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "article web page (label pill, title, paragraph, scatter chart) under a small top caption built by word pops; the whole page scrolls up 560 px in 21 f, holds, then scroll-pushes out (T3)"
+  },
+  {
+   "id": "v2c2-c2S9",
+   "start": 1615,
+   "end": 1688,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "hub-and-spoke network (black mascot hub, 4 laptop and 4 cloud outline icons, each on a canvas-coloured box) settles from the scroll-push; one packet per connector ping-pongs on a 42 f period shared by all lines, at the constant speed its line length gives (11.3-23.0 px/f), hidden where it passes under the hub or an icon's box; a small top headline pops in word by word while the hub glances left, right and back"
+  },
+  {
+   "id": "v2c2-c2S10",
+   "start": 1689,
+   "end": 1800,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "after 3 empty frames a 2-line centred big headline (3 + 5 words) is built by one-frame word pops at 6-7 f, then held 63 f"
+  },
+  {
+   "id": "v2c2-c2S11",
+   "start": 1801,
+   "end": 1970,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "end card: after one empty frame the hex mascot logo scales in, straightens a 17 deg tilt and fades in on one ease-out; a URL label fades in below; the logo glances, blinks and glances back; static to the last frame"
+  }
+ ],
+ "techniques": [
+  {
+   "id": "v2.trans-hard-cut",
+   "category": "trans",
+   "description": "the picture is replaced between two frames; the next layout is either complete at the cut (f901 word 1, f958, f1098 word 1, f1351 word 1, f1492) or built from an empty canvas after 1-3 empty frames (f1408, f1689, f1801)",
+   "instances": [
+    [
+     901,
+     901
+    ],
+    [
+     958,
+     958
+    ],
+    [
+     1098,
+     1098
+    ],
+    [
+     1351,
+     1351
+    ],
+    [
+     1408,
+     1408
+    ],
+    [
+     1492,
+     1492
+    ],
+    [
+     1689,
+     1689
+    ],
+    [
+     1801,
+     1801
+    ]
+   ],
+   "reference_frames": [
+    957,
+    958
+   ],
+   "measured": {
+    "duration_frames": 0,
+    "easing": "cut",
+    "values": "lands 5-10 f after a beat (+5, +9, +6, +5, +9, +10, +8, +5); empty frames before the build: 1 (f1408), 3 (f1689-f1691), 1 (f1801)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v2.text-word-pop",
+   "category": "text",
+   "description": "the words of a pre-laid, centred line appear one at a time, each in a single frame at full ink and in its final place (no fade, slide or scale); 2-line blocks continue the cadence across the line break",
+   "instances": [
+    [
+     901,
+     916
+    ],
+    [
+     1098,
+     1113
+    ],
+    [
+     1183,
+     1201
+    ],
+    [
+     1239,
+     1269
+    ],
+    [
+     1351,
+     1366
+    ],
+    [
+     1411,
+     1419
+    ],
+    [
+     1492,
+     1507
+    ],
+    [
+     1623,
+     1650
+    ],
+    [
+     1692,
+     1738
+    ]
+   ],
+   "reference_frames": [
+    901,
+    909,
+    916
+   ],
+   "measured": {
+    "duration_frames": 0,
+    "easing": "step",
+    "values": "stagger per word: 8, 7 (c2S1); 8, 7 (c2S3); 6, 6, 6 (c2S4); 6 x5 (c2S5 caption); 8, 7 (c2S6); 8 (c2S7); 7, 8 (c2S8 caption); 5, 6, 5, 6, 5 (c2S9); 7, 6, 7, 6, 7, 7, 6 (c2S10); word ROI mean 250.0 -> 187.5 in one frame (f908 -> f909)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v2.cam-slow-push-in",
+   "category": "cam",
+   "description": "the UI layer scales up 3.0-4.0% about a fixed point near the frame centre on one ease-out with no ease-in (full speed in its first frame: the cut frame in c2S2, 3 f after the T2 fade in c2S5), timed to the time left to the next cut (settled at 0.86-0.89 of it) and still creeping at the cut; overlaid text is not scaled",
+   "instances": [
+    [
+     958,
+     1097
+    ],
+    [
+     1238,
+     1350
+    ]
+   ],
+   "reference_frames": [
+    958,
+    1097
+   ],
+   "measured": {
+    "duration_frames": 119,
+    "easing": "bezier(0.618, 0.958, 0.838, 0.949) D=131 (rmse 0.013, c2S2 edge track); c2S5 follows the same normalised curve: it fits c2S5's ECC track with shape rmse 0.0044 (progress at 0.1-0.9 of the active window 0.145, 0.280, 0.408, 0.531, 0.641, 0.739, 0.825, 0.889, 0.946 vs c2S2 0.139, 0.272, 0.400, 0.512, 0.627, 0.723, 0.808, 0.894, 0.940)",
+    "values": "c2S2 1.000 -> 1.0296 about (958, 542), active f959-f1078 (119 f), +0.034%/f at the start, +0.002%/f at the cut; c2S5 1.0000 (at rest f1235-f1237) -> 1.0399 (f1350) about (959.4, 449.5), first moved f1238, active f1239-f1338 (99 f), 0.055%/f f1240-f1260, 0.006%/f f1340-f1350, caption fixed (scratch/v2c2_S5_panel_ecc.csv); settled at 0.86 (c2S2) and 0.89 (c2S5) of the time from the move's start to the next cut"
+   },
+   "curves": [
+    "v2.cam-slow-push-in.v2c2"
+   ]
+  },
+  {
+   "id": "v2.ui-list-item-rise-fade",
+   "category": "ui",
+   "description": "pinned cards then list rows appear one by one: each fades in over 5 frames while rising 6-7 px; earlier items stay put",
+   "instances": [
+    [
+     963,
+     967
+    ],
+    [
+     974,
+     978
+    ],
+    [
+     985,
+     989
+    ],
+    [
+     997,
+     1001
+    ],
+    [
+     1008,
+     1013
+    ],
+    [
+     1020,
+     1024
+    ],
+    [
+     1031,
+     1035
+    ]
+   ],
+   "reference_frames": [
+    996,
+    1001
+   ],
+   "measured": {
+    "duration_frames": 5,
+    "easing": "bezier(0.302, 1.060, 0.446, 0.959) D=7 (rmse 0.0014) / spring {6662.3, 163.28, mass 1} (0.023)",
+    "values": "row-1 text luma 253 -> 243.9, 237.9, 234.7, 233.5, 233.0 -> 232.7 f997-f1003; rise 602 -> 595 px (row 1), 352 -> 346 px (card 1); starts f963, f974, f985, f997, f1008, f1020, f1031 (11.3 f)"
+   },
+   "curves": [
+    "v2.ui-list-item-rise-fade.v2c2"
+   ]
+  },
+  {
+   "id": "v2.ui-badge-swap-pop",
+   "category": "ui",
+   "description": "an item's status pill changes state: the old pill shrinks to 0.90 and fades out in 3 f, the new pill (other label and fill) grows from 0.80 to 1.0 while fading in over 7 f, and the item's state icon cross-dissolves in the same frames; swaps follow their items by one beat",
+   "instances": [
+    [
+     991,
+     1001
+    ],
+    [
+     1003,
+     1012
+    ],
+    [
+     1014,
+     1022
+    ],
+    [
+     1025,
+     1034
+    ],
+    [
+     1037,
+     1046
+    ],
+    [
+     1048,
+     1058
+    ],
+    [
+     1060,
+     1068
+    ]
+   ],
+   "reference_frames": [
+    991,
+    1001
+   ],
+   "measured": {
+    "duration_frames": 7,
+    "easing": "bezier(0.256, 1.230, 1.000, 0.874) D=7 (rmse 0.005) / spring {4231.7, 164.97, mass 1} (0.092)",
+    "values": "old pill 88 -> 79 px f991-f993; new pill 90, 100, 105, 108, 110, 111, 111, 112 px f994-f1001; swap starts 11.5 f apart, 28-29 f after their items"
+   },
+   "curves": [
+    "v2.ui-badge-swap-pop.v2c2"
+   ]
+  },
+  {
+   "id": "v2.icon-stagger-pop-in",
+   "category": "icon",
+   "description": "agent logo icons in a centred 2-row grid pop in one by one in reading order: opacity 0 -> 1 in 11 f while scaling from about 0.5 to 0.96 in 10 f, then creeping to 1.0 over 15-30 f; centres fixed",
+   "instances": [
+    [
+     1110,
+     1123
+    ],
+    [
+     1114,
+     1127
+    ],
+    [
+     1118,
+     1131
+    ],
+    [
+     1121,
+     1134
+    ],
+    [
+     1125,
+     1136
+    ],
+    [
+     1128,
+     1141
+    ],
+    [
+     1132,
+     1145
+    ],
+    [
+     1136,
+     1149
+    ],
+    [
+     1139,
+     1152
+    ]
+   ],
+   "reference_frames": [
+    1110,
+    1123
+   ],
+   "measured": {
+    "duration_frames": 11,
+    "easing": "opacity spring {1378.6, 76.28, mass 1; zeta 1.03} (rmse 0.034) / bezier(0.191, 0.980, 0.510, 0.981) D=13 (0.088)",
+    "values": "icon 1 fill luma 250 -> 239, 168, 120, 87, 65, 48, 37, 31, 24, 22, 20, 18, 17 f1110-f1123; scale 0.50, 0.65, 0.75, 0.82, 0.86, 0.90, 0.92, 0.93, 0.94, 0.95, 0.96 f1110-f1120, 1.00 f1150; stagger 3.6 f"
+   },
+   "curves": [
+    "v2.icon-stagger-pop-in.v2c2"
+   ]
+  },
+  {
+   "id": "v2.trans-icon-converge-morph",
+   "category": "trans",
+   "description": "the logo icons travel on straight lines into a centred 6-slot row while shrinking to 0.64 on one shared ease-in-out, then crossfade into hex mascots; the headline swaps in the last frame",
+   "instances": [
+    [
+     1163,
+     1183
+    ]
+   ],
+   "reference_frames": [
+    1163,
+    1178
+   ],
+   "measured": {
+    "duration_frames": 16,
+    "easing": "bezier(0.654, 0.013, 0.425, 0.920) D=16 (rmse 0.022) / spring {434.0, 33.17, mass 1} (0.128)",
+    "values": "icon 1 (465, 450) -> (584, 757): y 450 ... 563 (f1170), 608 (f1171) ... 757 (f1178), peak 47 px/f; scale 1.00 -> 0.60 (f1176) -> 0.64 (f1179); crossfade f1174-f1182"
+   },
+   "curves": [
+    "v2.trans-icon-converge-morph.v2c2"
+   ]
+  },
+  {
+   "id": "v2.logo-eye-glance",
+   "category": "logo",
+   "description": "the hex mascot's two eye bars slide together to a new gaze (about 23% of the hex width sideways and 13% down) in 6-9 f with an ease-in-out, squashing to about 0.8 of their height mid-move; as a wave along a row or column with an even step (1.8 f across the c2S4 row; three waves from the c2S5 tile logo down the avatars that speed up, 4.2, 3.0, 1.8 f per step), all at once, or one mascot at a time (each c2S7 scatter mascot once, 19-43 f after its own birth)",
+   "instances": [
+    [
+     1195,
+     1207
+    ],
+    [
+     1213,
+     1218
+    ],
+    [
+     1247,
+     1274
+    ],
+    [
+     1277,
+     1298
+    ],
+    [
+     1319,
+     1334
+    ],
+    [
+     1432,
+     1491
+    ],
+    [
+     1635,
+     1644
+    ],
+    [
+     1659,
+     1668
+    ],
+    [
+     1680,
+     1688
+    ],
+    [
+     1880,
+     1889
+    ],
+    [
+     1934,
+     1943
+    ]
+   ],
+   "reference_frames": [
+    1195,
+    1202
+   ],
+   "measured": {
+    "duration_frames": 6,
+    "easing": "bezier(0.596, -0.085, 0.401, 0.991) D=7 (rmse 0.048) / spring {4104.7, 110.99, mass 1} (0.177); end-card instance fits bezier(0.627, 0.193, 0.357, 0.760) D=7 (rmse 0.040, curve dropped as a duplicate)",
+    "values": "hex 1 eye pair (600.5, 743.1) -> (571.0, 759.2), bar height 40 -> 33 -> 41 px; wave starts f1196, f1198, f1200, f1202, f1203, f1205; c2S5 waves (eye-pair minus hex centroid, scratch/v2c2_S5_glance_waves.csv): tile (+11.5, -9.5) -> (-7.7, +1.9) f1247, avatars (+6.8, -5.8) -> (-4.6, +1.2) from f1251, f1256, f1260, f1264, f1268 (4.2 f); tile -> (+13.7, +5.9) f1277, avatars -> (+8.1, +3.4) from f1280, f1283, f1286, f1289, f1292 (3.0 f); tile -> (+11.9, -9.9) f1319, avatars -> (+7.1, -6.0) from f1321, f1323, f1325, f1326, f1329 (1.8 f); each eye move 5-6 f, shape rmse 0.042-0.057 to this curve; c2S7: 30 glances f1432-f1491, 5-72 px (median 31), 4-8 f active, 19-43 f after each mascot's birth (scratch/v2c2_S7_scatter_glances.csv); end card (983.5, 409.5) -> (955.5, 429.5), bar 60 -> 50 -> 60; hub (981, 582) -> (941.5, 599.5) -> (988.6, 606.7) -> back"
+   },
+   "curves": [
+    "v2.logo-eye-glance.v2c2"
+   ]
+  },
+  {
+   "id": "v2.logo-eye-blink",
+   "category": "logo",
+   "description": "the mascot's eye bars squash to a short dash and reopen in about 6 frames; across a group of mascots in pairs 3-4 f apart",
+   "instances": [
+    [
+     1297,
+     1302
+    ],
+    [
+     1301,
+     1305
+    ],
+    [
+     1304,
+     1308
+    ],
+    [
+     1468,
+     1473
+    ],
+    [
+     1478,
+     1484
+    ],
+    [
+     1489,
+     1491
+    ],
+    [
+     1916,
+     1922
+    ]
+   ],
+   "reference_frames": [
+    1297,
+    1302
+   ],
+   "measured": {
+    "duration_frames": 6,
+    "easing": "about 3 f closing, 3 f opening (crops/crop_905_100_110x100_01290-01335.jpg)",
+    "values": "tile logo eye area 760 -> 348 -> 768 px (closed f1299); end card bar height 60 -> 18 (f1919) -> 60; pairs: tile + row 3 f1299, rows 1 + 4 f1303, rows 2 + 5 f1306; c2S7 blinks: mascot at (213, 829) f1468-f1473 (closed f1471, bar 49 -> 15 -> 49 px), mascot at (104, 113) f1478-f1484 (closed f1481, 54 -> 7 -> 54 px), mascot at (1842, 292) from f1489, still closing at the cut (72 -> 26 px at f1491)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v2.trans-hex-fly-into-ui",
+   "category": "trans",
+   "description": "a row of mascots flies on a rising wave into the matching avatar slots of a UI panel that fades in behind it, shrinking to the slot size; the old headline is cut mid-way",
+   "instances": [
+    [
+     1217,
+     1235
+    ]
+   ],
+   "reference_frames": [
+    1217,
+    1233
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "bezier(0.680, 0.021, 0.466, 0.767) D=16 (rmse 0.015) / spring {325.5, 27.97, mass 1} (0.273)",
+    "values": "black mascot (885, 757) w126 -> (960, 160) w94: y 754.5 (f1217) ... 535.5 (f1225), 449.5 (f1226) ... 160 (f1237), peak 86 px/f; grey ones w126 -> 56 in row order; panel toolbar luma 250 -> 239.1 f1219-f1235; headline cut f1221"
+   },
+   "curves": [
+    "v2.trans-hex-fly-into-ui.v2c2"
+   ]
+  },
+  {
+   "id": "v2.particle-hex-scatter-pop",
+   "category": "particle",
+   "description": "hex mascots of 4 tones and 146-207 px pop in at random spots (alternating roughly top and bottom bands, the headline band kept clear), one every 1.5 f; each scales 0.46 -> 1 with a fade in 9 f",
+   "instances": [
+    [
+     1409,
+     1462
+    ]
+   ],
+   "reference_frames": [
+    1409,
+    1418
+   ],
+   "measured": {
+    "duration_frames": 7,
+    "easing": "bezier(0.245, 1.084, 0.788, 0.950) D=9 (rmse 0.031) / spring {2399.9, 99.40, mass 1} (0.054)",
+    "values": "30 births f1409-f1453 at gaps 2, 1, 2, 1 ...; first mascot scale 0.46, 0.66, 0.78, 0.86, 0.92, 0.95, 0.97, 0.99, 0.99, 1.00 f1409-f1418; tones 3 x 17, 12 x 98-104, 12 x 129-139, 3 x 182"
+   },
+   "curves": [
+    "v2.particle-hex-scatter-pop.v2c2"
+   ]
+  },
+  {
+   "id": "v2.ui-page-scroll",
+   "category": "ui",
+   "description": "the whole page (with the caption on it) scrolls up half a frame height on a symmetric ease-in-out, no motion blur",
+   "instances": [
+    [
+     1540,
+     1561
+    ]
+   ],
+   "reference_frames": [
+    1540,
+    1561
+   ],
+   "measured": {
+    "duration_frames": 21,
+    "easing": "bezier(0.649, -0.001, 0.354, 1.001) D=21 (rmse 0.014) / spring {294.4, 27.27, mass 1} (0.103)",
+    "values": "chart title y 746 -> 186 (-560 px = -51.9% H), peak 76 px/f at f1550-f1551"
+   },
+   "curves": [
+    "v2.ui-page-scroll.v2c2"
+   ]
+  },
+  {
+   "id": "v2.trans-scroll-push",
+   "category": "trans",
+   "description": "the current page and the next layout sit on one vertical strip; the strip scrolls more than a frame height on the same ease-in-out as the page scroll, so the page leaves accelerating and the next layout arrives decelerating",
+   "instances": [
+    [
+     1602,
+     1627
+    ]
+   ],
+   "reference_frames": [
+    1602,
+    1627
+   ],
+   "measured": {
+    "duration_frames": 23,
+    "easing": "bezier(0.647, 0.005, 0.356, 0.992) D=23 (rmse 0.003) / spring {246.0, 25.09, mass 1} (0.110)",
+    "values": "strip travel 0 -> 1200 px (111% H) f1601-f1627, peak 152 px/f at f1613-f1614; hub 940 px below the page's figure-caption line"
+   },
+   "curves": [
+    "v2.trans-scroll-push.v2c2"
+   ]
+  },
+  {
+   "id": "v2.particle-packet-pingpong",
+   "category": "particle",
+   "description": "one dot per connector (22 px; grey, luma 129-130, on the 2 horizontals and the 2 short diagonals, black, luma 10-12, on the 4 long diagonals) ping-pongs between 0.16 and 0.84 of the line from the hub centre to its icon's centre column, at constant speed with a reversal within one frame, on one period shared by every line (42 f: a pass every 21 f), so its speed scales with its line; every line has its own phase; the hub and a 170 px canvas-coloured box under each icon are drawn above lines and dots, so the long spokes' dots vanish for 8 f under the inner icons on every pass and the short spokes' dots turn out of sight at both ends",
+   "instances": [
+    [
+     1615,
+     1688
+    ]
+   ],
+   "reference_frames": [
+    1646,
+    1667
+   ],
+   "measured": {
+    "duration_frames": 21,
+    "easing": "linear (constant speed per leg; triangle-wave fit per line, max residual 0.17 px, 0.23 and 0.6 px on the short spokes), reversal within one frame",
+    "values": "period 42.0 f on all 8 lines (half-period 21.0 f); turns at 0.160 and 0.840 of the line length on all 8, so travel = 0.68 x length and speed = travel / 21 f: 2 horizontals s 113.6 <-> 596.4 px from the hub centre (length 710 px, travel 482.8 px) at 22.99 px/f; 4 long diagonals s 102.3 <-> 537.4 (639.8 px, 435.1 px) at 20.71-20.72 px/f; 2 short diagonals to the inner laptop and inner cloud s 55.8 <-> 293.4 (349.3 px, 237.5 px) at 11.31 px/f; per-leg straight-line fits 22.98-23.00, 20.70-20.76, 11.29-11.36 px/f. Hub-end turns f1625.0 and f1667.0 (left horizontal), f1631.3, f1673.3 (lower-right long), f1635.9, f1677.9 (upper-left short), f1640.5, f1682.5 (upper-left long), f1646.8, f1688.8 (right horizontal), f1651.4 (lower-left), f1615.7, f1657.7 (lower-right short), f1620.3, f1662.3 (upper-right), i.e. 0, 6.3, 10.9, 15.5, 21.8, 26.5, 32.8, 37.4 f into the cycle; outer-end turns 21 f later; the turns come in pairs 0.84 f apart, one pair every 4.6-5.5 f. Hidden: long-spoke dots under the inner icon's box 8 f per pass (upper-left f1625-f1632, f1649-f1656, f1667-f1674; lower-right f1640-f1647, f1658-f1665, f1682 to the cut), clipped one frame either side, far-end turns on screen (f1661 / f1662, f1652 / f1653); short-spoke dots behind the hub at s 56 (upper-left f1635-f1637, f1677-f1679; lower-right f1657-f1658) and under the inner icon's box at s 293 (upper-left f1655-f1659; lower-right f1635-f1639, f1677-f1681), so their turns are known from the leg fits only. Running already in the T3 tail (f1615-f1626 samples, strip offset removed, within 0.19 px of the same waves). Samples scratch/v2c2_S9_packets8.csv, fits scratch/v2c2_S9_packet_turns.csv"
+   },
+   "curves": []
+  },
+  {
+   "id": "v2.logo-spin-scale-in",
+   "category": "logo",
+   "description": "the end-card logo enters in place after one empty frame: it grows from about 0.66, straightens a 17 deg counter-clockwise tilt and fades in, all three on one ease-out",
+   "instances": [
+    [
+     1801,
+     1832
+    ]
+   ],
+   "reference_frames": [
+    1802,
+    1826
+   ],
+   "measured": {
+    "duration_frames": 24,
+    "easing": "bezier(0.187, 0.858, 0.464, 0.987) D=31 (rmse 0.0012) / spring {205.0, 30.69, mass 1} (0.089)",
+    "values": "scale 0.658 -> 1.000, rotation -17.1 -> 0 deg, opacity 0.13 -> 1.00 (fill 219 -> 17) f1802-f1832, centre fixed (959.5, 429.5); all three within 0.02 of the same normalised progress"
+   },
+   "curves": [
+    "v2.logo-spin-scale-in.v2c2"
+   ]
+  },
+  {
+   "id": "v2.text-label-fade-in",
+   "category": "text",
+   "description": "a 1-line label fades in place under the end-card logo (no slide or scale), 6 frames after the logo settles",
+   "instances": [
+    [
+     1837,
+     1853
+    ]
+   ],
+   "reference_frames": [
+    1838,
+    1853
+   ],
+   "measured": {
+    "duration_frames": 14,
+    "easing": "bezier(0.344, 1.089, 0.762, 0.986) D=18 (rmse 0.010) / spring {402.6, 37.41, mass 1} (0.046)",
+    "values": "label-area mean luma 250 -> 176.9 f1837-f1853; bbox x 637-1284, y 593-646 constant"
+   },
+   "curves": [
+    "v2.text-label-fade-in.v2c2"
+   ]
+  }
+ ],
+ "typography_stills": [
+  "type/c2S1-1_f00901.png",
+  "type/c2S1-1_f00916.png",
+  "type/c2S1-1_f00957.png",
+  "type/c2S2-ui_f00958.png",
+  "type/c2S2-ui_f01060.png",
+  "type/c2S2-ui_f01097.png",
+  "type/c2S3-1_f01098.png",
+  "type/c2S3-2_f01106.png",
+  "type/c2S3-1_f01113.png",
+  "type/c2S3-2_f01160.png",
+  "type/c2S3-1_f01182.png",
+  "type/c2S4-1_f01183.png",
+  "type/c2S4-1_f01201.png",
+  "type/c2S4-1_f01220.png",
+  "type/c2S5-1_f01239.png",
+  "type/c2S5-1_f01269.png",
+  "type/c2S5-1_f01350.png",
+  "type/c2T2-morph_f01300.png",
+  "type/c2S6-1_f01351.png",
+  "type/c2S6-1_f01366.png",
+  "type/c2S6-1_f01407.png",
+  "type/c2S7-1_f01411.png",
+  "type/c2S7-1_f01419.png",
+  "type/c2S7-1_f01491.png",
+  "type/c2S8-1_f01492.png",
+  "type/c2S8-1_f01507.png",
+  "type/c2S8-1_f01509.png",
+  "type/c2S8-1_f01541.png",
+  "type/c2S8-1_f01600.png",
+  "type/c2S9-1_f01623.png",
+  "type/c2S9-1_f01650.png",
+  "type/c2S9-1_f01688.png",
+  "type/c2T3-push_f01640.png",
+  "type/c2S10-1_f01692.png",
+  "type/c2S10-1_f01738.png",
+  "type/c2S10-1_f01800.png",
+  "type/c2S11-1_f01838.png",
+  "type/c2S11-1_f01853.png",
+  "type/c2S11-1_f01970.png"
+ ],
+ "uncertain": [
+  {
+   "what": "end-card logo start state",
+   "range": "f1801-f1802",
+   "reason": "f1801 is empty; scale, rotation and opacity are known only from the first visible frame (0.658, -17.1 deg, 0.13)"
+  },
+  {
+   "what": "mapping of logo icons 2, 5, 6 and 8 to the row slots, and the scale dip 0.60 -> 0.64",
+   "range": "f1163-f1183",
+   "reason": "those icons overlap others during the move (icons 1, 3, 4, 7, 9 tracked); the dip may be a template bias from the crossfade"
+  },
+  {
+   "what": "paths and landing frames of the five grey mascots in T2",
+   "range": "f1217-f1233",
+   "reason": "they overlap each other and the fading panel text; only the black mascot was tracked (the row order of the landings is confirmed by the avatar fills at f1300), the paths are described from frame-numbered stills"
+  },
+  {
+   "what": "whether the app panel already scales while it fades in (T2)",
+   "range": "f1219-f1234",
+   "reason": "the ECC registration is unreliable under the fade (correlation under 0.998 before f1235; the right-border readings 1255.5 -> 1257.3 px f1227-f1231 fall in the same fade); from f1235 the layer is measured at rest until it starts at f1238"
+  },
+  {
+   "what": "rest values of both push-ins",
+   "range": "f1097, f1350",
+   "reason": "neither reaches rest before its cut; the end values are the last frames"
+  },
+  {
+   "what": "URL label cap height",
+   "range": "f1838-f1970",
+   "reason": "no capitals; ascender 51 px given instead"
+  },
+  {
+   "what": "typeface",
+   "range": "all text",
+   "reason": "neo-grotesque matching Inter's shapes (double-storey a, single-storey g, straight R leg); original not identified"
+  },
+  {
+   "what": "mascot count, and the absolute gaze offsets of the scatter mascots cut by the frame edge or covered by a neighbour",
+   "range": "f1409-f1491",
+   "reason": "30 mascots counted by births and on the f1491 still (an overlap could hide one; all 30 tracked mascots glance once); for the 9 hexes cut by the frame edge (and those partly covered) the hex centroid is biased, so their absolute offsets are approximate while the frames and sizes of the eye moves are not"
+  },
+  {
+   "what": "height of the canvas-coloured boxes under the device icons",
+   "range": "f1615-f1688",
+   "reason": "every connector enters a box through its left or right side, so only the 170 px width is measured (line ends and the clip edges of passing dots)"
+  }
+ ],
+ "notes": [
+  "All 11 segments are GRAPHICS; no footage anywhere in f901-f1970 (checked on every overview sheet sheets/overview_00864-00909.jpg .. sheets/overview_01968-01968.jpg).",
+  "f901 (c003) is also recorded by v2c1 as its closing hard cut (its S11 ends f900); both chunks agree.",
+  "Detector misses: hard cuts f958, f1098, f1351, f1408, f1689, f1801 (light canvas to light canvas, content_val 0.64-7.97) and the three soft transitions T1, T2, T3.",
+  "Rhythm: hard cuts land 5-10 f after a beat; the soft transitions settle 2-4 f after a beat (f1178, f1233, f1627); word pops follow their own 5-8 f cadence with no beat lock.",
+  "Technique ids reuse v2c1's where the device is the same (v2.text-word-pop, v2.ui-list-item-rise-fade, v2.logo-eye-glance, v2.logo-eye-blink). v2c1 files the push-in as v2.ui-slow-push-in (renamed in its review): the same device with the same normalised curve (v2c1's bezier(0.393, 0.571, 0.632, 0.934) fits the c2S5 ECC track with shape rmse 0.0025 and the c2S2 track with 0.0105), so the merge should give v2.cam-slow-push-in and v2.ui-slow-push-in one id. Probably the same pop under other names: v2.icon-stagger-pop-in vs v2c1 v2.icon-ring-pop-in; v2.particle-hex-scatter-pop vs v2c1 v2.grid-hex-radial-pop (bezier (0.245, 1.084, 0.788, 0.950) D=9 here, (0.244, 1.127, 0.813, 0.879) D=7 there); v2.logo-spin-scale-in vs v2c1 v2.logo-mark-pop-in (here with a 17 deg tilt).",
+  "One easing family carries all large moves: page scroll bezier(0.649, -0.001, 0.354, 1.001) D=21, scroll-push (0.647, 0.005, 0.356, 0.992) D=23, logo convergence (0.654, 0.013, 0.425, 0.920) D=16, mascot fly-in (0.680, 0.021, 0.466, 0.767) D=16; v2c1's logo lockup slide (0.648, 0.0005, 0.351, 0.9997) D=14.",
+  "Two text sizes only: big centred headlines (cap 85-90 px = 7.9-8.3% H) and small top or bottom lines (cap 48-49 px = 4.4-4.5% H); UI text caps 15.5-23 px (the c2S2 status-pill labels are the smallest, 15.5 px at rest).",
+  "Attempt-1 material reused after checking it on the frames: curves v2.cam-slow-push-in.v2c2, v2.ui-list-item-rise-fade.v2c2, v2.ui-badge-swap-pop.v2c2 and their scratch CSVs (v2c2_S13_* = c2S1, v2c2_S14_* = c2S2). Its stills type/S13-head_* and type/S14-ui_* duplicate type/c2S1-1_* and type/c2S2-ui_* and are not cited.",
+  "All ten off-cut motion-peak windows in range were opened (peak_f00959, f01097, f01170, f01182, f01227, f01350, f01551, f01611, f01688, f01802); each falls on a boundary or a movement listed here.",
+  "No on-screen text is quoted; logos are described as agent logo icons and the mascot as the brand's hex mascot.",
+  "Review fixes (rev 2). (1) c2S5: three eye-glance waves run from the tile logo down the five avatars (f1247 look down-left, f1277 look right, f1319 look up), measured per frame as eye-pair centroid minus hex centroid (scratch/v2c2_S5_glance_waves.csv, events in scratch/v2c2_S5_glance_events.csv; crops/crop_700_315_75x570_01245-01275.jpg, crops/crop_700_315_75x570_01276-01299.jpg, crops/crop_700_315_75x570_01316-01337.jpg, crops/crop_905_100_110x100_01244-01286.jpg); the tile's look-up at f1319 is 15.8 px, not 10 px (the old bbox ROI, scratch/v2c2_S5_tile_eyes.csv, took in the tile background at its corners). (2) The waves accelerate: 4.2, 3.0, 1.8 f per step (half-way points), with the tile as the first step. (3) c2S7: every scatter mascot glances once, 19-43 f after its own birth, so the glances start at f1432 while the births still run (11 of 30 start by f1453), not at f1456 (all 30 tracked: scratch/v2c2_S7_scatter_eyes.csv, scratch/v2c2_S7_scatter_hexes.csv, scratch/v2c2_S7_scatter_glances.csv; crops/crop_150_235_170x165_01429-01441.jpg, crops/crop_130_745_170x165_01434-01445.jpg, crops/crop_1060_680_175x170_01441-01452.jpg, crops/crop_1530_45_210x190_01443-01455.jpg); the mascot at (1441, 749) that glances f1473-f1479 is mid grey (fill 131), not black. (4) The c2S5 push-in was re-measured by ECC registration (scratch/v2c2_S5_panel_ecc.csv): at rest f1235-f1237, first moved f1238, 1.0000 -> 1.0399, and the same normalised curve as c2S2 (shape rmse 0.0044), its shorter duration following the segment-timing rule, so it is no second technique; the misnamed flow-based curve v2.cam-slow-push-in.s5.v2c2 was dropped with curves_tool.py.",
+  "Review fixes (rev 3). (1) c2S9 packets: all 8 dots tracked per frame f1615-f1688 (scratch/v2c2_S9_packets8.csv: dark blobs below luma 180 outside the hub, the T3-tail frames shifted back by the strip offset read off the hub's top edge; triangle-wave and per-leg fits in scratch/v2c2_S9_packet_turns.csv). The period is shared (42.0 f), the speed is not: every dot runs between 0.16 and 0.84 of its line from the hub centre to its icon, so 22.99 px/f on the horizontals, 20.71-20.72 on the four long diagonals and 11.31 on the two short diagonals (grey dots to the inner laptop and inner cloud). The lower-left diagonal is 20.72 px/f, not 20.9 (the old track scratch/v2c2_S9_packet_diag.csv used whole-pixel box centres; it and scratch/v2c2_S9_packet_left.csv are superseded). The hub and a 170 px canvas-coloured box under every icon are drawn above lines and dots: the long spokes' black dots vanish for 8 f under the inner icons on every pass, the short spokes' turns are never on screen (their frames come from the leg fits), and the long spokes' far-end turns are on screen (whole dot at f1661 / f1662 and f1652 / f1653). Crops: crops/crop_780_480_150x110_01630-01647.jpg, crops/crop_450_350_320x190_01645-01662.jpg, crops/crop_1150_640_260x200_01637-01650.jpg, crops/crop_1000_590_120x110_01653-01662.jpg. (2) c2S2 status-pill label (replaces the UNCERTAIN): first capital 16.0 px tall on f1097 at push-in scale 1.0296 (all 7 pills; 50% level between fill 100 and label 251-252; card 1 y 462.5-478.5, x 319-334 on type/c2S2-ui_f01097.png) = 15.5 px = 1.44% H at rest; the pill there is 112 x 41 px (50% level), not 120 x 45. (3) c2S3 T1: the md's icon-1 scale series had dropped one of the two 0.99 values (f1164, f1165), which put every later value one frame early; it now reads 1.00, 0.99, 0.99, 0.98, 0.96, 0.93, 0.90, 0.84, 0.78, 0.73, 0.67, 0.63, 0.61, 0.60, 0.60, 0.63, 0.64 f1163-f1179 as in scratch/v2c2_T1_icon1.csv and this JSON (0.60 at f1176), checked against the icon's ink box (scratch/v2c2_T1_icon1_inkbox.csv, within 0.02 to f1177)."
+ ]
+}

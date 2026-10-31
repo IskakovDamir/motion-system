@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-whip-push-up.v7c1",
+  "file": "curves/v7.trans-whip-push-up.v7c1.csv",
+  "property": "position-y",
+  "unit": "% of frame height",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s3_title_286-352.csv",
+  "column": "cy_pct",
+  "sampled_frames": [
+    289,
+    304
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 47.386,
+  "to_value": 38.78,
+  "active_frames": [
+    289,
+    304
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.001,
+    "y1": 0.2476,
+    "x2": 0.4645,
+    "y2": 0.9741,
+    "durationInFrames": 15,
+    "delay": -0.0,
+    "built_duration_frames": 14,
+    "rmse": 0.0232
+  },
+  "spring": {
+    "stiffness": 465.604,
+    "damping": 43.478,
+    "mass": 1,
+    "damping_ratio": 1.0075,
+    "built_duration_frames": 17,
+    "rmse": 0.0606
+  },
+  "recommended": "bezier",
+  "note": "incoming half of the vertical whip S2->S3: after the cut (f286->f289) the new page title arrives 8.6% H below its rest already moving up (~1.5% H per frame) and decelerates to rest (y 47.4% -> 38.8%); template on the page title, ref f300; motion starts at the cut (no rest before). Outgoing half (S2 menu): highlight-pill centre 58.9% -> 47.1% H over f269-f286, accelerating (0.1 -> 2.5% H per frame) with growing vertical motion blur"
+}

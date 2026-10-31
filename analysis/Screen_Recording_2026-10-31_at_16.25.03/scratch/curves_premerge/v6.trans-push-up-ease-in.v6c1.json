@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.trans-push-up-ease-in.v6c1",
+  "file": "curves/v6.trans-push-up-ease-in.v6c1.csv",
+  "property": "position-y",
+  "unit": "px (picture 918 px high)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_P08_bigword_exit.csv",
+  "column": "cy",
+  "sampled_frames": [
+    506,
+    538
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 285.0,
+  "to_value": 188.0,
+  "active_frames": [
+    519,
+    538
+  ],
+  "measured_duration_frames": 19,
+  "bezier": {
+    "x1": 0.7178,
+    "y1": 0.0119,
+    "x2": 1.0,
+    "y2": 0.7309,
+    "durationInFrames": 21,
+    "delay": -2.0,
+    "built_duration_frames": 18,
+    "rmse": 0.0165
+  },
+  "spring": {
+    "stiffness": 201.993,
+    "damping": 29.053,
+    "mass": 1,
+    "damping_ratio": 1.0221,
+    "built_duration_frames": 25,
+    "rmse": 0.4118
+  },
+  "recommended": "bezier",
+  "note": "outgoing diagram layout (P08) of the vertical push, drift phase: big grey word (template ref f508) 285 px at rest -> 284 / 283 / 280 / 275 / 269 / 259 / 245 / 224 / 188 px at f519-f538 (a long ease-in, -0.5 -> -18 px per frame); the swap that follows is too fast for a fit: the word is at 118 px at f541 (-23 px per frame, heavily blurred), the right card's top goes 350 -> 281 px (f538/f541) and the card leaves the frame by f543 (visible band 24-238 px, so its top is near -121 px: about -200 px per frame; scratch/v6c1_P08_rightcard_exit.csv), a sliver remains at f546 (23-59 px); meanwhile the phone's top rises 891 (blurred, entering) / 365 / 225 / 189 px at f538/541/543/546 (scratch/v6c1_push_phone_rise.csv) and it lands at x1.17 (f546) -> x1.0 (f548); fits run through f541 stayed at rmse 0.053-0.068 with x1 = x2 = 1.0"
+}

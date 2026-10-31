@@ -1,0 +1,40 @@
+{
+  "technique_id": "v3.logo-lockup-slide",
+  "file": "curves/v3.logo-lockup-slide.csv",
+  "property": "position-x",
+  "unit": "% of frame width",
+  "source_samples": "../../analysis/yI-1xclfzqMRrqfA/scratch/v3c2_mark_slide.csv",
+  "column": "cx_pct",
+  "sampled_frames": [
+    1250,
+    1292
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 50.0,
+  "to_value": 21.458,
+  "active_frames": [
+    1260,
+    1281
+  ],
+  "measured_duration_frames": 21,
+  "bezier": {
+    "x1": 0.5879,
+    "y1": 0.0254,
+    "x2": 0.4117,
+    "y2": 0.9752,
+    "durationInFrames": 26,
+    "delay": -2.493,
+    "built_duration_frames": 20,
+    "rmse": 0.0092
+  },
+  "spring": {
+    "stiffness": 140.527,
+    "damping": 18.492,
+    "mass": 1,
+    "damping_ratio": 0.78,
+    "built_duration_frames": 18,
+    "rmse": 0.1299
+  },
+  "recommended": "bezier",
+  "note": "brand mark (black rounded flat-top hexagon 169x152 px with two white eye bars) slides left from the frame centre to its lockup place, clearing room for the wordmark; template track, ref f1257; y fixed at 380 px (35.2% H)"
+}

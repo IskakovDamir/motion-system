@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.card-content-crossfade.v4c2",
+  "file": "curves/v4.card-content-crossfade.v4c2.csv",
+  "property": "opacity",
+  "unit": "opacity 0-1 (least-squares projection of the settled icon pattern, mean of the six original cards)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/c2_r1_t4_icon_in.csv",
+  "column": "mean_icon_opacity",
+  "sampled_frames": [
+    975,
+    1026
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 0.0,
+  "to_value": 1.0003,
+  "active_frames": [
+    983,
+    1014
+  ],
+  "measured_duration_frames": 31,
+  "bezier": {
+    "x1": 0.3184,
+    "y1": 0.9937,
+    "x2": 0.6144,
+    "y2": 0.906,
+    "durationInFrames": 32,
+    "delay": 0.753,
+    "built_duration_frames": 30,
+    "rmse": 0.0247
+  },
+  "spring": {
+    "stiffness": 136.486,
+    "damping": 30.579,
+    "mass": 1,
+    "damping_ratio": 1.3087,
+    "built_duration_frames": 29,
+    "rmse": 0.0303
+  },
+  "recommended": "bezier",
+  "note": "incoming agent logo icon inside the six original cards (S04 left and right columns): each card is registered per frame by its own measured edges (sub-pixel, so the camera model's half-pixel steps do not leak in), resampled to its rest geometry, and an icon-only band (x 33-69%, y 53-69% of the card) is projected onto the settled icon; card-to-card spread under 0.015; reference f1020 (camera at rest, no packet over the six cards)"
+}

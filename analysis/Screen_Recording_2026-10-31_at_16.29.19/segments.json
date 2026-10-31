@@ -1,0 +1,782 @@
+{
+  "video": "Screen_Recording_2026-10-31_at_16.29.19",
+  "key": "v7",
+  "fps": 60,
+  "frame_count": 4766,
+  "segments": [
+    {
+      "id": "S01",
+      "start": 0,
+      "end": 156,
+      "length_frames": 157,
+      "class": "GRAPHICS",
+      "boundary_in": "video-start",
+      "boundary_out": "T01",
+      "summary": "opening title card on a light field with blurred grey spheres and a halftone dot ring that expands out through the frame edges (f0-f56): a black label box pops in with two corner handles flying out of its corners, widens with overshoot and types/decodes a 2-line title (brand mark + 2 words: the brand mark and the typed word slide apart to admit the decoded word, then the line rises for line 2; then chevrons + app icon + 2 words); a thin down-arrow drops in at the right; a 5-ball mascot chain arcs in from the left and dives into the label centre, two expanding halo rings invert then restore the luminance, shards burst outward, and a white iris covers the frame"
+    },
+    {
+      "id": "S02",
+      "start": 157,
+      "end": 288,
+      "length_frames": 132,
+      "class": "GRAPHICS",
+      "boundary_in": "T01",
+      "boundary_out": "T02",
+      "summary": "product UI menu on white: after a 7-frame white hold the menu drops in zoomed (x1.59, blurred) and settles while its 5 rows pop in one per picture; camera pans up and zooms slightly so the 4th row reaches the upper half, a hover pill fades in on it, then the whole layout whips up out of frame"
+    },
+    {
+      "id": "S03",
+      "start": 289,
+      "end": 418,
+      "length_frames": 130,
+      "class": "GRAPHICS",
+      "boundary_in": "T02",
+      "boundary_out": "T03",
+      "summary": "product UI page (title, subtitle, search field) arrives on the whip and settles, camera pushes in x1.81 with motion blur onto the field, a query types on, the page scrolls up while a result row stretches in from a speck with overshoot while its CTA button arrives oversized and settles on its own, the row gets a hover lift (button grows back, card outline and shadow fade in), then the page pulls back with blur into a hard cut"
+    },
+    {
+      "id": "S04",
+      "start": 419,
+      "end": 483,
+      "length_frames": 65,
+      "class": "GRAPHICS",
+      "boundary_in": "T03",
+      "boundary_out": "T04",
+      "summary": "dark side-panel UI over a two-tone diagonal grey background: camera settles out of a close-up while an app tile shrinks from x2.2 to rest and its glyph spins into place on a spring, a label types on beside it, then the whole layout accelerates upward into a hard cut"
+    },
+    {
+      "id": "S05",
+      "start": 484,
+      "end": 630,
+      "length_frames": 147,
+      "class": "GRAPHICS",
+      "boundary_in": "T04",
+      "boundary_out": "T05",
+      "summary": "dark product UI window (rounded, 82.5% W) on a grey background with light diagonal bands: the window drops in from above and settles (its sidebar, small brand label and input bar motion-blurred on the first pictures, the headline sharp), its thumbnail cards and chips fade in left to right, then the page content scrolls up about one screen inside the static window with an ease-in-out momentum curve while the window creeps slightly closer; rest, hard cut"
+    },
+    {
+      "id": "S06",
+      "start": 631,
+      "end": 705,
+      "length_frames": 75,
+      "class": "LIVE",
+      "boundary_in": "T05",
+      "boundary_out": "T06",
+      "live_confirmed_on": [
+        "sheets/overview_00624-00669.jpg",
+        "sheets/overview_00672-00717.jpg"
+      ],
+      "summary": "footage only; no caption, logo, frame or overlay on any picture f631-f705 (also checked detail/peak_f00648, detail/peak_f00681, detail/cut_c018_f00631, detail/cut_c020_f00710); the player's speaker icon is ignored"
+    },
+    {
+      "id": "S07",
+      "start": 706,
+      "end": 899,
+      "length_frames": 194,
+      "class": "MIXED",
+      "boundary_in": "T06",
+      "boundary_out": "T07",
+      "summary": "footage shot from the hard cut f706 (f706-f708 footage only) with a centred bottom caption and a round voice badge (level-meter bars) above it: the badge pops in at f709 at half size and grows on a long ease-out tail, a 1-word caption fades in and out, then a 7-word caption reveals word by word (fade + rise + de-blur) while the footage zooms in on its own (camera move inside the footage, not analysed); the caption is cleared by the cut f900, the badge stays"
+    },
+    {
+      "id": "S08",
+      "start": 900,
+      "end": 1078,
+      "length_frames": 179,
+      "class": "MIXED",
+      "boundary_in": "T07",
+      "boundary_out": "T08",
+      "summary": "second footage angle with the same caption style and badge: a 5-word caption reveals word by word at a 27-30 f cadence, then holds"
+    },
+    {
+      "id": "S09",
+      "start": 1079,
+      "end": 1195,
+      "length_frames": 117,
+      "class": "GRAPHICS",
+      "boundary_in": "T08",
+      "boundary_out": "T09",
+      "summary": "product UI: cut into a momentum scroll of a card list behind a fixed prompt bar whose 7-word prompt streams in word by word; slow drift, then an accelerating leftward whip"
+    },
+    {
+      "id": "S10",
+      "start": 1196,
+      "end": 1258,
+      "length_frames": 63,
+      "class": "GRAPHICS",
+      "boundary_in": "T09",
+      "boundary_out": "T10",
+      "summary": "close-up of the prompt bar's right end (model chip label + round send button): whip-in deceleration, the send button is pressed (shrink, brighten, glow), then a counter-clockwise spin-zoom out"
+    },
+    {
+      "id": "S11",
+      "start": 1259,
+      "end": 1486,
+      "length_frames": 228,
+      "class": "GRAPHICS",
+      "boundary_in": "T10",
+      "boundary_out": "T11",
+      "summary": "defocused dark UI with a centred cursor: spin-zoom in, the cursor glows and morphs into a glossy 3D pointer; a status capsule grows from a dot and types a 2-word label with an ellipsis while the camera reframes left and pulls back; then a leftward whip"
+    },
+    {
+      "id": "S12",
+      "start": 1487,
+      "end": 1541,
+      "length_frames": 55,
+      "class": "GRAPHICS",
+      "boundary_in": "T11",
+      "boundary_out": "T12",
+      "summary": "file-browser window close-up (sidebar, title, 2 x 2 video thumbnails, small 3D pointer): whip-in deceleration with grid-only blur, then an accelerating leftward pan"
+    },
+    {
+      "id": "S13",
+      "start": 1542,
+      "end": 1643,
+      "length_frames": 102,
+      "class": "GRAPHICS",
+      "boundary_in": "T12",
+      "boundary_out": "T13",
+      "summary": "the file browser zoomed out to a full 5 x 5 thumbnail grid: whip-in deceleration with grid-only blur, a reading-order selection sweep lights all tiles, the selection dims, then the selected grid is dragged right as one block with layer-only motion blur and leaves the window while the camera eases into a leftward whip (hard cut f1644)"
+    },
+    {
+      "id": "S14",
+      "start": 1644,
+      "end": 1785,
+      "length_frames": 142,
+      "class": "GRAPHICS",
+      "boundary_in": "T13",
+      "boundary_out": "T14",
+      "summary": "dark editor UI window on a light banded background: whip-in from the right decelerating over 40 f, 9 photo thumbnails pop in one per picture (4.4 f stagger), slow ease-in-out camera push-in x1.17 about the centre, a white bloom builds over the project panel, its grid drops out downward at the peak and a 7-folder grid drops in from above (items pop 2.2 f apart) as the bloom drains; the cursor is flicked down-right across the panel during the swap, easing out to rest by f1761"
+    },
+    {
+      "id": "S15",
+      "start": 1786,
+      "end": 2006,
+      "length_frames": 221,
+      "class": "LIVE",
+      "boundary_in": "T14",
+      "boundary_out": "T15",
+      "live_confirmed_on": [
+        "sheets/overview_01776-01821.jpg",
+        "sheets/overview_01824-01869.jpg",
+        "sheets/overview_01872-01917.jpg",
+        "sheets/overview_01920-01965.jpg",
+        "sheets/overview_01968-02013.jpg"
+      ],
+      "summary": "one continuous footage shot with a moving camera; no designed element on any picture"
+    },
+    {
+      "id": "S16",
+      "start": 2007,
+      "end": 2090,
+      "length_frames": 84,
+      "class": "GRAPHICS",
+      "boundary_in": "T15",
+      "boundary_out": "T16",
+      "summary": "the editor window at a wider framing with the timeline visible: whip-in from the left decelerating over 32 f, outline ghosts of the 9 selected clips appear (f2061, with a slight window lift), hold 5 f and are dragged as one grid along a curved path down into the timeline while the camera tilts down, accelerating into a punch-in cut"
+    },
+    {
+      "id": "S17",
+      "start": 2091,
+      "end": 2341,
+      "length_frames": 251,
+      "class": "MIXED",
+      "boundary_in": "T16",
+      "boundary_out": "T17",
+      "summary": "timeline close-up settling upward after the punch-in while the ghost outline grid keeps sliding down to rest and then vanishes; a status-line counter swaps its value on every picture f2114-f2149; camera pulls back x0.40 to reveal viewer (playing footage in a masked window, cut 5 times in 15 f during the pull-back), bin and timeline while the clip strip slides in, docks and splits into its clips (f2151-f2156); the clip bars brighten from the dock and glow with a halo while gaps close, clips split and two gaps open, then dim to a darker rest by f2294; placeholders blink in the gaps in a 10-frame loop; an accelerating leftward drift runs into the hard cut f2342 (v7c4)"
+    },
+    {
+      "id": "S18",
+      "start": 2342,
+      "end": 2391,
+      "length_frames": 50,
+      "class": "GRAPHICS",
+      "boundary_in": "T17",
+      "boundary_out": "T18",
+      "summary": "dark canvas agent log at a close framing: the agent logo arrives with a leftward whip (incoming half at the hard cut f2342) and spins while a 4-word line types letter by letter (grey, then white); the framing then pans left with an ease-in into the hidden pull-back cut f2392"
+    },
+    {
+      "id": "S19",
+      "start": 2392,
+      "end": 2473,
+      "length_frames": 82,
+      "class": "GRAPHICS",
+      "boundary_in": "T18",
+      "boundary_out": "T19",
+      "summary": "the same canvas x0.49 smaller (hidden cut f2392): the framing glides left and creeps 1.04 -> 0.985 while line 1 finishes (f2411) and the logo's spin stops (f2434); a hold, then an ease-in drift up that stops dead one crisp picture (f2471-f2473) before the hidden push-in cut f2474"
+    },
+    {
+      "id": "S20",
+      "start": 2474,
+      "end": 2514,
+      "length_frames": 41,
+      "class": "GRAPHICS",
+      "boundary_in": "T19",
+      "boundary_out": "T20",
+      "summary": "x2.2 closer framing (hidden cut f2474): the canvas keeps rising and settles, revealing an empty second row where an app icon pops in from a sliver and line 2 starts typing slowly; then an ease-in pan left that stops dead one crisp picture (f2511-f2514) before the hidden pull-back cut f2515"
+    },
+    {
+      "id": "S21",
+      "start": 2515,
+      "end": 2608,
+      "length_frames": 94,
+      "class": "GRAPHICS",
+      "boundary_in": "T20",
+      "boundary_out": "T21",
+      "summary": "x0.44 wide framing (hidden cut f2515): a 59-frame glide left re-centres the two-row block while line 2 types in a fast burst and finishes; then an ease-in drift up into the hidden push-in cut f2609"
+    },
+    {
+      "id": "S22",
+      "start": 2609,
+      "end": 2735,
+      "length_frames": 127,
+      "class": "MIXED",
+      "boundary_in": "T21",
+      "boundary_out": "T22",
+      "summary": "the two text rows scroll out at the top after the hidden push-in cut f2609 while a result card (rounded, gridded, top glow) rises to the centre with a glassy status chip and arc spinner; its grid lights up in a left-to-right sweep, a dot-matrix ring expands from the chip and reveals footage in the card while the chip fades; the camera pulls back x0.755 to bring the line above back, a cursor arrives and drags the card down-right while the line slides off left into a hard cut"
+    },
+    {
+      "id": "S23",
+      "start": 2736,
+      "end": 2823,
+      "length_frames": 88,
+      "class": "MIXED",
+      "boundary_in": "T22",
+      "boundary_out": "T23",
+      "summary": "file-browser grid of flat folder icons arrives with a decelerating leftward glide; a cursor drags a file chip (footage thumbnail + name pill) up from the bottom edge to a drop-target folder that pops in, the chip shrinks to nothing on the folder front (fast step on the beat f2781, gone f2794) while the folder presses, and the folder springs back; the whole grid then accelerates upward into a hard cut"
+    },
+    {
+      "id": "S24",
+      "start": 2824,
+      "end": 2940,
+      "length_frames": 117,
+      "class": "LIVE",
+      "boundary_in": "T23",
+      "boundary_out": "T24",
+      "live_confirmed_on": [
+        "sheets/overview_02784-02829.jpg",
+        "sheets/overview_02832-02877.jpg",
+        "sheets/overview_02880-02925.jpg",
+        "sheets/overview_02928-02973.jpg",
+        "type/v7c4-P5-check_f02826.png",
+        "type/v7c4-P5-check_f02880.png",
+        "type/v7c4-P5-check_f02938.png"
+      ],
+      "summary": "full-frame footage, no designed element (only the player's speaker icon)"
+    },
+    {
+      "id": "S25",
+      "start": 2941,
+      "end": 2990,
+      "length_frames": 50,
+      "class": "GRAPHICS",
+      "boundary_in": "T24",
+      "boundary_out": "T25",
+      "summary": "second agent log, a frame-for-frame repeat of S18 (+599 frames) with SemiBold text: whip arrival, spinning logo, letter-by-letter typing, then an ease-in pan left into the hidden pull-back cut f2991"
+    },
+    {
+      "id": "S26",
+      "start": 2991,
+      "end": 3093,
+      "length_frames": 103,
+      "class": "GRAPHICS",
+      "boundary_in": "T25",
+      "boundary_out": "T26",
+      "summary": "the same agent-log canvas x0.535 smaller (hidden cut f2991): the framing glides left while the line finishes typing (f3014) and the logo's spin stops (f3034), the camera pulls back about the frame centre to x0.832 (slow-fast-slow), then the line rises with an ease-in and vertical smear into the hidden push-in cut f3094"
+    },
+    {
+      "id": "S27",
+      "start": 3094,
+      "end": 3133,
+      "length_frames": 40,
+      "class": "GRAPHICS",
+      "boundary_in": "T26",
+      "boundary_out": "T27",
+      "summary": "x2.33 close-up of the same canvas arrives rising and settles in 20 f; a row-2 app tile pops from a sliver, the prompt beside it types letter by letter (grey then white, ramping up); the canvas then slides left accelerating into a hidden pull-back cut"
+    },
+    {
+      "id": "S28",
+      "start": 3134,
+      "end": 3213,
+      "length_frames": 80,
+      "class": "GRAPHICS",
+      "boundary_in": "T27",
+      "boundary_out": "T28",
+      "summary": "wide view (x0.398) of the two-row agent log arrives sliding left and glides to rest over 50 f while the prompt keeps typing with a 21 f stall; a second leftward slide accelerates into a hidden push-in cut"
+    },
+    {
+      "id": "S29",
+      "start": 3214,
+      "end": 3580,
+      "length_frames": 367,
+      "class": "MIXED",
+      "boundary_in": "T28",
+      "boundary_out": "T29",
+      "summary": "x1.86 close-up of the end of row 2 arrives sliding left and settles; a slow-fast-slow pull-back (x0.56) reveals both rows while a 16:9 picture card carrying footage rises into place below them; the camera pushes into the card (creep, one fast picture, long tail) until it nearly fills the frame, holds 157 f while three light scan bands sweep across and reveal edits, then the card slides down-left accelerating into a hard cut"
+    },
+    {
+      "id": "S30",
+      "start": 3581,
+      "end": 3689,
+      "length_frames": 109,
+      "class": "GRAPHICS",
+      "boundary_in": "T29",
+      "boundary_out": "T30",
+      "summary": "video-editor product UI window (its viewer holds one still picture, no playback) lands filling the frame and zooms in x4.3 about a point above-right of the frame; a 3D pointer flies up onto the top-right action button, which lights with a glow while the camera recoils x0.86; the camera then pushes in about the frame centre, accelerating, as the pointer flies off right into a zoom-through cut"
+    },
+    {
+      "id": "S31",
+      "start": 3690,
+      "end": 3888,
+      "length_frames": 199,
+      "class": "GRAPHICS",
+      "boundary_in": "T30",
+      "boundary_out": "T31",
+      "summary": "light desktop wallpaper keeps zooming in after the zoom-through cut and settles; a 3D pointer drags in a file tile (still thumbnail picture + 2-line label) from the left, then sinks off it and glides right to beside the label; a status capsule is born as a thin line, widens to a pill while one word types, holds, un-types and collapses back to a line; the camera creeps then pushes in x1.21 and the 3D pointer becomes a 2D cursor in the fastest picture; still hold f3861-f3887 (the thumbnail stays frozen), hard cut f3889"
+    },
+    {
+      "id": "S32",
+      "start": 3889,
+      "end": 4215,
+      "length_frames": 327,
+      "class": "MIXED",
+      "boundary_in": "T31",
+      "boundary_out": "T32",
+      "summary": "full-frame footage; no designed element for 182 frames (f3889-f4070), then the round voice badge pops in at the bottom centre (f4071), a single-word upper-case caption fades/rises in below it (f4075), fades out in place (f4141-f4159) while a 2-word caption builds word by word in a pre-centred line (f4156, f4174); badge level bars follow the voice; all cleared by the cut"
+    },
+    {
+      "id": "S33",
+      "start": 4216,
+      "end": 4288,
+      "length_frames": 73,
+      "class": "GRAPHICS",
+      "boundary_in": "T32",
+      "boundary_out": "T33",
+      "summary": "dark product UI page: the cut lands mid-move while an account dropdown opens from its top-right anchor (own scale about 0.58 -> 1.0, light-grey fill darkening, heavy blur) and the camera pushes in x1.64 toward the top-right corner; both settle by f4254, a slow creep follows, then the camera whips into the highlighted row's value"
+    },
+    {
+      "id": "S34",
+      "start": 4289,
+      "end": 4368,
+      "length_frames": 80,
+      "class": "GRAPHICS",
+      "boundary_in": "T33",
+      "boundary_out": "T34",
+      "summary": "close-up of the highlighted row's value pill (x2.32 the menu's rest scale) that arrives moving and settles in 18 f; the number counts down 9 units in 5 hard swaps (one per picture) and holds under a slow centre push-in x1.037"
+    },
+    {
+      "id": "S35",
+      "start": 4369,
+      "end": 4521,
+      "length_frames": 153,
+      "class": "MIXED",
+      "boundary_in": "T34",
+      "boundary_out": "T35",
+      "summary": "footage dimmed to about half luminance with a small 1-line upper-case headline (7 words) centred in the frame; the headline is static from the first to the last picture; the video's last shot"
+    },
+    {
+      "id": "S36",
+      "start": 4522,
+      "end": 4691,
+      "length_frames": 170,
+      "class": "GRAPHICS",
+      "boundary_in": "T35",
+      "boundary_out": "T36",
+      "summary": "the player loops: the opening title card plays again from the video's true first frame (5 frames of white, a seed dash and halftone ring at f4527, the label pop by f4547), then exactly as S01 (+4535 f): widen, type-on/decode, arrow, mascot chain, push-in and punch, inverting rings, shards, iris"
+    },
+    {
+      "id": "S37",
+      "start": 4692,
+      "end": 4765,
+      "length_frames": 74,
+      "class": "GRAPHICS",
+      "boundary_in": "T36",
+      "boundary_out": "video-end",
+      "summary": "replay of S02: white hold, the menu UI enters zoomed x1.59 and blurred and settles while its rows pop in, hold, then the pan-up starts; the recording ends at f4765 mid-pan"
+    }
+  ],
+  "transitions": [
+    {
+      "id": "T01",
+      "type": "mask-wipe",
+      "start": 144,
+      "end": 168,
+      "frames": 25,
+      "from": "S01",
+      "to": "S02",
+      "technique": "v7.trans-iris-white"
+    },
+    {
+      "id": "T02",
+      "type": "whip",
+      "start": 269,
+      "end": 304,
+      "frames": 36,
+      "from": "S02",
+      "to": "S03",
+      "technique": "v7.trans-whip-push-up",
+      "cut_frame": 289
+    },
+    {
+      "id": "T03",
+      "type": "hard-cut",
+      "start": 419,
+      "end": 419,
+      "frames": 0,
+      "from": "S03",
+      "to": "S04",
+      "technique": null
+    },
+    {
+      "id": "T04",
+      "type": "hard-cut",
+      "start": 484,
+      "end": 484,
+      "frames": 0,
+      "from": "S04",
+      "to": "S05",
+      "technique": null
+    },
+    {
+      "id": "T05",
+      "type": "hard-cut",
+      "start": 631,
+      "end": 631,
+      "frames": 0,
+      "from": "S05",
+      "to": "S06",
+      "technique": null
+    },
+    {
+      "id": "T06",
+      "type": "hard-cut",
+      "start": 706,
+      "end": 706,
+      "frames": 0,
+      "from": "S06",
+      "to": "S07",
+      "technique": null
+    },
+    {
+      "id": "T07",
+      "type": "hard-cut",
+      "start": 900,
+      "end": 900,
+      "frames": 0,
+      "from": "S07",
+      "to": "S08",
+      "technique": null
+    },
+    {
+      "id": "T08",
+      "type": "hard-cut",
+      "start": 1079,
+      "end": 1079,
+      "frames": 0,
+      "from": "S08",
+      "to": "S09",
+      "technique": null
+    },
+    {
+      "id": "T09",
+      "type": "whip",
+      "start": 1151,
+      "end": 1226,
+      "frames": 76,
+      "from": "S09",
+      "to": "S10",
+      "technique": "v7.trans-whip-push-left",
+      "cut_frame": 1196
+    },
+    {
+      "id": "T10",
+      "type": "whip",
+      "start": 1234,
+      "end": 1281,
+      "frames": 48,
+      "from": "S10",
+      "to": "S11",
+      "technique": "v7.trans-spin-zoom-whip",
+      "cut_frame": 1259
+    },
+    {
+      "id": "T11",
+      "type": "whip",
+      "start": 1433,
+      "end": 1514,
+      "frames": 82,
+      "from": "S11",
+      "to": "S12",
+      "technique": "v7.trans-whip-push-left",
+      "cut_frame": 1487
+    },
+    {
+      "id": "T12",
+      "type": "whip",
+      "start": 1519,
+      "end": 1566,
+      "frames": 48,
+      "from": "S12",
+      "to": "S13",
+      "technique": "v7.trans-whip-push-left",
+      "cut_frame": 1542
+    },
+    {
+      "id": "T13",
+      "type": "whip",
+      "start": 1606,
+      "end": 1690,
+      "frames": 85,
+      "from": "S13",
+      "to": "S14",
+      "technique": "v7.trans-whip-push-left",
+      "cut_frame": 1644
+    },
+    {
+      "id": "T14",
+      "type": "hard-cut",
+      "start": 1786,
+      "end": 1786,
+      "frames": 0,
+      "from": "S14",
+      "to": "S15",
+      "technique": null
+    },
+    {
+      "id": "T15",
+      "type": "whip",
+      "start": 2007,
+      "end": 2041,
+      "frames": 35,
+      "from": "S15",
+      "to": "S16",
+      "technique": "v7.trans-whip-push-right",
+      "cut_frame": 2007
+    },
+    {
+      "id": "T16",
+      "type": "whip",
+      "start": 2041,
+      "end": 2120,
+      "frames": 80,
+      "from": "S16",
+      "to": "S17",
+      "technique": "v7.trans-punch-in-whip-up",
+      "cut_frame": 2091
+    },
+    {
+      "id": "T17",
+      "type": "whip",
+      "start": 2342,
+      "end": 2371,
+      "frames": 30,
+      "from": "S17",
+      "to": "S18",
+      "technique": "v7.trans-whip-push-left",
+      "cut_frame": 2342
+    },
+    {
+      "id": "T18",
+      "type": "whip",
+      "start": 2361,
+      "end": 2424,
+      "frames": 64,
+      "from": "S18",
+      "to": "S19",
+      "technique": "v7.trans-whip-push-left",
+      "cut_frame": 2392
+    },
+    {
+      "id": "T19",
+      "type": "whip",
+      "start": 2444,
+      "end": 2496,
+      "frames": 53,
+      "from": "S19",
+      "to": "S20",
+      "technique": "v7.trans-punch-in-whip-up",
+      "cut_frame": 2474
+    },
+    {
+      "id": "T20",
+      "type": "whip",
+      "start": 2499,
+      "end": 2589,
+      "frames": 91,
+      "from": "S20",
+      "to": "S21",
+      "technique": "v7.trans-whip-push-left",
+      "cut_frame": 2515
+    },
+    {
+      "id": "T21",
+      "type": "whip",
+      "start": 2589,
+      "end": 2641,
+      "frames": 53,
+      "from": "S21",
+      "to": "S22",
+      "technique": "v7.trans-punch-in-whip-up",
+      "cut_frame": 2609
+    },
+    {
+      "id": "T22",
+      "type": "whip",
+      "start": 2713,
+      "end": 2756,
+      "frames": 44,
+      "from": "S22",
+      "to": "S23",
+      "technique": "v7.trans-whip-push-left",
+      "cut_frame": 2736
+    },
+    {
+      "id": "T23",
+      "type": "hard-cut",
+      "start": 2824,
+      "end": 2824,
+      "frames": 0,
+      "from": "S23",
+      "to": "S24",
+      "technique": null
+    },
+    {
+      "id": "T24",
+      "type": "whip",
+      "start": 2941,
+      "end": 2971,
+      "frames": 31,
+      "from": "S24",
+      "to": "S25",
+      "technique": "v7.trans-whip-push-left",
+      "cut_frame": 2941
+    },
+    {
+      "id": "T25",
+      "type": "whip",
+      "start": 2961,
+      "end": 3014,
+      "frames": 54,
+      "from": "S25",
+      "to": "S26",
+      "technique": "v7.trans-whip-push-left",
+      "cut_frame": 2991
+    },
+    {
+      "id": "T26",
+      "type": "whip",
+      "start": 3063,
+      "end": 3114,
+      "frames": 52,
+      "from": "S26",
+      "to": "S27",
+      "technique": "v7.trans-punch-in-whip-up",
+      "cut_frame": 3094
+    },
+    {
+      "id": "T27",
+      "type": "whip",
+      "start": 3119,
+      "end": 3184,
+      "frames": 66,
+      "from": "S27",
+      "to": "S28",
+      "technique": "v7.trans-whip-push-left",
+      "cut_frame": 3134
+    },
+    {
+      "id": "T28",
+      "type": "whip",
+      "start": 3191,
+      "end": 3246,
+      "frames": 56,
+      "from": "S28",
+      "to": "S29",
+      "technique": "v7.trans-whip-push-left",
+      "cut_frame": 3214
+    },
+    {
+      "id": "T29",
+      "type": "whip",
+      "start": 3535,
+      "end": 3624,
+      "frames": 90,
+      "from": "S29",
+      "to": "S30",
+      "technique": "v7.trans-whip-down-left-zoom-in",
+      "cut_frame": 3581
+    },
+    {
+      "id": "T30",
+      "type": "zoom-through",
+      "start": 3651,
+      "end": 3716,
+      "frames": 66,
+      "from": "S30",
+      "to": "S31",
+      "technique": "v7.trans-zoom-through-cut",
+      "cut_frame": 3690
+    },
+    {
+      "id": "T31",
+      "type": "hard-cut",
+      "start": 3889,
+      "end": 3889,
+      "frames": 0,
+      "from": "S31",
+      "to": "S32",
+      "technique": null
+    },
+    {
+      "id": "T32",
+      "type": "hard-cut",
+      "start": 4216,
+      "end": 4216,
+      "frames": 0,
+      "from": "S32",
+      "to": "S33",
+      "technique": null
+    },
+    {
+      "id": "T33",
+      "type": "whip",
+      "start": 4277,
+      "end": 4307,
+      "frames": 31,
+      "from": "S33",
+      "to": "S34",
+      "technique": "v7.trans-punch-in-whip-zoom",
+      "cut_frame": 4289
+    },
+    {
+      "id": "T34",
+      "type": "hard-cut",
+      "start": 4369,
+      "end": 4369,
+      "frames": 0,
+      "from": "S34",
+      "to": "S35",
+      "technique": null
+    },
+    {
+      "id": "T35",
+      "type": "hard-cut",
+      "start": 4522,
+      "end": 4522,
+      "frames": 0,
+      "from": "S35",
+      "to": "S36",
+      "technique": null
+    },
+    {
+      "id": "T36",
+      "type": "mask-wipe",
+      "start": 4679,
+      "end": 4703,
+      "frames": 25,
+      "from": "S36",
+      "to": "S37",
+      "technique": "v7.trans-iris-white"
+    }
+  ]
+}

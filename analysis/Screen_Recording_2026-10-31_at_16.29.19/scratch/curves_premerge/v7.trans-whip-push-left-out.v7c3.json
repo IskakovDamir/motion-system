@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-whip-push-left-out.v7c3",
+  "file": "curves/v7.trans-whip-push-left-out.v7c3.csv",
+  "property": "position-x",
+  "unit": "% of frame width (file-browser title + arrows centre; 28.36% -> 21.52% W at the last picture before the cut)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p1_title.csv",
+  "column": "cx_pct",
+  "sampled_frames": [
+    1596,
+    1641
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 28.36,
+  "to_value": 21.517,
+  "active_frames": [
+    1613,
+    1641
+  ],
+  "measured_duration_frames": 28,
+  "bezier": {
+    "x1": 0.4659,
+    "y1": 0.0226,
+    "x2": 1.0,
+    "y2": 0.5061,
+    "durationInFrames": 31,
+    "delay": -3.0,
+    "built_duration_frames": 27,
+    "rmse": 0.0257
+  },
+  "spring": {
+    "stiffness": 51.175,
+    "damping": 117.563,
+    "mass": 1,
+    "damping_ratio": 8.2169,
+    "built_duration_frames": 48,
+    "rmse": 0.4145
+  },
+  "recommended": "bezier",
+  "note": "outgoing half of the leftward whip out of the file browser (P1, continues from v7c2): the window slides left accelerating from rest (~f1606) to ~27 px/frame at the last picture f1641 (title stays sharp; the tile grid inside streaks right with motion blur, see v7c3_p1_grid_leftedge.csv), hard cut at f1644 at full speed (no settle): to-value = last measured picture; template on the title + back/forward arrows (ref f1629, score 0.97-1.0)"
+}

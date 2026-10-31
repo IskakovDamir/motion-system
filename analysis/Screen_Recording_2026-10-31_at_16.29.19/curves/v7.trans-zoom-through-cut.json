@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-zoom-through-cut",
+  "file": "curves/v7.trans-zoom-through-cut.csv",
+  "property": "scale",
+  "unit": "ln(scale factor) of the desktop wallpaper (0 = first picture after the cut f3690; 0.359 = x1.432 at rest from f3716)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p6_bg_zoom2.csv",
+  "column": "lnscale",
+  "sampled_frames": [
+    3690,
+    3741
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 0.3591,
+  "active_frames": [
+    3690,
+    3711
+  ],
+  "measured_duration_frames": 21,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.7475,
+    "x2": 0.5189,
+    "y2": 0.9966,
+    "durationInFrames": 24,
+    "delay": 0.56,
+    "built_duration_frames": 19,
+    "rmse": 0.0173
+  },
+  "spring": {
+    "stiffness": 314.322,
+    "damping": 43.109,
+    "mass": 1,
+    "damping_ratio": 1.2158,
+    "built_duration_frames": 20,
+    "rmse": 0.1363
+  },
+  "recommended": "bezier",
+  "note": "incoming half of the zoom-through cut P5 -> P6: after the hard cut at f3690 the soft-ribbon wallpaper keeps zooming in about the frame centre (810, 459 px), x1.432 in all: x1.150 over the first interval (7.2% per frame), then 1.074 / 1.046 / 1.033 / 1.023 / 1.018 / 1.012 per picture, at rest from f3716; the outgoing editor close-up was pushing in at about 5% per frame at the cut (curve v7.trans-zoom-through-cut-out.v7c5), so the zoom carries across the cut and speeds up; f3690 -> f3692 and f3690 -> f3729 from a brute-force pure-zoom search (scale step 0.005, centre grid 10 px; agrees with f3692 -> f3729 x1.245 from ECC), f3692-f3741 from masked ECC registration of each picture to the rest picture f3729 (tile region masked; scratch/v7c5_tools/eccref.py, ECC 0.996-0.9999)"
+}

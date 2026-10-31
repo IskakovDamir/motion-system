@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.3d-card-light-up",
+  "file": "curves/v5.3d-card-light-up.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (mean of a card region x400-1100 y150-400)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c6_cardtext_luma.csv",
+  "column": "mean",
+  "sampled_frames": [
+    4035,
+    4055
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 55.3,
+  "to_value": 134.8,
+  "active_frames": [
+    4035,
+    4052
+  ],
+  "measured_duration_frames": 17,
+  "bezier": {
+    "x1": 0.8825,
+    "y1": 1.1287,
+    "x2": 0.7547,
+    "y2": 0.8522,
+    "durationInFrames": 17,
+    "delay": -0.092,
+    "built_duration_frames": 17,
+    "rmse": 0.0144
+  },
+  "spring": {
+    "stiffness": 123.626,
+    "damping": 16.491,
+    "mass": 1,
+    "damping_ratio": 0.7416,
+    "built_duration_frames": 31,
+    "rmse": 0.1992
+  },
+  "recommended": "bezier",
+  "note": "3D card text-side close-up lights up after the hard cut: only the card brightens (background patches stay at 3.3 and 15.8-16.5), while a diagonal specular streak crosses the upper right of the card and the camera keeps a slow orbit (text block drifts left 46.3 -> 43.8 %W, linear about -0.12%/frame, its baseline tilt steepens about 5 degrees)"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.cursor-glow-morph-3d.v7c2",
+  "file": "curves/v7.cursor-glow-morph-3d.v7c2.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (mean of 400x380 px box around the pointer)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_cursor_glow_luma.csv",
+  "column": "mean",
+  "sampled_frames": [
+    1304,
+    1359
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 149.717,
+  "to_value": 58.162,
+  "active_frames": [
+    1306,
+    1349
+  ],
+  "measured_duration_frames": 43,
+  "bezier": {
+    "x1": 0.8416,
+    "y1": 1.1827,
+    "x2": 0.476,
+    "y2": 0.9256,
+    "durationInFrames": 46,
+    "delay": 3.179,
+    "built_duration_frames": 35,
+    "rmse": 0.0471
+  },
+  "spring": {
+    "stiffness": 27.887,
+    "damping": 7.913,
+    "mass": 1,
+    "damping_ratio": 0.7492,
+    "built_duration_frames": 64,
+    "rmse": 0.2396
+  },
+  "recommended": "bezier",
+  "note": "settle of the cursor-to-3D-pointer morph: at f1304 the glowing 2D cursor is replaced by a bright, blurred 3D pointer seen tilted; it rotates face-on, sharpens and its glow decays (box luma 150 -> 60) until ~f1341; preceded by a glow ramp on the 2D cursor (luma 28 -> 87, f1284-f1301); the swap itself is a 1-picture jump (f1301 -> f1304)"
+}

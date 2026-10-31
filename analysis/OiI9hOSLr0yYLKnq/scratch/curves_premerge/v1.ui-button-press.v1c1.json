@@ -1,0 +1,40 @@
+{
+  "technique_id": "v1.ui-button-press.v1c1",
+  "file": "curves/v1.ui-button-press.v1c1.csv",
+  "property": "scale",
+  "unit": "scale factor of the send button about its own centre (1620.5, 540.5); 1.0 = 95.9 px diameter",
+  "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/s1_sendbtn_press.csv",
+  "column": "scale_soft",
+  "sampled_frames": [
+    74,
+    87
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 1.0,
+  "to_value": 0.9004,
+  "active_frames": [
+    81,
+    85
+  ],
+  "measured_duration_frames": 4,
+  "bezier": {
+    "x1": 0.3196,
+    "y1": 1.0053,
+    "x2": 0.638,
+    "y2": 1.0209,
+    "durationInFrames": 5,
+    "delay": -0.031,
+    "built_duration_frames": 4,
+    "rmse": 0.0105
+  },
+  "spring": {
+    "stiffness": 9442.799,
+    "damping": 206.067,
+    "mass": 1,
+    "damping_ratio": 1.0603,
+    "built_duration_frames": 4,
+    "rmse": 0.0221
+  },
+  "recommended": "bezier",
+  "note": "press-down half of the send-button click: soft-edge disc diameter per frame (luma<100 component, holes filled, anti-aliased rim weighted); starts with the caret removal at f81; centre fixed within 0.05 px; button luma unchanged (18.0-18.6)"
+}

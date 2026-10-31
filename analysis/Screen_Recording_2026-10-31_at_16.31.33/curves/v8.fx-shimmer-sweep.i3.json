@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.fx-shimmer-sweep.i3",
+ "file": "curves/v8.fx-shimmer-sweep.i3.csv",
+ "property": "position-x",
+ "unit": "px along status pill 2 from its rounded left end (pill 870 px = 53.6% W)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c5r_Sb_shimmer_full.csv",
+ "column": "lead_along",
+ "sampled_frames": [
+  3176,
+  3214
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 0.0,
+ "to_value": 870.0,
+ "active_frames": [
+  3186,
+  3202
+ ],
+ "measured_duration_frames": 16,
+ "bezier": {
+  "x1": 1.0,
+  "y1": 0.53,
+  "x2": 0.498,
+  "y2": 0.0865,
+  "durationInFrames": 14,
+  "delay": 0.998,
+  "built_duration_frames": 14,
+  "rmse": 0.0507
+ },
+ "spring": {
+  "stiffness": 155.688,
+  "damping": 17.182,
+  "mass": 1,
+  "damping_ratio": 0.6885,
+  "built_duration_frames": 28,
+  "rmse": 0.4703
+ },
+ "recommended": "bezier",
+ "note": "v8c5 S03: a soft light band (luma 248-250 over the pill fill 231) sweeps left to right across status pill 2 (870 x 126 px). Tracked over the whole pill height: per column, the share of fill pixels (luma > 200, so label ink is excluded) brighter than 240; band = columns with share > 0.5; leading edge measured along the pill from its rounded left end (scratch/v8c5r_Sb_shimmer_full.csv; pictures without a band set to 0 before and to the pill width after). The band grows out of the rounded left end from f3186 (13 px) with its trailing edge pinned there until f3194 (235 px), widens to about 315 px (19.4% W), crosses at 123-176 px/f; its leading edge reaches the right end (about 1556 px) at f3202, the trailing edge at f3204-f3205; gone f3206. Picture f3197 sits about 1 frame early (capture jitter). Bezier shape rmse 0.051 is borderline because the move has two phases (slow growth out of the left end, then a fast sweep); per-sample residuals <= 0.022. Supersedes the strip measurement scratch/v8c5r_Sb_shimmer_lead.csv, whose 720 / 1528 px ends were the rounded ends at a strip 16 rows under the pill's top edge, not the pill's ends.",
+ "chunk_curve_id": "v8.fx-shimmer-sweep.v8c5"
+}

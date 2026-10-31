@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.ui-clip-strip-slide-in",
+  "file": "curves/v7.ui-clip-strip-slide-in.csv",
+  "property": "position-x",
+  "unit": "% of frame width in close-up window units (left end of the clip strip, pull-back compensated; 96.8% -> 27.3%)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p5_strip_left_win.csv",
+  "column": "x_win_pct",
+  "sampled_frames": [
+    2126,
+    2174
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 96.8,
+  "to_value": 27.462,
+  "active_frames": [
+    2126,
+    2145
+  ],
+  "measured_duration_frames": 19,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.2799,
+    "x2": 0.0,
+    "y2": 0.7129,
+    "durationInFrames": 14,
+    "delay": 2.298,
+    "built_duration_frames": 14,
+    "rmse": 0.0712
+  },
+  "spring": {
+    "stiffness": 351.105,
+    "damping": 37.88,
+    "mass": 1,
+    "damping_ratio": 1.0108,
+    "built_duration_frames": 19,
+    "rmse": 0.0617
+  },
+  "recommended": "spring",
+  "note": "P5: the dropped clips arrive as one strip (7 clips visible at rest, the last cut by the window's right edge) that slides in on the lowest video track from beyond the right edge and docks at the track start, decelerating, while the camera pulls back x1.00 -> x0.40; screen x of the strip's left end (tall bright run in the clip-strip band) converted to close-up window units with x_win = (x - 43) / scale + 43 (pull-back origin x 43 px from the timecode track); first visible picture f2126 (from-value), docked by ~f2146; +-4 px scatter after docking"
+}

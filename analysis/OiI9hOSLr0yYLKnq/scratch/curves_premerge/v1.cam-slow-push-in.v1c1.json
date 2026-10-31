@@ -1,0 +1,40 @@
+{
+  "technique_id": "v1.cam-slow-push-in.v1c1",
+  "file": "curves/v1.cam-slow-push-in.v1c1.csv",
+  "property": "scale",
+  "unit": "scale factor of the whole network about the frame centre (f260 = 1.0; rest 0.98385 -> 1.01810 = x1.0348)",
+  "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/s2_pushin_cells.csv",
+  "column": "scale",
+  "sampled_frames": [
+    205,
+    335
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 0.9839,
+  "to_value": 1.0181,
+  "active_frames": [
+    226,
+    323
+  ],
+  "measured_duration_frames": 97,
+  "bezier": {
+    "x1": 0.36,
+    "y1": 0.5406,
+    "x2": 0.6583,
+    "y2": 0.9555,
+    "durationInFrames": 106,
+    "delay": -0.872,
+    "built_duration_frames": 96,
+    "rmse": 0.0033
+  },
+  "spring": {
+    "stiffness": 4.1,
+    "damping": 3.18,
+    "mass": 1,
+    "damping_ratio": 0.7853,
+    "built_duration_frames": 102,
+    "rmse": 0.0202
+  },
+  "recommended": "bezier",
+  "note": "S02 hold push-in, re-tracked: least-squares uniform scale about the frame centre fitted to 26-52 sub-pixel cell tracks (residual 0.03-0.08 px; independent warp-NCC track scratch/s2_pushin_warp.csv agrees within 0.00005). Rest through f225, first moved frame f226 at full speed (0.00048/f, no ease-in), decelerates to rest at about f333 (5 f into the T2 fade). Replaces the earlier fit on s2_hold_zoom_fine.csv, whose integer-size template steps and a fade artefact at f330 produced an overshooting bezier."
+}

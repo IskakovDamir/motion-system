@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.ui-callout-collapse-out.i2",
+ "file": "curves/v8.ui-callout-collapse-out.i2.csv",
+ "property": "height",
+ "unit": "% of frame height (leader line length beyond the dot's 6 px radius)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c3r_S07_cc_collapse_dotline_2146-2182.csv",
+ "column": "line_beyond_dot_pct",
+ "sampled_frames": [
+  2150,
+  2182
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 12.636,
+ "to_value": 0.0,
+ "active_frames": [
+  2164,
+  2178
+ ],
+ "measured_duration_frames": 14,
+ "bezier": {
+  "x1": 1.0,
+  "y1": 0.4603,
+  "x2": 0.0039,
+  "y2": -0.2038,
+  "durationInFrames": 12,
+  "delay": 0.807,
+  "built_duration_frames": 12,
+  "rmse": 0.054
+ },
+ "spring": {
+  "stiffness": 229.713,
+  "damping": 20.689,
+  "mass": 1,
+  "damping_ratio": 0.6825,
+  "built_duration_frames": 24,
+  "rmse": 0.422
+ },
+ "recommended": "bezier",
+ "note": "S07 bottom-centre callout collapse, leader line: the line retracts from its pill end up into the anchor dot. Same measure as v8.ui-callout-pop-in-line (horizontal top-hat residual >= 6 luma, 7 px band; scratch/v8c3r_S07_cc_collapse_dotline_2146-2182.csv). 112-118 px beyond the dot at f2150-f2164 (from-value 116 px = median of f2152-f2164 = 12.64% H) while the pill already shrinks (from f2160); then 109 (f2166), 100 (f2168), 82 (f2171), 60 (f2172), 38 (f2174), 8 (f2176), 2 (f2178), 0 px (f2180): the lower end rises 648 -> 524 px. Bezier rmse 0.054 is just above 0.05 because of capture jitter: the pictures f2168, f2171, f2172 are 3 and 1 frames apart and the 1-frame step carries 22 px against 18 px over the 3 frames before (the same in a second read of the line's end row); the spring cannot model this ease-in. The dot itself crosses from a dark to a light layer area at f2171, so its shrink and fade are read off pixel rows in the chunk md, not fitted.",
+ "chunk_curve_id": "v8.ui-callout-collapse-out-line.v8c3"
+}

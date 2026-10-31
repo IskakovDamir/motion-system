@@ -1,0 +1,40 @@
+{
+  "technique_id": "v1.logo-lockup-slide",
+  "file": "curves/v1.logo-lockup-slide.csv",
+  "property": "position-x",
+  "unit": "px (mark ink centroid x; 1920 px = 100% W)",
+  "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/t5_mark_comp.csv",
+  "column": "cx",
+  "sampled_frames": [
+    912,
+    960
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 957.63,
+  "to_value": 698.48,
+  "active_frames": [
+    923,
+    943
+  ],
+  "measured_duration_frames": 20,
+  "bezier": {
+    "x1": 0.5923,
+    "y1": 0.0555,
+    "x2": 0.4118,
+    "y2": 0.9436,
+    "durationInFrames": 25,
+    "delay": -2.541,
+    "built_duration_frames": 21,
+    "rmse": 0.0081
+  },
+  "spring": {
+    "stiffness": 150.659,
+    "damping": 19.425,
+    "mass": 1,
+    "damping_ratio": 0.7913,
+    "built_duration_frames": 18,
+    "rmse": 0.1377
+  },
+  "recommended": "bezier",
+  "note": "end-card mark slides left 259 px (13.5% W) to make room for the wordmark, which pops on at full opacity at f942 in its final place while the mark is still settling"
+}

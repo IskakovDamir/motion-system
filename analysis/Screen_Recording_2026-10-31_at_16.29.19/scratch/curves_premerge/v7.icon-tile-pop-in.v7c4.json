@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.icon-tile-pop-in.v7c4",
+  "file": "curves/v7.icon-tile-pop-in.v7c4.csv",
+  "property": "scale",
+  "unit": "scale factor (1.0 = tile 157 px = 9.7% W at the close framing)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_tile_pop_w_newpic.csv",
+  "column": "scale",
+  "sampled_frames": [
+    2471,
+    2499
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 1.0,
+  "active_frames": [
+    2476,
+    2491
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.6894,
+    "y1": 0.4352,
+    "x2": 0.0,
+    "y2": 0.9659,
+    "durationInFrames": 14,
+    "delay": 2.201,
+    "built_duration_frames": 11,
+    "rmse": 0.0484
+  },
+  "spring": {
+    "stiffness": 1631.457,
+    "damping": 81.443,
+    "mass": 1,
+    "damping_ratio": 1.0082,
+    "built_duration_frames": 9,
+    "rmse": 0.2018
+  },
+  "recommended": "bezier",
+  "note": "app icon of the second row is born during the glide after the hidden hard cut f2474: absent f2476, a 6x10 px sliver at f2479, 26 px f2481, 119 px f2484 (blurred, doubled by the vertical blur), 144 px f2486, 153 f2489, 156 f2491, 157 px f2494 = rest; scales about its own centre (x 569 px fixed, y riding the camera glide); bbox tracker (threshold 50 over luma 17); the tile's first letter starts fading in at f2491"
+}

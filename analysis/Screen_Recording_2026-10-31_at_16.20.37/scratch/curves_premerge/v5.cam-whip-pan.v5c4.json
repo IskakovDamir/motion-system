@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.cam-whip-pan.v5c4",
+  "file": "curves/v5.cam-whip-pan.v5c4.csv",
+  "property": "position-x",
+  "unit": "% of frame width (card 1 label centre)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c4_card1label_whip2.csv",
+  "column": "cx_pct",
+  "sampled_frames": [
+    2470,
+    2520
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 46.917,
+  "to_value": 11.652,
+  "active_frames": [
+    2480,
+    2510
+  ],
+  "measured_duration_frames": 30,
+  "bezier": {
+    "x1": 0.9194,
+    "y1": 0.1974,
+    "x2": 0.0488,
+    "y2": 0.8931,
+    "durationInFrames": 35,
+    "delay": -1.415,
+    "built_duration_frames": 29,
+    "rmse": 0.0147
+  },
+  "spring": {
+    "stiffness": 198.213,
+    "damping": 23.717,
+    "mass": 1,
+    "damping_ratio": 0.8423,
+    "built_duration_frames": 18,
+    "rmse": 0.1725
+  },
+  "recommended": "bezier",
+  "note": "whip pan, clean full ease-in-out instance = whip 2 (f2480-2510): 3D camera yaws across the curved card layout; re-tracked on card 1's UI label (template ref f2475, global search, scales 0.90-1.12, scores 0.66-0.99) because the card-1 template clamps at the left frame edge from f2512 (card partly out of frame; the earlier card fit had rmse 0.0503); label centre x 46.9 -> 11.6 %W at constant scale; blur peak f2495-2497; card 2 seam-reveals during it. Whip 1 is curves/v5.cam-whip-pan.whip1.v5c4; whip 3 ~f2532-2565 (two-element join, not fitted)"
+}

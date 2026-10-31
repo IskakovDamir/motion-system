@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.text-warp-fly-in",
+  "file": "curves/v6.text-warp-fly-in.csv",
+  "property": "position-y",
+  "unit": "px (picture 918 px high), centre of the small top line's ink box",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_P08_topline_warp.csv",
+  "column": "cy",
+  "sampled_frames": [
+    446,
+    471
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 113.5,
+  "to_value": 385.0,
+  "active_frames": [
+    446,
+    463
+  ],
+  "measured_duration_frames": 17,
+  "bezier": {
+    "x1": 0.1447,
+    "y1": 1.0032,
+    "x2": 0.8035,
+    "y2": 0.9454,
+    "durationInFrames": 18,
+    "delay": -0.0,
+    "built_duration_frames": 17,
+    "rmse": 0.0076
+  },
+  "spring": {
+    "stiffness": 558.863,
+    "damping": 54.693,
+    "mass": 1,
+    "damping_ratio": 1.1568,
+    "built_duration_frames": 15,
+    "rmse": 0.1175
+  },
+  "recommended": "bezier",
+  "note": "small 3-word black top line flies in from the top-left corner on a diagonal with a rubbery warp (letters stretched and squeezed unevenly, motion blur) and settles centred: ink-box centre (394, 113.5) px at f446 -> (628.5, 228) f448 -> (696, 298) f451 -> (801.5, 333.5) f453 -> (800, 368) f458 -> (801.5, 385) f466; its box height 161 px (blurred, f448) -> 77-84 px (f451-f458) -> 79 px at rest; median-filtered ink box at luma < 200"
+}

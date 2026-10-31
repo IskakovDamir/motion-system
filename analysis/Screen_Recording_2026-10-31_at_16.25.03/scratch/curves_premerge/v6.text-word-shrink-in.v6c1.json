@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.text-word-shrink-in.v6c1",
+  "file": "curves/v6.text-word-shrink-in.v6c1.csv",
+  "property": "scale",
+  "unit": "scale factor (ink height / 193 px rest height of the word)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_P10_word2_scale.csv",
+  "column": "scale",
+  "sampled_frames": [
+    853,
+    878
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 3.5596,
+  "to_value": 1.0,
+  "active_frames": [
+    853,
+    863
+  ],
+  "measured_duration_frames": 10,
+  "bezier": {
+    "x1": 0.4225,
+    "y1": 0.8,
+    "x2": 0.0111,
+    "y2": 0.7605,
+    "durationInFrames": 10,
+    "delay": 0.499,
+    "built_duration_frames": 10,
+    "rmse": 0.046
+  },
+  "spring": {
+    "stiffness": 1634.988,
+    "damping": 94.736,
+    "mass": 1,
+    "damping_ratio": 1.1715,
+    "built_duration_frames": 9,
+    "rmse": 0.0457
+  },
+  "recommended": "spring",
+  "note": "closing title, line 1, second word: enters hugely oversized and shrinks to rest while the line rises; ink box against the empty-field plate f851 (word absent there), x >= 870 px, darkness > 25 luma; height 687 px at f853 (blurred, only part of the first letter in the frame, cut by the right edge; 621-731 px at thresholds 40-15) -> 376 / 272 / 224 / 199 / 195 -> 193 px at f856/858/861/863/866/868 = x3.56 -> 1.95 -> 1.41 -> 1.16 -> 1.03 -> 1.01 -> 1.00 (width where uncut: x1.42 / 1.12 / 1.02 / 1.00 at f858-f866); the left edge path 1172 / 985 / 923 px (f853-f858) matches a uniform scale about x = 762-765 px (47.0% W) on the line's centre line, so the travel in from the right is a side effect of the scale; f853 (first picture with the word; absent at f851) is taken as the start value"
+}

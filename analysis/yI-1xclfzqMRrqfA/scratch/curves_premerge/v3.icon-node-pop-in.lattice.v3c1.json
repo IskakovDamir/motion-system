@@ -1,0 +1,40 @@
+{
+  "technique_id": "v3.icon-node-pop-in.lattice.v3c1",
+  "file": "curves/v3.icon-node-pop-in.lattice.v3c1.csv",
+  "property": "scale",
+  "unit": "scale factor about the node centre relative to its settled size on the pulled-back plane (from the first visible frame)",
+  "source_samples": "../../analysis/yI-1xclfzqMRrqfA/scratch/v3c1_lattice_popfine_j3km3.csv",
+  "column": "pop_scale",
+  "sampled_frames": [
+    178,
+    198
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 0.8475,
+  "to_value": 1.0,
+  "active_frames": [
+    178,
+    190
+  ],
+  "measured_duration_frames": 12,
+  "bezier": {
+    "x1": 0.3188,
+    "y1": 1.5322,
+    "x2": 0.5577,
+    "y2": 1.1936,
+    "durationInFrames": 12,
+    "delay": 0.001,
+    "built_duration_frames": 12,
+    "rmse": 0.0101
+  },
+  "spring": {
+    "stiffness": 874.942,
+    "damping": 28.524,
+    "mass": 1,
+    "damping_ratio": 0.4822,
+    "built_duration_frames": 17,
+    "rmse": 0.0901
+  },
+  "recommended": "bezier",
+  "note": "S02 lattice node (final position (384.6, 961.7), row y 961.5, left of the pair that pops at f178) pop-in during the pull-back: warpAffine template scale divided by the plane scale S(f)/S(f196) (scratch/v3c1_lattice_popfine_j3km3.csv, node_pop_fine.py); first visible f178 at 0.8475 with opacity 0.23, 0.9025, 0.950, 0.980, 1.005, 1.0175, overshoot 1.0275 f184-f185, 1.020, 1.020, 1.0125, 1.005, rest 1.000 from f190; opacity 0.23, 0.50, 0.71, 0.91, 0.98 (f178-f182); same device as v3.icon-node-pop-in.v3c1 (S01)"
+}

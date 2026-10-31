@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.layout-rise-make-room.v7c1",
+  "file": "curves/v7.layout-rise-make-room.v7c1.csv",
+  "property": "position-y",
+  "unit": "% of frame height",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s1_line1_rise_29-66.csv",
+  "column": "icon_ink_cy_pct",
+  "sampled_frames": [
+    31,
+    66
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 48.709,
+  "to_value": 44.771,
+  "active_frames": [
+    34,
+    51
+  ],
+  "measured_duration_frames": 17,
+  "bezier": {
+    "x1": 0.7093,
+    "y1": 0.2237,
+    "x2": 0.0,
+    "y2": 0.8175,
+    "durationInFrames": 18,
+    "delay": -0.27,
+    "built_duration_frames": 16,
+    "rmse": 0.0241
+  },
+  "spring": {
+    "stiffness": 932.008,
+    "damping": 63.464,
+    "mass": 1,
+    "damping_ratio": 1.0394,
+    "built_duration_frames": 12,
+    "rmse": 0.1377
+  },
+  "recommended": "bezier",
+  "note": "S01 title line 1 (brand-mark icon, word 1, word 2) rises to make room for line 2 entering below (line 2 from f49): brand-mark icon ink centroid (sub-pixel, inside the template window of scratch/v7c1_s1_brandicon_y_29-66.csv) 48.7% (f34) -> 44.8% H (f51-f66); word 2 rises by the same 3.9% H (49.6% -> 45.7% H, column word2_ink_cy_pct). Moves on every picture (24 fps) while the box height steps on twos (f36 / f41 / f46 / f51 / f56) and its top edge rises only 2.8% H (40.9% -> 38.1% H). A slow creep of 0.2% H f29-f34 precedes it (range starts f31)"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.icon-tile-pop-in.v7c5",
+  "file": "curves/v7.icon-tile-pop-in.v7c5.csv",
+  "property": "scale",
+  "unit": "scale factor of the line-2 app icon (1.0 = 156 px = 9.6% W rounded-square tile)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p2_icon_pop_scale.csv",
+  "column": "scale",
+  "sampled_frames": [
+    3094,
+    3121
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 1.0,
+  "active_frames": [
+    3099,
+    3111
+  ],
+  "measured_duration_frames": 12,
+  "bezier": {
+    "x1": 0.5925,
+    "y1": 0.9645,
+    "x2": 0.1376,
+    "y2": 0.8788,
+    "durationInFrames": 11,
+    "delay": 1.0,
+    "built_duration_frames": 10,
+    "rmse": 0.0475
+  },
+  "spring": {
+    "stiffness": 1449.091,
+    "damping": 72.883,
+    "mass": 1,
+    "damping_ratio": 0.9573,
+    "built_duration_frames": 9,
+    "rmse": 0.0514
+  },
+  "recommended": "bezier",
+  "note": "P2 line-2 lead icon (rounded light app tile with a dark glyph) pops in under the brand mark right after the punch-in cut: grows from its own centre (fixed 308 px below the brand mark centre, riding the camera settle) 0 -> 0.15 -> 0.74 -> 0.92 -> 0.97 -> 1.0 at f3101 / 3104 / 3106 / 3109 / 3111, no overshoot, slight blur in the first pictures; typing of line 2 starts beside it at f3111; ink bounding box (luma > 90, connected component)"
+}

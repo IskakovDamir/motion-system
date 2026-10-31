@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-caption-line-fade-out.i4",
+  "file": "curves/v5.text-caption-line-fade-out.i4.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (p95 of the word box over a black background)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c4_cap3_word1_luma.csv",
+  "column": "p95",
+  "sampled_frames": [
+    2892,
+    2930
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 240.0,
+  "to_value": 0.0,
+  "active_frames": [
+    2897,
+    2927
+  ],
+  "measured_duration_frames": 30,
+  "bezier": {
+    "x1": 0.0395,
+    "y1": 0.5266,
+    "x2": 0.8992,
+    "y2": 1.0145,
+    "durationInFrames": 28,
+    "delay": 2.213,
+    "built_duration_frames": 26,
+    "rmse": 0.0511
+  },
+  "spring": {
+    "stiffness": 56.329,
+    "damping": 12.845,
+    "mass": 1,
+    "damping_ratio": 0.8557,
+    "built_duration_frames": 33,
+    "rmse": 0.0395
+  },
+  "recommended": "spring",
+  "note": "caption line fade-out: caption 3 line 1 dims and disappears while lines 2-3 are still on; box moving with the caption drift"
+}

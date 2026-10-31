@@ -1,0 +1,20 @@
+frame,unique,lead_x,trail_x,band_w,centre_x,source
+1276,1,,,332,437.0,before (band not yet in the pill)
+1279,1,,,332,437.0,before (band not yet in the pill)
+1280,1,,,332,437.0,before (band not yet in the pill)
+1282,1,,,332,437.0,before (band not yet in the pill)
+1284,1,608,604,332,442.0,leading edge - W/2 (trailing edge pinned at the left end)
+1286,1,617,603,332,451.0,leading edge - W/2 (trailing edge pinned at the left end)
+1288,1,639,603,332,473.0,leading edge - W/2 (trailing edge pinned at the left end)
+1290,1,683,603,332,517.0,leading edge - W/2 (trailing edge pinned at the left end)
+1293,1,738,603,332,572.0,leading edge - W/2 (trailing edge pinned at the left end)
+1294,1,820,603,332,654.0,leading edge - W/2 (trailing edge pinned at the left end)
+1296,1,927,609,332,761.0,leading edge - W/2 (trailing edge pinned at the left end)
+1299,1,1097,764,332,930.5,mid-point of both edges
+1300,1,1346,1017,332,1181.5,mid-point of both edges
+1302,1,1427,1272,332,1438.0,trailing edge + W/2 (leading edge clipped at the right end)
+1304,1,,,332,1593.0,after (band has left the pill)
+1306,1,,,332,1593.0,after (band has left the pill)
+1308,1,,,332,1593.0,after (band has left the pill)
+1310,1,,,332,1593.0,after (band has left the pill)
+1312,1,,,332,1593.0,after (band has left the pill)

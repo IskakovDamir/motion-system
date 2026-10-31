@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.cam-pull-back-wide",
+  "file": "curves/v6.cam-pull-back-wide.csv",
+  "property": "width",
+  "unit": "px, horizontal extent of the stack's dark ink (picture 1622 px wide)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_phone_stack_bbox.csv",
+  "column": "w",
+  "sampled_frames": [
+    761,
+    798
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 884.0,
+  "to_value": 751.5,
+  "active_frames": [
+    776,
+    793
+  ],
+  "measured_duration_frames": 17,
+  "bezier": {
+    "x1": 0.7076,
+    "y1": 0.0217,
+    "x2": 0.2381,
+    "y2": 0.4832,
+    "durationInFrames": 19,
+    "delay": -2.613,
+    "built_duration_frames": 16,
+    "rmse": 0.0214
+  },
+  "spring": {
+    "stiffness": 315.844,
+    "damping": 30.435,
+    "mass": 1,
+    "damping_ratio": 0.8563,
+    "built_duration_frames": 15,
+    "rmse": 0.1303
+  },
+  "recommended": "bezier",
+  "note": "camera pulls back from the close three-quarter view to the wide exploded view: the stack's ink extent shrinks 884 -> 751 px wide (54.5% -> 46.3% W) and its bottom edge rises from the frame edge (917 px) to 860 px (f776 -> f796); the near footage panel blurs while it moves (f781-f788); the collapse starts right after (f801)"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.text-letter-converge.v6c1",
+  "file": "curves/v6.text-letter-converge.v6c1.csv",
+  "property": "position-y",
+  "unit": "px (picture 918 px high)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_title_letter_J.csv",
+  "column": "cy",
+  "sampled_frames": [
+    26,
+    66
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 450.5,
+  "to_value": 367.5,
+  "active_frames": [
+    26,
+    46
+  ],
+  "measured_duration_frames": 20,
+  "bezier": {
+    "x1": 0.4531,
+    "y1": 0.5759,
+    "x2": 0.0,
+    "y2": 0.6962,
+    "durationInFrames": 20,
+    "delay": 0.447,
+    "built_duration_frames": 19,
+    "rmse": 0.0325
+  },
+  "spring": {
+    "stiffness": 322.887,
+    "damping": 38.962,
+    "mass": 1,
+    "damping_ratio": 1.0842,
+    "built_duration_frames": 20,
+    "rmse": 0.0356
+  },
+  "recommended": "bezier",
+  "note": "title wordmark: after the letters fly in from the frame edges (J from the top edge f18, G from the left f15, U/T from the bottom f18-f21, S from the right f28) they land on a low line and the whole line rises 83 px (9.0% H) into place; tracked on letter J (template ref f60, score 0.63-1.00), y 450.5 px (49.1% H) at f26 -> 367.5 px (40.0% H) at f48"
+}

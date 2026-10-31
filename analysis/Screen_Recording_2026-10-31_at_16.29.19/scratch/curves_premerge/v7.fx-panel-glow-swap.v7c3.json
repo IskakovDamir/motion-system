@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.fx-panel-glow-swap.v7c3",
+  "file": "curves/v7.fx-panel-glow-swap.v7c3.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 of the empty project-panel area above the grid (33 -> 159 at the peak f1729)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p2_glow_luma_top.csv",
+  "column": "top",
+  "sampled_frames": [
+    1676,
+    1729
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 33.0,
+  "to_value": 159.46,
+  "active_frames": [
+    1681,
+    1726
+  ],
+  "measured_duration_frames": 45,
+  "bezier": {
+    "x1": 0.821,
+    "y1": -0.0043,
+    "x2": 0.798,
+    "y2": 1.0039,
+    "durationInFrames": 54,
+    "delay": -6.979,
+    "built_duration_frames": 42,
+    "rmse": 0.0264
+  },
+  "spring": {
+    "stiffness": 6.073,
+    "damping": 0.5,
+    "mass": 1,
+    "damping_ratio": 0.1014,
+    "built_duration_frames": 295,
+    "rmse": 0.8256
+  },
+  "recommended": "bezier",
+  "note": "P2 content swap, glow build: a soft white bloom spreads over the whole project panel (thumbnails go near-white, luma 130 -> 235; empty panel 33 -> 159; soft halo over the panel border; viewer panel and desktop background unaffected), slow start from ~f1681, steepest f1716-f1721 (+8 luma/frame), peak at f1729, the picture before the thumbnail grid starts to slide down and out; ROI rides the centred camera push-in (O = 816, 457 px); peak = to-value"
+}

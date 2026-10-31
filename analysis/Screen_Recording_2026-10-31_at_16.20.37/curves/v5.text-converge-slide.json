@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-converge-slide",
+  "file": "curves/v5.text-converge-slide.csv",
+  "property": "position-x",
+  "unit": "% of frame width (ink centroid of words 2-3)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c3_hl1_words.csv",
+  "column": "w23_x_pct",
+  "sampled_frames": [
+    1825,
+    1840
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 83.53,
+  "to_value": 64.39,
+  "active_frames": [
+    1825,
+    1830
+  ],
+  "measured_duration_frames": 5,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 1.0637,
+    "x2": 0.0,
+    "y2": 0.9652,
+    "durationInFrames": 10,
+    "delay": 0.471,
+    "built_duration_frames": 5,
+    "rmse": 0.0147
+  },
+  "spring": {
+    "stiffness": 16851.067,
+    "damping": 75.683,
+    "mass": 1,
+    "damping_ratio": 0.2915,
+    "built_duration_frames": 7,
+    "rmse": 0.016
+  },
+  "recommended": "bezier",
+  "note": "headline words 2-3 slide in from the right with heavy horizontal motion blur and land by f1830; word 1 slides in from the left one picture later (centroid 2.6 -> 25.8 -> 35.0 %W, overshoot +9 px, settles 34.4 %W by f1837); first picture f1825 is already mid-flight (no rest before)"
+}

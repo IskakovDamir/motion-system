@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.trans-whip.v5c3",
+  "file": "curves/v5.trans-whip.v5c3.csv",
+  "property": "position-x",
+  "unit": "% of frame width (content position, landing half)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c3_whip_entry_pos.csv",
+  "column": "x_pct",
+  "sampled_frames": [
+    1770,
+    1785
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": -35.05,
+  "active_frames": [
+    1770,
+    1782
+  ],
+  "measured_duration_frames": 12,
+  "bezier": {
+    "x1": 0.0028,
+    "y1": 0.2707,
+    "x2": 0.5451,
+    "y2": 1.0277,
+    "durationInFrames": 12,
+    "delay": -0.0,
+    "built_duration_frames": 11,
+    "rmse": 0.0297
+  },
+  "spring": {
+    "stiffness": 583.966,
+    "damping": 45.048,
+    "mass": 1,
+    "damping_ratio": 0.9321,
+    "built_duration_frames": 13,
+    "rmse": 0.0749
+  },
+  "recommended": "bezier",
+  "note": "landing half of the whip: incoming shot slides left and decelerates (229, 159, 107, 55, 19, -1 px per picture), starts at full speed (no rest before); exit half f1748-1760 accelerates 13 -> 30 -> 92 -> 148 px/f; f1760-1770 is an unmeasurable blur blend"
+}

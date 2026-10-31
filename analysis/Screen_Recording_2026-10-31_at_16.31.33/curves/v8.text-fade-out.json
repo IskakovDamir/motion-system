@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.text-fade-out",
+ "file": "curves/v8.text-fade-out.csv",
+ "property": "opacity",
+ "unit": "opacity 0-1 (compositing alpha of the glyph cores)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c4_S1_header_core.csv",
+ "column": "opacity_core",
+ "sampled_frames": [
+  2210,
+  2250
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 1.0,
+ "to_value": 0.268,
+ "active_frames": [
+  2224,
+  2250
+ ],
+ "measured_duration_frames": 26,
+ "bezier": {
+  "x1": 0.2085,
+  "y1": 0.1784,
+  "x2": 0.3453,
+  "y2": -0.0884,
+  "durationInFrames": 24,
+  "delay": 2.019,
+  "built_duration_frames": 24,
+  "rmse": 0.0318
+ },
+ "spring": {
+  "stiffness": 102.071,
+  "damping": 21.231,
+  "mass": 1,
+  "damping_ratio": 1.0507,
+  "built_duration_frames": 34,
+  "rmse": 0.3633
+ },
+ "recommended": "bezier",
+ "note": "c4S1 header title (1 line) fades out during T1: mean luma of the glyph cores (mask luma < 120 at f2214, x 60-420, y 40-92) composited over the local page (median outside the ink inside the title box: 248 to f2232, 242-246 after), alpha = (bg - core) / (bg - 41.2), scratch/v8c4_S1_header_core.csv; 1.0 to f2224, first changed picture f2227 (0.978), 0.893 (f2234), 0.775 (f2238), 0.538 (f2244), 0.268 (f2250); the fade is spatially uniform (8 bands across the line within 0.03); visible part only: from f2252 the incoming page corner covers the title, so to-value = the last visible picture f2250 (ease-in to there; the end of the fade is not visible). The fitted start is f2226 (delay 2.0 after f2224). The darkest single pixel lags (0-4 to f2234) because only a few pixels stay that dark: title pixels at luma <= 20 go 964 (f2224) -> 477 (f2227) -> 61 (f2230) -> 2 (f2234).",
+ "chunk_curve_id": "v8.text-fade-out.v8c4"
+}

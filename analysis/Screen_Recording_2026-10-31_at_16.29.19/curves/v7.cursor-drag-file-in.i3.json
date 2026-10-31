@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.cursor-drag-file-in.i3",
+  "file": "curves/v7.cursor-drag-file-in.i3.csv",
+  "property": "position-x",
+  "unit": "% of frame width (file-tile thumbnail centre; 23.4% -> 50.1% W)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p6_thumb_3704-3740.csv",
+  "column": "cx_pct",
+  "sampled_frames": [
+    3711,
+    3739
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 23.366,
+  "to_value": 50.092,
+  "active_frames": [
+    3711,
+    3726
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.7831,
+    "x2": 0.7532,
+    "y2": 0.9846,
+    "durationInFrames": 14,
+    "delay": 2.043,
+    "built_duration_frames": 13,
+    "rmse": 0.0873
+  },
+  "spring": {
+    "stiffness": 489.775,
+    "damping": 45.027,
+    "mass": 1,
+    "damping_ratio": 1.0173,
+    "built_duration_frames": 16,
+    "rmse": 0.0258
+  },
+  "recommended": "spring",
+  "note": "P6 file tile (rounded video thumbnail + 2-line file-name label) dragged in from the left edge by the dark 3D pointer, which holds its bottom-right corner: enters at the left edge with heavy horizontal motion blur at f3706-f3709, then decelerates from ~54 px/frame (3.3% W) to rest by f3729 at x 32.8-67.2% W, y 24.8-59.4% H, rising 16 px (1.7% H) on the way; label faint and blurred until ~f3719; motion starts before the first trackable picture (from-value pinned to f3711); thumbnail template (ref f3729, score 0.88-1.0)"
+}

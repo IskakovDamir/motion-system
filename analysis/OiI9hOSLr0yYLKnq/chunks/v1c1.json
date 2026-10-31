@@ -1,0 +1,929 @@
+{
+ "video": "OiI9hOSLr0yYLKnq",
+ "key": "v1",
+ "chunk": "v1c1",
+ "frames": [
+  0,
+  1068
+ ],
+ "cut_decisions": [
+  {
+   "id": "c001",
+   "frame": 788,
+   "status": "confirmed",
+   "reason": "hard cut: f787 holds the S04 cards at 13% opacity (end of their 10-frame shrink-fade exit f778-f787), f788 is the complete hexagon network with the headline band at full contrast; nothing of the network exists before f788"
+  },
+  {
+   "id": "c002",
+   "frame": 879,
+   "status": "confirmed",
+   "reason": "anchor of the soft zoom-through transition f872-f895 (no hard replacement: f878->f879 is continuous; the headline finishes fading out, the band cells and the centre mark finish fading in, layer scale 1.05 -> 1.07)"
+  }
+ ],
+ "boundaries": [
+  {
+   "start": 101,
+   "end": 122,
+   "type": "dip-to-bg (send-off fade-out, 2 empty frames f112-f113, pop-in)",
+   "frames": 22,
+   "shared": "nothing but the empty background (f112-f113); both layouts are centred on x 960: the prompt box exits rising 3.4% H with icons drifting outward, the centre mark pops in at the frame centre and the counter label appears in one frame (f114)",
+   "technique": "v1.trans-dip-to-bg",
+   "curve": "v1.layout-send-off-exit.v1c1",
+   "detail": "detail/soft_101-122",
+   "extra_curves": [
+    "v1.logo-mark-pop-in.v1c1"
+   ]
+  },
+  {
+   "start": 328,
+   "end": 354,
+   "type": "dip-to-bg (pure fade-out, 1 empty frame f337, card slide-fade-in)",
+   "frames": 27,
+   "shared": "nothing but the empty background (single empty frame f337); network + counter fade with no scale change, then two cards slide in from the right (card 2 +3 f) and the heading starts with card 2",
+   "technique": "v1.trans-dip-to-bg",
+   "curve": "v1.trans-dip-to-bg.v1c1",
+   "detail": "detail/soft_328-354",
+   "extra_curves": [
+    "v1.card-slide-fade-in.v1c1"
+   ]
+  },
+  {
+   "start": 553,
+   "end": 579,
+   "type": "dip-to-bg (shrink-fade-out, no empty frame, card slide-fade-in)",
+   "frames": 27,
+   "shared": "the same two-card layout (positions, size, header bar); outgoing cards shrink to 0.966 and fade to 13% (f562), incoming cards start at 14% (f563) with the exact S03 entrance values; only the right card changes from dark to light",
+   "technique": "v1.trans-dip-to-bg",
+   "curve": "v1.card-shrink-fade-out.v1c1",
+   "detail": "detail/soft_553-579",
+   "extra_curves": [
+    "v1.card-slide-fade-in.v1c1"
+   ]
+  },
+  {
+   "frame": 788,
+   "type": "hard-cut",
+   "note": "preceded inside S04 by the 10-frame shrink-fade exit f778-f787 (identical values to S03's exit); the network appears complete in one frame",
+   "cut_id": "c001"
+  },
+  {
+   "start": 872,
+   "end": 895,
+   "type": "zoom-through (morph on a shared element)",
+   "frames": 24,
+   "shared": "the centre hex mark: it is the centre cell of the S05 network (refilled into the text band f872-f879) and becomes the S06 logo; layer scale 1.00 -> 1.40 about the mark while it rises from 50% to 35.6% H; the other cells fade out f880-f888",
+   "technique": "v1.trans-zoom-through-mark",
+   "curve": "v1.trans-zoom-through-mark.v1c1",
+   "detail": "detail/soft_872-895"
+  }
+ ],
+ "segments": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 111,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "chat-input box fades/scales in at centre, 8 hexagon-badged agent icons pop in with a 3-frame stagger and then float on a slow sine (each its own phase) to the end, prompt types character by character, the send button clicks (scale 0.90 and back) as the caret goes, then the box rises and everything fades as the icon layer scales outward"
+  },
+  {
+   "id": "S02",
+   "start": 112,
+   "end": 341,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "centre hex mark pops in with a counter label; an accelerating counter (1 to 100) drives a growing hexagon network while the frame pulls back in steps to 0.32; packets hop along connectors; slow push-in during the hold; pure fade-out"
+  },
+  {
+   "id": "S03",
+   "start": 342,
+   "end": 566,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "two dark terminal cards slide in from the right with a word-by-word heading and labels; a typed prompt, streamed output, status timer and a packet dot that hops between the cards; shrink-fade exit"
+  },
+  {
+   "id": "S04",
+   "start": 567,
+   "end": 787,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "same two-card layout with a light right card: typed prompt, packet hop, request block fade-in, running timer, reply bubble with avatar and word pops; shrink-fade exit then hard cut"
+  },
+  {
+   "id": "S05",
+   "start": 788,
+   "end": 883,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "hexagon network (S02 layout) with its middle row cleared into a feathered band; a 4-word headline pops word by word in the band; slow push-in and packet traffic"
+  },
+  {
+   "id": "S06",
+   "start": 884,
+   "end": 1068,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "end card: the mark settles from the zoom-through, blinks, slides left as the wordmark pops on, tagline pops word by word, URL label pops; static hold to the last frame"
+  }
+ ],
+ "techniques": [
+  {
+   "id": "v1.ui-prompt-pop-in",
+   "category": "ui",
+   "description": "chat-input box (white rounded rectangle 78.0% W x 20.2% H, radius about 3.8% H, soft drop shadow) fades in while scaling 0.977 -> 1.000 about the frame centre",
+   "instances": [
+    [
+     0,
+     12
+    ]
+   ],
+   "reference_frames": [
+    1,
+    12
+   ],
+   "measured": {
+    "duration_frames": 12,
+    "easing": "opacity bezier(0.302, 0.919, 0.650, 0.964) D=13 (rmse 0.020) / spring {812.2, 57.84, mass 1} (0.042)",
+    "values": "opacity 0 -> 1 f0-f12 (send-button luma 246 -> 17); scale 0.977, 0.982, 0.986, 0.990, 0.993, 0.995, 0.997, 0.998, 1.000 f1-f9 (send-button template position about the frame centre)"
+   },
+   "curves": [
+    "v1.ui-prompt-pop-in.v1c1"
+   ]
+  },
+  {
+   "id": "v1.icon-stagger-pop-in",
+   "category": "icon",
+   "description": "8 agent logo icons on white flat-top hexagon badges pop in one at a time: opacity 0 -> 1 and scale from about 0.68 to 1 over 10 frames, 3-frame stagger, upper four left to right then lower four left to right",
+   "instances": [
+    [
+     3,
+     13
+    ],
+    [
+     6,
+     16
+    ],
+    [
+     9,
+     18
+    ],
+    [
+     12,
+     22
+    ],
+    [
+     15,
+     25
+    ],
+    [
+     18,
+     28
+    ],
+    [
+     21,
+     31
+    ],
+    [
+     24,
+     34
+    ]
+   ],
+   "reference_frames": [
+    9,
+    18
+   ],
+   "measured": {
+    "duration_frames": 10,
+    "easing": "opacity spring {1446.9, 79.56, mass 1} (rmse 0.042) / bezier(0.224, 1.046, 0.696, 0.938) D=11 (0.051)",
+    "values": "3rd icon scale 0.68, 0.78, 0.86, 0.90, 0.93, 0.96, 0.97, 0.98, 0.99, 1.00 f9-f18 (template); starts f3, f6, f9, f12, f15, f18, f21, f24"
+   },
+   "curves": [
+    "v1.icon-stagger-pop-in.v1c1"
+   ]
+  },
+  {
+   "id": "v1.icon-idle-float",
+   "category": "icon",
+   "description": "idle float of the agent icons: each icon and its white badge bob vertically on a sine with a shared period and amplitude and its own phase, from the end of its pop-in through the exit; x does not move; the prompt box, text and send button do not float",
+   "instances": [
+    [
+     13,
+     111
+    ]
+   ],
+   "reference_frames": [
+    26,
+    99
+   ],
+   "measured": {
+    "duration_frames": 157,
+    "easing": "sine: y = rest + 10.0 * cos(2 pi (f - f_low) / 156.9); one half-swing (78.5 f) fitted alone: bezier(0.363, 0.010, 0.637, 0.950) D=76 (rmse 0.0028)",
+    "values": "shared-period sine fit to the 8 icons over f20-f99 (each from 2 f after its pop-in): period 156.9 f (2.6 s; free per-icon fits 155.9-161.2 f), amplitude 9.95-9.99 px (peak to peak 20.0 px = 1.85% H), rms residual 0.03-0.04 px, x constant within 0.1 px; lowest point (max y) at f39 (x 300), f154 (x 740), f111 (x 1180), f69 (x 1620), f26 (x 420), f141 (x 860), f99 (x 1300), f56 (x 1720); box, text and send button 0.00 px over f30-f100; sub-pixel template tracks scratch/s1_icon_float.csv; crops/crop_1080_60_200x220_00030-00100.jpg, crops/crop_320_780_200x220_00030-00100.jpg"
+   },
+   "curves": [
+    "v1.icon-idle-float.v1c1"
+   ]
+  },
+  {
+   "id": "v1.text-typewriter-char",
+   "category": "text",
+   "description": "character-by-character typing at a uniform rate with a solid (non-blinking) caret, no pause at spaces; the caret is removed 9 frames after the last character",
+   "instances": [
+    [
+     12,
+     72
+    ],
+    [
+     362,
+     394
+    ],
+    [
+     587,
+     620
+    ]
+   ],
+   "reference_frames": [
+    12,
+    72
+   ],
+   "measured": {
+    "duration_frames": 60,
+    "easing": "linear steps of 1-2 frames",
+    "values": "S01 prompt 35 chars in 60 f = 1.76 f/char (caret gone f81); S03 terminal prompt 22 chars f362-f394 = 1.52 f/char; S04 terminal prompt 23 chars f587-f620 = 1.5 f/char (ink right-edge tracks)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v1.ui-button-press",
+   "category": "ui",
+   "description": "click on the send button when the caret is removed: the whole button (disc and chevron) scales down about its own centre with an ease-out, holds 2 frames, and scales back along the same curve played backwards; position and luma do not change",
+   "instances": [
+    [
+     81,
+     91
+    ]
+   ],
+   "reference_frames": [
+    81,
+    91
+   ],
+   "measured": {
+    "duration_frames": 10,
+    "easing": "down bezier(0.320, 1.005, 0.638, 1.021) D=5 (rmse 0.011); back = the down curve played backwards (rms 0.006 against the samples), fitted alone bezier(0.130, 0.000, 0.676, 0.003) D=4 (per-frame residual < 0.0001; shape rmse 0.118 from the 2% window rule on a 4-frame move)",
+    "values": "soft-edge diameter 95.9 px at rest; scale 0.998, 0.948, 0.919, 0.905, 0.900 (f81-f85), 0.900, 0.901 (f86-f87), 0.910, 0.930, 0.969, 1.000 (f88-f91); centre (1620.5, 540.5) within 0.05 px; button luma 18.0-18.6 throughout; starts in the caret-removal frame f81, at rest 10 f before the exit (scratch/s1_sendbtn_press.csv, crops/crop_1560_480_120x120_00078-00093.jpg)"
+   },
+   "curves": [
+    "v1.ui-button-press.v1c1",
+    "v1.ui-button-press.release.v1c1"
+   ]
+  },
+  {
+   "id": "v1.layout-send-off-exit",
+   "category": "layout",
+   "description": "exit of the prompt layout: the input box rises while the icon layer scales up about the frame centre (icons drift radially outward and grow) and every layer fades, all with one ease-in; the icons' idle float keeps running under it",
+   "instances": [
+    [
+     101,
+     111
+    ]
+   ],
+   "reference_frames": [
+    101,
+    111
+   ],
+   "measured": {
+    "duration_frames": 10,
+    "easing": "bezier(0.450, 0.105, 0.690, 0.326) D=10 (rmse 0.006), cut by the fade",
+    "values": "box -37 px (-3.4% H) at f111; icons, measured with the float removed and rest at f99: radial +0.07, 0.16, 0.34, 0.60, 0.94, 1.40, 2.00, 2.75, 3.65, 4.73, 6.00, 7.52% of their distance from (960, 540) (f100-f111; all 8 within 7.42-7.66% at f111) and icon size 1.00 -> 1.07, i.e. icon layer scale about 1.075 (icon 3 +17/-27 px, icon 5 -41/+26 px, icon 8 +57/+26 px at f111; the earlier f95-based values without the float scatter 6.2-9.2%; scratch/s1_icons_exit_radial.csv); send-button luma 17 (f100) -> 247 (f110); empty background f112-f113"
+   },
+   "curves": [
+    "v1.layout-send-off-exit.v1c1"
+   ]
+  },
+  {
+   "id": "v1.trans-dip-to-bg",
+   "category": "trans",
+   "description": "layout change through the empty background: the outgoing layout fades out with an ease-in (9-10 f, starting 1 frame before a beat), 0-2 empty frames, then the next layout builds in with ease-out entrances",
+   "instances": [
+    [
+     101,
+     122
+    ],
+    [
+     328,
+     354
+    ],
+    [
+     553,
+     579
+    ]
+   ],
+   "reference_frames": [
+    328,
+    354
+   ],
+   "measured": {
+    "duration_frames": 27,
+    "easing": "out: bezier(0.347, 0.010, 0.678, 0.197) D=9 (T2, per-frame residual < 0.004; shape rmse 0.055)",
+    "values": "T1 22 f (send-off exit, 2 empty frames, mark pop-in); T2 27 f (pure fade with template scale 1.000, 1 empty frame f337, cards in); T3 27 f (cards shrink to 0.966 while fading, no empty frame, cards in)"
+   },
+   "curves": [
+    "v1.trans-dip-to-bg.v1c1"
+   ]
+  },
+  {
+   "id": "v1.logo-mark-pop-in",
+   "category": "logo",
+   "description": "centre hex mark appears at the frame centre: opacity 0 -> 1 in 9 f and scale from below 0.765 to 1 in 6 f, ease-out; its counter label pops on in the same frame",
+   "instances": [
+    [
+     113,
+     122
+    ]
+   ],
+   "reference_frames": [
+    114,
+    120
+   ],
+   "measured": {
+    "duration_frames": 9,
+    "easing": "opacity spring {2042.5, 142.73, mass 1} (rmse 0.045) / bezier(0.226, 1.016, 0.628, 0.946) D=9 (0.073)",
+    "values": "scale 0.765, 0.905, 0.95, 0.96, 0.98, 0.99, 1.00 f114-f120 (template ref f121); mark 362 px = 18.9% W at rest; luma 246, 214, 139, 93, 62, 45, 33, 25, 23, 19, 17 f113-f123"
+   },
+   "curves": [
+    "v1.logo-mark-pop-in.v1c1"
+   ]
+  },
+  {
+   "id": "v1.counter-accelerating-count",
+   "category": "counter",
+   "description": "centred counter label (digits + 1 word) counts 1 -> 100 with an accelerating rate; the value is replaced every frame and the line re-centres as the digit count grows",
+   "instances": [
+    [
+     114,
+     222
+    ]
+   ],
+   "reference_frames": [
+    114,
+    222
+   ],
+   "measured": {
+    "duration_frames": 108,
+    "easing": "bezier(0.311, 0.039, 0.659, 0.359) D=100, origin about f121.6 (rmse 0.006)",
+    "values": "rate 0.09/f f114-125, 0.31 f125-141, 0.65 f141-161, 0.95 f161-183, 1.39 f183-201, 1.62 f201-222; digits read off crops/crop_700_880_520x130_00114-00169.jpg and _00170-00225.jpg (scratch/s2_counter_values.csv)"
+   },
+   "curves": [
+    "v1.counter-accelerating-count.v1c1"
+   ]
+  },
+  {
+   "id": "v1.grid-hex-network-grow",
+   "category": "grid",
+   "description": "agent cells are added around the centre mark on a flat-top hexagon lattice in step with the counter; each cell's icon and white badge arrive together (icon fades in about 4 f and scales 0.82 -> 1 in 2-3 f); 10-11 f after a cell lands, a grey connector line draws from every neighbour that already exists to the new cell, each line complete in 2 f",
+   "instances": [
+    [
+     125,
+     222
+    ]
+   ],
+   "reference_frames": [
+    147,
+    151
+   ],
+   "measured": {
+    "duration_frames": 4,
+    "easing": "ease-out (per-cell samples too short to fit; concurrent zoom steps); line draw-on within 2 frames (18-88% of the length on the first frame), easing not measurable",
+    "values": "cell scale 0.82, 0.93, 1.00, 1.03, 1.00 f147-f151 (template); lattice pitch at the hold 148-150 px x 128-130 px, alternate rows offset half a pitch; first frames (icon, badge >= 248 luma): right f125/f125, left f130/f130, lower-left f133/f133, upper-left f136/f136, lower-right f138/f139, upper-right f141/f140 (faint), second ring f143, 145, 147, 148, 150, 152; lines (from existing neighbour toward the new cell, first frame partial, second full): right f136-137, left f140-141, lower-left f144-145, upper-left f147-148 (from the mark and the left cell), lower-right f149-150, upper-right f152-153 (from the mark, upper-left and right cells), second ring f154-155, f158-159, f161-162, f163-164 = 10-11 f after each cell; full line = gap between badges, 0.24 x mark width (63 px at f137); scratch/s2_cells_badge_link.csv, crops/crop_1080_500_140x80_00134-00139.jpg, crops/crop_760_500_100x80_00138-00143.jpg, crops/crop_600_380_720x320_00122-00149.jpg"
+   },
+   "curves": []
+  },
+  {
+   "id": "v1.cam-stepped-zoom-out",
+   "category": "cam",
+   "description": "whole-frame pull-back about the frame centre while the network grows, in quick 1-5 frame steps separated by near-holds and slow drift; the steps shrink toward the end",
+   "instances": [
+    [
+     121,
+     194
+    ]
+   ],
+   "reference_frames": [
+    122,
+    146
+   ],
+   "measured": {
+    "duration_frames": 73,
+    "easing": "envelope bezier(0.000, 0.321, 0.602, 1.000) D=76 (rmse 0.042) / spring {14.3, 9.13, mass 1} (0.073)",
+    "values": "scale 1.00 -> 0.32 (mark 362 -> 116 px), at rest from f194; 12 steps (change inside the step, sub-pixel mark area scratch/s2_pullback_steps.csv): f122-126 -21.5% (362 -> 284 px), f134-135 -5.5%, f141-143 -6.1%, f145-146 -17.9%, f150-151 -7.1%, f160-161 -3.6% (174 -> 168 px), f164-166 -5.7%, f172-174 -13.5%, f177-178 -3.2% (132 -> 128 px), f187 -2.3%, f190 -1.7% (f191 -0.6%), f194 -1.7% (118 -> 116 px); between steps 0 to -1.1% per frame; crops/crop_860_440_200x200_00156-00196.jpg, motion.csv flow_radial spikes at the same frames"
+   },
+   "curves": [
+    "v1.cam-stepped-zoom-out.v1c1"
+   ]
+  },
+  {
+   "id": "v1.cam-slow-push-in",
+   "category": "cam",
+   "description": "slow push-in of the whole network about the frame centre during a hold. S02: starts at full speed with no ease-in and decelerates to rest as the fade-out begins (ease-out). S05: constant rate from the cut until the zoom-through takes over (linear). Same device, different easing: probably two techniques",
+   "instances": [
+    [
+     226,
+     333
+    ],
+    [
+     788,
+     868
+    ]
+   ],
+   "reference_frames": [
+    226,
+    333
+   ],
+   "measured": {
+    "duration_frames": 107,
+    "easing": "S02 bezier(0.360, 0.541, 0.658, 0.956) D=106 (rmse 0.0033) / spring {4.1, 3.18, mass 1} (0.0202); S05 linear, bezier(0.375, 0.372, 0.826, 0.830) D=79 (rmse 0.0027)",
+    "values": "S02 x1.0348 (+3.5%; 0.98385 -> 1.01810 with f260 = 1): rest through f225, first moved frame f226 (4 f after the counter reaches 100), +0.049%/f at f226-f235, 0.027%/f at f290-f300, 0.008%/f at f320-f330, at rest from about f333; S05 x1.0193 (+1.9%; 0.98990 -> 1.00897 with f830 = 1) at a constant +0.024%/f from the cut f788 to f868; both from a least-squares uniform scale about (960, 540) fitted to sub-pixel cell tracks (residual 0.03-0.08 px, translation under 0.1 px; scratch/s2_pushin_cells.csv, scratch/s5_pushin_cells.csv; independent warp-NCC check scratch/s2_pushin_warp.csv agrees within 0.00005). The earlier template tracks (s2_hold_zoom*.csv, s5_hold_zoom.csv) step because the scaled template size is rounded to whole pixels, not because of pixel snapping in the video"
+   },
+   "curves": [
+    "v1.cam-slow-push-in.v1c1",
+    "v1.cam-slow-push-in.s05.v1c1"
+   ]
+  },
+  {
+   "id": "v1.particle-edge-packets",
+   "category": "particle",
+   "description": "small filled dots hop from icon to neighbouring icon along the connector lines, dwelling on each icon, many in flight at once; the dots are the front layer of the network (drawn on top of the icons, badges and lines they cross: S02 f180-f185 at about (640, 540), f292-f303 at about (70, 797) and (892, 420); S05 f839-f846 at about (135, 925) and (1485, 150)) and are hidden, like the cells, by the text knockout zone or band, fading through its soft edge",
+   "instances": [
+    [
+     185,
+     337
+    ],
+    [
+     788,
+     887
+    ]
+   ],
+   "reference_frames": [
+    828,
+    832
+   ],
+   "measured": {
+    "duration_frames": 12,
+    "easing": "ease-in-out with dwell (not fitted: a black dot cannot be told apart from the black icon strokes it covers)",
+    "values": "dot about 23 px; mid-hop 12-17 px/f (x 691, 679, 663, 646, 631 f828-f832); one 150 px pitch per about 10-16 f including the dwell; first dots at about f185"
+   },
+   "curves": []
+  },
+  {
+   "id": "v1.layout-text-knockout",
+   "category": "layout",
+   "description": "text that sits on the network gets a cleared, feather-edged zone: cells under the counter label are hidden, and in S05 the whole middle row becomes an empty band with the adjacent rows clipped softly; the zone also hides the packet dots, which fade in through its soft edge as they leave it (S02 f226-f228 and f233-f235 at about y 840-875; S05 f811-f815 at x about 250-270 and f817-f820 at x about 1740-1750)",
+   "instances": [
+    [
+     114,
+     337
+    ],
+    [
+     788,
+     879
+    ]
+   ],
+   "reference_frames": [
+    300,
+    830
+   ],
+   "measured": {
+    "duration_frames": 0,
+    "easing": "static",
+    "values": "S02 zone about x 290-1630 on the label rows (f300); S05 band about y 420-655 (21.8% H), adjacent icons clipped at y about 415-426 and 653-665 (f830 column scans)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v1.card-slide-fade-in",
+   "category": "card",
+   "description": "terminal cards enter from the right: first visible frame 165 px (8.6% W) right of rest at opacity 0.14, decelerating to rest; the second card repeats the motion 3 frames later and the heading starts with it",
+   "instances": [
+    [
+     337,
+     351
+    ],
+    [
+     340,
+     354
+    ],
+    [
+     562,
+     576
+    ],
+    [
+     565,
+     579
+    ]
+   ],
+   "reference_frames": [
+    338,
+    351
+   ],
+   "measured": {
+    "duration_frames": 13,
+    "easing": "position bezier(0.189, 1.002, 0.499, 0.981) D=18 from the first visible frame (rmse 0.002); opacity bezier(0.192, 0.825, 0.408, 0.979) D=16 from f337 (rmse 0.027, temporary fit)",
+    "values": "x 415, 374, 343, 320, 302, 289, 279, 271, 265, 261, 258, 255, 254, 252, 252, 251, 251, 250 (f338-f355); luma 214, 165, 129, 100, 79, 62, 52, 42, 35, 31, 25, 22, 22, 19, 18, 17; T3 repeats every value 225 frames later"
+   },
+   "curves": [
+    "v1.card-slide-fade-in.v1c1"
+   ]
+  },
+  {
+   "id": "v1.text-word-pop",
+   "category": "text",
+   "description": "words of a pre-laid, centred line appear one at a time in a single frame at full opacity, with no fade or motion; single elements (wordmark, URL) pop the same way",
+   "instances": [
+    [
+     341,
+     360
+    ],
+    [
+     356,
+     367
+    ],
+    [
+     566,
+     576
+    ],
+    [
+     581,
+     592
+    ],
+    [
+     793,
+     814
+    ],
+    [
+     942,
+     942
+    ],
+    [
+     960,
+     996
+    ],
+    [
+     1002,
+     1002
+    ]
+   ],
+   "reference_frames": [
+    793,
+    814
+   ],
+   "measured": {
+    "duration_frames": 0,
+    "easing": "step",
+    "values": "S03 heading 5, 5, 4, 5 f (4.75 f/word, about 1/6 beat); S04 heading 5, 5 f; device labels 4 f/word with the right label +3 f; S05 headline 7 f/word (1/4 beat); S06 tagline 8, 7, 7, 7, 7 f; URL 6 f after the last tagline word"
+   },
+   "curves": []
+  },
+  {
+   "id": "v1.text-stream-words",
+   "category": "text",
+   "description": "agent output in the cards: a grey bullet appears, 2-3 frames later the words pop one at a time, wrapping onto the next line",
+   "instances": [
+    [
+     402,
+     417
+    ],
+    [
+     450,
+     468
+    ],
+    [
+     480,
+     498
+    ],
+    [
+     629,
+     643
+    ],
+    [
+     696,
+     708
+    ],
+    [
+     719,
+     737
+    ]
+   ],
+   "reference_frames": [
+    402,
+    417
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "step",
+    "values": "bullet-to-first-word 2-3 f; 2 f/word (tool-call lines), 3 f/word (replies, bubble)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v1.ui-status-timer",
+   "category": "ui",
+   "description": "status line (tree glyph, dot spinner glyph, grey text, timer) appears in one frame (or fades in 3 f on the light card); the spinner advances one state every 5 frames (10-state cycle) and the timer 0.1 every 6 frames (real time), independently, until the line is swapped in one frame for a check line",
+   "instances": [
+    [
+     420,
+     471
+    ],
+    [
+     647,
+     710
+    ],
+    [
+     674,
+     692
+    ]
+   ],
+   "reference_frames": [
+    420,
+    471
+   ],
+   "measured": {
+    "duration_frames": 51,
+    "easing": "step",
+    "values": "spinner state changes every 5 f, counted from the line's first frame: S03 card 1 f425, 430 ... 470 (f470 state equals f420: 10 states, 50 f cycle); S04 card 1 f652, 657 ... 707 (f697 equals f647); light card f679, 684, 689 (scratch/s3_s4_spinner_steps.csv, crops/crop_120_565_80x60_00420-00445.jpg, crops/crop_135_565_50x55_00645-00712.jpg, crops/crop_990_530_70x80_00672-00694.jpg); timer +0.1 at f423, f429, f435 ... (6 f); both stop at the swap to the check line f471, f710 (card 1), f692 (light card)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v1.particle-packet-hop",
+   "category": "particle",
+   "description": "a 34 px grey dot carries a request from one card to the other along a straight line with an ease-in-out; the receiving card shows the request the next frame; the answer travels back as a black dot that is only visible over light pixels; both dots are drawn in front of everything they cross (dark and light card interiors, card text, the reply bubble and its avatar)",
+   "instances": [
+    [
+     420,
+     437
+    ],
+    [
+     455,
+     470
+    ],
+    [
+     647,
+     664
+    ],
+    [
+     692,
+     710
+    ]
+   ],
+   "reference_frames": [
+    420,
+    437
+   ],
+   "measured": {
+    "duration_frames": 16,
+    "easing": "bezier(0.541, 0.066, 0.364, 1.055) D=16 (rmse 0.038) / spring {330.7, 26.28, mass 1} (0.272)",
+    "values": "(780, 460) -> (1139.4, 359.6) f420-f437, peak 56 px/f at f428-f429 (median-background blob track scratch/s3_packet_out.csv); request appears f438; S04 outbound: (799.6, 519.5) -> (1149.5, 399.5) f647-f664 (+350, -120 px, 18.9 degrees up vs S03's 15.6; straight within 0.1 px), first visible f647 with the status line, dwell to f649 (steps 1.4, 4.1 px), active f649-f662, peak 57.0 px/f at f655-f656, gone at f665 when the request block appears (difference-blob track against the f640-f664 median, scratch/s4_packet_out.csv); the S03 curve fits these samples within rms 0.002 started at f648.1, 0.5 f earlier than S03's start + 227 f (scratch/s4_packet_vs_s03_curve.csv), so S04 needs no curve of its own"
+   },
+   "curves": [
+    "v1.particle-packet-hop.v1c1"
+   ]
+  },
+  {
+   "id": "v1.ui-chat-bubble-in",
+   "category": "ui",
+   "description": "light-card UI: the request block (asker label + filled row) fades in about 6 f; the reply avatar fades grey -> black in 5 f and the bubble pill fades in at its full width in 3 f, then its words pop at 3 f/word",
+   "instances": [
+    [
+     665,
+     670
+    ],
+    [
+     695,
+     708
+    ]
+   ],
+   "reference_frames": [
+    665,
+    708
+   ],
+   "measured": {
+    "duration_frames": 6,
+    "easing": "ease-out (ink area 3592 -> 8098 f665-f673)",
+    "values": "request row fill luma 239, bubble fill 240; avatar f695-f699; bubble f695-f697; words f696, 699, 702, 705, 708"
+   },
+   "curves": []
+  },
+  {
+   "id": "v1.card-shrink-fade-out",
+   "category": "card",
+   "description": "both cards scale to 0.966 about their own centres and fade out with an ease-in; the heading fades slightly faster; the fade is cut at about 87% by the next picture",
+   "instances": [
+    [
+     553,
+     562
+    ],
+    [
+     778,
+     787
+    ]
+   ],
+   "reference_frames": [
+    553,
+    562
+   ],
+   "measured": {
+    "duration_frames": 10,
+    "easing": "bezier(0.280, 0.038, 0.616, 0.076) D=10 (per-frame residual < 0.003; shape rmse 0.069 because samples stop at 87%)",
+    "values": "luma 17, 18, 23, 28, 38, 53, 73, 98, 130, 171, 217 f552-f562 and identically f777-f787; header template scale 1.000 -> 0.966, header centre (250, 280) -> (258.5, 289.5)"
+   },
+   "curves": [
+    "v1.card-shrink-fade-out.v1c1"
+   ]
+  },
+  {
+   "id": "v1.trans-zoom-through-mark",
+   "category": "trans",
+   "description": "the text band refills (headline fades out, middle-row cells and the centre mark fade in), then the whole network layer zooms in on the centre mark while rising, the other cells fade out and the mark lands as the end-card logo",
+   "instances": [
+    [
+     872,
+     895
+    ]
+   ],
+   "reference_frames": [
+    872,
+    897
+   ],
+   "measured": {
+    "duration_frames": 23,
+    "easing": "scale bezier(0.571, 0.130, 0.423, 0.816) D=24 (rmse 0.013); rise bezier(0.617, 0.191, 0.389, 0.874) D=25 (rmse 0.019, temporary fit)",
+    "values": "layer scale 1.00 -> 1.40 (grid-patch template f864-f878, mark template f879-f905, overlap agrees within 0.01); mark centre y 540 -> 385 px (50% -> 35.6% H); headline out f871-f878; cells out f880-f888; mark 168 x 152 px at rest (scratch/t5_layer.csv)"
+   },
+   "curves": [
+    "v1.trans-zoom-through-mark.v1c1"
+   ]
+  },
+  {
+   "id": "v1.logo-blink",
+   "category": "logo",
+   "description": "the mark's two eye bars collapse in one frame to 4 px dashes at their own vertical centre (scaleY about the bar centre), stay shut 7 frames and reopen symmetrically about that centre with an ease-out",
+   "instances": [
+    [
+     900,
+     916
+    ]
+   ],
+   "reference_frames": [
+    899,
+    916
+   ],
+   "measured": {
+    "duration_frames": 10,
+    "easing": "reopen bezier(0.310, 0.960, 0.630, 0.972) D=12 (rmse 0.002)",
+    "values": "eye bars x 958-973 and 989-1004, open y 335-388 (54 px, centre 361.5); close in 1 f (f899 -> f900) to y 360-363 (scaleY 0.074), closed f900-f906; reopen y 354-369, 349-374, 345-378, 342-381, 340-383, 338-385, 337-386, 336-387, 336-387, 335-388 (f907-f916) = scaleY 0.30, 0.48, 0.63, 0.74, 0.81, 0.89, 0.93, 0.96, 0.96, 1.00; eye ink area 277 -> 1811 px f906-f916 (scratch/s6_blink_eye_extent.csv, crops/crop_870_300_180x160_00898-00912.jpg)"
+   },
+   "curves": [
+    "v1.logo-blink.v1c1"
+   ]
+  },
+  {
+   "id": "v1.logo-lockup-slide",
+   "category": "logo",
+   "description": "the centred mark slides left to make room and the wordmark pops on in its final place while the mark is still settling",
+   "instances": [
+    [
+     921,
+     946
+    ]
+   ],
+   "reference_frames": [
+    921,
+    946
+   ],
+   "measured": {
+    "duration_frames": 20,
+    "easing": "bezier(0.592, 0.055, 0.412, 0.944) D=25 (rmse 0.008) / spring {150.7, 19.43, mass 1} (0.138)",
+    "values": "mark centroid x 957.6 -> 698.5 px (-13.5% W) f921-f946; wordmark at f942 (x 849-1302)"
+   },
+   "curves": [
+    "v1.logo-lockup-slide.v1c1"
+   ]
+  }
+ ],
+ "typography_stills": [
+  "type/S1-prompt_f00003.png",
+  "type/S1-prompt_f00011.png",
+  "type/S1-prompt_f00012.png",
+  "type/S1-prompt_f00072.png",
+  "type/S1-prompt_f00090.png",
+  "type/S1-prompt_f00101.png",
+  "type/S2-counter_f00114.png",
+  "type/S2-counter_f00120.png",
+  "type/S2-counter_f00222.png",
+  "type/S2-counter_f00330.png",
+  "type/S3-heading_f00341.png",
+  "type/S3-heading_f00360.png",
+  "type/S3-heading_f00520.png",
+  "type/S3-heading_f00553.png",
+  "type/S3-terminal_f00362.png",
+  "type/S3-terminal_f00394.png",
+  "type/S3-terminal_f00438.png",
+  "type/S3-terminal_f00498.png",
+  "type/S4-heading_f00566.png",
+  "type/S4-heading_f00576.png",
+  "type/S4-heading_f00778.png",
+  "type/S4-terminal_f00665.png",
+  "type/S4-terminal_f00696.png",
+  "type/S4-terminal_f00708.png",
+  "type/S4-terminal_f00760.png",
+  "type/S5-headline_f00793.png",
+  "type/S5-headline_f00816.png",
+  "type/S5-headline_f00830.png",
+  "type/S5-headline_f00874.png",
+  "type/S6-endcard_f00942.png",
+  "type/S6-endcard_f00960.png",
+  "type/S6-endcard_f00996.png",
+  "type/S6-endcard_f01002.png",
+  "type/S6-endcard_f01068.png"
+ ],
+ "uncertain": [
+  {
+   "what": "start offset and start frame of the card slide-in",
+   "range": "f337-f338 and f562-f563",
+   "reason": "the first visible frame already shows the card 165 px right of rest at opacity 0.14; the invisible start position cannot be measured"
+  },
+  {
+   "what": "S02 mark scale at f113",
+   "range": "f113",
+   "reason": "mark invisible; first measurable scale 0.765 at f114"
+  },
+  {
+   "what": "whether the S01 send-button darkening is pure layer opacity or also a button state change",
+   "range": "f0-f13",
+   "reason": "the white box itself has too little contrast against the background (253 vs 246) to measure its opacity separately"
+  },
+  {
+   "what": "path and timing of the black return packets",
+   "range": "f455-f470, f692-f710",
+   "reason": "a black dot over the dark cards matches the card luma; it is only seen where it covers lighter pixels: it hides card 2's grey sub-label letters (f453-f460), shows in the light gap (f461-f463) and on the light card (f692-f700)"
+  },
+  {
+   "what": "cell pop-in overshoot",
+   "range": "f147-f151",
+   "reason": "measured 1.03 at f150 coincides with a camera zoom step at f151"
+  },
+  {
+   "what": "original typefaces",
+   "range": "all",
+   "reason": "not identified; closest free: Inter Tight (neo-grotesque, single-storey g, straight-tailed y) and JetBrains Mono"
+  },
+  {
+   "what": "prompt box drop-shadow size and offset",
+   "range": "S01",
+   "reason": "shadow too soft and low-contrast to measure"
+  },
+  {
+   "what": "exact network growth order",
+   "range": "f125-f222",
+   "reason": "cells are added outward around the cluster, several per frame late on; order not tracked cell by cell"
+  },
+  {
+   "what": "whether the icon float already runs during each icon's pop-in",
+   "range": "f3-f34",
+   "reason": "in its first visible frame each icon's scaled-template centre sits 0.7-5.6 px off the extrapolated sine and converges to it by the end of the pop-in; from then on every icon follows the sine within 0.13 px"
+  },
+  {
+   "what": "easing of the connector-line draw-on",
+   "range": "f136-f164",
+   "reason": "each line is complete on its second frame (18-88% of the length on the first), too few samples for a curve"
+  }
+ ],
+ "notes": [
+  "All six segments are GRAPHICS; no footage anywhere (checked on every overview sheet sheets/overview_00000-00045.jpg .. overview_01056-01068.jpg).",
+  "Detector misses: T1 f101-f122, T2 f328-f354 and T3 f553-f579 were found on the sheets and in motion.csv/luma tracks; c002 only caught the middle of T5.",
+  "Flow peaks f339-f353 (flow_mag up to 3.4 % W/f) and f556-f561 are Farneback artefacts on large flat dark cards changing luminance; template tracks show the real card motion is at most 41 px/f (2.1% W) at f338-f339 and the outgoing cards only shrink 3.4%.",
+  "The layout exits start 1 frame before beats f329, f554, f779 (every 225 frames = 7.9 beats at 126.05 BPM) and the next layout shows its first picture 9-10 frames after the beat (f338, f563, f788).",
+  "S05 reuses the S02 network arrangement (same icon in the same cell); its centre row, which holds the mark in S02, is the text band, and T5 refills it before zooming.",
+  "T3's incoming card values repeat T2's frame for frame (offset 225 f); S04's exit repeats S03's exit frame for frame (offset 225 f).",
+  "Peak windows opened: peak_f00110, f00146, f00165, f00173, f00188, f00559, f00884 (f00345/f00351 covered frame by frame by detail/dense_00326-00365_*.jpg). Extra dense sheets: dense_00000-00029, 00100-00124, 00326-00365, 00548-00587, 00872-00895.",
+  "Temporary fits (card opacity, T5 rise) were dropped with curves_tool.py drop; that tool rebuilt curves/index.json, which the merge regenerates anyway.",
+  "Cap heights measured on full-res frames with track.py bbox (scratch/cap_*.csv); weights estimated from stem/cap ratio: 0.12 for the headlines and 0.12 for the S01 prompt and placeholder (re-measured in review round 2 at the 50% ink level), all regular.",
+  "Review fixes (S01): the 8 icons float on a shared-period sine (sub-pixel template tracks scratch/s1_icon_float.csv); the send button clicks f81-f91 (scratch/s1_sendbtn_press.csv); the exit drift is re-measured from rest f99 with each icon's float extrapolated and removed (scratch/s1_icons_exit_radial.csv), which turns the scattered f95-based drifts into one uniform icon-layer scale.",
+  "Review fixes (S02): the badge arrives with its icon and the connector lines draw on 10-11 f after their cell (scratch/s2_cells_badge_link.csv: badge = pixels >= 248 within 0.45 mark widths of the cell centre, icon = pixels < 240 within 0.30, lines = grey 150-236 along the centre line); the pull-back step list is redone from the sub-pixel mark area (scratch/s2_pullback_steps.csv); the push-in curve is re-fit on a cell-based scale track.",
+  "Review fixes (S03-S06): spinner rate measured from per-frame changes (scratch/s3_s4_spinner_steps.csv); blink eye extents from the eye holes inside the mark hull (scratch/s6_blink_eye_extent.csv); S05 push-in has its own linear curve (v1.cam-slow-push-in.s05.v1c1).",
+  "Review fixes (round 2): (1) packet dots are the front layer wherever they appear: in S03/S04 in front of the cards, their text, the reply bubble and the avatar (the S04 return dot passes in front of the avatar, not under it); in S02/S05 on top of the icons, badges and lines, while the text knockout zone/band hides them like the cells (dots fade through its soft edge); evidence crops listed in the md layer lines, scratch/s3_return_dot_label.csv. (2) S01 prompt typography re-measured on single glyphs: the old bbox (scratch/cap_S1_prompt_S.csv) ran down to the next glyph's descender; flat cap 51 px = 4.7% H on the first digit (scratch/cap_S1_prompt_digit.csv), round first capital 53 px (cap_S1_prompt_cap1.csv), x-height 39 px (xh_S1_prompt.csv), placeholder flat cap 51 px at f10-f11 (cap_S1_placeholder_cap2.csv), stems 6.0 px = 0.12 x cap (scratch/s1_prompt_stems.csv, same method gives 0.12 on the S05 headline), glyph runs scratch/s1_prompt_glyph_runs.csv; new still type/S1-prompt_f00011.png. (3) S04 outbound packet hop measured by a median-background difference-blob track (scratch/s4_packet_out.csv): first visible f647, (799.6, 519.5) -> (1149.5, 399.5), peak 57.0 px/f at f655-f656; it repeats the S03 curve (scratch/s4_packet_vs_s03_curve.csv). (4) curves/v1.logo-blink.v1c1.json relabelled (property scale-y about the bar centre, unit eye-pixel area; note: closed dashes at the vertical middle of the bars, y 360-363, reopen f907-f916) by re-running fit_easing.py on the same samples; the fit itself is unchanged."
+ ]
+}

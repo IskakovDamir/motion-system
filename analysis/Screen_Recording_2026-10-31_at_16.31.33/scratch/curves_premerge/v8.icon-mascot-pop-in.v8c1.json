@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.icon-mascot-pop-in.v8c1",
+  "file": "curves/v8.icon-mascot-pop-in.v8c1.csv",
+  "property": "scale",
+  "unit": "% of frame width (mascot bbox width; rest 7.5% W)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c1_mascot_flower_w_0-40.csv",
+  "column": "w_pct",
+  "sampled_frames": [
+    4,
+    32
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 7.5832,
+  "active_frames": [
+    6,
+    26
+  ],
+  "measured_duration_frames": 20,
+  "bezier": {
+    "x1": 0.3607,
+    "y1": 2.1104,
+    "x2": 0.4157,
+    "y2": 0.7379,
+    "durationInFrames": 20,
+    "delay": 0.487,
+    "built_duration_frames": 19,
+    "rmse": 0.032
+  },
+  "spring": {
+    "stiffness": 566.938,
+    "damping": 21.348,
+    "mass": 1,
+    "damping_ratio": 0.4483,
+    "built_duration_frames": 22,
+    "rmse": 0.0505
+  },
+  "recommended": "bezier",
+  "note": "flower mascot pops in from nothing with overshoot (bbox width, scratch/v8c1_mascot_flower_0-40.csv)"
+}

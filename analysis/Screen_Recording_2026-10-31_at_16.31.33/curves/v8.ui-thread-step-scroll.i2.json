@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.ui-thread-step-scroll.i2",
+ "file": "curves/v8.ui-thread-step-scroll.i2.csv",
+ "property": "position-y",
+ "unit": "% of frame height",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c4_S5_page_y.csv",
+ "column": "page_y_pct",
+ "sampled_frames": [
+  2686,
+  2742
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 40.087,
+ "to_value": 24.074,
+ "active_frames": [
+  2691,
+  2735
+ ],
+ "measured_duration_frames": 44,
+ "bezier": {
+  "x1": 0.651,
+  "y1": 0.0008,
+  "x2": 0.2122,
+  "y2": 1.0625,
+  "durationInFrames": 61,
+  "delay": -6.286,
+  "built_duration_frames": 40,
+  "rmse": 0.018
+ },
+ "spring": {
+  "stiffness": 43.018,
+  "damping": 10.135,
+  "mass": 1,
+  "damping_ratio": 0.7726,
+  "built_duration_frames": 49,
+  "rmse": 0.2567
+ },
+ "recommended": "bezier",
+ "note": "chat page scrolls up 15.6% H (headline centre 39.9% -> 24.1% H) while the phone card rises in below it (auto-scroll for an appended item); continues as a 0.04% H per frame drift after f2740",
+ "chunk_curve_id": "v8.ui-thread-step-scroll.v8c4"
+}

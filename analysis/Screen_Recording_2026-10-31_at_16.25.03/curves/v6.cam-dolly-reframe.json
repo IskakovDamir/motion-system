@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.cam-dolly-reframe",
+  "file": "curves/v6.cam-dolly-reframe.csv",
+  "property": "position-x",
+  "unit": "px, left edge of the exploded stack's dark ink (picture 1622 px wide)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_phone_stack_bbox.csv",
+  "column": "x0",
+  "sampled_frames": [
+    671,
+    721
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 559.0,
+  "to_value": 339.0,
+  "active_frames": [
+    678,
+    708
+  ],
+  "measured_duration_frames": 30,
+  "bezier": {
+    "x1": 0.4354,
+    "y1": -0.0077,
+    "x2": 0.2205,
+    "y2": 1.0053,
+    "durationInFrames": 38,
+    "delay": -2.366,
+    "built_duration_frames": 29,
+    "rmse": 0.016
+  },
+  "spring": {
+    "stiffness": 99.169,
+    "damping": 17.32,
+    "mass": 1,
+    "damping_ratio": 0.8696,
+    "built_duration_frames": 26,
+    "rmse": 0.08
+  },
+  "recommended": "bezier",
+  "note": "second camera move on the exploded stack: the camera dollies in and re-frames on the second (dashboard) panel, which comes forward and up; the stack's left edge moves 559 -> 339 px (-13.6% W) and its top edge 92 -> 0 px (leaves the frame), depth-of-field blur on the moving panel f683-f691"
+}

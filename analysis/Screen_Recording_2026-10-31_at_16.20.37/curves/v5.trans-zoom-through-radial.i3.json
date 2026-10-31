@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.trans-zoom-through-radial.i3",
+  "file": "curves/v5.trans-zoom-through-radial.i3.csv",
+  "property": "luma",
+  "unit": "luma 0-255 (median stroke-centre luma of the inner letters)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c1rev2_zoom_fill.csv",
+  "column": "stroke_centre_luma",
+  "sampled_frames": [
+    290,
+    312
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 179.0,
+  "to_value": 80.0,
+  "active_frames": [
+    300,
+    312
+  ],
+  "measured_duration_frames": 12,
+  "bezier": {
+    "x1": 1.0,
+    "y1": 0.7126,
+    "x2": 0.0,
+    "y2": 0.201,
+    "durationInFrames": 12,
+    "delay": -0.225,
+    "built_duration_frames": 12,
+    "rmse": 0.0163
+  },
+  "spring": {
+    "stiffness": 138.748,
+    "damping": 12.163,
+    "mass": 1,
+    "damping_ratio": 0.5163,
+    "built_duration_frames": 40,
+    "rmse": 0.4223
+  },
+  "recommended": "bezier",
+  "note": "zoom-through: the wordmark's solid fill fades out while its outline stays bright, so the letters turn into glowing hollow outlines. Median luma of stroke centres (>= 6 px inside the f240 shapes of the 2nd-6th letters of the bold line) mapped through each picture's scale about (801, 455): 179 (rest, f290-f297) -> 177 / 165 / 146 / 114 / 93 / 80 at f300 / 302 / 305 / 307 / 310 / 312; outline (local max at the letter edge) 191-199 through f307, 181 at f310, 124 at f312; ring 7-12 px outside the letters 59 -> 103 (f300 -> f310). From f310 the stroke centres are no brighter than their surroundings (fill gone); the last samples are the footage seen through the hollow letters. No rest after: the letters are gone by f316."
+}

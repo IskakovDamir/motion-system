@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-liquid-flyin",
+  "file": "curves/v5.text-liquid-flyin.csv",
+  "property": "position-x",
+  "unit": "% of frame width (ink centroid)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_A_title_flyin_lines.csv",
+  "column": "l2_cx_pct",
+  "sampled_frames": [
+    3042,
+    3075
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 9.125,
+  "to_value": 49.199,
+  "active_frames": [
+    3042,
+    3052
+  ],
+  "measured_duration_frames": 10,
+  "bezier": {
+    "x1": 0.4237,
+    "y1": 0.8462,
+    "x2": 0.3035,
+    "y2": 0.8603,
+    "durationInFrames": 9,
+    "delay": 0.586,
+    "built_duration_frames": 9,
+    "rmse": 0.0246
+  },
+  "spring": {
+    "stiffness": 1915.612,
+    "damping": 87.96,
+    "mass": 1,
+    "damping_ratio": 1.0048,
+    "built_duration_frames": 8,
+    "rmse": 0.0344
+  },
+  "recommended": "bezier",
+  "note": "headline line 2 (1 word) ink centroid x: flies in from the lower left as a liquid-warped smear and locks into the letterforms; starts at the hard cut f3042 (first picture = start value); bands of ink > 45 luma (f3042 > 20); line 1 mirrors it from the lower right"
+}

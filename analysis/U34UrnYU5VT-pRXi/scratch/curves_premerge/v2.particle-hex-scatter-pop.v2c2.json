@@ -1,0 +1,40 @@
+{
+  "technique_id": "v2.particle-hex-scatter-pop.v2c2",
+  "file": "curves/v2.particle-hex-scatter-pop.v2c2.csv",
+  "property": "scale",
+  "unit": "scale factor (first visible frame f1409 = 0.46)",
+  "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c2_S7_hexA_tmpl.csv",
+  "column": "scale",
+  "sampled_frames": [
+    1409,
+    1440
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 0.46,
+  "to_value": 1.0,
+  "active_frames": [
+    1409,
+    1416
+  ],
+  "measured_duration_frames": 7,
+  "bezier": {
+    "x1": 0.2447,
+    "y1": 1.0837,
+    "x2": 0.7881,
+    "y2": 0.95,
+    "durationInFrames": 9,
+    "delay": -0.0,
+    "built_duration_frames": 8,
+    "rmse": 0.0308
+  },
+  "spring": {
+    "stiffness": 2399.941,
+    "damping": 99.4,
+    "mass": 1,
+    "damping_ratio": 1.0145,
+    "built_duration_frames": 8,
+    "rmse": 0.0536
+  },
+  "recommended": "bezier",
+  "note": "first scatter hex (black, centre 1147, 764) popping in: scale by template (track.py, 0.01 steps) while it fades in (fill luma 137, 89, 62, 44, 33, 26, 22.5, 19, 17 f1410-f1418); the other 29 hexes repeat it, one every 1.5 frames (scratch/v2c2_S7_scatter_births.csv)"
+}

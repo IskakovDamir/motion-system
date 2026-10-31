@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-punch-in-whip-up.i4",
+  "file": "curves/v7.trans-punch-in-whip-up.i4.csv",
+  "property": "position-y",
+  "unit": "% of frame height",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_z2_lead_blurfit_2425-2480_newpic.csv",
+  "column": "cy_pct",
+  "sampled_frames": [
+    2429,
+    2471
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 49.47,
+  "to_value": 35.403,
+  "active_frames": [
+    2446,
+    2471
+  ],
+  "measured_duration_frames": 25,
+  "bezier": {
+    "x1": 1.0,
+    "y1": 0.0825,
+    "x2": 1.0,
+    "y2": 0.783,
+    "durationInFrames": 27,
+    "delay": -2.911,
+    "built_duration_frames": 23,
+    "rmse": 0.0286
+  },
+  "spring": {
+    "stiffness": 28.467,
+    "damping": 0.5,
+    "mass": 1,
+    "damping_ratio": 0.0469,
+    "built_duration_frames": 217,
+    "rmse": 0.8482
+  },
+  "recommended": "bezier",
+  "note": "outgoing half of the punch-in whip up into the hidden hard cut f2474 (Z2), stop-hold variant: the finished one-line layout (settled framing) starts to rise at ~f2444 and accelerates (blur-aware template on the logo + first word, ref f2471: centre y 454.2 -> 325.0 px; box blur along y 1 px at rest, 3 / 5 / 7 / 9 px at f2454-f2467, 17 px at f2469 = the fastest picture), then stops dead: the next picture f2471 is crisp (blur 1 px, vertical gradient p99.9 126 vs 131-135 at rest and 23 at f2469) 44.9 px further up and is held f2471-f2473 (one picture); the cut f2474 then brings the x2.2 framing already rising under vertical blur (curve v7.trans-punch-in-whip-up.v7c4). The bezier completes before f2471 (hard stop, vertical end tangent); build: clamp at the end, hold the end value with no motion blur for f2471-f2473, cut at f2474. Exact stop frame inside f2469-f2471 UNCERTAIN (one capture gap). x drifts 526 -> 530 px, template scale 1.015 -> 1.000 (the 0.985 creep of the settled framing)."
+}

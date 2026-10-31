@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.3d-origami-converge.v5c6",
+  "file": "curves/v5.3d-origami-converge.v5c6.csv",
+  "property": "position-x",
+  "unit": "% of frame width",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c6_craneC.csv",
+  "column": "cx_pct",
+  "sampled_frames": [
+    3965,
+    4000
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 71.58,
+  "to_value": 59.2,
+  "active_frames": [
+    3965,
+    3997
+  ],
+  "measured_duration_frames": 32,
+  "bezier": {
+    "x1": 0.4631,
+    "y1": 0.9877,
+    "x2": 0.5866,
+    "y2": 0.5779,
+    "durationInFrames": 28,
+    "delay": -0.189,
+    "built_duration_frames": 28,
+    "rmse": 0.056
+  },
+  "spring": {
+    "stiffness": 77.505,
+    "damping": 21.828,
+    "mass": 1,
+    "damping_ratio": 1.2397,
+    "built_duration_frames": 39,
+    "rmse": 0.0552
+  },
+  "recommended": "spring",
+  "note": "metallic origami crane entering from the lower right (already moving at its first clean picture f3965) flies into depth toward the vanishing point at the frame centre, decelerating: template centre x (ref f3976, scores 0.71-1.0 over f3965-f3992, 0.57-0.65 after), y 63.9 -> 56.4 %H and template scale 1.36 -> 0.80 at the same time; the top crane (x 49-50%) does the same from y 29.7% to 42.8% H, scale 1.48 -> 0.72 over f3960-f3997"
+}

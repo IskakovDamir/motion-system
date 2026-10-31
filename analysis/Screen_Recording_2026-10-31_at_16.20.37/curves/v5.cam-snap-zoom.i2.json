@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.cam-snap-zoom.i2",
+  "file": "curves/v5.cam-snap-zoom.i2.csv",
+  "property": "position-y",
+  "unit": "% of frame height",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_A_snapout_approach.csv",
+  "column": "cy_pct",
+  "sampled_frames": [
+    977,
+    1000
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 51.198,
+  "to_value": 37.255,
+  "active_frames": [
+    982,
+    1000
+  ],
+  "measured_duration_frames": 18,
+  "bezier": {
+    "x1": 1.0,
+    "y1": 0.2819,
+    "x2": 0.9898,
+    "y2": 0.7469,
+    "durationInFrames": 14,
+    "delay": 1.838,
+    "built_duration_frames": 14,
+    "rmse": 0.0695
+  },
+  "spring": {
+    "stiffness": 40.717,
+    "damping": 0.5,
+    "mass": 1,
+    "damping_ratio": 0.0392,
+    "built_duration_frames": 190,
+    "rmse": 0.9337
+  },
+  "recommended": "bezier",
+  "note": "approach of the snap zoom-out: template of the middle chip (ref f982, scale search 0.70-1.08 finds 1.00 on every picture, score 0.99 to f995, 0.96 at f997, 0.88 at f1000 under vertical blur); the content stops at its lowest point f980-f982 (end of the menu-close move) and then rises faster and faster until the one-picture snap f1000|f1002 (x0.30); no scale change and no x change before the snap (chip label heights 54-56 px and widths constant f980-f1000); the move ends in the snap (no rest after), so the curve is an ease-in that stops at its last picture"
+}

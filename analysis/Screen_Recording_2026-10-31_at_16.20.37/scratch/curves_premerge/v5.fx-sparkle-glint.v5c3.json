@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.fx-sparkle-glint.v5c3",
+  "file": "curves/v5.fx-sparkle-glint.v5c3.csv",
+  "property": "position-x",
+  "unit": "% of frame width (left end of the streak)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c3_glint_tl.csv",
+  "column": "x0_pct",
+  "sampled_frames": [
+    1827,
+    1847
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 35.88,
+  "to_value": 17.76,
+  "active_frames": [
+    1827,
+    1840
+  ],
+  "measured_duration_frames": 13,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 1.4209,
+    "x2": 0.3783,
+    "y2": 0.6272,
+    "durationInFrames": 10,
+    "delay": 0.836,
+    "built_duration_frames": 10,
+    "rmse": 0.0203
+  },
+  "spring": {
+    "stiffness": 4644.523,
+    "damping": 212.883,
+    "mass": 1,
+    "damping_ratio": 1.5619,
+    "built_duration_frames": 6,
+    "rmse": 0.1907
+  },
+  "recommended": "bezier",
+  "note": "top-left glint: a thin bright streak runs left along the top of word 1 and ends in a 4-point star at its upper-left corner (star full by f1840); a mirrored glint grows rightward under the last word f1837-1845"
+}

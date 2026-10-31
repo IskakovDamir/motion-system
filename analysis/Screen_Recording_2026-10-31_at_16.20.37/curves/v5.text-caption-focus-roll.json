@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-caption-focus-roll",
+  "file": "curves/v5.text-caption-focus-roll.csv",
+  "property": "opacity",
+  "unit": "ink pixels of the word (luma > local median + 60) in a fixed ROI; plateau 1800 px = fully on",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_D_cap_words.csv",
+  "column": "aphone_ink",
+  "sampled_frames": [
+    3507,
+    3550
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 9.0,
+  "to_value": 1776.0,
+  "active_frames": [
+    3517,
+    3540
+  ],
+  "measured_duration_frames": 23,
+  "bezier": {
+    "x1": 0.0026,
+    "y1": 0.1562,
+    "x2": 0.7834,
+    "y2": 1.2522,
+    "durationInFrames": 18,
+    "delay": 2.416,
+    "built_duration_frames": 18,
+    "rmse": 0.0712
+  },
+  "spring": {
+    "stiffness": 147.134,
+    "damping": 18.18,
+    "mass": 1,
+    "damping_ratio": 0.7494,
+    "built_duration_frames": 28,
+    "rmse": 0.1453
+  },
+  "recommended": "bezier",
+  "note": "footage caption, word 2 of a 3-line stacked phrase (1/2/1 words, each line indented further right): the word fades in while still defocused, then sharpens to a focus peak (mean |Laplacian| 3.2 -> 13.0 at f3547) and immediately defocuses and fades out (ink 1800 -> 0 over f3552-3562) as the next word reaches focus; focus peaks 10 frames apart (f3537, f3547, f3557); the whole caption drifts right about 0.11% W per frame while the footage drifts left"
+}

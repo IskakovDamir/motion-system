@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.ui-pill-anticipate-drop-out",
+ "file": "curves/v8.ui-pill-anticipate-drop-out.csv",
+ "property": "position-y",
+ "unit": "% of frame height (pill centre)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c1_pill_228-456.csv",
+ "column": "cy_pct",
+ "sampled_frames": [
+  418,
+  440
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 70.479,
+ "to_value": 64.924,
+ "active_frames": [
+  429,
+  438
+ ],
+ "measured_duration_frames": 9,
+ "bezier": {
+  "x1": 0.6182,
+  "y1": 0.1922,
+  "x2": 0.326,
+  "y2": 0.9091,
+  "durationInFrames": 10,
+  "delay": -0.002,
+  "built_duration_frames": 9,
+  "rmse": 0.0002
+ },
+ "spring": {
+  "stiffness": 1002.958,
+  "damping": 51.425,
+  "mass": 1,
+  "damping_ratio": 0.8119,
+  "built_duration_frames": 8,
+  "rmse": 0.1308
+ },
+ "recommended": "bezier",
+ "note": "anticipation: the prompt pill lifts 51 px (5.6% H) before it drops out of frame; no hold at the top (template on the pill's left end, scratch/v8c1_pill_228-456.csv)",
+ "chunk_curve_id": "v8.ui-pill-anticipate-drop-out-up.v8c1"
+}

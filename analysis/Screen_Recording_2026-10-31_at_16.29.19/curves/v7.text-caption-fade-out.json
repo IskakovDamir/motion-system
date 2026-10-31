@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.text-caption-fade-out",
+  "file": "curves/v7.text-caption-fade-out.csv",
+  "property": "opacity",
+  "unit": "opacity estimate 0-1 (glyph-mask luma contrast vs local background, 1 = settled word)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c6_cap1_word_4064-4170.csv",
+  "column": "opacity_est",
+  "sampled_frames": [
+    4128,
+    4166
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.0026,
+  "to_value": -0.0163,
+  "active_frames": [
+    4140,
+    4159
+  ],
+  "measured_duration_frames": 19,
+  "bezier": {
+    "x1": 0.9247,
+    "y1": 0.8684,
+    "x2": 0.0,
+    "y2": 0.1142,
+    "durationInFrames": 20,
+    "delay": -0.449,
+    "built_duration_frames": 20,
+    "rmse": 0.0384
+  },
+  "spring": {
+    "stiffness": 152.447,
+    "damping": 29.053,
+    "mass": 1,
+    "damping_ratio": 1.1765,
+    "built_duration_frames": 28,
+    "rmse": 0.207
+  },
+  "recommended": "bezier",
+  "note": "P2 single-word caption fades out in place (template dx = dy = 0 throughout) from f4141 while the next caption's first word fades in beside it (first visible f4156); near-linear, 0.90 / 0.75 / 0.63 / 0.49 / 0.36 / 0.22 / 0.10 at f4141 / 4144 / 4146 / 4149 / 4151 / 4154 / 4156, removed at about 10% (gone f4159); glyph-mask contrast, so fade and any blur are not separated"
+}

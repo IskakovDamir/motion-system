@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-whip-down-left-zoom-in.v7c5",
+  "file": "curves/v7.trans-whip-down-left-zoom-in.v7c5.csv",
+  "property": "scale",
+  "unit": "ln(scale factor) of the editor window (0 = f3600; -1.311 = x0.270 at the cut, window filling the frame; 0.159 = x1.172 at f3624)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p5_cam_scale.csv",
+  "column": "lnscale",
+  "sampled_frames": [
+    3581,
+    3626
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": -1.3108,
+  "to_value": 0.1587,
+  "active_frames": [
+    3581,
+    3614
+  ],
+  "measured_duration_frames": 33,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.5667,
+    "x2": 0.0,
+    "y2": 0.9119,
+    "durationInFrames": 38,
+    "delay": 1.565,
+    "built_duration_frames": 32,
+    "rmse": 0.0344
+  },
+  "spring": {
+    "stiffness": 185.522,
+    "damping": 32.055,
+    "mass": 1,
+    "damping_ratio": 1.1767,
+    "built_duration_frames": 26,
+    "rmse": 0.1911
+  },
+  "recommended": "bezier",
+  "note": "incoming half of the down-left whip P4 -> P5: the hard cut at f3581 lands on the editor window exactly filling the frame, which at once zooms in x4.35 about a fixed point above-right of the frame, (1799, -113) px = (110.9% W, -12.3% H): a least-squares fit of two tracked UI labels against their distance-based scale leaves 0.25 px rms (f3586-f3624), so its top-right corner travels down-left into the frame; zoom 0.270 / 0.556 / 0.685 / 0.778 / 0.850 / 0.910 / 0.959 / 1.000 / 1.034 ... 1.168 / 1.172 at f3581 / 3584 / 3586 / 3589 / 3591 / 3594 / 3596 / 3600 / 3602 ... 3622 / 3624 (24% / 10% / 4.6% per frame in ln over the first three intervals), never settles: the click recoil reverses it from f3626; UI text stays sharp; scale = distance between two UI-label template centres (scratch/v7c5_tools/tmplfine.py, ref f3600) relative to f3600, f3581 / f3584 from the panel label's ink-box centre relative to the fixed point (scratch/v7c5_p5_cam_scale.csv)"
+}

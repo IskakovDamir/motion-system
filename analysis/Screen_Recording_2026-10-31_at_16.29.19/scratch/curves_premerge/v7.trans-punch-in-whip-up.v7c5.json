@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-punch-in-whip-up.v7c5",
+  "file": "curves/v7.trans-punch-in-whip-up.v7c5.csv",
+  "property": "position-y",
+  "unit": "% of frame height (line-1 brand mark centre in the x2.33 close-up; 46.0% -> 16.1% H)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p1_mark_3050-3140.csv",
+  "column": "cy_pct",
+  "sampled_frames": [
+    3094,
+    3121
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 45.969,
+  "to_value": 16.122,
+  "active_frames": [
+    3094,
+    3114
+  ],
+  "measured_duration_frames": 20,
+  "bezier": {
+    "x1": 0.0019,
+    "y1": 0.215,
+    "x2": 0.4956,
+    "y2": 0.9829,
+    "durationInFrames": 20,
+    "delay": -0.0,
+    "built_duration_frames": 18,
+    "rmse": 0.0357
+  },
+  "spring": {
+    "stiffness": 198.366,
+    "damping": 26.23,
+    "mass": 1,
+    "damping_ratio": 0.9312,
+    "built_duration_frames": 22,
+    "rmse": 0.0722
+  },
+  "recommended": "bezier",
+  "note": "incoming half of the punch-in whip P1 -> P2: the hard cut at f3094 jumps to a x2.33 closer framing of the left part of the headline (brand mark ink 66 -> 150 px wide) that arrives 274 px (29.8% H) below its rest, already moving up at ~38 px/frame (4.2% H) with vertical motion blur, and decelerates to rest by f3116; x constant (brand mark centre 35.3% W), template scale constant 1.00; motion starts at the cut (from-value pinned to the first picture); template on the brand mark (ref f3111)"
+}

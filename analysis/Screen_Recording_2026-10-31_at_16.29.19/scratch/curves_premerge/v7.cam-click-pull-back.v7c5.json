@@ -1,0 +1,68 @@
+{
+  "technique_id": "v7.cam-click-pull-back.v7c5",
+  "file": "curves/v7.cam-click-pull-back.v7c5.csv",
+  "property": "scale",
+  "unit": "ln(scale factor) of the editor close-up (0.159 = x1.172 at f3624 -> 0.004 = x1.004 at f3649; 0 = f3600)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p5_cam_scale.csv",
+  "column": "lnscale",
+  "sampled_frames": [
+    3624,
+    3649
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.1587,
+  "to_value": 0.0041,
+  "active_frames": [
+    3626,
+    3646
+  ],
+  "measured_duration_frames": 20,
+  "bezier": {
+    "x1": 0.3904,
+    "y1": 0.1591,
+    "x2": 0.1844,
+    "y2": 1.0528,
+    "durationInFrames": 25,
+    "delay": 0.437,
+    "built_duration_frames": 19,
+    "rmse": 0.0155,
+    "rmse_raw_time": 0.016,
+    "fit": "shape metric (lower of tune_tokens.tune_bezier and the shapefit.py search, scratch/v7c5_tools/refit_shape.py)"
+  },
+  "spring": {
+    "stiffness": 106.188,
+    "damping": 16.072,
+    "mass": 1,
+    "damping_ratio": 0.7798,
+    "built_duration_frames": 20,
+    "rmse": 0.0514,
+    "rmse_raw_time": 0.0414,
+    "fit": "shape metric (tune_tokens.tune_spring via scratch/v7c5_tools/refit_shape.py)"
+  },
+  "recommended": "bezier",
+  "note": "P5 camera recoil around the click: as the 3D pointer reaches the top-right action button and the button lights (fill brightens f3629-f3642, glow along the top bar f3637-f3647), the camera eases back out x1.172 -> x1.004 (x0.857) about a point near the frame centre, (803, 465) px (0.57 px rms), f3626-f3649; the incoming zoom peaks at f3624 and reverses at once (no hold before), a 2-5 f hold after, then the push-out; scale = distance between two UI-label template centres relative to f3600 (scratch/v7c5_p5_cam_scale.csv); samples f3624-f3649 (f3651 repeats f3649; f3654 already belongs to the push-out, x1.007, and is left out). Refit on the shape metric (scratch/v7c5_tools/refit_shape.py): fit_easing.py's raw-time fits match the samples (raw-time RMSE bezier 0.0037, spring 0.0127) but both shape RMSEs stay above 0.05 (bezier 0.0804, spring 0.068) because the 9 pictures of the measured 20-f window sit 2-4 frames apart, so the measured 2% window and a raw-time fit's own window differ by 1-3 frames; the stored bezier and spring are now fitted with the build-side rule (curvekit.shape_rmse, built duration within 1 f of the measured 20 f); the original fits are kept under raw_time_fit.",
+  "raw_time_fit": {
+    "tool": "fit_easing.py",
+    "bezier": {
+      "x1": 0.6467,
+      "y1": 0.8957,
+      "x2": 0.2747,
+      "y2": 0.7804,
+      "durationInFrames": 19,
+      "delay": 2.158,
+      "built_duration_frames": 18,
+      "rmse": 0.0804,
+      "rmse_raw_time": 0.0037
+    },
+    "spring": {
+      "stiffness": 215.772,
+      "damping": 25.646,
+      "mass": 1,
+      "damping_ratio": 0.873,
+      "built_duration_frames": 19,
+      "rmse": 0.068,
+      "rmse_raw_time": 0.0127
+    },
+    "recommended": "spring"
+  }
+}

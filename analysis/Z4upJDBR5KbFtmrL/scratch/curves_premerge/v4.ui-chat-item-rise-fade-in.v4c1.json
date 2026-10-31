@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.ui-chat-item-rise-fade-in.v4c1",
+  "file": "curves/v4.ui-chat-item-rise-fade-in.v4c1.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (bubble fill; card 253 = absent, 17 = opaque)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/s2_bubble.csv",
+  "column": "fill_luma",
+  "sampled_frames": [
+    296,
+    325
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 253.0,
+  "to_value": 17.0,
+  "active_frames": [
+    303,
+    315
+  ],
+  "measured_duration_frames": 12,
+  "bezier": {
+    "x1": 0.2737,
+    "y1": 0.7691,
+    "x2": 0.5323,
+    "y2": 0.9635,
+    "durationInFrames": 13,
+    "delay": -0.001,
+    "built_duration_frames": 11,
+    "rmse": 0.0282
+  },
+  "spring": {
+    "stiffness": 790.608,
+    "damping": 56.353,
+    "mass": 1,
+    "damping_ratio": 1.0021,
+    "built_duration_frames": 13,
+    "rmse": 0.0479
+  },
+  "recommended": "bezier",
+  "note": "S2 sent-message bubble (dark, 600x102 px, right-aligned) fades in f304-f316 while rising 13 px (top edge 696 -> 683, f304-f313); fill measured at the tracked bubble, so the f315-f316 list shift (50 px up) does not disturb it"
+}

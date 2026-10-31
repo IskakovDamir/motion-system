@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.cam-scroll-exit-up.i2",
+ "file": "curves/v8.cam-scroll-exit-up.i2.csv",
+ "property": "position-y",
+ "unit": "px (picture 918 px high)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c2_S05_exit.csv",
+ "column": "cy",
+ "sampled_frames": [
+  1356,
+  1420
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 349.5,
+ "to_value": 264.5,
+ "active_frames": [
+  1378,
+  1420
+ ],
+ "measured_duration_frames": 42,
+ "bezier": {
+  "x1": 0.7795,
+  "y1": 0.0485,
+  "x2": 0.8573,
+  "y2": 0.2754,
+  "durationInFrames": 51,
+  "delay": -8.982,
+  "built_duration_frames": 41,
+  "rmse": 0.01
+ },
+ "spring": {
+  "stiffness": 11.286,
+  "damping": 0.5,
+  "mass": 1,
+  "damping_ratio": 0.0744,
+  "built_duration_frames": 284,
+  "rmse": 0.8904
+ },
+ "recommended": "bezier",
+ "note": "S05 exit, second instance of v8.cam-scroll-exit-up: heading template centre y (scratch/v8c2_S05_heading.csv copied to scratch/v8c2_S05_exit.csv with the repeated pictures f1419 = f1418 and f1421 = f1420 marked non-unique); the agent message block drifts up out of a near rest (349.5 px at f1362-f1370 after a 0.3-0.5 px/f settle drift) with a long ease-in to 8.5 px/f at the last picture f1420 and is cut by the punch-in f1422; from-value = rest f1362-f1370, to-value = last picture (no settle). Same ease-in family as v8.cam-scroll-exit-up.v8c2 (S02, 22 f to 17 px/f) but 42 f long and ending at half the speed, like the S03 pre-cut drift (f1252-f1262, 1.5 -> 4.5 px/f) that also ends in a punch-in: probably a second technique (slow drift into a punch-in).",
+ "chunk_curve_id": "v8.cam-scroll-exit-up-2.v8c2"
+}

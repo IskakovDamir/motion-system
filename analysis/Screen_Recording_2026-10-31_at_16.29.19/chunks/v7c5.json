@@ -1,0 +1,838 @@
+{
+  "video": "Screen_Recording_2026-10-31_at_16.29.19",
+  "key": "v7",
+  "chunk": "v7c5",
+  "frames": [
+    3057,
+    3870
+  ],
+  "cut_decisions": [
+    {
+      "id": "c064",
+      "frame": 3261,
+      "status": "rejected",
+      "reason": "start of the P4 camera pull-back on the same canvas (picture difference 7.8 / 8.9 at f3261 / f3264, histogram correlation 1.0); the word template stays locked"
+    },
+    {
+      "id": "c065",
+      "frame": 3324,
+      "status": "rejected",
+      "reason": "the camera push-in toward the picture card accelerating (difference 15.9, histogram correlation 0.9999; card template score 0.998)"
+    },
+    {
+      "id": "c066",
+      "frame": 3339,
+      "status": "rejected",
+      "reason": "just after the push-in's fastest picture (x1.141 between f3334 and f3336 with radial and vertical smear, difference 36.9 at f3336); the card template locks at 0.985-0.997 through it"
+    },
+    {
+      "id": "c067",
+      "frame": 3376,
+      "status": "rejected",
+      "reason": "first scan-band sweep inside the full-frame card (difference 9.7, histogram correlation 0.954); card edges fixed to 0.1 px"
+    },
+    {
+      "id": "c068",
+      "frame": 3426,
+      "status": "rejected",
+      "reason": "left-edge entry glow of the second scan-band sweep (difference 5.0)"
+    },
+    {
+      "id": "c069",
+      "frame": 3477,
+      "status": "rejected",
+      "reason": "nothing changes (difference 1.2, histogram correlation 0.997); detector index drift, the third sweep starts at f3484"
+    },
+    {
+      "id": "c070",
+      "frame": 3579,
+      "status": "confirmed",
+      "reason": "hard cut picture card -> editor UI; f3579 is the last card picture, the first new picture is f3581 (difference 46.3, histogram correlation 0.81); anchor of the down-left whip range f3535-f3624"
+    },
+    {
+      "id": "c071",
+      "frame": 3587,
+      "status": "rejected",
+      "reason": "f3586-f3588 are identical pictures (difference 0.004) inside the incoming zoom on the editor window"
+    },
+    {
+      "id": "c072",
+      "frame": 3589,
+      "status": "rejected",
+      "reason": "fast incoming zoom on the same editor window (difference 18.0, histogram correlation 0.98)"
+    },
+    {
+      "id": "c073",
+      "frame": 3670,
+      "status": "rejected",
+      "reason": "no change at f3670 (difference 1.7, the push-out creeping); content/adaptive index drift of the f3690 cut"
+    },
+    {
+      "id": "c074",
+      "frame": 3690,
+      "status": "confirmed",
+      "reason": "hard cut editor close-up (last picture f3686, f3687-f3689 repeat) -> desktop wallpaper (difference 63.4, histogram correlation 0.23); anchor of the zoom-through range f3651-f3716"
+    },
+    {
+      "id": "c075",
+      "frame": 3796,
+      "status": "rejected",
+      "reason": "the status capsule's word loses a letter (difference 2.2); same composition"
+    }
+  ],
+  "boundaries": [
+    {
+      "frame": 3094,
+      "type": "hard-cut",
+      "anchor_cut": null,
+      "origin": "missed by all three detectors (whole-frame difference 8.9 luma, histogram correlation 1.0)",
+      "transition": "whip up with a one-picture x2.33 scale jump (push-in) of the same canvas",
+      "range": [
+        3063,
+        3114
+      ],
+      "frames": 52,
+      "last_old_picture": 3091,
+      "shares": "the dark canvas, the line and the upward motion: the line rises with an ease-in to about 9 px per frame (f3063-f3091), the picture jumps x2.33 closer onto its left part (mark ink 66 -> 152 px; mark centre 27.4% W / 40.4% H -> 35.3% W / 46.0% H) and arrives 274 px below its rest still rising at about 38 px per frame with vertical smear only, then settles in 20 f",
+      "technique": "v7.trans-punch-in-whip-up",
+      "curve": "v7.trans-punch-in-whip-up.v7c5",
+      "curves": [
+        "v7.trans-punch-in-whip-up-out.v7c5",
+        "v7.trans-punch-in-whip-up.v7c5"
+      ],
+      "detail": "detail/soft_3063-3114",
+      "note": "same device as v7c4's hidden cut f2474 (x2.2, first pass of this agent-log sequence), filed there under the same id; recorded as a hidden hard cut like v7c2 f1196, v7c3 f2091 and v7c4 f2474 / f2609"
+    },
+    {
+      "frame": 3134,
+      "type": "hard-cut",
+      "anchor_cut": null,
+      "origin": "missed by all three detectors (whole-frame difference 19.7 luma, histogram correlation 0.9999)",
+      "transition": "leftward whip with a one-picture x0.398 scale jump (pull-back) of the same canvas",
+      "range": [
+        3119,
+        3184
+      ],
+      "frames": 66,
+      "last_old_picture": 3131,
+      "shares": "the dark canvas, both rows and the leftward motion: the close-up slides left accelerating to about 19 px per frame, the picture jumps x0.398 about a point near row 2's lead icon (about 569, 456 px) and the wide view keeps sliding left (up to 15 px per frame) and decelerates over 50 f",
+      "technique": "v7.trans-whip-push-left",
+      "curve": "v7.trans-whip-push-left.v7c5",
+      "curves": [
+        "v7.trans-whip-push-left-out.v7c5",
+        "v7.trans-whip-push-left.v7c5"
+      ],
+      "detail": "detail/soft_3119-3184",
+      "note": "same device as v7c4's hidden cut f2515 (x0.44, 59 f glide, first pass of this agent-log sequence), filed there under the same id (v7c4 files the outgoing half as v7.trans-whip-push-left-out); like v7c2's x0.455 zoom-out reveal at f1542"
+    },
+    {
+      "frame": 3214,
+      "type": "hard-cut",
+      "anchor_cut": null,
+      "origin": "missed by all three detectors (whole-frame difference 9.0 luma, histogram correlation 1.0)",
+      "transition": "leftward whip with a one-picture x1.86 scale jump (push-in) of the same canvas",
+      "range": [
+        3191,
+        3246
+      ],
+      "frames": 56,
+      "last_old_picture": 3211,
+      "shares": "the dark canvas, row 2 at the same height (centre 49.6% H) and the leftward motion: the wide view slides left accelerating to about 12 px per frame, the picture jumps x1.86 onto the end of row 2 and arrives 277 px right of its rest moving left at about 33 px per frame (1.5x the matched speed) with heavy horizontal smear, then decelerates over 32 f",
+      "technique": "v7.trans-whip-push-left",
+      "curve": "v7.trans-whip-push-left-2.v7c5",
+      "curves": [
+        "v7.trans-whip-push-left-2-out.v7c5",
+        "v7.trans-whip-push-left-2.v7c5"
+      ],
+      "detail": "detail/soft_3191-3246",
+      "note": "like v7c2's x2.37 close-up whip at f1196"
+    },
+    {
+      "frame": 3581,
+      "type": "hard-cut",
+      "anchor_cut": "c070",
+      "transition": "down-left whip into a zoom-in",
+      "range": [
+        3535,
+        3624
+      ],
+      "frames": 90,
+      "last_old_picture": 3579,
+      "shares": "the down-left direction of motion and a dark rounded frame filling the picture (card edges about 3% inside the frame -> editor window edges at the frame edges); no element is shared: the full-frame picture card slides down-left accelerating (ease-in, 40 f), the window lands exactly filling the frame and zooms in x4.35 about (1799, -113) px above-right of the frame, so its corner keeps travelling down-left",
+      "technique": "v7.trans-whip-down-left-zoom-in",
+      "curve": "v7.trans-whip-down-left-zoom-in.v7c5",
+      "curves": [
+        "v7.trans-whip-down-left-zoom-in-out.v7c5",
+        "v7.trans-whip-down-left-zoom-in.v7c5"
+      ],
+      "detail": "detail/soft_3535-3624"
+    },
+    {
+      "frame": 3690,
+      "type": "hard-cut",
+      "anchor_cut": "c074",
+      "transition": "zoom-through cut",
+      "range": [
+        3651,
+        3716
+      ],
+      "frames": 66,
+      "last_old_picture": 3686,
+      "shares": "a zoom-in about the frame centre on both sides with the speed rising across the cut (about 5% per frame out, 7% per frame in), and a light-gray backdrop with large soft diagonal shapes on both sides; the editor close-up pushes in about (811, 461) px while the 3D pointer flies off right, the desktop wallpaper keeps zooming about (810, 459) px and settles at x1.432 in about 21 f",
+      "technique": "v7.trans-zoom-through-cut",
+      "curve": "v7.trans-zoom-through-cut.v7c5",
+      "curves": [
+        "v7.trans-zoom-through-cut-out.v7c5",
+        "v7.trans-zoom-through-cut.v7c5"
+      ],
+      "detail": "detail/soft_3651-3716"
+    }
+  ],
+  "segments": [
+    {
+      "id": "v7c5-P1",
+      "start": 3057,
+      "end": 3093,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": true,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "tail of v7c4's segment P6b (from its hidden pull-back cut f2991): one centred line (brand mark + 4-word sentence) on a near-black canvas finishes its centred pull-back, then rises with an ease-in and vertical smear into a hidden push-in cut"
+    },
+    {
+      "id": "v7c5-P2",
+      "start": 3094,
+      "end": 3133,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "x2.33 close-up of the same canvas arrives rising and settles in 20 f; a row-2 app tile pops from a sliver, the prompt beside it types letter by letter (grey then white, ramping up); the canvas then slides left accelerating into a hidden pull-back cut"
+    },
+    {
+      "id": "v7c5-P3",
+      "start": 3134,
+      "end": 3213,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "wide view (x0.398) of the two-row agent log arrives sliding left and glides to rest over 50 f while the prompt keeps typing with a 21 f stall; a second leftward slide accelerates into a hidden push-in cut"
+    },
+    {
+      "id": "v7c5-P4",
+      "start": 3214,
+      "end": 3580,
+      "class": "MIXED",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "x1.86 close-up of the end of row 2 arrives sliding left and settles; a slow-fast-slow pull-back (x0.56) reveals both rows while a 16:9 picture card carrying footage rises into place below them; the camera pushes into the card (creep, one fast picture, long tail) until it nearly fills the frame, holds 157 f while three light scan bands sweep across and reveal edits, then the card slides down-left accelerating into a hard cut"
+    },
+    {
+      "id": "v7c5-P5",
+      "start": 3581,
+      "end": 3689,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "video-editor product UI window (its viewer holds one still picture, no playback) lands filling the frame and zooms in x4.3 about a point above-right of the frame; a 3D pointer flies up onto the top-right action button, which lights with a glow while the camera recoils x0.86; the camera then pushes in about the frame centre, accelerating, as the pointer flies off right into a zoom-through cut"
+    },
+    {
+      "id": "v7c5-P6",
+      "start": 3690,
+      "end": 3870,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": true,
+      "live_confirmed_on": [],
+      "summary": "light desktop wallpaper keeps zooming in and settles; a 3D pointer drags in a file tile (still thumbnail picture + 2-line label) from the left, then sinks off it and glides right to beside the label; a status capsule is born as a thin line, widens to a pill while one word types, holds, un-types and collapses back to a line; the camera creeps then pushes in x1.21 and the 3D pointer becomes a 2D cursor in the fastest picture; hold (continues to the hard cut f3889 in v7c6)"
+    }
+  ],
+  "techniques": [
+    {
+      "id": "v7.cam-pull-back-centre",
+      "category": "cam",
+      "description": "tail of v7c4's slow-fast-slow camera pull-back about the frame centre once the line is finished (x1.0 -> x0.832 there, f3016-f3069); in this chunk only the decelerating end (line span 813 -> 801 px); curve in v7c4 (curves/v7.cam-pull-back-centre.v7c4.csv)",
+      "instances": [
+        [
+          3057,
+          3086
+        ]
+      ],
+      "reference_frames": [
+        3057,
+        3086
+      ],
+      "measured": {
+        "duration_frames": null,
+        "easing": "see v7c4",
+        "values": "line span 813 -> 801 px (x0.985) f3057-f3086; line centre 49.9% W"
+      },
+      "curves": []
+    },
+    {
+      "id": "v7.trans-punch-in-whip-up",
+      "category": "trans",
+      "description": "upward whip around a one-picture push-in jump of the same canvas: the canvas rises with an ease-in (vertical smear), the picture jumps x2.33 closer onto the same line, which arrives below its rest still rising faster than the matched speed and settles with an ease-out; shares the id with v7c3's x1.76 instance; v7c4's hidden cuts f2474 (x2.2) and f2609 (x1.4) share the id (its f2474 glide: 20 f, bezier(0.000, 0.173, 0.414, 0.999) D=21, curves/v7.trans-punch-in-whip-up.v7c4.csv)",
+      "instances": [
+        [
+          3063,
+          3114
+        ]
+      ],
+      "reference_frames": [
+        3063,
+        3114
+      ],
+      "measured": {
+        "duration_frames": 28,
+        "easing": "outgoing bezier(0.122, 0.062, 0.730, 0.063) D=30 (no settle); incoming bezier(0.002, 0.215, 0.496, 0.983) D=20 (20 f) / spring {stiffness 198.4, damping 26.23, mass 1}",
+        "values": "outgoing: brand-mark centre 49.4% -> 40.4% H, to about 9 px per frame (f3063-f3091); jump x2.33 at f3091 -> f3094; incoming: 46.0% -> 16.1% H (-274 px), about 38 px per frame at the cut, 1.8x the matched outgoing speed, at rest f3116"
+      },
+      "curves": [
+        "v7.trans-punch-in-whip-up-out.v7c5",
+        "v7.trans-punch-in-whip-up.v7c5"
+      ]
+    },
+    {
+      "id": "v7.icon-tile-pop-in",
+      "category": "icon",
+      "description": "row lead app tile grows about its own centre from a faint vertical sliver to full size, fast ease-out without overshoot, riding the camera settle (shares the id with v7c4, 15 f there)",
+      "instances": [
+        [
+          3099,
+          3111
+        ]
+      ],
+      "reference_frames": [
+        3099,
+        3111
+      ],
+      "measured": {
+        "duration_frames": 12,
+        "easing": "bezier(0.592, 0.964, 0.138, 0.879) D=11 / spring {stiffness 1449.1, damping 72.88, mass 1}; shape-matched bezier(0.652, 0.624, 0.000, 0.891) D=13",
+        "values": "sliver 8 x 25 px at f3099; ink width 24 / 116 / 144 / 152 / 156 px (0.15 / 0.74 / 0.92 / 0.97 / 1.00) at f3101 / 3104 / 3106 / 3109 / 3111; tile 156 px = 9.6% W"
+      },
+      "curves": [
+        "v7.icon-tile-pop-in.v7c5"
+      ]
+    },
+    {
+      "id": "v7.text-type-letter-fade",
+      "category": "text",
+      "description": "typewriter: each letter appears in place grey and turns white later (two-stage fade, as v7c4); the prompt ramps from about 3 f to 0.4 f per letter, runs about 0.8 f per letter in the close-up, slows to 3.5 f per letter with a 21 f stall on a grey letter in the wide view, then 2 f per letter; letters past the frame edge are hidden (curve in v7c4)",
+      "instances": [
+        [
+          3111,
+          3134
+        ],
+        [
+          3134,
+          3216
+        ]
+      ],
+      "reference_frames": [
+        3111,
+        3194
+      ],
+      "measured": {
+        "duration_frames": null,
+        "easing": "stepped (see v7c4's per-letter fade curve)",
+        "values": "1 / 2 / 4 / 9 / 13 letters at f3111 / 3114 / 3116 / 3119 / 3121; 30 at f3134; 36 by f3155; grey letter held f3161-f3182 (p95 luma 159-197, 246 when white); 2 f per letter f3182-f3194"
+      },
+      "curves": []
+    },
+    {
+      "id": "v7.trans-whip-push-left",
+      "category": "trans",
+      "description": "leftward whip around a one-picture scale jump of the same canvas: the slide accelerates into the jump with horizontal smear and the new framing keeps sliding left and decelerates; two instances that differ (x0.398 pull-back jump: incoming 50 f with a soft start, outgoing 12 f; x1.86 push-in jump: incoming 32 f at full speed, outgoing 20 f); the f3134 instance repeats v7c4's hidden cut f2515 (x0.44, 59 f glide, curves/v7.trans-whip-push-left-pull-back-long.v7c4.csv; v7c4 files the outgoing halves as v7.trans-whip-push-left-out)",
+      "instances": [
+        [
+          3119,
+          3184
+        ],
+        [
+          3191,
+          3246
+        ]
+      ],
+      "reference_frames": [
+        3119,
+        3246
+      ],
+      "measured": {
+        "duration_frames": 50,
+        "easing": "f3134 instance: outgoing bezier(0.097, 0.133, 0.617, -0.243) D=11 (no settle), incoming bezier(0.139, 0.206, 0.019, 0.976) D=61 / spring {55.5, 19.50}; f3214 instance: outgoing bezier(0.683, 0.010, 1.000, 0.789) D=23 (no settle), incoming bezier(0.000, 0.207, 0.284, 1.009) D=39 / spring {85.2, 35.44}",
+        "values": "f3134: brand mark 35.3% -> 30.3% W out (to 19 px per frame), row-2 icon 33.1% -> 20.8% W in (7.5 / 12 / 15 px per frame, then a long decay); f3214: icon 20.8% -> 16.0% W out (to 12 px per frame), a word 33.9% -> 16.8% W in (33 px per frame at the cut)"
+      },
+      "curves": [
+        "v7.trans-whip-push-left-out.v7c5",
+        "v7.trans-whip-push-left.v7c5",
+        "v7.trans-whip-push-left-2-out.v7c5",
+        "v7.trans-whip-push-left-2.v7c5"
+      ]
+    },
+    {
+      "id": "v7.cam-pull-back-reveal",
+      "category": "cam",
+      "description": "camera pull-back about a point above-right of the frame (so the canvas also slides right) that reveals more of the layout (both rows and a card rising in below), slow-fast-slow with the rows smeared into horizontal streaks at the fastest picture; differs from v7c3's instance (x0.40 in 54 f with an earlier peak)",
+      "instances": [
+        [
+          3256,
+          3296
+        ]
+      ],
+      "reference_frames": [
+        3256,
+        3296
+      ],
+      "measured": {
+        "duration_frames": 35,
+        "easing": "bezier(0.752, 0.115, 0.160, 0.996) D=43 (D=47 for the measured window)",
+        "values": "x1.000 -> x0.560 (ln -0.580; x0.562 from the word spacing at f3299); fastest f3274-f3279 at 5-6% per frame in ln; one pure zoom about (2053, -26) px = (126.6% W, -2.8% H), x from row 2's word edges (1D registration of its column profile to f3254), y from its height (scratch/v7c5_p4_pullback_x.csv, v7c5_p4_pullback_fp.csv; the stored scale series uses y -25 px, within 0.001); row 2 rises 49.6% -> 26.6% H and the left edges of its 6th / 7th / 8th words go 129 -> 973 / 450 -> 1153 / 981 -> 1452 px (+52.0 / +43.3 / +29.0% W, f3254 -> f3299); no separate pan: the pure zoom puts these edges within 3 px of the measured ones on every picture but the smeared f3276 / f3279 (30 / 14 px, where the horizontal fit reads x0.722 / x0.642 against x0.750 / x0.656 from the height)"
+      },
+      "curves": [
+        "v7.cam-pull-back-reveal.v7c5"
+      ]
+    },
+    {
+      "id": "v7.card-rise-in",
+      "category": "card",
+      "description": "a 16:9 picture card rises from below the frame into its slot under the text rows during the camera pull-back, ease-out from full speed, vertical smear, no fade and no scale change of its own",
+      "instances": [
+        [
+          3279,
+          3296
+        ]
+      ],
+      "reference_frames": [
+        3279,
+        3296
+      ],
+      "measured": {
+        "duration_frames": 17,
+        "easing": "bezier(0.000, 0.331, 0.447, 1.019) D=18 / spring {stiffness 406.3, damping 85.16, mass 1}",
+        "values": "own rise 668 -> 225 close-up px (248 px on screen at the rest scale x0.560); on screen the row-2-to-card gap closes 438 -> 126 px"
+      },
+      "curves": [
+        "v7.card-rise-in.v7c5"
+      ]
+    },
+    {
+      "id": "v7.cam-push-in-blur",
+      "category": "cam",
+      "description": "camera push-in that creeps, takes one fast capture interval with radial or horizontal smear, and settles in a long tail (two instances: into the picture card, x1.622; onto the file tile, x1.209); differs from v7c1's instance of this id (x1.81 in 32 f with a fast start): if the merge keeps one curve per id, this is its own technique",
+      "instances": [
+        [
+          3304,
+          3374
+        ],
+        [
+          3783,
+          3861
+        ]
+      ],
+      "reference_frames": [
+        3304,
+        3374
+      ],
+      "measured": {
+        "duration_frames": 58,
+        "easing": "P4: bezier(0.951, 0.293, 0.042, 0.672) D=60 (D=64 for the measured window); P6: bezier(0.874, 0.073, 0.000, 0.949) D=69 (D=72 for the measured 51-f window)",
+        "values": "P4: card width 943.7 -> 1530.3 px (x1.622), +16.7% by f3334, x1.141 in the picture f3334 -> f3336, at rest f3374; P6: x1.000 -> x1.209 about (2315, 992) px, creeping from f3783, x1.070 over f3816-f3819, at rest about f3861"
+      },
+      "curves": [
+        "v7.cam-push-in-blur.v7c5",
+        "v7.cam-push-in-blur-2.v7c5"
+      ]
+    },
+    {
+      "id": "v7.mask-scan-band-reveal",
+      "category": "mask",
+      "description": "a light vertical scan band (8-12% W wide, fine vertical streak texture, glowing where it is compressed against the card edges) sweeps left to right across a picture card in 15 f on an ease-in-out path and reveals an edited version of the footage behind it; three sweeps 55 and 58 f apart, the third entering as a thin bright line",
+      "instances": [
+        [
+          3371,
+          3386
+        ],
+        [
+          3426,
+          3442
+        ],
+        [
+          3484,
+          3499
+        ]
+      ],
+      "reference_frames": [
+        3371,
+        3386
+      ],
+      "measured": {
+        "duration_frames": 15,
+        "easing": "bezier(0.5382, -0.0781, 0.6054, 0.9285) D=16 (stored; refitted on the shape metric: shape 0.020, raw-time 0.017, built 14 f for the measured 15 f); band states on easeInOutSine over 15 f; no spring reaches the ease-in-out (0.099); fit_easing.py's raw-time bezier(1.000, 0.964, 0.348, 0.589) D=12 (shape 0.069, raw-time 0.006) kept under raw_time_fit",
+        "values": "trailing edge 0 / 5.6 / 24.8 / 49.5 / 74.5 / 93.9 / 100% of the card width at f3371 / 3374 / 3376 / 3379 / 3381 / 3384 / 3386; band luma +35-48 mid-card, +75-91 at the edges"
+      },
+      "curves": [
+        "v7.mask-scan-band-reveal.v7c5"
+      ]
+    },
+    {
+      "id": "v7.trans-whip-down-left-zoom-in",
+      "category": "trans",
+      "description": "a full-frame card slides down-left with an ease-in into a hard cut to a window that exactly fills the frame and at once zooms in about a point above-right of the frame, so its corner keeps travelling down-left; the zoom decays geometrically and never settles before the next move",
+      "instances": [
+        [
+          3535,
+          3624
+        ]
+      ],
+      "reference_frames": [
+        3535,
+        3624
+      ],
+      "measured": {
+        "duration_frames": 33,
+        "easing": "outgoing bezier(0.615, 0.005, 1.000, 0.729) D=44 (no settle); incoming bezier(0.000, 0.567, 0.000, 0.912) D=38 / spring {185.5, 32.05}",
+        "values": "outgoing: card top 2.8% -> 18.3% H, right edge 97.2% -> 90.3% W, to 8-9 px per frame down and 10-11 left; incoming: x0.270 -> x1.172 about (1799, -113) px (0.25 px rms), 24% / 10% / 4.6% per frame in ln over the first three intervals"
+      },
+      "curves": [
+        "v7.trans-whip-down-left-zoom-in-out.v7c5",
+        "v7.trans-whip-down-left-zoom-in.v7c5"
+      ]
+    },
+    {
+      "id": "v7.cursor-fly-in",
+      "category": "cursor",
+      "description": "a 3D pointer rises from the bottom edge onto a button, decelerating and turning as it goes (shares the id and curve with v7c2)",
+      "instances": [
+        [
+          3606,
+          3629
+        ]
+      ],
+      "reference_frames": [
+        3606,
+        3629
+      ],
+      "measured": {
+        "duration_frames": 23,
+        "easing": "decelerating (no curve here; v7c2's curve)",
+        "values": "distance to the button label 518 / 195 / 105 / 43 / 0 px at f3607 / 3615 / 3621 / 3627 / 3629 (crop, +-10 px)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v7.ui-button-press-glow",
+      "category": "ui",
+      "description": "a button's pill fills light near-linearly to a peak while a soft glow spills along the window's top bar, then fades; no shrink (unlike v7c2's v7.ui-button-press); the camera recoils at the same time",
+      "instances": [
+        [
+          3629,
+          3654
+        ]
+      ],
+      "reference_frames": [
+        3629,
+        3654
+      ],
+      "measured": {
+        "duration_frames": 25,
+        "easing": "near-linear rise 13 f, fall 12 f (no settle curve)",
+        "values": "fill luma 27.7 -> 41.4 / 60.5 / 70.8 / 81.4 / 85.0 at f3631 / 3635 / 3637 / 3639 / 3642, back to about 30 at f3654; top-bar glow luma 26 -> 37.7 (f3637-f3647)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v7.cam-click-pull-back",
+      "category": "cam",
+      "description": "the camera recoils (pulls back) about the frame centre while a button is pressed, reversing the incoming zoom without a hold, then holds a few frames",
+      "instances": [
+        [
+          3624,
+          3649
+        ]
+      ],
+      "reference_frames": [
+        3624,
+        3649
+      ],
+      "measured": {
+        "duration_frames": 20,
+        "easing": "bezier(0.3904, 0.1591, 0.1844, 1.0528) D=25 (stored; refitted on the shape metric: shape 0.016, raw-time 0.016, built 19 f for the measured 20 f) / spring {stiffness 106.2, damping 16.07, mass 1} (shape 0.051); samples end at f3649 (f3654 belongs to the push-out); fit_easing.py's raw-time spring {215.8, 25.65} / bezier(0.647, 0.896, 0.275, 0.780) D=19 (shape 0.068 / 0.080) kept under raw_time_fit",
+        "values": "x1.172 -> x1.004 (x0.857) about (803, 465) px, f3626-f3646, at rest f3649"
+      },
+      "curves": [
+        "v7.cam-click-pull-back.v7c5"
+      ]
+    },
+    {
+      "id": "v7.trans-zoom-through-cut",
+      "category": "trans",
+      "description": "a push-in about the frame centre accelerates into a hard cut and the new picture keeps zooming in about the centre, faster, then settles with a strong ease-out",
+      "instances": [
+        [
+          3651,
+          3716
+        ]
+      ],
+      "reference_frames": [
+        3651,
+        3716
+      ],
+      "measured": {
+        "duration_frames": 21,
+        "easing": "outgoing bezier(0.683, 0.010, 1.000, 0.910) D=35 (no settle); incoming bezier(0.000, 0.747, 0.519, 0.997) D=24 / spring {314.3, 43.11}",
+        "values": "outgoing x1.004 -> x1.691 at f3686 about (811, 461) px, about 5% per frame at the cut; incoming x1.000 -> x1.432 about (810, 459) px, x1.150 over the first interval, at rest f3716"
+      },
+      "curves": [
+        "v7.trans-zoom-through-cut-out.v7c5",
+        "v7.trans-zoom-through-cut.v7c5"
+      ]
+    },
+    {
+      "id": "v7.cursor-fly-out",
+      "category": "cursor",
+      "description": "a 3D pointer accelerates off to the right and up, tumbling and smeared, just before a zoom-through cut",
+      "instances": [
+        [
+          3672,
+          3686
+        ]
+      ],
+      "reference_frames": [
+        3672,
+        3686
+      ],
+      "measured": {
+        "duration_frames": 14,
+        "easing": "accelerating (no curve)",
+        "values": "ink centroid (1064, 517) f3676 -> (1094, 516) f3679 -> (1178, 504) f3681 -> (1308, 481) f3684 -> (1497, 416) f3686; 10 / 42 / 44 / 100 px per frame"
+      },
+      "curves": []
+    },
+    {
+      "id": "v7.ui-drag-in-from-left",
+      "category": "ui",
+      "description": "a file tile (still thumbnail picture + 2-line label) is dragged in from the left edge by a 3D pointer, heavy horizontal smear, critically damped settle (a faster relative of v7c4's v7.cursor-drag-file-in, 28 f there)",
+      "instances": [
+        [
+          3706,
+          3729
+        ]
+      ],
+      "reference_frames": [
+        3706,
+        3729
+      ],
+      "measured": {
+        "duration_frames": 15,
+        "easing": "spring {stiffness 489.8, damping 45.03, mass 1} (recommended) / bezier(0.000, 0.783, 0.753, 0.985) D=14; shape-matched bezier(0.204, -0.047, 0.008, 0.830) D=17",
+        "values": "thumbnail centre 23.4% -> 50.1% W, rising 16 px (1.7% H); 54 / 53 / 24 / 23 / 9.7 / 7 / 1.3 px per frame; at rest f3729"
+      },
+      "curves": [
+        "v7.ui-drag-in-from-left.v7c5"
+      ]
+    },
+    {
+      "id": "v7.cursor-glide",
+      "category": "cursor",
+      "description": "after dragging a file tile in, the dark 3D pointer leaves it: it sinks off the thumbnail (slightly left) and glides right to rest beside the tile's label with a near-critically damped ease-out, its fastest picture smeared; the vertical move leads the horizontal one by about 8 f (shares the id with v7c3, where the path was not tracked)",
+      "instances": [
+        [
+          3731,
+          3759
+        ]
+      ],
+      "reference_frames": [
+        3731,
+        3744,
+        3759
+      ],
+      "measured": {
+        "duration_frames": 15,
+        "easing": "x: spring {stiffness 542.9, damping 45.96, mass 1} (zeta 0.99, shape 0.013, built 15 f) / bezier(0.412, -0.334, 0.187, 0.998) D=21 (shape 0.031; the negative y1 is the small left dip); y: values only, window f3731-f3746",
+        "values": "ink centroid (869, 528) px at the tile's lower edge (still f3729-f3731) -> (1133, 630) px beside the label's lower right (53.6% -> 69.8% W, 57.5% -> 68.6% H); y 534 / 545 / 567 / 594 / 618 / 632 px at f3734 / 3736 / 3739 / 3741 / 3744 / 3746; x 865 / 860 / 864 at f3734 / 3736 / 3739, then 919 / 1019 / 1075 / 1105 / 1120 / 1128 / 1132 / 1133 px at f3741 / 3744 / 3746 / 3749 / 3751 / 3754 / 3756 / 3759 (55 / 100 / 56 / 30 / 15 / 8 / 4 / 1 px per picture); still from f3759 to f3782; position = the rest shape (luma < 45 ink of f3780) matched to the visible part below the thumbnail edge (scratch/v7c5_p6_pointer3d_mask.csv), equal within 2.3 px to the plain ink centroid once the pointer is clear of the thumbnail (f3746 on, scratch/v7c5_p6_pointer3d.csv)"
+      },
+      "curves": [
+        "v7.cursor-glide.v7c5"
+      ]
+    },
+    {
+      "id": "v7.shape-line-to-pill",
+      "category": "shape",
+      "description": "a status capsule is born as a thin full-height line beside the pointer and widens into a pill while its word types, easing on after the word is complete (a variant of v7c2's v7.shape-dot-to-pill)",
+      "instances": [
+        [
+          3744,
+          3771
+        ]
+      ],
+      "reference_frames": [
+        3744,
+        3771
+      ],
+      "measured": {
+        "duration_frames": 23,
+        "easing": "bezier(0.284, 0.517, 0.108, 0.926) D=26 / spring {stiffness 295.0, damping 34.96, mass 1}",
+        "values": "width 12 -> 71 / 185 / 253 / 294 / 321 / 339 / 352 / 360 / 365 / 368 / 369 px at f3744 / 3746 / 3749 / 3751 / 3754 / 3756 / 3759 / 3761 / 3765 / 3767 / 3769 / 3771; height 179-180 px (19.6% H); left edge 1192 -> 1163 px, right edge 1262 -> 1531 px"
+      },
+      "curves": [
+        "v7.shape-line-to-pill.v7c5"
+      ]
+    },
+    {
+      "id": "v7.text-typewriter-capsule",
+      "category": "text",
+      "description": "one word types letter by letter centred inside a widening pill, clipped while the pill is narrower than the word (shares the id with v7c2)",
+      "instances": [
+        [
+          3744,
+          3756
+        ]
+      ],
+      "reference_frames": [
+        3744,
+        3756
+      ],
+      "measured": {
+        "duration_frames": 12,
+        "easing": "stepped",
+        "values": "1 / 2 / 3 / 4 / 5 characters at f3744 / 3746 / 3749 / 3754 / 3756 (about 3 f per character)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v7.shape-pill-to-line-out",
+      "category": "shape",
+      "description": "capsule exit, the reverse of its entrance: the word un-types from the end while the pill narrows back to a thin full-height line that fades out",
+      "instances": [
+        [
+          3792,
+          3821
+        ]
+      ],
+      "reference_frames": [
+        3792,
+        3821
+      ],
+      "measured": {
+        "duration_frames": 24,
+        "easing": "bezier(0.3830, 0.0260, 0.0280, 0.8600) D=26 (stored; refitted on the shape metric on the widths divided by the creeping camera push-in scale, 1.002 -> 1.052: shape 0.022, raw-time 0.018, built 23 f for the measured 24 f); no spring below 0.05 (0.053 fitted in raw time, 0.056 on the shape); the width steps with each removed letter",
+        "values": "characters 5 -> 0 at f3794 / 3796 / 3802 / 3805 / 3806 (2.4 f per character); width 370 -> 360 / 300 / 185 / 117 / 77 / 50 / 32 / 20 / 12 / 6 px at f3794 / 3796 / 3799 / 3802 / 3805 / 3806 / 3809 / 3811 / 3814 / 3816; line fades f3819-f3820, gone f3821"
+      },
+      "curves": [
+        "v7.shape-pill-to-line-out.v7c5"
+      ]
+    },
+    {
+      "id": "v7.cursor-swap-in-blur",
+      "category": "cursor",
+      "description": "the 3D pointer is replaced by a flat 2D arrow cursor in one picture, hidden in a push-in's fastest stretch; the new cursor carries a double-edged ghost for about 10 f",
+      "instances": [
+        [
+          3819,
+          3834
+        ]
+      ],
+      "reference_frames": [
+        3819,
+        3821
+      ],
+      "measured": {
+        "duration_frames": 0,
+        "easing": "instant swap",
+        "values": "last 3D picture f3819 (f3820 repeats it), first 2D cursor f3821, ghosted f3824-f3833, sharp and still from f3834"
+      },
+      "curves": []
+    }
+  ],
+  "typography_stills": [
+    "type/v7c5-P1line1_f03057.png",
+    "type/v7c5-P1line1_f03091.png",
+    "type/v7c5-P2lines_f03101.png",
+    "type/v7c5-P2lines_f03111.png",
+    "type/v7c5-P2lines_f03116.png",
+    "type/v7c5-P2lines_f03125.png",
+    "type/v7c5-P2lines_f03131.png",
+    "type/v7c5-P3lines_f03134.png",
+    "type/v7c5-P3lines_f03160.png",
+    "type/v7c5-P3lines_f03182.png",
+    "type/v7c5-P3lines_f03211.png",
+    "type/v7c5-P4lines_f03216.png",
+    "type/v7c5-P4lines_f03245.png",
+    "type/v7c5-P4lines_f03274.png",
+    "type/v7c5-P4lines_f03299.png",
+    "type/v7c5-P4lines_f03334.png",
+    "type/v7c5-P5ui_f03581.png",
+    "type/v7c5-P5ui_f03584.png",
+    "type/v7c5-P5ui_f03600.png",
+    "type/v7c5-P5ui_f03642.png",
+    "type/v7c5-P5ui_f03686.png",
+    "type/v7c5-P6tile_f03711.png",
+    "type/v7c5-P6tile_f03729.png",
+    "type/v7c5-P6tile_f03746.png",
+    "type/v7c5-P6tile_f03756.png",
+    "type/v7c5-P6tile_f03799.png",
+    "type/v7c5-P6tile_f03821.png",
+    "type/v7c5-P6tile_f03870.png"
+  ],
+  "uncertain": [
+    {
+      "what": "first interval of the incoming editor zoom",
+      "range": "f3581-f3586",
+      "reason": "the wide editor picture lasts one capture interval; the fixed zoom point fits f3581, f3584 and every later picture, but a continuous zoom and a second jump cannot be told apart at this cadence"
+    },
+    {
+      "what": "fastest pictures of the two push-ins",
+      "range": "f3334-f3336, f3816-f3819",
+      "reason": "each holds a large part of the move in one capture interval; the radial (f3336) and horizontal (f3819) smear argue for continuous fast motion, not a snap"
+    },
+    {
+      "what": "settle zoom after the pull-back jump",
+      "range": "f3134-f3144",
+      "reason": "the template scale moves 0.97 -> 1.00 on smeared pictures"
+    },
+    {
+      "what": "3D pointer path and rotation",
+      "range": "f3606-f3629, f3672-f3686, f3729-f3821",
+      "reason": "the entry path was read off frame-numbered crops (+-10 px); the arrow's rotation needs a 3D solve"
+    },
+    {
+      "what": "thumbnail corner radius",
+      "range": "f3729-f3870",
+      "reason": "the tile's soft shadow ramps the wallpaper luma over about 15-20 px outside its edges, and the luma step from the shadowed wallpaper into the still picture is only about 5-10 at the top and left edges (35-45 at the right and bottom; f3761 profiles), so the corner contour is too soft for a radius fit; about 60 px (the first draft blamed moving footage, but the thumbnail picture is still)"
+    },
+    {
+      "what": "capsule collapse curve shape",
+      "range": "f3792-f3821",
+      "reason": "the pill width steps with each removed letter, so one easing is an approximation (stored shape-fitted bezier 0.022; no spring gets below 0.05: 0.053 fitted in raw time, 0.056 on the shape)"
+    },
+    {
+      "what": "curve shapes defined by 6-12 samples",
+      "range": "f3371-f3386, f3624-f3649, f3099-f3111, f3711-f3726",
+      "reason": "the shape RMSE depends on where the sparse samples cut the 2% window: fit_easing.py's raw-time fits match the samples (RMSE 0.002-0.014) but failed the shape check for the scan band and the recoil (both now stored as shape-fitted beziers, 0.020 / 0.016); the icon pop and the tile drag pass in one model and carry shape-matched alternatives in chunks/v7c5.md"
+    }
+  ],
+  "notes": [
+    "Boundaries: 5 hard cuts (f3094, f3134, f3214 found on the sheets; f3581 = c070, f3690 = c074), 0 soft transitions; every cut sits inside a camera move whose full range and both halves' curves are recorded (detail/soft_3063-3114, soft_3119-3184, soft_3191-3246, soft_3535-3624, soft_3651-3716). Segments are tiled at the cut frame. Edges checked 15 frames out: no picture replacement in f3042-f3072 or f3856-f3885.",
+    "12 cut candidates in range (c064-c075): 2 confirmed (c070, c074), 10 rejected. c076 (f3871) lies in v7c6's range and was decided there (rejected; index drift of c077 f3889, whose last old picture f3887 is also in v7c6); checked here as well: no change f3856-f3887.",
+    "Opened: all 18 overview sheets covering f3057-f3870 plus overview_02976-03021 and overview_03888-03933; all cut windows c064-c076; all 15 off-cut motion-peak windows in range (f3095, f3131, f3215, f3276, f3285, f3335, f3363, f3410, f3430, f3485, f3600, f3686, f3715, f3743, f3818); dense sheets detail/dense_03084-03112, 03122-03142, 03206-03240, 03256-03300, 03566-03606, 03604-03666, 03660-03700, 03704-03732, 03738-03760, 03792-03830; crops crops/crop_380_360_1242x200_03104-03131, crop_280_410_1342x90_03134-03213, crop_600_300_900x618_03605-03627, crop_0_0_1622x918_03331-03341, crop_1040_600_540x300_03739-03756, crop_1040_600_540x300_03790-03822, crop_700_380_560x420_03811-03834, crop_720_400_520x320_03728-03747, crop_880_480_420x280_03726-03790 (pointer leaving the tile).",
+    "This agent log is the second pass of the sequence v7c4 analyses at f2342-f2608 and f2941-f3056 (same layout rule, same devices): the x2.33 push-in jump repeats v7c4's hidden cut f2474 (x2.2), the x0.398 pull-back jump with the long glide its hidden cut f2515 (x0.44). Ids shared with v7c4: v7.text-type-letter-fade, v7.icon-tile-pop-in, v7.cam-pull-back-centre, v7.trans-punch-in-whip-up, v7.trans-whip-push-left; v7c4 retired its snap ids, so no aliases remain. One naming difference for the merge: v7c4 files the outgoing half of a leftward whip under its own id v7.trans-whip-push-left-out, while this chunk keeps both halves under v7.trans-whip-push-left (outgoing curves suffixed -out).",
+    "Classes follow v7c3's class note (v7c2 files photos inside UI cards the same way): UI or cards that play moving footage are MIXED; still pictures inside UI (thumbnails, a viewer showing a paused frame) are UI content, GRAPHICS. Only P4's card plays footage (picture difference 14.0 luma over f3501-f3529 with the camera still: card edges fixed, 2.2-3.2 luma between consecutive pictures), so P4 is MIXED. P5's viewer and P6's thumbnail each hold one frozen picture, so P5 and P6 are GRAPHICS with P1-P3 (text, icons, UI, 3D pointers). P5 viewer (scratch/v7c5_tools/viewer_frozen.py, viewer_frozen2.py; scratch/v7c5_p5_viewer_frozen.csv, v7c5_p5_viewer_frozen_shift.csv, v7c5_p5_viewer_strip.csv, v7c5_p5_viewer_warp.jpg): the camera never rests while it is in frame (f3581-f3614, f3635-f3666) except f3649-f3654; with the chunk's zoom about (1799, -113) px compensated, 17 pairs in f3584-f3611 differ by 0.8-2.0 luma on the viewer (raw 11-30; ECC on the UI alone: same scale ratios within 0.12%, 0.6-2.1 luma), a 5 / 20 px move gives 2.6-5.6 / 7.1-8.6; later pictures scaled onto f3581 match at 3.1-4.1 with a 2 px x offset; the strip that returns in the recoil equals the viewer before it left (f3600 / f3609 -> f3649: 1.2 / 1.0) and stays the same through the push-out (0.3-1.3, a 5 px move 1.8-2.9); f3649 -> f3654 1.1 raw. P6 thumbnail (scratch/v7c5_tools/thumb_frozen.py; scratch/v7c5_p6_thumb_frozen.csv, v7c5_p6_thumb_frozen.jpg): camera still f3729-f3782, interior 0.04-0.87 luma against f3741 and its left part 0.61-1.49 against f3729, like the static label (0.50-1.37), NCC 0.999-1.000 with no shift; through the push-in, registered back to f3741, 1.0-1.9 luma on sharp pictures (a 2 / 5 / 10 px move gives 3.6-4.3 / 7.6-8.2 / 12.4-12.9); f3741 onto f3866 1.6; f3861 -> f3870 0.8. The first draft's 11.3 / 3.3 luma for them were camera moves (f3649 -> f3666 spans the push-out to x1.08, f3761 -> f3790 the push-in creep from f3783).",
+    "Camera moves in P5-P6 are pure zooms about one point each (two-feature fits): the incoming editor zoom about (1799, -113) px (0.25 px rms), the click recoil about (803, 465) px (0.57 px rms), the push-out about (811, 461) px (0.1 px rms), the wallpaper zoom about (810, 459) px, the file-tile push-in about (2315, 992) px (x and y estimates agree within 0.0005). The P4 pull-back is one pure zoom about (2053, -26) px = (126.6% W, -2.8% H), above-right of the frame (row 2's word edges by 1D registration plus its height; scratch/v7c5_p4_pullback_x.csv, v7c5_p4_pullback_fp.csv): the canvas slides right with it (+471 to +844 px for row 2's words), no separate pan. The backdrop zooms with the editor window (camera move, not a window scale).",
+    "Curves re-measured against the first draft of this chunk: P4 push-in (card side edges, scripts cardedges2.py), P4 pull-back (row-2 position against its fixed point, consistent with the row pitch at the smeared f3276), card rise (separated from the pull-back by the camera scale), P5 zoom-in / recoil / push-out (distance between two UI-label templates, tmplfine.py), P6 wallpaper zoom (masked ECC to the rest picture plus a brute-force first step), P6 push-in (fixed-point displacement), both capsule curves (capture duplicates removed, the line state as the start). v7.icon-pop-scale-in was renamed v7.icon-tile-pop-in (v7c4's id). Corrections: the P6 wallpaper zoom is x1.432 (not x1.41), the P6 push-in creeps from f3783 (not f3800), the card has no scale change of its own, the capsule types at about 3 f per character, the apparent typing bursts across the P2/P3 cuts are letters hidden past the frame edge.",
+    "Downstream timing: for each stored bezier the integer D that makes its 2% window equal the measured duration is given in the md (dmatch.py); where one model's shape RMSE stays above 0.05 (icon-tile-pop-in's spring at 0.051, ui-drag-in-from-left's bezier), shapefit.py's shape-matched bezier is given; cam-click-pull-back, mask-scan-band-reveal and shape-pill-to-line-out failed both models after re-tracking and their curve files now store shape-metric refits that pass (refit_shape.py, build-side rule; fit_easing.py's fits kept under raw_time_fit).",
+    "The typing counts stop at the frame edge: P2's line passes the right edge from f3125 and P3's from about f3197.",
+    "PySceneDetect content/adaptive index drift: c070 one picture early (true cut f3581), c073 20 frames early (f3690), c076 18 frames early (f3889); the ffmpeg score is right where it fires (c074 f3690). Decisions use work.mp4 differences (scratch/v7c5_framestats_3030-3900.csv).",
+    "motion.csv's radial flow underestimates the zoom on the smooth wallpaper (0.01-0.02% W per frame at f3692-f3704 while registration gives x1.39 by f3704).",
+    "Sound sync: the in-canvas jumps, the push-in's fastest picture, the three sweeps and the whip-out start land +7..+11 f after the tracked beat (f3094 +7, f3134 +11, f3214 +8, f3336 +7, f3371 +11, f3426 +9, f3484 +10, f3535 +9), the two composition cuts land on it (f3581 -2, f3690 -2 / -1 to the strong onset f3691) and the P6 push-in starts on the strong onset f3784 (-1).",
+    "Card-state stills (not typography): type/v7c5-P4card_f03344.png, f03376 (sweep 1), f03389, f03433 (sweep 2), f03489 (sweep 3), f03529 (hold), f03579 (whip-out).",
+    "Edit rhythm: cuts 40 and 80 frames apart at the start, then 367, 109 and 199 frames; motion runs up, left, left, down-left across the cuts and the scale alternates in, out, in.",
+    "Live-action content is not described; the footage motion inside the P4 card is not analysed; the P5 viewer and the P6 thumbnail show still pictures (nothing moves inside them). The player's speaker icon is ignored.",
+    "Review round 1 fixes: the P4 pull-back's fixed point x measured (pullbackx.py, pullbackfp.py); the scan band, click recoil and capsule collapse curves re-tracked (sweep 2 confirms the band states within 4 px; the recoil samples end before the push-out at f3654; the capsule widths divided by the camera push-in scale, capsule_camcorr.py) and, still failing both models in fit_easing.py, refitted on the shape metric (refit_shape.py); the cross-chunk statements follow the current v7c4 (hidden cuts f2392 / f2474 / f2515 / f2609 / f2991, snap ids retired, P1 continues its P6b from f2991); the 3D pointer's move after the tile drop tracked (pointer3d.py, pointermask.py) and fitted as curves/v7.cursor-glide.v7c5.",
+    "Review round 2 fixes: P5 and P6 re-classed GRAPHICS (GRAPHICS 5, MIXED 1). The viewer and the thumbnail were re-measured with every camera move compensated (viewer_frozen.py, viewer_frozen2.py, thumb_frozen.py) and each holds one still picture; the layer lines, the class-rule note, the thumbnail corner-radius uncertainty and the segment summaries follow. For the merge: v7c6 files the rest of P6 (its P1, f3871-f3888) MIXED but leaves that class to this chunk, and its own numbers agree (tile region 0.52 luma f3871 -> f3887, thumbnail frozen): the whole segment f3690-f3888 is GRAPHICS."
+  ]
+}

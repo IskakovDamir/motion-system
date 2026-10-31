@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.text-word-whip-in.v6c2",
+  "file": "curves/v6.text-word-whip-in.v6c2.csv",
+  "property": "position-x",
+  "unit": "px of the 1622 px picture width (line-2 word left edge, 952 -> 403 = -33.8% W, already in flight at the seam)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c2_T3_line2.csv",
+  "column": "x0",
+  "sampled_frames": [
+    1188,
+    1213
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 952.0,
+  "to_value": 403.0,
+  "active_frames": [
+    1188,
+    1203
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.2096,
+    "y1": 0.8421,
+    "x2": 0.0,
+    "y2": 0.8814,
+    "durationInFrames": 16,
+    "delay": 0.284,
+    "built_duration_frames": 14,
+    "rmse": 0.0049
+  },
+  "spring": {
+    "stiffness": 2054.681,
+    "damping": 91.394,
+    "mass": 1,
+    "damping_ratio": 1.0081,
+    "built_duration_frames": 8,
+    "rmse": 0.178
+  },
+  "recommended": "bezier",
+  "note": "P12->P13 whip f1156-f1206, incoming half: words of the new 2-line headline slide in from the right with horizontal motion blur, staggered in reading order (word 1 is 26 px from rest at f1188, word 2 66 px at f1191, line 2 549 px at f1188); line-2 word bbox x0 (ROI y490-690); settles f1208"
+}

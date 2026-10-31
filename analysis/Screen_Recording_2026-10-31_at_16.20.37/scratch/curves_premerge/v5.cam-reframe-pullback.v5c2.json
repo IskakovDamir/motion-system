@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.cam-reframe-pullback.v5c2",
+  "file": "curves/v5.cam-reframe-pullback.v5c2.csv",
+  "property": "position-y",
+  "unit": "% of frame height",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_D_reframe_chips.csv",
+  "column": "cy_pct",
+  "sampled_frames": [
+    1487,
+    1526
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 44.499,
+  "to_value": 51.743,
+  "active_frames": [
+    1493,
+    1517
+  ],
+  "measured_duration_frames": 24,
+  "bezier": {
+    "x1": 0.5683,
+    "y1": 0.0219,
+    "x2": 0.1365,
+    "y2": 0.8461,
+    "durationInFrames": 28,
+    "delay": -2.362,
+    "built_duration_frames": 23,
+    "rmse": 0.0203
+  },
+  "spring": {
+    "stiffness": 253.858,
+    "damping": 30.717,
+    "mass": 1,
+    "damping_ratio": 0.9639,
+    "built_duration_frames": 21,
+    "rmse": 0.1032
+  },
+  "recommended": "bezier",
+  "note": "camera re-frame (pull back about 13% plus a shift) that starts while the prompt's last words type and lands before the whip pan: chips row (+ button, model chip, plan label) template ref f1522 (scores 0.99): y 44.5%->51.7% H, x 37.8%->26.2% W, scale 1.15->1.00 over f1493-f1520; motion blur on f1502; x keeps a slow drift (26.3->25.9% f1517-f1522) into the whip pan that starts at f1526, so y is the fitted channel"
+}

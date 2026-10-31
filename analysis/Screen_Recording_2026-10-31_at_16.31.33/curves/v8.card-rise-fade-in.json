@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.card-rise-fade-in",
+ "file": "curves/v8.card-rise-fade-in.csv",
+ "property": "opacity",
+ "unit": "opacity 0-1 (card fill luma 248 -> 28)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c4_S5_phonecard_in.csv",
+ "column": "opacity",
+ "sampled_frames": [
+  2700,
+  2735
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 0.0,
+ "to_value": 0.9955,
+ "active_frames": [
+  2702,
+  2722
+ ],
+ "measured_duration_frames": 20,
+ "bezier": {
+  "x1": 0.6987,
+  "y1": 0.6575,
+  "x2": 0.0,
+  "y2": 0.0466,
+  "durationInFrames": 20,
+  "delay": 0.243,
+  "built_duration_frames": 20,
+  "rmse": 0.0222
+ },
+ "spring": {
+  "stiffness": 156.484,
+  "damping": 137.388,
+  "mass": 1,
+  "damping_ratio": 5.4914,
+  "built_duration_frames": 27,
+  "rmse": 0.2146
+ },
+ "recommended": "bezier",
+ "note": "c4S5 upright phone card (275 px = 17.0% W wide, dark fill) appears below the chat text at f2704 at 0.11 opacity as a flat fill and darkens linearly (0.05 per frame) to its black fill by f2722 while its top moves 75.8% -> 58.2% H (page step scroll included; it also rises 43 px = 4.7% H relative to the text, top minus headline y 353 -> 310 px); its screen content fades in afterwards (f2735-f2750). Source scratch/v8c4_S5_phonecard.csv.",
+ "chunk_curve_id": "v8.card-rise-fade-in.v8c4"
+}

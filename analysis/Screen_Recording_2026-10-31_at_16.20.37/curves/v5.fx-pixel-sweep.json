@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.fx-pixel-sweep",
+  "file": "curves/v5.fx-pixel-sweep.csv",
+  "property": "position-x",
+  "unit": "% of frame width",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_pill_fill.csv",
+  "column": "squares_cx_pct",
+  "sampled_frames": [
+    767,
+    787
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 64.91,
+  "to_value": 20.346,
+  "active_frames": [
+    767,
+    782
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.3843,
+    "y1": 1.2909,
+    "x2": 0.9178,
+    "y2": 0.8463,
+    "durationInFrames": 12,
+    "delay": 2.244,
+    "built_duration_frames": 12,
+    "rmse": 0.1314
+  },
+  "spring": {
+    "stiffness": 1014.456,
+    "damping": 64.687,
+    "mass": 1,
+    "damping_ratio": 1.0155,
+    "built_duration_frames": 11,
+    "rmse": 0.0548
+  },
+  "recommended": "spring",
+  "note": "input pill reveal: a cluster of luminous outlined/filled pixel squares sweeps right-to-left through the pill and parks at its left end, leaving the pill's dark fill behind it (the squares then dim out f780-f787 and the typed text starts at f787); centroid x of pixels > 150 luma in a 50 px band through the pill centre (band follows the camera settle, pill centre = line-2 template cy + 244 px); first sample = first picture after the snap zoom (f767, already moving), so the start value is the first visible position, not a rest; before the snap a small band of squares glows under the headline (f757-f765)"
+}

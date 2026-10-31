@@ -1,0 +1,40 @@
+{
+  "technique_id": "v1.ui-prompt-pop-in.v1c1",
+  "file": "curves/v1.ui-prompt-pop-in.v1c1.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 inside the black send button (246 = bg = opacity 0, 17 = opacity 1)",
+  "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/s1_sendbtn_in_luma.csv",
+  "column": "mean",
+  "sampled_frames": [
+    0,
+    20
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 246.0,
+  "to_value": 17.104,
+  "active_frames": [
+    0,
+    12
+  ],
+  "measured_duration_frames": 12,
+  "bezier": {
+    "x1": 0.3019,
+    "y1": 0.9186,
+    "x2": 0.6501,
+    "y2": 0.9638,
+    "durationInFrames": 13,
+    "delay": 0.12,
+    "built_duration_frames": 11,
+    "rmse": 0.0197
+  },
+  "spring": {
+    "stiffness": 812.171,
+    "damping": 57.84,
+    "mass": 1,
+    "damping_ratio": 1.0148,
+    "built_duration_frames": 13,
+    "rmse": 0.042
+  },
+  "recommended": "bezier",
+  "note": "prompt input box fade-in at the start of the video (f0 is the empty background, from-value = bg luma 246); box scales 0.98 -> 1.00 about the frame centre at the same time (send button template f1-f9)"
+}

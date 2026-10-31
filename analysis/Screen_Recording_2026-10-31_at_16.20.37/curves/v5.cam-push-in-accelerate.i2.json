@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.cam-push-in-accelerate.i2",
+  "file": "curves/v5.cam-push-in-accelerate.i2.csv",
+  "property": "scale",
+  "unit": "scale factor (star field, relative to f3976)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c6_starfield_fit.csv",
+  "column": "cum_scale",
+  "sampled_frames": [
+    3972,
+    4000
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.0,
+  "to_value": 1.1987,
+  "active_frames": [
+    3976,
+    4000
+  ],
+  "measured_duration_frames": 24,
+  "bezier": {
+    "x1": 1.0,
+    "y1": 0.758,
+    "x2": 0.8485,
+    "y2": 0.6875,
+    "durationInFrames": 22,
+    "delay": 1.332,
+    "built_duration_frames": 22,
+    "rmse": 0.0257
+  },
+  "spring": {
+    "stiffness": 69.63,
+    "damping": 23.0,
+    "mass": 1,
+    "damping_ratio": 1.3782,
+    "built_duration_frames": 41,
+    "rmse": 0.2896
+  },
+  "recommended": "bezier",
+  "note": "whole-frame push-in measured on the P2 star field (4-point stars): per pair of pictures a similarity without rotation (scale about the frame centre + shift) fitted to 6-29 matched stars, composed relative to f3976 (scratch/v5c6_starfield_fit.csv, script scratch/v5c6_tools/starfield_fit.py; f3987 is skipped as a chain link because ring 2 crosses the field). The field had been contracting (x0.88 over f3957-f3972, tail of the whip-tilt) and reverses at f3972-f3976; the push accelerates into the white flash (scale rate 0.40 / 0.71 / 0.57 / 0.81 / 1.22 % per frame over f3976-80 / 80-85 / 85-90 / 90-95 / 95-4000). It never settles: progress 1 is f4000, the last picture with enough stars (they are lost in the flash after f4002). Other matchings give x1.18-1.23 at f4000; single stars grow 18-24 % in radius from the frame centre. Near (large) sparkles stream out 2-3x faster than the small stars (depth parallax): a 3D dolly or fly-through, not a flat zoom; the focus of expansion sits below the frame centre (fits 32-52 % W, 61-75 % H)."
+}

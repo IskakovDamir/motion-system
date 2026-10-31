@@ -1,0 +1,68 @@
+{
+  "technique_id": "v7.shape-pill-to-line-out.v7c5",
+  "file": "curves/v7.shape-pill-to-line-out.v7c5.csv",
+  "property": "width",
+  "unit": "px of 1622 at the rest camera scale (status capsule width; 369.2 px = 22.8% W -> 0, gone at f3821)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p6_capsule_shrink_camcorr.csv",
+  "column": "width_rest_px",
+  "sampled_frames": [
+    3780,
+    3824
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 369.2,
+  "to_value": 0.0,
+  "active_frames": [
+    3792,
+    3816
+  ],
+  "measured_duration_frames": 24,
+  "bezier": {
+    "x1": 0.383,
+    "y1": 0.026,
+    "x2": 0.028,
+    "y2": 0.86,
+    "durationInFrames": 26,
+    "delay": -0.687,
+    "built_duration_frames": 23,
+    "rmse": 0.0224,
+    "rmse_raw_time": 0.0177,
+    "fit": "shape metric (lower of tune_tokens.tune_bezier and the shapefit.py search, scratch/v7c5_tools/refit_shape.py)"
+  },
+  "spring": {
+    "stiffness": 122.957,
+    "damping": 19.545,
+    "mass": 1,
+    "damping_ratio": 0.8813,
+    "built_duration_frames": 24,
+    "rmse": 0.0558,
+    "rmse_raw_time": 0.0408,
+    "fit": "shape metric (tune_tokens.tune_spring via scratch/v7c5_tools/refit_shape.py)"
+  },
+  "recommended": "bezier",
+  "note": "P6 status capsule exit, the reverse of its entrance: the label un-types from the end (period gone f3794, then one letter at f3796 / 3802 / 3805 / 3806, empty from f3806) and the pill width follows it down to a thin full-height line: 370 -> 360 / 359 / 300 / 185 / 117 / 77 / 50 / 32 / 20 / 12 / 6 px at f3792 / 3794 / 3795 / 3796 / 3799 / 3802 / 3805 / 3806 / 3809 / 3811 / 3814 / 3816; the line fades to 1-2 px at f3819-f3820 and is gone at f3821 (crops/crop_1040_600_540x300_03790-03822.jpg); the right edge runs in (1530 -> 1238 px) faster than the left edge follows (1161 -> 1233 px); the width steps with each removed letter, so a smooth curve is approximate (fit_easing's spring: shape RMSE 0.053); dark-pixel connected component (luma < background - 45), capture duplicates removed by a local picture difference (scratch/v7c5_p6_capsule_shrink_nodup.csv), divided by the camera push-in scale that creeps at the same time (1.0017 at f3792 -> 1.0524 at f3816; scratch/v7c5_p6_capsule_shrink_camcorr.csv). Refit on the shape metric (scratch/v7c5_tools/refit_shape.py): fit_easing.py's raw-time fits match the samples (raw-time RMSE bezier 0.0094, spring 0.0184) but both shape RMSEs stay above 0.05 (bezier 0.1452, spring 0.0527) because the 12 pictures of the measured 24-f window sit 2-4 frames apart, so the measured 2% window and a raw-time fit's own window differ by 1-3 frames; the stored bezier and spring are now fitted with the build-side rule (curvekit.shape_rmse, built duration within 1 f of the measured 24 f); the original fits are kept under raw_time_fit.",
+  "raw_time_fit": {
+    "tool": "fit_easing.py",
+    "bezier": {
+      "x1": 0.2643,
+      "y1": 1.1158,
+      "x2": 0.999,
+      "y2": 0.9376,
+      "durationInFrames": 22,
+      "delay": 2.833,
+      "built_duration_frames": 21,
+      "rmse": 0.1452,
+      "rmse_raw_time": 0.0094
+    },
+    "spring": {
+      "stiffness": 267.958,
+      "damping": 39.756,
+      "mass": 1,
+      "damping_ratio": 1.2143,
+      "built_duration_frames": 22,
+      "rmse": 0.0527,
+      "rmse_raw_time": 0.0184
+    },
+    "recommended": "spring"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v3.icon-node-pop-in.v3c1",
+  "file": "curves/v3.icon-node-pop-in.v3c1.csv",
+  "property": "scale",
+  "unit": "scale factor about the icon centre (from the first visible frame)",
+  "source_samples": "../../analysis/yI-1xclfzqMRrqfA/scratch/v3c1_icon_pop_TR_fine_alpha.csv",
+  "column": "scale",
+  "sampled_frames": [
+    1,
+    24
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 0.8675,
+  "to_value": 1.0,
+  "active_frames": [
+    1,
+    12
+  ],
+  "measured_duration_frames": 11,
+  "bezier": {
+    "x1": 0.257,
+    "y1": 1.2739,
+    "x2": 0.4922,
+    "y2": 1.3601,
+    "durationInFrames": 11,
+    "delay": -0.005,
+    "built_duration_frames": 11,
+    "rmse": 0.0116
+  },
+  "spring": {
+    "stiffness": 956.894,
+    "damping": 28.932,
+    "mass": 1,
+    "damping_ratio": 0.4676,
+    "built_duration_frames": 17,
+    "rmse": 0.1073
+  },
+  "recommended": "bezier",
+  "note": "S01 top-right node (white hexagon badge + agent logo icon) pop-in: template scale (step 0.0025); first visible f1 at 0.8675 with opacity 0.34 (f0 empty), 0.9225, 0.960, 0.9925, 1.0075, overshoot 1.0225 held f6-f9, 1.015, 1.0075, rest 1.000 from f12; opacity in v3.icon-node-pop-in-opacity.v3c1"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v1.counter-accelerating-count.v1c1",
+  "file": "curves/v1.counter-accelerating-count.v1c1.csv",
+  "property": "counter-value",
+  "unit": "agents (integer count 1..100)",
+  "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/s2_counter_values.csv",
+  "column": "count",
+  "sampled_frames": [
+    114,
+    236
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 1.0,
+  "to_value": 100.0,
+  "active_frames": [
+    129,
+    221
+  ],
+  "measured_duration_frames": 92,
+  "bezier": {
+    "x1": 0.3105,
+    "y1": 0.0386,
+    "x2": 0.6587,
+    "y2": 0.3593,
+    "durationInFrames": 100,
+    "delay": -7.378,
+    "built_duration_frames": 90,
+    "rmse": 0.0064
+  },
+  "spring": {
+    "stiffness": 7.394,
+    "damping": 10.829,
+    "mass": 1,
+    "damping_ratio": 1.9913,
+    "built_duration_frames": 125,
+    "rmse": 0.3378
+  },
+  "recommended": "bezier",
+  "note": "counter digits read off frame-numbered crops f114-f225; count 1 at f114 to 100 at f222, accelerating"
+}

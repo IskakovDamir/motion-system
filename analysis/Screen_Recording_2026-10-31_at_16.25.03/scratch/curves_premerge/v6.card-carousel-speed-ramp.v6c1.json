@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.card-carousel-speed-ramp.v6c1",
+  "file": "curves/v6.card-carousel-speed-ramp.v6c1.csv",
+  "property": "position-x",
+  "unit": "px (cumulative horizontal shift of the card row, picture 1622 px wide)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_carousel_phase.csv",
+  "column": "cum_x",
+  "sampled_frames": [
+    226,
+    298
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": -44.03,
+  "to_value": -807.22,
+  "active_frames": [
+    233,
+    293
+  ],
+  "measured_duration_frames": 60,
+  "bezier": {
+    "x1": 0.644,
+    "y1": 0.0867,
+    "x2": 0.3379,
+    "y2": 0.8315,
+    "durationInFrames": 70,
+    "delay": -5.69,
+    "built_duration_frames": 60,
+    "rmse": 0.008
+  },
+  "spring": {
+    "stiffness": 14.824,
+    "damping": 5.598,
+    "mass": 1,
+    "damping_ratio": 0.7269,
+    "built_duration_frames": 89,
+    "rmse": 0.3198
+  },
+  "recommended": "bezier",
+  "note": "card carousel scroll with a speed ramp: phase correlation of the card band (x 0-1540, y 300-600 px) per captured picture; shift per 24 fps picture -6.7 px (f231) rising to -67.7 px (f263, about -27 px per analysis frame = 1.7% W/frame) and falling back to -6.3 px (f298); the row never stops (about -6.7 px per picture at f231-f233 and -6.3 px at f298), so start and end values are the drift points f228 and f298; after f298 the row speeds up again into the punch-in stutter: -9.3 / -16.0 px per picture at f301 / f303 (dy about 0, text boxes unchanged, so not the zoom; scratch/v6c1_carousel_endramp.csv), values only (2 pictures), outside this fit"
+}

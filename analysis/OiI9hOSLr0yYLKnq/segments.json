@@ -1,0 +1,120 @@
+{
+  "video": "OiI9hOSLr0yYLKnq",
+  "key": "v1",
+  "fps": 60,
+  "frame_count": 1069,
+  "segments": [
+    {
+      "id": "S01",
+      "start": 0,
+      "end": 111,
+      "length_frames": 112,
+      "class": "GRAPHICS",
+      "boundary_in": "video-start",
+      "boundary_out": "T01",
+      "summary": "chat-input box fades/scales in at centre, 8 hexagon-badged agent icons pop in with a 3-frame stagger and then float on a slow sine (each its own phase) to the end, prompt types character by character, the send button clicks (scale 0.90 and back) as the caret goes, then the box rises and everything fades as the icon layer scales outward"
+    },
+    {
+      "id": "S02",
+      "start": 112,
+      "end": 341,
+      "length_frames": 230,
+      "class": "GRAPHICS",
+      "boundary_in": "T01",
+      "boundary_out": "T02",
+      "summary": "centre hex mark pops in with a counter label; an accelerating counter (1 to 100) drives a growing hexagon network while the frame pulls back in steps to 0.32; packets hop along connectors; slow push-in during the hold; pure fade-out"
+    },
+    {
+      "id": "S03",
+      "start": 342,
+      "end": 566,
+      "length_frames": 225,
+      "class": "GRAPHICS",
+      "boundary_in": "T02",
+      "boundary_out": "T03",
+      "summary": "two dark terminal cards slide in from the right with a word-by-word heading and labels; a typed prompt, streamed output, status timer and a packet dot that hops between the cards; shrink-fade exit"
+    },
+    {
+      "id": "S04",
+      "start": 567,
+      "end": 787,
+      "length_frames": 221,
+      "class": "GRAPHICS",
+      "boundary_in": "T03",
+      "boundary_out": "T04",
+      "summary": "same two-card layout with a light right card: typed prompt, packet hop, request block fade-in, running timer, reply bubble with avatar and word pops; shrink-fade exit then hard cut"
+    },
+    {
+      "id": "S05",
+      "start": 788,
+      "end": 883,
+      "length_frames": 96,
+      "class": "GRAPHICS",
+      "boundary_in": "T04",
+      "boundary_out": "T05",
+      "summary": "hexagon network (S02 layout) with its middle row cleared into a feathered band; a 4-word headline pops word by word in the band; slow push-in and packet traffic"
+    },
+    {
+      "id": "S06",
+      "start": 884,
+      "end": 1068,
+      "length_frames": 185,
+      "class": "GRAPHICS",
+      "boundary_in": "T05",
+      "boundary_out": "video-end",
+      "summary": "end card: the mark settles from the zoom-through, blinks, slides left as the wordmark pops on, tagline pops word by word, URL label pops; static hold to the last frame"
+    }
+  ],
+  "transitions": [
+    {
+      "id": "T01",
+      "type": "dip-to-bg",
+      "start": 101,
+      "end": 122,
+      "frames": 22,
+      "from": "S01",
+      "to": "S02",
+      "technique": "v1.trans-dip-to-bg"
+    },
+    {
+      "id": "T02",
+      "type": "dip-to-bg",
+      "start": 328,
+      "end": 354,
+      "frames": 27,
+      "from": "S02",
+      "to": "S03",
+      "technique": "v1.trans-dip-to-bg"
+    },
+    {
+      "id": "T03",
+      "type": "dip-to-bg",
+      "start": 553,
+      "end": 579,
+      "frames": 27,
+      "from": "S03",
+      "to": "S04",
+      "technique": "v1.trans-dip-to-bg"
+    },
+    {
+      "id": "T04",
+      "type": "hard-cut",
+      "start": 788,
+      "end": 788,
+      "frames": 0,
+      "from": "S04",
+      "to": "S05",
+      "technique": null
+    },
+    {
+      "id": "T05",
+      "type": "zoom-through",
+      "start": 872,
+      "end": 895,
+      "frames": 24,
+      "from": "S05",
+      "to": "S06",
+      "technique": "v1.trans-zoom-through-mark"
+    }
+  ]
+}

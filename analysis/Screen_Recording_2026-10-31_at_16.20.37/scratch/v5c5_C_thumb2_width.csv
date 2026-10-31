@@ -1,0 +1,10 @@
+frame,unique,width_px,width_pct,note
+3335,1,0,0.000,not visible
+3337,1,0,0.000,not visible
+3340,1,8,0.493,speck at x 963-971
+3342,1,178,10.974,x 823-1001
+3345,1,296,18.249,x 734-1030
+3347,1,371,22.873,x 676-1047
+3350,1,412,25.401,x 642-1054
+3352,1,414,25.524,right edge 1054; left edge = seam with thumb 1 (640)
+3355,1,415,25.586,right edge 1052; seam 637

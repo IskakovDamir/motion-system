@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.particle-mascot-converge",
+ "file": "curves/v8.particle-mascot-converge.csv",
+ "property": "width",
+ "unit": "px between the outermost mascot centres (1622 px = 100% W)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c4_S4_field_spread.csv",
+ "column": "x_extent",
+ "sampled_frames": [
+  2594,
+  2630
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 1390.0,
+ "to_value": 0.0,
+ "active_frames": [
+  2606,
+  2623
+ ],
+ "measured_duration_frames": 17,
+ "bezier": {
+  "x1": 0.8764,
+  "y1": 0.0828,
+  "x2": 0.5126,
+  "y2": 0.4451,
+  "durationInFrames": 20,
+  "delay": -2.97,
+  "built_duration_frames": 17,
+  "rmse": 0.0039
+ },
+ "spring": {
+  "stiffness": 247.84,
+  "damping": 22.962,
+  "mass": 1,
+  "damping_ratio": 0.7293,
+  "built_duration_frames": 23,
+  "rmse": 0.4551
+ },
+ "recommended": "bezier",
+ "note": "all 22 mascots converge on the frame centre with radial motion blur (implosion), 1386 px (85.5% W) -> one merged cluster at f2623; the cluster then shrinks 224 -> 39 px by f2632 (see notes)",
+ "chunk_curve_id": "v8.particle-mascot-converge.v8c4"
+}

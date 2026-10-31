@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.cam-orbit-push.v6c1",
+  "file": "curves/v6.cam-orbit-push.v6c1.csv",
+  "property": "position-x",
+  "unit": "px, left edge of the exploded stack's dark ink (picture 1622 px wide)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_phone_stack_bbox.csv",
+  "column": "x0",
+  "sampled_frames": [
+    611,
+    661
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 421.0,
+  "to_value": 562.0,
+  "active_frames": [
+    623,
+    646
+  ],
+  "measured_duration_frames": 23,
+  "bezier": {
+    "x1": 0.5988,
+    "y1": 0.1256,
+    "x2": 0.2407,
+    "y2": 0.5519,
+    "durationInFrames": 21,
+    "delay": 0.538,
+    "built_duration_frames": 20,
+    "rmse": 0.0279
+  },
+  "spring": {
+    "stiffness": 153.57,
+    "damping": 20.145,
+    "mass": 1,
+    "damping_ratio": 0.8128,
+    "built_duration_frames": 18,
+    "rmse": 0.143
+  },
+  "recommended": "bezier",
+  "note": "first camera move on the exploded stack: the camera pushes in and orbits so the panels grow, the stack's left edge moves right 421 -> 562 px (+8.7% W) and its ink extent grows from 732 to ~980 px (clipped by the right edge from f638); depth-of-field blur on the near panels during the move (f628-f638)"
+}

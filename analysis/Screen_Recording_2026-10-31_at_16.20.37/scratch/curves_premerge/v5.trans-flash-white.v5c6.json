@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.trans-flash-white.v5c6",
+  "file": "curves/v5.trans-flash-white.v5c6.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (frame mean without the ring-3 annulus and the speaker icon)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c6_flash_ringmasked.csv",
+  "column": "mean",
+  "sampled_frames": [
+    3995,
+    4015
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 36.762,
+  "to_value": 216.293,
+  "active_frames": [
+    3997,
+    4015
+  ],
+  "measured_duration_frames": 18,
+  "bezier": {
+    "x1": 0.4713,
+    "y1": 0.1769,
+    "x2": 0.0,
+    "y2": -0.0703,
+    "durationInFrames": 18,
+    "delay": 0.178,
+    "built_duration_frames": 18,
+    "rmse": 0.0191
+  },
+  "spring": {
+    "stiffness": 215.068,
+    "damping": 30.667,
+    "mass": 1,
+    "damping_ratio": 1.0456,
+    "built_duration_frames": 24,
+    "rmse": 0.2561
+  },
+  "recommended": "bezier",
+  "note": "white flash out of the origami/space scene, ramp-up half, ring 3 masked out: the third shockwave ring (its own technique v5.shape-shockwave-ring, born f4000.2 at the frame centre 811,459, 94.2 px = 5.81% W per frame) is removed by excluding an annulus of +-144 px (ring-3 FWHM) around its least-squares radius in every picture; what is left is the white-out that ends at full white on the cut under white (between pictures f4012 and f4015, c113). Unmasked, the frame luma slows down at f4007-f4010 only because ring 3 leaves the frame then (its share of the frame mean falls 24 -> 7 luma); with the ring masked the white level rises without a hold. Ramp-down half (exposure recovery f4015-f4025) is v5.fx-exposure-recover (not fitted: 3 pictures inside the move)"
+}

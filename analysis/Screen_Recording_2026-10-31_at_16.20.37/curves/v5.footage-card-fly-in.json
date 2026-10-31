@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.footage-card-fly-in",
+  "file": "curves/v5.footage-card-fly-in.csv",
+  "property": "position-x",
+  "unit": "% of frame width (card centre = rim corner + half the rest size 710 x 361 px)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c3_P04_card_corner.csv",
+  "column": "cx_pct",
+  "sampled_frames": [
+    1830,
+    1860
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 90.444,
+  "to_value": 49.877,
+  "active_frames": [
+    1830,
+    1847
+  ],
+  "measured_duration_frames": 17,
+  "bezier": {
+    "x1": 0.003,
+    "y1": 0.9844,
+    "x2": 0.6674,
+    "y2": 0.97,
+    "durationInFrames": 21,
+    "delay": 0.0,
+    "built_duration_frames": 17,
+    "rmse": 0.0067
+  },
+  "spring": {
+    "stiffness": 804.243,
+    "damping": 99.096,
+    "mass": 1,
+    "damping_ratio": 1.7472,
+    "built_duration_frames": 13,
+    "rmse": 0.1554
+  },
+  "recommended": "bezier",
+  "note": "re-tracked: top-left rim corner matched with a motion-blurred corner template (blur 0-120 px along the 30.5 deg path, scores 0.95-1.00; f1832 blurred, score 0.953). Two phases: drift-in f1825-1830 (corner y 873 -> 811 -> 743 px, x 1210 -> 1112 px f1827-1830: ~23-31 px/f in y, ~33 px/f in x; not in this curve) then this snap + ease-out from f1830 (54 % of the remaining travel in 2 frames); y follows the same progress (bezier(0.091, 0.923, 0.437, 0.949) rmse 0.0045 on cy_pct)"
+}

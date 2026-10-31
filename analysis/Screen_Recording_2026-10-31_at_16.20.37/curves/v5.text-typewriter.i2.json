@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-typewriter.i2",
+  "file": "curves/v5.text-typewriter.i2.csv",
+  "property": "count",
+  "unit": "characters visible (of 41)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_type2_chars.csv",
+  "column": "chars_visible",
+  "sampled_frames": [
+    1482,
+    1510
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 41.0,
+  "active_frames": [
+    1487,
+    1502
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.9489,
+    "y1": 1.1245,
+    "x2": 0.6376,
+    "y2": 0.2945,
+    "durationInFrames": 12,
+    "delay": 2.264,
+    "built_duration_frames": 12,
+    "rmse": 0.0644
+  },
+  "spring": {
+    "stiffness": 291.553,
+    "damping": 36.8,
+    "mass": 1,
+    "damping_ratio": 1.0776,
+    "built_duration_frames": 21,
+    "rmse": 0.2422
+  },
+  "recommended": "bezier",
+  "note": "second typewriter instance (prompt box after the vertical whip): 1 line, 8 words, 41 characters, appears left to right at about 3.0-3.3 characters per frame, no cursor glyph; a camera re-frame (tilt up + pull back about 7%) starts while the last word types (f1495-f1520); counts read off frame-numbered sheets (soft_1442-1470, overview_01488-01533)"
+}

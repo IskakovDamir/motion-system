@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.particle-mascot-split-scale.v8c4",
+  "file": "curves/v8.particle-mascot-split-scale.v8c4.csv",
+  "property": "scale",
+  "unit": "scale factor (1.0 = settled size: light tile 258 px tall, eye spacing 72 px)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c4_S4_pair_scale.csv",
+  "column": "scale",
+  "sampled_frames": [
+    2507,
+    2528
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.5011,
+  "to_value": 1.0,
+  "active_frames": [
+    2507,
+    2522
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.6179,
+    "x2": 0.8957,
+    "y2": 1.0082,
+    "durationInFrames": 16,
+    "delay": 0.0,
+    "built_duration_frames": 15,
+    "rmse": 0.0155
+  },
+  "spring": {
+    "stiffness": 321.047,
+    "damping": 79.813,
+    "mass": 1,
+    "damping_ratio": 2.2272,
+    "built_duration_frames": 20,
+    "rmse": 0.0971
+  },
+  "recommended": "bezier",
+  "note": "c4S4 mascot pair right after the split (T4): both mascots appear oversized and shrink back while they separate; light tile height (vertical 50% crossings page 248 / fill 221, across the direction of motion) / settled 258.3 px (mean f2524-f2528), scratch/v8c4_S4_pair_scale.csv; the eye spacing of both mascots gives the same ratio (97.7-97.9 px at f2508 -> 72.0 px from f2524; 107.7 px smeared dashes at f2507). First sample f2507 = largest picture (x1.50, 388 px); the tile grew from its 81 px slot (50% height) to 304 px at f2505 during the flight, so the shrink starts at a cusp (rate +42 px/f before, -37 px/f after). Pictures that repeat the previous one exactly (f2509, f2517, f2521, f2523, f2527) are skipped."
+}

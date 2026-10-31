@@ -1,0 +1,40 @@
+{
+  "technique_id": "v1.particle-packet-hop",
+  "file": "curves/v1.particle-packet-hop.csv",
+  "property": "position-x",
+  "unit": "px (packet dot centre x; path is a straight line from (780,460) to (1139,360))",
+  "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/s3_packet_out.csv",
+  "column": "cx",
+  "sampled_frames": [
+    420,
+    437
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 780.7,
+  "to_value": 1138.3,
+  "active_frames": [
+    423,
+    435
+  ],
+  "measured_duration_frames": 12,
+  "bezier": {
+    "x1": 0.5408,
+    "y1": 0.0665,
+    "x2": 0.3643,
+    "y2": 1.0548,
+    "durationInFrames": 16,
+    "delay": -1.434,
+    "built_duration_frames": 12,
+    "rmse": 0.0383
+  },
+  "spring": {
+    "stiffness": 330.674,
+    "damping": 26.28,
+    "mass": 1,
+    "damping_ratio": 0.7226,
+    "built_duration_frames": 20,
+    "rmse": 0.2723
+  },
+  "recommended": "bezier",
+  "note": "34 px grey dot travels from the end of the tool-call line in card 1 to the input line of card 2 (dark gap crossed at f429); the incoming request appears in card 2 the frame after it lands (f438)"
+}

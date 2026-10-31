@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.ui-status-pill-whip-in-up",
+ "file": "curves/v8.ui-status-pill-whip-in-up.csv",
+ "property": "position-y",
+ "unit": "px (picture 918 px high)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c5r_Sb_pilltmpl.csv",
+ "column": "cy",
+ "sampled_frames": [
+  3166,
+  3176
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 783.0,
+ "to_value": 639.0,
+ "active_frames": [
+  3166,
+  3174
+ ],
+ "measured_duration_frames": 8,
+ "bezier": {
+  "x1": 0.5568,
+  "y1": 0.6377,
+  "x2": 0.1243,
+  "y2": 0.8957,
+  "durationInFrames": 8,
+  "delay": 0.438,
+  "built_duration_frames": 7,
+  "rmse": 0.0209
+ },
+ "spring": {
+  "stiffness": 4790.288,
+  "damping": 140.71,
+  "mass": 1,
+  "damping_ratio": 1.0165,
+  "built_duration_frames": 6,
+  "rmse": 0.0829
+ },
+ "recommended": "bezier",
+ "note": "S-b second status pill (fill luma 231, 126 px = 13.7% H tall, about 870 px = 53.6% W wide (x 680-1550 px at f3176, half-luma ends on the centre row), label already complete) + its grey blob mascot rise in through the bottom edge (white sliver at the edge f3164) as one group: pill centre y from the template (scratch/v8c5r_Sb_pilltmpl.csv, ref f3236) 783 px (f3166, score 0.52, heavy vertical motion blur: label |dI/dy| 0.5 vs 13 at rest) -> 705 (f3169) -> 667 (f3170) -> 647 (f3172) -> 639 px (f3176); blur gone by f3174 (top-edge step 6 -> 51 luma). from-value = first measured picture f3166. Afterwards the group drifts with the footage (see notes), so the rest value is the f3176 picture.",
+ "chunk_curve_id": "v8.ui-status-pill-whip-in-up.v8c5"
+}

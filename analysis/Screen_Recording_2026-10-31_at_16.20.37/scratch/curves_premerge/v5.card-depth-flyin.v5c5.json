@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.card-depth-flyin.v5c5",
+  "file": "curves/v5.card-depth-flyin.v5c5.csv",
+  "property": "width",
+  "unit": "% of frame width (visible width of thumbnail 2, rows 640-660)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_C_thumb2_width.csv",
+  "column": "width_pct",
+  "sampled_frames": [
+    3335,
+    3355
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 25.524,
+  "active_frames": [
+    3340,
+    3350
+  ],
+  "measured_duration_frames": 10,
+  "bezier": {
+    "x1": 0.0002,
+    "y1": 0.3951,
+    "x2": 0.6522,
+    "y2": 0.6823,
+    "durationInFrames": 8,
+    "delay": -0.004,
+    "built_duration_frames": 8,
+    "rmse": 0.0742
+  },
+  "spring": {
+    "stiffness": 655.061,
+    "damping": 47.205,
+    "mass": 1,
+    "damping_ratio": 0.9222,
+    "built_duration_frames": 12,
+    "rmse": 0.0695
+  },
+  "recommended": "spring",
+  "note": "multishot thumbnails fly in from deep in the 3D layout (grow from a speck) and land beside the previous one; thumbnail 2 first speck f3340, thumbnail 3 f3345 (stagger 5 frames, same growth: 14 -> 375 px by f3355); the camera pull-back starts at f3357"
+}

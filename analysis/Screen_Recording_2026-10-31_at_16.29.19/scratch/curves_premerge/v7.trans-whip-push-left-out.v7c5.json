@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-whip-push-left-out.v7c5",
+  "file": "curves/v7.trans-whip-push-left-out.v7c5.csv",
+  "property": "position-x",
+  "unit": "% of frame width (line-1 brand mark centre in the close-up; 35.3% -> 30.3% W at the last picture before the cut)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p1_mark_3050-3140.csv",
+  "column": "cx_pct",
+  "sampled_frames": [
+    3109,
+    3131
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 35.327,
+  "to_value": 30.271,
+  "active_frames": [
+    3119,
+    3131
+  ],
+  "measured_duration_frames": 12,
+  "bezier": {
+    "x1": 0.0971,
+    "y1": 0.1334,
+    "x2": 0.6167,
+    "y2": -0.2434,
+    "durationInFrames": 11,
+    "delay": 1.001,
+    "built_duration_frames": 11,
+    "rmse": 0.0251
+  },
+  "spring": {
+    "stiffness": 148.772,
+    "damping": 0.5,
+    "mass": 1,
+    "damping_ratio": 0.0205,
+    "built_duration_frames": 167,
+    "rmse": 0.8228
+  },
+  "recommended": "bezier",
+  "note": "outgoing half of the whip P2 -> P3: once the close-up has settled (f3116) the whole canvas slides left (camera pans toward the typing) from rest at ~f3119, accelerating to ~19 px/frame (1.2% W) with horizontal motion blur at the last close-up picture f3131; hard cut f3134 into a x0.40 wider framing (no settle on this half: to-value = last picture); template on the brand mark (scale 1.00, score 0.69-1.0)"
+}

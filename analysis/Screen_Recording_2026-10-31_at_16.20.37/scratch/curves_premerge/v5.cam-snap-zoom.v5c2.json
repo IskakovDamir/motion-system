@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.cam-snap-zoom.v5c2",
+  "file": "curves/v5.cam-snap-zoom.v5c2.csv",
+  "property": "position-y",
+  "unit": "% of frame height",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_push_tmpl.csv",
+  "column": "cy_pct",
+  "sampled_frames": [
+    745,
+    790
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 58.061,
+  "to_value": 22.712,
+  "active_frames": [
+    750,
+    780
+  ],
+  "measured_duration_frames": 30,
+  "bezier": {
+    "x1": 1.0,
+    "y1": 0.2939,
+    "x2": 0.0652,
+    "y2": 0.8056,
+    "durationInFrames": 33,
+    "delay": -0.956,
+    "built_duration_frames": 29,
+    "rmse": 0.0222
+  },
+  "spring": {
+    "stiffness": 165.516,
+    "damping": 21.129,
+    "mass": 1,
+    "damping_ratio": 0.8212,
+    "built_duration_frames": 19,
+    "rmse": 0.1701
+  },
+  "recommended": "bezier",
+  "note": "camera dive onto the input bar: template (first word of headline line 2, ref f750) centre y; the content accelerates upward from f747, the scale snaps 1.00->1.60 between f765 and f767 (one picture, motion-blurred, no intermediate scale) and the upward move then decelerates to rest by f787; x jumps 35.3%->53.9% at the snap (zoom centre right of the word)"
+}

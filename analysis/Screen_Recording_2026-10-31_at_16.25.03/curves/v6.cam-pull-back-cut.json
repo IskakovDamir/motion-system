@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.cam-pull-back-cut",
+  "file": "curves/v6.cam-pull-back-cut.csv",
+  "property": "scale",
+  "unit": "scale factor of the outgoing phone mock-up (1.0 = template at f1061)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c2_T2_phone_out.csv",
+  "column": "scale",
+  "sampled_frames": [
+    1041,
+    1078
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.02,
+  "to_value": 0.4,
+  "active_frames": [
+    1058,
+    1078
+  ],
+  "measured_duration_frames": 20,
+  "bezier": {
+    "x1": 1.0,
+    "y1": 0.1134,
+    "x2": 1.0,
+    "y2": 0.8201,
+    "durationInFrames": 22,
+    "delay": -2.0,
+    "built_duration_frames": 20,
+    "rmse": 0.0078
+  },
+  "spring": {
+    "stiffness": 171.678,
+    "damping": 170.715,
+    "mass": 1,
+    "damping_ratio": 6.5145,
+    "built_duration_frames": 27,
+    "rmse": 0.4531
+  },
+  "recommended": "bezier",
+  "note": "S11->S12 zoom-through f1058-f1091, outgoing half: single phone mock-up shrinks toward x 50% and drifts down (template cy 207 -> 312 px) with growing blur, accelerating until the cut at 1078|1081; the curve is cut at its fastest point (no settle)"
+}

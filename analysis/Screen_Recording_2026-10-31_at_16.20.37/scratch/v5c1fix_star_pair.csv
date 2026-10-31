@@ -1,0 +1,14 @@
+frame,unique,cx_left,cx_right,sep_px,sep_pct,mid_px,centre_method,apex_top_y,apex_bot_y,union_x0,union_x1,star_w_px,star_w_pct,win_y380_px,win_y380_pct,win_y380_edges,win_y540_px,win_y540_pct,win_y540_edges,win_pct
+175,1,811.8,811.8,0.0,0.00,811.8,apex top+bottom (one apex: single star),281,522,792,827,36,2.22,,,,,,,
+177,1,807.8,807.8,0.0,0.00,807.8,apex top+bottom (one apex: single star),300,566,760,860,101,6.23,,,,,,,
+180,1,809.2,809.2,0.0,0.00,809.2,apex top+bottom (one apex: single star),278,629,712,910,199,12.27,0,0.00,,0,0.00,,0.00
+182,1,808.2,808.2,0.0,0.00,808.2,apex top+bottom (one apex: single star),148,773,558,1062,505,31.13,0,0.00,,0,0.00,,0.00
+185,1,787.0,830.0,43.0,2.65,808.5,apex (two apexes on 1 of 2 tips),38,886,450,1172,680,41.92,0,0.00,,0,0.00,,0.00
+187,1,738.5,879.8,141.2,8.71,809.1,envelope rows n=4,,,355,1263,768,47.33,0,0.00,,0,0.00,,0.00
+190,1,613.8,1003.0,389.2,24.00,808.4,envelope rows n=8,,,227,1403,788,48.57,0,0.00,,0,0.00,,0.00
+192,1,364.5,1247.5,883.0,54.44,806.0,envelope rows n=6,,,,,,,234,14.43,709-942,193,11.90,697-889,13.16
+195,1,,,,,,not measurable: spike envelopes cut by the frame edges or stars gone,,,,,,,981,60.48,315-1295,979,60.36,322-1300,60.42
+197,1,,,,,,not measurable: spike envelopes cut by the frame edges or stars gone,,,,,,,1523,93.90,45-1567,1502,92.60,45-1546,93.25
+200,1,,,,,,not measurable: spike envelopes cut by the frame edges or stars gone,,,,,,,1622,100.00,0-1621,1622,100.00,0-1621,100.00
+202,1,,,,,,not measurable: spike envelopes cut by the frame edges or stars gone,,,,,,,1622,100.00,0-1621,1622,100.00,0-1621,100.00
+205,1,,,,,,not measurable: spike envelopes cut by the frame edges or stars gone,,,,,,,1622,100.00,0-1621,1622,100.00,0-1621,100.00

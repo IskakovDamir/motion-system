@@ -1,0 +1,40 @@
+{
+  "technique_id": "v2.trans-hex-fly-into-ui.v2c2",
+  "file": "curves/v2.trans-hex-fly-into-ui.v2c2.csv",
+  "property": "position-y",
+  "unit": "px (757 = hex row, 160 = app-panel tile icon; -597 px = -55.3% H)",
+  "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c2_T2_blackhex_cc.csv",
+  "column": "cy",
+  "sampled_frames": [
+    1210,
+    1240
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 757.0,
+  "to_value": 160.0,
+  "active_frames": [
+    1218,
+    1233
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.6802,
+    "y1": 0.0213,
+    "x2": 0.4662,
+    "y2": 0.7671,
+    "durationInFrames": 16,
+    "delay": -1.537,
+    "built_duration_frames": 14,
+    "rmse": 0.0152
+  },
+  "spring": {
+    "stiffness": 325.523,
+    "damping": 27.967,
+    "mass": 1,
+    "damping_ratio": 0.7751,
+    "built_duration_frames": 18,
+    "rmse": 0.2729
+  },
+  "recommended": "bezier",
+  "note": "black hex of the row flying up into the app panel's tile icon slot (largest dark blob, scratch/v2c2_T2_blackhex_cc.csv; f1231 the blob merges with the tile's own icon as it lands, h 122); x 885 -> 960, width 126 -> 94 px (scale 0.75); the five grey hexes travel on a rising wave to the five row-icon slots in the same window"
+}

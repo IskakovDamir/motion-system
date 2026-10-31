@@ -1,0 +1,40 @@
+{
+  "technique_id": "v1.card-shrink-fade-out",
+  "file": "curves/v1.card-shrink-fade-out.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 inside the dark card (17 = opacity 1, 246 = background = opacity 0)",
+  "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/t3_s3_card1_luma.csv",
+  "column": "mean",
+  "sampled_frames": [
+    548,
+    562
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 17.0,
+  "to_value": 246.0,
+  "active_frames": [
+    553,
+    562
+  ],
+  "measured_duration_frames": 9,
+  "bezier": {
+    "x1": 0.2803,
+    "y1": 0.0375,
+    "x2": 0.6161,
+    "y2": 0.0762,
+    "durationInFrames": 10,
+    "delay": -0.456,
+    "built_duration_frames": 9,
+    "rmse": 0.0691
+  },
+  "spring": {
+    "stiffness": 669.291,
+    "damping": 159.974,
+    "mass": 1,
+    "damping_ratio": 3.0918,
+    "built_duration_frames": 14,
+    "rmse": 0.4132
+  },
+  "recommended": "bezier",
+  "note": "both terminal cards fade out while scaling to 0.966 about their own centres (template scale f553-f562); the fade is cut at ~87% (f562: luma 217) by the next layout (T03) or by the hard cut (f788, T04 repeats these values frame for frame f778-f787)"
+}

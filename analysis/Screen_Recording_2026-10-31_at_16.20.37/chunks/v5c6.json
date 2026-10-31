@@ -1,0 +1,999 @@
+{
+ "video": "Screen_Recording_2026-10-31_at_16.20.37",
+ "key": "v5",
+ "chunk": "v5c6",
+ "frames": [
+  3887,
+  4608
+ ],
+ "cut_decisions": [
+  {
+   "id": "c106",
+   "frame": 3920,
+   "status": "confirmed",
+   "reason": "anchor of the soft melt-implode transition f3905-f3937 (the two-card layer collapses into a point flare; picture replaced through the transition)"
+  },
+  {
+   "id": "c107",
+   "frame": 3930,
+   "status": "rejected",
+   "reason": "inside the melt-implode transition (point flare shrinking), anchored by c106"
+  },
+  {
+   "id": "c108",
+   "frame": 3950,
+   "status": "rejected",
+   "reason": "origami cranes and a particle trail moving inside the 3D space scene during the camera whip-tilt; background glow pattern continuous"
+  },
+  {
+   "id": "c109",
+   "frame": 3960,
+   "status": "rejected",
+   "reason": "large crane flying close past the camera inside the same 3D scene"
+  },
+  {
+   "id": "c110",
+   "frame": 3965,
+   "status": "rejected",
+   "reason": "first shockwave ring appears and cranes motion-blur inside the same 3D scene"
+  },
+  {
+   "id": "c111",
+   "frame": 3987,
+   "status": "rejected",
+   "reason": "second ring expanding and bokeh trail moving inside the same 3D scene"
+  },
+  {
+   "id": "c112",
+   "frame": 4005,
+   "status": "rejected",
+   "reason": "bloom ramp of the white flash (ring 3); the picture is not yet replaced; flash transition anchored by c113"
+  },
+  {
+   "id": "c113",
+   "frame": 4015,
+   "status": "confirmed",
+   "reason": "anchor of the white flash transition f4000-f4025 (picture replaced under the white between the pictures f4012 and f4015)"
+  },
+  {
+   "id": "c114",
+   "frame": 4025,
+   "status": "rejected",
+   "reason": "exposure/focus settling and slow camera orbit on the 3D card close-up, no cut"
+  },
+  {
+   "id": "c115",
+   "frame": 4035,
+   "status": "confirmed",
+   "reason": "hard cut: brand-side close-up of the 3D card -> text-side close-up"
+  },
+  {
+   "id": "c116",
+   "frame": 4057,
+   "status": "confirmed",
+   "reason": "hard cut into motion: the card spinning about Y, brand side near frontal with motion blur"
+  },
+  {
+   "id": "c117",
+   "frame": 4067,
+   "status": "rejected",
+   "reason": "card spin continues (motion blur), no cut"
+  },
+  {
+   "id": "c118",
+   "frame": 4085,
+   "status": "rejected",
+   "reason": "card push-back at peak speed with motion blur, no cut"
+  },
+  {
+   "id": "c119",
+   "frame": 4092,
+   "status": "rejected",
+   "reason": "glowing square tiles burst behind the card; card unchanged"
+  },
+  {
+   "id": "c120",
+   "frame": 4100,
+   "status": "rejected",
+   "reason": "tiles flying out to the frame edges and fading; card unchanged"
+  },
+  {
+   "id": "c121",
+   "frame": 4167,
+   "status": "confirmed",
+   "reason": "hard cut on matched upward motion: the card leaves through the top, the footage window + caption group rises from below"
+  },
+  {
+   "id": "c122",
+   "frame": 4202,
+   "status": "rejected",
+   "reason": "footage inside the masked window lights up (content change in footage); window and caption unchanged (caption template score 0.97)"
+  },
+  {
+   "id": "c123",
+   "frame": 4220,
+   "status": "rejected",
+   "reason": "footage motion inside the window; window and caption unchanged"
+  },
+  {
+   "id": "c124",
+   "frame": 4245,
+   "status": "rejected",
+   "reason": "footage motion inside the window (an object turns edge-on and back); window and caption unchanged"
+  },
+  {
+   "id": "c125",
+   "frame": 4355,
+   "status": "confirmed",
+   "reason": "hard cut from the window + caption layout to full-frame footage"
+  },
+  {
+   "id": "c126",
+   "frame": 4420,
+   "status": "rejected",
+   "reason": "1-line caption snaps on and the footage darkens inside the same continuing shot (no picture replacement)"
+  },
+  {
+   "id": "c127",
+   "frame": 4447,
+   "status": "rejected",
+   "reason": "slow camera pull-back inside footage, same shot"
+  },
+  {
+   "id": "c128",
+   "frame": 4470,
+   "status": "rejected",
+   "reason": "slow camera pull-back inside footage, same shot"
+  },
+  {
+   "id": "c129",
+   "frame": 4492,
+   "status": "rejected",
+   "reason": "slow camera pull-back inside footage, same shot"
+  },
+  {
+   "id": "c130",
+   "frame": 4510,
+   "status": "rejected",
+   "reason": "slow camera pull-back inside footage, same shot"
+  },
+  {
+   "id": "c131",
+   "frame": 4517,
+   "status": "rejected",
+   "reason": "same shot; irregular capture cadence around f4517-f4532"
+  },
+  {
+   "id": "c132",
+   "frame": 4525,
+   "status": "rejected",
+   "reason": "same shot; irregular capture cadence"
+  },
+  {
+   "id": "c133",
+   "frame": 4535,
+   "status": "rejected",
+   "reason": "same shot; the screen-capture tool's dashed selection frame appears at f4531 (capture artifact)"
+  },
+  {
+   "id": "c134",
+   "frame": 4542,
+   "status": "rejected",
+   "reason": "same shot, camera pull-back inside footage"
+  },
+  {
+   "id": "c135",
+   "frame": 4550,
+   "status": "rejected",
+   "reason": "same shot, camera pull-back inside footage"
+  },
+  {
+   "id": "c136",
+   "frame": 4588,
+   "status": "confirmed",
+   "reason": "hard cut to a wide footage shot without the caption (after a 6-frame capture gap f4582-f4588)"
+  },
+  {
+   "id": "c137",
+   "frame": 4596,
+   "status": "rejected",
+   "reason": "fast camera push-in inside the footage (motion blur), same shot"
+  }
+ ],
+ "boundaries": [
+  {
+   "start": 3905,
+   "end": 3937,
+   "type": "melt-implode",
+   "frames": 33,
+   "shared": "the frame centre: the whole two-card layer warps and blooms (luma 41 -> 144), merges into one glowing blob that rotates clockwise and collapses onto x 50%, y 50% (where the next scene's cranes converge and its rings are born) into a point flare with a horizontal anamorphic streak; the next scene's first crane is already visible at x 47%, y 71-76% from f3932 while the flare dies (gone by f3937-f3940)",
+   "technique": "v5.trans-melt-implode",
+   "curve": "v5.trans-melt-implode.v5c6",
+   "detail": "detail/soft_3905-3937",
+   "anchor_cut": "c106"
+  },
+  {
+   "start": 4000,
+   "end": 4025,
+   "type": "flash",
+   "frames": 26,
+   "shared": "a full white frame and a centre-out radial light: ring 3 blooms from the crane convergence point to near white (median luma 0 -> 224 by f4015), the picture is replaced under the white between f4012 and f4015, then the 3D card close-up comes down from white and racks into focus by f4025; the forward camera push-in runs into the white (still accelerating at f4000: 1.22% scale per frame over f3995-f4000; whether it goes on under the white is UNCERTAIN, the stars are lost after f4002)",
+   "technique": "v5.trans-flash-white",
+   "curve": "v5.trans-flash-white.v5c6",
+   "detail": "detail/soft_4000-4025",
+   "anchor_cut": "c113"
+  },
+  {
+   "frame": 4035,
+   "type": "hard-cut",
+   "shares": "the same 3D card (other side) at a similar upward tilt and the same slow leftward drift"
+  },
+  {
+   "frame": 4057,
+   "type": "hard-cut",
+   "shares": "the card; cut into motion (the card is already spinning about Y)"
+  },
+  {
+   "frame": 4167,
+   "type": "hard-cut",
+   "shares": "upward motion and the centred layout: the card is cut mid-exit (last picture f4165: about 82% of it still in frame, bottom edge 45.5% H) while accelerating up at about 2.4% H per frame; the window group enters from below at 8.5% H per frame or more and decelerates",
+   "technique": "v5.trans-motion-match-cut"
+  },
+  {
+   "frame": 4355,
+   "type": "hard-cut",
+   "shares": "nothing graphic"
+  },
+  {
+   "frame": 4588,
+   "type": "hard-cut",
+   "shares": "nothing graphic; preceded by a 6-frame capture gap (no pictures f4583-f4587)"
+  }
+ ],
+ "segments": [
+  {
+   "id": "v5c6-P1",
+   "start": 3887,
+   "end": 3921,
+   "class": "MIXED",
+   "continues_from_previous_chunk": true,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "two rounded footage cards turned toward each other in perspective with a 1-word and a 2-word extended-caps headline and two sparkle marks; static hold, then the whole layer melts, blooms and implodes into a centre point flare"
+  },
+  {
+   "id": "v5c6-P2",
+   "start": 3922,
+   "end": 4012,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "black 3D space with 4-point sparkles fixed in the space: a metallic origami crane dives out of the bottom, the camera whips down and overtakes it while two more cranes cross out of frame, the tilt runs out with a slight pull-back, then three cranes with particle trails fly into depth toward the centre while the camera pushes in, accelerating, and soft rings expand from the convergence point; the third ring blooms into a white flash"
+  },
+  {
+   "id": "v5c6-P3",
+   "start": 4013,
+   "end": 4034,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "close-up of a 3D light satin card, brand side (symbol + letter-spaced wordmark), coming down from white and racking into focus under a slow camera orbit"
+  },
+  {
+   "id": "v5c6-P4",
+   "start": 4035,
+   "end": 4056,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "close-up of the card's text side; only the card lights up while a sheen crosses it, slow camera drift and tilt"
+  },
+  {
+   "id": "v5c6-P5",
+   "start": 4057,
+   "end": 4166,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "the card enters mid-spin, brakes to frontal (text side), is pushed back to half width while glowing square tiles burst behind it, hovers, then accelerates up through the top edge and is cut mid-exit"
+  },
+  {
+   "id": "v5c6-P6",
+   "start": 4167,
+   "end": 4354,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "large rounded footage window with a 3-word extended-caps caption under it rises from below as one group (strong ease-out), then drifts very slowly down and smaller; footage inside not analysed"
+  },
+  {
+   "id": "v5c6-P7",
+   "start": 4355,
+   "end": 4587,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "full-frame footage (slow camera pull-back); at f4420 a single centred caption line snaps on while the footage darkens to about 27%"
+  },
+  {
+   "id": "v5c6-P8",
+   "start": 4588,
+   "end": 4608,
+   "class": "LIVE",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [
+    "sheets/overview_04560-04605.jpg",
+    "sheets/overview_04608-04608.jpg"
+   ],
+   "summary": "full-frame footage with a fast camera push-in and motion blur; the recording ends at f4608 mid-move; only the speaker icon and the capture tool's dashed frame are on top"
+  }
+ ],
+ "techniques": [
+  {
+   "id": "v5.trans-melt-implode",
+   "category": "trans",
+   "description": "exit transition of a whole graphic layer: liquid wave displacement plus bloom to near white, the layer merges into one glowing blob that rotates clockwise and collapses onto the frame centre, pops into a point flare with a full-width horizontal streak, and the flare dies on black",
+   "instances": [
+    [
+     3905,
+     3937
+    ]
+   ],
+   "reference_frames": [
+    3905,
+    3910,
+    3915,
+    3920,
+    3925,
+    3937
+   ],
+   "measured": {
+    "duration_frames": 33,
+    "easing": "collapse: spring(stiffness 259.6, damping 26.47, mass 1) built 15 f (shape rmse 0.045, raw-time 0.041) / bezier(1.000, 1.385, 0.409, 0.249) D=11 (shape 0.084, raw-time 0.021); bloom phase ease-in (not fitted)",
+    "values": "warp + bloom f3905-f3915: frame mean luma 41.4 -> 143.8 (47.4 / 65.6 / 95.7 at f3908 / f3910 / f3912), bright area spreads to x 4-95%, y 9-90%; collapse f3915-f3930: RMS radius of the luma>200 core 26.8% W -> 0.06% W (24.2 / 16.3 / 8.6 / 6.8 / 1.2 at f3917 / f3920 / f3922 / f3925 / f3927), major axis -7.1 -> +29.1 deg (f3915 -> f3920), centroid within x 46.5-53.4%, y 48-56%; flare core luma 248 (f3925) -> 0.5 (f3937), 0 at f3940"
+   },
+   "curves": [
+    "v5.trans-melt-implode.v5c6"
+   ]
+  },
+  {
+   "id": "v5.fx-anamorphic-flare",
+   "category": "fx",
+   "description": "thin full-width horizontal light streak through a point light (anamorphic flare look): the end point of the melt-implode, and sliding streaks behind the spinning card",
+   "instances": [
+    [
+     3922,
+     3937
+    ],
+    [
+     4057,
+     4070
+    ]
+   ],
+   "reference_frames": [
+    3925,
+    3930,
+    4057,
+    4065
+   ],
+   "measured": {
+    "duration_frames": 13,
+    "easing": "decay (not fitted)",
+    "values": "melt: streak visible from f3922, band (x200-1500, y450-472) luma peak 172 (f3925) -> 18.7 (f3930) -> 2.3 (f3935); flare core 248 (f3925) -> 0.5 (f3937); spin: brightest left-edge row slides 25.4% -> 55.2% H while its luma falls 112 -> 30 (f4057-f4070)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.3d-origami-dive",
+   "category": "3d",
+   "description": "a small metallic origami crane appears just below the centre and dives straight out of the bottom edge, drawing a vertical particle trail",
+   "instances": [
+    [
+     3932,
+     3942
+    ]
+   ],
+   "reference_frames": [
+    3932,
+    3937,
+    3942
+   ],
+   "measured": {
+    "duration_frames": 10,
+    "easing": "UNCERTAIN (4 pictures, exits the frame)",
+    "values": "appears at x 46-47%, y 70.8-75.9% H (f3932); lower extent 75.9 -> 84.4 -> 94.7% H at f3932 / f3935 / f3937, out of the bottom by f3942; trail stays at x 46-47%"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.cam-whip-tilt",
+   "category": "cam",
+   "description": "camera whips down after a diving crane, accelerating, overtakes it and brakes hard with the crane at the centre, then runs out over about 15 f while pulling back slightly; stars and the trail race up out of frame, other cranes cross out of the frame during the move",
+   "instances": [
+    [
+     3938,
+     3972
+    ]
+   ],
+   "reference_frames": [
+    3940,
+    3945,
+    3947,
+    3950,
+    3952,
+    3955,
+    3957,
+    3960,
+    3965,
+    3970,
+    3972
+   ],
+   "measured": {
+    "duration_frames": 34,
+    "easing": "accelerating then a hard brake (not fitted: no reference survives the blur peak), then a decelerating tail (star-field shift and scale per picture pair, not fitted)",
+    "values": "background star y 719 -> 697 -> 662 -> 587 px at f3940 / f3942 / f3945 / f3947 (11 -> 37 px per frame); trail top 611 -> 558 -> 374 -> above the frame at f3942 / f3945 / f3947 / f3950 (more than 125 px per frame); the overtaken crane is mid-frame at f3955 (centre about 45% H) and about 30% H at f3957, then drifts down (29.7% H at f3960, template) (crop read-off +-3%); crossing cranes: upper-right crane 64% W / 36% H (f3940) -> 77% / 46% (f3947, hatched dot trail) -> half out of the right edge 91% / 44% (f3950); small upper-left crane 40% / 28% (f3945-f3947) -> out of the top 36% / 5% (f3950); the brake is not a stop: star-field fit (scratch/v5c6_starfield_fit.csv, per picture pair a scale about the frame centre plus a shift on 4-10 matched stars) shows the field still rising 4.4 / 3.0 / 1.3 / 1.5 / 0.6 / 0.03% H per frame over f3957-60 / 60-62 / 62-65 / 65-67 / 67-70 / 70-72 (27.9% H in all from f3957, 14.6% H from f3960; f3957-f3960 from 4 stars) while contracting 0.951 / 0.967 / 0.980 / 0.992 / 0.998 / 0.989 per picture (x0.88 over f3957-f3972, x0.93 from f3960): a slight pull-back; about 1.0 over f3972-f3976, then the push-in (v5.cam-push-in-accelerate); crops/crop_0_0_1622x918_03955-03978.jpg"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.3d-origami-converge",
+   "category": "3d",
+   "description": "three metallic origami cranes (from the top, from very close at the upper left, from the lower right) fly into depth toward a vanishing point at the frame centre, shrinking and decelerating, each pulling a particle trail (fine column, soft bokeh blob chain, dotted streak)",
+   "instances": [
+    [
+     3957,
+     4000
+    ]
+   ],
+   "reference_frames": [
+    3957,
+    3965,
+    3976,
+    3990,
+    4000
+   ],
+   "measured": {
+    "duration_frames": 27,
+    "easing": "bezier(0.443, 1.000, 0.747, 0.662) D=27, built 27 f = measured 27 f (rmse 0.013) / spring(stiffness 91.6, damping 79.01, mass 1) built 36 f (rmse 0.072); right crane re-tracked on its body (scratch/v5c6_craneC_r2.csv, ref f3980, scale step 0.01), pictures without a lock (score < 0.6: f3960, f3962, f3985) left out (scratch/v5c6_craneC_r2_locked.csv)",
+    "values": "right crane body centre x 69.76 -> 58.45% W, y 64.9 -> 57.4-58.6% H, template scale 1.45 -> 0.90 (f3965-f3987, then held at 0.90 while the crane blurs into its trail); speed 0.63 -> 0.25 -> 0.07% W per frame over f3965-f3976 / f3976-f3990 / f3990-f4000, with a near-stop at f3980-f3982 (0.03% W per frame) and a last push at 0.19-0.37% W per frame over f3982-f3992, then held on screen (58.3-58.6% W to f4000); the old track's stall at 62.145% W (f3982, f3985) came from an unlocked picture (f3985, score 0.598, ring 2 crossing the crane); top crane y 29.7 -> 42.8% H at x 49-50%, scale 1.48 -> 0.72 (f3960-f3997); near crane from the upper-left corner to x 47.7-49.1%, y 55.4-56.8% (f3985-f3997); on-screen numbers include the camera: the tilt tail makes all of the right crane's rise over f3965-f3976 (64.9 -> 60.6% H while the field rises 5.0% H), the push-in carries the crane's place about 0.08% W per frame outward at f3980-f3982 (the on-screen near-stop) and 0.6% W over f3992-f4000 (the on-screen hold at 58.3-58.6% W); relative to the star field (scratch/v5c6_craneC_starframe.csv) the right crane slows 0.53-0.60 -> 0.30-0.33 -> 0.15-0.17% W per frame over f3965-76 / 76-90 / 90-4000 and does not stop; the top crane descends 16.6 -> 45.5% H relative to the field (f3960 -> f3997) against 29.7 -> 42.8% H on screen"
+   },
+   "curves": [
+    "v5.3d-origami-converge.v5c6"
+   ]
+  },
+  {
+   "id": "v5.cam-push-in-accelerate",
+   "category": "cam",
+   "description": "after the whip-tilt's pull-back the camera pushes in through the star field and keeps accelerating into the white flash; near sparkles stream out 2.3-2.8x faster than the small far stars (depth parallax: a 3D dolly or fly-through, not a flat zoom); the focus of expansion sits below the frame centre",
+   "instances": [
+    [
+     3976,
+     4000
+    ]
+   ],
+   "reference_frames": [
+    3976,
+    3985,
+    3992,
+    4000
+   ],
+   "measured": {
+    "duration_frames": 24,
+    "easing": "bezier(1.000, 0.758, 0.848, 0.687) D=22, built 22 f against 24 f measured (shape rmse 0.026, recommended) / spring(stiffness 69.6, damping 23.00, mass 1) rmse 0.290; slow start, then accelerating; never settles (progress 1 is f4000, the last picture with enough stars)",
+    "values": "star-field scale about the frame centre, composed from per-pair fits on 6-29 matched stars (scratch/v5c6_starfield_fit.csv; f3987, where ring 2 crosses the field, is not a chain link): x1.00 (f3976) -> 1.006 / 1.016 / 1.032 / 1.053 / 1.070 / 1.083 / 1.109 / 1.128 / 1.153 -> x1.20 (f4000) at f3978 / 3980 / 3982 / 3985 / 3987 / 3990 / 3992 / 3995 / 3997; rate 0.40 / 0.71 / 0.57 / 0.81 / 1.22% scale per frame over f3976-80 / 80-85 / 85-90 / 90-95 / 95-4000; other star matchings give x1.18-1.23 at f4000; single stars +16-24% in radius; the field had been contracting before (x0.88 over f3957-f3972), so the camera reverses between f3972 and f3976; focus of expansion fits 32-52% W, 61-75% H; crops/crop_0_0_1622x918_03976-04002.jpg, type/chk-starfield_f03976.png, _f04000.png"
+   },
+   "curves": [
+    "v5.cam-push-in-accelerate.v5c6"
+   ]
+  },
+  {
+   "id": "v5.particle-sparkle-field",
+   "category": "particle",
+   "description": "4-point stars with a glow halo (small far ones and a few large near ones) fixed in the 3D space: they ride the camera (rise with the whip-tilt tail, stream outward and grow with the push-in, near ones faster) at a steady brightness; a few emerge from a point or fade out in place; no periodic twinkle",
+   "instances": [
+    [
+     3935,
+     4002
+    ]
+   ],
+   "reference_frames": [
+    3976,
+    3985,
+    3992,
+    3997,
+    4000
+   ],
+   "measured": {
+    "duration_frames": null,
+    "easing": "no own animation curve: they move with the camera (v5.cam-whip-tilt, v5.cam-push-in-accelerate); emerge about 7 f, fade about 5 f (not fitted)",
+    "values": "per-star tracks (scratch/v5c6_star_tracks.csv): 11 stars followed for 17-40 f keep peak luma 202-224 (10th-90th percentile of 107 samples, median 213); radius from the frame centre grows 16-24% over f3976-f4000 (323 -> 398, 418 -> 506, 564 -> 678, 464 -> 575 px); the star at (691, 159) px grows from 55 to 235 px above luma 140; two large near sparkles grow in radius x1.17 (f3976-f3987) and x1.19 (f3978-f3987) against the field's x1.07 / x1.06 (scratch/v5c6_near_sparkles.csv); one star emerges at about (918, 46) px: peak 17 / 121 / 210 at f3985 / f3990 / f3992; one small star fades at about (1050, 165) px: 187 / 129 / 2 at f3995 / f3997 / f4000 (scratch/v5c6_star_emerge_fade.csv). The old fixed 13x13 px ROI readings (17 / 115 / 181 / 210 / 121 / 26 / 10 at (1211, 42), f3982-f3997) were one star of steady peak 210-227 crossing the ROI and leaving through the top (crops/crop_1100_0_260x150_03976-04000.jpg), not a twinkle"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.shape-shockwave-ring",
+   "category": "shape",
+   "description": "soft glowing ring born at the convergence point at the frame centre, expanding at constant speed until it leaves the frame; three in a row about 18 f apart, the third becomes the white flash",
+   "instances": [
+    [
+     3964,
+     3976
+    ],
+    [
+     3983,
+     3992
+    ],
+    [
+     4000,
+     4007
+    ]
+   ],
+   "reference_frames": [
+    3965,
+    3970,
+    3987,
+    4005
+   ],
+   "measured": {
+    "duration_frames": 12,
+    "easing": "linear (least-squares line on the measured radii; a settle curve does not apply)",
+    "values": "births f3964.1 / f3982.8 / f4000.2 (radius 0 of the fitted line); speed 4.54 / 5.87 / 5.81% W per frame (73.7 / 95.2 / 94.2 px), residual rms 24-32 px; ring luma 107-114 over an inner base of 26-30, FWHM 88-112 px (5.4-6.9% W) at radius about 410 px; ring 3 luma 199 over 122, FWHM 144 px; last in-frame radius 52.2 / 55.5 / 41.3% W"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.trans-flash-white",
+   "category": "trans",
+   "description": "a ring blooms from the centre into a radial white-out with a cross-shaped glare while the camera push-in accelerates into it, the picture is replaced under the white, and the new shot comes back down from white (second half: v5.fx-exposure-recover)",
+   "instances": [
+    [
+     4000,
+     4025
+    ]
+   ],
+   "reference_frames": [
+    4000,
+    4005,
+    4010,
+    4012,
+    4015,
+    4025
+   ],
+   "measured": {
+    "duration_frames": 26,
+    "easing": "ramp-up with ring 3 masked out: bezier(0.471, 0.177, 0.000, -0.070) D=18, built 18 f = measured 18 f (rmse 0.019) / spring(stiffness 215.1, damping 30.67, mass 1) built 24 f (rmse 0.256, a spring cannot ease in); ease-in start, then steady to full white at the cut; ramp-down: v5.fx-exposure-recover (easing UNCERTAIN)",
+    "values": "frame mean luma without the ring-3 annulus (+-144 px around ring 3's least-squares radius, born f4000.2 at 811,459, 94.2 px per frame) and the speaker icon (scratch/v5c6_flash_ringmasked.csv): 36.5 (f3997) -> 47.5 / 56.7 / 102.7 / 125.8 / 152.7 / 182.9 at f4000 / f4002 / f4005 / f4007 / f4010 / f4012 -> 216.3 (f4015, cut under white), i.e. 3.6-4.6 then 9-15 luma per frame; unmasked frame median 0 (f3997) -> 15 / 61 / 133 / 160 / 174 / 203 -> 224 (f4015): its slow-down at f4007-f4010 is ring 3 leaving the frame (full-frame mean 24 luma above the masked mean at f4007, 7 at f4010), not a hold; white coverage (luma>150) 13% -> 100% at f4015; back to 78 by f4025"
+   },
+   "curves": [
+    "v5.trans-flash-white.v5c6"
+   ]
+  },
+  {
+   "id": "v5.fx-exposure-recover",
+   "category": "fx",
+   "description": "the incoming shot comes down from white and racks from soft to sharp in the same frames",
+   "instances": [
+    [
+     4015,
+     4025
+    ]
+   ],
+   "reference_frames": [
+    4015,
+    4017,
+    4020,
+    4022,
+    4025
+   ],
+   "measured": {
+    "duration_frames": 10,
+    "easing": "UNCERTAIN: no curve; only 3 pictures inside the move (f4017, f4020, f4022) and no picture of the new shot before f4015; fit_easing fails on three background patches (scratch/v5c6_recover_bg.csv, v5c6_recover_bg_right.csv, v5c6_recover_bg_lowright.csv): bezier 0.064-0.127, spring 0.152-0.221 (bezier built 7 f against 10 f measured; spring stiffness 17,500-17,800, damping ratio 0.11); the samples ease out: progress 0.44 / 0.72 / 0.91 / 1.00 at f4017 / f4020 / f4022 / f4025",
+    "values": "background patch luma 185.2 -> 26.6 (116 / 72 / 41 at f4017 / f4020 / f4022); brand-symbol sharpness (Laplacian variance) 1.1 -> 24 (3.8 / 8.5 / 15.0 / 23.9 at f4017 / f4020 / f4022 / f4025)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.cam-orbit-drift",
+   "category": "cam",
+   "description": "slow constant camera orbit on 3D card close-ups: the card slides sideways and its tilt changes, no ease inside the shot",
+   "instances": [
+    [
+     4017,
+     4034
+    ],
+    [
+     4035,
+     4056
+    ]
+   ],
+   "reference_frames": [
+    4022,
+    4032,
+    4035,
+    4055
+   ],
+   "measured": {
+    "duration_frames": 20,
+    "easing": "linear (whole shot)",
+    "values": "brand side: wordmark centre x 51.1 -> 49.2% W, y 69.6 -> 69.1% H (f4017-f4032, -0.13% W per frame), slope -23.8 -> -18.8 deg (stills f4022, f4032); text side: text block x 46.3 -> 43.8% W (f4035-f4055, -0.12% W per frame), baseline tilt -7.3 -> -11.9 deg (stills f4035, f4055)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.3d-card-light-up",
+   "category": "3d",
+   "description": "right after a cut only the card brightens while a diagonal specular sheen crosses it; the background stays dark",
+   "instances": [
+    [
+     4035,
+     4052
+    ]
+   ],
+   "reference_frames": [
+    4035,
+    4045,
+    4052
+   ],
+   "measured": {
+    "duration_frames": 17,
+    "easing": "bezier(0.882, 1.129, 0.755, 0.852) D=17 (shape rmse 0.014, raw-time 0.013) / spring(123.6, 16.49) (shape 0.199)",
+    "values": "card region luma 55.3 -> 134.8 (69.0 / 83.6 / 98.3 / 111.9 / 122.9 / 130.6 at f4037 / f4040 / f4042 / f4045 / f4047 / f4050); background patches constant (3.3 and 15.8-16.5)"
+   },
+   "curves": [
+    "v5.3d-card-light-up.v5c6"
+   ]
+  },
+  {
+   "id": "v5.3d-card-spin-y",
+   "category": "3d",
+   "description": "card half-turn about its vertical axis (brand side -> text side), entered mid-spin on a hard cut with horizontal motion blur, braking to a frontal rest",
+   "instances": [
+    [
+     4057,
+     4075
+    ]
+   ],
+   "reference_frames": [
+    4057,
+    4060,
+    4062,
+    4065,
+    4070,
+    4075
+   ],
+   "measured": {
+    "duration_frames": 18,
+    "easing": "spring(stiffness 399.8, damping 40.60, mass 1; zeta 1.02) built 18 f (shape rmse 0.027, raw-time 0.015) / bezier(0.000, 0.584, 0.531, 0.994) D=16 (shape 0.076, raw-time 0.008)",
+    "values": "angle = acos(band width / 1208 px): 9.6 (f4057, blurred, lower bound) / 62 / 104 / 135.5 / 155.7 / 167.9 / 176 / 180 deg at f4057 / f4060 / f4062 / f4065 / f4067 / f4070 / f4072 / f4075; peak about 20 deg per frame at f4060-f4062; card width at rest 74.2-74.5% W"
+   },
+   "curves": [
+    "v5.3d-card-spin-y.v5c6"
+   ]
+  },
+  {
+   "id": "v5.3d-card-recede",
+   "category": "3d",
+   "description": "the settled card is pushed back to about two thirds of its size, centre fixed, with motion blur at peak speed, a long slow tail and a small landing dip that recovers by f4107",
+   "instances": [
+    [
+     4075,
+     4107
+    ]
+   ],
+   "reference_frames": [
+    4075,
+    4082,
+    4085,
+    4090,
+    4096,
+    4100,
+    4107
+   ],
+   "measured": {
+    "duration_frames": 21,
+    "easing": "UNCERTAIN: no curve; no single bezier or spring passes fit_easing's check after two re-tracks that agree within 0.003 scale (card width from both edges, sub-pixel: scratch/v5c6_card_recede_edges.csv; interior template at scale step 0.0025, scores >= 0.98: scratch/v5c6_card_recede_interior.csv): whole move bezier 0.106-0.111 / spring 0.127-0.130, push alone to f4096 bezier 0.118-0.144 / spring 0.092-0.095; the landing dip (2.3-2.4% of the move) lies just outside the 2% band, so the measured window is 28 f (f4075-f4103) with the dip and 21 f (f4075-f4096) without it, while the fitted curves settle within 13-16 f; shape: slow start, fast middle (f4082-f4085), long tail",
+    "values": "interior template scale 1.53 / 1.5175 / 1.47 / 1.3625 / 1.16 / 1.0625 / 1.0275 / 1.015 / 1.005 / 0.99 / 0.9875 / 0.99 / 0.995 / 1.00 at f4075 / f4077 / f4080 / f4082 / f4085 / f4087 / f4090 / f4092 / f4096 / f4098 / f4100 / f4103 / f4105 / f4107 (1.00 to f4112); edge width 74.06 -> 48.31% W (1201.2 -> 783.5 px), minimum 773.9 px at f4100, picture f4092 left out (a tile touches the right edge); centre x 50.0% (50.4% at f4075), y 49.0 -> 50.7% H; the tail is real, not the old template's 0.005 step; sharpness 25 -> 16 (f4082) -> 23"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.particle-tile-burst",
+   "category": "particle",
+   "description": "glowing outlined and filled square tiles burst from behind a card as it lands, first above and below it, then outward to all frame edges while fading",
+   "instances": [
+    [
+     4090,
+     4110
+    ]
+   ],
+   "reference_frames": [
+    4090,
+    4092,
+    4096,
+    4100,
+    4107
+   ],
+   "measured": {
+    "duration_frames": 20,
+    "easing": "bezier(0.661, 1.021, 0.273, 0.651) D=19 (shape rmse 0.033, raw-time 0.013) / spring(239.6, 30.26) (shape 0.037)",
+    "values": "left-band luma centroid distance from centre 27.7 -> 48.6% W (32.1 / 38.4 / 42.5 / 44.3 / 45.8 / 46.9 / 47.7 at f4092 / f4096 / f4098 / f4100 / f4103 / f4105 / f4107); band luma above/below the card 37-40 (f4090) -> 96-102 (f4092); side bands peak 93-115 (f4096); about 10 by f4110"
+   },
+   "curves": [
+    "v5.particle-tile-burst.v5c6"
+   ]
+  },
+  {
+   "id": "v5.3d-card-exit-up",
+   "category": "3d",
+   "description": "after hovering still, the card accelerates straight up through the top edge, shrinking slightly, and is cut mid-exit (about 82% of it still in frame at the last picture); the following hard cut continues the upward motion",
+   "instances": [
+    [
+     4120,
+     4165
+    ]
+   ],
+   "reference_frames": [
+    4120,
+    4140,
+    4160,
+    4162,
+    4165
+   ],
+   "measured": {
+    "duration_frames": 40,
+    "easing": "bezier(0.721, 0.005, 1.000, 0.679) D=46 from f4117.4, ease-in still accelerating at the cut (shape rmse 0.031, raw-time 0.005; built 37 f against 40 f measured); spring not applicable (0.85); the bezier reaches the last measured value at f4163.4, between the last two pictures, while the card is still moving",
+    "values": "card centre from a template of its lower half (ref f4140, scores 0.93-1.0, scratch/v5c6_card_exit_lower.csv -> scratch/v5c6_card_exit_centre.csv): 50.70% H (hover f4100-f4120) -> 46.46 / 40.59 / 35.87 / 29.03 / 24.13 / 17.17% H at f4140 / f4150 / f4155 / f4160 / f4162 / f4165 (f4165 is the last picture before the cut, f4166 repeats it); bottom edge 79.0 -> 45.5% H (0.25 contrast level; 44.9 at the 0.5 level); the top edge leaves the frame between f4160 and f4162; at f4165 about 82% of the card height (505 px, 55.0% H) is still in frame; speed 0.09 / 0.26 / 0.68 / 1.37 / 2.37% H per frame at f4120-25 / 4130-35 / 4145-50 / 4155-60 / 4160-65 (per picture 3.2 / 3.7 / 4.9 / 7.0% H over f4155-57 / 57-60 / 60-62 / 62-65; 2.45% H per frame over f4160-f4162); scale 0.99 -> 0.97 (f4160) -> 0.96 (f4165); the old end value 25.76% H (f4162) was the whole-card template pinned at the frame top (y 0, x 430 -> 484, scale 0.97 -> 0.90, score 0.93), 1.6% H short; old curve in scratch/v5c6_curves_before_rev3/"
+   },
+   "curves": [
+    "v5.3d-card-exit-up.v5c6"
+   ]
+  },
+  {
+   "id": "v5.trans-motion-match-cut",
+   "category": "trans",
+   "description": "hard cut joining two moves in the same direction: the outgoing element accelerates up through the top edge and is cut mid-exit, the incoming group enters from below already fast and decelerates",
+   "instances": [
+    [
+     4166,
+     4167
+    ]
+   ],
+   "reference_frames": [
+    4160,
+    4162,
+    4165,
+    4167,
+    4170
+   ],
+   "measured": {
+    "duration_frames": 0,
+    "easing": "hard cut (no curve)",
+    "values": "outgoing about 2.4% H per frame over f4160-f4165 (2.45 over f4160-f4162) and accelerating, about 82% of the card still in frame at the last picture f4165 (bottom edge 45.5% H); incoming 8.5% H per frame (lower bound) over f4167-f4170, 4.2 over f4170-f4172"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.footage-window-rise",
+   "category": "footage",
+   "description": "a large rounded window carrying footage rises from below together with its caption as one group, strong ease-out",
+   "instances": [
+    [
+     4167,
+     4195
+    ]
+   ],
+   "reference_frames": [
+    4167,
+    4170,
+    4175,
+    4182,
+    4195
+   ],
+   "measured": {
+    "duration_frames": 28,
+    "easing": "bezier(0.000, 0.602, 0.000, 0.927) D=24 (shape rmse 0.049, raw-time 0.005) / spring(528.1, 47.02) (shape 0.164, raw-time 0.049)",
+    "values": "offset below rest 47.8% H (f4167, lower bound) -> 22.4 / 14.1 / 9.4 / 6.4 / 4.4 / 2.9 / 1.9 / 1.1 / 0.4 / 0.2 / 0 at f4170 / f4172 / f4175 / f4177 / f4180 / f4182 / f4185 / f4188 / f4190 / f4192 / f4195; window at rest about x 16-84%, y 7-80% (stills); caption bottom minus window content top constant at 634-641 px"
+   },
+   "curves": [
+    "v5.footage-window-rise.v5c6"
+   ]
+  },
+  {
+   "id": "v5.layout-slow-recede",
+   "category": "layout",
+   "description": "after landing, the graphic group keeps a very slow linear drift down and shrink until the cut",
+   "instances": [
+    [
+     4195,
+     4354
+    ]
+   ],
+   "reference_frames": [
+    4200,
+    4275,
+    4352
+   ],
+   "measured": {
+    "duration_frames": 152,
+    "easing": "linear",
+    "values": "caption centre y 84.3 -> 87.6% H (0.022% H per frame) and template scale 1.02 -> 0.97 over f4200-f4352; window edges too dark to measure"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.text-caption-hard-on",
+   "category": "text",
+   "description": "a single-line caption appears complete at full white in one picture, without motion, and holds until the cut",
+   "instances": [
+    [
+     4420,
+     4587
+    ]
+   ],
+   "reference_frames": [
+    4417,
+    4420,
+    4582
+   ],
+   "measured": {
+    "duration_frames": 0,
+    "easing": "hard on (one picture, at most 3 frames)",
+    "values": "text region p95 luma 130 (f4417, footage only) -> 248 (f4420), 246-249 to f4582; 1 line, 6 words, cap height 3.1% H (28 px: every capital spans rows 447-474 at f4560 and f4582), width 63.6% W, centred"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.fx-dim-under-caption",
+   "category": "fx",
+   "description": "full-frame footage darkens to about a quarter of its brightness while the caption snaps on mid-ramp",
+   "instances": [
+    [
+     4412,
+     4427
+    ]
+   ],
+   "reference_frames": [
+    4412,
+    4417,
+    4420,
+    4427
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "spring(stiffness 265.7, damping 26.07, mass 1) built 14 f (shape rmse 0.046, raw-time 0.019) / bezier(0.857, 1.188, 0.710, 0.852) D=13 (shape 0.082, raw-time 0.013)",
+    "values": "luma of region y0-400: 108 -> 28.2 (99.2 / 79.9 / 59.2 / 42.7 / 32.2 at f4415 / f4417 / f4420 / f4422 / f4425); lower region 121 -> 34.4; caption lands at f4420"
+   },
+   "curves": [
+    "v5.fx-dim-under-caption.v5c6"
+   ]
+  }
+ ],
+ "typography_stills": [
+  "type/S-cards-leave_f03900.png",
+  "type/S-cards-leave_f03910.png",
+  "type/S-cards-leave_f03912.png",
+  "type/S-card-mark_f04015.png",
+  "type/S-card-mark_f04022.png",
+  "type/S-card-mark_f04025.png",
+  "type/S-card-mark_f04032.png",
+  "type/S-card-text_f04035.png",
+  "type/S-card-text_f04052.png",
+  "type/S-card-text_f04055.png",
+  "type/S-card-spin_f04057.png",
+  "type/S-card-spin_f04065.png",
+  "type/S-card-spin_f04077.png",
+  "type/S-card-spin_f04110.png",
+  "type/S-card-spin_f04160.png",
+  "type/S-window-caption_f04172.png",
+  "type/S-window-caption_f04190.png",
+  "type/S-window-caption_f04195.png",
+  "type/S-window-caption_f04340.png",
+  "type/S-window-caption_f04352.png",
+  "type/S-endcap_f04417.png",
+  "type/S-endcap_f04420.png",
+  "type/S-endcap_f04582.png"
+ ],
+ "uncertain": [
+  {
+   "what": "blob rotation during the collapse",
+   "range": "f3915-f3920",
+   "reason": "3 pictures; image-moment angle only"
+  },
+  {
+   "what": "crane dive curve",
+   "range": "f3932-f3942",
+   "reason": "4 pictures and the crane leaves the frame; not fitted"
+  },
+  {
+   "what": "ring expansion curves",
+   "range": "f3964-f4007",
+   "reason": "linear expansion that leaves the frame without settling; least-squares lines reported instead of fitted curves"
+  },
+  {
+   "what": "camera move or star field moving; push-in focus of expansion; tail values",
+   "range": "f3957-f4000",
+   "reason": "a camera move and a star field moving toward a still camera look the same (the parallax only shows it is 3D); the focus of expansion (fits 32-52% W, 61-75% H) and the f3957-f3960 tail values (4 matched stars) are rough; single pairs scatter (f3987-f3990, where ring 2 crosses the field), so other matchings give x1.18-1.23 at f4000 instead of x1.20; crane positions relative to the field treat a crane like a field star (exact for the tilt, approximate for the push, which moves nearer objects more)"
+  },
+  {
+   "what": "push-in under the white flash",
+   "range": "f4002-f4012",
+   "reason": "the stars are lost in the white after f4002, so it cannot be measured whether the push goes on"
+  },
+  {
+   "what": "single-star brightness early in the scene",
+   "range": "f3935-f3957",
+   "reason": "the stars are dim, soft and race with the tilt there; not tracked"
+  },
+  {
+   "what": "hidden cut inside the whip-tilt",
+   "range": "f3952-f3955",
+   "reason": "the full-height trail column is replaced by the crane at mid-frame between two pictures; background glow pattern stays (correlation 0.47); treated as one continuous camera move"
+  },
+  {
+   "what": "spin start angle",
+   "range": "f4057",
+   "reason": "the cut lands mid-spin and the first picture is motion-blurred; width-based angles carry about +-10 deg near 0 and 180 deg"
+  },
+  {
+   "what": "window group start offset",
+   "range": "f4167",
+   "reason": "motion-blurred first picture; 47.8% H is a lower bound and an off-screen start cannot be confirmed"
+  },
+  {
+   "what": "designed scrim or footage lighting",
+   "range": "f4412-f4427",
+   "reason": "the darkening is uniform over the frame and coincides with the caption; the two cannot be separated"
+  },
+  {
+   "what": "hidden transition before the last cut",
+   "range": "f4582-f4588",
+   "reason": "the capture has no pictures in this gap"
+  },
+  {
+   "what": "push-in blur in the last shot",
+   "range": "f4596-f4608",
+   "reason": "optical motion blur in footage or a post zoom blur cannot be told apart; the recording ends mid-move"
+  },
+  {
+   "what": "exposure-recovery easing (no curve)",
+   "range": "f4015-f4025",
+   "reason": "only 3 captured pictures inside the 10-frame move and none of the new shot before f4015; fit_easing fails on every background patch tried (bezier 0.064-0.127, spring 0.152-0.221)"
+  },
+  {
+   "what": "push-back easing (no curve)",
+   "range": "f4075-f4107",
+   "reason": "a push with a long tail plus a landing dip (2.3-2.4% of the move) just outside the 2% band; no single bezier or spring passes fit_easing's check after two re-tracks that agree within 0.003 scale"
+  },
+  {
+   "what": "window edges and corner radius",
+   "range": "f4167-f4354",
+   "reason": "dark footage on a dark ground; positions read off stills to about +-1%; slow recede measured on the caption only"
+  },
+  {
+   "what": "original typefaces",
+   "range": "f3887-f4587",
+   "reason": "not identified; free matches given"
+  }
+ ],
+ "notes": [
+  "32 cut candidates in range (c106-c137): 7 confirmed (c106, c113 as soft-transition anchors; c115, c116, c121, c125, c136), 25 rejected.",
+  "Boundaries: 5 hard cuts (f4035, f4057, f4167, f4355, f4588) and 2 soft transitions (melt-implode f3905-f3937, white flash f4000-f4025). Segment tiling: P1 ends f3921 = floor((3905+3937)/2), P2 ends f4012 = floor((4000+4025)/2).",
+  "No boundary at the chunk start: the two-card layout holds static from f3860 to f3902 (template score 1.0000).",
+  "f3938-f3955 camera whip-tilt inside the origami scene is treated as a camera move, not a boundary: same space, same background glow pattern (low-frequency quadrant luma 9.0/2.5/1.8/10.0 at f3952 vs 11.8/4.4/0.9/12.1 at f3955).",
+  "The masked footage window of P6 is analysed as a graphic; its footage (lighting change f4202, objects moving f4205-f4353) is not.",
+  "Capture artifacts: the screen-capture tool's dashed selection frame with handles appears at f4531 and stays to the end; capture cadence irregular at f4527-f4532 and a 6-frame gap f4582-f4588; speaker icon ignored. type/chk-edges_*.png document this and are not typography stills.",
+  "Edit rhythm: two 22-frame card close-ups (P3, P4) before a 110-frame continuous card move (P5).",
+  "Tracker CSVs: scratch/v5c6_*.csv (derived samples: v5c6_melt_core_rms, v5c6_ring1_radius, v5c6_spin_angle, v5c6_tile_burst, v5c6_window_rise_offset, v5c6_flash_cover, v5c6_flash_ringmasked, v5c6_craneC_r2_locked, v5c6_card_recede_edges, v5c6_starfield_fit, v5c6_star_tracks, v5c6_near_sparkles, v5c6_star_emerge_fade, v5c6_craneC_starframe, v5c6_card_exit_centre; the scripts that made the star-field files are in scratch/v5c6_tools/).",
+  "Re-tracks after review: flash white level with ring 3 masked out (scratch/v5c6_flash_ringmasked.csv), right crane body with unlocked pictures left out (scratch/v5c6_craneC_r2.csv, v5c6_craneC_r2_locked.csv), card push back from both edges and its interior (scratch/v5c6_card_recede_edges.csv, v5c6_card_recede_interior.csv), two more background patches for the exposure recovery (scratch/v5c6_recover_bg_right.csv, v5c6_recover_bg_lowright.csv); curves are kept only when fit_easing's check passes; the four curve files as they were before are in scratch/v5c6_curves_before_rev2/.",
+  "Sound sync (beat period 32.74 f): main graphic starts within -4..+4 frames of a beat or half-beat: first trail f3940 (0), ring 1 f3964 (-3), ring 2 f3983 (+1), flash f4000 (+4), c116 f4057 (-2), spin settled f4075 (+1), tile burst f4090 (+1), card exit about f4120 (+3), c121 f4167 (-3), caption f4420 (-1); off the grid: melt start f3905 (-7), push-in start about f3976 (+9), c115 f4035 (+6), c125 f4355 (+10 / -5.5), dim start f4413 (+9 / -8), c136 f4588 (true cut anywhere in the capture gap f4583-f4588).",
+  "Typography numbers (cap heights, gaps) are in chunks/v5c6.md; P1 headline caps 70 -> 102 px (perspective), card wordmark 45 px, window caption 45 px (4.9% H), end caption 28 px (3.1% H).",
+  "Second review: the P2 star field is a usable camera reference: the stars stay put in the space and keep their brightness (the old 8 f in / 5 f out / 12-15 f twinkle numbers were stars crossing fixed 13x13 px ROIs) and move with the camera, so the tilt tail and pull-back (f3957-f3972) and the accelerating push-in (f3976-f4000, new v5.cam-push-in-accelerate, curve v5.cam-push-in-accelerate.v5c6) are measured; v5.particle-sparkle-twinkle is renamed v5.particle-sparkle-field. The card exit is re-tracked on the card's lower half to its last picture f4165 and refitted (old curve in scratch/v5c6_curves_before_rev3/). Evidence: crops/crop_0_0_1622x918_03955-03978.jpg, crops/crop_0_0_1622x918_03976-04002.jpg, crops/crop_1100_0_260x150_03976-04000.jpg, type/chk-starfield_f03976.png, _f04000.png, type/chk-card-exit_f04162.png, _f04165.png (check stills, not typography stills)."
+ ]
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v1.logo-mark-pop-in",
+  "file": "curves/v1.logo-mark-pop-in.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 inside the hex mark body (246 = opacity 0, 17 = opacity 1)",
+  "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/t1_s2_mark_luma2.csv",
+  "column": "mean",
+  "sampled_frames": [
+    111,
+    128
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 246.0,
+  "to_value": 17.0,
+  "active_frames": [
+    113,
+    122
+  ],
+  "measured_duration_frames": 9,
+  "bezier": {
+    "x1": 0.2256,
+    "y1": 1.0163,
+    "x2": 0.6283,
+    "y2": 0.9457,
+    "durationInFrames": 9,
+    "delay": 0.695,
+    "built_duration_frames": 8,
+    "rmse": 0.0727
+  },
+  "spring": {
+    "stiffness": 2042.531,
+    "damping": 142.734,
+    "mass": 1,
+    "damping_ratio": 1.5791,
+    "built_duration_frames": 8,
+    "rmse": 0.0447
+  },
+  "recommended": "spring",
+  "note": "centre hex mark fading in at the start of the counter layout (T01 incoming side); scale 0.765 (f114) -> 1.0 (f120) over the same frames (multi-scale template, ref f121); the counter label pops on at full opacity at f114"
+}

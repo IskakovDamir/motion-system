@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.cursor-3d-dive-click",
+  "file": "curves/v5.cursor-3d-dive-click.csv",
+  "property": "position-x",
+  "unit": "% of frame width",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_A_cursor_readoff.csv",
+  "column": "cx_pct",
+  "sampled_frames": [
+    1065,
+    1087
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 88.78,
+  "to_value": 54.57,
+  "active_frames": [
+    1070,
+    1085
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.5614,
+    "y1": -0.2496,
+    "x2": 0.1368,
+    "y2": 0.9263,
+    "durationInFrames": 21,
+    "delay": -5.0,
+    "built_duration_frames": 14,
+    "rmse": 0.0249
+  },
+  "spring": {
+    "stiffness": 720.24,
+    "damping": 53.877,
+    "mass": 1,
+    "damping_ratio": 1.0038,
+    "built_duration_frames": 14,
+    "rmse": 0.0178
+  },
+  "recommended": "spring",
+  "note": "3D extruded arrow cursor, final dive from its hover spot above the chips row onto the button (lands f1080, button press f1080-1085); centre read off frame-numbered dense-sheet tiles (dense_01029-01084, cut_c035), +-10 px (+-0.6% W); y goes 18.5%->50.9% over the same window; rest values: before = f1070 sample, after = mean of f1085/f1087 samples"
+}

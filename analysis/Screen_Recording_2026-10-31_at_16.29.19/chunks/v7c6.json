@@ -1,0 +1,1295 @@
+{
+ "video": "Screen_Recording_2026-10-31_at_16.29.19",
+ "key": "v7",
+ "chunk": "v7c6",
+ "frames": [
+  3871,
+  4765
+ ],
+ "cut_decisions": [
+  {
+   "id": "c076",
+   "frame": 3871,
+   "status": "rejected",
+   "reason": "PySceneDetect index drift echo of c077: content/adaptive fire at decoded picture 1834 while the picture changes at decoded picture 1841 (= f3889); pictures f3869-f3887 hold one still file-tile composition (whole-frame phase-correlation shift 0.0 px, mean abs diff 0.19 luma f3871 vs f3887); boundary at the chunk edge checked 15 frames back (f3856-f3870)"
+  },
+  {
+   "id": "c077",
+   "frame": 3889,
+   "status": "confirmed",
+   "reason": "hard cut from the still file-tile composition (last picture f3887) to full-frame footage; quarter-resolution picture diff 50.1, ffmpeg score 0.41"
+  },
+  {
+   "id": "c078",
+   "frame": 4206,
+   "status": "rejected",
+   "reason": "index drift echo of c079: f4204 and f4206 show the same footage shot with the same caption and badge"
+  },
+  {
+   "id": "c079",
+   "frame": 4216,
+   "status": "confirmed",
+   "reason": "hard cut from footage + caption (last picture f4214) to the dark product UI page entering mid-move (picture diff 74.6)"
+  },
+  {
+   "id": "c080",
+   "frame": 4364,
+   "status": "rejected",
+   "reason": "index drift echo of c081: f4361-f4367 are the same counter close-up under the slow creep"
+  },
+  {
+   "id": "c081",
+   "frame": 4369,
+   "status": "confirmed",
+   "reason": "hard cut from the counter close-up (last picture f4367) to dimmed footage with the headline (picture diff 29.6)"
+  },
+  {
+   "id": "c082",
+   "frame": 4517,
+   "status": "rejected",
+   "reason": "index drift echo of c083: f4516 and f4517 are the same footage + headline"
+  },
+  {
+   "id": "c083",
+   "frame": 4522,
+   "status": "confirmed",
+   "reason": "hard cut at the player's loop point: dimmed footage + headline (last picture f4519) -> the video's blank white first frame (picture diff 194.5); from f4535 the pictures equal v7c1 f0 onward"
+  },
+  {
+   "id": "c084",
+   "frame": 4554,
+   "status": "rejected",
+   "reason": "inside the replayed title card: the label widens with horizontal motion blur and word 1's scramble smear starts (= v7c1 f19); same composition"
+  },
+  {
+   "id": "c085",
+   "frame": 4680,
+   "status": "rejected",
+   "reason": "ripple ring 1 inverts the frame luminance (v7.fx-ripple-invert inside P6, = v7c1 f145)"
+  },
+  {
+   "id": "c086",
+   "frame": 4685,
+   "status": "rejected",
+   "reason": "ripple ring 2 starts restoring the polarity; fx inside P6"
+  },
+  {
+   "id": "c087",
+   "frame": 4687,
+   "status": "rejected",
+   "reason": "polarity restored by ring 2 (picture diff 107.8); fx inside P6 (= v7c1 c003)"
+  },
+  {
+   "id": "c088",
+   "frame": 4691,
+   "status": "rejected",
+   "reason": "content/adaptive drift of the f4687 polarity flip while the iris disc grows; inside the soft transition"
+  },
+  {
+   "id": "c089",
+   "frame": 4694,
+   "status": "rejected",
+   "reason": "the iris disc grows (radius 245 -> 409-428 px) inside the soft transition f4679-f4703"
+  },
+  {
+   "id": "c090",
+   "frame": 4697,
+   "status": "confirmed",
+   "reason": "the iris completes (frame white, mean luma 247); anchor of the soft transition f4679-f4703 (= v7c1 c004 f162)"
+  }
+ ],
+ "boundaries": [
+  {
+   "frame": 3889,
+   "type": "hard-cut",
+   "anchor_cut": "c077",
+   "shares": "nothing graphic: an 18-frame still hold of the file-tile composition cuts to full-frame footage; mean luma 132 -> 113"
+  },
+  {
+   "frame": 4216,
+   "type": "hard-cut",
+   "anchor_cut": "c079",
+   "shares": "nothing graphic: footage + caption + badge (all removed by the cut) -> dark product UI page that arrives mid-move (camera push-in x1.0 of its final x1.64 and the dropdown at 0.35 of its rest width, both decelerating; dropdown left edge moving 49 px per frame); mean luma 104 -> 78"
+  },
+  {
+   "frame": 4289,
+   "type": "hard-cut",
+   "technique": "v7.trans-punch-in-whip-zoom",
+   "shares": "the highlighted row's value text: the outgoing camera accelerates into it (scale 1.00 -> 1.215 of the menu's rest, centre moving left 46 px per frame at f4286, horizontal blur) and the picture is replaced at speed (f4287-f4288 repeat f4286) by a closer framing at x2.32 (a x1.7 punch beyond the outgoing zoom), which keeps drifting left/up and growing and settles in 18 f",
+   "transition": {
+    "start": 4277,
+    "end": 4307,
+    "type": "whip (punch-in zoom with hidden cut)",
+    "frames": 31,
+    "cut_frame": 4289,
+    "curve": "v7.trans-punch-in-whip-zoom.v7c6",
+    "curves": [
+     "v7.trans-punch-in-whip-zoom-out.v7c6",
+     "v7.trans-punch-in-whip-zoom.v7c6"
+    ],
+    "detail": "detail/soft_4277-4307"
+   },
+   "origin": "missed by all three detectors (similar dark frames, blur); found on overview_04272-04317.jpg, the dense sheet f4270-f4300 and the tracker CSVs (scale x1.9 in one picture where the outgoing rate was x1.125 per picture)",
+   "tiling": "segments tiled at the hidden cut (P3 ends f4288, P4 starts f4289), the convention v7c1 uses for whips with a hidden cut"
+  },
+  {
+   "frame": 4369,
+   "type": "hard-cut",
+   "anchor_cut": "c081",
+   "shares": "low luminance only (counter close-up mean 44 -> dimmed footage 51); the headline is present at full strength in the first picture"
+  },
+  {
+   "frame": 4522,
+   "type": "hard-cut",
+   "anchor_cut": "c083",
+   "shares": "nothing: the player loops from the video's last shot (dimmed footage + headline, mean luma 50) to its blank white first frame (245)",
+   "note": "player loop point, not an edit of the video"
+  },
+  {
+   "start": 4679,
+   "end": 4703,
+   "type": "mask-wipe",
+   "frames": 25,
+   "anchor_cut": "c090",
+   "shared": "replay of v7c1 f144-f168: a soft-edged white disc grows from the label centre (radius 245-250 px at f4692, 406-428 px at f4694) until the frame is white (mean luma 247) at f4697 = P7's background; white hold f4697-f4703; the menu enters at f4704 from the top-left, scaled x1.59 and blurred",
+   "technique": "v7.trans-iris-white",
+   "curve": "v7.trans-iris-white.v7c1",
+   "detail": "detail/soft_4679-4703"
+  }
+ ],
+ "transitions": [
+  {
+   "start": 4277,
+   "end": 4307,
+   "type": "whip (punch-in zoom, content moves left/up and grows)",
+   "frames": 31,
+   "cut_frame": 4289,
+   "technique": "v7.trans-punch-in-whip-zoom",
+   "curves": [
+    "v7.trans-punch-in-whip-zoom-out.v7c6",
+    "v7.trans-punch-in-whip-zoom.v7c6"
+   ],
+   "detail": "detail/soft_4277-4307"
+  },
+  {
+   "start": 4679,
+   "end": 4703,
+   "type": "mask-wipe (iris to white + white hold)",
+   "frames": 25,
+   "cut_frame": null,
+   "technique": "v7.trans-iris-white",
+   "curve": "v7.trans-iris-white.v7c1",
+   "detail": "detail/soft_4679-4703",
+   "replay_of": "v7c1 f144-f168",
+   "preceded_by": "inverting ripple rings f4664-f4686 and the punch-in f4666-f4671 (replay)"
+  }
+ ],
+ "segments": [
+  {
+   "id": "v7c6-P1",
+   "start": 3871,
+   "end": 3888,
+   "class": "MIXED",
+   "continues_from_previous_chunk": true,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "tail of the file-tile composition (rounded tile carrying a footage thumbnail, 2-line file-name label, large arrow cursor, grey background with curved bands): a still hold f3869-f3887 (no shift, thumbnail frozen), then the hard cut"
+  },
+  {
+   "id": "v7c6-P2",
+   "start": 3889,
+   "end": 4215,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "full-frame footage; no designed element for 182 frames (f3889-f4070), then the round voice badge pops in at the bottom centre (f4071), a single-word upper-case caption fades/rises in below it (f4075), fades out in place (f4141-f4159) while a 2-word caption builds word by word in a pre-centred line (f4156, f4174); badge level bars follow the voice; all cleared by the cut",
+   "note": "f3889-f4070 carry no designed element (overview_03888-03933, overview_03936-03981, overview_03984-04029, overview_04032-04077 and badge-area crops checked); the merge may split it into LIVE + MIXED if preferred"
+  },
+  {
+   "id": "v7c6-P3",
+   "start": 4216,
+   "end": 4288,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "dark product UI page: the cut lands mid-move while an account dropdown opens from its top-right anchor (own scale about 0.58 -> 1.0, light-grey fill darkening, heavy blur) and the camera pushes in x1.64 toward the top-right corner; both settle by f4254, a slow creep follows, then the camera whips into the highlighted row's value"
+  },
+  {
+   "id": "v7c6-P4",
+   "start": 4289,
+   "end": 4368,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "close-up of the highlighted row's value pill (x2.32 the menu's rest scale) that arrives moving and settles in 18 f; the number counts down 9 units in 5 hard swaps (one per picture) and holds under a slow centre push-in x1.037"
+  },
+  {
+   "id": "v7c6-P5",
+   "start": 4369,
+   "end": 4521,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "footage dimmed to about half luminance with a small 1-line upper-case headline (7 words) centred in the frame; the headline is static from the first to the last picture; the video's last shot"
+  },
+  {
+   "id": "v7c6-P6",
+   "start": 4522,
+   "end": 4691,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "the player loops: the opening title card plays again from the video's true first frame (5 frames of white, a seed dash and halftone ring at f4527, the label pop by f4547), then exactly as v7c1 S01 (+4535 f): widen, type-on/decode, arrow, mascot chain, push-in and punch, inverting rings, shards, iris",
+   "replay_of": "v7c1 S01 (f0-f156), offset +4535; f4522-f4534 are the video's first 13 frames that v7c1 did not see"
+  },
+  {
+   "id": "v7c6-P7",
+   "start": 4692,
+   "end": 4765,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "replay of v7c1 S02: white hold, the menu UI enters zoomed x1.59 and blurred and settles while its rows pop in, hold, then the pan-up starts; the recording ends at f4765 mid-pan",
+   "replay_of": "v7c1 S02 f157-f230, offset +4535",
+   "ends_at_end_of_recording": true
+  }
+ ],
+ "techniques": [
+  {
+   "id": "v7.icon-voice-badge-pop",
+   "category": "icon",
+   "description": "round translucent voice badge appears at about 0.4 of its size in its first picture and grows to full size on a long tail (second instance, same curve as v7c2)",
+   "instances": [
+    [
+     4069,
+     4114
+    ]
+   ],
+   "reference_frames": [
+    4071,
+    4075,
+    4084,
+    4099,
+    4114
+   ],
+   "measured": {
+    "duration_frames": 45,
+    "easing": "matches v7c2's bezier(0, 0.406, 0, 0.802) D=38: 0.80 at +13 f, 0.92 at +22 f, 0.98 at +32 f in both instances; this instance's own fit bezier(0, 1.066, 1.0, 0.978) D=48 (rmse 0.035) was dropped as a duplicate",
+    "values": "dark-rim radius / 28.46 px: absent f4069, 0.40 (f4071, about 23 px across, read off a 3x still), 0.52 / 0.59 / 0.66 / 0.72 / 0.80 / 0.81 / 0.86 / 0.89 / 0.91 / 0.92 / 0.93 at f4075-f4099, 0.98 f4104, 1.0 f4114; centre 809, 744 px (49.9% W, 81.0% H); scratch/v7c6_badge_rim_4060-4150.csv"
+   },
+   "curves": [
+    "v7.icon-voice-badge-pop.v7c2"
+   ]
+  },
+  {
+   "id": "v7.icon-voice-meter",
+   "category": "icon",
+   "description": "white level bars inside the voice badge follow the audio, collapsing to round dots in silence",
+   "instances": [
+    [
+     4080,
+     4215
+    ]
+   ],
+   "reference_frames": [
+    4082,
+    4140,
+    4155
+   ],
+   "measured": {
+    "duration_frames": 135,
+    "easing": "audio-reactive, a new value every picture",
+    "values": "bars with the voice f4080-f4100 and f4151-f4158, dots f4138-f4150 (crops crops/crop_600_680_420x200_04068-04100.jpg, crops/crop_560_690_500x190_04138-04182.jpg)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.text-word-blur-rise",
+   "category": "text",
+   "description": "caption words appear one at a time in their final places inside a pre-centred line: fade in, rise and de-blur (second set of instances; v7c2 defined it)",
+   "instances": [
+    [
+     4075,
+     4091
+    ],
+    [
+     4156,
+     4169
+    ],
+    [
+     4174,
+     4185
+    ]
+   ],
+   "reference_frames": [
+    4075,
+    4079,
+    4084,
+    4091,
+    4156,
+    4161,
+    4169,
+    4174,
+    4179,
+    4185
+   ],
+   "measured": {
+    "duration_frames": 16,
+    "easing": "opacity bezier(0.936, 1.164, 0.389, 0.803) D=15 (rmse 0.020), spring {249.6, 25.45}; y bezier(0.353, 0.927, 0.558, 0.726) D=12 (rmse 0.025), spring {543.7, 47.35}; 3-4 f faster than v7c2's fitted word, inside v7c2's 7-23 f range",
+    "values": "word 1 (single-word caption): glyph contrast 0.01 / 0.14 / 0.35 / 0.59 / 0.81 / 0.92 / 0.98 / 1.0 at f4075 / 4077 / 4079 / 4082 / 4084 / 4086 / 4089 / 4091, y +14 / +10 / +6 / +3 / +2 / +1 / 0 px (1.5% H), sharpness 0.09 -> 1.0; caption 2 word 1 (f4156-f4169): 0.02 -> 0.98, +14 -> 0 px; word 2 (f4174-f4185): 0.08 -> 0.99, +11 -> 0 px; stagger 18 f; cap height 44 px = 4.8% H, baseline 90.8% H; scratch/v7c6_cap1_word_4064-4170.csv, v7c6_cap2_wordA_4148-4216.csv, v7c6_cap2_wordB_4164-4216.csv"
+   },
+   "curves": [
+    "v7.text-word-blur-rise.v7c6",
+    "v7.text-word-blur-rise-y.v7c6"
+   ]
+  },
+  {
+   "id": "v7.text-caption-fade-out",
+   "category": "text",
+   "description": "a single-word caption fades out in place (no movement) and is removed near zero, crossfading with the next caption's first word",
+   "instances": [
+    [
+     4140,
+     4159
+    ]
+   ],
+   "reference_frames": [
+    4140,
+    4146,
+    4151,
+    4156,
+    4159
+   ],
+   "measured": {
+    "duration_frames": 19,
+    "easing": "bezier(0.925, 0.868, 0.000, 0.114) D=20 (rmse 0.038), near-linear 5.3% per frame; slower than v7c2's instance (11 f, removed at 27%)",
+    "values": "glyph contrast 1.0 (f4140) -> 0.90 / 0.75 / 0.63 / 0.49 / 0.36 / 0.22 / 0.10 at f4141 / 4144 / 4146 / 4149 / 4151 / 4154 / 4156, gone at f4159; template dx = dy = 0; the next caption's first word is visible from f4156 (3 f overlap)"
+   },
+   "curves": [
+    "v7.text-caption-fade-out.v7c6"
+   ]
+  },
+  {
+   "id": "v7.ui-dropdown-scale-in",
+   "category": "ui",
+   "description": "an account dropdown menu opens from its top-right anchor: it scales up (own scale about 0.58 -> 1.0) with heavy directional motion blur while the camera pushes in; the cut lands in the middle of the move and both decelerate together",
+   "instances": [
+    [
+     4216,
+     4254
+    ]
+   ],
+   "reference_frames": [
+    4216,
+    4219,
+    4221,
+    4224,
+    4229,
+    4236,
+    4249,
+    4254
+   ],
+   "measured": {
+    "duration_frames": 33,
+    "easing": "bezier(0.219, 1.058, 0.417, 1.018) D=58 (built 30 f, rmse 0.021); spring {108.9, 21.93} (rmse 0.029); strong ease-out from the cut",
+    "values": "apparent width / rest 1081 px (66.7% W): 0.35 (f4216) -> 0.48 / 0.58 / 0.67 / 0.75 / 0.81 / 0.86 / 0.90 / 0.93 / 0.95 / 0.96 / 0.98 / 0.99 / 0.99 / 1.0 (f4219 ... f4254); left edge 1215 -> 483 px (74.9 -> 29.8% W), right edge 1596 -> 1564 px (nearly fixed); own scale (width / page scale) about 0.58 / 0.69 / 0.78 / 0.84 / 0.89 / 0.93 at f4216-f4229; blur sharp from f4239; scratch/v7c6_p3_edges_4214-4299.csv, v7c6_p3_menu_page_4216-4279.csv, v7c6_p3_menuhead_tmpl.csv"
+   },
+   "curves": [
+    "v7.ui-dropdown-scale-in.v7c6"
+   ]
+  },
+  {
+   "id": "v7.ui-dropdown-fill-darken",
+   "category": "ui",
+   "description": "the opening dropdown panel arrives light grey and darkens to its rest fill while it scales in (a fill/brightness animation: the page behind is black)",
+   "instances": [
+    [
+     4216,
+     4231
+    ]
+   ],
+   "reference_frames": [
+    4216,
+    4221,
+    4226,
+    4231
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "bezier(0.997, 0.898, 0.033, -0.083) D=13 (rmse 0.035): darkening speeds up into the rest tone",
+    "values": "fill luma 96 / 90 / 81 / 72 / 60 / 46 / 39 at f4216 / 4219 / 4221 / 4224 / 4226 / 4229 / 4231 (median of x 1490-1550, y 95-125, inside the panel's top-right); page background 11"
+   },
+   "curves": [
+    "v7.ui-dropdown-fill-darken.v7c6"
+   ]
+  },
+  {
+   "id": "v7.cam-push-in-corner-settle",
+   "category": "cam",
+   "description": "camera push-in on a UI page toward the corner where a menu hangs, entered mid-move at a hard cut and decelerating to rest",
+   "instances": [
+    [
+     4216,
+     4254
+    ]
+   ],
+   "reference_frames": [
+    4216,
+    4221,
+    4226,
+    4231,
+    4241,
+    4254
+   ],
+   "measured": {
+    "duration_frames": 33,
+    "easing": "spring {89.7, 31.87} (zeta 1.68, rmse 0.036); bezier(0.000, 0.478, 0.488, 0.996) D=35 (rmse 0.048)",
+    "values": "page scale x1.00 (f4216) -> 1.14 / 1.23 / 1.31 / 1.38 / 1.43 (f4219 / 4221 / 4224 / 4226 / 4229, search-field template) -> x1.64 (f4254, card top edge 523 -> 836 px); zoom centre about (1645, 30) px = (101% W, 3% H); scratch/v7c6_p3_searchicon_tmpl.csv, v7c6_p3_edges_4214-4299.csv"
+   },
+   "curves": [
+    "v7.cam-push-in-corner-settle.v7c6"
+   ]
+  },
+  {
+   "id": "v7.cam-slow-push-creep",
+   "category": "cam",
+   "description": "a slow near-linear push-in under a hold (instances of the v7c1 device, faster here)",
+   "instances": [
+    [
+     4254,
+     4276
+    ],
+    [
+     4305,
+     4368
+    ]
+   ],
+   "reference_frames": [
+    4254,
+    4276,
+    4305,
+    4364
+   ],
+   "measured": {
+    "duration_frames": 63,
+    "easing": "near-linear",
+    "values": "P3: menu width x1.000 -> 1.019 in 22 f (0.08% per frame), value text +0.37 px per frame to the right; P4: unit word 219 -> 227 px wide (x1.037) f4305 -> f4364 about (865, 471) px = (53% W, 51% H), 0.06% per frame, still moving at the cut f4369; scratch/v7c6_p4_unitword_bbox_hold.csv"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.trans-punch-in-whip-zoom",
+   "category": "trans",
+   "description": "punch-in whip into a UI value: the camera accelerates (zoom-in + pan, content moving left/up, horizontal blur), the picture is cut at speed to a x1.7 closer framing that keeps drifting and growing and settles (same family as v7c3's v7.trans-punch-in-whip-up)",
+   "instances": [
+    [
+     4277,
+     4307
+    ]
+   ],
+   "reference_frames": [
+    4276,
+    4279,
+    4281,
+    4284,
+    4286,
+    4289,
+    4291,
+    4294,
+    4299,
+    4307
+   ],
+   "measured": {
+    "duration_frames": 31,
+    "easing": "outgoing bezier(0.000, 0.157, 0.991, -0.304) D=17 (rmse 0.022), ease-in to the cut; incoming bezier(0.000, 0.185, 0.268, 1.005) D=19 (rmse 0.032), spring {419.7, 42.48} (rmse 0.087)",
+    "values": "outgoing (value text, menu-rest scale): scale 1.00 / 1.01 / 1.035 / 1.08 / 1.215 at f4276 / 4279 / 4281 / 4284 / 4286, centre x 1395 / 1390 / 1372 / 1335 / 1242 px, y 542 -> 519 px; cut f4289 (f4287-f4288 repeat f4286); incoming: x2.32 menu-rest scale at f4289 (x1.7 beyond the extrapolated outgoing x1.37), unit-word scale 0.81 / 0.89 / 0.945 / 0.98 / 1.00 at f4289 / 4291 / 4294 / 4296 / 4299, top edge 433 -> 389 px (f4307), centre x 1207.5 -> 1162 px (f4305); scratch/v7c6_p3_value_out_tmpl.csv, v7c6_p34_leftword_tmpl.csv, v7c6_p4_unitword_bbox.csv"
+   },
+   "curves": [
+    "v7.trans-punch-in-whip-zoom-out.v7c6",
+    "v7.trans-punch-in-whip-zoom.v7c6"
+   ]
+  },
+  {
+   "id": "v7.counter-step-countdown",
+   "category": "counter",
+   "description": "a number counts down in hard swaps, one value per picture, right-aligned, no roll or blur; here 9 units in 5 swaps after a whip-in settles",
+   "instances": [
+    [
+     4307,
+     4319
+    ]
+   ],
+   "reference_frames": [
+    4307,
+    4309,
+    4311,
+    4314,
+    4316,
+    4319
+   ],
+   "measured": {
+    "duration_frames": 12,
+    "easing": "stepped, no easing curve: units counted 0 / 1 / 3 / 5 / 8 / 9 at f4307 / 4309 / 4311 / 4314 / 4316 / 4319 (step table, scratch/v7c6_p4_counter_units_content.csv); mean rate 0.75 units per frame (9 units in 12 f), linear shape rmse 0.062 on these 6 pictures (one unit = 0.11 of progress); the bezier/spring fit (rmse 0.133 / 0.245, D=8 against 12 f measured) failed the 0.05 check and was dropped",
+    "values": "steps -1 / -2 / -2 / -3 / -1 at f4309 / 4311 / 4314 / 4316 / 4319 (values read off detail/soft_4277-4307/sheet.jpg; digit-region picture diffs 11-17 at the swaps, 0.01-0.02 between); 3-digit start value, 2-digit end value; digit height 124 px = 13.5% H; then a 49-frame hold; scratch/v7c6_p4_counter_units_content.csv",
+    "step_table": [
+     [
+      4307,
+      0
+     ],
+     [
+      4309,
+      1
+     ],
+     [
+      4311,
+      3
+     ],
+     [
+      4314,
+      5
+     ],
+     [
+      4316,
+      8
+     ],
+     [
+      4319,
+      9
+     ]
+    ],
+    "step_table_columns": [
+     "frame of the picture (f4307 = last picture before the first swap; the others = first picture of each new value)",
+     "units counted down from the start value"
+    ]
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.text-static-headline-dim-footage",
+   "category": "text",
+   "description": "closing layout: a small 1-line upper-case headline centred in the frame over footage dimmed to about half luminance; static, it cuts in and out with the shot",
+   "instances": [
+    [
+     4369,
+     4521
+    ]
+   ],
+   "reference_frames": [
+    4369,
+    4400,
+    4450,
+    4519
+   ],
+   "measured": {
+    "duration_frames": 153,
+    "easing": "none (static)",
+    "values": "headline x 18.1-81.8% W (centre 49.9%), cap top 48.7% H, baseline 51.6% H, cap height 28 px = 3.05% H, 7 words; glyph luma 240-242 throughout, ink bbox identical f4369 / 4400 / 4450 / 4519; footage luminance ceiling p99.9 123-129 (max 136-142) vs 244-253 in the earlier shot; scratch/v7c6_p5_headline_luma.csv"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.ui-label-pop-in",
+   "category": "ui",
+   "description": "title label pop-in seen from its true start in the loop replay: a tiny seed dash at the frame centre grows to a small bar, then pops to full size with an ease-out, on twos",
+   "instances": [
+    [
+     4522,
+     4547
+    ]
+   ],
+   "reference_frames": [
+    4522,
+    4527,
+    4532,
+    4537,
+    4542,
+    4547
+   ],
+   "measured": {
+    "duration_frames": 20,
+    "easing": "bezier(0.904, 0.137, 0.139, 0.615) D=23 (rmse 0.037); spring {256.0, 27.70} (rmse 0.184)",
+    "values": "blank white f4522-f4526 (luma 245); 13 x 7 px dash luma 210 (f4527) -> 56 x 27 px = 3.45% x 2.94% (f4532) -> 325 x 160 px = 20.1% x 17.4% (f4537) -> 463 x 220 px = 28.6% x 24.0% (f4542) -> 527 x 229 px = 32.5% x 25.0% (f4547); centre 810, 461 px; poses every 5 f; resolves v7c1's UNCERTAIN f0-f11 (v7c1 f0 = f4535 = the 56 x 27 px pose); scratch/v7c6_p6_label_popin_poses.csv, v7c6_p6_label_size_4522-4561.csv"
+   },
+   "curves": [
+    "v7.ui-label-pop-in.v7c6"
+   ]
+  },
+  {
+   "id": "v7.bg-halftone-ring-burst",
+   "category": "bg",
+   "description": "halftone dot ring born with the seed dash at the label centre and expanding in two bursts before it fades (start of the v7c1 device, seen in the loop replay)",
+   "instances": [
+    [
+     4527,
+     4551
+    ]
+   ],
+   "reference_frames": [
+    4527,
+    4529,
+    4532,
+    4534,
+    4537,
+    4539
+   ],
+   "measured": {
+    "duration_frames": 24,
+    "easing": "not fitted (irregular: x2.6 between f4529 and f4532, x1.6 between f4539 and f4541)",
+    "values": "radius of the darkest band (radial luma deficit 1-6): 55 px = 3.4% W (f4527), 70 = 4.3% (f4529), 180 = 11.1% (f4532), 210 = 12.9% (f4534), 280 = 17.3% (f4537), 315 = 19.4% (f4539), 31.4% W at f4541 (v7c1 f6); faded by f4551"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.icon-stroke-draw-on",
+   "category": "icon",
+   "description": "the brand mark icon in the title label appears as a thin, incomplete stroke and reaches its full stroke weight within a few pictures (draw-on look; UNCERTAIN)",
+   "instances": [
+    [
+     4539,
+     4544
+    ]
+   ],
+   "reference_frames": [
+    4539,
+    4542,
+    4544
+   ],
+   "measured": {
+    "duration_frames": 5,
+    "easing": "UNCERTAIN: 3 pictures",
+    "values": "thin partial stroke f4539, thicker nearly complete f4542, full f4544 (3x crop of the label)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.ui-label-widen-overshoot",
+   "category": "ui",
+   "description": "the label box resizes symmetrically to admit new content: widens with a 4% overshoot when the left word arrives, later grows taller for the second line; animated on twos (a new pose every 5 frames)",
+   "instances": [
+    [
+     4546,
+     4571
+    ],
+    [
+     4571,
+     4591
+    ]
+   ],
+   "reference_frames": [
+    4546,
+    4551,
+    4556,
+    4571,
+    4576,
+    4581,
+    4586,
+    4591
+   ],
+   "measured": {
+    "duration_frames": 25,
+    "easing": "replay of v7c1 (pixel match, offset +4535); see v7c1",
+    "values": "unchanged from v7c1, frames shifted by +4535"
+   },
+   "curves": [
+    "v7.ui-label-widen-overshoot.v7c1"
+   ],
+   "replay_of_v7c1": true
+  },
+  {
+   "id": "v7.ui-label-fill-darken",
+   "category": "ui",
+   "description": "the label box fill builds up in two stages, light grey -> mid grey while it grows, hold, then mid grey -> black as the text completes",
+   "instances": [
+    [
+     4527,
+     4556
+    ],
+    [
+     4564,
+     4579
+    ]
+   ],
+   "reference_frames": [
+    4527,
+    4532,
+    4535,
+    4537,
+    4542,
+    4546,
+    4547,
+    4549,
+    4556,
+    4557,
+    4564,
+    4569,
+    4579
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "replay of v7c1 (pixel match, offset +4535); see v7c1",
+    "values": "unchanged from v7c1, frames shifted by +4535; new start values from the replay: fill luma 210 (seed dash f4527) -> 207 (f4532) -> 213 (f4537) -> 197 (f4542) -> 184 (f4544) -> 147 (f4547) -> 111 (f4549) -> 100 (f4552) -> 90 (f4557), measured on text-free rows inside the box"
+   },
+   "curves": [
+    "v7.ui-label-fill-darken.v7c1"
+   ],
+   "replay_of_v7c1": true
+  },
+  {
+   "id": "v7.text-type-on",
+   "category": "text",
+   "description": "letters appear one at a time left to right in their final places; variants: per-letter fade (title word 2), per-letter horizontal stretch-in with a gap that closes (title line 2), 2 letters per picture after the placeholder clears (search query), 1 letter per picture (side-panel label)",
+   "instances": [
+    [
+     4537,
+     4571
+    ],
+    [
+     4584,
+     4604
+    ]
+   ],
+   "reference_frames": [
+    4537,
+    4539,
+    4571,
+    4584,
+    4599,
+    4604
+   ],
+   "measured": {
+    "duration_frames": 32,
+    "easing": "replay of v7c1 (pixel match, offset +4535); see v7c1",
+    "values": "unchanged from v7c1, frames shifted by +4535; new: word 2's first letter is already faintly visible inside the box at f4537 (v7c1 f2; v7c1's first picture of it is f4 = f4539 with 2 letters)"
+   },
+   "curves": [],
+   "replay_of_v7c1": true
+  },
+  {
+   "id": "v7.text-scramble-decode",
+   "category": "text",
+   "description": "a word resolves out of order: letters and placeholder bars/dots appear at random positions and settle into the word",
+   "instances": [
+    [
+     4554,
+     4581
+    ]
+   ],
+   "reference_frames": [
+    4554,
+    4559,
+    4566,
+    4576,
+    4581
+   ],
+   "measured": {
+    "duration_frames": 27,
+    "easing": "replay of v7c1 (pixel match, offset +4535); see v7c1",
+    "values": "unchanged from v7c1, frames shifted by +4535"
+   },
+   "curves": [],
+   "replay_of_v7c1": true
+  },
+  {
+   "id": "v7.text-glyph-slide-in",
+   "category": "text",
+   "description": "punctuation glyphs flanking the second title line converge from both sides: the left double chevron slides in from the left edge of the box, the small word between scales up from a dot, the right double chevron slides in from the right as blurred wedges and tightens",
+   "instances": [
+    [
+     4586,
+     4601
+    ],
+    [
+     4601,
+     4616
+    ]
+   ],
+   "reference_frames": [
+    4586,
+    4595,
+    4598,
+    4601,
+    4606,
+    4612,
+    4616
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "replay of v7c1 (pixel match, offset +4535); see v7c1",
+    "values": "unchanged from v7c1, frames shifted by +4535"
+   },
+   "curves": [],
+   "replay_of_v7c1": true
+  },
+  {
+   "id": "v7.icon-glow-in",
+   "category": "icon",
+   "description": "the app icon on the second title line appears as a soft glowing dot that grows into the sharp icon",
+   "instances": [
+    [
+     4584,
+     4599
+    ]
+   ],
+   "reference_frames": [
+    4584,
+    4586,
+    4590,
+    4591,
+    4594,
+    4599
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "replay of v7c1 (pixel match, offset +4535); see v7c1",
+    "values": "unchanged from v7c1, frames shifted by +4535"
+   },
+   "curves": [],
+   "replay_of_v7c1": true
+  },
+  {
+   "id": "v7.icon-mark-fade-in",
+   "category": "icon",
+   "description": "a small white double-triangle mark fades in above the label's top edge",
+   "instances": [
+    [
+     4612,
+     4621
+    ]
+   ],
+   "reference_frames": [
+    4612,
+    4616,
+    4621
+   ],
+   "measured": {
+    "duration_frames": 9,
+    "easing": "replay of v7c1 (pixel match, offset +4535); see v7c1",
+    "values": "unchanged from v7c1, frames shifted by +4535"
+   },
+   "curves": [],
+   "replay_of_v7c1": true
+  },
+  {
+   "id": "v7.ui-corner-handles",
+   "category": "ui",
+   "description": "two small grey squares sit diagonally outside opposite corners of the label like selection handles, follow the corners while it resizes, then shrink out",
+   "instances": [
+    [
+     4537,
+     4601
+    ]
+   ],
+   "reference_frames": [
+    4537,
+    4539,
+    4542,
+    4556,
+    4576,
+    4591,
+    4596,
+    4601
+   ],
+   "measured": {
+    "duration_frames": 10,
+    "easing": "replay of v7c1 (pixel match, offset +4535); see v7c1",
+    "values": "unchanged from v7c1, frames shifted by +4535; new: diagonal light streaks at the box's top-left and bottom-right corners while it pops (f4537-f4539, motion-blurred handles), sharp squares from f4542 (v7c1 lists the handles from its f16 = f4551)"
+   },
+   "curves": [],
+   "replay_of_v7c1": true
+  },
+  {
+   "id": "v7.shape-arrow-drop-in",
+   "category": "shape",
+   "description": "a thin vertical down-arrow drops in from the top as a motion-blur streak and decelerates into place right of the label",
+   "instances": [
+    [
+     4551,
+     4579
+    ]
+   ],
+   "reference_frames": [
+    4551,
+    4554,
+    4556,
+    4559,
+    4566,
+    4576
+   ],
+   "measured": {
+    "duration_frames": 22,
+    "easing": "replay of v7c1 (pixel match, offset +4535); see v7c1",
+    "values": "unchanged from v7c1, frames shifted by +4535"
+   },
+   "curves": [
+    "v7.shape-arrow-drop-in.v7c1"
+   ],
+   "replay_of_v7c1": true
+  },
+  {
+   "id": "v7.shape-pixel-pair-converge",
+   "category": "shape",
+   "description": "two small grey squares slide diagonally toward each other into a corner-to-corner pixel pair (on twos)",
+   "instances": [
+    [
+     4551,
+     4571
+    ]
+   ],
+   "reference_frames": [
+    4551,
+    4556,
+    4561,
+    4566,
+    4571
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "replay of v7c1 (pixel match, offset +4535); see v7c1",
+    "values": "unchanged from v7c1, frames shifted by +4535"
+   },
+   "curves": [],
+   "replay_of_v7c1": true
+  },
+  {
+   "id": "v7.particle-mascot-chain-arc",
+   "category": "particle",
+   "description": "a chain of 5 balls with glyph eyes (tones light grey at the tail to near-black at the lead, 5.4% W) follows its leader along an arc from the left edge and dives into the label centre; poses on twos, followers about 160 px apart",
+   "instances": [
+    [
+     4616,
+     4689
+    ]
+   ],
+   "reference_frames": [
+    4616,
+    4631,
+    4641,
+    4651,
+    4656,
+    4666,
+    4676,
+    4689
+   ],
+   "measured": {
+    "duration_frames": 47,
+    "easing": "replay of v7c1 (pixel match, offset +4535); see v7c1",
+    "values": "unchanged from v7c1, frames shifted by +4535"
+   },
+   "curves": [
+    "v7.particle-mascot-chain-arc.v7c1"
+   ],
+   "replay_of_v7c1": true
+  },
+  {
+   "id": "v7.cam-push-in-accelerating",
+   "category": "cam",
+   "description": "slow accelerating push-in on the title while the chain arcs in, ending in a fast punch-in when the lead ball lands",
+   "instances": [
+    [
+     4624,
+     4691
+    ]
+   ],
+   "reference_frames": [
+    4624,
+    4646,
+    4666,
+    4671,
+    4679,
+    4691
+   ],
+   "measured": {
+    "duration_frames": 42,
+    "easing": "replay of v7c1 (pixel match, offset +4535); see v7c1",
+    "values": "unchanged from v7c1, frames shifted by +4535"
+   },
+   "curves": [
+    "v7.cam-push-in-accelerating.v7c1"
+   ],
+   "replay_of_v7c1": true
+  },
+  {
+   "id": "v7.fx-ripple-invert",
+   "category": "fx",
+   "description": "a soft white halo ring is born at the landing point and expands over the frame; everything inside it is luminance-inverted (black label turns white, light background turns black); a second ring restores the normal polarity",
+   "instances": [
+    [
+     4664,
+     4681
+    ],
+    [
+     4674,
+     4686
+    ]
+   ],
+   "reference_frames": [
+    4664,
+    4669,
+    4674,
+    4676,
+    4679,
+    4686
+   ],
+   "measured": {
+    "duration_frames": 20,
+    "easing": "replay of v7c1 (pixel match, offset +4535); see v7c1",
+    "values": "unchanged from v7c1, frames shifted by +4535"
+   },
+   "curves": [
+    "v7.fx-ripple-invert.v7c1"
+   ],
+   "replay_of_v7c1": true
+  },
+  {
+   "id": "v7.particle-shard-burst",
+   "category": "particle",
+   "description": "angular flat shards fly radially out from the centre and grow, toned light during the inverted phase and dark after the polarity flips back",
+   "instances": [
+    [
+     4674,
+     4694
+    ]
+   ],
+   "reference_frames": [
+    4676,
+    4679,
+    4684,
+    4689,
+    4694
+   ],
+   "measured": {
+    "duration_frames": 18,
+    "easing": "replay of v7c1 (pixel match, offset +4535); see v7c1",
+    "values": "unchanged from v7c1, frames shifted by +4535"
+   },
+   "curves": [],
+   "replay_of_v7c1": true
+  },
+  {
+   "id": "v7.trans-iris-white",
+   "category": "trans",
+   "description": "transition: a soft-edged white disc grows from the hero point until the frame is white (the next layout's background), holds white, and the next layout drops onto it",
+   "instances": [
+    [
+     4679,
+     4703
+    ]
+   ],
+   "reference_frames": [
+    4679,
+    4684,
+    4689,
+    4691,
+    4694,
+    4697,
+    4703,
+    4704
+   ],
+   "measured": {
+    "duration_frames": 16,
+    "easing": "replay of v7c1 (pixel match, offset +4535); see v7c1",
+    "values": "unchanged from v7c1, frames shifted by +4535"
+   },
+   "curves": [
+    "v7.trans-iris-white.v7c1"
+   ],
+   "replay_of_v7c1": true
+  },
+  {
+   "id": "v7.cam-zoom-out-settle-in",
+   "category": "cam",
+   "description": "a new layout enters already zoomed in (scaled and blurred) and the camera settles out to rest with a strong ease-out",
+   "instances": [
+    [
+     4704,
+     4741
+    ]
+   ],
+   "reference_frames": [
+    4704,
+    4706,
+    4709,
+    4714,
+    4721,
+    4734
+   ],
+   "measured": {
+    "duration_frames": 26,
+    "easing": "replay of v7c1 (pixel match, offset +4535); see v7c1",
+    "values": "unchanged from v7c1, frames shifted by +4535"
+   },
+   "curves": [
+    "v7.cam-zoom-out-settle-in.v7c1"
+   ],
+   "replay_of_v7c1": true
+  },
+  {
+   "id": "v7.ui-list-stagger-in",
+   "category": "ui",
+   "description": "menu rows pop in top to bottom, one per picture, each blurred on arrival and converging into place with the settling zoom",
+   "instances": [
+    [
+     4704,
+     4734
+    ]
+   ],
+   "reference_frames": [
+    4704,
+    4709,
+    4711,
+    4714,
+    4716,
+    4721
+   ],
+   "measured": {
+    "duration_frames": 17,
+    "easing": "replay of v7c1 (pixel match, offset +4535); see v7c1",
+    "values": "unchanged from v7c1, frames shifted by +4535"
+   },
+   "curves": [],
+   "replay_of_v7c1": true
+  },
+  {
+   "id": "v7.cam-pan-up-zoom",
+   "category": "cam",
+   "description": "camera pans the whole UI up and zooms in slightly to bring a lower row to the upper half",
+   "instances": [
+    [
+     4741,
+     4765
+    ]
+   ],
+   "reference_frames": [
+    4741,
+    4751,
+    4761
+   ],
+   "measured": {
+    "duration_frames": 30,
+    "easing": "replay of v7c1 (pixel match, offset +4535); see v7c1",
+    "values": "unchanged from v7c1, frames shifted by +4535"
+   },
+   "curves": [
+    "v7.cam-pan-up-zoom.v7c1"
+   ],
+   "replay_of_v7c1": true
+  }
+ ],
+ "typography_stills": [
+  "type/v7c6-P1-1_f03871.png",
+  "type/v7c6-P1-1_f03887.png",
+  "type/v7c6-P2-1_f04075.png",
+  "type/v7c6-P2-1_f04086.png",
+  "type/v7c6-P2-1_f04146.png",
+  "type/v7c6-P2-2_f04156.png",
+  "type/v7c6-P2-2_f04174.png",
+  "type/v7c6-P2-2_f04182.png",
+  "type/v7c6-P2-2_f04214.png",
+  "type/v7c6-P3-1_f04216.png",
+  "type/v7c6-P3-1_f04254.png",
+  "type/v7c6-P3-1_f04276.png",
+  "type/v7c6-P4-1_f04289.png",
+  "type/v7c6-P4-1_f04300.png",
+  "type/v7c6-P4-1_f04314.png",
+  "type/v7c6-P4-1_f04319.png",
+  "type/v7c6-P4-1_f04367.png",
+  "type/v7c6-P5-1_f04369.png",
+  "type/v7c6-P5-1_f04400.png",
+  "type/v7c6-P5-1_f04519.png",
+  "type/v7c6-P6-1_f04537.png",
+  "type/v7c6-P6-1_f04539.png",
+  "type/v7c6-P6-1_f04581.png",
+  "type/v7c6-P6-1_f04669.png",
+  "type/v7c6-P7-1_f04704.png",
+  "type/v7c6-P7-1_f04734.png",
+  "type/v7c6-P7-1_f04764.png"
+ ],
+ "uncertain": [
+  {
+   "what": "class and moves of the segment that runs into this chunk",
+   "range": "f3871-f3888",
+   "reason": "it starts in v7c5; here it only holds still (MIXED from this side: a file tile carrying footage)"
+  },
+  {
+   "what": "voice badge size in its first picture",
+   "range": "f4071",
+   "reason": "too small for a dark rim; about 23 px across read off a 3x still"
+  },
+  {
+   "what": "caption word opacities",
+   "range": "f4075-f4185",
+   "reason": "glyph-mask contrast against moving footage; fade and de-blur are not separated"
+  },
+  {
+   "what": "dropdown own scale vs camera scale",
+   "range": "f4216-f4254",
+   "reason": "derived from the apparent menu width and the page scale (search-field template scores 0.54-0.98, card-top edge with an estimated zoom centre); +-0.03"
+  },
+  {
+   "what": "page zoom centre",
+   "range": "f4216-f4229",
+   "reason": "rests on 3-5 pictures before the search field is covered by the menu: x 1635-1655 px, y 25-40 px"
+  },
+  {
+   "what": "last outgoing whip picture",
+   "range": "f4286",
+   "reason": "heavy horizontal blur, template score 0.55"
+  },
+  {
+   "what": "count easing",
+   "range": "f4307-f4319",
+   "reason": "stepped (5 swaps of 1-3 units on 24 fps pictures with +-1 f capture jitter): no curve passes the 0.05 shape check (linear 0.062; the dropped bezier/spring fit 0.133 / 0.245); the swap-frame step table is the measurement, near-linear 0.75 units per frame the closest simple rate"
+  },
+  {
+   "what": "footage dimming in the last shot",
+   "range": "f4369-f4521",
+   "reason": "overlay vs grade cannot be separated; only the luminance ceiling (about 0.5) is measured"
+  },
+  {
+   "what": "hero movement of the last shot",
+   "range": "f4369-f4521",
+   "reason": "no designed element moves; the motion is inside the footage, which is not analysed"
+  },
+  {
+   "what": "brand mark draw-on",
+   "range": "f4539-f4544",
+   "reason": "only 3 pictures; may also be a de-blur of the icon"
+  },
+  {
+   "what": "sound-sync offsets",
+   "range": "f3871-f4765",
+   "reason": "the capture's audio delay is unknown, and the beat tracker's grid does not carry across the loop point (f4549 gives beat -13 here where v7c1 found a strong onset at +0 for the same audio)"
+  },
+  {
+   "what": "fonts",
+   "range": "all",
+   "reason": "original typefaces cannot be identified from the grayscale capture; closest free families given"
+  }
+ ],
+ "notes": [
+  "Loop: the hard cut f4522 is the player looping back to the video's first frame. From f4535 every picture equals v7c1 f0 onward (mean abs diff 0.11-0.55 luma at quarter resolution, offset +4535 +-1, checked at 21 frames f4536-f4760). P6 = v7c1 S01 and P7 = v7c1 S02 f157-f230 played again; the merge should not count them as new technique uses. New information: the video's first 13 frames (f4522-f4534: 5 frames of white, the seed dash and halftone ring from f4527), which resolve v7c1's UNCERTAIN f0-f11; the recording started 13 frames (0.22 s) into the video.",
+  "Sound sync of the replay matches v7c1 for the iris (-13 / +5), the menu entrance (+12) and the pan-up (strong onset -2), so the audio loops with the picture.",
+  "PySceneDetect content/adaptive index drift again: c076 18 f early, c078 10 f early, c080 5 f early, c082 5 f early; the ffmpeg score fires on the right picture (c077, c079, c081, c083).",
+  "Capture cadence: 24 fps material throughout; capture runs at 28-39 fps around f3929-f3997, f4105-f4174, f4289-f4358, f4463-f4535 and f4642-f4727 add duplicate pictures only (e.g. counter swaps stay 2-3 frames apart). The counter's step table uses content-unique pictures only.",
+  "Off-cut motion-peak windows opened: f3940, f3950, f3960, f4095, f4150, f4160, f4220, f4230, f4246, f4286, f4450, f4473, f4505, f4568, f4651, f4753. Windows whose frames all lie inside opened windows: f4369 (cut_c081), f4479 and f4490 (peak_f04473 + peak_f04505), f4551 (cut_c084), f4673 (peak_f04651 + cut_c085 + cut_c090), f4709 (cut_c090 + soft_4679-4703).",
+  "Cut windows opened: c076, c077, c078, c079, c080, c081, c082, c083, c084, c085, c088, c090; c086, c087 and c089 lie inside the c085 / c088 / c090 windows. Made: detail/soft_4277-4307, detail/soft_4679-4703, detail/dense_04212-04250_00.jpg, detail/dense_04270-04300_00.jpg, crops/crop_600_680_420x200_04068-04100.jpg, crops/crop_560_690_500x190_04138-04182.jpg.",
+  "Overview sheets read: overview_03840-03885 through overview_04752-04764 (20 sheets).",
+  "Curves written: v7.text-word-blur-rise.v7c6, v7.text-word-blur-rise-y.v7c6, v7.text-caption-fade-out.v7c6, v7.ui-dropdown-scale-in.v7c6, v7.ui-dropdown-fill-darken.v7c6, v7.cam-push-in-corner-settle.v7c6, v7.trans-punch-in-whip-zoom-out.v7c6, v7.trans-punch-in-whip-zoom.v7c6, v7.ui-label-pop-in.v7c6. The counter fit v7.counter-step-countdown.v7c6 was dropped with curves_tool.py (stepped count; bezier rmse 0.133 and spring 0.245 both failed the 0.05 check, D=8 against 12 f measured); the technique carries its swap-frame step table instead. A badge-pop fit for this chunk was dropped as identical to v7c2's. curves_tool.py drop rebuilt curves/index.json from the sidecars present at that time.",
+  "Footage content is not described; the player's speaker icon is ignored; no on-screen words are quoted."
+ ],
+ "replay": {
+  "of": "v7c1 S01 + S02 (f0-f230)",
+  "range": [
+   4522,
+   4765
+  ],
+  "offset_frames": 4535,
+  "evidence": "pixel match, mean abs diff 0.11-0.55 luma at quarter resolution from f4535; f4522-f4534 are the video's first 13 frames"
+ }
+}

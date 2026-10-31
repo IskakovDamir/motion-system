@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.cam-slide-in-left-settle.v8c2",
+  "file": "curves/v8.cam-slide-in-left-settle.v8c2.csv",
+  "property": "position-x",
+  "unit": "px (picture 1622 px wide)",
+  "source_samples": "/Users/damir/dev/motion-system/analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c2_S05_layout_slide.csv",
+  "column": "band_left_x_y140_160",
+  "sampled_frames": [
+    1327,
+    1374
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 223.89,
+  "to_value": 176.69,
+  "active_frames": [
+    1327,
+    1352
+  ],
+  "measured_duration_frames": 25,
+  "bezier": {
+    "x1": 0.047,
+    "y1": 1.0568,
+    "x2": 0.7046,
+    "y2": 0.9583,
+    "durationInFrames": 29,
+    "delay": -0.0,
+    "built_duration_frames": 23,
+    "rmse": 0.0185
+  },
+  "spring": {
+    "stiffness": 339.208,
+    "damping": 54.108,
+    "mass": 1,
+    "damping_ratio": 1.4689,
+    "built_duration_frames": 20,
+    "rmse": 0.1703
+  },
+  "recommended": "bezier",
+  "note": "S05 entrance at the hard cut f1327: the whole layout arrives sliding left and settles. Tracked on the left edge of the ghost card band (fill 224 on the 248 page; sub-pixel crossing of luma 236 on the mean of rows y 140-160; scratch/v8c2_S05_layout_slide.csv): 223.9 (f1327) -> 209.5 (f1328) -> 199.5 (f1330) -> 192.5 (f1332) -> 188.3 (f1334) -> 184.8 (f1336) -> 181.3 (f1341) -> 178.1 (f1346) -> 177.4 (f1352) -> 176.8 px (f1355-f1370); the right edge goes 1607.7 -> 1562.7 px with the width constant (1384-1387 px), so it is a pure translation of 47 px (2.9% W) with no scale; the right edge alone fits bezier(0.068, 1.154, 0.944, 0.948) D=29, 25 f, rmse 0.022. The mascot, header row (dot, status word, name label) and heading ride it. It continues the leftward exit of S04 (v8.cam-slide-exit-left, 22 px/f at f1324) across the cut: 14.4 px in the first frame pair f1327-f1328. From-value = first picture f1327; to-value = rest f1356-f1374"
+}

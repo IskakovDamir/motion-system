@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-line-slide-overshoot",
+  "file": "curves/v5.text-line-slide-overshoot.csv",
+  "property": "position-x",
+  "unit": "% of frame width (ink centre of title 2, rows 662-682, luma > 150; f3737-3742 = left ink edge + 355.5 px, the untapered half-width measured f3745-3750, because the right end is still off-frame)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_E_titles_x.csv",
+  "column": "t2_cx_pct",
+  "sampled_frames": [
+    3737,
+    3790
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 113.841,
+  "to_value": 74.599,
+  "active_frames": [
+    3737,
+    3755
+  ],
+  "measured_duration_frames": 18,
+  "bezier": {
+    "x1": 0.2542,
+    "y1": 1.0228,
+    "x2": 0.2723,
+    "y2": 1.1013,
+    "durationInFrames": 20,
+    "delay": 0.323,
+    "built_duration_frames": 17,
+    "rmse": 0.0092
+  },
+  "spring": {
+    "stiffness": 828.208,
+    "damping": 46.887,
+    "mass": 1,
+    "damping_ratio": 0.8146,
+    "built_duration_frames": 9,
+    "rmse": 0.2426
+  },
+  "recommended": "bezier",
+  "note": "title 2 slides in from the right edge with horizontal motion blur (first visible f3737, its centre then still off-frame at 113.8 % W, taken as the start value), overshoots 21-24 px (1.3-1.5 % W) past its rest at f3750 and rests by f3760; the centre is used because the perspective swing f3747-3762 narrows the title by 13 px (711 -> 698 px), which the earlier left-edge reading counted as part of the overshoot; the pivot of that narrowing is unknown, so the overshoot carries +-6.5 px"
+}

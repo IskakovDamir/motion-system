@@ -1,0 +1,40 @@
+{
+  "technique_id": "v2.logo-eye-glance.i2",
+  "file": "curves/v2.logo-eye-glance.i2.csv",
+  "property": "position-x",
+  "unit": "px (eye-pair centroid 600.5 -> 571.0, -29.5 px = -23% of the 126 px hex; y +16 px at the same time)",
+  "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c2_S4_hex1_eyes.csv",
+  "column": "ink_cx",
+  "sampled_frames": [
+    1186,
+    1210
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 600.52,
+  "to_value": 571.02,
+  "active_frames": [
+    1195,
+    1201
+  ],
+  "measured_duration_frames": 6,
+  "bezier": {
+    "x1": 0.5957,
+    "y1": -0.0845,
+    "x2": 0.4008,
+    "y2": 0.9912,
+    "durationInFrames": 7,
+    "delay": -0.745,
+    "built_duration_frames": 6,
+    "rmse": 0.048
+  },
+  "spring": {
+    "stiffness": 4104.705,
+    "damping": 110.987,
+    "mass": 1,
+    "damping_ratio": 0.8662,
+    "built_duration_frames": 5,
+    "rmse": 0.177
+  },
+  "recommended": "bezier",
+  "note": "hex-row mascot 1 glance down-left (track.py bbox of the dark eye bars inside the hex); bar height squashes 40 -> 33 px mid-move and recovers (blink-squash); hexes 2-6 repeat it with a 1.8 f stagger, left to right"
+}

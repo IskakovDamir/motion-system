@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.cam-whip-pan.v5c5",
+  "file": "curves/v5.cam-whip-pan.v5c5.csv",
+  "property": "position-x",
+  "unit": "% of frame width (left edge of the long footage strip, rows 350-368)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_C_whip_strip.csv",
+  "column": "strip_left_pct",
+  "sampled_frames": [
+    3317,
+    3355
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 50.801,
+  "to_value": 11.96,
+  "active_frames": [
+    3320,
+    3350
+  ],
+  "measured_duration_frames": 30,
+  "bezier": {
+    "x1": 0.9401,
+    "y1": 0.2422,
+    "x2": 0.1044,
+    "y2": 0.5599,
+    "durationInFrames": 33,
+    "delay": -1.0,
+    "built_duration_frames": 30,
+    "rmse": 0.0473
+  },
+  "spring": {
+    "stiffness": 105.038,
+    "damping": 16.666,
+    "mass": 1,
+    "damping_ratio": 0.8131,
+    "built_duration_frames": 22,
+    "rmse": 0.208
+  },
+  "recommended": "bezier",
+  "note": "whip pan right across the label/strip layout (content moves left) with heavy horizontal motion blur at f3335-3340, and the layout plane turns in 3D (strip ends slanted about 4-5 deg at f3342); the strip is also widening from a line (f3317) until it crosses the right frame edge (f3332), so the early samples include that growth; f3337 is a blurred leading edge"
+}

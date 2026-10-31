@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.trans-push-up-columns.v8c3",
+  "file": "curves/v8.trans-push-up-columns.v8c3.csv",
+  "property": "position-y",
+  "unit": "% of frame height",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c3_T2_center_column_top.csv",
+  "column": "top_y_pct",
+  "sampled_frames": [
+    1670,
+    1704
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 97.471,
+  "to_value": 24.138,
+  "active_frames": [
+    1670,
+    1696
+  ],
+  "measured_duration_frames": 26,
+  "bezier": {
+    "x1": 0.0007,
+    "y1": 0.6001,
+    "x2": 0.0002,
+    "y2": 0.8671,
+    "durationInFrames": 28,
+    "delay": -0.0,
+    "built_duration_frames": 25,
+    "rmse": 0.0096
+  },
+  "spring": {
+    "stiffness": 454.909,
+    "damping": 63.936,
+    "mass": 1,
+    "damping_ratio": 1.4988,
+    "built_duration_frames": 17,
+    "rmse": 0.2232
+  },
+  "recommended": "bezier",
+  "note": "S02 -> S03 push, incoming half: top edge of the centre column's first post card (f1670-f1672: row-mean edge scan over x 650-980, scratch/v8c3_T1_col_center_top.csv; from f1674: template centre of the card's media image minus the measured 286.4 px offset, scratch/v8c3_wall_crumb_1668-1828.csv; combined in scratch/v8c3_T2_center_column_top.csv). The column enters at the frame bottom (97.5% H at f1670) and jumps 406 px (44% H) to 53.2% H in one picture, then settles with a long exponential-like ease-out (55, 46, 36, 27, 22 ... 4 px per picture) to 24.1% H; the right and left columns repeat the identical edge values one picture (about 2 frames) and two pictures later (scratch/v8c3_T1_col_right_top.csv, scratch/v8c3_T1_col_left_top.csv): stagger centre -> right -> left. from-value = first picture f1670; the slow zoom-out begins about f1694, so the tail mixes with it."
+}

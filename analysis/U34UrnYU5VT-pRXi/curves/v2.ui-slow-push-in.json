@@ -1,0 +1,40 @@
+{
+  "technique_id": "v2.ui-slow-push-in",
+  "file": "curves/v2.ui-slow-push-in.csv",
+  "property": "scale",
+  "unit": "scale factor",
+  "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c1_S07_panel_tm.csv",
+  "column": "scale",
+  "sampled_frames": [
+    451,
+    563
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 1.0,
+  "to_value": 1.0351,
+  "active_frames": [
+    452,
+    549
+  ],
+  "measured_duration_frames": 97,
+  "bezier": {
+    "x1": 0.393,
+    "y1": 0.5706,
+    "x2": 0.6322,
+    "y2": 0.9339,
+    "durationInFrames": 106,
+    "delay": -1.024,
+    "built_duration_frames": 97,
+    "rmse": 0.002
+  },
+  "spring": {
+    "stiffness": 4.092,
+    "damping": 3.173,
+    "mass": 1,
+    "damping_ratio": 0.7844,
+    "built_duration_frames": 102,
+    "rmse": 0.0189
+  },
+  "recommended": "bezier",
+  "note": "UI panel (dialog with search field and 6-row list) scales about its own centre (~965, 601) from the cut frame f451 with no ease-in, 1.0 -> 1.0351, settled ~f556, still to the cut f564; the headline above holds still (template score >= 0.9995). 8-template similarity track, rms residual <= 0.1 px"
+}

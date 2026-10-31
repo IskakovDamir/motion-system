@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.cam-whip-exit-up",
+  "file": "curves/v7.cam-whip-exit-up.csv",
+  "property": "position-y",
+  "unit": "% of frame height",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_folder07_2736-2823_newpic.csv",
+  "column": "cy_pct",
+  "sampled_frames": [
+    2784,
+    2821
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 47.93,
+  "to_value": 36.819,
+  "active_frames": [
+    2794,
+    2821
+  ],
+  "measured_duration_frames": 27,
+  "bezier": {
+    "x1": 0.7719,
+    "y1": 0.0255,
+    "x2": 1.0,
+    "y2": 0.8327,
+    "durationInFrames": 33,
+    "delay": -6.0,
+    "built_duration_frames": 28,
+    "rmse": 0.0124
+  },
+  "spring": {
+    "stiffness": 76.443,
+    "damping": 122.999,
+    "mass": 1,
+    "damping_ratio": 7.034,
+    "built_duration_frames": 40,
+    "rmse": 0.4061
+  },
+  "recommended": "bezier",
+  "note": "exit move of the file-browser layout into the hard cut at f2824: the whole grid accelerates upward from rest (~f2789) with growing vertical motion blur (strong on f2821); folder centre y 440 -> 338 px (-11.1% H) by the last picture f2821 (13.5 px = 1.5% H per frame there); scale constant (template scale 1.000), x constant; a footer status label enters from the bottom edge as the grid rises (f2817-f2821); template on the left folder of the second row (ref f2757, scores 0.96-1.0); no settle: to-value = last picture before the cut (ease-in part only)"
+}

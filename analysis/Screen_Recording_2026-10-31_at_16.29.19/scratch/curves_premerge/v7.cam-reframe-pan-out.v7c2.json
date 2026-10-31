@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.cam-reframe-pan-out.v7c2",
+  "file": "curves/v7.cam-reframe-pan-out.v7c2.csv",
+  "property": "position-x",
+  "unit": "px of 1622 (3D pointer centre; 839 = 51.7% W -> 486 = 30.0% W)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_pointer_tmpl.csv",
+  "column": "cx",
+  "sampled_frames": [
+    1341,
+    1428
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 840.0,
+  "to_value": 484.0,
+  "active_frames": [
+    1371,
+    1416
+  ],
+  "measured_duration_frames": 45,
+  "bezier": {
+    "x1": 0.8714,
+    "y1": 0.0227,
+    "x2": 0.3467,
+    "y2": 0.996,
+    "durationInFrames": 60,
+    "delay": -8.825,
+    "built_duration_frames": 42,
+    "rmse": 0.0206
+  },
+  "spring": {
+    "stiffness": 47.392,
+    "damping": 10.674,
+    "mass": 1,
+    "damping_ratio": 0.7753,
+    "built_duration_frames": 46,
+    "rmse": 0.3328
+  },
+  "recommended": "bezier",
+  "note": "camera re-frames to make room for the status capsule: the whole scene pans so the 3D pointer goes from 51.7% to 30.0% W while pulling back (template scale 1.00 -> 0.72), with motion blur at peak speed f1396-f1408; template on the 3D pointer with scales, ref f1344"
+}

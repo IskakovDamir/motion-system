@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.ui-mockup-punch-in.v6c2",
+  "file": "curves/v6.ui-mockup-punch-in.v6c2.csv",
+  "property": "scale",
+  "unit": "scale factor (phone outline width / width at f976)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c2_P11_phone_scale.csv",
+  "column": "scale_vs_f976",
+  "sampled_frames": [
+    971,
+    1016
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.9958,
+  "to_value": 1.2208,
+  "active_frames": [
+    976,
+    1003
+  ],
+  "measured_duration_frames": 27,
+  "bezier": {
+    "x1": 1.0,
+    "y1": -0.0082,
+    "x2": 0.0,
+    "y2": 0.9639,
+    "durationInFrames": 41,
+    "delay": -8.493,
+    "built_duration_frames": 25,
+    "rmse": 0.0252
+  },
+  "spring": {
+    "stiffness": 2327.233,
+    "damping": 97.014,
+    "mass": 1,
+    "damping_ratio": 1.0055,
+    "built_duration_frames": 8,
+    "rmse": 0.2077
+  },
+  "recommended": "bezier",
+  "note": "P11 phone mock-up punch-in during reflow 2: median outline width over rows 150-450 (luma < 90) 480 px (f976) -> 586 px (f1011), centre x 805 px, outline top 63.6 -> 21.7 px; one-picture step f987 (blurred, x1.04) -> f989 (x1.17); the headline does not scale"
+}

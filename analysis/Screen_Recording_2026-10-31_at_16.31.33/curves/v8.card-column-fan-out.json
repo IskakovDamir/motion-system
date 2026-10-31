@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.card-column-fan-out",
+ "file": "curves/v8.card-column-fan-out.csv",
+ "property": "position-y",
+ "unit": "% of frame height (separation between two cards)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c3_T2_fanout_gap.csv",
+ "column": "gap_pct",
+ "sampled_frames": [
+  1678,
+  1694
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 36.057,
+ "to_value": 47.821,
+ "active_frames": [
+  1678,
+  1692
+ ],
+ "measured_duration_frames": 14,
+ "bezier": {
+  "x1": 0.0,
+  "y1": 0.0977,
+  "x2": 0.4903,
+  "y2": 1.0275,
+  "durationInFrames": 16,
+  "delay": 0.0,
+  "built_duration_frames": 14,
+  "rmse": 0.0226
+ },
+ "spring": {
+  "stiffness": 273.306,
+  "damping": 28.67,
+  "mass": 1,
+  "damping_ratio": 0.8671,
+  "built_duration_frames": 16,
+  "rmse": 0.0551
+ },
+ "recommended": "bezier",
+ "note": "S03: in each column the upper post card slides up out from behind the first card until the masonry gap is open: separation of the two cards' template centres in the centre column (scratch/v8c3_wall_gallery_1676-1712.csv minus scratch/v8c3_wall_crumb_1668-1828.csv, combined in scratch/v8c3_T2_fanout_gap.csv); 331 -> 439 px. The upper card is hidden behind the first card at f1676 and first visible f1678, so from-value = first picture and the real start is 1-2 frames earlier; to-value = f1694, after which the upper card leaves the top of the frame. Right column f1680, left column f1683 (same centre -> right -> left order and one-picture stagger as the column rise).",
+ "chunk_curve_id": "v8.card-column-fan-out.v8c3"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.cam-reframe-pullback.push.v5c2",
+  "file": "curves/v5.cam-reframe-pullback.push.v5c2.csv",
+  "property": "scale",
+  "unit": "scale factor (card plus button template, 1.0 = f1491)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_E_card_plus.csv",
+  "column": "plus_scale",
+  "sampled_frames": [
+    1462,
+    1491
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.871,
+  "to_value": 0.999,
+  "active_frames": [
+    1472,
+    1487
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.8065,
+    "x2": 0.0,
+    "y2": 0.8783,
+    "durationInFrames": 13,
+    "delay": 2.972,
+    "built_duration_frames": 11,
+    "rmse": 0.1973
+  },
+  "spring": {
+    "stiffness": 2472.837,
+    "damping": 145.71,
+    "mass": 1,
+    "damping_ratio": 1.4651,
+    "built_duration_frames": 8,
+    "rmse": 0.0688
+  },
+  "recommended": "spring",
+  "note": "c2S4 second re-frame right after the whip lands: push-in x1.15 with a move up/right while the sphere glow collapses: plus button template scale 0.887 (f1462) -> 0.871 (f1470-f1472) -> 0.907 (f1475, blur) -> 0.972 (f1477) -> 0.985 -> 0.991 -> 0.996 -> 0.998 (f1487) -> 0.999 (f1491); its centre (347.5, 580) -> (378, 567) -> (445, 543) -> (468.5, 526) -> (479, 514.5) -> (486.5, 506.5) -> (494.5, 503.5) -> (497.5, 503) px (f1472-f1491); card top edge 247.1 -> 121.7 px; the pull-back re-frame from f1493 (scale 1.15 -> 1.00 in its own reference) returns to the landing framing; scratch/v5c2_E_card_plus.csv"
+}

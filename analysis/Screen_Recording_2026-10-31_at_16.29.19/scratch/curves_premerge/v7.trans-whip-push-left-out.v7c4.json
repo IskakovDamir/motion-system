@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-whip-push-left-out.v7c4",
+  "file": "curves/v7.trans-whip-push-left-out.v7c4.csv",
+  "property": "position-x",
+  "unit": "% of frame width (centre of a 380 x 82 px template cut from the right part of line 2 at f2713)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_line2_exit_tmpl_2700-2735_newpic.csv",
+  "column": "cx_pct",
+  "sampled_frames": [
+    2709,
+    2734
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 78.298,
+  "to_value": 26.88,
+  "active_frames": [
+    2714,
+    2734
+  ],
+  "measured_duration_frames": 20,
+  "bezier": {
+    "x1": 0.3388,
+    "y1": 0.0067,
+    "x2": 1.0,
+    "y2": 0.1934,
+    "durationInFrames": 20,
+    "delay": -2.367,
+    "built_duration_frames": 17,
+    "rmse": 0.0914
+  },
+  "spring": {
+    "stiffness": 33.309,
+    "damping": 0.5,
+    "mass": 1,
+    "damping_ratio": 0.0433,
+    "built_duration_frames": 197,
+    "rmse": 0.8195
+  },
+  "recommended": "bezier",
+  "note": "outgoing half of the leftward whip into the hard cut f2736, re-tracked: line 2 (at rest x 296-1452 px, y 33-104 px after the Z5 reframe settles at f2709-f2711; f2712-f2713 repeat f2711) slides off to the left, accelerating from rest to about 79-108 px per frame by f2729-f2734 (237 px between the last two pictures, f2731 -> f2734) with growing horizontal motion blur (strokes smear into streaks); position = template match (normalised cross-correlation, score 1.00 at rest, 0.58-0.63 under the heaviest blur), which the blur does not bias, while the earlier bbox right end lagged by up to 59 px at f2731 (scratch/v7c4_line2_exit_x1_newpic.csv); samples f2709-f2734, capture duplicates removed (picture difference above 0.05 luma); no settle: to-value = last picture before the cut; the card with the cursor is dragged down-right at the same time (v7.cursor-drag-file-in); the spring cannot represent an ease-in without a settle; shape-matched bezier in chunks/v7c4.md"
+}

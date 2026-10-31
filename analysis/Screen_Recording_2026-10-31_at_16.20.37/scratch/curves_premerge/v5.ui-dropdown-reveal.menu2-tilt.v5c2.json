@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.ui-dropdown-reveal.menu2-tilt.v5c2",
+  "file": "curves/v5.ui-dropdown-reveal.menu2-tilt.v5c2.csv",
+  "property": "position-y",
+  "unit": "px (content y, chip-1 label template centre)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_E_chip2_press.csv",
+  "column": "c1_cy",
+  "sampled_frames": [
+    913,
+    955
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 465.0,
+  "to_value": 290.0,
+  "active_frames": [
+    927,
+    951
+  ],
+  "measured_duration_frames": 24,
+  "bezier": {
+    "x1": 0.5889,
+    "y1": 0.2419,
+    "x2": 0.1676,
+    "y2": 0.6846,
+    "durationInFrames": 19,
+    "delay": 1.851,
+    "built_duration_frames": 19,
+    "rmse": 0.0402
+  },
+  "spring": {
+    "stiffness": 200.882,
+    "damping": 23.241,
+    "mass": 1,
+    "damping_ratio": 0.8199,
+    "built_duration_frames": 17,
+    "rmse": 0.0745
+  },
+  "recommended": "bezier",
+  "note": "menu-2 open: pure camera tilt (content up), no push-in: chip 1 and chip 3 label templates (ref f982) keep scale 0.997-1.005 on every picture f927-f960, only chip 2 changes size (its own press, v5.ui-chip-press); chip-1 label y 465 (f913-f927) -> 461 (f930) -> 448 -> 418 -> 373 (f937) -> 336 -> 314 -> 301 -> 294 -> 290 (f951) -> 289 (f953) -> 290 (f955); 176 px = 19.2 % H; scratch/v5c2_E_chip2_press.csv"
+}

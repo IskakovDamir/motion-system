@@ -1,0 +1,704 @@
+{
+ "video": "U34UrnYU5VT-pRXi",
+ "key": "v2",
+ "chunk": "v2c1",
+ "frames": [
+  0,
+  900
+ ],
+ "cut_decisions": [
+  {
+   "id": "c001",
+   "frame": 103,
+   "status": "confirmed",
+   "reason": "anchor of the soft sphere-collapse transition f95-f114, not a hard replacement: f102 -> f103 is continuous (the honeycomb is wrapping into a globe; silhouette 1920 -> 1845 px wide, centre magnification 0.960 -> 0.935); the content detector fired on the fast change"
+  },
+  {
+   "id": "c002",
+   "frame": 789,
+   "status": "confirmed",
+   "reason": "hard cut: f788 is the settled 3-word text card, f789 the complete team-chat window (gray diff 125.3e-3 in one frame, 0 before, 0.8e-3 after from the push-in)"
+  },
+  {
+   "id": "c003",
+   "frame": 901,
+   "status": "confirmed",
+   "reason": "hard cut exactly at the chunk edge: f900 is the chat window with 4 messages, f901 a new centred text card showing its first word (diff 140.4e-3; f902-f908 unchanged, second word f909); both sides inspected (f900 and the look-ahead f901-f915)"
+  }
+ ],
+ "boundaries": [
+  {
+   "frame": 1,
+   "type": "hard-cut",
+   "note": "poster frame f0 (identical to f181) -> empty background f1-f6; missed by the detectors (diff 32.7e-3)"
+  },
+  {
+   "start": 95,
+   "end": 114,
+   "type": "sphere-collapse",
+   "frames": 20,
+   "shared": "nothing: the honeycomb wraps into a globe that shrinks into a point at the frame centre (960, 540; 22 px at f113) and is gone at f114, the same frame the next layout's first word appears left of centre (x 560-746, caps y 490-577); no empty frame; the logo ring starts popping in at f115",
+   "technique": "v2.trans-sphere-collapse",
+   "curve": "v2.trans-sphere-collapse.v2c1",
+   "detail": "detail/soft_95-114"
+  },
+  {
+   "frame": 226,
+   "type": "hard-cut",
+   "note": "staggered cut-out missed by the detectors: headline removed in one frame at f225 while the logo ring keeps turning, ring removed at f226 (one empty frame), mascot pops in at the frame centre from f227"
+  },
+  {
+   "frame": 339,
+   "type": "hard-cut",
+   "note": "logo lockup -> text card; missed by the detectors (diff 17.0e-3, 0 on both neighbours)"
+  },
+  {
+   "frame": 395,
+   "type": "hard-cut",
+   "note": "text card -> text card at the same size and band; missed (diff 13.7e-3)"
+  },
+  {
+   "frame": 451,
+   "type": "hard-cut",
+   "note": "text card -> headline + UI dialog; missed (diff 26.3e-3)"
+  },
+  {
+   "frame": 564,
+   "type": "hard-cut",
+   "note": "headline + UI dialog -> headline + chat input; missed (diff 18.9e-3)"
+  },
+  {
+   "frame": 676,
+   "type": "hard-cut",
+   "note": "chat input -> full agent-app UI; missed (diff 52.2e-3); content continuity: the prompt being typed in S08 is the sent bubble at the top of S09 (no positional match)"
+  },
+  {
+   "frame": 733,
+   "type": "hard-cut",
+   "note": "agent-app UI -> text card; missed (diff 41.9e-3)"
+  },
+  {
+   "frame": 789,
+   "type": "hard-cut",
+   "note": "c002"
+  },
+  {
+   "frame": 901,
+   "type": "hard-cut",
+   "note": "c003, exactly at the chunk edge; S11 ends at f900"
+  }
+ ],
+ "segments": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 0,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "one-frame poster: the settled headline + 16-logo ring layout of S03 (identical to f181)"
+  },
+  {
+   "id": "S02",
+   "start": 1,
+   "end": 104,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "6 empty frames, then a honeycomb of hex mascot cells fills the frame from one cell on a constant-speed radial front (19.6 px/f, each cell a 7-frame fade + scale pop); every cell glances once at a random time, the glances trailing the fill out to the frame edges until f94 (no still hold); from f95 the field wraps into a globe and collapses (transition T1)"
+  },
+  {
+   "id": "S03",
+   "start": 105,
+   "end": 225,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "centred 4-word headline built by single-frame word pops (8-9 f/word) inside a 2:1 elliptical ring of 16 logo icons that pop in as opposite pairs in a clockwise sweep and orbit clockwise at a constant 0.3565 deg/f; headline cut out at f225, ring at f226"
+  },
+  {
+   "id": "S04",
+   "start": 226,
+   "end": 338,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "large hex mascot pops in at the centre (scale 0.32 -> 1, ease-out), glances three times with eye squash, blinks once, then slides 33% W left and shrinks to 0.40 (ease-in-out) as a one-word lockup pops in beside it"
+  },
+  {
+   "id": "S05",
+   "start": 339,
+   "end": 394,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "text card: one centred 3-word line built by single-frame word pops (7 f/word), static"
+  },
+  {
+   "id": "S06",
+   "start": 395,
+   "end": 450,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "text card: one centred 6-word line built by single-frame word pops (5-6 f/word), static"
+  },
+  {
+   "id": "S07",
+   "start": 451,
+   "end": 563,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "small headline at the top (word pops, 6 f/word) over a product UI dialog (search pill + 6-row list) that slowly pushes in 3.5% about its own centre from the cut frame (ease-out); headline fixed"
+  },
+  {
+   "id": "S08",
+   "start": 564,
+   "end": 675,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "headline (word pops) above a chat input pill that pushes in 2.0%; a prompt is typed character by character (no caret) and the send icon switches at the first character; cut while typing"
+  },
+  {
+   "id": "S09",
+   "start": 676,
+   "end": 732,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "full-bleed three-column agent-app UI pushing in 5.0% about the frame centre within 57 frames; stepped UI micro-animations: avatar blink and glances, status-label shimmer, pulsing status mascot"
+  },
+  {
+   "id": "S10",
+   "start": 733,
+   "end": 788,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "text card: one centred 3-word line built by single-frame word pops (7-8 f/word), static"
+  },
+  {
+   "id": "S11",
+   "start": 789,
+   "end": 900,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "team-chat window (dark sidebar, white pane) pushing in 3.0% about the frame centre while four messages rise 9-13 px and fade in, one every 25-26 frames (25.2 f cadence); hard cut out at f901 (c003)"
+  }
+ ],
+ "techniques": [
+  {
+   "id": "v2.trans-sphere-collapse",
+   "category": "trans",
+   "description": "the flat honeycomb wraps into a 3D globe (left/right edges curl first, then top/bottom, round from f108) that shrinks into a point at the frame centre; in linear scale an asymmetric ease-in-out (long ease-in, speed peak at f107-f108, shorter ease-out into a 22 px dot at f113), accelerating only in relative scale; the dot vanishes in one frame and the next layout appears in that frame (f114)",
+   "instances": [
+    [
+     95,
+     114
+    ]
+   ],
+   "reference_frames": [
+    100,
+    113
+   ],
+   "measured": {
+    "duration_frames": 20,
+    "easing": "bezier(0.781, -0.015, 0.498, 0.505) D=15 (active f100-f113, delay -2.8 f; rmse 0.040) / spring {475.7, 32.92, mass 1} (0.355); the bezier carries the speed peak (t 0.66) and an ease-out that ends at 0.39 of the peak speed (the measured tail is gentler: 0.07 of the peak at f113); placed at its delay it is within 0.013 of every sample f97-f114 (rmse 0.007)",
+    "values": "centre magnification (ECC 400x400 ROI) 1.0000 f94, 0.9999 f95-f96, 0.9994, 0.9975, 0.9937, 0.9871, 0.9762, 0.9598, 0.9355, 0.9011 f104, 0.8530 f105, 0.7912, 0.7093, 0.6036 f108; silhouette w x h 1845x1080 f103, 1692x1080, 1499x1080, 1258x1035, 968x877, 694x678 f108, 462x453, 265x261, 122x119, 41x37, 22x22 f113, gone f114; curve uses the centre magnification to f104 and sqrt(covered area) from f105 (0.838, 0.718, 0.572, 0.424, 0.283, 0.165, 0.076, 0.023, 0.013, 0); linear speed: size step per frame 0.0005 (f97) rising to 0.0344 (f104) on the centre magnification, then on the silhouette 0.120 (f106), 0.146, 0.148 (f108, peak), 0.141, 0.118, 0.089, 0.053, 0.011 (f113); left/right edge speed 79/74 (f104), 101/92, 125/116, 148/142 (f107, peak), 138/136, 114/118, 100/97, 72/71, 36/45, 12/7 px/f (f113); top/bottom 33/12 (f106), 75/83, 96/103, 110/115 (f109, peak), 97/95, 69/73, 42/40, 6/9 px/f (f113); frame-to-frame size ratio 0.86, 0.80, 0.74, 0.67, 0.58, 0.46, 0.31 (f106-f112), 0.54 (f113), so it accelerates only in relative scale; per-frame values scratch/v2c1_T1_speed.csv"
+   },
+   "curves": [
+    "v2.trans-sphere-collapse.v2c1"
+   ]
+  },
+  {
+   "id": "v2.grid-hex-radial-pop",
+   "category": "grid",
+   "description": "a honeycomb of hex mascot cells (147 x 133 px, touching; 6 shades at f90: luma 17, 98-104, 129, 131-133, 139, 182; near-black eye bars on the 129 and 182 cells, white on all others, fixed per cell, scratch/v2c1_S02_eyecolour_f90.csv) fills the frame from one cell: a radial front at constant speed starts each cell, which fades in while scaling 0.59 -> 1 about its own centre",
+   "instances": [
+    [
+     7,
+     64
+    ]
+   ],
+   "reference_frames": [
+    6,
+    13
+   ],
+   "measured": {
+    "duration_frames": 7,
+    "easing": "bezier(0.244, 1.126, 0.813, 0.879) D=7 (first cell opacity; rmse 0.016) / spring {3780.4, 151.82, mass 1} (0.091)",
+    "values": "first cell luma 250 -> 204, 176, 160, 151, 146, 144, 140, 140, 139 (f6-f15), height 79, 104, 116, 124, 128, 130, 132, 133 px (f7-f14); start frame = 4.05 + 0.0509 x distance from the first cell (19.6 px/f = 1.02% W/f), jitter +-2.1 f rms over 136 cells; frame filled f57"
+   },
+   "curves": [
+    "v2.grid-hex-radial-pop.v2c1"
+   ]
+  },
+  {
+   "id": "v2.logo-eye-glance",
+   "category": "logo",
+   "description": "the mascot's two eye bars slide together to a new look direction with an ease-in-out and squash vertically mid-move; small cells glance once at a random time after landing, so the glances trail the fill wave out to the frame edges and run until the field collapses; app avatars play it stepped",
+   "instances": [
+    [
+     34,
+     94
+    ],
+    [
+     254,
+     262
+    ],
+    [
+     275,
+     284
+    ],
+    [
+     299,
+     308
+    ],
+    [
+     681,
+     682
+    ],
+    [
+     688,
+     690
+    ],
+    [
+     700,
+     704
+    ],
+    [
+     729,
+     732
+    ]
+   ],
+   "reference_frames": [
+    254,
+    262
+   ],
+   "measured": {
+    "duration_frames": 8,
+    "easing": "bezier(0.586, -0.015, 0.380, 1.029) D=9 (rmse 0.029) / spring {1748.0, 67.58, mass 1} (0.113)",
+    "values": "big mascot glance 1 x offset 48.0, 47.5, 44.8, 36.5, 20.1, -5.9, -28.0, -40.5, -46.1, -48.0 px (f253-f262), y -40 -> +8; eye-pair height 120 -> 99 (mid-move) -> 120 px, width 106 -> 112 -> 106; glances 2 and 3 the same in 8-9 f; hex cells: one glance each (153 cells, none twice), 4-6 f, 17-42 f after the cell's first visible frame (median 30), to random offsets within +-17 x / +-15 y px (rest look +17/-14 px); glance starts f34-f65 within 350 px of the first cell, f43-f80 at 350-700 px, f58-f94 beyond 700 px; every frame f77-f94 has an edge cell glancing and the last five (left/right edge cells, starts f89-f95) run into the collapse that starts at f95 (scratch/v2c1_S02_glances.csv)"
+   },
+   "curves": [
+    "v2.logo-eye-glance.v2c1"
+   ]
+  },
+  {
+   "id": "v2.logo-eye-blink",
+   "category": "logo",
+   "description": "eye bars squash vertically to about 30% and reopen; the app avatar does it stepped (squint, closed 2 f, open)",
+   "instances": [
+    [
+     290,
+     296
+    ],
+    [
+     683,
+     689
+    ]
+   ],
+   "reference_frames": [
+    290,
+    296
+   ],
+   "measured": {
+    "duration_frames": 7,
+    "easing": "keyframes (close 4 f, open 3 f)",
+    "values": "eye-pair height 120 -> 112, 88, 46, 36 (f293), 80, 108, 120 (f296) px, position fixed; app avatar: 18 px f681-f682, 8 px f683-f685, closed f686-f687, 17-18 px f688-f689, 22-23 px from f690"
+   },
+   "curves": []
+  },
+  {
+   "id": "v2.text-word-pop",
+   "category": "text",
+   "description": "the words of a pre-laid, centred line appear one at a time, each in a single frame at full opacity and final position (no fade, slide or scale); the line fills left to right",
+   "instances": [
+    [
+     114,
+     139
+    ],
+    [
+     322,
+     322
+    ],
+    [
+     339,
+     353
+    ],
+    [
+     395,
+     422
+    ],
+    [
+     451,
+     469
+    ],
+    [
+     564,
+     586
+    ],
+    [
+     733,
+     748
+    ]
+   ],
+   "reference_frames": [
+    395,
+    422
+   ],
+   "measured": {
+    "duration_frames": 0,
+    "easing": "step",
+    "values": "S03 f114, f122, f131, f139 (8.3 f/word); S05 f339, f346, f353 (7); S06 f395, f401, f406, f411, f417, f422 (5.4); S07 f451, f457, f463, f469 (6); S08 f564, f571, f578, f586 (7.3); S10 f733, f741, f748 (7.5); lockup word f322; word pops lead detected audio onsets by 3-4 f in most cases"
+   },
+   "curves": []
+  },
+  {
+   "id": "v2.icon-ring-pop-in",
+   "category": "icon",
+   "description": "16 logo icons on an elliptical ring pop in as diametrically opposite pairs in a clockwise sweep from 3 and 9 o'clock; each scales up from about 0.59 and fades in",
+   "instances": [
+    [
+     115,
+     134
+    ]
+   ],
+   "reference_frames": [
+    117,
+    125
+   ],
+   "measured": {
+    "duration_frames": 8,
+    "easing": "bezier(0.297, 1.159, 0.859, 0.868) D=8 (scale; rmse 0.006) / spring {2551.5, 102.37, mass 1} (0.099)",
+    "values": "scale 0.585, 0.735, 0.835, 0.895, 0.935, 0.955, 0.975, 0.975, 0.995 (f117-f125, rest 0.995 on this scale grid); pairs first visible f115, f117, f118, f120, f121, f123, f124, f126 (1.57 f per pair); ink 0.03, 0.20, 0.40, 0.59, 0.72, 0.83, 0.91, 0.94, 0.96 of settled over a logo's first 9 frames"
+   },
+   "curves": [
+    "v2.icon-ring-pop-in.v2c1"
+   ]
+  },
+  {
+   "id": "v2.icon-ring-orbit",
+   "category": "icon",
+   "description": "the 16 icons ride a 2:1 ellipse around the centred headline, neighbours alternating between an inner and an outer track, clockwise at a constant angular speed; icons stay upright and keep their size (2D)",
+   "instances": [
+    [
+     115,
+     225
+    ]
+   ],
+   "reference_frames": [
+    118,
+    224
+   ],
+   "measured": {
+    "duration_frames": 111,
+    "easing": "linear (phase within 0.1 deg of a straight line; position fit rms 0.49 px over 1488 samples)",
+    "values": "centre (959.6, 539.5), a 727.4 px (37.9% W), b 364.3 px (33.7% H), tracks x0.90 / x1.10, 22.5 deg spacing, +0.3565 deg/f clockwise (1010 f per turn)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v2.logo-mark-pop-in",
+   "category": "logo",
+   "description": "the large hex mascot grows from about a third of its size to full about the frame centre with a strong ease-out while fading in",
+   "instances": [
+    [
+     227,
+     247
+    ]
+   ],
+   "reference_frames": [
+    227,
+    243
+   ],
+   "measured": {
+    "duration_frames": 16,
+    "easing": "bezier(0.155, 0.835, 0.498, 0.999) D=21 (scale; rmse 0.013) / spring {449.6, 91.26, mass 1} (0.078)",
+    "values": "scale 0.316, 0.441, 0.553, 0.638, 0.707, 0.763, 0.806, 0.843, 0.872, 0.899 (f227-f236), 1.0 from f245 (rest 376 x 340 px); opacity 0.185, 0.339, 0.468, 0.567, 0.644, 0.717, 0.773, 0.815, 0.854, 0.884 (f227-f236), 1.0 at f247"
+   },
+   "curves": [
+    "v2.logo-mark-pop-in.v2c1"
+   ]
+  },
+  {
+   "id": "v2.logo-lockup-slide",
+   "category": "logo",
+   "description": "the mascot slides left from the frame centre and shrinks into the mark of a logo lockup on one symmetric ease-in-out; the wordmark pops in at its final place mid-slide",
+   "instances": [
+    [
+     312,
+     326
+    ]
+   ],
+   "reference_frames": [
+    314,
+    324
+   ],
+   "measured": {
+    "duration_frames": 10,
+    "easing": "bezier(0.648, 0.001, 0.351, 1.000) D=14 (rmse 0.001) / spring {729.5, 43.60, mass 1} (0.117)",
+    "values": "centre x 959.5 -> 319.5 (-33.3% W): 958.5, 955.5, 947.0, 928.5, 897.0, 842.5, 760.0, 640.0, 519.0, 436.5, 383.0, 350.5, 332.0, 323.5, 320.0 (f312-f326); scale 1.0 -> 0.404 on the same progress (within 0.01); word pop f322"
+   },
+   "curves": [
+    "v2.logo-lockup-slide.v2c1"
+   ]
+  },
+  {
+   "id": "v2.ui-slow-push-in",
+   "category": "ui",
+   "description": "the UI layer (never the headline) scales up about its own centre from the cut frame with no ease-in, decelerating to rest near the end of the segment; the duration follows the segment length (S09, a 57-frame segment, has its own curve v2.ui-slow-push-in.short.v2c1: same normalised shape at about half the duration, a duration variant, not a second technique); a layer move, not a camera move: in S07 and S08 the headline beside the UI stays fixed (template scores >= 0.9995 / 0.9999), in S09 and S11 the scaled UI happens to fill the picture (full-bleed app; window on the flat background)",
+   "instances": [
+    [
+     451,
+     563
+    ],
+    [
+     564,
+     675
+    ],
+    [
+     676,
+     732
+    ],
+    [
+     789,
+     900
+    ]
+   ],
+   "reference_frames": [
+    452,
+    549
+   ],
+   "measured": {
+    "duration_frames": 97,
+    "easing": "bezier(0.393, 0.571, 0.632, 0.934) D=106 (S07; rmse 0.002) / spring {4.09, 3.17, mass 1} (0.019); S09 instance bezier(0.378, 0.529, 0.569, 0.899) D=53 (active f676-f726 = 50 f; rmse 0.008) / spring {14.96, 5.90, mass 1} (0.177); the S07 bezier at D=53 fits the S09 samples with rmse 0.008",
+    "values": "S07 dialog 1 -> 1.0351 about (974, 601), 50% at +38 f, 98% at +98 f; S08 input bar 1 -> 1.0196 about (959, ~666-680), 50% +37, 98% +94; S09 app 1 -> 1.0499 about (957, 543), 50% +19, 98% +50 (57 f segment); S11 window 1 -> 1.0297 about (959, 541), 50% +38, 98% +98; same normalised shape in all four"
+   },
+   "curves": [
+    "v2.ui-slow-push-in.v2c1",
+    "v2.ui-slow-push-in.short.v2c1"
+   ]
+  },
+  {
+   "id": "v2.text-typewriter-char",
+   "category": "text",
+   "description": "a prompt is typed into a chat input one character at a time with an uneven rhythm, no caret; the grey placeholder is replaced by the first character",
+   "instances": [
+    [
+     575,
+     671
+    ]
+   ],
+   "reference_frames": [
+    575,
+    671
+   ],
+   "measured": {
+    "duration_frames": 96,
+    "easing": "steps",
+    "values": "39 characters incl. 7 spaces in 96 f = 2.5 f/char; per-step gaps 2-5 f, one 8 f pause (f596-f604); cut off mid-word 5 f after the last character"
+   },
+   "curves": []
+  },
+  {
+   "id": "v2.ui-send-button-swap",
+   "category": "ui",
+   "description": "the send button's icon switches from a waveform glyph to an arrow in the frame of the first typed character, the arrow brightening over 2 frames",
+   "instances": [
+    [
+     575,
+     577
+    ]
+   ],
+   "reference_frames": [
+    574,
+    577
+   ],
+   "measured": {
+    "duration_frames": 2,
+    "easing": "step + 2-frame brighten",
+    "values": "arrow max luma 235, 233, 255 (f575-f577); disc luma 27 throughout"
+   },
+   "curves": []
+  },
+  {
+   "id": "v2.ui-status-text-shimmer",
+   "category": "ui",
+   "description": "a darker band sweeps left to right across a grey status label (and its search icon), stepped like a UI capture",
+   "instances": [
+    [
+     676,
+     687
+    ],
+    [
+     712,
+     723
+    ]
+   ],
+   "reference_frames": [
+    712,
+    723
+   ],
+   "measured": {
+    "duration_frames": 12,
+    "easing": "steps every 2-3 f, about 9 px/f",
+    "values": "label luma about 205 -> about 170 inside the band; band centre x 506-511, 528, 566, 605, 608 (f712-f723, zoom removed); sweeps start about 36 f apart"
+   },
+   "curves": []
+  },
+  {
+   "id": "v2.ui-status-avatar-pulse",
+   "category": "ui",
+   "description": "the small status mascot fades from black to mid-grey and back while the agent is working, stepped",
+   "instances": [
+    [
+     682,
+     724
+    ]
+   ],
+   "reference_frames": [
+    682,
+    724
+   ],
+   "measured": {
+    "duration_frames": 42,
+    "easing": "stepped ramps (1-2 f steps)",
+    "values": "luma 22, 27, 32, 46, 56, 75, 86, 96, 100, 103, 105 (f681-f702), back 97, 84, 70, 55, 44, 31, 25, 22 (f707-f724)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v2.ui-list-item-rise-fade",
+   "category": "ui",
+   "description": "chat messages appear one at a time below the previous ones: each rises a few pixels and fades in; earlier messages stay put",
+   "instances": [
+    [
+     796,
+     803
+    ],
+    [
+     821,
+     828
+    ],
+    [
+     847,
+     853
+    ],
+    [
+     872,
+     878
+    ]
+   ],
+   "reference_frames": [
+    871,
+    878
+   ],
+   "measured": {
+    "duration_frames": 7,
+    "easing": "bezier(0.209, 0.884, 0.295, 0.986) D=10 (opacity; rmse 0.026) / spring {3357.1, 123.74, mass 1} (0.034)",
+    "values": "rise 9, 11, 12, 13 px for messages 1-4 (window coordinates); M4 top 658, 652, 649, 647, 646, 645 (f872-f877), mean luma 249.2, 245.7, 243.8, 242.7, 242.1, 241.8, 241.5 (f872-f878); first visible f796, f821, f847, f872 (25, 26, 25 f apart); fitted with the M4 curve the fades start at f795.6, f820.8, f846.0, f871.2, one every 25.2 f (scratch/v2c1_S11_msg_starts.csv)"
+   },
+   "curves": [
+    "v2.ui-list-item-rise-fade.v2c1"
+   ]
+  }
+ ],
+ "typography_stills": [
+  "type/v2c1-S03-1_f00114.png",
+  "type/v2c1-S03-1_f00139.png",
+  "type/v2c1-S03-1_f00224.png",
+  "type/v2c1-S04-1_f00322.png",
+  "type/v2c1-S04-1_f00326.png",
+  "type/v2c1-S04-1_f00338.png",
+  "type/v2c1-S05-1_f00339.png",
+  "type/v2c1-S05-1_f00353.png",
+  "type/v2c1-S05-1_f00394.png",
+  "type/v2c1-S06-1_f00395.png",
+  "type/v2c1-S06-1_f00422.png",
+  "type/v2c1-S06-1_f00450.png",
+  "type/v2c1-S07-1_f00451.png",
+  "type/v2c1-S07-1_f00469.png",
+  "type/v2c1-S07-1_f00563.png",
+  "type/v2c1-S08-1_f00564.png",
+  "type/v2c1-S08-1_f00586.png",
+  "type/v2c1-S08-1_f00675.png",
+  "type/v2c1-S08-2_f00575.png",
+  "type/v2c1-S08-2_f00671.png",
+  "type/v2c1-S09-ui_f00676.png",
+  "type/v2c1-S09-ui_f00732.png",
+  "type/v2c1-S10-1_f00733.png",
+  "type/v2c1-S10-1_f00748.png",
+  "type/v2c1-S10-1_f00788.png",
+  "type/v2c1-S11-ui_f00789.png",
+  "type/v2c1-S11-ui_f00797.png",
+  "type/v2c1-S11-ui_f00900.png"
+ ],
+ "uncertain": [
+  {
+   "what": "start scale/opacity of the pop-ins before their first visible frame",
+   "range": "f6 (cells), f114-f116 (logos), f226 (mascot)",
+   "reason": "the element is invisible in the frame before; the first visible frames already show scale 0.59 (cell), 0.585 (logo), 0.316 (mascot), so the curves start at the first visible value"
+  },
+  {
+   "what": "whether the globe also spins about its vertical axis",
+   "range": "f108-f113",
+   "reason": "the globe is 694 px and shrinking to 22 px; individual cells are too small to track after f108 (ECC fails, cc 0.32 at f109); in-plane rotation is below 0.2 deg up to f107"
+  },
+  {
+   "what": "cap height of the S07 top headline",
+   "range": "f469",
+   "reason": "its only capital is round (50 px including overshoot); no flat capital to measure, +-2 px"
+  },
+  {
+   "what": "vertical fixed point of the S08 push-in",
+   "range": "f564-f675",
+   "reason": "all templates sit on the bar's centre line (y about 680), so the y of the zoom centre is poorly constrained (estimate 666, +-15 px)"
+  },
+  {
+   "what": "original typeface",
+   "range": "all text events",
+   "reason": "neo-grotesque with a double-storey a and x-height 0.77 of the cap height; Inter is the closest free match, the original is not identified"
+  },
+  {
+   "what": "capture rate of the app UI micro-animations",
+   "range": "f676-f732",
+   "reason": "avatar, shimmer and pulse states are held 2-3 frames (24-30 fps material inside the 60 fps edit); the exact rate cannot be fixed from 57 frames"
+  },
+  {
+   "what": "cause of the one-frame text flickers",
+   "range": "f494 (S07), f807 (S11)",
+   "reason": "all labels change slightly in one frame with no geometric step in the push-in tracks; looks like a text re-raster during the zoom"
+  },
+  {
+   "what": "end of the last cell glances",
+   "range": "f95-f100",
+   "reason": "five edge cells (centres (1870, 198.5), (1870, 726.5), (0, 660.5), (0, 264.5), (1870, 66.5); starts f89, f91, f92, f94, f94-f95) are still glancing at f94-f95; from f95 the collapse moves the whole field, so their end frames cannot be separated from it"
+  }
+ ],
+ "notes": [
+  "All 11 segments are GRAPHICS; no live-action footage anywhere in f0-f900 (every overview sheet sheets/overview_00000-00045.jpg .. overview_00864-00909.jpg checked). The two still photo avatars inside the S11 chat UI are treated as UI images and not described.",
+  "Detector misses: 8 hard cuts (f1, f226, f339, f395, f451, f564, f676, f733) were found in motion.csv (single-frame gray-diff spikes with zero diff on both neighbours) and on the sheets; the only soft transition (f95-f114) was caught by c001 in its middle. Motion peaks f340, f396, f452, f565, f677, f732 are these missed cuts (marked at_cut false only because the cut detectors missed them); f47 is the honeycomb growth, f225 the staggered cut-out, f319 the lockup slide.",
+  "Edit grid: boundaries f114, f226, f339, f395, f451, f564, f676, f733, f789, f901 are 112, 113, 56, 56, 113, 112, 57, 56, 112 frames apart (787 f = 14 x 56.2 f, i.e. 2 beats at about 128 BPM); all 10 of them, and the f1 cut, come 3-5 f before a detected onset with no exception (f1 -3, f114 -3, f226 -3, f339 -4, f395 -3, f451 -4, f564 -4, f676 -4 vs f680, f733 -3, f789 -4, f901 -5; f676 is also 4 f after the weaker onset f672), as do most first words.",
+  "Font sizes repeat: every large text line (S03, S05, S06, S08, S10) has an 88-89 px cap or ascender height at the same band (caps y 490-577) except the S08 headline (y 324-412, above the input) and the smaller S07 top headline; the lockup word is larger (97 px).",
+  "The push-in never moves the headline layer: in S07 and S08 the headline template stays at a constant position (score >= 0.9995) while the UI layer scales; in S09 and S11 there is no headline and the whole picture scales about the frame centre.",
+  "Earlier attempt (scratch/attempt1_inspect_v2c1.md): it fitted no curves, so there was nothing to drop. Reused after spot checks: S03_logo_tracks.csv and the ring fit (re-run: rms 0.49 px; confirmed by a new fine-scale template track of one logo, scratch/v2c1_S03_logo12_scale.csv), T1_centre_ecc.csv (consistent with the new silhouette track scratch/v2c1_T1_sphere.csv). Its other scratch files (S04_*, S08_*, S09_*, S10_*, S12_*) use its own segment numbering and are superseded by the v2c1_* files; its type/ stills (S00-poster, S02-hexfield, S03-head, S08-head, S09-head, S10-app, S12-chat) are not used here.",
+  "Measurement files: scratch/v2c1_S02_cell_first.csv (front timing), v2c1_S02_cellstate_7-100.csv (cell shades, eye offsets), v2c1_S02_cell1.csv, v2c1_T1_sphere.csv, v2c1_T1_size.csv, v2c1_S03_logo_order.csv, v2c1_S03_logo12_scale.csv, v2c1_S04_mascot.csv, v2c1_S04_mascot_derived.csv, v2c1_S07_panel_tm.csv, v2c1_S08_bar_tm.csv, v2c1_S09_app_ecc.csv, v2c1_S11_win_tm.csv, v2c1_S08_typing.csv, v2c1_S09_avatar.csv, v2c1_S09_status_mascot.csv, v2c1_S09_tile_mascot.csv, v2c1_S11_msgs.csv, v2c1_S0x_*_fixed.csv (static checks), v2c1_S02_glances.csv (per-cell glance timing), v2c1_T1_speed.csv (per-frame collapse speed).",
+  "Review fixes (rev 2). (1) S02 cell glances: they do not stop at f76; they trail the fill wave out to the frame edges and run to f94, so there is no still hold before T1 (every frame f77-f94 has an edge cell glancing; motion.csv diff_mean 0.0008-0.0029 on each). The new per-cell table scratch/v2c1_S02_glances.csv takes the 120 sampled cells from scratch/v2c1_S02_cellstate_7-100.csv and adds the 33 partly visible edge cells tracked in work.mp4 (eye centroid, 1.0 px step rule); it also gave the delay as 17-42 f after the first visible frame (was 20-42). Crops of the late glances: crops/crop_1790_260_150x140_00078-00089.jpg, crop_40_0_150x120_00083-00094.jpg, crop_1770_100_150x160_00086-00095.jpg, crop_1790_640_130x160_00086-00097.jpg, crop_0_190_100x150_00088-00097.jpg. (2) T1 speed: in linear scale (the property of the fitted curve) the collapse peaks at f107-f108 and slows over f109-f113; the earlier text called it an ease-in cut at full speed, which only holds in relative scale. The curve file is unchanged; its bezier already has the slowing tail (scratch/v2c1_T1_speed.csv). (3) v2.cam-slow-push-in renamed v2.ui-slow-push-in (category ui), curve renamed with curves_tool to curves/v2.ui-slow-push-in.v2c1.csv: cam is a whole-frame move, but in S07 and S08 only the UI layer scales (headline ink x 547-1374, y 82-140 at f470, f500, f530, f563 while the UI box below it, pixels under luma 246, widens from 1126 to 1153 px; S08 headline x 511-1410, y 324-412 at f586, f620, f675 while the input bar widens from 1427 to 1446 px). v2c2 files the same device as v2.cam-slow-push-in (its description also says the overlaid text is not scaled); the merge should give both chunks' instances one id.",
+  "Review fixes (rev 3). (1) S02 eye colour: a separate shade, luma 129 (9 of the 120 cells at f90), has near-black eye bars like the 182 cells; 131-133 and 139 have white bars. The shade list is re-measured per cell (inner-disc median) and the rule is fixed in the Layers line (scratch/v2c1_S02_eyecolour_f90.csv, same polarity at f60 and f94). (2) S09 push-in: own curve curves/v2.ui-slow-push-in.short.v2c1 (fit_easing on scratch/v2c1_S09_app_ecc.csv, from-value 1.0): D=53, 50 f active, same normalised shape as the S07 curve (a duration variant, not a second technique). (3) Rhythm: f676 also leads an onset (f680, -4 f), so all boundaries f114-f901 and f1 lead an onset by 3-5 f. (4) S11 messages 3 and 4 are first visible at f847 and f872 (f846 and f871 are empty: crops/crop_560_480_600x150_00844-00849.jpg, crop_560_630_600x120_00869-00874.jpg); cadence 25, 26, 25 f, fitted starts every 25.2 f (scratch/v2c1_S11_msg_starts.csv); the curve note of v2.ui-list-item-rise-fade.v2c1 now gives the same frames. (5) The S06, S09 and S10 transition-out lines state what the frames share. (6) Tracking in em for every typography row (scratch/v2c1_type_tracking.csv): each still is compared with Inter Variable 400 rendered at the same cap (or ascender) height with optical size auto (opsz = em px clamped 14-32), the gaps aligned by relative position; em = cap / 0.7275. Display lines are tight (gaps 0.022-0.045 em smaller than Inter, line widths -0.023 to +0.002 em); the lockup word -0.014 em; UI text matches Inter within 1 px per gap (0 to +0.04 em) with wider word spaces."
+ ]
+}

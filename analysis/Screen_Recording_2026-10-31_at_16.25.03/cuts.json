@@ -24,6 +24,21 @@
   },
   "cuts": [
     {
+      "frame": 7,
+      "time_s": 0.1167,
+      "last_frame_before": 6,
+      "sources": [],
+      "content_val": 2.679,
+      "delta_lum": 1.481,
+      "adaptive_ratio": 0.044,
+      "ffmpeg_scene": 0.5101,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m001",
+      "reason": "hard cut T01 (S01 -> S02), capture pre-roll: the previous post in the player (f0-f6) -> the player's black loading picture with a play triangle (f7); motion.csv diff 0.233; its ffmpeg scene score 0.51 at f7 is folded into c001 (f8) by the 1-picture merge radius (v6c1; sheets/overview_00000-00045.jpg)"
+    },
+    {
       "frame": 8,
       "time_s": 0.1333,
       "last_frame_before": 7,
@@ -38,8 +53,9 @@
       "ffmpeg_scene": 0.1079,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c001"
+      "status": "confirmed",
+      "id": "c001",
+      "reason": "hard cut T02 (S02 -> S03), capture pre-roll: the player's black loading picture (f7) -> the poster of this post (f8); the previous-post -> black cut at f7 (ffmpeg score 0.51) is folded into this candidate by the merge radius and is the manual entry m001 (T01) (v6c1)"
     },
     {
       "frame": 13,
@@ -54,8 +70,9 @@
       "ffmpeg_scene": 1.0,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c002"
+      "status": "confirmed",
+      "id": "c002",
+      "reason": "hard cut T03 (S03 -> S04): poster (last picture f11) -> first frame of the promo (light field, first letter fragment at the left edge); ffmpeg scene 1.0 (v6c1)"
     },
     {
       "frame": 21,
@@ -70,8 +87,9 @@
       "ffmpeg_scene": 0.0316,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c003"
+      "status": "rejected",
+      "id": "c003",
+      "reason": "title letters flying in from the frame edges (same composition) (S04; v6c1)"
     },
     {
       "frame": 36,
@@ -86,8 +104,9 @@
       "ffmpeg_scene": 0.1522,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c004"
+      "status": "rejected",
+      "id": "c004",
+      "reason": "pill rising into the frame and title letters settling (S04; v6c1)"
     },
     {
       "frame": 106,
@@ -103,8 +122,9 @@
       "ffmpeg_scene": 0.0,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c005"
+      "status": "rejected",
+      "id": "c005",
+      "reason": "static hold of the title lockup (motion diff 0.001); adaptive false positive (S04; v6c1)"
     },
     {
       "frame": 118,
@@ -119,8 +139,9 @@
       "ffmpeg_scene": 0.1476,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c006"
+      "status": "rejected",
+      "id": "c006",
+      "reason": "anticipation dip of the title lockup (moves down 23 px) (inside T04 f113-f153; v6c1)"
     },
     {
       "frame": 123,
@@ -135,8 +156,9 @@
       "ffmpeg_scene": 0.0293,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c007"
+      "status": "rejected",
+      "id": "c007",
+      "reason": "same anticipation dip (lowest point) (inside T04 f113-f153; v6c1)"
     },
     {
       "frame": 128,
@@ -151,8 +173,9 @@
       "ffmpeg_scene": 0.1283,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c008"
+      "status": "confirmed",
+      "id": "c008",
+      "reason": "anchor of the soft vertical push T04 f113-f153 (S04 -> S05), not a hard replacement: the title lockup accelerates out of the top edge (v6c1)"
     },
     {
       "frame": 133,
@@ -167,8 +190,9 @@
       "ffmpeg_scene": 0.0182,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c009"
+      "status": "rejected",
+      "id": "c009",
+      "reason": "inside the push f113-f153 (lockup leaving with vertical blur) (inside T04 f113-f153; v6c1)"
     },
     {
       "frame": 148,
@@ -183,8 +207,9 @@
       "ffmpeg_scene": 0.0699,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c010"
+      "status": "rejected",
+      "id": "c010",
+      "reason": "incoming headline settling at the end of the push (inside T04 f113-f153; v6c1)"
     },
     {
       "frame": 158,
@@ -199,8 +224,9 @@
       "ffmpeg_scene": 0.0509,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c011"
+      "status": "rejected",
+      "id": "c011",
+      "reason": "headline pan with horizontal motion blur (same composition) (S05; v6c1)"
     },
     {
       "frame": 208,
@@ -215,8 +241,9 @@
       "ffmpeg_scene": 0.0328,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c012"
+      "status": "confirmed",
+      "id": "c012",
+      "reason": "anchor of the soft split morph T05 f206-f223 (S05 -> S06), not a hard replacement: the centred line splits and footage cards zoom in (v6c1)"
     },
     {
       "frame": 213,
@@ -231,8 +258,9 @@
       "ffmpeg_scene": 0.0477,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c013"
+      "status": "rejected",
+      "id": "c013",
+      "reason": "inside the split morph (cards appear as specks) (inside T05 f206-f223; v6c1)"
     },
     {
       "frame": 218,
@@ -247,8 +275,9 @@
       "ffmpeg_scene": 0.2186,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c014"
+      "status": "rejected",
+      "id": "c014",
+      "reason": "inside the split morph (cards landing in the row) (inside T05 f206-f223; v6c1)"
     },
     {
       "frame": 223,
@@ -263,8 +292,9 @@
       "ffmpeg_scene": 0.1141,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c015"
+      "status": "rejected",
+      "id": "c015",
+      "reason": "card row settled and drifting; end of the morph (inside T05 f206-f223; v6c1)"
     },
     {
       "frame": 233,
@@ -279,8 +309,9 @@
       "ffmpeg_scene": 0.0224,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c016"
+      "status": "rejected",
+      "id": "c016",
+      "reason": "re-layout inside the carousel shot (top words shrink, lower word slides) (S06; v6c1)"
     },
     {
       "frame": 246,
@@ -295,8 +326,9 @@
       "ffmpeg_scene": 0.0077,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c017"
+      "status": "rejected",
+      "id": "c017",
+      "reason": "sub-caption typing + card-row scroll (motion inside the cards) (S06; v6c1)"
     },
     {
       "frame": 253,
@@ -311,8 +343,9 @@
       "ffmpeg_scene": 0.0109,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c018"
+      "status": "rejected",
+      "id": "c018",
+      "reason": "card-row scroll (speed ramp) inside the same composition (S06; v6c1)"
     },
     {
       "frame": 298,
@@ -327,8 +360,9 @@
       "ffmpeg_scene": 0.0056,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c019"
+      "status": "rejected",
+      "id": "c019",
+      "reason": "slow card-row drift; motion inside the footage cards (S06; v6c1)"
     },
     {
       "frame": 306,
@@ -343,8 +377,9 @@
       "ffmpeg_scene": 0.5126,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c020"
+      "status": "confirmed",
+      "id": "c020",
+      "reason": "anchor of the soft punch-in stutter T06 f303-f323 (S06 -> S07): the first punch-in crop (x1.25) (v6c1)"
     },
     {
       "frame": 311,
@@ -359,8 +394,9 @@
       "ffmpeg_scene": 0.474,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c021"
+      "status": "rejected",
+      "id": "c021",
+      "reason": "inside the punch-in stutter (second crop, x1.97) (inside T06 f303-f323; v6c1)"
     },
     {
       "frame": 341,
@@ -375,8 +411,9 @@
       "ffmpeg_scene": 0.02,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c022"
+      "status": "rejected",
+      "id": "c022",
+      "reason": "line 2 typing and the text block starting to rise (same composition) (S07; v6c1)"
     },
     {
       "frame": 439,
@@ -391,8 +428,24 @@
       "ffmpeg_scene": 0.0331,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c023"
+      "status": "rejected",
+      "id": "c023",
+      "reason": "accelerating pull-back (zoom-out) of the globe layout; the picture is not replaced here; the real hard cut is at f446 (missed by all detectors) (S07; v6c1)"
+    },
+    {
+      "frame": 446,
+      "time_s": 7.4333,
+      "last_frame_before": 443,
+      "sources": [],
+      "content_val": 12.625,
+      "delta_lum": 4.91,
+      "adaptive_ratio": 0.993,
+      "ffmpeg_scene": 0.1058,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m002",
+      "reason": "hard cut T07 (S07 -> S08) missed by all detectors (c023 fired on the pull-back 7 f earlier, f439): the last picture of the globe layout f443 is at x0.905 and still accelerating (v6.cam-pull-back-cut), the first picture of the S08 title is f446; shares the light field (v6c1; detail/dense_00434-00452_00.jpg, detail/dense_00446-00462_00.jpg)"
     },
     {
       "frame": 473,
@@ -407,8 +460,9 @@
       "ffmpeg_scene": 0.0102,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c024"
+      "status": "rejected",
+      "id": "c024",
+      "reason": "text block rising to make room for the diagram (S08; v6c1)"
     },
     {
       "frame": 533,
@@ -423,8 +477,9 @@
       "ffmpeg_scene": 0.0323,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c025"
+      "status": "confirmed",
+      "id": "c025",
+      "reason": "anchor of the soft vertical push T08 f521-f551 (S08 -> S09): the S08 layout leaving up, the phone rising from below (v6c1)"
     },
     {
       "frame": 541,
@@ -439,8 +494,9 @@
       "ffmpeg_scene": 0.2323,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c026"
+      "status": "rejected",
+      "id": "c026",
+      "reason": "inside the push f521-f551 (phone rising with heavy vertical blur) (inside T08 f521-f551; v6c1)"
     },
     {
       "frame": 626,
@@ -455,8 +511,9 @@
       "ffmpeg_scene": 0.0397,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c027"
+      "status": "rejected",
+      "id": "c027",
+      "reason": "camera orbit-push on the 3D stack (same composition) (S09; v6c1)"
     },
     {
       "frame": 683,
@@ -471,8 +528,9 @@
       "ffmpeg_scene": 0.0308,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c028"
+      "status": "rejected",
+      "id": "c028",
+      "reason": "camera dolly reframe on the 3D stack (S09; v6c1)"
     },
     {
       "frame": 811,
@@ -487,8 +545,9 @@
       "ffmpeg_scene": 0.0626,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c029"
+      "status": "rejected",
+      "id": "c029",
+      "reason": "3D stack collapsing (S09; v6c1)"
     },
     {
       "frame": 823,
@@ -503,8 +562,9 @@
       "ffmpeg_scene": 0.0669,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c030"
+      "status": "rejected",
+      "id": "c030",
+      "reason": "3D stack fanning out again (rotation); the whip starts right after (inside T09 f823-f853; v6c1)"
     },
     {
       "frame": 831,
@@ -519,8 +579,9 @@
       "ffmpeg_scene": 0.0216,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c031"
+      "status": "confirmed",
+      "id": "c031",
+      "reason": "anchor of the soft horizontal whip T09 f823-f853 (S09 -> S10): the stack out to the left, the text in from the right (v6c1)"
     },
     {
       "frame": 836,
@@ -535,8 +596,9 @@
       "ffmpeg_scene": 0.1972,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c032"
+      "status": "rejected",
+      "id": "c032",
+      "reason": "inside the whip (outgoing stack with horizontal motion blur) (inside T09 f823-f853; v6c1)"
     },
     {
       "frame": 856,
@@ -551,8 +613,9 @@
       "ffmpeg_scene": 0.0046,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c033"
+      "status": "rejected",
+      "id": "c033",
+      "reason": "second word whipping in and line 2 rising inside the S10 title (S10; v6c1)"
     },
     {
       "frame": 911,
@@ -567,8 +630,9 @@
       "ffmpeg_scene": 0.0691,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c034"
+      "status": "confirmed",
+      "id": "c034",
+      "reason": "anchor of the soft vertical push T10 f903-f936 (S10 -> S11): the 2-line title accelerates out of the top edge with vertical motion blur; hidden swap 913|916 (v6c2)"
     },
     {
       "frame": 983,
@@ -583,8 +647,9 @@
       "ffmpeg_scene": 0.0316,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c035"
+      "status": "rejected",
+      "id": "c035",
+      "reason": "reflow 2 inside the phone layout: line 1 slides left with horizontal blur while the phone mock-up starts its punch-in (same composition) (S11; v6c2)"
     },
     {
       "frame": 993,
@@ -599,8 +664,9 @@
       "ffmpeg_scene": 0.0156,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c036"
+      "status": "rejected",
+      "id": "c036",
+      "reason": "reflow 2: line 2 slides right and turns grey, the arrow slides in from the left edge, the phone mock-up punches in x1.22, echo outlines appear (same composition) (S11; v6c2)"
     },
     {
       "frame": 1008,
@@ -615,8 +681,9 @@
       "ffmpeg_scene": 0.1214,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c037"
+      "status": "rejected",
+      "id": "c037",
+      "reason": "phone-screen content swap with a two-pulse luminance flicker (f998-f1008); phone, headline and layout unchanged (S11; v6c2)"
     },
     {
       "frame": 1063,
@@ -631,8 +698,9 @@
       "ffmpeg_scene": 0.0774,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c038"
+      "status": "rejected",
+      "id": "c038",
+      "reason": "the headline lines start to whip out in a split (line 1 to the left word by word, line 2 to the right; start of the zoom-through's outgoing half); no picture replacement (inside T11 f1058-f1091; v6c2)"
     },
     {
       "frame": 1076,
@@ -647,8 +715,9 @@
       "ffmpeg_scene": 0.0423,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c039"
+      "status": "rejected",
+      "id": "c039",
+      "reason": "inside the zoom-through: the phone pulls back with blur (x0.69) and the lines are streaks; the replacement happens at f1081 (inside T11 f1058-f1091; v6c2)"
     },
     {
       "frame": 1081,
@@ -663,8 +732,9 @@
       "ffmpeg_scene": 0.6965,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c040"
+      "status": "confirmed",
+      "id": "c040",
+      "reason": "anchor and swap picture of the soft zoom-through T11 f1058-f1091 (S11 -> S12): the phone grid lands at x1.14 with radial zoom blur (v6c2)"
     },
     {
       "frame": 1123,
@@ -680,8 +750,9 @@
       "ffmpeg_scene": 0.1846,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c041"
+      "status": "rejected",
+      "id": "c041",
+      "reason": "speed burst of the camera pull-back over the same phone grid (template score >= 0.98 across f1116-f1138) (S12; v6c2)"
     },
     {
       "frame": 1171,
@@ -696,8 +767,9 @@
       "ffmpeg_scene": 0.021,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c042"
+      "status": "rejected",
+      "id": "c042",
+      "reason": "accelerating pan of the same grid (outgoing half of the whip) (inside T12 f1156-f1206; v6c2)"
     },
     {
       "frame": 1181,
@@ -713,8 +785,9 @@
       "ffmpeg_scene": 0.1335,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c043"
+      "status": "confirmed",
+      "id": "c043",
+      "reason": "anchor of the soft horizontal whip T12 f1156-f1206 (S12 -> S13) at its blur peak; hidden swap 1186|1188 (v6c2)"
     },
     {
       "frame": 1191,
@@ -729,8 +802,9 @@
       "ffmpeg_scene": 0.1542,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c044"
+      "status": "rejected",
+      "id": "c044",
+      "reason": "incoming headline words still whipping in from the right (same composition as f1188) (inside T12 f1156-f1206; v6c2)"
     },
     {
       "frame": 1231,
@@ -745,8 +819,9 @@
       "ffmpeg_scene": 0.0216,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c045"
+      "status": "rejected",
+      "id": "c045",
+      "reason": "headline shrinks and slides aside while the dial slides in from the right edge (elements entering inside the segment) (S13; v6c2)"
     },
     {
       "frame": 1306,
@@ -761,8 +836,24 @@
       "ffmpeg_scene": 0.0061,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c046"
+      "status": "rejected",
+      "id": "c046",
+      "reason": "fired on the accelerating pull-back (x0.80) of the dial layout; the picture is replaced at f1311, a hard cut the detectors missed (S13; v6c2)"
+    },
+    {
+      "frame": 1311,
+      "time_s": 21.85,
+      "last_frame_before": 1308,
+      "sources": [],
+      "content_val": 6.933,
+      "delta_lum": 1.667,
+      "adaptive_ratio": 0.651,
+      "ffmpeg_scene": 0.0015,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m003",
+      "reason": "hard cut T13 (S13 -> S14) missed by all detectors (c046 fired on the pull-back 5 f earlier, f1306): the last picture f1308 is at x0.69 and still accelerating (v6.cam-pull-back-cut); shares the light field and the soft blob at the bottom right (low-pass luma 208 at f1308, 215 at f1311); the incoming letters fly in from the frame edges (v6c2; detail/dense_01296-01320_00.jpg)"
     },
     {
       "frame": 1321,
@@ -777,8 +868,9 @@
       "ffmpeg_scene": 0.0369,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c047"
+      "status": "rejected",
+      "id": "c047",
+      "reason": "lockup build: letters flying in from the frame edges (same composition) (S14; v6c2)"
     },
     {
       "frame": 1498,
@@ -793,8 +885,9 @@
       "ffmpeg_scene": 0.0902,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c048"
+      "status": "rejected",
+      "id": "c048",
+      "reason": "anticipation exit of the lockup (whip up with vertical blur); the field is empty by f1508 and the cut is at f1517 (S14; v6c2)"
     },
     {
       "frame": 1517,
@@ -810,8 +903,9 @@
       "ffmpeg_scene": 0.0221,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c049"
+      "status": "confirmed",
+      "id": "c049",
+      "reason": "hard cut T14 (S14 -> S15), 1512|1517: the X player loops; the empty end field is replaced by the promo's first frame (f1517-f1808 = f15-f301 of this recording) (v6c2)"
     },
     {
       "frame": 1540,
@@ -826,8 +920,9 @@
       "ffmpeg_scene": 0.0423,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c050"
+      "status": "rejected",
+      "id": "c050",
+      "reason": "replayed lockup build: label drop and pill rise (same composition) (S15; v6c2)"
     },
     {
       "frame": 1635,
@@ -842,8 +937,9 @@
       "ffmpeg_scene": 0.1284,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c051"
+      "status": "confirmed",
+      "id": "c051",
+      "reason": "anchor of the soft vertical push T15 f1621-f1660 (S15 -> S16), the replay of T04: the lockup accelerates out of the top edge; the same picture as c008 f128 (v6c2)"
     },
     {
       "frame": 1641,
@@ -858,8 +954,9 @@
       "ffmpeg_scene": 0.0182,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c052"
+      "status": "rejected",
+      "id": "c052",
+      "reason": "inside the push f1621-f1660 (outgoing lockup leaving with vertical blur) (inside T15 f1621-f1660; v6c2)"
     },
     {
       "frame": 1645,
@@ -874,8 +971,9 @@
       "ffmpeg_scene": 0.0952,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c053"
+      "status": "rejected",
+      "id": "c053",
+      "reason": "inside the push f1621-f1660 (incoming headline appearing from below with vertical blur) (inside T15 f1621-f1660; v6c2)"
     },
     {
       "frame": 1657,
@@ -890,8 +988,9 @@
       "ffmpeg_scene": 0.0009,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c054"
+      "status": "rejected",
+      "id": "c054",
+      "reason": "incoming headline darkening back after its opacity blink, end of the push (inside T15 f1621-f1660; v6c2)"
     },
     {
       "frame": 1677,
@@ -906,8 +1005,9 @@
       "ffmpeg_scene": 0.0104,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c055"
+      "status": "rejected",
+      "id": "c055",
+      "reason": "pan across the huge headline while its third word types on letter by letter (same composition) (S16; v6c2)"
     },
     {
       "frame": 1692,
@@ -922,8 +1022,9 @@
       "ffmpeg_scene": 0.0403,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c056"
+      "status": "rejected",
+      "id": "c056",
+      "reason": "zoom-out of the same line with its opacity blink (same composition) (S16; v6c2)"
     },
     {
       "frame": 1725,
@@ -939,8 +1040,9 @@
       "ffmpeg_scene": 0.2152,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c057"
+      "status": "confirmed",
+      "id": "c057",
+      "reason": "anchor of the soft split morph T16 f1715-f1730 (S16 -> S17), the replay of T05: footage cards zoom in between the split words (v6c2)"
     },
     {
       "frame": 1737,
@@ -955,8 +1057,9 @@
       "ffmpeg_scene": 0.0433,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c058"
+      "status": "rejected",
+      "id": "c058",
+      "reason": "re-layout inside the card-row composition (top words shrink into the corner, lower word slides left) (S17; v6c2)"
     },
     {
       "frame": 1767,
@@ -971,10 +1074,117 @@
       "ffmpeg_scene": 0.0053,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c059"
+      "status": "rejected",
+      "id": "c059",
+      "reason": "card-row scroll with horizontal motion blur (speed ramp) inside the same composition (S17; v6c2)"
     }
   ],
-  "soft_transitions": [],
-  "notes": []
+  "soft_transitions": [
+    {
+      "id": "T04",
+      "start": 113,
+      "end": 153,
+      "frames": 41,
+      "type": "push (vertical: the title lockup dips and accelerates out of the top edge, the 2-word headline rises from below the bottom edge with an opacity blink)",
+      "shared": "upward motion and the light field: the title lockup dips 36 px (f113-f123) and accelerates out of the top edge (about 86 px per frame at the end, gone f141) while the 2-word headline rises from below the bottom edge (ink centre 741 px at f138 -> 461 px = 50.2% H at f156) with an opacity blink (darkest luma 88/149/207/101/0 at f138/141/143/146/148); the field's blobs fade out in place during the exit (f123-f136, plain field f136-f143) and fade back in during S05 (f143-f166); no graphic element is shared",
+      "technique": "v6.trans-push-up",
+      "detail": "detail/soft_113-153"
+    },
+    {
+      "id": "T05",
+      "start": 206,
+      "end": 223,
+      "frames": 18,
+      "type": "morph (split: the centred line splits, words 1-2 rise to the top band, word 3 drops and grows; footage cards zoom in from scattered specks into the opened band)",
+      "shared": "the headline words: words 1-2 rise 363 px to the top band (x unchanged, same size), word 3 drops 323.5 px and grows x1.10; footage cards zoom in from scattered specks into the opened middle band; same light field",
+      "technique": "v6.trans-split-morph",
+      "detail": "detail/soft_206-223"
+    },
+    {
+      "id": "T06",
+      "start": 303,
+      "end": 323,
+      "frames": 21,
+      "type": "punch-in stutter (stepped, differently centred punch-in crops of the outgoing layout, each held to the next picture, then an empty field f318-f321 before the next text)",
+      "shared": "only the light field; entered with the card row speeding up again (-6.3 / -9.3 / -16.0 px per picture at f298/301/303); each 24 fps picture is a differently centred close crop of the card-carousel layout that holds until the next picture (x1.25 about (174, 852) px lower left at f306 and f308, x1.97 about (1538, 855) px lower right at f311, x3.85 about the same centre (1539, 859) px at f313, x2.30 about (108, 9) px top left at f316), then the empty field f318-f321; the next text appears at f324",
+      "technique": "v6.trans-punch-in-stutter",
+      "detail": "detail/soft_303-323"
+    },
+    {
+      "id": "T08",
+      "start": 521,
+      "end": 551,
+      "frames": 31,
+      "type": "push (vertical, ease-in variant: long ease-in drift up, a 2-picture swap out of the top edge, the 3D phone rises from below, decelerates hard and lands oversized)",
+      "shared": "upward motion and the light field: the S08 layout drifts up with a long ease-in (f516-f538), then swaps out of the top edge within 2 pictures (f541-f543, about -200 px per frame, vertical blur) while the 3D phone mockup rises from below the bottom edge and decelerates hard (top 891 / 365 / 225 / 189 px at f538/541/543/546), lands at about x1.17 (f546) and settles to x1.0 (f548); the S08 edge lines vanish with the layout at f543",
+      "technique": "v6.trans-push-up-ease-in",
+      "detail": "detail/soft_521-551"
+    },
+    {
+      "id": "T09",
+      "start": 823,
+      "end": 853,
+      "frames": 31,
+      "type": "whip (horizontal: the 3D stack accelerates out to the left, one picture of streaks, the figure whips in from the right and decelerates)",
+      "shared": "leftward motion and the light field: the 3D stack accelerates out to the left with horizontal blur (centre 778.5 -> 403 px, f823-f836), one picture of streaks at the right edge (f838), then the percentage figure arrives from the right at x1.2 and decelerates (centre 895.5 px f841 -> 536 px f856)",
+      "technique": "v6.trans-whip-left",
+      "detail": "detail/soft_823-853"
+    },
+    {
+      "id": "T10",
+      "start": 903,
+      "end": 936,
+      "frames": 34,
+      "type": "push (vertical: the title accelerates out of the top edge without a dip, hidden swap 913|916, the phone mock-up rises from below with an opacity blink and the headline words follow)",
+      "shared": "upward motion and the light field: the 2-line title accelerates out of the top edge (edge -95 px = -10.3% H, f903-f913, ease-in); hidden swap 913|916; the phone mock-up rises from below the bottom edge (top 607 px = 66.1% H at f916 -> 54 px = 5.9% H by f946) with an opacity blink (darkest luma 122/197/172/90/19/1 at f916-f929) and the headline words follow 5-6 f apart; no graphic element shared",
+      "technique": "v6.trans-push-up",
+      "detail": "detail/soft_903-936"
+    },
+    {
+      "id": "T11",
+      "start": 1058,
+      "end": 1091,
+      "frames": 34,
+      "type": "zoom-through (the lines whip out in a split while the phone pulls back x1.0 -> x0.40; swap 1078|1081; the phone grid lands with oversized phones x1.14 under radial blur while its spacing opens)",
+      "shared": "a phone mock-up at x 50% W and a shrinking phone scale on both sides of the cut: the lines whip out in a split (line 2 to the right from f1061, line 1 to the left word by word from f1061-f1063, the arrow to the right from f1066) while the single phone pulls back x1.0 -> x0.40 with an accelerating ease-in (last picture f1078: 228 x 473 px centred (810, 477) px); swap 1078|1081; the phone grid lands with oversized phones packed close (centre phone x1.14, 279 px wide, centre (811, 547) px) under radial zoom blur; its phones shrink to x1.0 by f1093 while the grid's spacing opens (column pitch 336 px at f1083 -> 395 px at f1093 -> 403 px at f1106), so the outer phones move outward; the layout itself does not shrink until f1108",
+      "technique": "v6.trans-zoom-through",
+      "detail": "detail/soft_1058-1091"
+    },
+    {
+      "id": "T12",
+      "start": 1156,
+      "end": 1206,
+      "frames": 51,
+      "type": "whip (horizontal: 30 f accelerating pan of the grid into a multi-exposure smear, hidden swap 1186|1188, the headline words whip in from the right)",
+      "shared": "leftward motion and the light field: the grid pans left with a 30 f accelerating ease-in (grid phone x 560 -> 320 px, f1156-f1181), becomes a multi-exposure smear (f1183, block right edge 1375 px) and slides out over the empty field (right edge 1044 px at f1186); hidden swap 1186|1188; the new headline's words whip in from the right in reading order and decelerate (settled f1208)",
+      "technique": "v6.trans-whip-left",
+      "detail": "detail/soft_1156-1206"
+    },
+    {
+      "id": "T15",
+      "start": 1621,
+      "end": 1660,
+      "frames": 40,
+      "type": "push (vertical; picture-for-picture replay of T04 after the player loop)",
+      "shared": "upward motion and the light field (replay of T04, f113-f153): the lockup dips (pill 801 -> 835 px, f1621-f1630) and accelerates out of the top edge (per picture -12/-47/-99/-169/-236/-196 px, f1632-f1645) while the 2-word headline rises from below (ink centre 737.8 px at f1645 -> 462.6 px at f1662) with an opacity blink (darkest luma 73/138/202/89/0 at f1645-f1655)",
+      "technique": "v6.trans-push-up",
+      "detail": "detail/soft_1621-1660"
+    },
+    {
+      "id": "T16",
+      "start": 1715,
+      "end": 1730,
+      "frames": 16,
+      "type": "morph (split; picture-for-picture replay of T05 after the player loop)",
+      "shared": "the headline words and the light field (replay of T05, f206-f223): the centred line (rows 411-509 px at f1712) splits, words 1-2 rise to the top band (rows 48-144 px at f1730) while word 3 drops and grows; footage cards appear as specks (f1720) and zoom into the flat row of slightly turned cards (f1722-f1727)",
+      "technique": "v6.trans-split-morph",
+      "detail": "detail/soft_1715-1730"
+    }
+  ],
+  "notes": [
+    "Merged 2026-11-01 from chunks v6c1 (f0-f888) and v6c2 (f889-f1808). 13 of the 59 auto candidates are confirmed: c001 f8, c002 f13 and c049 f1517 are hard cuts (T02, T03, T14); c008, c012, c020, c025, c031, c034, c040, c043, c051 and c057 are anchors of soft transitions (T04, T05, T06, T08, T09, T10, T11, T12, T15, T16), not hard replacements. The other 46 are rejected: letters flying in, re-layouts, camera moves, card scrolls, speed bursts and blur inside one composition (each reason names its segment or the transition it falls in).",
+    "Detector misses: the hard cuts f7 (T01, folded into c001 by the merge radius), f446 (T07; c023 fired on the accelerating pull-back 7 f earlier) and f1311 (T13; c046 fired on the pull-back 5 f earlier) are the manual entries m001-m003. Every soft transition was caught only at one or more pictures inside it (its anchor).",
+    "Capture: f0-f12 is the screen recording's pre-roll (T01-T03 are capture cuts: previous post -> loading picture -> poster -> promo), not design. T14 (f1517) is the X player looping back to the start of the post: f1517-f1808 replay f15-f301 picture for picture (offset 1507 f, scratch/v6c2_loop_match.csv), so T15 and T16 are replays of T04 and T05.",
+    "Soft transition ids match the transition ids in segments.json; every confirmed candidate's reason names its T id."
+  ]
 }

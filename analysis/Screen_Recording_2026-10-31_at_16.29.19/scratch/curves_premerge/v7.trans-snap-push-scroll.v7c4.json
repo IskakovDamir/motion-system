@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-snap-push-scroll.v7c4",
+  "file": "curves/v7.trans-snap-push-scroll.v7c4.csv",
+  "property": "position-y",
+  "unit": "% of frame height",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_card_rise_chip_cy_newpic.csv",
+  "column": "cy_pct",
+  "sampled_frames": [
+    2619,
+    2669
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 81.972,
+  "to_value": 49.401,
+  "active_frames": [
+    2619,
+    2641
+  ],
+  "measured_duration_frames": 22,
+  "bezier": {
+    "x1": 0.311,
+    "y1": 1.1502,
+    "x2": 0.9564,
+    "y2": 0.9395,
+    "durationInFrames": 23,
+    "delay": -0.034,
+    "built_duration_frames": 20,
+    "rmse": 0.0306
+  },
+  "spring": {
+    "stiffness": 272.193,
+    "damping": 33.058,
+    "mass": 1,
+    "damping_ratio": 1.0019,
+    "built_duration_frames": 22,
+    "rmse": 0.0777
+  },
+  "recommended": "bezier",
+  "note": "result card rises into the frame centre after the hidden hard cut f2609 (last old picture f2606) of the punch-in whip up whose motion range is f2589-f2641: first seen f2614 as a blurred top edge at the bottom of the frame; the status-chip label centre goes 752.5 -> 453.5 px (82.0% -> 49.4% H) f2619-f2649 decelerating, x fixed at 840 px; it moves 2.5-4x faster than the scrolling line above it (line-2 baseline 92 -> 1 px over f2619-f2636 while the chip travels 286 px), so the card has its own slide-up on top of the camera glide (the speed ratio falls from 4.0 to 1.1, not a constant parallax factor); template on the chip label (ref f2645, scores 0.66-1.0); motion starts before the first trackable picture"
+}

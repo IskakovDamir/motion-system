@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-lift-to-header.i2",
+  "file": "curves/v5.text-lift-to-header.i2.csv",
+  "property": "position-y",
+  "unit": "% of frame height",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_C_lines_LAR_pct.csv",
+  "column": "l1_bot_pct",
+  "sampled_frames": [
+    1380,
+    1427
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 47.93,
+  "to_value": 32.353,
+  "active_frames": [
+    1382,
+    1412
+  ],
+  "measured_duration_frames": 30,
+  "bezier": {
+    "x1": 0.6521,
+    "y1": -0.1269,
+    "x2": 0.1535,
+    "y2": 1.2361,
+    "durationInFrames": 38,
+    "delay": -6.151,
+    "built_duration_frames": 28,
+    "rmse": 0.0181
+  },
+  "spring": {
+    "stiffness": 191.096,
+    "damping": 20.38,
+    "mass": 1,
+    "damping_ratio": 0.7371,
+    "built_duration_frames": 26,
+    "rmse": 0.1085
+  },
+  "recommended": "bezier",
+  "note": "S_c headline line 1 baseline (letters L-A-R, x 450-730) while the headline lifts and compacts (letter height 101->89 px, x0.88; line 2 re-tapers) to make room for the logo-sphere row; corner sparkle stars move outward at the same time"
+}

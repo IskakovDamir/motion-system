@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-lift-to-header",
+  "file": "curves/v5.text-lift-to-header.csv",
+  "property": "width",
+  "unit": "% of frame width (headline ink width; scale 1.465 -> 1.0)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c4_headline_width.csv",
+  "column": "w_pct",
+  "sampled_frames": [
+    2425,
+    2447
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 71.7,
+  "to_value": 48.95,
+  "active_frames": [
+    2425,
+    2442
+  ],
+  "measured_duration_frames": 17,
+  "bezier": {
+    "x1": 0.7197,
+    "y1": 0.2895,
+    "x2": 0.1869,
+    "y2": 1.0338,
+    "durationInFrames": 21,
+    "delay": 0.462,
+    "built_duration_frames": 16,
+    "rmse": 0.0163
+  },
+  "spring": {
+    "stiffness": 290.57,
+    "damping": 26.573,
+    "mass": 1,
+    "damping_ratio": 0.7794,
+    "built_duration_frames": 13,
+    "rmse": 0.1361
+  },
+  "recommended": "bezier",
+  "note": "typed headline shrinks to header size while it rises: ink width 71.7 -> 49.0 %W (scale x0.68), centre y 48.4 -> 23.4 %H (template track v5c4_headline_lift.csv); starts the picture the last letter lands (f2425); vertical motion blur at f2432-2437; end value = mean of f2442-2447 (whip 1 starts after f2445)"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.text-stream-reveal-2.v8c4",
+  "file": "curves/v8.text-stream-reveal-2.v8c4.csv",
+  "property": "position-x",
+  "unit": "% of frame width",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c4_S3_sub2_front.csv",
+  "column": "front_pct",
+  "sampled_frames": [
+    2408,
+    2468
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 15.906,
+  "to_value": 61.899,
+  "active_frames": [
+    2416,
+    2454
+  ],
+  "measured_duration_frames": 38,
+  "bezier": {
+    "x1": 0.2071,
+    "y1": 0.7288,
+    "x2": 0.6884,
+    "y2": 0.9985,
+    "durationInFrames": 41,
+    "delay": 0.634,
+    "built_duration_frames": 35,
+    "rmse": 0.0202
+  },
+  "spring": {
+    "stiffness": 64.399,
+    "damping": 18.132,
+    "mass": 1,
+    "damping_ratio": 1.1298,
+    "built_duration_frames": 43,
+    "rmse": 0.0336
+  },
+  "recommended": "bezier",
+  "note": "S03 sub line 2 (7 words + 3 dots) reveal front: rightmost column with ink (luma < 236 on the 248 page, light newest letters included) in a band that follows the rising line; 258 px (the line's left edge) while the line is still empty (f2408-f2416); letters end at 977 px (f2448), the 3 dots add 985 / 995 / 1004 px at f2450 / f2454 / f2458. Ease-out type-on: 42 px/f (about 2.7 characters per frame) f2418-f2424, 22 px/f (1.4) f2424-f2434, 12 px/f (0.7) f2434-f2448, then one dot per 4 f (0.25); differs from the near-linear v8c2 instance (curves/v8.text-stream-reveal.v8c2.csv), so probably a second technique (an ease-out stream)."
+}

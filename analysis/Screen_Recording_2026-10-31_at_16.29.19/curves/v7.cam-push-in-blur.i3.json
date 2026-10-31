@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.cam-push-in-blur.i3",
+  "file": "curves/v7.cam-push-in-blur.i3.csv",
+  "property": "scale",
+  "unit": "ln(scale factor) of the whole desktop layer (0 = hold f3729-f3780; 0.190 = x1.209 at rest from about f3861)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p6_pushin_fp.csv",
+  "column": "lnscale",
+  "sampled_frames": [
+    3761,
+    3881
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 0.1899,
+  "active_frames": [
+    3795,
+    3846
+  ],
+  "measured_duration_frames": 51,
+  "bezier": {
+    "x1": 0.8736,
+    "y1": 0.0731,
+    "x2": 0.0,
+    "y2": 0.9495,
+    "durationInFrames": 69,
+    "delay": -8.068,
+    "built_duration_frames": 49,
+    "rmse": 0.0059
+  },
+  "spring": {
+    "stiffness": 154.009,
+    "damping": 25.192,
+    "mass": 1,
+    "damping_ratio": 1.015,
+    "built_duration_frames": 28,
+    "rmse": 0.2318
+  },
+  "recommended": "bezier",
+  "note": "P6 second push-in (same device as the P4 push-in into the card): a pure zoom about a fixed point below-right of the frame at (2315, 992) px = (142.7% W, 108.1% H), so the file tile moves up-left (label centre 810 -> 495 px, 654 -> 583 px); creeps from about f3783 (+0.4% by f3796, +3.7% by f3814), the fastest interval f3816-f3819 (x1.070 in 3 frames, horizontal smear; the 3D pointer becomes a 2D cursor at f3821), then a long ease-out to rest at about f3861; scale from the label centre's displacement relative to the fixed point (x and y estimates agree within 0.0005 on sharp pictures, within 0.004 on the smeared f3816-f3819); fixed point from a least-squares fit of the label template's centre against its own sub-step scale (scratch/v7c5_tools/tmplfine.py, ref f3756)"
+}

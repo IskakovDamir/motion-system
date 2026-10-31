@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.trans-morph-tree",
+  "file": "curves/v5.trans-morph-tree.csv",
+  "property": "scale",
+  "unit": "scale factor (footage card, rest = 1)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c3_morph_card.csv",
+  "column": "scale",
+  "sampled_frames": [
+    1867,
+    1905
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.0,
+  "to_value": 0.34,
+  "active_frames": [
+    1872,
+    1890
+  ],
+  "measured_duration_frames": 18,
+  "bezier": {
+    "x1": 0.9946,
+    "y1": 0.3544,
+    "x2": 0.0,
+    "y2": 1.2564,
+    "durationInFrames": 19,
+    "delay": -0.578,
+    "built_duration_frames": 17,
+    "rmse": 0.0108
+  },
+  "spring": {
+    "stiffness": 492.191,
+    "damping": 28.041,
+    "mass": 1,
+    "damping_ratio": 0.632,
+    "built_duration_frames": 17,
+    "rmse": 0.291
+  },
+  "recommended": "bezier",
+  "note": "shared element of the morph: the footage card shrinks to the tree's parent node (1.0 -> 0.34) while moving up 59.3 -> 20.1 %H (x fixed 49.9 %W); undershoots to 0.31 at f1885 and settles 0.34 by f1892"
+}

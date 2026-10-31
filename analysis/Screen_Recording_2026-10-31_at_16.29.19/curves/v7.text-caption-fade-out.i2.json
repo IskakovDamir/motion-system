@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.text-caption-fade-out.i2",
+  "file": "curves/v7.text-caption-fade-out.i2.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (mean of word ROI x715-910 y772-867)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_cap_s0w1_bbox.csv",
+  "column": "mean_lum",
+  "sampled_frames": [
+    719,
+    741
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 163.57,
+  "to_value": 146.75,
+  "active_frames": [
+    728,
+    739
+  ],
+  "measured_duration_frames": 11,
+  "bezier": {
+    "x1": 1.0,
+    "y1": 0.7461,
+    "x2": 1.0,
+    "y2": 0.7368,
+    "durationInFrames": 10,
+    "delay": 0.747,
+    "built_duration_frames": 10,
+    "rmse": 0.0526
+  },
+  "spring": {
+    "stiffness": 444.575,
+    "damping": 50.182,
+    "mass": 1,
+    "damping_ratio": 1.19,
+    "built_duration_frames": 17,
+    "rmse": 0.3348
+  },
+  "recommended": "bezier",
+  "note": "single-word caption fades out in place (no movement, template y constant) from f728; near-linear to ~72% at f738, then removed at f739; ROI mean luma as opacity proxy, 1 = gone"
+}

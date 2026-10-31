@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-punch-in-whip-up-out.v7c3",
+  "file": "curves/v7.trans-punch-in-whip-up-out.v7c3.csv",
+  "property": "position-y",
+  "unit": "% of frame height (midpoint of two window panel labels; 11.5% -> 5.5% H at the last picture before the cut)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p4_window.csv",
+  "column": "mid_y_pct",
+  "sampled_frames": [
+    2036,
+    2089
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 11.46,
+  "to_value": 5.474,
+  "active_frames": [
+    2041,
+    2089
+  ],
+  "measured_duration_frames": 48,
+  "bezier": {
+    "x1": 0.6984,
+    "y1": 0.1095,
+    "x2": 1.0,
+    "y2": 0.6766,
+    "durationInFrames": 48,
+    "delay": -1.568,
+    "built_duration_frames": 44,
+    "rmse": 0.0253
+  },
+  "spring": {
+    "stiffness": 21.288,
+    "damping": 33.498,
+    "mass": 1,
+    "damping_ratio": 3.6302,
+    "built_duration_frames": 74,
+    "rmse": 0.4254
+  },
+  "recommended": "bezier",
+  "note": "outgoing half of the punch-in whip P4 -> P5: once the whip-in from the left has settled the whole window pans up (camera tilts down toward the timeline), accelerating from rest (~f2041) to ~5 px/frame (0.55% H) at the last picture f2089; no scale change (label distance 651 +-1 px); the ghost clip outlines fly down into the timeline during this pan; hard cut at f2091 into a x1.75 closer framing that keeps moving up (v7.trans-punch-in-whip-up.v7c3); to-value = last measured picture (no settle)"
+}

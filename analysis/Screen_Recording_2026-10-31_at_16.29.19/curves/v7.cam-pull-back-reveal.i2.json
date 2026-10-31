@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.cam-pull-back-reveal.i2",
+  "file": "curves/v7.cam-pull-back-reveal.i2.csv",
+  "property": "scale",
+  "unit": "ln(scale factor) of the whole canvas (0 = close-up of the end of row 2, f3246-f3254; -0.580 = x0.560 at rest f3296-f3299)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p4_pullback_rowy.csv",
+  "column": "lnscale",
+  "sampled_frames": [
+    3240,
+    3299
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": -0.58,
+  "active_frames": [
+    3259,
+    3294
+  ],
+  "measured_duration_frames": 35,
+  "bezier": {
+    "x1": 0.7521,
+    "y1": 0.1153,
+    "x2": 0.1596,
+    "y2": 0.9959,
+    "durationInFrames": 43,
+    "delay": -2.572,
+    "built_duration_frames": 31,
+    "rmse": 0.0277
+  },
+  "spring": {
+    "stiffness": 103.505,
+    "damping": 16.447,
+    "mass": 1,
+    "damping_ratio": 0.8083,
+    "built_duration_frames": 22,
+    "rmse": 0.1452
+  },
+  "recommended": "bezier",
+  "note": "P4 camera pull-back from the close-up of the end of row 2 to wide view 2 (both rows plus the picture card rising in below): scale x1.00 -> x0.560 (eased in log space) about a fixed point above-right of the frame, (2053, -26) px = (126.6% W, -2.8% H) (one pure zoom: x from row 2's word edges by a 1D registration of its column profile to f3254, y from its height; scratch/v7c5_p4_pullback_x.csv, v7c5_p4_pullback_fp.csv; the scale here uses y -25 px, within 0.001), so row 2 rises from 455.8 to 244.2 px and slides right with the zoom (the left edges of its 6th / 7th / 8th words 129 -> 973 / 450 -> 1153 / 981 -> 1452 px; the pure zoom predicts them within 3 px on every picture but the smeared f3276 / f3279); fastest at f3274-f3279 (heavy horizontal smear, the rows are streaks at f3276), at rest by f3296; scale from row 2's vertical ink centroid relative to the fixed point (cy fitted on the rest picture f3299 with the word template's scale 0.56; agrees with the word template within 0.005 on sharp pictures f3256-f3266 and f3284-f3299, and with the row-pitch scale 0.740 / 0.649 at the smeared f3276 / f3279)"
+}

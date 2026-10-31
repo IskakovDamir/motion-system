@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.layout-zoom-fade-out",
+  "file": "curves/v4.layout-zoom-fade-out.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (agent logo icon 6 interior; 17 = opaque, 246 = gone)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/t1_s1_exit.csv",
+  "column": "hex_luma",
+  "sampled_frames": [
+    205,
+    228
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 17.0,
+  "to_value": 246.0,
+  "active_frames": [
+    215,
+    225
+  ],
+  "measured_duration_frames": 10,
+  "bezier": {
+    "x1": 0.3583,
+    "y1": 0.0214,
+    "x2": 0.6856,
+    "y2": 0.2083,
+    "durationInFrames": 11,
+    "delay": -0.998,
+    "built_duration_frames": 10,
+    "rmse": 0.0019
+  },
+  "spring": {
+    "stiffness": 310.426,
+    "damping": 20.727,
+    "mass": 1,
+    "damping_ratio": 0.5882,
+    "built_duration_frames": 21,
+    "rmse": 0.5295
+  },
+  "recommended": "bezier",
+  "note": "S1 exit: the whole S1 layer (headline, hex grid, icons) fades out f214-f225 while scaling about the frame centre (959, ~540) from 1.000 to 1.0315 at f224 (last visible frame), both ease-in"
+}

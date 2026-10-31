@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.3d-card-turn-recede",
+ "file": "curves/v8.3d-card-turn-recede.csv",
+ "property": "rotation",
+ "unit": "degrees about the vertical axis (pinhole model, f fitted 2618 px)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c2_S03_card_rot.csv",
+ "column": "rot_y_deg",
+ "sampled_frames": [
+  1016,
+  1091
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 0.0,
+ "to_value": 26.47,
+ "active_frames": [
+  1024,
+  1077
+ ],
+ "measured_duration_frames": 53,
+ "bezier": {
+  "x1": 0.9093,
+  "y1": 0.2633,
+  "x2": 0.3958,
+  "y2": 1.0021,
+  "durationInFrames": 64,
+  "delay": -3.029,
+  "built_duration_frames": 51,
+  "rmse": 0.0189
+ },
+ "spring": {
+  "stiffness": 21.446,
+  "damping": 6.444,
+  "mass": 1,
+  "damping_ratio": 0.6957,
+  "built_duration_frames": 76,
+  "rmse": 0.4368
+ },
+ "recommended": "bezier",
+ "note": "S03 post card: Y rotation derived from the measured left/right edge heights of the card (scratch/v8c2_S03_card_geom.csv -> v8c2_S03_card_rot.csv) with a pinhole model (focal length fitted per frame where the ratio < 0.9: 2315-2800 px, mean 2618 px = 34 deg horizontal FOV); the left edge comes toward the camera; after f1066 the card also recedes (depth scale 0.98 -> 0.80 at f1092) and slides left (centre x 740 -> 563 px)",
+ "chunk_curve_id": "v8.3d-card-turn-recede.v8c2"
+}

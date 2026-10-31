@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.ui-folder-pop-in",
+  "file": "curves/v7.ui-folder-pop-in.csv",
+  "property": "scale",
+  "unit": "scale factor (1.0 = folder icon 247 px = 15.2% W)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_newfolder_w_newpic.csv",
+  "column": "scale",
+  "sampled_frames": [
+    2739,
+    2766
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 1.0,
+  "active_frames": [
+    2744,
+    2759
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.4335,
+    "x2": 0.0,
+    "y2": 0.8126,
+    "durationInFrames": 14,
+    "delay": 0.0,
+    "built_duration_frames": 13,
+    "rmse": 0.0265
+  },
+  "spring": {
+    "stiffness": 1097.439,
+    "damping": 66.404,
+    "mass": 1,
+    "damping_ratio": 1.0023,
+    "built_duration_frames": 11,
+    "rmse": 0.1779
+  },
+  "recommended": "bezier",
+  "note": "the drop-target folder (5th tile of the grid, with its label) pops in at the grid slot while the file is dragged towards it: absent f2744, first seen f2746 at 0.62 (153 px, glowing near-white and soft), 0.78 f2749, 0.87 f2751, 0.94 f2754, 0.97 f2756, 0.99 f2759, 1.00 f2761 (247 px); it stays lighter than the other folders (hover highlight) until the drop; scales about its centre (x 804 px); bbox of the folder's upper part (rows 300-445 px, threshold 45 over luma 26) so the pill below does not interfere; the jump 0 -> 0.62 happens inside one capture gap, so the start of the curve is uncertain"
+}

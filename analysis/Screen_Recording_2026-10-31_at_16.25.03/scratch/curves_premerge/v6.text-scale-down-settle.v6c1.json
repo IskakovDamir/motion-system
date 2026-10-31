@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.text-scale-down-settle.v6c1",
+  "file": "curves/v6.text-scale-down-settle.v6c1.csv",
+  "property": "scale",
+  "unit": "scale factor of the grey first part of the line (template ref f371 = 1.0)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_P07_line1_scale.csv",
+  "column": "scale",
+  "sampled_frames": [
+    326,
+    379
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.385,
+  "to_value": 1.0,
+  "active_frames": [
+    326,
+    351
+  ],
+  "measured_duration_frames": 25,
+  "bezier": {
+    "x1": 0.1412,
+    "y1": 1.3089,
+    "x2": 0.8869,
+    "y2": 0.9084,
+    "durationInFrames": 38,
+    "delay": -0.005,
+    "built_duration_frames": 23,
+    "rmse": 0.0238
+  },
+  "spring": {
+    "stiffness": 225.697,
+    "damping": 37.213,
+    "mass": 1,
+    "damping_ratio": 1.2385,
+    "built_duration_frames": 24,
+    "rmse": 0.1138
+  },
+  "recommended": "bezier",
+  "note": "2-word grey/black headline enters oversized and scales down to rest about its baseline centre (x ~770 px, y ~500 px): first seen f324 at about x1.5 with motion blur, x1.385 at f326 (template score 0.57), x1.26 f328, x1.0 by ~f356; meanwhile line 1 types on left to right: its grey part (figure + word) f324-f328, about 2 letters per picture (grey ink right edge 404 / 624 / 920 px at f324/326/328, where a complete grey part would end near 960 / 946 / 930 px), then its black word f331-f337 (scratch/v6c1_P07_line1_typeon.csv) and line 2 types on (f336-f343); the block then rises (v6.layout-rise-make-room)"
+}

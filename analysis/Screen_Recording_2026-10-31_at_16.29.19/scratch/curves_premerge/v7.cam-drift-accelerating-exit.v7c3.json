@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.cam-drift-accelerating-exit.v7c3",
+  "file": "curves/v7.cam-drift-accelerating-exit.v7c3.csv",
+  "property": "position-x",
+  "unit": "% of frame width (viewer transport controls; 60.8% -> 56.2% W at the last picture before the cut)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p5_transport.csv",
+  "column": "cx_pct",
+  "sampled_frames": [
+    2236,
+    2340
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 60.82,
+  "to_value": 56.196,
+  "active_frames": [
+    2259,
+    2339
+  ],
+  "measured_duration_frames": 80,
+  "bezier": {
+    "x1": 0.8007,
+    "y1": 0.0685,
+    "x2": 1.0,
+    "y2": 0.818,
+    "durationInFrames": 88,
+    "delay": -8.0,
+    "built_duration_frames": 76,
+    "rmse": 0.018
+  },
+  "spring": {
+    "stiffness": 9.087,
+    "damping": 26.176,
+    "mass": 1,
+    "damping_ratio": 4.3418,
+    "built_duration_frames": 113,
+    "rmse": 0.4292
+  },
+  "recommended": "bezier",
+  "note": "P5 exit move: after the clip edits settle the whole editor window drifts left (camera pans right), starting imperceptibly at ~f2250 and accelerating to ~5 px/frame (0.31% W) at the last picture f2340, straight into the hard cut at f2342 (no settle); scale constant within 1% (template scale 0.99-1.01), y constant; template on the viewer transport controls (ref f2262); to-value = last measured picture"
+}

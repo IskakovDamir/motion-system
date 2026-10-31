@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-spin-zoom-whip-scale.v7c2",
+  "file": "curves/v7.trans-spin-zoom-whip-scale.v7c2.csv",
+  "property": "scale",
+  "unit": "cursor height px (60 px at the cut = 6.5% H; 205 px settled = 22.3% H)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_cursor_bbox.csv",
+  "column": "h",
+  "sampled_frames": [
+    1259,
+    1286
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 60.0,
+  "to_value": 205.0,
+  "active_frames": [
+    1260,
+    1281
+  ],
+  "measured_duration_frames": 21,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.1105,
+    "x2": 0.4185,
+    "y2": 1.0,
+    "durationInFrames": 22,
+    "delay": 0.303,
+    "built_duration_frames": 19,
+    "rmse": 0.0338
+  },
+  "spring": {
+    "stiffness": 151.138,
+    "damping": 21.946,
+    "mass": 1,
+    "damping_ratio": 0.8926,
+    "built_duration_frames": 22,
+    "rmse": 0.0403
+  },
+  "recommended": "bezier",
+  "note": "incoming half of the tilt-whip into the cursor scene: after the cut (f1259) the tilted, blurred dark UI pushes in x3.42 about the cursor (cursor bbox height 60 -> 205 px) while rotating level; motion starts at the cut (no rest before, from-value pinned to the first picture); growth after f1286 is the cursor glow, excluded"
+}

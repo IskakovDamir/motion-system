@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.trans-mascot-converge-fly",
+ "file": "curves/v8.trans-mascot-converge-fly.csv",
+ "property": "position-x",
+ "unit": "% of frame width",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c4_T5_mascot_path.csv",
+ "column": "cx_pct",
+ "sampled_frames": [
+  2630,
+  2690
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 49.692,
+ "to_value": 10.253,
+ "active_frames": [
+  2637,
+  2670
+ ],
+ "measured_duration_frames": 33,
+ "bezier": {
+  "x1": 0.8239,
+  "y1": 0.0917,
+  "x2": 0.229,
+  "y2": 0.995,
+  "durationInFrames": 45,
+  "delay": -5.189,
+  "built_duration_frames": 33,
+  "rmse": 0.0112
+ },
+ "spring": {
+  "stiffness": 109.982,
+  "damping": 17.093,
+  "mass": 1,
+  "damping_ratio": 0.815,
+  "built_duration_frames": 22,
+  "rmse": 0.1862
+ },
+ "recommended": "bezier",
+ "note": "tiny light mascot (left from the implosion) flies from the frame centre to the avatar slot of the next chat message on a dipping arc (lowest 56.6% H at f2654) with horizontal blur and a tilt, growing 39 -> 80 px (x2.05)",
+ "chunk_curve_id": "v8.trans-mascot-converge-fly.v8c4"
+}

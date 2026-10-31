@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-iris-white",
+  "file": "curves/v7.trans-iris-white.csv",
+  "property": "mask",
+  "unit": "px radius of the white disc (picture 1622x918; 932 px = covers the frame)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_iris_disc_radius.csv",
+  "column": "radius_px",
+  "sampled_frames": [
+    144,
+    168
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 13.04,
+  "to_value": 932.0,
+  "active_frames": [
+    146,
+    162
+  ],
+  "measured_duration_frames": 16,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.0291,
+    "x2": 0.8858,
+    "y2": -0.0634,
+    "durationInFrames": 18,
+    "delay": -2.0,
+    "built_duration_frames": 16,
+    "rmse": 0.0048
+  },
+  "spring": {
+    "stiffness": 238.917,
+    "damping": 21.145,
+    "mass": 1,
+    "damping_ratio": 0.684,
+    "built_duration_frames": 24,
+    "rmse": 0.5547
+  },
+  "recommended": "bezier",
+  "note": "soft-edged white disc grows from the label-box centre (the white lead ball, r 13 px at f144) until the frame is white (f162, radius >= 932 px half-diagonal), white hold f162-f168 at luma 248 = the next layout's background; equivalent radius of the >=225-luma component at the centre"
+}

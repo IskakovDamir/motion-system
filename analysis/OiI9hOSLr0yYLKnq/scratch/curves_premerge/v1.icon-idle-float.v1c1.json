@@ -1,0 +1,40 @@
+{
+  "technique_id": "v1.icon-idle-float.v1c1",
+  "file": "curves/v1.icon-idle-float.v1c1.csv",
+  "property": "position-y",
+  "unit": "px (icon x 420 badge-template centre; 20.0 px = 1.85% of frame height peak to peak)",
+  "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/s1_icon_float.csv",
+  "column": "x420_cy",
+  "sampled_frames": [
+    26,
+    99
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 905.79,
+  "to_value": 885.83,
+  "active_frames": [
+    33,
+    98
+  ],
+  "measured_duration_frames": 65,
+  "bezier": {
+    "x1": 0.3627,
+    "y1": 0.0101,
+    "x2": 0.6366,
+    "y2": 0.95,
+    "durationInFrames": 76,
+    "delay": -6.133,
+    "built_duration_frames": 65,
+    "rmse": 0.0028
+  },
+  "spring": {
+    "stiffness": 15.65,
+    "damping": 23.927,
+    "mass": 1,
+    "damping_ratio": 3.0242,
+    "built_duration_frames": 86,
+    "rmse": 0.2172
+  },
+  "recommended": "bezier",
+  "note": "one half-swing (lowest point f26.4 -> highest point f104.8) of the S01 idle float of the agent icon at x 420; from/to are the extremes of the shared-period sine fit (y = rest + 9.98 cos(2 pi (f - 26.4)/156.9)), because the next extreme falls after the exit starts (f100). All 8 icons follow the same sine (period 156.9 f, amplitude 9.95-9.99 px, rms residual 0.03-0.04 px over f20-f99) with their own phase; sub-pixel template tracks scratch/s1_icon_float.csv."
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v3.trans-dip-to-bg.i2",
+  "file": "curves/v3.trans-dip-to-bg.i2.csv",
+  "property": "opacity",
+  "unit": "opacity 0-1 (ink relative to the settled frame)",
+  "source_samples": "../../analysis/yI-1xclfzqMRrqfA/scratch/v3c2_t1_textcard_opacity.csv",
+  "column": "headline_opacity",
+  "sampled_frames": [
+    884,
+    902
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 1.0,
+  "to_value": 0.0,
+  "active_frames": [
+    891,
+    899
+  ],
+  "measured_duration_frames": 8,
+  "bezier": {
+    "x1": 0.1776,
+    "y1": 0.0462,
+    "x2": 0.5508,
+    "y2": -0.0787,
+    "durationInFrames": 8,
+    "delay": -0.146,
+    "built_duration_frames": 7,
+    "rmse": 0.0323
+  },
+  "spring": {
+    "stiffness": 797.377,
+    "damping": 38.292,
+    "mass": 1,
+    "damping_ratio": 0.678,
+    "built_duration_frames": 13,
+    "rmse": 0.4991
+  },
+  "recommended": "bezier",
+  "note": "text-card exit: headline and sub line fade together (identical per frame, scale 1.000 and position fixed by a scaled template, score >= 0.9997); empty background f899; badge row pops in f900, heading pops in f903"
+}

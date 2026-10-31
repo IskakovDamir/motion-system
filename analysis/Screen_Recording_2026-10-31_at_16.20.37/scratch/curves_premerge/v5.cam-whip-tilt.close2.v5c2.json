@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.cam-whip-tilt.close2.v5c2",
+  "file": "curves/v5.cam-whip-tilt.close2.v5c2.csv",
+  "property": "position-y",
+  "unit": "px (content y, chip-1 label template centre)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_E_chip2_press.csv",
+  "column": "c1_cy",
+  "sampled_frames": [
+    951,
+    982
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 290.0,
+  "to_value": 464.0,
+  "active_frames": [
+    957,
+    977
+  ],
+  "measured_duration_frames": 20,
+  "bezier": {
+    "x1": 0.8123,
+    "y1": 0.0987,
+    "x2": 0.2552,
+    "y2": 0.7317,
+    "durationInFrames": 23,
+    "delay": -2.509,
+    "built_duration_frames": 20,
+    "rmse": 0.0343
+  },
+  "spring": {
+    "stiffness": 204.545,
+    "damping": 22.389,
+    "mass": 1,
+    "damping_ratio": 0.7827,
+    "built_duration_frames": 16,
+    "rmse": 0.1189
+  },
+  "recommended": "bezier",
+  "note": "menu-2 close: pure camera tilt back (content moves down), no pull-back: chip 1 / chip 2 / chip 3 label template scales 1.000 (+-0.008 under the blur f965-f967); chip-1 label y 290 (f951) -> 289 (f953) -> 290 -> 293 -> 299 -> 310 (f962) -> 332 -> 378.5 (f967) -> 424 (f970) -> 445 -> 456 -> 462 -> 464 (f980-f982); 175 px = 19.1 % H; peak 46.5 px per picture (f965-f967, vertical blur); scratch/v5c2_E_chip2_press.csv"
+}

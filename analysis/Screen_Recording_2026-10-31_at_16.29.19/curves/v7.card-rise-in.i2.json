@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.card-rise-in.i2",
+  "file": "curves/v7.card-rise-in.i2.csv",
+  "property": "position-y",
+  "unit": "canvas px at close-up scale (gap from row 2's ink top to the card's top edge divided by the camera scale: 668 -> 225, i.e. the card rises 443 close-up px = 248 px on screen at the rest scale x0.560)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p4_card_rise2.csv",
+  "column": "gap_canvas_px",
+  "sampled_frames": [
+    3279,
+    3301
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 668.1,
+  "to_value": 225.0,
+  "active_frames": [
+    3279,
+    3296
+  ],
+  "measured_duration_frames": 17,
+  "bezier": {
+    "x1": 0.0001,
+    "y1": 0.331,
+    "x2": 0.4466,
+    "y2": 1.019,
+    "durationInFrames": 18,
+    "delay": 0.0,
+    "built_duration_frames": 15,
+    "rmse": 0.0368
+  },
+  "spring": {
+    "stiffness": 406.267,
+    "damping": 85.157,
+    "mass": 1,
+    "damping_ratio": 2.1124,
+    "built_duration_frames": 18,
+    "rmse": 0.0796
+  },
+  "recommended": "bezier",
+  "note": "P4 picture card entrance during the camera pull-back: the 16:9 rounded picture card rises into its slot under the rows from below the frame (first seen f3279 as a smeared top edge at the bottom of the frame), decelerating to rest by about f3296; its own rise is separated from the pull-back by dividing the row-2-to-card gap by the camera scale (scratch/v7c5_p4_pullback_rowy.csv); no fade (card luma 110 from f3284) and no scale change relative to the rows (card width / camera scale constant within 1% from f3284); card top from the ink bands, row-2 top from the text ink (scratch/v7c5_p4_card_rise2.csv)"
+}

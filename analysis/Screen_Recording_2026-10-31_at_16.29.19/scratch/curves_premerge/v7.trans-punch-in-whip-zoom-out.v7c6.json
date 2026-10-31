@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-punch-in-whip-zoom-out.v7c6",
+  "file": "curves/v7.trans-punch-in-whip-zoom-out.v7c6.csv",
+  "property": "scale",
+  "unit": "scale factor of the menu's value text (1.0 = menu at rest, f4276)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c6_p3_value_out_tmpl.csv",
+  "column": "scale",
+  "sampled_frames": [
+    4256,
+    4286
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.99,
+  "to_value": 1.215,
+  "active_frames": [
+    4266,
+    4286
+  ],
+  "measured_duration_frames": 20,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.1572,
+    "x2": 0.9908,
+    "y2": -0.304,
+    "durationInFrames": 17,
+    "delay": 2.866,
+    "built_duration_frames": 17,
+    "rmse": 0.0221
+  },
+  "spring": {
+    "stiffness": 74.906,
+    "damping": 0.5,
+    "mass": 1,
+    "damping_ratio": 0.0289,
+    "built_duration_frames": 198,
+    "rmse": 0.773
+  },
+  "recommended": "bezier",
+  "note": "outgoing half of the punch-in whip P3 -> P4: after a slow creep (scale 0.99 -> 1.00, f4256-f4276) the camera accelerates into the highlighted row's value at the right of the menu: scale 1.01 / 1.035 / 1.08 / 1.215 at f4279 / 4281 / 4284 / 4286 while the value drifts left (centre x 1395 -> 1390 -> 1372 -> 1335 -> 1242 px) and up (542 -> 519 px), with growing horizontal motion blur; hard cut at f4289 into a x1.7 closer framing; to-value = last picture before the cut (no settle); template on the value text (ref f4276), f4286 score 0.55 (blur)"
+}

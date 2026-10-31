@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.text-stream-reveal",
+ "file": "curves/v8.text-stream-reveal.csv",
+ "property": "mask",
+ "unit": "px, right end of the revealed ink (picture 1622 px wide; line runs x 315-1288)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c2_S05_head_front_filled.csv",
+ "column": "x1",
+ "sampled_frames": [
+  1327,
+  1356
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 315.0,
+ "to_value": 1288.0,
+ "active_frames": [
+  1332,
+  1346
+ ],
+ "measured_duration_frames": 14,
+ "bezier": {
+  "x1": 1.0,
+  "y1": 1.0827,
+  "x2": 0.0325,
+  "y2": -0.098,
+  "durationInFrames": 13,
+  "delay": 0.286,
+  "built_duration_frames": 13,
+  "rmse": 0.0311
+ },
+ "spring": {
+  "stiffness": 300.227,
+  "damping": 52.865,
+  "mass": 1,
+  "damping_ratio": 1.5255,
+  "built_duration_frames": 21,
+  "rmse": 0.1776
+ },
+ "recommended": "bezier",
+ "note": "S05 heading (1 line, 5 words + full stop): right end of ink darker than 223 luma in the line box (bbox, scratch/v8c2_S05_head_front.csv; pictures with no ink set to the line start x 315); letters appear left to right, each blurred and light first, then darkening behind the front (trailing gradient of about 2-3 words); 973 px in 12 frames",
+ "chunk_curve_id": "v8.text-stream-reveal.v8c2"
+}

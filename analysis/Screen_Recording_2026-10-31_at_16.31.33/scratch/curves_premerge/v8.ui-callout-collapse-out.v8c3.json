@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.ui-callout-collapse-out.v8c3",
+  "file": "curves/v8.ui-callout-collapse-out.v8c3.csv",
+  "property": "scale",
+  "unit": "scale factor (ink width / rest width 287 px)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c3r_S07_callout_brand_cc.csv",
+  "column": "scale_w",
+  "sampled_frames": [
+    2146,
+    2180
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.0,
+  "to_value": 0.0,
+  "active_frames": [
+    2160,
+    2180
+  ],
+  "measured_duration_frames": 20,
+  "bezier": {
+    "x1": 0.9352,
+    "y1": 0.1468,
+    "x2": 0.591,
+    "y2": 0.7187,
+    "durationInFrames": 20,
+    "delay": -1.13,
+    "built_duration_frames": 18,
+    "rmse": 0.0384
+  },
+  "spring": {
+    "stiffness": 76.792,
+    "damping": 6.842,
+    "mass": 1,
+    "damping_ratio": 0.3904,
+    "built_duration_frames": 57,
+    "rmse": 0.6306
+  },
+  "recommended": "bezier",
+  "note": "S07 callout (mascot icon + 3-word label, below the stack; the 4th callout to leave): ink width of the callout's connected components (pixels 70 below the local background in x 820-1220, y 657-715; blobs at the ROI's left corner = stack edge ignored), scratch/v8c3r_S07_callout_brand_cc.csv (repeated pictures of the capture run marked non-unique), over its rest width 287 px (17.7% W). While drifting right with the stack (about 2.4 px per frame) the callout collapses toward a point at about (1040, 692) px = 64.1% W, 75.4% H: width 284 (f2160) -> 270 (f2164) -> 258 (f2166) -> 239 (f2168) -> 214 (f2171) -> 175 (f2172) -> 111 (f2174) -> 42 (f2176) -> 10 (f2178), gone f2180; its height squashes faster (43 -> 29 -> 22 -> 6 -> 1 px at f2160 / f2171 / f2172 / f2174 / f2176), so it ends as a thin horizontal sliver with horizontal blur; its leader line disappears with it. Ease-in, no swell before it in this instance."
+}

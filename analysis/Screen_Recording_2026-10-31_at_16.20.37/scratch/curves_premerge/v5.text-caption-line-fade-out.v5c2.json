@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-caption-line-fade-out.v5c2",
+  "file": "curves/v5.text-caption-line-fade-out.v5c2.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (98th pct of the line ROI, drift-compensated)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_B_cap2_lines.csv",
+  "column": "bot",
+  "sampled_frames": [
+    1207,
+    1237
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 240.0,
+  "to_value": 116.0,
+  "active_frames": [
+    1213,
+    1230
+  ],
+  "measured_duration_frames": 17,
+  "bezier": {
+    "x1": 0.3118,
+    "y1": 0.7652,
+    "x2": 1.0,
+    "y2": 0.7692,
+    "durationInFrames": 14,
+    "delay": 0.458,
+    "built_duration_frames": 14,
+    "rmse": 0.0504
+  },
+  "spring": {
+    "stiffness": 189.897,
+    "damping": 25.078,
+    "mass": 1,
+    "damping_ratio": 0.9099,
+    "built_duration_frames": 21,
+    "rmse": 0.0604
+  },
+  "recommended": "bezier",
+  "note": "caption 2 bottom line (2 words) fades (with a soft blur) out first while the middle and top lines are still on (first in, first out); ROI follows the caption drift (-6.2 px/frame); from-value 240 = full white plateau (f1207-f1213), to-value 116 = footage under the line after the fade (f1230-f1237); the middle line follows about 10 frames later and the top line about 20 frames later"
+}

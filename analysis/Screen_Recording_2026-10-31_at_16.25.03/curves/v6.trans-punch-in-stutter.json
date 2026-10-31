@@ -1,0 +1,98 @@
+{
+  "technique_id": "v6.trans-punch-in-stutter",
+  "file": "curves/v6.trans-punch-in-stutter.csv",
+  "property": "scale",
+  "unit": "scale factor of the outgoing layout (1.0 = rest), one crop per 24 fps picture",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_punchin_keyframes.csv",
+  "column": "scale",
+  "sampled_frames": [
+    293,
+    313
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.0,
+  "to_value": 3.85,
+  "active_frames": [
+    303,
+    313
+  ],
+  "measured_duration_frames": 10,
+  "bezier": {
+    "x1": 0.5251,
+    "y1": 0.279,
+    "x2": 0.9145,
+    "y2": -0.33,
+    "durationInFrames": 9,
+    "delay": -0.001,
+    "built_duration_frames": 9,
+    "rmse": 0.0623
+  },
+  "spring": {
+    "stiffness": 347.915,
+    "damping": 0.5,
+    "mass": 1,
+    "damping_ratio": 0.0134,
+    "built_duration_frames": 159,
+    "rmse": 0.7559
+  },
+  "recommended": "bezier",
+  "note": "STEPPED: each captured picture is a differently centred close crop that holds until the next picture, so the timing is the keyframe list in this sidecar ('keyframes'); the bezier/spring are only an envelope of the scale ramp f303-f313 for tools that need one. Keyframes: x1.0 until f303; x1.25 about (174, 852) px at f306 and f308 (same framing); x1.97 about (1538, 855) px at f311; x3.85 about (1539, 859) px at f313 (same centre as f311); x2.30 about (108, 9) px at f316; empty field f318-f321; next text f324",
+  "stepped": true,
+  "keyframes": [
+    {
+      "frame": 303,
+      "hold_until": 305,
+      "scale": 1.0,
+      "zoom_centre_px": null,
+      "framing": "whole layout (last rest picture)"
+    },
+    {
+      "frame": 306,
+      "hold_until": 310,
+      "scale": 1.25,
+      "zoom_centre_px": [
+        174,
+        852
+      ],
+      "framing": "lower left (big lower word); f308 repeats the f306 framing"
+    },
+    {
+      "frame": 311,
+      "hold_until": 312,
+      "scale": 1.97,
+      "zoom_centre_px": [
+        1538,
+        855
+      ],
+      "framing": "lower right (sub-caption)"
+    },
+    {
+      "frame": 313,
+      "hold_until": 315,
+      "scale": 3.85,
+      "zoom_centre_px": [
+        1539,
+        859
+      ],
+      "framing": "same centre as f311, closer (grey sub-caption word)"
+    },
+    {
+      "frame": 316,
+      "hold_until": 317,
+      "scale": 2.3,
+      "zoom_centre_px": [
+        108,
+        9
+      ],
+      "framing": "top left (the two top words)"
+    },
+    {
+      "frame": 318,
+      "hold_until": 323,
+      "scale": null,
+      "zoom_centre_px": null,
+      "framing": "empty field"
+    }
+  ],
+  "keyframes_source": "scratch/v6c1_punchin_keyframes.csv (template and ink-box measurements per picture)"
+}

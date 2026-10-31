@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.trans-tile-hex-morph.hex-scale.v4c2",
+  "file": "curves/v4.trans-tile-hex-morph.hex-scale.v4c2.csv",
+  "property": "scale",
+  "unit": "scale factor of the hexagon (1.0 = 57 x 52 px)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/c2_r1_t6_morph_model.csv",
+  "column": "cor71_hex_scale",
+  "sampled_frames": [
+    1312,
+    1335
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 0.612,
+  "to_value": 1.0,
+  "active_frames": [
+    1312,
+    1327
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.3512,
+    "y1": 0.9409,
+    "x2": 0.6882,
+    "y2": 0.9741,
+    "durationInFrames": 18,
+    "delay": -0.014,
+    "built_duration_frames": 15,
+    "rmse": 0.0024
+  },
+  "spring": {
+    "stiffness": 363.601,
+    "damping": 36.837,
+    "mass": 1,
+    "damping_ratio": 0.9659,
+    "built_duration_frames": 18,
+    "rmse": 0.0416
+  },
+  "recommended": "bezier",
+  "note": "top-left corner node (71,166), same model fit: the hexagon grows about the node centre while it darkens; first frame with a reliable size f1312 (hexagon opacity 0.30) at scale 0.612; its size before that cannot be measured; the centre node (1030,575) gives the same curve (bezier 0.353, 0.999, 0.800, 0.978, D=18) from 0.577 at f1297"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-typewriter.v5c2",
+  "file": "curves/v5.text-typewriter.v5c2.csv",
+  "property": "count",
+  "unit": "characters visible (of 48)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_type1_chars.csv",
+  "column": "chars_visible",
+  "sampled_frames": [
+    782,
+    815
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 48.0,
+  "active_frames": [
+    785,
+    807
+  ],
+  "measured_duration_frames": 22,
+  "bezier": {
+    "x1": 1.0,
+    "y1": 1.0402,
+    "x2": 0.7006,
+    "y2": 0.57,
+    "durationInFrames": 22,
+    "delay": -0.047,
+    "built_duration_frames": 22,
+    "rmse": 0.0099
+  },
+  "spring": {
+    "stiffness": 106.749,
+    "damping": 108.206,
+    "mass": 1,
+    "damping_ratio": 5.2365,
+    "built_duration_frames": 33,
+    "rmse": 0.1977
+  },
+  "recommended": "bezier",
+  "note": "typed prompt line in the input pill (1 line, 9 words, 48 characters incl. spaces, sentence case, no cursor glyph): characters appear one by one left to right at a near-constant 2.2 characters per frame (counts read off frame-numbered sheets cut_c023 / overview_00768-00813); the text appears as the pill's pixel-square fill finishes dissolving at its left end (f785); ink-width version of the same move: scratch/v5c2_type1_w.csv"
+}

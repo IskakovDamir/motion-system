@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.ui-callout-pop-in.i3",
+ "file": "curves/v8.ui-callout-pop-in.i3.csv",
+ "property": "height",
+ "unit": "% of frame height (leader line length beyond the dot's 6 px radius)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c3r_S07_c6_dotline_2076-2124.csv",
+ "column": "line_beyond_dot_pct",
+ "sampled_frames": [
+  2084,
+  2106
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 0.0,
+ "to_value": 8.824,
+ "active_frames": [
+  2090,
+  2104
+ ],
+ "measured_duration_frames": 14,
+ "bezier": {
+  "x1": 0.5545,
+  "y1": 0.9955,
+  "x2": 0.4927,
+  "y2": 0.6684,
+  "durationInFrames": 13,
+  "delay": 0.718,
+  "built_duration_frames": 13,
+  "rmse": 0.0338
+ },
+ "spring": {
+  "stiffness": 416.492,
+  "damping": 39.288,
+  "mass": 1,
+  "damping_ratio": 0.9626,
+  "built_duration_frames": 16,
+  "rmse": 0.039
+ },
+ "recommended": "bezier",
+ "note": "S07 callout 6 of 7 (bottom left), leader line: thin light vertical line drawn from the anchor dot down toward the pill's slot. Length = rows from the dot centre to the last row whose horizontal top-hat residual (1 x 11 px opening, max over a 5 px band at the dot's x) is >= 14 luma, minus the dot's 6 px radius (scratch/v8c3r_S07_c6_dotline_2076-2124.csv). None to f2090; 14 px (f2092), 35, 52, 63, 71 (f2101), 75, 80 (f2104), 82 px (f2106); to-value 81 px (8.82% H) = mean of f2104-f2106. Range ends at f2106 because from then on the far end lies in the light rim of the rising pill (rim luma 215-222 against the line's 225-232, column profile at f2112), so the read end retreats with the pill (77-79 px at f2108-f2118, 75 px at f2124) while the line itself does not visibly shorten. The pill grows from its f2094 speck while the line draws.",
+ "chunk_curve_id": "v8.ui-callout-pop-in-line.v8c3"
+}

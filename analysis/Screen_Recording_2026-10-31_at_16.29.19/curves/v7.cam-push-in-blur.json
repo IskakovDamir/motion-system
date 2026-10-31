@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.cam-push-in-blur",
+  "file": "curves/v7.cam-push-in-blur.csv",
+  "property": "scale",
+  "unit": "scale factor (1.0 = page at rest f299-f304)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s3_title_286-352.csv",
+  "column": "scale",
+  "sampled_frames": [
+    299,
+    348
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.0,
+  "to_value": 1.81,
+  "active_frames": [
+    304,
+    336
+  ],
+  "measured_duration_frames": 32,
+  "bezier": {
+    "x1": 0.4228,
+    "y1": 0.4015,
+    "x2": 0.0357,
+    "y2": 0.9985,
+    "durationInFrames": 36,
+    "delay": 1.002,
+    "built_duration_frames": 27,
+    "rmse": 0.0363
+  },
+  "spring": {
+    "stiffness": 208.763,
+    "damping": 28.445,
+    "mass": 1,
+    "damping_ratio": 0.9843,
+    "built_duration_frames": 24,
+    "rmse": 0.0517
+  },
+  "recommended": "bezier",
+  "note": "S3 camera push-in on the page toward the search field: scale 1.0 -> 1.81 with directional motion blur at peak speed (f311-f316), title centre moves x 17.3% -> 25.7%, y 38.8% -> 12.1%; template on the page title with scales, ref f300 (scores 0.69 at the blurred peak)"
+}

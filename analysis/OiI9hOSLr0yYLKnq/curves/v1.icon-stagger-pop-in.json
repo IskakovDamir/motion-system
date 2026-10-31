@@ -1,0 +1,40 @@
+{
+  "technique_id": "v1.icon-stagger-pop-in",
+  "file": "curves/v1.icon-stagger-pop-in.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 inside the 3rd agent icon (246 = opacity 0, 17 = opacity 1)",
+  "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/s1_icon3_in_luma.csv",
+  "column": "mean",
+  "sampled_frames": [
+    5,
+    26
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 246.0,
+  "to_value": 17.101,
+  "active_frames": [
+    8,
+    18
+  ],
+  "measured_duration_frames": 10,
+  "bezier": {
+    "x1": 0.2236,
+    "y1": 1.0458,
+    "x2": 0.6956,
+    "y2": 0.9385,
+    "durationInFrames": 11,
+    "delay": 0.44,
+    "built_duration_frames": 10,
+    "rmse": 0.0514
+  },
+  "spring": {
+    "stiffness": 1446.885,
+    "damping": 79.559,
+    "mass": 1,
+    "damping_ratio": 1.0458,
+    "built_duration_frames": 10,
+    "rmse": 0.0421
+  },
+  "recommended": "spring",
+  "note": "one of 8 agent icons popping in with a 3-frame stagger (f3, f6, f9 ... f24); scale 0.68 -> 1.00 over the same frames (template f9-f18)"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.cursor-glide",
+  "file": "curves/v7.cursor-glide.csv",
+  "property": "position",
+  "unit": "px along the cursor's path, window-relative at the f1690 framing (push-in removed: O + (p - O) / s, O = (816, 457))",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p2_cursor_path.csv",
+  "column": "path_win_px_from_f1731",
+  "sampled_frames": [
+    1726,
+    1785
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 710.1,
+  "active_frames": [
+    1731,
+    1756
+  ],
+  "measured_duration_frames": 25,
+  "bezier": {
+    "x1": 0.4248,
+    "y1": 0.9462,
+    "x2": 0.4625,
+    "y2": 0.8912,
+    "durationInFrames": 24,
+    "delay": 2.384,
+    "built_duration_frames": 22,
+    "rmse": 0.0803
+  },
+  "spring": {
+    "stiffness": 233.422,
+    "damping": 30.43,
+    "mass": 1,
+    "damping_ratio": 0.9959,
+    "built_duration_frames": 23,
+    "rmse": 0.0463
+  },
+  "recommended": "spring",
+  "note": "P2 cursor flick, progress along its curved path: from the contact on thumbnail 1 (window-relative (584.6, 383.9) px at f1731) down-right to rest at (1138, 758.5) px from f1761 (path 710 px, chord 667 px = 34.1% W across and 40.8% H down); fastest 74 px per frame at f1734-f1736 (motion-blur streaks f1736-f1742), 52-58 px per frame to f1742, 36 at f1742-f1744, 15-16 at f1744-f1749, 5 at f1751-f1756, under 1.5 from f1759; the vertical part leads (y active f1731-f1747, 16 f; x f1731-f1756, 25 f) so the path curves (down first, then right); after f1761 the cursor only rides the camera push-in (screen creep about 20 px to f1784). Screen track: template ref f1731 (f1724-f1734) and ref f1764 (f1744-f1785), --global; streak ink centroids (bbox, dark, thresh 10) at f1736 / f1740 / f1742. samples scratch/v7c3_p2_cursor_path.csv"
+}

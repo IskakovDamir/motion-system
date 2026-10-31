@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.bg-halftone-ring-burst",
+  "file": "curves/v7.bg-halftone-ring-burst.csv",
+  "property": "mask",
+  "unit": "px radius from the label centre (inner edge of the halftone band; 1622 px = 100% W)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s1_halftone_ring_0-71.csv",
+  "column": "inner_vis_px",
+  "sampled_frames": [
+    0,
+    56
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 152.1,
+  "to_value": 856.3,
+  "active_frames": [
+    0,
+    55
+  ],
+  "measured_duration_frames": 55,
+  "bezier": {
+    "x1": 0.1103,
+    "y1": 0.1387,
+    "x2": 0.0511,
+    "y2": 0.6829,
+    "durationInFrames": 56,
+    "delay": -0.24,
+    "built_duration_frames": 53,
+    "rmse": 0.0243
+  },
+  "spring": {
+    "stiffness": 27.984,
+    "damping": 20.016,
+    "mass": 1,
+    "damping_ratio": 1.8918,
+    "built_duration_frames": 65,
+    "rmse": 0.0517
+  },
+  "recommended": "bezier",
+  "note": "S01 halftone ring: soft ring band over a static square dot grid (pitch 14.5 px), centred on the label centre (809, 461 px); inner edge = 50% of the band's high-pass texture peak, median of the sectors that can still see it (diagonals to f56, left/right to f36, top/bottom to f9); the video starts with the ring already expanding (no rest before f0; from-value = f0 picture) and the band leaves through the frame edges still moving (no settle): ease-out only, to-value = last measured picture f56; afterwards the band is out of frame"
+}

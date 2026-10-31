@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-liquid-flyin.i2",
+  "file": "curves/v5.text-liquid-flyin.i2.csv",
+  "property": "position-x",
+  "unit": "% of frame width (left ink edge)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_A_title_flyin_lines.csv",
+  "column": "l1_x0_pct",
+  "sampled_frames": [
+    3042,
+    3075
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 79.038,
+  "to_value": 24.846,
+  "active_frames": [
+    3042,
+    3052
+  ],
+  "measured_duration_frames": 10,
+  "bezier": {
+    "x1": 0.1269,
+    "y1": 0.7387,
+    "x2": 0.0142,
+    "y2": 0.8312,
+    "durationInFrames": 9,
+    "delay": 1.119,
+    "built_duration_frames": 8,
+    "rmse": 0.0205
+  },
+  "spring": {
+    "stiffness": 2490.256,
+    "damping": 166.128,
+    "mass": 1,
+    "damping_ratio": 1.6645,
+    "built_duration_frames": 8,
+    "rmse": 0.0752
+  },
+  "recommended": "bezier",
+  "note": "headline line 1 (2 words) left ink edge: flies in from the right edge as a liquid smear; starts at the hard cut f3042; 24.2% at f3055-57 then 24.9% by f3075 is the slow headline shrink, not a spring"
+}

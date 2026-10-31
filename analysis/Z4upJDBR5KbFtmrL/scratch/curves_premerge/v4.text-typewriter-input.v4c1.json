@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.text-typewriter-input.v4c1",
+  "file": "curves/v4.text-typewriter-input.v4c1.csv",
+  "property": "text width (typed)",
+  "unit": "px of typed text right edge from x 171",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/s2_typing.csv",
+  "column": "typed_px",
+  "sampled_frames": [
+    230,
+    299
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 0.0,
+  "to_value": 678.0,
+  "active_frames": [
+    237,
+    289
+  ],
+  "measured_duration_frames": 52,
+  "bezier": {
+    "x1": 0.4633,
+    "y1": 0.5246,
+    "x2": 0.4921,
+    "y2": 0.5441,
+    "durationInFrames": 52,
+    "delay": 0.065,
+    "built_duration_frames": 51,
+    "rmse": 0.0131
+  },
+  "spring": {
+    "stiffness": 19.889,
+    "damping": 10.615,
+    "mass": 1,
+    "damping_ratio": 1.1902,
+    "built_duration_frames": 77,
+    "rmse": 0.178
+  },
+  "recommended": "bezier",
+  "note": "S2 chat input typewriter: first character f238, visible text reaches the field clip (x 849) at f289; about 62 characters in 51 frames = 0.85 f/char (1.18 characters per frame), with 1-frame pauses every 3-5 frames; no caret visible"
+}

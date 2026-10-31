@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.cursor-drag-file-in",
+  "file": "curves/v7.cursor-drag-file-in.csv",
+  "property": "position-y",
+  "unit": "% of frame height (centre of the dragged file-name pill)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_drag_pill_newpic.csv",
+  "column": "cy_pct",
+  "sampled_frames": [
+    2741,
+    2780
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 93.301,
+  "to_value": 53.377,
+  "active_frames": [
+    2741,
+    2769
+  ],
+  "measured_duration_frames": 28,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.3507,
+    "x2": 0.3739,
+    "y2": 0.9946,
+    "durationInFrames": 31,
+    "delay": 1.699,
+    "built_duration_frames": 26,
+    "rmse": 0.0464
+  },
+  "spring": {
+    "stiffness": 117.243,
+    "damping": 37.473,
+    "mass": 1,
+    "damping_ratio": 1.7304,
+    "built_duration_frames": 32,
+    "rmse": 0.0324
+  },
+  "recommended": "spring",
+  "note": "dragged file chip (footage thumbnail ~110 px + dark file-name pill + dark arrow cursor with a soft shadow) enters from the bottom edge after the cut and travels up-right on a straight diagonal to the drop target: pill centre (542, 856.5) px f2741 -> (880, 490) px f2774 = +20.8% W, -39.9% H, decelerating from ~38 px/frame, horizontal and vertical progress in step (x 542 -> 880 px over the same frames); motion blur until ~f2756; template on the pill label (ref f2775, scale 1.04 while blurred -> 1.00 at rest); motion starts before the first visible picture (pill partly below the frame at f2741); at f2776-f2781 the pill shrinks (template scale 0.96 -> 0.90) into the folder (drop)"
+}

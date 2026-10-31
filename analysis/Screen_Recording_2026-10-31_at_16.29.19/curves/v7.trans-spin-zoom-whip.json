@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-spin-zoom-whip",
+  "file": "curves/v7.trans-spin-zoom-whip.csv",
+  "property": "rotation",
+  "unit": "degrees (negative = counter-clockwise on screen), whole frame; the incoming view starts rotated about +9.7 deg and levels to 0",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_tilt_in_ecc.csv",
+  "column": "rot_cum_deg",
+  "sampled_frames": [
+    1259,
+    1296
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": -9.749,
+  "active_frames": [
+    1260,
+    1281
+  ],
+  "measured_duration_frames": 21,
+  "bezier": {
+    "x1": 0.1669,
+    "y1": 0.4506,
+    "x2": 0.2689,
+    "y2": 0.8756,
+    "durationInFrames": 22,
+    "delay": -0.0,
+    "built_duration_frames": 20,
+    "rmse": 0.0293
+  },
+  "spring": {
+    "stiffness": 250.404,
+    "damping": 32.718,
+    "mass": 1,
+    "damping_ratio": 1.0338,
+    "built_duration_frames": 23,
+    "rmse": 0.0662
+  },
+  "recommended": "bezier",
+  "note": "incoming half of the spin-zoom whip: after the hard cut at f1259 the dark blurred UI keeps rotating CCW by 9.7 deg (levels out) while pushing in x2.58 (background) / x3.42 (cursor, nearer plane), decelerating to rest ~f1281; cumulative ECC affine fit (scratch/v7c2_tilt_in_ecc.csv), motion starts at the cut"
+}

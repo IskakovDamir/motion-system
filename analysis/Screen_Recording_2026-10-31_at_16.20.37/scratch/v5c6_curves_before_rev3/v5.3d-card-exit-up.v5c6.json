@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.3d-card-exit-up.v5c6",
+  "file": "curves/v5.3d-card-exit-up.v5c6.csv",
+  "property": "position-y",
+  "unit": "% of frame height (card centre)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c6_card_float.csv",
+  "column": "cy_pct",
+  "sampled_frames": [
+    4100,
+    4162
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 50.65,
+  "to_value": 25.76,
+  "active_frames": [
+    4125,
+    4162
+  ],
+  "measured_duration_frames": 37,
+  "bezier": {
+    "x1": 0.5132,
+    "y1": 0.0269,
+    "x2": 0.8097,
+    "y2": 0.4124,
+    "durationInFrames": 43,
+    "delay": -5.971,
+    "built_duration_frames": 37,
+    "rmse": 0.0064
+  },
+  "spring": {
+    "stiffness": 7.611,
+    "damping": 0.5,
+    "mass": 1,
+    "damping_ratio": 0.0906,
+    "built_duration_frames": 263,
+    "rmse": 0.8276
+  },
+  "recommended": "bezier",
+  "note": "after floating still (f4098-f4120, centre 50.6% H) the card accelerates upward and out of the top edge, shrinking slightly (template scale 0.99 -> 0.97); template track ref f4110 (scores 0.97-1.0 to f4160, 0.93 at f4162); the last tracked picture f4162 has the card top at the frame edge, f4165 is mostly out with vertical motion blur; the hard cut c121 at f4167 continues the upward motion (next window rises from below)"
+}

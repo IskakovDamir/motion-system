@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.cam-push-in-pan",
+ "file": "curves/v8.cam-push-in-pan.csv",
+ "property": "scale",
+ "unit": "scale factor of the device card (card width / 550 px rest width = 33.9% W)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c5r_Sa_camera.csv",
+ "column": "scale",
+ "sampled_frames": [
+  2898,
+  3024
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 1.0,
+ "to_value": 1.4291,
+ "active_frames": [
+  2928,
+  3002
+ ],
+ "measured_duration_frames": 74,
+ "bezier": {
+  "x1": 0.8376,
+  "y1": 0.0912,
+  "x2": 0.0064,
+  "y2": 0.9063,
+  "durationInFrames": 95,
+  "delay": -8.718,
+  "built_duration_frames": 71,
+  "rmse": 0.0217
+ },
+ "spring": {
+  "stiffness": 51.964,
+  "damping": 14.225,
+  "mass": 1,
+  "damping_ratio": 0.9866,
+  "built_duration_frames": 47,
+  "rmse": 0.2044
+ },
+ "recommended": "bezier",
+ "note": "S-a camera push on the dark device card (scratch/v8c5r_Sa_card_geom.csv -> v8c5r_Sa_camera.csv: card width from the dark mask luma<80, largest run of columns with >150 dark rows). Card width 550 -> 786 px (33.9% -> 48.5% W); left edge 535 -> 118 px (33.0% -> 7.3% W); card top 111 px (12.1% H) -> -668 px (-72.8% H, bridged by the count-label template and the card bottom edge). Scale, x and y progress coincide within 0.003, so the move is one zoom about a fixed screen point at about (1507, 1927) px = (92.9% W, 210% H), below the frame: the card grows and slides up-left. Runs straight through the in-device screen crossfade at f2973-f2976.",
+ "chunk_curve_id": "v8.cam-push-in-pan.v8c5"
+}

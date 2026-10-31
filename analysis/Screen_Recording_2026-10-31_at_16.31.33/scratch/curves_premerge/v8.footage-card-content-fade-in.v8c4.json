@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.footage-card-content-fade-in.v8c4",
+  "file": "curves/v8.footage-card-content-fade-in.v8c4.csv",
+  "property": "opacity",
+  "unit": "99th-percentile luma inside the card (black fill 37 -> content 244)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c4_T6_card_content_u.csv",
+  "column": "p99",
+  "sampled_frames": [
+    2816,
+    2866
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 37.0,
+  "to_value": 244.0,
+  "active_frames": [
+    2818,
+    2836
+  ],
+  "measured_duration_frames": 18,
+  "bezier": {
+    "x1": 1.0,
+    "y1": 1.0011,
+    "x2": 0.8202,
+    "y2": 0.5335,
+    "durationInFrames": 16,
+    "delay": 0.841,
+    "built_duration_frames": 16,
+    "rmse": 0.0386
+  },
+  "spring": {
+    "stiffness": 166.485,
+    "damping": 30.667,
+    "mass": 1,
+    "damping_ratio": 1.1884,
+    "built_duration_frames": 28,
+    "rmse": 0.2156
+  },
+  "recommended": "bezier",
+  "note": "the phone card's screen content fades in from its black fill while the card zooms to the centre (same device f2735-f2750 under the chat text)"
+}

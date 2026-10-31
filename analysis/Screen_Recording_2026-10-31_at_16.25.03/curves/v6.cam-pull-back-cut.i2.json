@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.cam-pull-back-cut.i2",
+  "file": "curves/v6.cam-pull-back-cut.i2.csv",
+  "property": "scale",
+  "unit": "scale factor of the whole globe layout (line-1 width / 1255 px at f431)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_globe_pullback.csv",
+  "column": "scale_vs_f431",
+  "sampled_frames": [
+    406,
+    443
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.0,
+  "to_value": 0.9052,
+  "active_frames": [
+    431,
+    443
+  ],
+  "measured_duration_frames": 12,
+  "bezier": {
+    "x1": 0.986,
+    "y1": 0.2821,
+    "x2": 0.7116,
+    "y2": 0.6062,
+    "durationInFrames": 11,
+    "delay": 1.067,
+    "built_duration_frames": 11,
+    "rmse": 0.0337
+  },
+  "spring": {
+    "stiffness": 117.393,
+    "damping": 0.5,
+    "mass": 1,
+    "damping_ratio": 0.0231,
+    "built_duration_frames": 166,
+    "rmse": 0.3392
+  },
+  "recommended": "bezier",
+  "note": "accelerating pull-back (zoom-out about the frame centre, ~(811, 462) px) of the whole globe layout right before the hard cut at f446: after the slow drift (about -0.04% per frame) the scale drops 1.000 / 0.997 / 0.987 / 0.971 / 0.945 / 0.905 at f431 / 433 / 436 / 439 / 441 / 443; the last picture before the cut is f443, so the move is cut off while still accelerating"
+}

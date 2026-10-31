@@ -1,0 +1,40 @@
+{
+  "technique_id": "v3.icon-badge-to-hex.i2",
+  "file": "curves/v3.icon-badge-to-hex.i2.csv",
+  "property": "scale",
+  "unit": "scale factor (1.0 = badge label at rest, third badge ink 224 x 30 px)",
+  "source_samples": "../../analysis/yI-1xclfzqMRrqfA/scratch/v3c2_label3_scale_opacity.csv",
+  "column": "scale",
+  "sampled_frames": [
+    1122,
+    1137
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 1.0,
+  "to_value": 0.62,
+  "active_frames": [
+    1125,
+    1136
+  ],
+  "measured_duration_frames": 11,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.0756,
+    "x2": 0.4421,
+    "y2": 0.9816,
+    "durationInFrames": 12,
+    "delay": 0.227,
+    "built_duration_frames": 11,
+    "rmse": 0.021
+  },
+  "spring": {
+    "stiffness": 404.305,
+    "damping": 33.884,
+    "mass": 1,
+    "damping_ratio": 0.8426,
+    "built_duration_frames": 13,
+    "rmse": 0.0502
+  },
+  "recommended": "bezier",
+  "note": "third badge label (first to leave), multi-scale NCC template from rest frame f1125 (scores 0.94-0.98 to f1133, 0.55 at f1137, the last frame with letter-shaped ink); end value 0.62 = where every label's scale settles in its last visible frames (third f1137, fourth f1138-f1139, first f1144, sixth f1146); the label scales about a point 124 px above its centre on the badge axis (y 695), so its centre rises 47 px with this same curve (cy = 695.3 + 123.7 x scale, max residual 0.8 px); every label repeats it from its own start"
+}

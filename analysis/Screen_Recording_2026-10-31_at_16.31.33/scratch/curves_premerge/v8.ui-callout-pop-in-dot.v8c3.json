@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.ui-callout-pop-in-dot.v8c3",
+  "file": "curves/v8.ui-callout-pop-in-dot.v8c3.csv",
+  "property": "scale",
+  "unit": "scale factor (equivalent diameter of the anchor dot / settled 12.2 px)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c3r_S07_c6_dotline_2076-2124.csv",
+  "column": "dot_scale",
+  "sampled_frames": [
+    2076,
+    2098
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 1.0,
+  "active_frames": [
+    2082,
+    2094
+  ],
+  "measured_duration_frames": 12,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.288,
+    "x2": 0.6497,
+    "y2": 1.018,
+    "durationInFrames": 12,
+    "delay": 1.08,
+    "built_duration_frames": 11,
+    "rmse": 0.0576
+  },
+  "spring": {
+    "stiffness": 325.763,
+    "damping": 30.074,
+    "mass": 1,
+    "damping_ratio": 0.8331,
+    "built_duration_frames": 14,
+    "rmse": 0.0353
+  },
+  "recommended": "spring",
+  "note": "S07 callout 6 of 7 (bottom left), anchor dot: white disc on its stack layer, white top-hat (17 px ellipse) around the dot's path, equivalent diameter of the component above half its peak (scratch/v8c3r_S07_c6_dotline_2076-2124.csv). Absent to f2082, a 2.8 px speck at (574, 719) px at f2084, 5.9 (f2086), 7.8 (f2088), 10.0 (f2090), 11.2 (f2092), 12.1 px (f2094), then 11.8-12.5 px (settled 12.2 px = 0.75% W); it rides the stack drift (x 574 -> 652 px over f2084-f2112). Its leader line starts at f2092 and the pill speck appears at f2094. Read noise about +-0.4 px (+-3%) after f2094."
+}

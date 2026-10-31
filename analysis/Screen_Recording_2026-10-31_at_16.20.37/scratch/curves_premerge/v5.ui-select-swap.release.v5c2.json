@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.ui-select-swap.release.v5c2",
+  "file": "curves/v5.ui-select-swap.release.v5c2.csv",
+  "property": "scale",
+  "unit": "scale factor (new row content / reference row)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_A_select1_pills.csv",
+  "column": "ratio",
+  "sampled_frames": [
+    887,
+    897
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.7879,
+  "to_value": 1.0,
+  "active_frames": [
+    887,
+    897
+  ],
+  "measured_duration_frames": 10,
+  "bezier": {
+    "x1": 0.0003,
+    "y1": 0.5615,
+    "x2": 0.8176,
+    "y2": 0.9593,
+    "durationInFrames": 7,
+    "delay": 2.656,
+    "built_duration_frames": 7,
+    "rmse": 0.1642
+  },
+  "spring": {
+    "stiffness": 807.403,
+    "damping": 47.159,
+    "mass": 1,
+    "damping_ratio": 0.8298,
+    "built_duration_frames": 9,
+    "rmse": 0.0823
+  },
+  "recommended": "spring",
+  "note": "menu 1 selection release: the pressed row (with its new highlight and check, which appear at the pressed size) springs back from 0.79 (f887) to 1.00 (f897); highlight width / full width 0.80, 0.84, 0.92, 0.98, 1.00 at f887, f890, f892, f895, f897; f900 excluded (camera tilt blur, template score 0.68)"
+}

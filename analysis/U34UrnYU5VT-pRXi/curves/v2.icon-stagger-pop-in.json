@@ -1,0 +1,40 @@
+{
+  "technique_id": "v2.icon-stagger-pop-in",
+  "file": "curves/v2.icon-stagger-pop-in.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (fill of logo icon 1 at x 428-444, y 440-460; 250 = empty, 17 = settled)",
+  "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c2_S15_icon1_fill.csv",
+  "column": "mean",
+  "sampled_frames": [
+    1104,
+    1140
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 250.0,
+  "to_value": 17.0,
+  "active_frames": [
+    1109,
+    1120
+  ],
+  "measured_duration_frames": 11,
+  "bezier": {
+    "x1": 0.1905,
+    "y1": 0.9796,
+    "x2": 0.5096,
+    "y2": 0.9812,
+    "durationInFrames": 13,
+    "delay": 0.878,
+    "built_duration_frames": 10,
+    "rmse": 0.0877
+  },
+  "spring": {
+    "stiffness": 1378.588,
+    "damping": 76.275,
+    "mass": 1,
+    "damping_ratio": 1.0271,
+    "built_duration_frames": 10,
+    "rmse": 0.0339
+  },
+  "recommended": "spring",
+  "note": "logo grid icon 1 (black hex brand mark) popping in: opacity from its fill luma (inside the shape at every scale >= 0.5); the icon scales 0.50 -> 0.96 in the same 10 frames (template: 0.50, 0.65, 0.75, 0.82, 0.86, 0.90, 0.92, 0.93, 0.94, 0.95, 0.96 f1110-f1120) and then creeps to 1.00 by f1150; icons 2-9 repeat it 3-4 frames apart"
+}

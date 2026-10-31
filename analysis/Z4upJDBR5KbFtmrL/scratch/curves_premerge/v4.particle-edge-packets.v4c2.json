@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.particle-edge-packets.v4c2",
+  "file": "curves/v4.particle-edge-packets.v4c2.csv",
+  "property": "position-x",
+  "unit": "px (hop from the second hub centre x 1427 to the first hub centre x 492 = 935 px = 48.7% W, canvas scale 0.553)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/c2_s2_packet_hop_dark.csv",
+  "column": "x_px",
+  "sampled_frames": [
+    1037,
+    1065
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 1426.9,
+  "to_value": 492.0,
+  "active_frames": [
+    1042,
+    1065
+  ],
+  "measured_duration_frames": 23,
+  "bezier": {
+    "x1": 0.5831,
+    "y1": 0.0236,
+    "x2": 0.3973,
+    "y2": 0.9984,
+    "durationInFrames": 32,
+    "delay": -3.609,
+    "built_duration_frames": 25,
+    "rmse": 0.0215
+  },
+  "spring": {
+    "stiffness": 60.939,
+    "damping": 9.685,
+    "mass": 1,
+    "damping_ratio": 0.6203,
+    "built_duration_frames": 45,
+    "rmse": 0.3438
+  },
+  "recommended": "bezier",
+  "note": "dark packet dot (14 px) pops in at full size on the source hub (f1037), travels straight along the middle connector and sinks into the destination hub's dark sphere (last separate sample f1065 at x 524); no samples on frames where it crosses a dark tile"
+}

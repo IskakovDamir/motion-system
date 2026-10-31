@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.logo-sphere-fly-in",
+  "file": "curves/v5.logo-sphere-fly-in.csv",
+  "property": "position-y",
+  "unit": "% of frame height",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_C_sphere_mid_y.csv",
+  "column": "cy_pct",
+  "sampled_frames": [
+    1387,
+    1422
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 60.131,
+  "active_frames": [
+    1387,
+    1412
+  ],
+  "measured_duration_frames": 25,
+  "bezier": {
+    "x1": 0.1792,
+    "y1": 0.3477,
+    "x2": 0.1097,
+    "y2": 0.9948,
+    "durationInFrames": 31,
+    "delay": -0.66,
+    "built_duration_frames": 24,
+    "rmse": 0.0442
+  },
+  "spring": {
+    "stiffness": 211.739,
+    "damping": 30.589,
+    "mass": 1,
+    "damping_ratio": 1.0511,
+    "built_duration_frames": 25,
+    "rmse": 0.0905
+  },
+  "recommended": "bezier",
+  "note": "middle glossy logo sphere (one of three) drops in from above the top edge in front of the headline and decelerates into the row under it; first visible f1387 (half cut by the top edge); samples f1387-f1397 read off frame-numbered dense-sheet tiles (+-10 px), f1400 on from a template track (scores 0.81-0.999); from-value 0 = top edge (entry), so the start is approximate by ~1 picture; the other two spheres arrive from the right edge (first, f1382) and the top-left (f1387) on curved paths and settle at the same time (left sphere x 406->487 px f1400-f1420, right 1171->1131 px f1400-f1415)"
+}

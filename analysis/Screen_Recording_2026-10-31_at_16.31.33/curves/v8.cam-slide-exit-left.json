@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.cam-slide-exit-left",
+ "file": "curves/v8.cam-slide-exit-left.csv",
+ "property": "position-x",
+ "unit": "px (picture 1622 px wide)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c2_S04_exit.csv",
+ "column": "cx",
+ "sampled_frames": [
+  1290,
+  1324
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 560.0,
+ "to_value": 409.0,
+ "active_frames": [
+  1299,
+  1324
+ ],
+ "measured_duration_frames": 25,
+ "bezier": {
+  "x1": 0.5074,
+  "y1": 0.0412,
+  "x2": 0.8899,
+  "y2": 0.1115,
+  "durationInFrames": 30,
+  "delay": -5.427,
+  "built_duration_frames": 25,
+  "rmse": 0.0191
+ },
+ "spring": {
+  "stiffness": 116.819,
+  "damping": 138.314,
+  "mass": 1,
+  "damping_ratio": 6.3985,
+  "built_duration_frames": 32,
+  "rmse": 0.4635
+ },
+ "recommended": "bezier",
+ "note": "S04 exit: centre x of the card's left text block in the close-up (template, scratch/v8c2_S04_exit.csv); the card slides left with an accelerating ease-in (22 px per frame at the last picture f1324) while the status pill and mascot stay put; hard cut f1327; to-value = last picture (no settle)",
+ "chunk_curve_id": "v8.cam-slide-exit-left.v8c2"
+}

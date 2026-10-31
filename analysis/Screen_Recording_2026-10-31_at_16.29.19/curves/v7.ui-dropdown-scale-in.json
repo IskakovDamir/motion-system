@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.ui-dropdown-scale-in",
+  "file": "curves/v7.ui-dropdown-scale-in.csv",
+  "property": "scale",
+  "unit": "apparent menu width / rest width 1081 px (camera push included)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c6_p3_menu_page_4216-4279.csv",
+  "column": "menu_width_rel",
+  "sampled_frames": [
+    4216,
+    4261
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.3528,
+  "to_value": 1.0,
+  "active_frames": [
+    4216,
+    4249
+  ],
+  "measured_duration_frames": 33,
+  "bezier": {
+    "x1": 0.219,
+    "y1": 1.058,
+    "x2": 0.4173,
+    "y2": 1.0185,
+    "durationInFrames": 58,
+    "delay": 0.356,
+    "built_duration_frames": 30,
+    "rmse": 0.0214
+  },
+  "spring": {
+    "stiffness": 108.946,
+    "damping": 21.925,
+    "mass": 1,
+    "damping_ratio": 1.0503,
+    "built_duration_frames": 33,
+    "rmse": 0.0285
+  },
+  "recommended": "bezier",
+  "note": "P3 account dropdown menu enters at the hard cut f4216 already open to 0.35 of its rest width and grows to rest by f4254 (left edge 1215 -> 483 px, right edge 1596 -> 1564 px, nearly fixed: anchored at its top-right), heavily motion-blurred and darkening from fill luma 96 to 39 (f4216-f4231); includes the camera push-in (page x1.64 about the top-right corner), the menu's own scale is about 0.58 -> 1.0; edge crossings on row y=110 at the midpoint between the black page (11) and the panel fill; first sample = from-value (cut on motion, the true start lies before the cut)"
+}

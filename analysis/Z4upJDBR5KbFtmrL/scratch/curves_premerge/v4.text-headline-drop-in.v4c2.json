@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.text-headline-drop-in.v4c2",
+  "file": "curves/v4.text-headline-drop-in.v4c2.csv",
+  "property": "opacity",
+  "unit": "opacity 0-1 (least-squares scale of the settled headline's darkness)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/c2_hlB_in.csv",
+  "column": "opacity",
+  "sampled_frames": [
+    958,
+    1000
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 0.0,
+  "to_value": 1.0,
+  "active_frames": [
+    965,
+    979
+  ],
+  "measured_duration_frames": 14,
+  "bezier": {
+    "x1": 0.2732,
+    "y1": 1.1207,
+    "x2": 0.4682,
+    "y2": 0.9751,
+    "durationInFrames": 24,
+    "delay": 0.152,
+    "built_duration_frames": 14,
+    "rmse": 0.0125
+  },
+  "spring": {
+    "stiffness": 539.484,
+    "damping": 46.483,
+    "mass": 1,
+    "damping_ratio": 1.0006,
+    "built_duration_frames": 16,
+    "rmse": 0.0306
+  },
+  "recommended": "bezier",
+  "note": "headline 2 arrives: opacity from a template projection over x 560-1360, y 20-130; it also drops 10 px (see .y curve)"
+}

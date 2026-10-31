@@ -36,10 +36,92 @@
       "ffmpeg_scene": 0.147,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c001"
+      "status": "rejected",
+      "id": "c001",
+      "reason": "chat-list step scroll inside the chat window: the message list jumps up 84 px in one frame (first bubble top 376.5 -> 292.5, scratch/scroll_678.csv) as a reply bubble starts its rise-fade (f681-f695); the two-window layout, headline and terminal are unchanged (detail/cut_c001_f00681/sheet.jpg, detail/peak_f00682/sheet.jpg) (v4c1)"
+    },
+    {
+      "frame": 1463,
+      "time_s": 24.3833,
+      "last_frame_before": 1462,
+      "sources": [],
+      "content_val": 0.74,
+      "delta_lum": 1.42,
+      "adaptive_ratio": 255.0,
+      "ffmpeg_scene": 0.0122,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m001",
+      "reason": "hard cut T07 (S07 -> S08): jump cut missed by the detectors (content_val 0.74, ffmpeg_scene 0.012): the single dark hexagon (104 x 94 px, x 959.5) jumps from y 574.5 to y 499.5 (-75 px = -6.9% H) between f1462 and f1463 and two closed eye bars appear in the same frame; the hexagon has held its place since f1445 (one size step, 102 x 92 -> 104 x 94 px, at f1452-f1453) (v4c2; detail/cut_1463_jump, detail/dense_01458-01475_00.jpg, crops/crop_900_440_120x200_01459-01478.jpg)"
     }
   ],
-  "soft_transitions": [],
-  "notes": []
+  "soft_transitions": [
+    {
+      "id": "T01",
+      "start": 214,
+      "end": 248,
+      "frames": 35,
+      "type": "dip-to-bg (zoom-fade exit 11 f, near-empty f225, two windows rise-scale-fade in 3 f apart, headline drops in last)",
+      "shared": "nothing but the empty background (f225 practically empty); the S01 layer zooms 1.000 -> 1.032 about the frame centre while fading out (ease-in f214-f225); the chat window (f225, first visible f226) and the terminal window (f228, first visible f229) rise 30 px, scale 0.970 -> 1.000 and fade in on one ease-out curve; the headline drops 10-12 px into place f234-f248",
+      "technique": "v4.trans-dip-to-bg",
+      "detail": "detail/soft_214-248"
+    },
+    {
+      "id": "T02",
+      "start": 495,
+      "end": 525,
+      "frames": 31,
+      "type": "panel-swap (the right window slides out right and a new one slides in from the left through a fade; headline swapped; the chat window holds)",
+      "shared": "the chat window holds unchanged; same window frame (800 x 760 px at x 1009.5) and one left-to-right motion: the old terminal slides +21.2 px while fading to 0.11 (f497-f507, ease-in) and is removed at f508, the new one appears at -20.9 px / opacity 0.12 at f508 and settles f521; the headline fades out in place f495-f507, the new one drops in f509-f525",
+      "technique": "v4.trans-panel-swap",
+      "detail": "detail/soft_495-525"
+    },
+    {
+      "id": "T03",
+      "start": 719,
+      "end": 766,
+      "frames": 48,
+      "type": "dip-to-bg (shrink-fade exit 12 f, no empty frame, the hub layout zoom-settles in from 1.11, headline drops in last)",
+      "shared": "nothing but the background; both windows shrink to 0.944 about their own centres and fade out (f719-f731, ease-in), the headline fades in place (f720-f731); f731 old layout at about 0.05, f732 the hub layer at 0.135 already scaled 1.112 about the hub centre (958, 575), fade done f748, zoom settles f766; new headline drops in f743-f757",
+      "technique": "v4.trans-dip-to-bg",
+      "detail": "detail/soft_719-766"
+    },
+    {
+      "id": "T04",
+      "start": 945,
+      "end": 1015,
+      "frames": 71,
+      "type": "pull-back-morph (headline swap; the canvas pulls back 1.000 -> 0.553 with a left pan while a second team fades in from the right edge; every card's content cross-dissolves into one icon)",
+      "shared": "the hub card and its name label stay (same card, hub centre y 575; 318x198 -> 175x109 px as the canvas scales 1.000 -> 0.553 and pans the hub from x 49.9% to 25.6% W); the six card rectangles stay and become icon tiles (their text cross-dissolves into one centred agent logo icon, the hub's content into the brand-mark sphere); dashed spokes stay; a second team slides in from the right edge while fading in, its hub entering the frame at f985-f986 still carrying UI content that cross-dissolves into its avatar icon with the cards; the entering team's terminals stay live (status spinners swapping every 5 f or 6 f, command and status lines appearing in single frames f966-f988) until the cross-dissolve fades their text (f995-f997); the first packet dot pops in on the top-left tile at f990 and crosses the top row to the far-right tile (f990-f1021); the headline is swapped (old fades out in place, new drops in 10 px)",
+      "technique": "v4.trans-pullback-morph",
+      "detail": "detail/soft_945-1015"
+    },
+    {
+      "id": "T05",
+      "start": 1114,
+      "end": 1190,
+      "frames": 77,
+      "type": "pull-back-reveal (headline swap; the canvas pulls back 1.000 -> 0.513 about a fixed point while ten teams fade in 3 f apart)",
+      "shared": "the whole two-team network stays and becomes the middle-centre pair of a 4x3 team grid (canvas scale 1.000 -> 0.513 about (960, 575), no pan: hub centres 492 -> 720 px and 1427 -> 1200 px, y 575); ten new teams fade in around it, 3 f apart from f1129 (middle row first, then the top row left to right, then the bottom row left to right); the headline is swapped (same position and style)",
+      "technique": "v4.trans-pullback-reveal",
+      "detail": "detail/soft_1114-1190"
+    },
+    {
+      "id": "T06",
+      "start": 1294,
+      "end": 1327,
+      "frames": 34,
+      "type": "morph (every packet dot and long connector cut in one frame, then a radial wave turns every card into a dark hexagon at the same centre)",
+      "shared": "all 84 node centres (12 hubs + 72 tiles) become the centres of 84 dark flat-top hexagons (56-58 x 50-52 px) at the same positions (within 1 px); background; no camera move. f1294: every packet dot and every long inter-team connector is cut in one frame (only the hub-to-tile spokes stay); from f1295 the hub labels and spokes fade; a radial wave (62 px/f) shrinks each card about its centre while it fades and grows a dark hexagon (drawn in front) at the same centre while it fades in; headline fades f1301-f1311",
+      "technique": "v4.trans-tile-hex-morph",
+      "detail": "detail/soft_1294-1327"
+    }
+  ],
+  "notes": [
+    "Merged 2026-11-01 from chunks v4c1 (f0-f929) and v4c2 (f930-f1687). The only auto candidate, c001 (f681, ffmpeg_scene only, confidence low), is a one-frame chat-list step scroll inside S03 and is rejected.",
+    "Detector misses: the hard cut m001 (f1463, a jump cut of the single hexagon; content_val 0.74) and all six soft transitions T01 f214-f248, T02 f495-f525, T03 f719-f766, T04 f945-f1015, T05 f1114-f1190 and T06 f1294-f1327 were found on the overview sheets and in motion.csv, luma, edge and template tracks; none of them crossed a detector threshold. The detector fields of m001 are the scene_metrics.csv values at the cut frame; its confidence is 'manual'.",
+    "Soft transition ids match the transition ids in segments.json (T01-T06); T07 is the hard cut m001. T02 stays a boundary at the merge although the chat window and the conversation continue across it: the headline and the right window are replaced (a new scene beat), as T04 and T05 replace the headline and grow the network while the hub card stays.",
+    "Nothing changes at the chunk edge f929/f930: the hub diagram of S04 holds completely still f922-f944 (sheets/overview_00912-00957.jpg) and its headline starts to fade at f945, so S04 runs f743-f980 across the edge."
+  ]
 }

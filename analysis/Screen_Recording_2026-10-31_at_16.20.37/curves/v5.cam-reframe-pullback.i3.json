@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.cam-reframe-pullback.i3",
+  "file": "curves/v5.cam-reframe-pullback.i3.csv",
+  "property": "position-y",
+  "unit": "% of frame height (card 2 centre)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_A_reframe.csv",
+  "column": "cy_pct",
+  "sampled_frames": [
+    3110,
+    3170
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 49.619,
+  "to_value": 39.379,
+  "active_frames": [
+    3112,
+    3150
+  ],
+  "measured_duration_frames": 38,
+  "bezier": {
+    "x1": 0.6995,
+    "y1": 0.224,
+    "x2": 0.2114,
+    "y2": 0.8551,
+    "durationInFrames": 39,
+    "delay": 0.952,
+    "built_duration_frames": 34,
+    "rmse": 0.0396
+  },
+  "spring": {
+    "stiffness": 71.295,
+    "damping": 13.787,
+    "mass": 1,
+    "damping_ratio": 0.8164,
+    "built_duration_frames": 27,
+    "rmse": 0.1417
+  },
+  "recommended": "bezier",
+  "note": "slow camera reframe while the prompt bar fades in below: the card row rises 49.6 -> 39.4 %H and shrinks (template scale 1.00 -> 0.85) between f3112 and f3155; card 2 template ref f3112 (scores 0.87-0.98; the cards sway in 3D)"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-caption-focus-roll.out.v5c5",
+  "file": "curves/v5.text-caption-focus-roll.out.v5c5.csv",
+  "property": "opacity",
+  "unit": "ink pixels of the word (luma > local median + 60); 1800 px = fully on",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_D_cap_words.csv",
+  "column": "aphone_ink",
+  "sampled_frames": [
+    3542,
+    3575
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1776.0,
+  "to_value": 5.0,
+  "active_frames": [
+    3552,
+    3562
+  ],
+  "measured_duration_frames": 10,
+  "bezier": {
+    "x1": 0.4364,
+    "y1": -0.0565,
+    "x2": 0.495,
+    "y2": -0.0715,
+    "durationInFrames": 12,
+    "delay": -3.467,
+    "built_duration_frames": 8,
+    "rmse": 0.088
+  },
+  "spring": {
+    "stiffness": 633.015,
+    "damping": 36.827,
+    "mass": 1,
+    "damping_ratio": 0.7319,
+    "built_duration_frames": 14,
+    "rmse": 0.3222
+  },
+  "recommended": "bezier",
+  "note": "exit half of the same word: defocus + fade-out after its focus peak (f3547)"
+}

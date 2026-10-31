@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.ui-dropdown-reveal.menu1-pullback.v5c2",
+  "file": "curves/v5.ui-dropdown-reveal.menu1-pullback.v5c2.csv",
+  "property": "scale",
+  "unit": "camera scale factor (1.0 = the f880-f1000 framing)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_E_chip1_press.csv",
+  "column": "k",
+  "sampled_frames": [
+    850,
+    895
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.6598,
+  "to_value": 1.0003,
+  "active_frames": [
+    862,
+    880
+  ],
+  "measured_duration_frames": 18,
+  "bezier": {
+    "x1": 1.0,
+    "y1": 1.0945,
+    "x2": 0.1331,
+    "y2": 0.5294,
+    "durationInFrames": 15,
+    "delay": 1.742,
+    "built_duration_frames": 15,
+    "rmse": 0.0469
+  },
+  "spring": {
+    "stiffness": 208.157,
+    "damping": 23.368,
+    "mass": 1,
+    "damping_ratio": 0.8098,
+    "built_duration_frames": 16,
+    "rmse": 0.0443
+  },
+  "recommended": "spring",
+  "note": "camera pull-back while menu 1 opens, centred on chip 1 horizontally (its centre stays at x 815 px): f850-f875 from the distance between the input pill's bottom edge and chip 1's centre (camera-only; 258.1 px at f857, 155.5 px at f911), f877-f895 from the chip-2 label template (ref f911); 1.660 (f850-f860) -> 1.647 (f862) -> 1.604 (f865) -> 1.490 (f867) -> 1.336 (f870) -> 1.174 (f872) -> 1.087 (f875) -> 1.042 (f877) -> 1.005 (f880) -> 1.000 (f885 on); the content rises at the same time (chip 1 centre y 459 -> 169 px, f862-f885); scratch/v5c2_E_chip1_press.csv"
+}

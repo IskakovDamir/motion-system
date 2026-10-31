@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.ui-select-swap",
+  "file": "curves/v5.ui-select-swap.csv",
+  "property": "scale",
+  "unit": "scale factor (new row content / reference row)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_A_select1_pills.csv",
+  "column": "ratio",
+  "sampled_frames": [
+    875,
+    887
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.0,
+  "to_value": 0.7879,
+  "active_frames": [
+    880,
+    887
+  ],
+  "measured_duration_frames": 7,
+  "bezier": {
+    "x1": 0.3132,
+    "y1": 0.1723,
+    "x2": 0.4585,
+    "y2": 0.7405,
+    "durationInFrames": 7,
+    "delay": -0.0,
+    "built_duration_frames": 7,
+    "rmse": 0.0
+  },
+  "spring": {
+    "stiffness": 697.888,
+    "damping": 35.996,
+    "mass": 1,
+    "damping_ratio": 0.6813,
+    "built_duration_frames": 14,
+    "rmse": 0.2169
+  },
+  "recommended": "bezier",
+  "note": "menu 1 selection press: template scale of the newly chosen row (icon + label, ref f880, scores 0.97-0.98) divided by the template scale of an unchanged row below it (camera reference); 1.00 at rest (f880) -> 0.79 at the deepest picture f887, where the chip label swaps; the move ends at the deepest point (the release follows, curve v5.ui-select-swap.i2)"
+}

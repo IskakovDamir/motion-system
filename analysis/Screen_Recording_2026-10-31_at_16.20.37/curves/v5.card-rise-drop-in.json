@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.card-rise-drop-in",
+  "file": "curves/v5.card-rise-drop-in.csv",
+  "property": "position-y",
+  "unit": "% of frame height (middle child card top rim, 50% crossing; centre = rim + 177.7 px)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c3_P05_cards_edges.csv",
+  "column": "mid_top_pct",
+  "sampled_frames": [
+    1890,
+    1920
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 87.44,
+  "to_value": 29.368,
+  "active_frames": [
+    1890,
+    1900
+  ],
+  "measured_duration_frames": 10,
+  "bezier": {
+    "x1": 0.0009,
+    "y1": 0.5177,
+    "x2": 0.0432,
+    "y2": 0.9725,
+    "durationInFrames": 13,
+    "delay": -0.0,
+    "built_duration_frames": 10,
+    "rmse": 0.0046
+  },
+  "spring": {
+    "stiffness": 6236.947,
+    "damping": 31.648,
+    "mass": 1,
+    "damping_ratio": 0.2004,
+    "built_duration_frames": 14,
+    "rmse": 0.3353
+  },
+  "recommended": "bezier",
+  "note": "middle child card, snap + settle phase of its rise from below the frame. The whole move was re-tracked from its first picture: top rim 99.42 %H (f1885, rim just over the bottom edge) -> 97.19 (f1887) -> 87.44 (f1890) is a slow drift-in (10, then 30 px/f; measured only), then the snap: 375 px in one picture (f1890-1892, heavy vertical blur) and a hard ease-out to rest (29.37 %H) by f1900 (2 %) / f1905 (1 px). One curve over f1885-1920 fails (bezier rmse 0.126, spring 0.193): the move has two phases, like the P04 card fly-in. Width constant 263-265 px between the side rims (no scale). The right card repeats the snap and settle one picture (2-3 f) later (rim enters f1890, snap f1892-1895, its own fit bezier(0.185, 0.970, 0.292, 0.843) D=10 rmse 0.018, a similar hard ease-out with the same 10 f active window), so no separate curve. Edges from row profiles, 50% crossing (scratch/v5c3_P05_cards_edges.csv); replaces the earlier right-card fit that began mid-flight at f1895"
+}

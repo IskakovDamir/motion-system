@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.cam-scroll-up",
+  "file": "curves/v7.cam-scroll-up.csv",
+  "property": "position-y",
+  "unit": "% of frame height",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s3_query_341-418.csv",
+  "column": "cy_pct",
+  "sampled_frames": [
+    341,
+    399
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 50.0,
+  "to_value": 23.475,
+  "active_frames": [
+    348,
+    371
+  ],
+  "measured_duration_frames": 23,
+  "bezier": {
+    "x1": 0.2957,
+    "y1": 0.0065,
+    "x2": 0.3099,
+    "y2": 0.9925,
+    "durationInFrames": 27,
+    "delay": -0.824,
+    "built_duration_frames": 22,
+    "rmse": 0.0353
+  },
+  "spring": {
+    "stiffness": 134.503,
+    "damping": 20.024,
+    "mass": 1,
+    "damping_ratio": 0.8633,
+    "built_duration_frames": 22,
+    "rmse": 0.0686
+  },
+  "recommended": "bezier",
+  "note": "S3 page scrolls up 26.2% H (search-field centre y 49.9% -> 23.7%) while zooming out 1.0 -> 0.89, vertical motion blur at peak speed f354-f361, revealing the result row that stretches in at the same time; template on the typed query + magnifier, ref f348"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-caption-line-fade-out.v5c3",
+  "file": "curves/v5.text-caption-line-fade-out.v5c3.csv",
+  "property": "opacity",
+  "unit": "normalised top-hat ink of the whole line (opacity x sharpness)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c3_capE_L2_bins.csv",
+  "column": "mean",
+  "sampled_frames": [
+    2330,
+    2352
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.95,
+  "to_value": 0.033,
+  "active_frames": [
+    2338,
+    2350
+  ],
+  "measured_duration_frames": 12,
+  "bezier": {
+    "x1": 0.804,
+    "y1": 1.0145,
+    "x2": 0.3901,
+    "y2": 0.8778,
+    "durationInFrames": 13,
+    "delay": -0.0,
+    "built_duration_frames": 12,
+    "rmse": 0.0089
+  },
+  "spring": {
+    "stiffness": 348.489,
+    "damping": 28.822,
+    "mass": 1,
+    "damping_ratio": 0.772,
+    "built_duration_frames": 18,
+    "rmse": 0.1344
+  },
+  "recommended": "bezier",
+  "note": "caption E line 2 leaves as one unit (all six bins fall together) with blur + fade while drifting; the other lines leave the same way 8-10 f apart"
+}

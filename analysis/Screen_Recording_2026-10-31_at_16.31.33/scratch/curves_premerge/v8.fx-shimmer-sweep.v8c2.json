@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.fx-shimmer-sweep.v8c2",
+  "file": "curves/v8.fx-shimmer-sweep.v8c2.csv",
+  "property": "position-x",
+  "unit": "px (picture 1622 px wide); 407 = band centre half a band width left of the pill's left end, 1615 = half a band width right of its right end",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c2_S03_shimmer2_centre.csv",
+  "column": "centre_x",
+  "sampled_frames": [
+    1230,
+    1262
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 407.0,
+  "to_value": 1615.0,
+  "active_frames": [
+    1240,
+    1256
+  ],
+  "measured_duration_frames": 16,
+  "bezier": {
+    "x1": 0.5812,
+    "y1": 0.167,
+    "x2": 0.4502,
+    "y2": 0.7861,
+    "durationInFrames": 17,
+    "delay": -0.942,
+    "built_duration_frames": 16,
+    "rmse": 0.0039
+  },
+  "spring": {
+    "stiffness": 199.556,
+    "damping": 21.382,
+    "mass": 1,
+    "damping_ratio": 0.7568,
+    "built_duration_frames": 25,
+    "rmse": 0.2624
+  },
+  "recommended": "bezier",
+  "note": "S03 re-entered status pill (level, fill 231, x 592-1439, 150 px tall): centre of a soft diagonal light band (plateau luma 248 = page white over the 231 fill, half-max width 370 px = 22.8% W in a 15-row strip about 5-20 px under the pill's top edge (rows 2-17 of the 3 px-eroded fill), edges about 40-60 px soft, lower end about 70 px ahead = tilted about 28 deg from vertical) that sweeps left to right across the pill while the label glyphs stay dark. Band found as fill pixels at least 8 luma lighter than the band-free picture f1262 aligned on the label (scratch/v8c2_S03_shimmer2.csv). Centre = leading edge - W/2 while the trailing edge is pinned at the left end (f1240-f1246), mid-point of both edges (f1248), trailing edge + W/2 while the leading edge is clipped at the right end (f1250-f1254), W = 370 px from f1248; before the band = 407, after it (gone f1256) = 1615 (scratch/v8c2_S03_shimmer2_centre.csv). Repeated pictures f1239, f1241, f1247, f1249, f1251, f1261, f1263 marked non-unique. The S04 instance (f1284-f1304, W 332 px) fits bezier(1.000, 0.342, 0.562, 0.523) D=17 rmse 0.024 on the raw picture times and bezier(0.816, 0.130, 0.712, 0.733) D=19 rmse 0.002 with the jittered pictures f1293/f1299 moved to f1292/f1298 (scratch/v8c2_S04_shimmer_centre.csv): the same ease-in-out, 2 f longer."
+}

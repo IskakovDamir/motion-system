@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.grid-spread-out",
+  "file": "curves/v6.grid-spread-out.csv",
+  "property": "position-x",
+  "unit": "grid spacing factor = column pitch / phone scale / 415.2 px (1.0 = settled spacing, f1108-f1146); positions of the cells about the centre phone scale by it, phone size does not",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c2_P12_grid_pitch.csv",
+  "column": "spread",
+  "sampled_frames": [
+    1083,
+    1123
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.7488,
+  "to_value": 1.0,
+  "active_frames": [
+    1083,
+    1106
+  ],
+  "measured_duration_frames": 23,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 1.0049,
+    "x2": 0.8562,
+    "y2": 0.9919,
+    "durationInFrames": 25,
+    "delay": 1.783,
+    "built_duration_frames": 20,
+    "rmse": 0.0517
+  },
+  "spring": {
+    "stiffness": 274.36,
+    "damping": 33.505,
+    "mass": 1,
+    "damping_ratio": 1.0114,
+    "built_duration_frames": 22,
+    "rmse": 0.0922
+  },
+  "recommended": "bezier",
+  "note": "S12 incoming phone grid after the zoom-through swap 1078|1081: the gaps between the phones open (outer phones slide outward, left 473 -> 407 px, right 1145 -> 1212 px, f1083-f1106) while the phones themselves shrink (item scale 1.081 -> 0.973, curve v6.trans-zoom-through for the landing part); first measurable picture f1083 (f1081: radial blur, outer-phone template scores 0.18-0.24), so the curve starts 2 f after the swap with the spread already moving; rows spread by the same factor (label-to-label pitch / phone scale 615 / 652 / 678 / 694 px at f1086/1088/1091/1093, 727-730 px at f1116-f1126)"
+}

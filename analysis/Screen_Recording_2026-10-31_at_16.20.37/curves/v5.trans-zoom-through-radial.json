@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.trans-zoom-through-radial",
+  "file": "curves/v5.trans-zoom-through-radial.csv",
+  "property": "luma",
+  "unit": "luma 0-255 (frame mean)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/t2_luma_full.csv",
+  "column": "mean",
+  "sampled_frames": [
+    318,
+    330
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 20.833,
+  "to_value": 80.45,
+  "active_frames": [
+    318,
+    325
+  ],
+  "measured_duration_frames": 7,
+  "bezier": {
+    "x1": 0.1083,
+    "y1": 0.8,
+    "x2": 0.1766,
+    "y2": 0.6932,
+    "durationInFrames": 6,
+    "delay": 0.854,
+    "built_duration_frames": 6,
+    "rmse": 0.0337
+  },
+  "spring": {
+    "stiffness": 7799.337,
+    "damping": 47.261,
+    "mass": 1,
+    "damping_ratio": 0.2676,
+    "built_duration_frames": 10,
+    "rmse": 0.3075
+  },
+  "recommended": "bezier",
+  "note": "zoom-through, second half: the incoming shot recovers from the darkest picture f318 (frame mean 20.8; outer 8 grid cells 17.2 vs centre cell 49.6, scratch/v5c1fix_zoom_grid.csv) to its clear level (f325-f330 mean 80.45); starts at the turning point of the dip, settled from f325 (f325/f327/f330 within 2 %). The first half (title scale) is curves/v5.trans-zoom-through-radial.i2"
+}

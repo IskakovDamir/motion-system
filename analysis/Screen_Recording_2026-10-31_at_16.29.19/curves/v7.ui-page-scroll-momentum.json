@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.ui-page-scroll-momentum",
+  "file": "curves/v7.ui-page-scroll-momentum.csv",
+  "property": "position-y",
+  "unit": "% of frame height (cumulative content scroll inside the window)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s5_scroll_sad_500-630.csv",
+  "column": "cum_y_pct_h",
+  "sampled_frames": [
+    506,
+    629
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.986,
+  "to_value": -104.134,
+  "active_frames": [
+    516,
+    599
+  ],
+  "measured_duration_frames": 83,
+  "bezier": {
+    "x1": 0.469,
+    "y1": 0.0906,
+    "x2": 0.3109,
+    "y2": 0.9472,
+    "durationInFrames": 102,
+    "delay": -6.308,
+    "built_duration_frames": 84,
+    "rmse": 0.0091
+  },
+  "spring": {
+    "stiffness": 7.998,
+    "damping": 4.477,
+    "mass": 1,
+    "damping_ratio": 0.7915,
+    "built_duration_frames": 75,
+    "rmse": 0.0726
+  },
+  "recommended": "bezier",
+  "note": "S5 page content scrolls up inside the static window by ~105% H (965 px) in one smooth ease-in-out (momentum) move: accelerates f509-f549 to ~2.8% H per frame, long deceleration to rest at f617; per-picture vertical shift by SAD search over the content region (x 420-1440, y 130-740), checked against the headline position (f511 -> f531: -123 px stills vs -126.5 px measured); the first samples include the window drop-in settle (+9 px)"
+}

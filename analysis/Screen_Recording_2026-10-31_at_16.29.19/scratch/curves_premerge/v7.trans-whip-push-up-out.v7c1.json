@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-whip-push-up-out.v7c1",
+  "file": "curves/v7.trans-whip-push-up-out.v7c1.csv",
+  "property": "position-y",
+  "unit": "% of frame height",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s2_pill_236-290.csv",
+  "column": "cy_pct",
+  "sampled_frames": [
+    256,
+    286
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 58.987,
+  "to_value": 47.059,
+  "active_frames": [
+    269,
+    286
+  ],
+  "measured_duration_frames": 17,
+  "bezier": {
+    "x1": 0.4201,
+    "y1": -0.0139,
+    "x2": 1.0,
+    "y2": 0.4806,
+    "durationInFrames": 18,
+    "delay": -1.0,
+    "built_duration_frames": 15,
+    "rmse": 0.0354
+  },
+  "spring": {
+    "stiffness": 44.278,
+    "damping": 0.5,
+    "mass": 1,
+    "damping_ratio": 0.0376,
+    "built_duration_frames": 186,
+    "rmse": 0.8286
+  },
+  "recommended": "bezier",
+  "note": "outgoing half of the vertical whip S2->S3: the S2 menu accelerates upward from rest (f269) with growing vertical motion blur; highlight-pill centre y 59.0% -> 47.1% H by the last S2 picture f286 (2.45% H per frame there), then the picture switches to S3 (f289) which decelerates upward into place (curve v7.trans-whip-push-up.v7c1); no settle on this half: to-value = last measured picture; bbox tracker on the pill (ink < 238)"
+}

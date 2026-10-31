@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.cam-whip-pan.v5c2",
+  "file": "curves/v5.cam-whip-pan.v5c2.csv",
+  "property": "position-x",
+  "unit": "% of frame width",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_whip1_x.csv",
+  "column": "cx_pct",
+  "sampled_frames": [
+    905,
+    947
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 87.546,
+  "to_value": 49.692,
+  "active_frames": [
+    913,
+    932
+  ],
+  "measured_duration_frames": 19,
+  "bezier": {
+    "x1": 0.8244,
+    "y1": 0.1012,
+    "x2": 0.0542,
+    "y2": 0.7185,
+    "durationInFrames": 20,
+    "delay": -1.56,
+    "built_duration_frames": 17,
+    "rmse": 0.0268
+  },
+  "spring": {
+    "stiffness": 537.888,
+    "damping": 42.619,
+    "mass": 1,
+    "damping_ratio": 0.9188,
+    "built_duration_frames": 13,
+    "rmse": 0.1395
+  },
+  "recommended": "bezier",
+  "note": "whip pan to the right between two UI chips (content moves left): centre x of the second chip label, template ref f911 up to f927 and ref f940 after (the chip changes state when its menu opens, scores 0.42-0.45 at f930-f935); horizontal motion blur peaks at f920-f922"
+}

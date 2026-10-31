@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.ui-callout-pop-in.v8c3",
+  "file": "curves/v8.ui-callout-pop-in.v8c3.csv",
+  "property": "scale",
+  "unit": "scale factor (ink width / settled width 248 px)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c3_callout_ux_2090-2130.csv",
+  "column": "scale_from_width",
+  "sampled_frames": [
+    2090,
+    2124
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 1.0,
+  "active_frames": [
+    2094,
+    2112
+  ],
+  "measured_duration_frames": 18,
+  "bezier": {
+    "x1": 0.5526,
+    "y1": 0.9929,
+    "x2": 0.5589,
+    "y2": 0.9003,
+    "durationInFrames": 18,
+    "delay": 0.404,
+    "built_duration_frames": 17,
+    "rmse": 0.0223
+  },
+  "spring": {
+    "stiffness": 246.734,
+    "damping": 27.5,
+    "mass": 1,
+    "damping_ratio": 0.8754,
+    "built_duration_frames": 17,
+    "rmse": 0.055
+  },
+  "recommended": "bezier",
+  "note": "S07 callout 6 of 7 (mascot icon + 3-word label, below the stack): ink bbox width (pixels 70 below the local background, scratch/v8c3_callout_ux_2090-2130.csv) over its settled width 248 px (15.3% W). The callout grows from a 37 x 7 px blurred speck at about (606, 861) px (first picture f2096) to full size (248 x 47 px) while de-blurring; its top edge rises 858 -> 790 px and its bottom 864 -> 836 px; the whole callout also drifts right about 2.7 px per frame with the stack (centre x 606 -> 699 px over f2096-f2130). The same pop is used on all 7 callouts (overview sheets: first visible about f2038, f2043, f2048, f2058, f2070, f2096, f2106)."
+}

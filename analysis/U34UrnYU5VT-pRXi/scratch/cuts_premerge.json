@@ -1,0 +1,99 @@
+{
+  "video": "U34UrnYU5VT-pRXi",
+  "key": "v2",
+  "fps": 60,
+  "frame_convention": "analysis frame = round((pts - first_video_pts) * 60); 'frame' is the first frame of the new shot",
+  "detectors": {
+    "content": {
+      "tool": "PySceneDetect ContentDetector",
+      "threshold": 27.0,
+      "weak_threshold": 14.0
+    },
+    "adaptive": {
+      "tool": "PySceneDetect AdaptiveDetector",
+      "adaptive_threshold": 3.0,
+      "window_width": 2,
+      "min_content_val": 15
+    },
+    "ffmpeg_scene": {
+      "tool": "ffmpeg select scene score",
+      "threshold": 0.3,
+      "weak_threshold": 0.12
+    },
+    "merge_radius_decoded_frames": 2
+  },
+  "cuts": [
+    {
+      "frame": 103,
+      "time_s": 1.7167,
+      "last_frame_before": 102,
+      "sources": [
+        "content"
+      ],
+      "content_val": 35.27,
+      "delta_lum": 31.65,
+      "adaptive_ratio": 1.07,
+      "ffmpeg_scene": 0.0719,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c001"
+    },
+    {
+      "frame": 789,
+      "time_s": 13.15,
+      "last_frame_before": 788,
+      "sources": [
+        "adaptive",
+        "content_weak",
+        "ffmpeg_scene"
+      ],
+      "content_val": 25.31,
+      "delta_lum": 27.46,
+      "adaptive_ratio": 255.0,
+      "ffmpeg_scene": 0.2769,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c002"
+    },
+    {
+      "frame": 901,
+      "time_s": 15.0167,
+      "last_frame_before": 900,
+      "sources": [
+        "adaptive",
+        "content",
+        "ffmpeg_scene"
+      ],
+      "content_val": 28.2,
+      "delta_lum": 30.89,
+      "adaptive_ratio": 255.0,
+      "ffmpeg_scene": 0.309,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c003"
+    },
+    {
+      "frame": 1492,
+      "time_s": 24.8667,
+      "last_frame_before": 1491,
+      "sources": [
+        "adaptive",
+        "content",
+        "ffmpeg_scene"
+      ],
+      "content_val": 33.4,
+      "delta_lum": 27.68,
+      "adaptive_ratio": 255.0,
+      "ffmpeg_scene": 0.3764,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c004"
+    }
+  ],
+  "soft_transitions": [],
+  "notes": []
+}

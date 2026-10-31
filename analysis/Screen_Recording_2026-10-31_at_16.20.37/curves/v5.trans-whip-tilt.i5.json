@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.trans-whip-tilt.i5",
+  "file": "curves/v5.trans-whip-tilt.i5.csv",
+  "property": "position-y",
+  "unit": "% of frame height (bottom edge of the curved footage panel, columns x600-1000)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_BC_whip_panel.csv",
+  "column": "panel_bottom_pct",
+  "sampled_frames": [
+    3280,
+    3312
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 83.878,
+  "to_value": 0.0,
+  "active_frames": [
+    3292,
+    3310
+  ],
+  "measured_duration_frames": 18,
+  "bezier": {
+    "x1": 0.9418,
+    "y1": 0.1167,
+    "x2": 0.0967,
+    "y2": 0.8775,
+    "durationInFrames": 19,
+    "delay": -1.088,
+    "built_duration_frames": 15,
+    "rmse": 0.0501
+  },
+  "spring": {
+    "stiffness": 2858.224,
+    "damping": 107.204,
+    "mass": 1,
+    "damping_ratio": 1.0026,
+    "built_duration_frames": 7,
+    "rmse": 0.2389
+  },
+  "recommended": "bezier",
+  "note": "whip-tilt out of the footage panel: the panel rises out of the top edge with vertical motion blur and a slight zoom-in (width +2.6% by f3300) and the camera lands on the empty dark C canvas, where the C labels then form in place (first blob f3305); the incoming layout is not carried on the canvas during the move (unlike f3225-3242); bottom edge clamped at 0 once the panel has left (f3310)"
+}

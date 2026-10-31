@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.icon-avatar-grow-in",
+ "file": "curves/v8.icon-avatar-grow-in.csv",
+ "property": "scale",
+ "unit": "scale factor (bright-pixel width / rest width 109 px)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c3r_S02_avatar3.csv",
+ "column": "scale_w",
+ "sampled_frames": [
+  1550,
+  1572
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 0.0,
+ "to_value": 1.0,
+ "active_frames": [
+  1552,
+  1571
+ ],
+ "measured_duration_frames": 19,
+ "bezier": {
+  "x1": 0.476,
+  "y1": 1.1596,
+  "x2": 0.742,
+  "y2": 0.7884,
+  "durationInFrames": 17,
+  "delay": -0.072,
+  "built_duration_frames": 17,
+  "rmse": 0.0431
+ },
+ "spring": {
+  "stiffness": 367.102,
+  "damping": 38.486,
+  "mass": 1,
+  "damping_ratio": 1.0043,
+  "built_duration_frames": 19,
+  "rmse": 0.0723
+ },
+ "recommended": "bezier",
+ "note": "S02 reply 3 avatar (round photo avatar, 109 px = 6.7% W at rest, left of the reply name): width of the connected bright blob (pixels above luma 90) in a ROI that follows the thread scroll (scratch/v8c3r_S02_avatar3.csv; offsets from scratch/v8c3_thread_scroll_1470-1676.csv). It is absent at f1552, appears at f1554 as a 33 px disc (0.30) and grows about its own centre (x 360 px, centre fixed within 10 px in content coordinates) to full size by about f1568, ease-out, no overshoot, during the step-2 scroll. Reply 2's avatar does the same (0.29 at f1510 -> 1.0 at f1529, scratch/v8c3r_S02_avatar2.csv).",
+ "chunk_curve_id": "v8.icon-avatar-grow-in.v8c3"
+}

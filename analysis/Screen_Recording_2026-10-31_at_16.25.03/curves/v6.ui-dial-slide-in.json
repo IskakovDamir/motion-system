@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.ui-dial-slide-in",
+  "file": "curves/v6.ui-dial-slide-in.csv",
+  "property": "position-x",
+  "unit": "px of the 1622 px picture width (dial left edge, 1500 -> 778 = -44.5% W)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c2_S4_dial_x0.csv",
+  "column": "x0",
+  "sampled_frames": [
+    1231,
+    1258
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1500.0,
+  "to_value": 778.0,
+  "active_frames": [
+    1231,
+    1246
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.0001,
+    "y1": 0.7787,
+    "x2": 0.2727,
+    "y2": 0.9711,
+    "durationInFrames": 18,
+    "delay": 0.0,
+    "built_duration_frames": 14,
+    "rmse": 0.0128
+  },
+  "spring": {
+    "stiffness": 1238.942,
+    "damping": 97.527,
+    "mass": 1,
+    "damping_ratio": 1.3854,
+    "built_duration_frames": 10,
+    "rmse": 0.1978
+  },
+  "recommended": "bezier",
+  "note": "S13: dial (tick ring + progress arc + knob + counter) slides in from the right edge with motion blur while the headline slides aside; left edge of ink (darkness>40, ROI x760-1622) from the first sliver at f1231 (x 1500, ROI x780 run) to rest 778 px at f1253; the dial's own scale stays 0.99-1.02 (template)"
+}

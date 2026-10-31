@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.trans-zoom-through-dissolve.v8c1",
+  "file": "curves/v8.trans-zoom-through-dissolve.v8c1.csv",
+  "property": "scale",
+  "unit": "log2 of the scale factor (zoom stops; 1.65 stops = x3.14), whole lockup about the frame centre x 50.5%, y 50.0%",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c1_zoom_icon2f_106-133.csv",
+  "column": "log2_scale",
+  "sampled_frames": [
+    106,
+    132
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 1.65,
+  "active_frames": [
+    115,
+    132
+  ],
+  "measured_duration_frames": 17,
+  "bezier": {
+    "x1": 1.0,
+    "y1": 0.3992,
+    "x2": 1.0,
+    "y2": 0.4103,
+    "durationInFrames": 15,
+    "delay": 0.14,
+    "built_duration_frames": 15,
+    "rmse": 0.0897
+  },
+  "spring": {
+    "stiffness": 158.774,
+    "damping": 58.655,
+    "mass": 1,
+    "damping_ratio": 2.3275,
+    "built_duration_frames": 27,
+    "rmse": 0.39
+  },
+  "recommended": "bezier",
+  "note": "zoom-in on the lockup into the cross-dissolve to the tunnel, fitted in log2 scale because the growth is exponential; app icon template with scales 0.02 step (scratch/v8c1_zoom_icon2f_106-133.csv); ease-in only, to-value = last picture before the icon leaves (x3.14 at f132); the tunnel cross-dissolves in over f135-f138 while the lockup keeps growing"
+}

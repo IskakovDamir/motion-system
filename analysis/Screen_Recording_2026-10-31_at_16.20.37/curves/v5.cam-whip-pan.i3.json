@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.cam-whip-pan.i3",
+  "file": "curves/v5.cam-whip-pan.i3.csv",
+  "property": "position-x",
+  "unit": "% of frame width (card 1 label centre)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c4_card1label_whip1.csv",
+  "column": "cx_pct",
+  "sampled_frames": [
+    2442,
+    2475
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 22.688,
+  "to_value": 46.887,
+  "active_frames": [
+    2445,
+    2467
+  ],
+  "measured_duration_frames": 22,
+  "bezier": {
+    "x1": 0.8539,
+    "y1": 0.0038,
+    "x2": 0.0,
+    "y2": 0.7921,
+    "durationInFrames": 27,
+    "delay": -4.066,
+    "built_duration_frames": 20,
+    "rmse": 0.0174
+  },
+  "spring": {
+    "stiffness": 634.399,
+    "damping": 50.909,
+    "mass": 1,
+    "damping_ratio": 1.0106,
+    "built_duration_frames": 14,
+    "rmse": 0.1277
+  },
+  "recommended": "bezier",
+  "note": "whip 1 (yaw + push-in x1.26) re-tracked on card 1's UI label (template ref f2447, global search, scales 0.96-1.44, scores 0.63-1.00): label centre x 21.8 -> 46.9 %W; card 1 lands at f2442 and the creep starts at once, so there are no still pictures before the move and the rest value is the median of f2442-f2447 (22.7 %W); slow creep f2442-f2451 then snap, blur f2453-2455; the earlier card-template fit had rmse 0.051. Differs from whip 2 (22 f vs 30 f, push-in) but is the same device"
+}

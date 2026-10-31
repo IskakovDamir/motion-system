@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.ui-window-drop-in.v7c1",
+  "file": "curves/v7.ui-window-drop-in.v7c1.csv",
+  "property": "position-y",
+  "unit": "% of frame height (window bottom edge)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s5_window_bottom_482-640.csv",
+  "column": "pos_pct_h",
+  "sampled_frames": [
+    484,
+    530
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 82.637,
+  "to_value": 95.73,
+  "active_frames": [
+    484,
+    514
+  ],
+  "measured_duration_frames": 30,
+  "bezier": {
+    "x1": 0.0013,
+    "y1": 0.6949,
+    "x2": 0.5729,
+    "y2": 0.99,
+    "durationInFrames": 35,
+    "delay": -0.0,
+    "built_duration_frames": 29,
+    "rmse": 0.0117
+  },
+  "spring": {
+    "stiffness": 125.882,
+    "damping": 28.693,
+    "mass": 1,
+    "damping_ratio": 1.2787,
+    "built_duration_frames": 31,
+    "rmse": 0.1029
+  },
+  "recommended": "bezier",
+  "note": "S5 product-UI window (dark, rounded, 82% W, x 8.7%-91%) appears at the hard cut f484 already moving down and settles 13.1% H lower (bottom edge 82.6% -> 95.7% H); x fixed; edge tracker on the window bottom (sidebar column); afterwards a slow creep (+0.9% H and left edge -0.9% W by f629 = slow push-in)"
+}

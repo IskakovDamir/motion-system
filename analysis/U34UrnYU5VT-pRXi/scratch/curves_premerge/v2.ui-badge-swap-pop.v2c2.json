@@ -1,0 +1,40 @@
+{
+  "technique_id": "v2.ui-badge-swap-pop.v2c2",
+  "file": "curves/v2.ui-badge-swap-pop.v2c2.csv",
+  "property": "scale",
+  "unit": "pill width px (112 px = 1.0; first visible 90 px = 0.80)",
+  "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c2_S14_badge1_bbox.csv",
+  "column": "w",
+  "sampled_frames": [
+    994,
+    1003
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 90.0,
+  "to_value": 112.0,
+  "active_frames": [
+    994,
+    1001
+  ],
+  "measured_duration_frames": 7,
+  "bezier": {
+    "x1": 0.2564,
+    "y1": 1.2305,
+    "x2": 1.0,
+    "y2": 0.8737,
+    "durationInFrames": 7,
+    "delay": -0.001,
+    "built_duration_frames": 7,
+    "rmse": 0.005
+  },
+  "spring": {
+    "stiffness": 4231.657,
+    "damping": 164.965,
+    "mass": 1,
+    "damping_ratio": 1.268,
+    "built_duration_frames": 6,
+    "rmse": 0.0916
+  },
+  "recommended": "bezier",
+  "note": "incoming status pill (card 1, f994-f1001) scaling up while it fades in, after the outgoing pill shrank 88->79 px and faded f991-f993 (track.py bbox, dark ink vs bg 253); start value = first visible frame"
+}

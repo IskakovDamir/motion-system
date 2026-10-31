@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.ui-label-widen-overshoot.v7c1",
+  "file": "curves/v7.ui-label-widen-overshoot.v7c1.csv",
+  "property": "width",
+  "unit": "% of frame width (label box, centred at x 49.9%)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_box_width_keys_11-75.csv",
+  "column": "width_pct",
+  "sampled_frames": [
+    11,
+    71
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 32.583,
+  "to_value": 55.83,
+  "active_frames": [
+    11,
+    36
+  ],
+  "measured_duration_frames": 25,
+  "bezier": {
+    "x1": 0.3777,
+    "y1": 1.3387,
+    "x2": 0.0,
+    "y2": 1.1222,
+    "durationInFrames": 27,
+    "delay": -0.0,
+    "built_duration_frames": 24,
+    "rmse": 0.0156
+  },
+  "spring": {
+    "stiffness": 471.162,
+    "damping": 25.627,
+    "mass": 1,
+    "damping_ratio": 0.5903,
+    "built_duration_frames": 17,
+    "rmse": 0.1579
+  },
+  "recommended": "bezier",
+  "note": "the label box widens symmetrically 32.6% -> 58.0% W (f14 -> f21, horizontal motion blur f16-f19) to admit the left word, overshoots 4% and settles to 55.8% W by f46, while the camera pulls back x0.75 (word-2 cap height 8.3% -> 6.2% H); box geometry is animated on twos (new value every 5 frames), so only the step pictures are used (f11, f16, f21, f26, f31, f36, f41, f46 + rest)"
+}

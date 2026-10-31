@@ -1,0 +1,11 @@
+frame,time_s,unique,scale,cx,cy,source
+293,4.8833,1,1.0,427.5,785.0,"template lower word (v6c1_zoomthrough_viral), s1.00 score 1.00"
+296,4.9333,1,1.0,427.5,785.0,"template lower word, s1.00"
+298,4.9667,1,1.0,427.5,785.0,"template lower word, s1.00"
+301,5.0167,1,1.0,427.5,785.0,"template lower word, s1.00"
+303,5.0500,1,1.0,427.5,785.0,"template lower word, s1.00"
+306,5.1000,1,1.25,491.0,768.5,"template lower word, s1.25 score 1.00 (zoom centre ~ (173, 851) px)"
+308,5.1333,1,1.25,491.0,768.5,"template lower word, s1.25 score 1.00 (same framing as f306, blur differs)"
+311,5.1833,1,1.97,849.5,715.0,"template sub-caption (v6c1_zoomthrough_subcap), s1.97 score 0.97 (zoom centre ~ (1538, 855) px)"
+313,5.2167,1,2.48,,,bbox: grey line-1 letters 149 px tall vs 60 px at rest (rows 311-459)
+316,5.2667,1,2.33,451.5,207.5,"bbox: top words 146 px tall / 863 px wide vs 62-64 / 374 px at rest (zoom centre ~ (112, 15) px)"

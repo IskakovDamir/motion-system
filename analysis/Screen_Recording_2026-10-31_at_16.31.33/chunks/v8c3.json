@@ -1,0 +1,1164 @@
+{
+ "video": "Screen_Recording_2026-10-31_at_16.31.33",
+ "key": "v8",
+ "chunk": "v8c3",
+ "frames": [
+  1462,
+  2192
+ ],
+ "cut_decisions": [
+  {
+   "id": "c049",
+   "frame": 1462,
+   "status": "rejected",
+   "reason": "detector index drift (as v8c2 found): f1462 continues f1460's agent-message layout, the message line drifting up 5-7 px per picture and sharp; the picture is replaced between f1468 and f1470 (c050)"
+  },
+  {
+   "id": "c050",
+   "frame": 1470,
+   "status": "confirmed",
+   "reason": "hard cut: the sharp agent-message layout (f1468, Sobel gy/gx 0.67 = rest) is replaced by the dark thread panel arriving with heavy vertical motion blur (0.26) at 76-81 px/f; the outgoing side has no blur, so it is a cut into a whip landing, not a whip"
+  },
+  {
+   "id": "c051",
+   "frame": 1669,
+   "status": "confirmed",
+   "reason": "anchor of the soft push up f1648-f1696: the thread panel's rounded bottom edge enters (83.9% H at f1669) and the first card column enters at the frame bottom at f1670; both on screen f1670-f1674"
+  },
+  {
+   "id": "c052",
+   "frame": 1678,
+   "status": "rejected",
+   "reason": "inside the push: the upper card of the centre column slides up out from behind the first card (fan-out); the wall layout holds"
+  },
+  {
+   "id": "c053",
+   "frame": 1708,
+   "status": "rejected",
+   "reason": "zoom-out pulse 1 of the same card wall (radial blur at the edges while the 4th and 5th columns enter); nothing replaced"
+  },
+  {
+   "id": "c054",
+   "frame": 1712,
+   "status": "rejected",
+   "reason": "zoom-out pulse 1 of the same card wall, peak speed f1712-f1714; nothing replaced"
+  },
+  {
+   "id": "c055",
+   "frame": 1720,
+   "status": "rejected",
+   "reason": "end of zoom-out pulse 1 (a 4-frame picture gap f1714-f1718); same wall"
+  },
+  {
+   "id": "c056",
+   "frame": 1770,
+   "status": "rejected",
+   "reason": "zoom-out pulse 2 of the same wall (radial blur f1764-f1774, partial 6th/7th columns and a 4th row enter)"
+  },
+  {
+   "id": "c057",
+   "frame": 1780,
+   "status": "rejected",
+   "reason": "content value 0.24: f1780 repeats f1779 (capture duplicate) while the wall starts drifting down"
+  },
+  {
+   "id": "c058",
+   "frame": 1783,
+   "status": "rejected",
+   "reason": "the zoomed-out wall drifts down with an accelerating ease-in; a new card row enters at the top; nothing replaced"
+  },
+  {
+   "id": "c059",
+   "frame": 1787,
+   "status": "rejected",
+   "reason": "same downward drift of the wall"
+  },
+  {
+   "id": "c060",
+   "frame": 1795,
+   "status": "rejected",
+   "reason": "content value 0.05: repeated picture during the downward drift"
+  },
+  {
+   "id": "c061",
+   "frame": 1801,
+   "status": "rejected",
+   "reason": "same downward drift of the wall"
+  },
+  {
+   "id": "c062",
+   "frame": 1806,
+   "status": "rejected",
+   "reason": "same downward drift of the wall"
+  },
+  {
+   "id": "c063",
+   "frame": 1810,
+   "status": "rejected",
+   "reason": "same downward drift, vertical blur growing"
+  },
+  {
+   "id": "c064",
+   "frame": 1822,
+   "status": "rejected",
+   "reason": "same downward drift (about 9-12 px/f, vertical blur), last pictures before the hidden cut f1829"
+  },
+  {
+   "id": "c065",
+   "frame": 1829,
+   "status": "confirmed",
+   "reason": "hidden cut of the soft whip down f1800-f1857: the wall (moving down 24 px per picture, blurred) is replaced between f1826 and f1829 by a vertical reel of large post cards moving down 231 px per picture with heavy vertical blur"
+  },
+  {
+   "id": "c066",
+   "frame": 1927,
+   "status": "confirmed",
+   "reason": "hidden cut of the soft whip left f1900-f1953: the card (moving left 36 px per picture with horizontal blur; f1926 repeats f1924) is replaced at f1927 by the answer block sliding left while its headline reveals left to right"
+  },
+  {
+   "id": "c067",
+   "frame": 1986,
+   "status": "confirmed",
+   "reason": "anchor of the soft push up f1962-f2008: the dark product page enters from the bottom (first visible f1985) under the fading, upward-moving answer block (ghost at the top to f1987)"
+  },
+  {
+   "id": "c068",
+   "frame": 1988,
+   "status": "rejected",
+   "reason": "the incoming page rising (same push)"
+  },
+  {
+   "id": "c069",
+   "frame": 2010,
+   "status": "confirmed",
+   "reason": "anchor of the soft zoom-out morph f2009-f2035: f2010 is the last sharp picture before the radial zoom blur at f2012; it is not a rest picture: the page's mask is already inset 34-35 px a side and the content still rises 5 px per picture (scratch/v8c3r_S06_frame_edges_1996-2016.csv, scratch/v8c3r_S06_title_tmpl_1994-2018.csv)"
+  },
+  {
+   "id": "c070",
+   "frame": 2017,
+   "status": "rejected",
+   "reason": "mid-morph: the page at x0.71 starting to yaw; same transition"
+  }
+ ],
+ "boundaries": [
+  {
+   "frame": 1470,
+   "type": "hard-cut",
+   "anchor_cut": "c050",
+   "shared": "upward direction and the light page (248): the outgoing agent-message layout drifts up with an ease-in (5 -> 15 px per picture at f1462-f1468) and is sharp; the thread panel arrives 60% H low, moving up 76-81 px/f with heavy vertical motion blur, and settles in 26 f",
+   "exit_technique": "v8.cam-scroll-exit-up",
+   "entry_technique": "v8.cam-whip-in-settle",
+   "entry_curve": "v8.cam-whip-in-settle.v8c3"
+  },
+  {
+   "start": 1648,
+   "end": 1696,
+   "type": "push",
+   "frames": 49,
+   "anchor_cut": "c051",
+   "changeover": "f1670-f1674 (panel bottom edge 63.7% -> 15.3% H while the columns enter)",
+   "shared": "upward motion on the same light page; dark rounded UI blocks on both sides; the outgoing thread accelerates without a break for 84 f (from f1586) to 184 px per picture at f1670 with heavy vertical blur, its rounded bottom edge and soft shadow passing through f1669-f1676; three card columns enter from the bottom one picture apart (centre f1670, right f1672, left f1674), jump 406 px in their first interval and settle in 26 f",
+   "technique": "v8.trans-push-up-columns",
+   "curve": "v8.trans-push-up-columns.v8c3",
+   "curves": [
+    "v8.trans-push-up-columns-out.v8c3",
+    "v8.trans-push-up-columns.v8c3"
+   ],
+   "detail": "detail/soft_1648-1696",
+   "tiling": "window symmetric about the changeover; floor((a+b)/2) = 1672 ends S02"
+  },
+  {
+   "start": 1800,
+   "end": 1857,
+   "type": "whip",
+   "frames": 58,
+   "cut_frame": 1829,
+   "anchor_cut": "c065",
+   "shared": "downward motion with vertical motion blur on both sides and the same light page: the zoomed-out wall eases in to 24 px per picture (about 12 px/f) by f1826, hidden cut between f1826 and f1829, a reel of large dark post cards (1.65 x the 3-column card width) arrives at 231 px per picture and lands in 29 f",
+   "technique": "v8.trans-whip-down",
+   "curve": "v8.trans-whip-down.v8c3",
+   "curves": [
+    "v8.trans-whip-down-out.v8c3",
+    "v8.trans-whip-down.v8c3"
+   ],
+   "detail": "detail/soft_1800-1857",
+   "tiling": "floor((a+b)/2) = 1828: S03 ends at the last pre-cut frame, S04 starts at the hidden cut"
+  },
+  {
+   "start": 1900,
+   "end": 1953,
+   "type": "whip",
+   "frames": 54,
+   "cut_frame": 1927,
+   "anchor_cut": "c066",
+   "shared": "leftward motion with horizontal motion blur on both sides and the same light page: the card eases in to 36 px per picture (about 18 px/f) at f1924 (f1926 repeats it), hidden cut, the answer block arrives sliding left at about 27 px/f with its headline revealing left to right and settles in 27 f",
+   "technique": "v8.trans-whip-left",
+   "curve": "v8.trans-whip-left.v8c3",
+   "curves": [
+    "v8.trans-whip-left-out.v8c3",
+    "v8.trans-whip-left.v8c3"
+   ],
+   "detail": "detail/soft_1900-1953",
+   "tiling": "floor((a+b)/2) = 1926: S04 ends at the last pre-cut frame, S05 starts at the hidden cut"
+  },
+  {
+   "start": 1962,
+   "end": 2008,
+   "type": "push",
+   "frames": 47,
+   "anchor_cut": "c067",
+   "changeover": "f1985-f1987 (incoming page at the bottom, fading ghost of the block at the top)",
+   "shared": "upward motion and the light page: the answer block eases in to 54 px per picture (27 px/f) with vertical blur and fades to a ghost; the dark full-frame product page enters at the bottom at f1985 and rises 95% H in 19 f (peak about 108 px/f); the page is still rising (content 5 px per picture at f2010) when the zoom-out takes over, so the push never settles",
+   "technique": "v8.trans-push-up",
+   "curve": "v8.trans-push-up.v8c3",
+   "curves": [
+    "v8.trans-push-up-out.v8c3",
+    "v8.trans-push-up.v8c3"
+   ],
+   "detail": "detail/soft_1962-2008",
+   "tiling": "floor((a+b)/2) = 1985 ends S05 at the first frame with the incoming page"
+  },
+  {
+   "start": 2009,
+   "end": 2035,
+   "type": "morph",
+   "frames": 27,
+   "anchor_cut": "c069",
+   "shared": "the same element: it starts under the push landing with a mask inset (left / right 5.4 / 7.0 px at f2006 -> 33.5 / 35.1 px at f2010) over the unscaled, still-rising content; from f2012 the full-frame product page shrinks x0.53 with strong radial zoom blur (30% of the change between f2012 and f2014), keeps its centre y at 460-502 px (50-55% H), starts to yaw (right side receding) at about f2022 and becomes the front layer of a 3D screen stack whose other layers appear behind it from f2026-f2028 and fan out in S07",
+   "technique": "v8.trans-zoom-out-morph",
+   "curve": "v8.trans-zoom-out-morph.v8c3",
+   "curves": [
+    "v8.trans-zoom-out-morph.v8c3"
+   ],
+   "detail": "detail/soft_2009-2035",
+   "tiling": "floor((a+b)/2) = 2022 ends S06; the layer fan-out (f2028-f2076) is S07's first movement"
+  }
+ ],
+ "segments": [
+  {
+   "id": "v8c3-S01",
+   "start": 1462,
+   "end": 1469,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": true,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "tail of v8c2 S06: the agent message block (mascot + 1-line message under two dimmed checklist lines) keeps drifting up with an ease-in (5 -> 15 px per picture) into the hard cut f1470"
+  },
+  {
+   "id": "v8c3-S02",
+   "start": 1470,
+   "end": 1672,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "dark thread panel (70% W, photo avatars and a media still) lands from a whip after the cut; three replies arrive one after another: avatar grows from a disc (the thread connector of replies 1 and 2 draws down from under it; reply 1's while the panel lands), name row fades in, text streams left to right at 39-50 px/f, action row fades in (and the link row under reply 2 appears in its reserved slot and fades in), and the thread steps up one reply with an ease-in-out; then an unbroken 84-frame accelerating scroll pushes the panel out"
+  },
+  {
+   "id": "v8c3-S03",
+   "start": 1673,
+   "end": 1828,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "masonry wall of dark post cards: three columns rise in one picture apart and their upper cards fan out from behind, then the wall zooms out in two eased pulses on a linear drift (x0.53, new columns at the edges with radial blur), then accelerates downward into a whip"
+  },
+  {
+   "id": "v8c3-S04",
+   "start": 1829,
+   "end": 1926,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "a vertical reel of large post cards whips down and lands one card centred (49% W) in 29 f, holds about 10 f, then the card eases in to the left with horizontal blur into a whip"
+  },
+  {
+   "id": "v8c3-S05",
+   "start": 1927,
+   "end": 1985,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "answer block on the light page: bold headline revealed left to right while sliding in from the right, the mascot pill and header row slide in 5x farther on the same timing, sub-line and three numbered items cascade in; with no hold the block accelerates up, fades, and a product page pushes in from below"
+  },
+  {
+   "id": "v8c3-S06",
+   "start": 1986,
+   "end": 2022,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "dark full-frame product page (hero still, big 2-line title, countdown card, thumbnail row) rises in with a strong ease-out, an arrow cursor glides up-left over it; with no hold the page's mask insets while the content is still rising (f2006-f2010), then the page shrinks with radial blur and turns into 3D"
+  },
+  {
+   "id": "v8c3-S07",
+   "start": 2023,
+   "end": 2192,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": true,
+   "live_confirmed_on": [],
+   "summary": "3D stack of 10-12 app screens fanned toward the upper right on the light page: layers slide out behind the front page while a soft dark halo builds around the stack (f2028-f2050, then two steps to its final level by about f2080), a status label fades and de-blurs in at the top left, 7 callouts (mascot icon + 3-word label on a light pill, joined by a leader line to a white anchor dot) each arrive as a chain (the dot pops, its line draws out toward the pill's slot, the pill grows from a speck while the line draws) and later leave as the reverse chain (the pill collapses to a sliver, the line retracts into the dot, the dot shrinks and fades), in a rolling order, over a slow linear pull-back"
+  }
+ ],
+ "techniques": [
+  {
+   "id": "v8.cam-scroll-exit-up",
+   "category": "cam",
+   "description": "the layout drifts up with a strong ease-in into the next cut, no settle (v8c2 id; tail of the v8c2 S06 instance)",
+   "instances": [
+    [
+     1446,
+     1468
+    ]
+   ],
+   "reference_frames": [
+    1460,
+    1462,
+    1464,
+    1467,
+    1468
+   ],
+   "measured": {
+    "duration_frames": 22,
+    "easing": "ease-in; curve fitted by v8c2 (curves/v8.cam-scroll-exit-up.v8c2.csv)",
+    "values": "message ink centre 518.5 -> 480.3 px (56.5% -> 52.3% H) over f1460-f1468, per picture 5.4, 7.2, 10.6, 15.0 px (scratch/v8c3_chat_line_1420-1469.csv)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v8.text-focus-dim",
+   "category": "text",
+   "description": "older lines stay dimmed while the newest line holds (v8c2 id, continuing)",
+   "instances": [
+    [
+     1422,
+     1469
+    ]
+   ],
+   "reference_frames": [
+    1462,
+    1468
+   ],
+   "measured": {
+    "duration_frames": 0,
+    "easing": "gradual (not fitted)",
+    "values": "as measured by v8c2 to f1467; unchanged to the cut"
+   },
+   "curves": []
+  },
+  {
+   "id": "v8.cam-whip-in-settle",
+   "category": "cam",
+   "description": "hard cut into a new layout that arrives far below its rest, still moving fast with heavy vertical motion blur, and settles with a strong ease-out; same shape as the incoming half of v8.trans-whip-up (v8c2) but with a 7x longer throw and no outgoing blur",
+   "instances": [
+    [
+     1470,
+     1496
+    ]
+   ],
+   "reference_frames": [
+    1470,
+    1472,
+    1474,
+    1478,
+    1481,
+    1490,
+    1498
+   ],
+   "measured": {
+    "duration_frames": 26,
+    "easing": "bezier(0.1113, 1.0994, 0.9101, 0.922) D=26 rmse 0.0221; spring {232.833, 36.706} rmse 0.1329",
+    "values": "media image bottom edge 703 -> 151 px (76.6% -> 16.5% H, travel 60.1% H); 152-163 px between the first two pictures (76-81 px/f); Sobel gy/gx 0.26 at f1470, blur gone by f1481; ends on a 3-4 px/f drift"
+   },
+   "curves": [
+    "v8.cam-whip-in-settle.v8c3"
+   ]
+  },
+  {
+   "id": "v8.text-stream-reveal",
+   "category": "text",
+   "description": "text streams in left to right line after line; new words arrive dim and brighten (v8c2 id; here white on the dark panel)",
+   "instances": [
+    [
+     1474,
+     1510
+    ],
+    [
+     1512,
+     1546
+    ],
+    [
+     1557,
+     1586
+    ]
+   ],
+   "reference_frames": [
+    1474,
+    1482,
+    1488,
+    1500,
+    1509,
+    1512,
+    1526,
+    1557,
+    1571
+   ],
+   "measured": {
+    "duration_frames": 36,
+    "easing": "near-linear front (curve by v8c2: curves/v8.text-stream-reveal.v8c2.csv)",
+    "values": "reply 1: 47, 47, 39 px/f per line (455 -> 1026, 472 -> 1055, 540 -> 926 px); reply 2: 44, 40, 50 px/f; reply 3: 41, 44 px/f; lines overlap 0-2 f; front advances 70-120 px per picture (scratch/v8c3r_S02_reply1_stream.csv, scratch/v8c3r_S02_reply2_stream.csv, scratch/v8c3r_S02_reply3_stream.csv)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v8.ui-reply-meta-fade-in",
+   "category": "ui",
+   "description": "a reply's name row fades in together with its growing avatar, its action row (4 icons + counts) fades in around the end of its text, and the link row under a reply (3-dot icon + count + 2 words) appears in one picture in its reserved slot and fades in",
+   "instances": [
+    [
+     1472,
+     1492
+    ],
+    [
+     1495,
+     1506
+    ],
+    [
+     1510,
+     1524
+    ],
+    [
+     1534,
+     1558
+    ],
+    [
+     1548,
+     1566
+    ],
+    [
+     1554,
+     1572
+    ],
+    [
+     1588,
+     1592
+    ]
+   ],
+   "reference_frames": [
+    1472,
+    1474,
+    1476,
+    1481,
+    1492,
+    1495,
+    1500,
+    1506,
+    1510,
+    1516,
+    1524,
+    1534,
+    1536,
+    1543,
+    1548,
+    1552,
+    1554,
+    1558,
+    1566,
+    1572
+   ],
+   "measured": {
+    "duration_frames": 18,
+    "easing": "not fitted",
+    "values": "action row 1: 99th-percentile luma 19 -> 74 over f1495-f1506 (scratch/v8c3r_S02_actionrow1.csv); name row 2: 68 -> 229 over f1510-f1524 (scratch/v8c3r_S02_name2.csv); action row 3 about f1588-f1592 (pictures). Opacity as brightest pixel (p99) of a content-locked box against the rest row smeared by the same picture's blur: name row 1 0.24 (0.21) at f1472 -> 0.64 (0.54) at f1476 -> 0.94 (0.90) at f1484 -> 1.0 at f1492 (brightest 165 at f1476 where the blurred rest row gives 249) (scratch/v8c3r3_S02_reply1_avatar_conn_1470-1500.csv); action row 2: absent to f1532, 0.38 (f1534) -> 0.66 (f1536) -> 0.85 (f1540-f1543) at 2-9 px of blur, 0.66-0.80 under step 2's blur (f1544-f1552), 1.0 from f1558 (p99 1.0 from f1566); link row under reply 2: its slot on screen and empty to f1547, first picture f1548 at 0.30 -> 0.61 (f1552) -> 0.84 (f1557) -> 0.95 (f1562) -> 0.98 (f1566) -> 1.0 (f1576); name row 3: absent to f1552, 0.37 (f1554) -> 0.68 (f1558) -> 0.91 (f1564) -> 1.0 (f1572) (p99 0.22 -> 1.0 by f1574) (scratch/v8c3r3_S02_step2_rows_1526-1592.csv); an absent row reads 0.13-0.16 on this scale"
+   },
+   "curves": []
+  },
+  {
+   "id": "v8.ui-thread-step-scroll",
+   "category": "ui",
+   "description": "the thread scrolls up one reply block with an ease-in-out over a slow base drift as the next reply arrives; slower and more symmetric than v8.ui-list-step-scroll (v8c2: 21-23 f ease-out), so a second technique",
+   "instances": [
+    [
+     1502,
+     1530
+    ],
+    [
+     1536,
+     1571
+    ]
+   ],
+   "reference_frames": [
+    1502,
+    1510,
+    1516,
+    1530,
+    1536,
+    1548,
+    1550,
+    1571
+   ],
+   "measured": {
+    "duration_frames": 35,
+    "easing": "step 2: bezier(0.5226, 0.1815, 0.2023, 0.8616) D=37 rmse 0.0125, spring {77.456, 15.036} rmse 0.082; step 1: bezier(0.822, 0.553, 0.051, 0.658) D=27 rmse 0.029 (test fit)",
+    "values": "step 1: 336 px (36.6% H) in 28 f, about 25 px/f peak; step 2: 494 px (53.9% H) in 35 f, peak about 34 px/f with heavy vertical blur; base drift 3-6 px/f (scratch/v8c3_thread_scroll_1470-1676.csv)"
+   },
+   "curves": [
+    "v8.ui-thread-step-scroll.v8c3"
+   ]
+  },
+  {
+   "id": "v8.icon-avatar-grow-in",
+   "category": "icon",
+   "description": "round photo avatar grows about its centre from a small disc to full size, ease-out, no overshoot; the reply's thread connector (thin light vertical line in the avatar column) draws down from under it at the same time and keeps lengthening a few frames after the disc is full; reply 1's runs while the panel is still landing from the whip",
+   "instances": [
+    [
+     1472,
+     1496
+    ],
+    [
+     1510,
+     1536
+    ],
+    [
+     1552,
+     1571
+    ]
+   ],
+   "reference_frames": [
+    1472,
+    1474,
+    1476,
+    1478,
+    1484,
+    1488,
+    1496,
+    1510,
+    1515,
+    1520,
+    1529,
+    1536,
+    1554,
+    1560,
+    1566,
+    1572
+   ],
+   "measured": {
+    "duration_frames": 19,
+    "easing": "bezier(0.476, 1.1596, 0.742, 0.7884) D=17 rmse 0.0431; spring {367.102, 38.486} rmse 0.0723; reply 2's connector length: bezier(0.1222, 1.1154, 1.0, 0.9557) D=24 rmse 0.0193, spring {287.505, 36.624} rmse 0.1192; reply 1 (not fitted separately): same shape as the reply 3 curve with a slightly slower tail (0.64 / 0.74 / 0.87 / 0.94 / 0.97 at +4 / +6 / +10 / +14 / +18 f from its first picture against 0.69 / 0.80 / 0.89 / 0.96 / 1.0), and its connector the same shape as reply 2's (0.52 / 0.77 / 0.875 / 0.94 / 0.987 at +2 / +6 / +10 / +14 / +20 f against 0.48 / 0.69 / 0.87 / 0.93 / 0.98)",
+    "values": "reply 1: below the frame edge at f1470, first on screen at f1472 already at 0.24 (28 px) -> 0.49 (f1474) -> 0.64 (f1476) -> 0.74 (f1478) -> 0.81 (f1481) -> 0.91 (f1484) -> 0.96 (f1488) -> 0.98 (f1492, within 2%) -> 0.99 (f1495) -> 1.0 (f1498) of 117 px, background-subtracted ink width, centre x 360-360.5 px; (ink height - blur) / 118 px agrees within 0.1; the rest avatar smeared vertically by 10-150 px keeps 108-117 px of width, so the small widths are not motion blur (scratch/v8c3r3_S02_reply1_avatar_blurmodel.csv); reply 1's connector (half-level ends, blur 49 -> 11 px at f1472-f1481 from its top-end rise): 72 px (f1472) -> 116 -> 147 -> 172 -> 187 (f1481) -> 205 (f1484) -> 216 (f1488) -> 221 (f1492) -> 224 px (f1496, 24.4% H), its top 72-76 px below the avatar centre, its lower end 145 (f1472, +-8 px) -> 299 px below it (scratch/v8c3r3_S02_reply1_avatar_conn_1470-1500.csv). Replies 2 and 3: 0.29-0.30 of the 109-110 px rest width at the first picture -> 1.0 in 17-19 f (scratch/v8c3r_S02_avatar2.csv, scratch/v8c3r_S02_avatar3.csv); reply 2's connector: absent to f1509, 84 px (f1510) -> 135 -> 168 -> 186 -> 199 (f1518) -> 207 -> 217 (f1524) -> 225 (f1530) -> 229 px (f1536) = 25.0% H = reply 1's connector at rest with the same low threshold (229-231 px); with the scroll's vertical-blur excess (20-28 px at f1510-f1516, read on reply 1's connector, fully drawn and at rest by then) removed: 58 -> 229 px, active f1509-f1530; measured against the avatar centre in the same picture its top stays 65-74 px below the centre while the lower end goes from 150 to 298 px below it (f1510-f1530), so it is drawn on, not scaled with the disc (a 0.29x group scale would put it at 686-751 px at f1510; it sits at 732-815 px) (scratch/v8c3r_S02_connector2_1500-1546.csv)"
+   },
+   "curves": [
+    "v8.icon-avatar-grow-in.v8c3",
+    "v8.icon-avatar-grow-in-connector.v8c3"
+   ]
+  },
+  {
+   "id": "v8.trans-push-up-columns",
+   "category": "trans",
+   "description": "push up: the outgoing panel accelerates upward without a break into heavy vertical blur while three columns of cards enter from the bottom one picture apart (centre, right, left), jump almost half the frame in their first interval and settle with an exponential-like ease-out",
+   "instances": [
+    [
+     1648,
+     1696
+    ]
+   ],
+   "reference_frames": [
+    1586,
+    1638,
+    1656,
+    1666,
+    1669,
+    1670,
+    1672,
+    1674,
+    1676,
+    1696
+   ],
+   "measured": {
+    "duration_frames": 49,
+    "easing": "out: bezier(0.2459, 0.0444, 0.779, 0.1008) D=93 rmse 0.0098 (ease-in, 84 f from f1586); in: bezier(0.0007, 0.6001, 0.0002, 0.8671) D=28 rmse 0.0096, spring {454.909, 63.936} rmse 0.2232",
+    "values": "out: per-picture displacement 6 (f1578) -> 184 px (f1670), content -154.4% -> -404.9% H, Sobel gy/gx 0.60 -> 0.13; in: centre column top 97.5% H (f1670) -> 53.2% (f1672) -> 24.1% H (f1703); right and left columns repeat the same values 2 and 4 frames later"
+   },
+   "curves": [
+    "v8.trans-push-up-columns-out.v8c3",
+    "v8.trans-push-up-columns.v8c3"
+   ]
+  },
+  {
+   "id": "v8.card-column-fan-out",
+   "category": "card",
+   "description": "the upper card of each column slides up out from behind the column's first card until the masonry gap is open, same column stagger",
+   "instances": [
+    [
+     1678,
+     1692
+    ]
+   ],
+   "reference_frames": [
+    1678,
+    1680,
+    1683,
+    1686,
+    1692
+   ],
+   "measured": {
+    "duration_frames": 14,
+    "easing": "bezier(0.0, 0.0977, 0.4903, 1.0275) D=16 rmse 0.0226; spring {273.306, 28.67} rmse 0.0551",
+    "values": "card centres 331 -> 439 px apart (36.1% -> 47.8% H); centre f1678, right f1680, left f1683 (scratch/v8c3_T2_fanout_gap.csv)"
+   },
+   "curves": [
+    "v8.card-column-fan-out.v8c3"
+   ]
+  },
+  {
+   "id": "v8.cam-zoom-out-reveal",
+   "category": "cam",
+   "description": "the card wall zooms out about the frame centre in two eased pulses on top of a slow linear zoom drift, new columns entering at the edges with radial blur",
+   "instances": [
+    [
+     1694,
+     1726
+    ],
+    [
+     1752,
+     1792
+    ]
+   ],
+   "reference_frames": [
+    1690,
+    1700,
+    1712,
+    1714,
+    1724,
+    1760,
+    1770,
+    1792,
+    1799
+   ],
+   "measured": {
+    "duration_frames": 32,
+    "easing": "pulse 1 (drift removed): bezier(0.7921, -0.0164, 0.4165, 0.9947) D=43 rmse 0.0115; pulse 2 (raw): bezier(0.573, 0.329, 0.138, 0.898) D=46 rmse 0.034 (test fit); drift -0.00151 scale per frame",
+    "values": "raw scale 1.0 (f1690) -> 0.737 (f1724) -> 0.668 (f1760) -> 0.53 (f1795) about x 808 px (49.8% W); card width 483 -> 256 px (scratch/v8c3_wall_span_1686-1800.csv)"
+   },
+   "curves": [
+    "v8.cam-zoom-out-reveal.v8c3"
+   ]
+  },
+  {
+   "id": "v8.trans-whip-down",
+   "category": "trans",
+   "description": "vertical whip downward: the layout drifts down with a long ease-in and growing vertical blur, hidden cut, the next layout (a reel of large cards) arrives very fast with heavy blur and lands with a strong ease-out",
+   "instances": [
+    [
+     1800,
+     1857
+    ]
+   ],
+   "reference_frames": [
+    1780,
+    1810,
+    1818,
+    1826,
+    1829,
+    1830,
+    1832,
+    1836,
+    1844,
+    1858
+   ],
+   "measured": {
+    "duration_frames": 58,
+    "easing": "out: bezier(0.7875, 0.0613, 0.8523, 0.4338) D=54 rmse 0.0086 (ease-in, 46 f); in: bezier(0.0736, 1.1357, 0.911, 0.9565) D=36 rmse 0.0108, spring {172.69, 29.862} rmse 0.1472",
+    "values": "out: 0.8 -> 23.7 px per picture (f1780-f1826), Sobel gy/gx 1.21 -> 0.90; in: landing card bottom -127 -> 822 px (-13.9% -> 89.6% H), 231 px per picture at f1829-f1830, gy/gx 0.43"
+   },
+   "curves": [
+    "v8.trans-whip-down-out.v8c3",
+    "v8.trans-whip-down.v8c3"
+   ]
+  },
+  {
+   "id": "v8.trans-whip-left",
+   "category": "trans",
+   "description": "horizontal whip to the left: the card accelerates left with growing horizontal blur, hidden cut, the next block arrives sliding left (its headline revealing left to right) and settles with an ease-out",
+   "instances": [
+    [
+     1900,
+     1953
+    ]
+   ],
+   "reference_frames": [
+    1888,
+    1906,
+    1918,
+    1924,
+    1927,
+    1928,
+    1930,
+    1932,
+    1941,
+    1955
+   ],
+   "measured": {
+    "duration_frames": 54,
+    "easing": "out: bezier(0.7143, 0.0307, 0.8651, 0.2512) D=45 rmse 0.0091 (ease-in, 36 f); in: bezier(0.0237, 0.2687, 0.3045, 1.0036) D=29 rmse 0.0225, spring {150.82, 26.909} rmse 0.0411",
+    "values": "out: card centre 49.8% -> 39.9% W, 0.9 -> 36.2 px per picture, Sobel gx 29 -> 10 (gy 21-25); in: headline left edge 346 -> 259 px (21.3% -> 16.0% W), 18 px per picture at first"
+   },
+   "curves": [
+    "v8.trans-whip-left-out.v8c3",
+    "v8.trans-whip-left.v8c3"
+   ]
+  },
+  {
+   "id": "v8.layout-header-slide-left",
+   "category": "layout",
+   "description": "a secondary group (mascot pill + header row) slides in from the right on the same timing as the main block but with a much longer throw, the row fading in on the way",
+   "instances": [
+    [
+     1930,
+     1960
+    ]
+   ],
+   "reference_frames": [
+    1930,
+    1932,
+    1934,
+    1941,
+    1946,
+    1955,
+    1960
+   ],
+   "measured": {
+    "duration_frames": 30,
+    "easing": "bezier(0.1109, 0.5428, 0.0, 0.9605) D=37 rmse 0.0326; spring {234.951, 32.848} rmse 0.1491",
+    "values": "pill ink centroid 624 -> 166.5 px (38.5% -> 10.3% W, 459 px against the headline's 87 px); per picture 87, 138, 72, 39, 27 ... 6 px; header row 92 / 46 / 16 px off rest at f1941 / f1946 / f1955 (scratch/v8c3r_S05_pill_bbox.csv, scratch/v8c3r_S05_header_row.csv)"
+   },
+   "curves": [
+    "v8.layout-header-slide-left.v8c3"
+   ]
+  },
+  {
+   "id": "v8.text-list-cascade-fade",
+   "category": "text",
+   "description": "the sub-line and the numbered list items fade in one after another while sliding with their block; the last item stays dim",
+   "instances": [
+    [
+     1930,
+     1958
+    ]
+   ],
+   "reference_frames": [
+    1932,
+    1934,
+    1942,
+    1950,
+    1958
+   ],
+   "measured": {
+    "duration_frames": 28,
+    "easing": "spring {101.788, 17.392} rmse 0.0233; bezier(0.2885, 0.354, 0.3328, 0.9985) D=30 rmse 0.0258",
+    "values": "sub-line mean luma 248 -> 230.4; item starts f1932, f1942, f1950 (stagger 8-10 f); item 3 darkness about half of item 2 at rest (scratch/v8c3_ins_luma_*.csv)"
+   },
+   "curves": [
+    "v8.text-list-cascade-fade.v8c3"
+   ]
+  },
+  {
+   "id": "v8.trans-push-up",
+   "category": "trans",
+   "description": "push up with a fade: the block accelerates up with vertical blur and fades to a ghost while a full-frame page rises from the bottom and settles with an ease-out",
+   "instances": [
+    [
+     1962,
+     2008
+    ]
+   ],
+   "reference_frames": [
+    1960,
+    1972,
+    1980,
+    1983,
+    1985,
+    1986,
+    1988,
+    1992,
+    2000,
+    2006
+   ],
+   "measured": {
+    "duration_frames": 47,
+    "easing": "out: bezier(0.7064, 0.1602, 0.7946, 0.5266) D=20 rmse 0.0239 (ease-in); in: bezier(0.2077, 0.8144, 0.4782, 0.8899) D=20 rmse 0.0073, spring {366.915, 51.658} rmse 0.089",
+    "values": "out: headline centre 32.0% -> 7.4% H, 5 -> 54 px per picture, darkest ink 23 -> 217 by f1986; in: page top 96.9% -> 1.57% H, peak about 108 px/f; the landing never rests: title (content) 251 -> 240 -> 232 -> 227 px at f2004-f2010 (16, 11, 8, 5 px per picture), unscaled (scratch/v8c3r_S06_title_tmpl_1994-2018.csv); the 14 px top inset at f2006-f2008 is where the rise meets the zoom-out's mask inset"
+   },
+   "curves": [
+    "v8.trans-push-up-out.v8c3",
+    "v8.trans-push-up.v8c3"
+   ]
+  },
+  {
+   "id": "v8.cursor-glide",
+   "category": "cursor",
+   "description": "an arrow cursor glides across the page at a near-constant speed, its path bending, no click",
+   "instances": [
+    [
+     1997,
+     2010
+    ]
+   ],
+   "reference_frames": [
+    1997,
+    1998,
+    2000,
+    2002,
+    2006,
+    2008,
+    2010
+   ],
+   "measured": {
+    "duration_frames": 13,
+    "easing": "near-constant speed (not fitted)",
+    "values": "(1313, 896) -> (1110, 789) px = 80.9% -> 68.4% W, 97.6% -> 85.9% H; 16-18 px/f; template scores 0.76-1.00, f2004 lost"
+   },
+   "curves": []
+  },
+  {
+   "id": "v8.trans-zoom-out-morph",
+   "category": "trans",
+   "description": "the full-frame page's rounded-rect mask insets over its still-rising, unscaled content (4 f), then the page shrinks with radial zoom blur and yaws into the front layer of a 3D screen stack",
+   "instances": [
+    [
+     2009,
+     2035
+    ]
+   ],
+   "reference_frames": [
+    2006,
+    2008,
+    2010,
+    2012,
+    2014,
+    2017,
+    2022,
+    2026,
+    2028,
+    2031
+   ],
+   "measured": {
+    "duration_frames": 27,
+    "easing": "bezier(0.6111, 0.0115, 0.0029, 0.4987) D=24 rmse 0.0214; spring {227.837, 28.952} rmse 0.0716",
+    "values": "page height 899 px -> x0.528 (f2031-f2034) in 20 f (f2008-f2028); 0.92 -> 0.78 between f2012 and f2014; centre y 460-502 px (scratch/v8c3_hero_height_2004-2060.csv); f2006-f2010 are a mask inset (left / right 0 / 0 at f2004 -> 5.4 / 7.0 -> 16.1 / 17.7 -> 33.5 / 35.1 px; bottom edge 913.1 -> 907.1 -> 897.3 px) while the content keeps rising 11, 8, 5 px per picture with template scale 1.000; the content shrinks from f2012 (scale about 0.91, blurred) (scratch/v8c3r_S06_frame_edges_1996-2016.csv, scratch/v8c3r_S06_title_tmpl_1994-2018.csv)"
+   },
+   "curves": [
+    "v8.trans-zoom-out-morph.v8c3"
+   ]
+  },
+  {
+   "id": "v8.3d-stack-fan-out",
+   "category": "3d",
+   "description": "screen layers slide out behind the front layer along a diagonal to the upper right, ease-out with a slight overshoot, while a soft dark halo builds around the stack (near-linear first build, then two one-picture steps to its final level)",
+   "instances": [
+    [
+     2028,
+     2076
+    ]
+   ],
+   "reference_frames": [
+    2028,
+    2031,
+    2034,
+    2036,
+    2040,
+    2046,
+    2048,
+    2050,
+    2059,
+    2066,
+    2073,
+    2076,
+    2080
+   ],
+   "measured": {
+    "duration_frames": 39,
+    "easing": "bezier(0.0, 0.1216, 0.5808, 1.2374) D=40 rmse 0.0107; spring {42.47, 10.082} rmse 0.051; halo, first build: bezier(0.2164, 0.006, 1.0, 0.8578) D=23 rmse 0.0348 (spring rmse 0.28, unusable); one ease over the whole halo build f2022-f2100 fits badly (bezier rmse 0.11, spring 0.07)",
+    "values": "far end 1111 -> 1355 -> 1344 px (68.5% -> 83.5% -> 82.9% W), front edge 289-304 px, peak about 12 px/f (scratch/v8c3_stack_extent_2020-2200.csv); halo, sampled at fixed distances left of the front layer's edge (edge at luma 120: x 297-318 px to f2070, 378 px by f2192): none to f2026; at 20 / 60 / 100 px out 242 / 244 / 245 (f2031) -> 221 / 229 / 237 (f2040) -> 203 / 216 / 228 (f2050), held to f2056, 187-192 / 203-208 / 218-224 from about f2076 to f2192; reach (back to luma 244) 25 -> 203-210 px (f2031 -> f2050-f2070); integrated over rows 300-700 605 -> 5100 (f2026-f2050), held to f2056, one-picture steps at f2059 (+25%, lower left) and f2073-f2074 (+23%, upper left; 3 f after the front layer's picture is replaced at f2070), each partly decaying over 5-7 f, final 6658-7165 from about f2080; right of the far end it starts at about the same time (100 px out 246 at f2026 -> 237 at f2031) and reaches 188 at 20 px out at f2056-f2068; fixed sample points lighten after f2100 only because the stack drifts away from them (scratch/v8c3r3_S07_halo_edge_2008-2192.csv)"
+   },
+   "curves": [
+    "v8.3d-stack-fan-out.v8c3",
+    "v8.3d-stack-fan-out-halo.v8c3"
+   ]
+  },
+  {
+   "id": "v8.text-label-blur-fade-in",
+   "category": "text",
+   "description": "a 1-line status label fades and de-blurs in place, the middle characters resolving first",
+   "instances": [
+    [
+     2017,
+     2050
+    ]
+   ],
+   "reference_frames": [
+    2017,
+    2018,
+    2022,
+    2024,
+    2050
+   ],
+   "measured": {
+    "duration_frames": 33,
+    "easing": "bezier(0.2285, 0.1684, 0.0687, 0.9946) D=41 rmse 0.0172; spring {120.451, 22.097} rmse 0.0208",
+    "values": "mean luma of the label box 247.2 -> 206.2, darkest pixel 241 -> 1; position and scale fixed from f2020 (scratch/v8c3_title_luma_2012-2060.csv, scratch/v8c3_title_tmpl_2016-2040.csv)"
+   },
+   "curves": [
+    "v8.text-label-blur-fade-in.v8c3"
+   ]
+  },
+  {
+   "id": "v8.ui-callout-pop-in",
+   "category": "ui",
+   "description": "a callout arrives as a 3-step chain: a white anchor dot pops from a speck on its stack layer, its thin leader line draws out from the dot toward the pill's slot, and the callout pill (icon + label) grows from a blurred speck while rising toward the line's end, de-blurring; the pill starts while the line is still drawing",
+   "instances": [
+    [
+     2031,
+     2056
+    ],
+    [
+     2028,
+     2058
+    ],
+    [
+     2036,
+     2064
+    ],
+    [
+     2045,
+     2072
+    ],
+    [
+     2059,
+     2086
+    ],
+    [
+     2084,
+     2112
+    ],
+    [
+     2096,
+     2124
+    ]
+   ],
+   "reference_frames": [
+    2028,
+    2031,
+    2036,
+    2040,
+    2045,
+    2046,
+    2054,
+    2059,
+    2068,
+    2084,
+    2090,
+    2092,
+    2094,
+    2096,
+    2104,
+    2106,
+    2112,
+    2124
+   ],
+   "measured": {
+    "duration_frames": 28,
+    "easing": "dot: spring {325.763, 30.074} rmse 0.0353 (bezier(0.0, 0.288, 0.6497, 1.018) D=12 rmse 0.0576); line: bezier(0.5545, 0.9955, 0.4927, 0.6684) D=13 rmse 0.0338, spring {416.492, 39.288} rmse 0.039; pill: bezier(0.5526, 0.9929, 0.5589, 0.9003) D=18 rmse 0.0223; spring {246.734, 27.5} rmse 0.055",
+    "values": "callout 6 (28 f from the dot speck to the settled pill): dot 2.8 px speck at (574, 719) px (f2084) -> 10.0 (f2090) -> 12.1 px (f2094), settled 12.2 px = 0.75% W; line none to f2090, 14 px beyond the dot at f2092 -> 80-82 px (f2104-f2106, 8.8% H) to the pill's light rim; pill 13 x 4 px speck at f2094 -> 37 x 7 px (f2096) -> 248 x 47 px, top 858 -> 790 px, sharp by f2112. In arrival order: dot specks f2031, f2031 (2 px trace f2028), f2036-f2038, f2045, f2059, f2084, f2096; line starts f2036-f2038, f2036-f2038, f2046, f2052, f2064, f2092, f2102-f2104; pill specks f2036, f2040, f2046, f2054, f2068, f2094, f2106 (gaps 4, 6, 8, 14, 26, 12 f). The dot leads its pill by 9-10 f (5 f on the first callout) and pops in 5-12 f; the line starts 5-10 f after the dot, takes 8-14 f and reaches 81-216 px; the pill starts 0-4 f after the line and takes 18 f (scratch/v8c3r_S07_c1_dotline_2026-2066.csv ... scratch/v8c3r_S07_c7_dotline_2088-2129.csv, scratch/v8c3r_S07_pill_speck_onsets.csv, scratch/v8c3_callout_ux_2090-2130.csv). Instance ends = pill speck + 18 f (measured on callouts 6, 2 and 7; callout 1 took 20 f)"
+   },
+   "curves": [
+    "v8.ui-callout-pop-in.v8c3",
+    "v8.ui-callout-pop-in-dot.v8c3",
+    "v8.ui-callout-pop-in-line.v8c3"
+   ]
+  },
+  {
+   "id": "v8.ui-callout-collapse-out",
+   "category": "ui",
+   "description": "the arrival chain backwards: a callout pill shrinks with an ease-in, squashing vertically faster than it narrows into a thin horizontal sliver with horizontal blur; 4-6 f later its leader line retracts from the pill end up into the anchor dot (ease-in), and the dot shrinks and fades last, gone with the pill; callouts leave roughly in arrival order",
+   "instances": [
+    [
+     2103,
+     2123
+    ],
+    [
+     2124,
+     2144
+    ],
+    [
+     2142,
+     2162
+    ],
+    [
+     2160,
+     2180
+    ]
+   ],
+   "reference_frames": [
+    2160,
+    2164,
+    2168,
+    2171,
+    2172,
+    2174,
+    2176,
+    2178,
+    2180
+   ],
+   "measured": {
+    "duration_frames": 20,
+    "easing": "bezier(0.9352, 0.1468, 0.591, 0.7187) D=20 rmse 0.0384 (ease-in); spring rmse 0.63 (unusable); line retraction: bezier(1.0, 0.4603, 0.0039, -0.2038) D=12 rmse 0.054 (ease-in; capture jitter at f2171-f2172), spring rmse 0.42 (unusable)",
+    "values": "bottom-centre callout width 284 -> 10 px and height 43 -> 1 px over f2160-f2178, toward (1040, 692) px; one every 18-21 f (only f2160 measured; others from overview sheets); its leader line: 112-118 px beyond the dot at f2150-f2164, then 109 (f2166) -> 100 -> 82 (f2171) -> 60 -> 38 -> 8 -> 2 (f2178) -> 0 px (f2180), the lower end rising 648 -> 524 px (scratch/v8c3r_S07_cc_collapse_dotline_2146-2182.csv); its dot: a full disc to f2171, a 6 px core at f2172 (peak 254 on the 232 page), contrast 22 -> 18 -> 15 -> 12 levels at f2172-f2180, not visible on the crops from f2180, a stationary 7-10-level trace to f2190 (scratch/v8c3r_S07_cc_collapse_dotfade_2160-2192.csv); top-right callout read off a crop: line retracts about f2104-f2112, dot gone about f2116"
+   },
+   "curves": [
+    "v8.ui-callout-collapse-out.v8c3",
+    "v8.ui-callout-collapse-out-line.v8c3"
+   ]
+  },
+  {
+   "id": "v8.cam-slow-pull-back",
+   "category": "cam",
+   "description": "slow linear pull-back of the 3D stack while the callouts drift sideways with it",
+   "instances": [
+    [
+     2076,
+     2192
+    ]
+   ],
+   "reference_frames": [
+    2066,
+    2101,
+    2160,
+    2192
+   ],
+   "measured": {
+    "duration_frames": 116,
+    "easing": "linear (not fitted)",
+    "values": "stack width 1056 -> 943 px (x0.89, about -0.0009 per frame), centre x 827 -> 809 px; middle-layer template scale 1.05 -> 0.93; callouts drift right 2.4-2.7 px/f (scratch/v8c3_stack_extent_2020-2200.csv, scratch/v8c3_stack_mid_2056-2196.csv)"
+   },
+   "curves": []
+  }
+ ],
+ "typography_stills": [
+  "type/v8c3-S02-1_f01482.png",
+  "type/v8c3-S02-1_f01509.png",
+  "type/v8c3-S02-1_f01512.png",
+  "type/v8c3-S02-2_f01474.png",
+  "type/v8c3-S02-2_f01492.png",
+  "type/v8c3-S02-2_f01510.png",
+  "type/v8c3-S02-2_f01518.png",
+  "type/v8c3-S02-2_f01545.png",
+  "type/v8c3-S02-2_f01554.png",
+  "type/v8c3-S02-2_f01574.png",
+  "type/v8c3-S02-3_f01548.png",
+  "type/v8c3-S02-3_f01568.png",
+  "type/v8c3-S05-1_f01927.png",
+  "type/v8c3-S05-1_f01955.png",
+  "type/v8c3-S05-1_f01962.png",
+  "type/v8c3-S05-2_f01934.png",
+  "type/v8c3-S05-2_f01958.png",
+  "type/v8c3-S05-2_f01966.png",
+  "type/v8c3-S06-1_f01988.png",
+  "type/v8c3-S06-1_f02006.png",
+  "type/v8c3-S06-1_f02012.png",
+  "type/v8c3-S06-cursor_f01998.png",
+  "type/v8c3-S06-cursor_f02010.png",
+  "type/v8c3-S07-1_f02018.png",
+  "type/v8c3-S07-1_f02050.png",
+  "type/v8c3-S07-1_f02192.png",
+  "type/v8c3-S07-2_f02096.png",
+  "type/v8c3-S07-2_f02112.png",
+  "type/v8c3-S07-2_f02160.png",
+  "type/v8c3-S07-stack_f02100.png"
+ ],
+ "uncertain": [
+  {
+   "what": "sound-sync offsets",
+   "range": "f1462-f2192",
+   "reason": "the capture's audio delay is unknown; offsets are against audio.json beats as they are"
+  },
+  {
+   "what": "fonts",
+   "range": "f1462-f2192",
+   "reason": "the original UI typefaces cannot be identified from the grayscale capture; closest free families given (Inter, Inter Tight)"
+  },
+  {
+   "what": "yaw angle of the stack layers",
+   "range": "f2023-f2192",
+   "reason": "the layers overlap and their corners cannot be isolated; only silhouette heights, extents and the layer count (10-12) are measured"
+  },
+  {
+   "what": "collapse onsets of the top-right, bottom-right and top-centre callouts, and their lines and dots",
+   "range": "f2103-f2142",
+   "reason": "read off the overview sheets (every 3rd frame, +-2 f) where the stack overlaps the callouts; only the top-right line and dot are read off a crop (crops/crop_1120_40_200x330_02098-02128.jpg)"
+  },
+  {
+   "what": "dot speck of the bottom-right callout (f2036 or f2038) and the full-length frame of the top-centre callout's line",
+   "range": "f2036-f2054",
+   "reason": "the dot sits on a light layer area (contrast about 20 levels) and the line crosses bright layer content at f2042-f2054; the top-right line is unreadable at f2042-f2046 for the same reason"
+  },
+  {
+   "what": "shape of the bottom-centre leader-line retraction (bezier rmse 0.054)",
+   "range": "f2164-f2178",
+   "reason": "capture jitter: pictures f2168, f2171, f2172 are 3 and 1 frames apart and the 1-frame step carries 22 px against 18 px over the 3 frames before"
+  },
+  {
+   "what": "faint stationary trace (7-10 levels) where the bottom-centre dot vanished",
+   "range": "f2180-f2190",
+   "reason": "cannot be told apart from capture-compression ghosting"
+  },
+  {
+   "what": "stream reveal unit (word or letter)",
+   "range": "f1474-f1587",
+   "reason": "the front advances 70-120 px between pictures that are 1-3 frames apart"
+  },
+  {
+   "what": "first value of the whip landing",
+   "range": "f1470",
+   "reason": "the measured edge sits inside a 40 px motion-blur ramp"
+  },
+  {
+   "what": "fan-out start",
+   "range": "f1676-f1678",
+   "reason": "the upper card is hidden behind the first card until f1678"
+  },
+  {
+   "what": "cursor position on blurred pictures and its scale during the zoom-out",
+   "range": "f2004, f2012-f2020",
+   "reason": "the template is lost on the blurred pictures"
+  },
+  {
+   "what": "start frame and start scale of reply 1's avatar grow and connector draw-on; the connector's lower end at f1472",
+   "range": "f1470-f1472",
+   "reason": "the avatar is below the frame edge at f1470 and already at 0.24 (connector 72 px) in the first picture that shows it (f1472); at f1472 the connector's blur tail reaches the frame edge, so its lower end is +-8 px"
+  },
+  {
+   "what": "share of fade and of motion blur in the brightening of reply 2's action row and of the link row",
+   "range": "f1544-f1556",
+   "reason": "the two blur gauges disagree there (reply 2's text top edge 19-25 px, its connector's top end 12-15 px at f1546-f1552); the opacity values use the larger blur, so they are upper bounds"
+  }
+ ],
+ "notes": [
+  "Timing: VFR screen recording on the 60 fps grid; 394 pictures in f1462-f2192, mostly 2 frames apart with 1- and 3-frame jitter (local_fps 28.5-40.3) and a 60 Hz duplicate run at f1615-f1625; +-1 frame in all durations; repeated pictures were marked non-unique before fitting.",
+  "S01 is the tail of v8c2 S06; v8c2's c049 decision (index drift) holds; c050 f1470 is confirmed here as a hard cut into a whip landing (the outgoing side is sharp).",
+  "Soft windows are symmetric about the hidden cut or changeover so that floor((a+b)/2) lands there; the outgoing ease-ins start earlier (push f1586, whip down f1780, whip left f1888, push up f1960) and are covered by the -out curves.",
+  "Edit rhythm accelerates through the chunk: S02 203 f, S03 156 f, S04 98 f, S05 59 f, S06 37 f (ratios 0.77, 0.63, 0.60, 0.63), then the 3D stack holds 170+ f.",
+  "Exits never settle and entries land with a strong ease-out: whip-in settle bezier(0.111, 1.099, 0.910, 0.922) D=26 and whip-down landing (0.074, 1.136, 0.911, 0.957) D=36 share the shape of v8c2's whip-in (0.169, 1.033, 0.910, 0.977) D=22.",
+  "First-pass curves: kept and re-checked trans-push-up-columns(-out), card-column-fan-out, trans-whip-down(-out), trans-whip-left(-out), trans-push-up(-out), trans-zoom-out-morph, 3d-stack-fan-out, ui-callout-pop-in, ui-thread-step-scroll; refitted cam-zoom-out-reveal (linear drift removed) and layout-header-slide-left (pill ink centroid); renamed text-title-blur-fade-in to text-label-blur-fade-in; dropped trans-whip-up.v8c3 and trans-whip-up-out.v8c3 (f1470 is a hard cut; the landing is cam-whip-in-settle). New: icon-avatar-grow-in, text-list-cascade-fade, ui-callout-collapse-out.",
+  "Material checked: overview sheets f1440-f2253, cut windows c049-c070, peak windows f1483, f1515, f1549, f1605, f1617, f1623, f1631, f1643, f1651, f1657, f1685, f1843, f1981, f1999, crops f2094-f2118 and f2160-f2184, the stills listed, soft windows detail/soft_1648-1696, detail/soft_1800-1857, detail/soft_1900-1953, detail/soft_1962-2008, detail/soft_2009-2035.",
+  "Review pass: reply 2's thread connector draws on with its avatar (new curve v8.icon-avatar-grow-in-connector); S06 has no hold, the push landing overlaps a 4 f mask inset that starts the zoom-out (f2006-f2010); each S07 callout is a dot -> line -> pill chain on the way in and pill -> line -> dot on the way out (new curves v8.ui-callout-pop-in-dot, v8.ui-callout-pop-in-line, v8.ui-callout-collapse-out-line; pill specks re-measured 2-4 f earlier than the first pass read them); word counts corrected (S05 sub-line 8 words, labels 2/2/3 words, sub-labels 5/6/4 words; S07 status label word + number + word + ellipsis). New tracks scratch/v8c3r_S02_connector2_1500-1546.csv, scratch/v8c3r_S06_title_tmpl_1994-2018.csv, scratch/v8c3r_S06_frame_edges_1996-2016.csv, scratch/v8c3r_S07_c1_dotline_2026-2066.csv to scratch/v8c3r_S07_c7_dotline_2088-2129.csv, scratch/v8c3r_S07_pill_speck_onsets.csv, scratch/v8c3r_S07_cc_collapse_dotline_2146-2182.csv, scratch/v8c3r_S07_cc_collapse_dotfade_2160-2192.csv; new crops crops/crop_600_120_260x300_02034-02058.jpg, crops/crop_900_480_260x320_02040-02064.jpg, crops/crop_560_480_300x340_02046-02072.jpg, crops/crop_480_180_280x300_02052-02080.jpg, crops/crop_560_690_110x140_02080-02108.jpg, crops/crop_1120_40_200x330_02098-02128.jpg, crops/crop_990_500_70x40_02164-02192.jpg, crops/crop_990_500_70x40_02167-02174.jpg. The connector's ease-out draw-on differs from v8c1's constant-speed v8.shape-divider-draw-on, so it stays with the avatar's technique.",
+  "Review pass 2: reply 1's avatar grows (0.24 at f1472 -> 1.0 by f1496, centre fixed at x 360 px), its connector draws down (72 -> 224 px, top 72-76 px below the avatar centre) and its name row fades in (0.24 -> 1.0 by f1492) during the whip landing, all checked against the motion blur (blur per picture from the connector's top-end rise; the rest avatar and name row smeared by the same blur); reply 2's action row fades in from f1534, the link row under reply 2 appears in its reserved slot at f1548 (the divider below it is already drawn) and fades in, and reply 3's name row fades in with its avatar from f1554 (v8.ui-reply-meta-fade-in, opacity against blurred rest rows); the S07 halo builds with the fan-out (first build f2028-f2050, new curve v8.3d-stack-fan-out-halo; steps at f2059 and f2073-f2074; final level from about f2080) and holds relative to the stack's edge to f2192. New tracks scratch/v8c3r3_S02_reply1_avatar_conn_1470-1500.csv, scratch/v8c3r3_S02_reply1_avatar_blurmodel.csv, scratch/v8c3r3_S02_step2_rows_1526-1592.csv, scratch/v8c3r3_S07_halo_edge_2008-2192.csv; new stills type/v8c3-S02-2_f01474.png, type/v8c3-S02-2_f01492.png, type/v8c3-S02-2_f01554.png, type/v8c3-S02-2_f01574.png, type/v8c3-S02-3_f01548.png, type/v8c3-S02-3_f01568.png; new crop crops/crop_0_360_440x260_02024-02080.jpg and dense sheet detail/dense_02054-02078_00.jpg; checked crops/crop_280_280_420x520_01470-01490.jpg, crops/crop_300_480_600x260_01543-01552.jpg, crops/crop_300_200_520x560_01540-01572.jpg, detail/cut_c050_f01470/sheet.jpg, detail/soft_2009-2035/sheet.jpg, sheets/overview_02016-02061.jpg. Reply 1's avatar and connector match the existing reply 3 and reply 2 curves (only the avatar's tail is slower), so no separate curves. Against the review's numbers: reply 1's connector is 72 px at f1472 (not 122; the other 50 px are its blur tails at both ends), the link row's divider is drawn before the row appears, and the halo does not lighten after f2100 relative to the stack.",
+  "Footage (photos inside the panel, cards, page and screens) is not described; the player's speaker icon is ignored."
+ ]
+}

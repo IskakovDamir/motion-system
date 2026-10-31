@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.cam-push-in-accelerating",
+  "file": "curves/v7.cam-push-in-accelerating.csv",
+  "property": "scale",
+  "unit": "% of frame width (label box width; 55.8% = scale 1.0)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_box_width_keys_76-135.csv",
+  "column": "width_pct",
+  "sampled_frames": [
+    77,
+    131
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 55.831,
+  "to_value": 61.1,
+  "active_frames": [
+    89,
+    131
+  ],
+  "measured_duration_frames": 42,
+  "bezier": {
+    "x1": 0.7441,
+    "y1": 0.0498,
+    "x2": 0.9204,
+    "y2": 0.6537,
+    "durationInFrames": 42,
+    "delay": -0.067,
+    "built_duration_frames": 36,
+    "rmse": 0.0394
+  },
+  "spring": {
+    "stiffness": 10.023,
+    "damping": 0.5,
+    "mass": 1,
+    "damping_ratio": 0.079,
+    "built_duration_frames": 284,
+    "rmse": 0.859
+  },
+  "recommended": "bezier",
+  "note": "slow camera push-in on the label while the mascot chain arcs in: box width 55.8% -> 61.1% W (x1.095) over f96-f131, accelerating into the ripple; geometry on twos (step pictures only); open-ended: the push continues into the ripple zoom (f136 box 71% W, blurred)"
+}

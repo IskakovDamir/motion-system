@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.icon-mascot-eye-glance.v8c2",
+  "file": "curves/v8.icon-mascot-eye-glance.v8c2.csv",
+  "property": "position-x",
+  "unit": "px, eye-glyph ink centroid minus the mascot blob's left edge (blob 91 px wide)",
+  "source_samples": "/Users/damir/dev/motion-system/analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c2_S05_mascot_eye_glance.csv",
+  "column": "eye_cx_rel_blob",
+  "sampled_frames": [
+    1390,
+    1418
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 29.5,
+  "to_value": 40.85,
+  "active_frames": [
+    1392,
+    1411
+  ],
+  "measured_duration_frames": 19,
+  "bezier": {
+    "x1": 0.5852,
+    "y1": 0.0918,
+    "x2": 0.3666,
+    "y2": 0.9916,
+    "durationInFrames": 20,
+    "delay": 0.151,
+    "built_duration_frames": 17,
+    "rmse": 0.0223
+  },
+  "spring": {
+    "stiffness": 249.495,
+    "damping": 25.087,
+    "mass": 1,
+    "damping_ratio": 0.7941,
+    "built_duration_frames": 15,
+    "rmse": 0.1252
+  },
+  "recommended": "bezier",
+  "note": "S05 mascot (fill 94, 91 x 98 px), return glide of its eye glance: the two asterisk eye glyphs glide inside the static blob (blob edges fixed in x; eye ink 417-447 px, so the glyphs do not change). Eye ink centroid x relative to the blob's left edge (luma below blob fill - 40 inside the 3 px-eroded blob; scratch/v8c2_S05_mascot_eye_glance.csv, all four glances in scratch/v8c2_mascot_eye_glance.csv): rest 44.4-44.6 (f1350-f1364) -> out 43.5 (f1366) -> 39.7 (f1370) -> 35.8 (f1372) -> 32.4 (f1374) -> 29.8 (f1378) -> hold 29.4-29.8 (f1380-f1394) -> back 31.4 (f1398) -> 35.8 (f1402) -> 39.5 (f1406) -> 40.8 px (f1411-f1418), 3.7 px short of the start; y 55.3 -> 59.5-60.2 (hold) -> 56.0-56.8. The outgoing glide (f1364-f1380, 15 px) fits only to rmse 0.09-0.16 (slow creep f1364-f1369, then fast) and is not stored; this curve is the return. From-value = hold mean; to-value = rest after the return (f1411-f1418)"
+}

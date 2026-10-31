@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.cam-zoom-out-settle-in.v7c1",
+  "file": "curves/v7.cam-zoom-out-settle-in.v7c1.csv",
+  "property": "scale",
+  "unit": "scale factor (1.0 = settled UI size at f199)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s2_header_166-300.csv",
+  "column": "scale",
+  "sampled_frames": [
+    171,
+    206
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.59,
+  "to_value": 0.99,
+  "active_frames": [
+    173,
+    199
+  ],
+  "measured_duration_frames": 26,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.4892,
+    "x2": 0.2915,
+    "y2": 0.9843,
+    "durationInFrames": 31,
+    "delay": 0.0,
+    "built_duration_frames": 25,
+    "rmse": 0.0271
+  },
+  "spring": {
+    "stiffness": 178.488,
+    "damping": 51.814,
+    "mass": 1,
+    "damping_ratio": 1.9391,
+    "built_duration_frames": 27,
+    "rmse": 0.1379
+  },
+  "recommended": "bezier",
+  "note": "S2 product-UI menu enters after the white hold already scaled 1.59 (f171, blurred) and settles to 1.0 at f199-f206 while sliding right/down (header centre 30.1%,9.3% -> 34.3%,19.7%); template on the bold header text, ref f200; f169-f170 excluded (score 0.41, partly above the frame)"
+}

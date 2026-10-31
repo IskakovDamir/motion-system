@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-type-on",
+  "file": "curves/v5.text-type-on.csv",
+  "property": "mask",
+  "unit": "letters revealed (of 11)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c3_hl2_letters.csv",
+  "column": "letters",
+  "sampled_frames": [
+    1900,
+    1920
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 6.0,
+  "to_value": 11.0,
+  "active_frames": [
+    1900,
+    1912
+  ],
+  "measured_duration_frames": 12,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.0939,
+    "x2": 1.0,
+    "y2": 0.9061,
+    "durationInFrames": 12,
+    "delay": -0.0,
+    "built_duration_frames": 12,
+    "rmse": 0.0147
+  },
+  "spring": {
+    "stiffness": 175.581,
+    "damping": 19.468,
+    "mass": 1,
+    "damping_ratio": 0.7346,
+    "built_duration_frames": 27,
+    "rmse": 0.2637
+  },
+  "recommended": "bezier",
+  "note": "headline 2: first 6 letters arrive as a blurred slide from the left (f1897-1900), then one letter per captured picture (P f1902, A f1905, I f1907, G f1910, N f1912), newest letter flashes white then settles to the metallic grey"
+}

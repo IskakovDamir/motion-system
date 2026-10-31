@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.text-label-fade-slide.v8c2",
+  "file": "curves/v8.text-label-fade-slide.v8c2.csv",
+  "property": "position-x",
+  "unit": "px (picture 1622 px wide)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c2_S01_item1_title_left_subpx.csv",
+  "column": "x",
+  "sampled_frames": [
+    740,
+    802
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 495.4,
+  "to_value": 535.58,
+  "active_frames": [
+    740,
+    786
+  ],
+  "measured_duration_frames": 46,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.4094,
+    "x2": 0.3405,
+    "y2": 0.9989,
+    "durationInFrames": 54,
+    "delay": 2.191,
+    "built_duration_frames": 44,
+    "rmse": 0.0472
+  },
+  "spring": {
+    "stiffness": 44.851,
+    "damping": 22.946,
+    "mass": 1,
+    "damping_ratio": 1.7131,
+    "built_duration_frames": 52,
+    "rmse": 0.0548
+  },
+  "recommended": "bezier",
+  "note": "S01 row 1 label: x of a 120 x 60 px template on the first letters of the 1-word title (cut at f760, box x 525), sub-pixel NCC peak, scratch/v8c2_S01_item1_title_left_subpx.csv (integer-pixel version scratch/v8c2_S01_item1_title_left_r2.csv). Re-tracked because the earlier curve (mean luma of a fixed 310 x 62 px box) mixed the left-to-right reveal front, the darkening and the slide (bezier rmse 0.071, spring 0.435). The label slides right with a long ease-out from its first picture: 495.4 (f740, first ink, title still partly revealed and blurred, template score 0.78) -> 501.2 (f743, whole title, 0.90) -> 525.0 (f760) -> 535.6 px (f799-f802): 40.2 px = 2.5% W, 73% of it by f760; it keeps sliding through the list step f762-f782 (row moves up 232 px), so the template rides the scroll (scores 0.72-0.79 at f772-f774, 0.93-0.99 elsewhere). The darkening runs on its own clock: darkest pixel in the title box 210 (f740) -> 61 (f754) -> 60-62 (f756-f760) (scratch/v8c2_S01_item1_title_luma.csv). From-value = first picture f740; to-value = rest f799-f802. A fit started at f743 (from 501.22) gives bezier(0.000, 0.165, 0.252, 0.996) D=53, 45 f, rmse 0.014 (same strong ease-out)"
+}

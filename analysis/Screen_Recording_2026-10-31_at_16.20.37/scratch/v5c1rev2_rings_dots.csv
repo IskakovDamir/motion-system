@@ -1,0 +1,16 @@
+frame,measure,region_xywh,value_px,value_pct_w,method
+240,dot_pitch,1180 160 150 60,14.3,0.88,2D autocorrelation of the picture minus the f212-f268 median: nearest secondary peak
+250,dot_pitch,330 120 160 70,13.2,0.81,same
+260,dot_pitch,360 40 160 80,12.0,0.74,same (second peak 19.2 px along the diagonal of the dot lattice)
+245,isolated_dot_diameter,700 180 200 80,2.0-9.8,0.12-0.60,equivalent diameter of isolated round dots (> 25 luma above the median) at the band edge (11 dots)
+250,isolated_dot_diameter,330 110 160 90,4.8-8.5,0.30-0.52,same (5 dots)
+255,isolated_dot_diameter,380 60 200 100,2.0-8.9,0.12-0.55,same (10 dots)
+260,isolated_dot_diameter,360 40 160 80,4.5-9.1,0.28-0.56,same (5 dots); dots in the band core touch and merge
+250,band_fwhm,x446 y90-200,24,1.48,FWHM of the 4 px-blurred positive difference across the band (ring A top-left arc)
+250,band_fwhm,x500 y100-210,19,1.17,same
+255,band_fwhm,x450 y40-160,26,1.60,same
+260,band_fwhm,x600 y0-120,23,1.42,same
+268,band_fwhm,x700 y0-140,27,1.66,same
+240,band_fwhm,row60 x1000-1130,26,1.60,same across ring S (horizontal profile)
+255,band_fwhm,row60 x950-1060,27,1.66,same
+250,band_fwhm,row120 x960-1100,18,1.11,same

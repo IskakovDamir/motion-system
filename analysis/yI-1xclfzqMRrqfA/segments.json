@@ -1,0 +1,180 @@
+{
+ "video": "yI-1xclfzqMRrqfA",
+ "key": "v3",
+ "fps": 60,
+ "frame_count": 1469,
+ "segments": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 111,
+   "length_frames": 112,
+   "class": "GRAPHICS",
+   "boundary_in": "video-start",
+   "boundary_out": "T01",
+   "summary": "four agent nodes (white rounded hexagon badges carrying logo icons) at the corners pop in with overshoot, four gray labels and a centred 7-word headline pop in word by word, four connectors draw on, dots relay from node to node along the connectors; the headline then fades in place while the network persists"
+  },
+  {
+   "id": "S02",
+   "start": 112,
+   "end": 228,
+   "length_frames": 117,
+   "class": "GRAPHICS",
+   "boundary_in": "T01",
+   "boundary_out": "T02",
+   "summary": "the persistent network gains two midpoint nodes and a 3-word headline in the same slot while the network plane pulls back 1.000 -> 0.291 about the frame centre (log-space ease-in-out, 90 f), revealing a triangular node lattice: the inner nodes slide in across the frame edges, the outer nodes of the four half-lattice rows pop in place in 10 mirrored pairs (f158-f195, lower half 4-5 f ahead) and the connectors draw on in mirrored 5-frame waves until f206; dots keep relaying; a soft knock-out glow keeps the headline clean; everything fades out together"
+  },
+  {
+   "id": "S03",
+   "start": 229,
+   "end": 446,
+   "length_frames": 218,
+   "class": "GRAPHICS",
+   "boundary_in": "T02",
+   "boundary_out": "T03",
+   "summary": "product UI: two dark terminal windows stacked on the left and a white chat panel on the right grow-fade in (2 f stagger) under a centred 5-word headline popping word by word; a request bubble fades in, the message list steps up in single frames while new rows fade in, dots carry each message between chat and terminals (15 f per hop), terminal lines and streamed words pop (the bottom terminal's first line on a full-width row highlight band, f350 to the exit), status timers count; panels shrink-fade out"
+  },
+  {
+   "id": "S04",
+   "start": 447,
+   "end": 505,
+   "length_frames": 59,
+   "class": "GRAPHICS",
+   "boundary_in": "T03",
+   "boundary_out": "T04",
+   "summary": "a single large centred word pops in after two empty frames, holds 47 f, fades out in place"
+  },
+  {
+   "id": "S05",
+   "start": 506,
+   "end": 624,
+   "length_frames": 119,
+   "class": "GRAPHICS",
+   "boundary_in": "T04",
+   "boundary_out": "T05",
+   "summary": "brand mark pops in with a small overshoot, a centred 2-word line pops word by word below it, then a gray monospace URL line pops below; the group holds and fades out in place"
+  },
+  {
+   "id": "S06",
+   "start": 625,
+   "end": 784,
+   "length_frames": 160,
+   "class": "GRAPHICS",
+   "boundary_in": "T05",
+   "boundary_out": "T06",
+   "summary": "product UI built left to right (two gray device labels, a narrow chat panel, two dark terminals) under a centred 7-word headline; the S03 chat/terminal choreography with three windows (chat -> terminal -> terminal -> terminal -> chat packet hops); panels shrink-fade out"
+  },
+  {
+   "id": "S07",
+   "start": 785,
+   "end": 897,
+   "length_frames": 113,
+   "class": "GRAPHICS",
+   "boundary_in": "T06",
+   "boundary_out": "T07",
+   "summary": "a single large word with period pops in one frame (f791) after three empty frames, centred and placed above the frame centre; 53 f later a 2-word sub line pops below it word by word (f844, f851); the card holds and both lines fade out together in place (ease-in, 8 f, no scale)"
+  },
+  {
+   "id": "S08",
+   "start": 898,
+   "end": 1175,
+   "length_frames": 278,
+   "class": "GRAPHICS",
+   "boundary_in": "T07",
+   "boundary_out": "T08",
+   "summary": "logo marquee: a row of agent logo icons on white rounded flat-top hexagon plates (one dark plate with the brand mark) and grey labels scrolls left at a constant 9.333 px/f under a centred heading; the 1-word heading fades out and a 2-word heading pops word by word; the row stops dead after exactly 7 slots, then the badges swap to black hexagons that gather into a honeycomb (T08)"
+  },
+  {
+   "id": "S09",
+   "start": 1176,
+   "end": 1468,
+   "length_frames": 293,
+   "class": "GRAPHICS",
+   "boundary_in": "T08",
+   "boundary_out": "video-end",
+   "summary": "end card built from the honeycomb's centre cell: the cells collapse into one black hexagon (end of T08), its two eye bars pop as dashes and open, the mark slides left with an ease-in-out, the 2-word wordmark, the 2-word tagline and the URL line pop in one frame each; static hold to the last frame, no fade"
+  }
+ ],
+ "transitions": [
+  {
+   "id": "T01",
+   "type": "morph",
+   "start": 101,
+   "end": 122,
+   "frames": 22,
+   "from": "S01",
+   "to": "S02",
+   "technique": "v3.trans-morph-title-swap"
+  },
+  {
+   "id": "T02",
+   "type": "dip-to-bg",
+   "start": 216,
+   "end": 241,
+   "frames": 26,
+   "from": "S02",
+   "to": "S03",
+   "technique": "v3.trans-dip-to-bg"
+  },
+  {
+   "id": "T03",
+   "type": "dip-to-bg",
+   "start": 441,
+   "end": 452,
+   "frames": 12,
+   "from": "S03",
+   "to": "S04",
+   "technique": "v3.trans-dip-to-bg"
+  },
+  {
+   "id": "T04",
+   "type": "dip-to-bg",
+   "start": 499,
+   "end": 512,
+   "frames": 14,
+   "from": "S04",
+   "to": "S05",
+   "technique": "v3.trans-dip-to-bg"
+  },
+  {
+   "id": "T05",
+   "type": "dip-to-bg",
+   "start": 611,
+   "end": 638,
+   "frames": 28,
+   "from": "S05",
+   "to": "S06",
+   "technique": "v3.trans-dip-to-bg"
+  },
+  {
+   "id": "T06",
+   "type": "dip-to-bg",
+   "start": 778,
+   "end": 791,
+   "frames": 14,
+   "from": "S06",
+   "to": "S07",
+   "technique": "v3.trans-dip-to-bg"
+  },
+  {
+   "id": "T07",
+   "type": "dip-to-bg",
+   "start": 892,
+   "end": 903,
+   "frames": 12,
+   "from": "S07",
+   "to": "S08",
+   "technique": "v3.trans-dip-to-bg"
+  },
+  {
+   "id": "T08",
+   "type": "morph",
+   "start": 1126,
+   "end": 1224,
+   "frames": 99,
+   "from": "S08",
+   "to": "S09",
+   "technique": "v3.trans-hex-gather"
+  }
+ ]
+}

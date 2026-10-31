@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.card-rise-drop-in.i4",
+  "file": "curves/v5.card-rise-drop-in.i4.csv",
+  "property": "position-y",
+  "unit": "% of frame height (top edge of footage card 2: f3722-3725 at x1100-1150 while the card is still level, f3727 on at its right end x1450, which the perspective swing does not move)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_E_cards_settle.csv",
+  "column": "c2_top_pct",
+  "sampled_frames": [
+    3722,
+    3770
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 84.858,
+  "to_value": 13.943,
+  "active_frames": [
+    3722,
+    3735
+  ],
+  "measured_duration_frames": 13,
+  "bezier": {
+    "x1": 0.0945,
+    "y1": 0.807,
+    "x2": 0.0,
+    "y2": 0.9479,
+    "durationInFrames": 12,
+    "delay": 2.258,
+    "built_duration_frames": 9,
+    "rmse": 0.111
+  },
+  "spring": {
+    "stiffness": 1906.614,
+    "damping": 88.818,
+    "mass": 1,
+    "damping_ratio": 1.017,
+    "built_duration_frames": 9,
+    "rmse": 0.0682
+  },
+  "recommended": "spring",
+  "note": "rounded footage card 2 (right, 46 % W) rises from below the frame: first visible f3722 at the bottom edge (taken as the start value), arrives at 14.4 % H by f3735 and stays within +-0.4 % H (127-132 px) afterwards: no overshoot. The earlier 'overshoot to 14.5 % H then 16.1 % H' was read at x1100-1150, where the perspective swing f3735-3747 lowers the top edge by 15-18 px (the left end by 33 px)"
+}

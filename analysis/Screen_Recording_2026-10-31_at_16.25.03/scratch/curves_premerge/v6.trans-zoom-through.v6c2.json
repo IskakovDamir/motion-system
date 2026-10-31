@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.trans-zoom-through.v6c2",
+  "file": "curves/v6.trans-zoom-through.v6c2.csv",
+  "property": "scale",
+  "unit": "scale factor of the grid's phone mock-ups (item scale, centre phone template; 1.0 = f1091-f1093); not the grid layout: the spacing opens meanwhile (curve v6.grid-spread-out.v6c2)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c2_T2_gridphone.csv",
+  "column": "scale",
+  "sampled_frames": [
+    1081,
+    1096
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.14,
+  "to_value": 1.0,
+  "active_frames": [
+    1081,
+    1091
+  ],
+  "measured_duration_frames": 10,
+  "bezier": {
+    "x1": 0.092,
+    "y1": 0.9098,
+    "x2": 0.2461,
+    "y2": 0.3634,
+    "durationInFrames": 8,
+    "delay": 0.489,
+    "built_duration_frames": 8,
+    "rmse": 0.0339
+  },
+  "spring": {
+    "stiffness": 903.246,
+    "damping": 66.934,
+    "mass": 1,
+    "damping_ratio": 1.1136,
+    "built_duration_frames": 12,
+    "rmse": 0.1161
+  },
+  "recommended": "bezier",
+  "note": "P11->P12 zoom-through f1058-f1091, incoming half: after the swap at 1078|1081 the grid's phones land oversized with radial zoom blur (blur gone by ~f1088) and shrink, while the gaps between them open outward (pitch 336 -> 395 px f1083-f1093, -> 403 px f1103-f1106; curve v6.grid-spread-out.v6c2), so the outer phones move outward although every phone shrinks; centre phone template x688-933 y285-785 ref f1093, scale step 0.02 (a 0.002-step re-track, scratch/v6c2_P12_phone_centre_fine.csv, gives 1.148/1.070/1.046/1.026/1.010/1.000 and a slow further shrink 0.992/0.984/0.980/0.976/0.974/0.970 at f1096-f1108); outgoing half = shrink-away of the single phone 1.0 -> 0.40 over f1058-f1078 (curve v6.cam-pull-back-cut.v6c2)"
+}

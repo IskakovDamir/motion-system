@@ -1,0 +1,37 @@
+frame,cam_scale,top_dots_L1L2L3R1R2R3,top_glyph_contrast,top_reading,mid_template_corr_dot_plus_thinstar_sixpointstar,mid_glyph_contrast,mid_reading,bot_dots_L1L2L3R1R2R3,bot_glyph_contrast,bot_reading,hub2_dots_L1L2L3R1R2R3,hub2_glyph_contrast,hub2_reading,note
+964,0.9959,off-frame,,off-frame,,,no status line,,,no status line,off-frame,,off-frame,"legend: dots read in the order L1 L2 L3 R1 R2 R3 (left / right column, rows top to bottom of the braille cell), # = above half the cell's brightest dot; p1..p10 = v4c1's braille turn (crops/crop_221_610_20x22_00792-00829.jpg): p1 L1 L2 R1, p2 L1 R1 R2, p3 L1 R1 R2 R3, p4 R1 R2 R3, p5 L3 R1 R2 R3, p6 L3 R2 R3, p7 L2 L3 R3 (not seen here), p8 L1 L2 L3 R3, p9 L1 L2 L3, p10 L1 L2 L3 R1; mid glyph = best correlation with the clean frames f976 (dot), f982 (plus), f987 (thin star), f993 (six-point star); contrast = 99.5th percentile minus the cell background in luma levels (hub2 glyph is dark on white, inverted); cells camera-stabilised with scratch/c2_t1_camera.csv and registered per frame on the status label"
+965,0.9922,off-frame,,no status line,,,no status line,,,no status line,off-frame,,off-frame,"top: the glyph area is on screen and empty (scratch/c2_r2_t4_lines.csv), the rest of the cell box is off-frame"
+966,0.9888,##.##.,64.2,p1,0.11 0.17 0.23 0.25,1.2,no status line,none,1.2,no status line,off-frame,,off-frame,"top: label still off-frame, cell not registered (camera model only)"
+967,0.9868,##.#..,65.0,p1,0.02 0.02 0.02 0.02,0.0,no status line,none,1.1,no status line,off-frame,,off-frame,
+968,0.9821,##.#..,67.9,p1,0.09 0.11 0.14 0.15,0.1,no status line,none,0.0,no status line,off-frame,,off-frame,
+969,0.9774,##.#..,75.4,p1,0.01 0.01 0.01 0.01,0.2,no status line,none,0.0,no status line,off-frame,,off-frame,
+970,0.9730,##.#..,73.6,p1,-0.00 -0.02 -0.01 -0.01,1.1,no status line,none,1.1,no status line,off-frame,,off-frame,
+971,0.9655,#..##.,77.5,p2,0.00 0.01 0.02 0.02,5.0,no status line,none,0.2,no status line,off-frame,,off-frame,
+972,0.9571,#..##.,82.0,p2,0.02 0.03 0.02 0.02,0.1,no status line,none,0.1,no status line,off-frame,,off-frame,
+973,0.9500,#..##.,84.3,p2,-0.02 0.02 -0.03 -0.04,2.0,no status line,none,0.0,no status line,off-frame,,off-frame,
+974,0.9416,#..##.,72.1,p2,0.98 0.33 0.62 0.60,45.8,dot,none,0.0,no status line,off-frame,,off-frame,
+975,0.9311,#..##.,83.9,p2,0.98 0.32 0.60 0.59,49.6,dot,none,0.0,no status line,off-frame,,off-frame,
+976,0.9193,#..###,88.4,p3,1.00 0.35 0.64 0.63,51.8,dot,none,0.2,no status line,off-frame,,off-frame,
+977,0.9071,#..###,94.4,p3,0.99 0.35 0.65 0.63,50.4,dot,none,0.0,no status line,off-frame,,off-frame,
+978,0.8922,#..###,88.7,p3,0.96 0.36 0.64 0.63,46.0,dot,none,0.0,no status line,off-frame,,off-frame,
+979,0.8784,#..###,91.8,p3,0.97 0.38 0.66 0.66,52.6,dot,none,0.0,no status line,off-frame,,off-frame,
+980,0.8639,#..###,88.3,p3,0.39 0.99 0.73 0.73,105.4,plus,none,0.1,no status line,off-frame,,off-frame,
+981,0.8449,...###,83.9,p4,0.36 0.99 0.73 0.73,107.5,plus,none,0.0,no status line,off-frame,,off-frame,
+982,0.8284,...###,78.4,p4,0.35 1.00 0.73 0.71,109.7,plus,none,0.8,no status line,off-frame,,off-frame,
+983,0.8084,...###,75.5,p4,0.39 0.97 0.71 0.69,113.2,plus,none,0.0,no status line,off-frame,,off-frame,
+984,0.7895,...###,73.7,p4,0.35 0.96 0.71 0.71,102.6,plus,none,0.0,no status line,off-frame,,off-frame,
+985,0.7696,...###,70.4,p4,0.36 0.95 0.70 0.69,96.5,plus,none,1.0,no status line,###..#,100.1,p8,
+986,0.7463,..####,71.3,p5,0.66 0.72 0.98 0.90,67.6,thin-star,none,1.2,no status line,###..#,95.2,p8,
+987,0.7264,..####,61.3,p5,0.64 0.73 1.00 0.92,62.5,thin-star,none,1.1,no status line,###..#,87.3,p8,
+988,0.7074,..#.##,48.1,p5,0.61 0.67 0.93 0.90,50.9,thin-star,##.#..,27.9,p1,###..#,76.8,p8,top: one dot of p5 under the 0.5 threshold (contrast falling with the cross-dissolve)
+989,0.6875,..##.#,38.4,p5,0.60 0.67 0.94 0.89,45.7,thin-star,##.#..,34.6,p1,###..#,65.4,p8,top: one dot of p5 under the 0.5 threshold (contrast falling with the cross-dissolve)
+990,0.6723,..####,29.4,p5,0.62 0.67 0.93 0.90,39.7,thin-star,##.#..,30.8,p1,###...,57.5,p9,
+991,0.6574,..#.##,25.2,p6,0.59 0.65 0.91 0.87,35.8,thin-star,##.#..,20.2,p1,###...,44.0,p9,
+992,0.6449,..#.##,15.2,p6,0.67 0.68 0.91 0.98,41.2,six-point-star,##....,18.6,p1,###...,42.7,p9,bot: R1 of p1 under the threshold; L2 still lit
+993,0.6314,..#..#,14.5,p6,0.63 0.71 0.92 1.00,42.7,six-point-star,#..##.,12.4,p2,.##...,38.5,p9,hub2: L1 under the threshold (registration jitter)
+994,0.6206,..#.##,15.5,p6,0.65 0.69 0.92 0.97,37.7,six-point-star,#..##.,12.8,p2,###...,33.6,p9,
+995,0.6108,..#..#,9.6,p6,0.68 0.68 0.92 0.95,31.9,six-point-star,#..##.,10.7,p2,###...,25.8,p9,top: one dot of p6 under the threshold
+996,0.6037,none,5.8,unreadable,0.75 0.61 0.89 0.92,22.8,six-point-star,#..##.,10.8,p2,####..,26.8,p10,
+997,0.5959,none,5.9,unreadable,0.75 0.60 0.89 0.92,23.1,six-point-star,##.##.,9.7,unreadable,##....,19.5,unreadable,
+998,0.5882,none,4.1,unreadable,0.69 0.43 0.65 0.68,12.8,unreadable,..#.##,8.7,unreadable,###...,19.4,unreadable,
+999,0.5814,none,4.1,unreadable,0.67 0.57 0.83 0.81,14.1,unreadable,none,5.6,unreadable,###...,14.7,unreadable,

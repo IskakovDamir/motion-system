@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.cam-whip-in-settle",
+ "file": "curves/v8.cam-whip-in-settle.csv",
+ "property": "position-y",
+ "unit": "% of frame height",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c3_panel_img_bottom_1468-1512.csv",
+ "column": "value_pct",
+ "sampled_frames": [
+  1470,
+  1498
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 76.589,
+ "to_value": 16.483,
+ "active_frames": [
+  1470,
+  1496
+ ],
+ "measured_duration_frames": 26,
+ "bezier": {
+  "x1": 0.1113,
+  "y1": 1.0994,
+  "x2": 0.9101,
+  "y2": 0.922,
+  "durationInFrames": 26,
+  "delay": 0.621,
+  "built_duration_frames": 25,
+  "rmse": 0.0221
+ },
+ "spring": {
+  "stiffness": 232.833,
+  "damping": 36.706,
+  "mass": 1,
+  "damping_ratio": 1.2028,
+  "built_duration_frames": 23,
+  "rmse": 0.1329
+ },
+ "recommended": "bezier",
+ "note": "S02 entrance after the hard cut f1470 (c050): bottom edge of the thread panel's media card (row-mean scan over x 1120-1280, level 110, scratch/v8c3_panel_img_bottom_1468-1512.csv; phase correlation of the whole panel, scratch/v8c3_thread_scroll_1470-1676.csv, gives the same per-picture steps 152/104/72/52/40/28 px). The new layout arrives already moving up about 81 px per frame with heavy vertical motion blur (Sobel gy/gx 0.26 at f1470 against about 0.6 sharp) and decelerates into the base scroll drift (3 px per frame) by f1496; travel 60.1% H. from-value = first picture f1470 (edge inside the blur ramp, +-40 px), to-value = f1498 on the drift (no true rest: step 1 of the thread scroll starts f1502). Same ease-out shape as the incoming half of v8.trans-whip-up (v8c2), with a 7x longer throw.",
+ "chunk_curve_id": "v8.cam-whip-in-settle.v8c3"
+}

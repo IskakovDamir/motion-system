@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.fx-shimmer-sweep.v8c4",
+  "file": "curves/v8.fx-shimmer-sweep.v8c4.csv",
+  "property": "position-x",
+  "unit": "% of frame width",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c4_S2_shimmer.csv",
+  "column": "peak_x_pct",
+  "sampled_frames": [
+    2311,
+    2350
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 16.65,
+  "to_value": 91.8,
+  "active_frames": [
+    2314,
+    2346
+  ],
+  "measured_duration_frames": 32,
+  "bezier": {
+    "x1": 0.1709,
+    "y1": 0.0301,
+    "x2": 0.7408,
+    "y2": 0.8375,
+    "durationInFrames": 33,
+    "delay": -0.489,
+    "built_duration_frames": 32,
+    "rmse": 0.0224
+  },
+  "spring": {
+    "stiffness": 59.246,
+    "damping": 77.676,
+    "mass": 1,
+    "damping_ratio": 5.0457,
+    "built_duration_frames": 45,
+    "rmse": 0.218
+  },
+  "recommended": "bezier",
+  "note": "centre of a soft light diagonal band (luma 248 over the card fill 239, about 9% W wide) sweeping left to right across the attachment card; fades in f2308-f2312 at the card's left edge, out f2348-f2352 at its right end"
+}

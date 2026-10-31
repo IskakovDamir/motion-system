@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.cursor-glow-morph-3d.i2",
+  "file": "curves/v7.cursor-glow-morph-3d.i2.csv",
+  "property": "scale",
+  "unit": "scale factor of the defocused background (1 = f1294)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_morph_bg_ecc.csv",
+  "column": "scale_cum",
+  "sampled_frames": [
+    1301,
+    1346
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.1033,
+  "to_value": 0.9175,
+  "active_frames": [
+    1301,
+    1341
+  ],
+  "measured_duration_frames": 40,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.6026,
+    "x2": 0.0,
+    "y2": 0.1121,
+    "durationInFrames": 36,
+    "delay": 2.937,
+    "built_duration_frames": 36,
+    "rmse": 0.0502
+  },
+  "spring": {
+    "stiffness": 26.955,
+    "damping": 13.8,
+    "mass": 1,
+    "damping_ratio": 1.329,
+    "built_duration_frames": 66,
+    "rmse": 0.1373
+  },
+  "recommended": "bezier",
+  "note": "camera pulse around the cursor -> 3D pointer morph: push-in x1.00 -> x1.10 with the glow ramp (f1294-f1301, accelerating), then from the swap (f1304) a pull-back to x0.92 that eases out by f1344; ECC similarity chain on the chip row (y 0-300; scratch/v7c2_morph_bg_ecc.csv); the fitted part is the pull-back"
+}

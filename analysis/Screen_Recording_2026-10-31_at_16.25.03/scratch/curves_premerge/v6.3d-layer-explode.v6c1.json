@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.3d-layer-explode.v6c1",
+  "file": "curves/v6.3d-layer-explode.v6c1.csv",
+  "property": "width",
+  "unit": "px, horizontal extent of the dark ink of the stack (picture 1622 px wide)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_phone_stack_bbox.csv",
+  "column": "w",
+  "sampled_frames": [
+    558,
+    596
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 338.0,
+  "to_value": 719.0,
+  "active_frames": [
+    561,
+    581
+  ],
+  "measured_duration_frames": 20,
+  "bezier": {
+    "x1": 0.8198,
+    "y1": -0.1926,
+    "x2": 0.0256,
+    "y2": 0.9879,
+    "durationInFrames": 34,
+    "delay": -9.19,
+    "built_duration_frames": 18,
+    "rmse": 0.0311
+  },
+  "spring": {
+    "stiffness": 849.629,
+    "damping": 79.474,
+    "mass": 1,
+    "damping_ratio": 1.3633,
+    "built_duration_frames": 13,
+    "rmse": 0.0905
+  },
+  "recommended": "bezier",
+  "note": "layer separation of the exploded view, re-fitted on the turn + separation only: the push-in (f548-f558, 278 -> 329 px) and the slow drift after f596 are outside the range; during the turn (f558-f563) the extent stays 329-350 px, then the layers separate along a diagonal: 420 / 585 / 651 / 682 / 699 / 708 / 714 / 717 px at f566-f586 (719-721 px at f592-f596); the back layer's left edge carries most of it (753 -> 429 px), the front footage layer stays (right edge 1102-1145 px)"
+}

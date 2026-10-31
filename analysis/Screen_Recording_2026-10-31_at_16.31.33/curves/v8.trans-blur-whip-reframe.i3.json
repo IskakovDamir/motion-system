@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.trans-blur-whip-reframe.i3",
+ "file": "curves/v8.trans-blur-whip-reframe.i3.csv",
+ "property": "blur",
+ "unit": "% of frame width (Gaussian sigma = 10-90% edge width / 2.563, across the agent icon's top edge; 0.096 = sharp baseline)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c1_edgey_t3post_608-640.csv",
+ "column": "sigma_pct_w",
+ "sampled_frames": [
+  608,
+  626
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 0.601,
+ "to_value": 0.096,
+ "active_frames": [
+  608,
+  625
+ ],
+ "measured_duration_frames": 17,
+ "bezier": {
+  "x1": 1.0,
+  "y1": 0.92,
+  "x2": 0.1698,
+  "y2": 0.2296,
+  "durationInFrames": 16,
+  "delay": -0.219,
+  "built_duration_frames": 16,
+  "rmse": 0.044
+ },
+ "spring": {
+  "stiffness": 218.642,
+  "damping": 41.245,
+  "mass": 1,
+  "damping_ratio": 1.3947,
+  "built_duration_frames": 24,
+  "rmse": 0.1613
+ },
+ "recommended": "bezier",
+ "note": "blur clearing after the hidden cut f608 of T3; edge-width tracker scratch/v8c1_edgey_t3post_608-640.csv (f628+ excluded: the avatar's eye glyphs change under the profile); blur ramp before the cut: sigma 0.07 -> 0.34% W f602-f606 (scratch/v8c1_edgey_t3pre_580-606.csv), Laplacian sharpness falls from f597 (scratch/v8c1_blur_t3pre_580-607.csv)",
+ "chunk_curve_id": "v8.trans-blur-whip-reframe-blur.v8c1"
+}

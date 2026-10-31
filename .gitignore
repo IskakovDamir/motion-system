@@ -17,7 +17,11 @@ analysis/*/sheets/
 analysis/*/detail/
 analysis/*/type/
 analysis/*/crops/
-analysis/*/scratch/
+analysis/*/scratch/**
+!analysis/*/scratch/**/
+!analysis/*/scratch/**/*.csv
+!analysis/*/scratch/**/*.json
+!analysis/*/scratch/**/*.py
 analysis/compare/**/*.jpg
 analysis/compare/**/*.png
 analysis/verify/frames/

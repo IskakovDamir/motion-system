@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.particle-mascot-split",
+ "file": "curves/v8.particle-mascot-split.csv",
+ "property": "position-x",
+ "unit": "% of frame width (distance between the two mascot centres)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c4_S4_split_sep.csv",
+ "column": "sep_pct",
+ "sampled_frames": [
+  2505,
+  2530
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 0.0,
+ "to_value": 38.662,
+ "active_frames": [
+  2505,
+  2522
+ ],
+ "measured_duration_frames": 17,
+ "bezier": {
+  "x1": 0.1206,
+  "y1": 1.1743,
+  "x2": 0.9816,
+  "y2": 0.9652,
+  "durationInFrames": 23,
+  "delay": -0.0,
+  "built_duration_frames": 17,
+  "rmse": 0.0096
+ },
+ "spring": {
+  "stiffness": 430.849,
+  "damping": 65.794,
+  "mass": 1,
+  "damping_ratio": 1.5849,
+  "built_duration_frames": 17,
+  "rmse": 0.0511
+ },
+ "recommended": "bezier",
+ "note": "a dark round-eared mascot slides out from behind the light tile mascot to the left while the tile continues right; they settle symmetric about the centre at +-19.2% W; f2507-f2509 merged blob excluded",
+ "chunk_curve_id": "v8.particle-mascot-split.v8c4"
+}

@@ -1,0 +1,988 @@
+{
+ "video": "Screen_Recording_2026-10-31_at_16.29.19",
+ "key": "v7",
+ "chunk": "v7c3",
+ "frames": [
+  1630,
+  2333
+ ],
+ "cut_decisions": [
+  {
+   "id": "c037",
+   "frame": 1630,
+   "status": "rejected",
+   "reason": "chunk-edge candidate (decided looking to f1645): no picture change, f1629 and f1630 are the same picture (motion.csv diff 0.00005; source decoded pictures 774 -> 775 differ by 0.95 mean luma); PySceneDetect index artifact 9 captured pictures before the true cut c038 f1644; v7c2 also rejected it"
+  },
+  {
+   "id": "c038",
+   "frame": 1644,
+   "status": "confirmed",
+   "reason": "hard cut inside the leftward whip (file browser -> editor window); last old picture f1641, f1642-f1643 repeat it"
+  },
+  {
+   "id": "c039",
+   "frame": 1786,
+   "status": "confirmed",
+   "reason": "hard cut from the settled editor UI to footage"
+  },
+  {
+   "id": "c040",
+   "frame": 1799,
+   "status": "rejected",
+   "reason": "camera move inside one continuous footage shot (24 fps step)"
+  },
+  {
+   "id": "c041",
+   "frame": 1809,
+   "status": "rejected",
+   "reason": "camera move inside one continuous footage shot (24 fps step)"
+  },
+  {
+   "id": "c042",
+   "frame": 1820,
+   "status": "rejected",
+   "reason": "camera move inside one continuous footage shot (24 fps step)"
+  },
+  {
+   "id": "c043",
+   "frame": 1829,
+   "status": "rejected",
+   "reason": "camera move inside one continuous footage shot (24 fps step)"
+  },
+  {
+   "id": "c044",
+   "frame": 1839,
+   "status": "rejected",
+   "reason": "camera move inside one continuous footage shot (24 fps step)"
+  },
+  {
+   "id": "c045",
+   "frame": 1851,
+   "status": "rejected",
+   "reason": "camera move inside one continuous footage shot (24 fps step)"
+  },
+  {
+   "id": "c046",
+   "frame": 1864,
+   "status": "rejected",
+   "reason": "camera move inside one continuous footage shot (24 fps step)"
+  },
+  {
+   "id": "c047",
+   "frame": 1886,
+   "status": "rejected",
+   "reason": "camera move inside one continuous footage shot (24 fps step)"
+  },
+  {
+   "id": "c048",
+   "frame": 1989,
+   "status": "rejected",
+   "reason": "subject motion inside the same footage shot; PySceneDetect index artifact 10 captured pictures before c049"
+  },
+  {
+   "id": "c049",
+   "frame": 2007,
+   "status": "confirmed",
+   "reason": "hard cut from footage to the editor window arriving with the rightward whip-in"
+  },
+  {
+   "id": "c050",
+   "frame": 2081,
+   "status": "rejected",
+   "reason": "ghost outline grid travelling over the UI during the camera tilt; PySceneDetect index artifact 4 captured pictures before c051"
+  },
+  {
+   "id": "c051",
+   "frame": 2091,
+   "status": "confirmed",
+   "reason": "hard cut, x1.76 punch-in onto the timeline area with the upward camera motion continuing across the cut"
+  },
+  {
+   "id": "c052",
+   "frame": 2334,
+   "status": "rejected",
+   "reason": "chunk-edge candidate (first frame of v7c4, decided looking to f2349): f2333 -> f2334 is a normal step of the exit drift (diff 0.013, same layout); PySceneDetect index artifact 6 captured pictures before the true cut c053 f2342 (decided by v7c4)"
+  }
+ ],
+ "boundaries": [
+  {
+   "frame": 1644,
+   "type": "hard-cut",
+   "anchor_cut": "c038",
+   "technique": "v7.trans-whip-push-left",
+   "curves": [
+    "v7.trans-whip-push-left-out.v7c3",
+    "v7.trans-whip-push-left.v7c3"
+   ],
+   "motion_range": [
+    1606,
+    1690
+   ],
+   "note": "cut inside a leftward camera whip: the outgoing file browser eases in to the left (27 px = 1.7% W per frame at the last picture f1641) while its dragged tile grid streaks right; the incoming editor window arrives moving left at about 33 px (2.0% W) per frame with 44 px of horizontal blur and decelerates over 40 f; shares leftward motion and the banded desktop background (camera pan)",
+   "detail": "detail/cut_c038_f01644"
+  },
+  {
+   "frame": 1786,
+   "type": "hard-cut",
+   "anchor_cut": "c039",
+   "note": "settled UI (push-in ended f1779) -> footage; nothing shared",
+   "detail": "detail/cut_c039_f01786"
+  },
+  {
+   "frame": 2007,
+   "type": "hard-cut",
+   "anchor_cut": "c049",
+   "technique": "v7.trans-whip-push-right",
+   "curves": [
+    "v7.trans-whip-push-right.v7c3"
+   ],
+   "motion_range": [
+    2007,
+    2041
+   ],
+   "note": "incoming half only: the static footage shot cuts to the editor window already moving right at 28 px per frame with 34 px of horizontal blur, decelerating over 32 f",
+   "detail": "detail/cut_c049_f02007"
+  },
+  {
+   "frame": 2091,
+   "type": "hard-cut",
+   "anchor_cut": "c051",
+   "technique": "v7.trans-punch-in-whip-up",
+   "curves": [
+    "v7.trans-punch-in-whip-up-out.v7c3",
+    "v7.trans-punch-in-whip-up.v7c3"
+   ],
+   "motion_range": [
+    2041,
+    2120
+   ],
+   "note": "punch-in cut x1.76 inside an upward camera move: the outgoing view pans up accelerating to 0.55% H per frame; the incoming close-up of the same timeline area (under the same ghost outline grid) arrives 239 px below its rest moving up at 2.4% H per frame with about 90 px of vertical smear and settles in 29 f (speed jumps about 2.5x across the cut)",
+   "detail": "detail/v7c3_cut_2091"
+  }
+ ],
+ "segments": [
+  {
+   "id": "v7c3-P1",
+   "start": 1630,
+   "end": 1643,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": true,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "tail of v7c2's file-browser segment (starts at the hard cut f1542): the selected 5 x 5 placeholder tile grid is dragged right with layer-only motion blur and leaves the window while the camera eases into a leftward whip; hard cut f1644"
+  },
+  {
+   "id": "v7c3-P2",
+   "start": 1644,
+   "end": 1785,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "dark editor UI window on a light banded background: whip-in from the right decelerating over 40 f, 9 photo thumbnails pop in one per picture (4.4 f stagger), slow ease-in-out camera push-in x1.17 about the centre, a white bloom builds over the project panel, its grid drops out downward at the peak and a 7-folder grid drops in from above (items pop 2.2 f apart) as the bloom drains; the cursor is flicked down-right across the panel during the swap, easing out to rest by f1761"
+  },
+  {
+   "id": "v7c3-P3",
+   "start": 1786,
+   "end": 2006,
+   "class": "LIVE",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [
+    "sheets/overview_01776-01821.jpg",
+    "sheets/overview_01824-01869.jpg",
+    "sheets/overview_01872-01917.jpg",
+    "sheets/overview_01920-01965.jpg",
+    "sheets/overview_01968-02013.jpg"
+   ],
+   "summary": "one continuous footage shot with a moving camera; no designed element on any picture"
+  },
+  {
+   "id": "v7c3-P4",
+   "start": 2007,
+   "end": 2090,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "the editor window at a wider framing with the timeline visible: whip-in from the left decelerating over 32 f, outline ghosts of the 9 selected clips appear (f2061, with a slight window lift), hold 5 f and are dragged as one grid along a curved path down into the timeline while the camera tilts down, accelerating into a punch-in cut"
+  },
+  {
+   "id": "v7c3-P5",
+   "start": 2091,
+   "end": 2333,
+   "true_end": 2341,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": true,
+   "live_confirmed_on": [],
+   "summary": "timeline close-up settling upward after the punch-in while the ghost outline grid keeps sliding down to rest and then vanishes; a status-line counter swaps its value on every picture f2114-f2149; camera pulls back x0.40 to reveal viewer (playing footage in a masked window, cut 5 times in 15 f during the pull-back), bin and timeline while the clip strip slides in, docks and splits into its clips (f2151-f2156); the clip bars brighten from the dock and glow with a halo while gaps close, clips split and two gaps open, then dim to a darker rest by f2294; placeholders blink in the gaps in a 10-frame loop; an accelerating leftward drift runs into the hard cut f2342 (v7c4)"
+  }
+ ],
+ "techniques": [
+  {
+   "id": "v7.trans-whip-push-left",
+   "category": "trans",
+   "description": "(shared with v7c2) whip to the left through a hard cut: the outgoing view eases in to the left (the dragged content grid may streak the other way), cut at full speed, the incoming window arrives moving left with horizontal blur and decelerates; this instance blurs the incoming chrome too (44 px at the cut) and settles over 40 f, longer than v7c2's 24-27 f",
+   "instances": [
+    [
+     1606,
+     1690
+    ]
+   ],
+   "reference_frames": [
+    1606,
+    1629,
+    1641,
+    1644,
+    1660,
+    1690
+   ],
+   "measured": {
+    "duration_frames": 84,
+    "easing": "outgoing bezier(0.466, 0.023, 1.000, 0.506) D=31 rmse 0.026; incoming bezier(0.030, 0.520, 0.434, 0.997) D=47 rmse 0.016 / spring(61.9, 22.79) rmse 0.088",
+    "values": "outgoing chrome 28.36% -> 21.52% W (-111 px) f1606-f1641, 27 px per frame at the last picture; incoming window midpoint 71.0% -> 54.6% W (-268 px = -16.6% W) f1644-f1690, first step 33 px per frame; incoming edge blur 44 / 19 / 13 / 10 / 9 / 8 / 7 / 6 / 5 / 4 px at f1644 / 1646 / 1649 / 1651 / 1654 / 1656 / 1660 / 1665 / 1671 / 1690; background band edge moves with the window (-76 vs -74 px f1660-f1690)"
+   },
+   "curves": [
+    "v7.trans-whip-push-left-out.v7c3",
+    "v7.trans-whip-push-left.v7c3"
+   ]
+  },
+  {
+   "id": "v7.ui-drag-group-out",
+   "category": "ui",
+   "description": "(from v7c2) the selected tile grid is dragged sideways as one block, accelerating with growing blur, and here leaves the window past its right border into the whip cut",
+   "instances": [
+    [
+     1602,
+     1641
+    ]
+   ],
+   "reference_frames": [
+    1604,
+    1629,
+    1634,
+    1636,
+    1641
+   ],
+   "measured": {
+    "duration_frames": 34,
+    "easing": "bezier(0.661, 0.010, 1.000, 0.874) D=33 rmse 0.025 (ease-in, open-ended)",
+    "values": "left edge of tile row 1: 19.1% W (f1601) -> 37.0% (f1629) -> 41.3% (f1631) -> 46.2% (f1634) -> 53.8% W (f1636); 62 px = 3.8% W per frame at f1634-f1636; +288 px f1604-f1629 (v7c2 phase correlation +289 px)"
+   },
+   "curves": [
+    "v7.ui-drag-group-out.v7c3"
+   ]
+  },
+  {
+   "id": "v7.fx-layer-directional-blur",
+   "category": "fx",
+   "description": "(from v7c2) horizontal blur only on the dragged content grid; the window chrome stays sharp",
+   "instances": [
+    [
+     1614,
+     1641
+    ]
+   ],
+   "reference_frames": [
+    1629,
+    1636,
+    1641
+   ],
+   "measured": {
+    "duration_frames": 27,
+    "easing": "follows the drag speed",
+    "values": "title edge 10-90% width 2-3 px at f1636-f1641 (sharp); grid blur widths UNCERTAIN (tiles merge into streaks from ~f1634)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.ui-list-stagger-in",
+   "category": "ui",
+   "description": "(from v7c1) the items of a list or grid pop in one per captured picture in reading order, at full value on their first picture, while the camera or the grid is still settling",
+   "instances": [
+    [
+     1649,
+     1684
+    ],
+    [
+     1740,
+     1751
+    ]
+   ],
+   "reference_frames": [
+    1649,
+    1654,
+    1665,
+    1684,
+    1740,
+    1744,
+    1751
+   ],
+   "measured": {
+    "duration_frames": 35,
+    "easing": "stepped (one-picture pops); no curve",
+    "values": "9 thumbnails (panel luma 33 -> 65-125 inside the cell in one picture) first at f1649 / 1654 / 1660 / 1665 / 1667 / 1671 / 1676 / 1679 / 1684 = stagger 5 / 6 / 5 / 2 / 4 / 5 / 3 / 5 f (mean 4.4 f); 7 folder icons at f1740 (x2) / 1742 / 1744 / 1747 / 1749 / 1751 = stagger 0 / 2 / 2 / 3 / 2 / 2 f (mean 2.2 f), icon luma 160 on arrival -> 149 settled; captions and labels appear with their item"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.cam-slow-push-in",
+   "category": "cam",
+   "description": "slow ease-in-out push-in on the whole scene (window and background) about the frame centre after a whip-in has settled, running under the panel glow and content swap and settling just before the next cut",
+   "instances": [
+    [
+     1696,
+     1784
+    ]
+   ],
+   "reference_frames": [
+    1690,
+    1734,
+    1754,
+    1784
+   ],
+   "measured": {
+    "duration_frames": 83,
+    "easing": "bezier(0.808, 0.085, 0.667, 0.886) D=94 rmse 0.011",
+    "values": "scale 1.000 -> 1.170 about (816, 457) px = (50.3% W, 49.8% H); 1.005 / 1.016 / 1.037 / 1.060 / 1.094 / 1.135 / 1.157 / 1.168 / 1.170 at f1704 / 1719 / 1734 / 1744 / 1754 / 1764 / 1771 / 1779 / 1784; background band edge at y 345 px 312 -> 206 px (205 predicted)"
+   },
+   "curves": [
+    "v7.cam-slow-push-in.v7c3"
+   ]
+  },
+  {
+   "id": "v7.fx-panel-glow-swap",
+   "category": "fx",
+   "description": "a soft white bloom builds over one UI panel, peaks when the panel's content drops out, and drains while new content drops in: a luminance cover for a content swap inside the same layout",
+   "instances": [
+    [
+     1681,
+     1747
+    ]
+   ],
+   "reference_frames": [
+    1681,
+    1714,
+    1729,
+    1736,
+    1747
+   ],
+   "measured": {
+    "duration_frames": 66,
+    "easing": "build bezier(0.821, -0.004, 0.798, 1.004) D=54 rmse 0.026; decay spring(120.7, 17.46) rmse 0.043 / bezier(0.015, 0.272, 0.371, 0.457) D=15 rmse 0.053",
+    "values": "empty panel luma 33 -> 159 (f1681 -> peak f1729) -> 30 (f1747); thumbnails 130 -> 235; window border 36 -> 160; viewer panel (18) and desktop (151) unchanged; steepest build f1716-f1721 at +8 luma per frame"
+   },
+   "curves": [
+    "v7.fx-panel-glow-swap.v7c3",
+    "v7.fx-panel-glow-swap-out.v7c3"
+   ]
+  },
+  {
+   "id": "v7.ui-grid-drop-out",
+   "category": "ui",
+   "description": "the panel's content grid slides down and out of the panel, accelerating, clipped by the panel edge, at the glow peak",
+   "instances": [
+    [
+     1729,
+     1736
+    ]
+   ],
+   "reference_frames": [
+    1729,
+    1731,
+    1734,
+    1736
+   ],
+   "measured": {
+    "duration_frames": 5,
+    "easing": "accelerating, 2 moving pictures; no curve",
+    "values": "row-1 centre y 267.5 px (29.1% H, f1729) -> 313.5 (34.2%, f1731) -> 554.5 px (60.4% H, f1734) -> gone by f1736; +23 then +80 px per frame"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.ui-folder-drop-in",
+   "category": "ui",
+   "description": "the new content grid drops into the panel from above with a fast ease-out while its items pop in one per picture",
+   "instances": [
+    [
+     1736,
+     1749
+    ]
+   ],
+   "reference_frames": [
+    1736,
+    1740,
+    1744,
+    1749
+   ],
+   "measured": {
+    "duration_frames": 11,
+    "easing": "bezier(0.435, 0.658, 0.255, 1.043) D=16 rmse 0.001 / spring(754.8, 48.38) rmse 0.026",
+    "values": "folder-1 label in window units 23.8% -> 39.0% H (+140 px = +15.2% H), first visible f1736 (label 4 f before its icon), settled f1749; folder icons first picture vertically compressed (template scale about 0.88 at f1740)"
+   },
+   "curves": [
+    "v7.ui-folder-drop-in.v7c3"
+   ]
+  },
+  {
+   "id": "v7.trans-whip-push-right",
+   "category": "trans",
+   "description": "incoming half of a rightward whip: after a cut from static footage the window arrives already moving right with horizontal blur and decelerates (strong ease-out); mirror of v7.trans-whip-push-left without an outgoing half",
+   "instances": [
+    [
+     2007,
+     2041
+    ]
+   ],
+   "reference_frames": [
+    2007,
+    2009,
+    2016,
+    2045
+   ],
+   "measured": {
+    "duration_frames": 32,
+    "easing": "bezier(0.000, 0.068, 0.110, 0.998) D=38 rmse 0.019 / spring(111.2, 31.26) rmse 0.076",
+    "values": "window midpoint 38.8% -> 51.8% W (+212 px = +13.0% W), first step 28.5 px per frame; edge blur 34 / 17 / 12 / 10 / 7 / 7 / 4 / 4 / 3 px at f2007 / 2009 / 2012 / 2014 / 2016 / 2019 / 2024 / 2031 / 2045; no scale or vertical change; background band edge moves with the window (+154 vs +154.5 px)"
+   },
+   "curves": [
+    "v7.trans-whip-push-right.v7c3"
+   ]
+  },
+  {
+   "id": "v7.ui-ghost-drag-to-timeline",
+   "category": "ui",
+   "description": "thin light outline ghosts of the selected clips appear around them in one picture, together with a slight brightness lift of the whole window, hold for 2 pictures, then travel as one grid along a curved path (mostly right first, then mostly down) into the timeline while the camera tilts down; they survive the punch-in cut over the tracks, keep sliding down relative to the timeline with an ease-out until they are nearly at rest, and vanish in one picture together with the lift",
+   "instances": [
+    [
+     2061,
+     2116
+    ]
+   ],
+   "reference_frames": [
+    2059,
+    2061,
+    2064,
+    2066,
+    2071,
+    2076,
+    2081,
+    2089,
+    2094,
+    2099,
+    2106,
+    2114,
+    2116
+   ],
+   "measured": {
+    "duration_frames": 55,
+    "easing": "x: bezier(0.405, 0.104, 0.194, 1.124) D=29 rmse 0.038 / spring(201.8, 23.64) rmse 0.060 (22 f, active f2064-f2086 by the 2% rule; first moved picture f2066); y relative to the timeline (offset from the large timecode label at the P4 framing, across the cut): spring(53.8, 13.12) rmse 0.021 / bezier(0.180, 0.005, 0.244, 0.992) D=44 rmse 0.023 (40 f, active f2066-f2106); appear and vanish are one-picture steps",
+    "values": "appear f2061 (f2059 and its repeat f2060 have no outlines): project panel 49.7 -> 60.3 luma, whole-window lift timeline 25.4 -> 28.3, black viewer 5.03 -> 5.88 (both flat over f2054-f2059), desktop unchanged 156.46 -> 156.43 (scratch/v7c3_p4_lift_*.csv); pixels at least 12 luma lighter than the motion-compensated f2059 (panel + timeline area): 3,544 at f2056, 131,906 at f2061, 135,683 at f2064 (no new outlines after f2061); hold f2061-f2065 (top-right box centre (973.5, 277.5) -> (975.5, 276.5) px); top-right box centre (986.5, 282.5) f2066 -> (1058.5, 320.5) f2071 -> (1172.5, 427.5) f2076 -> (1217.5, 504.5) f2081 -> (1237.5, 557.5) px f2089 (template score 0.70-1.0); window-relative +262 px x (+16.2% W) and +326 px y (+35.5% H) from rest to f2089; fastest 25-32 px per frame f2071-f2076; x is 94% done by f2081 while y is 61% done; after the cut (close-up, P5) the gutter between ghost rows 2 and 3 sits 148 / 163 / 179 / 188 / 194 / 201 / 206 / 209 / 210 px below the timecode label at f2094 / 2096 / 2099 / 2101 / 2104 / 2106 / 2109 / 2111 / 2114 (+62 px = +6.8% H, 35 px at the P4 framing; x constant within 3 px, scratch/v7c3_p5_ghost_x.csv; the timeline's own lines keep their offsets within 2 px, scratch/v7c3_p5_profile_peaks.csv; series scratch/v7c3_p45_ghost_y.csv); total y +412 px = +44.9% H at the P4 framing; box about 196 x 180 px (P4) and 318 x 300 px (P5 close-up); vanish f2114 -> f2116: outline luma 46 -> 18.7, box interior 27 -> 18.7, track-header column (no ghost over it) 31.0 -> 26.0 (the lift ends; scratch/v7c3_p5_lift_header.csv)"
+   },
+   "curves": [
+    "v7.ui-ghost-drag-to-timeline.v7c3",
+    "v7.ui-ghost-drag-to-timeline-y.v7c3"
+   ]
+  },
+  {
+   "id": "v7.trans-punch-in-whip-up",
+   "category": "trans",
+   "description": "an accelerating upward camera pan cuts to a x1.76 closer framing of the same UI area that keeps moving up, faster, with vertical motion blur, then settles; the scale-jump variant of v7c1's v7.trans-whip-push-up",
+   "instances": [
+    [
+     2041,
+     2120
+    ]
+   ],
+   "reference_frames": [
+    2041,
+    2084,
+    2089,
+    2091,
+    2094,
+    2101,
+    2111,
+    2120
+   ],
+   "measured": {
+    "duration_frames": 79,
+    "easing": "outgoing bezier(0.698, 0.110, 1.000, 0.677) D=48 rmse 0.025; incoming bezier(0.000, 0.635, 0.672, 0.981) D=27 rmse 0.040 / spring(133.1, 26.02) rmse 0.046",
+    "values": "outgoing label midpoint y 11.46% -> 5.47% H (f2041 -> f2089), 0.55% H per frame at the cut; scale jump x1.76 (timecode label 0.5675 of its close-up size); incoming timecode label y 47.5% -> 21.5% H (-239 px) f2091 -> f2120, first step 22 px = 2.4% H per frame; vertical smear about 90 px at f2091, 6 px by f2111; x and scale constant on both sides"
+   },
+   "curves": [
+    "v7.trans-punch-in-whip-up-out.v7c3",
+    "v7.trans-punch-in-whip-up.v7c3"
+   ]
+  },
+  {
+   "id": "v7.cam-pull-back-reveal",
+   "category": "cam",
+   "description": "camera pulls back from a UI close-up to the whole lower half of the window, eased in log scale, about a point near the left edge, with motion blur at peak speed",
+   "instances": [
+    [
+     2122,
+     2181
+    ]
+   ],
+   "reference_frames": [
+    2122,
+    2129,
+    2134,
+    2141,
+    2160,
+    2181
+   ],
+   "measured": {
+    "duration_frames": 54,
+    "easing": "bezier(0.273, 0.003, 0.115, 0.830) D=62 rmse 0.011 / spring(33.0, 11.38) rmse 0.034 (on ln scale)",
+    "values": "scale 1.00 -> 0.40 (0.965 / 0.92 / 0.86 / 0.775 / 0.70 / 0.65 / 0.605 / 0.57 / 0.52 / 0.48 / 0.445 / 0.41 / 0.40 at f2124 / 2126 / 2129 / 2131 / 2134 / 2136 / 2139 / 2141 / 2146 / 2151 / 2160 / 2171 / 2181); fastest about -5% scale per frame at f2129-f2131; zoom origin about (43, 561) px = (2.7% W, 61% H) +-15 px; timecode label (130, 203) -> (78, 418) px"
+   },
+   "curves": [
+    "v7.cam-pull-back-reveal.v7c3"
+   ]
+  },
+  {
+   "id": "v7.ui-clip-strip-slide-in",
+   "category": "ui",
+   "description": "the dropped clips arrive as one continuous strip that slides in on a track from beyond the right edge and docks at the track start with an exponential deceleration, during a camera pull-back; 5 f after the dock the strip splits into its clips: every bar's right end retracts at once (left ends and clip pitch stay), opening a gap at every clip boundary in 6 f",
+   "instances": [
+    [
+     2126,
+     2156
+    ]
+   ],
+   "reference_frames": [
+    2126,
+    2131,
+    2136,
+    2141,
+    2146,
+    2149,
+    2151,
+    2155,
+    2156,
+    2172
+   ],
+   "measured": {
+    "duration_frames": 19,
+    "easing": "slide: spring(351.1, 37.88) rmse 0.062 / bezier(0.000, 0.280, 0.000, 0.713) D=14 rmse 0.071 (enters at full speed; see uncertain); split: values only, 44% / 87% / 98% of the held gap width on the 3 changed pictures f2151 / f2155 / f2156 (1, 5 and 6 f after the last rest picture), a fast-start ease-out; the fitted split curve was dropped (rmse 0.12 / 0.18)",
+    "values": "slide: strip left end in close-up window units 96.8% -> 27.4% W (-1127 px at close-up scale); screen 1448 -> 251 px; remaining distance x0.64 per captured picture (time constant about 5.6 f); docked f2146. split (scratch/v7c3_p5_strip_split.csv, scratch/v7c3_p5_strip_split_subpx.csv; column profile of screen rows 538-572): continuous at f2141-f2150 (clip boundaries dip only to 85-103 luma against a 116-131 fill, no dark run); f2151 boundaries 35 / 39 / 57 / 71 luma, gaps 1-3 11.2-12.6 px on screen = 24.6 px at the close-up scale; f2155 22.5 px = 48.4 px, 5 gaps on screen at the track background (24-35 luma); f2156 24.8 px = 54.6 px; held 54.5-56.6 px at the close-up scale (22.4-25.1 px on screen) to f2172; a 6th gap enters at the window's right edge from f2174 (7 clips visible at rest, the last cut by the window edge); in close-up units the gaps' right edges stay at the old boundaries (gap 1 1071-1077 vs 1072-1085 px, gap 4 2785-2803 vs 2784-2812 px) while their left edges sit about 50 px further left: each bar's right end retracts; strip left end 443-446 px throughout; split starts 5 f after the dock, 2 f after the counter's last swap and the viewer's last flash cut (f2149); sound: f2151 +2 vs beat f2149"
+   },
+   "curves": [
+    "v7.ui-clip-strip-slide-in.v7c3"
+   ]
+  },
+  {
+   "id": "v7.fx-clip-glow-pulse",
+   "category": "fx",
+   "description": "a soft white bloom on a clip strip while the clips are edited: the clip bars' own fill brightens from the moment the strip docks, a halo around them builds in the last part, both hold, the halo drains first and the bars drain about twice as long to a resting fill darker than before",
+   "instances": [
+    [
+     2146,
+     2294
+    ]
+   ],
+   "reference_frames": [
+    2146,
+    2162,
+    2172,
+    2181,
+    2189,
+    2206,
+    2220,
+    2222,
+    2236,
+    2254,
+    2256,
+    2281,
+    2294,
+    2340
+   ],
+   "measured": {
+    "duration_frames": 148,
+    "easing": "halo build bezier(0.583, 0.041, 0.443, 0.411) D=38 rmse 0.014; halo decay bezier(0.684, 1.119, 0.814, 0.912) D=35 rmse 0.013 / spring(40.0, 9.99) rmse 0.020; bars build bezier(1.000, 0.830, 0.321, 0.341) D=58 rmse 0.018 (near-linear, abrupt top; spring 0.243 not usable); bars decay bezier(0.703, 1.081, 0.998, 0.922) D=73 rmse 0.019 / spring(8.7, 5.04) rmse 0.036",
+    "values": "halo band above the strip 20.8 -> 68.4 luma (build f2172-f2206), hold to f2220, -> 19.6 (decay f2220-f2254); clip bars (clip 1, lower band / label-band background): 136 / 102 at the dock f2146 -> 152 / 123 (f2162) -> 163 / 136 (f2172) -> 173 / 154 (f2181) -> 211 / 202 peak f2206 (build active f2150-f2206 = 56 f, about 1.2 luma per frame to f2181 and 1.5 after), hold 208-210 / 197-200 to f2222, decay 208 / 197 (f2222) -> 149 / 119 (f2256) -> 122 / 89 (f2281) -> 114 / 81 from f2294 (active f2222-f2294 = 72 f), constant to f2340: the bars rest 22 / 21 luma darker than when they docked and 49 / 55 darker than at f2172; halo rows 4-12 px above the bars: 25.5 (f2146) -> 35.5 (f2172) -> 95 (f2206) -> 19 = track background from f2274; the window is settled f2181-f2259, so the fall is not camera motion (the sampling columns ride the exit drift after f2246)"
+   },
+   "curves": [
+    "v7.fx-clip-glow-pulse.v7c3",
+    "v7.fx-clip-glow-pulse-out.v7c3",
+    "v7.fx-clip-glow-pulse-bars.v7c3",
+    "v7.fx-clip-glow-pulse-bars-out.v7c3"
+   ]
+  },
+  {
+   "id": "v7.ui-clip-ripple-edit",
+   "category": "ui",
+   "description": "timeline edits shown as motion, starting from the gaps the strip split opened: gaps between clips close in 2-3 pictures (clips butt together), clips split into shorter pieces under the cursor, then gaps open with an ease-out as the clips right of each gap slide right",
+   "instances": [
+    [
+     2181,
+     2256
+    ]
+   ],
+   "reference_frames": [
+    2184,
+    2189,
+    2199,
+    2210,
+    2222,
+    2231,
+    2244
+   ],
+   "measured": {
+    "duration_frames": 75,
+    "easing": "gap opening ease-out over 8-13 f; closing in 2-3 pictures; no curve",
+    "values": "starts from the 5 gaps opened by the strip split f2151-f2156 (20-23 px wide by the dark-run rule at f2172); first gap widens 21 -> 87 px f2181-f2186; right gaps close f2186-f2189, the rest by f2199; gap 1 (x 809-887 px) width 24 / 47 / 62 / 69 / 71 / 73 / 75 / 76 px at f2222 / 2224 / 2226 / 2229 / 2231 / 2234 / 2239 / 2244; gap 2 (x 1075-1179 px) 12 / 66 / 86 / 95 / 100 / 102 px at f2231 / 2234 / 2236 / 2239 / 2241 / 2244; third narrow gap 1541-1572 px f2246-f2256"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.ui-gap-placeholder-blink",
+   "category": "ui",
+   "description": "soft-edged grey placeholder blocks fill two timeline gaps and blink strictly on/off in a short loop, the second one picture behind the first, until the cut",
+   "instances": [
+    [
+     2259,
+     2341
+    ]
+   ],
+   "reference_frames": [
+    2259,
+    2261,
+    2264,
+    2266,
+    2269,
+    2271
+   ],
+   "measured": {
+    "duration_frames": 82,
+    "easing": "binary steps (no fade)",
+    "values": "gap luma 18 <-> 90, halo above 18 <-> 39; 2 pictures on, 2 off = 10-frame period (6 Hz at the 24 fps cadence); gap 1 on at f2259 / 2269 / 2279 / 2289 / 2299 / 2310 / 2319 / 2330 / 2339; gap 2 at f2261 / 2271 / 2281 / 2291 / 2301 / 2312 / 2321 / 2331"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.footage-viewer-playback",
+   "category": "footage",
+   "description": "a square-cornered masked window in the UI plays footage, with hard cuts inside it while the layout holds; here it is first seen during a camera pull-back and cut in a fast burst (v7.footage-viewer-cut-burst), then held for long shots with two more quick cuts",
+   "instances": [
+    [
+     2129,
+     2341
+    ]
+   ],
+   "reference_frames": [
+    2129,
+    2134,
+    2139,
+    2141,
+    2146,
+    2149,
+    2172,
+    2196,
+    2204,
+    2209,
+    2232
+   ],
+   "measured": {
+    "duration_frames": 212,
+    "easing": "-",
+    "values": "window x 615-1360 px (45.9% W), y 0-318 px (top above the frame) at f2232; first visible f2129 as a band about 30 px tall at the top-right corner during the pull-back (its bottom edge, y -45 px in close-up units, maps to screen y 30 at f2129 and is off screen at f2126); cuts inside it at f2134 (likely) / 2139 / 2141 / 2146 / 2149 (the burst) and f2196 / 2204 / 2209 (fixed-ROI mean difference 35 / 20 / 18, below 6 at all other pictures after f2181; pull-back-compensated ROI 31.3 / 29.0 / 24.7); shot lengths 5 / 2 / 5 / 3 f, then 47 f (f2149-f2195), 8 f, 5 f and 133 f (f2209-f2341, to the cut f2342)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.footage-viewer-cut-burst",
+   "category": "footage",
+   "description": "a burst of hard cuts inside a masked footage window: 5 new shots in 15 f (shots of 5 / 2 / 5 / 3 f, uneven, not steadily accelerating) timed under the fastest part of a camera pull-back and a clip-strip slide-in; the last cut lands on a beat together with the UI counter's last swap and is followed by a 47 f hold on one shot",
+   "instances": [
+    [
+     2134,
+     2149
+    ]
+   ],
+   "reference_frames": [
+    2131,
+    2134,
+    2136,
+    2139,
+    2141,
+    2145,
+    2146,
+    2149,
+    2151
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "stepped (hard cuts); intervals 5 / 2 / 5 / 3 f",
+    "values": "ROI-1 / ROI-2 fixed in close-up coordinates (x 1600-2150 / 1700-2000, y -200..-80 / -150..-60), placed on every picture with the scale and label position of scratch/v7c3_p5_pullback.csv and resampled to 5 close-up px per sample (scratch/v7c3_p5_viewer_cuts_comp.csv); mean absolute difference to the previous picture: f2134 32.9 (ROI-2 only, window mean luma 72 -> 40; likely cut), f2139 56.2 / 67.8 (window mean luma 43 -> 80), f2141 27.9 / 21.7, f2146 53.9 / 53.9, f2149 28.0 / 21.2; every other picture up to f2194 0-10.1 (f2145, inside the f2141 shot, 9.4); the accepted cuts f2196 / f2204 / f2209 score 31.3 / 29.0 / 24.7 on ROI-1; dominant edge angle of the window (structure tensor, scratch/v7c3_p5_viewer_orient.csv): 7-9 deg (f2134-f2136), 6 (f2139, coherence 0.64 -> 0.99), 34-35 (f2141-f2145), -22 (f2146-f2148), 55 (f2149-f2194); sound: f2134 +14 vs beat f2120, f2139 -10, f2141 -8, f2146 -3, f2149 0 vs beat f2149 (no audio onset between f2120 and f2201); detail/v7c3_viewer_cuts_2129-2149, crops/v7c3_viewer_aligned_02129-02160.jpg"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.counter-ui-readout-step",
+   "category": "counter",
+   "description": "a small UI counter readout (counter digits in 4 two-digit fields separated by colons, in the editor's status line) swaps its value in place once per captured picture while the dragged clips land: the value falls for 3 swaps, then rises, then holds; no roll, slide or fade; the leading two fields hold, the last two change; same hard-swap mechanism as v7c6's v7.counter-step-countdown, here a live UI readout that goes down and up during camera moves",
+   "instances": [
+    [
+     2114,
+     2149
+    ]
+   ],
+   "reference_frames": [
+    2114,
+    2116,
+    2120,
+    2122,
+    2126,
+    2141,
+    2146,
+    2149,
+    2181,
+    2333
+   ],
+   "measured": {
+    "duration_frames": 35,
+    "easing": "stepped: one reading per captured picture, 2-5 f apart; no curve",
+    "values": "first visible f2114 (entering at the frame's bottom edge as the close-up settles upward); new readings at f2114 / 2116 / 2120 / 2122 (f2124 repeats it) / 2126 / 2141 / 2146 / 2149 = at least 8 (f2129-f2139 and f2145 unreadable under the pull-back blur); falls over f2114-f2122, rises from f2126 (every readable reading after f2122 is higher than the one before); holds from f2149 (checked on every captured picture to f2333); figure height 18 px = 1.96% H at the close-up (f2120), 8 px = 0.87% H after the pull-back (f2181); grey ink (up to luma 124-131 on 38); tabular figures (counter ink 119 / 118 px wide at f2120 / f2122; heights and widths from inkbox.py on f2120, f2122, f2181); runs under the ghost vanish (f2116), the pull-back (from f2122) and the strip slide-in (f2126-f2146); last swap 3 f after the strip docks (f2146); sound: first visible -6 vs beat f2120, last swap on beat f2149"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.cam-drift-accelerating-exit",
+   "category": "cam",
+   "description": "a barely visible camera drift that eases in over more than a second and runs at its highest speed, without motion blur, straight into the next cut; shared with v7c4, which files f2334-f2341 under this id and records the incoming half of the cut f2342 as v7.trans-whip-push-left (the next frame arrives moving left at 19.5 px per frame with blur); kept apart from the outgoing half of the f1644 whip (27 px per frame after 35 f, 27 -> 33 px per frame across the cut) because it tops out at 5 px per frame after 80+ f and the speed jumps x3.9 across its cut",
+   "instances": [
+    [
+     2250,
+     2341
+    ]
+   ],
+   "reference_frames": [
+    2259,
+    2300,
+    2321,
+    2340
+   ],
+   "measured": {
+    "duration_frames": 80,
+    "easing": "bezier(0.801, 0.069, 1.000, 0.818) D=88 rmse 0.018 (ease-in, no settle)",
+    "values": "viewer transport controls x 60.8% -> 56.2% W (-75 px) f2250 -> f2340; 5 px = 0.31% W per frame at f2338-f2340; scale within 1%, y constant"
+   },
+   "curves": [
+    "v7.cam-drift-accelerating-exit.v7c3"
+   ]
+  },
+  {
+   "id": "v7.cursor-glide",
+   "category": "cursor",
+   "description": "the dark arrow cursor (light rim) is part of the scene (it rides the camera's push-in, tilt and pull-back) and moves between targets on its own: thrown from a target it starts fast and eases out critically damped with motion-blur streaks on its fastest pictures, its vertical part ahead of the horizontal; long glides accelerate then decelerate; during rapid edits it hops between edit points in 2-4 f; it fades out over one picture or vanishes in one, and pops back in already moving",
+   "instances": [
+    [
+     1724,
+     1784
+    ],
+    [
+     2012,
+     2089
+    ],
+    [
+     2106,
+     2264
+    ]
+   ],
+   "reference_frames": [
+    1674,
+    1676,
+    1679,
+    1724,
+    1731,
+    1734,
+    1736,
+    1740,
+    1742,
+    1744,
+    1761,
+    1784,
+    2012,
+    2014,
+    2031,
+    2045,
+    2066,
+    2081,
+    2089,
+    2116,
+    2126,
+    2155,
+    2172,
+    2181,
+    2196,
+    2206,
+    2215,
+    2261,
+    2264
+   ],
+   "measured": {
+    "duration_frames": 25,
+    "easing": "P2 flick: progress along the path spring(233.4, 30.43) (zeta 1.00) rmse 0.046 / bezier(0.425, 0.946, 0.462, 0.891) D=24 rmse 0.080; x spring(169.8, 23.55) (zeta 0.90) rmse 0.049 / bezier(0.524, 0.697, 0.212, 0.800) D=23 rmse 0.072; y values only (active f1731-f1747 = 16 f, 9 f ahead of x; both fits above 0.10); P4 and P5 glides and the P5 hops: values only",
+    "values": "P2 (template-box centres, screen px; scratch/v7c3_p2_cursor_path.csv): idles near (1030-1090, 550-570) while the thumbnails pop, fades out over one picture (cursor darkening against its local background, summed: 3849 at f1674 -> 1566 at f1676 = 41% -> 0 at f1679), absent f1679-f1721, reappears at f1724 on the middle thumbnail already moving and glides up-left onto thumbnail 1 ((784, 501.5) f1724 -> (577, 381.5) f1731, about 240 px in 7 f); flick: (591, 413.5) f1734 -> streak ink centroids (672, 543) / (836, 685) / (946, 737) at f1736 / 1740 / 1742 -> (1019, 763) f1744 -> (1105, 779) f1749 -> (1151, 786) f1754 -> (1178, 796) f1761 -> push-in creep to (1193, 810) f1784; window-relative (push-in removed, O = (816, 457)): (584.6, 383.9) -> (1138, 758.5) px, +34.1% W and +40.8% H, path 710 px, at rest within 1 px from f1761; speed along the path 11 px/f (f1731-f1734), 74 (f1734-f1736), 52-58 (to f1742), 36, 15-16 (to f1749), 12, 5 (to f1756), under 1.5 after; streak boxes 89 x 105 / 84 x 49 / 48 x 25 px. P4 (arrow tips; scratch/v7c3_p4_cursor_path.csv): faint from f2012 at (480, 287), glide (538, 303) f2014 -> (1074, 755) f2045 (window-relative 634 px in 31 f, 12-23 px/f to f2024, 35-55 at f2024-f2031, then 28 / 18 / 8 / 5 to f2041), rest f2045-f2066 (rides the camera tilt; from f2061 at the lower right corner of the ghost grid's bottom-right box), drag down-left (1071, 744) f2066 -> (1018, 880) f2089 at the frame's bottom edge (window-relative 53 px left, 179 px down, fastest 23 px/f at f2079-f2081) while the ghost grid moves right and down. P5 (arrow tips; scratch/v7c3_p5_cursor_path.csv): rides the close-up settle (982, 421) f2106 -> (985, 393) f2114; glide in close-up units (1004, 398) f2116 -> (1644, 611) f2155 (674 px in 39 f; 16 px/f, then 41-44 at f2120-f2126, under 4 from f2151; crop reads +-5 px at f2134-f2150), at rest to f2172; dash left (702, 586) f2172 -> (604, 584) f2180 -> (391, 563) f2181 (213 px between two consecutive pictures) -> (337, 556) f2186; hops along the clip strip f2186-f2259: 4 long hops of 428-634 px in 2-4 f (+431 f2194-f2196, +428 f2199-f2201, -634 f2204-f2206, +496 f2211-f2215) and 11 moves of 46-211 px (23-105 px/f), separated by 3-8 f drifts of 1-10 px/f; last move 235 px down-left to (1228, 631) f2261; gone from f2264 (no fade picture). Sound: P2 fade-out f1676 +2 vs beat f1674, reappear f1724 -8 vs beat f1732, flick f1734 +2, rest f1761 on beat; P4 rest f2045 +9 vs beat f2036, drag f2066 +4 vs beat f2062; P5 glide f2116 -4 vs beat f2120, dash f2181 on beat, hops f2196 +15, f2201 -12, f2206 -7, f2215 +2, leaves f2261 -17 vs beat f2278"
+   },
+   "curves": [
+    "v7.cursor-glide-path.v7c3",
+    "v7.cursor-glide.v7c3"
+   ]
+  }
+ ],
+ "typography_stills": [
+  "type/v7c3-P1scan_f01600.png",
+  "type/v7c3-P1scan_f01629.png",
+  "type/v7c3-P1scan_f01641.png",
+  "type/v7c3-P2-ui_f01644.png",
+  "type/v7c3-P2-ui_f01649.png",
+  "type/v7c3-P2-ui_f01690.png",
+  "type/v7c3-P2-caption_f01649.png",
+  "type/v7c3-P2-caption_f01734.png",
+  "type/v7c3-P2-folder_f01736.png",
+  "type/v7c3-P2-folder_f01744.png",
+  "type/v7c3-P2-folders_f01752.png",
+  "type/v7c3-P2-folders_f01785.png",
+  "type/v7c3-P4-ui_f02007.png",
+  "type/v7c3-P4-ui_f02045.png",
+  "type/v7c3-P4-ui_f02089.png",
+  "type/v7c3-P5-ui_f02091.png",
+  "type/v7c3-P5-ui_f02111.png",
+  "type/v7c3-P5-ui_f02122.png",
+  "type/v7c3-P5-ui_f02205.png",
+  "type/v7c3-P5-ui_f02340.png",
+  "type/v7c3-scan_f02172.png",
+  "type/v7c3-scan_f02205.png",
+  "type/v7c3-scan_f02232.png",
+  "type/v7c3-scan_f02262.png",
+  "type/v7c3-scan_f02300.png",
+  "type/v7c3-P4P5-ghost_f02059.png",
+  "type/v7c3-P4P5-ghost_f02061.png",
+  "type/v7c3-P4P5-ghost_f02089.png",
+  "type/v7c3-P4P5-ghost_f02094.png",
+  "type/v7c3-P4P5-ghost_f02099.png",
+  "type/v7c3-P4P5-ghost_f02114.png",
+  "type/v7c3-P4P5-ghost_f02116.png",
+  "type/v7c3-P5-counter_f02114.png",
+  "type/v7c3-P5-counter_f02116.png",
+  "type/v7c3-P5-counter_f02120.png",
+  "type/v7c3-P5-counter_f02122.png",
+  "type/v7c3-P5-counter_f02126.png",
+  "type/v7c3-P5-counter_f02141.png",
+  "type/v7c3-P5-counter_f02146.png",
+  "type/v7c3-P5-counter_f02149.png",
+  "type/v7c3-P5-counter_f02181.png",
+  "type/v7c3-P2-cursor_f01734.png",
+  "type/v7c3-P2-cursor_f01736.png",
+  "type/v7c3-P2-cursor_f01744.png",
+  "type/v7c3-P2-cursor_f01761.png",
+  "type/v7c3-P5-viewercut_f02134.png",
+  "type/v7c3-P5-viewercut_f02139.png",
+  "type/v7c3-P5-viewercut_f02141.png",
+  "type/v7c3-P5-viewercut_f02146.png",
+  "type/v7c3-P5-viewercut_f02149.png",
+  "type/v7c3-P5-split_f02149.png",
+  "type/v7c3-P5-split_f02151.png",
+  "type/v7c3-P5-split_f02156.png",
+  "type/v7c3-P5-cliplabel_f02172.png",
+  "type/v7c3-P5-cliplabel_f02232.png",
+  "type/v7c3-P5-cliplabel_f02300.png"
+ ],
+ "uncertain": [
+  {
+   "what": "blur widths of the dragged tile grid",
+   "range": "f1630-f1641",
+   "reason": "the tiles merge into streaks; no clean edge to measure"
+  },
+  {
+   "what": "sub-picture fades of the thumbnail and folder pops",
+   "range": "f1649-f1684, f1740-f1751",
+   "reason": "each item is at full value on its first captured picture; a fade shorter than one picture (2-3 frames) would not be visible"
+  },
+  {
+   "what": "first-picture squash of the folder icons",
+   "range": "f1740",
+   "reason": "template scale about 0.88 on one blurred, glowing picture; could be a scale-in or a smear"
+  },
+  {
+   "what": "background motion during the P4 tilt",
+   "range": "f2041-f2089",
+   "reason": "the band edges are too soft at the left margin to separate a pan from the window's own move"
+  },
+  {
+   "what": "start of the clip strip slide and its fitted curve",
+   "range": "f2120-f2146",
+   "reason": "the strip enters from beyond the frame edge already at full speed (first visible f2126); both model fits exceed 0.05 rmse (0.062 / 0.071); the compensation uses a pull-back origin x 43 px (+-15 px)"
+  },
+  {
+   "what": "ghost grid positions",
+   "range": "f2061-f2114",
+   "reason": "read from motion-compensated difference images (P4: picture minus f2059, template score 0.70-1.0; P5: picture minus f2116, row-edge peaks); in P4 the template track and the row-edge peaks agree within 1 px (gutter offset 287.9-288.9 px over f2069-f2089, scratch/v7c3_p45_ghost_rows.csv), in P5 a single edge can sit on a timeline line (row 2's bottom edge at f2099), so a P5 sample may be off by 2-3 px; across the punch-in cut the ghost's offset from the timecode label grows 52 px (P4 framing) in 5 frames against 6.9 px per frame before and 4.3 after, so the close-up is about 25 px ahead of a smooth continuation (a time offset in the edit or an extra shift cannot be told apart); the cut picture f2091 is too smeared to measure; the y curve treats both sides as one move"
+  },
+  {
+   "what": "vertical smear after the punch-in except at f2091 and f2111",
+   "range": "f2094-f2104",
+   "reason": "the edge finder switches between label edges; only f2091 (about 90 px) and f2111 (6 px) are reliable"
+  },
+  {
+   "what": "P5 cursor positions during the pull-back blur",
+   "range": "f2134-f2150",
+   "reason": "no template locks on the motion-blurred cursor there (scores 0.38-0.57); arrow tips read off crops/crop_800_520_300x110_02134-02151.jpg at +-5 px (+-7-10 px in close-up units)"
+  },
+  {
+   "what": "y component of the P2 cursor flick",
+   "range": "f1731-f1761",
+   "reason": "both models fail on y (spring 0.101, bezier 0.133): three slow frames, then the fastest step at f1734-f1736; y is given as values and the flick's curves are the path progress and x"
+  },
+  {
+   "what": "individual clip split frames on the clip strip",
+   "range": "f2201-f2218",
+   "reason": "splits appear under the moving cursor during the glow; only the gap opening and closing were measured per picture"
+  },
+  {
+   "what": "pull-back zoom origin",
+   "range": "f2122-f2181",
+   "reason": "derived from one label path (timecode label) and checked against its y path to about +-15 px"
+  },
+  {
+   "what": "status-line counter readings during the pull-back",
+   "range": "f2129-f2139, f2145",
+   "reason": "pull-back motion blur makes the digits unreadable; 8 readings is a minimum, and the first reading f2114 is cut by the frame's bottom edge"
+  },
+  {
+   "what": "clip-bar glow measured on clip 1 only",
+   "range": "f2146-f2340",
+   "reason": "clips are trimmed, split and moved during f2181-f2256, so one bar (clip 1, columns x 262-328, inside it from the dock to the cut) was followed; clip 2's lower band (sampled right of the first gap, scratch/v7c3_p5_clip_bands.csv) follows the same envelope within 5 luma except during the edits f2189-f2206, where the gap search lands on moving clip edges (12-21 luma off)"
+  },
+  {
+   "what": "first cut of the viewer flash-cut burst",
+   "range": "f2131-f2134",
+   "reason": "the footage window is fully on screen only from f2131, one picture before f2134, and that picture is blurred by the pull-back; the window's mean luma drops 72 -> 40 and its composition changes, so f2134 is recorded as a likely cut"
+  },
+  {
+   "what": "curve of the clip-strip split",
+   "range": "f2150-f2156",
+   "reason": "only 3 changed pictures (1, 5 and 6 f after the last rest picture) and a +-2% wobble of the held width; bezier and spring both fail (rmse 0.12 / 0.18), so the split is given as values"
+  }
+ ],
+ "notes": [
+  "Segments are tiled at the cut frames (motion runs through three of the four cuts; v7c2 does the same). P1 is the tail of v7c2's P7 (start f1542). P5 really ends at f2341 (hard cut c053 f2342, v7c4's decision); f2334-f2341 continue it.",
+  "Class choice: the photo thumbnails of P2 and P4 are UI content (as v7c1 S05 and v7c2 P3/P5), so P2 and P4 are GRAPHICS; P5 is MIXED because its viewer panel plays moving footage.",
+  "The P2 content swap (glow build, grid drop-out, folder drop-in) keeps the window layout, so it is treated as element animation inside P2, not as a segment boundary; detail/v7c3_swap_1729-1749.",
+  "The P5 camera pull-back keeps the same UI and is a camera move inside the segment, not a transition; detail/v7c3_pullback_2122-2176.",
+  "All camera moves are whole-scene moves: the banded desktop background moves with the window in both whip-ins and scales with the P2 push-in.",
+  "Motion direction: leftward through f1644 (continuing v7c2's leftward travel), rightward entry at f2007, upward through f2091, leftward exit drift into f2342.",
+  "Cuts land within 3 frames of a beat (f1644 +2, f1786 -3, f2007 +2, f2091 -2; end cut f2342 +5); the grid drop-out (f1731, -1) and the ghost appearance (f2061, -1) also sit on beats; the last swap of the status-line counter is on beat f2149; tempo 114.84 BPM, 31.35 frames per beat.",
+  "Off-cut motion-peak windows opened: f1635, f1667, f1731, f2131, f2140, f2150, f2160, f2170, f2180, f2196, f2203; the P3 peaks are footage motion. The viewer flash cuts f2134-f2149 have their own window, detail/v7c3_viewer_cuts_2129-2149.",
+  "Measuring scripts written for this chunk (scratch/v7c3_tools/; outputs in scratch/v7c3_*): riding-ROI luma, zoom-ridden luma (p = O + s(p0 - O)), motion-compensated ghost differencing + template matching (re-run against f2059, the last ghost-free picture: ghost_track_r2059.py, ghost_y_series.py; the first run used f2061, which already holds the outlines), viewer ROI differences, 10-90% edge widths, ink boxes for cap heights, the aligned status-line counter (counter_aligned.py) and clip-bar band medians (clip_bar_luma.py). Second review round: viewer_cut_comp.py / viewer_orient.py / viewer_aligned.py (viewer shot changes with the pull-back compensated), strip_split.py / strip_split_subpx.py (clip-strip split), cursor_track_scaled.py and cursor_path_p2.py / _p4.py / _p5.py (cursor tracks and merged paths).",
+  "PySceneDetect content/adaptive frame indices drift early on this file (9, 10, 4 and 6 captured pictures at f1630/f1644, f1989/f2007, f2081/f2091, f2334/f2342); the ffmpeg scene score fires on the true cuts.",
+  "Review fixes: ghost outlines appear at f2061 (not f2064) and hold 5 f; the ghost grid's y drag is measured through the punch-in cut to rest in the close-up (curve v7.ui-ghost-drag-to-timeline-y.v7c3, 40 f against 22 f in x); the P5 status-line counter (v7.counter-ui-readout-step) is recorded; the clip bars' own glow envelope (build from the dock f2146, decay to f2294, darker rest) is recorded next to the halo's; the exit drift keeps v7.cam-drift-accelerating-exit, which v7c4 now uses for f2334-f2341 as well (ids aligned).",
+  "Review fixes, second round: the viewer's footage is first visible at f2129 and is cut five times during the pull-back (f2134 likely, f2139, f2141, f2146, f2149; new technique v7.footage-viewer-cut-burst); the docked clip strip splits into its clips at f2151-f2156 (second phase of v7.ui-clip-strip-slide-in; values only, the fitted split curve failed and was dropped); the cursor is tracked in P2, P4 and P5 (curves v7.cursor-glide-path.v7c3 and v7.cursor-glide.v7c3 for the P2 flick, which moves on to f1761 instead of resting at f1744; the P4 cursor goes down-left during the ghost drag; the P5 cursor leaves at f2261 instead of idling to f2341); the clip labels are legible light ink on a darker band, 7-8 px tall at the x0.40 framing, cut hard at the bar's inner padding; the track ID on the clip strip's track header is no longer used as a name (here and in the curve sidecars).",
+  "Cursor position conventions: P2 values are template-box centres (two templates whose centres agree within 3 px where both lock; the streak pictures f1736-f1742 are ink centroids, 5-7 px up-left of that convention); P4 and P5 values are arrow tips (box corner + 3 px x template scale, checked on crops)."
+ ]
+}

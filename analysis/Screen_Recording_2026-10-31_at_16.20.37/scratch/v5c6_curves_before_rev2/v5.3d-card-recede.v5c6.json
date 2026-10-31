@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.3d-card-recede.v5c6",
+  "file": "curves/v5.3d-card-recede.v5c6.csv",
+  "property": "scale",
+  "unit": "scale factor (template scale, 1.0 = card size while it floats at f4110, width 48.5% W)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c6_card_recede_fine.csv",
+  "column": "scale",
+  "sampled_frames": [
+    4075,
+    4112
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.53,
+  "to_value": 0.997,
+  "active_frames": [
+    4075,
+    4096
+  ],
+  "measured_duration_frames": 21,
+  "bezier": {
+    "x1": 0.5383,
+    "y1": 1.0053,
+    "x2": 0.1707,
+    "y2": 0.9038,
+    "durationInFrames": 19,
+    "delay": 3.884,
+    "built_duration_frames": 16,
+    "rmse": 0.1498
+  },
+  "spring": {
+    "stiffness": 445.709,
+    "damping": 37.107,
+    "mass": 1,
+    "damping_ratio": 0.8788,
+    "built_duration_frames": 13,
+    "rmse": 0.0939
+  },
+  "recommended": "spring",
+  "note": "after the spin settles the card is pushed back (shrinks) from 74.2% W to 48.5% W, centre fixed at x 50%, y 49-51%, with motion blur at peak speed (sharpness 25 -> 16 at f4082 -> 23) and a small undershoot (0.99 at f4098-f4103, back to 1.00 by f4107); template track ref f4110, scale step 0.005, scores 0.97-1.0; a burst of glowing square tiles fires behind it as it lands (f4090-f4107)"
+}

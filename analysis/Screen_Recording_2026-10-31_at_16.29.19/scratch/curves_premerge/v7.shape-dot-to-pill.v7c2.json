@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.shape-dot-to-pill.v7c2",
+  "file": "curves/v7.shape-dot-to-pill.v7c2.csv",
+  "property": "height",
+  "unit": "px at pointer scale 1.0 (bright core above luma 90; 121 px = 13.2% H)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_pill_grow.csv",
+  "column": "h_norm",
+  "sampled_frames": [
+    1361,
+    1391
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 121.5,
+  "active_frames": [
+    1364,
+    1386
+  ],
+  "measured_duration_frames": 22,
+  "bezier": {
+    "x1": 0.2372,
+    "y1": 1.0363,
+    "x2": 1.0,
+    "y2": 0.7544,
+    "durationInFrames": 21,
+    "delay": 0.53,
+    "built_duration_frames": 21,
+    "rmse": 0.0188
+  },
+  "spring": {
+    "stiffness": 166.688,
+    "damping": 37.945,
+    "mass": 1,
+    "damping_ratio": 1.4695,
+    "built_duration_frames": 28,
+    "rmse": 0.0738
+  },
+  "recommended": "bezier",
+  "note": "status capsule is born as a dot right of the 3D pointer (f1366) and grows into a circle ~121 px tall by ~f1386, then stretches sideways into a capsule as its label types in (width 220 -> 742 px f1386-f1416); camera pull-back compensated with the pointer template scale"
+}

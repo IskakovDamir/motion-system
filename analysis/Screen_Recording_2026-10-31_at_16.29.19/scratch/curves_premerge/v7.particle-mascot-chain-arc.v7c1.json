@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.particle-mascot-chain-arc.v7c1",
+  "file": "curves/v7.particle-mascot-chain-arc.v7c1.csv",
+  "property": "position",
+  "unit": "px along the arc path (picture 1622x918)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_leadball_path.csv",
+  "column": "path_px",
+  "sampled_frames": [
+    81,
+    134
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 1123.32,
+  "active_frames": [
+    84,
+    131
+  ],
+  "measured_duration_frames": 47,
+  "bezier": {
+    "x1": 0.9307,
+    "y1": 1.2205,
+    "x2": 0.7322,
+    "y2": 0.7032,
+    "durationInFrames": 47,
+    "delay": -0.31,
+    "built_duration_frames": 47,
+    "rmse": 0.0326
+  },
+  "spring": {
+    "stiffness": 27.669,
+    "damping": 46.86,
+    "mass": 1,
+    "damping_ratio": 4.4542,
+    "built_duration_frames": 65,
+    "rmse": 0.1298
+  },
+  "recommended": "bezier",
+  "note": "lead ball of a 5-ball chain: enters at the left edge (f81, x 0.7% y 64.8%), arcs up to a peak (f106, x 33.9% y 18.5%) and dives into the label-box centre (f131, x 49.8% y 49.4%); connected-component tracker on the darkest ball, positions update on twos (every 5 frames); f126/f129 hidden in front of the black box"
+}

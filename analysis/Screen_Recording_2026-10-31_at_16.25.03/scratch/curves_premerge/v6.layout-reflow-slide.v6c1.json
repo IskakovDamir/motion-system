@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.layout-reflow-slide.v6c1",
+  "file": "curves/v6.layout-reflow-slide.v6c1.csv",
+  "property": "position-x",
+  "unit": "px (picture 1622 px wide), centre of the two top words",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_P06_topwords_reflow.csv",
+  "column": "cx",
+  "sampled_frames": [
+    223,
+    261
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 543.5,
+  "to_value": 258.0,
+  "active_frames": [
+    226,
+    238
+  ],
+  "measured_duration_frames": 12,
+  "bezier": {
+    "x1": 0.8609,
+    "y1": 0.3246,
+    "x2": 0.1427,
+    "y2": 0.639,
+    "durationInFrames": 12,
+    "delay": 0.485,
+    "built_duration_frames": 12,
+    "rmse": 0.0394
+  },
+  "spring": {
+    "stiffness": 1486.027,
+    "damping": 77.131,
+    "mass": 1,
+    "damping_ratio": 1.0004,
+    "built_duration_frames": 10,
+    "rmse": 0.2592
+  },
+  "recommended": "bezier",
+  "note": "re-layout inside the carousel shot: the two top words shrink x0.64 (template scale 1.57 -> 1.01 relative to their final size, ref f253) and slide into the top-left corner (centre x 543.5 -> 258 px, y constant 97 px) while the big lower word slides left 702 px (centre 1129.5 -> 427.5 px, 43.3% W) and grows x1.25 over the same frames (f228-f243); the freed space on the right takes the 2-line sub-caption, which types on f236-f251"
+}

@@ -1,0 +1,1018 @@
+{
+ "video": "Screen_Recording_2026-10-31_at_16.29.19",
+ "key": "v7",
+ "chunk": "v7c4",
+ "frames": [
+  2334,
+  3056
+ ],
+ "cut_decisions": [
+  {
+   "id": "c052",
+   "frame": 2334,
+   "status": "rejected",
+   "reason": "no picture change at f2333 -> f2334 (gray diff 0.013 = one step of the UI window's slow left drift, detail/cut_c052_f02334); its content value (44.7) belongs to the hard cut f2340 -> f2342 (PySceneDetect decoded-index offset of 6 decoded frames in this VFR stretch), which c053 marks"
+  },
+  {
+   "id": "c053",
+   "frame": 2342,
+   "status": "confirmed",
+   "reason": "hard cut: last old picture f2340 (f2341 repeat), first new picture f2342 (dark frame, agent logo arriving with horizontal blur); incoming half of a leftward whip"
+  },
+  {
+   "id": "c054",
+   "frame": 2601,
+   "status": "confirmed",
+   "reason": "anchor of the hidden hard cut f2609 (last old picture f2606, f2607-f2608 repeat it; first new picture f2609, the same canvas x1.4 closer) inside the punch-in whip up f2589-f2641: in this VFR stretch the content detector's values sit 3-4 decoded pictures early (best lag of content_val against the measured picture differences: 3 pictures over f2540-f2700, r 0.83; 4 over f2570-f2650, r 0.96), so its weak value at f2601 (14.25) belongs to the picture change f2606 -> f2609/f2611, not to the lead-in drift"
+  },
+  {
+   "id": "c055",
+   "frame": 2656,
+   "status": "rejected",
+   "reason": "birth of the dot-matrix ring that reveals footage inside the result card; card, chip and layout stay"
+  },
+  {
+   "id": "c056",
+   "frame": 2664,
+   "status": "rejected",
+   "reason": "same dot-ring reveal: the footage brightens inside the expanding ring (card mean luma 35 -> 42), layout unchanged"
+  },
+  {
+   "id": "c057",
+   "frame": 2696,
+   "status": "rejected",
+   "reason": "reframe pull-back of the same canvas (card scale 0.95 at f2696), motion blur"
+  },
+  {
+   "id": "c058",
+   "frame": 2701,
+   "status": "rejected",
+   "reason": "same pull-back at peak speed (blur f2699-f2701); line 2 re-enters at the top, card keeps its footage"
+  },
+  {
+   "id": "c059",
+   "frame": 2720,
+   "status": "rejected",
+   "reason": "line 2 starts sliding off to the left with horizontal blur while the cursor drags the card down-right; picture not replaced"
+  },
+  {
+   "id": "c060",
+   "frame": 2736,
+   "status": "confirmed",
+   "reason": "hard cut: last old picture f2734 (f2735 repeat), first new picture f2736 (file-browser grid arriving with horizontal blur)"
+  },
+  {
+   "id": "c061",
+   "frame": 2821,
+   "status": "confirmed",
+   "reason": "anchor of the hard cut whose first new picture is f2824 (live shot); f2821 is the last old picture (browser grid blurred by the upward exit), f2822-f2823 repeat it; the content detector is one decoded frame early here"
+  },
+  {
+   "id": "c062",
+   "frame": 2927,
+   "status": "rejected",
+   "reason": "inside the live shot P5: no change f2925 -> f2927 (gray diff 0.0009); its content value (73.1) belongs to the cut at f2941 (6 decoded frames offset), which c063 marks"
+  },
+  {
+   "id": "c063",
+   "frame": 2941,
+   "status": "confirmed",
+   "reason": "hard cut: last live picture f2939 (f2940 repeat), first new picture f2941 (dark frame, agent logo arriving with horizontal blur; repeat of the f2342 opening)"
+  }
+ ],
+ "boundaries": [
+  {
+   "frame": 2342,
+   "type": "hard-cut",
+   "anchor_cut": "c053",
+   "note": "cut on a leftward move: the outgoing product-UI window only drifts left, accelerating without blur (0.6 -> 5 px/f, f2301-f2340; v7c3's v7.cam-drift-accelerating-exit, not a whip-out), the incoming dark frame arrives moving left at 19.5 px/f with horizontal blur (incoming half of v7.trans-whip-push-left); shared: the motion direction only"
+  },
+  {
+   "frame": 2392,
+   "type": "hard-cut",
+   "anchor_cut": null,
+   "origin": "missed by all three detectors (content value at most 3.0 and ffmpeg score at most 0.015 in f2381-f2399, below the weak thresholds 14 and 0.12; whole-picture difference 5.4 luma at f2392); found on the sheets",
+   "transition": "leftward whip with a one-picture x0.49 scale jump (pull-back) of the same canvas; whip-through lead-in (the last old picture f2389 is the most blurred: 21 px of horizontal blur, scratch/v7c4_z1_lead_blurfit_2355-2396.csv)",
+   "range": [
+    2361,
+    2424
+   ],
+   "frames": 64,
+   "last_old_picture": 2389,
+   "shares": "the dark canvas, line 1 (still typing, its logo still spinning) and the leftward motion: the close framing (2.13x of the settled one) pans left accelerating from 1.6 to 17 px/f (horizontal blur on f2389), the picture is replaced by the framing x0.49 smaller (logo ink 153-155 -> 75 px tall, f2389 -> f2392; f2390-f2391 repeat f2389), which arrives moving left at about 9 px/f with horizontal blur and decelerates over 27 f (first word centre 622 -> 560 px), then creeps 1.04 -> 0.985",
+   "technique": "v7.trans-whip-push-left",
+   "curve": "v7.trans-whip-push-left-pull-back.v7c4",
+   "curves": [
+    "v7.trans-whip-push-left-out-pull-back.v7c4",
+    "v7.trans-whip-push-left-pull-back.v7c4"
+   ],
+   "detail": "detail/soft_2361-2424",
+   "note": "first draft: camera snap Z1 inside one segment (v7.cam-snap-pull-back); same device as v7c2 f1542 (x0.455) and v7c5 f3134 (x0.398); repeated at f2991; stills type/v7c4-P2b-1_f02389.png, f02392"
+  },
+  {
+   "frame": 2474,
+   "type": "hard-cut",
+   "anchor_cut": null,
+   "origin": "missed by all three detectors (content value at most 6.2 and ffmpeg score at most 0.035 in f2462-f2481; whole-picture difference 7.4 luma at f2474); found on the sheets",
+   "transition": "punch-in whip up with a one-picture x2.2 scale jump (push-in) of the same canvas; stop-hold lead-in (the outgoing move stops dead one picture before the cut)",
+   "range": [
+    2444,
+    2496
+   ],
+   "frames": 53,
+   "last_old_picture": 2471,
+   "shares": "the dark canvas, line 1 and the upward direction (not the speed: the old framing is at rest on its last picture): the settled line drifts up accelerating (blur-aware template on logo + first word: centre y 454.2 -> 369.9 px f2440-f2469, box blur along y 3 px at f2454-f2460, 5 / 7 / 9 / 17 px at f2462 / 2464 / 2467 / 2469, f2469 the fastest picture), then stops dead: the last old picture f2471 is crisp (blur 1 px, vertical gradient p99.9 126 vs 131-135 at rest and 23 at f2469) 44.9 px higher (325.0 px) and stays to f2473 (one picture); then the picture is replaced by a framing x2.2 closer (logo 69 -> 152 px wide) that arrives 283 px below its rest (logo centre y 432 -> 149 px) still rising at about 40 px/f with vertical blur and settles in 20 f, revealing the empty row 2",
+   "technique": "v7.trans-punch-in-whip-up",
+   "curve": "v7.trans-punch-in-whip-up.v7c4",
+   "curves": [
+    "v7.trans-punch-in-whip-up-out-stop-hold.v7c4",
+    "v7.trans-punch-in-whip-up.v7c4"
+   ],
+   "detail": "detail/soft_2444-2496",
+   "note": "first draft: camera snap Z2 inside one segment (v7.cam-snap-push-in); same device as v7c3 f2091 (x1.76) and v7c5 f3094 (x2.33, the repeat of this cut); stills type/v7c4-P2c-1_f02469.png (fastest, blurred), f02471 (crisp stop), f02474; crops/crop_300_250_900x260_02462-02476.jpg, detail/dense_02464-02482_00.jpg; review fix: the first pass read the lead-in as accelerating into the cut (to ~23 px/f); it ends in a hard stop with a one-picture hold, and the incoming framing restarts at about 40 px/f"
+  },
+  {
+   "frame": 2515,
+   "type": "hard-cut",
+   "anchor_cut": null,
+   "origin": "missed by all three detectors (content value at most 9.8 and ffmpeg score at most 0.115 in f2503-f2522, below the weak thresholds 14 and 0.12; whole-picture difference 11.8 luma at f2515); found on the sheets",
+   "transition": "leftward whip with a one-picture x0.44 scale jump (pull-back) of the same canvas; stop-hold lead-in (the outgoing move stops dead one picture before the cut)",
+   "range": [
+    2499,
+    2589
+   ],
+   "frames": 91,
+   "last_old_picture": 2511,
+   "shares": "the dark canvas, both rows and the leftward direction (not the speed: the old framing is at rest on its last picture): the close framing pans left accelerating (blur-aware template on the app icon: centre x 570.5 -> 491.9 px f2499-f2509, box blur along x 3 / 7 / 15 / 33 px at f2501 / 2504 / 2507 / 2509, f2509 the fastest picture, f2510 a capture duplicate), then stops dead: the last old picture f2511 is crisp (blur 1 px) 92.4 px further left (icon centre 399.5 px, left edge 321 px) and stays to f2514 (f2512-f2513 capture duplicates, f2514 repeat: one picture); then the picture is replaced by the framing x0.44 smaller (app icon 156 -> 68-69 px), which arrives moving left under horizontal blur (clear by f2519) and decelerates over 59 f (app-icon left edge 495 -> 249 px), re-centring the two-row block",
+   "technique": "v7.trans-whip-push-left",
+   "curve": "v7.trans-whip-push-left-pull-back-long.v7c4",
+   "curves": [
+    "v7.trans-whip-push-left-out-stop-hold.v7c4",
+    "v7.trans-whip-push-left-pull-back-long.v7c4"
+   ],
+   "detail": "detail/soft_2499-2589",
+   "note": "first draft: camera snap Z3 inside one segment (v7.cam-snap-pull-back-long); same device as v7c5 f3134 (x0.398, the repeat of this cut); stills type/v7c4-P2d-1_f02509.png (fastest, blurred), type/v7c4-P2-2_f02511.png (crisp stop), type/v7c4-P2d-1_f02515.png, crops/crop_250_150_900x420_02507-02516.jpg, crops/crop_0_150_1100x450_02504-02516.jpg, detail/dense_02503-02520_00.jpg; review fix: the first pass read the lead-in as accelerating into the cut (to ~42 px/f, values only); it ends in a hard stop with a one-picture hold (curve v7.trans-whip-push-left-out-stop-hold.v7c4)"
+  },
+  {
+   "frame": 2609,
+   "type": "hard-cut",
+   "anchor_cut": "c054",
+   "transition": "punch-in whip up with a one-picture x1.4 scale jump (push-in) of the same canvas, whip-through lead-in (the last old picture f2606 is the most blurred: 37 px of vertical blur, scratch/v7c4_z4_lead_blurfit_2578-2612.csv); the result card rises in after the cut",
+   "range": [
+    2589,
+    2641
+   ],
+   "frames": 53,
+   "last_old_picture": 2606,
+   "shares": "the dark canvas, line 2 and the upward motion: the finished two-row block drifts up accelerating (app-icon top 424 -> 269 px f2589-f2606, to about 28 px/f, vertical blur from f2601), the picture is replaced by a framing x1.4 closer (app icon 67 -> 94 px wide; row-2 ink band 74-77 px tall at f2601-f2604 -> 101-106 px at f2611-f2616 with its left edge 248 -> 121 px; f2607-f2608 repeat f2606), which keeps scrolling up decelerating (icon top 145 px f2609 -> 19 px f2616; line-2 ink bottom 92 px f2619 -> 1 px f2636, gone); the result card's blurred top edge enters at the bottom edge at f2614 while line 2 is still at the top, and the card rises 2.5-4x faster than the text (own slide-up on top of the camera scroll) to the frame centre (chip label centre 82.0 %H f2619 -> 49.4 %H, within 2 % at f2641, still at f2649)",
+   "technique": "v7.trans-snap-push-scroll",
+   "related_techniques": [
+    "v7.trans-punch-in-whip-up"
+   ],
+   "curve": "v7.trans-snap-push-scroll.v7c4",
+   "curves": [
+    "v7.trans-snap-push-scroll.v7c4"
+   ],
+   "detail": "detail/soft_2589-2641",
+   "note": "first draft: soft push f2589-f2641 tiled at its midpoint (f2615/f2616); the ink bands show a step between f2606 and f2609 (scale constant before and after, left edge fixed at 121 px over f2611-f2621), not a continuous zoom, so it is a hard cut tiled at the cut frame like v7c5 f3094, with the move range kept; the lead-in has values only; still type/v7c4-P3-0_f02609.png"
+  },
+  {
+   "frame": 2736,
+   "type": "hard-cut",
+   "anchor_cut": "c060",
+   "note": "at full speed of two exits (line 2 sliding left, 217 and 237 px over the last two picture intervals, card dragged down-right by the cursor); the browser grid arrives moving left with horizontal blur and decelerates 38 px in 20 f (incoming half of v7.trans-whip-push-left); shared: leftward motion, the cursor and the dragged footage (now a file chip)"
+  },
+  {
+   "frame": 2824,
+   "type": "hard-cut",
+   "anchor_cut": "c061",
+   "note": "candidate frame f2821 is the last old picture; first new picture f2824; the file-browser layout leaves with an upward whip exit (v7.cam-whip-exit-up), the live shot has no incoming motion"
+  },
+  {
+   "frame": 2941,
+   "type": "hard-cut",
+   "anchor_cut": "c063",
+   "note": "static live shot cut to the dark title frame whose logo arrives moving left with horizontal blur (incoming whip half only)"
+  },
+  {
+   "frame": 2991,
+   "type": "hard-cut",
+   "anchor_cut": null,
+   "origin": "missed by all three detectors (content value at most 3.9 and ffmpeg score at most 0.021 in f2981-f2996; whole-picture difference 7.0 luma at f2991); found on the sheets",
+   "transition": "leftward whip with a one-picture x0.535 scale jump (pull-back) of the same canvas; whip-through lead-in as f2392 (the last old picture f2989 is the most blurred: 19 px of horizontal blur, scratch/v7c4_z1b_lead_blurfit_2955-2994.csv)",
+   "range": [
+    2961,
+    3014
+   ],
+   "frames": 54,
+   "last_old_picture": 2989,
+   "shares": "the dark canvas, the line (still typing, its logo still spinning) and the leftward motion: a frame-for-frame repeat of the f2392 cut (+599 frames) up to the jump, which is x0.535 here (logo 158 -> 85 px wide, ink 155 -> 82 px tall; f2990 repeats f2989), so the bolder line settles larger; the wide framing glides on left (logo left edge 394 -> 331 px f2991-f3014)",
+   "technique": "v7.trans-whip-push-left",
+   "curve": "v7.trans-whip-push-left-pull-back.v7c4",
+   "curves": [
+    "v7.trans-whip-push-left-out-pull-back.v7c4",
+    "v7.trans-whip-push-left-pull-back.v7c4"
+   ],
+   "detail": "detail/soft_2961-3014",
+   "note": "first draft: snap Z1' inside one segment (v7.cam-snap-pull-back); v7c5 notes that this punch-out belongs to v7c4; curves are the f2392 ones (same keyframes up to the cut, glide values only here); stills type/v7c4-P6b-1_f02989.png, f02991"
+  }
+ ],
+ "segments": [
+  {
+   "id": "v7c4-P1",
+   "start": 2334,
+   "end": 2341,
+   "class": "MIXED",
+   "continues_from_previous_chunk": true,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "tail of the product-UI (video editor window with footage preview) segment over a light background with soft diagonal shapes: the window drifts left, accelerating from 0.6 to 5 px/frame without blur, into the hard cut at f2342"
+  },
+  {
+   "id": "v7c4-P2a",
+   "start": 2342,
+   "end": 2391,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "dark canvas agent log at a close framing: the agent logo arrives with a leftward whip (incoming half at the hard cut f2342) and spins while a 4-word line types letter by letter (grey, then white); the framing then pans left with an ease-in into the hidden pull-back cut f2392"
+  },
+  {
+   "id": "v7c4-P2b",
+   "start": 2392,
+   "end": 2473,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "the same canvas x0.49 smaller (hidden cut f2392): the framing glides left and creeps 1.04 -> 0.985 while line 1 finishes (f2411) and the logo's spin stops (f2434); a hold, then an ease-in drift up that stops dead one crisp picture (f2471-f2473) before the hidden push-in cut f2474"
+  },
+  {
+   "id": "v7c4-P2c",
+   "start": 2474,
+   "end": 2514,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "x2.2 closer framing (hidden cut f2474): the canvas keeps rising and settles, revealing an empty second row where an app icon pops in from a sliver and line 2 starts typing slowly; then an ease-in pan left that stops dead one crisp picture (f2511-f2514) before the hidden pull-back cut f2515"
+  },
+  {
+   "id": "v7c4-P2d",
+   "start": 2515,
+   "end": 2608,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "x0.44 wide framing (hidden cut f2515): a 59-frame glide left re-centres the two-row block while line 2 types in a fast burst and finishes; then an ease-in drift up into the hidden push-in cut f2609"
+  },
+  {
+   "id": "v7c4-P3",
+   "start": 2609,
+   "end": 2735,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "the two text rows scroll out at the top after the hidden push-in cut f2609 while a result card (rounded, gridded, top glow) rises to the centre with a glassy status chip and arc spinner; its grid lights up in a left-to-right sweep, a dot-matrix ring expands from the chip and reveals footage in the card while the chip fades; the camera pulls back x0.755 to bring the line above back, a cursor arrives and drags the card down-right while the line slides off left into a hard cut"
+  },
+  {
+   "id": "v7c4-P4",
+   "start": 2736,
+   "end": 2823,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "file-browser grid of flat folder icons arrives with a decelerating leftward glide; a cursor drags a file chip (footage thumbnail + name pill) up from the bottom edge to a drop-target folder that pops in, the chip shrinks to nothing on the folder front (fast step on the beat f2781, gone f2794) while the folder presses, and the folder springs back; the whole grid then accelerates upward into a hard cut"
+  },
+  {
+   "id": "v7c4-P5",
+   "start": 2824,
+   "end": 2940,
+   "class": "LIVE",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [
+    "sheets/overview_02784-02829.jpg",
+    "sheets/overview_02832-02877.jpg",
+    "sheets/overview_02880-02925.jpg",
+    "sheets/overview_02928-02973.jpg",
+    "type/v7c4-P5-check_f02826.png",
+    "type/v7c4-P5-check_f02880.png",
+    "type/v7c4-P5-check_f02938.png"
+   ],
+   "summary": "full-frame footage, no designed element (only the player's speaker icon)"
+  },
+  {
+   "id": "v7c4-P6a",
+   "start": 2941,
+   "end": 2990,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "second agent log, a frame-for-frame repeat of P2a (+599 frames) with SemiBold text: whip arrival, spinning logo, letter-by-letter typing, then an ease-in pan left into the hidden pull-back cut f2991"
+  },
+  {
+   "id": "v7c4-P6b",
+   "start": 2991,
+   "end": 3056,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": true,
+   "live_confirmed_on": [],
+   "summary": "the same canvas x0.535 smaller (hidden cut f2991): glide left while the line finishes (f3014) and the spin stops (f3034); the camera then pulls back about the frame centre to 0.83 (continues into v7c5, whose hidden push-in cut f3094 follows)"
+  }
+ ],
+ "techniques": [
+  {
+   "id": "v7.trans-whip-push-left",
+   "category": "trans",
+   "description": "incoming half of a leftward whip at a hard cut: the new picture arrives already moving left with horizontal motion blur on the first pictures and decelerates into a slow drift or rest; at the hidden cuts f2392, f2515 and f2991 the new picture is the same canvas x0.44-0.54 smaller (a pull-back), gliding 27 f (f2392, f2991) or 59 f (f2515, a long variant)",
+   "instances": [
+    [
+     2342,
+     2371
+    ],
+    [
+     2392,
+     2424
+    ],
+    [
+     2515,
+     2589
+    ],
+    [
+     2736,
+     2756
+    ],
+    [
+     2941,
+     2971
+    ],
+    [
+     2991,
+     3014
+    ]
+   ],
+   "reference_frames": [
+    2342,
+    2344,
+    2346,
+    2349,
+    2369,
+    2392,
+    2394,
+    2419,
+    2515,
+    2519,
+    2541,
+    2574,
+    2589,
+    2736,
+    2739,
+    2756,
+    2991,
+    3014
+   ],
+   "measured": {
+    "duration_frames": 29,
+    "easing": "f2342 arrival: bezier(0.000, 0.545, 0.432, 0.900) D=29 rmse 0.023 / spring(125.4, 30.18) rmse 0.078 (logo centre x); f2392 glide: bezier(0.000, 0.604, 0.505, 0.995) D=29 rmse 0.024 / spring(163.6, 28.46) rmse 0.075 (first word centre x); f2515 long glide: bezier(0.094, 1.201, 0.942, 0.922) D=67 rmse 0.016 / spring(51.3, 17.88) rmse 0.152 (app-icon left edge)",
+    "values": "f2342: logo centre x 951.5 -> 812.5 px (58.7 -> 50.1 %W) by f2369, 809 px f2371, then a 1.2-1.8 px/f drift; speed 19.5 px/f over the first two pictures; framing 2.13x of the settled one; f2941 repeats it within 1 px; f2392 (hidden cut, x0.49): first word centre 622 -> 560 px (38.3 -> 34.5 %W) f2392-f2419, about 9 px/f at the cut, then a scale creep 1.04 -> 0.985 to f2456; f2515 (hidden cut, x0.44): app-icon left edge 495 -> 249 px (30.5 -> 15.4 %W) f2515-f2589, y fixed, the block ends centred (x ~800 px); f2991 (hidden cut, x0.535): logo left edge 394 -> 331 px f2991-f3014; f2736: left folder centre x 268 -> 230 px (16.5 -> 14.2 %W) f2736-f2756, 3.7 -> 0.5 px/f, blur on f2736 only (smaller amplitude, 20 f)"
+   },
+   "curves": [
+    "v7.trans-whip-push-left.v7c4",
+    "v7.trans-whip-push-left-pull-back.v7c4",
+    "v7.trans-whip-push-left-pull-back-long.v7c4"
+   ]
+  },
+  {
+   "id": "v7.trans-whip-push-left-out",
+   "category": "trans",
+   "description": "outgoing half of a leftward whip: content accelerates left from rest with growing horizontal motion blur (strokes smear into streaks when fast); before the hidden pull-back cuts it is the close framing panning left into the scale jump, in two variants: whip-through (f2392, f2991, and the line-2 exit into f2736): the move runs through the cut and the last old picture is the most blurred; stop-hold (f2515): the move stops dead one picture before the cut, that last old picture is crisp at the end position and stays one picture, and the cut lands on the new framing already moving under blur",
+   "instances": [
+    [
+     2361,
+     2389
+    ],
+    [
+     2499,
+     2514
+    ],
+    [
+     2713,
+     2734
+    ],
+    [
+     2961,
+     2989
+    ]
+   ],
+   "reference_frames": [
+    2361,
+    2385,
+    2389,
+    2499,
+    2504,
+    2507,
+    2509,
+    2511,
+    2514,
+    2711,
+    2716,
+    2721,
+    2726,
+    2731,
+    2734
+   ],
+   "measured": {
+    "duration_frames": 20,
+    "easing": "line-2 exit, re-tracked with a template on the line (f2709-f2734): bezier(0.339, 0.007, 1.000, 0.193) D=20, shape rmse 0.091, raw-time rmse 0.007; shape-matched bezier(1.000, 0.187, 0.752, 0.816) D=21 (shape 0.009, built 20 f for the measured 20 f); spring not usable (0.820, ease-in without a settle); lead-in into the hidden cut f2392 (whip-through): bezier(1.000, 0.302, 1.000, 0.724) D=27 rmse 0.033 (ease-in, no settle); lead-in into the hidden cut f2515 (stop-hold): bezier(0.806, 0.135, 0.824, 0.241) D=11 rmse 0.018, completes at f2510.6, then hold f2511-f2514 with no blur, cut f2515 (spring not usable, 0.814)",
+    "values": "line 2 template centre 1270 -> 436 px (78.3 -> 26.9 %W) f2711-f2734 (rest f2709-f2713), 217 and 237 px over the last two picture intervals (f2729-f2731-f2734), width ~1160 px constant; its bbox right end (1452 -> 653 px) lags behind the content under the blur by up to 59 px (f2731); f2392 lead-in: first word centre 1141 -> 1025 px (70.3 -> 63.2 %W) f2361-f2389 at constant scale 2.13, 1.6 -> 17 px/f, blur on f2389; f2515 lead-in (stop-hold): app-icon centre 570.5 -> 399.5 px (35.2 -> 24.6 %W; left edge 492 -> 321 px) f2499-f2511, box blur along x 1 / 3 / 7 / 15 / 33 px at f2499 / 2501 / 2504 / 2507 / 2509 (curve speed 4.5 / 12 / 38 px/f at f2504 / 2507 / 2509), then f2511 crisp (blur 1 px) 92.4 px further left, held to f2514; blur on the last old picture of the whip-through lead-ins: 21 px (f2389), 19 px (f2989); f2961-f2989 repeats the f2392 lead-in (+599 frames)"
+   },
+   "curves": [
+    "v7.trans-whip-push-left-out.v7c4",
+    "v7.trans-whip-push-left-out-pull-back.v7c4",
+    "v7.trans-whip-push-left-out-stop-hold.v7c4"
+   ]
+  },
+  {
+   "id": "v7.cam-drift-accelerating-exit",
+   "category": "cam",
+   "description": "(shared with v7c3, curve there) a barely visible camera drift that eases in and runs at its highest speed, without motion blur, straight into the next cut",
+   "instances": [
+    [
+     2334,
+     2341
+    ]
+   ],
+   "reference_frames": [
+    2334,
+    2340
+   ],
+   "measured": {
+    "duration_frames": 40,
+    "easing": "accelerating (values only here; v7c3's curve v7.cam-drift-accelerating-exit.v7c3 covers f2250-f2340)",
+    "values": "P1 window right edge 1588.6 -> 1529.5 px (97.9 -> 94.3 %W) f2301-f2340: -0.6 px/f (f2301-f2310), -1.2 (f2310-f2321), -2.8 (f2330-f2334), -5.0 px/f (f2337-f2339); no motion blur; bottom-area edge y 682.5 px fixed"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.logo-spin-while-typing",
+   "category": "logo",
+   "description": "the agent logo icon at the start of a typed line spins clockwise at a constant rate while the line types (a thinking indicator), one full turn, then stops with a short ease-out and stays still",
+   "instances": [
+    [
+     2342,
+     2434
+    ],
+    [
+     2941,
+     3034
+    ]
+   ],
+   "reference_frames": [
+    2342,
+    2369,
+    2399,
+    2429,
+    2434,
+    2440
+   ],
+   "measured": {
+    "duration_frames": 89,
+    "easing": "linear 4.0 deg/f (bezier(0.067, 0.082, 0.000, 0.000) D=90 rmse 0.009), ease-out stop over ~5 f",
+    "values": "11 deg (f2342) -> 373.5 deg (f2434) clockwise = 240 deg/s; already turning on the first picture after the cut; continuous through the hidden hard cut f2392; stops 23 f after the line's last character; P6 identical (stop f3034)"
+   },
+   "curves": [
+    "v7.logo-spin-while-typing.v7c4"
+   ]
+  },
+  {
+   "id": "v7.text-type-letter-fade",
+   "category": "text",
+   "description": "typewriter line: letters appear one by one left to right, each fading in place (no blur, no movement) to a light grey (luma 208-218 = 0.83-0.86 of white) and stepping up to white (249) about 10 frames later, so the newest 3-4 letters are always grey",
+   "instances": [
+    [
+     2344,
+     2411
+    ],
+    [
+     2491,
+     2556
+    ],
+    [
+     2944,
+     3014
+    ]
+   ],
+   "reference_frames": [
+    2344,
+    2346,
+    2349,
+    2351,
+    2354,
+    2356,
+    2359,
+    2361,
+    2369,
+    2494,
+    2504,
+    2511,
+    2946,
+    2951
+   ],
+   "measured": {
+    "duration_frames": 19,
+    "easing": "whole first-letter reveal to white, re-tracked (f2342-f2369): bezier(0.814, 1.284, 0.000, 0.559) D=18 / spring(367.6, 39.45), shape rmse 0.067 / 0.072, raw-time rmse 0.010 / 0.039; shape-matched bezier(0.727, 0.816, 0.000, 0.711) D=20 (shape 0.029, built 19 f for the measured 19 f); the single ease smooths over the grey plateau",
+    "values": "first letter: luma 33 / 75 / 140 / 211 / 214 / 218 / 236 / 249 at f2344 / 2346 / 2349 / 2351 / 2354 / 2356 / 2359 / 2361 (plateau 0.83-0.86 of white, white from f2361); later letters reach the plateau (208-214) within 2 pictures (3-4 f) and step to white 9.0-10.6 f later (half level to half level, mean 10.05 over 11 letters of P2a and P6a; first letters 10.4-10.6 f; scratch/v7c4_letters_stacked_2342-2989.csv); line 1: 25 characters f2344-f2411, 2.6-2.9 f per character (constant); line 2: 40 characters f2491-f2556 with a speed ramp ~5 f/char (chars 1-5) -> ~0.8 f/char (5-35, f2515-f2539) -> ~3 f/char (35-40); first letter of line 2 slow (13 f to the plateau); P6 line: 24 characters f2944-f3014, 2.96 f/char"
+   },
+   "curves": [
+    "v7.text-type-letter-fade.v7c4"
+   ]
+  },
+  {
+   "id": "v7.trans-punch-in-whip-up",
+   "category": "trans",
+   "description": "(shared with v7c3 and v7c5) punch-in whip up across a hidden hard cut: the canvas drifts up with an ease-in and vertical motion blur, the picture is replaced by a closer framing of the same canvas that arrives rising, faster on screen, under blur and decelerates; the lead-in either stops dead one picture before the cut (stop-hold, f2474: the fastest picture f2469 is followed by a crisp picture at the end position, f2471, held one picture) or runs through it with the last old picture the most blurred (whip-through, f2609); here it reveals the next row below (f2474) or carries the finished text out at the top while the result card rises in (f2609)",
+   "instances": [
+    [
+     2444,
+     2496
+    ],
+    [
+     2589,
+     2641
+    ]
+   ],
+   "reference_frames": [
+    2444,
+    2467,
+    2469,
+    2471,
+    2474,
+    2481,
+    2494,
+    2589,
+    2601,
+    2606,
+    2609,
+    2616
+   ],
+   "measured": {
+    "duration_frames": 52,
+    "easing": "outgoing f2474 (stop-hold, blur-aware samples f2429-f2471): bezier(1.000, 0.082, 1.000, 0.783) D=27 rmse 0.029, completes at f2470.1 (ease-in into a hard stop), then hold f2471-f2473 with no blur, cut f2474 (spring not usable, 0.848); incoming (f2474-f2501) bezier(0.000, 0.173, 0.414, 0.999) D=21 rmse 0.035 / spring(250.1, 76.07) rmse 0.055; the f2609 instance has values only",
+    "values": "f2474 (stop-hold): logo + first-word centre y 454.2 -> 369.9 px f2440-f2469 with box blur along y 3 / 5 / 7 / 9 / 17 px at f2454 / 2462 / 2464 / 2467 / 2469 (curve speed 4 / 5 / 9 / 17 px/f at f2462-f2469), then f2471 crisp (blur 1 px) at 325.0 px (35.4 %H), 44.9 px higher, held to f2473; x2.2 between f2471 and f2474 (logo 69 -> 152 px wide); incoming 432 -> 149 px (47.1 -> 16.2 %H) f2474-f2494 from about 40 px/f, x fixed; f2609: app-icon top 424 -> 269 px f2589-f2606 (to about 28 px/f, vertical blur from f2601), x1.4 between f2606 and f2609 (icon 67 -> 94 px wide; whip-through: 37 px of vertical blur on the last old picture f2606), incoming icon top 145 px f2609 -> 19 px f2616, line-2 ink bottom 92 px f2619 -> 1 px f2636 (end not followable)"
+   },
+   "curves": [
+    "v7.trans-punch-in-whip-up-out-stop-hold.v7c4",
+    "v7.trans-punch-in-whip-up.v7c4"
+   ]
+  },
+  {
+   "id": "v7.trans-snap-push-scroll",
+   "category": "trans",
+   "description": "handover between layouts on one canvas across the hidden hard cut f2609: the punch-in whip up (v7.trans-punch-in-whip-up, x1.4) carries the old text block out of the top while the next element (a result card) rises from the bottom edge to the centre on its own, faster than the scroll",
+   "instances": [
+    [
+     2589,
+     2641
+    ]
+   ],
+   "reference_frames": [
+    2589,
+    2601,
+    2606,
+    2609,
+    2614,
+    2619,
+    2626,
+    2636,
+    2641,
+    2649
+   ],
+   "measured": {
+    "duration_frames": 53,
+    "easing": "card rise bezier(0.311, 1.150, 0.956, 0.940) D=23 rmse 0.031 / spring(272.2, 33.06) rmse 0.078 (active f2619-f2641)",
+    "values": "chip label centre y 752.5 -> 453.5 px (82.0 -> 49.4 %H) f2619-f2649, x fixed 840 px; card speed / text speed falls from 4.0 to 1.1 (not a constant parallax factor); card first seen f2614 (5 f after the cut f2609); line 2 gone at the top f2636"
+   },
+   "curves": [
+    "v7.trans-snap-push-scroll.v7c4"
+   ]
+  },
+  {
+   "id": "v7.icon-tile-pop-in",
+   "category": "icon",
+   "description": "app icon is born as a thin sliver and scales up about its own centre to full size while riding the camera glide (doubled by the vertical blur at mid-size)",
+   "instances": [
+    [
+     2476,
+     2494
+    ]
+   ],
+   "reference_frames": [
+    2479,
+    2481,
+    2484,
+    2486,
+    2489,
+    2494
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "bezier(0.689, 0.435, 0.000, 0.966) D=14 rmse 0.048",
+    "values": "width 6 px (f2479) / 26 / 119 / 144 / 153 / 156 / 157 px (f2494) = 0.04 / 0.17 / 0.76 / 0.92 / 0.97 / 0.99 / 1.0; final 157 px = 9.7 %W at the close framing; centre x 569 px fixed; starts 5 f after the hidden cut f2474"
+   },
+   "curves": [
+    "v7.icon-tile-pop-in.v7c4"
+   ]
+  },
+  {
+   "id": "v7.grid-light-sweep",
+   "category": "grid",
+   "description": "the thin grid lines on the result card light up and fade in a sweep that runs left to right across the card while it settles, before the footage reveal",
+   "instances": [
+    [
+     2631,
+     2661
+    ]
+   ],
+   "reference_frames": [
+    2636,
+    2641,
+    2646,
+    2652,
+    2656
+   ],
+   "measured": {
+    "duration_frames": 28,
+    "easing": "each line rises in 6-8 f and fades in 8-10 f (values only)",
+    "values": "vertical-line contrast over the card fill peaks +10..+17 luma at x 200 px f2641, 503 f2644, 805 f2646, 1108 f2649, 1259 f2652, 1410 f2652-f2654 (~110 px/f = 6.8 %W per frame); nothing left at f2659-f2661; horizontal lines not measurable while the card was moving"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.ui-spinner-rotate",
+   "category": "ui",
+   "description": "arc spinner in the status chip: a bright arc on a faint ring turns clockwise at a constant rate",
+   "instances": [
+    [
+     2631,
+     2669
+    ]
+   ],
+   "reference_frames": [
+    2631,
+    2641,
+    2655,
+    2669
+   ],
+   "measured": {
+    "duration_frames": 38,
+    "easing": "linear",
+    "values": "arc centre 192 deg (f2631) -> 449 deg (f2669) clockwise from 12 o'clock = 6.8 deg/f (405 deg/s); arc length 134 -> 112 deg; ring ~48 px across at the chip's left end"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.mask-dot-ring-reveal",
+   "category": "mask",
+   "description": "footage reveal inside a card: a ring of glowing dot-matrix pixels (12 px pitch, random brighter clusters) is born at the status chip and expands to the card corners; inside the ring the footage is clear, outside it is dim; the chip fades as the ring passes, the leftover dots at the card's side edges fade",
+   "instances": [
+    [
+     2654,
+     2704
+    ]
+   ],
+   "reference_frames": [
+    2656,
+    2661,
+    2664,
+    2669,
+    2676,
+    2685,
+    2694
+   ],
+   "measured": {
+    "duration_frames": 38,
+    "easing": "inner edge bezier(0.628, 0.374, 0.229, 0.546) D=41 rmse 0.019 (to the last measured radius, no settle)",
+    "values": "inner half-level radius 75 px f2659 -> 315 f2671 -> 515 f2681 -> 635 px (39.1 %W) f2694 from the card centre (807, 455); band peak 85 -> 645 px; outer edge at the card corners (~770 px) f2681-f2690; card mean luma 27.6 -> 67.0 (f2654-f2676) -> 52 (f2694); chip label 99th-percentile luma 220 -> 142 f2661-f2669"
+   },
+   "curves": [
+    "v7.mask-dot-ring-reveal.v7c4"
+   ]
+  },
+  {
+   "id": "v7.cam-reframe-pan-out",
+   "category": "cam",
+   "description": "camera reframes with a continuous ease-in-out pull-back (motion blur at peak speed) that makes room for and brings back a neighbouring element (here the text line above the card)",
+   "instances": [
+    [
+     2689,
+     2711
+    ]
+   ],
+   "reference_frames": [
+    2689,
+    2694,
+    2699,
+    2701,
+    2706,
+    2711
+   ],
+   "measured": {
+    "duration_frames": 19,
+    "easing": "bezier(0.544, 0.028, 0.349, 1.112) D=24 rmse 0.033 / spring(171.8, 19.24) rmse 0.226",
+    "values": "card 1354 x 763 -> 1023 x 578 px (scale 0.755), centre 803.5,458.5 -> 813,457.5 px; line 2 re-enters at y 33-104 px; blur f2699-f2701"
+   },
+   "curves": [
+    "v7.cam-reframe-pan-out.v7c4"
+   ]
+  },
+  {
+   "id": "v7.cursor-arrive",
+   "category": "cursor",
+   "description": "a dark arrow cursor with a soft shadow enters from below onto the card and decelerates to rest",
+   "instances": [
+    [
+     2704,
+     2711
+    ]
+   ],
+   "reference_frames": [
+    2704,
+    2706,
+    2709,
+    2711
+   ],
+   "measured": {
+    "duration_frames": 7,
+    "easing": "UNCERTAIN (3 pictures; decelerating)",
+    "values": "arrow ink centroid (782, 690) f2704 -> (860, 617) f2706 -> (885, 587) f2709 -> (891, 579) px f2711, still to f2713"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.cursor-drag-file-in",
+   "category": "cursor",
+   "description": "the cursor drags footage: first the whole card out (accelerating, down-right, into the cut), then after the cut a file chip (thumbnail + name pill) in from the bottom edge along a straight diagonal to a folder (decelerating), where the chip shrinks to nothing about its own centre on the folder front, slow-fast-slow (a slow 14 % shrink, one fast step to a small blurred miniature, then a decaying tail), while the folder is pressed",
+   "instances": [
+    [
+     2714,
+     2734
+    ],
+    [
+     2741,
+     2794
+    ]
+   ],
+   "reference_frames": [
+    2714,
+    2726,
+    2734,
+    2741,
+    2751,
+    2761,
+    2769,
+    2774,
+    2780,
+    2782,
+    2784,
+    2789,
+    2791,
+    2794
+   ],
+   "measured": {
+    "duration_frames": 28,
+    "easing": "drag-in spring(117.2, 37.47) rmse 0.032 / bezier(0.000, 0.351, 0.374, 0.995) D=31 rmse 0.046 (pill centre y); drop (chip scale, f2764-f2799): bezier(1.000, -0.003, 0.000, 0.994) D=28, raw-time rmse 0.011, shape rmse 0.093; shape-matched bezier(1.000, 0.000, 0.000, 1.001) D=33 (shape 0.018, built 20 f for the measured 20 f); drag-out accelerating (values only)",
+    "values": "drag-in: pill centre (542, 856.5) f2741 -> (880, 490) px f2774 = +20.8 %W, -39.9 %H, ~38 px/f at entry, blur to ~f2756; drop: chip width (thumbnail + pill) 473 px f2769 -> 468 / 458 / 442 / 408 px at f2771 / 2774 / 2776 / 2780 (f2781 repeat) -> miniature on the folder front, blurred along x, 134 px f2782 -> 59 / 28 / 13 px at f2784 / 2787 / 2789 -> 6 px speck f2791 (to f2793) -> gone from f2794 = scale 1.0 / 0.99 / 0.97 / 0.93 / 0.86 / 0.28 / 0.12 / 0.06 / 0.03 / 0.01 / 0, about the chip centre x 818 px, y ~488 px (50.4 %W, 53.2 %H); active f2771-f2791 (20 f); scratch/v7c4_chip_drop_2741-2800.csv; drag-out: card top 169 -> 305 px, right edge 1324 -> 1420 px f2713-f2734, cursor moving with it"
+   },
+   "curves": [
+    "v7.cursor-drag-file-in.v7c4",
+    "v7.cursor-drag-file-in-drop.v7c4"
+   ]
+  },
+  {
+   "id": "v7.ui-folder-pop-in",
+   "category": "ui",
+   "description": "a new drop-target folder (with its label) pops into an empty grid slot, scaling up about its centre with a white glow that settles to a lighter hover state",
+   "instances": [
+    [
+     2744,
+     2761
+    ]
+   ],
+   "reference_frames": [
+    2746,
+    2749,
+    2751,
+    2754,
+    2756,
+    2761
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "bezier(0.000, 0.433, 0.000, 0.813) D=14 rmse 0.027",
+    "values": "absent f2744; 0.62 (153 px) f2746, 0.78, 0.87, 0.94, 0.97, 0.99, 1.00 (247 px = 15.2 %W) f2761; centre x 804 px"
+   },
+   "curves": [
+    "v7.ui-folder-pop-in.v7c4"
+   ]
+  },
+  {
+   "id": "v7.ui-folder-drop-bounce",
+   "category": "ui",
+   "description": "drop feedback: the target folder presses down when the file lands in it (near-white, with the dropped chip shrinking to nothing on its front), holds briefly and returns to its normal size and grey",
+   "instances": [
+    [
+     2780,
+     2799
+    ]
+   ],
+   "reference_frames": [
+    2782,
+    2784,
+    2791,
+    2794,
+    2796,
+    2799
+   ],
+   "measured": {
+    "duration_frames": 19,
+    "easing": "UNCERTAIN (3 pictures in the return; fitted curve rejected, rmse 0.16-0.21)",
+    "values": "width 247 -> 235 px f2782 -> 196 f2784, 193-194 px (x0.78) to f2791, 209 px f2794, 242 px f2796, 247 px f2799; no overshoot measured; the return starts when the chip on its front is gone (f2794)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v7.cam-whip-exit-up",
+   "category": "cam",
+   "description": "exit move of the whole layout into a hard cut: accelerates upward from rest with growing vertical motion blur, no settle",
+   "instances": [
+    [
+     2789,
+     2821
+    ]
+   ],
+   "reference_frames": [
+    2789,
+    2804,
+    2814,
+    2819,
+    2821
+   ],
+   "measured": {
+    "duration_frames": 27,
+    "easing": "bezier(0.772, 0.025, 1.000, 0.833) D=33 rmse 0.012 (ease-in only)",
+    "values": "left folder centre y 440 -> 338 px (47.9 -> 36.8 %H) f2789-f2821, 13.5 px/f (1.5 %H per frame) at the cut; x and scale constant"
+   },
+   "curves": [
+    "v7.cam-whip-exit-up.v7c4"
+   ]
+  },
+  {
+   "id": "v7.cam-pull-back-centre",
+   "category": "cam",
+   "description": "once a typed line is finished the camera pulls back about the frame centre with a slow-fast-slow move and a long tail",
+   "instances": [
+    [
+     3016,
+     3069
+    ]
+   ],
+   "reference_frames": [
+    3014,
+    3026,
+    3034,
+    3041,
+    3056
+   ],
+   "measured": {
+    "duration_frames": 48,
+    "easing": "bezier(0.608, 0.276, 0.000, 0.844) D=53 rmse 0.012 / spring(80.5, 18.56) rmse 0.115",
+    "values": "scale 1.0 -> 0.832 (line 970 -> 807 px wide, 59.8 -> 49.8 %W; logo 82 -> 67 px), line centre x 810-816 px throughout; main move f3026-f3041; tail continues into v7c5"
+   },
+   "curves": [
+    "v7.cam-pull-back-centre.v7c4"
+   ]
+  }
+ ],
+ "typography_stills": [
+  "type/v7c4-P2-1_f02344.png",
+  "type/v7c4-P2-1_f02349.png",
+  "type/v7c4-P2-1_f02369.png",
+  "type/v7c4-P2-1_f02388.png",
+  "type/v7c4-P2-1_f02394.png",
+  "type/v7c4-P2-1_f02412.png",
+  "type/v7c4-P2-1_f02440.png",
+  "type/v7c4-P2-2_f02496.png",
+  "type/v7c4-P2-2_f02511.png",
+  "type/v7c4-P2-2_f02560.png",
+  "type/v7c4-P2-2_f02606.png",
+  "type/v7c4-P2-2_f02711.png",
+  "type/v7c4-P2-2_f02726.png",
+  "type/v7c4-P3-1_f02618.png",
+  "type/v7c4-P3-1_f02645.png",
+  "type/v7c4-P3-1_f02668.png",
+  "type/v7c4-P4-1_f02739.png",
+  "type/v7c4-P4-1_f02757.png",
+  "type/v7c4-P4-1_f02784.png",
+  "type/v7c4-P4-1_f02820.png",
+  "type/v7c4-P6-1_f02946.png",
+  "type/v7c4-P6-1_f02984.png",
+  "type/v7c4-P6-1_f03014.png",
+  "type/v7c4-P6-1_f03056.png",
+  "type/v7c4-P2b-1_f02389.png",
+  "type/v7c4-P2b-1_f02392.png",
+  "type/v7c4-P2c-1_f02471.png",
+  "type/v7c4-P2c-1_f02474.png",
+  "type/v7c4-P2d-1_f02515.png",
+  "type/v7c4-P3-0_f02609.png",
+  "type/v7c4-P6b-1_f02989.png",
+  "type/v7c4-P6b-1_f02991.png",
+  "type/v7c4-P2c-1_f02469.png",
+  "type/v7c4-P2d-1_f02509.png",
+  "type/v7c4-P4-1_f02780.png",
+  "type/v7c4-P4-1_f02782.png"
+ ],
+ "uncertain": [
+  {
+   "what": "original typeface",
+   "range": "f2342-f3056",
+   "reason": "neo-grotesque sans with a large x-height (0.76 of cap height); Inter is the closest free match by proportions and stem ratios, the original cannot be identified from grayscale captures"
+  },
+  {
+   "what": "per-letter fade easing",
+   "range": "f2342-f2389, f2941-f2989",
+   "reason": "each stage of a letter's fade spans 1-4 captured 24 fps pictures (later letters reach the plateau within 2 pictures and step to white within 1-2), so the easing is resolved only on the first letter: its whole reveal to white gives stored bezier / spring shape rmse 0.067 / 0.072 (raw-time 0.010 / 0.039) and a shape-matched bezier(0.727, 0.816, 0.000, 0.711) D=20 with shape rmse 0.029; stacking 11 later letters of P2a and P6a on their half-level onsets did not resolve the first-stage shape (best shape rmse 0.078), only its timing"
+  },
+  {
+   "what": "typing onsets at the close framing after the text reaches the right frame edge",
+   "range": "f2376-f2389, f2976-f2989",
+   "reason": "the newest letters are outside the picture; onsets resume at the settled framing"
+  },
+  {
+   "what": "camera scroll after the hidden cut f2609 separated from the card's own rise",
+   "range": "f2636-f2649",
+   "reason": "the text above the card leaves the frame at f2636, so the camera glide cannot be followed to its end; the card's own slide is inferred from its 2.5-4x higher speed while both are visible"
+  },
+  {
+   "what": "end of the dot-ring reveal",
+   "range": "f2694-f2704",
+   "reason": "the reframe pull-back starts at f2690, so the ring's last radius and the fade of the edge dots are confounded with the zoom-out"
+  },
+  {
+   "what": "cursor arrival easing",
+   "range": "f2704-f2711",
+   "reason": "only 3 captured pictures between first sight and rest"
+  },
+  {
+   "what": "folder press-and-return easing",
+   "range": "f2780-f2799",
+   "reason": "the return spans 3 captured pictures; both fits had rmse above 0.16, so the curve was not kept"
+  },
+  {
+   "what": "start of the drop-target folder pop",
+   "range": "f2744-f2746",
+   "reason": "the folder goes from absent to 0.62 of its size inside one capture gap"
+  },
+  {
+   "what": "grid sweep on the horizontal card lines",
+   "range": "f2631-f2649",
+   "reason": "the card was still rising, so horizontal lines could not be sampled at fixed rows; the sweep is measured on the vertical lines"
+  },
+  {
+   "what": "line-2 character counts per picture",
+   "range": "f2494-f2556",
+   "reason": "counted on frame-numbered sheets and checked against the measured ink extent (15.1 tile widths for 40 characters); +-1 character per picture"
+  },
+  {
+   "what": "exact stop frame of the stop-hold lead-ins",
+   "range": "f2469-f2471, f2509-f2511",
+   "reason": "the hard stop happens inside one capture gap: the fastest picture (f2469 / f2509) is blurred and the next one (f2471 / f2511) is already crisp at the end position; the fitted beziers place the end at f2470.1 / f2510.6 and their speed at the captured pictures matches the measured blur length, but the speed between the two pictures is not observed"
+  },
+  {
+   "what": "chip scale on the first picture after the fast drop step",
+   "range": "f2780-f2782",
+   "reason": "the chip goes from 0.86 to a miniature in one capture gap and the f2782 miniature is blurred along x; its width (134 px of columns deviating more than 25 luma from the folder front, 0.28) includes part of that blur; the later pictures (f2784-f2791) are sharp"
+  }
+ ],
+ "notes": [
+  "PySceneDetect content values are attached to the wrong decoded frame in this VFR stretch: c052 (f2334) and c062 (f2927) are 6 decoded frames early, c061 (f2821) one frame early, c054 (f2601) 3-4 decoded pictures early for the hidden cut f2609 (best lag of content_val against the measured picture differences: 3 pictures over f2540-f2700, r 0.83; 4 over f2570-f2650, r 0.96); motion.csv shows the real picture changes at f2342, f2824 and f2941.",
+  "The two agent-log sequences P2 (f2342) and P6 (f2941) use the same keyframes offset by +599 frames (logo positions within 1 px, rotation within 1 deg, letter fade luma within 8) until the hidden pull-back cut (f2392 / f2991); P6 then diverges (SemiBold text, x0.535 jump instead of x0.49, centred pull-back to 0.832 instead of P2b's 0.985 creep).",
+  "Hidden hard cuts (f2392, f2474, f2515, f2609, f2991): the scale of the same canvas changes between two consecutive pictures (repeats in between) under directional motion blur along the move (horizontal for the pull-backs, vertical for the push-ins); before it the move accelerates (ease-in), after it the new framing arrives moving under blur and decelerates (ease-out). The lead-in has two variants: whip-through (f2392, f2609, f2991: the last old picture is the most blurred, 21 / 37 / 19 px of box blur along the move at f2389 / f2606 / f2989) and stop-hold (f2474, f2515: the fastest picture f2469 / f2509, 17 / 33 px of blur, is followed by a crisp picture, blur 1 px, 44.9 / 92.4 px further on, f2471 / f2511, which stays one picture, f2471-f2473 / f2511-f2514; the cut then restarts the motion at full speed, about 40 px/f on the x2.2 framing after f2474). The first draft kept them inside one segment as camera snaps; they are now hard cuts tiled at the cut frame (as v7c2 f1196/f1542, v7c3 f2091, v7c5 f3094/f3134/f3214 and v7c6 f4289 record the device) and use the siblings' technique ids: v7.cam-snap-pull-back and v7.cam-snap-pull-back-long -> v7.trans-whip-push-left (incoming half) and v7.trans-whip-push-left-out (outgoing half); v7.cam-snap-push-in -> v7.trans-punch-in-whip-up. Curves renamed: v7.cam-snap-pull-back.v7c4 -> v7.trans-whip-push-left-pull-back.v7c4, v7.cam-snap-pull-back-lead.v7c4 -> v7.trans-whip-push-left-out-pull-back.v7c4, v7.cam-snap-pull-back-long.v7c4 -> v7.trans-whip-push-left-pull-back-long.v7c4, v7.cam-snap-push-in.v7c4 -> v7.trans-punch-in-whip-up.v7c4, v7.cam-snap-push-in-lead.v7c4 -> v7.trans-punch-in-whip-up-out.v7c4 -> (review fix, re-fitted on blur-aware samples) v7.trans-punch-in-whip-up-out-stop-hold.v7c4. P2 (f2342-f2615) became P2a-P2d (f2342-f2608) and P3 starts at the cut f2609; P6 became P6a-P6b.",
+  "Layout of the agent log: newest row on the frame's horizontal centre line (49.9-50.0 %H), older rows stacked above at 2.8-2.9 cap heights; mark height 1.4-1.5 cap heights, text starts 0.53 cap heights after the mark.",
+  "Motion peaks marked off-cut in motion_peaks.json, all recorded: f2389 (hidden cut f2392), f2475 (hidden cut f2474), f2510 (lead-in blur before the hidden cut f2515), f2610 (hidden cut f2609), f2670 (dot-ring reveal), f2701 (Z5 blur peak), f2735 (cut at the end of the line-2 whip), f2745 (dragged chip + folder pop), f2990 (hidden cut f2991).",
+  "Sound: tempo 114.8 bpm (31.3 frames per beat); only offsets of 3 frames or less are meaningful. On beat or onset: hidden cut f2392 (-2), hidden cut f2515 (+3; last old picture f2511 -1), app-icon birth f2479 (-2), line-1 period f2409 (onset 0), spin stop f2434 (onset -1), ring birth f2654-f2656 (onset f2657), Z5 blur peak f2699 (+1), drop f2781 (beat and onset 0), P6 first letter f2946 (onset 0), P6 pull-back f3026 (-3 vs strong onset f3029). The push-in cuts (f2474 -7, f2609 +8), the f2991 cut (-12) and the composition cuts are not beat-locked.",
+  "Dense sheets and crops made: detail/dense_02340-02370_00.jpg, dense_02383-02398_00.jpg, dense_02464-02482_00.jpg, dense_02503-02520_00.jpg, dense_02596-02640_00.jpg; crops/crop_760_350_360x220_02341-02351.jpg (logo arrival blur), crop_440_60_280x260_02486-02512.jpg, crop_470_380_220x260_02476-02496.jpg (tile pop), crop_595_415_75x80_02631-02660.jpg (spinner), crop_640_480_380x330_02690-02736.jpg (cursor), crop_480_440_560x300_02766-02784.jpg (drop). crops/crop_100_80_300x300_02486-02512.jpg missed its target and shows only background. For this revision: detail/soft_2361-2424, soft_2444-2496, soft_2499-2589, soft_2961-3014 (motion ranges of the hidden cuts; soft_2589-2641 already existed) and stills type/v7c4-P2b-1_f02389.png, f02392, type/v7c4-P2c-1_f02471.png, f02474, type/v7c4-P2d-1_f02515.png, type/v7c4-P3-0_f02609.png, type/v7c4-P6b-1_f02989.png, f02991.",
+  "Samples: scratch/v7c4_*.csv (ink components, template tracks, bbox, edge, per-letter luma, logo rotation, spinner angle, dot-ring radial profile, card-grid contrast); curve inputs are the *_newpic.csv versions with capture duplicates removed. Helper scripts ran from the session scratchpad and are not in the repo. Added for this revision: scratch/v7c4_letters_p2a_2342-2389.csv and v7c4_letters_p6a_2941-2989.csv (per-letter p97 luma riding the canvas, letters grouped by the picture in which their ink first appears), scratch/v7c4_letters_stacked_2342-2989.csv (the same samples with each letter's half-level onsets), scratch/v7c4_line2_exit_tmpl_2700-2735.csv and _newpic.csv (template on line 2 through its exit).",
+  "Not described on purpose: anything shown inside the footage (card clip, chip thumbnail, P1 preview, live shot P5); on-screen words (only counts, case and layout are given).",
+  "Curve quality: for curves whose stored fit_easing shape rmse stays above 0.05 because the 24 fps pictures (2-3 frames apart) put the measured window's start up to one picture away from the onset (v7.text-type-letter-fade.v7c4 0.067 / 0.072, v7.trans-whip-push-left-out.v7c4 0.091 / 0.820), the raw-time rmse (stored fit vs measured progress at the sample frames: 0.010 and 0.007) and a bezier fitted on the shape metric with its built duration within 1 frame of the measured one are given (shape-matched: bezier(0.727, 0.816, 0.000, 0.711) D=20 shape 0.029; bezier(1.000, 0.187, 0.752, 0.816) D=21 shape 0.009), as v7c5 does (scratch/v7c5_tools/shapefit.py). The same applies to v7.cursor-drag-file-in-drop.v7c4 (stored shape 0.093, raw-time 0.011; shape-matched bezier(1.000, 0.000, 0.000, 1.001) D=33, shape 0.018, built 20 f for the measured 20 f).",
+  "P1's slow drift into the cut f2342 (f2301-f2340, 5 px/f at most, no blur) is v7c3's v7.cam-drift-accelerating-exit, not the outgoing half of a whip; the first draft filed it under v7.trans-whip-push-left-out.",
+  "Logos are named only as agent logo icon and app icon; the spin is measured on a mark that is rotationally symmetric with a 60 deg period.",
+  "Review fixes (stop-hold lead-ins and the chip drop): the lead-ins into the hidden cuts f2474 and f2515 were recorded as accelerating into the cut; blur-aware template tracks (crisp reference cut-out box-blurred along the move, best normalised correlation over blur length, scale and position; scores 0.98-1.00) show that they stop dead one picture before the cut, and that the source blur length tracks the speed in px per analysis frame (0.9-1.6x, blur lengths resolved in 2 px steps; 17 px vs 17 px/f at f2469 and 33 px vs 38 px/f at f2509 on the fitted curves: shutter about 1/60 s), so the crisp last old pictures f2471 and f2511 are at rest. Samples: scratch/v7c4_z1_lead_blurfit_2355-2396.csv, v7c4_z2_lead_blurfit_2425-2480.csv, v7c4_z3_lead_blurfit_2485-2524.csv, v7c4_z4_lead_blurfit_2578-2612.csv, v7c4_z1b_lead_blurfit_2955-2994.csv (+ _newpic versions; columns cx, cy, blur_px, scale, score and the p99.9 luma-gradient sharpness along both axes). Curves: v7.trans-punch-in-whip-up-out.v7c4 renamed to v7.trans-punch-in-whip-up-out-stop-hold.v7c4 and re-fitted (f2429-f2471), new v7.trans-whip-push-left-out-stop-hold.v7c4 (f2494-f2511); both end in the hard stop before the last old picture, which is held without blur up to the cut. Stills type/v7c4-P2c-1_f02469.png and type/v7c4-P2d-1_f02509.png (fastest pictures). The P4 file chip was recorded as gone at f2784; it is last seen at full size at f2780 (f2781 repeat), shrinks on as a miniature on the folder front (blurred at f2782, then 59 / 28 / 13 / 6 px wide at f2784 / 2787 / 2789 / 2791) and is gone from f2794, when the folder starts to spring back (scratch/v7c4_chip_drop_2741-2800.csv, crops/crop_600_400_450x130_02778-02796.jpg, stills type/v7c4-P4-1_f02780.png, f02782.png; new curve v7.cursor-drag-file-in-drop.v7c4). The folder press now gives the chunk tracker's 235 px at f2782 (scratch/v7c4_folder_drop_2776-2812_newpic.csv)."
+ ]
+}

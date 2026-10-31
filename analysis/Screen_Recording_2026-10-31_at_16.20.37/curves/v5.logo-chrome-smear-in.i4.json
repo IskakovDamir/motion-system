@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.logo-chrome-smear-in.i4",
+  "file": "curves/v5.logo-chrome-smear-in.i4.csv",
+  "property": "scale",
+  "unit": "scale factor (1.0 = size at f240)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c1fix_serif_scale.csv",
+  "column": "scale",
+  "sampled_frames": [
+    212,
+    245
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.8775,
+  "to_value": 1.0,
+  "active_frames": [
+    215,
+    235
+  ],
+  "measured_duration_frames": 20,
+  "bezier": {
+    "x1": 0.4171,
+    "y1": 0.6267,
+    "x2": 0.0299,
+    "y2": 0.9184,
+    "durationInFrames": 21,
+    "delay": -0.005,
+    "built_duration_frames": 18,
+    "rmse": 0.0369
+  },
+  "spring": {
+    "stiffness": 542.867,
+    "damping": 46.886,
+    "mass": 1,
+    "damping_ratio": 1.0062,
+    "built_duration_frames": 16,
+    "rmse": 0.0607
+  },
+  "recommended": "bezier",
+  "note": "lockup settle: serif line template scale (f240 template 580x130 px, scores 0.92-0.99), holding 0.8775 at f212-f215 after contracting from 0.9175 (f207), then growing to 1.000 by f235; the bold line's own track (scratch/logo_l1_scale_fine2.csv) matches within 0.003 from f215, so this is the scale of the whole 2-line lockup; the lockup scales about (811, 462) px (from the vertical centre shifts of both lines and the serif line's horizontal shift)"
+}

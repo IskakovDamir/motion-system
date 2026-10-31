@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.particle-tile-burst.v5c6",
+  "file": "curves/v5.particle-tile-burst.v5c6.csv",
+  "property": "position-x",
+  "unit": "% of frame width (distance of the left tile band's luma centroid from the frame centre)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c6_tile_burst.csv",
+  "column": "dist_from_centre_pct_w",
+  "sampled_frames": [
+    4090,
+    4110
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 27.68,
+  "to_value": 48.64,
+  "active_frames": [
+    4090,
+    4110
+  ],
+  "measured_duration_frames": 20,
+  "bezier": {
+    "x1": 0.661,
+    "y1": 1.0207,
+    "x2": 0.2733,
+    "y2": 0.6513,
+    "durationInFrames": 19,
+    "delay": -0.229,
+    "built_duration_frames": 19,
+    "rmse": 0.0333
+  },
+  "spring": {
+    "stiffness": 239.568,
+    "damping": 30.262,
+    "mass": 1,
+    "damping_ratio": 0.9776,
+    "built_duration_frames": 22,
+    "rmse": 0.0374
+  },
+  "recommended": "bezier",
+  "note": "burst of glowing square tiles (outlined and filled squares) fires from behind the card as its push-back lands: first above and below the card (f4090), then radially outward to the frame edges while fading (band luma peaks 96-115 at f4092-f4096, about 10 by f4110); luma-weighted centroid of the band x0-405 y150-770 (script on work.mp4 pictures); no rest before (tiles do not exist before f4090), the end is where they reach the frame edge and fade"
+}

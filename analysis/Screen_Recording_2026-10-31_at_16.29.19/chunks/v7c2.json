@@ -1,0 +1,837 @@
+{
+  "video": "Screen_Recording_2026-10-31_at_16.29.19",
+  "key": "v7",
+  "chunk": "v7c2",
+  "frames": [
+    710,
+    1629
+  ],
+  "cut_decisions": [
+    {
+      "id": "c020",
+      "frame": 710,
+      "status": "rejected",
+      "reason": "duplicate of the hard cut at f706 (c019, v7c1 range): work.mp4 shows no change f709 -> f710 (mean abs diff 0.02 luma); PySceneDetect index 3 pictures late"
+    },
+    {
+      "id": "c021",
+      "frame": 744,
+      "status": "rejected",
+      "reason": "start of a zoom-in inside the footage on the same shot: a camera move, not a scale done in the edit (the depth of field changes; see notes); consecutive pictures stay aligned by a similarity (ECC 0.98-0.99); no picture replacement"
+    },
+    {
+      "id": "c022",
+      "frame": 750,
+      "status": "rejected",
+      "reason": "the same zoom inside the footage, with motion blur (see c021); no picture replacement"
+    },
+    {
+      "id": "c023",
+      "frame": 900,
+      "status": "confirmed",
+      "reason": "hard cut between footage shots (mean abs diff 56.7, histogram correlation 0.28); caption cleared at the cut, voice badge continues"
+    },
+    {
+      "id": "c024",
+      "frame": 1079,
+      "status": "confirmed",
+      "reason": "hard cut footage -> product UI, cut into a moving scroll"
+    },
+    {
+      "id": "c025",
+      "frame": 1086,
+      "status": "rejected",
+      "reason": "bright cards scrolling through the frame (mean luma 118 -> 136); phase-correlation chain continuous"
+    },
+    {
+      "id": "c026",
+      "frame": 1089,
+      "status": "rejected",
+      "reason": "UI list scrolling (momentum deceleration), continuous"
+    },
+    {
+      "id": "c027",
+      "frame": 1096,
+      "status": "rejected",
+      "reason": "UI list scrolling, continuous"
+    },
+    {
+      "id": "c028",
+      "frame": 1196,
+      "status": "confirmed",
+      "reason": "hidden hard cut of the first leftward whip (P3 -> close-up of the bar end, x2.37); anchor of the whip range f1151-f1226"
+    },
+    {
+      "id": "c029",
+      "frame": 1202,
+      "status": "rejected",
+      "reason": "duplicate of c028 (index 2 pictures late); f1202 lies in the whip-in deceleration (diff 6.9)"
+    },
+    {
+      "id": "c030",
+      "frame": 1260,
+      "status": "confirmed",
+      "corrected_frame": 1259,
+      "reason": "hard cut inside the spin-zoom whip; the new picture arrives at f1259 (diff 62.7), f1260 repeats it"
+    },
+    {
+      "id": "c031",
+      "frame": 1296,
+      "status": "rejected",
+      "reason": "cursor glow ramp and the f1304 cursor -> 3D pointer swap inside P5 (diff at most 14.7, composition holds)"
+    },
+    {
+      "id": "c032",
+      "frame": 1466,
+      "status": "rejected",
+      "reason": "nothing changes at f1466 (diff below 6, continuous pan); duplicate of c033 with the index 8 pictures early"
+    },
+    {
+      "id": "c033",
+      "frame": 1487,
+      "status": "confirmed",
+      "reason": "hidden hard cut of the second leftward whip (pointer scene -> file browser)"
+    },
+    {
+      "id": "c034",
+      "frame": 1531,
+      "status": "rejected",
+      "reason": "duplicate of c035 (index 4 pictures early); f1531 is the window pan accelerating inside P6 (diff 6.7)"
+    },
+    {
+      "id": "c035",
+      "frame": 1542,
+      "status": "confirmed",
+      "reason": "hidden hard cut of the third leftward whip (close window -> same window zoomed out x0.455, grid blurred across the cut)"
+    },
+    {
+      "id": "c036",
+      "frame": 1622,
+      "status": "rejected",
+      "reason": "selected thumbnail grid dragged right with motion blur (diff 15.5), continuous"
+    },
+    {
+      "id": "c037",
+      "frame": 1630,
+      "status": "rejected",
+      "reason": "edge candidate (frame in v7c3 range, decided by looking to f1645): the grid drag continues (diff 11.0 / 9.1 at f1629 / f1631); duplicate of c038 f1644 with the index 9 pictures early",
+      "advisory": true
+    }
+  ],
+  "boundaries": [
+    {
+      "frame": 900,
+      "type": "hard-cut",
+      "cut": "c023",
+      "shares": "the voice badge (same place and size, continues across the cut) and the caption baseline; the caption is cleared at the cut"
+    },
+    {
+      "frame": 1079,
+      "type": "hard-cut",
+      "cut": "c024",
+      "shares": "nothing graphic; P3 enters mid-move (UI list scrolling up about 5% H per frame)"
+    },
+    {
+      "frame": 1196,
+      "type": "hard-cut",
+      "cut": "c028",
+      "transition": "whip-push-left",
+      "range": [
+        1151,
+        1226
+      ],
+      "frames": 76,
+      "shares": "leftward motion at matched screen speed (about 12.8 px per frame out, about 13 px per frame in) and the prompt bar itself: P4 is a x2.37 close-up of its right end, which was off frame in P3; blur 25 px before the cut, 51 px after",
+      "technique": "v7.trans-whip-push-left",
+      "curve": "v7.trans-whip-push-left-2.v7c2",
+      "detail": "detail/soft_1151-1226",
+      "curves": [
+        "v7.trans-whip-push-left-2.v7c2"
+      ],
+      "easing": "incoming half f1196-f1224 (28 f): spring {161.7, 26.20, mass 1} (shape 0.023); a second variant: arrives at the outgoing speed and slows smoothly, where the f1487 incoming curve misses it (raw-time rmse 0.10)"
+    },
+    {
+      "frame": 1259,
+      "type": "hard-cut",
+      "cut": "c030",
+      "transition": "spin-zoom-whip",
+      "range": [
+        1234,
+        1281
+      ],
+      "frames": 48,
+      "shares": "the frame centre (send-button disc centre 50.4% W / 49.9% H at f1249 is replaced by the cursor, 50.2% W / 50.4% H at f1259), counter-clockwise rotation (out 0 -> -9.5 deg, in from a 9.7 deg clockwise tilt to level) and the push-in direction",
+      "technique": "v7.trans-spin-zoom-whip",
+      "curve": "v7.trans-spin-zoom-whip.v7c2",
+      "curves": [
+        "v7.trans-spin-zoom-whip-out.v7c2",
+        "v7.trans-spin-zoom-whip.v7c2",
+        "v7.trans-spin-zoom-whip-scale.v7c2"
+      ],
+      "detail": "detail/soft_1234-1281"
+    },
+    {
+      "frame": 1487,
+      "type": "hard-cut",
+      "cut": "c033",
+      "transition": "whip-push-left",
+      "range": [
+        1433,
+        1514
+      ],
+      "frames": 82,
+      "shares": "leftward motion (out ends at 24 px per frame left and 14 px per frame up; in starts at about 88 px per frame left) and the pointer motif (glowing 3D pointer -> small dark 3D pointer); incoming grid blurred 91 px, chrome sharp",
+      "technique": "v7.trans-whip-push-left",
+      "curve": "v7.trans-whip-push-left.v7c2",
+      "curves": [
+        "v7.trans-whip-push-left-out.v7c2",
+        "v7.trans-whip-push-left.v7c2"
+      ],
+      "detail": "detail/soft_1433-1514"
+    },
+    {
+      "frame": 1542,
+      "type": "hard-cut",
+      "cut": "c035",
+      "transition": "whip-push-left (zoom-out reveal)",
+      "range": [
+        1519,
+        1566
+      ],
+      "frames": 48,
+      "shares": "the same window and grid, zoomed out x0.455 (a reveal), leftward motion (15 px per frame out, 29.5 px per frame in) and grid-only horizontal blur peaking just after the cut (31 px -> 61 px)",
+      "technique": "v7.trans-whip-push-left",
+      "curve": null,
+      "detail": "detail/soft_1519-1566"
+    }
+  ],
+  "segments": [
+    {
+      "id": "v7c2-P1",
+      "start": 710,
+      "end": 899,
+      "class": "MIXED",
+      "continues_from_previous_chunk": true,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "footage with a centred bottom caption and a round voice badge (level-meter bars) above it: the badge pops in, a 1-word caption fades in and out, then a 7-word caption reveals word by word (fade + rise + de-blur) while the footage zooms in on its own (camera move inside the footage, not analysed); shot starts at the hard cut f706 (v7c1)"
+    },
+    {
+      "id": "v7c2-P2",
+      "start": 900,
+      "end": 1078,
+      "class": "MIXED",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "second footage angle with the same caption style and badge: a 5-word caption reveals word by word at a 27-30 f cadence, then holds"
+    },
+    {
+      "id": "v7c2-P3",
+      "start": 1079,
+      "end": 1195,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "product UI: cut into a momentum scroll of a card list behind a fixed prompt bar whose 7-word prompt streams in word by word; slow drift, then an accelerating leftward whip"
+    },
+    {
+      "id": "v7c2-P4",
+      "start": 1196,
+      "end": 1258,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "close-up of the prompt bar's right end (model chip label + round send button): whip-in deceleration, the send button is pressed (shrink, brighten, glow), then a counter-clockwise spin-zoom out"
+    },
+    {
+      "id": "v7c2-P5",
+      "start": 1259,
+      "end": 1486,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "defocused dark UI with a centred cursor: spin-zoom in, the cursor glows and morphs into a glossy 3D pointer; a status capsule grows from a dot and types a 2-word label with an ellipsis while the camera reframes left and pulls back; then a leftward whip"
+    },
+    {
+      "id": "v7c2-P6",
+      "start": 1487,
+      "end": 1541,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "file-browser window close-up (sidebar, title, 2 x 2 video thumbnails, small 3D pointer): whip-in deceleration with grid-only blur, then an accelerating leftward pan"
+    },
+    {
+      "id": "v7c2-P7",
+      "start": 1542,
+      "end": 1629,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": true,
+      "live_confirmed_on": [],
+      "summary": "the same file browser zoomed out to a full 5 x 5 thumbnail grid: whip-in deceleration, a reading-order selection sweep lights all tiles, the selection dims, then the selected grid is dragged right while the camera starts to whip left (cut f1644 in v7c3)"
+    }
+  ],
+  "techniques": [
+    {
+      "id": "v7.text-word-blur-rise",
+      "category": "text",
+      "description": "caption words appear one at a time in their final places inside a pre-centred line (no reflow): each word fades 0 -> 1, rises into place and de-blurs, ease-out; the stagger follows the voice",
+      "instances": [
+        [
+          711,
+          719
+        ],
+        [
+          750,
+          871
+        ],
+        [
+          902,
+          1036
+        ]
+      ],
+      "reference_frames": [
+        712,
+        719,
+        786,
+        799,
+        902,
+        920
+      ],
+      "measured": {
+        "duration_frames": 18,
+        "easing": "opacity spring(stiffness 134.7, damping 18.67, mass 1) built 19 f (shape rmse 0.047) / bezier(0.124, 0.122, 0.341, 1.176) D=27; rise bezier(0, 0.244, 0.439, 0.994) D=19 (shape 0.040)",
+        "values": "rise 7-17 px (0.8-1.9% H); Gaussian blur sigma about 3 px (0.18% W) -> 0 (word 3 of P1: 3 / 1.5 / 1 / 1 / 0.5 / 0 px at f786-f799); per word 4-20 f first visible -> settled (P1 word 1: 4, words 2-5: 11-13, last two: 7; P2: 17-20); first visible pictures P1 f750 / 766 / 786 / 805 / 824 / 854 / 864, P2 f902 / 929 / 959 / 989 / 1017 (checked on crops); stagger P1 16 / 20 / 19 / 19 / 30 / 10 f, P2 27 / 30 / 30 / 28 f; cap height 4.8% H, white, weight about 500"
+      },
+      "curves": [
+        "v7.text-word-blur-rise.v7c2",
+        "v7.text-word-blur-rise-y.v7c2"
+      ]
+    },
+    {
+      "id": "v7.text-caption-fade-out",
+      "category": "text",
+      "description": "a caption fades out in place without movement, near-linear, and is removed before it reaches zero",
+      "instances": [
+        [
+          728,
+          739
+        ]
+      ],
+      "reference_frames": [
+        728,
+        734,
+        738,
+        739
+      ],
+      "measured": {
+        "duration_frames": 11,
+        "easing": "bezier(1.0, 0.746, 1.0, 0.737) D=10 (shape 0.053; near-linear)",
+        "values": "about 7% opacity per frame; removed at f739 with about 27% opacity left (ROI luma 163.5 -> 151.3 at f738, background 146.7)"
+      },
+      "curves": [
+        "v7.text-caption-fade-out.v7c2"
+      ]
+    },
+    {
+      "id": "v7.icon-voice-badge-pop",
+      "category": "icon",
+      "description": "round translucent voice badge (outline ring, brand-mark glyph, level bars) appears at about half size in its first picture and grows to full size on a long ease-out tail",
+      "instances": [
+        [
+          708,
+          759
+        ]
+      ],
+      "reference_frames": [
+        709,
+        712,
+        726,
+        744,
+        759
+      ],
+      "measured": {
+        "duration_frames": 37,
+        "easing": "bezier(0, 0.406, 0, 0.802) D=38 (shape 0.020)",
+        "values": "ring radius 16.1 (f709) -> 19.1 / 21.4 / 23.4 / 25.1 / 26.4 / 27.7 / 28.8 (f712-f726) -> 30.2 (f731) -> 32.1 (f741) -> 32.9 px (f759) = scale 0.49 -> 1.0; final diameter 4.1% W, centre 49.9% W / 80.9% H"
+      },
+      "curves": [
+        "v7.icon-voice-badge-pop.v7c2"
+      ]
+    },
+    {
+      "id": "v7.icon-voice-meter",
+      "category": "icon",
+      "description": "4 white level bars inside the voice badge move with the audio, collapsing to round dots in silence",
+      "instances": [
+        [
+          712,
+          1078
+        ]
+      ],
+      "reference_frames": [
+        731,
+        759,
+        844,
+        949
+      ],
+      "measured": {
+        "duration_frames": 366,
+        "easing": "audio-reactive, a new value every captured picture",
+        "values": "bar height 4-5 px (dots) to 35 px (0.4-3.8% H); correlation with the voice-band envelope r 0.40-0.52 at different lags (UNCERTAIN)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v7.ui-scroll-settle",
+      "category": "ui",
+      "description": "a cut lands in the middle of a list scroll: the UI arrives moving fast and decelerates exponentially (momentum) to rest one row later under a fixed prompt bar; the deceleration half of v7c1's v7.ui-page-scroll-momentum",
+      "instances": [
+        [
+          1079,
+          1126
+        ]
+      ],
+      "reference_frames": [
+        1079,
+        1086,
+        1099,
+        1121
+      ],
+      "measured": {
+        "duration_frames": 41,
+        "easing": "bezier(0.072, 0.223, 0.358, 0.967) D=46 (shape 0.020) / spring(50.6, 15.86) (shape 0.043)",
+        "values": "0 -> -896 px (-97.6% H); steps per picture 118 / 106 / 95 / 84 / 75 / 67 / 59 / 52 / 45 / 40 px (x0.89 each)"
+      },
+      "curves": [
+        "v7.ui-scroll-settle.v7c2"
+      ]
+    },
+    {
+      "id": "v7.ui-prompt-word-stream",
+      "category": "ui",
+      "description": "prompt text in an input bar streams in word by word, each word fading, de-blurring and rising slightly, with heavy overlap between words",
+      "instances": [
+        [
+          1079,
+          1116
+        ]
+      ],
+      "reference_frames": [
+        1079,
+        1099,
+        1105,
+        1116
+      ],
+      "measured": {
+        "duration_frames": 21,
+        "easing": "bezier(0, 0.187, 0.524, 0.981) D=21 (shape 0.038) / spring(144.4, 21.29) (shape 0.051)",
+        "values": "per word 10-90% in 10-16 f; 50% points f1084.5 / 1085.3 / 1088.5 / 1092.3 / 1095.8 / 1099.4 / 1104.2 (stagger about 3.5 f); blur sigma 5 -> 0 px; rise 5 px (0.5% H); cap height 3.9% H, weight 400"
+      },
+      "curves": [
+        "v7.ui-prompt-word-stream.v7c2"
+      ]
+    },
+    {
+      "id": "v7.trans-whip-push-left",
+      "category": "trans",
+      "description": "whip to the left through a hard cut: an accelerating pan from a slow drift with growing horizontal blur, cut at full speed, the incoming view arrives moving left with more blur and decelerates; scale may jump across the cut (x2.37 close-up, x0.455 reveal); in the f1487 instance only the foreground slides out while the defocused background drifts the other way (orbit parallax, +63 px); horizontal twin of v7c1's v7.trans-whip-push-up; two incoming easings: f1487 and f1542 arrive 2-3.7x faster than they left and cover about 40% of the move in 2 frames, f1196 arrives at the outgoing speed and slows smoothly (probably a second technique: a speed-matched whip-in)",
+      "instances": [
+        [
+          1151,
+          1226
+        ],
+        [
+          1433,
+          1514
+        ],
+        [
+          1519,
+          1566
+        ]
+      ],
+      "reference_frames": [
+        1196,
+        1224,
+        1433,
+        1471,
+        1484,
+        1487,
+        1491,
+        1514
+      ],
+      "measured": {
+        "duration_frames": 82,
+        "easing": "outgoing (f1433-f1484): bezier(0.744, 0.046, 1.0, 0.935) D=59 (shape 0.010); incoming (f1487-f1514): bezier(0, 1.037, 0.957, 0.970) D=30 (shape 0.008), spring(206.6, 34.14) (shape 0.161); incoming f1196 (speed-matched variant, f1196-f1224 = 28 f): spring(161.7, 26.20) (shape 0.023, raw-time 0.016) / bezier(0.006, 0.456, 0.295, 0.957) D=27 (shape 0.070); the f1487 incoming curve misses f1196 (progress 0.56 / 0.66 / 0.73 / 0.81 / 0.85 / 0.89 vs measured 0.28 / 0.47 / 0.60 / 0.71 / 0.78 / 0.85 at +4 / +6 / +8 / +11 / +13 / +15 f; raw-time rmse 0.10 at D=30, 0.13 at D=25) but fits f1542 (raw-time rmse 0.015)",
+        "values": "outgoing ease-in 22-51 f, steps grow x1.1-1.4 per picture to 12.8-24 px per frame (0.8-1.5% W per frame), blur up to 21-31 px (1.3-1.9% W); incoming 24-27 f, first speed 13 / 88 / 29.5 px per frame, first-picture blur 51 / 91 / 61 px (3.1-5.6% W); instance 2 also rises 5.6% H at the end of the outgoing half"
+      },
+      "curves": [
+        "v7.trans-whip-push-left.v7c2",
+        "v7.trans-whip-push-left-out.v7c2",
+        "v7.trans-whip-push-left-2.v7c2"
+      ]
+    },
+    {
+      "id": "v7.ui-button-press",
+      "category": "ui",
+      "description": "a round send button is pressed: it shrinks, its fill steps brighter at the bottom of the press, then it grows back with a soft glow halo",
+      "instances": [
+        [
+          1222,
+          1241
+        ]
+      ],
+      "reference_frames": [
+        1221,
+        1226,
+        1229,
+        1241
+      ],
+      "measured": {
+        "duration_frames": 19,
+        "easing": "UNCERTAIN (4 pictures for the press)",
+        "values": "diameter 228 -> 186 px (x0.82) f1222-f1229; fill luma 107 -> 145 in one picture at f1229, glow to 174 by f1256; release to x0.97 of rest by f1241 (camera-compensated)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v7.trans-spin-zoom-whip",
+      "category": "trans",
+      "description": "counter-clockwise spin + push-in through a hard cut: the outgoing view rotates and scales up accelerating (with lens bend and blur), the incoming view starts tilted the other way and keeps turning to level while pushing in and decelerating; a centred element is swapped for a centred element",
+      "instances": [
+        [
+          1234,
+          1281
+        ]
+      ],
+      "reference_frames": [
+        1234,
+        1249,
+        1256,
+        1259,
+        1270,
+        1281
+      ],
+      "measured": {
+        "duration_frames": 48,
+        "easing": "outgoing rotation bezier(0.997, 0.459, 0.999, 0.792) D=21 (shape 0.034); incoming rotation bezier(0.167, 0.451, 0.269, 0.876) D=22 (shape 0.029); incoming push (cursor height) bezier(0, 0.111, 0.418, 1.0) D=22 (shape 0.034) / spring(151.1, 21.95) (shape 0.040)",
+        "values": "out f1234-f1256: 0 -> -9.5 deg, x1.00 -> x1.51; cut f1259; in f1260-f1281: from a 9.7 deg clockwise tilt to level, background x2.58, cursor x3.42 (60 -> 205 px tall)"
+      },
+      "curves": [
+        "v7.trans-spin-zoom-whip.v7c2",
+        "v7.trans-spin-zoom-whip-out.v7c2",
+        "v7.trans-spin-zoom-whip-scale.v7c2"
+      ]
+    },
+    {
+      "id": "v7.cursor-glow-morph-3d",
+      "category": "cursor",
+      "description": "a 2D outline cursor glows up linearly while the camera pushes in, swaps in one picture for a bright, blurred, tilted 3D pointer, which turns frontal, sharpens and dims to a glossy rest state while the camera snaps back and pulls out past the start",
+      "instances": [
+        [
+          1284,
+          1349
+        ]
+      ],
+      "reference_frames": [
+        1284,
+        1301,
+        1304,
+        1318,
+        1341
+      ],
+      "measured": {
+        "duration_frames": 43,
+        "easing": "glow ramp linear (17 f); glow decay after the swap bezier(0.842, 1.183, 0.476, 0.926) D=46 (shape 0.047); camera pull-back bezier(0, 0.603, 0, 0.112) D=36 (shape 0.050, raw-time 0.009)",
+        "values": "box luma 28 -> 87 (f1284-f1301), 150 at the swap (f1304), 60 by f1341-f1349; camera scale x1.00 -> x1.10 (f1294-f1301, accelerating) -> x0.92 (f1301-f1341); 3D pointer at rest 15.3% W x 28.0% H"
+      },
+      "curves": [
+        "v7.cursor-glow-morph-3d.v7c2",
+        "v7.cursor-glow-morph-3d-cam.v7c2"
+      ]
+    },
+    {
+      "id": "v7.cursor-fly-in",
+      "category": "cursor",
+      "description": "after a whip cut the small pointer flies up into place relative to the window and settles on the first item with a spring-like ease-out, landing as the window settles",
+      "instances": [
+        [
+          1489,
+          1514
+        ]
+      ],
+      "reference_frames": [
+        1491,
+        1499,
+        1506,
+        1514
+      ],
+      "measured": {
+        "duration_frames": 23,
+        "easing": "spring(stiffness 216.9, damping 42.59, mass 1) built 24 f (shape 0.036, raw-time 0.020) / bezier(0, 0.733, 0.845, 1.004) D=20 (shape 0.077, raw-time 0.006)",
+        "values": "window-relative: up 329 px (35.8% H) and left 87 px (5.4% W) f1491-f1514; steps 72 / 81 / 54 / 34 / 30 / 24 / 16 / 11 / 6 / 1 px; start inside the whip blur (UNCERTAIN)"
+      },
+      "curves": [
+        "v7.cursor-fly-in.v7c2"
+      ]
+    },
+    {
+      "id": "v7.shape-dot-to-pill",
+      "category": "shape",
+      "description": "a status capsule is born as a small dot beside the pointer, grows into a circle, then stretches to one side (left end anchored) as its label types in",
+      "instances": [
+        [
+          1365,
+          1425
+        ]
+      ],
+      "reference_frames": [
+        1366,
+        1376,
+        1386,
+        1404,
+        1416,
+        1425
+      ],
+      "measured": {
+        "duration_frames": 22,
+        "easing": "birth bezier(0.237, 1.036, 1.0, 0.754) D=21 (shape 0.019) / spring(166.7, 37.94) (shape 0.074); width follows the typing",
+        "values": "height 0 -> 29 (dot) -> 122 px (13.3% H) f1364-f1386; width 220 -> 742 px f1386-f1416, about 870 px with the ellipsis (pointer-scale px); final 38.7% W x 13.5% H on screen at camera scale 0.72"
+      },
+      "curves": [
+        "v7.shape-dot-to-pill.v7c2"
+      ]
+    },
+    {
+      "id": "v7.text-typewriter-capsule",
+      "category": "text",
+      "description": "label types letter by letter inside the growing capsule, speeding up, then an ellipsis appears dot by dot",
+      "instances": [
+        [
+          1391,
+          1425
+        ]
+      ],
+      "reference_frames": [
+        1391,
+        1404,
+        1409,
+        1416,
+        1425
+      ],
+      "measured": {
+        "duration_frames": 34,
+        "easing": "stepped",
+        "values": "16 characters in 25 f (1.6 f per character; first word about 2.3, second about 0.9); dots at f1419 / 1421 / 1425; cap height 4.2% H at camera scale 0.72, weight 400"
+      },
+      "curves": []
+    },
+    {
+      "id": "v7.cam-reframe-pan-out",
+      "category": "cam",
+      "description": "the camera pans and pulls back to re-frame the subject off-centre and make room for a new element; slow ease-in, blurred peak, quicker ease-out",
+      "instances": [
+        [
+          1371,
+          1416
+        ]
+      ],
+      "reference_frames": [
+        1371,
+        1396,
+        1401,
+        1416
+      ],
+      "measured": {
+        "duration_frames": 45,
+        "easing": "bezier(0.871, 0.023, 0.347, 0.996) D=60 (shape 0.021) / spring(47.4, 10.67) (shape 0.333)",
+        "values": "pointer x 51.8% -> 30.0% W, scale 1.00 -> 0.72; peak 20.8 px (1.3% W) per frame at f1396-f1399"
+      },
+      "curves": [
+        "v7.cam-reframe-pan-out.v7c2"
+      ]
+    },
+    {
+      "id": "v7.fx-layer-directional-blur",
+      "category": "fx",
+      "description": "horizontal motion blur applied only to the content grid of a window while its chrome stays sharp; ramps with the pan speed into a whip cut and peaks just after it",
+      "instances": [
+        [
+          1487,
+          1504
+        ],
+        [
+          1521,
+          1554
+        ]
+      ],
+      "reference_frames": [
+        1487,
+        1494,
+        1539,
+        1542,
+        1554
+      ],
+      "measured": {
+        "duration_frames": 17,
+        "easing": "follows the pan speed",
+        "values": "grid blur 91 / 51 / 25 / 21 / 17 / 13 / 9 / 7 px at f1487-f1504; 1 -> 31 px f1521-f1539; 61 -> 3 px f1542-f1554; chrome and sidebar 1 px; grid 1-12 px further left than the chrome (UNCERTAIN: offset or one-sided smear)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v7.ui-tile-select-sweep",
+      "category": "ui",
+      "description": "a selection lights a grid of thumbnails instantly per tile, row by row in reading order, while the pointer sweeps; the whole selection then dims in one step",
+      "instances": [
+        [
+          1553,
+          1586
+        ]
+      ],
+      "reference_frames": [
+        1556,
+        1561,
+        1566,
+        1575,
+        1586
+      ],
+      "measured": {
+        "duration_frames": 19,
+        "easing": "stepped (instant per tile)",
+        "values": "25 tiles f1556-f1575 (about 0.8 f per tile, 2-4 per captured picture); dim step at f1586: tile interior luma 67 -> 53, border 86 -> 75"
+      },
+      "curves": []
+    },
+    {
+      "id": "v7.ui-drag-group-out",
+      "category": "ui",
+      "description": "the selected grid is dragged sideways as one block, accelerating with growing motion blur and leaving an empty gap, while the camera starts to whip the other way",
+      "instances": [
+        [
+          1604,
+          1629
+        ]
+      ],
+      "reference_frames": [
+        1604,
+        1616,
+        1626,
+        1629
+      ],
+      "measured": {
+        "duration_frames": 25,
+        "easing": "ease-in (continues into v7c3)",
+        "values": "+289 px right (17.8% W) and +33 px down by f1629; speed 3 -> 37 px per frame (2.3% W per frame); window chrome -30 px left over f1609-f1629"
+      },
+      "curves": []
+    }
+  ],
+  "typography_stills": [
+    "type/v7c2-S01cap_f00714.png",
+    "type/v7c2-S01cap_f00741.png",
+    "type/v7c2-S01cap_f00750.png",
+    "type/v7c2-S01cap_f00790.png",
+    "type/v7c2-S01cap_f00873.png",
+    "type/v7c2-S01cap_f00898.png",
+    "type/v7c2-S01word_f00712.png",
+    "type/v7c2-S01word_f00725.png",
+    "type/v7c2-S01word_f00734.png",
+    "type/v7c2-S02cap_f00902.png",
+    "type/v7c2-S02cap_f01070.png",
+    "type/v7c2-S02cap_f01078.png",
+    "type/v7c2-S03scroll_f01086.png",
+    "type/v7c2-S03ui_f01079.png",
+    "type/v7c2-S03ui_f01099.png",
+    "type/v7c2-S03ui_f01110.png",
+    "type/v7c2-S03ui_f01160.png",
+    "type/v7c2-S03ui_f01194.png",
+    "type/v7c2-S04ui_f01210.png",
+    "type/v7c2-S04ui_f01233.png",
+    "type/v7c2-S04ui_f01258.png",
+    "type/v7c2-S05ui_f01259.png",
+    "type/v7c2-S05ui_f01290.png",
+    "type/v7c2-S05ui_f01341.png",
+    "type/v7c2-S05ui_f01392.png",
+    "type/v7c2-S05ui_f01416.png",
+    "type/v7c2-S05ui_f01425.png",
+    "type/v7c2-S05ui_f01484.png",
+    "type/v7c2-S06fb_f01516.png",
+    "type/v7c2-S06fb_f01539.png",
+    "type/v7c2-S07fb_f01542.png",
+    "type/v7c2-S07fb_f01560.png",
+    "type/v7c2-S07fb_f01600.png",
+    "type/v7c2-S07fb_f01629.png"
+  ],
+  "uncertain": [
+    {
+      "what": "voice-meter driving signal",
+      "range": "f712-f1078",
+      "reason": "bar heights correlate only r 0.40-0.52 with the voice-band envelope, at different lags"
+    },
+    {
+      "what": "word-reveal duration spread",
+      "range": "f750-f1036",
+      "reason": "4-20 f per word across the two sentences; true starts lie 1-2 frames before the first visible 24 fps picture, so rise amplitudes are lower bounds"
+    },
+    {
+      "what": "start of the small pointer fly-in",
+      "range": "f1489-f1491",
+      "reason": "inside the whip blur; start position and first frames not measurable"
+    },
+    {
+      "what": "backdrop parallax during whips 1 and 3",
+      "range": "f1151-f1194, f1519-f1541",
+      "reason": "flat backdrop gives weak phase correlation; it seems to move left slower than the UI (about -40 px vs -82 px in f1141-f1184)"
+    },
+    {
+      "what": "3D pointer rotation angles",
+      "range": "f1304-f1330",
+      "reason": "needs a 3D solve"
+    },
+    {
+      "what": "lens-like bend in the spin-out",
+      "range": "f1255-f1258",
+      "reason": "seen on stills, not measured"
+    },
+    {
+      "what": "button press curve",
+      "range": "f1222-f1231",
+      "reason": "4 pictures; not fitted"
+    },
+    {
+      "what": "grid lead over the chrome during the whips",
+      "range": "f1521-f1554",
+      "reason": "1-12 px offset may be a one-sided smear rather than a real offset"
+    },
+    {
+      "what": "sound sync of cuts",
+      "range": "f900-f1542",
+      "reason": "5 of 6 cuts land 3-8 frames before a beat (f1259 +5): an edit habit or an audio delay in the screen capture"
+    },
+    {
+      "what": "selection order of tile r3c5",
+      "range": "f1564",
+      "reason": "lights two pictures early in the luma metric, possibly the pointer crossing it"
+    }
+  ],
+  "notes": [
+    "18 cut candidates decided (c020-c037; c037 at f1630 is advisory, its frame is in v7c3's range): 6 confirmed (c023, c024, c028, c030 corrected to f1259, c033, c035), 12 rejected.",
+    "Boundaries: 6 hard cuts (f900, f1079, f1196, f1259, f1487, f1542), 0 dissolve-type soft transitions. Four cuts are hidden inside motion transitions recorded with ranges, techniques, curves and detail windows: whip-push-left f1151-f1226, spin-zoom-whip f1234-f1281, whip-push-left f1433-f1514, whip-push-left f1519-f1566. They are tiled at the cut frame because the picture is replaced between two consecutive pictures.",
+    "No boundary at f710: c020 duplicates the hard cut at f706 (c019, v7c1); P1 continues from v7c1. No boundary at f1630: c037 duplicates the hard cut at f1644 (c038, v7c3); P7 continues into v7c3.",
+    "The PySceneDetect content/adaptive index drifts against the true picture times on this file: late by 3 pictures at f706/f710, 2 at f1196/f1202, 1 at f1259/f1260; early by 4 at f1542/f1531, 8 at f1487/f1466, 9 at f1644/f1630. The ffmpeg scene score is right where it fires. Decisions use work.mp4 differences (scratch/v7c2_framestats_690-1660.csv).",
+    "All 18 off-cut motion-peak windows in range were opened (f752, f758, f910, f1005, f1013, f1020, f1030, f1055, f1065, f1073, f1100, f1107, f1255, f1396, f1541, f1615, f1625, plus f1635 past the edge).",
+    "P3 and P5 show photos inside UI cards (static product images, a defocused media card); classed GRAPHICS as UI content, not footage.",
+    "The camera never fully rests in the UI part: slow drifts (0.03-0.12% W per frame) run between moves and turn into the whips; motion runs leftward through four cuts (f1196, f1487, f1542, f1644), so the UI part reads as one continuous camera travel.",
+    "Helper scripts besides track.py are in scratch/v7c2_tools/ (eccchain.py whole-frame similarity chain, phasechain.py translation chain, iconr3.py ring radius, blurest*.py Gaussian blur, hblur*.py horizontal blur, pill.py capsule size, wordtimes2.py / promptwords.py word timing, selgrid.py selection order, movers.py difference blobs, framestats.py frame differences, zoomdof.py / edgeprof.py edge width and detail through the footage zoom).",
+    "Footage content is not described; the footage motion f1005-f1078 is not analysed. The player's speaker icon is ignored.",
+    "Excluded (rule 1): the zoom-in of the footage at f746-f766, recorded in an earlier pass as v7.footage-punch-in-blur with the curve v7.footage-punch-in-blur.v7c2, is a camera move inside the footage, not a scale of the footage layer done in the edit; the technique, its curve (dropped from curves/) and the P1 movement row were removed. A scale in the edit multiplies every blur width by the scale factor, whatever the source resolution; here a horizontal background edge that rises over 4.6 px (10-90%) at f741 (x 900-960, y 371-376) is 88-101 px wide once the zoom has stopped (f769-f790, x5.38-x5.48), 3.5-4.1x more than such a scale allows (about 25 px). A blur added to the whole layer that wide (Gaussian sigma about 33-38 px) would cap gradients at about 3 luma per px, yet the same pictures keep gradients up to 22-32 luma per px (99.9th percentile 13-14, against 8.7 for f741 warped by the measured zoom; top 680 rows, no overlays): the extra blur is local, so the depth of field changes (scratch/v7c2_tools/zoomdof.py -> scratch/v7c2_zoom_dof.csv, scratch/v7c2_tools/edgeprof.py; stills type/v7c2-S01cap_f00741.png, type/v7c2-S01cap_f00790.png). Consecutive pictures stay aligned by a similarity (ECC 0.98-0.99) with a smooth per-picture zoom whose fixed point holds at 64-66% W through f764, so no picture replacement is hidden in the blur. Captions and badge are unaffected.",
+    "The f1196 whip-in (incoming half of the first leftward whip) is stored as its own curve v7.trans-whip-push-left-2.v7c2 (template track scratch/v7c2_whip_in_1196_tmpl.csv; the earlier samples scratch/v7c2_whip_in_1196.csv and the disc track scratch/review_v7c2_disc.csv give the same progress within 0.01 and springs {165.8, 27.95} / {161.9, 26.07}); its easing differs from the f1487 instance, so the whip has two incoming variants (probably two techniques)."
+  ]
+}

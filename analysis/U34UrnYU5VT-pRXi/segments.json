@@ -1,0 +1,440 @@
+{
+  "video": "U34UrnYU5VT-pRXi",
+  "key": "v2",
+  "fps": 60,
+  "frame_count": 1971,
+  "segments": [
+    {
+      "id": "S01",
+      "start": 0,
+      "end": 0,
+      "length_frames": 1,
+      "class": "GRAPHICS",
+      "boundary_in": "video-start",
+      "boundary_out": "T01",
+      "summary": "one-frame poster: the settled headline + 16-logo ring layout of S03 (identical to f181)"
+    },
+    {
+      "id": "S02",
+      "start": 1,
+      "end": 104,
+      "length_frames": 104,
+      "class": "GRAPHICS",
+      "boundary_in": "T01",
+      "boundary_out": "T02",
+      "summary": "6 empty frames, then a honeycomb of hex mascot cells fills the frame from one cell on a constant-speed radial front (19.6 px/f, each cell a 7-frame fade + scale pop); every cell glances once at a random time, the glances trailing the fill out to the frame edges until f94 (no still hold); from f95 the field wraps into a globe and collapses to a point (T02)"
+    },
+    {
+      "id": "S03",
+      "start": 105,
+      "end": 225,
+      "length_frames": 121,
+      "class": "GRAPHICS",
+      "boundary_in": "T02",
+      "boundary_out": "T03",
+      "summary": "centred 4-word headline built by single-frame word pops (8-9 f/word) inside a 2:1 elliptical ring of 16 logo icons that pop in as opposite pairs in a clockwise sweep and orbit clockwise at a constant 0.3565 deg/f; headline cut out at f225, ring at f226"
+    },
+    {
+      "id": "S04",
+      "start": 226,
+      "end": 338,
+      "length_frames": 113,
+      "class": "GRAPHICS",
+      "boundary_in": "T03",
+      "boundary_out": "T04",
+      "summary": "large hex mascot pops in at the centre (scale 0.32 -> 1, ease-out), glances three times with eye squash, blinks once, then slides 33% W left and shrinks to 0.40 (ease-in-out) as a one-word lockup pops in beside it"
+    },
+    {
+      "id": "S05",
+      "start": 339,
+      "end": 394,
+      "length_frames": 56,
+      "class": "GRAPHICS",
+      "boundary_in": "T04",
+      "boundary_out": "T05",
+      "summary": "text card: one centred 3-word line built by single-frame word pops (7 f/word), static"
+    },
+    {
+      "id": "S06",
+      "start": 395,
+      "end": 450,
+      "length_frames": 56,
+      "class": "GRAPHICS",
+      "boundary_in": "T05",
+      "boundary_out": "T06",
+      "summary": "text card: one centred 6-word line built by single-frame word pops (5-6 f/word), static"
+    },
+    {
+      "id": "S07",
+      "start": 451,
+      "end": 563,
+      "length_frames": 113,
+      "class": "GRAPHICS",
+      "boundary_in": "T06",
+      "boundary_out": "T07",
+      "summary": "small headline at the top (word pops, 6 f/word) over a product UI dialog (search pill + 6-row list) that slowly pushes in 3.5% about its own centre from the cut frame (ease-out); headline fixed"
+    },
+    {
+      "id": "S08",
+      "start": 564,
+      "end": 675,
+      "length_frames": 112,
+      "class": "GRAPHICS",
+      "boundary_in": "T07",
+      "boundary_out": "T08",
+      "summary": "headline (word pops) above a chat input pill that pushes in 2.0%; a prompt is typed character by character (no caret) and the send icon switches at the first character; cut while typing"
+    },
+    {
+      "id": "S09",
+      "start": 676,
+      "end": 732,
+      "length_frames": 57,
+      "class": "GRAPHICS",
+      "boundary_in": "T08",
+      "boundary_out": "T09",
+      "summary": "full-bleed three-column agent-app UI pushing in 5.0% about the frame centre within 57 frames; stepped UI micro-animations: avatar blink and glances, status-label shimmer, pulsing status mascot"
+    },
+    {
+      "id": "S10",
+      "start": 733,
+      "end": 788,
+      "length_frames": 56,
+      "class": "GRAPHICS",
+      "boundary_in": "T09",
+      "boundary_out": "T10",
+      "summary": "text card: one centred 3-word line built by single-frame word pops (7-8 f/word), static"
+    },
+    {
+      "id": "S11",
+      "start": 789,
+      "end": 900,
+      "length_frames": 112,
+      "class": "GRAPHICS",
+      "boundary_in": "T10",
+      "boundary_out": "T11",
+      "summary": "team-chat window (dark sidebar, white pane) pushing in 3.0% about the frame centre while four messages rise 9-13 px and fade in, one every 25-26 frames (25.2 f cadence)"
+    },
+    {
+      "id": "S12",
+      "start": 901,
+      "end": 957,
+      "length_frames": 57,
+      "class": "GRAPHICS",
+      "boundary_in": "T11",
+      "boundary_out": "T12",
+      "summary": "one centred big headline line (3 words) built by one-frame word pops at its final layout (f901, f909, f916), then held still"
+    },
+    {
+      "id": "S13",
+      "start": 958,
+      "end": 1097,
+      "length_frames": 140,
+      "class": "GRAPHICS",
+      "boundary_in": "T12",
+      "boundary_out": "T13",
+      "summary": "code-repository panel (pull-request list) slowly pushing in 3.0% from the cut; 3 pinned cards then 4 list rows fade in with a 6-7 px rise every 11.3 f, and one beat after each item its status pill swaps state with a shrink-out / scale-pop-in"
+    },
+    {
+      "id": "S14",
+      "start": 1098,
+      "end": 1173,
+      "length_frames": 76,
+      "class": "GRAPHICS",
+      "boundary_in": "T13",
+      "boundary_out": "T14",
+      "summary": "small top headline word pops; 9 agent logo icons in two centred rows (4 + 5) pop in (fade + scale from 0.5) every 3.6 f in reading order; from f1163 they converge into a mascot row (T14)"
+    },
+    {
+      "id": "S15",
+      "start": 1174,
+      "end": 1226,
+      "length_frames": 53,
+      "class": "GRAPHICS",
+      "boundary_in": "T14",
+      "boundary_out": "T15",
+      "summary": "row of 6 hex mascots (one black) under a big centred headline built by 6 f word pops; the mascots glance down-left as a left-to-right wave, glance back together and fly off into the next layout (T15)"
+    },
+    {
+      "id": "S16",
+      "start": 1227,
+      "end": 1350,
+      "length_frames": 124,
+      "class": "GRAPHICS",
+      "boundary_in": "T15",
+      "boundary_out": "T16",
+      "summary": "app sidebar panel with mascot avatars pushing in 4% about (959, 449) under a screen-fixed bottom caption built by 6 f word pops; three eye-glance waves run from the tile logo down the 5 avatars (look down-left f1247, right f1277, up f1319), each faster than the last (4.2, 3.0, 1.8 f per step), and the avatars blink in pairs between waves 2 and 3"
+    },
+    {
+      "id": "S17",
+      "start": 1351,
+      "end": 1407,
+      "length_frames": 57,
+      "class": "GRAPHICS",
+      "boundary_in": "T16",
+      "boundary_out": "T17",
+      "summary": "one centred big headline line (3 words) by one-frame word pops (8, 7 f), held"
+    },
+    {
+      "id": "S18",
+      "start": 1408,
+      "end": 1491,
+      "length_frames": 84,
+      "class": "GRAPHICS",
+      "boundary_in": "T17",
+      "boundary_out": "T18",
+      "summary": "after one empty frame, 30 hex mascots of 4 tones pop in at random spots around a big 2-word headline, one every 1.5 f; from f1432, while the births still run, each mascot glances once (19-43 f after its own birth) and three of them blink"
+    },
+    {
+      "id": "S19",
+      "start": 1492,
+      "end": 1614,
+      "length_frames": 123,
+      "class": "GRAPHICS",
+      "boundary_in": "T18",
+      "boundary_out": "T19",
+      "summary": "article web page (label pill, title, paragraph, scatter chart) under a small top caption built by word pops; the whole page scrolls up 560 px in 21 f, holds, then scroll-pushes out (T19)"
+    },
+    {
+      "id": "S20",
+      "start": 1615,
+      "end": 1688,
+      "length_frames": 74,
+      "class": "GRAPHICS",
+      "boundary_in": "T19",
+      "boundary_out": "T20",
+      "summary": "hub-and-spoke network (black mascot hub, 4 laptop and 4 cloud outline icons, each on a canvas-coloured box) settles from the scroll-push; one packet per connector ping-pongs on a 42 f period shared by all lines, at the constant speed its line length gives (11.3-23.0 px/f), hidden where it passes under the hub or an icon's box; a small top headline pops in word by word while the hub glances left, right and back"
+    },
+    {
+      "id": "S21",
+      "start": 1689,
+      "end": 1800,
+      "length_frames": 112,
+      "class": "GRAPHICS",
+      "boundary_in": "T20",
+      "boundary_out": "T21",
+      "summary": "after 3 empty frames a 2-line centred big headline (3 + 5 words) is built by one-frame word pops at 6-7 f, then held 63 f"
+    },
+    {
+      "id": "S22",
+      "start": 1801,
+      "end": 1970,
+      "length_frames": 170,
+      "class": "GRAPHICS",
+      "boundary_in": "T21",
+      "boundary_out": "video-end",
+      "summary": "end card: after one empty frame the hex mascot logo scales in, straightens a 17 deg tilt and fades in on one ease-out; a URL label fades in below; the logo glances, blinks and glances back; static to the last frame"
+    }
+  ],
+  "transitions": [
+    {
+      "id": "T01",
+      "type": "hard-cut",
+      "start": 1,
+      "end": 1,
+      "frames": 0,
+      "from": "S01",
+      "to": "S02",
+      "technique": "v2.trans-hard-cut"
+    },
+    {
+      "id": "T02",
+      "type": "sphere-collapse",
+      "start": 95,
+      "end": 114,
+      "frames": 20,
+      "from": "S02",
+      "to": "S03",
+      "technique": "v2.trans-sphere-collapse"
+    },
+    {
+      "id": "T03",
+      "type": "hard-cut",
+      "start": 226,
+      "end": 226,
+      "frames": 0,
+      "from": "S03",
+      "to": "S04",
+      "technique": "v2.trans-hard-cut"
+    },
+    {
+      "id": "T04",
+      "type": "hard-cut",
+      "start": 339,
+      "end": 339,
+      "frames": 0,
+      "from": "S04",
+      "to": "S05",
+      "technique": "v2.trans-hard-cut"
+    },
+    {
+      "id": "T05",
+      "type": "hard-cut",
+      "start": 395,
+      "end": 395,
+      "frames": 0,
+      "from": "S05",
+      "to": "S06",
+      "technique": "v2.trans-hard-cut"
+    },
+    {
+      "id": "T06",
+      "type": "hard-cut",
+      "start": 451,
+      "end": 451,
+      "frames": 0,
+      "from": "S06",
+      "to": "S07",
+      "technique": "v2.trans-hard-cut"
+    },
+    {
+      "id": "T07",
+      "type": "hard-cut",
+      "start": 564,
+      "end": 564,
+      "frames": 0,
+      "from": "S07",
+      "to": "S08",
+      "technique": "v2.trans-hard-cut"
+    },
+    {
+      "id": "T08",
+      "type": "hard-cut",
+      "start": 676,
+      "end": 676,
+      "frames": 0,
+      "from": "S08",
+      "to": "S09",
+      "technique": "v2.trans-hard-cut"
+    },
+    {
+      "id": "T09",
+      "type": "hard-cut",
+      "start": 733,
+      "end": 733,
+      "frames": 0,
+      "from": "S09",
+      "to": "S10",
+      "technique": "v2.trans-hard-cut"
+    },
+    {
+      "id": "T10",
+      "type": "hard-cut",
+      "start": 789,
+      "end": 789,
+      "frames": 0,
+      "from": "S10",
+      "to": "S11",
+      "technique": "v2.trans-hard-cut"
+    },
+    {
+      "id": "T11",
+      "type": "hard-cut",
+      "start": 901,
+      "end": 901,
+      "frames": 0,
+      "from": "S11",
+      "to": "S12",
+      "technique": "v2.trans-hard-cut"
+    },
+    {
+      "id": "T12",
+      "type": "hard-cut",
+      "start": 958,
+      "end": 958,
+      "frames": 0,
+      "from": "S12",
+      "to": "S13",
+      "technique": "v2.trans-hard-cut"
+    },
+    {
+      "id": "T13",
+      "type": "hard-cut",
+      "start": 1098,
+      "end": 1098,
+      "frames": 0,
+      "from": "S13",
+      "to": "S14",
+      "technique": "v2.trans-hard-cut"
+    },
+    {
+      "id": "T14",
+      "type": "morph",
+      "start": 1163,
+      "end": 1183,
+      "frames": 21,
+      "from": "S14",
+      "to": "S15",
+      "technique": "v2.trans-icon-converge-morph"
+    },
+    {
+      "id": "T15",
+      "type": "morph",
+      "start": 1217,
+      "end": 1235,
+      "frames": 19,
+      "from": "S15",
+      "to": "S16",
+      "technique": "v2.trans-hex-fly-into-ui"
+    },
+    {
+      "id": "T16",
+      "type": "hard-cut",
+      "start": 1351,
+      "end": 1351,
+      "frames": 0,
+      "from": "S16",
+      "to": "S17",
+      "technique": "v2.trans-hard-cut"
+    },
+    {
+      "id": "T17",
+      "type": "hard-cut",
+      "start": 1408,
+      "end": 1408,
+      "frames": 0,
+      "from": "S17",
+      "to": "S18",
+      "technique": "v2.trans-hard-cut"
+    },
+    {
+      "id": "T18",
+      "type": "hard-cut",
+      "start": 1492,
+      "end": 1492,
+      "frames": 0,
+      "from": "S18",
+      "to": "S19",
+      "technique": "v2.trans-hard-cut"
+    },
+    {
+      "id": "T19",
+      "type": "push",
+      "start": 1602,
+      "end": 1627,
+      "frames": 26,
+      "from": "S19",
+      "to": "S20",
+      "technique": "v2.trans-scroll-push"
+    },
+    {
+      "id": "T20",
+      "type": "hard-cut",
+      "start": 1689,
+      "end": 1689,
+      "frames": 0,
+      "from": "S20",
+      "to": "S21",
+      "technique": "v2.trans-hard-cut"
+    },
+    {
+      "id": "T21",
+      "type": "hard-cut",
+      "start": 1801,
+      "end": 1801,
+      "frames": 0,
+      "from": "S21",
+      "to": "S22",
+      "technique": "v2.trans-hard-cut"
+    }
+  ]
+}

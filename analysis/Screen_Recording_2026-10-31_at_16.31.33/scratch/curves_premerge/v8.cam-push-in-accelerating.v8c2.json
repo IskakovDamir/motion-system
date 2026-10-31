@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.cam-push-in-accelerating.v8c2",
+  "file": "curves/v8.cam-push-in-accelerating.v8c2.csv",
+  "property": "scale",
+  "unit": "px height of the front card's right edge (769 px = the card at rest front-on)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c2_S03_deck_settled.csv",
+  "column": "front_h_settled",
+  "sampled_frames": [
+    1133,
+    1172
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 491.0,
+  "to_value": 785.0,
+  "active_frames": [
+    1144,
+    1172
+  ],
+  "measured_duration_frames": 28,
+  "bezier": {
+    "x1": 0.0114,
+    "y1": 0.0836,
+    "x2": 0.3271,
+    "y2": -0.1557,
+    "durationInFrames": 26,
+    "delay": 2.052,
+    "built_duration_frames": 26,
+    "rmse": 0.0289
+  },
+  "spring": {
+    "stiffness": 95.093,
+    "damping": 64.702,
+    "mass": 1,
+    "damping_ratio": 3.3175,
+    "built_duration_frames": 35,
+    "rmse": 0.3619
+  },
+  "recommended": "bezier",
+  "note": "S03 card deck: height of the front card's right edge on the second (settled) picture of each new card (scratch/v8c2_S03_stack_geom.csv -> v8c2_S03_deck_settled.csv); after a zoom-out to 485 px (f1140) the camera pushes in with an accelerating ease-in to 785 px (x1.62) at f1172, and the last card lands at f1174 already larger than the frame; to-value = last measured picture (no settle, the move ends in the landing)"
+}

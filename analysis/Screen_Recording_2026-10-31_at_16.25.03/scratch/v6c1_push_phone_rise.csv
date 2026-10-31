@@ -1,0 +1,37 @@
+frame,time_s,unique,top_y,bottom_y,run_rows,method
+530,8.8333,0,,,13,no phone in the column
+531,8.8500,1,,,13,no phone in the column
+532,8.8667,0,,,13,no phone in the column
+533,8.8833,1,,,11,no phone in the column
+534,8.9000,0,,,11,no phone in the column
+535,8.9167,0,,,11,no phone in the column
+536,8.9333,1,,,10,no phone in the column
+537,8.9500,0,,,10,no phone in the column
+538,8.9667,1,891,917,,half-max of the column-mean luma over x 660-980 (248 -> 210): blurred top edge entering at the bottom
+539,8.9833,0,,,7,no phone in the column
+540,9.0000,0,,,7,no phone in the column
+541,9.0167,1,365,917,553,longest run of rows with >= 70% dark columns in x 700-930 (needs >= 60 rows)
+542,9.0333,0,365,917,553,longest run of rows with >= 70% dark columns in x 700-930 (needs >= 60 rows)
+543,9.0500,1,225,917,693,longest run of rows with >= 70% dark columns in x 700-930 (needs >= 60 rows)
+544,9.0667,0,225,917,693,longest run of rows with >= 70% dark columns in x 700-930 (needs >= 60 rows)
+545,9.0833,0,225,917,693,longest run of rows with >= 70% dark columns in x 700-930 (needs >= 60 rows)
+546,9.1000,1,189,799,611,longest run of rows with >= 70% dark columns in x 700-930 (needs >= 60 rows)
+547,9.1167,0,189,799,611,longest run of rows with >= 70% dark columns in x 700-930 (needs >= 60 rows)
+548,9.1333,1,190,736,547,longest run of rows with >= 70% dark columns in x 700-930 (needs >= 60 rows)
+549,9.1500,0,190,736,547,longest run of rows with >= 70% dark columns in x 700-930 (needs >= 60 rows)
+550,9.1667,0,190,736,547,longest run of rows with >= 70% dark columns in x 700-930 (needs >= 60 rows)
+551,9.1833,1,178,734,557,longest run of rows with >= 70% dark columns in x 700-930 (needs >= 60 rows)
+552,9.2000,0,,,,not valid after f551: light screen content breaks the dark-row rule (phone top 173-190 px per scratch/v6c1_phone_stack_bbox.csv)
+553,9.2167,1,,,,not valid after f551: light screen content breaks the dark-row rule (phone top 173-190 px per scratch/v6c1_phone_stack_bbox.csv)
+554,9.2333,0,,,,not valid after f551: light screen content breaks the dark-row rule (phone top 173-190 px per scratch/v6c1_phone_stack_bbox.csv)
+555,9.2500,0,,,,not valid after f551: light screen content breaks the dark-row rule (phone top 173-190 px per scratch/v6c1_phone_stack_bbox.csv)
+556,9.2667,1,,,,not valid after f551: light screen content breaks the dark-row rule (phone top 173-190 px per scratch/v6c1_phone_stack_bbox.csv)
+557,9.2833,0,,,,not valid after f551: light screen content breaks the dark-row rule (phone top 173-190 px per scratch/v6c1_phone_stack_bbox.csv)
+558,9.3000,1,,,,not valid after f551: light screen content breaks the dark-row rule (phone top 173-190 px per scratch/v6c1_phone_stack_bbox.csv)
+559,9.3167,0,,,,not valid after f551: light screen content breaks the dark-row rule (phone top 173-190 px per scratch/v6c1_phone_stack_bbox.csv)
+560,9.3333,0,,,,not valid after f551: light screen content breaks the dark-row rule (phone top 173-190 px per scratch/v6c1_phone_stack_bbox.csv)
+561,9.3500,1,,,,not valid after f551: light screen content breaks the dark-row rule (phone top 173-190 px per scratch/v6c1_phone_stack_bbox.csv)
+562,9.3667,0,,,,not valid after f551: light screen content breaks the dark-row rule (phone top 173-190 px per scratch/v6c1_phone_stack_bbox.csv)
+563,9.3833,1,,,,not valid after f551: light screen content breaks the dark-row rule (phone top 173-190 px per scratch/v6c1_phone_stack_bbox.csv)
+564,9.4000,0,,,,not valid after f551: light screen content breaks the dark-row rule (phone top 173-190 px per scratch/v6c1_phone_stack_bbox.csv)
+565,9.4167,0,,,,not valid after f551: light screen content breaks the dark-row rule (phone top 173-190 px per scratch/v6c1_phone_stack_bbox.csv)

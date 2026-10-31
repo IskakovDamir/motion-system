@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.particle-edge-packets",
+  "file": "curves/v4.particle-edge-packets.csv",
+  "property": "position-x",
+  "unit": "px (frame width 1920)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/s1_dot_hop_79.csv",
+  "column": "dot_cx",
+  "sampled_frames": [
+    70,
+    96
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 1239.5,
+  "to_value": 1599.5,
+  "active_frames": [
+    74,
+    92
+  ],
+  "measured_duration_frames": 18,
+  "bezier": {
+    "x1": 0.5849,
+    "y1": 0.024,
+    "x2": 0.3975,
+    "y2": 1.0,
+    "durationInFrames": 24,
+    "delay": -2.651,
+    "built_duration_frames": 19,
+    "rmse": 0.0118
+  },
+  "spring": {
+    "stiffness": 147.6,
+    "damping": 17.786,
+    "mass": 1,
+    "damping_ratio": 0.732,
+    "built_duration_frames": 28,
+    "rmse": 0.3176
+  },
+  "recommended": "bezier",
+  "note": "S1 message dot (18 px black dot) hop from the centre of agent logo icon 1 (1239.5, 331.7) to the centre of agent logo icon 2 (1599.5, 331.7), 360 px; dot vanishes at f97 after landing"
+}

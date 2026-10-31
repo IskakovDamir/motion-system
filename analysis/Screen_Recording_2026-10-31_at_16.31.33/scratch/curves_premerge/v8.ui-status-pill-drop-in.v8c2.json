@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.ui-status-pill-drop-in.v8c2",
+  "file": "curves/v8.ui-status-pill-drop-in.v8c2.csv",
+  "property": "position (distance along the path)",
+  "unit": "px along the pill's path (picture px)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c2_S03_pill_dropin_path.csv",
+  "column": "path_dist",
+  "sampled_frames": [
+    1007,
+    1032
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 345.8,
+  "active_frames": [
+    1007,
+    1024
+  ],
+  "measured_duration_frames": 17,
+  "bezier": {
+    "x1": 0.0224,
+    "y1": 1.1038,
+    "x2": 0.7944,
+    "y2": 0.94,
+    "durationInFrames": 20,
+    "delay": -0.0,
+    "built_duration_frames": 17,
+    "rmse": 0.0049
+  },
+  "spring": {
+    "stiffness": 792.362,
+    "damping": 56.433,
+    "mass": 1,
+    "damping_ratio": 1.0024,
+    "built_duration_frames": 13,
+    "rmse": 0.1746
+  },
+  "recommended": "bezier",
+  "note": "S03 status pill drop-in, re-tracked as the distance travelled along its curved path from the first picture (scratch/v8c2_S03_pill_dropin_path.csv, built from the label-box template track scratch/v8c2_S03_pill.csv: pill centre = box centre + 163 px x, -0.5 px y; scores 0.89-0.99, the pill is sharp in every picture). The earlier curve fitted the y component alone (bezier rmse 0.054, spring 0.193). The path curves: y drops fast (181.5 -> 314.5 -> 389.5 -> 434.5 -> 454.5 px at f1007/f1008/f1010/f1012/f1014; y alone bezier(0.036, 1.116, 1.000, 0.960) D=12, 11 f, rmse 0.024) while x slides left more slowly (1255 -> 1220 -> 1196 -> 1174 -> 1146 px; x alone bezier(0.000, 0.181, 0.425, 0.989) D=23, 23 f, rmse 0.046). The pill is absent at f1004 and f1005-f1006 repeat f1004, so f1007 (first picture, right end about 32 px beyond the frame edge) is taken as the start; any motion before it is not visible. To-value = f1030 (345.8 px; x within 3 px of its rest 1070), after which a slow drift down (about 0.5 px/f, y 475.5 -> 484.5 px f1030-f1044) takes over"
+}

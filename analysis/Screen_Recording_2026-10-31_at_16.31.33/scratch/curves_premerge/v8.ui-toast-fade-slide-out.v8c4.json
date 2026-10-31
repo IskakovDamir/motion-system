@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.ui-toast-fade-slide-out.v8c4",
+  "file": "curves/v8.ui-toast-fade-slide-out.v8c4.csv",
+  "property": "opacity",
+  "unit": "opacity 0-1",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c4_S2_toast_out.csv",
+  "column": "opacity",
+  "sampled_frames": [
+    2340,
+    2378
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.0,
+  "to_value": 0.0,
+  "active_frames": [
+    2358,
+    2374
+  ],
+  "measured_duration_frames": 16,
+  "bezier": {
+    "x1": 0.6887,
+    "y1": 0.6234,
+    "x2": 0.5012,
+    "y2": 1.0379,
+    "durationInFrames": 17,
+    "delay": 0.952,
+    "built_duration_frames": 14,
+    "rmse": 0.0371
+  },
+  "spring": {
+    "stiffness": 157.616,
+    "damping": 17.585,
+    "mass": 1,
+    "damping_ratio": 0.7003,
+    "built_duration_frames": 28,
+    "rmse": 0.3116
+  },
+  "recommended": "bezier",
+  "note": "S02 toast pill at the top edge (only its lower part in view): (fill - page) / (full fill 103.8 - page), fill = median luma of its visible lower rows (x 440-690), page = the rows under it; 1.0 to f2358, 0.94 (f2360), 0.83 (f2362), 0.66 (f2364), 0.47 (f2367), 0.28 (f2368), 0.15 (f2370), 0.02 (f2372), 0 (f2374). While it fades it stops riding the page: its bottom edge holds at y 19.6-22.0 px while the band's bottom edge rises 196 -> 187 px, i.e. it slides down 10.3 px (1.1% H) against the page by f2370 (scratch/v8c4_S2_toast_out.csv toast_minus_band)."
+}

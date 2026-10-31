@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.ui-chat-item-rise-fade-in.status.v4c1",
+  "file": "curves/v4.ui-chat-item-rise-fade-in.status.v4c1.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (status line band mean; 253 = empty card)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/s3_status_luma.csv",
+  "column": "mean",
+  "sampled_frames": [
+    563,
+    600
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 253.0,
+  "to_value": 239.434,
+  "active_frames": [
+    572,
+    583
+  ],
+  "measured_duration_frames": 11,
+  "bezier": {
+    "x1": 0.2247,
+    "y1": 0.4224,
+    "x2": 0.285,
+    "y2": 0.9133,
+    "durationInFrames": 12,
+    "delay": -0.005,
+    "built_duration_frames": 11,
+    "rmse": 0.0041
+  },
+  "spring": {
+    "stiffness": 904.835,
+    "damping": 60.552,
+    "mass": 1,
+    "damping_ratio": 1.0065,
+    "built_duration_frames": 12,
+    "rmse": 0.0307
+  },
+  "recommended": "bezier",
+  "note": "S3 status line (agent logo + spinner + grey label) fades in f573-f584 in the frame of the 50 px list jump; the S2 instance (f316-f326) has the same length"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-spin-zoom-whip-out.v7c2",
+  "file": "curves/v7.trans-spin-zoom-whip-out.v7c2.csv",
+  "property": "rotation",
+  "unit": "degrees (negative = counter-clockwise on screen), whole frame",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_tilt_out_ecc.csv",
+  "column": "rot_cum_deg",
+  "sampled_frames": [
+    1219,
+    1258
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": -0.024,
+  "to_value": -9.536,
+  "active_frames": [
+    1234,
+    1256
+  ],
+  "measured_duration_frames": 22,
+  "bezier": {
+    "x1": 0.9971,
+    "y1": 0.4591,
+    "x2": 0.9993,
+    "y2": 0.7923,
+    "durationInFrames": 21,
+    "delay": 1.0,
+    "built_duration_frames": 21,
+    "rmse": 0.0338
+  },
+  "spring": {
+    "stiffness": 137.619,
+    "damping": 180.386,
+    "mass": 1,
+    "damping_ratio": 7.6884,
+    "built_duration_frames": 29,
+    "rmse": 0.4198
+  },
+  "recommended": "bezier",
+  "note": "outgoing half of the spin-zoom whip: the send-button close-up rotates CCW 0 -> -9.5 deg while scaling x1.00 -> x1.51 with growing motion blur and a barrel-like lens warp, accelerating into the hard cut at f1259; cumulative ECC affine fit between consecutive captured pictures (scratch/v7c2_tilt_out_ecc.csv); motion still at full speed at the cut (no settle)"
+}

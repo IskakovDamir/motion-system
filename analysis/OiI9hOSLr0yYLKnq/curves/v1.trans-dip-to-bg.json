@@ -1,0 +1,40 @@
+{
+  "technique_id": "v1.trans-dip-to-bg",
+  "file": "curves/v1.trans-dip-to-bg.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 inside the centre mark (36.5 = opacity 1, 246 = background = opacity 0)",
+  "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/t2_s2_mark_luma.csv",
+  "column": "mean",
+  "sampled_frames": [
+    324,
+    337
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 36.541,
+  "to_value": 246.0,
+  "active_frames": [
+    328,
+    337
+  ],
+  "measured_duration_frames": 9,
+  "bezier": {
+    "x1": 0.3469,
+    "y1": 0.0103,
+    "x2": 0.6784,
+    "y2": 0.1965,
+    "durationInFrames": 9,
+    "delay": -0.672,
+    "built_duration_frames": 8,
+    "rmse": 0.0547
+  },
+  "spring": {
+    "stiffness": 137.7,
+    "damping": 1.005,
+    "mass": 1,
+    "damping_ratio": 0.0428,
+    "built_duration_frames": 154,
+    "rmse": 0.797
+  },
+  "recommended": "bezier",
+  "note": "T02 outgoing side: the whole network + counter fade to the empty background with no scale change (template scale 1.000 f324-f336); f337 is a single empty frame; incoming cards: v1.card-slide-fade-in"
+}

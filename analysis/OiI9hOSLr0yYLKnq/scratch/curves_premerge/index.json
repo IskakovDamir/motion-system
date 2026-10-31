@@ -1,0 +1,728 @@
+{
+  "video": "OiI9hOSLr0yYLKnq",
+  "key": "v1",
+  "fps": 60,
+  "duration_rule": "curvekit.active_window tol=0.02",
+  "curves": {
+    "v1.cam-slow-push-in.s05.v1c1": {
+      "technique_id": "v1.cam-slow-push-in.s05.v1c1",
+      "file": "curves/v1.cam-slow-push-in.s05.v1c1.csv",
+      "property": "scale",
+      "unit": "scale factor of the whole network about the frame centre (f830 = 1.0; 0.98990 at the cut f788 -> 1.00897 at f868 = x1.0193)",
+      "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/s5_pushin_cells.csv",
+      "column": "scale",
+      "sampled_frames": [
+        788,
+        868
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 0.9899,
+      "to_value": 1.009,
+      "active_frames": [
+        789,
+        866
+      ],
+      "measured_duration_frames": 77,
+      "bezier": {
+        "x1": 0.3755,
+        "y1": 0.3721,
+        "x2": 0.8259,
+        "y2": 0.8297,
+        "durationInFrames": 79,
+        "delay": -0.819,
+        "built_duration_frames": 77,
+        "rmse": 0.0027
+      },
+      "spring": {
+        "stiffness": 7.412,
+        "damping": 7.169,
+        "mass": 1,
+        "damping_ratio": 1.3166,
+        "built_duration_frames": 125,
+        "rmse": 0.2099
+      },
+      "recommended": "bezier",
+      "note": "S05 push-in: least-squares uniform scale about the frame centre fitted to 23-26 sub-pixel cell tracks outside the headline band (residual 0.03-0.06 px). Already moving at the cut f788 and still moving at f868 (no rest at either end), constant rate 0.00024/f (linear); from f869 the T5 zoom-through takes over. Normalised by the end samples, so the fitted duration is the visible span, not a designed duration. Differs in easing from the S02 instance (ease-out)."
+    },
+    "v1.cam-slow-push-in.v1c1": {
+      "technique_id": "v1.cam-slow-push-in.v1c1",
+      "file": "curves/v1.cam-slow-push-in.v1c1.csv",
+      "property": "scale",
+      "unit": "scale factor of the whole network about the frame centre (f260 = 1.0; rest 0.98385 -> 1.01810 = x1.0348)",
+      "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/s2_pushin_cells.csv",
+      "column": "scale",
+      "sampled_frames": [
+        205,
+        335
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 0.9839,
+      "to_value": 1.0181,
+      "active_frames": [
+        226,
+        323
+      ],
+      "measured_duration_frames": 97,
+      "bezier": {
+        "x1": 0.36,
+        "y1": 0.5406,
+        "x2": 0.6583,
+        "y2": 0.9555,
+        "durationInFrames": 106,
+        "delay": -0.872,
+        "built_duration_frames": 96,
+        "rmse": 0.0033
+      },
+      "spring": {
+        "stiffness": 4.1,
+        "damping": 3.18,
+        "mass": 1,
+        "damping_ratio": 0.7853,
+        "built_duration_frames": 102,
+        "rmse": 0.0202
+      },
+      "recommended": "bezier",
+      "note": "S02 hold push-in, re-tracked: least-squares uniform scale about the frame centre fitted to 26-52 sub-pixel cell tracks (residual 0.03-0.08 px; independent warp-NCC track scratch/s2_pushin_warp.csv agrees within 0.00005). Rest through f225, first moved frame f226 at full speed (0.00048/f, no ease-in), decelerates to rest at about f333 (5 f into the T2 fade). Replaces the earlier fit on s2_hold_zoom_fine.csv, whose integer-size template steps and a fade artefact at f330 produced an overshooting bezier."
+    },
+    "v1.cam-stepped-zoom-out.v1c1": {
+      "technique_id": "v1.cam-stepped-zoom-out.v1c1",
+      "file": "curves/v1.cam-stepped-zoom-out.v1c1.csv",
+      "property": "scale",
+      "unit": "px width of the centre mark (362 px = scale 1.0, 116 px = 0.32)",
+      "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/s2_mark_comp.csv",
+      "column": "w",
+      "sampled_frames": [
+        119,
+        215
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 362.0,
+      "to_value": 116.0,
+      "active_frames": [
+        121,
+        190
+      ],
+      "measured_duration_frames": 69,
+      "bezier": {
+        "x1": 0.0,
+        "y1": 0.3205,
+        "x2": 0.6016,
+        "y2": 1.0003,
+        "durationInFrames": 76,
+        "delay": -0.0,
+        "built_duration_frames": 67,
+        "rmse": 0.0417
+      },
+      "spring": {
+        "stiffness": 14.263,
+        "damping": 9.132,
+        "mass": 1,
+        "damping_ratio": 1.209,
+        "built_duration_frames": 90,
+        "rmse": 0.0728
+      },
+      "recommended": "bezier",
+      "note": "connected-component width of the centre hex mark while the network grows; whole-frame zoom-out about the frame centre, stepped (quick 2-4 frame steps between slow drift)"
+    },
+    "v1.card-shrink-fade-out.v1c1": {
+      "technique_id": "v1.card-shrink-fade-out.v1c1",
+      "file": "curves/v1.card-shrink-fade-out.v1c1.csv",
+      "property": "opacity",
+      "unit": "luma 0-255 inside the dark card (17 = opacity 1, 246 = background = opacity 0)",
+      "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/t3_s3_card1_luma.csv",
+      "column": "mean",
+      "sampled_frames": [
+        548,
+        562
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 17.0,
+      "to_value": 246.0,
+      "active_frames": [
+        553,
+        562
+      ],
+      "measured_duration_frames": 9,
+      "bezier": {
+        "x1": 0.2803,
+        "y1": 0.0375,
+        "x2": 0.6161,
+        "y2": 0.0762,
+        "durationInFrames": 10,
+        "delay": -0.456,
+        "built_duration_frames": 9,
+        "rmse": 0.0691
+      },
+      "spring": {
+        "stiffness": 669.291,
+        "damping": 159.974,
+        "mass": 1,
+        "damping_ratio": 3.0918,
+        "built_duration_frames": 14,
+        "rmse": 0.4132
+      },
+      "recommended": "bezier",
+      "note": "both terminal cards fade out while scaling to 0.966 about their own centres (template scale f553-f562); the fade is cut at ~87% (f562: luma 217) by the next layout (T3) or by the hard cut (f788, T4 repeats these values frame for frame f778-f787)"
+    },
+    "v1.card-slide-fade-in.v1c1": {
+      "technique_id": "v1.card-slide-fade-in.v1c1",
+      "file": "curves/v1.card-slide-fade-in.v1c1.csv",
+      "property": "position-x",
+      "unit": "px (card header centre x; 1920 px = 100% W)",
+      "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/t2_card1_x.csv",
+      "column": "cx",
+      "sampled_frames": [
+        338,
+        366
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 415.0,
+      "to_value": 250.0,
+      "active_frames": [
+        338,
+        351
+      ],
+      "measured_duration_frames": 13,
+      "bezier": {
+        "x1": 0.1886,
+        "y1": 1.0021,
+        "x2": 0.4991,
+        "y2": 0.9811,
+        "durationInFrames": 18,
+        "delay": 0.02,
+        "built_duration_frames": 13,
+        "rmse": 0.0023
+      },
+      "spring": {
+        "stiffness": 781.744,
+        "damping": 70.703,
+        "mass": 1,
+        "damping_ratio": 1.2644,
+        "built_duration_frames": 13,
+        "rmse": 0.0945
+      },
+      "recommended": "bezier",
+      "note": "left terminal card sliding in from the right while fading in (T2); samples start at the first visible frame f338 (165 px = 8.6% W right of rest, opacity 0.14), so the curve starts at full speed and the true start offset is UNCERTAIN; the second card repeats the same curve 3 frames later; T3 (f563) repeats it to the pixel"
+    },
+    "v1.counter-accelerating-count.v1c1": {
+      "technique_id": "v1.counter-accelerating-count.v1c1",
+      "file": "curves/v1.counter-accelerating-count.v1c1.csv",
+      "property": "counter-value",
+      "unit": "agents (integer count 1..100)",
+      "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/s2_counter_values.csv",
+      "column": "count",
+      "sampled_frames": [
+        114,
+        236
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 1.0,
+      "to_value": 100.0,
+      "active_frames": [
+        129,
+        221
+      ],
+      "measured_duration_frames": 92,
+      "bezier": {
+        "x1": 0.3105,
+        "y1": 0.0386,
+        "x2": 0.6587,
+        "y2": 0.3593,
+        "durationInFrames": 100,
+        "delay": -7.378,
+        "built_duration_frames": 90,
+        "rmse": 0.0064
+      },
+      "spring": {
+        "stiffness": 7.394,
+        "damping": 10.829,
+        "mass": 1,
+        "damping_ratio": 1.9913,
+        "built_duration_frames": 125,
+        "rmse": 0.3378
+      },
+      "recommended": "bezier",
+      "note": "counter digits read off frame-numbered crops f114-f225; count 1 at f114 to 100 at f222, accelerating"
+    },
+    "v1.icon-idle-float.v1c1": {
+      "technique_id": "v1.icon-idle-float.v1c1",
+      "file": "curves/v1.icon-idle-float.v1c1.csv",
+      "property": "position-y",
+      "unit": "px (icon x 420 badge-template centre; 20.0 px = 1.85% of frame height peak to peak)",
+      "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/s1_icon_float.csv",
+      "column": "x420_cy",
+      "sampled_frames": [
+        26,
+        99
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 905.79,
+      "to_value": 885.83,
+      "active_frames": [
+        33,
+        98
+      ],
+      "measured_duration_frames": 65,
+      "bezier": {
+        "x1": 0.3627,
+        "y1": 0.0101,
+        "x2": 0.6366,
+        "y2": 0.95,
+        "durationInFrames": 76,
+        "delay": -6.133,
+        "built_duration_frames": 65,
+        "rmse": 0.0028
+      },
+      "spring": {
+        "stiffness": 15.65,
+        "damping": 23.927,
+        "mass": 1,
+        "damping_ratio": 3.0242,
+        "built_duration_frames": 86,
+        "rmse": 0.2172
+      },
+      "recommended": "bezier",
+      "note": "one half-swing (lowest point f26.4 -> highest point f104.8) of the S01 idle float of the agent icon at x 420; from/to are the extremes of the shared-period sine fit (y = rest + 9.98 cos(2 pi (f - 26.4)/156.9)), because the next extreme falls after the exit starts (f100). All 8 icons follow the same sine (period 156.9 f, amplitude 9.95-9.99 px, rms residual 0.03-0.04 px over f20-f99) with their own phase; sub-pixel template tracks scratch/s1_icon_float.csv."
+    },
+    "v1.icon-stagger-pop-in.v1c1": {
+      "technique_id": "v1.icon-stagger-pop-in.v1c1",
+      "file": "curves/v1.icon-stagger-pop-in.v1c1.csv",
+      "property": "opacity",
+      "unit": "luma 0-255 inside the 3rd agent icon (246 = opacity 0, 17 = opacity 1)",
+      "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/s1_icon3_in_luma.csv",
+      "column": "mean",
+      "sampled_frames": [
+        5,
+        26
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 246.0,
+      "to_value": 17.101,
+      "active_frames": [
+        8,
+        18
+      ],
+      "measured_duration_frames": 10,
+      "bezier": {
+        "x1": 0.2236,
+        "y1": 1.0458,
+        "x2": 0.6956,
+        "y2": 0.9385,
+        "durationInFrames": 11,
+        "delay": 0.44,
+        "built_duration_frames": 10,
+        "rmse": 0.0514
+      },
+      "spring": {
+        "stiffness": 1446.885,
+        "damping": 79.559,
+        "mass": 1,
+        "damping_ratio": 1.0458,
+        "built_duration_frames": 10,
+        "rmse": 0.0421
+      },
+      "recommended": "spring",
+      "note": "one of 8 agent icons popping in with a 3-frame stagger (f3, f6, f9 ... f24); scale 0.68 -> 1.00 over the same frames (template f9-f18)"
+    },
+    "v1.layout-send-off-exit.v1c1": {
+      "technique_id": "v1.layout-send-off-exit.v1c1",
+      "file": "curves/v1.layout-send-off-exit.v1c1.csv",
+      "property": "position-y",
+      "unit": "px (prompt text centre y; 1080 px = 100% H)",
+      "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/t1_s1_text_exit.csv",
+      "column": "cy",
+      "sampled_frames": [
+        95,
+        111
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 545.0,
+      "to_value": 508.0,
+      "active_frames": [
+        101,
+        111
+      ],
+      "measured_duration_frames": 10,
+      "bezier": {
+        "x1": 0.4496,
+        "y1": 0.1046,
+        "x2": 0.6902,
+        "y2": 0.3263,
+        "durationInFrames": 10,
+        "delay": 0.01,
+        "built_duration_frames": 10,
+        "rmse": 0.006
+      },
+      "spring": {
+        "stiffness": 670.409,
+        "damping": 55.2,
+        "mass": 1,
+        "damping_ratio": 1.066,
+        "built_duration_frames": 14,
+        "rmse": 0.3738
+      },
+      "recommended": "bezier",
+      "note": "prompt box rises while fading out (ease-in); movement is cut by the fade: last visible frame f111 at -37 px (-3.4% H); icons disperse radially ~7.5% from the centre over the same frames; opacity: send-button luma 17 (f100) -> 247 (f110)"
+    },
+    "v1.logo-blink.v1c1": {
+      "technique_id": "v1.logo-blink.v1c1",
+      "file": "curves/v1.logo-blink.v1c1.csv",
+      "property": "scale-y",
+      "unit": "eye-pixel area px^2 (white pixels inside the mark; proportional to the eye-bar height because the bar width does not change): 277 = closed 4 px dashes, 1811 = open 54 px bars",
+      "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/s6_blink_eyes.csv",
+      "column": "area",
+      "sampled_frames": [
+        903,
+        920
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 277.0,
+      "to_value": 1811.0,
+      "active_frames": [
+        906,
+        916
+      ],
+      "measured_duration_frames": 10,
+      "bezier": {
+        "x1": 0.31,
+        "y1": 0.96,
+        "x2": 0.6299,
+        "y2": 0.9724,
+        "durationInFrames": 12,
+        "delay": -0.001,
+        "built_duration_frames": 10,
+        "rmse": 0.0015
+      },
+      "spring": {
+        "stiffness": 1117.54,
+        "damping": 67.986,
+        "mass": 1,
+        "damping_ratio": 1.0169,
+        "built_duration_frames": 11,
+        "rmse": 0.0432
+      },
+      "recommended": "bezier",
+      "note": "mark blink: both eye bars collapse in one frame (f899 open bars y 335-388, 54 px -> f900 4 px dashes at the vertical middle of the bars, y 360-363, centred on the bar centre y 361.5), stay closed f900-f906, then reopen symmetrically about y 361.5 (this curve): bars back to their full 54 px at f916 (scratch/s6_blink_eye_extent.csv), the area creeps up another 1.3% to f918 at the anti-aliased edges; build it as scaleY of each bar about its own centre (y 361.5), not the top; the mark starts its slide at f921"
+    },
+    "v1.logo-lockup-slide.v1c1": {
+      "technique_id": "v1.logo-lockup-slide.v1c1",
+      "file": "curves/v1.logo-lockup-slide.v1c1.csv",
+      "property": "position-x",
+      "unit": "px (mark ink centroid x; 1920 px = 100% W)",
+      "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/t5_mark_comp.csv",
+      "column": "cx",
+      "sampled_frames": [
+        912,
+        960
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 957.63,
+      "to_value": 698.48,
+      "active_frames": [
+        923,
+        943
+      ],
+      "measured_duration_frames": 20,
+      "bezier": {
+        "x1": 0.5923,
+        "y1": 0.0555,
+        "x2": 0.4118,
+        "y2": 0.9436,
+        "durationInFrames": 25,
+        "delay": -2.541,
+        "built_duration_frames": 21,
+        "rmse": 0.0081
+      },
+      "spring": {
+        "stiffness": 150.659,
+        "damping": 19.425,
+        "mass": 1,
+        "damping_ratio": 0.7913,
+        "built_duration_frames": 18,
+        "rmse": 0.1377
+      },
+      "recommended": "bezier",
+      "note": "end-card mark slides left 259 px (13.5% W) to make room for the wordmark, which pops on at full opacity at f942 in its final place while the mark is still settling"
+    },
+    "v1.logo-mark-pop-in.v1c1": {
+      "technique_id": "v1.logo-mark-pop-in.v1c1",
+      "file": "curves/v1.logo-mark-pop-in.v1c1.csv",
+      "property": "opacity",
+      "unit": "luma 0-255 inside the hex mark body (246 = opacity 0, 17 = opacity 1)",
+      "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/t1_s2_mark_luma2.csv",
+      "column": "mean",
+      "sampled_frames": [
+        111,
+        128
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 246.0,
+      "to_value": 17.0,
+      "active_frames": [
+        113,
+        122
+      ],
+      "measured_duration_frames": 9,
+      "bezier": {
+        "x1": 0.2256,
+        "y1": 1.0163,
+        "x2": 0.6283,
+        "y2": 0.9457,
+        "durationInFrames": 9,
+        "delay": 0.695,
+        "built_duration_frames": 8,
+        "rmse": 0.0727
+      },
+      "spring": {
+        "stiffness": 2042.531,
+        "damping": 142.734,
+        "mass": 1,
+        "damping_ratio": 1.5791,
+        "built_duration_frames": 8,
+        "rmse": 0.0447
+      },
+      "recommended": "spring",
+      "note": "centre hex mark fading in at the start of the counter layout (T1 incoming side); scale 0.765 (f114) -> 1.0 (f120) over the same frames (multi-scale template, ref f121); the counter label pops on at full opacity at f114"
+    },
+    "v1.particle-packet-hop.v1c1": {
+      "technique_id": "v1.particle-packet-hop.v1c1",
+      "file": "curves/v1.particle-packet-hop.v1c1.csv",
+      "property": "position-x",
+      "unit": "px (packet dot centre x; path is a straight line from (780,460) to (1139,360))",
+      "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/s3_packet_out.csv",
+      "column": "cx",
+      "sampled_frames": [
+        420,
+        437
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 780.7,
+      "to_value": 1138.3,
+      "active_frames": [
+        423,
+        435
+      ],
+      "measured_duration_frames": 12,
+      "bezier": {
+        "x1": 0.5408,
+        "y1": 0.0665,
+        "x2": 0.3643,
+        "y2": 1.0548,
+        "durationInFrames": 16,
+        "delay": -1.434,
+        "built_duration_frames": 12,
+        "rmse": 0.0383
+      },
+      "spring": {
+        "stiffness": 330.674,
+        "damping": 26.28,
+        "mass": 1,
+        "damping_ratio": 0.7226,
+        "built_duration_frames": 20,
+        "rmse": 0.2723
+      },
+      "recommended": "bezier",
+      "note": "34 px grey dot travels from the end of the tool-call line in card 1 to the input line of card 2 (dark gap crossed at f429); the incoming request appears in card 2 the frame after it lands (f438)"
+    },
+    "v1.trans-dip-to-bg.v1c1": {
+      "technique_id": "v1.trans-dip-to-bg.v1c1",
+      "file": "curves/v1.trans-dip-to-bg.v1c1.csv",
+      "property": "opacity",
+      "unit": "luma 0-255 inside the centre mark (36.5 = opacity 1, 246 = background = opacity 0)",
+      "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/t2_s2_mark_luma.csv",
+      "column": "mean",
+      "sampled_frames": [
+        324,
+        337
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 36.541,
+      "to_value": 246.0,
+      "active_frames": [
+        328,
+        337
+      ],
+      "measured_duration_frames": 9,
+      "bezier": {
+        "x1": 0.3469,
+        "y1": 0.0103,
+        "x2": 0.6784,
+        "y2": 0.1965,
+        "durationInFrames": 9,
+        "delay": -0.672,
+        "built_duration_frames": 8,
+        "rmse": 0.0547
+      },
+      "spring": {
+        "stiffness": 137.7,
+        "damping": 1.005,
+        "mass": 1,
+        "damping_ratio": 0.0428,
+        "built_duration_frames": 154,
+        "rmse": 0.797
+      },
+      "recommended": "bezier",
+      "note": "T2 outgoing side: the whole network + counter fade to the empty background with no scale change (template scale 1.000 f324-f336); f337 is a single empty frame; incoming cards: v1.card-slide-fade-in"
+    },
+    "v1.trans-zoom-through-mark.v1c1": {
+      "technique_id": "v1.trans-zoom-through-mark.v1c1",
+      "file": "curves/v1.trans-zoom-through-mark.v1c1.csv",
+      "property": "scale",
+      "unit": "scale factor of the network layer and the centre mark (1.0 = network size before T5; end 1.40)",
+      "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/t5_layer.csv",
+      "column": "scale",
+      "sampled_frames": [
+        864,
+        905
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 1.0,
+      "to_value": 1.3987,
+      "active_frames": [
+        872,
+        895
+      ],
+      "measured_duration_frames": 23,
+      "bezier": {
+        "x1": 0.5705,
+        "y1": 0.1295,
+        "x2": 0.4226,
+        "y2": 0.8155,
+        "durationInFrames": 24,
+        "delay": -0.402,
+        "built_duration_frames": 22,
+        "rmse": 0.0133
+      },
+      "spring": {
+        "stiffness": 116.463,
+        "damping": 16.762,
+        "mass": 1,
+        "damping_ratio": 0.7766,
+        "built_duration_frames": 29,
+        "rmse": 0.2812
+      },
+      "recommended": "bezier",
+      "note": "composite: grid-patch multi-scale template f864-f878 (grid fades out f880-f888), centre-mark template f879-f905 matched at f879 (overlap f879-f887 agrees within 0.01); the layer also rises: mark centre 540 px (50% H) -> 385 px (35.6% H), same timing (see mark_y column)"
+    },
+    "v1.ui-button-press.release.v1c1": {
+      "technique_id": "v1.ui-button-press.release.v1c1",
+      "file": "curves/v1.ui-button-press.release.v1c1.csv",
+      "property": "scale",
+      "unit": "scale factor of the send button about its own centre (1620.5, 540.5); 1.0 = 95.9 px diameter",
+      "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/s1_sendbtn_press.csv",
+      "column": "scale_soft",
+      "sampled_frames": [
+        85,
+        97
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 0.9004,
+      "to_value": 1.0001,
+      "active_frames": [
+        87,
+        91
+      ],
+      "measured_duration_frames": 4,
+      "bezier": {
+        "x1": 0.1301,
+        "y1": -0.0,
+        "x2": 0.6757,
+        "y2": 0.0032,
+        "durationInFrames": 4,
+        "delay": -0.51,
+        "built_duration_frames": 4,
+        "rmse": 0.1185
+      },
+      "spring": {
+        "stiffness": 3183.079,
+        "damping": 81.913,
+        "mass": 1,
+        "damping_ratio": 0.7259,
+        "built_duration_frames": 7,
+        "rmse": 0.3984
+      },
+      "recommended": "bezier",
+      "note": "release half of the send-button click (0.900 -> 1.000), same measurement as v1.ui-button-press.v1c1; back at rest from f91, 10 f before the send-off exit; the release equals the press-down curve (v1.ui-button-press.v1c1) played backwards, q(f) = 1 - P(171.55 - f), rms 0.006 over f87-f91; the high shape rmse comes from the 2% window rule on a 4-frame move (per-frame residual of this fit < 0.0001)"
+    },
+    "v1.ui-button-press.v1c1": {
+      "technique_id": "v1.ui-button-press.v1c1",
+      "file": "curves/v1.ui-button-press.v1c1.csv",
+      "property": "scale",
+      "unit": "scale factor of the send button about its own centre (1620.5, 540.5); 1.0 = 95.9 px diameter",
+      "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/s1_sendbtn_press.csv",
+      "column": "scale_soft",
+      "sampled_frames": [
+        74,
+        87
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 1.0,
+      "to_value": 0.9004,
+      "active_frames": [
+        81,
+        85
+      ],
+      "measured_duration_frames": 4,
+      "bezier": {
+        "x1": 0.3196,
+        "y1": 1.0053,
+        "x2": 0.638,
+        "y2": 1.0209,
+        "durationInFrames": 5,
+        "delay": -0.031,
+        "built_duration_frames": 4,
+        "rmse": 0.0105
+      },
+      "spring": {
+        "stiffness": 9442.799,
+        "damping": 206.067,
+        "mass": 1,
+        "damping_ratio": 1.0603,
+        "built_duration_frames": 4,
+        "rmse": 0.0221
+      },
+      "recommended": "bezier",
+      "note": "press-down half of the send-button click: soft-edge disc diameter per frame (luma<100 component, holes filled, anti-aliased rim weighted); starts with the caret removal at f81; centre fixed within 0.05 px; button luma unchanged (18.0-18.6)"
+    },
+    "v1.ui-prompt-pop-in.v1c1": {
+      "technique_id": "v1.ui-prompt-pop-in.v1c1",
+      "file": "curves/v1.ui-prompt-pop-in.v1c1.csv",
+      "property": "opacity",
+      "unit": "luma 0-255 inside the black send button (246 = bg = opacity 0, 17 = opacity 1)",
+      "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/s1_sendbtn_in_luma.csv",
+      "column": "mean",
+      "sampled_frames": [
+        0,
+        20
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 246.0,
+      "to_value": 17.104,
+      "active_frames": [
+        0,
+        12
+      ],
+      "measured_duration_frames": 12,
+      "bezier": {
+        "x1": 0.3019,
+        "y1": 0.9186,
+        "x2": 0.6501,
+        "y2": 0.9638,
+        "durationInFrames": 13,
+        "delay": 0.12,
+        "built_duration_frames": 11,
+        "rmse": 0.0197
+      },
+      "spring": {
+        "stiffness": 812.171,
+        "damping": 57.84,
+        "mass": 1,
+        "damping_ratio": 1.0148,
+        "built_duration_frames": 13,
+        "rmse": 0.042
+      },
+      "recommended": "bezier",
+      "note": "prompt input box fade-in at the start of the video (f0 is the empty background, from-value = bg luma 246); box scales 0.98 -> 1.00 about the frame centre at the same time (send button template f1-f9)"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.layout-header-slide-left.v8c3",
+  "file": "curves/v8.layout-header-slide-left.v8c3.csv",
+  "property": "position-x",
+  "unit": "% of frame width",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c3r_S05_pill_bbox.csv",
+  "column": "ink_cx_pct",
+  "sampled_frames": [
+    1930,
+    1960
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 38.497,
+  "to_value": 10.265,
+  "active_frames": [
+    1930,
+    1960
+  ],
+  "measured_duration_frames": 30,
+  "bezier": {
+    "x1": 0.1109,
+    "y1": 0.5428,
+    "x2": 0.0,
+    "y2": 0.9605,
+    "durationInFrames": 37,
+    "delay": 0.793,
+    "built_duration_frames": 28,
+    "rmse": 0.0326
+  },
+  "spring": {
+    "stiffness": 234.951,
+    "damping": 32.848,
+    "mass": 1,
+    "damping_ratio": 1.0715,
+    "built_duration_frames": 23,
+    "rmse": 0.1491
+  },
+  "recommended": "bezier",
+  "note": "S05 header group (mascot pill + header row): ink centroid x of the dark mascot pill (bbox of pixels darker than 188 in the pill's lower half, y 228-263, below the header row; scratch/v8c3r_S05_pill_bbox.csv; the template track scratch/v8c3_ins_mascot_1924-1990.csv agrees within 1 px). The pill appears at f1930 at x 624 px (38.5% W; from-value = this first picture), motion-blurred and 12% wider than at rest, moves 87 then 138 px per picture (peak about 69 px per frame at f1932-f1934) and decelerates (72, 39, 27, 20, 15, 12, 10, 8, 7, 6 px per picture) to rest at x 166.5 px (10.3% W; to-value = template rest f1971-f1975, the bbox ROI is crossed by the rising headline after f1960). The header row (bold label + check icon + light label) rides with it (offsets from rest 92 / 46 / 16 px at f1941 / f1946 / f1955 against the pill's 95 / 48 / 18) while fading in and de-blurring (scratch/v8c3r_S05_header_row.csv)."
+}

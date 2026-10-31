@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-punch-in-whip-up-out.v7c5",
+  "file": "curves/v7.trans-punch-in-whip-up-out.v7c5.csv",
+  "property": "position-y",
+  "unit": "% of frame height (line-1 brand mark centre; 49.4% -> 40.4% H at the last picture before the cut)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p1_mark_3050-3140.csv",
+  "column": "cy_pct",
+  "sampled_frames": [
+    3050,
+    3091
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 49.401,
+  "to_value": 40.359,
+  "active_frames": [
+    3063,
+    3091
+  ],
+  "measured_duration_frames": 28,
+  "bezier": {
+    "x1": 0.1221,
+    "y1": 0.0617,
+    "x2": 0.7296,
+    "y2": 0.0627,
+    "durationInFrames": 30,
+    "delay": -1.953,
+    "built_duration_frames": 29,
+    "rmse": 0.0157
+  },
+  "spring": {
+    "stiffness": 62.467,
+    "damping": 67.493,
+    "mass": 1,
+    "damping_ratio": 4.2698,
+    "built_duration_frames": 44,
+    "rmse": 0.3969
+  },
+  "recommended": "bezier",
+  "note": "outgoing half of the punch-in whip P1 -> P2: the centred one-line headline (brand mark + 4 words) on the dark canvas, after a slow shrink (line span 820 -> 801 px f3050-f3086), starts to rise at ~f3062 and accelerates upward to ~9 px/frame (1.0% H) with vertical motion blur at the last picture f3091; hard cut f3094 into a x2.33 closer framing (no settle on this half: to-value = last picture); template on the brand mark (track.py, scales 0.36-1.10, global; scale 0.43-0.44 here, score 0.69-0.99)"
+}

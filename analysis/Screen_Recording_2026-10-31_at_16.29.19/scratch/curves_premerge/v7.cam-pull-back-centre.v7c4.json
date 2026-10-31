@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.cam-pull-back-centre.v7c4",
+  "file": "curves/v7.cam-pull-back-centre.v7c4.csv",
+  "property": "scale",
+  "unit": "scale factor (1.0 = finished line 970 px wide = 59.8% W at f3014)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_seq2_zoomout_width_newpic.csv",
+  "column": "scale",
+  "sampled_frames": [
+    3014,
+    3069
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.0,
+  "to_value": 0.832,
+  "active_frames": [
+    3014,
+    3062
+  ],
+  "measured_duration_frames": 48,
+  "bezier": {
+    "x1": 0.6083,
+    "y1": 0.2756,
+    "x2": 0.0,
+    "y2": 0.8439,
+    "durationInFrames": 53,
+    "delay": -1.219,
+    "built_duration_frames": 46,
+    "rmse": 0.0121
+  },
+  "spring": {
+    "stiffness": 80.471,
+    "damping": 18.564,
+    "mass": 1,
+    "damping_ratio": 1.0347,
+    "built_duration_frames": 39,
+    "rmse": 0.1145
+  },
+  "recommended": "bezier",
+  "note": "second typed sequence: once its line is finished (period f3011-f3014) the camera pulls back about the frame centre (line centre x stays 810-816 px) from 1.0 to 0.832 (line width 970 -> 807 px, logo 82 -> 67 px wide): slow start f3016-f3024, main move f3026-f3041, long tail to f3069 and beyond (continues into chunk v7c5, where the line then drifts up into the hidden push-in cut f3094); width = ink right end minus logo left edge (threshold 70/40); the corresponding stretch of the first sequence (f2414-f2469) only creeps 1.015 -> 0.985, so this is where the two sequences diverge"
+}

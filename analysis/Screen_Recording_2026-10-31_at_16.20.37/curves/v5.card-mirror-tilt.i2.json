@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.card-mirror-tilt.i2",
+  "file": "curves/v5.card-mirror-tilt.i2.csv",
+  "property": "rotation",
+  "unit": "degrees (top-edge angle of picture card 1, line fit over the middle half of the edge, sub-pixel; + = right end lower)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_A_card_turn.csv",
+  "column": "c1_top_deg",
+  "sampled_frames": [
+    3165,
+    3222
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 9.8,
+  "to_value": 1.33,
+  "active_frames": [
+    3177,
+    3202
+  ],
+  "measured_duration_frames": 25,
+  "bezier": {
+    "x1": 0.8085,
+    "y1": 0.2829,
+    "x2": 0.0701,
+    "y2": 0.8307,
+    "durationInFrames": 23,
+    "delay": 2.494,
+    "built_duration_frames": 20,
+    "rmse": 0.0709
+  },
+  "spring": {
+    "stiffness": 256.518,
+    "damping": 26.434,
+    "mass": 1,
+    "damping_ratio": 0.8252,
+    "built_duration_frames": 15,
+    "rmse": 0.1552
+  },
+  "recommended": "bezier",
+  "note": "the outer cards turn back during the camera pull-back: card 1 9.8 -> 1.3 deg, card 3 -9.8 -> -1.3 deg, mirrored within 0.2 deg; fastest f3188-3192 together with the pull-back's fastest pictures"
+}

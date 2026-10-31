@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.logo-lockup-slide.v4c2",
+  "file": "curves/v4.logo-lockup-slide.v4c2.csv",
+  "property": "position-x",
+  "unit": "% of frame width (mark centre)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/c2_s5_mark_slide.csv",
+  "column": "cx_pct",
+  "sampled_frames": [
+    1480,
+    1545
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 50.0,
+  "to_value": 39.896,
+  "active_frames": [
+    1492,
+    1520
+  ],
+  "measured_duration_frames": 28,
+  "bezier": {
+    "x1": 0.5943,
+    "y1": 0.0072,
+    "x2": 0.4056,
+    "y2": 0.9931,
+    "durationInFrames": 35,
+    "delay": -3.498,
+    "built_duration_frames": 27,
+    "rmse": 0.0069
+  },
+  "spring": {
+    "stiffness": 83.641,
+    "damping": 14.359,
+    "mass": 1,
+    "damping_ratio": 0.785,
+    "built_duration_frames": 23,
+    "rmse": 0.1143
+  },
+  "recommended": "bezier",
+  "note": "brand mark slides left from the frame centre (960) to 766 px to make room for the wordmark (template track, scores 0.93-1.00); y stays 500"
+}

@@ -36,8 +36,12 @@
       "ffmpeg_scene": 0.0604,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c001"
+      "status": "rejected",
+      "id": "c001",
+      "reason": "opening build of the label inside one composition: the box grows (19.5% -> 28.5% W between pictures f4 and f6) and its fill darkens while the halftone dot ring and the blurred background spheres move; nothing is replaced (v7c1)",
+      "decided_by": [
+        "v7c1"
+      ]
     },
     {
       "frame": 16,
@@ -53,8 +57,12 @@
       "ffmpeg_scene": 0.0808,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c002"
+      "status": "rejected",
+      "id": "c002",
+      "reason": "the label box widens with horizontal motion blur (f14 -> f16) and the arrow enters as a vertical blur streak; same composition (v7c1)",
+      "decided_by": [
+        "v7c1"
+      ]
     },
     {
       "frame": 151,
@@ -69,8 +77,12 @@
       "ffmpeg_scene": 0.4414,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c003"
+      "status": "rejected",
+      "id": "c003",
+      "reason": "second ripple ring restores the luminance polarity (inverted -> normal) inside S01; an fx inside the shot: label, mascot balls and shards stay in place (v7c1)",
+      "decided_by": [
+        "v7c1"
+      ]
     },
     {
       "frame": 162,
@@ -85,8 +97,12 @@
       "ffmpeg_scene": 0.0261,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c004"
+      "status": "confirmed",
+      "id": "c004",
+      "reason": "anchor of T01 (S01 -> S02) (soft, f144-f168): anchor of the soft iris-to-white transition f144-f168: the white disc covers the whole frame at f162 (the S01 picture is gone) (v7c1)",
+      "decided_by": [
+        "v7c1"
+      ]
     },
     {
       "frame": 168,
@@ -101,8 +117,12 @@
       "ffmpeg_scene": 0.0,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c005"
+      "status": "rejected",
+      "id": "c005",
+      "reason": "inside the iris-to-white transition anchored by c004: the change is the next layout's first picture (f169) appearing on the white field; PySceneDetect labels it 1 frame early (v7c1)",
+      "decided_by": [
+        "v7c1"
+      ]
     },
     {
       "frame": 172,
@@ -117,8 +137,30 @@
       "ffmpeg_scene": 0.0002,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c006"
+      "status": "rejected",
+      "id": "c006",
+      "reason": "S02 menu UI settling (zoom-out with motion blur, f171 -> f174); same composition (v7c1)",
+      "decided_by": [
+        "v7c1"
+      ]
+    },
+    {
+      "frame": 289,
+      "time_s": 4.8167,
+      "last_frame_before": 286,
+      "sources": [],
+      "content_val": 3.17,
+      "delta_lum": 4.83,
+      "adaptive_ratio": 1.36,
+      "ffmpeg_scene": 0.0,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m001",
+      "reason": "hard cut T02 (S02 -> S03), hidden inside a whip (motion range f269-f304); missed by all three detectors (similar white frames); found on overview_00288-00333.jpg and in the tracker CSVs; shares: upward motion with vertical motion blur and the same white page (luma 248): the S02 menu accelerates up (ease-in, 17 f, last picture f286 at 2.45% H per frame), the picture is replaced between f286 and f289 (f287-f288 repeat f286), and the S03 page arrives 8.6% H below its rest still moving up (1.5% H per frame) and decelerates (15 f) (v7c1)",
+      "decided_by": [
+        "v7c1"
+      ]
     },
     {
       "frame": 413,
@@ -134,8 +176,12 @@
       "ffmpeg_scene": 0.0022,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c007"
+      "status": "rejected",
+      "id": "c007",
+      "reason": "PySceneDetect index offset on this VFR file: pictures f410-f417 are the same S03 page pulling back with blur; the replacement is at f419 (c008) (v7c1)",
+      "decided_by": [
+        "v7c1"
+      ]
     },
     {
       "frame": 419,
@@ -150,8 +196,12 @@
       "ffmpeg_scene": 1.0,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c008"
+      "status": "confirmed",
+      "id": "c008",
+      "reason": "T03 (S03 -> S04): hard cut S03 -> S04: light page (mean luma 242) replaced by the dark panel UI (102) between pictures f417 and f419, on motion (zoom-out continues across the cut) (v7c1)",
+      "decided_by": [
+        "v7c1"
+      ]
     },
     {
       "frame": 486,
@@ -168,8 +218,13 @@
       "ffmpeg_scene": 0.092,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c009"
+      "status": "confirmed",
+      "id": "c009",
+      "corrected_frame": 484,
+      "reason": "T04 (S04 -> S05), boundary at f484 (the first new picture; the detector frame f486 is off by the VFR index drift): hard cut S04 -> S05; the picture is replaced between f481 and f484 (ffmpeg score fires at f484, PySceneDetect labels f486): boundary frame 484 (v7c1)",
+      "decided_by": [
+        "v7c1"
+      ]
     },
     {
       "frame": 531,
@@ -184,8 +239,12 @@
       "ffmpeg_scene": 0.1698,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c010"
+      "status": "rejected",
+      "id": "c010",
+      "reason": "S05 page content scrolling inside the static window (momentum scroll f509-f617) (v7c1)",
+      "decided_by": [
+        "v7c1"
+      ]
     },
     {
       "frame": 536,
@@ -201,8 +260,12 @@
       "ffmpeg_scene": 0.1996,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c011"
+      "status": "rejected",
+      "id": "c011",
+      "reason": "S05 in-window scroll, 28-36 px per picture; window and background static (v7c1)",
+      "decided_by": [
+        "v7c1"
+      ]
     },
     {
       "frame": 540,
@@ -218,8 +281,12 @@
       "ffmpeg_scene": 0.2083,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c012"
+      "status": "rejected",
+      "id": "c012",
+      "reason": "S05 in-window scroll near peak speed (41 px per picture) (v7c1)",
+      "decided_by": [
+        "v7c1"
+      ]
     },
     {
       "frame": 544,
@@ -234,8 +301,12 @@
       "ffmpeg_scene": 0.2366,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c013"
+      "status": "rejected",
+      "id": "c013",
+      "reason": "S05 in-window scroll at peak speed (49 px per picture) (v7c1)",
+      "decided_by": [
+        "v7c1"
+      ]
     },
     {
       "frame": 547,
@@ -251,8 +322,12 @@
       "ffmpeg_scene": 0.2318,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c014"
+      "status": "rejected",
+      "id": "c014",
+      "reason": "S05 in-window scroll at peak speed (51 px per picture) (v7c1)",
+      "decided_by": [
+        "v7c1"
+      ]
     },
     {
       "frame": 554,
@@ -268,8 +343,12 @@
       "ffmpeg_scene": 0.2523,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c015"
+      "status": "rejected",
+      "id": "c015",
+      "reason": "S05 in-window scroll decelerating (50 px per picture) (v7c1)",
+      "decided_by": [
+        "v7c1"
+      ]
     },
     {
       "frame": 560,
@@ -284,8 +363,12 @@
       "ffmpeg_scene": 0.2431,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c016"
+      "status": "rejected",
+      "id": "c016",
+      "reason": "S05 in-window scroll decelerating (43 px per picture) (v7c1)",
+      "decided_by": [
+        "v7c1"
+      ]
     },
     {
       "frame": 626,
@@ -301,8 +384,12 @@
       "ffmpeg_scene": 0.0002,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c017"
+      "status": "rejected",
+      "id": "c017",
+      "reason": "pictures f622-f629 are identical (S05 at rest); PySceneDetect echo of the f631 cut (c018) (v7c1)",
+      "decided_by": [
+        "v7c1"
+      ]
     },
     {
       "frame": 631,
@@ -317,8 +404,12 @@
       "ffmpeg_scene": 0.7518,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c018"
+      "status": "confirmed",
+      "id": "c018",
+      "reason": "T05 (S05 -> S06): hard cut S05 (product UI window, at rest since f617) -> S06 footage (v7c1)",
+      "decided_by": [
+        "v7c1"
+      ]
     },
     {
       "frame": 706,
@@ -333,8 +424,12 @@
       "ffmpeg_scene": 0.5741,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c019"
+      "status": "confirmed",
+      "id": "c019",
+      "reason": "T06 (S06 -> S07): hard cut S06 footage -> S07 footage (picture replaced between f705 and f706) (v7c1)",
+      "decided_by": [
+        "v7c1"
+      ]
     },
     {
       "frame": 710,
@@ -350,8 +445,13 @@
       "ffmpeg_scene": 0.0002,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c020"
+      "status": "rejected",
+      "id": "c020",
+      "reason": "chunk-edge candidate decided by looking to f727: f706-f727 is one continuous shot (work.mp4 f709 vs f710 identical); PySceneDetect echo of the f706 cut; the voice badge (f709) and caption (f712) are overlay entrances, not cuts (v7c1) / duplicate of the hard cut at f706 (c019, v7c1 range): work.mp4 shows no change f709 -> f710 (mean abs diff 0.02 luma); PySceneDetect index 3 pictures late (v7c2)",
+      "decided_by": [
+        "v7c1",
+        "v7c2"
+      ]
     },
     {
       "frame": 744,
@@ -366,8 +466,12 @@
       "ffmpeg_scene": 0.0171,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c021"
+      "status": "rejected",
+      "id": "c021",
+      "reason": "start of a zoom-in inside the footage on the same shot: a camera move, not a scale done in the edit (the depth of field changes; see notes); consecutive pictures stay aligned by a similarity (ECC 0.98-0.99); no picture replacement (v7c2)",
+      "decided_by": [
+        "v7c2"
+      ]
     },
     {
       "frame": 750,
@@ -382,8 +486,12 @@
       "ffmpeg_scene": 0.1224,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c022"
+      "status": "rejected",
+      "id": "c022",
+      "reason": "the same zoom inside the footage, with motion blur (see c021); no picture replacement (v7c2)",
+      "decided_by": [
+        "v7c2"
+      ]
     },
     {
       "frame": 900,
@@ -400,8 +508,12 @@
       "ffmpeg_scene": 0.5276,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c023"
+      "status": "confirmed",
+      "id": "c023",
+      "reason": "T07 (S07 -> S08): hard cut between footage shots (mean abs diff 56.7, histogram correlation 0.28); caption cleared at the cut, voice badge continues (v7c2)",
+      "decided_by": [
+        "v7c2"
+      ]
     },
     {
       "frame": 1079,
@@ -418,8 +530,12 @@
       "ffmpeg_scene": 0.6975,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c024"
+      "status": "confirmed",
+      "id": "c024",
+      "reason": "T08 (S08 -> S09): hard cut footage -> product UI, cut into a moving scroll (v7c2)",
+      "decided_by": [
+        "v7c2"
+      ]
     },
     {
       "frame": 1086,
@@ -434,8 +550,12 @@
       "ffmpeg_scene": 0.0041,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c025"
+      "status": "rejected",
+      "id": "c025",
+      "reason": "bright cards scrolling through the frame (mean luma 118 -> 136); phase-correlation chain continuous (v7c2)",
+      "decided_by": [
+        "v7c2"
+      ]
     },
     {
       "frame": 1089,
@@ -451,8 +571,12 @@
       "ffmpeg_scene": 0.305,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c026"
+      "status": "rejected",
+      "id": "c026",
+      "reason": "UI list scrolling (momentum deceleration), continuous (v7c2)",
+      "decided_by": [
+        "v7c2"
+      ]
     },
     {
       "frame": 1096,
@@ -467,8 +591,12 @@
       "ffmpeg_scene": 0.272,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c027"
+      "status": "rejected",
+      "id": "c027",
+      "reason": "UI list scrolling, continuous (v7c2)",
+      "decided_by": [
+        "v7c2"
+      ]
     },
     {
       "frame": 1196,
@@ -483,8 +611,12 @@
       "ffmpeg_scene": 0.3356,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c028"
+      "status": "confirmed",
+      "id": "c028",
+      "reason": "T09 (S09 -> S10): hidden hard cut of the first leftward whip (S09 -> close-up of the bar end, x2.37); anchor of the whip range f1151-f1226 (v7c2)",
+      "decided_by": [
+        "v7c2"
+      ]
     },
     {
       "frame": 1202,
@@ -500,8 +632,12 @@
       "ffmpeg_scene": 0.0348,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c029"
+      "status": "rejected",
+      "id": "c029",
+      "reason": "duplicate of c028 (index 2 pictures late); f1202 lies in the whip-in deceleration (diff 6.9) (v7c2)",
+      "decided_by": [
+        "v7c2"
+      ]
     },
     {
       "frame": 1260,
@@ -518,8 +654,13 @@
       "ffmpeg_scene": 0.0002,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c030"
+      "status": "confirmed",
+      "id": "c030",
+      "corrected_frame": 1259,
+      "reason": "T10 (S10 -> S11), boundary at f1259 (the first new picture; the detector frame f1260 is off by the VFR index drift): hard cut inside the spin-zoom whip; the new picture arrives at f1259 (diff 62.7), f1260 repeats it (v7c2)",
+      "decided_by": [
+        "v7c2"
+      ]
     },
     {
       "frame": 1296,
@@ -535,8 +676,12 @@
       "ffmpeg_scene": 0.0014,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c031"
+      "status": "rejected",
+      "id": "c031",
+      "reason": "cursor glow ramp and the f1304 cursor -> 3D pointer swap inside S11 (diff at most 14.7, composition holds) (v7c2)",
+      "decided_by": [
+        "v7c2"
+      ]
     },
     {
       "frame": 1466,
@@ -552,8 +697,12 @@
       "ffmpeg_scene": 0.0012,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c032"
+      "status": "rejected",
+      "id": "c032",
+      "reason": "nothing changes at f1466 (diff below 6, continuous pan); duplicate of c033 with the index 8 pictures early (v7c2)",
+      "decided_by": [
+        "v7c2"
+      ]
     },
     {
       "frame": 1487,
@@ -568,8 +717,12 @@
       "ffmpeg_scene": 0.5561,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c033"
+      "status": "confirmed",
+      "id": "c033",
+      "reason": "T11 (S11 -> S12): hidden hard cut of the second leftward whip (pointer scene -> file browser) (v7c2)",
+      "decided_by": [
+        "v7c2"
+      ]
     },
     {
       "frame": 1531,
@@ -585,8 +738,12 @@
       "ffmpeg_scene": 0.0048,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c034"
+      "status": "rejected",
+      "id": "c034",
+      "reason": "duplicate of c035 (index 4 pictures early); f1531 is the window pan accelerating inside S12 (diff 6.7) (v7c2)",
+      "decided_by": [
+        "v7c2"
+      ]
     },
     {
       "frame": 1542,
@@ -601,8 +758,12 @@
       "ffmpeg_scene": 0.165,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c035"
+      "status": "confirmed",
+      "id": "c035",
+      "reason": "T12 (S12 -> S13): hidden hard cut of the third leftward whip (close window -> same window zoomed out x0.455, grid blurred across the cut) (v7c2)",
+      "decided_by": [
+        "v7c2"
+      ]
     },
     {
       "frame": 1622,
@@ -617,8 +778,12 @@
       "ffmpeg_scene": 0.135,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c036"
+      "status": "rejected",
+      "id": "c036",
+      "reason": "selected thumbnail grid dragged right with motion blur (diff 15.5), continuous (v7c2)",
+      "decided_by": [
+        "v7c2"
+      ]
     },
     {
       "frame": 1630,
@@ -634,8 +799,13 @@
       "ffmpeg_scene": 0.0001,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c037"
+      "status": "rejected",
+      "id": "c037",
+      "reason": "edge candidate (frame in v7c3 range, decided by looking to f1645): the grid drag continues (diff 11.0 / 9.1 at f1629 / f1631); duplicate of c038 f1644 with the index 9 pictures early (v7c2) / chunk-edge candidate (decided looking to f1645): no picture change, f1629 and f1630 are the same picture (motion.csv diff 0.00005; source decoded pictures 774 -> 775 differ by 0.95 mean luma); PySceneDetect index artifact 9 captured pictures before the true cut c038 f1644; v7c2 also rejected it (v7c3)",
+      "decided_by": [
+        "v7c2",
+        "v7c3"
+      ]
     },
     {
       "frame": 1644,
@@ -650,8 +820,12 @@
       "ffmpeg_scene": 0.3868,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c038"
+      "status": "confirmed",
+      "id": "c038",
+      "reason": "T13 (S13 -> S14): hard cut inside the leftward whip (file browser -> editor window); last old picture f1641, f1642-f1643 repeat it (v7c3)",
+      "decided_by": [
+        "v7c3"
+      ]
     },
     {
       "frame": 1786,
@@ -668,8 +842,12 @@
       "ffmpeg_scene": 0.7423,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c039"
+      "status": "confirmed",
+      "id": "c039",
+      "reason": "T14 (S14 -> S15): hard cut from the settled editor UI to footage (v7c3)",
+      "decided_by": [
+        "v7c3"
+      ]
     },
     {
       "frame": 1799,
@@ -684,8 +862,12 @@
       "ffmpeg_scene": 0.1522,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c040"
+      "status": "rejected",
+      "id": "c040",
+      "reason": "camera move inside one continuous footage shot (24 fps step) (v7c3)",
+      "decided_by": [
+        "v7c3"
+      ]
     },
     {
       "frame": 1809,
@@ -701,8 +883,12 @@
       "ffmpeg_scene": 0.142,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c041"
+      "status": "rejected",
+      "id": "c041",
+      "reason": "camera move inside one continuous footage shot (24 fps step) (v7c3)",
+      "decided_by": [
+        "v7c3"
+      ]
     },
     {
       "frame": 1820,
@@ -717,8 +903,12 @@
       "ffmpeg_scene": 0.1673,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c042"
+      "status": "rejected",
+      "id": "c042",
+      "reason": "camera move inside one continuous footage shot (24 fps step) (v7c3)",
+      "decided_by": [
+        "v7c3"
+      ]
     },
     {
       "frame": 1829,
@@ -733,8 +923,12 @@
       "ffmpeg_scene": 0.0445,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c043"
+      "status": "rejected",
+      "id": "c043",
+      "reason": "camera move inside one continuous footage shot (24 fps step) (v7c3)",
+      "decided_by": [
+        "v7c3"
+      ]
     },
     {
       "frame": 1839,
@@ -749,8 +943,12 @@
       "ffmpeg_scene": 0.0235,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c044"
+      "status": "rejected",
+      "id": "c044",
+      "reason": "camera move inside one continuous footage shot (24 fps step) (v7c3)",
+      "decided_by": [
+        "v7c3"
+      ]
     },
     {
       "frame": 1851,
@@ -765,8 +963,12 @@
       "ffmpeg_scene": 0.0474,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c045"
+      "status": "rejected",
+      "id": "c045",
+      "reason": "camera move inside one continuous footage shot (24 fps step) (v7c3)",
+      "decided_by": [
+        "v7c3"
+      ]
     },
     {
       "frame": 1864,
@@ -781,8 +983,12 @@
       "ffmpeg_scene": 0.002,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c046"
+      "status": "rejected",
+      "id": "c046",
+      "reason": "camera move inside one continuous footage shot (24 fps step) (v7c3)",
+      "decided_by": [
+        "v7c3"
+      ]
     },
     {
       "frame": 1886,
@@ -797,8 +1003,12 @@
       "ffmpeg_scene": 0.0034,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c047"
+      "status": "rejected",
+      "id": "c047",
+      "reason": "camera move inside one continuous footage shot (24 fps step) (v7c3)",
+      "decided_by": [
+        "v7c3"
+      ]
     },
     {
       "frame": 1989,
@@ -814,8 +1024,12 @@
       "ffmpeg_scene": 0.0365,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c048"
+      "status": "rejected",
+      "id": "c048",
+      "reason": "subject motion inside the same footage shot; PySceneDetect index artifact 10 captured pictures before c049 (v7c3)",
+      "decided_by": [
+        "v7c3"
+      ]
     },
     {
       "frame": 2007,
@@ -830,8 +1044,12 @@
       "ffmpeg_scene": 0.6349,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c049"
+      "status": "confirmed",
+      "id": "c049",
+      "reason": "T15 (S15 -> S16): hard cut from footage to the editor window arriving with the rightward whip-in (v7c3)",
+      "decided_by": [
+        "v7c3"
+      ]
     },
     {
       "frame": 2081,
@@ -847,8 +1065,12 @@
       "ffmpeg_scene": 0.0021,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c050"
+      "status": "rejected",
+      "id": "c050",
+      "reason": "ghost outline grid travelling over the UI during the camera tilt; PySceneDetect index artifact 4 captured pictures before c051 (v7c3)",
+      "decided_by": [
+        "v7c3"
+      ]
     },
     {
       "frame": 2091,
@@ -863,8 +1085,12 @@
       "ffmpeg_scene": 0.3387,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c051"
+      "status": "confirmed",
+      "id": "c051",
+      "reason": "T16 (S16 -> S17): hard cut, x1.76 punch-in onto the timeline area with the upward camera motion continuing across the cut (v7c3)",
+      "decided_by": [
+        "v7c3"
+      ]
     },
     {
       "frame": 2334,
@@ -880,8 +1106,13 @@
       "ffmpeg_scene": 0.03,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c052"
+      "status": "rejected",
+      "id": "c052",
+      "reason": "chunk-edge candidate (first frame of v7c4, decided looking to f2349): f2333 -> f2334 is a normal step of the exit drift (diff 0.013, same layout); PySceneDetect index artifact 6 captured pictures before the true cut c053 f2342 (decided by v7c4) (v7c3) / no picture change at f2333 -> f2334 (gray diff 0.013 = one step of the UI window's slow left drift, detail/cut_c052_f02334); its content value (44.7) belongs to the hard cut f2340 -> f2342 (PySceneDetect decoded-index offset of 6 decoded frames in this VFR stretch), which c053 marks (v7c4)",
+      "decided_by": [
+        "v7c3",
+        "v7c4"
+      ]
     },
     {
       "frame": 2342,
@@ -896,8 +1127,66 @@
       "ffmpeg_scene": 0.4094,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c053"
+      "status": "confirmed",
+      "id": "c053",
+      "reason": "T17 (S17 -> S18): hard cut: last old picture f2340 (f2341 repeat), first new picture f2342 (dark frame, agent logo arriving with horizontal blur); incoming half of a leftward whip (v7c4)",
+      "decided_by": [
+        "v7c4"
+      ]
+    },
+    {
+      "frame": 2392,
+      "time_s": 39.8667,
+      "last_frame_before": 2389,
+      "sources": [],
+      "content_val": 1.05,
+      "delta_lum": 1.59,
+      "adaptive_ratio": 0.89,
+      "ffmpeg_scene": 0.006,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m002",
+      "reason": "hard cut T18 (S18 -> S19), hidden inside a leftward whip with a one-picture x0.49 scale jump (pull-back) of the same canvas; whip-through lead-in (the last old picture f2389 is the most blurred: 21 px of horizontal blur, scratch/v7c4_z1_lead_blurfit_2355-2396.csv) (motion range f2361-f2424); missed by all three detectors (content value at most 3.0 and ffmpeg score at most 0.015 in f2381-f2399, below the weak thresholds 14 and 0.12; whole-picture difference 5.4 luma at f2392); found on the sheets; shares: the dark canvas, line 1 (still typing, its logo still spinning) and the leftward motion: the close framing (2.13x of the settled one) pans left accelerating from 1.6 to 17 px/f (horizontal blur on f2389), the picture is replaced by the framing x0.49 smaller (logo ink 153-155 -> 75 px tall, f2389 -> f2392; f2390-f2391 repeat f2389), which arrives moving left at about 9 px/f with horizontal blur and decelerates over 27 f (first word centre 622 -> 560 px), then creeps 1.04 -> 0.985 (v7c4)",
+      "decided_by": [
+        "v7c4"
+      ]
+    },
+    {
+      "frame": 2474,
+      "time_s": 41.2333,
+      "last_frame_before": 2471,
+      "sources": [],
+      "content_val": 5.44,
+      "delta_lum": 8.58,
+      "adaptive_ratio": 1.02,
+      "ffmpeg_scene": 0.0347,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m003",
+      "reason": "hard cut T19 (S19 -> S20), hidden inside a punch-in whip up with a one-picture x2.2 scale jump (push-in) of the same canvas; stop-hold lead-in (the outgoing move stops dead one picture before the cut) (motion range f2444-f2496); missed by all three detectors (content value at most 6.2 and ffmpeg score at most 0.035 in f2462-f2481; whole-picture difference 7.4 luma at f2474); found on the sheets; shares: the dark canvas, line 1 and the upward direction (not the speed: the old framing is at rest on its last picture): the settled line drifts up accelerating (blur-aware template on logo + first word: centre y 454.2 -> 369.9 px f2440-f2469, box blur along y 3 px at f2454-f2460, 5 / 7 / 9 / 17 px at f2462 / 2464 / 2467 / 2469, f2469 the fastest picture), then stops dead: the last old picture f2471 is crisp (blur 1 px, vertical gradient p99.9 126 vs 131-135 at rest and 23 at f2469) 44.9 px higher (325.0 px) and stays to f2473 (one picture); then the picture is replaced by a framing x2.2 closer (logo 69 -> 152 px wide) that arrives 283 px below its rest (logo centre y 432 -> 149 px) still rising at about 40 px/f with vertical blur and settles in 20 f, revealing the empty row 2 (v7c4)",
+      "decided_by": [
+        "v7c4"
+      ]
+    },
+    {
+      "frame": 2515,
+      "time_s": 41.9167,
+      "last_frame_before": 2513,
+      "sources": [],
+      "content_val": 0.06,
+      "delta_lum": 0.01,
+      "adaptive_ratio": 0.03,
+      "ffmpeg_scene": 0.104,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m004",
+      "reason": "hard cut T20 (S20 -> S21), hidden inside a leftward whip with a one-picture x0.44 scale jump (pull-back) of the same canvas; stop-hold lead-in (the outgoing move stops dead one picture before the cut) (motion range f2499-f2589); missed by all three detectors (content value at most 9.8 and ffmpeg score at most 0.115 in f2503-f2522, below the weak thresholds 14 and 0.12; whole-picture difference 11.8 luma at f2515); found on the sheets; shares: the dark canvas, both rows and the leftward direction (not the speed: the old framing is at rest on its last picture): the close framing pans left accelerating (blur-aware template on the app icon: centre x 570.5 -> 491.9 px f2499-f2509, box blur along x 3 / 7 / 15 / 33 px at f2501 / 2504 / 2507 / 2509, f2509 the fastest picture, f2510 a capture duplicate), then stops dead: the last old picture f2511 is crisp (blur 1 px) 92.4 px further left (icon centre 399.5 px, left edge 321 px) and stays to f2514 (f2512-f2513 capture duplicates, f2514 repeat: one picture); then the picture is replaced by the framing x0.44 smaller (app icon 156 -> 68-69 px), which arrives moving left under horizontal blur (clear by f2519) and decelerates over 59 f (app-icon left edge 495 -> 249 px), re-centring the two-row block (v7c4)",
+      "decided_by": [
+        "v7c4"
+      ]
     },
     {
       "frame": 2601,
@@ -912,8 +1201,13 @@
       "ffmpeg_scene": 0.0061,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c054"
+      "status": "confirmed",
+      "id": "c054",
+      "corrected_frame": 2609,
+      "reason": "T21 (S21 -> S22), boundary at f2609 (the first new picture; the detector frame f2601 is off by the VFR index drift): anchor of the hidden hard cut f2609 (last old picture f2606, f2607-f2608 repeat it; first new picture f2609, the same canvas x1.4 closer) inside the punch-in whip up f2589-f2641: in this VFR stretch the content detector's values sit 3-4 decoded pictures early (best lag of content_val against the measured picture differences: 3 pictures over f2540-f2700, r 0.83; 4 over f2570-f2650, r 0.96), so its weak value at f2601 (14.25) belongs to the picture change f2606 -> f2609/f2611, not to the lead-in drift (v7c4)",
+      "decided_by": [
+        "v7c4"
+      ]
     },
     {
       "frame": 2656,
@@ -928,8 +1222,12 @@
       "ffmpeg_scene": 0.0015,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c055"
+      "status": "rejected",
+      "id": "c055",
+      "reason": "birth of the dot-matrix ring that reveals footage inside the result card; card, chip and layout stay (v7c4)",
+      "decided_by": [
+        "v7c4"
+      ]
     },
     {
       "frame": 2664,
@@ -944,8 +1242,12 @@
       "ffmpeg_scene": 0.0139,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c056"
+      "status": "rejected",
+      "id": "c056",
+      "reason": "same dot-ring reveal: the footage brightens inside the expanding ring (card mean luma 35 -> 42), layout unchanged (v7c4)",
+      "decided_by": [
+        "v7c4"
+      ]
     },
     {
       "frame": 2696,
@@ -961,8 +1263,12 @@
       "ffmpeg_scene": 0.0101,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c057"
+      "status": "rejected",
+      "id": "c057",
+      "reason": "reframe pull-back of the same canvas (card scale 0.95 at f2696), motion blur (v7c4)",
+      "decided_by": [
+        "v7c4"
+      ]
     },
     {
       "frame": 2701,
@@ -977,8 +1283,12 @@
       "ffmpeg_scene": 0.152,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c058"
+      "status": "rejected",
+      "id": "c058",
+      "reason": "same pull-back at peak speed (blur f2699-f2701); line 2 re-enters at the top, card keeps its footage (v7c4)",
+      "decided_by": [
+        "v7c4"
+      ]
     },
     {
       "frame": 2720,
@@ -994,8 +1304,12 @@
       "ffmpeg_scene": 0.0003,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c059"
+      "status": "rejected",
+      "id": "c059",
+      "reason": "line 2 starts sliding off to the left with horizontal blur while the cursor drags the card down-right; picture not replaced (v7c4)",
+      "decided_by": [
+        "v7c4"
+      ]
     },
     {
       "frame": 2736,
@@ -1010,8 +1324,12 @@
       "ffmpeg_scene": 0.1537,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c060"
+      "status": "confirmed",
+      "id": "c060",
+      "reason": "T22 (S22 -> S23): hard cut: last old picture f2734 (f2735 repeat), first new picture f2736 (file-browser grid arriving with horizontal blur) (v7c4)",
+      "decided_by": [
+        "v7c4"
+      ]
     },
     {
       "frame": 2821,
@@ -1028,8 +1346,13 @@
       "ffmpeg_scene": 0.0104,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c061"
+      "status": "confirmed",
+      "id": "c061",
+      "corrected_frame": 2824,
+      "reason": "T23 (S23 -> S24), boundary at f2824 (the first new picture; the detector frame f2821 is off by the VFR index drift): anchor of the hard cut whose first new picture is f2824 (live shot); f2821 is the last old picture (browser grid blurred by the upward exit), f2822-f2823 repeat it; the content detector is one decoded frame early here (v7c4)",
+      "decided_by": [
+        "v7c4"
+      ]
     },
     {
       "frame": 2927,
@@ -1045,8 +1368,12 @@
       "ffmpeg_scene": 0.0007,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c062"
+      "status": "rejected",
+      "id": "c062",
+      "reason": "inside the live shot S24: no change f2925 -> f2927 (gray diff 0.0009); its content value (73.1) belongs to the cut at f2941 (6 decoded frames offset), which c063 marks (v7c4)",
+      "decided_by": [
+        "v7c4"
+      ]
     },
     {
       "frame": 2941,
@@ -1061,8 +1388,84 @@
       "ffmpeg_scene": 0.5854,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c063"
+      "status": "confirmed",
+      "id": "c063",
+      "reason": "T24 (S24 -> S25): hard cut: last live picture f2939 (f2940 repeat), first new picture f2941 (dark frame, agent logo arriving with horizontal blur; repeat of the f2342 opening) (v7c4)",
+      "decided_by": [
+        "v7c4"
+      ]
+    },
+    {
+      "frame": 2991,
+      "time_s": 49.85,
+      "last_frame_before": 2989,
+      "sources": [],
+      "content_val": 1.82,
+      "delta_lum": 3.08,
+      "adaptive_ratio": 0.8,
+      "ffmpeg_scene": 0.0017,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m005",
+      "reason": "hard cut T25 (S25 -> S26), hidden inside a leftward whip with a one-picture x0.535 scale jump (pull-back) of the same canvas; whip-through lead-in as f2392 (the last old picture f2989 is the most blurred: 19 px of horizontal blur, scratch/v7c4_z1b_lead_blurfit_2955-2994.csv) (motion range f2961-f3014); missed by all three detectors (content value at most 3.9 and ffmpeg score at most 0.021 in f2981-f2996; whole-picture difference 7.0 luma at f2991); found on the sheets; shares: the dark canvas, the line (still typing, its logo still spinning) and the leftward motion: a frame-for-frame repeat of the f2392 cut (+599 frames) up to the jump, which is x0.535 here (logo 158 -> 85 px wide, ink 155 -> 82 px tall; f2990 repeats f2989), so the bolder line settles larger; the wide framing glides on left (logo left edge 394 -> 331 px f2991-f3014) (v7c4)",
+      "decided_by": [
+        "v7c4"
+      ]
+    },
+    {
+      "frame": 3094,
+      "time_s": 51.5667,
+      "last_frame_before": 3091,
+      "sources": [],
+      "content_val": 5.62,
+      "delta_lum": 8.48,
+      "adaptive_ratio": 1.11,
+      "ffmpeg_scene": 0.0474,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m006",
+      "reason": "hard cut T26 (S26 -> S27), hidden inside a whip up with a one-picture x2.33 scale jump (push-in) of the same canvas (motion range f3063-f3114); missed by all three detectors (whole-frame difference 8.9 luma, histogram correlation 1.0); shares: the dark canvas, the line and the upward motion: the line rises with an ease-in to about 9 px per frame (f3063-f3091), the picture jumps x2.33 closer onto its left part (mark ink 66 -> 152 px; mark centre 27.4% W / 40.4% H -> 35.3% W / 46.0% H) and arrives 274 px below its rest still rising at about 38 px per frame with vertical smear only, then settles in 20 f (v7c5)",
+      "decided_by": [
+        "v7c5"
+      ]
+    },
+    {
+      "frame": 3134,
+      "time_s": 52.2333,
+      "last_frame_before": 3131,
+      "sources": [],
+      "content_val": 4.06,
+      "delta_lum": 5.37,
+      "adaptive_ratio": 1.25,
+      "ffmpeg_scene": 0.0276,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m007",
+      "reason": "hard cut T27 (S27 -> S28), hidden inside a leftward whip with a one-picture x0.398 scale jump (pull-back) of the same canvas (motion range f3119-f3184); missed by all three detectors (whole-frame difference 19.7 luma, histogram correlation 0.9999); shares: the dark canvas, both rows and the leftward motion: the close-up slides left accelerating to about 19 px per frame, the picture jumps x0.398 about a point near row 2's lead icon (about 569, 456 px) and the wide view keeps sliding left (up to 15 px per frame) and decelerates over 50 f (v7c5)",
+      "decided_by": [
+        "v7c5"
+      ]
+    },
+    {
+      "frame": 3214,
+      "time_s": 53.5667,
+      "last_frame_before": 3211,
+      "sources": [],
+      "content_val": 6.57,
+      "delta_lum": 8.88,
+      "adaptive_ratio": 1.54,
+      "ffmpeg_scene": 0.034,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m008",
+      "reason": "hard cut T28 (S28 -> S29), hidden inside a leftward whip with a one-picture x1.86 scale jump (push-in) of the same canvas (motion range f3191-f3246); missed by all three detectors (whole-frame difference 9.0 luma, histogram correlation 1.0); shares: the dark canvas, row 2 at the same height (centre 49.6% H) and the leftward motion: the wide view slides left accelerating to about 12 px per frame, the picture jumps x1.86 onto the end of row 2 and arrives 277 px right of its rest moving left at about 33 px per frame (1.5x the matched speed) with heavy horizontal smear, then decelerates over 32 f (v7c5)",
+      "decided_by": [
+        "v7c5"
+      ]
     },
     {
       "frame": 3261,
@@ -1077,8 +1480,12 @@
       "ffmpeg_scene": 0.0195,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c064"
+      "status": "rejected",
+      "id": "c064",
+      "reason": "start of the S29 camera pull-back on the same canvas (picture difference 7.8 / 8.9 at f3261 / f3264, histogram correlation 1.0); the word template stays locked (v7c5)",
+      "decided_by": [
+        "v7c5"
+      ]
     },
     {
       "frame": 3324,
@@ -1093,8 +1500,12 @@
       "ffmpeg_scene": 0.0083,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c065"
+      "status": "rejected",
+      "id": "c065",
+      "reason": "the camera push-in toward the picture card accelerating (difference 15.9, histogram correlation 0.9999; card template score 0.998) (v7c5)",
+      "decided_by": [
+        "v7c5"
+      ]
     },
     {
       "frame": 3339,
@@ -1109,8 +1520,12 @@
       "ffmpeg_scene": 0.1309,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c066"
+      "status": "rejected",
+      "id": "c066",
+      "reason": "just after the push-in's fastest picture (x1.141 between f3334 and f3336 with radial and vertical smear, difference 36.9 at f3336); the card template locks at 0.985-0.997 through it (v7c5)",
+      "decided_by": [
+        "v7c5"
+      ]
     },
     {
       "frame": 3376,
@@ -1125,8 +1540,12 @@
       "ffmpeg_scene": 0.027,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c067"
+      "status": "rejected",
+      "id": "c067",
+      "reason": "first scan-band sweep inside the full-frame card (difference 9.7, histogram correlation 0.954); card edges fixed to 0.1 px (v7c5)",
+      "decided_by": [
+        "v7c5"
+      ]
     },
     {
       "frame": 3426,
@@ -1142,8 +1561,12 @@
       "ffmpeg_scene": 0.0424,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c068"
+      "status": "rejected",
+      "id": "c068",
+      "reason": "left-edge entry glow of the second scan-band sweep (difference 5.0) (v7c5)",
+      "decided_by": [
+        "v7c5"
+      ]
     },
     {
       "frame": 3477,
@@ -1158,8 +1581,12 @@
       "ffmpeg_scene": 0.0022,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c069"
+      "status": "rejected",
+      "id": "c069",
+      "reason": "nothing changes (difference 1.2, histogram correlation 0.997); detector index drift, the third sweep starts at f3484 (v7c5)",
+      "decided_by": [
+        "v7c5"
+      ]
     },
     {
       "frame": 3579,
@@ -1175,8 +1602,13 @@
       "ffmpeg_scene": 0.0188,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c070"
+      "status": "confirmed",
+      "id": "c070",
+      "corrected_frame": 3581,
+      "reason": "T29 (S29 -> S30), boundary at f3581 (the first new picture; the detector frame f3579 is off by the VFR index drift): hard cut picture card -> editor UI; f3579 is the last card picture, the first new picture is f3581 (difference 46.3, histogram correlation 0.81); anchor of the down-left whip range f3535-f3624 (v7c5)",
+      "decided_by": [
+        "v7c5"
+      ]
     },
     {
       "frame": 3587,
@@ -1191,8 +1623,12 @@
       "ffmpeg_scene": 0.0004,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c071"
+      "status": "rejected",
+      "id": "c071",
+      "reason": "f3586-f3588 are identical pictures (difference 0.004) inside the incoming zoom on the editor window (v7c5)",
+      "decided_by": [
+        "v7c5"
+      ]
     },
     {
       "frame": 3589,
@@ -1207,8 +1643,12 @@
       "ffmpeg_scene": 0.1399,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c072"
+      "status": "rejected",
+      "id": "c072",
+      "reason": "fast incoming zoom on the same editor window (difference 18.0, histogram correlation 0.98) (v7c5)",
+      "decided_by": [
+        "v7c5"
+      ]
     },
     {
       "frame": 3670,
@@ -1224,8 +1664,12 @@
       "ffmpeg_scene": 0.0017,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c073"
+      "status": "rejected",
+      "id": "c073",
+      "reason": "no change at f3670 (difference 1.7, the push-out creeping); content/adaptive index drift of the f3690 cut (v7c5)",
+      "decided_by": [
+        "v7c5"
+      ]
     },
     {
       "frame": 3690,
@@ -1240,8 +1684,12 @@
       "ffmpeg_scene": 0.4259,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c074"
+      "status": "confirmed",
+      "id": "c074",
+      "reason": "T30 (S30 -> S31): hard cut editor close-up (last picture f3686, f3687-f3689 repeat) -> desktop wallpaper (difference 63.4, histogram correlation 0.23); anchor of the zoom-through range f3651-f3716 (v7c5)",
+      "decided_by": [
+        "v7c5"
+      ]
     },
     {
       "frame": 3796,
@@ -1256,8 +1704,12 @@
       "ffmpeg_scene": 0.0163,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c075"
+      "status": "rejected",
+      "id": "c075",
+      "reason": "the status capsule's word loses a letter (difference 2.2); same composition (v7c5)",
+      "decided_by": [
+        "v7c5"
+      ]
     },
     {
       "frame": 3871,
@@ -1273,8 +1725,12 @@
       "ffmpeg_scene": 0.0,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c076"
+      "status": "rejected",
+      "id": "c076",
+      "reason": "PySceneDetect index drift echo of c077: content/adaptive fire at decoded picture 1834 while the picture changes at decoded picture 1841 (= f3889); pictures f3869-f3887 hold one still file-tile composition (whole-frame phase-correlation shift 0.0 px, mean abs diff 0.19 luma f3871 vs f3887); boundary at the chunk edge checked 15 frames back (f3856-f3870) (v7c6)",
+      "decided_by": [
+        "v7c6"
+      ]
     },
     {
       "frame": 3889,
@@ -1289,8 +1745,12 @@
       "ffmpeg_scene": 0.4132,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c077"
+      "status": "confirmed",
+      "id": "c077",
+      "reason": "T31 (S31 -> S32): hard cut from the still file-tile composition (last picture f3887) to full-frame footage; quarter-resolution picture diff 50.1, ffmpeg score 0.41 (v7c6)",
+      "decided_by": [
+        "v7c6"
+      ]
     },
     {
       "frame": 4206,
@@ -1306,8 +1766,12 @@
       "ffmpeg_scene": 0.0037,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c078"
+      "status": "rejected",
+      "id": "c078",
+      "reason": "index drift echo of c079: f4204 and f4206 show the same footage shot with the same caption and badge (v7c6)",
+      "decided_by": [
+        "v7c6"
+      ]
     },
     {
       "frame": 4216,
@@ -1322,8 +1786,30 @@
       "ffmpeg_scene": 0.6293,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c079"
+      "status": "confirmed",
+      "id": "c079",
+      "reason": "T32 (S32 -> S33): hard cut from footage + caption (last picture f4214) to the dark product UI page entering mid-move (picture diff 74.6) (v7c6)",
+      "decided_by": [
+        "v7c6"
+      ]
+    },
+    {
+      "frame": 4289,
+      "time_s": 71.4833,
+      "last_frame_before": 4286,
+      "sources": [],
+      "content_val": 12.47,
+      "delta_lum": 13.69,
+      "adaptive_ratio": 1.49,
+      "ffmpeg_scene": 0.0034,
+      "confidence": "manual",
+      "origin": "manual",
+      "status": "confirmed",
+      "id": "m009",
+      "reason": "hard cut T33 (S33 -> S34), hidden inside a whip (punch-in zoom with hidden cut) (motion range f4277-f4307); missed by all three detectors (similar dark frames, blur); found on overview_04272-04317.jpg, the dense sheet f4270-f4300 and the tracker CSVs (scale x1.9 in one picture where the outgoing rate was x1.125 per picture); shares: the highlighted row's value text: the outgoing camera accelerates into it (scale 1.00 -> 1.215 of the menu's rest, centre moving left 46 px per frame at f4286, horizontal blur) and the picture is replaced at speed (f4287-f4288 repeat f4286) by a closer framing at x2.32 (a x1.7 punch beyond the outgoing zoom), which keeps drifting left/up and growing and settles in 18 f (v7c6)",
+      "decided_by": [
+        "v7c6"
+      ]
     },
     {
       "frame": 4364,
@@ -1339,8 +1825,12 @@
       "ffmpeg_scene": 0.0006,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c080"
+      "status": "rejected",
+      "id": "c080",
+      "reason": "index drift echo of c081: f4361-f4367 are the same counter close-up under the slow creep (v7c6)",
+      "decided_by": [
+        "v7c6"
+      ]
     },
     {
       "frame": 4369,
@@ -1355,8 +1845,12 @@
       "ffmpeg_scene": 0.2573,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c081"
+      "status": "confirmed",
+      "id": "c081",
+      "reason": "T34 (S34 -> S35): hard cut from the counter close-up (last picture f4367) to dimmed footage with the headline (picture diff 29.6) (v7c6)",
+      "decided_by": [
+        "v7c6"
+      ]
     },
     {
       "frame": 4517,
@@ -1372,8 +1866,12 @@
       "ffmpeg_scene": 0.0002,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c082"
+      "status": "rejected",
+      "id": "c082",
+      "reason": "index drift echo of c083: f4516 and f4517 are the same footage + headline (v7c6)",
+      "decided_by": [
+        "v7c6"
+      ]
     },
     {
       "frame": 4522,
@@ -1388,8 +1886,12 @@
       "ffmpeg_scene": 1.0,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c083"
+      "status": "confirmed",
+      "id": "c083",
+      "reason": "T35 (S35 -> S36): hard cut at the player's loop point: dimmed footage + headline (last picture f4519) -> the video's blank white first frame (picture diff 194.5); from f4535 the pictures equal f0 onward (v7c6)",
+      "decided_by": [
+        "v7c6"
+      ]
     },
     {
       "frame": 4554,
@@ -1404,8 +1906,12 @@
       "ffmpeg_scene": 0.0289,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c084"
+      "status": "rejected",
+      "id": "c084",
+      "reason": "inside the replayed title card: the label widens with horizontal motion blur and word 1's scramble smear starts (= f19); same composition (v7c6)",
+      "decided_by": [
+        "v7c6"
+      ]
     },
     {
       "frame": 4680,
@@ -1420,8 +1926,12 @@
       "ffmpeg_scene": 0.7855,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c085"
+      "status": "rejected",
+      "id": "c085",
+      "reason": "ripple ring 1 inverts the frame luminance (v7.fx-ripple-invert inside S36, = f145) (v7c6)",
+      "decided_by": [
+        "v7c6"
+      ]
     },
     {
       "frame": 4685,
@@ -1436,8 +1946,12 @@
       "ffmpeg_scene": 0.0958,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c086"
+      "status": "rejected",
+      "id": "c086",
+      "reason": "ripple ring 2 starts restoring the polarity; fx inside S36 (v7c6)",
+      "decided_by": [
+        "v7c6"
+      ]
     },
     {
       "frame": 4687,
@@ -1452,8 +1966,12 @@
       "ffmpeg_scene": 0.9398,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c087"
+      "status": "rejected",
+      "id": "c087",
+      "reason": "polarity restored by ring 2 (picture diff 107.8); fx inside S36 (= c003) (v7c6)",
+      "decided_by": [
+        "v7c6"
+      ]
     },
     {
       "frame": 4691,
@@ -1469,8 +1987,12 @@
       "ffmpeg_scene": 0.0001,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c088"
+      "status": "rejected",
+      "id": "c088",
+      "reason": "content/adaptive drift of the f4687 polarity flip while the iris disc grows; inside the soft transition (v7c6)",
+      "decided_by": [
+        "v7c6"
+      ]
     },
     {
       "frame": 4694,
@@ -1487,8 +2009,12 @@
       "ffmpeg_scene": 0.4834,
       "confidence": "high",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c089"
+      "status": "rejected",
+      "id": "c089",
+      "reason": "the iris disc grows (radius 245 -> 409-428 px) inside the soft transition f4679-f4703 (v7c6)",
+      "decided_by": [
+        "v7c6"
+      ]
     },
     {
       "frame": 4697,
@@ -1503,10 +2029,306 @@
       "ffmpeg_scene": 0.5085,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c090"
+      "status": "confirmed",
+      "id": "c090",
+      "reason": "anchor of T36 (S36 -> S37) (soft, f4679-f4703): the iris completes (frame white, mean luma 247); anchor of the soft transition f4679-f4703 (= c004 f162) (v7c6)",
+      "decided_by": [
+        "v7c6"
+      ]
     }
   ],
-  "soft_transitions": [],
-  "notes": []
+  "soft_transitions": [
+    {
+      "id": "T01",
+      "start": 144,
+      "end": 168,
+      "frames": 25,
+      "type": "mask-wipe",
+      "shared": "the white field: a soft-edged white disc grows from the label centre (x 49.9%, y 50.2%; it starts on the lightest mascot ball) until the frame is white luma 248 at f162 = the background of S02; white hold f162-f168, the next layout (menu UI) appears on that white at f169, entering from the top-left, scaled x1.59 and blurred",
+      "technique": "v7.trans-iris-white",
+      "detail": "detail/soft_144-168",
+      "boundary": "soft: the previous segment ends at floor((a+b)/2) = f156"
+    },
+    {
+      "id": "T02",
+      "start": 269,
+      "end": 304,
+      "frames": 36,
+      "type": "whip",
+      "shared": "upward motion with vertical motion blur and the same white page (luma 248): the S02 menu accelerates up (ease-in, 17 f, last picture f286 at 2.45% H per frame), the picture is replaced between f286 and f289 (f287-f288 repeat f286), and the S03 page arrives 8.6% H below its rest still moving up (1.5% H per frame) and decelerates (15 f)",
+      "technique": "v7.trans-whip-push-up",
+      "detail": "detail/soft_269-304",
+      "cut_frame": 289,
+      "boundary": "the hard cut f289 inside the move is the segment edge (S02 ends f288)"
+    },
+    {
+      "id": "T09",
+      "start": 1151,
+      "end": 1226,
+      "frames": 76,
+      "type": "whip",
+      "shared": "leftward motion at matched screen speed (about 12.8 px per frame out, about 13 px per frame in) and the prompt bar itself: S10 is a x2.37 close-up of its right end, which was off frame in S09; blur 25 px before the cut, 51 px after",
+      "technique": "v7.trans-whip-push-left",
+      "detail": "detail/soft_1151-1226",
+      "cut_frame": 1196,
+      "boundary": "the hard cut f1196 inside the move is the segment edge (S09 ends f1195)"
+    },
+    {
+      "id": "T10",
+      "start": 1234,
+      "end": 1281,
+      "frames": 48,
+      "type": "whip",
+      "shared": "the frame centre (send-button disc centre 50.4% W / 49.9% H at f1249 is replaced by the cursor, 50.2% W / 50.4% H at f1259), counter-clockwise rotation (out 0 -> -9.5 deg, in from a 9.7 deg clockwise tilt to level) and the push-in direction",
+      "technique": "v7.trans-spin-zoom-whip",
+      "detail": "detail/soft_1234-1281",
+      "cut_frame": 1259,
+      "boundary": "the hard cut f1259 inside the move is the segment edge (S10 ends f1258)"
+    },
+    {
+      "id": "T11",
+      "start": 1433,
+      "end": 1514,
+      "frames": 82,
+      "type": "whip",
+      "shared": "leftward motion (out ends at 24 px per frame left and 14 px per frame up; in starts at about 88 px per frame left) and the pointer motif (glowing 3D pointer -> small dark 3D pointer); incoming grid blurred 91 px, chrome sharp",
+      "technique": "v7.trans-whip-push-left",
+      "detail": "detail/soft_1433-1514",
+      "cut_frame": 1487,
+      "boundary": "the hard cut f1487 inside the move is the segment edge (S11 ends f1486)"
+    },
+    {
+      "id": "T12",
+      "start": 1519,
+      "end": 1566,
+      "frames": 48,
+      "type": "whip",
+      "shared": "the same window and grid, zoomed out x0.455 (a reveal), leftward motion (15 px per frame out, 29.5 px per frame in) and grid-only horizontal blur peaking just after the cut (31 px -> 61 px)",
+      "technique": "v7.trans-whip-push-left",
+      "detail": "detail/soft_1519-1566",
+      "cut_frame": 1542,
+      "boundary": "the hard cut f1542 inside the move is the segment edge (S12 ends f1541)"
+    },
+    {
+      "id": "T13",
+      "start": 1606,
+      "end": 1690,
+      "frames": 85,
+      "type": "whip",
+      "shared": "cut inside a leftward camera whip: the outgoing file browser eases in to the left (27 px = 1.7% W per frame at the last picture f1641) while its dragged tile grid streaks right; the incoming editor window arrives moving left at about 33 px (2.0% W) per frame with 44 px of horizontal blur and decelerates over 40 f; shares leftward motion and the banded desktop background (camera pan)",
+      "technique": "v7.trans-whip-push-left",
+      "detail": "detail/cut_c038_f01644",
+      "cut_frame": 1644,
+      "boundary": "the hard cut f1644 inside the move is the segment edge (S13 ends f1643)"
+    },
+    {
+      "id": "T15",
+      "start": 2007,
+      "end": 2041,
+      "frames": 35,
+      "type": "whip",
+      "shared": "incoming half only: the static footage shot cuts to the editor window already moving right at 28 px per frame with 34 px of horizontal blur, decelerating over 32 f",
+      "technique": "v7.trans-whip-push-right",
+      "detail": "detail/cut_c049_f02007",
+      "cut_frame": 2007,
+      "boundary": "the hard cut f2007 inside the move is the segment edge (S15 ends f2006)"
+    },
+    {
+      "id": "T16",
+      "start": 2041,
+      "end": 2120,
+      "frames": 80,
+      "type": "whip",
+      "shared": "punch-in cut x1.76 inside an upward camera move: the outgoing view pans up accelerating to 0.55% H per frame; the incoming close-up of the same timeline area (under the same ghost outline grid) arrives 239 px below its rest moving up at 2.4% H per frame with about 90 px of vertical smear and settles in 29 f (speed jumps about 2.5x across the cut)",
+      "technique": "v7.trans-punch-in-whip-up",
+      "detail": "detail/v7c3_cut_2091",
+      "cut_frame": 2091,
+      "boundary": "the hard cut f2091 inside the move is the segment edge (S16 ends f2090)"
+    },
+    {
+      "id": "T17",
+      "start": 2342,
+      "end": 2371,
+      "frames": 30,
+      "type": "whip",
+      "shared": "cut on a leftward move: the outgoing product-UI window only drifts left, accelerating without blur (0.6 -> 5 px/f, f2301-f2340; v7c3's v7.cam-drift-accelerating-exit, not a whip-out), the incoming dark frame arrives moving left at 19.5 px/f with horizontal blur (incoming half of v7.trans-whip-push-left); shared: the motion direction only",
+      "technique": "v7.trans-whip-push-left",
+      "detail": "detail/cut_c053_f02342",
+      "cut_frame": 2342,
+      "boundary": "the hard cut f2342 inside the move is the segment edge (S17 ends f2341)"
+    },
+    {
+      "id": "T18",
+      "start": 2361,
+      "end": 2424,
+      "frames": 64,
+      "type": "whip",
+      "shared": "the dark canvas, line 1 (still typing, its logo still spinning) and the leftward motion: the close framing (2.13x of the settled one) pans left accelerating from 1.6 to 17 px/f (horizontal blur on f2389), the picture is replaced by the framing x0.49 smaller (logo ink 153-155 -> 75 px tall, f2389 -> f2392; f2390-f2391 repeat f2389), which arrives moving left at about 9 px/f with horizontal blur and decelerates over 27 f (first word centre 622 -> 560 px), then creeps 1.04 -> 0.985",
+      "technique": "v7.trans-whip-push-left",
+      "detail": "detail/soft_2361-2424",
+      "cut_frame": 2392,
+      "boundary": "the hard cut f2392 inside the move is the segment edge (S18 ends f2391)"
+    },
+    {
+      "id": "T19",
+      "start": 2444,
+      "end": 2496,
+      "frames": 53,
+      "type": "whip",
+      "shared": "the dark canvas, line 1 and the upward direction (not the speed: the old framing is at rest on its last picture): the settled line drifts up accelerating (blur-aware template on logo + first word: centre y 454.2 -> 369.9 px f2440-f2469, box blur along y 3 px at f2454-f2460, 5 / 7 / 9 / 17 px at f2462 / 2464 / 2467 / 2469, f2469 the fastest picture), then stops dead: the last old picture f2471 is crisp (blur 1 px, vertical gradient p99.9 126 vs 131-135 at rest and 23 at f2469) 44.9 px higher (325.0 px) and stays to f2473 (one picture); then the picture is replaced by a framing x2.2 closer (logo 69 -> 152 px wide) that arrives 283 px below its rest (logo centre y 432 -> 149 px) still rising at about 40 px/f with vertical blur and settles in 20 f, revealing the empty row 2",
+      "technique": "v7.trans-punch-in-whip-up",
+      "detail": "detail/soft_2444-2496",
+      "cut_frame": 2474,
+      "boundary": "the hard cut f2474 inside the move is the segment edge (S19 ends f2473)"
+    },
+    {
+      "id": "T20",
+      "start": 2499,
+      "end": 2589,
+      "frames": 91,
+      "type": "whip",
+      "shared": "the dark canvas, both rows and the leftward direction (not the speed: the old framing is at rest on its last picture): the close framing pans left accelerating (blur-aware template on the app icon: centre x 570.5 -> 491.9 px f2499-f2509, box blur along x 3 / 7 / 15 / 33 px at f2501 / 2504 / 2507 / 2509, f2509 the fastest picture, f2510 a capture duplicate), then stops dead: the last old picture f2511 is crisp (blur 1 px) 92.4 px further left (icon centre 399.5 px, left edge 321 px) and stays to f2514 (f2512-f2513 capture duplicates, f2514 repeat: one picture); then the picture is replaced by the framing x0.44 smaller (app icon 156 -> 68-69 px), which arrives moving left under horizontal blur (clear by f2519) and decelerates over 59 f (app-icon left edge 495 -> 249 px), re-centring the two-row block",
+      "technique": "v7.trans-whip-push-left",
+      "detail": "detail/soft_2499-2589",
+      "cut_frame": 2515,
+      "boundary": "the hard cut f2515 inside the move is the segment edge (S20 ends f2514)"
+    },
+    {
+      "id": "T21",
+      "start": 2589,
+      "end": 2641,
+      "frames": 53,
+      "type": "whip",
+      "shared": "the dark canvas, line 2 and the upward motion: the finished two-row block drifts up accelerating (app-icon top 424 -> 269 px f2589-f2606, to about 28 px/f, vertical blur from f2601), the picture is replaced by a framing x1.4 closer (app icon 67 -> 94 px wide; row-2 ink band 74-77 px tall at f2601-f2604 -> 101-106 px at f2611-f2616 with its left edge 248 -> 121 px; f2607-f2608 repeat f2606), which keeps scrolling up decelerating (icon top 145 px f2609 -> 19 px f2616; line-2 ink bottom 92 px f2619 -> 1 px f2636, gone); the result card's blurred top edge enters at the bottom edge at f2614 while line 2 is still at the top, and the card rises 2.5-4x faster than the text (own slide-up on top of the camera scroll) to the frame centre (chip label centre 82.0 %H f2619 -> 49.4 %H, within 2 % at f2641, still at f2649)",
+      "technique": "v7.trans-punch-in-whip-up",
+      "detail": "detail/soft_2589-2641",
+      "cut_frame": 2609,
+      "boundary": "the hard cut f2609 inside the move is the segment edge (S21 ends f2608)"
+    },
+    {
+      "id": "T22",
+      "start": 2713,
+      "end": 2756,
+      "frames": 44,
+      "type": "whip",
+      "shared": "at full speed of two exits (line 2 sliding left, 217 and 237 px over the last two picture intervals, card dragged down-right by the cursor); the browser grid arrives moving left with horizontal blur and decelerates 38 px in 20 f (incoming half of v7.trans-whip-push-left); shared: leftward motion, the cursor and the dragged footage (now a file chip)",
+      "technique": "v7.trans-whip-push-left",
+      "detail": "detail/cut_c060_f02736",
+      "cut_frame": 2736,
+      "boundary": "the hard cut f2736 inside the move is the segment edge (S22 ends f2735)"
+    },
+    {
+      "id": "T24",
+      "start": 2941,
+      "end": 2971,
+      "frames": 31,
+      "type": "whip",
+      "shared": "static live shot cut to the dark title frame whose logo arrives moving left with horizontal blur (incoming whip half only)",
+      "technique": "v7.trans-whip-push-left",
+      "detail": "detail/cut_c063_f02941",
+      "cut_frame": 2941,
+      "boundary": "the hard cut f2941 inside the move is the segment edge (S24 ends f2940)"
+    },
+    {
+      "id": "T25",
+      "start": 2961,
+      "end": 3014,
+      "frames": 54,
+      "type": "whip",
+      "shared": "the dark canvas, the line (still typing, its logo still spinning) and the leftward motion: a frame-for-frame repeat of the f2392 cut (+599 frames) up to the jump, which is x0.535 here (logo 158 -> 85 px wide, ink 155 -> 82 px tall; f2990 repeats f2989), so the bolder line settles larger; the wide framing glides on left (logo left edge 394 -> 331 px f2991-f3014)",
+      "technique": "v7.trans-whip-push-left",
+      "detail": "detail/soft_2961-3014",
+      "cut_frame": 2991,
+      "boundary": "the hard cut f2991 inside the move is the segment edge (S25 ends f2990)"
+    },
+    {
+      "id": "T26",
+      "start": 3063,
+      "end": 3114,
+      "frames": 52,
+      "type": "whip",
+      "shared": "the dark canvas, the line and the upward motion: the line rises with an ease-in to about 9 px per frame (f3063-f3091), the picture jumps x2.33 closer onto its left part (mark ink 66 -> 152 px; mark centre 27.4% W / 40.4% H -> 35.3% W / 46.0% H) and arrives 274 px below its rest still rising at about 38 px per frame with vertical smear only, then settles in 20 f",
+      "technique": "v7.trans-punch-in-whip-up",
+      "detail": "detail/soft_3063-3114",
+      "cut_frame": 3094,
+      "boundary": "the hard cut f3094 inside the move is the segment edge (S26 ends f3093)"
+    },
+    {
+      "id": "T27",
+      "start": 3119,
+      "end": 3184,
+      "frames": 66,
+      "type": "whip",
+      "shared": "the dark canvas, both rows and the leftward motion: the close-up slides left accelerating to about 19 px per frame, the picture jumps x0.398 about a point near row 2's lead icon (about 569, 456 px) and the wide view keeps sliding left (up to 15 px per frame) and decelerates over 50 f",
+      "technique": "v7.trans-whip-push-left",
+      "detail": "detail/soft_3119-3184",
+      "cut_frame": 3134,
+      "boundary": "the hard cut f3134 inside the move is the segment edge (S27 ends f3133)"
+    },
+    {
+      "id": "T28",
+      "start": 3191,
+      "end": 3246,
+      "frames": 56,
+      "type": "whip",
+      "shared": "the dark canvas, row 2 at the same height (centre 49.6% H) and the leftward motion: the wide view slides left accelerating to about 12 px per frame, the picture jumps x1.86 onto the end of row 2 and arrives 277 px right of its rest moving left at about 33 px per frame (1.5x the matched speed) with heavy horizontal smear, then decelerates over 32 f",
+      "technique": "v7.trans-whip-push-left",
+      "detail": "detail/soft_3191-3246",
+      "cut_frame": 3214,
+      "boundary": "the hard cut f3214 inside the move is the segment edge (S28 ends f3213)"
+    },
+    {
+      "id": "T29",
+      "start": 3535,
+      "end": 3624,
+      "frames": 90,
+      "type": "whip",
+      "shared": "the down-left direction of motion and a dark rounded frame filling the picture (card edges about 3% inside the frame -> editor window edges at the frame edges); no element is shared: the full-frame picture card slides down-left accelerating (ease-in, 40 f), the window lands exactly filling the frame and zooms in x4.35 about (1799, -113) px above-right of the frame, so its corner keeps travelling down-left",
+      "technique": "v7.trans-whip-down-left-zoom-in",
+      "detail": "detail/soft_3535-3624",
+      "cut_frame": 3581,
+      "boundary": "the hard cut f3581 inside the move is the segment edge (S29 ends f3580)"
+    },
+    {
+      "id": "T30",
+      "start": 3651,
+      "end": 3716,
+      "frames": 66,
+      "type": "zoom-through",
+      "shared": "a zoom-in about the frame centre on both sides with the speed rising across the cut (about 5% per frame out, 7% per frame in), and a light-gray backdrop with large soft diagonal shapes on both sides; the editor close-up pushes in about (811, 461) px while the 3D pointer flies off right, the desktop wallpaper keeps zooming about (810, 459) px and settles at x1.432 in about 21 f",
+      "technique": "v7.trans-zoom-through-cut",
+      "detail": "detail/soft_3651-3716",
+      "cut_frame": 3690,
+      "boundary": "the hard cut f3690 inside the move is the segment edge (S30 ends f3689)"
+    },
+    {
+      "id": "T33",
+      "start": 4277,
+      "end": 4307,
+      "frames": 31,
+      "type": "whip",
+      "shared": "the highlighted row's value text: the outgoing camera accelerates into it (scale 1.00 -> 1.215 of the menu's rest, centre moving left 46 px per frame at f4286, horizontal blur) and the picture is replaced at speed (f4287-f4288 repeat f4286) by a closer framing at x2.32 (a x1.7 punch beyond the outgoing zoom), which keeps drifting left/up and growing and settles in 18 f",
+      "technique": "v7.trans-punch-in-whip-zoom",
+      "detail": "detail/soft_4277-4307",
+      "cut_frame": 4289,
+      "boundary": "the hard cut f4289 inside the move is the segment edge (S33 ends f4288)"
+    },
+    {
+      "id": "T36",
+      "start": 4679,
+      "end": 4703,
+      "frames": 25,
+      "type": "mask-wipe",
+      "shared": "replay of f144-f168: a soft-edged white disc grows from the label centre (radius 245-250 px at f4692, 406-428 px at f4694) until the frame is white (mean luma 247) at f4697 = S37's background; white hold f4697-f4703; the menu enters at f4704 from the top-left, scaled x1.59 and blurred",
+      "technique": "v7.trans-iris-white",
+      "detail": "detail/soft_4679-4703",
+      "boundary": "soft: the previous segment ends at floor((a+b)/2) = f4691"
+    }
+  ],
+  "notes": [
+    "Merged from chunks v7c1-v7c6 (2026-11-01). Every one of the 90 detector candidates is decided: 27 confirmed (hard cuts or anchors of the two soft iris transitions), 63 rejected; 9 hard cuts missed by all three detectors are the manual entries m001-m009.",
+    "VFR index drift: on this screen recording PySceneDetect often fires 1-10 captured pictures before or after the real picture change; where the confirmed boundary is not the detector frame, corrected_frame gives the first new picture (c009, c030, c054, c061, c070).",
+    "soft_transitions lists every transition that spans frames: the two iris wipes (T01, T36, tiled at their midpoint) and the whips / zoom-through whose picture is replaced at one hidden hard cut (cut_frame), which is the segment edge; start-end is the full motion range.",
+    "f4522 (c083) is the player's loop point: from f4522 the recording shows the video again from its first frame (f4535 onward = f0 onward)."
+  ]
 }

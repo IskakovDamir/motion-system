@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.fx-clip-glow-pulse-bars-out.v7c3",
+  "file": "curves/v7.fx-clip-glow-pulse-bars-out.v7c3.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (median of clip 1's lower band, the clip bar's own fill)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p5_clip_bands.csv",
+  "column": "clip1_lower",
+  "sampled_frames": [
+    2206,
+    2340
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 208.0,
+  "to_value": 114.0,
+  "active_frames": [
+    2222,
+    2294
+  ],
+  "measured_duration_frames": 72,
+  "bezier": {
+    "x1": 0.7033,
+    "y1": 1.0807,
+    "x2": 0.9979,
+    "y2": 0.9219,
+    "durationInFrames": 73,
+    "delay": -1.235,
+    "built_duration_frames": 73,
+    "rmse": 0.0187
+  },
+  "spring": {
+    "stiffness": 8.736,
+    "damping": 5.045,
+    "mass": 1,
+    "damping_ratio": 0.8534,
+    "built_duration_frames": 82,
+    "rmse": 0.0359
+  },
+  "recommended": "bezier",
+  "note": "P5 glow decay on the clip bars themselves: from the hold (208-210, f2209-f2220) down to 114-115 from f2294, constant to the last picture f2340; the bars end about 22 luma darker than when they docked (lower band 136 -> 114, label-band background 102 -> 81); the halo above the strip decays earlier (curves/v7.fx-clip-glow-pulse-out.v7c3, f2220-f2254); sampled in clip 1, columns x 262-328 shifted by the exit drift from f2246 (v7c3_tools/clip_bar_luma.py)"
+}

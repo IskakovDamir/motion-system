@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-whip-down-left-zoom-in-out.v7c5",
+  "file": "curves/v7.trans-whip-down-left-zoom-in-out.v7c5.csv",
+  "property": "position-y",
+  "unit": "% of frame height (top edge of the full-frame picture card; 2.8% -> 18.3% H at the last picture before the cut)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p4_card_whipout.csv",
+  "column": "top_pct",
+  "sampled_frames": [
+    3501,
+    3579
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 2.758,
+  "to_value": 18.306,
+  "active_frames": [
+    3539,
+    3579
+  ],
+  "measured_duration_frames": 40,
+  "bezier": {
+    "x1": 0.615,
+    "y1": 0.0053,
+    "x2": 1.0,
+    "y2": 0.7289,
+    "durationInFrames": 44,
+    "delay": -5.56,
+    "built_duration_frames": 37,
+    "rmse": 0.0278
+  },
+  "spring": {
+    "stiffness": 6.427,
+    "damping": 0.5,
+    "mass": 1,
+    "damping_ratio": 0.0986,
+    "built_duration_frames": 275,
+    "rmse": 0.8591
+  },
+  "recommended": "bezier",
+  "note": "outgoing half of the down-left whip P4 -> P5: after a 157-frame static hold (f3376-f3533) the full-frame picture card (x 2.9-97.2% W) slides down and left, accelerating from rest (~f3533) to about 8-9 px/frame down and 10-11 px/frame left over the last two intervals (f3574-f3579) (top edge +142.7 px = +15.5% H, right edge -112.6 px = -6.9% W; width constant 1528 px until f3569) with growing motion blur; hard cut f3581 (no settle on this half: to-value = last picture); edge trackers on the card (track.py edge, top ROI x 500-1000, right ROI y 250-650)"
+}

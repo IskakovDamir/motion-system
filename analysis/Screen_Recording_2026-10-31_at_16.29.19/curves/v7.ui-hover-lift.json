@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.ui-hover-lift",
+  "file": "curves/v7.ui-hover-lift.csv",
+  "property": "scale",
+  "unit": "scale factor of the dark CTA pill button relative to its rest size (1.0 = 230 px = 14.2% W at f386)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s3_button_rel_366-412.csv",
+  "column": "button_w_rel",
+  "sampled_frames": [
+    384,
+    410
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.0,
+  "to_value": 1.293,
+  "active_frames": [
+    386,
+    406
+  ],
+  "measured_duration_frames": 20,
+  "bezier": {
+    "x1": 0.5381,
+    "y1": 0.6394,
+    "x2": 0.3982,
+    "y2": 1.1354,
+    "durationInFrames": 19,
+    "delay": 1.425,
+    "built_duration_frames": 17,
+    "rmse": 0.035
+  },
+  "spring": {
+    "stiffness": 217.465,
+    "damping": 21.553,
+    "mass": 1,
+    "damping_ratio": 0.7308,
+    "built_duration_frames": 24,
+    "rmse": 0.1513
+  },
+  "recommended": "bezier",
+  "note": "hover state on the search-result card: the dark pill button grows about its own centre (y fixed at 50.7% H) to x1.30 (230 -> 299 px wide, 50 -> 66 px tall, f386 -> f401) while a rounded card outline and soft drop shadow fade in around the row (shadow luma under the card 248 -> 239, f396-f406). Re-tracked as button ink width (bbox, ink < 48) divided by the ink width of the row's title + description block (ink < 170) on the same picture, normalised at f386: this removes the exit pull-back camera scale that starts at f401, so the samples after the peak (f404-f410, x1.29-1.30) are usable as the settled end; the text block itself changes under 0.5% over f384-f401"
+}

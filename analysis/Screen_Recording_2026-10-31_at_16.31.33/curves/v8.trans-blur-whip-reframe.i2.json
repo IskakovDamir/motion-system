@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.trans-blur-whip-reframe.i2",
+ "file": "curves/v8.trans-blur-whip-reframe.i2.csv",
+ "property": "position-x",
+ "unit": "% of frame width (agent icon centre, before the reframe)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c1_s04_icon_512-606.csv",
+ "column": "cx_pct",
+ "sampled_frames": [
+  560,
+  606
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 14.488,
+ "to_value": 19.667,
+ "active_frames": [
+  570,
+  606
+ ],
+ "measured_duration_frames": 36,
+ "bezier": {
+  "x1": 0.708,
+  "y1": 0.0525,
+  "x2": 0.8626,
+  "y2": 0.1925,
+  "durationInFrames": 42,
+  "delay": -5.996,
+  "built_duration_frames": 34,
+  "rmse": 0.0157
+ },
+ "spring": {
+  "stiffness": 17.109,
+  "damping": 0.5,
+  "mass": 1,
+  "damping_ratio": 0.0604,
+  "built_duration_frames": 261,
+  "rmse": 0.9157
+ },
+ "recommended": "bezier",
+ "note": "outgoing half of the blur whip-reframe T3: the chat close-up accelerates right while it blurs, up to the hidden cut after f606; ease-in only, to-value = last picture f606 (template, scratch/v8c1_s04_icon_512-606.csv)",
+ "chunk_curve_id": "v8.trans-blur-whip-reframe-out.v8c1"
+}

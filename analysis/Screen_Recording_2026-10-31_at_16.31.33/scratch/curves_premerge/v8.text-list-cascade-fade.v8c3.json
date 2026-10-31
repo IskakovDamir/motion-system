@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.text-list-cascade-fade.v8c3",
+  "file": "curves/v8.text-list-cascade-fade.v8c3.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (mean of the line box)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c3_ins_luma_sub.csv",
+  "column": "mean",
+  "sampled_frames": [
+    1927,
+    1962
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 248.0,
+  "to_value": 230.359,
+  "active_frames": [
+    1930,
+    1958
+  ],
+  "measured_duration_frames": 28,
+  "bezier": {
+    "x1": 0.2885,
+    "y1": 0.354,
+    "x2": 0.3328,
+    "y2": 0.9985,
+    "durationInFrames": 30,
+    "delay": 0.654,
+    "built_duration_frames": 25,
+    "rmse": 0.0258
+  },
+  "spring": {
+    "stiffness": 101.788,
+    "damping": 17.392,
+    "mass": 1,
+    "damping_ratio": 0.8619,
+    "built_duration_frames": 25,
+    "rmse": 0.0233
+  },
+  "recommended": "spring",
+  "note": "S05 sub-line (1 line, 7 words, regular grey): mean luma of a fixed 1000 x 40 px box over the line (x 240-1240, y 345-385, scratch/v8c3_ins_luma_sub.csv); the line fades in while it slides left with the block (ink left edge 374 px at f1934 -> 258 px at f1958, scratch/v8c3_ins_sub_1928-1962.csv) and its reveal front reaches the line end (995 px) by f1942. Cascade: header row ink first f1932; sub-line and item 1 start f1932; item 2 starts f1942 (title) and item 3 f1950 (title, stays dim: darkness 2.0 against 4.5 for item 2); stagger about 8-10 frames per item (scratch/v8c3_ins_luma_*.csv)."
+}

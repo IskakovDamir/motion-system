@@ -1,0 +1,40 @@
+{
+  "technique_id": "v2.ui-slow-push-in.short.v2c1",
+  "file": "curves/v2.ui-slow-push-in.short.v2c1.csv",
+  "property": "scale",
+  "unit": "scale factor",
+  "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c1_S09_app_ecc.csv",
+  "column": "scale",
+  "sampled_frames": [
+    676,
+    732
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 1.0,
+  "to_value": 1.0496,
+  "active_frames": [
+    676,
+    726
+  ],
+  "measured_duration_frames": 50,
+  "bezier": {
+    "x1": 0.3785,
+    "y1": 0.5288,
+    "x2": 0.5685,
+    "y2": 0.8993,
+    "durationInFrames": 53,
+    "delay": 0.093,
+    "built_duration_frames": 50,
+    "rmse": 0.0077
+  },
+  "spring": {
+    "stiffness": 14.955,
+    "damping": 5.904,
+    "mass": 1,
+    "damping_ratio": 0.7633,
+    "built_duration_frames": 84,
+    "rmse": 0.1772
+  },
+  "recommended": "bezier",
+  "note": "S09 full-bleed agent-app UI scales about the frame centre (957, 543) from the cut frame f676 with no ease-in (1.0 at f676 = rest, ECC similarity track of the whole picture, cc >= 0.9993); 1.0 -> 1.0496 (median of f730-f732; 1.0499 at f731); the segment is 57 f (cut f733), so the curve ends at the last measured frames, with no long hold after it. Same device and normalised shape as the S07 instance curves/v2.ui-slow-push-in.v2c1 (D=106 in a 113 f segment) at about half the duration: the push-in is timed to its segment; this short instance exists for its length, it is not a second technique"
+}

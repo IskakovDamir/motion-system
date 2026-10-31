@@ -1,0 +1,40 @@
+{
+  "technique_id": "v2.trans-icon-converge-morph.v2c2",
+  "file": "curves/v2.trans-icon-converge-morph.v2c2.csv",
+  "property": "position-y",
+  "unit": "px (450 = grid row 1, 757 = hex row; 307 px = 28.4% H)",
+  "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c2_T1_icon1.csv",
+  "column": "cy",
+  "sampled_frames": [
+    1158,
+    1190
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 450.0,
+  "to_value": 757.0,
+  "active_frames": [
+    1164,
+    1177
+  ],
+  "measured_duration_frames": 13,
+  "bezier": {
+    "x1": 0.6544,
+    "y1": 0.0135,
+    "x2": 0.4247,
+    "y2": 0.9198,
+    "durationInFrames": 16,
+    "delay": -1.737,
+    "built_duration_frames": 13,
+    "rmse": 0.0223
+  },
+  "spring": {
+    "stiffness": 433.956,
+    "damping": 33.169,
+    "mass": 1,
+    "damping_ratio": 0.7961,
+    "built_duration_frames": 11,
+    "rmse": 0.1283
+  },
+  "recommended": "bezier",
+  "note": "logo icon 1 (black hex mark, grid slot row 1 col 1) travelling to hex-row slot 1 while scaling 1.00 -> 0.64 (track.py template, tight search window); every tracked icon (1, 3, 4, 7, 9) follows the same normalised progress within 0.01 (x or y), so all 9 icons share this curve"
+}

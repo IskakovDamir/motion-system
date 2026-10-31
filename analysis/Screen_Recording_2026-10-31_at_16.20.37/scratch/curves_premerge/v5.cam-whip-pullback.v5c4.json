@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.cam-whip-pullback.v5c4",
+  "file": "curves/v5.cam-whip-pullback.v5c4.csv",
+  "property": "position-x",
+  "unit": "% of frame width (card 3 centre)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c4_card3_pullback.csv",
+  "column": "cx_pct",
+  "sampled_frames": [
+    2570,
+    2632
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 52.774,
+  "to_value": 76.048,
+  "active_frames": [
+    2582,
+    2617
+  ],
+  "measured_duration_frames": 35,
+  "bezier": {
+    "x1": 0.8872,
+    "y1": 0.276,
+    "x2": 0.1102,
+    "y2": 0.9959,
+    "durationInFrames": 42,
+    "delay": -0.676,
+    "built_duration_frames": 32,
+    "rmse": 0.019
+  },
+  "spring": {
+    "stiffness": 104.77,
+    "damping": 15.924,
+    "mass": 1,
+    "damping_ratio": 0.7779,
+    "built_duration_frames": 30,
+    "rmse": 0.3095
+  },
+  "recommended": "bezier",
+  "note": "pull-back whip: 3D camera dollies back and yaws left to frame the whole 3-card row with the headline; card 3 centre x 52.7 -> 76.0 %W while its scale drops 1.00 -> 0.58 (template track ref f2575, scores 0.85-1.0); card 2 centre 13.0 -> 49.6 %W, scale 1.62 -> 0.97 (v5c4_card2_whip4.csv); blur peak f2600-2607; flows into the vertical whip after ~5 f"
+}

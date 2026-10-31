@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.mask-dot-ring-reveal",
+  "file": "curves/v7.mask-dot-ring-reveal.csv",
+  "property": "mask",
+  "unit": "% of frame width (inner half-level radius of the dot band from the card centre 807, 455 px)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_dot_ring_inner_newpic.csv",
+  "column": "r_inner_pct_w",
+  "sampled_frames": [
+    2652,
+    2694
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 39.15,
+  "active_frames": [
+    2654,
+    2692
+  ],
+  "measured_duration_frames": 38,
+  "bezier": {
+    "x1": 0.6282,
+    "y1": 0.3739,
+    "x2": 0.2292,
+    "y2": 0.5462,
+    "durationInFrames": 41,
+    "delay": -1.851,
+    "built_duration_frames": 39,
+    "rmse": 0.0194
+  },
+  "spring": {
+    "stiffness": 19.891,
+    "damping": 5.89,
+    "mass": 1,
+    "damping_ratio": 0.6603,
+    "built_duration_frames": 79,
+    "rmse": 0.3028
+  },
+  "recommended": "bezier",
+  "note": "footage reveal inside the result card: a ring of glowing dot-matrix pixels (12 px dot pitch, brighter random clusters) is born at the status chip (f2654-f2656) and expands; inside the ring the footage is clear, outside it is dim; inner edge radius 75 px f2659 -> 315 f2671 -> 515 f2681 -> 635 px f2694 (decelerating: about 23 -> 20 -> 9 px/frame), peak of the band 85 -> 645 px, outer edge reaches the card corners (half-diagonal ~770 px) by ~f2681-f2690; card mean luma 27.6 (f2654) -> 67.0 (f2676) then 52 (f2694) as the dots fade; radial profile of high-pass energy (|g - blur2.5|) inside the card, chip area masked; no settle (the reframe pull-back starts at f2690): to-value = last measured inner radius"
+}

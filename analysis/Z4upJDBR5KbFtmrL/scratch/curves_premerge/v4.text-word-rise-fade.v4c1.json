@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.text-word-rise-fade.v4c1",
+  "file": "curves/v4.text-word-rise-fade.v4c1.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (word ROI mean; 246 = absent)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/s1_word1_luma.csv",
+  "column": "mean",
+  "sampled_frames": [
+    2,
+    50
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 246.0,
+  "to_value": 205.644,
+  "active_frames": [
+    9,
+    29
+  ],
+  "measured_duration_frames": 20,
+  "bezier": {
+    "x1": 0.2468,
+    "y1": 1.1995,
+    "x2": 0.5358,
+    "y2": 0.9573,
+    "durationInFrames": 36,
+    "delay": 0.047,
+    "built_duration_frames": 20,
+    "rmse": 0.0044
+  },
+  "spring": {
+    "stiffness": 266.758,
+    "damping": 33.105,
+    "mass": 1,
+    "damping_ratio": 1.0134,
+    "built_duration_frames": 22,
+    "rmse": 0.0506
+  },
+  "recommended": "bezier",
+  "note": "S1 headline word 1 fade-in, ROI x118-308 y440-548 (line 1 only; the word rises 18 px inside it); every word has the same timing, stagger 4.2 f"
+}

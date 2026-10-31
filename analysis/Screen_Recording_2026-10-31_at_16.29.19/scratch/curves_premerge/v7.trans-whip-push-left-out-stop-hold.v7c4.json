@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-whip-push-left-out-stop-hold.v7c4",
+  "file": "curves/v7.trans-whip-push-left-out-stop-hold.v7c4.csv",
+  "property": "position-x",
+  "unit": "% of frame width",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_z3_lead_blurfit_2485-2524_newpic.csv",
+  "column": "cx_pct",
+  "sampled_frames": [
+    2494,
+    2511
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 35.17,
+  "to_value": 24.63,
+  "active_frames": [
+    2499,
+    2511
+  ],
+  "measured_duration_frames": 12,
+  "bezier": {
+    "x1": 0.8062,
+    "y1": 0.1348,
+    "x2": 0.8241,
+    "y2": 0.2414,
+    "durationInFrames": 11,
+    "delay": 0.619,
+    "built_duration_frames": 10,
+    "rmse": 0.0182
+  },
+  "spring": {
+    "stiffness": 220.726,
+    "damping": 0.5,
+    "mass": 1,
+    "damping_ratio": 0.0168,
+    "built_duration_frames": 167,
+    "rmse": 0.8135
+  },
+  "recommended": "bezier",
+  "note": "outgoing half of the leftward whip into the hidden hard cut f2515 (Z3, close framing), stop-hold variant: the canvas starts to move left at ~f2500 and accelerates (blur-aware template on the row-2 app icon, ref f2511: icon centre x 570.5 -> 399.5 px; box blur along x 1 px at rest, 3 / 7 / 15 px at f2501-f2507, 33 px at f2509 = the fastest picture), then stops dead: the next picture f2511 is crisp (blur 1 px, horizontal gradient p99.9 106 in the icon region vs 97 at rest and 14 at f2509) 92.4 px further left and is held f2511-f2514 (f2512-f2513 capture duplicates, f2514 repeat: one picture); the cut f2515 then brings the x0.44 framing already moving left under horizontal blur (curve v7.trans-whip-push-left-pull-back-long.v7c4). The bezier completes before f2511 (hard stop); build: clamp at the end, hold the end value with no motion blur for f2511-f2514, cut at f2515. Exact stop frame inside f2509-f2511 UNCERTAIN (one capture gap). y fixed (icon centre 455.5 px); line 2 types its 3rd-4th characters meanwhile."
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v2.logo-spin-scale-in",
+  "file": "curves/v2.logo-spin-scale-in.csv",
+  "property": "scale",
+  "unit": "scale factor (sqrt of silhouette area / 158.1 px at rest; first visible frame f1802 = 0.658)",
+  "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c2_S11_mascot_clean.csv",
+  "column": "scale",
+  "sampled_frames": [
+    1802,
+    1860
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 0.6579,
+  "to_value": 1.0,
+  "active_frames": [
+    1802,
+    1826
+  ],
+  "measured_duration_frames": 24,
+  "bezier": {
+    "x1": 0.1871,
+    "y1": 0.8582,
+    "x2": 0.4639,
+    "y2": 0.9866,
+    "durationInFrames": 31,
+    "delay": -0.003,
+    "built_duration_frames": 24,
+    "rmse": 0.0012
+  },
+  "spring": {
+    "stiffness": 205.011,
+    "damping": 30.694,
+    "mass": 1,
+    "damping_ratio": 1.0719,
+    "built_duration_frames": 25,
+    "rmse": 0.0888
+  },
+  "recommended": "bezier",
+  "note": "end-card mascot logo entering at the frame centre (959.5, 429.5): scale, opacity (fill luma 219 -> 17) and rotation (-17.1 deg -> 0, counter-clockwise tilt straightening) share this normalised progress within 0.02 (scratch/v2c2_S11_mascot_clean.csv, custom silhouette measurement on work.mp4); the move starts invisibly at f1801 (empty frame), so p=0 here is the first visible frame"
+}

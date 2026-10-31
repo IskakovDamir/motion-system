@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-whip-push-left.v7c5",
+  "file": "curves/v7.trans-whip-push-left.v7c5.csv",
+  "property": "position-x",
+  "unit": "% of frame width (line-2 app icon centre in the wide view; 33.1% -> 20.8% W)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p3_icon2_3134-3213.csv",
+  "column": "cx_pct",
+  "sampled_frames": [
+    3134,
+    3191
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 33.076,
+  "to_value": 20.777,
+  "active_frames": [
+    3134,
+    3184
+  ],
+  "measured_duration_frames": 50,
+  "bezier": {
+    "x1": 0.139,
+    "y1": 0.2063,
+    "x2": 0.0192,
+    "y2": 0.9756,
+    "durationInFrames": 61,
+    "delay": -0.047,
+    "built_duration_frames": 48,
+    "rmse": 0.0135
+  },
+  "spring": {
+    "stiffness": 55.466,
+    "damping": 19.5,
+    "mass": 1,
+    "damping_ratio": 1.3092,
+    "built_duration_frames": 46,
+    "rmse": 0.0775
+  },
+  "recommended": "bezier",
+  "note": "incoming half of the whip P2 -> P3 (punch-out): the hard cut at f3134 jumps to a x0.40 wider framing of both lines (word spacing 205 -> 82 px) that keeps sliding left: 7.5 px/frame over the first picture, peaks at 15 px/frame (0.9% W) around f3139-f3141, then decays into a slow drift (about 0.5 px/frame by f3186) and rests at ~f3191 before the next whip; vertical constant (y 49.6% H), template scale 1.00 +-0.02; template on the line-2 app icon (ref f3160), confirmed by a word template on line 1 (same steps within 3 px)"
+}

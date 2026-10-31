@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.shape-flare-streak-sweep.i2",
+  "file": "curves/v5.shape-flare-streak-sweep.i2.csv",
+  "property": "position-x",
+  "unit": "% of frame width",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_streak_low_pct.csv",
+  "column": "ink_cx_p",
+  "sampled_frames": [
+    720,
+    740
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 8.618,
+  "to_value": 94.913,
+  "active_frames": [
+    720,
+    732
+  ],
+  "measured_duration_frames": 12,
+  "bezier": {
+    "x1": 0.967,
+    "y1": -0.0424,
+    "x2": 0.0,
+    "y2": 0.0303,
+    "durationInFrames": 14,
+    "delay": -5.819,
+    "built_duration_frames": 8,
+    "rmse": 0.1063
+  },
+  "spring": {
+    "stiffness": 1069.183,
+    "damping": 66.533,
+    "mass": 1,
+    "damping_ratio": 1.0174,
+    "built_duration_frames": 11,
+    "rmse": 0.0744
+  },
+  "recommended": "spring",
+  "note": "lower light streak with a 4-point sparkle star at its head: enters at the left edge at f720 (first visible picture, already fast), sweeps right under line 2 and stops as the sparkle at the right end of line 2 (95%); the upper streak does the mirror move right->left to the left end (8%)"
+}

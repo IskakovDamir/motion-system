@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.particle-tile-burst",
+  "file": "curves/v5.particle-tile-burst.csv",
+  "property": "width",
+  "unit": "% of frame width (ring radius)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_A_burst_radius.csv",
+  "column": "ring_r_pct_w",
+  "sampled_frames": [
+    1080,
+    1097
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 54.871,
+  "active_frames": [
+    1082,
+    1097
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.618,
+    "y1": 0.5237,
+    "x2": 1.0,
+    "y2": 0.5934,
+    "durationInFrames": 15,
+    "delay": -0.02,
+    "built_duration_frames": 15,
+    "rmse": 0.0057
+  },
+  "spring": {
+    "stiffness": 148.661,
+    "damping": 96.43,
+    "mass": 1,
+    "damping_ratio": 3.9544,
+    "built_duration_frames": 28,
+    "rmse": 0.2989
+  },
+  "recommended": "bezier",
+  "note": "click burst: a ring of glowing square tiles (outlined and filled squares) bursts out of the clicked 3D button and expands radially past the frame edges; radius = peak of the radial luma profile around the button centre (815,528) with the button, chips row and speaker icon masked; frame mean luma 16.9 (f1085) -> 74.2 (f1095) -> 21.1 (f1105) as the tiles leave; no rest after (tiles exit the frame at about f1097), so the end value is the last sample and the shape is the visible part only"
+}

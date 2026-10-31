@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.text-word-blur-rise.v7c2",
+  "file": "curves/v7.text-word-blur-rise.v7c2.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (mean of word ROI x470-595 y772-862)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_cap_s2w1_bbox.csv",
+  "column": "mean_lum",
+  "sampled_frames": [
+    900,
+    921
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 96.57,
+  "to_value": 118.05,
+  "active_frames": [
+    900,
+    920
+  ],
+  "measured_duration_frames": 20,
+  "bezier": {
+    "x1": 0.1241,
+    "y1": 0.1221,
+    "x2": 0.3412,
+    "y2": 1.1762,
+    "durationInFrames": 27,
+    "delay": -0.013,
+    "built_duration_frames": 18,
+    "rmse": 0.0541
+  },
+  "spring": {
+    "stiffness": 134.68,
+    "damping": 18.673,
+    "mass": 1,
+    "damping_ratio": 0.8045,
+    "built_duration_frames": 19,
+    "rmse": 0.0469
+  },
+  "recommended": "spring",
+  "note": "first caption word after the f900 cut fades in while rising 15 px and de-blurring, f902-f920; ROI mean luma as opacity proxy (rest pinned to the first picture after the cut, f900); this stretch was captured at ~30 fps"
+}

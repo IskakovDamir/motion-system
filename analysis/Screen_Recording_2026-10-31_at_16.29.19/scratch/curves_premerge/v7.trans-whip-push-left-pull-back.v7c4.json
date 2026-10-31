@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-whip-push-left-pull-back.v7c4",
+  "file": "curves/v7.trans-whip-push-left-pull-back.v7c4.csv",
+  "property": "position-x",
+  "unit": "% of frame width",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_found_small_2392-2471_newpic.csv",
+  "column": "cx_pct",
+  "sampled_frames": [
+    2392,
+    2431
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 38.348,
+  "to_value": 34.525,
+  "active_frames": [
+    2392,
+    2419
+  ],
+  "measured_duration_frames": 27,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.6035,
+    "x2": 0.5049,
+    "y2": 0.9953,
+    "durationInFrames": 29,
+    "delay": 0.837,
+    "built_duration_frames": 24,
+    "rmse": 0.0238
+  },
+  "spring": {
+    "stiffness": 163.554,
+    "damping": 28.462,
+    "mass": 1,
+    "damping_ratio": 1.1128,
+    "built_duration_frames": 27,
+    "rmse": 0.0753
+  },
+  "recommended": "bezier",
+  "note": "incoming half of the leftward whip at the hidden hard cut f2392 (Z1; last old picture f2389, f2390-f2391 repeat it; missed by all three detectors): between two consecutive pictures the framing jumps from 2.13x to 1.04x of the settled framing (x0.49, logo ink 153-155 -> 75 px tall) under horizontal motion blur, keeping the leftward motion; this curve is the decelerating glide after the cut (first word centre x 622 -> 560 px, f2392-f2424), template on the first word of line 1 at the small framing (ref f2440, scale steps 0.005, scores 0.96-0.99); motion starts at the cut (no rest before); afterwards a slow zoom-out continues, template scale 1.04 (f2392) -> 1.015 (f2421) -> 1.00 (f2440) -> 0.985 (f2456-f2471); the same keyframes repeat at the hidden hard cut f2991 (x0.535)"
+}

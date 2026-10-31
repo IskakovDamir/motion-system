@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.trans-star-flash",
+  "file": "curves/v5.trans-star-flash.csv",
+  "property": "mask",
+  "unit": "% of frame width",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c1fix_star_pair.csv",
+  "column": "win_y380_pct",
+  "sampled_frames": [
+    180,
+    205
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 100.0,
+  "active_frames": [
+    190,
+    200
+  ],
+  "measured_duration_frames": 10,
+  "bezier": {
+    "x1": 0.7376,
+    "y1": 0.7337,
+    "x2": 0.4273,
+    "y2": 1.0,
+    "durationInFrames": 9,
+    "delay": 0.763,
+    "built_duration_frames": 8,
+    "rmse": 0.0472
+  },
+  "spring": {
+    "stiffness": 695.298,
+    "damping": 40.259,
+    "mass": 1,
+    "damping_ratio": 0.7634,
+    "built_duration_frames": 13,
+    "rmse": 0.1657
+  },
+  "recommended": "bezier",
+  "note": "star flash opening: width of the gap between the two separating stars' inner edges on row y380 (80 px above the frame's centre row; pixels >= 150 luma, runs >= 20 px), 0 while the stars still overlap there (f180-f190), 100 once both have left the frame (f200-f205); the y540 row gives the same values within 2.5 %W (scratch/v5c1fix_star_pair.csv win_y540_pct). The underlying motion is the separation of the two stars (sep_pct in the same CSV, 0 -> 2.7 -> 8.7 -> 24.0 -> 54.4 %W at f182/185/187/190/192, an accelerating ease-in that leaves the frame, so it has no rest after and is not fitted)"
+}

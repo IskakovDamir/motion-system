@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.trans-push-up-columns-out.v8c3",
+  "file": "curves/v8.trans-push-up-columns-out.v8c3.csv",
+  "property": "position-y",
+  "unit": "% of frame height",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c3_thread_scroll_1470-1676.csv",
+  "column": "cum_y_pct",
+  "sampled_frames": [
+    1572,
+    1670
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": -154.404,
+  "to_value": -404.893,
+  "active_frames": [
+    1586,
+    1670
+  ],
+  "measured_duration_frames": 84,
+  "bezier": {
+    "x1": 0.2459,
+    "y1": 0.0444,
+    "x2": 0.779,
+    "y2": 0.1008,
+    "durationInFrames": 93,
+    "delay": -8.683,
+    "built_duration_frames": 83,
+    "rmse": 0.0098
+  },
+  "spring": {
+    "stiffness": 6.869,
+    "damping": 20.486,
+    "mass": 1,
+    "damping_ratio": 3.9084,
+    "built_duration_frames": 130,
+    "rmse": 0.4289
+  },
+  "recommended": "bezier",
+  "note": "S02 -> S03 push, outgoing half: integrated content position of the thread panel (phase correlation over x 280-1340, scratch/v8c3_thread_scroll_1470-1676.csv; negative = up; 7 duplicate pictures of the 60 Hz capture run dropped). After step 2 the thread never rests: the scroll accelerates smoothly (per-picture displacement grows about 6-8 % per picture: 6 px at f1578, 12 at f1594, 25 at f1616, 49 at f1638, 92 at f1656, 184 px at f1670; pictures arrive every 2 frames on average, so 3 -> about 92 px per frame) with growing vertical motion blur; the panel's rounded bottom edge enters the frame at f1666-f1669 and leaves the top at f1676. to-value = last picture f1670 (no settle; the next layout is already entering). Timestamps jitter +-1 frame (1/2/3-frame gaps around a steady 2-frame cadence)."
+}

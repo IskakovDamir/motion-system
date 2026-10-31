@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.card-rise-stagger.left.v5c3",
+  "file": "curves/v5.card-rise-stagger.left.v5c3.csv",
+  "property": "position-y",
+  "unit": "% of frame height (left child card bottom rim, 50% crossing)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c3_P05_cards_edges.csv",
+  "column": "left_bot_pct",
+  "sampled_frames": [
+    1890,
+    1920
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 55.229,
+  "to_value": 68.203,
+  "active_frames": [
+    1890,
+    1900
+  ],
+  "measured_duration_frames": 10,
+  "bezier": {
+    "x1": 0.1626,
+    "y1": 0.3471,
+    "x2": 0.1589,
+    "y2": 0.4659,
+    "durationInFrames": 8,
+    "delay": 0.259,
+    "built_duration_frames": 8,
+    "rmse": 0.0554
+  },
+  "spring": {
+    "stiffness": 942.908,
+    "damping": 62.343,
+    "mass": 1,
+    "damping_ratio": 1.0151,
+    "built_duration_frames": 12,
+    "rmse": 0.046
+  },
+  "recommended": "spring",
+  "note": "left child card drops straight down into place (opposite to the middle and right cards, which rise from below): first visible at f1890 already in frame high up and smeared vertically (top/bottom rims 88/507 px, 419 px tall vs 370 at rest), not visible at f1887; centre (rim midpoint) 297.5 -> 371.7 -> 411.7 -> 430.6 -> 439.7 -> 441.6 px (32.4 -> 48.0 %H), steps 74, 40, 19, 9, 2 px per picture; x drifts 528 -> 511 px. Fitted on the bottom rim (sharp in every picture): 55.23 -> 68.21 %H; the rim midpoint gives bezier rmse 0.059 because the f1890 smear makes its first sample uncertain (+-25 px). Edges from row profiles (scratch/v5c3_P05_cards_edges.csv)"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.ui-button-press",
+  "file": "curves/v5.ui-button-press.csv",
+  "property": "scale",
+  "unit": "scale factor (1.0 = button at f1075)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_A_button_press2.csv",
+  "column": "scale",
+  "sampled_frames": [
+    1072,
+    1095
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.9975,
+  "to_value": 0.7833,
+  "active_frames": [
+    1077,
+    1090
+  ],
+  "measured_duration_frames": 13,
+  "bezier": {
+    "x1": 0.2132,
+    "y1": 0.6365,
+    "x2": 0.3385,
+    "y2": 1.0859,
+    "durationInFrames": 15,
+    "delay": 2.591,
+    "built_duration_frames": 10,
+    "rmse": 0.1671
+  },
+  "spring": {
+    "stiffness": 857.01,
+    "damping": 55.138,
+    "mass": 1,
+    "damping_ratio": 0.9417,
+    "built_duration_frames": 11,
+    "rmse": 0.137
+  },
+  "recommended": "spring",
+  "note": "3D button pressed by the 3D cursor: the left part of the button (label start, not covered by the cursor) shrinks to 0.78 of its size while the chips row behind keeps its scale (chip template 1.00 f1072-f1095), and the button stays pressed while the tile burst fires; template ref f1075, scale step 0.005 (finer than the 2% band would need: rest values set to the mean of f1075/f1077 = 0.9975 and of f1090-f1095 = 0.7833); scores 0.98-1.0; centre x moves 635 -> 695 px as the button shrinks toward the cursor's contact point"
+}

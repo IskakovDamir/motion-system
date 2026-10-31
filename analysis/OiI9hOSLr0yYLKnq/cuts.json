@@ -37,8 +37,9 @@
       "ffmpeg_scene": 0.1086,
       "confidence": "medium",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c001"
+      "status": "confirmed",
+      "id": "c001",
+      "reason": "hard cut: f787 holds the S04 cards at 13% opacity (end of their 10-frame shrink-fade exit f778-f787), f788 is the complete hexagon network with the headline band at full contrast; nothing of the network exists before f788 (boundary T04, S04 -> S05)"
     },
     {
       "frame": 879,
@@ -53,10 +54,56 @@
       "ffmpeg_scene": 0.0207,
       "confidence": "low",
       "origin": "auto",
-      "status": "candidate",
-      "id": "c002"
+      "status": "confirmed",
+      "id": "c002",
+      "reason": "anchor of the soft zoom-through transition f872-f895 (no hard replacement: f878->f879 is continuous; the headline finishes fading out, the band cells and the centre mark finish fading in, layer scale 1.05 -> 1.07) (boundary T05, S05 -> S06)"
     }
   ],
-  "soft_transitions": [],
-  "notes": []
+  "soft_transitions": [
+    {
+      "id": "T01",
+      "start": 101,
+      "end": 122,
+      "frames": 22,
+      "type": "dip-to-bg (send-off fade-out, 2 empty frames f112-f113, pop-in)",
+      "shared": "nothing but the empty background (f112-f113); both layouts are centred on x 960: the prompt box exits rising 3.4% H with icons drifting outward, the centre mark pops in at the frame centre and the counter label appears in one frame (f114)",
+      "technique": "v1.trans-dip-to-bg",
+      "detail": "detail/soft_101-122"
+    },
+    {
+      "id": "T02",
+      "start": 328,
+      "end": 354,
+      "frames": 27,
+      "type": "dip-to-bg (pure fade-out, 1 empty frame f337, card slide-fade-in)",
+      "shared": "nothing but the empty background (single empty frame f337); network + counter fade with no scale change, then two cards slide in from the right (card 2 +3 f) and the heading starts with card 2",
+      "technique": "v1.trans-dip-to-bg",
+      "detail": "detail/soft_328-354"
+    },
+    {
+      "id": "T03",
+      "start": 553,
+      "end": 579,
+      "frames": 27,
+      "type": "dip-to-bg (shrink-fade-out, no empty frame, card slide-fade-in)",
+      "shared": "the same two-card layout (positions, size, header bar); outgoing cards shrink to 0.966 and fade to 13% (f562), incoming cards start at 14% (f563) with the exact S03 entrance values; only the right card changes from dark to light",
+      "technique": "v1.trans-dip-to-bg",
+      "detail": "detail/soft_553-579"
+    },
+    {
+      "id": "T05",
+      "start": 872,
+      "end": 895,
+      "frames": 24,
+      "type": "zoom-through (morph on a shared element)",
+      "shared": "the centre hex mark: it is the centre cell of the S05 network (refilled into the text band f872-f879) and becomes the S06 logo; layer scale 1.00 -> 1.40 about the mark while it rises from 50% to 35.6% H; the other cells fade out f880-f888",
+      "technique": "v1.trans-zoom-through-mark",
+      "detail": "detail/soft_872-895"
+    }
+  ],
+  "notes": [
+    "Merged 2026-10-31 from chunk v1c1 (f0-f1068, the whole video). c001 is the only hard cut (T04, f788); c002 (f879) is the anchor of the soft zoom-through T05 f872-f895, not a cut. No hard cuts beyond the auto candidates.",
+    "Detector misses: T01 f101-f122, T02 f328-f354 and T03 f553-f579 (dip to the empty background) were found on the sheets and in motion.csv / luma tracks; c002 only caught the middle of T05.",
+    "Soft transition ids match the transition ids in segments.json (T04 is the hard cut c001)."
+  ]
 }

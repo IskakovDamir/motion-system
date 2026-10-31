@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.trans-zoom-through-radial.scale.v5c1",
+  "file": "curves/v5.trans-zoom-through-radial.scale.v5c1.csv",
+  "property": "scale",
+  "unit": "scale factor (1.0 = size at f240)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c1rev2_zoom_letter_scale.csv",
+  "column": "scale_span",
+  "sampled_frames": [
+    292,
+    312
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.035,
+  "to_value": 1.5214,
+  "active_frames": [
+    300,
+    312
+  ],
+  "measured_duration_frames": 12,
+  "bezier": {
+    "x1": 1.0,
+    "y1": 0.311,
+    "x2": 1.0,
+    "y2": 0.7254,
+    "durationInFrames": 11,
+    "delay": 1.0,
+    "built_duration_frames": 11,
+    "rmse": 0.0228
+  },
+  "spring": {
+    "stiffness": 107.675,
+    "damping": 0.5,
+    "mass": 1,
+    "damping_ratio": 0.0241,
+    "built_duration_frames": 166,
+    "rmse": 0.5639
+  },
+  "recommended": "bezier",
+  "note": "zoom-through, first half: the brand wordmark accelerates toward the camera about (801, 455) px from the end of its slow creep (1.035 at f300) to 1.521 at f312, the last picture the f240 letter templates still find (scores 0.41-0.46; f316 no lock, scores 0.13-0.22). Samples: centre span of the 3rd and 5th letters of the bold line (nearest the zoom origin, least streaked), f240 gradient templates matched per letter at scales 0.98-1.80 (step 0.0025). The whole-line gray template reads higher at f307/f310 (1.170/1.325) because the outer letters are smeared outward by the radial streaks. No rest after: the title is gone by f316."
+}

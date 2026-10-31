@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.text-letter-rise-fade",
+  "file": "curves/v4.text-letter-rise-fade.csv",
+  "property": "opacity",
+  "unit": "opacity 0-1 (least-squares scale of the settled glyph after removing its vertical offset)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/c2_r1_wordmark_letters.csv",
+  "column": "L3_opacity",
+  "sampled_frames": [
+    1498,
+    1537
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 0.0,
+  "to_value": 1.0,
+  "active_frames": [
+    1505,
+    1524
+  ],
+  "measured_duration_frames": 19,
+  "bezier": {
+    "x1": 0.2961,
+    "y1": 1.0193,
+    "x2": 0.6467,
+    "y2": 0.9788,
+    "durationInFrames": 23,
+    "delay": 0.711,
+    "built_duration_frames": 18,
+    "rmse": 0.0337
+  },
+  "spring": {
+    "stiffness": 328.836,
+    "damping": 36.296,
+    "mass": 1,
+    "damping_ratio": 1.0008,
+    "built_duration_frames": 20,
+    "rmse": 0.0203
+  },
+  "recommended": "spring",
+  "note": "third letter of the wordmark (first letter not covered by the sliding mark); per frame the settled glyph is shifted to the best whole-pixel vertical offset and scaled to fit, so the rise does not bias the opacity; letters 2-6 repeat the same curve 2.1 f apart"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-caption-focus-roll.i2",
+  "file": "curves/v5.text-caption-focus-roll.i2.csv",
+  "property": "blur",
+  "unit": "sharpness (mean |Laplacian| of the word ROI; rises as the word comes into focus)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_D_cap_words.csv",
+  "column": "aphone_sharp",
+  "sampled_frames": [
+    3510,
+    3547
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 3.19,
+  "to_value": 12.62,
+  "active_frames": [
+    3522,
+    3547
+  ],
+  "measured_duration_frames": 25,
+  "bezier": {
+    "x1": 0.4585,
+    "y1": -0.0205,
+    "x2": 0.8291,
+    "y2": 1.2614,
+    "durationInFrames": 29,
+    "delay": -2.528,
+    "built_duration_frames": 26,
+    "rmse": 0.045
+  },
+  "spring": {
+    "stiffness": 27.436,
+    "damping": 3.908,
+    "mass": 1,
+    "damping_ratio": 0.373,
+    "built_duration_frames": 121,
+    "rmse": 0.5658
+  },
+  "recommended": "bezier",
+  "note": "focus-in of the same word from the first faint picture to its focus peak at f3547 (the peak is held for one picture, so the end of the range is the peak; no settled tail)"
+}

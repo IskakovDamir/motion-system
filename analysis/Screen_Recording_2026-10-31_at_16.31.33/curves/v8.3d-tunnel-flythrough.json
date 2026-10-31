@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.3d-tunnel-flythrough",
+ "file": "curves/v8.3d-tunnel-flythrough.csv",
+ "property": "scale",
+ "unit": "scale factor of the triangle mascot (1.0 = its size at f160, 7.8% W)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c1_tunnel_tri_clean_138-165.csv",
+ "column": "scale",
+ "sampled_frames": [
+  138,
+  165
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 0.35,
+ "to_value": 1.05,
+ "active_frames": [
+  138,
+  165
+ ],
+ "measured_duration_frames": 27,
+ "bezier": {
+  "x1": 0.4913,
+  "y1": 0.8554,
+  "x2": 0.1107,
+  "y2": 0.6143,
+  "durationInFrames": 26,
+  "delay": -0.421,
+  "built_duration_frames": 25,
+  "rmse": 0.0586
+ },
+ "spring": {
+  "stiffness": 162.856,
+  "damping": 25.401,
+  "mass": 1,
+  "damping_ratio": 0.9952,
+  "built_duration_frames": 27,
+  "rmse": 0.0496
+ },
+ "recommended": "spring",
+ "note": "mascots float out of the tunnel's vanishing point toward the camera and slow to a hover while the camera flies through the tunnel; first picture f138 already moving; template with scales on the triangle mascot (scratch/v8c1_tunnel_tri_138-177.csv, f156-f157 mismatches removed in v8c1_tunnel_tri_clean_138-165.csv)",
+ "chunk_curve_id": "v8.3d-tunnel-flythrough.v8c1"
+}

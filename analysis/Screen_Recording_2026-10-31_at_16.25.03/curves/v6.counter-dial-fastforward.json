@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.counter-dial-fastforward",
+  "file": "curves/v6.counter-dial-fastforward.csv",
+  "property": "rotation",
+  "unit": "degrees around the dial centre (x1153 y460 px), 0 = 12 o'clock, negative = counter-clockwise",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c2_S4_knob_angle_no1269.csv",
+  "column": "angle_deg",
+  "sampled_frames": [
+    1246,
+    1296
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": -1.5,
+  "to_value": -176.0,
+  "active_frames": [
+    1248,
+    1286
+  ],
+  "measured_duration_frames": 38,
+  "bezier": {
+    "x1": 1.0,
+    "y1": 0.1437,
+    "x2": 0.0,
+    "y2": 0.9661,
+    "durationInFrames": 51,
+    "delay": -4.144,
+    "built_duration_frames": 37,
+    "rmse": 0.0108
+  },
+  "spring": {
+    "stiffness": 195.737,
+    "damping": 23.939,
+    "mass": 1,
+    "damping_ratio": 0.8555,
+    "built_duration_frames": 19,
+    "rmse": 0.2116
+  },
+  "recommended": "bezier",
+  "note": "S13 dial: knob travels counter-clockwise from 12 to 6 o'clock while the counter digits count down and the timer label counts up; one eased move whose middle is a fast-forward burst (f1267 -40 deg -> f1271 -143 deg, ~26 deg/frame, knob smeared; blurred f1269 sample dropped); knob template 66x66 ref f1248; settles at -176 by f1293"
+}

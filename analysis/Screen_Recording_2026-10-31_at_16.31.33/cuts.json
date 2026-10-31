@@ -1,1602 +1,1981 @@
 {
-  "video": "Screen_Recording_2026-10-31_at_16.31.33",
-  "key": "v8",
-  "fps": 60,
-  "frame_convention": "analysis frame = round((pts - first_video_pts) * 60); 'frame' is the first frame of the new shot",
-  "detectors": {
-    "content": {
-      "tool": "PySceneDetect ContentDetector",
-      "threshold": 27.0,
-      "weak_threshold": 14.0
-    },
-    "adaptive": {
-      "tool": "PySceneDetect AdaptiveDetector",
-      "adaptive_threshold": 3.0,
-      "window_width": 2,
-      "min_content_val": 15
-    },
-    "ffmpeg_scene": {
-      "tool": "ffmpeg select scene score",
-      "threshold": 0.3,
-      "weak_threshold": 0.12
-    },
-    "merge_radius_decoded_frames": 1
+ "video": "Screen_Recording_2026-10-31_at_16.31.33",
+ "key": "v8",
+ "fps": 60,
+ "frame_convention": "analysis frame = round((pts - first_video_pts) * 60); 'frame' is the first frame of the new shot",
+ "detectors": {
+  "content": {
+   "tool": "PySceneDetect ContentDetector",
+   "threshold": 27.0,
+   "weak_threshold": 14.0
   },
-  "cuts": [
-    {
-      "frame": 2,
-      "time_s": 0.0333,
-      "last_frame_before": 0,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 14.93,
-      "delta_lum": 5.12,
-      "adaptive_ratio": null,
-      "ffmpeg_scene": 0.0395,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c001"
-    },
-    {
-      "frame": 134,
-      "time_s": 2.2333,
-      "last_frame_before": 132,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 7.78,
-      "delta_lum": 12.77,
-      "adaptive_ratio": 1.01,
-      "ffmpeg_scene": 0.1526,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c002"
-    },
-    {
-      "frame": 144,
-      "time_s": 2.4,
-      "last_frame_before": 143,
-      "sources": [
-        "content"
-      ],
-      "content_val": 30.23,
-      "delta_lum": 46.39,
-      "adaptive_ratio": 1.64,
-      "ffmpeg_scene": 0.0243,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c003"
-    },
-    {
-      "frame": 154,
-      "time_s": 2.5667,
-      "last_frame_before": 152,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 20.42,
-      "delta_lum": 31.6,
-      "adaptive_ratio": 0.94,
-      "ffmpeg_scene": 0.1239,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c004"
-    },
-    {
-      "frame": 158,
-      "time_s": 2.6333,
-      "last_frame_before": 157,
-      "sources": [
-        "content",
-        "ffmpeg_scene"
-      ],
-      "content_val": 25.98,
-      "delta_lum": 37.01,
-      "adaptive_ratio": 1.19,
-      "ffmpeg_scene": 0.2646,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c005"
-    },
-    {
-      "frame": 163,
-      "time_s": 2.7167,
-      "last_frame_before": 162,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 23.13,
-      "delta_lum": 35.74,
-      "adaptive_ratio": 1.61,
-      "ffmpeg_scene": 0.0003,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c006"
-    },
-    {
-      "frame": 168,
-      "time_s": 2.8,
-      "last_frame_before": 167,
-      "sources": [
-        "content",
-        "ffmpeg_scene"
-      ],
-      "content_val": 24.04,
-      "delta_lum": 39.14,
-      "adaptive_ratio": 1.8,
-      "ffmpeg_scene": 0.4718,
-      "confidence": "high",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c007"
-    },
-    {
-      "frame": 176,
-      "time_s": 2.9333,
-      "last_frame_before": 175,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 44.77,
-      "delta_lum": 36.14,
-      "adaptive_ratio": 2.36,
-      "ffmpeg_scene": 0.5177,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c008"
-    },
-    {
-      "frame": 182,
-      "time_s": 3.0333,
-      "last_frame_before": 181,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 24.66,
-      "delta_lum": 22.91,
-      "adaptive_ratio": 1.09,
-      "ffmpeg_scene": 0.2611,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c009"
-    },
-    {
-      "frame": 187,
-      "time_s": 3.1167,
-      "last_frame_before": 185,
-      "sources": [
-        "content"
-      ],
-      "content_val": 29.66,
-      "delta_lum": 20.52,
-      "adaptive_ratio": 1.17,
-      "ffmpeg_scene": 0.0199,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c010"
-    },
-    {
-      "frame": 190,
-      "time_s": 3.1667,
-      "last_frame_before": 189,
-      "sources": [
-        "content_weak",
-        "ffmpeg_scene"
-      ],
-      "content_val": 13.88,
-      "delta_lum": 11.45,
-      "adaptive_ratio": 0.56,
-      "ffmpeg_scene": 0.1944,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c011"
-    },
-    {
-      "frame": 233,
-      "time_s": 3.8833,
-      "last_frame_before": 230,
-      "sources": [
-        "content"
-      ],
-      "content_val": 34.5,
-      "delta_lum": 43.5,
-      "adaptive_ratio": 2.0,
-      "ffmpeg_scene": 0.0667,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c012"
-    },
-    {
-      "frame": 238,
-      "time_s": 3.9667,
-      "last_frame_before": 236,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 11.12,
-      "delta_lum": 9.62,
-      "adaptive_ratio": 0.91,
-      "ffmpeg_scene": 0.1574,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c013"
-    },
-    {
-      "frame": 262,
-      "time_s": 4.3667,
-      "last_frame_before": 258,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 14.33,
-      "delta_lum": 10.94,
-      "adaptive_ratio": 2.0,
-      "ffmpeg_scene": 0.0789,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c014"
-    },
-    {
-      "frame": 338,
-      "time_s": 5.6333,
-      "last_frame_before": 337,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 14.14,
-      "delta_lum": 10.0,
-      "adaptive_ratio": 1.94,
-      "ffmpeg_scene": 0.0009,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c015"
-    },
-    {
-      "frame": 353,
-      "time_s": 5.8833,
-      "last_frame_before": 352,
-      "sources": [
-        "adaptive"
-      ],
-      "content_val": 0.13,
-      "delta_lum": 0.03,
-      "adaptive_ratio": 0.02,
-      "ffmpeg_scene": 0.0002,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c016"
-    },
-    {
-      "frame": 364,
-      "time_s": 6.0667,
-      "last_frame_before": 363,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 14.74,
-      "delta_lum": 12.07,
-      "adaptive_ratio": 2.21,
-      "ffmpeg_scene": 0.0786,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c017"
-    },
-    {
-      "frame": 369,
-      "time_s": 6.15,
-      "last_frame_before": 368,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 14.27,
-      "delta_lum": 10.94,
-      "adaptive_ratio": 1.5,
-      "ffmpeg_scene": 0.0002,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c018"
-    },
-    {
-      "frame": 378,
-      "time_s": 6.3,
-      "last_frame_before": 376,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 16.96,
-      "delta_lum": 11.54,
-      "adaptive_ratio": 1.64,
-      "ffmpeg_scene": 0.0004,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c019"
-    },
-    {
-      "frame": 392,
-      "time_s": 6.5333,
-      "last_frame_before": 390,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 22.13,
-      "delta_lum": 15.27,
-      "adaptive_ratio": 2.07,
-      "ffmpeg_scene": 0.0146,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c020"
-    },
-    {
-      "frame": 408,
-      "time_s": 6.8,
-      "last_frame_before": 406,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 21.1,
-      "delta_lum": 16.3,
-      "adaptive_ratio": 2.15,
-      "ffmpeg_scene": 0.0069,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c021"
-    },
-    {
-      "frame": 422,
-      "time_s": 7.0333,
-      "last_frame_before": 420,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 18.77,
-      "delta_lum": 11.21,
-      "adaptive_ratio": 1.46,
-      "ffmpeg_scene": 0.0151,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c022"
-    },
-    {
-      "frame": 429,
-      "time_s": 7.15,
-      "last_frame_before": 426,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 17.87,
-      "delta_lum": 12.14,
-      "adaptive_ratio": 1.48,
-      "ffmpeg_scene": 0.0006,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c023"
-    },
-    {
-      "frame": 444,
-      "time_s": 7.4,
-      "last_frame_before": 442,
-      "sources": [
-        "content",
-        "ffmpeg_scene"
-      ],
-      "content_val": 32.42,
-      "delta_lum": 40.44,
-      "adaptive_ratio": 1.74,
-      "ffmpeg_scene": 0.1081,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c024"
-    },
-    {
-      "frame": 476,
-      "time_s": 7.9333,
-      "last_frame_before": 474,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 24.43,
-      "delta_lum": 10.38,
-      "adaptive_ratio": 1.98,
-      "ffmpeg_scene": 0.0329,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c025"
-    },
-    {
-      "frame": 486,
-      "time_s": 8.1,
-      "last_frame_before": 485,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 15.78,
-      "delta_lum": 4.57,
-      "adaptive_ratio": 1.32,
-      "ffmpeg_scene": 0.0017,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c026"
-    },
-    {
-      "frame": 492,
-      "time_s": 8.2,
-      "last_frame_before": 490,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 17.42,
-      "delta_lum": 4.45,
-      "adaptive_ratio": 1.6,
-      "ffmpeg_scene": 0.0059,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c027"
-    },
-    {
-      "frame": 508,
-      "time_s": 8.4667,
-      "last_frame_before": 506,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 15.65,
-      "delta_lum": 4.11,
-      "adaptive_ratio": 1.4,
-      "ffmpeg_scene": 0.0004,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c028"
-    },
-    {
-      "frame": 512,
-      "time_s": 8.5333,
-      "last_frame_before": 510,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": null,
-      "delta_lum": null,
-      "adaptive_ratio": null,
-      "ffmpeg_scene": 1.0,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c029"
-    },
-    {
-      "frame": 515,
-      "time_s": 8.5833,
-      "last_frame_before": 514,
-      "sources": [
-        "adaptive",
-        "content"
-      ],
-      "content_val": 121.43,
-      "delta_lum": 181.27,
-      "adaptive_ratio": 26.51,
-      "ffmpeg_scene": 0.0001,
-      "confidence": "high",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c030"
-    },
-    {
-      "frame": 1004,
-      "time_s": 16.7333,
-      "last_frame_before": 1002,
-      "sources": [
-        "adaptive",
-        "content",
-        "ffmpeg_scene"
-      ],
-      "content_val": 50.72,
-      "delta_lum": 84.88,
-      "adaptive_ratio": 5.25,
-      "ffmpeg_scene": 0.7236,
-      "confidence": "high",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c031"
-    },
-    {
-      "frame": 1010,
-      "time_s": 16.8333,
-      "last_frame_before": 1008,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 16.41,
-      "delta_lum": 26.25,
-      "adaptive_ratio": 0.73,
-      "ffmpeg_scene": 0.0464,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c032"
-    },
-    {
-      "frame": 1089,
-      "time_s": 18.15,
-      "last_frame_before": 1088,
-      "sources": [
-        "content"
-      ],
-      "content_val": 28.62,
-      "delta_lum": 37.13,
-      "adaptive_ratio": 2.2,
-      "ffmpeg_scene": 0.0,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c033"
-    },
-    {
-      "frame": 1096,
-      "time_s": 18.2667,
-      "last_frame_before": 1094,
-      "sources": [
-        "content",
-        "ffmpeg_scene"
-      ],
-      "content_val": 29.65,
-      "delta_lum": 48.87,
-      "adaptive_ratio": 1.47,
-      "ffmpeg_scene": 0.1303,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c034"
-    },
-    {
-      "frame": 1105,
-      "time_s": 18.4167,
-      "last_frame_before": 1102,
-      "sources": [
-        "content_weak",
-        "ffmpeg_scene"
-      ],
-      "content_val": 24.5,
-      "delta_lum": 30.88,
-      "adaptive_ratio": 1.14,
-      "ffmpeg_scene": 0.1736,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c035"
-    },
-    {
-      "frame": 1112,
-      "time_s": 18.5333,
-      "last_frame_before": 1110,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 23.74,
-      "delta_lum": 34.2,
-      "adaptive_ratio": 1.23,
-      "ffmpeg_scene": 0.0202,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c036"
-    },
-    {
-      "frame": 1122,
-      "time_s": 18.7,
-      "last_frame_before": 1120,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 23.51,
-      "delta_lum": 28.76,
-      "adaptive_ratio": 1.11,
-      "ffmpeg_scene": 0.1405,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c037"
-    },
-    {
-      "frame": 1130,
-      "time_s": 18.8333,
-      "last_frame_before": 1128,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 16.7,
-      "delta_lum": 22.71,
-      "adaptive_ratio": 1.03,
-      "ffmpeg_scene": 0.0518,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c038"
-    },
-    {
-      "frame": 1148,
-      "time_s": 19.1333,
-      "last_frame_before": 1146,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 17.67,
-      "delta_lum": 22.53,
-      "adaptive_ratio": 1.18,
-      "ffmpeg_scene": 0.0275,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c039"
-    },
-    {
-      "frame": 1156,
-      "time_s": 19.2667,
-      "last_frame_before": 1154,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 22.14,
-      "delta_lum": 31.94,
-      "adaptive_ratio": 1.17,
-      "ffmpeg_scene": 0.0752,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c040"
-    },
-    {
-      "frame": 1162,
-      "time_s": 19.3667,
-      "last_frame_before": 1160,
-      "sources": [
-        "content"
-      ],
-      "content_val": 27.88,
-      "delta_lum": 40.66,
-      "adaptive_ratio": 1.14,
-      "ffmpeg_scene": 0.1753,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c041"
-    },
-    {
-      "frame": 1167,
-      "time_s": 19.45,
-      "last_frame_before": 1164,
-      "sources": [
-        "content"
-      ],
-      "content_val": 40.63,
-      "delta_lum": 58.48,
-      "adaptive_ratio": 1.4,
-      "ffmpeg_scene": 0.313,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c042"
-    },
-    {
-      "frame": 1170,
-      "time_s": 19.5,
-      "last_frame_before": 1168,
-      "sources": [
-        "content"
-      ],
-      "content_val": 46.19,
-      "delta_lum": 68.04,
-      "adaptive_ratio": 1.25,
-      "ffmpeg_scene": 0.3205,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c043"
-    },
-    {
-      "frame": 1174,
-      "time_s": 19.5667,
-      "last_frame_before": 1172,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 53.55,
-      "delta_lum": 75.26,
-      "adaptive_ratio": 1.65,
-      "ffmpeg_scene": 0.3382,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c044"
-    },
-    {
-      "frame": 1234,
-      "time_s": 20.5667,
-      "last_frame_before": 1232,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 14.07,
-      "delta_lum": 21.64,
-      "adaptive_ratio": 1.63,
-      "ffmpeg_scene": 0.0141,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c045"
-    },
-    {
-      "frame": 1262,
-      "time_s": 21.0333,
-      "last_frame_before": 1261,
-      "sources": [
-        "adaptive",
-        "content"
-      ],
-      "content_val": 73.56,
-      "delta_lum": 101.12,
-      "adaptive_ratio": 8.41,
-      "ffmpeg_scene": 0.089,
-      "confidence": "high",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c046"
-    },
-    {
-      "frame": 1266,
-      "time_s": 21.1,
-      "last_frame_before": 1263,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 27.17,
-      "delta_lum": 39.1,
-      "adaptive_ratio": 1.18,
-      "ffmpeg_scene": 0.9123,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c047"
-    },
-    {
-      "frame": 1327,
-      "time_s": 22.1167,
-      "last_frame_before": 1324,
-      "sources": [
-        "adaptive",
-        "content",
-        "ffmpeg_scene"
-      ],
-      "content_val": 74.08,
-      "delta_lum": 98.61,
-      "adaptive_ratio": 10.69,
-      "ffmpeg_scene": 0.7338,
-      "confidence": "high",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c048"
-    },
-    {
-      "frame": 1462,
-      "time_s": 24.3667,
-      "last_frame_before": 1460,
-      "sources": [
-        "adaptive",
-        "content"
-      ],
-      "content_val": 63.31,
-      "delta_lum": 110.36,
-      "adaptive_ratio": 4.14,
-      "ffmpeg_scene": 0.0055,
-      "confidence": "high",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c049"
-    },
-    {
-      "frame": 1470,
-      "time_s": 24.5,
-      "last_frame_before": 1468,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 11.72,
-      "delta_lum": 13.76,
-      "adaptive_ratio": 0.84,
-      "ffmpeg_scene": 0.9297,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c050"
-    },
-    {
-      "frame": 1669,
-      "time_s": 27.8167,
-      "last_frame_before": 1666,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 28.84,
-      "delta_lum": 39.44,
-      "adaptive_ratio": 0.8,
-      "ffmpeg_scene": 0.1986,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c051"
-    },
-    {
-      "frame": 1678,
-      "time_s": 27.9667,
-      "last_frame_before": 1676,
-      "sources": [
-        "content",
-        "ffmpeg_scene"
-      ],
-      "content_val": 28.68,
-      "delta_lum": 37.81,
-      "adaptive_ratio": 0.98,
-      "ffmpeg_scene": 0.1651,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c052"
-    },
-    {
-      "frame": 1708,
-      "time_s": 28.4667,
-      "last_frame_before": 1706,
-      "sources": [
-        "content"
-      ],
-      "content_val": 31.59,
-      "delta_lum": 44.17,
-      "adaptive_ratio": 1.13,
-      "ffmpeg_scene": 0.0332,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c053"
-    },
-    {
-      "frame": 1712,
-      "time_s": 28.5333,
-      "last_frame_before": 1710,
-      "sources": [
-        "content"
-      ],
-      "content_val": 41.47,
-      "delta_lum": 57.8,
-      "adaptive_ratio": 1.69,
-      "ffmpeg_scene": 0.0625,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c054"
-    },
-    {
-      "frame": 1720,
-      "time_s": 28.6667,
-      "last_frame_before": 1718,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 17.78,
-      "delta_lum": 22.66,
-      "adaptive_ratio": 0.76,
-      "ffmpeg_scene": 0.2296,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c055"
-    },
-    {
-      "frame": 1770,
-      "time_s": 29.5,
-      "last_frame_before": 1768,
-      "sources": [
-        "content"
-      ],
-      "content_val": 30.58,
-      "delta_lum": 40.88,
-      "adaptive_ratio": 1.14,
-      "ffmpeg_scene": 0.0364,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c056"
-    },
-    {
-      "frame": 1780,
-      "time_s": 29.6667,
-      "last_frame_before": 1779,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 0.24,
-      "delta_lum": 0.05,
-      "adaptive_ratio": 0.02,
-      "ffmpeg_scene": 0.1682,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c057"
-    },
-    {
-      "frame": 1783,
-      "time_s": 29.7167,
-      "last_frame_before": 1781,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 14.08,
-      "delta_lum": 16.98,
-      "adaptive_ratio": 1.84,
-      "ffmpeg_scene": 0.1457,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c058"
-    },
-    {
-      "frame": 1787,
-      "time_s": 29.7833,
-      "last_frame_before": 1785,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 10.95,
-      "delta_lum": 13.47,
-      "adaptive_ratio": 1.95,
-      "ffmpeg_scene": 0.123,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c059"
-    },
-    {
-      "frame": 1795,
-      "time_s": 29.9167,
-      "last_frame_before": 1793,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 0.05,
-      "delta_lum": 0.01,
-      "adaptive_ratio": 0.0,
-      "ffmpeg_scene": 0.1273,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c060"
-    },
-    {
-      "frame": 1801,
-      "time_s": 30.0167,
-      "last_frame_before": 1799,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 18.47,
-      "delta_lum": 23.73,
-      "adaptive_ratio": 1.87,
-      "ffmpeg_scene": 0.1551,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c061"
-    },
-    {
-      "frame": 1806,
-      "time_s": 30.1,
-      "last_frame_before": 1805,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 23.32,
-      "delta_lum": 30.47,
-      "adaptive_ratio": 0.95,
-      "ffmpeg_scene": 0.1914,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c062"
-    },
-    {
-      "frame": 1810,
-      "time_s": 30.1667,
-      "last_frame_before": 1809,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 32.93,
-      "delta_lum": 41.74,
-      "adaptive_ratio": 1.0,
-      "ffmpeg_scene": 0.2178,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c063"
-    },
-    {
-      "frame": 1822,
-      "time_s": 30.3667,
-      "last_frame_before": 1820,
-      "sources": [
-        "content"
-      ],
-      "content_val": 28.09,
-      "delta_lum": 50.84,
-      "adaptive_ratio": 0.7,
-      "ffmpeg_scene": 0.0332,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c064"
-    },
-    {
-      "frame": 1829,
-      "time_s": 30.4833,
-      "last_frame_before": 1826,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 18.75,
-      "delta_lum": 27.25,
-      "adaptive_ratio": 0.99,
-      "ffmpeg_scene": 0.5437,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c065"
-    },
-    {
-      "frame": 1927,
-      "time_s": 32.1167,
-      "last_frame_before": 1924,
-      "sources": [
-        "adaptive",
-        "content",
-        "ffmpeg_scene"
-      ],
-      "content_val": 14.16,
-      "delta_lum": 16.22,
-      "adaptive_ratio": 0.87,
-      "ffmpeg_scene": 0.5524,
-      "confidence": "high",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c066"
-    },
-    {
-      "frame": 1986,
-      "time_s": 33.1,
-      "last_frame_before": 1985,
-      "sources": [
-        "content"
-      ],
-      "content_val": 40.02,
-      "delta_lum": 56.23,
-      "adaptive_ratio": 1.6,
-      "ffmpeg_scene": 0.2847,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c067"
-    },
-    {
-      "frame": 1988,
-      "time_s": 33.1333,
-      "last_frame_before": 1987,
-      "sources": [
-        "content",
-        "ffmpeg_scene"
-      ],
-      "content_val": 34.54,
-      "delta_lum": 39.25,
-      "adaptive_ratio": 1.02,
-      "ffmpeg_scene": 0.509,
-      "confidence": "high",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c068"
-    },
-    {
-      "frame": 2010,
-      "time_s": 33.5,
-      "last_frame_before": 2008,
-      "sources": [
-        "content"
-      ],
-      "content_val": 28.35,
-      "delta_lum": 32.36,
-      "adaptive_ratio": 1.34,
-      "ffmpeg_scene": 0.021,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c069"
-    },
-    {
-      "frame": 2017,
-      "time_s": 33.6167,
-      "last_frame_before": 2014,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 21.9,
-      "delta_lum": 27.4,
-      "adaptive_ratio": 0.93,
-      "ffmpeg_scene": 0.2272,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c070"
-    },
-    {
-      "frame": 2252,
-      "time_s": 37.5333,
-      "last_frame_before": 2250,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 19.83,
-      "delta_lum": 24.71,
-      "adaptive_ratio": 1.06,
-      "ffmpeg_scene": 0.0306,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c071"
-    },
-    {
-      "frame": 2270,
-      "time_s": 37.8333,
-      "last_frame_before": 2266,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 13.49,
-      "delta_lum": 16.06,
-      "adaptive_ratio": 1.0,
-      "ffmpeg_scene": 0.1685,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c072"
-    },
-    {
-      "frame": 2284,
-      "time_s": 38.0667,
-      "last_frame_before": 2280,
-      "sources": [
-        "content"
-      ],
-      "content_val": 34.74,
-      "delta_lum": 44.04,
-      "adaptive_ratio": 1.76,
-      "ffmpeg_scene": 0.0372,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c073"
-    },
-    {
-      "frame": 2298,
-      "time_s": 38.3,
-      "last_frame_before": 2297,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 14.83,
-      "delta_lum": 19.65,
-      "adaptive_ratio": 1.44,
-      "ffmpeg_scene": 0.0065,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c074"
-    },
-    {
-      "frame": 2857,
-      "time_s": 47.6167,
-      "last_frame_before": 2854,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 15.27,
-      "delta_lum": 19.01,
-      "adaptive_ratio": 1.2,
-      "ffmpeg_scene": 0.0069,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c075"
-    },
-    {
-      "frame": 2960,
-      "time_s": 49.3333,
-      "last_frame_before": 2956,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 9.84,
-      "delta_lum": 10.71,
-      "adaptive_ratio": 1.0,
-      "ffmpeg_scene": 0.134,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c076"
-    },
-    {
-      "frame": 2974,
-      "time_s": 49.5667,
-      "last_frame_before": 2973,
-      "sources": [
-        "content"
-      ],
-      "content_val": 29.0,
-      "delta_lum": 31.55,
-      "adaptive_ratio": 1.3,
-      "ffmpeg_scene": 0.0063,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c077"
-    },
-    {
-      "frame": 2990,
-      "time_s": 49.8333,
-      "last_frame_before": 2988,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 17.34,
-      "delta_lum": 14.34,
-      "adaptive_ratio": 1.32,
-      "ffmpeg_scene": 0.0067,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c078"
-    },
-    {
-      "frame": 3046,
-      "time_s": 50.7667,
-      "last_frame_before": 3045,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 5.79,
-      "delta_lum": 7.53,
-      "adaptive_ratio": 0.97,
-      "ffmpeg_scene": 0.7091,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c079"
-    },
-    {
-      "frame": 3056,
-      "time_s": 50.9333,
-      "last_frame_before": 3053,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 0.01,
-      "delta_lum": 0.0,
-      "adaptive_ratio": 0.0,
-      "ffmpeg_scene": 0.2603,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c080"
-    },
-    {
-      "frame": 3058,
-      "time_s": 50.9667,
-      "last_frame_before": 3057,
-      "sources": [
-        "adaptive",
-        "content"
-      ],
-      "content_val": 54.26,
-      "delta_lum": 78.92,
-      "adaptive_ratio": 3.21,
-      "ffmpeg_scene": 0.1058,
-      "confidence": "high",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c081"
-    },
-    {
-      "frame": 3063,
-      "time_s": 51.05,
-      "last_frame_before": 3062,
-      "sources": [
-        "adaptive",
-        "content"
-      ],
-      "content_val": 29.08,
-      "delta_lum": 31.88,
-      "adaptive_ratio": 3.15,
-      "ffmpeg_scene": 0.0,
-      "confidence": "high",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c082"
-    },
-    {
-      "frame": 3078,
-      "time_s": 51.3,
-      "last_frame_before": 3076,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 26.86,
-      "delta_lum": 27.62,
-      "adaptive_ratio": 1.22,
-      "ffmpeg_scene": 0.0184,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c083"
-    },
-    {
-      "frame": 3088,
-      "time_s": 51.4667,
-      "last_frame_before": 3086,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 17.09,
-      "delta_lum": 14.98,
-      "adaptive_ratio": 1.02,
-      "ffmpeg_scene": 0.0207,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c084"
-    },
-    {
-      "frame": 3183,
-      "time_s": 53.05,
-      "last_frame_before": 3180,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 14.49,
-      "delta_lum": 13.94,
-      "adaptive_ratio": 1.74,
-      "ffmpeg_scene": 0.0127,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c085"
-    },
-    {
-      "frame": 3242,
-      "time_s": 54.0333,
-      "last_frame_before": 3241,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 4.73,
-      "delta_lum": 3.88,
-      "adaptive_ratio": 1.91,
-      "ffmpeg_scene": 1.0,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c086"
-    },
-    {
-      "frame": 3246,
-      "time_s": 54.1,
-      "last_frame_before": 3245,
-      "sources": [
-        "adaptive",
-        "content",
-        "ffmpeg_scene"
-      ],
-      "content_val": 91.49,
-      "delta_lum": 128.8,
-      "adaptive_ratio": 6.05,
-      "ffmpeg_scene": 0.6644,
-      "confidence": "high",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c087"
-    },
-    {
-      "frame": 3270,
-      "time_s": 54.5,
-      "last_frame_before": 3268,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 50.7,
-      "delta_lum": 60.39,
-      "adaptive_ratio": 1.26,
-      "ffmpeg_scene": 0.1241,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c088"
-    },
-    {
-      "frame": 3295,
-      "time_s": 54.9167,
-      "last_frame_before": 3292,
-      "sources": [
-        "content"
-      ],
-      "content_val": 27.62,
-      "delta_lum": 31.52,
-      "adaptive_ratio": 1.0,
-      "ffmpeg_scene": 0.0092,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c089"
-    },
-    {
-      "frame": 3310,
-      "time_s": 55.1667,
-      "last_frame_before": 3306,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": null,
-      "delta_lum": null,
-      "adaptive_ratio": null,
-      "ffmpeg_scene": 0.1303,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c090"
-    },
-    {
-      "frame": 3318,
-      "time_s": 55.3,
-      "last_frame_before": 3316,
-      "sources": [
-        "content"
-      ],
-      "content_val": 35.69,
-      "delta_lum": 41.07,
-      "adaptive_ratio": 1.49,
-      "ffmpeg_scene": 0.0025,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c091"
-    },
-    {
-      "frame": 3328,
-      "time_s": 55.4667,
-      "last_frame_before": 3326,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 24.18,
-      "delta_lum": 26.86,
-      "adaptive_ratio": 1.02,
-      "ffmpeg_scene": 0.0015,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c092"
-    },
-    {
-      "frame": 3344,
-      "time_s": 55.7333,
-      "last_frame_before": 3342,
-      "sources": [
-        "content_weak"
-      ],
-      "content_val": 24.75,
-      "delta_lum": 26.95,
-      "adaptive_ratio": 0.92,
-      "ffmpeg_scene": 0.0001,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c093"
-    },
-    {
-      "frame": 3351,
-      "time_s": 55.85,
-      "last_frame_before": 3348,
-      "sources": [
-        "content"
-      ],
-      "content_val": 35.77,
-      "delta_lum": 40.74,
-      "adaptive_ratio": 1.49,
-      "ffmpeg_scene": 0.0057,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c094"
-    },
-    {
-      "frame": 3376,
-      "time_s": 56.2667,
-      "last_frame_before": 3374,
-      "sources": [
-        "content"
-      ],
-      "content_val": 28.96,
-      "delta_lum": 32.9,
-      "adaptive_ratio": 1.03,
-      "ffmpeg_scene": 0.0381,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c095"
-    },
-    {
-      "frame": 3380,
-      "time_s": 56.3333,
-      "last_frame_before": 3379,
-      "sources": [
-        "content"
-      ],
-      "content_val": 28.41,
-      "delta_lum": 31.63,
-      "adaptive_ratio": 0.98,
-      "ffmpeg_scene": 0.0857,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c096"
-    },
-    {
-      "frame": 3397,
-      "time_s": 56.6167,
-      "last_frame_before": 3394,
-      "sources": [
-        "content"
-      ],
-      "content_val": 37.09,
-      "delta_lum": 41.56,
-      "adaptive_ratio": 1.47,
-      "ffmpeg_scene": 0.0063,
-      "confidence": "medium",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c097"
-    }
-  ],
-  "soft_transitions": [],
-  "notes": []
+  "adaptive": {
+   "tool": "PySceneDetect AdaptiveDetector",
+   "adaptive_threshold": 3.0,
+   "window_width": 2,
+   "min_content_val": 15
+  },
+  "ffmpeg_scene": {
+   "tool": "ffmpeg select scene score",
+   "threshold": 0.3,
+   "weak_threshold": 0.12
+  },
+  "merge_radius_decoded_frames": 1
+ },
+ "cuts": [
+  {
+   "frame": 2,
+   "time_s": 0.0333,
+   "last_frame_before": 0,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 14.93,
+   "delta_lum": 5.12,
+   "adaptive_ratio": null,
+   "ffmpeg_scene": 0.0395,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c001",
+   "reason": "inside S01: first pictures of the recording inside one composition: the label 1 wordmark finishes a vertical rise (motion blur at f0) and the first mascots pop in from dots; nothing is replaced (v8c1)"
+  },
+  {
+   "frame": 134,
+   "time_s": 2.2333,
+   "last_frame_before": 132,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 7.78,
+   "delta_lum": 12.77,
+   "adaptive_ratio": 1.01,
+   "ffmpeg_scene": 0.1526,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "confirmed",
+   "id": "c002",
+   "reason": "T01 (S01 -> S02), soft zoom-through f115-f143: anchor of the zoom-through f115-f143: the lockup zooms on the frame centre with growing blur and the tunnel cross-dissolves in from f136 (darkest tunnel pixel 180 -> 0 luma f136-f143) (v8c1)"
+  },
+  {
+   "frame": 144,
+   "time_s": 2.4,
+   "last_frame_before": 143,
+   "sources": [
+    "content"
+   ],
+   "content_val": 30.23,
+   "delta_lum": 46.39,
+   "adaptive_ratio": 1.64,
+   "ffmpeg_scene": 0.0243,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c003",
+   "reason": "inside S02: tunnel fly-through inside S02: wall panels stream past the camera, mascots grow; same composition (v8c1)"
+  },
+  {
+   "frame": 154,
+   "time_s": 2.5667,
+   "last_frame_before": 152,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 20.42,
+   "delta_lum": 31.6,
+   "adaptive_ratio": 0.94,
+   "ffmpeg_scene": 0.1239,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c004",
+   "reason": "inside S02: tunnel fly-through inside S02 (wall panels streaming past) (v8c1)"
+  },
+  {
+   "frame": 158,
+   "time_s": 2.6333,
+   "last_frame_before": 157,
+   "sources": [
+    "content",
+    "ffmpeg_scene"
+   ],
+   "content_val": 25.98,
+   "delta_lum": 37.01,
+   "adaptive_ratio": 1.19,
+   "ffmpeg_scene": 0.2646,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c005",
+   "reason": "inside S02: tunnel fly-through inside S02 (a pale wall panel passes the left edge) (v8c1)"
+  },
+  {
+   "frame": 163,
+   "time_s": 2.7167,
+   "last_frame_before": 162,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 23.13,
+   "delta_lum": 35.74,
+   "adaptive_ratio": 1.61,
+   "ffmpeg_scene": 0.0003,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c006",
+   "reason": "inside S02: tunnel fly-through inside S02; f163 repeats f162 (30 fps capture run) (v8c1)"
+  },
+  {
+   "frame": 168,
+   "time_s": 2.8,
+   "last_frame_before": 167,
+   "sources": [
+    "content",
+    "ffmpeg_scene"
+   ],
+   "content_val": 24.04,
+   "delta_lum": 39.14,
+   "adaptive_ratio": 1.8,
+   "ffmpeg_scene": 0.4718,
+   "confidence": "high",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c007",
+   "reason": "inside the tunnel-exit transition: walls pale toward white while the mascots accelerate past the camera; the background swap is at f174 (c008) (v8c1)"
+  },
+  {
+   "frame": 176,
+   "time_s": 2.9333,
+   "last_frame_before": 175,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 44.77,
+   "delta_lum": 36.14,
+   "adaptive_ratio": 2.36,
+   "ffmpeg_scene": 0.5177,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "confirmed",
+   "id": "c008",
+   "reason": "T02 (S02 -> S03), soft zoom-through f164-f200: anchor of the tunnel-exit zoom-through f164-f200: the background swaps at f174 (first picture with the tiny footage card on white; detector index 2 frames late), mascots continue across the swap (v8c1)"
+  },
+  {
+   "frame": 182,
+   "time_s": 3.0333,
+   "last_frame_before": 181,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 24.66,
+   "delta_lum": 22.91,
+   "adaptive_ratio": 1.09,
+   "ffmpeg_scene": 0.2611,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c009",
+   "reason": "inside S02: footage card zooming to full frame (scale 0.60 -> 0.69 W), same composition (v8c1)"
+  },
+  {
+   "frame": 187,
+   "time_s": 3.1167,
+   "last_frame_before": 185,
+   "sources": [
+    "content"
+   ],
+   "content_val": 29.66,
+   "delta_lum": 20.52,
+   "adaptive_ratio": 1.17,
+   "ffmpeg_scene": 0.0199,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c010",
+   "reason": "inside S03: footage card zooming to full frame (0.75 -> 0.81 W) (v8c1)"
+  },
+  {
+   "frame": 190,
+   "time_s": 3.1667,
+   "last_frame_before": 189,
+   "sources": [
+    "content_weak",
+    "ffmpeg_scene"
+   ],
+   "content_val": 13.88,
+   "delta_lum": 11.45,
+   "adaptive_ratio": 0.56,
+   "ffmpeg_scene": 0.1944,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c011",
+   "reason": "inside S03: footage card zooming to full frame (0.85 -> 0.89 W) (v8c1)"
+  },
+  {
+   "frame": 233,
+   "time_s": 3.8833,
+   "last_frame_before": 230,
+   "sources": [
+    "content"
+   ],
+   "content_val": 34.5,
+   "delta_lum": 43.5,
+   "adaptive_ratio": 2.0,
+   "ffmpeg_scene": 0.0667,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c012",
+   "reason": "inside S03: prompt pill rises in from below the frame with vertical motion blur; the footage behind is continuous (v8c1)"
+  },
+  {
+   "frame": 238,
+   "time_s": 3.9667,
+   "last_frame_before": 236,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 11.12,
+   "delta_lum": 9.62,
+   "adaptive_ratio": 0.91,
+   "ffmpeg_scene": 0.1574,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c013",
+   "reason": "inside S03: prompt pill still rising/settling (overshoot to f247) (v8c1)"
+  },
+  {
+   "frame": 262,
+   "time_s": 4.3667,
+   "last_frame_before": 258,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 14.33,
+   "delta_lum": 10.94,
+   "adaptive_ratio": 2.0,
+   "ffmpeg_scene": 0.0789,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c014",
+   "reason": "inside S03: typing inside the pill plus a camera move inside the footage (v8c1)"
+  },
+  {
+   "frame": 338,
+   "time_s": 5.6333,
+   "last_frame_before": 337,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 14.14,
+   "delta_lum": 10.0,
+   "adaptive_ratio": 1.94,
+   "ffmpeg_scene": 0.0009,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c015",
+   "reason": "inside S03: typing of sentence 2 inside the pill plus a camera move inside the footage (v8c1)"
+  },
+  {
+   "frame": 353,
+   "time_s": 5.8833,
+   "last_frame_before": 352,
+   "sources": [
+    "adaptive"
+   ],
+   "content_val": 0.13,
+   "delta_lum": 0.03,
+   "adaptive_ratio": 0.02,
+   "ffmpeg_scene": 0.0002,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c016",
+   "reason": "inside S03: near-identical pictures (content value 0.13, adaptive false positive); footage camera move continues, pill static (v8c1)"
+  },
+  {
+   "frame": 364,
+   "time_s": 6.0667,
+   "last_frame_before": 363,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 14.74,
+   "delta_lum": 12.07,
+   "adaptive_ratio": 2.21,
+   "ffmpeg_scene": 0.0786,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c017",
+   "reason": "inside S03: camera move inside the footage; pill static (v8c1)"
+  },
+  {
+   "frame": 369,
+   "time_s": 6.15,
+   "last_frame_before": 368,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 14.27,
+   "delta_lum": 10.94,
+   "adaptive_ratio": 1.5,
+   "ffmpeg_scene": 0.0002,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c018",
+   "reason": "inside S03: camera move inside the footage; pill static (v8c1)"
+  },
+  {
+   "frame": 378,
+   "time_s": 6.3,
+   "last_frame_before": 376,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 16.96,
+   "delta_lum": 11.54,
+   "adaptive_ratio": 1.64,
+   "ffmpeg_scene": 0.0004,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c019",
+   "reason": "inside S03: camera move inside the footage (continuous tilt down); pill static (v8c1)"
+  },
+  {
+   "frame": 392,
+   "time_s": 6.5333,
+   "last_frame_before": 390,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 22.13,
+   "delta_lum": 15.27,
+   "adaptive_ratio": 2.07,
+   "ffmpeg_scene": 0.0146,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c020",
+   "reason": "inside S03: camera move inside the footage; the mic button shrinks (press) inside the pill (v8c1)"
+  },
+  {
+   "frame": 408,
+   "time_s": 6.8,
+   "last_frame_before": 406,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 21.1,
+   "delta_lum": 16.3,
+   "adaptive_ratio": 2.15,
+   "ffmpeg_scene": 0.0069,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c021",
+   "reason": "inside S03: camera move inside the footage; the pixel smear sweeps through the pill (v8c1)"
+  },
+  {
+   "frame": 422,
+   "time_s": 7.0333,
+   "last_frame_before": 420,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 18.77,
+   "delta_lum": 11.21,
+   "adaptive_ratio": 1.46,
+   "ffmpeg_scene": 0.0151,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c022",
+   "reason": "inside S03: camera move inside the footage; smear fading out (v8c1)"
+  },
+  {
+   "frame": 429,
+   "time_s": 7.15,
+   "last_frame_before": 426,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 17.87,
+   "delta_lum": 12.14,
+   "adaptive_ratio": 1.48,
+   "ffmpeg_scene": 0.0006,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c023",
+   "reason": "inside S03: camera move inside the footage; the pill's anticipation lift starts f429 (v8c1)"
+  },
+  {
+   "frame": 444,
+   "time_s": 7.4,
+   "last_frame_before": 442,
+   "sources": [
+    "content",
+    "ffmpeg_scene"
+   ],
+   "content_val": 32.42,
+   "delta_lum": 40.44,
+   "adaptive_ratio": 1.74,
+   "ffmpeg_scene": 0.1081,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c024",
+   "reason": "inside S03: the prompt pill drops out of frame with vertical motion blur; footage continuous (v8c1)"
+  },
+  {
+   "frame": 476,
+   "time_s": 7.9333,
+   "last_frame_before": 474,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 24.43,
+   "delta_lum": 10.38,
+   "adaptive_ratio": 1.98,
+   "ffmpeg_scene": 0.0329,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c025",
+   "reason": "inside S03: continuous footage: phase correlation of a fixed ROI (x 0-400, y 100-800) between consecutive pictures stays locked across f474->f476 (response 0.70, shift -6.1/-4.0 px between the neighbouring shifts -3.8/-1.4 px, response 0.54, and -2.9/-3.5 px, response 0.82); the higher whole-picture abs diff (8.7 luma against 5.0 on both sides) comes from motion inside the footage; no picture replacement (scratch/v8c1_footage_tail_phasecorr_462-510.csv) (v8c1)"
+  },
+  {
+   "frame": 486,
+   "time_s": 8.1,
+   "last_frame_before": 485,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 15.78,
+   "delta_lum": 4.57,
+   "adaptive_ratio": 1.32,
+   "ffmpeg_scene": 0.0017,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c026",
+   "reason": "inside S03: continuous footage (same ROI: response 0.84, shift -2.0/-4.7 px between -2.6/-4.5 and -2.0/-5.7 px; whole-picture abs diff 3.8 luma like its neighbours 4.0 and 3.7) (v8c1)"
+  },
+  {
+   "frame": 492,
+   "time_s": 8.2,
+   "last_frame_before": 490,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 17.42,
+   "delta_lum": 4.45,
+   "adaptive_ratio": 1.6,
+   "ffmpeg_scene": 0.0059,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c027",
+   "reason": "inside S03: continuous footage (same ROI: response 0.86, shift -1.9/-5.7 px between -2.0/-5.7 and -2.4/-6.9 px; whole-picture abs diff 3.1 luma like its neighbours 3.7 and 2.8) (v8c1)"
+  },
+  {
+   "frame": 508,
+   "time_s": 8.4667,
+   "last_frame_before": 506,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 15.65,
+   "delta_lum": 4.11,
+   "adaptive_ratio": 1.4,
+   "ffmpeg_scene": 0.0004,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c028",
+   "reason": "inside S03: f508 repeats f506 (diff 0.0001); continuous footage (v8c1)"
+  },
+  {
+   "frame": 512,
+   "time_s": 8.5333,
+   "last_frame_before": 510,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": null,
+   "delta_lum": null,
+   "adaptive_ratio": null,
+   "ffmpeg_scene": 1.0,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "confirmed",
+   "id": "c029",
+   "reason": "T03 (S03 -> S04), hard cut: hard cut from footage (last picture f510) to the blurred chat UI (first picture f512); ffmpeg scene 1.0 (v8c1)"
+  },
+  {
+   "frame": 515,
+   "time_s": 8.5833,
+   "last_frame_before": 514,
+   "sources": [
+    "adaptive",
+    "content"
+   ],
+   "content_val": 121.43,
+   "delta_lum": 181.27,
+   "adaptive_ratio": 26.51,
+   "ffmpeg_scene": 0.0001,
+   "confidence": "high",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c030",
+   "reason": "inside S04: same cut as c029: pictures f514 and f515 are identical (motion.csv diff 0.00003); the content detector index is offset (v8c1)"
+  },
+  {
+   "frame": 1004,
+   "time_s": 16.7333,
+   "last_frame_before": 1002,
+   "sources": [
+    "adaptive",
+    "content",
+    "ffmpeg_scene"
+   ],
+   "content_val": 50.72,
+   "delta_lum": 84.88,
+   "adaptive_ratio": 5.25,
+   "ffmpeg_scene": 0.7236,
+   "confidence": "high",
+   "origin": "auto",
+   "status": "confirmed",
+   "id": "c031",
+   "reason": "T07 (S07 -> S08), soft whip f980-f1030: hidden cut of the soft whip f980-f1030 (blur-through variant): the chat feed, accelerating up and blurred (vertical motion blur 24 px + 3 px Gaussian, whole-frame Laplacian sharpness 5.0 at f1002), is replaced by the defocused, rising post card (sigma 6.5 px, sharpness 3.0) between f1002 and f1004; f1003 repeats f1002 (v8c2)"
+  },
+  {
+   "frame": 1010,
+   "time_s": 16.8333,
+   "last_frame_before": 1008,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 16.41,
+   "delta_lum": 26.25,
+   "adaptive_ratio": 0.73,
+   "ffmpeg_scene": 0.0464,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c032",
+   "reason": "inside S08: the post card de-blurs and rises while the status pill + mascot slide in from the upper right; same composition (v8c2)"
+  },
+  {
+   "frame": 1089,
+   "time_s": 18.15,
+   "last_frame_before": 1088,
+   "sources": [
+    "content"
+   ],
+   "content_val": 28.62,
+   "delta_lum": 37.13,
+   "adaptive_ratio": 2.2,
+   "ffmpeg_scene": 0.0,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c033",
+   "reason": "inside S08: detector index drift: picture f1089 repeats f1088; the card is turning in 3D; the first stacked card arrives at f1094 (v8c2)"
+  },
+  {
+   "frame": 1096,
+   "time_s": 18.2667,
+   "last_frame_before": 1094,
+   "sources": [
+    "content",
+    "ffmpeg_scene"
+   ],
+   "content_val": 29.65,
+   "delta_lum": 48.87,
+   "adaptive_ratio": 1.47,
+   "ffmpeg_scene": 0.1303,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c034",
+   "reason": "inside S08: card deck inside S08: a new card slams onto the front of the 3D stack (arrives f1094, f1096 is its settled picture); the stack layout holds (v8c2)"
+  },
+  {
+   "frame": 1105,
+   "time_s": 18.4167,
+   "last_frame_before": 1102,
+   "sources": [
+    "content_weak",
+    "ffmpeg_scene"
+   ],
+   "content_val": 24.5,
+   "delta_lum": 30.88,
+   "adaptive_ratio": 1.14,
+   "ffmpeg_scene": 0.1736,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c035",
+   "reason": "inside S08: card deck: new card f1102, settled f1105 (v8c2)"
+  },
+  {
+   "frame": 1112,
+   "time_s": 18.5333,
+   "last_frame_before": 1110,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 23.74,
+   "delta_lum": 34.2,
+   "adaptive_ratio": 1.23,
+   "ffmpeg_scene": 0.0202,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c036",
+   "reason": "inside S08: card deck: new card f1110, settled f1112 (v8c2)"
+  },
+  {
+   "frame": 1122,
+   "time_s": 18.7,
+   "last_frame_before": 1120,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 23.51,
+   "delta_lum": 28.76,
+   "adaptive_ratio": 1.11,
+   "ffmpeg_scene": 0.1405,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c037",
+   "reason": "inside S08: card deck: new card f1122 (v8c2)"
+  },
+  {
+   "frame": 1130,
+   "time_s": 18.8333,
+   "last_frame_before": 1128,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 16.7,
+   "delta_lum": 22.71,
+   "adaptive_ratio": 1.03,
+   "ffmpeg_scene": 0.0518,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c038",
+   "reason": "inside S08: card deck: new card f1130 (v8c2)"
+  },
+  {
+   "frame": 1148,
+   "time_s": 19.1333,
+   "last_frame_before": 1146,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 17.67,
+   "delta_lum": 22.53,
+   "adaptive_ratio": 1.18,
+   "ffmpeg_scene": 0.0275,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c039",
+   "reason": "inside S08: card deck: new card f1146, settled f1148 (v8c2)"
+  },
+  {
+   "frame": 1156,
+   "time_s": 19.2667,
+   "last_frame_before": 1154,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 22.14,
+   "delta_lum": 31.94,
+   "adaptive_ratio": 1.17,
+   "ffmpeg_scene": 0.0752,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c040",
+   "reason": "inside S08: card deck: new card f1154, settled f1156 (v8c2)"
+  },
+  {
+   "frame": 1162,
+   "time_s": 19.3667,
+   "last_frame_before": 1160,
+   "sources": [
+    "content"
+   ],
+   "content_val": 27.88,
+   "delta_lum": 40.66,
+   "adaptive_ratio": 1.14,
+   "ffmpeg_scene": 0.1753,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c041",
+   "reason": "inside S08: card deck: new card f1162 during the zoom-in (v8c2)"
+  },
+  {
+   "frame": 1167,
+   "time_s": 19.45,
+   "last_frame_before": 1164,
+   "sources": [
+    "content"
+   ],
+   "content_val": 40.63,
+   "delta_lum": 58.48,
+   "adaptive_ratio": 1.4,
+   "ffmpeg_scene": 0.313,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c042",
+   "reason": "inside S08: card deck: new card f1167 during the accelerating push-in (v8c2)"
+  },
+  {
+   "frame": 1170,
+   "time_s": 19.5,
+   "last_frame_before": 1168,
+   "sources": [
+    "content"
+   ],
+   "content_val": 46.19,
+   "delta_lum": 68.04,
+   "adaptive_ratio": 1.25,
+   "ffmpeg_scene": 0.3205,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c043",
+   "reason": "inside S08: card deck: new card f1170 during the accelerating push-in (v8c2)"
+  },
+  {
+   "frame": 1174,
+   "time_s": 19.5667,
+   "last_frame_before": 1172,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 53.55,
+   "delta_lum": 75.26,
+   "adaptive_ratio": 1.65,
+   "ffmpeg_scene": 0.3382,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c044",
+   "reason": "inside S08: the last card lands oversized at the end of the push-in; the camera then pulls back to the same card with the stack behind it (v8c2)"
+  },
+  {
+   "frame": 1234,
+   "time_s": 20.5667,
+   "last_frame_before": 1232,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 14.07,
+   "delta_lum": 21.64,
+   "adaptive_ratio": 1.63,
+   "ffmpeg_scene": 0.0141,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c045",
+   "reason": "inside S08: the cards behind collapse into the front card (f1223-f1230) and the status pill levels out; the same card holds (v8c2)"
+  },
+  {
+   "frame": 1262,
+   "time_s": 21.0333,
+   "last_frame_before": 1261,
+   "sources": [
+    "adaptive",
+    "content"
+   ],
+   "content_val": 73.56,
+   "delta_lum": 101.12,
+   "adaptive_ratio": 8.41,
+   "ffmpeg_scene": 0.089,
+   "confidence": "high",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c046",
+   "reason": "inside S08: detector index drift: f1262 is the same full-card layout as f1261 (card drifting up 9 px); the picture is replaced at f1266 (c047) (v8c2)"
+  },
+  {
+   "frame": 1266,
+   "time_s": 21.1,
+   "last_frame_before": 1263,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 27.17,
+   "delta_lum": 39.1,
+   "adaptive_ratio": 1.18,
+   "ffmpeg_scene": 0.9123,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "confirmed",
+   "id": "c047",
+   "reason": "T08 (S08 -> S09), hard cut: hard cut, punch-in: the full card (f1263, f1264-f1265 repeat it) is replaced by a x2.5 close-up of the same card's lower left with a new status pill label (v8c2)"
+  },
+  {
+   "frame": 1327,
+   "time_s": 22.1167,
+   "last_frame_before": 1324,
+   "sources": [
+    "adaptive",
+    "content",
+    "ffmpeg_scene"
+   ],
+   "content_val": 74.08,
+   "delta_lum": 98.61,
+   "adaptive_ratio": 10.69,
+   "ffmpeg_scene": 0.7338,
+   "confidence": "high",
+   "origin": "auto",
+   "status": "confirmed",
+   "id": "c048",
+   "reason": "T09 (S09 -> S10), hard cut: hard cut: the card close-up sliding left is replaced by the agent message layout (ghosted card band at the top, mascot popping in) (v8c2)"
+  },
+  {
+   "frame": 1422,
+   "time_s": 23.7,
+   "last_frame_before": 1421,
+   "sources": [],
+   "content_val": 0.005,
+   "delta_lum": 0.001,
+   "adaptive_ratio": 0.002,
+   "ffmpeg_scene": 0.0985,
+   "confidence": "manual",
+   "origin": "manual",
+   "status": "confirmed",
+   "id": "m001",
+   "reason": "T10 (S10 -> S11), hard cut, missed by the detectors (ffmpeg scene 0.099 under the weak threshold 0.12, content value 0.005): a punch-in x2.38 (template scale 0.42 +-0.01) on the same checklist block; the block drifts up 8.5 px/f into the cut and 10.5 px/f after it, then settles with an ease-out in 24 f (v8c2; sheets/overview_01392-01437.jpg, detail/peak_f01421, detail/dense_01408-01440_00.jpg, scratch/v8c2_S06_punch_scale.csv, scratch/v8c2_S06_line2.csv)"
+  },
+  {
+   "frame": 1462,
+   "time_s": 24.3667,
+   "last_frame_before": 1460,
+   "sources": [
+    "adaptive",
+    "content"
+   ],
+   "content_val": 63.31,
+   "delta_lum": 110.36,
+   "adaptive_ratio": 4.14,
+   "ffmpeg_scene": 0.0055,
+   "confidence": "high",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c049",
+   "reason": "inside S11: detector index drift: f1462 continues f1460's layout (upward drift 4-5 px); checked to f1476: the picture is replaced between f1468 and f1470 = c050, which lies in v8c3's range (v8c2) / detector index drift (as v8c2 found): f1462 continues f1460's agent-message layout, the message line drifting up 5-7 px per picture and sharp; the picture is replaced between f1468 and f1470 (c050) (v8c3)"
+  },
+  {
+   "frame": 1470,
+   "time_s": 24.5,
+   "last_frame_before": 1468,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 11.72,
+   "delta_lum": 13.76,
+   "adaptive_ratio": 0.84,
+   "ffmpeg_scene": 0.9297,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "confirmed",
+   "id": "c050",
+   "reason": "T11 (S11 -> S12), hard cut: hard cut: the sharp agent-message layout (f1468, Sobel gy/gx 0.67 = rest) is replaced by the dark thread panel arriving with heavy vertical motion blur (0.26) at 76-81 px/f; the outgoing side has no blur, so it is a cut into a whip landing, not a whip (v8c3)"
+  },
+  {
+   "frame": 1669,
+   "time_s": 27.8167,
+   "last_frame_before": 1666,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 28.84,
+   "delta_lum": 39.44,
+   "adaptive_ratio": 0.8,
+   "ffmpeg_scene": 0.1986,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "confirmed",
+   "id": "c051",
+   "reason": "T12 (S12 -> S13), soft push f1648-f1696: anchor of the soft push up f1648-f1696: the thread panel's rounded bottom edge enters (83.9% H at f1669) and the first card column enters at the frame bottom at f1670; both on screen f1670-f1674 (v8c3)"
+  },
+  {
+   "frame": 1678,
+   "time_s": 27.9667,
+   "last_frame_before": 1676,
+   "sources": [
+    "content",
+    "ffmpeg_scene"
+   ],
+   "content_val": 28.68,
+   "delta_lum": 37.81,
+   "adaptive_ratio": 0.98,
+   "ffmpeg_scene": 0.1651,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c052",
+   "reason": "inside the push: the upper card of the centre column slides up out from behind the first card (fan-out); the wall layout holds (v8c3)"
+  },
+  {
+   "frame": 1708,
+   "time_s": 28.4667,
+   "last_frame_before": 1706,
+   "sources": [
+    "content"
+   ],
+   "content_val": 31.59,
+   "delta_lum": 44.17,
+   "adaptive_ratio": 1.13,
+   "ffmpeg_scene": 0.0332,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c053",
+   "reason": "inside S13: zoom-out pulse 1 of the same card wall (radial blur at the edges while the 4th and 5th columns enter); nothing replaced (v8c3)"
+  },
+  {
+   "frame": 1712,
+   "time_s": 28.5333,
+   "last_frame_before": 1710,
+   "sources": [
+    "content"
+   ],
+   "content_val": 41.47,
+   "delta_lum": 57.8,
+   "adaptive_ratio": 1.69,
+   "ffmpeg_scene": 0.0625,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c054",
+   "reason": "inside S13: zoom-out pulse 1 of the same card wall, peak speed f1712-f1714; nothing replaced (v8c3)"
+  },
+  {
+   "frame": 1720,
+   "time_s": 28.6667,
+   "last_frame_before": 1718,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 17.78,
+   "delta_lum": 22.66,
+   "adaptive_ratio": 0.76,
+   "ffmpeg_scene": 0.2296,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c055",
+   "reason": "inside S13: end of zoom-out pulse 1 (a 4-frame picture gap f1714-f1718); same wall (v8c3)"
+  },
+  {
+   "frame": 1770,
+   "time_s": 29.5,
+   "last_frame_before": 1768,
+   "sources": [
+    "content"
+   ],
+   "content_val": 30.58,
+   "delta_lum": 40.88,
+   "adaptive_ratio": 1.14,
+   "ffmpeg_scene": 0.0364,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c056",
+   "reason": "inside S13: zoom-out pulse 2 of the same wall (radial blur f1764-f1774, partial 6th/7th columns and a 4th row enter) (v8c3)"
+  },
+  {
+   "frame": 1780,
+   "time_s": 29.6667,
+   "last_frame_before": 1779,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 0.24,
+   "delta_lum": 0.05,
+   "adaptive_ratio": 0.02,
+   "ffmpeg_scene": 0.1682,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c057",
+   "reason": "inside S13: content value 0.24: f1780 repeats f1779 (capture duplicate) while the wall starts drifting down (v8c3)"
+  },
+  {
+   "frame": 1783,
+   "time_s": 29.7167,
+   "last_frame_before": 1781,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 14.08,
+   "delta_lum": 16.98,
+   "adaptive_ratio": 1.84,
+   "ffmpeg_scene": 0.1457,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c058",
+   "reason": "inside S13: the zoomed-out wall drifts down with an accelerating ease-in; a new card row enters at the top; nothing replaced (v8c3)"
+  },
+  {
+   "frame": 1787,
+   "time_s": 29.7833,
+   "last_frame_before": 1785,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 10.95,
+   "delta_lum": 13.47,
+   "adaptive_ratio": 1.95,
+   "ffmpeg_scene": 0.123,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c059",
+   "reason": "inside S13: same downward drift of the wall (v8c3)"
+  },
+  {
+   "frame": 1795,
+   "time_s": 29.9167,
+   "last_frame_before": 1793,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 0.05,
+   "delta_lum": 0.01,
+   "adaptive_ratio": 0.0,
+   "ffmpeg_scene": 0.1273,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c060",
+   "reason": "inside S13: content value 0.05: repeated picture during the downward drift (v8c3)"
+  },
+  {
+   "frame": 1801,
+   "time_s": 30.0167,
+   "last_frame_before": 1799,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 18.47,
+   "delta_lum": 23.73,
+   "adaptive_ratio": 1.87,
+   "ffmpeg_scene": 0.1551,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c061",
+   "reason": "inside S13: same downward drift of the wall (v8c3)"
+  },
+  {
+   "frame": 1806,
+   "time_s": 30.1,
+   "last_frame_before": 1805,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 23.32,
+   "delta_lum": 30.47,
+   "adaptive_ratio": 0.95,
+   "ffmpeg_scene": 0.1914,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c062",
+   "reason": "inside S13: same downward drift of the wall (v8c3)"
+  },
+  {
+   "frame": 1810,
+   "time_s": 30.1667,
+   "last_frame_before": 1809,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 32.93,
+   "delta_lum": 41.74,
+   "adaptive_ratio": 1.0,
+   "ffmpeg_scene": 0.2178,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c063",
+   "reason": "inside S13: same downward drift, vertical blur growing (v8c3)"
+  },
+  {
+   "frame": 1822,
+   "time_s": 30.3667,
+   "last_frame_before": 1820,
+   "sources": [
+    "content"
+   ],
+   "content_val": 28.09,
+   "delta_lum": 50.84,
+   "adaptive_ratio": 0.7,
+   "ffmpeg_scene": 0.0332,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c064",
+   "reason": "inside S13: same downward drift (about 9-12 px/f, vertical blur), last pictures before the hidden cut f1829 (v8c3)"
+  },
+  {
+   "frame": 1829,
+   "time_s": 30.4833,
+   "last_frame_before": 1826,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 18.75,
+   "delta_lum": 27.25,
+   "adaptive_ratio": 0.99,
+   "ffmpeg_scene": 0.5437,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "confirmed",
+   "id": "c065",
+   "reason": "T13 (S13 -> S14), soft whip f1800-f1857: hidden cut of the soft whip down f1800-f1857: the wall (moving down 24 px per picture, blurred) is replaced between f1826 and f1829 by a vertical reel of large post cards moving down 231 px per picture with heavy vertical blur (v8c3)"
+  },
+  {
+   "frame": 1927,
+   "time_s": 32.1167,
+   "last_frame_before": 1924,
+   "sources": [
+    "adaptive",
+    "content",
+    "ffmpeg_scene"
+   ],
+   "content_val": 14.16,
+   "delta_lum": 16.22,
+   "adaptive_ratio": 0.87,
+   "ffmpeg_scene": 0.5524,
+   "confidence": "high",
+   "origin": "auto",
+   "status": "confirmed",
+   "id": "c066",
+   "reason": "T14 (S14 -> S15), soft whip f1900-f1953: hidden cut of the soft whip left f1900-f1953: the card (moving left 36 px per picture with horizontal blur; f1926 repeats f1924) is replaced at f1927 by the answer block sliding left while its headline reveals left to right (v8c3)"
+  },
+  {
+   "frame": 1986,
+   "time_s": 33.1,
+   "last_frame_before": 1985,
+   "sources": [
+    "content"
+   ],
+   "content_val": 40.02,
+   "delta_lum": 56.23,
+   "adaptive_ratio": 1.6,
+   "ffmpeg_scene": 0.2847,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "confirmed",
+   "id": "c067",
+   "reason": "T15 (S15 -> S16), soft push f1962-f2008: anchor of the soft push up f1962-f2008: the dark product page enters from the bottom (first visible f1985) under the fading, upward-moving answer block (ghost at the top to f1987) (v8c3)"
+  },
+  {
+   "frame": 1988,
+   "time_s": 33.1333,
+   "last_frame_before": 1987,
+   "sources": [
+    "content",
+    "ffmpeg_scene"
+   ],
+   "content_val": 34.54,
+   "delta_lum": 39.25,
+   "adaptive_ratio": 1.02,
+   "ffmpeg_scene": 0.509,
+   "confidence": "high",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c068",
+   "reason": "inside S16: the incoming page rising (same push) (v8c3)"
+  },
+  {
+   "frame": 2010,
+   "time_s": 33.5,
+   "last_frame_before": 2008,
+   "sources": [
+    "content"
+   ],
+   "content_val": 28.35,
+   "delta_lum": 32.36,
+   "adaptive_ratio": 1.34,
+   "ffmpeg_scene": 0.021,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "confirmed",
+   "id": "c069",
+   "reason": "T16 (S16 -> S17), soft morph f2009-f2035: anchor of the soft zoom-out morph f2009-f2035: f2010 is the last sharp picture before the radial zoom blur at f2012; it is not a rest picture: the page's mask is already inset 34-35 px a side and the content still rises 5 px per picture (scratch/v8c3r_S06_frame_edges_1996-2016.csv, scratch/v8c3r_S06_title_tmpl_1994-2018.csv) (v8c3)"
+  },
+  {
+   "frame": 2017,
+   "time_s": 33.6167,
+   "last_frame_before": 2014,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 21.9,
+   "delta_lum": 27.4,
+   "adaptive_ratio": 0.93,
+   "ffmpeg_scene": 0.2272,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c070",
+   "reason": "inside S16: mid-morph: the page at x0.71 starting to yaw; same transition (v8c3)"
+  },
+  {
+   "frame": 2252,
+   "time_s": 37.5333,
+   "last_frame_before": 2250,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 19.83,
+   "delta_lum": 24.71,
+   "adaptive_ratio": 1.06,
+   "ffmpeg_scene": 0.0306,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "confirmed",
+   "id": "c071",
+   "reason": "T17 (S17 -> S18), soft morph f2212-f2258: anchor of the soft transition T17 (3D stack push-in + yaw to a flat page, f2212-f2258): the front card covers the other layers here; continuous push-in, no picture replacement between f2250 and f2252 (v8c4)"
+  },
+  {
+   "frame": 2270,
+   "time_s": 37.8333,
+   "last_frame_before": 2266,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 13.49,
+   "delta_lum": 16.06,
+   "adaptive_ratio": 1.0,
+   "ffmpeg_scene": 0.1685,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c072",
+   "reason": "inside S18: the flattened page scrolls up with vertical motion blur (ffmpeg score from the blur); same composition (v8c4)"
+  },
+  {
+   "frame": 2284,
+   "time_s": 38.0667,
+   "last_frame_before": 2280,
+   "sources": [
+    "content"
+   ],
+   "content_val": 34.74,
+   "delta_lum": 44.04,
+   "adaptive_ratio": 1.76,
+   "ffmpeg_scene": 0.0372,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c073",
+   "reason": "inside S18: page scroll while the attachment card stretches in and the text streams; same composition (v8c4)"
+  },
+  {
+   "frame": 2298,
+   "time_s": 38.3,
+   "last_frame_before": 2297,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 14.83,
+   "delta_lum": 19.65,
+   "adaptive_ratio": 1.44,
+   "ffmpeg_scene": 0.0065,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c074",
+   "reason": "inside S18: avatar pop-in and streaming text; same composition (v8c4)"
+  },
+  {
+   "frame": 2857,
+   "time_s": 47.6167,
+   "last_frame_before": 2854,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 15.27,
+   "delta_lum": 19.01,
+   "adaptive_ratio": 1.2,
+   "ffmpeg_scene": 0.0069,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c075",
+   "reason": "inside S22: end of T21: the phone card settles at the frame centre; no picture replacement between f2854 and f2857 (v8c4)"
+  },
+  {
+   "frame": 2960,
+   "time_s": 49.3333,
+   "last_frame_before": 2956,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 9.84,
+   "delta_lum": 10.71,
+   "adaptive_ratio": 1.0,
+   "ffmpeg_scene": 0.134,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c076",
+   "reason": "inside S22: the camera push-in is at its fastest (card grows and slides up-left about a fixed point below the frame); nothing replaced (v8c5)"
+  },
+  {
+   "frame": 2974,
+   "time_s": 49.5667,
+   "last_frame_before": 2973,
+   "sources": [
+    "content"
+   ],
+   "content_val": 29.0,
+   "delta_lum": 31.55,
+   "adaptive_ratio": 1.3,
+   "ffmpeg_scene": 0.0063,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c077",
+   "reason": "inside S22: in-device page change inside S22: one mixed picture f2974 (old page 54%), the old page dissolves out in 4 f while the new page slides up; device card, mascot, status pill and camera move continue (same composition) (v8c5)"
+  },
+  {
+   "frame": 2990,
+   "time_s": 49.8333,
+   "last_frame_before": 2988,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 17.34,
+   "delta_lum": 14.34,
+   "adaptive_ratio": 1.32,
+   "ffmpeg_scene": 0.0067,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c078",
+   "reason": "inside S22: camera settle and the end of the new page's slide; nothing replaced (v8c5)"
+  },
+  {
+   "frame": 3046,
+   "time_s": 50.7667,
+   "last_frame_before": 3045,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 5.79,
+   "delta_lum": 7.53,
+   "adaptive_ratio": 0.97,
+   "ffmpeg_scene": 0.7091,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "confirmed",
+   "id": "c079",
+   "reason": "T22 (S22 -> S23), soft push f3029-f3064: anchor of the push-up soft transition f3029-f3064: the largest picture step (f3044 -> f3046) while the outgoing device layer and the incoming footage card are both on screen (v8c5)"
+  },
+  {
+   "frame": 3056,
+   "time_s": 50.9333,
+   "last_frame_before": 3053,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 0.01,
+   "delta_lum": 0.0,
+   "adaptive_ratio": 0.0,
+   "ffmpeg_scene": 0.2603,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c080",
+   "reason": "inside S23: incoming footage card still rising and de-blurring inside the push-up transition (v8c5)"
+  },
+  {
+   "frame": 3058,
+   "time_s": 50.9667,
+   "last_frame_before": 3057,
+   "sources": [
+    "adaptive",
+    "content"
+   ],
+   "content_val": 54.26,
+   "delta_lum": 78.92,
+   "adaptive_ratio": 3.21,
+   "ffmpeg_scene": 0.1058,
+   "confidence": "high",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c081",
+   "reason": "inside S23: content-detector index lag: picture f3057 repeats f3056; the card is still rising (v8c5)"
+  },
+  {
+   "frame": 3063,
+   "time_s": 51.05,
+   "last_frame_before": 3062,
+   "sources": [
+    "adaptive",
+    "content"
+   ],
+   "content_val": 29.08,
+   "delta_lum": 31.88,
+   "adaptive_ratio": 3.15,
+   "ffmpeg_scene": 0.0,
+   "confidence": "high",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c082",
+   "reason": "inside S23: index lag: f3063 repeats f3062; the card rests before its zoom (v8c5)"
+  },
+  {
+   "frame": 3078,
+   "time_s": 51.3,
+   "last_frame_before": 3076,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 26.86,
+   "delta_lum": 27.62,
+   "adaptive_ratio": 1.22,
+   "ffmpeg_scene": 0.0184,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "confirmed",
+   "id": "c083",
+   "reason": "T23 (S23 -> S24), soft morph f3064-f3092: anchor of the zoom-fill soft transition (morph) f3064-f3092, at its midpoint floor((3064+3092)/2) = f3078: the footage card's edges sweep out to the frame (width 1490 px at f3078; white page 16% of the picture vs 50% with the card at rest) (v8c5)"
+  },
+  {
+   "frame": 3088,
+   "time_s": 51.4667,
+   "last_frame_before": 3086,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 17.09,
+   "delta_lum": 14.98,
+   "adaptive_ratio": 1.02,
+   "ffmpeg_scene": 0.0207,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c084",
+   "reason": "inside the zoom-fill transition f3064-f3092: the card's width reaches the frame edges (f3088, height f3092); the same footage continues (v8c5)"
+  },
+  {
+   "frame": 3183,
+   "time_s": 53.05,
+   "last_frame_before": 3180,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 14.49,
+   "delta_lum": 13.94,
+   "adaptive_ratio": 1.74,
+   "ffmpeg_scene": 0.0127,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c085",
+   "reason": "inside S24: footage motion under the held status pill; per-picture diff <= 0.012 (v8c5)"
+  },
+  {
+   "frame": 3242,
+   "time_s": 54.0333,
+   "last_frame_before": 3241,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 4.73,
+   "delta_lum": 3.88,
+   "adaptive_ratio": 1.91,
+   "ffmpeg_scene": 1.0,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "confirmed",
+   "id": "c086",
+   "reason": "T24 (S24 -> S25), hard cut: hard cut (ffmpeg score 1.0): full-frame footage + status pill -> white page with a row of portrait footage cards already moving left (v8c5)"
+  },
+  {
+   "frame": 3246,
+   "time_s": 54.1,
+   "last_frame_before": 3245,
+   "sources": [
+    "adaptive",
+    "content",
+    "ffmpeg_scene"
+   ],
+   "content_val": 91.49,
+   "delta_lum": 128.8,
+   "adaptive_ratio": 6.05,
+   "ffmpeg_scene": 0.6644,
+   "confidence": "high",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c087",
+   "reason": "inside S25: detector index lag of 4 f; the picture is the carousel's whip-in scroll after the cut f3242 (v8c5)"
+  },
+  {
+   "frame": 3270,
+   "time_s": 54.5,
+   "last_frame_before": 3268,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 50.7,
+   "delta_lum": 60.39,
+   "adaptive_ratio": 1.26,
+   "ffmpeg_scene": 0.1241,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c088",
+   "reason": "inside S25: carousel scroll (braking marquee) and footage motion inside the cards; nothing replaced (v8c5)"
+  },
+  {
+   "frame": 3295,
+   "time_s": 54.9167,
+   "last_frame_before": 3292,
+   "sources": [
+    "content"
+   ],
+   "content_val": 27.62,
+   "delta_lum": 31.52,
+   "adaptive_ratio": 1.0,
+   "ffmpeg_scene": 0.0092,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c089",
+   "reason": "inside S25: carousel scroll; nothing replaced (v8c5)"
+  },
+  {
+   "frame": 3310,
+   "time_s": 55.1667,
+   "last_frame_before": 3306,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": null,
+   "delta_lum": null,
+   "adaptive_ratio": null,
+   "ffmpeg_scene": 0.1303,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c090",
+   "reason": "inside S25: constant marquee scroll; nothing replaced (v8c5)"
+  },
+  {
+   "frame": 3318,
+   "time_s": 55.3,
+   "last_frame_before": 3316,
+   "sources": [
+    "content"
+   ],
+   "content_val": 35.69,
+   "delta_lum": 41.07,
+   "adaptive_ratio": 1.49,
+   "ffmpeg_scene": 0.0025,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c091",
+   "reason": "inside S25: constant marquee scroll; nothing replaced (v8c5)"
+  },
+  {
+   "frame": 3328,
+   "time_s": 55.4667,
+   "last_frame_before": 3326,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 24.18,
+   "delta_lum": 26.86,
+   "adaptive_ratio": 1.02,
+   "ffmpeg_scene": 0.0015,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c092",
+   "reason": "inside S25: constant marquee scroll; nothing replaced (v8c5)"
+  },
+  {
+   "frame": 3344,
+   "time_s": 55.7333,
+   "last_frame_before": 3342,
+   "sources": [
+    "content_weak"
+   ],
+   "content_val": 24.75,
+   "delta_lum": 26.95,
+   "adaptive_ratio": 0.92,
+   "ffmpeg_scene": 0.0001,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c093",
+   "reason": "inside S25: constant marquee scroll (the row starts to sink); decided on the same pictures shown on the c092 and c094 sheets (v8c5)"
+  },
+  {
+   "frame": 3351,
+   "time_s": 55.85,
+   "last_frame_before": 3348,
+   "sources": [
+    "content"
+   ],
+   "content_val": 35.77,
+   "delta_lum": 40.74,
+   "adaptive_ratio": 1.49,
+   "ffmpeg_scene": 0.0057,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c094",
+   "reason": "inside S25: marquee scroll while the row starts to sink; nothing replaced (v8c5)"
+  },
+  {
+   "frame": 3376,
+   "time_s": 56.2667,
+   "last_frame_before": 3374,
+   "sources": [
+    "content"
+   ],
+   "content_val": 28.96,
+   "delta_lum": 32.9,
+   "adaptive_ratio": 1.03,
+   "ffmpeg_scene": 0.0381,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c095",
+   "reason": "inside S26: the row's accelerating downward exit on the white page (f3374 -> f3376), before the hidden cut (detector lag) (v8c5)"
+  },
+  {
+   "frame": 3380,
+   "time_s": 56.3333,
+   "last_frame_before": 3379,
+   "sources": [
+    "content"
+   ],
+   "content_val": 28.41,
+   "delta_lum": 31.63,
+   "adaptive_ratio": 0.98,
+   "ffmpeg_scene": 0.0857,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "confirmed",
+   "id": "c096",
+   "reason": "T25 (S25 -> S26), soft whip f3348-f3394: step 2 of the hidden two-step cut inside the whip-down transition f3348-f3394: f3379 -> f3380 removes the sinking card row and brings in the end card's brand icon from above (motion.csv diff 0.206). Step 1, the background swap f3376 -> f3379 (the end card's background under the still-sinking row), has no candidate: the content detector has no value for the picture f3379 and ffmpeg scores it 0.083, under its 0.12 weak threshold. Decided on the c095 sheet and detail/soft_3348-3394, which hold the same pictures, and crops/crop_0_0_1622x520_03374-03382.jpg (v8c5)"
+  },
+  {
+   "frame": 3397,
+   "time_s": 56.6167,
+   "last_frame_before": 3394,
+   "sources": [
+    "content"
+   ],
+   "content_val": 37.09,
+   "delta_lum": 41.56,
+   "adaptive_ratio": 1.47,
+   "ffmpeg_scene": 0.0063,
+   "confidence": "medium",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c097",
+   "reason": "inside S26: end-card build: mascots pop in, the tag outline draws on; nothing replaced (v8c5)"
+  },
+  {
+   "frame": 3561,
+   "time_s": 59.35,
+   "last_frame_before": 3556,
+   "sources": [],
+   "content_val": null,
+   "delta_lum": null,
+   "adaptive_ratio": null,
+   "ffmpeg_scene": 0.1071,
+   "confidence": "manual",
+   "origin": "manual",
+   "status": "confirmed",
+   "id": "m002",
+   "reason": "T26 (S26 -> S27), hard cut, missed by the detectors (ffmpeg scene 0.107, no content value): the X player loops the video, not a designed cut; no new picture f3557-f3560 (repeats of f3556), then the empty background of the video's own opening; f3579/f3580 = the recording's f0 (v8c5; sheets/overview_03552-03597.jpg, detail/peak_f03559, detail/dense_03548-03580_00.jpg)"
+  }
+ ],
+ "soft_transitions": [
+  {
+   "id": "T01",
+   "start": 115,
+   "end": 143,
+   "frames": 29,
+   "type": "zoom-through",
+   "shared": "forward zoom on the frame centre (x 50.5%, y 50.0%): the lockup grows exponentially (x1.02 at f115 -> x3.14 at f132) with growing blur, the tunnel cross-dissolves in under the still-growing lockup fragments from f136 (darkest tunnel pixel 180 / 112 / 43 / 0 luma at f136 / f138 / f140 / f143) and keeps the forward motion as a fly-through toward its vanishing point near the frame centre; the six mascots, which converged into the lockup centre, reappear small at the vanishing point; light luminance on both sides",
+   "technique": "v8.trans-zoom-through-dissolve",
+   "detail": "detail/soft_115-143",
+   "cut_frame": 136,
+   "anchor_cut": "c002",
+   "chunk": "v8c1"
+  },
+  {
+   "id": "T02",
+   "start": 164,
+   "end": 200,
+   "frames": 37,
+   "type": "zoom-through",
+   "shared": "frame centre: the tunnel's vanishing point is where the footage card appears (82 x 46 px, centred x 49.9% / y 50.2%, with a soft zoom-blur halo); forward motion continues (mascots fly past the camera and out of frame f164-f179, the card zooms from 5.1% W to full frame f174-f200, ease-out); the tunnel walls pale to white (pure 248 from f179), which is the field around the card",
+   "technique": "v8.trans-tunnel-exit-zoom-through",
+   "detail": "detail/soft_164-200",
+   "cut_frame": 174,
+   "anchor_cut": "c008",
+   "chunk": "v8c1"
+  },
+  {
+   "id": "T04",
+   "start": 570,
+   "end": 634,
+   "frames": 65,
+   "type": "whip (blur whip-reframe hiding a picture replacement: zoom-out x0.66, rightward)",
+   "shared": "the same chat UI on the same white page and rightward motion across the cut: the close-up accelerates right (ease-in 36 f) while blurring, the picture is replaced between f606 and f608 (f607 repeats f606) with a zoom-out to x0.66 (text-width ratios 0.643-0.672), and the wide panel arrives still moving right and decelerates (ease-out 26 f) while its blur clears (edge sigma 0.60% W at f608 -> baseline at f625)",
+   "technique": "v8.trans-blur-whip-reframe",
+   "detail": "detail/soft_570-634",
+   "cut_frame": 608,
+   "anchor_cut": null,
+   "chunk": "v8c1"
+  },
+  {
+   "id": "T05",
+   "start": 668,
+   "end": 726,
+   "frames": 59,
+   "type": "whip (blur whip-reframe hiding a picture replacement: punch-in x2.64, downward; the incoming card leads by one picture (f699))",
+   "shared": "the same product UI and downward motion across the cut: the panel accelerates down (ease-in 28 f) while blurring, the picture is replaced between f696 and f700 (f697-f698 repeat f696) with a punch-in x2.64 on the sidebar card (card 410 -> 1085 px wide); f699 shows only the incoming card layer (card x 16.2%-83.0% W, y 7.8%-34.2% H, with the header label and search icon above it, at the close-up scale and 31-36 px higher than in f700) over the outgoing panel, which has moved another 16 px (1.7% H) down since f696 (the old list card with its mascot at x 6-16% W, the old bubble's right end at x 83-91% W and the old agent row, reply and composer below the card stay visible), so the incoming card leads the cut by one picture and f700 is the first full close-up picture; the close-up then arrives still moving down and decelerates (ease-out, f703-f722) while the blur clears (sharp by f720); the mascot that dropped into the card at f694-f698 is inside it",
+   "technique": "v8.trans-blur-whip-reframe",
+   "detail": "detail/soft_668-726",
+   "cut_frame": 699,
+   "anchor_cut": null,
+   "chunk": "v8c1"
+  },
+  {
+   "id": "T06",
+   "start": 887,
+   "end": 934,
+   "frames": 48,
+   "type": "whip",
+   "shared": "upward motion with vertical motion blur and the same light page (luma 248): the S06 list accelerates up (ease-in, 25 f, 34 px/f and 24 px blur at the last picture f912), the picture is replaced between f912 and f914 (f913 repeats f912), and the S07 chat panel of the same app arrives 79 px (8.6% H) below its rest still rising 12 px/f with 32 px blur, then settles in 20 f",
+   "technique": "v8.trans-whip-up",
+   "detail": "detail/soft_887-934",
+   "cut_frame": 914,
+   "anchor_cut": null,
+   "chunk": "v8c2"
+  },
+  {
+   "id": "T07",
+   "start": 980,
+   "end": 1030,
+   "frames": 51,
+   "type": "whip (blur-through variant with a hidden cut: vertical motion blur out, defocus in)",
+   "shared": "upward motion with a blurred picture on both sides of the cut and the same light page (248): the S07 chat feed accelerates up (ease-in, 22 f, 17 px/f at the last picture f1002) under vertical motion blur growing 2 -> 24 px (+ a 3 px Gaussian at f1002), whole-frame Laplacian sharpness 118 (f988) -> 55 (f998) -> 19 (f1000) -> 5.0 (f1002); the picture is replaced between f1002 and f1004 (f1003 repeats f1002); the S08 post card arrives 65 px (7.1% H) below its rest (mean of both top corners), about 4% narrow, rising 8 px/f and defocused (Gaussian sigma 6.5 px = 0.40% W; sharpness 3.0 at f1004), sharpens in 6-8 f (sharpness 35 at f1008, 129 at f1010, 167 at f1014, about 200 from f1024) and settles with a strong ease-out, no overshoot, by f1030 (26 f by the 2% rule on the mean of both top corners, which the card's yaw from f1024 leaves unchanged; the card bottom by f1024). The f887-f934 whip shows the same sharpness pattern (list 10 -> 1.3 at f912, chat 0.9 at f914 -> 62 at f920 -> 126 at f934). It differs only in the incoming half: an isotropic defocus (Sobel gy/gx 1.06 at f1004, card at rest 1.10) on a new composition instead of a vertical smear (gy/gx 0.27 at f916, chat at rest 0.66) on another view of the same app, and a 26 f settle instead of 20 f: a blur-through variant, possibly a second technique",
+   "technique": "v8.trans-whip-up",
+   "detail": "detail/soft_980-1030",
+   "cut_frame": 1004,
+   "anchor_cut": "c031",
+   "chunk": "v8c2"
+  },
+  {
+   "id": "T12",
+   "start": 1648,
+   "end": 1696,
+   "frames": 49,
+   "type": "push",
+   "shared": "upward motion on the same light page; dark rounded UI blocks on both sides; the outgoing thread accelerates without a break for 84 f (from f1586) to 184 px per picture at f1670 with heavy vertical blur, its rounded bottom edge and soft shadow passing through f1669-f1676; three card columns enter from the bottom one picture apart (centre f1670, right f1672, left f1674), jump 406 px in their first interval and settle in 26 f",
+   "technique": "v8.trans-push-up-columns",
+   "detail": "detail/soft_1648-1696",
+   "cut_frame": null,
+   "anchor_cut": "c051",
+   "chunk": "v8c3"
+  },
+  {
+   "id": "T13",
+   "start": 1800,
+   "end": 1857,
+   "frames": 58,
+   "type": "whip",
+   "shared": "downward motion with vertical motion blur on both sides and the same light page: the zoomed-out wall eases in to 24 px per picture (about 12 px/f) by f1826, hidden cut between f1826 and f1829, a reel of large dark post cards (1.65 x the 3-column card width) arrives at 231 px per picture and lands in 29 f",
+   "technique": "v8.trans-whip-down",
+   "detail": "detail/soft_1800-1857",
+   "cut_frame": 1829,
+   "anchor_cut": "c065",
+   "chunk": "v8c3"
+  },
+  {
+   "id": "T14",
+   "start": 1900,
+   "end": 1953,
+   "frames": 54,
+   "type": "whip",
+   "shared": "leftward motion with horizontal motion blur on both sides and the same light page: the card eases in to 36 px per picture (about 18 px/f) at f1924 (f1926 repeats it), hidden cut, the answer block arrives sliding left at about 27 px/f with its headline revealing left to right and settles in 27 f",
+   "technique": "v8.trans-whip-left",
+   "detail": "detail/soft_1900-1953",
+   "cut_frame": 1927,
+   "anchor_cut": "c066",
+   "chunk": "v8c3"
+  },
+  {
+   "id": "T15",
+   "start": 1962,
+   "end": 2008,
+   "frames": 47,
+   "type": "push",
+   "shared": "upward motion and the light page: the answer block eases in to 54 px per picture (27 px/f) with vertical blur and fades to a ghost; the dark full-frame product page enters at the bottom at f1985 and rises 95% H in 19 f (peak about 108 px/f); the page is still rising (content 5 px per picture at f2010) when the zoom-out takes over, so the push never settles",
+   "technique": "v8.trans-push-up",
+   "detail": "detail/soft_1962-2008",
+   "cut_frame": null,
+   "anchor_cut": "c067",
+   "chunk": "v8c3"
+  },
+  {
+   "id": "T16",
+   "start": 2009,
+   "end": 2035,
+   "frames": 27,
+   "type": "morph",
+   "shared": "the same element: it starts under the push landing with a mask inset (left / right 5.4 / 7.0 px at f2006 -> 33.5 / 35.1 px at f2010) over the unscaled, still-rising content; from f2012 the full-frame product page shrinks x0.53 with strong radial zoom blur (30% of the change between f2012 and f2014), keeps its centre y at 460-502 px (50-55% H), starts to yaw (right side receding) at about f2022 and becomes the front layer of a 3D screen stack whose other layers appear behind it from f2026-f2028 and fan out in S17",
+   "technique": "v8.trans-zoom-out-morph",
+   "detail": "detail/soft_2009-2035",
+   "cut_frame": null,
+   "anchor_cut": "c069",
+   "chunk": "v8c3"
+  },
+  {
+   "id": "T17",
+   "start": 2212,
+   "end": 2258,
+   "frames": 47,
+   "type": "morph (3D stack push-in + yaw to a flat page)",
+   "shared": "the front screen card of the 3D stack becomes the flat page band at the top of S18 (same content, light page 248) under a forward camera push: the far end swings out first (right extent 1272 -> 1325 px, f2210-f2220), the front card's left edge holds at 23.4% W to f2218 and accelerates to 3.7% W (f2262), its left-edge height 213 -> 705 px (f2208-f2250), flat card 1492 x 840 px (92.0% W x 91.5% H) at f2258; soft focus f2236-f2250; the header title fades out and is covered; the S18 scroll starts at f2256",
+   "technique": "v8.trans-stack-push-flatten",
+   "detail": "detail/soft_2212-2258",
+   "cut_frame": null,
+   "anchor_cut": "c071",
+   "chunk": "v8c4"
+  },
+  {
+   "id": "T18",
+   "start": 2367,
+   "end": 2440,
+   "frames": 74,
+   "type": "push (push-up with a hidden cut)",
+   "shared": "upward motion with vertical motion blur and the same light page (248): the S18 chat block accelerates up out of a 0.73 px/f drift (ease-in, 35 f, about 43 px/f at the last picture f2402); the picture is replaced between f2402 and f2404 (f2403 repeats f2402; f2404 shows only a faint sliver at the bottom edge); the S19 block of the same chat grid (avatar column 10.3% W, text column 15.9% W) arrives from below rising 36 px/f and decelerates in 34 f to 42.7% H, where the outgoing headline sat (41.0% H) when its exit began",
+   "technique": "v8.trans-push-up",
+   "detail": "detail/soft_2367-2440",
+   "cut_frame": 2404,
+   "anchor_cut": null,
+   "chunk": "v8c4"
+  },
+  {
+   "id": "T19",
+   "start": 2478,
+   "end": 2522,
+   "frames": 45,
+   "type": "morph (shared-element fly + split, with a letter dissolve)",
+   "shared": "the avatar tile (light rounded square with chevron eyes) leaves its slot (10.3% W, 35.8% H), swoops down-right through 55.3% H, crosses the frame centre at about 75 px/f while growing with an ease-in (81 px slot -> 304 px at f2505 -> 388 px at f2507 = x4.76, vertical 50% height), and settles at 69.1% W while a dark round-eared mascot slides out from behind it to 30.7% W (separation 38.4% W) and both shrink back from x1.50 to x1.0 of their final size (258 px tile, f2507-f2522, ease-out); the chat text dissolves letter-wise (left parts first, f2478-f2497); light page stays",
+   "technique": "v8.trans-avatar-fly-split",
+   "detail": "detail/soft_2478-2522",
+   "cut_frame": null,
+   "anchor_cut": null,
+   "chunk": "v8c4"
+  },
+  {
+   "id": "T20",
+   "start": 2604,
+   "end": 2670,
+   "frames": 67,
+   "type": "morph (particle converge + shared-element fly into the next layout)",
+   "shared": "the 22-mascot field converges on the centre (ease-in, radial blur, f2606-f2623), the cluster snaps down to one tiny light mascot (40 px, x0.18, f2632), which flies on a dipping arc (lowest 56.6% H at f2654, peak about 55 px/f) into the avatar slot of the S21 chat block (10.25% W) growing x2.0, while that block's status row and headline stream in and the block rises; light page stays",
+   "technique": "v8.trans-mascot-converge-fly",
+   "detail": "detail/soft_2604-2670",
+   "cut_frame": null,
+   "anchor_cut": null,
+   "chunk": "v8c4"
+  },
+  {
+   "id": "T21",
+   "start": 2800,
+   "end": 2860,
+   "frames": 61,
+   "type": "morph (shared-element card zoom to the centre)",
+   "shared": "the phone card: its screen cuts to black at f2800 (black to f2818), it leaves its slot under the text from f2806 and zooms x2.0 to the frame centre (width 16.95% -> 33.97% W, centre x 24.3% -> 50.0% W, top 55.4% -> 12.1% H; active f2812-f2860), its screen recording fades back in f2818-f2836; the text block above accelerates up out of frame with vertical blur (f2791-f2832); light page stays",
+   "technique": "v8.trans-card-zoom-to-center",
+   "detail": "detail/soft_2800-2860",
+   "cut_frame": null,
+   "anchor_cut": null,
+   "chunk": "v8c4"
+  },
+  {
+   "id": "T22",
+   "start": 3029,
+   "end": 3064,
+   "frames": 36,
+   "type": "push",
+   "shared": "upward motion: the whole device layer (card, page, mascot, status pill) accelerates up out of rest (bottom edge 79.5% H -> 13.9% H at f3046, 170 px/f at the end) while the landscape footage card enters through the bottom edge (first sliver f3042) and rises at about 150 px/f, both on screen together f3042-f3047 (gap 238-323 px); the card brakes to rest centred at 50.2% H by f3064-f3072 and its vertical blur clears (edge width 41 -> 3 px); white page around both; a dark rounded card centred near x 50% W on both sides (device card 48.5% W -> footage card 71.0% W)",
+   "technique": "v8.trans-push-up",
+   "detail": "detail/soft_3029-3064",
+   "cut_frame": null,
+   "anchor_cut": "c079",
+   "chunk": "v8c5"
+  },
+  {
+   "id": "T23",
+   "start": 3064,
+   "end": 3092,
+   "frames": 29,
+   "type": "morph (shared-element zoom to full frame (zoom-fill))",
+   "shared": "the footage card itself and its footage: at rest centred on the white page (1151 x 650 px = 71.0% W, x 235-1385, y 157-806 px at f3062-f3063), it scales about the frame centre (centre 49.9% W / 50.2% H; still finishing its rise, centre y 473.5 -> 460.5 px f3064-f3072) until its width reaches the frame edges at f3088 and its height at f3092 (x1.409); the white page shrinks from 50% of the picture (f3063) to 16% (f3078) and 2% (f3086); the edges reach the frame still moving (ease-in-out) with zoom motion blur (7-15 px, f3072-f3080); the same footage then continues full-bleed in S24",
+   "technique": "v8.trans-card-zoom-fill",
+   "detail": "detail/soft_3064-3092",
+   "cut_frame": null,
+   "anchor_cut": "c083",
+   "chunk": "v8c5"
+  },
+  {
+   "id": "T25",
+   "start": 3348,
+   "end": 3394,
+   "frames": 47,
+   "type": "whip",
+   "shared": "downward motion: the card row sinks with a strong ease-in while still scrolling left (top edge 6.3% -> 54.1% H, 50 px/f at f3379); the end card's background replaces the flat white page under the row first (picture f3379), so the last outgoing picture f3379 already shows the end card's background, identical to the first incoming picture f3380 everywhere above the row; the row is removed at f3380, in the picture where the end card's brand icon arrives from above the top edge moving down (117 px/f), overshoots 4.6% H below its rest and springs back by f3398",
+   "technique": "v8.trans-whip-down",
+   "detail": "detail/soft_3348-3394",
+   "cut_frame": 3379,
+   "anchor_cut": "c096",
+   "chunk": "v8c5"
+  }
+ ],
+ "notes": [
+  "Merged from chunks v8c1-v8c5 on 2026-11-01: every auto candidate carries the status and reason its chunk gave (c049, at the v8c2/v8c3 edge, was decided by both: rejected, detector index drift); confirmed candidates name the final transition (T01-T26 in segments.json) they anchor.",
+  "Hard cuts missed by the detectors are the manual entries m001 (f1422, punch-in) and m002 (f3561, the player's loop restart). Pictures replaced inside soft transitions (hidden cuts f608, f699, f914, f1004, f1829, f1927, f2404, f3379/f3380) are recorded as cut_frame of their soft transition, not as hard cuts; T25's cut has two steps (background f3379, foreground f3380).",
+  "soft_transitions: 19 entries (zoom-through 2, whip 7, push 4, morph 6); cut_frame = the first incoming picture (or the switch picture of a zoom-through), anchor_cut = the candidate or manual entry confirmed for it."
+ ]
 }

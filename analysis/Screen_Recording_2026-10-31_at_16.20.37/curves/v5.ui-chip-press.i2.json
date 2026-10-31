@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.ui-chip-press.i2",
+  "file": "curves/v5.ui-chip-press.i2.csv",
+  "property": "scale",
+  "unit": "scale factor (chip 2 label vs chip 1 / chip 3 labels)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_E_chip2_press.csv",
+  "column": "own2_ok",
+  "sampled_frames": [
+    932,
+    962
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.8131,
+  "to_value": 0.9998,
+  "active_frames": [
+    935,
+    953
+  ],
+  "measured_duration_frames": 18,
+  "bezier": {
+    "x1": 0.0738,
+    "y1": 0.8271,
+    "x2": 0.1748,
+    "y2": 1.2364,
+    "durationInFrames": 18,
+    "delay": 0.747,
+    "built_duration_frames": 17,
+    "rmse": 0.0481
+  },
+  "spring": {
+    "stiffness": 2672.083,
+    "damping": 99.638,
+    "mass": 1,
+    "damping_ratio": 0.9638,
+    "built_duration_frames": 7,
+    "rmse": 0.2433
+  },
+  "recommended": "bezier",
+  "note": "chip 2 springs back after its activation press: 0.812 (f935) -> 0.912 (f937) -> 0.985 (f940) -> 1.002 (f942) -> 1.011 (f945-f947) -> 1.010 (f951) -> 1.000 (f953 on; label template switches to the swapped label at f953; outline outer width 582 / 588 / 586 / 584 / 581 px on f942 / f945 / f947 / f951 / f953, rest 580-581, confirms the overshoot)"
+}

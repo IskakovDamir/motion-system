@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.cam-text-pan.v6c1",
+  "file": "curves/v6.cam-text-pan.v6c1.csv",
+  "property": "position-x",
+  "unit": "px (picture 1622 px wide)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_headline_pan_M.csv",
+  "column": "cx",
+  "sampled_frames": [
+    141,
+    176
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 845.0,
+  "to_value": 168.0,
+  "active_frames": [
+    148,
+    173
+  ],
+  "measured_duration_frames": 25,
+  "bezier": {
+    "x1": 0.5802,
+    "y1": 0.0096,
+    "x2": 0.3524,
+    "y2": 0.8827,
+    "durationInFrames": 29,
+    "delay": -2.213,
+    "built_duration_frames": 24,
+    "rmse": 0.019
+  },
+  "spring": {
+    "stiffness": 110.098,
+    "damping": 16.341,
+    "mass": 1,
+    "damping_ratio": 0.7787,
+    "built_duration_frames": 29,
+    "rmse": 0.2421
+  },
+  "recommended": "bezier",
+  "note": "headline pan: the 2-word headline (cap height 27% H) slides left 677 px (41.7% W) while the 3rd word types on letter by letter just inside the right edge (letters cut on at f161 / f166 / f171, about 5 f per letter; their places are empty field in the pictures before; scratch/v6c1_P05_word3_letters.csv); template of letter M (ref f148, score 0.66-1.00, lowest in the motion-blurred pictures f158-f161); the move overlaps the end of the rise; the zoom-out starts at f178"
+}

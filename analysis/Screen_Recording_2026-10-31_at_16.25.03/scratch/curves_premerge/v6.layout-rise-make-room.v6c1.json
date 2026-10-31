@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.layout-rise-make-room.v6c1",
+  "file": "curves/v6.layout-rise-make-room.v6c1.csv",
+  "property": "position-y",
+  "unit": "px (picture 918 px high)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_P07_line1_scale.csv",
+  "column": "cy",
+  "sampled_frames": [
+    331,
+    379
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 436.5,
+  "to_value": 133.5,
+  "active_frames": [
+    339,
+    356
+  ],
+  "measured_duration_frames": 17,
+  "bezier": {
+    "x1": 0.7526,
+    "y1": 0.4798,
+    "x2": 0.1668,
+    "y2": 0.5815,
+    "durationInFrames": 14,
+    "delay": 1.291,
+    "built_duration_frames": 14,
+    "rmse": 0.0351
+  },
+  "spring": {
+    "stiffness": 254.379,
+    "damping": 24.927,
+    "mass": 1,
+    "damping_ratio": 0.7815,
+    "built_duration_frames": 14,
+    "rmse": 0.065
+  },
+  "recommended": "bezier",
+  "note": "the finished 2-line text block rises 303 px (33.0% H) from mid-frame (centre of line 1 at 436.5 px = 47.5% H) to the top band (133.5 px = 14.5% H) to make room for the globe rising from the bottom edge at the same time; vertical motion blur f343-f348; template of the grey word, ref f371"
+}

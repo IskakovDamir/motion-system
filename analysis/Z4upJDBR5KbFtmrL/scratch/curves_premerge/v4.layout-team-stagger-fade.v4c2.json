@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.layout-team-stagger-fade.v4c2",
+  "file": "curves/v4.layout-team-stagger-fade.v4c2.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 of a tile back (246 = not there, 17 = opaque)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/c2_t2_tile_fade_rows.csv",
+  "column": "r814_x889",
+  "sampled_frames": [
+    1140,
+    1180
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 246.0,
+  "to_value": 17.0,
+  "active_frames": [
+    1149,
+    1165
+  ],
+  "measured_duration_frames": 16,
+  "bezier": {
+    "x1": 0.2878,
+    "y1": 0.8789,
+    "x2": 0.6039,
+    "y2": 0.9719,
+    "durationInFrames": 18,
+    "delay": 0.02,
+    "built_duration_frames": 15,
+    "rmse": 0.0195
+  },
+  "spring": {
+    "stiffness": 428.769,
+    "damping": 59.335,
+    "mass": 1,
+    "damping_ratio": 1.4327,
+    "built_duration_frames": 17,
+    "rmse": 0.0577
+  },
+  "recommended": "bezier",
+  "note": "one incoming team (bottom-middle hub + its 6 tiles) during the second pull-back; tile sampled left of its icon, position from the measured zoom (scratch/c2_t2_camera.csv)"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v2.icon-ring-pop-in.v2c1",
+  "file": "curves/v2.icon-ring-pop-in.v2c1.csv",
+  "property": "scale",
+  "unit": "scale factor (template scale; 0.995 = rest at this scale grid)",
+  "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c1_S03_logo12_scale.csv",
+  "column": "scale",
+  "sampled_frames": [
+    117,
+    136
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 0.585,
+  "to_value": 0.995,
+  "active_frames": [
+    117,
+    125
+  ],
+  "measured_duration_frames": 8,
+  "bezier": {
+    "x1": 0.2967,
+    "y1": 1.1592,
+    "x2": 0.8588,
+    "y2": 0.8683,
+    "durationInFrames": 8,
+    "delay": 0.026,
+    "built_duration_frames": 8,
+    "rmse": 0.0063
+  },
+  "spring": {
+    "stiffness": 2551.473,
+    "damping": 102.367,
+    "mass": 1,
+    "damping_ratio": 1.0133,
+    "built_duration_frames": 7,
+    "rmse": 0.0989
+  },
+  "recommended": "bezier",
+  "note": "ring logo at 46 deg (lower right, inner track) popping in while it already orbits: first visible f117 at scale 0.585 (start value = first visible frame), settled f125; opacity rises with it (ink fraction of another logo 0.03, 0.20, 0.40, 0.59, 0.72, 0.83, 0.91, 0.94, 0.96 over its first 9 frames)"
+}

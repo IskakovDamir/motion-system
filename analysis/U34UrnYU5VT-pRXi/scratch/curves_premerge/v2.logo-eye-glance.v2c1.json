@@ -1,0 +1,40 @@
+{
+  "technique_id": "v2.logo-eye-glance.v2c1",
+  "file": "curves/v2.logo-eye-glance.v2c1.csv",
+  "property": "position-x",
+  "unit": "px (eye-pair centre minus body centre; body 376 px wide)",
+  "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c1_S04_mascot_derived.csv",
+  "column": "eye_dx",
+  "sampled_frames": [
+    248,
+    270
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 47.98,
+  "to_value": -48.0,
+  "active_frames": [
+    254,
+    262
+  ],
+  "measured_duration_frames": 8,
+  "bezier": {
+    "x1": 0.5861,
+    "y1": -0.015,
+    "x2": 0.3801,
+    "y2": 1.0288,
+    "durationInFrames": 9,
+    "delay": -0.584,
+    "built_duration_frames": 7,
+    "rmse": 0.0291
+  },
+  "spring": {
+    "stiffness": 1748.034,
+    "damping": 67.575,
+    "mass": 1,
+    "damping_ratio": 0.8081,
+    "built_duration_frames": 6,
+    "rmse": 0.1131
+  },
+  "recommended": "bezier",
+  "note": "big hex mascot, glance 1: both eye bars slide from upper right (+48, -40) to lower left (-48, +8) in one move; the eyes squash vertically mid-move (eye-pair height 120 -> 99 px at f258 -> 120) and widen 106 -> 112 px; same device for glances 2 and 3 (f275-f284, f299-f308)"
+}

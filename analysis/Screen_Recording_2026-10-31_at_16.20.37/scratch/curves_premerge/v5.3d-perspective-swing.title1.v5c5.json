@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.3d-perspective-swing.title1.v5c5",
+  "file": "curves/v5.3d-perspective-swing.title1.v5c5.csv",
+  "property": "perspective-taper",
+  "unit": "px: bottom edge of title 1 at x660-720 minus at x120-180 (540 px apart; 25 px = 2.7 deg edge slope; height ratio right/left 1.00 -> 1.33)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_E_swing.csv",
+  "column": "t1_bot_diff",
+  "sampled_frames": [
+    3740,
+    3790
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 25.0,
+  "active_frames": [
+    3740,
+    3752
+  ],
+  "measured_duration_frames": 12,
+  "bezier": {
+    "x1": 0.7978,
+    "y1": 0.3508,
+    "x2": 0.1231,
+    "y2": 0.4083,
+    "durationInFrames": 12,
+    "delay": 0.0,
+    "built_duration_frames": 12,
+    "rmse": 0.0
+  },
+  "spring": {
+    "stiffness": 822.076,
+    "damping": 50.587,
+    "mass": 1,
+    "damping_ratio": 0.8822,
+    "built_duration_frames": 10,
+    "rmse": 0.1729
+  },
+  "recommended": "bezier",
+  "note": "title 1 swings from flat (letters 83-85 px tall across, bottom level at y291-293, f3740-3742) into a perspective taper: top edge stays at y208-209, the bottom edge tilts (left end rises 291 -> 280, right end drops 293 -> 305), width unchanged (720-722 px); starts as the slide reaches its overshoot, settles by f3752; flat 60 px bins, luma > 150"
+}

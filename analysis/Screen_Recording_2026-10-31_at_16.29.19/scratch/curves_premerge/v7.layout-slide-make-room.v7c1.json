@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.layout-slide-make-room.v7c1",
+  "file": "curves/v7.layout-slide-make-room.v7c1.csv",
+  "property": "position-x",
+  "unit": "% of frame width",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s1_slide_apart_11-36.csv",
+  "column": "word2_left_edge_pct",
+  "sampled_frames": [
+    11,
+    34
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 51.0,
+  "to_value": 54.35,
+  "active_frames": [
+    16,
+    26
+  ],
+  "measured_duration_frames": 10,
+  "bezier": {
+    "x1": 0.882,
+    "y1": 0.0157,
+    "x2": 0.1293,
+    "y2": 0.7715,
+    "durationInFrames": 13,
+    "delay": -2.184,
+    "built_duration_frames": 11,
+    "rmse": 0.0236
+  },
+  "spring": {
+    "stiffness": 2422.523,
+    "damping": 98.507,
+    "mass": 1,
+    "damping_ratio": 1.0007,
+    "built_duration_frames": 8,
+    "rmse": 0.2201
+  },
+  "recommended": "bezier",
+  "note": "S01 title line 1 re-layout when word 1 is inserted between the brand-mark icon and word 2: word 2's left ink edge (sub-pixel column profile, 50% of the first stem's peak) shifts right 51.0% -> 54.35% W while the label content shrinks (cap 8.3% -> 6.2% H); scaling about the box centre alone would have moved this edge left, so the shift is its own movement. The brand-mark icon slides left on the same timing, 42.7% -> 27.7% W (blur-aware template match, scratch/v7c1_s1_brandicon_blur_11-36.csv: progress 0.16 / 0.74 / 0.93 / 0.99 at f19 / f21 / f24 / f26 against this curve's 0.12 / 0.65 / 0.92 / 0.98; f19 and f21 carry horizontal motion blur, 44 and 28 px). Other ranges (f11-f36, f14-f36) land the optimiser in a worse minimum (rmse 0.24)"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.trans-blur-whip-reframe-2.v8c1",
+  "file": "curves/v8.trans-blur-whip-reframe-2.v8c1.csv",
+  "property": "position-y",
+  "unit": "% of frame height (sidebar search icon centre, after the reframe)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c1_t4_search_699-770.csv",
+  "column": "cy_pct",
+  "sampled_frames": [
+    702,
+    731
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 7.516,
+  "to_value": 24.728,
+  "active_frames": [
+    703,
+    722
+  ],
+  "measured_duration_frames": 19,
+  "bezier": {
+    "x1": 0.0006,
+    "y1": 0.2312,
+    "x2": 0.3016,
+    "y2": 1.0044,
+    "durationInFrames": 23,
+    "delay": -0.0,
+    "built_duration_frames": 19,
+    "rmse": 0.0273
+  },
+  "spring": {
+    "stiffness": 245.801,
+    "damping": 35.354,
+    "mass": 1,
+    "damping_ratio": 1.1275,
+    "built_duration_frames": 23,
+    "rmse": 0.0879
+  },
+  "recommended": "bezier",
+  "note": "incoming half of the blur whip-reframe T4: after the hidden cut f699/f700 (punch-in x2.63 on the sidebar) the close-up keeps sliding down, decelerating, while its blur clears; f700-f701 too blurred to track, first sample f702 already moving (template, scratch/v8c1_t4_search_699-770.csv)"
+}

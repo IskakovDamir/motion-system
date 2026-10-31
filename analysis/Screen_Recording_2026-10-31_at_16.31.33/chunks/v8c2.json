@@ -1,0 +1,1412 @@
+{
+ "video": "Screen_Recording_2026-10-31_at_16.31.33",
+ "key": "v8",
+ "chunk": "v8c2",
+ "frames": [
+  734,
+  1461
+ ],
+ "cut_decisions": [
+  {
+   "id": "c031",
+   "frame": 1004,
+   "status": "confirmed",
+   "reason": "hidden cut of the soft whip f980-f1030 (blur-through variant): the chat feed, accelerating up and blurred (vertical motion blur 24 px + 3 px Gaussian, whole-frame Laplacian sharpness 5.0 at f1002), is replaced by the defocused, rising post card (sigma 6.5 px, sharpness 3.0) between f1002 and f1004; f1003 repeats f1002"
+  },
+  {
+   "id": "c032",
+   "frame": 1010,
+   "status": "rejected",
+   "reason": "inside S03: the post card de-blurs and rises while the status pill + mascot slide in from the upper right; same composition"
+  },
+  {
+   "id": "c033",
+   "frame": 1089,
+   "status": "rejected",
+   "reason": "detector index drift: picture f1089 repeats f1088; the card is turning in 3D; the first stacked card arrives at f1094"
+  },
+  {
+   "id": "c034",
+   "frame": 1096,
+   "status": "rejected",
+   "reason": "card deck inside S03: a new card slams onto the front of the 3D stack (arrives f1094, f1096 is its settled picture); the stack layout holds"
+  },
+  {
+   "id": "c035",
+   "frame": 1105,
+   "status": "rejected",
+   "reason": "card deck: new card f1102, settled f1105"
+  },
+  {
+   "id": "c036",
+   "frame": 1112,
+   "status": "rejected",
+   "reason": "card deck: new card f1110, settled f1112"
+  },
+  {
+   "id": "c037",
+   "frame": 1122,
+   "status": "rejected",
+   "reason": "card deck: new card f1122"
+  },
+  {
+   "id": "c038",
+   "frame": 1130,
+   "status": "rejected",
+   "reason": "card deck: new card f1130"
+  },
+  {
+   "id": "c039",
+   "frame": 1148,
+   "status": "rejected",
+   "reason": "card deck: new card f1146, settled f1148"
+  },
+  {
+   "id": "c040",
+   "frame": 1156,
+   "status": "rejected",
+   "reason": "card deck: new card f1154, settled f1156"
+  },
+  {
+   "id": "c041",
+   "frame": 1162,
+   "status": "rejected",
+   "reason": "card deck: new card f1162 during the zoom-in"
+  },
+  {
+   "id": "c042",
+   "frame": 1167,
+   "status": "rejected",
+   "reason": "card deck: new card f1167 during the accelerating push-in"
+  },
+  {
+   "id": "c043",
+   "frame": 1170,
+   "status": "rejected",
+   "reason": "card deck: new card f1170 during the accelerating push-in"
+  },
+  {
+   "id": "c044",
+   "frame": 1174,
+   "status": "rejected",
+   "reason": "the last card lands oversized at the end of the push-in; the camera then pulls back to the same card with the stack behind it"
+  },
+  {
+   "id": "c045",
+   "frame": 1234,
+   "status": "rejected",
+   "reason": "the cards behind collapse into the front card (f1223-f1230) and the status pill levels out; the same card holds"
+  },
+  {
+   "id": "c046",
+   "frame": 1262,
+   "status": "rejected",
+   "reason": "detector index drift: f1262 is the same full-card layout as f1261 (card drifting up 9 px); the picture is replaced at f1266 (c047)"
+  },
+  {
+   "id": "c047",
+   "frame": 1266,
+   "status": "confirmed",
+   "reason": "hard cut, punch-in: the full card (f1263, f1264-f1265 repeat it) is replaced by a x2.5 close-up of the same card's lower left with a new status pill label"
+  },
+  {
+   "id": "c048",
+   "frame": 1327,
+   "status": "confirmed",
+   "reason": "hard cut: the card close-up sliding left is replaced by the agent message layout (ghosted card band at the top, mascot popping in)"
+  },
+  {
+   "id": "c049",
+   "frame": 1462,
+   "status": "rejected",
+   "reason": "detector index drift: f1462 continues f1460's layout (upward drift 4-5 px); checked to f1476: the picture is replaced between f1468 and f1470 = c050, which lies in v8c3's range"
+  }
+ ],
+ "boundaries": [
+  {
+   "start": 887,
+   "end": 934,
+   "type": "whip",
+   "frames": 48,
+   "cut_frame": 914,
+   "shared": "upward motion with vertical motion blur and the same light page (luma 248): the S01 list accelerates up (ease-in, 25 f, 34 px/f and 24 px blur at the last picture f912), the picture is replaced between f912 and f914 (f913 repeats f912), and the S02 chat panel of the same app arrives 79 px (8.6% H) below its rest still rising 12 px/f with 32 px blur, then settles in 20 f",
+   "technique": "v8.trans-whip-up",
+   "curve": "v8.trans-whip-up.v8c2",
+   "curves": [
+    "v8.trans-whip-up-out.v8c2",
+    "v8.trans-whip-up.v8c2"
+   ],
+   "detail": "detail/soft_887-934",
+   "origin": "missed by all three detectors (similar light frames)",
+   "tiling": "soft-transition rule: S01 ends at floor((887+934)/2) = f910, S02 starts f911; the picture is replaced between f912 and f914 (cut_frame f914; f913 repeats f912), so the last outgoing pictures f911-f912 and the repeat f913 sit in S02 (the convention v8c1 and v8c3 use for their whips with hidden cuts; before review round 2 this chunk tiled at the hidden cut)"
+  },
+  {
+   "start": 980,
+   "end": 1030,
+   "type": "whip",
+   "subtype": "blur-through variant with a hidden cut: vertical motion blur out, defocus in",
+   "frames": 51,
+   "cut_frame": 1004,
+   "anchor_cut": "c031",
+   "shared": "upward motion with a blurred picture on both sides of the cut and the same light page (248): the S02 chat feed accelerates up (ease-in, 22 f, 17 px/f at the last picture f1002) under vertical motion blur growing 2 -> 24 px (+ a 3 px Gaussian at f1002), whole-frame Laplacian sharpness 118 (f988) -> 55 (f998) -> 19 (f1000) -> 5.0 (f1002); the picture is replaced between f1002 and f1004 (f1003 repeats f1002); the S03 post card arrives 65 px (7.1% H) below its rest (mean of both top corners), about 4% narrow, rising 8 px/f and defocused (Gaussian sigma 6.5 px = 0.40% W; sharpness 3.0 at f1004), sharpens in 6-8 f (sharpness 35 at f1008, 129 at f1010, 167 at f1014, about 200 from f1024) and settles with a strong ease-out, no overshoot, by f1030 (26 f by the 2% rule on the mean of both top corners, which the card's yaw from f1024 leaves unchanged; the card bottom by f1024). The f887-f934 whip shows the same sharpness pattern (list 10 -> 1.3 at f912, chat 0.9 at f914 -> 62 at f920 -> 126 at f934). It differs only in the incoming half: an isotropic defocus (Sobel gy/gx 1.06 at f1004, card at rest 1.10) on a new composition instead of a vertical smear (gy/gx 0.27 at f916, chat at rest 0.66) on another view of the same app, and a 26 f settle instead of 20 f: a blur-through variant, possibly a second technique",
+   "technique": "v8.trans-whip-up",
+   "curve": "v8.ui-card-rise-deblur-in.v8c2",
+   "curves": [
+    "v8.cam-scroll-exit-up.v8c2",
+    "v8.ui-card-rise-deblur-in.v8c2"
+   ],
+   "curve_note": "the two halves were tracked and fitted as element moves before this boundary was found to be soft: outgoing = v8.cam-scroll-exit-up.v8c2 (S02 row 1 y, bezier(0.348, 0.104, 0.814, 0.084) D=23), incoming = v8.ui-card-rise-deblur-in.v8c2 (mean of both top card corners, bezier(0.125, 0.693, 0.341, 0.781) D=25, 26 f, rmse 0.021; refitted in review round 2 because the left-corner fit over f1004-f1046 ran into the yaw from f1024: 42 f, D=62, y2 1.15); kept under those ids because v8c3 cites v8.cam-scroll-exit-up.v8c2; blur per picture in scratch/v8c2_T2_out_blur.csv (out), scratch/v8c2_S03_entry_blur.csv (in) and scratch/v8c2_T2_sharpness.csv (both; f914 whip: scratch/v8c2_T1_sharpness.csv)",
+   "exit_technique": "v8.cam-scroll-exit-up",
+   "entry_technique": "v8.ui-card-rise-deblur-in",
+   "detail": "detail/soft_980-1030",
+   "origin": "the detectors flagged the cut picture (c031) but not the soft range; found on review (blur on both sides of the cut)",
+   "tiling": "soft-transition rule: S02 ends at floor((980+1030)/2) = f1005, S03 starts f1006; the picture is replaced between f1002 and f1004 (cut_frame f1004; f1003 repeats f1002), so the first card picture f1004 and its repeat f1005 sit in S02 (before review round 2: tiled at the hidden cut, S02 ending f1003)",
+   "detail_note": "detail/soft_980-1030 (12 pictures before f980 and after f1030) replaces the window made for the earlier range, detail/soft_980-1034, which covers the same pictures and stays in place"
+  },
+  {
+   "frame": 1266,
+   "type": "hard-cut",
+   "subtype": "punch-in x2.5 (template scale 0.40 +-0.01)",
+   "anchor_cut": "c047",
+   "shared": "the same post card (close-up of its lower left), the status pill + mascot (new label, lighter mascot) and upward motion: the card drifts up 4.5 px/f into the cut, the close-up rises 23.5 px/f after it and settles with a strong ease-out in 21 f",
+   "technique": "v8.cam-punch-in-cut-settle",
+   "curve": "v8.cam-punch-in-cut-settle.v8c2"
+  },
+  {
+   "frame": 1327,
+   "type": "hard-cut",
+   "anchor_cut": "c048",
+   "shared": "leftward motion: the close-up slides out left with an ease-in to 22 px/f; the whole S05 layout arrives still sliding left (14.4 px in its first frame) and settles with a strong ease-out, 47 px (2.9% W) in 25 f, no scale (v8.cam-slide-in-left-settle), while its mascot grows from a 20 px dot about a point fixed in the layout (v8.icon-mascot-pop-slide); the card returns flattened and ghosted (fill 224) as a band at the top of S05 and rides the slide",
+   "exit_technique": "v8.cam-slide-exit-left",
+   "entry_technique": "v8.cam-slide-in-left-settle",
+   "curve": "v8.cam-slide-in-left-settle.v8c2",
+   "also_entering": "v8.icon-mascot-pop-slide (curve v8.icon-mascot-pop-slide.v8c2)"
+  },
+  {
+   "frame": 1422,
+   "type": "hard-cut",
+   "subtype": "punch-in x2.38 (template scale 0.42 +-0.01)",
+   "anchor_cut": null,
+   "origin": "missed by the detectors (ffmpeg score 0.099 below the weak threshold 0.12, content value 0)",
+   "shared": "the checklist lines and spinner of the same block and the upward drift: 8.5 px/f before the cut, 10.5 px/f on screen after it, then an ease-out settle in 24 f",
+   "technique": "v8.cam-punch-in-cut-settle"
+  }
+ ],
+ "segments": [
+  {
+   "id": "v8c2-S01",
+   "start": 734,
+   "end": 910,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": true,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "zoomed sidebar list of the app on a light page (starts in v8c1 at about f700): each new row's mascot darts in from the lower left, the list scrolls up one row in an ease-in-out step on the off-beat through a screen-locked highlight slot, and the row's 2-line label streams in, darkens and slides right; mascot eyes swap glyphs; additions accelerate (gaps 28, 32, 16, 8 f, last step a double-row flick at 84 px/f); a last 1-line row appears with a cell-by-cell grid icon, then the list whips up out"
+  },
+  {
+   "id": "v8c2-S02",
+   "start": 911,
+   "end": 1005,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "zoomed chat panel of the same app: arrives with the whip (rising, blurred, ease-out), a status word types on beside the agent name, the row 1 mascot's eyes glide 8.5 px down inside its blob (f932-f944), the feed scrolls one row up while a second agent row's mascot darts in and its 2-line message streams in left to right, then the feed accelerates up and blurs out into the blur-through whip f980-f1030 (hidden cut f1004)"
+  },
+  {
+   "id": "v8c2-S03",
+   "start": 1006,
+   "end": 1265,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "dark post card (carrying a still photo) on the light page: it arrives with the whip f980-f1030, rises and de-blurs, a status pill + mascot drop in from the upper right, the card yaws about 26 deg in 3D and recedes left, from f1074 a background dot grid fades in behind the cards (denser at the centre, drifting left at a constant rate whatever the camera does, off within one picture at f1202); then a card deck flips a new card onto a 3D stack every 4 f while the camera zooms out and pushes in with an accelerating ease-in; the last card lands oversized, the camera pulls back, the stack collapses into the front card, the pill rises in tilted and levels out, hold and slow drift up; a page-white shimmer band sweeps the status pill each time it comes to rest (f1042-f1057, f1240-f1254)"
+  },
+  {
+   "id": "v8c2-S04",
+   "start": 1266,
+   "end": 1326,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "x2.5 punch-in on the same card's lower left (photo panel bottom and stats row): the close-up rises with an ease-out while a status pill with a new label and a lighter mascot drop in from the upper right; short hold, then the card slides out left with an ease-in while the pill stays and the mascot's eyes glide 11 px up inside its blob (f1312-f1324); a shimmer band sweeps the pill as the drop-in settles (f1284-f1302)"
+  },
+  {
+   "id": "v8c2-S05",
+   "start": 1327,
+   "end": 1421,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "agent message block on the light page under a ghosted band of the previous card (its faded photo sliver is the only footage): the whole layout arrives sliding left and settles (47 px in 25 f) while the mascot grows from a dot, the header row fades in, a 1-line heading and a sub-line stream in left to right, then three checklist lines with spinners stream in one after another; long hold during which the mascot's eyes glance 15 px left and back (f1364-f1411), then an ease-in drift up into a punch-in (eyes swap to dashes at f1420); from f1388 a lightening front crawls across the header's status word left to right (about 4 px/f) until the cut"
+  },
+  {
+   "id": "v8c2-S06",
+   "start": 1422,
+   "end": 1461,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": true,
+   "live_confirmed_on": [],
+   "summary": "x2.38 punch-in on the checklist's last lines: the block rises with an ease-out, a new agent row (mascot + 1-line message) streams in fast and darkens while the older lines dim and the mascot's eyes glide 7 px right (f1437-f1448); the drift accelerates again toward the hard cut f1470 (c050, v8c3); the segment ends at f1469"
+  }
+ ],
+ "techniques": [
+  {
+   "id": "v8.ui-list-step-scroll",
+   "category": "ui",
+   "description": "a list or chat feed scrolls up one row per added item with an ease-in-out step over a slow constant base drift; the S01 steps fall on the off-beat; the last S01 step is a double-row flick",
+   "instances": [
+    [
+     762,
+     782
+    ],
+    [
+     796,
+     816
+    ],
+    [
+     824,
+     844
+    ],
+    [
+     858,
+     884
+    ],
+    [
+     948,
+     976
+    ]
+   ],
+   "reference_frames": [
+    762,
+    774,
+    782,
+    951,
+    955,
+    972
+   ],
+   "measured": {
+    "duration_frames": 21,
+    "easing": "bezier(0.272, 0.451, 0.068, 0.901) D=23 (rmse 0.017); spring {364.7, 45.47} rmse 0.065 (S02 instance)",
+    "values": "S02: row 1 centre 481 -> 225 px (52.4% -> 24.5% H, 256 px) in 21 f, peak 33.5 px/f at f954-f956 (scratch/v8c2_S02_row1.csv). S01 steps 1-3: 232-233 px (25.3% H) in about 20 f, peak 25.5-26 px/f (row mascot templates scratch/v8c2_S01_item*_mascot.csv); S01 step 4: 595 px (64.8% H) in 26 f, peak 84 px/f; base drift between steps 1.5-4 px/f (scratch/v8c2_S01_vscroll.csv)"
+   },
+   "curves": [
+    "v8.ui-list-step-scroll.v8c2"
+   ]
+  },
+  {
+   "id": "v8.icon-mascot-dart-in",
+   "category": "icon",
+   "description": "the new row's mascot darts in from beyond the lower-left frame edge to its place in the row within 2 pictures, with diagonal motion blur and no fade",
+   "instances": [
+    [
+     774,
+     778
+    ],
+    [
+     802,
+     806
+    ],
+    [
+     834,
+     838
+    ],
+    [
+     850,
+     852
+    ],
+    [
+     858,
+     862
+    ],
+    [
+     954,
+     960
+    ]
+   ],
+   "reference_frames": [
+    774,
+    776,
+    778,
+    802,
+    806,
+    954
+   ],
+   "measured": {
+    "duration_frames": 4,
+    "easing": "UNCERTAIN: 2-3 pictures, not fitted",
+    "values": "row 2: centroid x 13.2% / y 66.0% (f774) -> x 18.1% / y 61.2% (f776) -> x 24.1% / y 59.1% (f778), 80-97 px per frame, fill luma constant 147-149 (scratch/v8c2_S01_item2_flyin.csv); arrivals f774, f802, f834, f850, f858 (gaps 28, 32, 16, 8 f)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v8.text-label-fade-slide",
+   "category": "text",
+   "description": "a row label appears with a fast left-to-right front (blurred), then darkens and sharpens in about 14 f while it slides right with a long ease-out",
+   "instances": [
+    [
+     740,
+     786
+    ],
+    [
+     782,
+     800
+    ],
+    [
+     808,
+     822
+    ],
+    [
+     842,
+     850
+    ],
+    [
+     855,
+     862
+    ],
+    [
+     866,
+     878
+    ],
+    [
+     883,
+     900
+    ],
+    [
+     956,
+     980
+    ]
+   ],
+   "reference_frames": [
+    740,
+    743,
+    748,
+    760,
+    782,
+    786,
+    800,
+    883,
+    892
+   ],
+   "measured": {
+    "duration_frames": 46,
+    "easing": "bezier(0.000, 0.409, 0.340, 0.999) D=54 (built 44 f, rmse 0.047); spring {44.9, 22.95} rmse 0.055 (row 1 title x, sub-pixel template; fit from f743: bezier(0.000, 0.165, 0.252, 0.996) D=53, 45 f, rmse 0.014). Re-tracked in review round 2: the earlier curve on the mean luma of a fixed 310 x 62 px box mixed the front, the darkening and the slide and failed both fits (rmse 0.071 / 0.435)",
+    "values": "row 1 title (first letters, 120 x 60 px template, sub-pixel peak; scratch/v8c2_S01_item1_title_left_subpx.csv): x 495.4 (f740, first ink, partly revealed, score 0.78) -> 501.2 (f743) -> 525.0 (f760) -> 535.6 px (f799-f802) = 40.2 px (2.5% W), 73% of it by f760, the rest during the list step f762-f782; darkest title pixel 210 (f740) -> 61 (f754) -> 60-62 (f756-f760) (scratch/v8c2_S01_item1_title_luma.csv); row 2 front 651 -> 870 px in 4 f, left edge 513 -> 533 px (f782 -> f800); last row front about 60 px/f, left edge 414 -> 432 px; S02 row 2: mascot left edge 27 -> 103 px and name label left edge <= 240 -> 268 px (f956 -> f980) relative to the feed (scratch/v8c2_S02_row2_mascot_edges.csv, v8c2_S02_row2_name_edges.csv)"
+   },
+   "curves": [
+    "v8.text-label-fade-slide.v8c2"
+   ]
+  },
+  {
+   "id": "v8.icon-mascot-eye-swap",
+   "category": "icon",
+   "description": "the mascots' glyph eyes swap instantly between asterisks, dashes, circles and chevrons every 16-26 frames",
+   "instances": [
+    [
+     744,
+     744
+    ],
+    [
+     760,
+     760
+    ],
+    [
+     780,
+     780
+    ],
+    [
+     800,
+     800
+    ],
+    [
+     834,
+     836
+    ],
+    [
+     892,
+     892
+    ],
+    [
+     1194,
+     1194
+    ],
+    [
+     1214,
+     1214
+    ],
+    [
+     1240,
+     1240
+    ],
+    [
+     1289,
+     1289
+    ],
+    [
+     1306,
+     1306
+    ],
+    [
+     1420,
+     1420
+    ]
+   ],
+   "reference_frames": [
+    742,
+    744,
+    758,
+    760,
+    778,
+    780
+   ],
+   "measured": {
+    "duration_frames": 0,
+    "easing": "stepped (instant)",
+    "values": "row 1: asterisks to f742, dashes f744-f758, circles f760-f778, chevrons from f780 (crop crops/crop_330_140_140x400_00734-00800.jpg); S03/S04 swaps read off overview sheets (+-2 f); S05 mascot: asterisks to f1418 (f1419 repeats f1418) -> dashes at f1420 (eye ink 447 -> 142 px); S04 pill mascot: dashes -> circles at f1306 (eye ink 255 -> 1045 px) (scratch/v8c2_mascot_eye_glance.csv)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v8.icon-mascot-eye-glance",
+   "category": "icon",
+   "description": "a mascot's eye glyphs glide inside the static blob (sideways, up or down), hold and glide back; the blob does not move against its layout and the glyphs do not change (v8c1 id)",
+   "instances": [
+    [
+     932,
+     948
+    ],
+    [
+     1312,
+     1324
+    ],
+    [
+     1364,
+     1411
+    ],
+    [
+     1437,
+     1448
+    ]
+   ],
+   "reference_frames": [
+    930,
+    934,
+    940,
+    948,
+    1312,
+    1316,
+    1320,
+    1324,
+    1364,
+    1370,
+    1374,
+    1380,
+    1394,
+    1402,
+    1411,
+    1437,
+    1442,
+    1448,
+    1460
+   ],
+   "measured": {
+    "duration_frames": 47,
+    "easing": "S05 return glide bezier(0.585, 0.092, 0.367, 0.992) D=20 (built 17 f, measured 19 f, rmse 0.022); spring {249.5, 25.09} rmse 0.125; the S05 outgoing glide fits only to rmse 0.09-0.16 and the S02 / S04 / S06 glances to 0.08-0.34 (7-11 px travels on centroids quantised to 0.1 px), not stored",
+    "values": "eye-ink centroid relative to the blob's top-left (luma below blob fill - 40 inside the 3 px-eroded blob; scratch/v8c2_mascot_eye_glance.csv, per mascot scratch/v8c2_S02_row1_eye_glance.csv, v8c2_S04_pill_mascot_eye_glance.csv, v8c2_S05_mascot_eye_glance.csv, v8c2_S06_mascot_eye_glance.csv). S02 row 1 (asterisks, blob 116 x 126 px): y 59.6-60.4 (f920-f932) -> 63.2 (f934) -> 67.1 (f940) -> 68.2-68.6 px (f944-f948), 8.5 px down, x +2.7 px, no return before the whip-out. S04 pill mascot (circles, blob 161 x 140 px): y 71.5-72.5 (f1296-f1312) -> 67.4 (f1316) -> 62.1 (f1320) -> 60.9 px (f1324), 11 px up, no return before the cut f1327. S05 (asterisks, blob 91 x 98 px): x 44.4-44.6 (f1350-f1364) -> 39.7 (f1370) -> 32.4 (f1374) -> 29.8 (f1378) -> hold 29.4-29.8 (f1380-f1394) -> 33.2 (f1400) -> 38.2 (f1404) -> 40.8 px (f1411-f1418): out 15 px left in 16 f, hold 12 f, back in 19 f to 3.7 px short of the start; y 55.3 -> 59.5-60.2 -> 56.0-56.8 px. S06 (asterisks, blob 143 x 155 px): x 62.6-63.1 (f1426-f1437) -> 64.9 (f1441) -> 68.4 (f1444) -> 69.9-70.0 px (f1448-f1460), 7.3 px right, return from f1462 in v8c3's range (68.8 at f1462 -> 62.8 px at f1467). Crops: crops/crop_95_380_140x160_00920-00950.jpg, crop_400_620_180x170_01300-01326.jpg, crop_170_190_120x130_01360-01420.jpg, crop_170_400_180x190_01430-01461.jpg"
+   },
+   "curves": [
+    "v8.icon-mascot-eye-glance.v8c2"
+   ]
+  },
+  {
+   "id": "v8.icon-grid-cell-pop",
+   "category": "icon",
+   "description": "a 2 x 2 rounded-square grid icon builds cell by cell, each cell growing from a dot to full size, anticlockwise from bottom-left",
+   "instances": [
+    [
+     883,
+     898
+    ]
+   ],
+   "reference_frames": [
+    883,
+    884,
+    886,
+    889,
+    891,
+    894,
+    896,
+    898
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "stepped growth, 3-5 f per cell (not fitted)",
+    "values": "cell 27 px (1.7% W); starts bottom-left f883, bottom-right f884, top-right f891, top-left f894; full at f884, f889, f894, f898 (crops/crop_296_410_100x120_00880-00900.jpg)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v8.ui-sticky-highlight-slot",
+   "category": "ui",
+   "description": "a highlight slot stays near a fixed screen position while the list rows scroll through it; it dips a little during each step and drifts back between steps",
+   "instances": [
+    [
+     734,
+     886
+    ]
+   ],
+   "reference_frames": [
+    760,
+    778,
+    810,
+    872
+   ],
+   "measured": {
+    "duration_frames": 152,
+    "easing": "-",
+    "values": "slot 1087 x 243 px (67.0% W x 26.5% H), radius 32 px, fill 231 on 248; top edge 330-372 px (36.0-40.5% H); dips +13.6, +24.2, +2.9, +39.2 px during steps 1-4, drifts up 0.8-1 px/f between (scratch/v8c2_S01_slot_topedge.csv)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v8.trans-whip-up",
+   "category": "trans",
+   "description": "vertical whip with a hidden cut: the outgoing view accelerates up with growing vertical motion blur until it is blurred out at the cut, the incoming view arrives low, still rising and blurred, and settles with a strong ease-out; f887-f934 joins two zoomed views of the same app (vertical smear in), f980-f1030 joins the chat feed to a post card (blur-through variant: the incoming card is defocused, not smeared, and settles in 26 f; possibly a second technique)",
+   "instances": [
+    [
+     887,
+     934
+    ],
+    [
+     980,
+     1030
+    ]
+   ],
+   "reference_frames": [
+    887,
+    909,
+    911,
+    912,
+    914,
+    916,
+    918,
+    934,
+    980,
+    998,
+    1000,
+    1002,
+    1004,
+    1008,
+    1010,
+    1024,
+    1030
+   ],
+   "measured": {
+    "duration_frames": 48,
+    "easing": "out: bezier(0.031, 0.039, 1.000, 0.266) D=24 (rmse 0.015); in: bezier(0.169, 1.033, 0.910, 0.977) D=22 (rmse 0.015), spring {305.3, 35.23} rmse 0.080 (f887-f934). f980-f1030: out bezier(0.348, 0.104, 0.814, 0.084) D=23 (rmse 0.011, curve v8.cam-scroll-exit-up.v8c2); in bezier(0.125, 0.693, 0.341, 0.781) D=25, 26 f (rmse 0.021, curve v8.ui-card-rise-deblur-in.v8c2, mean of both top card corners)",
+    "values": "out: last row centre 479 -> 337 px (52.2% -> 36.7% H), 34 px/f at f912, vertical blur 2 -> 24 px (box-blur match, scratch/v8c2_T1_out_vblur.csv); in: row 1 centre 599 -> 520 px (65.3% -> 56.6% H), 12 px/f at f914, blur 32 -> 0 px by f928 (scratch/v8c2_T1_in_vblur.csv); whole-frame Laplacian sharpness 10 -> 1.3 (f912), 0.9 (f914) -> 62 (f920) -> 126 (f934) (scratch/v8c2_T1_sharpness.csv). f980-f1030 (51 f, hidden cut f1004): out: S02 row 1 centre 222 -> 104 px, 17 px/f at f1002, vertical motion blur 2 (f988) -> 10 (f998) -> 16 (f1000) -> 24 px + Gaussian 3 px (f1002) (box + Gaussian match against f986, scratch/v8c2_T2_out_blur.csv), sharpness 118 -> 5.0; in: card top (mean of both top corners) 145 -> 79.7 px (7.1% H), settled f1030, width 852 -> 884 px, Gaussian sigma 6.5 (f1004) -> 1.0 (f1010) -> 0.5 px (f1012) (scratch/v8c2_S03_entry_blur.csv), sharpness 3.0 (f1004) -> 35 (f1008) -> 129 (f1010) -> 167 (f1014) -> about 200 (f1024) (scratch/v8c2_T2_sharpness.csv); Sobel gy/gx at the first incoming picture 1.06 (defocus) against 0.27 at f916 (vertical smear)"
+   },
+   "curves": [
+    "v8.trans-whip-up-out.v8c2",
+    "v8.trans-whip-up.v8c2"
+   ]
+  },
+  {
+   "id": "v8.text-status-type-on",
+   "category": "text",
+   "description": "a light-grey status word beside the agent name types on letter by letter with a feathered front",
+   "instances": [
+    [
+     920,
+     958
+    ],
+    [
+     956,
+     980
+    ],
+    [
+     1332,
+     1342
+    ]
+   ],
+   "reference_frames": [
+    920,
+    937,
+    958,
+    1342
+   ],
+   "measured": {
+    "duration_frames": 38,
+    "easing": "stepped, constant rate (not fitted)",
+    "values": "S02 row 1: x 548 -> 743 px (195 px = 12.0% W), 5.1 px/f = 3.5 f per letter for 11 letters (scratch/v8c2_S02_row1_status_front.csv); S05: 139 px in about 15 f (9 px/f); S02 row 2: front 725 -> 779 px (f958 -> f980), ease-out, faint last letters darken to about f990 (scratch/v8c2_S02_row2_status_front.csv)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v8.text-stream-reveal",
+   "category": "text",
+   "description": "message, heading and checklist text streams in left to right at a constant rate; each new letter arrives light and blurred and darkens behind the front (trailing gradient of 2-3 words); lines cascade one after another",
+   "instances": [
+    [
+     958,
+     990
+    ],
+    [
+     1333,
+     1346
+    ],
+    [
+     1334,
+     1352
+    ],
+    [
+     1338,
+     1346
+    ],
+    [
+     1348,
+     1362
+    ],
+    [
+     1364,
+     1382
+    ],
+    [
+     1426,
+     1436
+    ]
+   ],
+   "reference_frames": [
+    958,
+    982,
+    1334,
+    1346,
+    1352,
+    1382,
+    1426,
+    1436
+   ],
+   "measured": {
+    "duration_frames": 13,
+    "easing": "near-linear: bezier(1.000, 1.083, 0.033, -0.098) D=13 (rmse 0.031), S05 heading",
+    "values": "S05 heading front 445 -> 1288 px (f1334 -> f1346), 75-80 px/f (4.8% W/f); sub-line 46 px/f; checklist lines 40-55 px/f, each starting 2 f after the previous completes (f1338, f1348, f1364); S02 row 2 line 1 about 52 px/f; S06 new line about 85 px/f with darkest ink 168 -> 15 over f1426-f1467 (scratch/v8c2_S05_*_front.csv, v8c2_S02_row2_body_front.csv, v8c2_S06_newline_front.csv, v8c2_S06_line_luma.csv)"
+   },
+   "curves": [
+    "v8.text-stream-reveal.v8c2"
+   ]
+  },
+  {
+   "id": "v8.cam-scroll-exit-up",
+   "category": "cam",
+   "description": "the whole layout drifts up with a strong ease-in into the next cut, no settle (the cut lands while it moves); the S02 instance is the outgoing half of the whip f980-f1030; the S05 instance (42 f, ending at 8.5 px/f in a punch-in) is twice as long and half as fast as S02, like the S03 pre-cut drift into the f1266 punch-in: probably a second technique (a slow drift into a punch-in)",
+   "instances": [
+    [
+     980,
+     1002
+    ],
+    [
+     1252,
+     1262
+    ],
+    [
+     1370,
+     1420
+    ],
+    [
+     1446,
+     1468
+    ]
+   ],
+   "reference_frames": [
+    980,
+    994,
+    1002,
+    1394,
+    1420
+   ],
+   "measured": {
+    "duration_frames": 22,
+    "easing": "bezier(0.348, 0.104, 0.814, 0.084) D=23 (rmse 0.011), S02 instance (v8.cam-scroll-exit-up.v8c2); S05 instance bezier(0.780, 0.049, 0.857, 0.275) D=51, built 41 f, measured 42 f (f1378-f1420), rmse 0.010 (v8.cam-scroll-exit-up-2.v8c2; the repeated pictures f1419/f1421 excluded)",
+    "values": "S02: row 1 centre 222 -> 104 px (24.2% -> 11.3% H), 1.5 -> 17 px/f; S05: heading centre 349.5 (rest f1362-f1370) -> 264.5 px (f1420), 0.3 -> 8.5 px/f (scratch/v8c2_S05_heading.csv -> v8c2_S05_exit.csv); S03 pre-cut: card top 54 -> 31 px, 1.5 -> 4.5 px/f; S06: 1.5 -> 15 px/f by f1468"
+   },
+   "curves": [
+    "v8.cam-scroll-exit-up.v8c2",
+    "v8.cam-scroll-exit-up-2.v8c2"
+   ]
+  },
+  {
+   "id": "v8.ui-card-rise-deblur-in",
+   "category": "ui",
+   "description": "a post card enters at a hidden cut low, slightly small and defocused, then rises, grows and sharpens with a strong ease-out, no overshoot; it is the incoming half of the blur-through whip f980-f1030 (v8.trans-whip-up)",
+   "instances": [
+    [
+     1004,
+     1030
+    ]
+   ],
+   "reference_frames": [
+    1004,
+    1007,
+    1008,
+    1010,
+    1012,
+    1024,
+    1030
+   ],
+   "measured": {
+    "duration_frames": 26,
+    "easing": "bezier(0.125, 0.693, 0.341, 0.781) D=25 (built 24 f, rmse 0.021); spring {187.7, 32.44} rmse 0.109 (top edge as the mean of both top corners). Refitted in review round 2: the earlier fit on the left top corner over f1004-f1046 ran into the card's yaw (from f1024 the left corner rises 80 -> 74 px while the right one sinks 82 -> 85 px) and gave 42 f and bezier(0.000, 0.386, 0.000, 1.152) D=62 with a false overshoot",
+    "values": "top edge (mean of both top corners) 145 -> 79.7 px (15.8% -> 8.7% H; rest 79.0-80.5 px f1032-f1060), settled f1030; bottom edge 898 -> 841.3 px, settled f1024; Gaussian sigma 6.5 px (0.40% W) at f1004 -> 1.0 at f1010 -> 0.5 at f1012 (blur match, scratch/v8c2_S03_entry_blur.csv); width 852 -> 884 px (52.5% -> 54.5% W) by f1028 (scratch/v8c2_S03_card_rise_yawfree.csv from scratch/v8c2_S03_card_geom_no1007.csv)"
+   },
+   "curves": [
+    "v8.ui-card-rise-deblur-in.v8c2"
+   ]
+  },
+  {
+   "id": "v8.ui-status-pill-drop-in",
+   "category": "ui",
+   "description": "a status pill (light capsule with a 1-line label) and its mascot drop in from the upper right with a very fast ease-out; in S03 along a curved path (y settles first, x slides on), in S04 along a straight diagonal",
+   "instances": [
+    [
+     1007,
+     1030
+    ],
+    [
+     1266,
+     1286
+    ]
+   ],
+   "reference_frames": [
+    1007,
+    1008,
+    1010,
+    1014,
+    1018,
+    1024,
+    1030,
+    1266,
+    1272,
+    1276,
+    1286
+   ],
+   "measured": {
+    "duration_frames": 17,
+    "easing": "distance along the path (S03): bezier(0.022, 1.104, 0.794, 0.940) D=20 (built 17 f, rmse 0.005); spring {792.4, 56.43} rmse 0.175; components: y bezier(0.036, 1.116, 1.000, 0.960) D=12 (11 f, rmse 0.024), x bezier(0.000, 0.181, 0.425, 0.989) D=23 (23 f, rmse 0.046). S04 (straight diagonal, path distance, repeated pictures f1267/f1269 left out): bezier(0.272, 1.087, 0.921, 0.950) D=21, 20 f, rmse 0.026; spring {321.5, 36.18} rmse 0.081; not stored. Re-tracked in review round 2: the earlier y-only curve failed both fits (rmse 0.054 / 0.193)",
+    "values": "S03: pill centre x 77.4% / y 19.8% (f1007; right end about 32 px beyond the frame edge) -> x 66.2% / y 51.8% (f1030; pill x 675-1471, y 405-546 = 797 x 142 px); y 181.5 -> 314.5 -> 389.5 -> 434.5 -> 454.5 px (f1007/f1008/f1010/f1012/f1014), settled f1018; x 1255 -> 1220 -> 1196 -> 1174 -> 1146 px, settled f1030; distance along the path 0 -> 137.5 (f1008) -> 216.2 (f1010) -> 294.0 (f1014) -> 340.3 (f1024) -> 345.8 px (f1030), then a slow drift down about 0.5 px/f (scratch/v8c2_S03_pill_dropin_path.csv from scratch/v8c2_S03_pill.csv, which tracks a 420 x 72 px box on the label's left part: pill centre = box centre + 163 px x, -0.5 px y); S04: x 69.5% / y 63.7% (f1266) -> x 62.6% / y 77.7% (f1290; pill 830 x 133 px = 51.2% W x 14.5% H, x 602-1433 at f1310), 113 px left and 128 px down, path 0 -> 55.2 (f1268) -> 113.2 (f1272) -> 143.7 (f1276) -> 166.4 (f1284) -> 170.7 px (f1290), label sharp from f1274 (scratch/v8c2_S04_pill_dropin_path.csv from scratch/v8c2_S04_pill.csv: pill centre = box centre + 95 px x, -2 px y)"
+   },
+   "curves": [
+    "v8.ui-status-pill-drop-in.v8c2"
+   ]
+  },
+  {
+   "id": "v8.3d-card-turn-recede",
+   "category": "3d",
+   "description": "the post card yaws with its left edge toward the camera, then recedes and slides left with accelerating speed; the pill foreshortens with the card plane",
+   "instances": [
+    [
+     1024,
+     1092
+    ]
+   ],
+   "reference_frames": [
+    1024,
+    1050,
+    1056,
+    1066,
+    1077,
+    1092
+   ],
+   "measured": {
+    "duration_frames": 53,
+    "easing": "bezier(0.909, 0.263, 0.396, 1.002) D=64 (rmse 0.019); spring {21.4, 6.44} rmse 0.437",
+    "values": "yaw 0 -> 26.5 deg (edge-height ratio right/left 1.00 -> 0.87; angle derived with a pinhole fit f = 2618 px, about 34 deg horizontal FOV); then depth scale 0.98 -> 0.80 and centre x 739.8 -> 562.7 px (45.6% -> 34.7% W), 3 -> 11 px/f (scratch/v8c2_S03_card_geom.csv, v8c2_S03_card_rot.csv)"
+   },
+   "curves": [
+    "v8.3d-card-turn-recede.v8c2"
+   ]
+  },
+  {
+   "id": "v8.card-deck-flip-stack",
+   "category": "card",
+   "description": "a new post card slams onto the front of a 3D stack every 4 frames; its first picture is larger and further right, settling into the stack on the next picture; the stack grows to the left beyond the frame",
+   "instances": [
+    [
+     1094,
+     1174
+    ]
+   ],
+   "reference_frames": [
+    1094,
+    1096,
+    1102,
+    1105,
+    1140,
+    1162,
+    1174
+   ],
+   "measured": {
+    "duration_frames": 80,
+    "easing": "constant rate (21 cards in 80 f; intervals 4, with 5/3 jitter)",
+    "values": "arrival/settled front-card height ratio 1.013-1.119, right-edge offset +13 to +121 px; front-card height (settled) 609 -> 668 px (f1096 -> f1108), then 485 px at f1140; the stack's left end leaves the frame at f1124; card content repeats from f1162 (scratch/v8c2_S03_stack_geom.csv, v8c2_S03_deck_settled.csv)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v8.cam-push-in-accelerating",
+   "category": "cam",
+   "description": "the camera pushes into the card deck with a strong ease-in that ends in the oversized landing of the last card",
+   "instances": [
+    [
+     1140,
+     1174
+    ]
+   ],
+   "reference_frames": [
+    1140,
+    1156,
+    1164,
+    1172,
+    1174
+   ],
+   "measured": {
+    "duration_frames": 28,
+    "easing": "bezier(0.011, 0.084, 0.327, -0.156) D=26 (rmse 0.029), ease-in only",
+    "values": "front-card height 485 -> 785 px (52.8% -> 85.5% H, x1.62), right edge 726 -> 1343 px (44.8% -> 82.8% W); last card at f1174 cut by the right frame edge, top at 26 px"
+   },
+   "curves": [
+    "v8.cam-push-in-accelerating.v8c2"
+   ]
+  },
+  {
+   "id": "v8.cam-pull-back-settle",
+   "category": "cam",
+   "description": "after the oversized landing the camera eases back until the card sits at its rest size",
+   "instances": [
+    [
+     1176,
+     1220
+    ]
+   ],
+   "reference_frames": [
+    1176,
+    1178,
+    1190,
+    1210,
+    1220
+   ],
+   "measured": {
+    "duration_frames": 38,
+    "easing": "spring {55.2, 29.03} (rmse 0.048); bezier(0.000, 0.386, 0.495, 0.934) D=39 (rmse 0.053)",
+    "values": "card right edge >= 1621 px (f1176, clipped) -> 1595 (f1178) -> 1223 px (f1220), 98.3% -> 75.4% W"
+   },
+   "curves": [
+    "v8.cam-pull-back-settle.v8c2"
+   ]
+  },
+  {
+   "id": "v8.ui-status-pill-rise-level",
+   "category": "ui",
+   "description": "the status pill and its mascot rise in through the bottom edge, tilted in the plane of the 3D stack, and level out as the view returns to front-on",
+   "instances": [
+    [
+     1176,
+     1240
+    ]
+   ],
+   "reference_frames": [
+    1184,
+    1192,
+    1216,
+    1230,
+    1240
+   ],
+   "measured": {
+    "duration_frames": 48,
+    "easing": "not fitted (noisy angle)",
+    "values": "tilt -5.2 deg (f1192, right end up) -> -3.4 (f1216) -> -1.2 (f1230) -> -0.15 deg (f1240); pill centre y about 838 -> 779 px (f1192 -> f1220) (scratch/v8c2_S03_pill2_tilt.csv)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v8.card-stack-collapse",
+   "category": "card",
+   "description": "the cards behind the front card fold into it within a few pictures and the front card ends exactly on the first card's rest frame",
+   "instances": [
+    [
+     1223,
+     1230
+    ]
+   ],
+   "reference_frames": [
+    1223,
+    1224,
+    1226,
+    1228,
+    1230
+   ],
+   "measured": {
+    "duration_frames": 7,
+    "easing": "not fitted (4 pictures)",
+    "values": "stack left end x 0 -> 50 -> 151 -> 325 -> 372 px (f1223, f1224, f1226, f1228, f1230); rest card x 369-1250 px vs 366-1250 px for the first card (f1030)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v8.ui-status-pill-drift",
+   "category": "ui",
+   "description": "the status pill and its mascot drift slowly against the card (parallax-like counter-move)",
+   "instances": [
+    [
+     1230,
+     1258
+    ],
+    [
+     1296,
+     1324
+    ]
+   ],
+   "reference_frames": [
+    1230,
+    1258,
+    1296,
+    1324
+   ],
+   "measured": {
+    "duration_frames": 28,
+    "easing": "near-linear (not fitted)",
+    "values": "S03: pill centre y 788 -> 830 px (42 px = 4.6% H down) while the card top rises 55 -> 46 px; S04: 715 -> 695 px (20 px up) while the card slides out left"
+   },
+   "curves": []
+  },
+  {
+   "id": "v8.fx-shimmer-sweep",
+   "category": "fx",
+   "description": "when a status pill comes to rest, a soft diagonal light band at page white (248 over the pill's 231 fill, clipped to the fill) grows out of the pill's left end, crosses it with an ease-in-out and leaves through the right end; the band is 2.5 x the pill height wide and slanted with its lower end leading; the label glyphs stay dark",
+   "instances": [
+    [
+     1042,
+     1059
+    ],
+    [
+     1240,
+     1256
+    ],
+    [
+     1284,
+     1304
+    ]
+   ],
+   "reference_frames": [
+    1042,
+    1046,
+    1050,
+    1054,
+    1240,
+    1244,
+    1248,
+    1252,
+    1284,
+    1290,
+    1299,
+    1302,
+    1304
+   ],
+   "measured": {
+    "duration_frames": 16,
+    "easing": "band centre bezier(0.581, 0.167, 0.450, 0.786) D=17 (built 16 f), rmse 0.004; spring {199.6, 21.38} rmse 0.262 (S03 re-entered pill f1240-f1256, the clean instance). S04 f1284-f1304: 18 f, bezier(1.000, 0.342, 0.562, 0.523) D=17 rmse 0.024 on raw picture times, bezier(0.816, 0.130, 0.712, 0.733) D=19 rmse 0.002 with the jittered pictures f1293/f1299 read as f1292/f1298 (not stored, 2 f longer). S03 first pill f1042-f1059: 15-17 f, rmse 0.058 (pill turning with the card; not stored)",
+    "values": "band = fill pixels >= 8 luma lighter than a band-free picture aligned on the label, read in a strip about 5-20 px under the pill's top edge (rows 2-17 of the 3 px-eroded fill); plateau luma 248 (page white) over the 231 fill, half-max width 354 / 370 / 332 px (21.8 / 22.8 / 20.5% W) on pills 142 / 150 / 133 px tall (2.5 x the height); soft edges 30-80 px; the strip above the bottom edge runs 53-73 px ahead (about 25-30 deg from vertical). S03 first pill (x 676-1458): 676-683 (f1042) -> 677-993 (f1049) -> 872-1225 (f1050) -> 1104-1448 (f1052) -> 1340-1441 (f1056), gone f1059, peak about 116 px/f (scratch/v8c2_S03_shimmer1.csv, _centre.csv). S03 re-entered pill (x 592-1432): 593-613 (f1240) -> 592-791 (f1244) -> 838-1207 (f1248) -> 1079-1430 (f1250) -> 1356-1432 (f1254), gone f1256; band centre 407 -> 1615 px, per picture 10.5, 33, 56, 84, 124, 121, 86, 52 px/f (scratch/v8c2_S03_shimmer2.csv, _centre.csv). S04 pill (x 602-1433): 604-608 (f1284) -> 603-683 (f1290) -> 609-927 (f1296) -> 764-1097 (f1299) -> 1017-1346 (f1300) -> 1272-1427 (f1302), gone f1304; band centre 437 -> 1593 px, peak about 125 px/f (scratch/v8c2_S04_shimmer.csv, _centre.csv). Starts 14 f after the S03 drop-in stops, as the re-entered pill finishes levelling, and 4 f before the S04 drop-in settles; label template scores 0.92-0.99 through the sweeps (glyphs unchanged)"
+   },
+   "curves": [
+    "v8.fx-shimmer-sweep.v8c2"
+   ]
+  },
+  {
+   "id": "v8.cam-punch-in-cut-settle",
+   "category": "cam",
+   "description": "hard cut to a x2.4-2.5 closer framing of the same layout; the new framing arrives low and still rising and settles with a strong ease-out",
+   "instances": [
+    [
+     1266,
+     1288
+    ],
+    [
+     1422,
+     1446
+    ]
+   ],
+   "reference_frames": [
+    1263,
+    1266,
+    1268,
+    1288,
+    1420,
+    1422,
+    1426,
+    1446
+   ],
+   "measured": {
+    "duration_frames": 21,
+    "easing": "bezier(0.152, 1.121, 0.914, 0.955) D=24 (rmse 0.036), S04; S06 instance bezier(0.170, 1.020, 0.889, 0.918) D=20 (rmse 0.025, not stored)",
+    "values": "S04: x2.5 (template scale 0.40 +-0.01), caption block centre 314 -> 159 px (34.2% -> 17.3% H), 23.5 px/f at the cut (scratch/v8c2_S04_punch_scale.csv); S06: x2.38 (scale 0.42 +-0.01), line centre 399 -> 316 px (43.5% -> 34.4% H), 10.5 px/f at the cut (scratch/v8c2_S06_punch_scale.csv, v8c2_S06_line2.csv)"
+   },
+   "curves": [
+    "v8.cam-punch-in-cut-settle.v8c2"
+   ]
+  },
+  {
+   "id": "v8.cam-slide-exit-left",
+   "category": "cam",
+   "description": "a close-up slides out to the left with an ease-in into the cut while the status pill stays put",
+   "instances": [
+    [
+     1299,
+     1324
+    ]
+   ],
+   "reference_frames": [
+    1299,
+    1316,
+    1320,
+    1324
+   ],
+   "measured": {
+    "duration_frames": 25,
+    "easing": "bezier(0.507, 0.041, 0.890, 0.112) D=30 (rmse 0.019), ease-in only",
+    "values": "caption block centre x 560 -> 409 px (34.5% -> 25.2% W), 0.5 -> 22 px/f (scratch/v8c2_S04_exit.csv)"
+   },
+   "curves": [
+    "v8.cam-slide-exit-left.v8c2"
+   ]
+  },
+  {
+   "id": "v8.cam-slide-in-left-settle",
+   "category": "cam",
+   "description": "hard cut on leftward motion: the new layout arrives still sliding left, continuing the ease-in exit of the shot before (v8.cam-slide-exit-left), and settles with a strong ease-out; a pure translation, no scale; everything in the layout rides it",
+   "instances": [
+    [
+     1327,
+     1352
+    ]
+   ],
+   "reference_frames": [
+    1327,
+    1328,
+    1330,
+    1332,
+    1336,
+    1346,
+    1352,
+    1355
+   ],
+   "measured": {
+    "duration_frames": 25,
+    "easing": "bezier(0.047, 1.057, 0.705, 0.958) D=29 (built 23 f, rmse 0.019); spring {339.2, 54.11} rmse 0.170; the band's right edge alone bezier(0.068, 1.154, 0.944, 0.948) D=29 (rmse 0.022); the same settle shape as the whip-in and punch-in settles",
+    "values": "left edge of the ghost card band (luma 236 crossing on rows y 140-160): 223.9 (f1327) -> 209.5 (f1328) -> 199.5 (f1330) -> 192.5 (f1332) -> 188.3 (f1334) -> 184.8 (f1336) -> 181.3 (f1341) -> 178.1 (f1346) -> 177.4 (f1352) -> 176.8 px (f1355-f1370) = 47 px (2.9% W) left, 14.4 px in the first frame (S04 left at 22 px/f); right edge 1607.7 -> 1562.7 px, width 1384-1387 px; the mascot, header row and heading ride it (scratch/v8c2_S05_layout_slide.csv)"
+   },
+   "curves": [
+    "v8.cam-slide-in-left-settle.v8c2"
+   ]
+  },
+  {
+   "id": "v8.icon-mascot-pop-slide",
+   "category": "icon",
+   "description": "at a cut the mascot appears as a small dot and grows to full size about a point fixed in the layout while riding the layout's incoming move (here the cut-in slide v8.cam-slide-in-left-settle); the same use as v8c1 and v8c4",
+   "instances": [
+    [
+     1327,
+     1338
+    ]
+   ],
+   "reference_frames": [
+    1327,
+    1328,
+    1330,
+    1332,
+    1334,
+    1336,
+    1338
+   ],
+   "measured": {
+    "duration_frames": 9,
+    "easing": "bezier(0.000, 0.238, 0.000, 0.907) D=10 (built 9 f, rmse 0.008); spring {1626.6, 83.84} rmse 0.154 (area-equivalent scale). Refitted in review round 2: the earlier curve on the mascot's screen left edge (260 -> 183 px, bezier(0.033, 1.081, 0.916, 0.943) D=18) mixed the growth with the 47 px layout slide",
+    "values": "area-equivalent size (square root of the dark-ink area) 15.8 -> 77.3 px, scale 0.20 (f1327, a 20 x 19 px dot at x 16.6% / y 30.4%) -> 0.60 (f1328) -> 0.80 (f1330) -> 0.90 (f1332) -> 0.96 (f1334) -> 0.99 (f1336) -> 1.0 (f1338, 91 x 98 px); ink height 19 -> 59 -> 78 -> 88 -> 94 -> 96 -> 98 px (free of the horizontal motion blur); ink centre relative to the ghost band's left edge 46.2 -> 50.0 px (f1327 -> f1334, then 49.7-50.6) while the screen ink centre goes 270 -> 227 px with the slide; centre y fixed 278 px (scratch/v8c2_S05_mascot_vs_layout.csv)"
+   },
+   "curves": [
+    "v8.icon-mascot-pop-slide.v8c2"
+   ]
+  },
+  {
+   "id": "v8.ui-ghost-card-band",
+   "category": "ui",
+   "description": "the previous post card returns flattened and ghosted as a band at the top of the next layout, as context above the new message; it rides the layout's cut-in slide, then holds",
+   "instances": [
+    [
+     1327,
+     1404
+    ]
+   ],
+   "reference_frames": [
+    1327,
+    1352,
+    1395
+   ],
+   "measured": {
+    "duration_frames": 77,
+    "easing": "no fade; position rides v8.cam-slide-in-left-settle (bezier(0.047, 1.057, 0.705, 0.958) D=29), then static",
+    "values": "fill luma 224 on the 248 page through f1327-f1411 (scratch/v8c2_S05_ghostcard_luma.csv); y 0-175 px (0-19.1% H) at f1352; left edge 223.9 -> 176.8 px and right edge 1607.7 -> 1562.7 px (f1327 -> f1355), width constant 1384-1387 px (scratch/v8c2_S05_layout_slide.csv); later rides the page drift up"
+   },
+   "curves": []
+  },
+  {
+   "id": "v8.icon-activity-spinner",
+   "category": "icon",
+   "description": "small light 8-spoke activity spinners turn beside checklist lines while they stream in",
+   "instances": [
+    [
+     1338,
+     1461
+    ]
+   ],
+   "reference_frames": [
+    1436,
+    1440,
+    1450,
+    1460
+   ],
+   "measured": {
+    "duration_frames": 123,
+    "easing": "UNCERTAIN: rotation rate not measurable (8-fold symmetry aliases at the picture cadence)",
+    "values": "spoke luma about 215-230 on 248; spinner about 60 px wide at x2.38 (crops/crop_385_255_80x80_01436-01461.jpg)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v8.text-status-fade-sweep",
+   "category": "text",
+   "description": "after its type-on has settled, a soft lightening front crosses the light-grey status word left to right; the letters behind it fall to about half their ink; it is still running when the punch-in cut f1422 comes, so whether they re-darken (a slow shimmer band) or stay light (a fade-out wipe) is not visible",
+   "instances": [
+    [
+     1388,
+     1421
+    ]
+   ],
+   "reference_frames": [
+    1386,
+    1388,
+    1394,
+    1400,
+    1406,
+    1412
+   ],
+   "measured": {
+    "duration_frames": 34,
+    "easing": "near-linear front, not fitted (one word, 5 bin crossings before the exit blur)",
+    "values": "darkest ink (0.5th percentile luma) in 9 bins over x 528-672 (word x 529-668, 1 word of 9 letters, cap 23 px), row followed with a name-label template: 124-131 in every bin f1378-f1386 -> 140/142/131/129/130/126/130/128/124 (f1388) -> 157/152/143/138/133/129/130/128/125 (f1394) -> 166/160/153/145/137/129/129/128/124 (f1400) -> 181/181/163/150/147/139/130/128/124 (f1406) -> 188/191/184/172/165/160/143/140/135 (f1412); mean ink of the first three bins 0.49-0.54 of rest by f1412, last bin 0.93; front 3.5-4.4 px/f (crossings of +10 to +30 luma), about 4 f per letter; the name label beside it stays at 16-19 through f1412 (no motion blur); f1414-f1421 carry the exit's vertical motion blur (name label 23-26) (scratch/v8c2_S05_status_bins.csv)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v8.text-focus-dim",
+   "category": "text",
+   "description": "older lines fade back while a new line streams in and darkens, moving the reading focus to the new row",
+   "instances": [
+    [
+     1422,
+     1467
+    ]
+   ],
+   "reference_frames": [
+    1422,
+    1436,
+    1450,
+    1467
+   ],
+   "measured": {
+    "duration_frames": 45,
+    "easing": "gradual (not fitted)",
+    "values": "darkest ink (0.5th percentile luma): line two rows up 165 -> 235, line above 106 -> 136, new line 168 -> 15 over f1422-f1467 (scratch/v8c2_S06_line_luma.csv)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v8.bg-dot-grid-drift",
+   "category": "bg",
+   "description": "a dot grid on the page behind the 3D cards fades in, drifts left at one constant rate whatever the camera does (its spacing and speed ignore the deck's zoom and push), and switches off within one picture; it is denser at the centre than toward the edges and its rows bow outward at their ends (a wide-angle projection of a flat grid or a curved grid: geometry UNCERTAIN)",
+   "instances": [
+    [
+     1074,
+     1202
+    ]
+   ],
+   "reference_frames": [
+    1072,
+    1074,
+    1077,
+    1080,
+    1086,
+    1094,
+    1100,
+    1140,
+    1168,
+    1200,
+    1202
+   ],
+   "measured": {
+    "duration_frames": 128,
+    "easing": "fade-in f1074-f1094 not fitted (contrast spans about 11 luma levels and arrives in steps: trial fits rmse 0.10 / 0.26); drift linear (constant rate); switch-off within one picture (f1200 full, f1202 faint traces only)",
+    "values": "absent f1006-f1072 (uncovered page flat 248); first faint dots f1074 (cores 239-245); full contrast by f1094 (core luma median 237-238, 10th percentile 234-236, darkest 230-232 at f1100-f1160), the left third about 6 f later; top-right page patch x 1250-1622 / y 0-330: dot ink 16% (f1077) -> 54% (f1080) -> 61% (f1086-f1091) -> 80% (f1092) -> 98% (f1094) of its hold value 12,600 +-530, 34-38 dots, 741-902 dot pixels below 242 (scratch/v8c2_S03_dotgrid_contrast.csv). Spacing (nearest neighbour, f1094-f1168, constant per region): centre 41.0-41.3 px, top 45-47, bottom 44-47, right 48-49, top-right 51.5-52.3, left 53-58 px; horizontal neighbours 63-74 px apart at the side edges against 49-57 px vertically (scratch/v8c2_S03_dotgrid_spacing.csv). Drift (f1084-f1168, scratch/v8c2_S03_dotgrid_drift.csv): x -2.7 px/f (0.17% W/f) at the centre, -3.0 at the top and bottom, -4.1 at the right edge, -4.6 px/f at the left edge = 0.063-0.066 local horizontal spacing per frame everywhere; y +0.5 px/f in the top-right, -0.2 px/f at the right edge; during the pull-back (f1176-f1200) -5.0 to -5.2 px/f on the right, -4.5 at the left edge. Off: 115 faint local minima (depth up to 11 luma) at f1200, 33 (depth 3-7) at f1202 (f1201 repeats f1200); specks in the top-left page corner then stay frozen at constant contrast (237-244) without drifting and vanish together at f1216, read as a capture remnant (scratch/v8c2_S03_dotgrid_faint_minima.csv; luma-stretched sheets scratch/v8c2_S03_dotgrid_fadein_f1072-f1100_luma236-249.png, v8c2_S03_dotgrid_hold_off_f1140-f1206_luma236-249.png, v8c2_S03_dotgrid_off_topright_f1196-f1214_luma236-249.png)"
+   },
+   "curves": []
+  }
+ ],
+ "typography_stills": [
+  "type/v8c2-S01-1_f00741.png",
+  "type/v8c2-S01-1_f00748.png",
+  "type/v8c2-S01-1_f00760.png",
+  "type/v8c2-S01-1_f00771.png",
+  "type/v8c2-S01-2_f00883.png",
+  "type/v8c2-S01-2_f00896.png",
+  "type/v8c2-S01-2_f00911.png",
+  "type/v8c2-S02-1_f00920.png",
+  "type/v8c2-S02-1_f00960.png",
+  "type/v8c2-S02-1_f01002.png",
+  "type/v8c2-S02-2_f00958.png",
+  "type/v8c2-S02-2_f00984.png",
+  "type/v8c2-S02-2_f01002.png",
+  "type/v8c2-S03-1_f01007.png",
+  "type/v8c2-S03-1_f01030.png",
+  "type/v8c2-S03-1_f01092.png",
+  "type/v8c2-S03-2_f01184.png",
+  "type/v8c2-S03-2_f01236.png",
+  "type/v8c2-S03-2_f01263.png",
+  "type/v8c2-S03-3_f01049.png",
+  "type/v8c2-S03-4_f01248.png",
+  "type/v8c2-S04-1_f01266.png",
+  "type/v8c2-S04-1_f01290.png",
+  "type/v8c2-S04-1_f01324.png",
+  "type/v8c2-S04-2_f01286.png",
+  "type/v8c2-S04-2_f01299.png",
+  "type/v8c2-S04-2_f01304.png",
+  "type/v8c2-S05-1_f01334.png",
+  "type/v8c2-S05-1_f01352.png",
+  "type/v8c2-S05-1_f01420.png",
+  "type/v8c2-S05-2_f01338.png",
+  "type/v8c2-S05-2_f01382.png",
+  "type/v8c2-S05-2_f01420.png",
+  "type/v8c2-S05-3_f01386.png",
+  "type/v8c2-S05-3_f01400.png",
+  "type/v8c2-S05-3_f01412.png",
+  "type/v8c2-S06-1_f01426.png",
+  "type/v8c2-S06-1_f01440.png",
+  "type/v8c2-S06-1_f01461.png"
+ ],
+ "uncertain": [
+  {
+   "what": "card yaw angle and depth scale",
+   "range": "f1024-f1092",
+   "reason": "derived from the measured edge heights with a pinhole model whose focal length (2315-2800 px per frame, mean 2618 px) is itself fitted; the edge-height ratio is the direct measurement"
+  },
+  {
+   "what": "status pill drop-in start",
+   "range": "f1004-f1007",
+   "reason": "the pill is absent at f1004 and f1005-f1006 repeat f1004; the first picture f1007 is taken as the start of the move, any motion before it is not visible (the path-distance fit from there has rmse 0.005)"
+  },
+  {
+   "what": "pull-back start",
+   "range": "f1174-f1178",
+   "reason": "the card is clipped by the frame edge until f1178; capture jitter (f1181/f1182 and f1195/f1196 one frame apart) keeps the fit rmse at 0.048-0.053"
+  },
+  {
+   "what": "S04 pill label blur",
+   "range": "f1266-f1271",
+   "reason": "pictures too smeared for the blur matcher (score below 0.8); only sharp-from-f1274 is measured"
+  },
+  {
+   "what": "S01 double-row flick",
+   "range": "f858-f870",
+   "reason": "vertical blur too heavy for the row-profile tracker; values from the row-5 and row-6 mascot templates"
+  },
+  {
+   "what": "S01 row pitch",
+   "range": "f760-f884",
+   "reason": "rows settle individually; content moves 259-277 px per item cycle and 232-233 px in each fast step"
+  },
+  {
+   "what": "spinner rotation rate",
+   "range": "f1338-f1461",
+   "reason": "8-fold symmetric spinner aliases at the 1-3 frame picture cadence"
+  },
+  {
+   "what": "per-card deck arrival motion",
+   "range": "f1094-f1174",
+   "reason": "each card has only 2 pictures (arrival, settled); no curve"
+  },
+  {
+   "what": "fonts",
+   "range": "f734-f1461",
+   "reason": "the original UI typeface cannot be identified from the grayscale capture; closest free family given (Inter)"
+  },
+  {
+   "what": "sound-sync offsets",
+   "range": "f734-f1461",
+   "reason": "the capture's audio delay is unknown"
+  },
+  {
+   "what": "eye-swap frames in S03/S04",
+   "range": "f1194-f1289",
+   "reason": "f1194, f1214, f1240, f1289 are read off overview sheets (every 3rd frame), +-2 f; f1306 and f1420 are measured on the eye-ink count (255 -> 1045 px at f1306, 447 -> 142 px at f1420, scratch/v8c2_mascot_eye_glance.csv)"
+  },
+  {
+   "what": "S05 status word after its lightening front (re-darkening or not)",
+   "range": "f1388-f1421",
+   "reason": "the front is still inside the word when the exit's motion blur sets in (f1414) and the punch-in cut f1422 replaces the picture"
+  },
+  {
+   "what": "right-end edges of the first S03 shimmer",
+   "range": "f1052-f1059",
+   "reason": "the pill foreshortens with the turning card (reference scaled 1.000 -> 0.955 in x); the f1059-f1066 hits at the pill's right end are its outline, not the band; that instance fits only to rmse 0.058 and is not stored"
+  },
+  {
+   "what": "S04 shimmer timing",
+   "range": "f1293-f1300",
+   "reason": "f1293/f1294 and f1299/f1300 are one analysis frame apart inside a 2-frame cadence (capture jitter); the raw and re-timed fits differ by 2 f in D"
+  },
+  {
+   "what": "shimmer band width while clipped by the pill ends",
+   "range": "f1042-f1304",
+   "reason": "both band edges are inside the pill in only one picture per sweep (f1050, f1248, f1299-f1300); the band centre before and after is the measured edge -+ that width / 2"
+  },
+  {
+   "what": "dot grid geometry and fade-in curve",
+   "range": "f1074-f1200",
+   "reason": "only the screen-space spacing and drift are measured (denser at the centre, rows bowing outward, the same drift per local spacing everywhere): a wide-angle (pincushion-like) projection of a flat grid or a grid on a curved surface would both fit; the fade-in has no curve because its contrast spans about 11 luma levels and arrives in steps (trial fits rmse 0.10 / 0.26)"
+  },
+  {
+   "what": "faint static specks after the dot grid switch-off",
+   "range": "f1202-f1215",
+   "reason": "they keep constant contrast (luma 237-244), do not drift and vanish together at f1216; read as a capture/compression remnant of the switched-off grid, not a designed fade"
+  },
+  {
+   "what": "eye glance easing",
+   "range": "f1364-f1380 (S05 out), f932-f948, f1312-f1324, f1437-f1448",
+   "reason": "the S05 outgoing glide fits only to rmse 0.09-0.16 (slow creep f1364-f1369, then fast) and the S02, S04 and S06 glances to 0.08-0.34 (7-11 px travels on centroids quantised to 0.1 px); only the S05 return glide is stored"
+  }
+ ],
+ "notes": [
+  "Timing: VFR screen recording on the 60 fps grid; pictures 1-3 frames apart in this range (local_fps 26.6-40.3); +-1 frame capture jitter in all durations.",
+  "Detector index drift on this file: c033 5 f early (real change f1094), c046 4 f early (real cut f1266), c049 8 f early (real cut f1470 = c050, v8c3's range); decisions were made on the pictures.",
+  "Missed boundaries found on the sheets and in the trackers: the whip with a hidden cut f914 (f887-f934), the punch-in hard cut f1422, and (review pass) the soft range f980-f1030 around c031 (f980-f1034 before review round 2): f1004 is the hidden cut of a second, blur-through whip, not a plain hard cut (both sides of the cut are blurred: sharpness 5.0 at f1002, 3.0 at f1004); v8c3 kept f1470 a hard cut because its outgoing picture is sharp.",
+  "Arrival settles share one shape: whip-in bezier(0.169, 1.033, 0.910, 0.977) D=22, punch-in S04 (0.152, 1.121, 0.914, 0.955) D=24, punch-in S06 (0.170, 1.020, 0.889, 0.918) D=20, S05 cut-in slide (0.047, 1.057, 0.705, 0.958) D=29 (the earlier mascot pop-slide fit (0.033, 1.081, 0.916, 0.943) D=18 on the mascot's left edge was this slide mixed with the mascot's growth; the growth alone is (0.000, 0.238, 0.000, 0.907) D=10). Exits share a strong ease-in: S01 whip-out (0.031, 0.039, 1.000, 0.266) D=24, S02 (0.348, 0.104, 0.814, 0.084) D=23, S04 slide (0.507, 0.041, 0.890, 0.112) D=30, S05 (0.780, 0.049, 0.857, 0.275) D=51 (42 f measured; stored as v8.cam-scroll-exit-up-2.v8c2 with the repeated pictures f1419/f1421 excluded; it replaces the earlier text-only fit (0.455, 0.076, 0.819, 0.065) D=42, which had no curve file).",
+  "S01 and S02 are zoomed views of one app shown full-size in v8c1 (sidebar list, chat panel); the whip jumps between them.",
+  "The status pill is a screen-space layer: its label keeps the same size (cap 31-36 px) across the x2.5 punch-in while the card scales.",
+  "S06 continues into v8c3: its accelerating upward drift (15 px/f at f1468) ends in the hard cut f1470 (c050), decided there.",
+  "Footage (the still photos inside the post cards) is not described; the player's speaker icon is ignored.",
+  "Status pills get a page-white shimmer sweep each time they come to rest (f1042, f1240, f1284; v8.fx-shimmer-sweep, shared with v8c4/v8c5); the band is 2.5 x the pill height wide on all three pills (354/142, 370/150, 332/133 px).",
+  "Status pill sizes and centres were corrected on review: the pill trackers follow a box on the label's left part, so pill centres are the box centres + 163 px (S03) / + 95 px (S04) in x; pills measured on luma profiles through the centre row: S03 797 x 142 px (f1030), re-entered 838-844 x 150 px, S04 830 x 133 px.",
+  "Review fix, round 2: (1) S03 background dot grid f1074-f1200 added (v8.bg-dot-grid-drift; trackers scratch/v8c2_S03_dotgrid_contrast.csv, v8c2_S03_dotgrid_drift.csv, v8c2_S03_dotgrid_spacing.csv, v8c2_S03_dotgrid_faint_minima.csv; luma-stretched sheets scratch/v8c2_S03_dotgrid_*_luma236-249.png); (2) the S05 entrance is a whole-layout slide (v8.cam-slide-in-left-settle, curve v8.cam-slide-in-left-settle.v8c2, scratch/v8c2_S05_layout_slide.csv) and the mascot pop curve was refitted on the mascot's area-equivalent scale (scratch/v8c2_S05_mascot_vs_layout.csv); (3) mascot eye glances in S02, S04, S05, S06 and the S05 eye swap f1420 added (v8.icon-mascot-eye-glance, v8c1's id; curve v8.icon-mascot-eye-glance.v8c2); (4) segments tiled by the protocol's floor((a+b)/2) rule like v8c1 and v8c3: S01 f734-f910, S02 f911-f1005, S03 f1006-f1265; (5) the incoming card rise refitted on the mean of both top corners (26 f, f1004-f1030, no overshoot), which moves the soft transition's end from f1034 to f1030 (new window detail/soft_980-1030); (6) v8.text-label-fade-slide.v8c2 re-tracked on the title's x (sub-pixel template) and v8.ui-status-pill-drop-in.v8c2 on the distance along the pill's path, both now passing the fit sanity rule."
+ ]
+}

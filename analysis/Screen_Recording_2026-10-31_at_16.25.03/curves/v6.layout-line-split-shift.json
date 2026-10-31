@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.layout-line-split-shift",
+  "file": "curves/v6.layout-line-split-shift.csv",
+  "property": "position-x",
+  "unit": "px of the 1622 px picture width (1237 -> 1598 = +22.3% W)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c2_R2_line2.csv",
+  "column": "x1",
+  "sampled_frames": [
+    976,
+    1016
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1237.0,
+  "to_value": 1598.0,
+  "active_frames": [
+    983,
+    1003
+  ],
+  "measured_duration_frames": 20,
+  "bezier": {
+    "x1": 1.0,
+    "y1": -0.0362,
+    "x2": 0.0,
+    "y2": 0.9658,
+    "durationInFrames": 28,
+    "delay": -5.434,
+    "built_duration_frames": 16,
+    "rmse": 0.033
+  },
+  "spring": {
+    "stiffness": 4370.479,
+    "damping": 142.999,
+    "mass": 1,
+    "damping_ratio": 1.0815,
+    "built_duration_frames": 6,
+    "rmse": 0.2548
+  },
+  "recommended": "bezier",
+  "note": "S11 reflow 2: line 2 (2 words) right edge shifts right while line 1 shifts left (line 1 x0 240 -> 58 = -11.2% W, starts ~6 f earlier); arrow slides in from the left into the gap (tip 625 at f998 -> 659 at f1008)"
+}

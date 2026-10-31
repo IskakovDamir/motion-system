@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.footage-card-zoom-to-full",
+ "file": "curves/v8.footage-card-zoom-to-full.csv",
+ "property": "scale",
+ "unit": "scale factor of the footage card (1.0 = full frame 1622 px wide), centred at x 50.0%, y 50.0%",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c1_card_scale_174-206.csv",
+ "column": "scale",
+ "sampled_frames": [
+  174,
+  206
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 0.0506,
+ "to_value": 0.9994,
+ "active_frames": [
+  174,
+  200
+ ],
+ "measured_duration_frames": 26,
+ "bezier": {
+  "x1": 0.0006,
+  "y1": 0.3218,
+  "x2": 0.3356,
+  "y2": 0.978,
+  "durationInFrames": 29,
+  "delay": -0.0,
+  "built_duration_frames": 25,
+  "rmse": 0.0184
+ },
+ "spring": {
+  "stiffness": 149.515,
+  "damping": 30.133,
+  "mass": 1,
+  "damping_ratio": 1.2322,
+  "built_duration_frames": 28,
+  "rmse": 0.0651
+ },
+ "recommended": "bezier",
+ "note": "footage card emerges at the frame centre at f174 (82 px wide, first picture) and grows to full frame; bbox of the dark card on white (scratch/v8c1_card_172-186.csv, v8c1_card_179-206.csv, combined in v8c1_card_scale_174-206.csv)",
+ "chunk_curve_id": "v8.footage-card-zoom-to-full.v8c1"
+}

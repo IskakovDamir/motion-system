@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-whip-push-left.i14",
+  "file": "curves/v7.trans-whip-push-left.i14.csv",
+  "property": "position-x",
+  "unit": "% of frame width (a word of line 2 in the x1.86 close-up; 33.9% -> 16.8% W)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p4_word5_3214-3262.csv",
+  "column": "cx_pct",
+  "sampled_frames": [
+    3214,
+    3254
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 33.909,
+  "to_value": 16.831,
+  "active_frames": [
+    3214,
+    3246
+  ],
+  "measured_duration_frames": 32,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.207,
+    "x2": 0.2842,
+    "y2": 1.0092,
+    "durationInFrames": 39,
+    "delay": 0.0,
+    "built_duration_frames": 32,
+    "rmse": 0.0116
+  },
+  "spring": {
+    "stiffness": 85.212,
+    "damping": 35.442,
+    "mass": 1,
+    "damping_ratio": 1.9197,
+    "built_duration_frames": 37,
+    "rmse": 0.0486
+  },
+  "recommended": "bezier",
+  "note": "incoming half of the whip P3 -> P4 (punch-in): the hard cut at f3214 jumps to a x1.86 closer framing of the end of line 2 (word width 156 -> 290 px) at the same height (line centre 49.6% H), arriving 277 px (17.1% W) right of its rest and already moving left at ~33 px/frame (2.0% W) with heavy horizontal motion blur; decelerates to rest by ~f3252 (close-up held until f3256); template on one word (ref f3245, scale 0.96 -> 1.00); f3214 score 0.66 (blurred)"
+}

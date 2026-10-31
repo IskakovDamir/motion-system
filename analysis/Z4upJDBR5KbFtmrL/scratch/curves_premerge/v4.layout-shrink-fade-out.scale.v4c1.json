@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.layout-shrink-fade-out.scale.v4c1",
+  "file": "curves/v4.layout-shrink-fade-out.scale.v4c1.csv",
+  "property": "scale",
+  "unit": "scale factor about each window's own centre",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/t3_exit.csv",
+  "column": "scale",
+  "sampled_frames": [
+    712,
+    731
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 1.0,
+  "to_value": 0.9438,
+  "active_frames": [
+    720,
+    731
+  ],
+  "measured_duration_frames": 11,
+  "bezier": {
+    "x1": 0.3652,
+    "y1": 0.0143,
+    "x2": 0.6552,
+    "y2": 0.1381,
+    "durationInFrames": 13,
+    "delay": -2.0,
+    "built_duration_frames": 11,
+    "rmse": 0.0024
+  },
+  "spring": {
+    "stiffness": 527.089,
+    "damping": 242.035,
+    "mass": 1,
+    "damping_ratio": 5.2712,
+    "built_duration_frames": 16,
+    "rmse": 0.3704
+  },
+  "recommended": "bezier",
+  "note": "S3 exit shrink, right card width from edge tracks; f731 is the last visible frame, so 0.944 is the last measured scale, not a settled value"
+}

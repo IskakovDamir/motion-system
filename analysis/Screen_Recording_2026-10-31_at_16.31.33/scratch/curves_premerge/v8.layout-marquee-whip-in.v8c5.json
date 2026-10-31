@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.layout-marquee-whip-in.v8c5",
+  "file": "curves/v8.layout-marquee-whip-in.v8c5.csv",
+  "property": "position-x",
+  "unit": "px (picture 1622 px wide), row position minus the constant marquee drift of -7.5 px/f",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c5r_Sc_row_corr.csv",
+  "column": "row_x_minus_marquee",
+  "sampled_frames": [
+    3242,
+    3340
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": -1623.0,
+  "active_frames": [
+    3243,
+    3286
+  ],
+  "measured_duration_frames": 43,
+  "bezier": {
+    "x1": 0.0015,
+    "y1": 0.8356,
+    "x2": 0.3634,
+    "y2": 0.9284,
+    "durationInFrames": 49,
+    "delay": 0.0,
+    "built_duration_frames": 42,
+    "rmse": 0.0207
+  },
+  "spring": {
+    "stiffness": 132.076,
+    "damping": 43.193,
+    "mass": 1,
+    "damping_ratio": 1.8792,
+    "built_duration_frames": 30,
+    "rmse": 0.2163
+  },
+  "recommended": "bezier",
+  "note": "S-c: after the hard cut f3242 the row of portrait footage cards (card 457 px = 28.2% W wide, 818 px = 89.1% H tall, gap 30 px, pitch 487.5 px = 30.1% W, top 6.3% H) arrives from the right at about 290 px/f and decelerates into a constant leftward marquee scroll of 7.5 px/f (0.46% W per frame), reached by about f3300. Row x integrated from the white gaps between cards (scratch/v8c5r_Sc_row.csv); the fitted column subtracts the steady 7.5 px/f so the ease-out settles to a constant (-1623 px). Speeds: 290 (f3242-f3244), 146 (to f3246), 83 (to f3248), 59 (to f3250), 31-78 (f3250-f3254, capture jitter), 34 (f3256), 27 (f3260), 21.5 (f3264), 17 (f3270), 14 (f3278), 11 (f3286), 9 (f3298), 7.5 px/f from f3300."
+}

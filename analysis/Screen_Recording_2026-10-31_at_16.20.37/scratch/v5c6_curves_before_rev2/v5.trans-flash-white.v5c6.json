@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.trans-flash-white.v5c6",
+  "file": "curves/v5.trans-flash-white.v5c6.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (median of frame, speaker icon excluded)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c6_flash_cover.csv",
+  "column": "median",
+  "sampled_frames": [
+    3995,
+    4015
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 224.0,
+  "active_frames": [
+    3997,
+    4015
+  ],
+  "measured_duration_frames": 18,
+  "bezier": {
+    "x1": 0.8906,
+    "y1": 1.3577,
+    "x2": 0.2098,
+    "y2": 0.218,
+    "durationInFrames": 14,
+    "delay": 2.415,
+    "built_duration_frames": 14,
+    "rmse": 0.0885
+  },
+  "spring": {
+    "stiffness": 303.649,
+    "damping": 34.9,
+    "mass": 1,
+    "damping_ratio": 1.0014,
+    "built_duration_frames": 21,
+    "rmse": 0.1444
+  },
+  "recommended": "bezier",
+  "note": "white flash out of the origami/space scene, ramp-up half: the third shockwave ring is born at the crane convergence point (f4000) and the frame blooms to near white (median luma 0 -> 224, white coverage >150: 13% -> 100% at f4015); the picture is replaced under the white between f4012 and f4015 (cut c113). Ramp-down half (exposure recovery + focus pull, f4015-f4025) is v5.fx-exposure-recover"
+}

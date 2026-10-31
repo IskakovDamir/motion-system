@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-line-slide-blur.i2",
+  "file": "curves/v5.text-line-slide-blur.i2.csv",
+  "property": "position-x",
+  "unit": "% of frame width",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_line2_core_pct.csv",
+  "column": "x0_p",
+  "sampled_frames": [
+    716,
+    735
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 68.249,
+  "to_value": 25.647,
+  "active_frames": [
+    716,
+    730
+  ],
+  "measured_duration_frames": 14,
+  "bezier": {
+    "x1": 0.5439,
+    "y1": 0.1649,
+    "x2": 0.1878,
+    "y2": 0.6587,
+    "durationInFrames": 11,
+    "delay": 0.581,
+    "built_duration_frames": 11,
+    "rmse": 0.0678
+  },
+  "spring": {
+    "stiffness": 650.594,
+    "damping": 43.019,
+    "mass": 1,
+    "damping_ratio": 0.8433,
+    "built_duration_frames": 10,
+    "rmse": 0.0661
+  },
+  "recommended": "spring",
+  "note": "headline line 2 (2 words) left ink edge; pops in at f716 glowing at rest with its left edge at 68.2% (tail off the right edge), accelerates left with horizontal motion blur, settles at 25.6% by f730; then a slow drift of about +0.1%/frame. Line 1 (f702-f716, from the left edge, right ink edge 11.8%->62.5%) has the same shape and 14-frame duration. Per-sample bezier residuals are ~0; the shape RMSE is inflated by the 2-3 frame sampling at the window ends."
+}

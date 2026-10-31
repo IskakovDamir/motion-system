@@ -1,0 +1,18 @@
+frame,unique,k,chip1_cx,chip1_cy,expected_left,left_end,u,u_minus_rest,label_left,label_minus_left_k,method
+862,1,1.6470,815.50,458.85,1332.16,1520.00,427.75,114.05,,,"difference f862 - f860: zero for x <= 1516, chip fill replaces the background gradient from x 1520-1524 (rows 360-560); faint, low contrast"
+865,1,1.6035,815.50,436.89,1318.52,1339.71,326.92,13.22,,,fill-run edge in the chip-row profile
+867,1,1.4902,815.50,385.92,1282.98,1278.71,310.84,-2.86,1553,184.06,fill-run edge in the chip-row profile
+870,1,1.3359,815.50,311.28,1234.57,1209.17,294.68,-19.02,1460,187.76,fill-run edge in the chip-row profile
+872,1,1.1742,815.50,247.98,1183.85,1170.12,302.01,-11.69,1394,190.67,fill-run edge in the chip-row profile
+875,1,1.0872,815.50,209.79,1156.55,1153.54,310.93,-2.77,1356,186.22,fill-run edge in the chip-row profile
+877,1,1.0415,815.50,188.94,1142.22,1144.63,316.01,2.31,1334,181.83,fill-run edge in the chip-row profile
+880,1,1.0045,815.50,176.43,1130.61,1138.31,321.37,7.67,1321,181.87,fill-run edge in the chip-row profile
+882,1,0.9951,815.50,170.37,1127.66,1133.32,319.38,5.68,1314,181.57,fill-run edge in the chip-row profile
+885,1,1.0000,815.50,168.87,1129.20,1130.47,314.97,1.27,1312,181.53,fill-run edge in the chip-row profile
+887,1,1.0002,815.50,170.59,1129.26,1129.46,313.90,0.20,1311,181.51,fill-run edge in the chip-row profile
+890,1,1.0004,815.50,175.72,1129.33,1129.08,313.45,-0.25,1311,181.85,fill-run edge in the chip-row profile
+892,1,1.0001,815.50,185.97,1129.23,1129.07,313.54,-0.16,1311,181.91,fill-run edge in the chip-row profile
+895,1,1.0003,815.50,204.73,1129.29,1129.20,313.60,-0.10,1311,181.75,fill-run edge in the chip-row profile
+905,1,1.0003,815.50,461.21,1129.29,1134.99,319.40,5.70,1311,175.96,fill-run edge in the chip-row profile
+907,1,1.0004,815.50,448.43,1129.33,1129.34,313.71,0.01,1311,181.59,fill-run edge in the chip-row profile
+911,1,1.0000,815.50,458.01,1129.20,1129.17,313.67,-0.03,1311,181.83,fill-run edge in the chip-row profile

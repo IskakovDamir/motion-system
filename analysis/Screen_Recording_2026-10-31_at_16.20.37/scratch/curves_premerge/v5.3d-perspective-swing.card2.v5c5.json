@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.3d-perspective-swing.card2.v5c5",
+  "file": "curves/v5.3d-perspective-swing.card2.v5c5.csv",
+  "property": "perspective-taper",
+  "unit": "px: top edge of footage card 2 at x840-900 minus at x1220-1280 (median of sub-pixel column edges, bands 380 px apart; 26 px = 3.9 deg edge slope)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_E_swing.csv",
+  "column": "c2_top_diff_sub",
+  "sampled_frames": [
+    3730,
+    3770
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.87,
+  "to_value": 26.03,
+  "active_frames": [
+    3732,
+    3750
+  ],
+  "measured_duration_frames": 18,
+  "bezier": {
+    "x1": 0.8435,
+    "y1": 0.8351,
+    "x2": 0.0,
+    "y2": 0.5477,
+    "durationInFrames": 14,
+    "delay": 2.288,
+    "built_duration_frames": 14,
+    "rmse": 0.0677
+  },
+  "spring": {
+    "stiffness": 325.984,
+    "damping": 30.803,
+    "mass": 1,
+    "damping_ratio": 0.853,
+    "built_duration_frames": 15,
+    "rmse": 0.0926
+  },
+  "recommended": "bezier",
+  "note": "card 2 swings into perspective right after it lands: the left (inner) end of its top edge drops 133 -> 166 px while the right end stays (x1450: 127-132 px); its bottom edge's right end rises 599 -> 573 px; side heights at rest 425 px (x860) and 445 px (x1500); its x edges stay at 818 / 1561 px; starts f3735 (landing), settles by f3750"
+}

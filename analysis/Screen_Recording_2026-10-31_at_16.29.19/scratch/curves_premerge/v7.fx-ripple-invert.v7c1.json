@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.fx-ripple-invert.v7c1",
+  "file": "curves/v7.fx-ripple-invert.v7c1.csv",
+  "property": "mask",
+  "unit": "px radius of the inverting ripple front (picture 1622x918; 932 px = frame corners)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_ripple1_radius.csv",
+  "column": "radius_px",
+  "sampled_frames": [
+    124,
+    151
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 932.0,
+  "active_frames": [
+    126,
+    146
+  ],
+  "measured_duration_frames": 20,
+  "bezier": {
+    "x1": 0.4446,
+    "y1": 0.2198,
+    "x2": 0.3593,
+    "y2": -0.165,
+    "durationInFrames": 18,
+    "delay": 0.685,
+    "built_duration_frames": 18,
+    "rmse": 0.0488
+  },
+  "spring": {
+    "stiffness": 140.873,
+    "damping": 16.058,
+    "mass": 1,
+    "damping_ratio": 0.6765,
+    "built_duration_frames": 30,
+    "rmse": 0.4838
+  },
+  "recommended": "bezier",
+  "note": "soft white halo ring born around the lead ball at the box centre (f129) expands and inverts luminance inside it (box turns white, background black); azimuthal-average luma profile around (811,459): halo peak f129-f139, 50% front f141-f144, frame covered from f146; a second identical ring (f139 r62 -> f151 r~805) restores normal polarity"
+}

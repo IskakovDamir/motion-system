@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.trans-whip-left.v8c3",
+  "file": "curves/v8.trans-whip-left.v8c3.csv",
+  "property": "position-x",
+  "unit": "% of frame width",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c3_ins_headline_1924-1990.csv",
+  "column": "x0_pct",
+  "sampled_frames": [
+    1928,
+    1966
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 21.332,
+  "to_value": 15.968,
+  "active_frames": [
+    1928,
+    1955
+  ],
+  "measured_duration_frames": 27,
+  "bezier": {
+    "x1": 0.0237,
+    "y1": 0.2687,
+    "x2": 0.3045,
+    "y2": 1.0036,
+    "durationInFrames": 29,
+    "delay": 0.661,
+    "built_duration_frames": 24,
+    "rmse": 0.0225
+  },
+  "spring": {
+    "stiffness": 150.82,
+    "damping": 26.909,
+    "mass": 1,
+    "damping_ratio": 1.0956,
+    "built_duration_frames": 28,
+    "rmse": 0.0411
+  },
+  "recommended": "bezier",
+  "note": "S04 -> S05 whip left, incoming half: left edge of the bold headline's ink (bbox of pixels darker than 188 over y 270-317, scratch/v8c3_ins_headline_1924-1990.csv). The headline is revealed left to right within about 5 frames (right end of ink 775 px at f1928, 1172 px at f1932) while the block slides in from the right (x0 346 px at f1928) and decelerates (18, 15, 11, 9, 8, 6 px per picture) to rest at 259 px (16.0% W) by about f1958; f1927 skipped (only two faint letters). The sub-line and list items follow with a cascade (scratch/v8c3_ins_luma_*.csv, scratch/v8c3_ins_sub_1928-1962.csv, scratch/v8c3_ins_item1_1928-1962.csv)."
+}

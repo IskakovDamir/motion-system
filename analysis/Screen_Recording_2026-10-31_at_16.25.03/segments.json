@@ -1,0 +1,340 @@
+{
+  "video": "Screen_Recording_2026-10-31_at_16.25.03",
+  "key": "v6",
+  "fps": 60,
+  "frame_count": 1809,
+  "segments": [
+    {
+      "id": "S01",
+      "start": 0,
+      "end": 6,
+      "length_frames": 7,
+      "class": "MIXED",
+      "boundary_in": "video-start",
+      "boundary_out": "T01",
+      "summary": "capture pre-roll, not part of the promo: the player shows the previous post of the feed (footage with a small burned-in caption, feed side panel with text lines and avatar placeholders); static"
+    },
+    {
+      "id": "S02",
+      "start": 7,
+      "end": 7,
+      "length_frames": 1,
+      "class": "GRAPHICS",
+      "boundary_in": "T01",
+      "boundary_out": "T02",
+      "summary": "capture pre-roll, not part of the promo: one black loading picture with the player's play triangle"
+    },
+    {
+      "id": "S03",
+      "start": 8,
+      "end": 12,
+      "length_frames": 5,
+      "class": "MIXED",
+      "boundary_in": "T02",
+      "boundary_out": "T03",
+      "summary": "capture pre-roll, not part of the promo: poster of this post (footage still with a white brand mark and wordmark overlay), play triangle at f8-f9"
+    },
+    {
+      "id": "S04",
+      "start": 13,
+      "end": 133,
+      "length_frames": 121,
+      "class": "GRAPHICS",
+      "boundary_in": "T03",
+      "boundary_out": "T04",
+      "summary": "title lockup on a near-white dotted field: the brand icon draws on as one stroke, wordmark letters fly in from all four frame edges onto a low line that rises into place, a monospace label drops in, a pill rises from the bottom edge, the brand row types on and re-centres (one echo-trail picture), braces spring in from the sides; slow linear zoom-out drift during the hold while the field blobs breathe and drift (about 70 f per cycle); anticipation dip and accelerating exit up while the blobs and the dense dot grid fade out"
+    },
+    {
+      "id": "S05",
+      "start": 134,
+      "end": 214,
+      "length_frames": 81,
+      "class": "GRAPHICS",
+      "boundary_in": "T04",
+      "boundary_out": "T05",
+      "summary": "huge 2-word headline rises from below with an opacity blink, pans left 41.7% W while a third word types on letter by letter just inside the right edge (about 5 f per letter), then zooms out x0.40 to the full centred line with another blink; the blobs fade back in on the sparser dot grid and drift"
+    },
+    {
+      "id": "S06",
+      "start": 215,
+      "end": 313,
+      "length_frames": 99,
+      "class": "MIXED",
+      "boundary_in": "T05",
+      "boundary_out": "T06",
+      "summary": "split layout: top words and a big lower word around a flat row of slightly turned, rounded footage cards that scrolls left with a speed ramp and speeds up again in the last 2 pictures before the punch-in stutter; the field blobs keep breathing; re-layout puts the top words in the corner and the lower word bottom left; a 2-line sub-caption types on at the right"
+    },
+    {
+      "id": "S07",
+      "start": 314,
+      "end": 445,
+      "length_frames": 132,
+      "class": "MIXED",
+      "boundary_in": "T06",
+      "boundary_out": "T07",
+      "summary": "2-line stat headline enters oversized and scales down while it types on left to right (line 1 grey part f324-f328, its black word f331-f337, then line 2), rises to the top band as a footage-tiled globe rises from the bottom edge and spins; a caption types on at the bottom; slow drift, then an accelerating pull-back cut off by a hard cut; the field blobs keep breathing until the cut, after which the field is static"
+    },
+    {
+      "id": "S08",
+      "start": 446,
+      "end": 536,
+      "length_frames": 91,
+      "class": "GRAPHICS",
+      "boundary_in": "T07",
+      "boundary_out": "T08",
+      "summary": "2-line title: small top line warps in from the top-left corner, big grey word enters oversized with a per-letter fade; the block rises and a 3-node diagram (card, link icon, card with gradient cones) pops in left to right, the left card's icon scaling in with an overshoot; thin edge lines grow in from both frame edges to the cards; long ease-in drift up into the push"
+    },
+    {
+      "id": "S09",
+      "start": 537,
+      "end": 838,
+      "length_frames": 302,
+      "class": "MIXED",
+      "boundary_in": "T08",
+      "boundary_out": "T09",
+      "summary": "3D phone mockup with a footage screen lands, pushes in, turns about 44 degrees and explodes into 4 parallel UI/footage layers; one layer flashes, wireframe edges draw on; camera orbit-push, dolly reframe, dolly back with parallax and pull-back between holds; the stack collapses, fans out the other way and whips out to the left"
+    },
+    {
+      "id": "S10",
+      "start": 839,
+      "end": 919,
+      "length_frames": 81,
+      "class": "GRAPHICS",
+      "boundary_in": "T09",
+      "boundary_out": "T10",
+      "summary": "2-line title (grey figure + word / black word) with a letter-spaced caption: the figure whips in from the right, 15 f later the word enters hugely oversized (about x3.6) and shrinks to rest in 10 f, travelling in from the right; the block rises and scales down while the black second line rises and types on, the caption rises in; hold with a slow push-in drift (+0.03% per frame, f876-f901), then the block accelerates out of the top edge into the push"
+    },
+    {
+      "id": "S11",
+      "start": 920,
+      "end": 1074,
+      "length_frames": 155,
+      "class": "GRAPHICS",
+      "boundary_in": "T10",
+      "boundary_out": "T11",
+      "summary": "phone mock-up rises in with a 3-word headline whose words rise from below 5-6 f apart; two reflows (words rise one line while line 2 rises in black; lines split to the left and right edges as an arrow slides in, line 2 turns grey in a left-to-right tone sweep and the phone punches in x1.22 with a one-picture speed step); echo outlines are revealed down from the top edge, widen with the punch-in and soften into shaded shapes; phone-screen swap with a luminance flicker; slow push-in drift; then the lines whip out in a split (line 1 left word by word, line 2 and the arrow right) while the phone pulls back into the zoom-through"
+    },
+    {
+      "id": "S12",
+      "start": 1075,
+      "end": 1181,
+      "length_frames": 107,
+      "class": "MIXED",
+      "boundary_in": "T11",
+      "boundary_out": "T12",
+      "summary": "grid of phone mock-ups whose screens carry product UI with footage thumbnails: lands with oversized phones (x1.14) under radial blur that shrink while the grid's spacing opens (outer phones move outward, f1083-f1106); from f1108 a uniform camera pull-back with a speed ramp (x0.97 -> x0.61, burst f1116-f1126), short hold, then an accelerating pan left into a whip"
+    },
+    {
+      "id": "S13",
+      "start": 1182,
+      "end": 1310,
+      "length_frames": 129,
+      "class": "GRAPHICS",
+      "boundary_in": "T12",
+      "boundary_out": "T13",
+      "summary": "2-line headline (grey / black) whips in word by word from the right over a plain dotted field, then shrinks x0.64 and slides aside as a dial slides in from the right edge while soft background blobs fade in (top left from f1223, bottom right about f1236); the dial's knob travels 175 deg while counter digits roll with a fast-forward burst; slow drift, then an accelerating pull-back cut at x0.69"
+    },
+    {
+      "id": "S14",
+      "start": 1311,
+      "end": 1516,
+      "length_frames": 206,
+      "class": "GRAPHICS",
+      "boundary_in": "T13",
+      "boundary_out": "T14",
+      "summary": "closing title of the promo, re-running the opening lockup build of S04 (letters converge from the frame edges from the cut picture f1311, brand icon stroke draw-on f1313-f1323, label drop, pill rise, brand row type-on, braces spring in); long hold with a slow zoom-out drift, background blobs and dots fade out, the wordmark dims, anticipation dip and exit up, empty field"
+    },
+    {
+      "id": "S15",
+      "start": 1517,
+      "end": 1640,
+      "length_frames": 124,
+      "class": "GRAPHICS",
+      "boundary_in": "T14",
+      "boundary_out": "T15",
+      "summary": "player loop: picture-for-picture replay of S04 (f15-f133): lockup build (letters, brand icon draw-on f1525-f1532, label, pill, brand row, braces), hold with drift, anticipation exit into the push while the blobs and dots fade out"
+    },
+    {
+      "id": "S16",
+      "start": 1641,
+      "end": 1722,
+      "length_frames": 82,
+      "class": "GRAPHICS",
+      "boundary_in": "T15",
+      "boundary_out": "T16",
+      "summary": "replay of S05 (f134-f214): huge 2-word headline rises with a blink, pans while the third word types on letter by letter at the leading edge (about 5 f per letter), zooms out to a centred line with a blink, then splits; the blobs fade back in"
+    },
+    {
+      "id": "S17",
+      "start": 1723,
+      "end": 1808,
+      "length_frames": 86,
+      "class": "MIXED",
+      "boundary_in": "T16",
+      "boundary_out": "video-end",
+      "summary": "replay of S06 (f216-f301): words around a flat row of slightly turned, rounded footage cards; re-layout, sub-caption type-on, card row scroll with a speed ramp; the recording ends inside it"
+    }
+  ],
+  "transitions": [
+    {
+      "id": "T01",
+      "type": "hard-cut",
+      "start": 7,
+      "end": 7,
+      "frames": 0,
+      "from": "S01",
+      "to": "S02",
+      "technique": null
+    },
+    {
+      "id": "T02",
+      "type": "hard-cut",
+      "start": 8,
+      "end": 8,
+      "frames": 0,
+      "from": "S02",
+      "to": "S03",
+      "technique": null
+    },
+    {
+      "id": "T03",
+      "type": "hard-cut",
+      "start": 13,
+      "end": 13,
+      "frames": 0,
+      "from": "S03",
+      "to": "S04",
+      "technique": null
+    },
+    {
+      "id": "T04",
+      "type": "push",
+      "start": 113,
+      "end": 153,
+      "frames": 41,
+      "from": "S04",
+      "to": "S05",
+      "technique": "v6.trans-push-up"
+    },
+    {
+      "id": "T05",
+      "type": "morph",
+      "start": 206,
+      "end": 223,
+      "frames": 18,
+      "from": "S05",
+      "to": "S06",
+      "technique": "v6.trans-split-morph"
+    },
+    {
+      "id": "T06",
+      "type": "punch-in-stutter",
+      "start": 303,
+      "end": 323,
+      "frames": 21,
+      "from": "S06",
+      "to": "S07",
+      "technique": "v6.trans-punch-in-stutter"
+    },
+    {
+      "id": "T07",
+      "type": "hard-cut",
+      "start": 446,
+      "end": 446,
+      "frames": 0,
+      "from": "S07",
+      "to": "S08",
+      "technique": "v6.cam-pull-back-cut"
+    },
+    {
+      "id": "T08",
+      "type": "push",
+      "start": 521,
+      "end": 551,
+      "frames": 31,
+      "from": "S08",
+      "to": "S09",
+      "technique": "v6.trans-push-up-ease-in"
+    },
+    {
+      "id": "T09",
+      "type": "whip",
+      "start": 823,
+      "end": 853,
+      "frames": 31,
+      "from": "S09",
+      "to": "S10",
+      "technique": "v6.trans-whip-left"
+    },
+    {
+      "id": "T10",
+      "type": "push",
+      "start": 903,
+      "end": 936,
+      "frames": 34,
+      "from": "S10",
+      "to": "S11",
+      "technique": "v6.trans-push-up"
+    },
+    {
+      "id": "T11",
+      "type": "zoom-through",
+      "start": 1058,
+      "end": 1091,
+      "frames": 34,
+      "from": "S11",
+      "to": "S12",
+      "technique": "v6.trans-zoom-through"
+    },
+    {
+      "id": "T12",
+      "type": "whip",
+      "start": 1156,
+      "end": 1206,
+      "frames": 51,
+      "from": "S12",
+      "to": "S13",
+      "technique": "v6.trans-whip-left"
+    },
+    {
+      "id": "T13",
+      "type": "hard-cut",
+      "start": 1311,
+      "end": 1311,
+      "frames": 0,
+      "from": "S13",
+      "to": "S14",
+      "technique": "v6.cam-pull-back-cut"
+    },
+    {
+      "id": "T14",
+      "type": "hard-cut",
+      "start": 1517,
+      "end": 1517,
+      "frames": 0,
+      "from": "S14",
+      "to": "S15",
+      "technique": null
+    },
+    {
+      "id": "T15",
+      "type": "push",
+      "start": 1621,
+      "end": 1660,
+      "frames": 40,
+      "from": "S15",
+      "to": "S16",
+      "technique": "v6.trans-push-up"
+    },
+    {
+      "id": "T16",
+      "type": "morph",
+      "start": 1715,
+      "end": 1730,
+      "frames": 16,
+      "from": "S16",
+      "to": "S17",
+      "technique": "v6.trans-split-morph"
+    }
+  ]
+}

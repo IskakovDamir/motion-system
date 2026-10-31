@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.ui-pill-rise.v6c1",
+  "file": "curves/v6.ui-pill-rise.v6c1.csv",
+  "property": "position-y",
+  "unit": "px (picture 918 px high), centre of the pill's ink box",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_title_pill.csv",
+  "column": "cy",
+  "sampled_frames": [
+    33,
+    51
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 883.0,
+  "to_value": 803.5,
+  "active_frames": [
+    35,
+    43
+  ],
+  "measured_duration_frames": 8,
+  "bezier": {
+    "x1": 0.042,
+    "y1": 0.9789,
+    "x2": 0.042,
+    "y2": 0.8437,
+    "durationInFrames": 8,
+    "delay": 0.631,
+    "built_duration_frames": 7,
+    "rmse": 0.0424
+  },
+  "spring": {
+    "stiffness": 12675.057,
+    "damping": 266.54,
+    "mass": 1,
+    "damping_ratio": 1.1837,
+    "built_duration_frames": 4,
+    "rmse": 0.1536
+  },
+  "recommended": "bezier",
+  "note": "dark-grey pill with a white 3-word label rises from below the bottom edge into place under the title: first picture f33 cut by the frame edge (box 849-917 px, centre >= 883), then centre 836.5 / 813 / 806 / 804 / 803.5 px at f36 / 38 / 42 / 46 / 51; afterwards only the slow drift of the whole lockup; median-filtered ink box at luma < 150; samples before f33 are empty (pill below the frame)"
+}

@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.fx-pixel-smear-sweep",
+ "file": "curves/v8.fx-pixel-smear-sweep.csv",
+ "property": "position-x",
+ "unit": "px (band centre x; 1622 px = 100% W)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c1_glitchband_380-429.csv",
+ "column": "band_cx",
+ "sampled_frames": [
+  396,
+  422
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 1015.0,
+ "to_value": 686.1,
+ "active_frames": [
+  398,
+  420
+ ],
+ "measured_duration_frames": 22,
+ "bezier": {
+  "x1": 0.5325,
+  "y1": 0.3631,
+  "x2": 0.0,
+  "y2": 0.7165,
+  "durationInFrames": 24,
+  "delay": -0.041,
+  "built_duration_frames": 23,
+  "rmse": 0.0231
+ },
+ "spring": {
+  "stiffness": 276.988,
+  "damping": 36.453,
+  "mass": 1,
+  "damping_ratio": 1.0951,
+  "built_duration_frames": 22,
+  "rmse": 0.097
+ },
+ "recommended": "bezier",
+ "note": "soft grey pixel-block smear born at the send button and sweeping right-to-left behind the prompt text, fading out; centre x of |frame - clean f426| inside the pill (scratch/v8c1_glitchband_380-429.csv); first picture f396-f398",
+ "chunk_curve_id": "v8.fx-pixel-smear-sweep.v8c1"
+}

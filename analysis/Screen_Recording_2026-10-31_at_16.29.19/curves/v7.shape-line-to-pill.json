@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.shape-line-to-pill",
+  "file": "curves/v7.shape-line-to-pill.csv",
+  "property": "width",
+  "unit": "px of 1622 (status capsule width; 12 px line at its first picture f3744 -> 369.5 px = 22.8% W; height 179-180 px = 19.6% H throughout)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p6_capsule_grow_nodup.csv",
+  "column": "width_px",
+  "sampled_frames": [
+    3744,
+    3792
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 12.0,
+  "to_value": 369.5,
+  "active_frames": [
+    3744,
+    3767
+  ],
+  "measured_duration_frames": 23,
+  "bezier": {
+    "x1": 0.284,
+    "y1": 0.5174,
+    "x2": 0.1077,
+    "y2": 0.9256,
+    "durationInFrames": 26,
+    "delay": -0.016,
+    "built_duration_frames": 22,
+    "rmse": 0.0163
+  },
+  "spring": {
+    "stiffness": 295.023,
+    "damping": 34.964,
+    "mass": 1,
+    "damping_ratio": 1.0178,
+    "built_duration_frames": 21,
+    "rmse": 0.0619
+  },
+  "recommended": "bezier",
+  "note": "P6 status capsule (dark glossy pill, white bold label) pops in at f3744 as a thin full-height vertical line (12 x 179 px, a sliver of the first letter inside) right of the 3D pointer, then widens to a pill while its one-word label types: 12 -> 71 / 185 / 253 / 294 / 321 / 339 / 352 / 360 / 365 / 368 / 369 px at f3744 / 3746 / 3749 / 3751 / 3754 / 3756 / 3759 / 3761 / 3765 / 3767 / 3769 / 3771; the left edge jumps 58 px right with the pointer between f3744 and f3746, then drifts 29 px left (1192 -> 1163 px) while the right edge runs out (1262 -> 1531 px); the width keeps growing 15 f after the label is complete (f3756); dark-pixel connected component (luma < background - 45), capture duplicates removed by a local picture difference (scratch/v7c5_p6_capsule_grow_nodup.csv)"
+}

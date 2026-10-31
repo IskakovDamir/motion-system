@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.trans-whip-left",
+  "file": "curves/v6.trans-whip-left.csv",
+  "property": "position-x",
+  "unit": "px of the 1622 px picture width (outgoing grid, 560 -> 320 = -14.8% W before the blur hides it)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c2_T3_gridphone.csv",
+  "column": "x",
+  "sampled_frames": [
+    1138,
+    1181
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 560.0,
+  "to_value": 320.0,
+  "active_frames": [
+    1158,
+    1181
+  ],
+  "measured_duration_frames": 23,
+  "bezier": {
+    "x1": 0.5073,
+    "y1": -0.0005,
+    "x2": 1.0,
+    "y2": 0.3354,
+    "durationInFrames": 24,
+    "delay": -2.623,
+    "built_duration_frames": 19,
+    "rmse": 0.0405
+  },
+  "spring": {
+    "stiffness": 27.7,
+    "damping": 0.5,
+    "mass": 1,
+    "damping_ratio": 0.0475,
+    "built_duration_frames": 209,
+    "rmse": 0.9196
+  },
+  "recommended": "bezier",
+  "note": "S12->S13 whip f1156-f1206, outgoing half: phone grid pans left with an accelerating ease-in (grid phone template x560-720 y300-630 ref f1146, score 0.99 -> 0.68 at f1181 under blur); at f1183 the grid is a multi-exposure smear with its right edge at x 1375 px, at f1186 its right edge is at x 1044 px over empty background (rightmost column with >40 px darker than 200); hidden cut 1186|1188; the curve ends at the last trackable picture (no settle)"
+}

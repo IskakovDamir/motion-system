@@ -1,0 +1,17 @@
+frame,unique,cy_px,cy_pct,source
+1385,1,,,not in frame (above top edge)
+1387,1,25,2.723,dense_01380-01402 tile r0c3 read-off (sphere half cut by top edge) +-15px
+1390,1,187,20.370,dense_01380-01402 tile r1c0 read-off +-10px
+1392,1,293,31.917,mean of tile read-off (279) and template (306)
+1395,1,374,40.741,dense_01380-01402 tile r1c2 read-off +-10px
+1397,1,442,48.148,dense_01380-01402 tile r1c3 read-off +-10px
+1400,1,471,51.307,template v5c2_C_sphere_mid_local (score 0.81)
+1402,1,497,54.139,template (0.95)
+1405,1,516,56.209,template (0.996)
+1407,1,530,57.734,template (0.999)
+1410,1,540,58.824,template ref
+1412,1,547,59.586,template (0.997)
+1415,1,550,59.913,template (0.994)
+1417,1,552,60.131,template (0.993)
+1420,1,552,60.131,template (0.991)
+1422,1,552,60.131,template (0.987)

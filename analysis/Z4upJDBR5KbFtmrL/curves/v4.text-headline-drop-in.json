@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.text-headline-drop-in",
+  "file": "curves/v4.text-headline-drop-in.csv",
+  "property": "opacity",
+  "unit": "mean ink (246 - luma) over the headline band x400-1520 y15-118",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/s2_headline.csv",
+  "column": "ink_mean",
+  "sampled_frames": [
+    228,
+    257
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 0.0,
+  "to_value": 26.5463,
+  "active_frames": [
+    234,
+    248
+  ],
+  "measured_duration_frames": 14,
+  "bezier": {
+    "x1": 0.2744,
+    "y1": 1.0773,
+    "x2": 0.5464,
+    "y2": 0.9808,
+    "durationInFrames": 21,
+    "delay": -0.021,
+    "built_duration_frames": 14,
+    "rmse": 0.0033
+  },
+  "spring": {
+    "stiffness": 546.152,
+    "damping": 46.888,
+    "mass": 1,
+    "damping_ratio": 1.0032,
+    "built_duration_frames": 15,
+    "rmse": 0.0582
+  },
+  "recommended": "bezier",
+  "note": "S2 headline (1 line, centred) fades in f234-f250 while dropping from ~12 px above its rest (pixel-snapped centroid 68.0 at opacity 0.19 -> 77.7); offset = 11.5 px x (1 - progress) checked at f235, f237, f239, f241"
+}

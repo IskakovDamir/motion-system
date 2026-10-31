@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.layout-slide-make-room",
+  "file": "curves/v6.layout-slide-make-room.csv",
+  "property": "position-x",
+  "unit": "px of the 1622 px picture width (headline centre 800 -> 372 = -26.4% W; scale 1.0 -> 0.64 in step)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c2_S4_headline.csv",
+  "column": "cx",
+  "sampled_frames": [
+    1211,
+    1248
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 799.0,
+  "to_value": 372.0,
+  "active_frames": [
+    1216,
+    1241
+  ],
+  "measured_duration_frames": 25,
+  "bezier": {
+    "x1": 0.8229,
+    "y1": 0.0074,
+    "x2": 0.1516,
+    "y2": 0.9962,
+    "durationInFrames": 34,
+    "delay": -4.19,
+    "built_duration_frames": 23,
+    "rmse": 0.0156
+  },
+  "spring": {
+    "stiffness": 455.0,
+    "damping": 40.019,
+    "mass": 1,
+    "damping_ratio": 0.9381,
+    "built_duration_frames": 15,
+    "rmse": 0.2127
+  },
+  "recommended": "bezier",
+  "note": "S13: settled 2-line headline slides left and shrinks (template on line 2, x400-1200 y500-675 ref f1211, scales 0.58-1.02) to make room for the dial that slides in from the right edge (dial template cx 1300 at f1236 -> 1152 at f1251; its left edge enters at f1231); blur peaks at f1228"
+}

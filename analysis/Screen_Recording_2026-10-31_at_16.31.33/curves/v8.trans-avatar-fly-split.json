@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.trans-avatar-fly-split",
+ "file": "curves/v8.trans-avatar-fly-split.csv",
+ "property": "position-x",
+ "unit": "% of frame width",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c4_T4_tile_path.csv",
+ "column": "cx_pct",
+ "sampled_frames": [
+  2468,
+  2528
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 10.296,
+ "to_value": 69.131,
+ "active_frames": [
+  2488,
+  2519
+ ],
+ "measured_duration_frames": 31,
+ "bezier": {
+  "x1": 0.7029,
+  "y1": 0.3621,
+  "x2": 0.1494,
+  "y2": 0.975,
+  "durationInFrames": 36,
+  "delay": 0.585,
+  "built_duration_frames": 28,
+  "rmse": 0.0244
+ },
+ "spring": {
+  "stiffness": 94.126,
+  "damping": 15.615,
+  "mass": 1,
+  "damping_ratio": 0.8048,
+  "built_duration_frames": 23,
+  "rmse": 0.1479
+ },
+ "recommended": "bezier",
+ "note": "chat avatar tile leaves its slot while the text dissolves, swoops right (dipping to 55% H) and grows (81 px slot -> 304 px at f2505 = x3.7 -> 388 px at f2507 = x4.8, vertical 50% height, curve v8.trans-avatar-fly-split-scale.v8c4), crosses the frame centre at peak speed (75 px/frame, f2505) where a second mascot splits off behind it to the left, then settles at 69.1% W while the pair shrinks back to 258 px (x3.2, curve v8.particle-mascot-split-scale.v8c4); f2507 excluded (both mascots merged in one blob)",
+ "chunk_curve_id": "v8.trans-avatar-fly-split.v8c4"
+}

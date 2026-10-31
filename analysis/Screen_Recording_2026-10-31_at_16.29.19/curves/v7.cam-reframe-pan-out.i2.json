@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.cam-reframe-pan-out.i2",
+  "file": "curves/v7.cam-reframe-pan-out.i2.csv",
+  "property": "scale",
+  "unit": "scale factor (1.0 = result card 1354 px = 83.5% W)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_z5_card_scale_newpic.csv",
+  "column": "scale",
+  "sampled_frames": [
+    2685,
+    2711
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.0,
+  "to_value": 0.7578,
+  "active_frames": [
+    2690,
+    2709
+  ],
+  "measured_duration_frames": 19,
+  "bezier": {
+    "x1": 0.5445,
+    "y1": 0.0276,
+    "x2": 0.349,
+    "y2": 1.112,
+    "durationInFrames": 24,
+    "delay": -1.52,
+    "built_duration_frames": 17,
+    "rmse": 0.033
+  },
+  "spring": {
+    "stiffness": 171.803,
+    "damping": 19.237,
+    "mass": 1,
+    "damping_ratio": 0.7338,
+    "built_duration_frames": 27,
+    "rmse": 0.2264
+  },
+  "recommended": "bezier",
+  "note": "reframe pull-back Z5: the whole canvas zooms out x0.755 (card 1354 x 763 px -> 1023 x 578 px, centre 803.5,458.5 -> 813,457.5) over f2689-f2711 with motion blur at peak speed (f2699-f2701), bringing line 2 back in at the top (line ink y 33-104 px, x 296-1452 px at rest, 1.06x its pre-push size); a continuous ease-in-out, not a snap; card bbox (threshold 25 over luma 17, rows below the text); the dot vignette at the card edges fades during the move; second instance in the next typed sequence: centred zoom-out of the finished line x0.84 (line width 970 -> 812 px, f3021-f3045, tail to f3069)"
+}

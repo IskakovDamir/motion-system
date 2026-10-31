@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.text-word-blur-rise.i4",
+  "file": "curves/v7.text-word-blur-rise.i4.csv",
+  "property": "position-y",
+  "unit": "px of 918 (word centre)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_cap_s2w1_tmpl.csv",
+  "column": "cy",
+  "sampled_frames": [
+    902,
+    921
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 826.0,
+  "to_value": 811.0,
+  "active_frames": [
+    903,
+    920
+  ],
+  "measured_duration_frames": 17,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.2444,
+    "x2": 0.439,
+    "y2": 0.994,
+    "durationInFrames": 19,
+    "delay": -0.0,
+    "built_duration_frames": 17,
+    "rmse": 0.0402
+  },
+  "spring": {
+    "stiffness": 238.651,
+    "damping": 29.046,
+    "mass": 1,
+    "damping_ratio": 0.9401,
+    "built_duration_frames": 20,
+    "rmse": 0.0783
+  },
+  "recommended": "bezier",
+  "note": "same word: template centre y 826 -> 811 px (rise 15 px = 1.6% H), first visible picture f902 taken as the start (true start within 1 frame before)"
+}

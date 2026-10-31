@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.shape-flare-streak-sweep.v5c5",
+  "file": "curves/v5.shape-flare-streak-sweep.v5c5.csv",
+  "property": "position-x",
+  "unit": "% of frame width (right end of the lower light streak / its sparkle)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_E_streak.csv",
+  "column": "bottom_head_pct",
+  "sampled_frames": [
+    3725,
+    3757
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 17.941,
+  "to_value": 97.287,
+  "active_frames": [
+    3725,
+    3742
+  ],
+  "measured_duration_frames": 17,
+  "bezier": {
+    "x1": 0.2332,
+    "y1": 1.2107,
+    "x2": 0.3878,
+    "y2": 1.0496,
+    "durationInFrames": 19,
+    "delay": -0.002,
+    "built_duration_frames": 16,
+    "rmse": 0.0166
+  },
+  "spring": {
+    "stiffness": 2090.676,
+    "damping": 93.934,
+    "mass": 1,
+    "damping_ratio": 1.0272,
+    "built_duration_frames": 8,
+    "rmse": 0.2025
+  },
+  "recommended": "bezier",
+  "note": "lower thin light streak with a 4-point sparkle at its head sweeps left -> right along y 78.5% H (first visible f3725 at x 6-18% W, already fast), reaches the right edge at f3737 and settles back as the sparkle at the right end of title 2 (97% W) by f3747; the upper streak does the mirror sweep right -> left along y 20.7% H between f3722 (right edge) and f3730 (6% W) and becomes the sparkle at the left end of title 1; each title then slides in from the side its sparkle marks"
+}

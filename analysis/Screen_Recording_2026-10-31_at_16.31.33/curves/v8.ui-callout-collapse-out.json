@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.ui-callout-collapse-out",
+ "file": "curves/v8.ui-callout-collapse-out.csv",
+ "property": "scale",
+ "unit": "scale factor",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c4_S1_calloutC_scale.csv",
+ "column": "scale",
+ "sampled_frames": [
+  2196,
+  2224
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 1.0271,
+ "to_value": 0.0,
+ "active_frames": [
+  2202,
+  2222
+ ],
+ "measured_duration_frames": 20,
+ "bezier": {
+  "x1": 0.8101,
+  "y1": 0.0987,
+  "x2": 0.5999,
+  "y2": 0.5967,
+  "durationInFrames": 20,
+  "delay": -0.937,
+  "built_duration_frames": 18,
+  "rmse": 0.0255
+ },
+ "spring": {
+  "stiffness": 99.197,
+  "damping": 10.938,
+  "mass": 1,
+  "damping_ratio": 0.5491,
+  "built_duration_frames": 35,
+  "rmse": 0.5285
+ },
+ "recommended": "bezier",
+ "note": "callout pill C (icon + 3-word label) ink width / rest width; collapses toward its leader-line anchor; preceded by a 3% swell f2186-f2194",
+ "chunk_curve_id": "v8.ui-callout-collapse-out.v8c4"
+}

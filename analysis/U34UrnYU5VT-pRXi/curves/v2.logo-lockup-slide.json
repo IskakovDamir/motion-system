@@ -1,0 +1,40 @@
+{
+  "technique_id": "v2.logo-lockup-slide",
+  "file": "curves/v2.logo-lockup-slide.csv",
+  "property": "position-x",
+  "unit": "px (mascot body centre x; frame 1920 px wide)",
+  "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c1_S04_mascot_derived.csv",
+  "column": "cx",
+  "sampled_frames": [
+    304,
+    334
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 959.5,
+  "to_value": 319.5,
+  "active_frames": [
+    314,
+    324
+  ],
+  "measured_duration_frames": 10,
+  "bezier": {
+    "x1": 0.6482,
+    "y1": 0.0005,
+    "x2": 0.3508,
+    "y2": 0.9997,
+    "durationInFrames": 14,
+    "delay": -1.993,
+    "built_duration_frames": 10,
+    "rmse": 0.0012
+  },
+  "spring": {
+    "stiffness": 729.515,
+    "damping": 43.604,
+    "mass": 1,
+    "damping_ratio": 0.8072,
+    "built_duration_frames": 9,
+    "rmse": 0.1167
+  },
+  "recommended": "bezier",
+  "note": "hex mascot slides left from the frame centre into a logo lockup: centre x 959.5 -> 319.5 (-640 px = -33.3% W) while it shrinks 376 -> 152 px wide (scale 1.0 -> 0.404) on the same timing; y stays 539.5; the lockup word pops in at its final place in one frame at f322 while the mark is still moving"
+}

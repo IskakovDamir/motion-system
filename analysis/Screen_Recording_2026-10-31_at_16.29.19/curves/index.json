@@ -1,0 +1,4492 @@
+{
+  "video": "Screen_Recording_2026-10-31_at_16.29.19",
+  "key": "v7",
+  "fps": 60,
+  "duration_rule": "curvekit.active_window tol=0.02",
+  "curves": {
+    "v7.bg-halftone-ring-burst": {
+      "technique_id": "v7.bg-halftone-ring-burst",
+      "file": "curves/v7.bg-halftone-ring-burst.csv",
+      "property": "mask",
+      "unit": "px radius from the label centre (inner edge of the halftone band; 1622 px = 100% W)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s1_halftone_ring_0-71.csv",
+      "column": "inner_vis_px",
+      "sampled_frames": [
+        0,
+        56
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 152.1,
+      "to_value": 856.3,
+      "active_frames": [
+        0,
+        55
+      ],
+      "measured_duration_frames": 55,
+      "bezier": {
+        "x1": 0.1103,
+        "y1": 0.1387,
+        "x2": 0.0511,
+        "y2": 0.6829,
+        "durationInFrames": 56,
+        "delay": -0.24,
+        "built_duration_frames": 53,
+        "rmse": 0.0243
+      },
+      "spring": {
+        "stiffness": 27.984,
+        "damping": 20.016,
+        "mass": 1,
+        "damping_ratio": 1.8918,
+        "built_duration_frames": 65,
+        "rmse": 0.0517
+      },
+      "recommended": "bezier",
+      "note": "S01 halftone ring: soft ring band over a static square dot grid (pitch 14.5 px), centred on the label centre (809, 461 px); inner edge = 50% of the band's high-pass texture peak, median of the sectors that can still see it (diagonals to f56, left/right to f36, top/bottom to f9); the video starts with the ring already expanding (no rest before f0; from-value = f0 picture) and the band leaves through the frame edges still moving (no settle): ease-out only, to-value = last measured picture f56; afterwards the band is out of frame"
+    },
+    "v7.cam-click-pull-back": {
+      "technique_id": "v7.cam-click-pull-back",
+      "file": "curves/v7.cam-click-pull-back.csv",
+      "property": "scale",
+      "unit": "ln(scale factor) of the editor close-up (0.159 = x1.172 at f3624 -> 0.004 = x1.004 at f3649; 0 = f3600)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p5_cam_scale.csv",
+      "column": "lnscale",
+      "sampled_frames": [
+        3624,
+        3649
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.1587,
+      "to_value": 0.0041,
+      "active_frames": [
+        3626,
+        3646
+      ],
+      "measured_duration_frames": 20,
+      "bezier": {
+        "x1": 0.3904,
+        "y1": 0.1591,
+        "x2": 0.1844,
+        "y2": 1.0528,
+        "durationInFrames": 25,
+        "delay": 0.437,
+        "built_duration_frames": 19,
+        "rmse": 0.0155,
+        "rmse_raw_time": 0.016,
+        "fit": "shape metric (lower of tune_tokens.tune_bezier and the shapefit.py search, scratch/v7c5_tools/refit_shape.py)"
+      },
+      "spring": {
+        "stiffness": 106.188,
+        "damping": 16.072,
+        "mass": 1,
+        "damping_ratio": 0.7798,
+        "built_duration_frames": 20,
+        "rmse": 0.0514,
+        "rmse_raw_time": 0.0414,
+        "fit": "shape metric (tune_tokens.tune_spring via scratch/v7c5_tools/refit_shape.py)"
+      },
+      "recommended": "bezier",
+      "note": "P5 camera recoil around the click: as the 3D pointer reaches the top-right action button and the button lights (fill brightens f3629-f3642, glow along the top bar f3637-f3647), the camera eases back out x1.172 -> x1.004 (x0.857) about a point near the frame centre, (803, 465) px (0.57 px rms), f3626-f3649; the incoming zoom peaks at f3624 and reverses at once (no hold before), a 2-5 f hold after, then the push-out; scale = distance between two UI-label template centres relative to f3600 (scratch/v7c5_p5_cam_scale.csv); samples f3624-f3649 (f3651 repeats f3649; f3654 already belongs to the push-out, x1.007, and is left out). Refit on the shape metric (scratch/v7c5_tools/refit_shape.py): fit_easing.py's raw-time fits match the samples (raw-time RMSE bezier 0.0037, spring 0.0127) but both shape RMSEs stay above 0.05 (bezier 0.0804, spring 0.068) because the 9 pictures of the measured 20-f window sit 2-4 frames apart, so the measured 2% window and a raw-time fit's own window differ by 1-3 frames; the stored bezier and spring are now fitted with the build-side rule (curvekit.shape_rmse, built duration within 1 f of the measured 20 f); the original fits are kept under raw_time_fit.",
+      "raw_time_fit": {
+        "tool": "fit_easing.py",
+        "bezier": {
+          "x1": 0.6467,
+          "y1": 0.8957,
+          "x2": 0.2747,
+          "y2": 0.7804,
+          "durationInFrames": 19,
+          "delay": 2.158,
+          "built_duration_frames": 18,
+          "rmse": 0.0804,
+          "rmse_raw_time": 0.0037
+        },
+        "spring": {
+          "stiffness": 215.772,
+          "damping": 25.646,
+          "mass": 1,
+          "damping_ratio": 0.873,
+          "built_duration_frames": 19,
+          "rmse": 0.068,
+          "rmse_raw_time": 0.0127
+        },
+        "recommended": "spring"
+      }
+    },
+    "v7.cam-drift-accelerating-exit": {
+      "technique_id": "v7.cam-drift-accelerating-exit",
+      "file": "curves/v7.cam-drift-accelerating-exit.csv",
+      "property": "position-x",
+      "unit": "% of frame width (viewer transport controls; 60.8% -> 56.2% W at the last picture before the cut)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p5_transport.csv",
+      "column": "cx_pct",
+      "sampled_frames": [
+        2236,
+        2340
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 60.82,
+      "to_value": 56.196,
+      "active_frames": [
+        2259,
+        2339
+      ],
+      "measured_duration_frames": 80,
+      "bezier": {
+        "x1": 0.8007,
+        "y1": 0.0685,
+        "x2": 1.0,
+        "y2": 0.818,
+        "durationInFrames": 88,
+        "delay": -8.0,
+        "built_duration_frames": 76,
+        "rmse": 0.018
+      },
+      "spring": {
+        "stiffness": 9.087,
+        "damping": 26.176,
+        "mass": 1,
+        "damping_ratio": 4.3418,
+        "built_duration_frames": 113,
+        "rmse": 0.4292
+      },
+      "recommended": "bezier",
+      "note": "P5 exit move: after the clip edits settle the whole editor window drifts left (camera pans right), starting imperceptibly at ~f2250 and accelerating to ~5 px/frame (0.31% W) at the last picture f2340, straight into the hard cut at f2342 (no settle); scale constant within 1% (template scale 0.99-1.01), y constant; template on the viewer transport controls (ref f2262); to-value = last measured picture"
+    },
+    "v7.cam-pan-up-zoom": {
+      "technique_id": "v7.cam-pan-up-zoom",
+      "file": "curves/v7.cam-pan-up-zoom.csv",
+      "property": "position-y",
+      "unit": "% of frame height",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s2_header_166-300.csv",
+      "column": "cy_pct",
+      "sampled_frames": [
+        199,
+        246
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 19.717,
+      "to_value": 6.046,
+      "active_frames": [
+        206,
+        236
+      ],
+      "measured_duration_frames": 30,
+      "bezier": {
+        "x1": 0.4336,
+        "y1": 0.3478,
+        "x2": 0.185,
+        "y2": 0.996,
+        "durationInFrames": 35,
+        "delay": 1.271,
+        "built_duration_frames": 28,
+        "rmse": 0.0251
+      },
+      "spring": {
+        "stiffness": 102.397,
+        "damping": 17.349,
+        "mass": 1,
+        "damping_ratio": 0.8572,
+        "built_duration_frames": 25,
+        "rmse": 0.0777
+      },
+      "recommended": "bezier",
+      "note": "S2 whole-UI camera move: the menu pans up 13.3% H (header centre y 19.7% -> 6.3%) while zooming 0.99 -> 1.06, bringing the 4th menu row to the upper third before its hover highlight (f239); template on the header text, ref f200; afterwards a slow drift continues (y 6.3% -> 4.2%, scale 1.06 -> 1.09 by f274)"
+    },
+    "v7.cam-pull-back-blur-exit": {
+      "technique_id": "v7.cam-pull-back-blur-exit",
+      "file": "curves/v7.cam-pull-back-blur-exit.csv",
+      "property": "scale",
+      "unit": "scale factor (1.0 = page at f401)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s3_exit_scale_retimed_389-417.csv",
+      "column": "scale",
+      "sampled_frames": [
+        391,
+        416
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 1.0,
+      "to_value": 0.8347,
+      "active_frames": [
+        401,
+        416
+      ],
+      "measured_duration_frames": 15,
+      "bezier": {
+        "x1": 0.498,
+        "y1": 0.0487,
+        "x2": 1.0,
+        "y2": 0.4646,
+        "durationInFrames": 15,
+        "delay": -0.0,
+        "built_duration_frames": 14,
+        "rmse": 0.019
+      },
+      "spring": {
+        "stiffness": 71.507,
+        "damping": 0.5,
+        "mass": 1,
+        "damping_ratio": 0.0296,
+        "built_duration_frames": 178,
+        "rmse": 0.8003
+      },
+      "recommended": "bezier",
+      "note": "exit move of S3 into the hard cut at f419: the whole page pulls back (scale 1.0 -> 0.835 by the last picture) about a point near the frame centre (x 48.7% W, y 50.4% H) with growing motion blur, accelerating; scale = horizontal span between the icon-tile template and the CTA-button template (track.py template with scale search, ref f401) divided by its f401 value (the button's own size holds x1.29-1.30 over f401-f410, so its centre is a fixed anchor); no settle (cut): to-value = last picture. Re-timed: the captures f410, f413 and f417 are placed at f409, f411 and f416, the 3:2 cadence of the 24 fps pictures before (f389, 391, 394, 396, 399, 401, 404, 406) and after (f414, cut f419); taken as equally spaced pictures, the per-picture scale steps grow smoothly (0.006, 0.009, 0.014, 0.022, 0.037, 0.077) while the captured stamps give a 1-frame f413-f414 step that would mean a speed spike. Captured stamps unchanged in the column captured_frame. Without re-timing, all captured pictures: bezier rmse 0.103; dropping f414 instead: bezier(0.609, 0.292, 0.864, 0.000) D=13, rmse 0.021"
+    },
+    "v7.cam-pull-back-centre": {
+      "technique_id": "v7.cam-pull-back-centre",
+      "file": "curves/v7.cam-pull-back-centre.csv",
+      "property": "scale",
+      "unit": "scale factor (1.0 = finished line 970 px wide = 59.8% W at f3014)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_seq2_zoomout_width_newpic.csv",
+      "column": "scale",
+      "sampled_frames": [
+        3014,
+        3069
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 1.0,
+      "to_value": 0.832,
+      "active_frames": [
+        3014,
+        3062
+      ],
+      "measured_duration_frames": 48,
+      "bezier": {
+        "x1": 0.6083,
+        "y1": 0.2756,
+        "x2": 0.0,
+        "y2": 0.8439,
+        "durationInFrames": 53,
+        "delay": -1.219,
+        "built_duration_frames": 46,
+        "rmse": 0.0121
+      },
+      "spring": {
+        "stiffness": 80.471,
+        "damping": 18.564,
+        "mass": 1,
+        "damping_ratio": 1.0347,
+        "built_duration_frames": 39,
+        "rmse": 0.1145
+      },
+      "recommended": "bezier",
+      "note": "second typed sequence: once its line is finished (period f3011-f3014) the camera pulls back about the frame centre (line centre x stays 810-816 px) from 1.0 to 0.832 (line width 970 -> 807 px, logo 82 -> 67 px wide): slow start f3016-f3024, main move f3026-f3041, long tail to f3069 and beyond (continues into chunk v7c5, where the line then drifts up into the hidden push-in cut f3094); width = ink right end minus logo left edge (threshold 70/40); the corresponding stretch of the first sequence (f2414-f2469) only creeps 1.015 -> 0.985, so this is where the two sequences diverge"
+    },
+    "v7.cam-pull-back-reveal.i2": {
+      "technique_id": "v7.cam-pull-back-reveal.i2",
+      "file": "curves/v7.cam-pull-back-reveal.i2.csv",
+      "property": "scale",
+      "unit": "ln(scale factor) of the whole canvas (0 = close-up of the end of row 2, f3246-f3254; -0.580 = x0.560 at rest f3296-f3299)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p4_pullback_rowy.csv",
+      "column": "lnscale",
+      "sampled_frames": [
+        3240,
+        3299
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.0,
+      "to_value": -0.58,
+      "active_frames": [
+        3259,
+        3294
+      ],
+      "measured_duration_frames": 35,
+      "bezier": {
+        "x1": 0.7521,
+        "y1": 0.1153,
+        "x2": 0.1596,
+        "y2": 0.9959,
+        "durationInFrames": 43,
+        "delay": -2.572,
+        "built_duration_frames": 31,
+        "rmse": 0.0277
+      },
+      "spring": {
+        "stiffness": 103.505,
+        "damping": 16.447,
+        "mass": 1,
+        "damping_ratio": 0.8083,
+        "built_duration_frames": 22,
+        "rmse": 0.1452
+      },
+      "recommended": "bezier",
+      "note": "P4 camera pull-back from the close-up of the end of row 2 to wide view 2 (both rows plus the picture card rising in below): scale x1.00 -> x0.560 (eased in log space) about a fixed point above-right of the frame, (2053, -26) px = (126.6% W, -2.8% H) (one pure zoom: x from row 2's word edges by a 1D registration of its column profile to f3254, y from its height; scratch/v7c5_p4_pullback_x.csv, v7c5_p4_pullback_fp.csv; the scale here uses y -25 px, within 0.001), so row 2 rises from 455.8 to 244.2 px and slides right with the zoom (the left edges of its 6th / 7th / 8th words 129 -> 973 / 450 -> 1153 / 981 -> 1452 px; the pure zoom predicts them within 3 px on every picture but the smeared f3276 / f3279); fastest at f3274-f3279 (heavy horizontal smear, the rows are streaks at f3276), at rest by f3296; scale from row 2's vertical ink centroid relative to the fixed point (cy fitted on the rest picture f3299 with the word template's scale 0.56; agrees with the word template within 0.005 on sharp pictures f3256-f3266 and f3284-f3299, and with the row-pitch scale 0.740 / 0.649 at the smeared f3276 / f3279)"
+    },
+    "v7.cam-pull-back-reveal": {
+      "technique_id": "v7.cam-pull-back-reveal",
+      "file": "curves/v7.cam-pull-back-reveal.csv",
+      "property": "scale",
+      "unit": "ln(scale factor) of the whole editor window (0 = close-up at f2116, -0.916 = x0.40)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p5_pullback.csv",
+      "column": "ln_scale",
+      "sampled_frames": [
+        2116,
+        2209
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.0,
+      "to_value": -0.9163,
+      "active_frames": [
+        2122,
+        2176
+      ],
+      "measured_duration_frames": 54,
+      "bezier": {
+        "x1": 0.2729,
+        "y1": 0.0034,
+        "x2": 0.1151,
+        "y2": 0.8298,
+        "durationInFrames": 62,
+        "delay": -3.453,
+        "built_duration_frames": 53,
+        "rmse": 0.0114
+      },
+      "spring": {
+        "stiffness": 32.987,
+        "damping": 11.378,
+        "mass": 1,
+        "damping_ratio": 0.9906,
+        "built_duration_frames": 58,
+        "rmse": 0.0341
+      },
+      "recommended": "bezier",
+      "note": "P5 camera pull-back from the timeline close-up to the whole lower half of the editor window (viewer + clip bin + timeline): scale x1.00 -> x0.40 (eased in log space: scale = exp(-0.916 * ease)) while the window slides down-left so the large timecode label goes from (130, 203) to (78, 418) px; fastest f2126-f2136 (about -6% scale per frame) with motion blur, then a long settle to ~f2181; the clip strip slides in from the right during the fast part; template on the large timecode label with scale search 0.40-1.05 (ref f2111), final ratio checked at f2205 (0.400, range 0.36-0.46)"
+    },
+    "v7.cam-push-in-accelerating": {
+      "technique_id": "v7.cam-push-in-accelerating",
+      "file": "curves/v7.cam-push-in-accelerating.csv",
+      "property": "scale",
+      "unit": "% of frame width (label box width; 55.8% = scale 1.0)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_box_width_keys_76-135.csv",
+      "column": "width_pct",
+      "sampled_frames": [
+        77,
+        131
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 55.831,
+      "to_value": 61.1,
+      "active_frames": [
+        89,
+        131
+      ],
+      "measured_duration_frames": 42,
+      "bezier": {
+        "x1": 0.7441,
+        "y1": 0.0498,
+        "x2": 0.9204,
+        "y2": 0.6537,
+        "durationInFrames": 42,
+        "delay": -0.067,
+        "built_duration_frames": 36,
+        "rmse": 0.0394
+      },
+      "spring": {
+        "stiffness": 10.023,
+        "damping": 0.5,
+        "mass": 1,
+        "damping_ratio": 0.079,
+        "built_duration_frames": 284,
+        "rmse": 0.859
+      },
+      "recommended": "bezier",
+      "note": "slow camera push-in on the label while the mascot chain arcs in: box width 55.8% -> 61.1% W (x1.095) over f96-f131, accelerating into the ripple; geometry on twos (step pictures only); open-ended: the push continues into the ripple zoom (f136 box 71% W, blurred)"
+    },
+    "v7.cam-push-in-blur.i2": {
+      "technique_id": "v7.cam-push-in-blur.i2",
+      "file": "curves/v7.cam-push-in-blur.i2.csv",
+      "property": "scale",
+      "unit": "ln(scale factor) of the whole canvas about the picture card (0 = card 943.7 px wide at f3299-f3301; 0.484 = x1.622, card 1530.3 px = 94.3% W at rest f3376)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p4_pushin_width.csv",
+      "column": "lnscale",
+      "sampled_frames": [
+        3296,
+        3379
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.0,
+      "to_value": 0.4836,
+      "active_frames": [
+        3306,
+        3364
+      ],
+      "measured_duration_frames": 58,
+      "bezier": {
+        "x1": 0.9512,
+        "y1": 0.2934,
+        "x2": 0.0422,
+        "y2": 0.6715,
+        "durationInFrames": 60,
+        "delay": -0.44,
+        "built_duration_frames": 54,
+        "rmse": 0.0187
+      },
+      "spring": {
+        "stiffness": 42.463,
+        "damping": 11.118,
+        "mass": 1,
+        "damping_ratio": 0.8531,
+        "built_duration_frames": 38,
+        "rmse": 0.1807
+      },
+      "recommended": "bezier",
+      "note": "P4 camera push-in from wide view 2 (two rows + picture card) into the card until it nearly fills the frame: card width 943.7 -> 1530.3 px (x1.622, eased in log space: scale = exp(0.484 * ease)); slow acceleration f3304-f3334 (+16.7%), then the fastest interval f3334-f3336 (x1.141 in one picture, card and rows smeared by radial and vertical motion blur), then a long deceleration to rest at about f3374; the rows leave through the top edge (row 1 gone by f3334, row 2 by f3344); card width = distance between the card's left and right edges, sub-pixel crossings halfway between the canvas (luma 17) and the card, median over 15 rows of the card's middle band (scratch/v7c5_tools/cardedges2.py; left-edge row spread under 1 px, right edge 2-50 px where the picture is dark near it)"
+    },
+    "v7.cam-push-in-blur.i3": {
+      "technique_id": "v7.cam-push-in-blur.i3",
+      "file": "curves/v7.cam-push-in-blur.i3.csv",
+      "property": "scale",
+      "unit": "ln(scale factor) of the whole desktop layer (0 = hold f3729-f3780; 0.190 = x1.209 at rest from about f3861)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p6_pushin_fp.csv",
+      "column": "lnscale",
+      "sampled_frames": [
+        3761,
+        3881
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.0,
+      "to_value": 0.1899,
+      "active_frames": [
+        3795,
+        3846
+      ],
+      "measured_duration_frames": 51,
+      "bezier": {
+        "x1": 0.8736,
+        "y1": 0.0731,
+        "x2": 0.0,
+        "y2": 0.9495,
+        "durationInFrames": 69,
+        "delay": -8.068,
+        "built_duration_frames": 49,
+        "rmse": 0.0059
+      },
+      "spring": {
+        "stiffness": 154.009,
+        "damping": 25.192,
+        "mass": 1,
+        "damping_ratio": 1.015,
+        "built_duration_frames": 28,
+        "rmse": 0.2318
+      },
+      "recommended": "bezier",
+      "note": "P6 second push-in (same device as the P4 push-in into the card): a pure zoom about a fixed point below-right of the frame at (2315, 992) px = (142.7% W, 108.1% H), so the file tile moves up-left (label centre 810 -> 495 px, 654 -> 583 px); creeps from about f3783 (+0.4% by f3796, +3.7% by f3814), the fastest interval f3816-f3819 (x1.070 in 3 frames, horizontal smear; the 3D pointer becomes a 2D cursor at f3821), then a long ease-out to rest at about f3861; scale from the label centre's displacement relative to the fixed point (x and y estimates agree within 0.0005 on sharp pictures, within 0.004 on the smeared f3816-f3819); fixed point from a least-squares fit of the label template's centre against its own sub-step scale (scratch/v7c5_tools/tmplfine.py, ref f3756)"
+    },
+    "v7.cam-push-in-blur": {
+      "technique_id": "v7.cam-push-in-blur",
+      "file": "curves/v7.cam-push-in-blur.csv",
+      "property": "scale",
+      "unit": "scale factor (1.0 = page at rest f299-f304)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s3_title_286-352.csv",
+      "column": "scale",
+      "sampled_frames": [
+        299,
+        348
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 1.0,
+      "to_value": 1.81,
+      "active_frames": [
+        304,
+        336
+      ],
+      "measured_duration_frames": 32,
+      "bezier": {
+        "x1": 0.4228,
+        "y1": 0.4015,
+        "x2": 0.0357,
+        "y2": 0.9985,
+        "durationInFrames": 36,
+        "delay": 1.002,
+        "built_duration_frames": 27,
+        "rmse": 0.0363
+      },
+      "spring": {
+        "stiffness": 208.763,
+        "damping": 28.445,
+        "mass": 1,
+        "damping_ratio": 0.9843,
+        "built_duration_frames": 24,
+        "rmse": 0.0517
+      },
+      "recommended": "bezier",
+      "note": "S3 camera push-in on the page toward the search field: scale 1.0 -> 1.81 with directional motion blur at peak speed (f311-f316), title centre moves x 17.3% -> 25.7%, y 38.8% -> 12.1%; template on the page title with scales, ref f300 (scores 0.69 at the blurred peak)"
+    },
+    "v7.cam-push-in-corner-settle": {
+      "technique_id": "v7.cam-push-in-corner-settle",
+      "file": "curves/v7.cam-push-in-corner-settle.csv",
+      "property": "position-y",
+      "unit": "px of 918 (top edge of the page cards; zoom about x 101% W, y 3% H)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c6_p3_menu_page_4216-4279.csv",
+      "column": "page_card_top_px",
+      "sampled_frames": [
+        4216,
+        4261
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 523.03,
+      "to_value": 836.4,
+      "active_frames": [
+        4216,
+        4249
+      ],
+      "measured_duration_frames": 33,
+      "bezier": {
+        "x1": 0.0,
+        "y1": 0.4784,
+        "x2": 0.4885,
+        "y2": 0.9961,
+        "durationInFrames": 35,
+        "delay": 2.035,
+        "built_duration_frames": 30,
+        "rmse": 0.0482
+      },
+      "spring": {
+        "stiffness": 89.73,
+        "damping": 31.868,
+        "mass": 1,
+        "damping_ratio": 1.6821,
+        "built_duration_frames": 36,
+        "rmse": 0.0361
+      },
+      "recommended": "spring",
+      "note": "P3 camera push-in on the UI page toward its top-right corner (where the dropdown hangs): card top edge 523 -> 836 px (f4216 -> f4254) = page scale x1.00 -> x1.64 (search-field template scale 1.00 / 1.14 / 1.23 / 1.31 / 1.38 / 1.43 at f4216 / 4219 / 4221 / 4224 / 4226 / 4229), zoom centre about (1645, 30) px; the cut lands mid-move (first sample = from-value); after the settle a slow creep continues (+0.24 px/f to f4276) before the whip"
+    },
+    "v7.cam-reframe-pan-out.i2": {
+      "technique_id": "v7.cam-reframe-pan-out.i2",
+      "file": "curves/v7.cam-reframe-pan-out.i2.csv",
+      "property": "scale",
+      "unit": "scale factor (1.0 = result card 1354 px = 83.5% W)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_z5_card_scale_newpic.csv",
+      "column": "scale",
+      "sampled_frames": [
+        2685,
+        2711
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 1.0,
+      "to_value": 0.7578,
+      "active_frames": [
+        2690,
+        2709
+      ],
+      "measured_duration_frames": 19,
+      "bezier": {
+        "x1": 0.5445,
+        "y1": 0.0276,
+        "x2": 0.349,
+        "y2": 1.112,
+        "durationInFrames": 24,
+        "delay": -1.52,
+        "built_duration_frames": 17,
+        "rmse": 0.033
+      },
+      "spring": {
+        "stiffness": 171.803,
+        "damping": 19.237,
+        "mass": 1,
+        "damping_ratio": 0.7338,
+        "built_duration_frames": 27,
+        "rmse": 0.2264
+      },
+      "recommended": "bezier",
+      "note": "reframe pull-back Z5: the whole canvas zooms out x0.755 (card 1354 x 763 px -> 1023 x 578 px, centre 803.5,458.5 -> 813,457.5) over f2689-f2711 with motion blur at peak speed (f2699-f2701), bringing line 2 back in at the top (line ink y 33-104 px, x 296-1452 px at rest, 1.06x its pre-push size); a continuous ease-in-out, not a snap; card bbox (threshold 25 over luma 17, rows below the text); the dot vignette at the card edges fades during the move; second instance in the next typed sequence: centred zoom-out of the finished line x0.84 (line width 970 -> 812 px, f3021-f3045, tail to f3069)"
+    },
+    "v7.cam-reframe-pan-out": {
+      "technique_id": "v7.cam-reframe-pan-out",
+      "file": "curves/v7.cam-reframe-pan-out.csv",
+      "property": "position-x",
+      "unit": "px of 1622 (3D pointer centre; 839 = 51.7% W -> 486 = 30.0% W)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_pointer_tmpl.csv",
+      "column": "cx",
+      "sampled_frames": [
+        1341,
+        1428
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 840.0,
+      "to_value": 484.0,
+      "active_frames": [
+        1371,
+        1416
+      ],
+      "measured_duration_frames": 45,
+      "bezier": {
+        "x1": 0.8714,
+        "y1": 0.0227,
+        "x2": 0.3467,
+        "y2": 0.996,
+        "durationInFrames": 60,
+        "delay": -8.825,
+        "built_duration_frames": 42,
+        "rmse": 0.0206
+      },
+      "spring": {
+        "stiffness": 47.392,
+        "damping": 10.674,
+        "mass": 1,
+        "damping_ratio": 0.7753,
+        "built_duration_frames": 46,
+        "rmse": 0.3328
+      },
+      "recommended": "bezier",
+      "note": "camera re-frames to make room for the status capsule: the whole scene pans so the 3D pointer goes from 51.7% to 30.0% W while pulling back (template scale 1.00 -> 0.72), with motion blur at peak speed f1396-f1408; template on the 3D pointer with scales, ref f1344"
+    },
+    "v7.cam-scroll-up": {
+      "technique_id": "v7.cam-scroll-up",
+      "file": "curves/v7.cam-scroll-up.csv",
+      "property": "position-y",
+      "unit": "% of frame height",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s3_query_341-418.csv",
+      "column": "cy_pct",
+      "sampled_frames": [
+        341,
+        399
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 50.0,
+      "to_value": 23.475,
+      "active_frames": [
+        348,
+        371
+      ],
+      "measured_duration_frames": 23,
+      "bezier": {
+        "x1": 0.2957,
+        "y1": 0.0065,
+        "x2": 0.3099,
+        "y2": 0.9925,
+        "durationInFrames": 27,
+        "delay": -0.824,
+        "built_duration_frames": 22,
+        "rmse": 0.0353
+      },
+      "spring": {
+        "stiffness": 134.503,
+        "damping": 20.024,
+        "mass": 1,
+        "damping_ratio": 0.8633,
+        "built_duration_frames": 22,
+        "rmse": 0.0686
+      },
+      "recommended": "bezier",
+      "note": "S3 page scrolls up 26.2% H (search-field centre y 49.9% -> 23.7%) while zooming out 1.0 -> 0.89, vertical motion blur at peak speed f354-f361, revealing the result row that stretches in at the same time; template on the typed query + magnifier, ref f348"
+    },
+    "v7.cam-slow-push-in": {
+      "technique_id": "v7.cam-slow-push-in",
+      "file": "curves/v7.cam-slow-push-in.csv",
+      "property": "scale",
+      "unit": "scale factor of the whole editor window about the frame centre (1.00 at f1690 -> 1.17)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p2_rise_scale.csv",
+      "column": "scale",
+      "sampled_frames": [
+        1686,
+        1785
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 1.0,
+      "to_value": 1.1697,
+      "active_frames": [
+        1696,
+        1779
+      ],
+      "measured_duration_frames": 83,
+      "bezier": {
+        "x1": 0.8084,
+        "y1": 0.0851,
+        "x2": 0.6668,
+        "y2": 0.8862,
+        "durationInFrames": 94,
+        "delay": -8.549,
+        "built_duration_frames": 79,
+        "rmse": 0.0107
+      },
+      "spring": {
+        "stiffness": 2.674,
+        "damping": 1.056,
+        "mass": 1,
+        "damping_ratio": 0.3228,
+        "built_duration_frames": 403,
+        "rmse": 0.6927
+      },
+      "recommended": "bezier",
+      "note": "P2 camera push-in after the whip-in settles: the whole layout scales x1.17 about (816, 457) px = (50.3% W, 49.8% H), so upper labels rise 58 px while the zoom origin stays put; runs under the glow build, content swap and folder drop-in and settles just before the hard cut to footage at f1786; scale = distance between two tracked panel labels (template, scale search) divided by its f1686 value"
+    },
+    "v7.cam-whip-exit-up.i2": {
+      "technique_id": "v7.cam-whip-exit-up.i2",
+      "file": "curves/v7.cam-whip-exit-up.i2.csv",
+      "property": "position-y",
+      "unit": "% of frame height",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s4_tile_exit_447-483.csv",
+      "column": "cy_pct",
+      "sampled_frames": [
+        447,
+        481
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 50.381,
+      "to_value": 32.407,
+      "active_frames": [
+        456,
+        481
+      ],
+      "measured_duration_frames": 25,
+      "bezier": {
+        "x1": 0.7567,
+        "y1": -0.0092,
+        "x2": 1.0,
+        "y2": 0.878,
+        "durationInFrames": 27,
+        "delay": -2.0,
+        "built_duration_frames": 22,
+        "rmse": 0.0379
+      },
+      "spring": {
+        "stiffness": 113.386,
+        "damping": 192.893,
+        "mass": 1,
+        "damping_ratio": 9.0575,
+        "built_duration_frames": 32,
+        "rmse": 0.4405
+      },
+      "recommended": "bezier",
+      "note": "exit move of the whole S4 layout into the hard cut at f484: accelerates upward from rest (f456) with growing vertical motion blur; tile centre y 50.4% -> 32.4% H (-18% H) by the last picture f481 (2.6% H per frame there); no settle (the cut takes over): to-value = last measured picture, so the fitted curve is the ease-in part only; template on the app tile (score 0.87-1.0)"
+    },
+    "v7.cam-whip-exit-up": {
+      "technique_id": "v7.cam-whip-exit-up",
+      "file": "curves/v7.cam-whip-exit-up.csv",
+      "property": "position-y",
+      "unit": "% of frame height",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_folder07_2736-2823_newpic.csv",
+      "column": "cy_pct",
+      "sampled_frames": [
+        2784,
+        2821
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 47.93,
+      "to_value": 36.819,
+      "active_frames": [
+        2794,
+        2821
+      ],
+      "measured_duration_frames": 27,
+      "bezier": {
+        "x1": 0.7719,
+        "y1": 0.0255,
+        "x2": 1.0,
+        "y2": 0.8327,
+        "durationInFrames": 33,
+        "delay": -6.0,
+        "built_duration_frames": 28,
+        "rmse": 0.0124
+      },
+      "spring": {
+        "stiffness": 76.443,
+        "damping": 122.999,
+        "mass": 1,
+        "damping_ratio": 7.034,
+        "built_duration_frames": 40,
+        "rmse": 0.4061
+      },
+      "recommended": "bezier",
+      "note": "exit move of the file-browser layout into the hard cut at f2824: the whole grid accelerates upward from rest (~f2789) with growing vertical motion blur (strong on f2821); folder centre y 440 -> 338 px (-11.1% H) by the last picture f2821 (13.5 px = 1.5% H per frame there); scale constant (template scale 1.000), x constant; a footer status label enters from the bottom edge as the grid rises (f2817-f2821); template on the left folder of the second row (ref f2757, scores 0.96-1.0); no settle: to-value = last picture before the cut (ease-in part only)"
+    },
+    "v7.cam-zoom-out-settle-in": {
+      "technique_id": "v7.cam-zoom-out-settle-in",
+      "file": "curves/v7.cam-zoom-out-settle-in.csv",
+      "property": "scale",
+      "unit": "scale factor (1.0 = settled UI size at f199)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s2_header_166-300.csv",
+      "column": "scale",
+      "sampled_frames": [
+        171,
+        206
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 1.59,
+      "to_value": 0.99,
+      "active_frames": [
+        173,
+        199
+      ],
+      "measured_duration_frames": 26,
+      "bezier": {
+        "x1": 0.0,
+        "y1": 0.4892,
+        "x2": 0.2915,
+        "y2": 0.9843,
+        "durationInFrames": 31,
+        "delay": 0.0,
+        "built_duration_frames": 25,
+        "rmse": 0.0271
+      },
+      "spring": {
+        "stiffness": 178.488,
+        "damping": 51.814,
+        "mass": 1,
+        "damping_ratio": 1.9391,
+        "built_duration_frames": 27,
+        "rmse": 0.1379
+      },
+      "recommended": "bezier",
+      "note": "S2 product-UI menu enters after the white hold already scaled 1.59 (f171, blurred) and settles to 1.0 at f199-f206 while sliding right/down (header centre 30.1%,9.3% -> 34.3%,19.7%); template on the bold header text, ref f200; f169-f170 excluded (score 0.41, partly above the frame)"
+    },
+    "v7.card-rise-in.i2": {
+      "technique_id": "v7.card-rise-in.i2",
+      "file": "curves/v7.card-rise-in.i2.csv",
+      "property": "position-y",
+      "unit": "canvas px at close-up scale (gap from row 2's ink top to the card's top edge divided by the camera scale: 668 -> 225, i.e. the card rises 443 close-up px = 248 px on screen at the rest scale x0.560)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p4_card_rise2.csv",
+      "column": "gap_canvas_px",
+      "sampled_frames": [
+        3279,
+        3301
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 668.1,
+      "to_value": 225.0,
+      "active_frames": [
+        3279,
+        3296
+      ],
+      "measured_duration_frames": 17,
+      "bezier": {
+        "x1": 0.0001,
+        "y1": 0.331,
+        "x2": 0.4466,
+        "y2": 1.019,
+        "durationInFrames": 18,
+        "delay": 0.0,
+        "built_duration_frames": 15,
+        "rmse": 0.0368
+      },
+      "spring": {
+        "stiffness": 406.267,
+        "damping": 85.157,
+        "mass": 1,
+        "damping_ratio": 2.1124,
+        "built_duration_frames": 18,
+        "rmse": 0.0796
+      },
+      "recommended": "bezier",
+      "note": "P4 picture card entrance during the camera pull-back: the 16:9 rounded picture card rises into its slot under the rows from below the frame (first seen f3279 as a smeared top edge at the bottom of the frame), decelerating to rest by about f3296; its own rise is separated from the pull-back by dividing the row-2-to-card gap by the camera scale (scratch/v7c5_p4_pullback_rowy.csv); no fade (card luma 110 from f3284) and no scale change relative to the rows (card width / camera scale constant within 1% from f3284); card top from the ink bands, row-2 top from the text ink (scratch/v7c5_p4_card_rise2.csv)"
+    },
+    "v7.card-rise-in": {
+      "technique_id": "v7.card-rise-in",
+      "file": "curves/v7.card-rise-in.csv",
+      "property": "position-y",
+      "unit": "% of frame height",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_card_rise_chip_cy_newpic.csv",
+      "column": "cy_pct",
+      "sampled_frames": [
+        2619,
+        2669
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 81.972,
+      "to_value": 49.401,
+      "active_frames": [
+        2619,
+        2641
+      ],
+      "measured_duration_frames": 22,
+      "bezier": {
+        "x1": 0.311,
+        "y1": 1.1502,
+        "x2": 0.9564,
+        "y2": 0.9395,
+        "durationInFrames": 23,
+        "delay": -0.034,
+        "built_duration_frames": 20,
+        "rmse": 0.0306
+      },
+      "spring": {
+        "stiffness": 272.193,
+        "damping": 33.058,
+        "mass": 1,
+        "damping_ratio": 1.0019,
+        "built_duration_frames": 22,
+        "rmse": 0.0777
+      },
+      "recommended": "bezier",
+      "note": "result card rises into the frame centre after the hidden hard cut f2609 (last old picture f2606) of the punch-in whip up whose motion range is f2589-f2641: first seen f2614 as a blurred top edge at the bottom of the frame; the status-chip label centre goes 752.5 -> 453.5 px (82.0% -> 49.4% H) f2619-f2649 decelerating, x fixed at 840 px; it moves 2.5-4x faster than the scrolling line above it (line-2 baseline 92 -> 1 px over f2619-f2636 while the chip travels 286 px), so the card has its own slide-up on top of the camera glide (the speed ratio falls from 4.0 to 1.1, not a constant parallax factor); template on the chip label (ref f2645, scores 0.66-1.0); motion starts before the first trackable picture"
+    },
+    "v7.cursor-drag-file-in.i2": {
+      "technique_id": "v7.cursor-drag-file-in.i2",
+      "file": "curves/v7.cursor-drag-file-in.i2.csv",
+      "property": "scale",
+      "unit": "scale factor",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_chip_drop_2741-2800_newpic.csv",
+      "column": "scale",
+      "sampled_frames": [
+        2764,
+        2799
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 1.0,
+      "to_value": 0.0,
+      "active_frames": [
+        2771,
+        2791
+      ],
+      "measured_duration_frames": 20,
+      "bezier": {
+        "x1": 1.0,
+        "y1": -0.0027,
+        "x2": 0.0,
+        "y2": 0.9943,
+        "durationInFrames": 28,
+        "delay": -3.364,
+        "built_duration_frames": 17,
+        "rmse": 0.0926
+      },
+      "spring": {
+        "stiffness": 2725.915,
+        "damping": 127.106,
+        "mass": 1,
+        "damping_ratio": 1.2173,
+        "built_duration_frames": 7,
+        "rmse": 0.2538
+      },
+      "recommended": "bezier",
+      "note": "drop of the dragged file chip (thumbnail + name pill) into the target folder (P4), scale about the chip's own centre (x 818 px, y ~488 px = 50.4 %W, 53.2 %H, on the lower front of the folder): chip width / its width at the end of the drag (473 px at f2769). Full-size chip to f2780 (columns with luma > 45 on the dark background, f2781 repeats f2780); from f2782 a miniature of the chip on the folder front (columns deviating > 25 luma from the folder-front level; the last speck f2791 at > 12, max contrast 18 luma), gone from f2794 (max deviation 7 luma). Widths 473 / 468 / 458 / 442 / 408 / 134 / 59 / 28 / 13 / 6 / 0 px at f2769 / 2771 / 2774 / 2776 / 2780 / 2782 / 2784 / 2787 / 2789 / 2791 / 2794: slow start, one fast picture (f2780 -> f2782, the miniature blurred along x), then a decaying tail (x0.42-0.48 per picture). The target folder presses at the same time (width 246 -> 236 -> 198 px, f2780-f2784) and springs back (212 f2794, 243 f2796, 247 f2799) when the chip is gone."
+    },
+    "v7.cursor-drag-file-in.i3": {
+      "technique_id": "v7.cursor-drag-file-in.i3",
+      "file": "curves/v7.cursor-drag-file-in.i3.csv",
+      "property": "position-x",
+      "unit": "% of frame width (file-tile thumbnail centre; 23.4% -> 50.1% W)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p6_thumb_3704-3740.csv",
+      "column": "cx_pct",
+      "sampled_frames": [
+        3711,
+        3739
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 23.366,
+      "to_value": 50.092,
+      "active_frames": [
+        3711,
+        3726
+      ],
+      "measured_duration_frames": 15,
+      "bezier": {
+        "x1": 0.0,
+        "y1": 0.7831,
+        "x2": 0.7532,
+        "y2": 0.9846,
+        "durationInFrames": 14,
+        "delay": 2.043,
+        "built_duration_frames": 13,
+        "rmse": 0.0873
+      },
+      "spring": {
+        "stiffness": 489.775,
+        "damping": 45.027,
+        "mass": 1,
+        "damping_ratio": 1.0173,
+        "built_duration_frames": 16,
+        "rmse": 0.0258
+      },
+      "recommended": "spring",
+      "note": "P6 file tile (rounded video thumbnail + 2-line file-name label) dragged in from the left edge by the dark 3D pointer, which holds its bottom-right corner: enters at the left edge with heavy horizontal motion blur at f3706-f3709, then decelerates from ~54 px/frame (3.3% W) to rest by f3729 at x 32.8-67.2% W, y 24.8-59.4% H, rising 16 px (1.7% H) on the way; label faint and blurred until ~f3719; motion starts before the first trackable picture (from-value pinned to f3711); thumbnail template (ref f3729, score 0.88-1.0)"
+    },
+    "v7.cursor-drag-file-in": {
+      "technique_id": "v7.cursor-drag-file-in",
+      "file": "curves/v7.cursor-drag-file-in.csv",
+      "property": "position-y",
+      "unit": "% of frame height (centre of the dragged file-name pill)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_drag_pill_newpic.csv",
+      "column": "cy_pct",
+      "sampled_frames": [
+        2741,
+        2780
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 93.301,
+      "to_value": 53.377,
+      "active_frames": [
+        2741,
+        2769
+      ],
+      "measured_duration_frames": 28,
+      "bezier": {
+        "x1": 0.0,
+        "y1": 0.3507,
+        "x2": 0.3739,
+        "y2": 0.9946,
+        "durationInFrames": 31,
+        "delay": 1.699,
+        "built_duration_frames": 26,
+        "rmse": 0.0464
+      },
+      "spring": {
+        "stiffness": 117.243,
+        "damping": 37.473,
+        "mass": 1,
+        "damping_ratio": 1.7304,
+        "built_duration_frames": 32,
+        "rmse": 0.0324
+      },
+      "recommended": "spring",
+      "note": "dragged file chip (footage thumbnail ~110 px + dark file-name pill + dark arrow cursor with a soft shadow) enters from the bottom edge after the cut and travels up-right on a straight diagonal to the drop target: pill centre (542, 856.5) px f2741 -> (880, 490) px f2774 = +20.8% W, -39.9% H, decelerating from ~38 px/frame, horizontal and vertical progress in step (x 542 -> 880 px over the same frames); motion blur until ~f2756; template on the pill label (ref f2775, scale 1.04 while blurred -> 1.00 at rest); motion starts before the first visible picture (pill partly below the frame at f2741); at f2776-f2781 the pill shrinks (template scale 0.96 -> 0.90) into the folder (drop)"
+    },
+    "v7.cursor-fly-in": {
+      "technique_id": "v7.cursor-fly-in",
+      "file": "curves/v7.cursor-fly-in.csv",
+      "property": "position-y",
+      "unit": "px of 918 relative to the window (511 -> 182 px: up 35.8% H)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_fb_pointer_rel.csv",
+      "column": "rel_y",
+      "sampled_frames": [
+        1491,
+        1521
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 511.0,
+      "to_value": 182.0,
+      "active_frames": [
+        1491,
+        1514
+      ],
+      "measured_duration_frames": 23,
+      "bezier": {
+        "x1": 0.0,
+        "y1": 0.7332,
+        "x2": 0.8449,
+        "y2": 1.0039,
+        "durationInFrames": 20,
+        "delay": 2.452,
+        "built_duration_frames": 18,
+        "rmse": 0.077
+      },
+      "spring": {
+        "stiffness": 216.873,
+        "damping": 42.592,
+        "mass": 1,
+        "damping_ratio": 1.4461,
+        "built_duration_frames": 24,
+        "rmse": 0.0359
+      },
+      "recommended": "spring",
+      "note": "small dark 3D pointer flies up into place at the first thumbnail's top-left corner after the whip cut f1487: window-relative position (pointer template ref f1516 minus window-dots template), up 329 px and left 87 px, decelerating; first reliable picture f1491 (f1489 too blurred), so the move starts before f1491 and the fit has no rest before it (from-value pinned to f1491)"
+    },
+    "v7.cursor-glide.i2": {
+      "technique_id": "v7.cursor-glide.i2",
+      "file": "curves/v7.cursor-glide.i2.csv",
+      "property": "position-x",
+      "unit": "px, window-relative at the f1690 framing (push-in removed: O + (p - O) / s, O = (816, 457))",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p2_cursor_path.csv",
+      "column": "x_win",
+      "sampled_frames": [
+        1729,
+        1785
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 584.6,
+      "to_value": 1138.3,
+      "active_frames": [
+        1731,
+        1756
+      ],
+      "measured_duration_frames": 25,
+      "bezier": {
+        "x1": 0.5241,
+        "y1": 0.6965,
+        "x2": 0.2118,
+        "y2": 0.7995,
+        "durationInFrames": 23,
+        "delay": 2.443,
+        "built_duration_frames": 22,
+        "rmse": 0.0717
+      },
+      "spring": {
+        "stiffness": 169.814,
+        "damping": 23.555,
+        "mass": 1,
+        "damping_ratio": 0.9038,
+        "built_duration_frames": 22,
+        "rmse": 0.0487
+      },
+      "recommended": "spring",
+      "note": "P2 cursor flick, x: after a short glide up-left onto thumbnail 1 (f1724-f1731) the arrow cursor is thrown down-right to rest at the lower right of the project panel while the panel content swaps (glow peak f1729, grid drop-out f1731-f1736, folder drop-in f1736-f1749); window-relative x 584.6 -> 1138 px (+553 px = +34.1% W); the vertical part leads (y 16 f vs x 25 f), so the path curves (down first, then right); motion-blur streaks at f1736-f1742 (streak ink centroids); screen track: template ref f1731 (f1724-f1734) and ref f1764 (f1744-f1785), --global; after f1761 the cursor only rides the push-in (screen creep 20 px to f1784). samples scratch/v7c3_p2_cursor_path.csv"
+    },
+    "v7.cursor-glide.i3": {
+      "technique_id": "v7.cursor-glide.i3",
+      "file": "curves/v7.cursor-glide.i3.csv",
+      "property": "position-x",
+      "unit": "px of 1622 (3D pointer ink centroid x; 868.7 = 53.6% W at the tile edge -> 1132.7 = 69.8% W)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p6_pointer3d_mask.csv",
+      "column": "cx",
+      "sampled_frames": [
+        3729,
+        3767
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 868.7,
+      "to_value": 1132.7,
+      "active_frames": [
+        3739,
+        3754
+      ],
+      "measured_duration_frames": 15,
+      "bezier": {
+        "x1": 0.4121,
+        "y1": -0.3343,
+        "x2": 0.187,
+        "y2": 0.9983,
+        "durationInFrames": 21,
+        "delay": -4.055,
+        "built_duration_frames": 14,
+        "rmse": 0.0306
+      },
+      "spring": {
+        "stiffness": 542.903,
+        "damping": 45.962,
+        "mass": 1,
+        "damping_ratio": 0.9863,
+        "built_duration_frames": 15,
+        "rmse": 0.0126
+      },
+      "recommended": "spring",
+      "note": "P6 dark 3D pointer after it drops the file tile: from the tile's lower edge (ink centroid (868.7, 527.9) px, at rest f3729-f3731 once the drag-in settles) it first sinks off the thumbnail, slightly left (y 527.9 -> 533.9 / 544.9 / 566.9 / 593.9 / 617.9 / 631.9 px at f3734 / 3736 / 3739 / 3741 / 3744 / 3746, x 864.7 / 859.7 / 863.7 at f3734-f3739), then glides right and decelerates to rest beside the label's lower right (1132.7, 629.9) px: x 918.7 / 1018.7 / 1074.7 / 1104.7 / 1119.7 / 1127.7 / 1131.7 / 1132.7 px at f3741 / 3744 / 3746 / 3749 / 3751 / 3754 / 3756 / 3759 (steps 55 / 100 / 56 / 30 / 15 / 8 / 4 / 1 px per picture; horizontal smear at f3744, the capsule line is born at f3744); still to f3782 (0.1 px), then it rides the push-in; position = the pointer's luma < 45 ink at rest (f3780, 159 x 144 px) shifted for the best overlap with the picture's luma < 45 mask below the thumbnail's bottom edge (y >= 552), so the part over the thumbnail does not count (scratch/v7c5_p6_pointer3d_mask.csv; IoU 0.92-0.97 except 0.75 / 0.63 on the smeared f3741 / f3744); from f3746 the plain ink centroid agrees within 2.3 px (scratch/v7c5_p6_pointer3d.csv); the curve is the x glide; y leads it by about 8 f (f3731-f3746)"
+    },
+    "v7.cursor-glide": {
+      "technique_id": "v7.cursor-glide",
+      "file": "curves/v7.cursor-glide.csv",
+      "property": "position",
+      "unit": "px along the cursor's path, window-relative at the f1690 framing (push-in removed: O + (p - O) / s, O = (816, 457))",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p2_cursor_path.csv",
+      "column": "path_win_px_from_f1731",
+      "sampled_frames": [
+        1726,
+        1785
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.0,
+      "to_value": 710.1,
+      "active_frames": [
+        1731,
+        1756
+      ],
+      "measured_duration_frames": 25,
+      "bezier": {
+        "x1": 0.4248,
+        "y1": 0.9462,
+        "x2": 0.4625,
+        "y2": 0.8912,
+        "durationInFrames": 24,
+        "delay": 2.384,
+        "built_duration_frames": 22,
+        "rmse": 0.0803
+      },
+      "spring": {
+        "stiffness": 233.422,
+        "damping": 30.43,
+        "mass": 1,
+        "damping_ratio": 0.9959,
+        "built_duration_frames": 23,
+        "rmse": 0.0463
+      },
+      "recommended": "spring",
+      "note": "P2 cursor flick, progress along its curved path: from the contact on thumbnail 1 (window-relative (584.6, 383.9) px at f1731) down-right to rest at (1138, 758.5) px from f1761 (path 710 px, chord 667 px = 34.1% W across and 40.8% H down); fastest 74 px per frame at f1734-f1736 (motion-blur streaks f1736-f1742), 52-58 px per frame to f1742, 36 at f1742-f1744, 15-16 at f1744-f1749, 5 at f1751-f1756, under 1.5 from f1759; the vertical part leads (y active f1731-f1747, 16 f; x f1731-f1756, 25 f) so the path curves (down first, then right); after f1761 the cursor only rides the camera push-in (screen creep about 20 px to f1784). Screen track: template ref f1731 (f1724-f1734) and ref f1764 (f1744-f1785), --global; streak ink centroids (bbox, dark, thresh 10) at f1736 / f1740 / f1742. samples scratch/v7c3_p2_cursor_path.csv"
+    },
+    "v7.cursor-glow-morph-3d.i2": {
+      "technique_id": "v7.cursor-glow-morph-3d.i2",
+      "file": "curves/v7.cursor-glow-morph-3d.i2.csv",
+      "property": "scale",
+      "unit": "scale factor of the defocused background (1 = f1294)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_morph_bg_ecc.csv",
+      "column": "scale_cum",
+      "sampled_frames": [
+        1301,
+        1346
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 1.1033,
+      "to_value": 0.9175,
+      "active_frames": [
+        1301,
+        1341
+      ],
+      "measured_duration_frames": 40,
+      "bezier": {
+        "x1": 0.0,
+        "y1": 0.6026,
+        "x2": 0.0,
+        "y2": 0.1121,
+        "durationInFrames": 36,
+        "delay": 2.937,
+        "built_duration_frames": 36,
+        "rmse": 0.0502
+      },
+      "spring": {
+        "stiffness": 26.955,
+        "damping": 13.8,
+        "mass": 1,
+        "damping_ratio": 1.329,
+        "built_duration_frames": 66,
+        "rmse": 0.1373
+      },
+      "recommended": "bezier",
+      "note": "camera pulse around the cursor -> 3D pointer morph: push-in x1.00 -> x1.10 with the glow ramp (f1294-f1301, accelerating), then from the swap (f1304) a pull-back to x0.92 that eases out by f1344; ECC similarity chain on the chip row (y 0-300; scratch/v7c2_morph_bg_ecc.csv); the fitted part is the pull-back"
+    },
+    "v7.cursor-glow-morph-3d": {
+      "technique_id": "v7.cursor-glow-morph-3d",
+      "file": "curves/v7.cursor-glow-morph-3d.csv",
+      "property": "opacity",
+      "unit": "luma 0-255 (mean of 400x380 px box around the pointer)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_cursor_glow_luma.csv",
+      "column": "mean",
+      "sampled_frames": [
+        1304,
+        1359
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 149.717,
+      "to_value": 58.162,
+      "active_frames": [
+        1306,
+        1349
+      ],
+      "measured_duration_frames": 43,
+      "bezier": {
+        "x1": 0.8416,
+        "y1": 1.1827,
+        "x2": 0.476,
+        "y2": 0.9256,
+        "durationInFrames": 46,
+        "delay": 3.179,
+        "built_duration_frames": 35,
+        "rmse": 0.0471
+      },
+      "spring": {
+        "stiffness": 27.887,
+        "damping": 7.913,
+        "mass": 1,
+        "damping_ratio": 0.7492,
+        "built_duration_frames": 64,
+        "rmse": 0.2396
+      },
+      "recommended": "bezier",
+      "note": "settle of the cursor-to-3D-pointer morph: at f1304 the glowing 2D cursor is replaced by a bright, blurred 3D pointer seen tilted; it rotates face-on, sharpens and its glow decays (box luma 150 -> 60) until ~f1341; preceded by a glow ramp on the 2D cursor (luma 28 -> 87, f1284-f1301); the swap itself is a 1-picture jump (f1301 -> f1304)"
+    },
+    "v7.fx-clip-glow-pulse.i2": {
+      "technique_id": "v7.fx-clip-glow-pulse.i2",
+      "file": "curves/v7.fx-clip-glow-pulse.i2.csv",
+      "property": "opacity",
+      "unit": "luma 0-255 of the halo band just above the clip strip (68.6 -> 19.6)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p5_v1_haloabove.csv",
+      "column": "mean",
+      "sampled_frames": [
+        2211,
+        2256
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 68.6,
+      "to_value": 19.6,
+      "active_frames": [
+        2220,
+        2254
+      ],
+      "measured_duration_frames": 34,
+      "bezier": {
+        "x1": 0.6837,
+        "y1": 1.1187,
+        "x2": 0.8135,
+        "y2": 0.9117,
+        "durationInFrames": 35,
+        "delay": 0.526,
+        "built_duration_frames": 33,
+        "rmse": 0.0125
+      },
+      "spring": {
+        "stiffness": 40.048,
+        "damping": 9.985,
+        "mass": 1,
+        "damping_ratio": 0.7889,
+        "built_duration_frames": 33,
+        "rmse": 0.0202
+      },
+      "recommended": "bezier",
+      "note": "P5 clip-strip glow, decay: the bloom drains from the strip while two gaps open in it (clips removed, f2220-f2240); ends 1 luma below the pre-glow level; ROI fixed; range stops at f2256 because the pulsing gap placeholders (from f2258) brighten the band again"
+    },
+    "v7.fx-clip-glow-pulse.i3": {
+      "technique_id": "v7.fx-clip-glow-pulse.i3",
+      "file": "curves/v7.fx-clip-glow-pulse.i3.csv",
+      "property": "opacity",
+      "unit": "luma 0-255 (median of clip 1's lower band, the clip bar's own fill)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p5_clip_bands.csv",
+      "column": "clip1_lower",
+      "sampled_frames": [
+        2146,
+        2206
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 136.0,
+      "to_value": 211.0,
+      "active_frames": [
+        2150,
+        2206
+      ],
+      "measured_duration_frames": 56,
+      "bezier": {
+        "x1": 1.0,
+        "y1": 0.8295,
+        "x2": 0.3207,
+        "y2": 0.3412,
+        "durationInFrames": 58,
+        "delay": -1.78,
+        "built_duration_frames": 56,
+        "rmse": 0.0179
+      },
+      "spring": {
+        "stiffness": 12.901,
+        "damping": 9.857,
+        "mass": 1,
+        "damping_ratio": 1.3722,
+        "built_duration_frames": 95,
+        "rmse": 0.2431
+      },
+      "recommended": "bezier",
+      "note": "P5 glow on the clip bars themselves (the halo above the strip is curves/v7.fx-clip-glow-pulse.v7c3): the bar fill brightens from the dock f2146 (lower band 136, label-band background 102) to the peak f2206 (211 / 202, the end value here), then holds at 208-210 to f2220 (not in this fit: the 3-luma dip after the peak would push the 2% window end past the peak); near-linear rise with an abrupt top, about 1.2 luma per frame f2146-f2181 and 1.5 per frame f2181-f2206; sampled in columns x 262-328 of clip 1 (v7c3_tools/clip_bar_luma.py); the window is still settling from the pull-back until f2181 (scale 0.52 -> 0.40), the band rows are re-found per picture"
+    },
+    "v7.fx-clip-glow-pulse.i4": {
+      "technique_id": "v7.fx-clip-glow-pulse.i4",
+      "file": "curves/v7.fx-clip-glow-pulse.i4.csv",
+      "property": "opacity",
+      "unit": "luma 0-255 (median of clip 1's lower band, the clip bar's own fill)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p5_clip_bands.csv",
+      "column": "clip1_lower",
+      "sampled_frames": [
+        2206,
+        2340
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 208.0,
+      "to_value": 114.0,
+      "active_frames": [
+        2222,
+        2294
+      ],
+      "measured_duration_frames": 72,
+      "bezier": {
+        "x1": 0.7033,
+        "y1": 1.0807,
+        "x2": 0.9979,
+        "y2": 0.9219,
+        "durationInFrames": 73,
+        "delay": -1.235,
+        "built_duration_frames": 73,
+        "rmse": 0.0187
+      },
+      "spring": {
+        "stiffness": 8.736,
+        "damping": 5.045,
+        "mass": 1,
+        "damping_ratio": 0.8534,
+        "built_duration_frames": 82,
+        "rmse": 0.0359
+      },
+      "recommended": "bezier",
+      "note": "P5 glow decay on the clip bars themselves: from the hold (208-210, f2209-f2220) down to 114-115 from f2294, constant to the last picture f2340; the bars end about 22 luma darker than when they docked (lower band 136 -> 114, label-band background 102 -> 81); the halo above the strip decays earlier (curves/v7.fx-clip-glow-pulse-out.v7c3, f2220-f2254); sampled in clip 1, columns x 262-328 shifted by the exit drift from f2246 (v7c3_tools/clip_bar_luma.py)"
+    },
+    "v7.fx-clip-glow-pulse": {
+      "technique_id": "v7.fx-clip-glow-pulse",
+      "file": "curves/v7.fx-clip-glow-pulse.csv",
+      "property": "opacity",
+      "unit": "luma 0-255 of the halo band just above the clip strip (20.8 -> 68.4)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p5_v1_haloabove.csv",
+      "column": "mean",
+      "sampled_frames": [
+        2170,
+        2215
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 20.85,
+      "to_value": 68.4,
+      "active_frames": [
+        2172,
+        2206
+      ],
+      "measured_duration_frames": 34,
+      "bezier": {
+        "x1": 0.5826,
+        "y1": 0.0412,
+        "x2": 0.443,
+        "y2": 0.4106,
+        "durationInFrames": 38,
+        "delay": -4.727,
+        "built_duration_frames": 33,
+        "rmse": 0.0139
+      },
+      "spring": {
+        "stiffness": 29.699,
+        "damping": 7.143,
+        "mass": 1,
+        "damping_ratio": 0.6554,
+        "built_duration_frames": 65,
+        "rmse": 0.4005
+      },
+      "recommended": "bezier",
+      "note": "P5 clip-strip glow, build: a soft white bloom grows around the clip strip (clips 141 -> 206 luma, halo above and below +48 luma) while the gaps between the dropped clips close up (clips shift left to butt together, f2186-f2201) and the viewer footage changes shot (f2196, f2204, f2209); holds f2206-f2220, then decays (v7.fx-clip-glow-pulse-out.v7c3); ROI fixed (window settled after f2181)"
+    },
+    "v7.fx-panel-glow-swap.i2": {
+      "technique_id": "v7.fx-panel-glow-swap.i2",
+      "file": "curves/v7.fx-panel-glow-swap.i2.csv",
+      "property": "opacity",
+      "unit": "luma 0-255 of the empty project-panel area (159 at the peak f1729 -> 30, the new panel background)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p2_glow_luma_top.csv",
+      "column": "top",
+      "sampled_frames": [
+        1729,
+        1759
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 159.46,
+      "to_value": 30.0,
+      "active_frames": [
+        1729,
+        1747
+      ],
+      "measured_duration_frames": 18,
+      "bezier": {
+        "x1": 0.0149,
+        "y1": 0.2724,
+        "x2": 0.3709,
+        "y2": 0.4569,
+        "durationInFrames": 15,
+        "delay": 0.709,
+        "built_duration_frames": 15,
+        "rmse": 0.0533
+      },
+      "spring": {
+        "stiffness": 120.663,
+        "damping": 17.465,
+        "mass": 1,
+        "damping_ratio": 0.795,
+        "built_duration_frames": 20,
+        "rmse": 0.043
+      },
+      "recommended": "spring",
+      "note": "P2 content swap, glow decay: the bloom drains from the panel while the thumbnail grid drops out (f1731-f1736) and the folder grid drops in (f1740-f1749); panel background ends 3 luma darker than before the glow (33 -> 30); ROI rides the centred camera push-in (O = 816, 457 px)"
+    },
+    "v7.fx-panel-glow-swap": {
+      "technique_id": "v7.fx-panel-glow-swap",
+      "file": "curves/v7.fx-panel-glow-swap.csv",
+      "property": "opacity",
+      "unit": "luma 0-255 of the empty project-panel area above the grid (33 -> 159 at the peak f1729)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p2_glow_luma_top.csv",
+      "column": "top",
+      "sampled_frames": [
+        1676,
+        1729
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 33.0,
+      "to_value": 159.46,
+      "active_frames": [
+        1681,
+        1726
+      ],
+      "measured_duration_frames": 45,
+      "bezier": {
+        "x1": 0.821,
+        "y1": -0.0043,
+        "x2": 0.798,
+        "y2": 1.0039,
+        "durationInFrames": 54,
+        "delay": -6.979,
+        "built_duration_frames": 42,
+        "rmse": 0.0264
+      },
+      "spring": {
+        "stiffness": 6.073,
+        "damping": 0.5,
+        "mass": 1,
+        "damping_ratio": 0.1014,
+        "built_duration_frames": 295,
+        "rmse": 0.8256
+      },
+      "recommended": "bezier",
+      "note": "P2 content swap, glow build: a soft white bloom spreads over the whole project panel (thumbnails go near-white, luma 130 -> 235; empty panel 33 -> 159; soft halo over the panel border; viewer panel and desktop background unaffected), slow start from ~f1681, steepest f1716-f1721 (+8 luma/frame), peak at f1729, the picture before the thumbnail grid starts to slide down and out; ROI rides the centred camera push-in (O = 816, 457 px); peak = to-value"
+    },
+    "v7.fx-ripple-invert": {
+      "technique_id": "v7.fx-ripple-invert",
+      "file": "curves/v7.fx-ripple-invert.csv",
+      "property": "mask",
+      "unit": "px radius of the inverting ripple front (picture 1622x918; 932 px = frame corners)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_ripple1_radius.csv",
+      "column": "radius_px",
+      "sampled_frames": [
+        124,
+        151
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.0,
+      "to_value": 932.0,
+      "active_frames": [
+        126,
+        146
+      ],
+      "measured_duration_frames": 20,
+      "bezier": {
+        "x1": 0.4446,
+        "y1": 0.2198,
+        "x2": 0.3593,
+        "y2": -0.165,
+        "durationInFrames": 18,
+        "delay": 0.685,
+        "built_duration_frames": 18,
+        "rmse": 0.0488
+      },
+      "spring": {
+        "stiffness": 140.873,
+        "damping": 16.058,
+        "mass": 1,
+        "damping_ratio": 0.6765,
+        "built_duration_frames": 30,
+        "rmse": 0.4838
+      },
+      "recommended": "bezier",
+      "note": "soft white halo ring born around the lead ball at the box centre (f129) expands and inverts luminance inside it (box turns white, background black); azimuthal-average luma profile around (811,459): halo peak f129-f139, 50% front f141-f144, frame covered from f146; a second identical ring (f139 r62 -> f151 r~805) restores normal polarity"
+    },
+    "v7.icon-glyph-spin-pop": {
+      "technique_id": "v7.icon-glyph-spin-pop",
+      "file": "curves/v7.icon-glyph-spin-pop.csv",
+      "property": "rotation",
+      "unit": "degrees (principal-axis angle relative to rest 36.5 deg; image y down)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s4_glyph_spin.csv",
+      "column": "rotation_deg",
+      "sampled_frames": [
+        419,
+        479
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 80.0,
+      "to_value": 0.0,
+      "active_frames": [
+        419,
+        456
+      ],
+      "measured_duration_frames": 37,
+      "bezier": {
+        "x1": 0.3713,
+        "y1": 1.5391,
+        "x2": 0.2442,
+        "y2": 1.322,
+        "durationInFrames": 38,
+        "delay": -0.117,
+        "built_duration_frames": 37,
+        "rmse": 0.016
+      },
+      "spring": {
+        "stiffness": 94.033,
+        "damping": 8.047,
+        "mass": 1,
+        "damping_ratio": 0.4149,
+        "built_duration_frames": 51,
+        "rmse": 0.0931
+      },
+      "recommended": "bezier",
+      "note": "brand glyph inside the app tile spins into place on a damped spring while growing: rotation offset +80 deg (f419) -> -18.5 deg (f436, undershoot) -> +1 deg (f467, overshoot) -> rest ~f472; size 0.47 -> 1.40 (f434) -> 0.98 (f467) -> 1.0 of its rest size (125 px); second moments of the dark glyph pixels inside the light tile; starts at the hard cut (no rest before; from-value = first picture rounded)"
+    },
+    "v7.icon-tile-pop-in.i2": {
+      "technique_id": "v7.icon-tile-pop-in.i2",
+      "file": "curves/v7.icon-tile-pop-in.i2.csv",
+      "property": "scale",
+      "unit": "scale factor of the line-2 app icon (1.0 = 156 px = 9.6% W rounded-square tile)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p2_icon_pop_scale.csv",
+      "column": "scale",
+      "sampled_frames": [
+        3094,
+        3121
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.0,
+      "to_value": 1.0,
+      "active_frames": [
+        3099,
+        3111
+      ],
+      "measured_duration_frames": 12,
+      "bezier": {
+        "x1": 0.5925,
+        "y1": 0.9645,
+        "x2": 0.1376,
+        "y2": 0.8788,
+        "durationInFrames": 11,
+        "delay": 1.0,
+        "built_duration_frames": 10,
+        "rmse": 0.0475
+      },
+      "spring": {
+        "stiffness": 1449.091,
+        "damping": 72.883,
+        "mass": 1,
+        "damping_ratio": 0.9573,
+        "built_duration_frames": 9,
+        "rmse": 0.0514
+      },
+      "recommended": "bezier",
+      "note": "P2 line-2 lead icon (rounded light app tile with a dark glyph) pops in under the brand mark right after the punch-in cut: grows from its own centre (fixed 308 px below the brand mark centre, riding the camera settle) 0 -> 0.15 -> 0.74 -> 0.92 -> 0.97 -> 1.0 at f3101 / 3104 / 3106 / 3109 / 3111, no overshoot, slight blur in the first pictures; typing of line 2 starts beside it at f3111; ink bounding box (luma > 90, connected component)"
+    },
+    "v7.icon-tile-pop-in": {
+      "technique_id": "v7.icon-tile-pop-in",
+      "file": "curves/v7.icon-tile-pop-in.csv",
+      "property": "scale",
+      "unit": "scale factor (1.0 = tile 157 px = 9.7% W at the close framing)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_tile_pop_w_newpic.csv",
+      "column": "scale",
+      "sampled_frames": [
+        2471,
+        2499
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.0,
+      "to_value": 1.0,
+      "active_frames": [
+        2476,
+        2491
+      ],
+      "measured_duration_frames": 15,
+      "bezier": {
+        "x1": 0.6894,
+        "y1": 0.4352,
+        "x2": 0.0,
+        "y2": 0.9659,
+        "durationInFrames": 14,
+        "delay": 2.201,
+        "built_duration_frames": 11,
+        "rmse": 0.0484
+      },
+      "spring": {
+        "stiffness": 1631.457,
+        "damping": 81.443,
+        "mass": 1,
+        "damping_ratio": 1.0082,
+        "built_duration_frames": 9,
+        "rmse": 0.2018
+      },
+      "recommended": "bezier",
+      "note": "app icon of the second row is born during the glide after the hidden hard cut f2474: absent f2476, a 6x10 px sliver at f2479, 26 px f2481, 119 px f2484 (blurred, doubled by the vertical blur), 144 px f2486, 153 f2489, 156 f2491, 157 px f2494 = rest; scales about its own centre (x 569 px fixed, y riding the camera glide); bbox tracker (threshold 50 over luma 17); the tile's first letter starts fading in at f2491"
+    },
+    "v7.icon-tile-scale-down-in": {
+      "technique_id": "v7.icon-tile-scale-down-in",
+      "file": "curves/v7.icon-tile-scale-down-in.csv",
+      "property": "scale",
+      "unit": "scale factor (1.0 = settled tile, 215 px = 13.3% W)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s4_tile_scale.csv",
+      "column": "scale",
+      "sampled_frames": [
+        419,
+        469
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 2.1963,
+      "to_value": 1.0,
+      "active_frames": [
+        419,
+        447
+      ],
+      "measured_duration_frames": 28,
+      "bezier": {
+        "x1": 0.0719,
+        "y1": 1.1383,
+        "x2": 0.7849,
+        "y2": 0.9422,
+        "durationInFrames": 33,
+        "delay": -0.001,
+        "built_duration_frames": 26,
+        "rmse": 0.0178
+      },
+      "spring": {
+        "stiffness": 274.033,
+        "damping": 37.161,
+        "mass": 1,
+        "damping_ratio": 1.1224,
+        "built_duration_frames": 22,
+        "rmse": 0.166
+      },
+      "recommended": "bezier",
+      "note": "app-icon tile appears after the hard cut (f419) already 2.2x and blurred, shrinks about its centre (x 49.4%, y 50.2%) to 1.0 while sharpening; the glyph inside starts small and rotated and grows upright; right edge from the bbox tracker, centre x 801 from centre-row edges; motion starts at the cut (no rest before)"
+    },
+    "v7.icon-voice-badge-pop": {
+      "technique_id": "v7.icon-voice-badge-pop",
+      "file": "curves/v7.icon-voice-badge-pop.csv",
+      "property": "scale",
+      "unit": "disc radius px (final 32.9 px = 2.0% W; scale = r/32.9)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_icon_pop.csv",
+      "column": "radius_px",
+      "sampled_frames": [
+        704,
+        789
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.0,
+      "to_value": 32.87,
+      "active_frames": [
+        707,
+        744
+      ],
+      "measured_duration_frames": 37,
+      "bezier": {
+        "x1": 0.0,
+        "y1": 0.4065,
+        "x2": 0.0,
+        "y2": 0.8024,
+        "durationInFrames": 38,
+        "delay": 0.0,
+        "built_duration_frames": 35,
+        "rmse": 0.0199
+      },
+      "spring": {
+        "stiffness": 108.323,
+        "damping": 24.619,
+        "mass": 1,
+        "damping_ratio": 1.1827,
+        "built_duration_frames": 33,
+        "rmse": 0.1688
+      },
+      "recommended": "bezier",
+      "note": "round voice badge pops in above the caption, scale from 0 with a long ease-out; f709 value from template scale (ring too faint), f712+ from the radial luma profile ring; absent at f707"
+    },
+    "v7.layout-rise-make-room": {
+      "technique_id": "v7.layout-rise-make-room",
+      "file": "curves/v7.layout-rise-make-room.csv",
+      "property": "position-y",
+      "unit": "% of frame height",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s1_line1_rise_29-66.csv",
+      "column": "icon_ink_cy_pct",
+      "sampled_frames": [
+        31,
+        66
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 48.709,
+      "to_value": 44.771,
+      "active_frames": [
+        34,
+        51
+      ],
+      "measured_duration_frames": 17,
+      "bezier": {
+        "x1": 0.7093,
+        "y1": 0.2237,
+        "x2": 0.0,
+        "y2": 0.8175,
+        "durationInFrames": 18,
+        "delay": -0.27,
+        "built_duration_frames": 16,
+        "rmse": 0.0241
+      },
+      "spring": {
+        "stiffness": 932.008,
+        "damping": 63.464,
+        "mass": 1,
+        "damping_ratio": 1.0394,
+        "built_duration_frames": 12,
+        "rmse": 0.1377
+      },
+      "recommended": "bezier",
+      "note": "S01 title line 1 (brand-mark icon, word 1, word 2) rises to make room for line 2 entering below (line 2 from f49): brand-mark icon ink centroid (sub-pixel, inside the template window of scratch/v7c1_s1_brandicon_y_29-66.csv) 48.7% (f34) -> 44.8% H (f51-f66); word 2 rises by the same 3.9% H (49.6% -> 45.7% H, column word2_ink_cy_pct). Moves on every picture (24 fps) while the box height steps on twos (f36 / f41 / f46 / f51 / f56) and its top edge rises only 2.8% H (40.9% -> 38.1% H). A slow creep of 0.2% H f29-f34 precedes it (range starts f31)"
+    },
+    "v7.layout-slide-make-room": {
+      "technique_id": "v7.layout-slide-make-room",
+      "file": "curves/v7.layout-slide-make-room.csv",
+      "property": "position-x",
+      "unit": "% of frame width",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s1_slide_apart_11-36.csv",
+      "column": "word2_left_edge_pct",
+      "sampled_frames": [
+        11,
+        34
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 51.0,
+      "to_value": 54.35,
+      "active_frames": [
+        16,
+        26
+      ],
+      "measured_duration_frames": 10,
+      "bezier": {
+        "x1": 0.882,
+        "y1": 0.0157,
+        "x2": 0.1293,
+        "y2": 0.7715,
+        "durationInFrames": 13,
+        "delay": -2.184,
+        "built_duration_frames": 11,
+        "rmse": 0.0236
+      },
+      "spring": {
+        "stiffness": 2422.523,
+        "damping": 98.507,
+        "mass": 1,
+        "damping_ratio": 1.0007,
+        "built_duration_frames": 8,
+        "rmse": 0.2201
+      },
+      "recommended": "bezier",
+      "note": "S01 title line 1 re-layout when word 1 is inserted between the brand-mark icon and word 2: word 2's left ink edge (sub-pixel column profile, 50% of the first stem's peak) shifts right 51.0% -> 54.35% W while the label content shrinks (cap 8.3% -> 6.2% H); scaling about the box centre alone would have moved this edge left, so the shift is its own movement. The brand-mark icon slides left on the same timing, 42.7% -> 27.7% W (blur-aware template match, scratch/v7c1_s1_brandicon_blur_11-36.csv: progress 0.16 / 0.74 / 0.93 / 0.99 at f19 / f21 / f24 / f26 against this curve's 0.12 / 0.65 / 0.92 / 0.98; f19 and f21 carry horizontal motion blur, 44 and 28 px). Other ranges (f11-f36, f14-f36) land the optimiser in a worse minimum (rmse 0.24)"
+    },
+    "v7.logo-spin-while-typing": {
+      "technique_id": "v7.logo-spin-while-typing",
+      "file": "curves/v7.logo-spin-while-typing.csv",
+      "property": "rotation",
+      "unit": "degrees clockwise (unwrapped; the mark is rotationally symmetric with a 60 deg period, so it is matched modulo 60 deg)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_logo1_cx_spin_2342-2440_newpic.csv",
+      "column": "spin_cw_deg",
+      "sampled_frames": [
+        2342,
+        2440
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 11.0,
+      "to_value": 373.5,
+      "active_frames": [
+        2342,
+        2431
+      ],
+      "measured_duration_frames": 89,
+      "bezier": {
+        "x1": 0.0673,
+        "y1": 0.0817,
+        "x2": 0.0,
+        "y2": -0.0004,
+        "durationInFrames": 90,
+        "delay": 0.164,
+        "built_duration_frames": 88,
+        "rmse": 0.0089
+      },
+      "spring": {
+        "stiffness": 5.94,
+        "damping": 6.202,
+        "mass": 1,
+        "damping_ratio": 1.2724,
+        "built_duration_frames": 139,
+        "rmse": 0.2116
+      },
+      "recommended": "bezier",
+      "note": "agent logo icon spins clockwise at a constant 4.0 deg/frame (240 deg/s) from the cut (already turning on the first picture f2342) while its line types, one full turn plus 2 deg (11 -> 373.5 deg), and stops with a short ease-out at ~f2434 (f2429 359.5, f2431 368.5, f2434 373.5, f2436 374, f2440 372); angle = best-match rotation of a 128 px normalised logo patch vs f2369 (0.5 deg steps), unwrapped modulo 60 deg; continuous through the hidden hard cut f2392 (x0.49 pull-back); motion starts before the cut, so there is no rest before and the curve is a near-linear ramp"
+    },
+    "v7.mask-dot-ring-reveal": {
+      "technique_id": "v7.mask-dot-ring-reveal",
+      "file": "curves/v7.mask-dot-ring-reveal.csv",
+      "property": "mask",
+      "unit": "% of frame width (inner half-level radius of the dot band from the card centre 807, 455 px)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_dot_ring_inner_newpic.csv",
+      "column": "r_inner_pct_w",
+      "sampled_frames": [
+        2652,
+        2694
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.0,
+      "to_value": 39.15,
+      "active_frames": [
+        2654,
+        2692
+      ],
+      "measured_duration_frames": 38,
+      "bezier": {
+        "x1": 0.6282,
+        "y1": 0.3739,
+        "x2": 0.2292,
+        "y2": 0.5462,
+        "durationInFrames": 41,
+        "delay": -1.851,
+        "built_duration_frames": 39,
+        "rmse": 0.0194
+      },
+      "spring": {
+        "stiffness": 19.891,
+        "damping": 5.89,
+        "mass": 1,
+        "damping_ratio": 0.6603,
+        "built_duration_frames": 79,
+        "rmse": 0.3028
+      },
+      "recommended": "bezier",
+      "note": "footage reveal inside the result card: a ring of glowing dot-matrix pixels (12 px dot pitch, brighter random clusters) is born at the status chip (f2654-f2656) and expands; inside the ring the footage is clear, outside it is dim; inner edge radius 75 px f2659 -> 315 f2671 -> 515 f2681 -> 635 px f2694 (decelerating: about 23 -> 20 -> 9 px/frame), peak of the band 85 -> 645 px, outer edge reaches the card corners (half-diagonal ~770 px) by ~f2681-f2690; card mean luma 27.6 (f2654) -> 67.0 (f2676) then 52 (f2694) as the dots fade; radial profile of high-pass energy (|g - blur2.5|) inside the card, chip area masked; no settle (the reframe pull-back starts at f2690): to-value = last measured inner radius"
+    },
+    "v7.mask-scan-band-reveal": {
+      "technique_id": "v7.mask-scan-band-reveal",
+      "file": "curves/v7.mask-scan-band-reveal.csv",
+      "property": "mask",
+      "unit": "% of the picture card's width (reveal front = trailing edge of the light band, card x 47-1577 px)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p4_scan1_front.csv",
+      "column": "front_card_pct",
+      "sampled_frames": [
+        3364,
+        3391
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.0,
+      "to_value": 100.0,
+      "active_frames": [
+        3371,
+        3386
+      ],
+      "measured_duration_frames": 15,
+      "bezier": {
+        "x1": 0.5382,
+        "y1": -0.0781,
+        "x2": 0.6054,
+        "y2": 0.9285,
+        "durationInFrames": 16,
+        "delay": -1.461,
+        "built_duration_frames": 14,
+        "rmse": 0.0197,
+        "rmse_raw_time": 0.0172,
+        "fit": "shape metric (lower of tune_tokens.tune_bezier and the shapefit.py search, scratch/v7c5_tools/refit_shape.py)"
+      },
+      "spring": {
+        "stiffness": 215.219,
+        "damping": 23.129,
+        "mass": 1,
+        "damping_ratio": 0.7883,
+        "built_duration_frames": 15,
+        "rmse": 0.099,
+        "rmse_raw_time": 0.0283,
+        "fit": "shape metric (tune_tokens.tune_spring via scratch/v7c5_tools/refit_shape.py)"
+      },
+      "recommended": "bezier",
+      "note": "P4 edit reveal inside the full-frame picture card: a light vertical scan band (about 130-200 px = 8-12% W wide at mid-card, vertical streak texture, brighter at the card edges) sweeps left to right across the card in ~13 f (f3371 entry glow at the left edge -> f3384 compressed against the right edge, gone f3386) and the edited version of the picture is revealed behind it; trailing edge at 0 / 5.6 / 24.8 / 49.5 / 74.5 / 93.9 % of the card at f3371 / 3374 / 3376 / 3379 / 3381 / 3384, band absent before f3371 and from f3386; column-profile excess over the before/after pictures (scratch/v7c5_p4_scan1.csv); the same band asset repeats at f3426-f3441 and f3484-f3498. Refit on the shape metric (scratch/v7c5_tools/refit_shape.py): fit_easing.py's raw-time fits match the samples (raw-time RMSE bezier 0.006, spring 0.0232) but both shape RMSEs stay above 0.05 (bezier 0.0687, spring 0.2856) because the 7 pictures of the measured 15-f window sit 2-4 frames apart, so the measured 2% window and a raw-time fit's own window differ by 1-3 frames; the stored bezier and spring are now fitted with the build-side rule (curvekit.shape_rmse, built duration within 1 f of the measured 15 f); the original fits are kept under raw_time_fit.",
+      "raw_time_fit": {
+        "tool": "fit_easing.py",
+        "bezier": {
+          "x1": 1.0,
+          "y1": 0.9636,
+          "x2": 0.3478,
+          "y2": 0.5885,
+          "durationInFrames": 12,
+          "delay": 2.179,
+          "built_duration_frames": 12,
+          "rmse": 0.0687,
+          "rmse_raw_time": 0.006
+        },
+        "spring": {
+          "stiffness": 230.028,
+          "damping": 22.62,
+          "mass": 1,
+          "damping_ratio": 0.7457,
+          "built_duration_frames": 23,
+          "rmse": 0.2856,
+          "rmse_raw_time": 0.0232
+        },
+        "recommended": "bezier"
+      }
+    },
+    "v7.particle-mascot-chain-arc": {
+      "technique_id": "v7.particle-mascot-chain-arc",
+      "file": "curves/v7.particle-mascot-chain-arc.csv",
+      "property": "position",
+      "unit": "px along the arc path (picture 1622x918)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_leadball_path.csv",
+      "column": "path_px",
+      "sampled_frames": [
+        81,
+        134
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.0,
+      "to_value": 1123.32,
+      "active_frames": [
+        84,
+        131
+      ],
+      "measured_duration_frames": 47,
+      "bezier": {
+        "x1": 0.9307,
+        "y1": 1.2205,
+        "x2": 0.7322,
+        "y2": 0.7032,
+        "durationInFrames": 47,
+        "delay": -0.31,
+        "built_duration_frames": 47,
+        "rmse": 0.0326
+      },
+      "spring": {
+        "stiffness": 27.669,
+        "damping": 46.86,
+        "mass": 1,
+        "damping_ratio": 4.4542,
+        "built_duration_frames": 65,
+        "rmse": 0.1298
+      },
+      "recommended": "bezier",
+      "note": "lead ball of a 5-ball chain: enters at the left edge (f81, x 0.7% y 64.8%), arcs up to a peak (f106, x 33.9% y 18.5%) and dives into the label-box centre (f131, x 49.8% y 49.4%); connected-component tracker on the darkest ball, positions update on twos (every 5 frames); f126/f129 hidden in front of the black box"
+    },
+    "v7.shape-arrow-drop-in": {
+      "technique_id": "v7.shape-arrow-drop-in",
+      "file": "curves/v7.shape-arrow-drop-in.csv",
+      "property": "position-y",
+      "unit": "% of frame height (arrowhead tip)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_arrow_12-100.csv",
+      "column": "tip_y_pct",
+      "sampled_frames": [
+        19,
+        89
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 55.664,
+      "to_value": 67.32,
+      "active_frames": [
+        19,
+        41
+      ],
+      "measured_duration_frames": 22,
+      "bezier": {
+        "x1": 0.0003,
+        "y1": 0.1669,
+        "x2": 0.1984,
+        "y2": 1.0083,
+        "durationInFrames": 26,
+        "delay": -0.0,
+        "built_duration_frames": 21,
+        "rmse": 0.014
+      },
+      "spring": {
+        "stiffness": 230.37,
+        "damping": 45.38,
+        "mass": 1,
+        "damping_ratio": 1.4949,
+        "built_duration_frames": 24,
+        "rmse": 0.0886
+      },
+      "recommended": "bezier",
+      "note": "thin vertical down-arrow (line 32% H long + arrowhead) right of the label drops in from the top: first seen f16 as a vertical motion-blur streak, tip 55.7% -> 67.3% H (f19 -> f44) decelerating, drifting left 89.4% -> 86.2% W, grey -> black; bbox tracker (ink < 200); motion starts before the first trackable picture"
+    },
+    "v7.shape-dot-to-pill": {
+      "technique_id": "v7.shape-dot-to-pill",
+      "file": "curves/v7.shape-dot-to-pill.csv",
+      "property": "height",
+      "unit": "px at pointer scale 1.0 (bright core above luma 90; 121 px = 13.2% H)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_pill_grow.csv",
+      "column": "h_norm",
+      "sampled_frames": [
+        1361,
+        1391
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.0,
+      "to_value": 121.5,
+      "active_frames": [
+        1364,
+        1386
+      ],
+      "measured_duration_frames": 22,
+      "bezier": {
+        "x1": 0.2372,
+        "y1": 1.0363,
+        "x2": 1.0,
+        "y2": 0.7544,
+        "durationInFrames": 21,
+        "delay": 0.53,
+        "built_duration_frames": 21,
+        "rmse": 0.0188
+      },
+      "spring": {
+        "stiffness": 166.688,
+        "damping": 37.945,
+        "mass": 1,
+        "damping_ratio": 1.4695,
+        "built_duration_frames": 28,
+        "rmse": 0.0738
+      },
+      "recommended": "bezier",
+      "note": "status capsule is born as a dot right of the 3D pointer (f1366) and grows into a circle ~121 px tall by ~f1386, then stretches sideways into a capsule as its label types in (width 220 -> 742 px f1386-f1416); camera pull-back compensated with the pointer template scale"
+    },
+    "v7.shape-line-to-pill": {
+      "technique_id": "v7.shape-line-to-pill",
+      "file": "curves/v7.shape-line-to-pill.csv",
+      "property": "width",
+      "unit": "px of 1622 (status capsule width; 12 px line at its first picture f3744 -> 369.5 px = 22.8% W; height 179-180 px = 19.6% H throughout)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p6_capsule_grow_nodup.csv",
+      "column": "width_px",
+      "sampled_frames": [
+        3744,
+        3792
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 12.0,
+      "to_value": 369.5,
+      "active_frames": [
+        3744,
+        3767
+      ],
+      "measured_duration_frames": 23,
+      "bezier": {
+        "x1": 0.284,
+        "y1": 0.5174,
+        "x2": 0.1077,
+        "y2": 0.9256,
+        "durationInFrames": 26,
+        "delay": -0.016,
+        "built_duration_frames": 22,
+        "rmse": 0.0163
+      },
+      "spring": {
+        "stiffness": 295.023,
+        "damping": 34.964,
+        "mass": 1,
+        "damping_ratio": 1.0178,
+        "built_duration_frames": 21,
+        "rmse": 0.0619
+      },
+      "recommended": "bezier",
+      "note": "P6 status capsule (dark glossy pill, white bold label) pops in at f3744 as a thin full-height vertical line (12 x 179 px, a sliver of the first letter inside) right of the 3D pointer, then widens to a pill while its one-word label types: 12 -> 71 / 185 / 253 / 294 / 321 / 339 / 352 / 360 / 365 / 368 / 369 px at f3744 / 3746 / 3749 / 3751 / 3754 / 3756 / 3759 / 3761 / 3765 / 3767 / 3769 / 3771; the left edge jumps 58 px right with the pointer between f3744 and f3746, then drifts 29 px left (1192 -> 1163 px) while the right edge runs out (1262 -> 1531 px); the width keeps growing 15 f after the label is complete (f3756); dark-pixel connected component (luma < background - 45), capture duplicates removed by a local picture difference (scratch/v7c5_p6_capsule_grow_nodup.csv)"
+    },
+    "v7.shape-pill-to-line-out": {
+      "technique_id": "v7.shape-pill-to-line-out",
+      "file": "curves/v7.shape-pill-to-line-out.csv",
+      "property": "width",
+      "unit": "px of 1622 at the rest camera scale (status capsule width; 369.2 px = 22.8% W -> 0, gone at f3821)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p6_capsule_shrink_camcorr.csv",
+      "column": "width_rest_px",
+      "sampled_frames": [
+        3780,
+        3824
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 369.2,
+      "to_value": 0.0,
+      "active_frames": [
+        3792,
+        3816
+      ],
+      "measured_duration_frames": 24,
+      "bezier": {
+        "x1": 0.383,
+        "y1": 0.026,
+        "x2": 0.028,
+        "y2": 0.86,
+        "durationInFrames": 26,
+        "delay": -0.687,
+        "built_duration_frames": 23,
+        "rmse": 0.0224,
+        "rmse_raw_time": 0.0177,
+        "fit": "shape metric (lower of tune_tokens.tune_bezier and the shapefit.py search, scratch/v7c5_tools/refit_shape.py)"
+      },
+      "spring": {
+        "stiffness": 122.957,
+        "damping": 19.545,
+        "mass": 1,
+        "damping_ratio": 0.8813,
+        "built_duration_frames": 24,
+        "rmse": 0.0558,
+        "rmse_raw_time": 0.0408,
+        "fit": "shape metric (tune_tokens.tune_spring via scratch/v7c5_tools/refit_shape.py)"
+      },
+      "recommended": "bezier",
+      "note": "P6 status capsule exit, the reverse of its entrance: the label un-types from the end (period gone f3794, then one letter at f3796 / 3802 / 3805 / 3806, empty from f3806) and the pill width follows it down to a thin full-height line: 370 -> 360 / 359 / 300 / 185 / 117 / 77 / 50 / 32 / 20 / 12 / 6 px at f3792 / 3794 / 3795 / 3796 / 3799 / 3802 / 3805 / 3806 / 3809 / 3811 / 3814 / 3816; the line fades to 1-2 px at f3819-f3820 and is gone at f3821 (crops/crop_1040_600_540x300_03790-03822.jpg); the right edge runs in (1530 -> 1238 px) faster than the left edge follows (1161 -> 1233 px); the width steps with each removed letter, so a smooth curve is approximate (fit_easing's spring: shape RMSE 0.053); dark-pixel connected component (luma < background - 45), capture duplicates removed by a local picture difference (scratch/v7c5_p6_capsule_shrink_nodup.csv), divided by the camera push-in scale that creeps at the same time (1.0017 at f3792 -> 1.0524 at f3816; scratch/v7c5_p6_capsule_shrink_camcorr.csv). Refit on the shape metric (scratch/v7c5_tools/refit_shape.py): fit_easing.py's raw-time fits match the samples (raw-time RMSE bezier 0.0094, spring 0.0184) but both shape RMSEs stay above 0.05 (bezier 0.1452, spring 0.0527) because the 12 pictures of the measured 24-f window sit 2-4 frames apart, so the measured 2% window and a raw-time fit's own window differ by 1-3 frames; the stored bezier and spring are now fitted with the build-side rule (curvekit.shape_rmse, built duration within 1 f of the measured 24 f); the original fits are kept under raw_time_fit.",
+      "raw_time_fit": {
+        "tool": "fit_easing.py",
+        "bezier": {
+          "x1": 0.2643,
+          "y1": 1.1158,
+          "x2": 0.999,
+          "y2": 0.9376,
+          "durationInFrames": 22,
+          "delay": 2.833,
+          "built_duration_frames": 21,
+          "rmse": 0.1452,
+          "rmse_raw_time": 0.0094
+        },
+        "spring": {
+          "stiffness": 267.958,
+          "damping": 39.756,
+          "mass": 1,
+          "damping_ratio": 1.2143,
+          "built_duration_frames": 22,
+          "rmse": 0.0527,
+          "rmse_raw_time": 0.0184
+        },
+        "recommended": "spring"
+      }
+    },
+    "v7.text-caption-fade-out.i2": {
+      "technique_id": "v7.text-caption-fade-out.i2",
+      "file": "curves/v7.text-caption-fade-out.i2.csv",
+      "property": "opacity",
+      "unit": "luma 0-255 (mean of word ROI x715-910 y772-867)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_cap_s0w1_bbox.csv",
+      "column": "mean_lum",
+      "sampled_frames": [
+        719,
+        741
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 163.57,
+      "to_value": 146.75,
+      "active_frames": [
+        728,
+        739
+      ],
+      "measured_duration_frames": 11,
+      "bezier": {
+        "x1": 1.0,
+        "y1": 0.7461,
+        "x2": 1.0,
+        "y2": 0.7368,
+        "durationInFrames": 10,
+        "delay": 0.747,
+        "built_duration_frames": 10,
+        "rmse": 0.0526
+      },
+      "spring": {
+        "stiffness": 444.575,
+        "damping": 50.182,
+        "mass": 1,
+        "damping_ratio": 1.19,
+        "built_duration_frames": 17,
+        "rmse": 0.3348
+      },
+      "recommended": "bezier",
+      "note": "single-word caption fades out in place (no movement, template y constant) from f728; near-linear to ~72% at f738, then removed at f739; ROI mean luma as opacity proxy, 1 = gone"
+    },
+    "v7.text-caption-fade-out": {
+      "technique_id": "v7.text-caption-fade-out",
+      "file": "curves/v7.text-caption-fade-out.csv",
+      "property": "opacity",
+      "unit": "opacity estimate 0-1 (glyph-mask luma contrast vs local background, 1 = settled word)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c6_cap1_word_4064-4170.csv",
+      "column": "opacity_est",
+      "sampled_frames": [
+        4128,
+        4166
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 1.0026,
+      "to_value": -0.0163,
+      "active_frames": [
+        4140,
+        4159
+      ],
+      "measured_duration_frames": 19,
+      "bezier": {
+        "x1": 0.9247,
+        "y1": 0.8684,
+        "x2": 0.0,
+        "y2": 0.1142,
+        "durationInFrames": 20,
+        "delay": -0.449,
+        "built_duration_frames": 20,
+        "rmse": 0.0384
+      },
+      "spring": {
+        "stiffness": 152.447,
+        "damping": 29.053,
+        "mass": 1,
+        "damping_ratio": 1.1765,
+        "built_duration_frames": 28,
+        "rmse": 0.207
+      },
+      "recommended": "bezier",
+      "note": "P2 single-word caption fades out in place (template dx = dy = 0 throughout) from f4141 while the next caption's first word fades in beside it (first visible f4156); near-linear, 0.90 / 0.75 / 0.63 / 0.49 / 0.36 / 0.22 / 0.10 at f4141 / 4144 / 4146 / 4149 / 4151 / 4154 / 4156, removed at about 10% (gone f4159); glyph-mask contrast, so fade and any blur are not separated"
+    },
+    "v7.text-type-letter-fade": {
+      "technique_id": "v7.text-type-letter-fade",
+      "file": "curves/v7.text-type-letter-fade.csv",
+      "property": "opacity",
+      "unit": "luma 0-255 (97th percentile in the letter box; 18 = background, 249 = white; the grey plateau 210-218 = 0.83-0.86)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_line1_letters_2342-2389_newpic.csv",
+      "column": "F",
+      "sampled_frames": [
+        2342,
+        2369
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 18.0,
+      "to_value": 249.0,
+      "active_frames": [
+        2342,
+        2361
+      ],
+      "measured_duration_frames": 19,
+      "bezier": {
+        "x1": 0.8136,
+        "y1": 1.2837,
+        "x2": 0.0,
+        "y2": 0.5587,
+        "durationInFrames": 18,
+        "delay": 1.288,
+        "built_duration_frames": 18,
+        "rmse": 0.0667
+      },
+      "spring": {
+        "stiffness": 367.554,
+        "damping": 39.451,
+        "mass": 1,
+        "damping_ratio": 1.0289,
+        "built_duration_frames": 19,
+        "rmse": 0.0717
+      },
+      "recommended": "bezier",
+      "note": "typewriter line, first letter of line 1 at the close framing (letter box y 402-509 px, riding the canvas: logo centre x per picture), whole reveal from the background to white: the letter fades in place (no blur, no movement) in two stages, background -> light-grey plateau (luma 33 / 75 / 140 / 211 at f2344 / 2346 / 2349 / 2351 = 0.07 / 0.25 / 0.52 / 0.83), a creeping plateau (214 f2354, 218 f2356), then -> white (236 f2359, 249 f2361), held; one ease over both stages (the plateau is not a separate hold in this fit). Re-tracked over the full range to white: the earlier stage-1-only fit (f2342-f2354, 6 pictures) had bezier rmse 0.068. Both stored rmse stay above 0.05 because the 24 fps samples (2-3 frames apart) put the measured window start up to one picture before the onset; shape-matched bezier and the stacked later letters (stage 1 within 2 pictures, stage-2 half level 9.0-10.6 f after the stage-1 half level, 11 letters of P2a and P6a, scratch/v7c4_letters_stacked_2342-2989.csv) are given in chunks/v7c4.md"
+    },
+    "v7.text-word-blur-rise.i2": {
+      "technique_id": "v7.text-word-blur-rise.i2",
+      "file": "curves/v7.text-word-blur-rise.i2.csv",
+      "property": "position-y",
+      "unit": "px offset of the caption word from its rest (template, ref f4100)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c6_cap1_word_4064-4170.csv",
+      "column": "dy_px",
+      "sampled_frames": [
+        4075,
+        4130
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 14.0,
+      "to_value": 0.0,
+      "active_frames": [
+        4075,
+        4089
+      ],
+      "measured_duration_frames": 14,
+      "bezier": {
+        "x1": 0.3531,
+        "y1": 0.9268,
+        "x2": 0.5584,
+        "y2": 0.7259,
+        "durationInFrames": 12,
+        "delay": 0.555,
+        "built_duration_frames": 12,
+        "rmse": 0.0248
+      },
+      "spring": {
+        "stiffness": 543.711,
+        "damping": 47.349,
+        "mass": 1,
+        "damping_ratio": 1.0153,
+        "built_duration_frames": 16,
+        "rmse": 0.0381
+      },
+      "recommended": "bezier",
+      "note": "P2 single-word caption rise: +14 / +10 / +6 / +3 / +2 / +1 / 0 px at f4075 / 4077 / 4079 / 4082 / 4084 / 4086 / 4089; comparison instance for v7c2's v7.text-word-blur-rise-y"
+    },
+    "v7.text-word-blur-rise.i3": {
+      "technique_id": "v7.text-word-blur-rise.i3",
+      "file": "curves/v7.text-word-blur-rise.i3.csv",
+      "property": "opacity",
+      "unit": "luma 0-255 (mean of word ROI x470-595 y772-862)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_cap_s2w1_bbox.csv",
+      "column": "mean_lum",
+      "sampled_frames": [
+        900,
+        921
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 96.57,
+      "to_value": 118.05,
+      "active_frames": [
+        900,
+        920
+      ],
+      "measured_duration_frames": 20,
+      "bezier": {
+        "x1": 0.1241,
+        "y1": 0.1221,
+        "x2": 0.3412,
+        "y2": 1.1762,
+        "durationInFrames": 27,
+        "delay": -0.013,
+        "built_duration_frames": 18,
+        "rmse": 0.0541
+      },
+      "spring": {
+        "stiffness": 134.68,
+        "damping": 18.673,
+        "mass": 1,
+        "damping_ratio": 0.8045,
+        "built_duration_frames": 19,
+        "rmse": 0.0469
+      },
+      "recommended": "spring",
+      "note": "first caption word after the f900 cut fades in while rising 15 px and de-blurring, f902-f920; ROI mean luma as opacity proxy (rest pinned to the first picture after the cut, f900); this stretch was captured at ~30 fps"
+    },
+    "v7.text-word-blur-rise.i4": {
+      "technique_id": "v7.text-word-blur-rise.i4",
+      "file": "curves/v7.text-word-blur-rise.i4.csv",
+      "property": "position-y",
+      "unit": "px of 918 (word centre)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_cap_s2w1_tmpl.csv",
+      "column": "cy",
+      "sampled_frames": [
+        902,
+        921
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 826.0,
+      "to_value": 811.0,
+      "active_frames": [
+        903,
+        920
+      ],
+      "measured_duration_frames": 17,
+      "bezier": {
+        "x1": 0.0,
+        "y1": 0.2444,
+        "x2": 0.439,
+        "y2": 0.994,
+        "durationInFrames": 19,
+        "delay": -0.0,
+        "built_duration_frames": 17,
+        "rmse": 0.0402
+      },
+      "spring": {
+        "stiffness": 238.651,
+        "damping": 29.046,
+        "mass": 1,
+        "damping_ratio": 0.9401,
+        "built_duration_frames": 20,
+        "rmse": 0.0783
+      },
+      "recommended": "bezier",
+      "note": "same word: template centre y 826 -> 811 px (rise 15 px = 1.6% H), first visible picture f902 taken as the start (true start within 1 frame before)"
+    },
+    "v7.text-word-blur-rise": {
+      "technique_id": "v7.text-word-blur-rise",
+      "file": "curves/v7.text-word-blur-rise.csv",
+      "property": "opacity",
+      "unit": "opacity estimate 0-1 (glyph-mask contrast vs local background; fade and de-blur combined)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c6_cap1_word_4064-4170.csv",
+      "column": "opacity_est",
+      "sampled_frames": [
+        4066,
+        4130
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.0,
+      "to_value": 1.0,
+      "active_frames": [
+        4075,
+        4091
+      ],
+      "measured_duration_frames": 16,
+      "bezier": {
+        "x1": 0.9358,
+        "y1": 1.1636,
+        "x2": 0.3885,
+        "y2": 0.8028,
+        "durationInFrames": 15,
+        "delay": 0.197,
+        "built_duration_frames": 15,
+        "rmse": 0.0204
+      },
+      "spring": {
+        "stiffness": 249.556,
+        "damping": 25.447,
+        "mass": 1,
+        "damping_ratio": 0.8054,
+        "built_duration_frames": 15,
+        "rmse": 0.0468
+      },
+      "recommended": "bezier",
+      "note": "P2 single-word caption fade/de-blur in: 0.01 / 0.14 / 0.35 / 0.59 / 0.81 / 0.92 / 0.98 / 1.0 at f4075 / 4077 / 4079 / 4082 / 4084 / 4086 / 4089 / 4091; comparison instance for v7c2's v7.text-word-blur-rise"
+    },
+    "v7.trans-iris-white": {
+      "technique_id": "v7.trans-iris-white",
+      "file": "curves/v7.trans-iris-white.csv",
+      "property": "mask",
+      "unit": "px radius of the white disc (picture 1622x918; 932 px = covers the frame)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_iris_disc_radius.csv",
+      "column": "radius_px",
+      "sampled_frames": [
+        144,
+        168
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 13.04,
+      "to_value": 932.0,
+      "active_frames": [
+        146,
+        162
+      ],
+      "measured_duration_frames": 16,
+      "bezier": {
+        "x1": 0.0,
+        "y1": 0.0291,
+        "x2": 0.8858,
+        "y2": -0.0634,
+        "durationInFrames": 18,
+        "delay": -2.0,
+        "built_duration_frames": 16,
+        "rmse": 0.0048
+      },
+      "spring": {
+        "stiffness": 238.917,
+        "damping": 21.145,
+        "mass": 1,
+        "damping_ratio": 0.684,
+        "built_duration_frames": 24,
+        "rmse": 0.5547
+      },
+      "recommended": "bezier",
+      "note": "soft-edged white disc grows from the label-box centre (the white lead ball, r 13 px at f144) until the frame is white (f162, radius >= 932 px half-diagonal), white hold f162-f168 at luma 248 = the next layout's background; equivalent radius of the >=225-luma component at the centre"
+    },
+    "v7.trans-punch-in-whip-up.i2": {
+      "technique_id": "v7.trans-punch-in-whip-up.i2",
+      "file": "curves/v7.trans-punch-in-whip-up.i2.csv",
+      "property": "position-y",
+      "unit": "% of frame height (large timecode label in the close-up; 47.5% -> 21.5% H)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p5_tc.csv",
+      "column": "cy_pct",
+      "sampled_frames": [
+        2091,
+        2120
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 47.549,
+      "to_value": 21.514,
+      "active_frames": [
+        2091,
+        2120
+      ],
+      "measured_duration_frames": 29,
+      "bezier": {
+        "x1": 0.0,
+        "y1": 0.6347,
+        "x2": 0.6716,
+        "y2": 0.9805,
+        "durationInFrames": 27,
+        "delay": 1.757,
+        "built_duration_frames": 24,
+        "rmse": 0.0399
+      },
+      "spring": {
+        "stiffness": 133.07,
+        "damping": 26.017,
+        "mass": 1,
+        "damping_ratio": 1.1277,
+        "built_duration_frames": 30,
+        "rmse": 0.0464
+      },
+      "recommended": "bezier",
+      "note": "incoming half of the punch-in whip P4 -> P5: the hard cut at f2091 jumps to a x1.75 closer framing of the timeline area (ghost outlines and track headers) that arrives 239 px (26.0% H) below its rest, already moving up at ~22 px/frame (2.4% H) with strong vertical motion blur, and decelerates to rest by ~f2120; x and scale constant (template scale 1.00); about 2.5x faster than the outgoing pan at the cut (0.55% H/frame x 1.75 zoom = 0.96% H/frame); template on the large timecode label (ref f2111); motion starts at the cut (first sample = from-value)"
+    },
+    "v7.trans-punch-in-whip-up.i3": {
+      "technique_id": "v7.trans-punch-in-whip-up.i3",
+      "file": "curves/v7.trans-punch-in-whip-up.i3.csv",
+      "property": "position-y",
+      "unit": "% of frame height (midpoint of two window panel labels; 11.5% -> 5.5% H at the last picture before the cut)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p4_window.csv",
+      "column": "mid_y_pct",
+      "sampled_frames": [
+        2036,
+        2089
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 11.46,
+      "to_value": 5.474,
+      "active_frames": [
+        2041,
+        2089
+      ],
+      "measured_duration_frames": 48,
+      "bezier": {
+        "x1": 0.6984,
+        "y1": 0.1095,
+        "x2": 1.0,
+        "y2": 0.6766,
+        "durationInFrames": 48,
+        "delay": -1.568,
+        "built_duration_frames": 44,
+        "rmse": 0.0253
+      },
+      "spring": {
+        "stiffness": 21.288,
+        "damping": 33.498,
+        "mass": 1,
+        "damping_ratio": 3.6302,
+        "built_duration_frames": 74,
+        "rmse": 0.4254
+      },
+      "recommended": "bezier",
+      "note": "outgoing half of the punch-in whip P4 -> P5: once the whip-in from the left has settled the whole window pans up (camera tilts down toward the timeline), accelerating from rest (~f2041) to ~5 px/frame (0.55% H) at the last picture f2089; no scale change (label distance 651 +-1 px); the ghost clip outlines fly down into the timeline during this pan; hard cut at f2091 into a x1.75 closer framing that keeps moving up (v7.trans-punch-in-whip-up.v7c3); to-value = last measured picture (no settle)"
+    },
+    "v7.trans-punch-in-whip-up.i4": {
+      "technique_id": "v7.trans-punch-in-whip-up.i4",
+      "file": "curves/v7.trans-punch-in-whip-up.i4.csv",
+      "property": "position-y",
+      "unit": "% of frame height",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_z2_lead_blurfit_2425-2480_newpic.csv",
+      "column": "cy_pct",
+      "sampled_frames": [
+        2429,
+        2471
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 49.47,
+      "to_value": 35.403,
+      "active_frames": [
+        2446,
+        2471
+      ],
+      "measured_duration_frames": 25,
+      "bezier": {
+        "x1": 1.0,
+        "y1": 0.0825,
+        "x2": 1.0,
+        "y2": 0.783,
+        "durationInFrames": 27,
+        "delay": -2.911,
+        "built_duration_frames": 23,
+        "rmse": 0.0286
+      },
+      "spring": {
+        "stiffness": 28.467,
+        "damping": 0.5,
+        "mass": 1,
+        "damping_ratio": 0.0469,
+        "built_duration_frames": 217,
+        "rmse": 0.8482
+      },
+      "recommended": "bezier",
+      "note": "outgoing half of the punch-in whip up into the hidden hard cut f2474 (Z2), stop-hold variant: the finished one-line layout (settled framing) starts to rise at ~f2444 and accelerates (blur-aware template on the logo + first word, ref f2471: centre y 454.2 -> 325.0 px; box blur along y 1 px at rest, 3 / 5 / 7 / 9 px at f2454-f2467, 17 px at f2469 = the fastest picture), then stops dead: the next picture f2471 is crisp (blur 1 px, vertical gradient p99.9 126 vs 131-135 at rest and 23 at f2469) 44.9 px further up and is held f2471-f2473 (one picture); the cut f2474 then brings the x2.2 framing already rising under vertical blur (curve v7.trans-punch-in-whip-up.v7c4). The bezier completes before f2471 (hard stop, vertical end tangent); build: clamp at the end, hold the end value with no motion blur for f2471-f2473, cut at f2474. Exact stop frame inside f2469-f2471 UNCERTAIN (one capture gap). x drifts 526 -> 530 px, template scale 1.015 -> 1.000 (the 0.985 creep of the settled framing)."
+    },
+    "v7.trans-punch-in-whip-up.i5": {
+      "technique_id": "v7.trans-punch-in-whip-up.i5",
+      "file": "curves/v7.trans-punch-in-whip-up.i5.csv",
+      "property": "position-y",
+      "unit": "% of frame height (line-1 brand mark centre; 49.4% -> 40.4% H at the last picture before the cut)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p1_mark_3050-3140.csv",
+      "column": "cy_pct",
+      "sampled_frames": [
+        3050,
+        3091
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 49.401,
+      "to_value": 40.359,
+      "active_frames": [
+        3063,
+        3091
+      ],
+      "measured_duration_frames": 28,
+      "bezier": {
+        "x1": 0.1221,
+        "y1": 0.0617,
+        "x2": 0.7296,
+        "y2": 0.0627,
+        "durationInFrames": 30,
+        "delay": -1.953,
+        "built_duration_frames": 29,
+        "rmse": 0.0157
+      },
+      "spring": {
+        "stiffness": 62.467,
+        "damping": 67.493,
+        "mass": 1,
+        "damping_ratio": 4.2698,
+        "built_duration_frames": 44,
+        "rmse": 0.3969
+      },
+      "recommended": "bezier",
+      "note": "outgoing half of the punch-in whip P1 -> P2: the centred one-line headline (brand mark + 4 words) on the dark canvas, after a slow shrink (line span 820 -> 801 px f3050-f3086), starts to rise at ~f3062 and accelerates upward to ~9 px/frame (1.0% H) with vertical motion blur at the last picture f3091; hard cut f3094 into a x2.33 closer framing (no settle on this half: to-value = last picture); template on the brand mark (track.py, scales 0.36-1.10, global; scale 0.43-0.44 here, score 0.69-0.99)"
+    },
+    "v7.trans-punch-in-whip-up": {
+      "technique_id": "v7.trans-punch-in-whip-up",
+      "file": "curves/v7.trans-punch-in-whip-up.csv",
+      "property": "position-y",
+      "unit": "% of frame height",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_z2_glide_logo_cy_newpic.csv",
+      "column": "cy_pct",
+      "sampled_frames": [
+        2474,
+        2501
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 47.059,
+      "to_value": 16.231,
+      "active_frames": [
+        2474,
+        2494
+      ],
+      "measured_duration_frames": 20,
+      "bezier": {
+        "x1": 0.0,
+        "y1": 0.1727,
+        "x2": 0.4143,
+        "y2": 0.9986,
+        "durationInFrames": 21,
+        "delay": 0.0,
+        "built_duration_frames": 18,
+        "rmse": 0.0348
+      },
+      "spring": {
+        "stiffness": 250.062,
+        "damping": 76.071,
+        "mass": 1,
+        "damping_ratio": 2.4053,
+        "built_duration_frames": 23,
+        "rmse": 0.0554
+      },
+      "recommended": "bezier",
+      "note": "incoming half of the punch-in whip up at the hidden hard cut f2474 (Z2; last old picture f2471, f2472-f2473 repeat it; missed by all three detectors): between two consecutive pictures the framing jumps x2.2 (logo 69 -> 152 px wide) under vertical motion blur while the upward motion continues; this curve is the decelerating glide after the cut: logo centre y 432 -> 149 px (47.1% -> 16.2% H, f2474-f2496), x fixed (logo left edge 494 px); the new row (app icon + line 2) is revealed below; logo bbox from ink components (vertical blur inflates the box to f2481 but its centre is unbiased); motion starts at the cut (no rest before); second instance at the hidden hard cut f2609 (x1.4, last old picture f2606) before the result card rises in; same device as v7c3 f2091 (x1.76) and v7c5 f3094 (x2.33)"
+    },
+    "v7.trans-punch-in-whip-zoom.i2": {
+      "technique_id": "v7.trans-punch-in-whip-zoom.i2",
+      "file": "curves/v7.trans-punch-in-whip-zoom.i2.csv",
+      "property": "scale",
+      "unit": "scale factor of the menu's value text (1.0 = menu at rest, f4276)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c6_p3_value_out_tmpl.csv",
+      "column": "scale",
+      "sampled_frames": [
+        4256,
+        4286
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.99,
+      "to_value": 1.215,
+      "active_frames": [
+        4266,
+        4286
+      ],
+      "measured_duration_frames": 20,
+      "bezier": {
+        "x1": 0.0,
+        "y1": 0.1572,
+        "x2": 0.9908,
+        "y2": -0.304,
+        "durationInFrames": 17,
+        "delay": 2.866,
+        "built_duration_frames": 17,
+        "rmse": 0.0221
+      },
+      "spring": {
+        "stiffness": 74.906,
+        "damping": 0.5,
+        "mass": 1,
+        "damping_ratio": 0.0289,
+        "built_duration_frames": 198,
+        "rmse": 0.773
+      },
+      "recommended": "bezier",
+      "note": "outgoing half of the punch-in whip P3 -> P4: after a slow creep (scale 0.99 -> 1.00, f4256-f4276) the camera accelerates into the highlighted row's value at the right of the menu: scale 1.01 / 1.035 / 1.08 / 1.215 at f4279 / 4281 / 4284 / 4286 while the value drifts left (centre x 1395 -> 1390 -> 1372 -> 1335 -> 1242 px) and up (542 -> 519 px), with growing horizontal motion blur; hard cut at f4289 into a x1.7 closer framing; to-value = last picture before the cut (no settle); template on the value text (ref f4276), f4286 score 0.55 (blur)"
+    },
+    "v7.trans-punch-in-whip-zoom": {
+      "technique_id": "v7.trans-punch-in-whip-zoom",
+      "file": "curves/v7.trans-punch-in-whip-zoom.csv",
+      "property": "position-y",
+      "unit": "px of 918 (ascender top of the value's unit word in the close-up)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c6_p4_unitword_bbox.csv",
+      "column": "y0",
+      "sampled_frames": [
+        4289,
+        4325
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 433.0,
+      "to_value": 389.0,
+      "active_frames": [
+        4289,
+        4307
+      ],
+      "measured_duration_frames": 18,
+      "bezier": {
+        "x1": 0.0,
+        "y1": 0.1847,
+        "x2": 0.2675,
+        "y2": 1.005,
+        "durationInFrames": 19,
+        "delay": 0.0,
+        "built_duration_frames": 16,
+        "rmse": 0.0322
+      },
+      "spring": {
+        "stiffness": 419.735,
+        "damping": 42.482,
+        "mass": 1,
+        "damping_ratio": 1.0368,
+        "built_duration_frames": 18,
+        "rmse": 0.0873
+      },
+      "recommended": "bezier",
+      "note": "incoming half of the punch-in whip P3 -> P4: the hard cut at f4289 jumps to a closer framing of the value pill (x2.32 the menu's rest scale, x1.7 beyond the outgoing zoom's last picture) that arrives still moving up/left and growing and decelerates: word top 433 -> 389 px (f4289 -> f4307), word height 108 -> 137 px (template scale 0.81 / 0.89 / 0.945 / 0.98 / 1.00 at f4289 / 4291 / 4294 / 4296 / 4299), right edge 1294 -> 1272 px; afterwards only the slow push-in creep (x1.045 by f4330); ink bbox (light text over the grey pill, bg 60, thresh 90); motion starts at the cut (first sample = from-value)"
+    },
+    "v7.trans-spin-zoom-whip.i2": {
+      "technique_id": "v7.trans-spin-zoom-whip.i2",
+      "file": "curves/v7.trans-spin-zoom-whip.i2.csv",
+      "property": "rotation",
+      "unit": "degrees (negative = counter-clockwise on screen), whole frame",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_tilt_out_ecc.csv",
+      "column": "rot_cum_deg",
+      "sampled_frames": [
+        1219,
+        1258
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": -0.024,
+      "to_value": -9.536,
+      "active_frames": [
+        1234,
+        1256
+      ],
+      "measured_duration_frames": 22,
+      "bezier": {
+        "x1": 0.9971,
+        "y1": 0.4591,
+        "x2": 0.9993,
+        "y2": 0.7923,
+        "durationInFrames": 21,
+        "delay": 1.0,
+        "built_duration_frames": 21,
+        "rmse": 0.0338
+      },
+      "spring": {
+        "stiffness": 137.619,
+        "damping": 180.386,
+        "mass": 1,
+        "damping_ratio": 7.6884,
+        "built_duration_frames": 29,
+        "rmse": 0.4198
+      },
+      "recommended": "bezier",
+      "note": "outgoing half of the spin-zoom whip: the send-button close-up rotates CCW 0 -> -9.5 deg while scaling x1.00 -> x1.51 with growing motion blur and a barrel-like lens warp, accelerating into the hard cut at f1259; cumulative ECC affine fit between consecutive captured pictures (scratch/v7c2_tilt_out_ecc.csv); motion still at full speed at the cut (no settle)"
+    },
+    "v7.trans-spin-zoom-whip.i3": {
+      "technique_id": "v7.trans-spin-zoom-whip.i3",
+      "file": "curves/v7.trans-spin-zoom-whip.i3.csv",
+      "property": "scale",
+      "unit": "cursor height px (60 px at the cut = 6.5% H; 205 px settled = 22.3% H)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_cursor_bbox.csv",
+      "column": "h",
+      "sampled_frames": [
+        1259,
+        1286
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 60.0,
+      "to_value": 205.0,
+      "active_frames": [
+        1260,
+        1281
+      ],
+      "measured_duration_frames": 21,
+      "bezier": {
+        "x1": 0.0,
+        "y1": 0.1105,
+        "x2": 0.4185,
+        "y2": 1.0,
+        "durationInFrames": 22,
+        "delay": 0.303,
+        "built_duration_frames": 19,
+        "rmse": 0.0338
+      },
+      "spring": {
+        "stiffness": 151.138,
+        "damping": 21.946,
+        "mass": 1,
+        "damping_ratio": 0.8926,
+        "built_duration_frames": 22,
+        "rmse": 0.0403
+      },
+      "recommended": "bezier",
+      "note": "incoming half of the tilt-whip into the cursor scene: after the cut (f1259) the tilted, blurred dark UI pushes in x3.42 about the cursor (cursor bbox height 60 -> 205 px) while rotating level; motion starts at the cut (no rest before, from-value pinned to the first picture); growth after f1286 is the cursor glow, excluded"
+    },
+    "v7.trans-spin-zoom-whip": {
+      "technique_id": "v7.trans-spin-zoom-whip",
+      "file": "curves/v7.trans-spin-zoom-whip.csv",
+      "property": "rotation",
+      "unit": "degrees (negative = counter-clockwise on screen), whole frame; the incoming view starts rotated about +9.7 deg and levels to 0",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_tilt_in_ecc.csv",
+      "column": "rot_cum_deg",
+      "sampled_frames": [
+        1259,
+        1296
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.0,
+      "to_value": -9.749,
+      "active_frames": [
+        1260,
+        1281
+      ],
+      "measured_duration_frames": 21,
+      "bezier": {
+        "x1": 0.1669,
+        "y1": 0.4506,
+        "x2": 0.2689,
+        "y2": 0.8756,
+        "durationInFrames": 22,
+        "delay": -0.0,
+        "built_duration_frames": 20,
+        "rmse": 0.0293
+      },
+      "spring": {
+        "stiffness": 250.404,
+        "damping": 32.718,
+        "mass": 1,
+        "damping_ratio": 1.0338,
+        "built_duration_frames": 23,
+        "rmse": 0.0662
+      },
+      "recommended": "bezier",
+      "note": "incoming half of the spin-zoom whip: after the hard cut at f1259 the dark blurred UI keeps rotating CCW by 9.7 deg (levels out) while pushing in x2.58 (background) / x3.42 (cursor, nearer plane), decelerating to rest ~f1281; cumulative ECC affine fit (scratch/v7c2_tilt_in_ecc.csv), motion starts at the cut"
+    },
+    "v7.trans-whip-down-left-zoom-in.i2": {
+      "technique_id": "v7.trans-whip-down-left-zoom-in.i2",
+      "file": "curves/v7.trans-whip-down-left-zoom-in.i2.csv",
+      "property": "position-y",
+      "unit": "% of frame height (top edge of the full-frame picture card; 2.8% -> 18.3% H at the last picture before the cut)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p4_card_whipout.csv",
+      "column": "top_pct",
+      "sampled_frames": [
+        3501,
+        3579
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 2.758,
+      "to_value": 18.306,
+      "active_frames": [
+        3539,
+        3579
+      ],
+      "measured_duration_frames": 40,
+      "bezier": {
+        "x1": 0.615,
+        "y1": 0.0053,
+        "x2": 1.0,
+        "y2": 0.7289,
+        "durationInFrames": 44,
+        "delay": -5.56,
+        "built_duration_frames": 37,
+        "rmse": 0.0278
+      },
+      "spring": {
+        "stiffness": 6.427,
+        "damping": 0.5,
+        "mass": 1,
+        "damping_ratio": 0.0986,
+        "built_duration_frames": 275,
+        "rmse": 0.8591
+      },
+      "recommended": "bezier",
+      "note": "outgoing half of the down-left whip P4 -> P5: after a 157-frame static hold (f3376-f3533) the full-frame picture card (x 2.9-97.2% W) slides down and left, accelerating from rest (~f3533) to about 8-9 px/frame down and 10-11 px/frame left over the last two intervals (f3574-f3579) (top edge +142.7 px = +15.5% H, right edge -112.6 px = -6.9% W; width constant 1528 px until f3569) with growing motion blur; hard cut f3581 (no settle on this half: to-value = last picture); edge trackers on the card (track.py edge, top ROI x 500-1000, right ROI y 250-650)"
+    },
+    "v7.trans-whip-down-left-zoom-in": {
+      "technique_id": "v7.trans-whip-down-left-zoom-in",
+      "file": "curves/v7.trans-whip-down-left-zoom-in.csv",
+      "property": "scale",
+      "unit": "ln(scale factor) of the editor window (0 = f3600; -1.311 = x0.270 at the cut, window filling the frame; 0.159 = x1.172 at f3624)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p5_cam_scale.csv",
+      "column": "lnscale",
+      "sampled_frames": [
+        3581,
+        3626
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": -1.3108,
+      "to_value": 0.1587,
+      "active_frames": [
+        3581,
+        3614
+      ],
+      "measured_duration_frames": 33,
+      "bezier": {
+        "x1": 0.0,
+        "y1": 0.5667,
+        "x2": 0.0,
+        "y2": 0.9119,
+        "durationInFrames": 38,
+        "delay": 1.565,
+        "built_duration_frames": 32,
+        "rmse": 0.0344
+      },
+      "spring": {
+        "stiffness": 185.522,
+        "damping": 32.055,
+        "mass": 1,
+        "damping_ratio": 1.1767,
+        "built_duration_frames": 26,
+        "rmse": 0.1911
+      },
+      "recommended": "bezier",
+      "note": "incoming half of the down-left whip P4 -> P5: the hard cut at f3581 lands on the editor window exactly filling the frame, which at once zooms in x4.35 about a fixed point above-right of the frame, (1799, -113) px = (110.9% W, -12.3% H): a least-squares fit of two tracked UI labels against their distance-based scale leaves 0.25 px rms (f3586-f3624), so its top-right corner travels down-left into the frame; zoom 0.270 / 0.556 / 0.685 / 0.778 / 0.850 / 0.910 / 0.959 / 1.000 / 1.034 ... 1.168 / 1.172 at f3581 / 3584 / 3586 / 3589 / 3591 / 3594 / 3596 / 3600 / 3602 ... 3622 / 3624 (24% / 10% / 4.6% per frame in ln over the first three intervals), never settles: the click recoil reverses it from f3626; UI text stays sharp; scale = distance between two UI-label template centres (scratch/v7c5_tools/tmplfine.py, ref f3600) relative to f3600, f3581 / f3584 from the panel label's ink-box centre relative to the fixed point (scratch/v7c5_p5_cam_scale.csv)"
+    },
+    "v7.trans-whip-push-left.i10": {
+      "technique_id": "v7.trans-whip-push-left.i10",
+      "file": "curves/v7.trans-whip-push-left.i10.csv",
+      "property": "position-x",
+      "unit": "% of frame width (centre of a 380 x 82 px template cut from the right part of line 2 at f2713)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_line2_exit_tmpl_2700-2735_newpic.csv",
+      "column": "cx_pct",
+      "sampled_frames": [
+        2709,
+        2734
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 78.298,
+      "to_value": 26.88,
+      "active_frames": [
+        2714,
+        2734
+      ],
+      "measured_duration_frames": 20,
+      "bezier": {
+        "x1": 0.3388,
+        "y1": 0.0067,
+        "x2": 1.0,
+        "y2": 0.1934,
+        "durationInFrames": 20,
+        "delay": -2.367,
+        "built_duration_frames": 17,
+        "rmse": 0.0914
+      },
+      "spring": {
+        "stiffness": 33.309,
+        "damping": 0.5,
+        "mass": 1,
+        "damping_ratio": 0.0433,
+        "built_duration_frames": 197,
+        "rmse": 0.8195
+      },
+      "recommended": "bezier",
+      "note": "outgoing half of the leftward whip into the hard cut f2736, re-tracked: line 2 (at rest x 296-1452 px, y 33-104 px after the Z5 reframe settles at f2709-f2711; f2712-f2713 repeat f2711) slides off to the left, accelerating from rest to about 79-108 px per frame by f2729-f2734 (237 px between the last two pictures, f2731 -> f2734) with growing horizontal motion blur (strokes smear into streaks); position = template match (normalised cross-correlation, score 1.00 at rest, 0.58-0.63 under the heaviest blur), which the blur does not bias, while the earlier bbox right end lagged by up to 59 px at f2731 (scratch/v7c4_line2_exit_x1_newpic.csv); samples f2709-f2734, capture duplicates removed (picture difference above 0.05 luma); no settle: to-value = last picture before the cut; the card with the cursor is dragged down-right at the same time (v7.cursor-drag-file-in); the spring cannot represent an ease-in without a settle; shape-matched bezier in chunks/v7c4.md"
+    },
+    "v7.trans-whip-push-left.i11": {
+      "technique_id": "v7.trans-whip-push-left.i11",
+      "file": "curves/v7.trans-whip-push-left.i11.csv",
+      "property": "position-x",
+      "unit": "% of frame width (line-1 brand mark centre in the close-up; 35.3% -> 30.3% W at the last picture before the cut)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p1_mark_3050-3140.csv",
+      "column": "cx_pct",
+      "sampled_frames": [
+        3109,
+        3131
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 35.327,
+      "to_value": 30.271,
+      "active_frames": [
+        3119,
+        3131
+      ],
+      "measured_duration_frames": 12,
+      "bezier": {
+        "x1": 0.0971,
+        "y1": 0.1334,
+        "x2": 0.6167,
+        "y2": -0.2434,
+        "durationInFrames": 11,
+        "delay": 1.001,
+        "built_duration_frames": 11,
+        "rmse": 0.0251
+      },
+      "spring": {
+        "stiffness": 148.772,
+        "damping": 0.5,
+        "mass": 1,
+        "damping_ratio": 0.0205,
+        "built_duration_frames": 167,
+        "rmse": 0.8228
+      },
+      "recommended": "bezier",
+      "note": "outgoing half of the whip P2 -> P3: once the close-up has settled (f3116) the whole canvas slides left (camera pans toward the typing) from rest at ~f3119, accelerating to ~19 px/frame (1.2% W) with horizontal motion blur at the last close-up picture f3131; hard cut f3134 into a x0.40 wider framing (no settle on this half: to-value = last picture); template on the brand mark (scale 1.00, score 0.69-1.0)"
+    },
+    "v7.trans-whip-push-left.i12": {
+      "technique_id": "v7.trans-whip-push-left.i12",
+      "file": "curves/v7.trans-whip-push-left.i12.csv",
+      "property": "position-x",
+      "unit": "% of frame width (line-2 app icon centre in the wide view; 33.1% -> 20.8% W)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p3_icon2_3134-3213.csv",
+      "column": "cx_pct",
+      "sampled_frames": [
+        3134,
+        3191
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 33.076,
+      "to_value": 20.777,
+      "active_frames": [
+        3134,
+        3184
+      ],
+      "measured_duration_frames": 50,
+      "bezier": {
+        "x1": 0.139,
+        "y1": 0.2063,
+        "x2": 0.0192,
+        "y2": 0.9756,
+        "durationInFrames": 61,
+        "delay": -0.047,
+        "built_duration_frames": 48,
+        "rmse": 0.0135
+      },
+      "spring": {
+        "stiffness": 55.466,
+        "damping": 19.5,
+        "mass": 1,
+        "damping_ratio": 1.3092,
+        "built_duration_frames": 46,
+        "rmse": 0.0775
+      },
+      "recommended": "bezier",
+      "note": "incoming half of the whip P2 -> P3 (punch-out): the hard cut at f3134 jumps to a x0.40 wider framing of both lines (word spacing 205 -> 82 px) that keeps sliding left: 7.5 px/frame over the first picture, peaks at 15 px/frame (0.9% W) around f3139-f3141, then decays into a slow drift (about 0.5 px/frame by f3186) and rests at ~f3191 before the next whip; vertical constant (y 49.6% H), template scale 1.00 +-0.02; template on the line-2 app icon (ref f3160), confirmed by a word template on line 1 (same steps within 3 px)"
+    },
+    "v7.trans-whip-push-left.i13": {
+      "technique_id": "v7.trans-whip-push-left.i13",
+      "file": "curves/v7.trans-whip-push-left.i13.csv",
+      "property": "position-x",
+      "unit": "% of frame width (line-2 app icon centre in the wide view; 20.8% -> 16.0% W at the last picture before the cut)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p3_icon2_3134-3213.csv",
+      "column": "cx_pct",
+      "sampled_frames": [
+        3186,
+        3211
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 20.838,
+      "to_value": 15.999,
+      "active_frames": [
+        3191,
+        3211
+      ],
+      "measured_duration_frames": 20,
+      "bezier": {
+        "x1": 0.6827,
+        "y1": 0.0101,
+        "x2": 1.0,
+        "y2": 0.7889,
+        "durationInFrames": 23,
+        "delay": -3.0,
+        "built_duration_frames": 20,
+        "rmse": 0.0087
+      },
+      "spring": {
+        "stiffness": 172.605,
+        "damping": 166.637,
+        "mass": 1,
+        "damping_ratio": 6.3418,
+        "built_duration_frames": 27,
+        "rmse": 0.3905
+      },
+      "recommended": "bezier",
+      "note": "outgoing half of the whip P3 -> P4: the wide view of both lines slides left again from rest (~f3191) while the last word of line 2 types, accelerating to ~12 px/frame (0.75% W) with horizontal motion blur at the last wide picture f3211; hard cut f3214 into a x1.86 closer framing of the end of line 2 (no settle on this half: to-value = last picture); template on the line-2 app icon (ref f3160, score 0.84-0.99)"
+    },
+    "v7.trans-whip-push-left.i14": {
+      "technique_id": "v7.trans-whip-push-left.i14",
+      "file": "curves/v7.trans-whip-push-left.i14.csv",
+      "property": "position-x",
+      "unit": "% of frame width (a word of line 2 in the x1.86 close-up; 33.9% -> 16.8% W)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p4_word5_3214-3262.csv",
+      "column": "cx_pct",
+      "sampled_frames": [
+        3214,
+        3254
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 33.909,
+      "to_value": 16.831,
+      "active_frames": [
+        3214,
+        3246
+      ],
+      "measured_duration_frames": 32,
+      "bezier": {
+        "x1": 0.0,
+        "y1": 0.207,
+        "x2": 0.2842,
+        "y2": 1.0092,
+        "durationInFrames": 39,
+        "delay": 0.0,
+        "built_duration_frames": 32,
+        "rmse": 0.0116
+      },
+      "spring": {
+        "stiffness": 85.212,
+        "damping": 35.442,
+        "mass": 1,
+        "damping_ratio": 1.9197,
+        "built_duration_frames": 37,
+        "rmse": 0.0486
+      },
+      "recommended": "bezier",
+      "note": "incoming half of the whip P3 -> P4 (punch-in): the hard cut at f3214 jumps to a x1.86 closer framing of the end of line 2 (word width 156 -> 290 px) at the same height (line centre 49.6% H), arriving 277 px (17.1% W) right of its rest and already moving left at ~33 px/frame (2.0% W) with heavy horizontal motion blur; decelerates to rest by ~f3252 (close-up held until f3256); template on one word (ref f3245, scale 0.96 -> 1.00); f3214 score 0.66 (blurred)"
+    },
+    "v7.trans-whip-push-left.i2": {
+      "technique_id": "v7.trans-whip-push-left.i2",
+      "file": "curves/v7.trans-whip-push-left.i2.csv",
+      "property": "position-x",
+      "unit": "px of 1622 (template centre of the chip label + send button; 705.5 = 43.5% W -> 521 = 32.1% W)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_whip_in_1196_tmpl.csv",
+      "column": "cx",
+      "sampled_frames": [
+        1196,
+        1229
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 705.5,
+      "to_value": 521.0,
+      "active_frames": [
+        1196,
+        1224
+      ],
+      "measured_duration_frames": 28,
+      "bezier": {
+        "x1": 0.0062,
+        "y1": 0.4564,
+        "x2": 0.2945,
+        "y2": 0.9573,
+        "durationInFrames": 27,
+        "delay": 2.888,
+        "built_duration_frames": 23,
+        "rmse": 0.0701
+      },
+      "spring": {
+        "stiffness": 161.732,
+        "damping": 26.198,
+        "mass": 1,
+        "damping_ratio": 1.03,
+        "built_duration_frames": 27,
+        "rmse": 0.0226
+      },
+      "recommended": "spring",
+      "note": "incoming half of the f1196 leftward whip (P3 -> P4 close-up, cut c028): after the hard cut at f1196 the close-up arrives already moving left at about 13 px/frame (52.5 px over the first 4 frames, about the outgoing speed of 12.8 px/frame) with 51 px of horizontal blur and decelerates smoothly to rest by f1224-f1226; template on the chip label + send button (scratch/v7c2_whip_in_1196_tmpl.csv: ref f1221, scales 0.97-1.03; score 0.69 at f1196 in the blur, 0.84-1.0 after); motion starts at the cut. Second variant of the incoming half: the f1487 instance (curve v7.trans-whip-push-left.v7c2) arrives 3.7x faster than its outgoing end and covers 40% of its move in 2 frames; applied to these samples it misses (raw-time rmse 0.10 at D=30, 0.12 at D=25), so this instance is stored separately (probably a second technique: a speed-matched whip-in). The spring damping is loosely constrained (26-34 give shape rmse 0.020-0.023); the inspector's samples (scratch/v7c2_whip_in_1196.csv) and an independent disc track (scratch/review_v7c2_disc.csv) give spring {165.8, 27.95} / {161.9, 26.07}"
+    },
+    "v7.trans-whip-push-left.i3": {
+      "technique_id": "v7.trans-whip-push-left.i3",
+      "file": "curves/v7.trans-whip-push-left.i3.csv",
+      "property": "position-x",
+      "unit": "px of 1622 (3D pointer centre; 486 = 30.0% W -> 116 = 7.2% W at the last picture before the cut)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_pointer_tmpl.csv",
+      "column": "cx",
+      "sampled_frames": [
+        1421,
+        1484
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 486.0,
+      "to_value": 116.0,
+      "active_frames": [
+        1433,
+        1484
+      ],
+      "measured_duration_frames": 51,
+      "bezier": {
+        "x1": 0.744,
+        "y1": 0.0456,
+        "x2": 1.0,
+        "y2": 0.9355,
+        "durationInFrames": 59,
+        "delay": -8.0,
+        "built_duration_frames": 51,
+        "rmse": 0.0098
+      },
+      "spring": {
+        "stiffness": 17.227,
+        "damping": 40.088,
+        "mass": 1,
+        "damping_ratio": 4.8294,
+        "built_duration_frames": 82,
+        "rmse": 0.3896
+      },
+      "recommended": "bezier",
+      "note": "outgoing half of the leftward whip out of the pointer scene: the whole scene slides left (and up 5.6% H) accelerating from a slow drift to ~24 px/frame with growing horizontal blur, hard cut at f1487 at full speed (no settle); template on the 3D pointer (ref f1344, scale 0.72 locked)"
+    },
+    "v7.trans-whip-push-left.i4": {
+      "technique_id": "v7.trans-whip-push-left.i4",
+      "file": "curves/v7.trans-whip-push-left.i4.csv",
+      "property": "position-x",
+      "unit": "px of 1622 (window traffic-light centre; 777 = 47.9% W -> 337 = 20.8% W)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_whip_in_1487.csv",
+      "column": "cx",
+      "sampled_frames": [
+        1487,
+        1519
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 777.0,
+      "to_value": 337.0,
+      "active_frames": [
+        1487,
+        1514
+      ],
+      "measured_duration_frames": 27,
+      "bezier": {
+        "x1": 0.0,
+        "y1": 1.037,
+        "x2": 0.957,
+        "y2": 0.9705,
+        "durationInFrames": 30,
+        "delay": 0.161,
+        "built_duration_frames": 26,
+        "rmse": 0.0079
+      },
+      "spring": {
+        "stiffness": 206.57,
+        "damping": 34.139,
+        "mass": 1,
+        "damping_ratio": 1.1876,
+        "built_duration_frames": 25,
+        "rmse": 0.1606
+      },
+      "recommended": "bezier",
+      "note": "incoming half of the leftward whip into the file browser: after the hard cut at f1487 the window arrives already moving left (87 px/frame over the first two pictures) with horizontal motion blur and decelerates into a slow drift (~2 px/frame) by ~f1514; template on the traffic-light dots (ref f1516; f1487 by global search); motion starts at the cut, the slow drift continues after"
+    },
+    "v7.trans-whip-push-left.i5": {
+      "technique_id": "v7.trans-whip-push-left.i5",
+      "file": "curves/v7.trans-whip-push-left.i5.csv",
+      "property": "position-x",
+      "unit": "% of frame width (file-browser title + arrows centre; 28.36% -> 21.52% W at the last picture before the cut)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p1_title.csv",
+      "column": "cx_pct",
+      "sampled_frames": [
+        1596,
+        1641
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 28.36,
+      "to_value": 21.517,
+      "active_frames": [
+        1613,
+        1641
+      ],
+      "measured_duration_frames": 28,
+      "bezier": {
+        "x1": 0.4659,
+        "y1": 0.0226,
+        "x2": 1.0,
+        "y2": 0.5061,
+        "durationInFrames": 31,
+        "delay": -3.0,
+        "built_duration_frames": 27,
+        "rmse": 0.0257
+      },
+      "spring": {
+        "stiffness": 51.175,
+        "damping": 117.563,
+        "mass": 1,
+        "damping_ratio": 8.2169,
+        "built_duration_frames": 48,
+        "rmse": 0.4145
+      },
+      "recommended": "bezier",
+      "note": "outgoing half of the leftward whip out of the file browser (P1, continues from v7c2): the window slides left accelerating from rest (~f1606) to ~27 px/frame at the last picture f1641 (title stays sharp; the tile grid inside streaks right with motion blur, see v7c3_p1_grid_leftedge.csv), hard cut at f1644 at full speed (no settle): to-value = last measured picture; template on the title + back/forward arrows (ref f1629, score 0.97-1.0)"
+    },
+    "v7.trans-whip-push-left.i6": {
+      "technique_id": "v7.trans-whip-push-left.i6",
+      "file": "curves/v7.trans-whip-push-left.i6.csv",
+      "property": "position-x",
+      "unit": "% of frame width (midpoint of two window panel labels; 71.0% -> 54.6% W)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p2_whipin_midx.csv",
+      "column": "mid_x_pct",
+      "sampled_frames": [
+        1644,
+        1704
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 71.008,
+      "to_value": 54.562,
+      "active_frames": [
+        1644,
+        1684
+      ],
+      "measured_duration_frames": 40,
+      "bezier": {
+        "x1": 0.0299,
+        "y1": 0.5195,
+        "x2": 0.4343,
+        "y2": 0.9965,
+        "durationInFrames": 47,
+        "delay": -0.0,
+        "built_duration_frames": 38,
+        "rmse": 0.0158
+      },
+      "spring": {
+        "stiffness": 61.914,
+        "damping": 22.788,
+        "mass": 1,
+        "damping_ratio": 1.448,
+        "built_duration_frames": 44,
+        "rmse": 0.0877
+      },
+      "recommended": "bezier",
+      "note": "incoming half of the leftward whip into the editor window (P2): after the hard cut at f1644 the window arrives 268 px (16.6% W) right of its rest, already moving left at ~33 px/frame with horizontal motion blur, and decelerates to rest by ~f1690; no scale or vertical change during the move (label distance constant 719 +-1 px); template on two panel labels (ref f1690, scale search 0.90-1.15); motion starts at the cut (first sample = from-value)"
+    },
+    "v7.trans-whip-push-left.i7": {
+      "technique_id": "v7.trans-whip-push-left.i7",
+      "file": "curves/v7.trans-whip-push-left.i7.csv",
+      "property": "position-x",
+      "unit": "% of frame width",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_found_large_2361-2390_newpic.csv",
+      "column": "cx_pct",
+      "sampled_frames": [
+        2361,
+        2389
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 70.345,
+      "to_value": 63.194,
+      "active_frames": [
+        2361,
+        2389
+      ],
+      "measured_duration_frames": 28,
+      "bezier": {
+        "x1": 1.0,
+        "y1": 0.3022,
+        "x2": 1.0,
+        "y2": 0.7241,
+        "durationInFrames": 27,
+        "delay": -0.16,
+        "built_duration_frames": 26,
+        "rmse": 0.0334
+      },
+      "spring": {
+        "stiffness": 62.36,
+        "damping": 123.63,
+        "mass": 1,
+        "damping_ratio": 7.8278,
+        "built_duration_frames": 44,
+        "rmse": 0.4214
+      },
+      "recommended": "bezier",
+      "note": "outgoing half of the leftward whip into the hidden hard cut f2392 (Z1): at the close framing (scale 2.13x of the settled small framing, constant: template scale 1.000) the typed line pans left, accelerating from the slow post-whip drift (1.6 px/frame at f2361-f2374) to 17 px/frame at f2387-f2389, with horizontal motion blur on f2389 (the last old picture); then the picture is replaced by the small framing (x0.49) at f2392 that glides on left (curve v7.trans-whip-push-left-pull-back.v7c4); template on the first word of line 1 (ref f2385, scores 0.97-1.0, 0.90 on the blurred f2389); no settle: to-value = last picture before the cut, so the fitted curve is the ease-in part only; the same keyframes repeat into the hidden hard cut f2991"
+    },
+    "v7.trans-whip-push-left.i8": {
+      "technique_id": "v7.trans-whip-push-left.i8",
+      "file": "curves/v7.trans-whip-push-left.i8.csv",
+      "property": "position-x",
+      "unit": "% of frame width",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_z3_lead_blurfit_2485-2524_newpic.csv",
+      "column": "cx_pct",
+      "sampled_frames": [
+        2494,
+        2511
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 35.17,
+      "to_value": 24.63,
+      "active_frames": [
+        2499,
+        2511
+      ],
+      "measured_duration_frames": 12,
+      "bezier": {
+        "x1": 0.8062,
+        "y1": 0.1348,
+        "x2": 0.8241,
+        "y2": 0.2414,
+        "durationInFrames": 11,
+        "delay": 0.619,
+        "built_duration_frames": 10,
+        "rmse": 0.0182
+      },
+      "spring": {
+        "stiffness": 220.726,
+        "damping": 0.5,
+        "mass": 1,
+        "damping_ratio": 0.0168,
+        "built_duration_frames": 167,
+        "rmse": 0.8135
+      },
+      "recommended": "bezier",
+      "note": "outgoing half of the leftward whip into the hidden hard cut f2515 (Z3, close framing), stop-hold variant: the canvas starts to move left at ~f2500 and accelerates (blur-aware template on the row-2 app icon, ref f2511: icon centre x 570.5 -> 399.5 px; box blur along x 1 px at rest, 3 / 7 / 15 px at f2501-f2507, 33 px at f2509 = the fastest picture), then stops dead: the next picture f2511 is crisp (blur 1 px, horizontal gradient p99.9 106 in the icon region vs 97 at rest and 14 at f2509) 92.4 px further left and is held f2511-f2514 (f2512-f2513 capture duplicates, f2514 repeat: one picture); the cut f2515 then brings the x0.44 framing already moving left under horizontal blur (curve v7.trans-whip-push-left-pull-back-long.v7c4). The bezier completes before f2511 (hard stop); build: clamp at the end, hold the end value with no motion blur for f2511-f2514, cut at f2515. Exact stop frame inside f2509-f2511 UNCERTAIN (one capture gap). y fixed (icon centre 455.5 px); line 2 types its 3rd-4th characters meanwhile."
+    },
+    "v7.trans-whip-push-left.i9": {
+      "technique_id": "v7.trans-whip-push-left.i9",
+      "file": "curves/v7.trans-whip-push-left.i9.csv",
+      "property": "position-x",
+      "unit": "% of frame width",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_z3_glide_tile_x0_newpic.csv",
+      "column": "x0_pct",
+      "sampled_frames": [
+        2515,
+        2591
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 30.518,
+      "to_value": 15.351,
+      "active_frames": [
+        2515,
+        2574
+      ],
+      "measured_duration_frames": 59,
+      "bezier": {
+        "x1": 0.0937,
+        "y1": 1.2012,
+        "x2": 0.9419,
+        "y2": 0.9218,
+        "durationInFrames": 67,
+        "delay": -0.088,
+        "built_duration_frames": 57,
+        "rmse": 0.0158
+      },
+      "spring": {
+        "stiffness": 51.284,
+        "damping": 17.877,
+        "mass": 1,
+        "damping_ratio": 1.2482,
+        "built_duration_frames": 48,
+        "rmse": 0.1522
+      },
+      "recommended": "bezier",
+      "note": "incoming half of the leftward whip at the hidden hard cut f2515 (Z3; last old picture f2511, f2512-f2514 are capture repeats in a 60 Hz run; missed by all three detectors): lead-in pan left at the close framing (tile left edge 491 -> 322 px, f2499-f2511, blur peak f2509), then between two consecutive pictures the framing jumps x0.44 (tile 156 -> 68 px); this curve is the long decelerating glide after the cut: app-icon left edge 495 -> 249 px (30.5% -> 15.4% W) over f2515-f2589 while line 2 types in a fast burst, ending with the finished two-line block centred (block centre x about 800 px); same device as the f2392 instance but its glide is 2.5x longer (59 f vs 27 f), a long variant of v7.trans-whip-push-left; y constant (tile top 425-428 px)"
+    },
+    "v7.trans-whip-push-left": {
+      "technique_id": "v7.trans-whip-push-left",
+      "file": "curves/v7.trans-whip-push-left.csv",
+      "property": "position-x",
+      "unit": "% of frame width",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_logo1_cx_spin_2342-2440_newpic.csv",
+      "column": "cx_pct",
+      "sampled_frames": [
+        2342,
+        2371
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 58.662,
+      "to_value": 49.877,
+      "active_frames": [
+        2342,
+        2371
+      ],
+      "measured_duration_frames": 29,
+      "bezier": {
+        "x1": 0.0,
+        "y1": 0.5454,
+        "x2": 0.4322,
+        "y2": 0.9,
+        "durationInFrames": 29,
+        "delay": 0.829,
+        "built_duration_frames": 27,
+        "rmse": 0.0225
+      },
+      "spring": {
+        "stiffness": 125.435,
+        "damping": 30.181,
+        "mass": 1,
+        "damping_ratio": 1.3474,
+        "built_duration_frames": 31,
+        "rmse": 0.0782
+      },
+      "recommended": "bezier",
+      "note": "incoming half of the leftward whip at the hard cut f2342 (the outgoing product-UI window only drifts left, 0.6 -> 5 px/frame without blur, f2301-f2340: v7c3's v7.cam-drift-accelerating-exit, not a whip-out): the agent logo arrives already moving left (19.5 px/frame over the first two pictures) with horizontal motion blur on f2342-f2345 and decelerates into a slow drift (~1.6 px/frame) by ~f2366; logo bbox centre from ink components (threshold 70), f2342 centre biased by the blur smear; motion starts at the cut (no rest before); the same keyframes repeat at f2941 (+599 frames, within 1 px)"
+    },
+    "v7.trans-whip-push-right": {
+      "technique_id": "v7.trans-whip-push-right",
+      "file": "curves/v7.trans-whip-push-right.csv",
+      "property": "position-x",
+      "unit": "% of frame width (midpoint of two window panel labels; 38.8% -> 51.8% W)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p4_window.csv",
+      "column": "mid_x_pct",
+      "sampled_frames": [
+        2007,
+        2049
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 38.779,
+      "to_value": 51.819,
+      "active_frames": [
+        2007,
+        2039
+      ],
+      "measured_duration_frames": 32,
+      "bezier": {
+        "x1": 0.0002,
+        "y1": 0.0681,
+        "x2": 0.1101,
+        "y2": 0.9976,
+        "durationInFrames": 38,
+        "delay": 0.0,
+        "built_duration_frames": 30,
+        "rmse": 0.0191
+      },
+      "spring": {
+        "stiffness": 111.25,
+        "damping": 31.264,
+        "mass": 1,
+        "damping_ratio": 1.4821,
+        "built_duration_frames": 33,
+        "rmse": 0.076
+      },
+      "recommended": "bezier",
+      "note": "incoming half of a rightward whip into the editor window with timeline (P4): after the hard cut from footage at f2007 the window arrives 212 px (13.0% W) left of its rest, already moving right at ~28 px/frame with horizontal motion blur, and decelerates to rest by ~f2041; no scale or vertical change during the slide (label distance 651 +-1 px); the outgoing footage shot does not move (incoming half only); template on two panel labels (ref f2045, scale search 0.85-1.20); motion starts at the cut (first sample = from-value)"
+    },
+    "v7.trans-whip-push-up.i2": {
+      "technique_id": "v7.trans-whip-push-up.i2",
+      "file": "curves/v7.trans-whip-push-up.i2.csv",
+      "property": "position-y",
+      "unit": "% of frame height",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s2_pill_236-290.csv",
+      "column": "cy_pct",
+      "sampled_frames": [
+        256,
+        286
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 58.987,
+      "to_value": 47.059,
+      "active_frames": [
+        269,
+        286
+      ],
+      "measured_duration_frames": 17,
+      "bezier": {
+        "x1": 0.4201,
+        "y1": -0.0139,
+        "x2": 1.0,
+        "y2": 0.4806,
+        "durationInFrames": 18,
+        "delay": -1.0,
+        "built_duration_frames": 15,
+        "rmse": 0.0354
+      },
+      "spring": {
+        "stiffness": 44.278,
+        "damping": 0.5,
+        "mass": 1,
+        "damping_ratio": 0.0376,
+        "built_duration_frames": 186,
+        "rmse": 0.8286
+      },
+      "recommended": "bezier",
+      "note": "outgoing half of the vertical whip S2->S3: the S2 menu accelerates upward from rest (f269) with growing vertical motion blur; highlight-pill centre y 59.0% -> 47.1% H by the last S2 picture f286 (2.45% H per frame there), then the picture switches to S3 (f289) which decelerates upward into place (curve v7.trans-whip-push-up.v7c1); no settle on this half: to-value = last measured picture; bbox tracker on the pill (ink < 238)"
+    },
+    "v7.trans-whip-push-up": {
+      "technique_id": "v7.trans-whip-push-up",
+      "file": "curves/v7.trans-whip-push-up.csv",
+      "property": "position-y",
+      "unit": "% of frame height",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s3_title_286-352.csv",
+      "column": "cy_pct",
+      "sampled_frames": [
+        289,
+        304
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 47.386,
+      "to_value": 38.78,
+      "active_frames": [
+        289,
+        304
+      ],
+      "measured_duration_frames": 15,
+      "bezier": {
+        "x1": 0.001,
+        "y1": 0.2476,
+        "x2": 0.4645,
+        "y2": 0.9741,
+        "durationInFrames": 15,
+        "delay": -0.0,
+        "built_duration_frames": 14,
+        "rmse": 0.0232
+      },
+      "spring": {
+        "stiffness": 465.604,
+        "damping": 43.478,
+        "mass": 1,
+        "damping_ratio": 1.0075,
+        "built_duration_frames": 17,
+        "rmse": 0.0606
+      },
+      "recommended": "bezier",
+      "note": "incoming half of the vertical whip S2->S3: after the cut (f286->f289) the new page title arrives 8.6% H below its rest already moving up (~1.5% H per frame) and decelerates to rest (y 47.4% -> 38.8%); template on the page title, ref f300; motion starts at the cut (no rest before). Outgoing half (S2 menu): highlight-pill centre 58.9% -> 47.1% H over f269-f286, accelerating (0.1 -> 2.5% H per frame) with growing vertical motion blur"
+    },
+    "v7.trans-zoom-through-cut.i2": {
+      "technique_id": "v7.trans-zoom-through-cut.i2",
+      "file": "curves/v7.trans-zoom-through-cut.i2.csv",
+      "property": "scale",
+      "unit": "ln(scale factor) of the editor close-up (0.004 = x1.004 at f3649 -> 0.525 = x1.691 at the last picture before the cut f3686; 0 = f3600)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p5_cam_scale.csv",
+      "column": "lnscale",
+      "sampled_frames": [
+        3642,
+        3686
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.0041,
+      "to_value": 0.5254,
+      "active_frames": [
+        3656,
+        3686
+      ],
+      "measured_duration_frames": 30,
+      "bezier": {
+        "x1": 0.6827,
+        "y1": 0.0105,
+        "x2": 1.0,
+        "y2": 0.9101,
+        "durationInFrames": 35,
+        "delay": -5.0,
+        "built_duration_frames": 30,
+        "rmse": 0.0118
+      },
+      "spring": {
+        "stiffness": 66.291,
+        "damping": 62.878,
+        "mass": 1,
+        "damping_ratio": 3.8614,
+        "built_duration_frames": 42,
+        "rmse": 0.3769
+      },
+      "recommended": "bezier",
+      "note": "outgoing half of the zoom-through cut P5 -> P6 (P5 exit): after the click the camera pushes in about the frame centre, (811, 461) px (0.1 px rms; the action button sits there), accelerating from rest (about f3651) to 4.8-5.2% per frame over the last intervals (x1.412 / 1.525 / 1.691 at f3681 / 3684 / 3686) while the 3D pointer flies off to the right; hard cut f3690 at full speed (no settle: to-value = last picture); scale = distance between two UI-label template centres relative to f3600, f3686 from the panel label's ink width (224 vs 133 px at f3649; scratch/v7c5_p5_cam_scale.csv)"
+    },
+    "v7.trans-zoom-through-cut": {
+      "technique_id": "v7.trans-zoom-through-cut",
+      "file": "curves/v7.trans-zoom-through-cut.csv",
+      "property": "scale",
+      "unit": "ln(scale factor) of the desktop wallpaper (0 = first picture after the cut f3690; 0.359 = x1.432 at rest from f3716)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p6_bg_zoom2.csv",
+      "column": "lnscale",
+      "sampled_frames": [
+        3690,
+        3741
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.0,
+      "to_value": 0.3591,
+      "active_frames": [
+        3690,
+        3711
+      ],
+      "measured_duration_frames": 21,
+      "bezier": {
+        "x1": 0.0,
+        "y1": 0.7475,
+        "x2": 0.5189,
+        "y2": 0.9966,
+        "durationInFrames": 24,
+        "delay": 0.56,
+        "built_duration_frames": 19,
+        "rmse": 0.0173
+      },
+      "spring": {
+        "stiffness": 314.322,
+        "damping": 43.109,
+        "mass": 1,
+        "damping_ratio": 1.2158,
+        "built_duration_frames": 20,
+        "rmse": 0.1363
+      },
+      "recommended": "bezier",
+      "note": "incoming half of the zoom-through cut P5 -> P6: after the hard cut at f3690 the soft-ribbon wallpaper keeps zooming in about the frame centre (810, 459 px), x1.432 in all: x1.150 over the first interval (7.2% per frame), then 1.074 / 1.046 / 1.033 / 1.023 / 1.018 / 1.012 per picture, at rest from f3716; the outgoing editor close-up was pushing in at about 5% per frame at the cut (curve v7.trans-zoom-through-cut-out.v7c5), so the zoom carries across the cut and speeds up; f3690 -> f3692 and f3690 -> f3729 from a brute-force pure-zoom search (scale step 0.005, centre grid 10 px; agrees with f3692 -> f3729 x1.245 from ECC), f3692-f3741 from masked ECC registration of each picture to the rest picture f3729 (tile region masked; scratch/v7c5_tools/eccref.py, ECC 0.996-0.9999)"
+    },
+    "v7.ui-card-stagger-fade": {
+      "technique_id": "v7.ui-card-stagger-fade",
+      "file": "curves/v7.ui-card-stagger-fade.csv",
+      "property": "opacity",
+      "unit": "luma 0-255 inside the 4th thumbnail card (window background 11)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s5_cards_luma_riding.csv",
+      "column": "card4",
+      "sampled_frames": [
+        484,
+        506
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 11.0,
+      "to_value": 106.0,
+      "active_frames": [
+        489,
+        502
+      ],
+      "measured_duration_frames": 13,
+      "bezier": {
+        "x1": 0.775,
+        "y1": 1.044,
+        "x2": 0.1937,
+        "y2": 0.6393,
+        "durationInFrames": 13,
+        "delay": 0.45,
+        "built_duration_frames": 13,
+        "rmse": 0.0344
+      },
+      "spring": {
+        "stiffness": 400.295,
+        "damping": 34.664,
+        "mass": 1,
+        "damping_ratio": 0.8663,
+        "built_duration_frames": 14,
+        "rmse": 0.0328
+      },
+      "recommended": "spring",
+      "note": "S5 window contents build on after the cut: four thumbnail cards fade in left to right (50% points f487.6, f489.0, f490.4, f494.0 = ~2.1 f stagger), then the six chips below (f491-f506); ROI rides with the window's measured vertical offset (bottom edge tracker); curve = 4th card"
+    },
+    "v7.ui-clip-strip-slide-in": {
+      "technique_id": "v7.ui-clip-strip-slide-in",
+      "file": "curves/v7.ui-clip-strip-slide-in.csv",
+      "property": "position-x",
+      "unit": "% of frame width in close-up window units (left end of the clip strip, pull-back compensated; 96.8% -> 27.3%)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p5_strip_left_win.csv",
+      "column": "x_win_pct",
+      "sampled_frames": [
+        2126,
+        2174
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 96.8,
+      "to_value": 27.462,
+      "active_frames": [
+        2126,
+        2145
+      ],
+      "measured_duration_frames": 19,
+      "bezier": {
+        "x1": 0.0,
+        "y1": 0.2799,
+        "x2": 0.0,
+        "y2": 0.7129,
+        "durationInFrames": 14,
+        "delay": 2.298,
+        "built_duration_frames": 14,
+        "rmse": 0.0712
+      },
+      "spring": {
+        "stiffness": 351.105,
+        "damping": 37.88,
+        "mass": 1,
+        "damping_ratio": 1.0108,
+        "built_duration_frames": 19,
+        "rmse": 0.0617
+      },
+      "recommended": "spring",
+      "note": "P5: the dropped clips arrive as one strip (7 clips visible at rest, the last cut by the window's right edge) that slides in on the lowest video track from beyond the right edge and docks at the track start, decelerating, while the camera pulls back x1.00 -> x0.40; screen x of the strip's left end (tall bright run in the clip-strip band) converted to close-up window units with x_win = (x - 43) / scale + 43 (pull-back origin x 43 px from the timecode track); first visible picture f2126 (from-value), docked by ~f2146; +-4 px scatter after docking"
+    },
+    "v7.ui-drag-group-out": {
+      "technique_id": "v7.ui-drag-group-out",
+      "file": "curves/v7.ui-drag-group-out.csv",
+      "property": "position-x",
+      "unit": "% of frame width (left edge of the file-tile grid, row 1; 19.1% -> 53.8% W at the last trackable picture f1636)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p1_grid_leftedge_dedup.csv",
+      "column": "pos_pct",
+      "sampled_frames": [
+        1596,
+        1636
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 19.05,
+      "to_value": 53.82,
+      "active_frames": [
+        1606,
+        1636
+      ],
+      "measured_duration_frames": 30,
+      "bezier": {
+        "x1": 0.6608,
+        "y1": 0.0098,
+        "x2": 1.0,
+        "y2": 0.8738,
+        "durationInFrames": 33,
+        "delay": -3.0,
+        "built_duration_frames": 28,
+        "rmse": 0.025
+      },
+      "spring": {
+        "stiffness": 70.374,
+        "damping": 59.085,
+        "mass": 1,
+        "damping_ratio": 3.5216,
+        "built_duration_frames": 41,
+        "rmse": 0.4032
+      },
+      "recommended": "bezier",
+      "note": "P1 file-tile grid (5x5 placeholder tiles) slides right inside the window, accelerating from rest (~f1602) with growing horizontal motion blur, and keeps going out past the window's right border (streaks over the background at f1641); 30%-level crossing tracker on tile row 1 (y 160-250), valid to f1636; near-duplicate captures (diff < 0.0003) excluded; to-value = last valid picture (open-ended exit, no settle); starts in v7c2's range (f1602)"
+    },
+    "v7.ui-dropdown-fill-darken": {
+      "technique_id": "v7.ui-dropdown-fill-darken",
+      "file": "curves/v7.ui-dropdown-fill-darken.csv",
+      "property": "opacity",
+      "unit": "luma 0-255 of the menu panel fill (median of x 1490-1550, y 95-125, inside the panel's top-right)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c6_p3_menu_page_4216-4279.csv",
+      "column": "menu_fill_luma",
+      "sampled_frames": [
+        4216,
+        4249
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 96.0,
+      "to_value": 39.0,
+      "active_frames": [
+        4216,
+        4231
+      ],
+      "measured_duration_frames": 15,
+      "bezier": {
+        "x1": 0.9972,
+        "y1": 0.898,
+        "x2": 0.033,
+        "y2": -0.0833,
+        "durationInFrames": 13,
+        "delay": 1.344,
+        "built_duration_frames": 13,
+        "rmse": 0.0354
+      },
+      "spring": {
+        "stiffness": 298.187,
+        "damping": 149.167,
+        "mass": 1,
+        "damping_ratio": 4.3191,
+        "built_duration_frames": 21,
+        "rmse": 0.2454
+      },
+      "recommended": "bezier",
+      "note": "P3 dropdown panel arrives light grey and darkens to its rest fill while it scales in: 96 / 90 / 81 / 72 / 60 / 46 / 39 at f4216 / 4219 / 4221 / 4224 / 4226 / 4229 / 4231; the page behind is black (11), so this is a fill/brightness animation, not an opacity fade; first sample = from-value (cut on motion)"
+    },
+    "v7.ui-dropdown-scale-in": {
+      "technique_id": "v7.ui-dropdown-scale-in",
+      "file": "curves/v7.ui-dropdown-scale-in.csv",
+      "property": "scale",
+      "unit": "apparent menu width / rest width 1081 px (camera push included)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c6_p3_menu_page_4216-4279.csv",
+      "column": "menu_width_rel",
+      "sampled_frames": [
+        4216,
+        4261
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.3528,
+      "to_value": 1.0,
+      "active_frames": [
+        4216,
+        4249
+      ],
+      "measured_duration_frames": 33,
+      "bezier": {
+        "x1": 0.219,
+        "y1": 1.058,
+        "x2": 0.4173,
+        "y2": 1.0185,
+        "durationInFrames": 58,
+        "delay": 0.356,
+        "built_duration_frames": 30,
+        "rmse": 0.0214
+      },
+      "spring": {
+        "stiffness": 108.946,
+        "damping": 21.925,
+        "mass": 1,
+        "damping_ratio": 1.0503,
+        "built_duration_frames": 33,
+        "rmse": 0.0285
+      },
+      "recommended": "bezier",
+      "note": "P3 account dropdown menu enters at the hard cut f4216 already open to 0.35 of its rest width and grows to rest by f4254 (left edge 1215 -> 483 px, right edge 1596 -> 1564 px, nearly fixed: anchored at its top-right), heavily motion-blurred and darkening from fill luma 96 to 39 (f4216-f4231); includes the camera push-in (page x1.64 about the top-right corner), the menu's own scale is about 0.58 -> 1.0; edge crossings on row y=110 at the midpoint between the black page (11) and the panel fill; first sample = from-value (cut on motion, the true start lies before the cut)"
+    },
+    "v7.ui-folder-drop-in": {
+      "technique_id": "v7.ui-folder-drop-in",
+      "file": "curves/v7.ui-folder-drop-in.csv",
+      "property": "position-y",
+      "unit": "% of frame height (label of folder 1, zoom-compensated to the f1690 window scale; 23.8% -> 39.0% H)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p2_f1label_comp.csv",
+      "column": "cy_comp_pct",
+      "sampled_frames": [
+        1736,
+        1759
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 23.79,
+      "to_value": 38.984,
+      "active_frames": [
+        1736,
+        1747
+      ],
+      "measured_duration_frames": 11,
+      "bezier": {
+        "x1": 0.4349,
+        "y1": 0.6577,
+        "x2": 0.2554,
+        "y2": 1.0433,
+        "durationInFrames": 16,
+        "delay": -0.004,
+        "built_duration_frames": 11,
+        "rmse": 0.0013
+      },
+      "spring": {
+        "stiffness": 754.754,
+        "damping": 48.382,
+        "mass": 1,
+        "damping_ratio": 0.8805,
+        "built_duration_frames": 10,
+        "rmse": 0.0255
+      },
+      "recommended": "bezier",
+      "note": "P2 content swap, incoming half: the folder grid drops down into place from above (+140 px = +15.2% H in window units) and settles by ~f1749; the first folder label is visible from f1736 (icons hidden until f1740), then the 7 folder icons pop in one per picture in reading order (f1740 x2, f1742, f1744, f1747, f1749, f1751) while the panel glow decays; first picture of each icon is brighter and vertically compressed (template scale ~0.88); template on the folder-1 label (ref f1752, scale search 0.90-1.15), y compensated for the simultaneous centred camera push-in (O = 816, 457 px; zoom from v7c3_p2_rise_scale.csv); motion starts at the first visible picture f1736 (from-value)"
+    },
+    "v7.ui-folder-pop-in": {
+      "technique_id": "v7.ui-folder-pop-in",
+      "file": "curves/v7.ui-folder-pop-in.csv",
+      "property": "scale",
+      "unit": "scale factor (1.0 = folder icon 247 px = 15.2% W)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_newfolder_w_newpic.csv",
+      "column": "scale",
+      "sampled_frames": [
+        2739,
+        2766
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.0,
+      "to_value": 1.0,
+      "active_frames": [
+        2744,
+        2759
+      ],
+      "measured_duration_frames": 15,
+      "bezier": {
+        "x1": 0.0,
+        "y1": 0.4335,
+        "x2": 0.0,
+        "y2": 0.8126,
+        "durationInFrames": 14,
+        "delay": 0.0,
+        "built_duration_frames": 13,
+        "rmse": 0.0265
+      },
+      "spring": {
+        "stiffness": 1097.439,
+        "damping": 66.404,
+        "mass": 1,
+        "damping_ratio": 1.0023,
+        "built_duration_frames": 11,
+        "rmse": 0.1779
+      },
+      "recommended": "bezier",
+      "note": "the drop-target folder (5th tile of the grid, with its label) pops in at the grid slot while the file is dragged towards it: absent f2744, first seen f2746 at 0.62 (153 px, glowing near-white and soft), 0.78 f2749, 0.87 f2751, 0.94 f2754, 0.97 f2756, 0.99 f2759, 1.00 f2761 (247 px); it stays lighter than the other folders (hover highlight) until the drop; scales about its centre (x 804 px); bbox of the folder's upper part (rows 300-445 px, threshold 45 over luma 26) so the pill below does not interfere; the jump 0 -> 0.62 happens inside one capture gap, so the start of the curve is uncertain"
+    },
+    "v7.ui-ghost-drag-to-timeline.i2": {
+      "technique_id": "v7.ui-ghost-drag-to-timeline.i2",
+      "file": "curves/v7.ui-ghost-drag-to-timeline.i2.csv",
+      "property": "position-y",
+      "unit": "% of frame height at the P4 framing (offset of the ghost grid's row 2/3 gutter below the large timecode label; after the cut f2091 close-up px / 1.762)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p45_ghost_y.csv",
+      "column": "gutter_rel_label_p4_pct",
+      "sampled_frames": [
+        2061,
+        2114
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": -32.026,
+      "to_value": 12.892,
+      "active_frames": [
+        2066,
+        2106
+      ],
+      "measured_duration_frames": 40,
+      "bezier": {
+        "x1": 0.1799,
+        "y1": 0.0052,
+        "x2": 0.2443,
+        "y2": 0.9921,
+        "durationInFrames": 44,
+        "delay": 0.145,
+        "built_duration_frames": 36,
+        "rmse": 0.0233
+      },
+      "spring": {
+        "stiffness": 53.792,
+        "damping": 13.121,
+        "mass": 1,
+        "damping_ratio": 0.8945,
+        "built_duration_frames": 37,
+        "rmse": 0.0205
+      },
+      "recommended": "spring",
+      "note": "P4-P5 y component of the ghost drag, relative to the timeline (the window's own tilt removed): rest f2061-f2064, moves from f2066, crosses the punch-in cut at about 7-10 px per frame (P4 px), keeps sliding down in the close-up with an ease-out and is within 2% of rest from f2106 (the last 1% creeps to f2114, 0.3-0.7 px per frame); x is settled by f2086-f2089. Samples: P4 template track on picture minus f2059 (v7c3_p4_ghost_box_r2059.csv) + 288.0 px; P5 profile peaks of picture minus f2116 (v7c3_p45_ghost_rows.csv). Across the cut the offset grows 52 px (P4) in 5 frames, against 6.9 px per frame before and 4.3 after: the close-up is about 25 px ahead of a smooth continuation (see uncertain)."
+    },
+    "v7.ui-ghost-drag-to-timeline": {
+      "technique_id": "v7.ui-ghost-drag-to-timeline",
+      "file": "curves/v7.ui-ghost-drag-to-timeline.csv",
+      "property": "position-x",
+      "unit": "% of frame width (centre of the top-right ghost outline box; 60.1% -> 76.0% W)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p4_ghost_box_r2059.csv",
+      "column": "cx_pct",
+      "sampled_frames": [
+        2061,
+        2089
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 60.142,
+      "to_value": 76.048,
+      "active_frames": [
+        2064,
+        2086
+      ],
+      "measured_duration_frames": 22,
+      "bezier": {
+        "x1": 0.4049,
+        "y1": 0.1039,
+        "x2": 0.1936,
+        "y2": 1.1236,
+        "durationInFrames": 29,
+        "delay": -0.249,
+        "built_duration_frames": 19,
+        "rmse": 0.0381
+      },
+      "spring": {
+        "stiffness": 201.763,
+        "damping": 23.643,
+        "mass": 1,
+        "damping_ratio": 0.8323,
+        "built_duration_frames": 18,
+        "rmse": 0.0596
+      },
+      "recommended": "bezier",
+      "note": "P4 drag of all 9 clips into the timeline: at f2061 thin light outline boxes (one per thumbnail, about 182 x 170 px between outline centres, semi-transparent fill) appear around the 3x3 thumbnail grid and hold until f2065, then the whole ghost grid travels down-right along a curved path (mostly right first, then mostly down) and lands over the timeline tracks as the window pans up into the punch-in cut; x component shown (window has no x motion); x settles by ~f2086 (the close-up after the cut keeps the right column at 76.2-76.3% W in P4 terms, f2094-f2114); y component: curves/v7.ui-ghost-drag-to-timeline-y.v7c3. Tracked by template matching on motion-compensated difference images (picture minus f2059, the last ghost-free picture, shifted by the window pan), ref box f2076; re-measured after review (the first version used f2061, which already holds the outlines)"
+    },
+    "v7.ui-hover-lift": {
+      "technique_id": "v7.ui-hover-lift",
+      "file": "curves/v7.ui-hover-lift.csv",
+      "property": "scale",
+      "unit": "scale factor of the dark CTA pill button relative to its rest size (1.0 = 230 px = 14.2% W at f386)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s3_button_rel_366-412.csv",
+      "column": "button_w_rel",
+      "sampled_frames": [
+        384,
+        410
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 1.0,
+      "to_value": 1.293,
+      "active_frames": [
+        386,
+        406
+      ],
+      "measured_duration_frames": 20,
+      "bezier": {
+        "x1": 0.5381,
+        "y1": 0.6394,
+        "x2": 0.3982,
+        "y2": 1.1354,
+        "durationInFrames": 19,
+        "delay": 1.425,
+        "built_duration_frames": 17,
+        "rmse": 0.035
+      },
+      "spring": {
+        "stiffness": 217.465,
+        "damping": 21.553,
+        "mass": 1,
+        "damping_ratio": 0.7308,
+        "built_duration_frames": 24,
+        "rmse": 0.1513
+      },
+      "recommended": "bezier",
+      "note": "hover state on the search-result card: the dark pill button grows about its own centre (y fixed at 50.7% H) to x1.30 (230 -> 299 px wide, 50 -> 66 px tall, f386 -> f401) while a rounded card outline and soft drop shadow fade in around the row (shadow luma under the card 248 -> 239, f396-f406). Re-tracked as button ink width (bbox, ink < 48) divided by the ink width of the row's title + description block (ink < 170) on the same picture, normalised at f386: this removes the exit pull-back camera scale that starts at f401, so the samples after the peak (f404-f410, x1.29-1.30) are usable as the settled end; the text block itself changes under 0.5% over f384-f401"
+    },
+    "v7.ui-label-fill-darken": {
+      "technique_id": "v7.ui-label-fill-darken",
+      "file": "curves/v7.ui-label-fill-darken.csv",
+      "property": "opacity",
+      "unit": "luma 0-255 of the label-box fill",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_box_luma_0-60.csv",
+      "column": "mean",
+      "sampled_frames": [
+        21,
+        46
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 90.0,
+      "to_value": 0.5,
+      "active_frames": [
+        29,
+        44
+      ],
+      "measured_duration_frames": 15,
+      "bezier": {
+        "x1": 0.4268,
+        "y1": 0.7925,
+        "x2": 0.2755,
+        "y2": 0.7227,
+        "durationInFrames": 15,
+        "delay": 0.498,
+        "built_duration_frames": 15,
+        "rmse": 0.0342
+      },
+      "spring": {
+        "stiffness": 456.857,
+        "damping": 45.678,
+        "mass": 1,
+        "damping_ratio": 1.0685,
+        "built_duration_frames": 17,
+        "rmse": 0.0318
+      },
+      "recommended": "spring",
+      "note": "the label box fill darkens in two stages: 207 -> 90 (f1-f21, light grey to mid grey, while it grows) and 90 -> 0 (f29-f46, to black, white text reaching full contrast); this curve is the second stage; luma ROI in the box's lower padding (x 755-815, y 505-528)"
+    },
+    "v7.ui-label-pop-in": {
+      "technique_id": "v7.ui-label-pop-in",
+      "file": "curves/v7.ui-label-pop-in.csv",
+      "property": "width",
+      "unit": "% of frame width (label box, centre x 49.9% / y 50.2%)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c6_p6_label_popin_poses.csv",
+      "column": "width_pct",
+      "sampled_frames": [
+        4522,
+        4549
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.0,
+      "to_value": 32.5,
+      "active_frames": [
+        4524,
+        4547
+      ],
+      "measured_duration_frames": 23,
+      "bezier": {
+        "x1": 0.904,
+        "y1": 0.1367,
+        "x2": 0.1386,
+        "y2": 0.6154,
+        "durationInFrames": 23,
+        "delay": -0.0,
+        "built_duration_frames": 21,
+        "rmse": 0.0371
+      },
+      "spring": {
+        "stiffness": 255.953,
+        "damping": 27.705,
+        "mass": 1,
+        "damping_ratio": 0.8659,
+        "built_duration_frames": 17,
+        "rmse": 0.1835
+      },
+      "recommended": "bezier",
+      "note": "loop replay of the opening title card (P6 = v7c1 S01 + 4535 f) shows the pop-in from its true start, which v7c1 missed (its f0 = f4535): blank white f4522-f4524, a faint 13 x 7 px dash (luma 210) at the centre f4527, 56 x 27 px f4532, 325 x 160 px f4537, 463 x 220 px f4542, 527 x 229 px (32.5% x 25.0%) f4547; geometry poses on twos (a new pose every 5 frames, held pictures flagged unique=0); width on text-free rows at the midpoint between the fill and the white (245); the widen with overshoot follows from f4552 (v7c1 v7.ui-label-widen-overshoot)"
+    },
+    "v7.ui-label-widen-overshoot": {
+      "technique_id": "v7.ui-label-widen-overshoot",
+      "file": "curves/v7.ui-label-widen-overshoot.csv",
+      "property": "width",
+      "unit": "% of frame width (label box, centred at x 49.9%)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_box_width_keys_11-75.csv",
+      "column": "width_pct",
+      "sampled_frames": [
+        11,
+        71
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 32.583,
+      "to_value": 55.83,
+      "active_frames": [
+        11,
+        36
+      ],
+      "measured_duration_frames": 25,
+      "bezier": {
+        "x1": 0.3777,
+        "y1": 1.3387,
+        "x2": 0.0,
+        "y2": 1.1222,
+        "durationInFrames": 27,
+        "delay": -0.0,
+        "built_duration_frames": 24,
+        "rmse": 0.0156
+      },
+      "spring": {
+        "stiffness": 471.162,
+        "damping": 25.627,
+        "mass": 1,
+        "damping_ratio": 0.5903,
+        "built_duration_frames": 17,
+        "rmse": 0.1579
+      },
+      "recommended": "bezier",
+      "note": "the label box widens symmetrically 32.6% -> 58.0% W (f14 -> f21, horizontal motion blur f16-f19) to admit the left word, overshoots 4% and settles to 55.8% W by f46, while the camera pulls back x0.75 (word-2 cap height 8.3% -> 6.2% H); box geometry is animated on twos (new value every 5 frames), so only the step pictures are used (f11, f16, f21, f26, f31, f36, f41, f46 + rest)"
+    },
+    "v7.ui-page-scroll-momentum": {
+      "technique_id": "v7.ui-page-scroll-momentum",
+      "file": "curves/v7.ui-page-scroll-momentum.csv",
+      "property": "position-y",
+      "unit": "% of frame height (cumulative content scroll inside the window)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s5_scroll_sad_500-630.csv",
+      "column": "cum_y_pct_h",
+      "sampled_frames": [
+        506,
+        629
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.986,
+      "to_value": -104.134,
+      "active_frames": [
+        516,
+        599
+      ],
+      "measured_duration_frames": 83,
+      "bezier": {
+        "x1": 0.469,
+        "y1": 0.0906,
+        "x2": 0.3109,
+        "y2": 0.9472,
+        "durationInFrames": 102,
+        "delay": -6.308,
+        "built_duration_frames": 84,
+        "rmse": 0.0091
+      },
+      "spring": {
+        "stiffness": 7.998,
+        "damping": 4.477,
+        "mass": 1,
+        "damping_ratio": 0.7915,
+        "built_duration_frames": 75,
+        "rmse": 0.0726
+      },
+      "recommended": "bezier",
+      "note": "S5 page content scrolls up inside the static window by ~105% H (965 px) in one smooth ease-in-out (momentum) move: accelerates f509-f549 to ~2.8% H per frame, long deceleration to rest at f617; per-picture vertical shift by SAD search over the content region (x 420-1440, y 130-740), checked against the headline position (f511 -> f531: -123 px stills vs -126.5 px measured); the first samples include the window drop-in settle (+9 px)"
+    },
+    "v7.ui-prompt-word-stream": {
+      "technique_id": "v7.ui-prompt-word-stream",
+      "file": "curves/v7.ui-prompt-word-stream.csv",
+      "property": "opacity",
+      "unit": "luma 0-255 (mean of the last prompt word ROI, drift-compensated)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_prompt_words.csv",
+      "column": "w7",
+      "sampled_frames": [
+        1089,
+        1129
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 45.0,
+      "to_value": 82.32,
+      "active_frames": [
+        1098,
+        1119
+      ],
+      "measured_duration_frames": 21,
+      "bezier": {
+        "x1": 0.0,
+        "y1": 0.1865,
+        "x2": 0.5244,
+        "y2": 0.981,
+        "durationInFrames": 21,
+        "delay": -0.0,
+        "built_duration_frames": 19,
+        "rmse": 0.0382
+      },
+      "spring": {
+        "stiffness": 144.373,
+        "damping": 21.285,
+        "mass": 1,
+        "damping_ratio": 0.8857,
+        "built_duration_frames": 22,
+        "rmse": 0.0511
+      },
+      "recommended": "bezier",
+      "note": "prompt bar streams its 7-word line word by word: the last word fades in while de-blurring (Gaussian sigma 5 -> 0 px) and rising 5 px (0.5% H), f1099-f1119; ROI shifted per frame by the measured bar drift (phase correlation); words 4-7 start 3-5 frames apart and each takes ~18 frames, so 3-4 words are mid-fade at once"
+    },
+    "v7.ui-row-stretch-in": {
+      "technique_id": "v7.ui-row-stretch-in",
+      "file": "curves/v7.ui-row-stretch-in.csv",
+      "property": "width",
+      "unit": "% of frame width (ink extent of the result row)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s3_row_width.csv",
+      "column": "width_pct",
+      "sampled_frames": [
+        348,
+        389
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.0,
+      "to_value": 80.62,
+      "active_frames": [
+        352,
+        382
+      ],
+      "measured_duration_frames": 30,
+      "bezier": {
+        "x1": 0.4951,
+        "y1": 0.8074,
+        "x2": 0.196,
+        "y2": 1.1611,
+        "durationInFrames": 35,
+        "delay": -0.421,
+        "built_duration_frames": 32,
+        "rmse": 0.0366
+      },
+      "spring": {
+        "stiffness": 108.967,
+        "damping": 14.429,
+        "mass": 1,
+        "damping_ratio": 0.6911,
+        "built_duration_frames": 34,
+        "rmse": 0.0788
+      },
+      "recommended": "bezier",
+      "note": "search-result row (icon tile, two-line label, dark pill button) grows out of a blurred speck below the search field (f351) about its centre (x ~51%): ink width 0 -> 84.5% W peak at f376-f378 (+5% overshoot) -> settles 80.6% W at f386; height 4.8% -> 13% H (incl. blur); strong horizontal motion blur until f366 while the page scrolls up; the CTA button overshoots more (296 px -> 230 px, f371 -> f386); bbox tracker (ink < 223) in two ROIs following the scroll"
+    },
+    "v7.ui-scroll-settle": {
+      "technique_id": "v7.ui-scroll-settle",
+      "file": "curves/v7.ui-scroll-settle.csv",
+      "property": "position-y",
+      "unit": "px of 918 (content offset; -896 px = -97.6% H)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_ui_scroll_phase.csv",
+      "column": "cum_y",
+      "sampled_frames": [
+        1080,
+        1134
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 0.0,
+      "to_value": -896.0,
+      "active_frames": [
+        1080,
+        1121
+      ],
+      "measured_duration_frames": 41,
+      "bezier": {
+        "x1": 0.0717,
+        "y1": 0.223,
+        "x2": 0.3582,
+        "y2": 0.9666,
+        "durationInFrames": 46,
+        "delay": -0.018,
+        "built_duration_frames": 40,
+        "rmse": 0.0196
+      },
+      "spring": {
+        "stiffness": 50.648,
+        "damping": 15.859,
+        "mass": 1,
+        "damping_ratio": 1.1142,
+        "built_duration_frames": 49,
+        "rmse": 0.0425
+      },
+      "recommended": "bezier",
+      "note": "product UI list scrolls up one row behind the fixed prompt bar: the cut at f1079 lands mid-scroll (first step 117 px in 2 frames = 6.4% H per frame) and the list decelerates to rest at ~f1126; phase correlation of the content strip above the bar (y 0-372), integrated (scratch/v7c2_ui_scroll_phase.csv); motion starts at the cut"
+    },
+    "v7.ui-window-drop-in": {
+      "technique_id": "v7.ui-window-drop-in",
+      "file": "curves/v7.ui-window-drop-in.csv",
+      "property": "position-y",
+      "unit": "% of frame height (window bottom edge)",
+      "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s5_window_bottom_482-640.csv",
+      "column": "pos_pct_h",
+      "sampled_frames": [
+        484,
+        530
+      ],
+      "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+      "from_value": 82.637,
+      "to_value": 95.73,
+      "active_frames": [
+        484,
+        514
+      ],
+      "measured_duration_frames": 30,
+      "bezier": {
+        "x1": 0.0013,
+        "y1": 0.6949,
+        "x2": 0.5729,
+        "y2": 0.99,
+        "durationInFrames": 35,
+        "delay": -0.0,
+        "built_duration_frames": 29,
+        "rmse": 0.0117
+      },
+      "spring": {
+        "stiffness": 125.882,
+        "damping": 28.693,
+        "mass": 1,
+        "damping_ratio": 1.2787,
+        "built_duration_frames": 31,
+        "rmse": 0.1029
+      },
+      "recommended": "bezier",
+      "note": "S5 product-UI window (dark, rounded, 82% W, x 8.7%-91%) appears at the hard cut f484 already moving down and settles 13.1% H lower (bottom edge 82.6% -> 95.7% H); x fixed; edge tracker on the window bottom (sidebar column); afterwards a slow creep (+0.9% H and left edge -0.9% W by f629 = slow push-in)"
+    }
+  }
+}

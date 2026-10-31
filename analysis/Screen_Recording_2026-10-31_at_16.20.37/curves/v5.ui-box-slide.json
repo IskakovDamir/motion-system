@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.ui-box-slide",
+  "file": "curves/v5.ui-box-slide.csv",
+  "property": "position-x",
+  "unit": "% of frame width",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c3_ui_button_path.csv",
+  "column": "cx_pct",
+  "sampled_frames": [
+    1630,
+    1667
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 75.74,
+  "to_value": 50.0,
+  "active_frames": [
+    1630,
+    1655
+  ],
+  "measured_duration_frames": 25,
+  "bezier": {
+    "x1": 0.6012,
+    "y1": 0.4348,
+    "x2": 0.1433,
+    "y2": 0.8408,
+    "durationInFrames": 24,
+    "delay": 0.887,
+    "built_duration_frames": 22,
+    "rmse": 0.0269
+  },
+  "spring": {
+    "stiffness": 200.521,
+    "damping": 24.912,
+    "mass": 1,
+    "damping_ratio": 0.8796,
+    "built_duration_frames": 19,
+    "rmse": 0.0543
+  },
+  "recommended": "bezier",
+  "note": "send-button centre; prompt box slides left 25.7 %W (417 px) over a static background, horizontal motion blur at peak (~53 px/f at f1637-1640); begins as the reframe snap settles, ends where the button press begins"
+}

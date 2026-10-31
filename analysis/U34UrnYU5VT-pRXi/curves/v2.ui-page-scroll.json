@@ -1,0 +1,40 @@
+{
+  "technique_id": "v2.ui-page-scroll",
+  "file": "curves/v2.ui-page-scroll.csv",
+  "property": "position-y",
+  "unit": "px (746 -> 186 = -560 px = -51.9% H)",
+  "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c2_S8_scroll1.csv",
+  "column": "cy",
+  "sampled_frames": [
+    1528,
+    1580
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 746.0,
+  "to_value": 186.0,
+  "active_frames": [
+    1542,
+    1558
+  ],
+  "measured_duration_frames": 16,
+  "bezier": {
+    "x1": 0.6488,
+    "y1": -0.001,
+    "x2": 0.3537,
+    "y2": 1.0013,
+    "durationInFrames": 21,
+    "delay": -2.395,
+    "built_duration_frames": 15,
+    "rmse": 0.014
+  },
+  "spring": {
+    "stiffness": 294.387,
+    "damping": 27.271,
+    "mass": 1,
+    "damping_ratio": 0.7947,
+    "built_duration_frames": 13,
+    "rmse": 0.1025
+  },
+  "recommended": "bezier",
+  "note": "article page scroll: chart title tracked by template (track.py, 1 px quantised); the caption at the top scrolls with the page (whole picture moves, x fixed)"
+}

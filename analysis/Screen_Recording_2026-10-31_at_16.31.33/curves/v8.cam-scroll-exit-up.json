@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.cam-scroll-exit-up",
+ "file": "curves/v8.cam-scroll-exit-up.csv",
+ "property": "position-y",
+ "unit": "px (picture 918 px high)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c2_S02_row1.csv",
+ "column": "cy",
+ "sampled_frames": [
+  976,
+  1002
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 222.0,
+ "to_value": 104.0,
+ "active_frames": [
+  980,
+  1002
+ ],
+ "measured_duration_frames": 22,
+ "bezier": {
+  "x1": 0.3485,
+  "y1": 0.1045,
+  "x2": 0.8142,
+  "y2": 0.0843,
+  "durationInFrames": 23,
+  "delay": -1.217,
+  "built_duration_frames": 22,
+  "rmse": 0.0107
+ },
+ "spring": {
+  "stiffness": 141.848,
+  "damping": 149.302,
+  "mass": 1,
+  "damping_ratio": 6.2679,
+  "built_duration_frames": 29,
+  "rmse": 0.4442
+ },
+ "recommended": "bezier",
+ "note": "S02 exit: agent row 1 template centre y (scratch/v8c2_S02_row1.csv); the feed accelerates upward from the base drift (1-1.5 px per frame) to 17 px per frame at the last picture f1002 with growing vertical motion blur; hard cut f1004; to-value = last picture (no settle)",
+ "chunk_curve_id": "v8.cam-scroll-exit-up.v8c2"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.ui-row-stretch-in",
+  "file": "curves/v7.ui-row-stretch-in.csv",
+  "property": "width",
+  "unit": "% of frame width (ink extent of the result row)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s3_row_width.csv",
+  "column": "width_pct",
+  "sampled_frames": [
+    348,
+    389
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 80.62,
+  "active_frames": [
+    352,
+    382
+  ],
+  "measured_duration_frames": 30,
+  "bezier": {
+    "x1": 0.4951,
+    "y1": 0.8074,
+    "x2": 0.196,
+    "y2": 1.1611,
+    "durationInFrames": 35,
+    "delay": -0.421,
+    "built_duration_frames": 32,
+    "rmse": 0.0366
+  },
+  "spring": {
+    "stiffness": 108.967,
+    "damping": 14.429,
+    "mass": 1,
+    "damping_ratio": 0.6911,
+    "built_duration_frames": 34,
+    "rmse": 0.0788
+  },
+  "recommended": "bezier",
+  "note": "search-result row (icon tile, two-line label, dark pill button) grows out of a blurred speck below the search field (f351) about its centre (x ~51%): ink width 0 -> 84.5% W peak at f376-f378 (+5% overshoot) -> settles 80.6% W at f386; height 4.8% -> 13% H (incl. blur); strong horizontal motion blur until f366 while the page scrolls up; the CTA button overshoots more (296 px -> 230 px, f371 -> f386); bbox tracker (ink < 223) in two ROIs following the scroll"
+}

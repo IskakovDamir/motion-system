@@ -1,0 +1,40 @@
+{
+  "technique_id": "v1.card-slide-fade-in.v1c1",
+  "file": "curves/v1.card-slide-fade-in.v1c1.csv",
+  "property": "position-x",
+  "unit": "px (card header centre x; 1920 px = 100% W)",
+  "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/t2_card1_x.csv",
+  "column": "cx",
+  "sampled_frames": [
+    338,
+    366
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 415.0,
+  "to_value": 250.0,
+  "active_frames": [
+    338,
+    351
+  ],
+  "measured_duration_frames": 13,
+  "bezier": {
+    "x1": 0.1886,
+    "y1": 1.0021,
+    "x2": 0.4991,
+    "y2": 0.9811,
+    "durationInFrames": 18,
+    "delay": 0.02,
+    "built_duration_frames": 13,
+    "rmse": 0.0023
+  },
+  "spring": {
+    "stiffness": 781.744,
+    "damping": 70.703,
+    "mass": 1,
+    "damping_ratio": 1.2644,
+    "built_duration_frames": 13,
+    "rmse": 0.0945
+  },
+  "recommended": "bezier",
+  "note": "left terminal card sliding in from the right while fading in (T2); samples start at the first visible frame f338 (165 px = 8.6% W right of rest, opacity 0.14), so the curve starts at full speed and the true start offset is UNCERTAIN; the second card repeats the same curve 3 frames later; T3 (f563) repeats it to the pixel"
+}

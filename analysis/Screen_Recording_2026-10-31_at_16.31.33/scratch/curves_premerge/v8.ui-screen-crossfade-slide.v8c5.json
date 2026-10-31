@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.ui-screen-crossfade-slide.v8c5",
+  "file": "curves/v8.ui-screen-crossfade-slide.v8c5.csv",
+  "property": "position-y",
+  "unit": "card-local px at scale 1 (device card 550 px wide; 70.7 px = 99 screen px = 10.8% H at the camera scale 1.40)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c5r_Sa_title_local.csv",
+  "column": "card_v",
+  "sampled_frames": [
+    2974,
+    3016
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 895.5,
+  "to_value": 824.8,
+  "active_frames": [
+    2974,
+    2987
+  ],
+  "measured_duration_frames": 13,
+  "bezier": {
+    "x1": 0.5934,
+    "y1": 0.2667,
+    "x2": 0.1088,
+    "y2": 0.9113,
+    "durationInFrames": 14,
+    "delay": -0.01,
+    "built_duration_frames": 13,
+    "rmse": 0.0027
+  },
+  "spring": {
+    "stiffness": 760.021,
+    "damping": 47.579,
+    "mass": 1,
+    "damping_ratio": 0.8629,
+    "built_duration_frames": 10,
+    "rmse": 0.0755
+  },
+  "recommended": "bezier",
+  "note": "S-a in-device screen change: the library grid page dissolves out (old content 54% at f2974, 8% at f2976, gone f2978; alpha solved on card-warped pixels) while the incoming detail page (title tracked with a template from f2990, camera transform removed, scratch/v8c5r_Sa_title_local.csv) slides up 70.7 card px with vertical blur and sharpens (sharp from f2982); horizontal position fixed (u 141.5-142.5). from-value = first mixed picture f2974 (score 0.83)."
+}

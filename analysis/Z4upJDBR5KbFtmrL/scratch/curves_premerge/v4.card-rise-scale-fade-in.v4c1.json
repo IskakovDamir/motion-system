@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.card-rise-scale-fade-in.v4c1",
+  "file": "curves/v4.card-rise-scale-fade-in.v4c1.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (card interior; 246 = absent, 17 = opaque)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/t1_right_card.csv",
+  "column": "interior_luma",
+  "sampled_frames": [
+    225,
+    250
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 246.0,
+  "to_value": 17.0,
+  "active_frames": [
+    228,
+    242
+  ],
+  "measured_duration_frames": 14,
+  "bezier": {
+    "x1": 0.3182,
+    "y1": 1.0012,
+    "x2": 0.7175,
+    "y2": 0.9741,
+    "durationInFrames": 16,
+    "delay": -0.004,
+    "built_duration_frames": 13,
+    "rmse": 0.0239
+  },
+  "spring": {
+    "stiffness": 512.672,
+    "damping": 44.113,
+    "mass": 1,
+    "damping_ratio": 0.9741,
+    "built_duration_frames": 15,
+    "rmse": 0.0637
+  },
+  "recommended": "bezier",
+  "note": "S2 right (terminal) card entrance f229-f244; scale 0.970 -> 1.000 and centre y +30 px -> 0 follow the same progress (checked at f229, f232, f236 from edge tracks); the left (chat) card runs the identical curve 3 f earlier (f226-f241)"
+}

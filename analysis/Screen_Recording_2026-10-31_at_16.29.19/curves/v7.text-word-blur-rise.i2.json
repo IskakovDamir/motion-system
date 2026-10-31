@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.text-word-blur-rise.i2",
+  "file": "curves/v7.text-word-blur-rise.i2.csv",
+  "property": "position-y",
+  "unit": "px offset of the caption word from its rest (template, ref f4100)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c6_cap1_word_4064-4170.csv",
+  "column": "dy_px",
+  "sampled_frames": [
+    4075,
+    4130
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 14.0,
+  "to_value": 0.0,
+  "active_frames": [
+    4075,
+    4089
+  ],
+  "measured_duration_frames": 14,
+  "bezier": {
+    "x1": 0.3531,
+    "y1": 0.9268,
+    "x2": 0.5584,
+    "y2": 0.7259,
+    "durationInFrames": 12,
+    "delay": 0.555,
+    "built_duration_frames": 12,
+    "rmse": 0.0248
+  },
+  "spring": {
+    "stiffness": 543.711,
+    "damping": 47.349,
+    "mass": 1,
+    "damping_ratio": 1.0153,
+    "built_duration_frames": 16,
+    "rmse": 0.0381
+  },
+  "recommended": "bezier",
+  "note": "P2 single-word caption rise: +14 / +10 / +6 / +3 / +2 / +1 / 0 px at f4075 / 4077 / 4079 / 4082 / 4084 / 4086 / 4089; comparison instance for v7c2's v7.text-word-blur-rise-y"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-caption-word-fade",
+  "file": "curves/v5.text-caption-word-fade.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (98th pct of the word ROI, drift-compensated)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_B_cap1_words.csv",
+  "column": "w3",
+  "sampled_frames": [
+    1120,
+    1162
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 124.0,
+  "to_value": 244.5,
+  "active_frames": [
+    1127,
+    1160
+  ],
+  "measured_duration_frames": 33,
+  "bezier": {
+    "x1": 0.4925,
+    "y1": 0.408,
+    "x2": 0.1142,
+    "y2": 0.6296,
+    "durationInFrames": 31,
+    "delay": 0.976,
+    "built_duration_frames": 30,
+    "rmse": 0.0249
+  },
+  "spring": {
+    "stiffness": 69.008,
+    "damping": 14.354,
+    "mass": 1,
+    "damping_ratio": 0.864,
+    "built_duration_frames": 31,
+    "rmse": 0.0467
+  },
+  "recommended": "bezier",
+  "note": "caption over footage, line 2 first word (lowercase, 4 letters): characters fade in left to right with a soft blur; ROI follows the caption's constant left drift (-6.2 px/frame); background under the word 121-129 before (from-value 124 = mean of f1122-f1130 samples), full white 242-245 at f1160-f1162 (to-value 244.5); fade-out starts f1165"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.ui-ring-burst",
+  "file": "curves/v5.ui-ring-burst.csv",
+  "property": "scale",
+  "unit": "scale factor (outer ring line size / button size 124 px)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c3_ui_ring_outer_peaks.csv",
+  "column": "scale_rel",
+  "sampled_frames": [
+    1650,
+    1665
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.0,
+  "to_value": 8.8226,
+  "active_frames": [
+    1653,
+    1665
+  ],
+  "measured_duration_frames": 12,
+  "bezier": {
+    "x1": 0.8222,
+    "y1": 0.3599,
+    "x2": 0.5873,
+    "y2": 0.3096,
+    "durationInFrames": 10,
+    "delay": 1.367,
+    "built_duration_frames": 10,
+    "rmse": 0.0262
+  },
+  "spring": {
+    "stiffness": 81.552,
+    "damping": 0.5,
+    "mass": 1,
+    "damping_ratio": 0.0277,
+    "built_duration_frames": 166,
+    "rmse": 0.9075
+  },
+  "recommended": "bezier",
+  "note": "re-tracked: centre-to-centre size of the outermost ring line from luma peaks through the button centre (vertical f1650-1662, right side f1657-1665); the echo trail is excluded. Growth per picture x1.22, x1.58, then x1.64-1.69 (near-constant log rate from f1657); the outer ring leaves the frame after f1665 at full speed"
+}

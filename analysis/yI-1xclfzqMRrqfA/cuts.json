@@ -1,77 +1,166 @@
 {
-  "video": "yI-1xclfzqMRrqfA",
-  "key": "v3",
-  "fps": 60,
-  "frame_convention": "analysis frame = round((pts - first_video_pts) * 60); 'frame' is the first frame of the new shot",
-  "detectors": {
-    "content": {
-      "tool": "PySceneDetect ContentDetector",
-      "threshold": 27.0,
-      "weak_threshold": 14.0
-    },
-    "adaptive": {
-      "tool": "PySceneDetect AdaptiveDetector",
-      "adaptive_threshold": 3.0,
-      "window_width": 2,
-      "min_content_val": 15
-    },
-    "ffmpeg_scene": {
-      "tool": "ffmpeg select scene score",
-      "threshold": 0.3,
-      "weak_threshold": 0.12
-    },
-    "merge_radius_decoded_frames": 2
+ "video": "yI-1xclfzqMRrqfA",
+ "key": "v3",
+ "fps": 60,
+ "frame_convention": "analysis frame = round((pts - first_video_pts) * 60); 'frame' is the first frame of the new shot",
+ "detectors": {
+  "content": {
+   "tool": "PySceneDetect ContentDetector",
+   "threshold": 27.0,
+   "weak_threshold": 14.0
   },
-  "cuts": [
-    {
-      "frame": 249,
-      "time_s": 4.15,
-      "last_frame_before": 248,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 9.34,
-      "delta_lum": 18.46,
-      "adaptive_ratio": 19.17,
-      "ffmpeg_scene": 0.1537,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c001"
-    },
-    {
-      "frame": 335,
-      "time_s": 5.5833,
-      "last_frame_before": 334,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 10.25,
-      "delta_lum": 19.74,
-      "adaptive_ratio": 78.22,
-      "ffmpeg_scene": 0.1686,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c002"
-    },
-    {
-      "frame": 404,
-      "time_s": 6.7333,
-      "last_frame_before": 403,
-      "sources": [
-        "ffmpeg_scene"
-      ],
-      "content_val": 10.0,
-      "delta_lum": 18.32,
-      "adaptive_ratio": 207.11,
-      "ffmpeg_scene": 0.1578,
-      "confidence": "low",
-      "origin": "auto",
-      "status": "candidate",
-      "id": "c003"
-    }
-  ],
-  "soft_transitions": [],
-  "notes": []
+  "adaptive": {
+   "tool": "PySceneDetect AdaptiveDetector",
+   "adaptive_threshold": 3.0,
+   "window_width": 2,
+   "min_content_val": 15
+  },
+  "ffmpeg_scene": {
+   "tool": "ffmpeg select scene score",
+   "threshold": 0.3,
+   "weak_threshold": 0.12
+  },
+  "merge_radius_decoded_frames": 2
+ },
+ "cuts": [
+  {
+   "frame": 249,
+   "time_s": 4.15,
+   "last_frame_before": 248,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 9.34,
+   "delta_lum": 18.46,
+   "adaptive_ratio": 19.17,
+   "ffmpeg_scene": 0.1537,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c001",
+   "reason": "UI step inside S03, not a cut: the chat message list jumps up 170 px in one frame (request bubble y 811-928 -> 641-758) to make room for a status row and a code block that fade in f250-f257, and a dispatch dot appears above the bubble; headline, terminals and every other pixel unchanged (only ffmpeg_scene fired, 0.154; content_val 9.3)"
+  },
+  {
+   "frame": 335,
+   "time_s": 5.5833,
+   "last_frame_before": 334,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 10.25,
+   "delta_lum": 19.74,
+   "adaptive_ratio": 78.22,
+   "ffmpeg_scene": 0.1686,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c002",
+   "reason": "same UI step inside S03: list jumps up 170 px in one frame (bubble 641-758 -> 471-588) for the second status row + code block (fade f336-f343) while a dispatch dot leaves for the lower terminal; nothing else changes (ffmpeg_scene 0.169)"
+  },
+  {
+   "frame": 404,
+   "time_s": 6.7333,
+   "last_frame_before": 403,
+   "sources": [
+    "ffmpeg_scene"
+   ],
+   "content_val": 10.0,
+   "delta_lum": 18.32,
+   "adaptive_ratio": 207.11,
+   "ffmpeg_scene": 0.1578,
+   "confidence": "low",
+   "origin": "auto",
+   "status": "rejected",
+   "id": "c003",
+   "reason": "same UI step inside S03, 92 px (bubble 471-588 -> 379-496), for the reply row (avatar + pill fade f405-f412, words pop f408 and f411); nothing else changes (ffmpeg_scene 0.158)"
+  }
+ ],
+ "soft_transitions": [
+  {
+   "id": "T01",
+   "start": 101,
+   "end": 122,
+   "frames": 22,
+   "type": "morph (title swap over the persistent node network)",
+   "shared": "the whole node network (4 nodes, 4 connectors, packets in flight) stays and keeps animating; the new 3-word headline takes the same slot (centred, cap 85 px, baseline y 582); outgoing headline fades in place f101-f110 and the labels f102-f115; pull-back of the network starts f109 (first change), new headline word 1 pops f116, two new nodes pop in at the midpoints of the top/bottom connectors f117/f118 (opaque f121-f122, overshoot settled f128)",
+   "technique": "v3.trans-morph-title-swap",
+   "detail": "detail/soft_101-122"
+  },
+  {
+   "id": "T02",
+   "start": 216,
+   "end": 241,
+   "frames": 26,
+   "type": "dip-to-bg (pure fade-out 8 f, empty f224, staggered panel grow-fade-in)",
+   "shared": "nothing but the empty background (f224 empty; f225 only the white chat panel at 1/7 of its contrast); outgoing network + headline fade together with no scale (zoom fit k 0.9994-1.0000); incoming panels fade in while growing 0.973 -> 1.000 about their own centres, chat panel f225, top terminal f227, bottom terminal f229 (2 f stagger); headline word 1 pops f228",
+   "technique": "v3.trans-dip-to-bg",
+   "detail": "detail/soft_216-241"
+  },
+  {
+   "id": "T03",
+   "start": 441,
+   "end": 452,
+   "frames": 12,
+   "type": "dip-to-bg (panel shrink-fade-out 9 f, empty f450-f451, one-frame word pop f452)",
+   "shared": "nothing but the background (2 empty frames); panels fade while shrinking 1.000 -> 0.969 about their own centres, the headline fades in place 1 f ahead (gone f449); the incoming single word appears complete in one frame at the frame centre",
+   "technique": "v3.trans-dip-to-bg",
+   "detail": "detail/soft_441-452"
+  },
+  {
+   "id": "T04",
+   "start": 499,
+   "end": 512,
+   "frames": 14,
+   "type": "dip-to-bg (word fade-out 7 f, empty f506-f507, brand-mark pop-in)",
+   "shared": "nothing but the background (2 empty frames); the outgoing single word fades in place (bbox fixed); the incoming brand mark pops in on x 960 above where the word was (mark centre y 325 vs word centre y 546), opaque at f512, overshoot settled f517",
+   "technique": "v3.trans-dip-to-bg",
+   "detail": "detail/soft_499-512"
+  },
+  {
+   "id": "T05",
+   "start": 611,
+   "end": 638,
+   "frames": 28,
+   "type": "dip-to-bg (group fade-out 7 f, empty f618 (f619 near-empty), left-to-right staggered build)",
+   "shared": "nothing but the background; outgoing mark + line + URL fade together in place (bboxes fixed); incoming UI builds left to right: left device label f619, chat panel f621-f622, headline word 1 f622, middle terminal f623, right device label f625, right terminal f626 (panels grow 0.975 -> 1.000 while fading in, 13 f each)",
+   "technique": "v3.trans-dip-to-bg",
+   "detail": "detail/soft_611-638"
+  },
+  {
+   "id": "T06",
+   "start": 778,
+   "end": 791,
+   "frames": 14,
+   "type": "dip-to-bg (panel shrink-fade-out 10 f, empty f788-f790, one-frame word pop f791)",
+   "shared": "nothing but the background (3 empty frames, residue <= 11 luma); panels and device labels shrink 1.000 -> 0.965 about their own centres while fading, the headline fades in place (gone f787); the incoming word pops complete at f791, centred on x 965 and placed above the frame centre (y 362-495)",
+   "technique": "v3.trans-dip-to-bg",
+   "detail": "detail/soft_778-791"
+  },
+  {
+   "id": "T07",
+   "start": 892,
+   "end": 903,
+   "frames": 12,
+   "type": "dip-to-bg (ease-in fade-out of the text card, 1 empty frame f899, next layout pops in: badge row f900 already scrolling, heading f903)",
+   "shared": "nothing but the empty background (single empty frame f899); both layouts are centred on x 960; outgoing headline and sub line fade with no scale or move (8 f, identical per frame), the incoming badge row appears complete at full contrast and already moving 9.333 px/f, the 1-word heading pops 3 f later",
+   "technique": "v3.trans-dip-to-bg",
+   "detail": "detail/soft_892-903"
+  },
+  {
+   "id": "T08",
+   "start": 1126,
+   "end": 1224,
+   "frames": 99,
+   "type": "morph (badge-to-hexagon swap f1126-f1150, gather of 8 black hexagons into a 7-cell honeycomb f1143-f1191, hold f1192-f1198, collapse of the outer cells into the centre cell f1199-f1224)",
+   "shared": "the hexagons: each black hexagon is born on its marquee badge centre (y 659.5), keeps its size (188 x 170 px) and orientation through the gather, and the centre cell (from the third badge) stays at (959.5, 379.5) and becomes the brand mark at 0.90 scale; the end card is built on that exact position (mark y 379.5 = 35.1% H through the later slide)",
+   "technique": "v3.trans-hex-gather",
+   "detail": "detail/soft_1126-1224"
+  }
+ ],
+ "notes": [
+  "Merged 2026-11-01 from chunks v3c1 (f0-f826) and v3c2 (f827-f1468). The three auto candidates c001 f249, c002 f335 and c003 f404 (ffmpeg_scene only, confidence low) are single-frame chat step-scrolls inside S03 and are rejected. Neither chunk found a hard cut, so there are no manual entries.",
+  "Detector misses: all eight boundaries are soft transitions found on the overview sheets, scene_metrics.csv and motion.csv. T02, T03, T05 and T06 show in scene_metrics.csv as runs of content_val 7-13 (f232-f238, f445-f450, f627-f636, f782-f787); T07 as content_val 3.18 at f900; T01 and T04 on the sheets and in the per-frame luma / ink log scratch/v3c1_global_0-845.csv; T08 on the sheets and in motion.csv.",
+  "T01 is kept as a morph boundary at the merge: the 7-word headline and the four labels leave, a 3-word headline takes the same slot and the 4-node layout grows into a lattice under the 90-frame pull-back (sheets/overview_00096-00141.jpg, sheets/overview_00144-00189.jpg). T08 is kept as one boundary: the complete honeycomb holds only 7 frames (f1192-f1198) and its centre cell continues as the brand mark.",
+  "Soft transition ids match the transition ids in segments.json."
+ ]
 }

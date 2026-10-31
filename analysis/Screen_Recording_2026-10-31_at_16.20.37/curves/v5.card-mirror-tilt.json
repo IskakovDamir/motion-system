@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.card-mirror-tilt",
+  "file": "curves/v5.card-mirror-tilt.csv",
+  "property": "rotation",
+  "unit": "degrees (top-edge angle of picture card 1, line fit over the middle half of the edge, sub-pixel; + = right end lower)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_A_card_turn.csv",
+  "column": "c1_top_deg",
+  "sampled_frames": [
+    3095,
+    3132
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.23,
+  "to_value": 9.76,
+  "active_frames": [
+    3107,
+    3130
+  ],
+  "measured_duration_frames": 23,
+  "bezier": {
+    "x1": 0.5233,
+    "y1": -0.0323,
+    "x2": 0.8834,
+    "y2": 0.2431,
+    "durationInFrames": 29,
+    "delay": -8.013,
+    "built_duration_frames": 21,
+    "rmse": 0.0808
+  },
+  "spring": {
+    "stiffness": 23.166,
+    "damping": 1.389,
+    "mass": 1,
+    "damping_ratio": 0.1443,
+    "built_duration_frames": 209,
+    "rmse": 0.7813
+  },
+  "recommended": "bezier",
+  "note": "the two outer picture cards turn as a mirrored pair while the camera reframes up: card 1 0.2 -> 9.8 deg, card 3 0.0 -> -9.8 deg (within 0.1 deg of each other at every picture inside the turn), centre card 2 stays at 0.0; fitted to the end of the turn (f3130-3132); after it both cards dip 0.65 deg (f3135) and come back to +-9.8 deg by f3150, then hold to f3177; labels turn with their cards; the side edges do not follow (card 1's left edge leans 9.1 deg at f3112 and 4.6 deg at f3150), so the turn reads as a 3D turn rather than a flat rotation"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-whip-push-left-out-pull-back.v7c4",
+  "file": "curves/v7.trans-whip-push-left-out-pull-back.v7c4.csv",
+  "property": "position-x",
+  "unit": "% of frame width",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_found_large_2361-2390_newpic.csv",
+  "column": "cx_pct",
+  "sampled_frames": [
+    2361,
+    2389
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 70.345,
+  "to_value": 63.194,
+  "active_frames": [
+    2361,
+    2389
+  ],
+  "measured_duration_frames": 28,
+  "bezier": {
+    "x1": 1.0,
+    "y1": 0.3022,
+    "x2": 1.0,
+    "y2": 0.7241,
+    "durationInFrames": 27,
+    "delay": -0.16,
+    "built_duration_frames": 26,
+    "rmse": 0.0334
+  },
+  "spring": {
+    "stiffness": 62.36,
+    "damping": 123.63,
+    "mass": 1,
+    "damping_ratio": 7.8278,
+    "built_duration_frames": 44,
+    "rmse": 0.4214
+  },
+  "recommended": "bezier",
+  "note": "outgoing half of the leftward whip into the hidden hard cut f2392 (Z1): at the close framing (scale 2.13x of the settled small framing, constant: template scale 1.000) the typed line pans left, accelerating from the slow post-whip drift (1.6 px/frame at f2361-f2374) to 17 px/frame at f2387-f2389, with horizontal motion blur on f2389 (the last old picture); then the picture is replaced by the small framing (x0.49) at f2392 that glides on left (curve v7.trans-whip-push-left-pull-back.v7c4); template on the first word of line 1 (ref f2385, scores 0.97-1.0, 0.90 on the blurred f2389); no settle: to-value = last picture before the cut, so the fitted curve is the ease-in part only; the same keyframes repeat into the hidden hard cut f2991"
+}

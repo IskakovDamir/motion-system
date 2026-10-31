@@ -1,0 +1,40 @@
+{
+  "technique_id": "v2.ui-slow-push-in.i3",
+  "file": "curves/v2.ui-slow-push-in.i3.csv",
+  "property": "scale",
+  "unit": "scale factor",
+  "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c2_S14_zoom_scale.csv",
+  "column": "scale",
+  "sampled_frames": [
+    958,
+    1097
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 1.0003,
+  "to_value": 1.0296,
+  "active_frames": [
+    959,
+    1078
+  ],
+  "measured_duration_frames": 119,
+  "bezier": {
+    "x1": 0.6177,
+    "y1": 0.9583,
+    "x2": 0.8378,
+    "y2": 0.9494,
+    "durationInFrames": 131,
+    "delay": -0.327,
+    "built_duration_frames": 121,
+    "rmse": 0.0128
+  },
+  "spring": {
+    "stiffness": 4.491,
+    "damping": 11.184,
+    "mass": 1,
+    "damping_ratio": 2.6388,
+    "built_duration_frames": 160,
+    "rmse": 0.1215
+  },
+  "recommended": "bezier",
+  "note": "PR UI panel width from left/right border edges (track.py edge, y 150-250), zoom about the frame centre (958, 544); starts in the cut frame f958 with no ease-in and is still creeping at the next cut f1098"
+}

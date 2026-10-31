@@ -1,0 +1,40 @@
+{
+  "technique_id": "v2.logo-mark-pop-in",
+  "file": "curves/v2.logo-mark-pop-in.csv",
+  "property": "scale",
+  "unit": "scale factor (body width / 376 px rest width)",
+  "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c1_S04_mascot_derived.csv",
+  "column": "scale",
+  "sampled_frames": [
+    227,
+    256
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 0.3165,
+  "to_value": 1.0,
+  "active_frames": [
+    227,
+    243
+  ],
+  "measured_duration_frames": 16,
+  "bezier": {
+    "x1": 0.1545,
+    "y1": 0.8345,
+    "x2": 0.4979,
+    "y2": 0.9991,
+    "durationInFrames": 21,
+    "delay": 0.172,
+    "built_duration_frames": 16,
+    "rmse": 0.0126
+  },
+  "spring": {
+    "stiffness": 449.587,
+    "damping": 91.264,
+    "mass": 1,
+    "damping_ratio": 2.1521,
+    "built_duration_frames": 17,
+    "rmse": 0.0778
+  },
+  "recommended": "bezier",
+  "note": "hex mascot grows about the frame centre (959.5, 539.5) from the first visible frame f227 (scale 0.3165 = start value) while it fades in (opacity 0.185, 0.339, 0.468, 0.567, 0.644, 0.717, 0.773, 0.815, 0.854, 0.884 f227-f236, 1.0 from f247; body luma 207 -> 17)"
+}

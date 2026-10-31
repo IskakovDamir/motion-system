@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.ui-prompt-pill-rise-in.v8c1",
+  "file": "curves/v8.ui-prompt-pill-rise-in.v8c1.csv",
+  "property": "position-y",
+  "unit": "% of frame height (pill centre)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c1_pill_entry_y.csv",
+  "column": "cy_pct",
+  "sampled_frames": [
+    234,
+    270
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 89.196,
+  "to_value": 70.479,
+  "active_frames": [
+    234,
+    252
+  ],
+  "measured_duration_frames": 18,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 1.2029,
+    "x2": 0.7017,
+    "y2": 1.1923,
+    "durationInFrames": 16,
+    "delay": 1.02,
+    "built_duration_frames": 16,
+    "rmse": 0.0506
+  },
+  "spring": {
+    "stiffness": 736.487,
+    "damping": 36.94,
+    "mass": 1,
+    "damping_ratio": 0.6806,
+    "built_duration_frames": 14,
+    "rmse": 0.172
+  },
+  "recommended": "bezier",
+  "note": "prompt pill rises in from below the frame edge (first picture f233 shows only its top edge at the bottom); samples f234-f238 light-area centroid (+7 px offset), f240+ template on the pill's left end (scratch/v8c1_pill_entry_y.csv); curve covers the visible part, already moving at f234; overshoot 2.1% H above rest"
+}

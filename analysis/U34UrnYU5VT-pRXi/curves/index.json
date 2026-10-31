@@ -1,0 +1,848 @@
+{
+  "video": "U34UrnYU5VT-pRXi",
+  "key": "v2",
+  "fps": 60,
+  "duration_rule": "curvekit.active_window tol=0.02",
+  "curves": {
+    "v2.grid-hex-radial-pop": {
+      "technique_id": "v2.grid-hex-radial-pop",
+      "file": "curves/v2.grid-hex-radial-pop.csv",
+      "property": "opacity",
+      "unit": "luma 0-255 (cell body; 250 = background, 139 = settled)",
+      "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c1_S02_cell1.csv",
+      "column": "body_luma",
+      "sampled_frames": [
+        1,
+        24
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 250.0,
+      "to_value": 139.0,
+      "active_frames": [
+        6,
+        13
+      ],
+      "measured_duration_frames": 7,
+      "bezier": {
+        "x1": 0.2436,
+        "y1": 1.1265,
+        "x2": 0.8127,
+        "y2": 0.8792,
+        "durationInFrames": 7,
+        "delay": 0.113,
+        "built_duration_frames": 7,
+        "rmse": 0.0159
+      },
+      "spring": {
+        "stiffness": 3780.35,
+        "damping": 151.818,
+        "mass": 1,
+        "damping_ratio": 1.2346,
+        "built_duration_frames": 6,
+        "rmse": 0.0905
+      },
+      "recommended": "bezier",
+      "note": "first hex cell (centre 990, 594.5) popping in: fade (luma 250 -> 139) while it scales 0.59 -> 1 (height 79 -> 133 px) about its own centre; every later cell repeats this pop, started by a radial front at 19.6 px/frame"
+    },
+    "v2.icon-ring-pop-in": {
+      "technique_id": "v2.icon-ring-pop-in",
+      "file": "curves/v2.icon-ring-pop-in.csv",
+      "property": "scale",
+      "unit": "scale factor (template scale; 0.995 = rest at this scale grid)",
+      "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c1_S03_logo12_scale.csv",
+      "column": "scale",
+      "sampled_frames": [
+        117,
+        136
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 0.585,
+      "to_value": 0.995,
+      "active_frames": [
+        117,
+        125
+      ],
+      "measured_duration_frames": 8,
+      "bezier": {
+        "x1": 0.2967,
+        "y1": 1.1592,
+        "x2": 0.8588,
+        "y2": 0.8683,
+        "durationInFrames": 8,
+        "delay": 0.026,
+        "built_duration_frames": 8,
+        "rmse": 0.0063
+      },
+      "spring": {
+        "stiffness": 2551.473,
+        "damping": 102.367,
+        "mass": 1,
+        "damping_ratio": 1.0133,
+        "built_duration_frames": 7,
+        "rmse": 0.0989
+      },
+      "recommended": "bezier",
+      "note": "ring logo at 46 deg (lower right, inner track) popping in while it already orbits: first visible f117 at scale 0.585 (start value = first visible frame), settled f125; opacity rises with it (ink fraction of another logo 0.03, 0.20, 0.40, 0.59, 0.72, 0.83, 0.91, 0.94, 0.96 over its first 9 frames)"
+    },
+    "v2.icon-stagger-pop-in": {
+      "technique_id": "v2.icon-stagger-pop-in",
+      "file": "curves/v2.icon-stagger-pop-in.csv",
+      "property": "opacity",
+      "unit": "luma 0-255 (fill of logo icon 1 at x 428-444, y 440-460; 250 = empty, 17 = settled)",
+      "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c2_S15_icon1_fill.csv",
+      "column": "mean",
+      "sampled_frames": [
+        1104,
+        1140
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 250.0,
+      "to_value": 17.0,
+      "active_frames": [
+        1109,
+        1120
+      ],
+      "measured_duration_frames": 11,
+      "bezier": {
+        "x1": 0.1905,
+        "y1": 0.9796,
+        "x2": 0.5096,
+        "y2": 0.9812,
+        "durationInFrames": 13,
+        "delay": 0.878,
+        "built_duration_frames": 10,
+        "rmse": 0.0877
+      },
+      "spring": {
+        "stiffness": 1378.588,
+        "damping": 76.275,
+        "mass": 1,
+        "damping_ratio": 1.0271,
+        "built_duration_frames": 10,
+        "rmse": 0.0339
+      },
+      "recommended": "spring",
+      "note": "logo grid icon 1 (black hex brand mark) popping in: opacity from its fill luma (inside the shape at every scale >= 0.5); the icon scales 0.50 -> 0.96 in the same 10 frames (template: 0.50, 0.65, 0.75, 0.82, 0.86, 0.90, 0.92, 0.93, 0.94, 0.95, 0.96 f1110-f1120) and then creeps to 1.00 by f1150; icons 2-9 repeat it 3-4 frames apart"
+    },
+    "v2.logo-eye-glance.i2": {
+      "technique_id": "v2.logo-eye-glance.i2",
+      "file": "curves/v2.logo-eye-glance.i2.csv",
+      "property": "position-x",
+      "unit": "px (eye-pair centroid 600.5 -> 571.0, -29.5 px = -23% of the 126 px hex; y +16 px at the same time)",
+      "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c2_S4_hex1_eyes.csv",
+      "column": "ink_cx",
+      "sampled_frames": [
+        1186,
+        1210
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 600.52,
+      "to_value": 571.02,
+      "active_frames": [
+        1195,
+        1201
+      ],
+      "measured_duration_frames": 6,
+      "bezier": {
+        "x1": 0.5957,
+        "y1": -0.0845,
+        "x2": 0.4008,
+        "y2": 0.9912,
+        "durationInFrames": 7,
+        "delay": -0.745,
+        "built_duration_frames": 6,
+        "rmse": 0.048
+      },
+      "spring": {
+        "stiffness": 4104.705,
+        "damping": 110.987,
+        "mass": 1,
+        "damping_ratio": 0.8662,
+        "built_duration_frames": 5,
+        "rmse": 0.177
+      },
+      "recommended": "bezier",
+      "note": "hex-row mascot 1 glance down-left (track.py bbox of the dark eye bars inside the hex); bar height squashes 40 -> 33 px mid-move and recovers (blink-squash); hexes 2-6 repeat it with a 1.8 f stagger, left to right"
+    },
+    "v2.logo-eye-glance": {
+      "technique_id": "v2.logo-eye-glance",
+      "file": "curves/v2.logo-eye-glance.csv",
+      "property": "position-x",
+      "unit": "px (eye-pair centre minus body centre; body 376 px wide)",
+      "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c1_S04_mascot_derived.csv",
+      "column": "eye_dx",
+      "sampled_frames": [
+        248,
+        270
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 47.98,
+      "to_value": -48.0,
+      "active_frames": [
+        254,
+        262
+      ],
+      "measured_duration_frames": 8,
+      "bezier": {
+        "x1": 0.5861,
+        "y1": -0.015,
+        "x2": 0.3801,
+        "y2": 1.0288,
+        "durationInFrames": 9,
+        "delay": -0.584,
+        "built_duration_frames": 7,
+        "rmse": 0.0291
+      },
+      "spring": {
+        "stiffness": 1748.034,
+        "damping": 67.575,
+        "mass": 1,
+        "damping_ratio": 0.8081,
+        "built_duration_frames": 6,
+        "rmse": 0.1131
+      },
+      "recommended": "bezier",
+      "note": "big hex mascot, glance 1: both eye bars slide from upper right (+48, -40) to lower left (-48, +8) in one move; the eyes squash vertically mid-move (eye-pair height 120 -> 99 px at f258 -> 120) and widen 106 -> 112 px; same device for glances 2 and 3 (f275-f284, f299-f308)"
+    },
+    "v2.logo-lockup-slide": {
+      "technique_id": "v2.logo-lockup-slide",
+      "file": "curves/v2.logo-lockup-slide.csv",
+      "property": "position-x",
+      "unit": "px (mascot body centre x; frame 1920 px wide)",
+      "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c1_S04_mascot_derived.csv",
+      "column": "cx",
+      "sampled_frames": [
+        304,
+        334
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 959.5,
+      "to_value": 319.5,
+      "active_frames": [
+        314,
+        324
+      ],
+      "measured_duration_frames": 10,
+      "bezier": {
+        "x1": 0.6482,
+        "y1": 0.0005,
+        "x2": 0.3508,
+        "y2": 0.9997,
+        "durationInFrames": 14,
+        "delay": -1.993,
+        "built_duration_frames": 10,
+        "rmse": 0.0012
+      },
+      "spring": {
+        "stiffness": 729.515,
+        "damping": 43.604,
+        "mass": 1,
+        "damping_ratio": 0.8072,
+        "built_duration_frames": 9,
+        "rmse": 0.1167
+      },
+      "recommended": "bezier",
+      "note": "hex mascot slides left from the frame centre into a logo lockup: centre x 959.5 -> 319.5 (-640 px = -33.3% W) while it shrinks 376 -> 152 px wide (scale 1.0 -> 0.404) on the same timing; y stays 539.5; the lockup word pops in at its final place in one frame at f322 while the mark is still moving"
+    },
+    "v2.logo-mark-pop-in": {
+      "technique_id": "v2.logo-mark-pop-in",
+      "file": "curves/v2.logo-mark-pop-in.csv",
+      "property": "scale",
+      "unit": "scale factor (body width / 376 px rest width)",
+      "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c1_S04_mascot_derived.csv",
+      "column": "scale",
+      "sampled_frames": [
+        227,
+        256
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 0.3165,
+      "to_value": 1.0,
+      "active_frames": [
+        227,
+        243
+      ],
+      "measured_duration_frames": 16,
+      "bezier": {
+        "x1": 0.1545,
+        "y1": 0.8345,
+        "x2": 0.4979,
+        "y2": 0.9991,
+        "durationInFrames": 21,
+        "delay": 0.172,
+        "built_duration_frames": 16,
+        "rmse": 0.0126
+      },
+      "spring": {
+        "stiffness": 449.587,
+        "damping": 91.264,
+        "mass": 1,
+        "damping_ratio": 2.1521,
+        "built_duration_frames": 17,
+        "rmse": 0.0778
+      },
+      "recommended": "bezier",
+      "note": "hex mascot grows about the frame centre (959.5, 539.5) from the first visible frame f227 (scale 0.3165 = start value) while it fades in (opacity 0.185, 0.339, 0.468, 0.567, 0.644, 0.717, 0.773, 0.815, 0.854, 0.884 f227-f236, 1.0 from f247; body luma 207 -> 17)"
+    },
+    "v2.logo-spin-scale-in": {
+      "technique_id": "v2.logo-spin-scale-in",
+      "file": "curves/v2.logo-spin-scale-in.csv",
+      "property": "scale",
+      "unit": "scale factor (sqrt of silhouette area / 158.1 px at rest; first visible frame f1802 = 0.658)",
+      "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c2_S11_mascot_clean.csv",
+      "column": "scale",
+      "sampled_frames": [
+        1802,
+        1860
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 0.6579,
+      "to_value": 1.0,
+      "active_frames": [
+        1802,
+        1826
+      ],
+      "measured_duration_frames": 24,
+      "bezier": {
+        "x1": 0.1871,
+        "y1": 0.8582,
+        "x2": 0.4639,
+        "y2": 0.9866,
+        "durationInFrames": 31,
+        "delay": -0.003,
+        "built_duration_frames": 24,
+        "rmse": 0.0012
+      },
+      "spring": {
+        "stiffness": 205.011,
+        "damping": 30.694,
+        "mass": 1,
+        "damping_ratio": 1.0719,
+        "built_duration_frames": 25,
+        "rmse": 0.0888
+      },
+      "recommended": "bezier",
+      "note": "end-card mascot logo entering at the frame centre (959.5, 429.5): scale, opacity (fill luma 219 -> 17) and rotation (-17.1 deg -> 0, counter-clockwise tilt straightening) share this normalised progress within 0.02 (scratch/v2c2_S11_mascot_clean.csv, custom silhouette measurement on work.mp4); the move starts invisibly at f1801 (empty frame), so p=0 here is the first visible frame"
+    },
+    "v2.particle-hex-scatter-pop": {
+      "technique_id": "v2.particle-hex-scatter-pop",
+      "file": "curves/v2.particle-hex-scatter-pop.csv",
+      "property": "scale",
+      "unit": "scale factor (first visible frame f1409 = 0.46)",
+      "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c2_S7_hexA_tmpl.csv",
+      "column": "scale",
+      "sampled_frames": [
+        1409,
+        1440
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 0.46,
+      "to_value": 1.0,
+      "active_frames": [
+        1409,
+        1416
+      ],
+      "measured_duration_frames": 7,
+      "bezier": {
+        "x1": 0.2447,
+        "y1": 1.0837,
+        "x2": 0.7881,
+        "y2": 0.95,
+        "durationInFrames": 9,
+        "delay": -0.0,
+        "built_duration_frames": 8,
+        "rmse": 0.0308
+      },
+      "spring": {
+        "stiffness": 2399.941,
+        "damping": 99.4,
+        "mass": 1,
+        "damping_ratio": 1.0145,
+        "built_duration_frames": 8,
+        "rmse": 0.0536
+      },
+      "recommended": "bezier",
+      "note": "first scatter hex (black, centre 1147, 764) popping in: scale by template (track.py, 0.01 steps) while it fades in (fill luma 137, 89, 62, 44, 33, 26, 22.5, 19, 17 f1410-f1418); the other 29 hexes repeat it, one every 1.5 frames (scratch/v2c2_S7_scatter_births.csv)"
+    },
+    "v2.text-label-fade-in": {
+      "technique_id": "v2.text-label-fade-in",
+      "file": "curves/v2.text-label-fade-in.csv",
+      "property": "opacity",
+      "unit": "luma 0-255 (mean of the label area x 630-1290, y 600-650; 250 = empty, 177 = settled)",
+      "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c2_S11_url_luma.csv",
+      "column": "mean",
+      "sampled_frames": [
+        1830,
+        1870
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 250.0,
+      "to_value": 176.856,
+      "active_frames": [
+        1837,
+        1851
+      ],
+      "measured_duration_frames": 14,
+      "bezier": {
+        "x1": 0.3439,
+        "y1": 1.0893,
+        "x2": 0.7617,
+        "y2": 0.9857,
+        "durationInFrames": 18,
+        "delay": 0.12,
+        "built_duration_frames": 14,
+        "rmse": 0.0102
+      },
+      "spring": {
+        "stiffness": 402.611,
+        "damping": 37.408,
+        "mass": 1,
+        "damping_ratio": 0.9322,
+        "built_duration_frames": 16,
+        "rmse": 0.0458
+      },
+      "recommended": "bezier",
+      "note": "end-card URL label (1 line, 1 token) fades in under the logo with no movement (bbox x 636-1285, y 593-646 constant from f1838)"
+    },
+    "v2.trans-hex-fly-into-ui": {
+      "technique_id": "v2.trans-hex-fly-into-ui",
+      "file": "curves/v2.trans-hex-fly-into-ui.csv",
+      "property": "position-y",
+      "unit": "px (757 = hex row, 160 = app-panel tile icon; -597 px = -55.3% H)",
+      "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c2_T2_blackhex_cc.csv",
+      "column": "cy",
+      "sampled_frames": [
+        1210,
+        1240
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 757.0,
+      "to_value": 160.0,
+      "active_frames": [
+        1218,
+        1233
+      ],
+      "measured_duration_frames": 15,
+      "bezier": {
+        "x1": 0.6802,
+        "y1": 0.0213,
+        "x2": 0.4662,
+        "y2": 0.7671,
+        "durationInFrames": 16,
+        "delay": -1.537,
+        "built_duration_frames": 14,
+        "rmse": 0.0152
+      },
+      "spring": {
+        "stiffness": 325.523,
+        "damping": 27.967,
+        "mass": 1,
+        "damping_ratio": 0.7751,
+        "built_duration_frames": 18,
+        "rmse": 0.2729
+      },
+      "recommended": "bezier",
+      "note": "black hex of the row flying up into the app panel's tile icon slot (largest dark blob, scratch/v2c2_T2_blackhex_cc.csv; f1231 the blob merges with the tile's own icon as it lands, h 122); x 885 -> 960, width 126 -> 94 px (scale 0.75); the five grey hexes travel on a rising wave to the five row-icon slots in the same window"
+    },
+    "v2.trans-icon-converge-morph": {
+      "technique_id": "v2.trans-icon-converge-morph",
+      "file": "curves/v2.trans-icon-converge-morph.csv",
+      "property": "position-y",
+      "unit": "px (450 = grid row 1, 757 = hex row; 307 px = 28.4% H)",
+      "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c2_T1_icon1.csv",
+      "column": "cy",
+      "sampled_frames": [
+        1158,
+        1190
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 450.0,
+      "to_value": 757.0,
+      "active_frames": [
+        1164,
+        1177
+      ],
+      "measured_duration_frames": 13,
+      "bezier": {
+        "x1": 0.6544,
+        "y1": 0.0135,
+        "x2": 0.4247,
+        "y2": 0.9198,
+        "durationInFrames": 16,
+        "delay": -1.737,
+        "built_duration_frames": 13,
+        "rmse": 0.0223
+      },
+      "spring": {
+        "stiffness": 433.956,
+        "damping": 33.169,
+        "mass": 1,
+        "damping_ratio": 0.7961,
+        "built_duration_frames": 11,
+        "rmse": 0.1283
+      },
+      "recommended": "bezier",
+      "note": "logo icon 1 (black hex mark, grid slot row 1 col 1) travelling to hex-row slot 1 while scaling 1.00 -> 0.64 (track.py template, tight search window); every tracked icon (1, 3, 4, 7, 9) follows the same normalised progress within 0.01 (x or y), so all 9 icons share this curve"
+    },
+    "v2.trans-scroll-push": {
+      "technique_id": "v2.trans-scroll-push",
+      "file": "curves/v2.trans-scroll-push.csv",
+      "property": "position-y",
+      "unit": "px of upward travel (0 -> 1200 px = 111% H; page and network on one vertical strip, hub 940 px below the page reference line)",
+      "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c2_T3_strip.csv",
+      "column": "strip_offset",
+      "sampled_frames": [
+        1596,
+        1640
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 0.0,
+      "to_value": 1200.0,
+      "active_frames": [
+        1605,
+        1622
+      ],
+      "measured_duration_frames": 17,
+      "bezier": {
+        "x1": 0.647,
+        "y1": 0.0051,
+        "x2": 0.3562,
+        "y2": 0.9917,
+        "durationInFrames": 23,
+        "delay": -3.037,
+        "built_duration_frames": 17,
+        "rmse": 0.0027
+      },
+      "spring": {
+        "stiffness": 245.969,
+        "damping": 25.095,
+        "mass": 1,
+        "damping_ratio": 0.8001,
+        "built_duration_frames": 15,
+        "rmse": 0.1103
+      },
+      "recommended": "bezier",
+      "note": "scroll-push from the article page to the network diagram: f1596-f1615 page figure-caption line (track.py template), f1615-f1640 network hub (largest dark blob, scratch/v2c2_T3_hub_cc.csv); the two tracks agree at the hand-off (f1614 hub partly visible at the predicted place); peak 152 px/f at f1613-f1614"
+    },
+    "v2.trans-sphere-collapse": {
+      "technique_id": "v2.trans-sphere-collapse",
+      "file": "curves/v2.trans-sphere-collapse.csv",
+      "property": "scale",
+      "unit": "scale factor (1 = flat field filling the frame, 0 = vanished)",
+      "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c1_T1_size.csv",
+      "column": "collapse_scale",
+      "sampled_frames": [
+        86,
+        116
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 1.0,
+      "to_value": 0.0,
+      "active_frames": [
+        100,
+        113
+      ],
+      "measured_duration_frames": 13,
+      "bezier": {
+        "x1": 0.7813,
+        "y1": -0.0148,
+        "x2": 0.4978,
+        "y2": 0.5054,
+        "durationInFrames": 15,
+        "delay": -2.8,
+        "built_duration_frames": 12,
+        "rmse": 0.04
+      },
+      "spring": {
+        "stiffness": 475.737,
+        "damping": 32.924,
+        "mass": 1,
+        "damping_ratio": 0.7548,
+        "built_duration_frames": 16,
+        "rmse": 0.3553
+      },
+      "recommended": "bezier",
+      "note": "honeycomb field bends into a globe and shrinks to a point at the frame centre (960, 540): f86-f104 centre magnification (ECC on a 400x400 centre ROI), f105-f113 silhouette size = sqrt(covered area / full-frame field area); field gone at f114 (first word of the next layout appears in the same frame)"
+    },
+    "v2.ui-badge-swap-pop": {
+      "technique_id": "v2.ui-badge-swap-pop",
+      "file": "curves/v2.ui-badge-swap-pop.csv",
+      "property": "scale",
+      "unit": "pill width px (112 px = 1.0; first visible 90 px = 0.80)",
+      "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c2_S14_badge1_bbox.csv",
+      "column": "w",
+      "sampled_frames": [
+        994,
+        1003
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 90.0,
+      "to_value": 112.0,
+      "active_frames": [
+        994,
+        1001
+      ],
+      "measured_duration_frames": 7,
+      "bezier": {
+        "x1": 0.2564,
+        "y1": 1.2305,
+        "x2": 1.0,
+        "y2": 0.8737,
+        "durationInFrames": 7,
+        "delay": -0.001,
+        "built_duration_frames": 7,
+        "rmse": 0.005
+      },
+      "spring": {
+        "stiffness": 4231.657,
+        "damping": 164.965,
+        "mass": 1,
+        "damping_ratio": 1.268,
+        "built_duration_frames": 6,
+        "rmse": 0.0916
+      },
+      "recommended": "bezier",
+      "note": "incoming status pill (card 1, f994-f1001) scaling up while it fades in, after the outgoing pill shrank 88->79 px and faded f991-f993 (track.py bbox, dark ink vs bg 253); start value = first visible frame"
+    },
+    "v2.ui-list-item-rise-fade.i2": {
+      "technique_id": "v2.ui-list-item-rise-fade.i2",
+      "file": "curves/v2.ui-list-item-rise-fade.i2.csv",
+      "property": "opacity",
+      "unit": "luma 0-255 (mean of the message row area in window coordinates; 253 = empty, 241.4 = settled)",
+      "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c1_S11_msgs.csv",
+      "column": "m5_mean",
+      "sampled_frames": [
+        864,
+        886
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 253.0,
+      "to_value": 241.333,
+      "active_frames": [
+        871,
+        878
+      ],
+      "measured_duration_frames": 7,
+      "bezier": {
+        "x1": 0.2093,
+        "y1": 0.8839,
+        "x2": 0.2948,
+        "y2": 0.9861,
+        "durationInFrames": 10,
+        "delay": 0.169,
+        "built_duration_frames": 7,
+        "rmse": 0.0259
+      },
+      "spring": {
+        "stiffness": 3357.061,
+        "damping": 123.737,
+        "mass": 1,
+        "damping_ratio": 1.0678,
+        "built_duration_frames": 7,
+        "rmse": 0.0337
+      },
+      "recommended": "bezier",
+      "note": "4th chat message appearing (avatar, name line, text): fade-in measured on the row mean luma with the push-in removed; co-timed rise of 13 px in window coordinates (top edge 658, 652, 649, 647, 646, 645 f872-f877); the four messages are first visible at f796, f821, f847, f872 (25, 26, 25 f apart; rise 9-13 px); fitted with this curve their fades start at f795.6, f820.8, f846.0, f871.2, one every 25.2 f (scratch/v2c1_S11_msg_starts.csv)"
+    },
+    "v2.ui-list-item-rise-fade": {
+      "technique_id": "v2.ui-list-item-rise-fade",
+      "file": "curves/v2.ui-list-item-rise-fade.csv",
+      "property": "opacity",
+      "unit": "luma 0-255 (mean of the row's text area; 253 = empty, 232.7 = settled)",
+      "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c2_S14_luma_r1.csv",
+      "column": "mean",
+      "sampled_frames": [
+        990,
+        1006
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 253.0,
+      "to_value": 232.712,
+      "active_frames": [
+        996,
+        1001
+      ],
+      "measured_duration_frames": 5,
+      "bezier": {
+        "x1": 0.3021,
+        "y1": 1.0601,
+        "x2": 0.4456,
+        "y2": 0.9592,
+        "durationInFrames": 7,
+        "delay": -0.0,
+        "built_duration_frames": 5,
+        "rmse": 0.0014
+      },
+      "spring": {
+        "stiffness": 6662.325,
+        "damping": 163.278,
+        "mass": 1,
+        "damping_ratio": 1.0002,
+        "built_duration_frames": 5,
+        "rmse": 0.0231
+      },
+      "recommended": "bezier",
+      "note": "PR list row 1 fade-in (track.py luma x310-940 y590-670); co-timed rise of 6-7 px (y0 602,598,596,595 f997-f1000)"
+    },
+    "v2.ui-page-scroll": {
+      "technique_id": "v2.ui-page-scroll",
+      "file": "curves/v2.ui-page-scroll.csv",
+      "property": "position-y",
+      "unit": "px (746 -> 186 = -560 px = -51.9% H)",
+      "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c2_S8_scroll1.csv",
+      "column": "cy",
+      "sampled_frames": [
+        1528,
+        1580
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 746.0,
+      "to_value": 186.0,
+      "active_frames": [
+        1542,
+        1558
+      ],
+      "measured_duration_frames": 16,
+      "bezier": {
+        "x1": 0.6488,
+        "y1": -0.001,
+        "x2": 0.3537,
+        "y2": 1.0013,
+        "durationInFrames": 21,
+        "delay": -2.395,
+        "built_duration_frames": 15,
+        "rmse": 0.014
+      },
+      "spring": {
+        "stiffness": 294.387,
+        "damping": 27.271,
+        "mass": 1,
+        "damping_ratio": 0.7947,
+        "built_duration_frames": 13,
+        "rmse": 0.1025
+      },
+      "recommended": "bezier",
+      "note": "article page scroll: chart title tracked by template (track.py, 1 px quantised); the caption at the top scrolls with the page (whole picture moves, x fixed)"
+    },
+    "v2.ui-slow-push-in.i2": {
+      "technique_id": "v2.ui-slow-push-in.i2",
+      "file": "curves/v2.ui-slow-push-in.i2.csv",
+      "property": "scale",
+      "unit": "scale factor",
+      "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c1_S09_app_ecc.csv",
+      "column": "scale",
+      "sampled_frames": [
+        676,
+        732
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 1.0,
+      "to_value": 1.0496,
+      "active_frames": [
+        676,
+        726
+      ],
+      "measured_duration_frames": 50,
+      "bezier": {
+        "x1": 0.3785,
+        "y1": 0.5288,
+        "x2": 0.5685,
+        "y2": 0.8993,
+        "durationInFrames": 53,
+        "delay": 0.093,
+        "built_duration_frames": 50,
+        "rmse": 0.0077
+      },
+      "spring": {
+        "stiffness": 14.955,
+        "damping": 5.904,
+        "mass": 1,
+        "damping_ratio": 0.7633,
+        "built_duration_frames": 84,
+        "rmse": 0.1772
+      },
+      "recommended": "bezier",
+      "note": "S09 full-bleed agent-app UI scales about the frame centre (957, 543) from the cut frame f676 with no ease-in (1.0 at f676 = rest, ECC similarity track of the whole picture, cc >= 0.9993); 1.0 -> 1.0496 (median of f730-f732; 1.0499 at f731); the segment is 57 f (cut f733), so the curve ends at the last measured frames, with no long hold after it. Same device and normalised shape as the S07 instance curves/v2.ui-slow-push-in (D=106 in a 113 f segment) at about half the duration: the push-in is timed to its segment; this short instance exists for its length, it is not a second technique"
+    },
+    "v2.ui-slow-push-in.i3": {
+      "technique_id": "v2.ui-slow-push-in.i3",
+      "file": "curves/v2.ui-slow-push-in.i3.csv",
+      "property": "scale",
+      "unit": "scale factor",
+      "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c2_S14_zoom_scale.csv",
+      "column": "scale",
+      "sampled_frames": [
+        958,
+        1097
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 1.0003,
+      "to_value": 1.0296,
+      "active_frames": [
+        959,
+        1078
+      ],
+      "measured_duration_frames": 119,
+      "bezier": {
+        "x1": 0.6177,
+        "y1": 0.9583,
+        "x2": 0.8378,
+        "y2": 0.9494,
+        "durationInFrames": 131,
+        "delay": -0.327,
+        "built_duration_frames": 121,
+        "rmse": 0.0128
+      },
+      "spring": {
+        "stiffness": 4.491,
+        "damping": 11.184,
+        "mass": 1,
+        "damping_ratio": 2.6388,
+        "built_duration_frames": 160,
+        "rmse": 0.1215
+      },
+      "recommended": "bezier",
+      "note": "PR UI panel width from left/right border edges (track.py edge, y 150-250), zoom about the frame centre (958, 544); starts in the cut frame f958 with no ease-in and is still creeping at the next cut f1098"
+    },
+    "v2.ui-slow-push-in": {
+      "technique_id": "v2.ui-slow-push-in",
+      "file": "curves/v2.ui-slow-push-in.csv",
+      "property": "scale",
+      "unit": "scale factor",
+      "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c1_S07_panel_tm.csv",
+      "column": "scale",
+      "sampled_frames": [
+        451,
+        563
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 1.0,
+      "to_value": 1.0351,
+      "active_frames": [
+        452,
+        549
+      ],
+      "measured_duration_frames": 97,
+      "bezier": {
+        "x1": 0.393,
+        "y1": 0.5706,
+        "x2": 0.6322,
+        "y2": 0.9339,
+        "durationInFrames": 106,
+        "delay": -1.024,
+        "built_duration_frames": 97,
+        "rmse": 0.002
+      },
+      "spring": {
+        "stiffness": 4.092,
+        "damping": 3.173,
+        "mass": 1,
+        "damping_ratio": 0.7844,
+        "built_duration_frames": 102,
+        "rmse": 0.0189
+      },
+      "recommended": "bezier",
+      "note": "UI panel (dialog with search field and 6-row list) scales about its own centre (~965, 601) from the cut frame f451 with no ease-in, 1.0 -> 1.0351, settled ~f556, still to the cut f564; the headline above holds still (template score >= 0.9995). 8-template similarity track, rms residual <= 0.1 px"
+    }
+  }
+}

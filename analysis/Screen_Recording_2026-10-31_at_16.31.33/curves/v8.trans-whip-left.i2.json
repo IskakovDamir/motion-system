@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.trans-whip-left.i2",
+ "file": "curves/v8.trans-whip-left.i2.csv",
+ "property": "position-x",
+ "unit": "% of frame width",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c3_reel_card_x_1840-1926.csv",
+ "column": "centre_x_pct",
+ "sampled_frames": [
+  1860,
+  1924
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 49.821,
+ "to_value": 39.881,
+ "active_frames": [
+  1888,
+  1924
+ ],
+ "measured_duration_frames": 36,
+ "bezier": {
+  "x1": 0.7143,
+  "y1": 0.0307,
+  "x2": 0.8651,
+  "y2": 0.2512,
+  "durationInFrames": 45,
+  "delay": -8.992,
+  "built_duration_frames": 35,
+  "rmse": 0.0091
+ },
+ "spring": {
+  "stiffness": 13.692,
+  "damping": 0.5,
+  "mass": 1,
+  "damping_ratio": 0.0676,
+  "built_duration_frames": 260,
+  "rmse": 0.8637
+ },
+ "recommended": "bezier",
+ "note": "S04 -> S05 whip left, outgoing half (hidden cut f1927): centre x of the landed post card (column-mean dark-run scan over y 300-600, scratch/v8c3_reel_xruns_1840-1926.csv -> scratch/v8c3_reel_card_x_1840-1926.csv). After a rest (f1871-f1880) the card accelerates left: per-picture displacement 0.9 (f1888), 2.0 (f1899), 4.1 (f1906), 7.5 (f1913), 15.3 (f1918), 27.5 (f1922), 36.2 px (f1924) = about 18 px per frame at the last picture, with growing horizontal motion blur (Sobel gx 29 -> 10 while gy stays 21-25, scratch/v8c3_reel_sharp_1870-1926.csv). to-value = last picture f1924; f1926 repeats f1924 (no settle).",
+ "chunk_curve_id": "v8.trans-whip-left-out.v8c3"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.logo-sphere-drop-merge",
+  "file": "curves/v5.logo-sphere-drop-merge.csv",
+  "property": "area",
+  "unit": "thousand px (bright sphere / glow ink, luma > 120, components >= 2000 px with peak >= 200)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_E_sphere_merge.csv",
+  "column": "area_total_k",
+  "sampled_frames": [
+    1462,
+    1491
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 30.23,
+  "to_value": 0.0,
+  "active_frames": [
+    1470,
+    1485
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.3269,
+    "y1": 0.0056,
+    "x2": 1.0,
+    "y2": 0.9341,
+    "durationInFrames": 14,
+    "delay": -0.983,
+    "built_duration_frames": 13,
+    "rmse": 0.0806
+  },
+  "spring": {
+    "stiffness": 152.569,
+    "damping": 17.291,
+    "mass": 1,
+    "damping_ratio": 0.6999,
+    "built_duration_frames": 29,
+    "rmse": 0.3337
+  },
+  "recommended": "bezier",
+  "note": "the three spheres keep their total ink area (29.3-30.2 k px, one sphere 9.4-10.5 k) while they drop and stack on the chip (f1462-f1467) and become one blob on f1470 (29.7 k); the merged glow then shrinks to a point and is gone: 29.7 (f1470) -> 27.6 -> 22.3 -> 17.2 -> 10.0 -> 3.9 (f1482) -> 0 k px (f1485); main blob centroid (858, 208) f1457 -> (800, 370) f1460 -> (706, 384) -> (657, 448) -> (623, 489) -> (603, 486) f1470 -> (599, 514) -> (628, 519) -> (705, 506) -> (742, 500) -> (756, 509) px f1482; relative to the card's plus button (camera-invariant for the re-frame) dx/dy 387/-274 (f1462) -> 336/-179 -> 298/-116 -> 270/-105 (f1470) -> 251/-66 -> 250/-48 -> 260/-37 -> 274/-26 -> 277/-6 px (f1482): it lands on the icon + label chip; scratch/v5c2_E_sphere_merge.csv"
+}

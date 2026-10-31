@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.ui-thumb-slide-in-blur.v8c5",
+  "file": "curves/v8.ui-thumb-slide-in-blur.v8c5.csv",
+  "property": "position-y",
+  "unit": "card-local px at scale 1 (card = 550 px wide; 1 px = 0.062% W / 0.109% H at rest)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c5r_Sa_thumb_tops.csv",
+  "column": "left_top_v",
+  "sampled_frames": [
+    2932,
+    2956
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 701.0,
+  "to_value": 481.5,
+  "active_frames": [
+    2932,
+    2942
+  ],
+  "measured_duration_frames": 10,
+  "bezier": {
+    "x1": 0.0179,
+    "y1": 1.0101,
+    "x2": 0.7801,
+    "y2": 0.9842,
+    "durationInFrames": 10,
+    "delay": 1.527,
+    "built_duration_frames": 8,
+    "rmse": 0.1058
+  },
+  "spring": {
+    "stiffness": 1481.757,
+    "damping": 133.091,
+    "mass": 1,
+    "damping_ratio": 1.7287,
+    "built_duration_frames": 10,
+    "rmse": 0.0072
+  },
+  "recommended": "spring",
+  "note": "S-a filtered grid refill: top edge of the first (left-slot) thumbnail in card coordinates (camera transform removed with scratch/v8c5r_Sa_camera.csv; rows with mean luma > 20 over the slot band, scratch/v8c5r_Sa_thumbs.csv -> v8c5r_Sa_thumb_tops.csv). The thumbnail enters from below the visible area on a diagonal from the lower right (ink centroid u 379 -> 153 px, v 765 -> 623 px) with motion blur along the path; first visible picture f2928-f2931, from-value = f2932 (top at 701 px, clipped below), rest 481.5 px; the second thumbnail follows 6-7 frames later straight up (top 643 -> 481 px, f2938-f2948)."
+}

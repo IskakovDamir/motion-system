@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.text-block-rise-in.v8c4",
+  "file": "curves/v8.text-block-rise-in.v8c4.csv",
+  "property": "position-y",
+  "unit": "% of frame height",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c4_S5_page_y.csv",
+  "column": "page_y_pct",
+  "sampled_frames": [
+    2648,
+    2696
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 53.595,
+  "to_value": 39.651,
+  "active_frames": [
+    2648,
+    2690
+  ],
+  "measured_duration_frames": 42,
+  "bezier": {
+    "x1": 0.1412,
+    "y1": 1.0892,
+    "x2": 1.0,
+    "y2": 0.9494,
+    "durationInFrames": 44,
+    "delay": 1.681,
+    "built_duration_frames": 40,
+    "rmse": 0.0392
+  },
+  "spring": {
+    "stiffness": 67.99,
+    "damping": 19.227,
+    "mass": 1,
+    "damping_ratio": 1.1659,
+    "built_duration_frames": 42,
+    "rmse": 0.0557
+  },
+  "recommended": "bezier",
+  "note": "chat message 3 block (headline centre; status row + 85 px before f2665) rises while its lines type on; first text at f2648 already moving (about 0.8% H per frame); from-value = first picture"
+}

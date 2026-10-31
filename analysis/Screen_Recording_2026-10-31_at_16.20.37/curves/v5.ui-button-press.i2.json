@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.ui-button-press.i2",
+  "file": "curves/v5.ui-button-press.i2.csv",
+  "property": "scale",
+  "unit": "scale factor (send button template, ref f3210 bbox 1196 724 96 84, scales 0.60-1.40 in 0.01 steps)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_A_sendbtn_press.csv",
+  "column": "scale",
+  "sampled_frames": [
+    3200,
+    3217
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.0,
+  "to_value": 0.77,
+  "active_frames": [
+    3210,
+    3217
+  ],
+  "measured_duration_frames": 7,
+  "bezier": {
+    "x1": 0.7592,
+    "y1": 0.0915,
+    "x2": 0.5721,
+    "y2": 0.833,
+    "durationInFrames": 6,
+    "delay": 0.232,
+    "built_duration_frames": 6,
+    "rmse": 0.0851
+  },
+  "spring": {
+    "stiffness": 1990.468,
+    "damping": 69.772,
+    "mass": 1,
+    "damping_ratio": 0.7819,
+    "built_duration_frames": 5,
+    "rmse": 0.1171
+  },
+  "recommended": "bezier",
+  "note": "click press: the send button squashes 1.00 -> 0.77 under the cursor's press (cursor 1.00 -> 0.70 in the same pictures), holds 0.77-0.80 for 2 pictures (f3217-3220) and is back at 1.00 at f3222 (one picture step, 2 frames); template scores 0.78-0.99 (the cursor covers its lower right); only the press-in is fitted (the release has no picture inside it); 3 pictures inside the move, so the shape is loose"
+}

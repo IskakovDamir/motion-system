@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.shape-wireframe-edges.v6c1",
+  "file": "curves/v6.shape-wireframe-edges.v6c1.csv",
+  "property": "mask",
+  "unit": "px of x extent drawn along the top wireframe edge (sampled every 2 px; picture 1622 px wide)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_wireframe_drawon.csv",
+  "column": "top_visible_px",
+  "sampled_frames": [
+    578,
+    606
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 476.0,
+  "active_frames": [
+    586,
+    603
+  ],
+  "measured_duration_frames": 17,
+  "bezier": {
+    "x1": 0.9836,
+    "y1": 0.2627,
+    "x2": 0.1022,
+    "y2": 0.2643,
+    "durationInFrames": 16,
+    "delay": -0.473,
+    "built_duration_frames": 15,
+    "rmse": 0.0481
+  },
+  "spring": {
+    "stiffness": 365.407,
+    "damping": 29.507,
+    "mass": 1,
+    "damping_ratio": 0.7718,
+    "built_duration_frames": 18,
+    "rmse": 0.3091
+  },
+  "recommended": "bezier",
+  "note": "wireframe edges draw on as strokes from the back (code) layer toward the front layer: bottom-left edge stub at the code layer's bottom-left corner f586 (x 484 px), front at 504 / 550 / 640 / 788 / 826 px at f588/592/594/596/599 (reaches the dashboard layer's corner at f594); top edge from the code layer's top-right corner (x 636 px) from f588, front at 656 / 700 / 778 / 982 / 1078 / 1128 / 1138 px at f588/592/594/596/599/601/603 (the footage layer's top corner); where the line crosses the panels (x about 780-803 and 966-983) it does not show against the field, so a front inside such a gap is read at the gap's start; samples: field-masked darkness vs f584 > 12 luma along the fitted edge line (scratch/v6c1_wireframe_drawon.csv)"
+}

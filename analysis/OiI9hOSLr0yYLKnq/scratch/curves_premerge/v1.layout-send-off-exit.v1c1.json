@@ -1,0 +1,40 @@
+{
+  "technique_id": "v1.layout-send-off-exit.v1c1",
+  "file": "curves/v1.layout-send-off-exit.v1c1.csv",
+  "property": "position-y",
+  "unit": "px (prompt text centre y; 1080 px = 100% H)",
+  "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/t1_s1_text_exit.csv",
+  "column": "cy",
+  "sampled_frames": [
+    95,
+    111
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 545.0,
+  "to_value": 508.0,
+  "active_frames": [
+    101,
+    111
+  ],
+  "measured_duration_frames": 10,
+  "bezier": {
+    "x1": 0.4496,
+    "y1": 0.1046,
+    "x2": 0.6902,
+    "y2": 0.3263,
+    "durationInFrames": 10,
+    "delay": 0.01,
+    "built_duration_frames": 10,
+    "rmse": 0.006
+  },
+  "spring": {
+    "stiffness": 670.409,
+    "damping": 55.2,
+    "mass": 1,
+    "damping_ratio": 1.066,
+    "built_duration_frames": 14,
+    "rmse": 0.3738
+  },
+  "recommended": "bezier",
+  "note": "prompt box rises while fading out (ease-in); movement is cut by the fade: last visible frame f111 at -37 px (-3.4% H); icons disperse radially ~7.5% from the centre over the same frames; opacity: send-button luma 17 (f100) -> 247 (f110)"
+}

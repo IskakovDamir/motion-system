@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.fx-footage-dim",
+  "file": "curves/v5.fx-footage-dim.csv",
+  "property": "luma",
+  "unit": "luma 0-255 (mean of footage ROI x230-430 y480-780)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/t1_luma_left.csv",
+  "column": "mean",
+  "sampled_frames": [
+    150,
+    182
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 112.215,
+  "to_value": 45.442,
+  "active_frames": [
+    166,
+    182
+  ],
+  "measured_duration_frames": 16,
+  "bezier": {
+    "x1": 0.1695,
+    "y1": -0.0491,
+    "x2": 0.4119,
+    "y2": 1.1949,
+    "durationInFrames": 16,
+    "delay": 0.129,
+    "built_duration_frames": 15,
+    "rmse": 0.0238
+  },
+  "spring": {
+    "stiffness": 342.443,
+    "damping": 28.766,
+    "mass": 1,
+    "damping_ratio": 0.7772,
+    "built_duration_frames": 18,
+    "rmse": 0.0659
+  },
+  "recommended": "bezier",
+  "note": "footage darkens under the incoming title while the star drops: ROI luma 112.2 -> 44.0 (x0.39); flash light enters the ROI after f182"
+}

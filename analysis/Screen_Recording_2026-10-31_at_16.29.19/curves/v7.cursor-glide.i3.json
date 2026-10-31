@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.cursor-glide.i3",
+  "file": "curves/v7.cursor-glide.i3.csv",
+  "property": "position-x",
+  "unit": "px of 1622 (3D pointer ink centroid x; 868.7 = 53.6% W at the tile edge -> 1132.7 = 69.8% W)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c5_p6_pointer3d_mask.csv",
+  "column": "cx",
+  "sampled_frames": [
+    3729,
+    3767
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 868.7,
+  "to_value": 1132.7,
+  "active_frames": [
+    3739,
+    3754
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.4121,
+    "y1": -0.3343,
+    "x2": 0.187,
+    "y2": 0.9983,
+    "durationInFrames": 21,
+    "delay": -4.055,
+    "built_duration_frames": 14,
+    "rmse": 0.0306
+  },
+  "spring": {
+    "stiffness": 542.903,
+    "damping": 45.962,
+    "mass": 1,
+    "damping_ratio": 0.9863,
+    "built_duration_frames": 15,
+    "rmse": 0.0126
+  },
+  "recommended": "spring",
+  "note": "P6 dark 3D pointer after it drops the file tile: from the tile's lower edge (ink centroid (868.7, 527.9) px, at rest f3729-f3731 once the drag-in settles) it first sinks off the thumbnail, slightly left (y 527.9 -> 533.9 / 544.9 / 566.9 / 593.9 / 617.9 / 631.9 px at f3734 / 3736 / 3739 / 3741 / 3744 / 3746, x 864.7 / 859.7 / 863.7 at f3734-f3739), then glides right and decelerates to rest beside the label's lower right (1132.7, 629.9) px: x 918.7 / 1018.7 / 1074.7 / 1104.7 / 1119.7 / 1127.7 / 1131.7 / 1132.7 px at f3741 / 3744 / 3746 / 3749 / 3751 / 3754 / 3756 / 3759 (steps 55 / 100 / 56 / 30 / 15 / 8 / 4 / 1 px per picture; horizontal smear at f3744, the capsule line is born at f3744); still to f3782 (0.1 px), then it rides the push-in; position = the pointer's luma < 45 ink at rest (f3780, 159 x 144 px) shifted for the best overlap with the picture's luma < 45 mask below the thumbnail's bottom edge (y >= 552), so the part over the thumbnail does not count (scratch/v7c5_p6_pointer3d_mask.csv; IoU 0.92-0.97 except 0.75 / 0.63 on the smeared f3741 / f3744); from f3746 the plain ink centroid agrees within 2.3 px (scratch/v7c5_p6_pointer3d.csv); the curve is the x glide; y leads it by about 8 f (f3731-f3746)"
+}

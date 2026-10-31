@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.3d-stack-collapse",
+  "file": "curves/v6.3d-stack-collapse.csv",
+  "property": "width",
+  "unit": "px, horizontal extent of the stack's dark ink (picture 1622 px wide)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_phone_stack_bbox.csv",
+  "column": "w",
+  "sampled_frames": [
+    791,
+    813
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 752.0,
+  "to_value": 461.0,
+  "active_frames": [
+    801,
+    813
+  ],
+  "measured_duration_frames": 12,
+  "bezier": {
+    "x1": 0.4973,
+    "y1": 0.1071,
+    "x2": 0.7537,
+    "y2": -0.1314,
+    "durationInFrames": 13,
+    "delay": -1.0,
+    "built_duration_frames": 12,
+    "rmse": 0.0011
+  },
+  "spring": {
+    "stiffness": 209.612,
+    "damping": 0.5,
+    "mass": 1,
+    "damping_ratio": 0.0173,
+    "built_duration_frames": 167,
+    "rmse": 0.6052
+  },
+  "recommended": "bezier",
+  "note": "the exploded layers slide back together into one phone-thick stack seen almost face-on (ink extent 752 -> 461 px, f796 -> f813) with zoom/motion blur; the samples end at the tightest picture f813 because the stack immediately fans out again, rotated the other way (f816-f823, 477 -> 748 px), and then whips out to the left (f829-f838)"
+}

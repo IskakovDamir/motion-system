@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.ui-label-fill-darken",
+  "file": "curves/v7.ui-label-fill-darken.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 of the label-box fill",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_box_luma_0-60.csv",
+  "column": "mean",
+  "sampled_frames": [
+    21,
+    46
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 90.0,
+  "to_value": 0.5,
+  "active_frames": [
+    29,
+    44
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.4268,
+    "y1": 0.7925,
+    "x2": 0.2755,
+    "y2": 0.7227,
+    "durationInFrames": 15,
+    "delay": 0.498,
+    "built_duration_frames": 15,
+    "rmse": 0.0342
+  },
+  "spring": {
+    "stiffness": 456.857,
+    "damping": 45.678,
+    "mass": 1,
+    "damping_ratio": 1.0685,
+    "built_duration_frames": 17,
+    "rmse": 0.0318
+  },
+  "recommended": "spring",
+  "note": "the label box fill darkens in two stages: 207 -> 90 (f1-f21, light grey to mid grey, while it grows) and 90 -> 0 (f29-f46, to black, white text reaching full contrast); this curve is the second stage; luma ROI in the box's lower padding (x 755-815, y 505-528)"
+}

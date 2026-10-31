@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.cam-zoom-out-reveal.v8c3",
+  "file": "curves/v8.cam-zoom-out-reveal.v8c3.csv",
+  "property": "scale",
+  "unit": "scale factor (relative, linear drift removed)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c3_wall_span_1686-1800.csv",
+  "column": "scale_detrended",
+  "sampled_frames": [
+    1686,
+    1756
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.0,
+  "to_value": 0.782,
+  "active_frames": [
+    1694,
+    1726
+  ],
+  "measured_duration_frames": 32,
+  "bezier": {
+    "x1": 0.7921,
+    "y1": -0.0164,
+    "x2": 0.4165,
+    "y2": 0.9947,
+    "durationInFrames": 43,
+    "delay": -6.89,
+    "built_duration_frames": 30,
+    "rmse": 0.0115
+  },
+  "spring": {
+    "stiffness": 76.344,
+    "damping": 13.526,
+    "mass": 1,
+    "damping_ratio": 0.774,
+    "built_duration_frames": 36,
+    "rmse": 0.3308
+  },
+  "recommended": "bezier",
+  "note": "S03 wall zoom-out, pulse 1: distance between two card templates in the left and right columns (scratch/v8c3_wall_left_1686-1800.csv, scratch/v8c3_wall_right_1686-1800.csv -> scratch/v8c3_wall_span_1686-1800.csv, scale_from_span = span / span at f1690; template scores 0.91-1.00) with the slow linear zoom drift of -0.00151 scale per frame (fitted on f1728-f1756) removed (column scale_detrended). The whole wall scales about x 808 px (49.8% W); the 4th and 5th columns enter at the frame edges with radial motion blur (peak speed -0.018 scale per frame at f1712-f1714). Raw scale: 1.0 (f1690) -> 0.737 (f1724) -> drift -> 0.668 (f1760) -> pulse 2 f1752-f1792 -> 0.53 (f1795); build as this eased pulse on top of the linear drift. Pulse 2 (raw, f1752-f1799) fits bezier(0.534, 0.347, 0.124, 0.895) D=44, rmse 0.033."
+}

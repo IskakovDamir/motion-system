@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.cam-pull-back-reveal",
+  "file": "curves/v7.cam-pull-back-reveal.csv",
+  "property": "scale",
+  "unit": "ln(scale factor) of the whole editor window (0 = close-up at f2116, -0.916 = x0.40)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p5_pullback.csv",
+  "column": "ln_scale",
+  "sampled_frames": [
+    2116,
+    2209
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": -0.9163,
+  "active_frames": [
+    2122,
+    2176
+  ],
+  "measured_duration_frames": 54,
+  "bezier": {
+    "x1": 0.2729,
+    "y1": 0.0034,
+    "x2": 0.1151,
+    "y2": 0.8298,
+    "durationInFrames": 62,
+    "delay": -3.453,
+    "built_duration_frames": 53,
+    "rmse": 0.0114
+  },
+  "spring": {
+    "stiffness": 32.987,
+    "damping": 11.378,
+    "mass": 1,
+    "damping_ratio": 0.9906,
+    "built_duration_frames": 58,
+    "rmse": 0.0341
+  },
+  "recommended": "bezier",
+  "note": "P5 camera pull-back from the timeline close-up to the whole lower half of the editor window (viewer + clip bin + timeline): scale x1.00 -> x0.40 (eased in log space: scale = exp(-0.916 * ease)) while the window slides down-left so the large timecode label goes from (130, 203) to (78, 418) px; fastest f2126-f2136 (about -6% scale per frame) with motion blur, then a long settle to ~f2181; the clip strip slides in from the right during the fast part; template on the large timecode label with scale search 0.40-1.05 (ref f2111), final ratio checked at f2205 (0.400, range 0.36-0.46)"
+}

@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.text-letter-pop-tighten.i2",
+ "file": "curves/v8.text-letter-pop-tighten.i2.csv",
+ "property": "width",
+ "unit": "px (glyph ink width; rest 80-81 px = 4.9-5.0% W)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c5r_Sd_glyph2.csv",
+ "column": "glyph_w",
+ "sampled_frames": [
+  3397,
+  3446
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 9.0,
+ "to_value": 80.0,
+ "active_frames": [
+  3397,
+  3418
+ ],
+ "measured_duration_frames": 21,
+ "bezier": {
+  "x1": 0.0,
+  "y1": 0.3833,
+  "x2": 0.359,
+  "y2": 1.3342,
+  "durationInFrames": 20,
+  "delay": 0.0,
+  "built_duration_frames": 20,
+  "rmse": 0.0336
+ },
+ "spring": {
+  "stiffness": 333.752,
+  "damping": 24.961,
+  "mass": 1,
+  "damping_ratio": 0.6832,
+  "built_duration_frames": 20,
+  "rmse": 0.1413
+ },
+ "recommended": "bezier",
+ "note": "S05 label 2 app glyph, ink bbox width (luma < 150): a 9 px dot (f3397) -> 33 (f3398) -> 51 (f3401) -> 64 (f3402) -> 75 (f3404) -> 81 (f3407) -> 84 px peak (f3410-f3412, x1.04 of rest) -> 80-81 px rest (f3422 on); integer-pixel widths; f3401-f3403 horizontally motion-blurred (height grows in step: 9 -> 29 -> 43 -> 59 -> 67 -> 73 -> 76 peak -> 72-74 px)",
+ "chunk_curve_id": "v8.text-letter-pop-tighten-glyph-scale.v8c5"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.text-bracket-spring-in.v6c1",
+  "file": "curves/v6.text-bracket-spring-in.v6c1.csv",
+  "property": "position-x",
+  "unit": "px, darkness-weighted centroid x of the left curly brace (picture 1622 px wide)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_title_brace_left_centroid.csv",
+  "column": "ink_cx",
+  "sampled_frames": [
+    51,
+    96
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 112.63,
+  "to_value": 607.27,
+  "active_frames": [
+    51,
+    68
+  ],
+  "measured_duration_frames": 17,
+  "bezier": {
+    "x1": 0.1893,
+    "y1": 0.9606,
+    "x2": 0.2694,
+    "y2": 1.1094,
+    "durationInFrames": 20,
+    "delay": -0.0,
+    "built_duration_frames": 17,
+    "rmse": 0.0106
+  },
+  "spring": {
+    "stiffness": 1761.166,
+    "damping": 84.455,
+    "mass": 1,
+    "damping_ratio": 1.0062,
+    "built_duration_frames": 9,
+    "rmse": 0.1778
+  },
+  "recommended": "bezier",
+  "note": "left brace slides in from the left edge region and settles with a damped overshoot; re-tracked as the darkness-weighted centroid (row-median background removed, dot pattern of f46 subtracted) so the faint, motion-blurred first pictures count: first visible f51 (centroid 112.6 px, peak darkness 15.9 luma; taken as the start value), then 339.8 / 526.0 / 589.4 / 603.8 / 625.7 (f63, 18.4 px = 1.1% W past rest) / 625.1 / 615.0 / 605.2 / 601.2 (f73, 6 px under) / 601.6 / 607.2 px (rest from f83) at f53/56/58/61/63/66/68/71/73/78/83; the right brace mirrors it (centroid 1553.2 at f51 -> 1011.2 px at rest); the previous fit anchored on f53, the second visible picture"
+}

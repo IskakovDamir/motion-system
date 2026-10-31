@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.cam-punch-in-cut-settle.v8c2",
+  "file": "curves/v8.cam-punch-in-cut-settle.v8c2.csv",
+  "property": "position-y",
+  "unit": "px (picture 918 px high)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c2_S04_punch_scale.csv",
+  "column": "cy",
+  "sampled_frames": [
+    1266,
+    1299
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 314.0,
+  "to_value": 159.0,
+  "active_frames": [
+    1267,
+    1288
+  ],
+  "measured_duration_frames": 21,
+  "bezier": {
+    "x1": 0.1516,
+    "y1": 1.1208,
+    "x2": 0.9144,
+    "y2": 0.9548,
+    "durationInFrames": 24,
+    "delay": -0.045,
+    "built_duration_frames": 20,
+    "rmse": 0.0364
+  },
+  "spring": {
+    "stiffness": 337.096,
+    "damping": 39.891,
+    "mass": 1,
+    "damping_ratio": 1.0863,
+    "built_duration_frames": 20,
+    "rmse": 0.1317
+  },
+  "recommended": "bezier",
+  "note": "S04 after the punch-in hard cut f1266 (same card, x2.5: template scale 0.40 +-0.01 between f1263 and the close-up, scratch/v8c2_S04_punch_scale.csv): centre y of the card's left text block in the close-up; the close-up arrives 155 px (16.9% H) low, already at its final scale, and rises with an ease-out; from-value = first picture f1266"
+}

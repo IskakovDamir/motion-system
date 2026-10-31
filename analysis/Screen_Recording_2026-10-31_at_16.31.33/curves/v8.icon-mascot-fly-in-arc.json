@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.icon-mascot-fly-in-arc",
+ "file": "curves/v8.icon-mascot-fly-in-arc.csv",
+ "property": "position",
+ "unit": "screen path length in px (picture 1622 px wide)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c5r_Sa_mascot_pathlen.csv",
+ "column": "path_px",
+ "sampled_frames": [
+  2946,
+  3022
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 111.6,
+ "to_value": 831.9,
+ "active_frames": [
+  2946,
+  2990
+ ],
+ "measured_duration_frames": 44,
+ "bezier": {
+  "x1": 0.2125,
+  "y1": 1.1151,
+  "x2": 0.8284,
+  "y2": 0.9513,
+  "durationInFrames": 53,
+  "delay": 0.109,
+  "built_duration_frames": 43,
+  "rmse": 0.0084
+ },
+ "spring": {
+  "stiffness": 61.829,
+  "damping": 17.743,
+  "mass": 1,
+  "damping_ratio": 1.1282,
+  "built_duration_frames": 44,
+  "rmse": 0.076
+ },
+ "recommended": "bezier",
+ "note": "S-a mascot (white ghost-like blob with 2 dark eyes, about 92 x 76 px) flies in through the bottom edge at x 81.5% W (f2945, grey motion streak over the white page, scratch/v8c5r_Sa_mascot_path.csv: streak centroid f2945-f2948, global template f2950-f2966 scores 0.63-0.92, local template from f2968 scores 0.95-1.00) and decelerates along an arc up-left onto the device card to rest at x 36.2% / y 61.5% H (f3004); path 832 px from f2945; speed 57 px/f (f2946-f2948) -> 34 (f2950-f2952) -> 20 (f2956-f2960) -> a bump 11 -> 20 px/f at f2960-f2966 while the camera zoom peaks -> 5 px/f (f2973) -> 0.5 px/f (f3004). From f2976 its card-local position stays within 8 px (it follows the zooming card's position, not its scale). from-value = f2946 (first unclipped picture, 112 px along the path).",
+ "chunk_curve_id": "v8.icon-mascot-fly-in-arc.v8c5"
+}

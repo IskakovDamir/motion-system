@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.cam-slow-push-in",
+  "file": "curves/v7.cam-slow-push-in.csv",
+  "property": "scale",
+  "unit": "scale factor of the whole editor window about the frame centre (1.00 at f1690 -> 1.17)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p2_rise_scale.csv",
+  "column": "scale",
+  "sampled_frames": [
+    1686,
+    1785
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.0,
+  "to_value": 1.1697,
+  "active_frames": [
+    1696,
+    1779
+  ],
+  "measured_duration_frames": 83,
+  "bezier": {
+    "x1": 0.8084,
+    "y1": 0.0851,
+    "x2": 0.6668,
+    "y2": 0.8862,
+    "durationInFrames": 94,
+    "delay": -8.549,
+    "built_duration_frames": 79,
+    "rmse": 0.0107
+  },
+  "spring": {
+    "stiffness": 2.674,
+    "damping": 1.056,
+    "mass": 1,
+    "damping_ratio": 0.3228,
+    "built_duration_frames": 403,
+    "rmse": 0.6927
+  },
+  "recommended": "bezier",
+  "note": "P2 camera push-in after the whip-in settles: the whole layout scales x1.17 about (816, 457) px = (50.3% W, 49.8% H), so upper labels rise 58 px while the zoom origin stays put; runs under the glow build, content swap and folder drop-in and settles just before the hard cut to footage at f1786; scale = distance between two tracked panel labels (template, scale search) divided by its f1686 value"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.trans-whip-tilt.i3",
+  "file": "curves/v5.trans-whip-tilt.i3.csv",
+  "property": "position-y",
+  "unit": "px (incoming prompt card top edge)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_D_card_top.csv",
+  "column": "pos",
+  "sampled_frames": [
+    1457,
+    1472
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 457.86,
+  "to_value": 247.14,
+  "active_frames": [
+    1457,
+    1472
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.0287,
+    "y1": 0.371,
+    "x2": 0.0,
+    "y2": 0.7364,
+    "durationInFrames": 13,
+    "delay": 2.102,
+    "built_duration_frames": 13,
+    "rmse": 0.0829
+  },
+  "spring": {
+    "stiffness": 447.824,
+    "damping": 43.3,
+    "mass": 1,
+    "damping_ratio": 1.0231,
+    "built_duration_frames": 17,
+    "rmse": 0.0418
+  },
+  "recommended": "spring",
+  "note": "incoming half of the c2S3 -> c2S4 vertical whip, its own range only (first new picture f1457 to the end of the first-stage deceleration f1472): card top edge 457.9 (49.9 % H, f1457, already moving 29 px/frame and blurred) -> 369.6 -> 322.4 -> 292.1 -> 270.9 -> 258.5 (f1470) -> 247.1 px (26.9 % H, f1472); speeds 29, 23.6, 10, 10.6, 4.1, 5.7 px/frame; the move does not stop: the second re-frame (push-in x1.15 + up/right, f1472-f1491, curve v5.cam-reframe-pullback.i2) follows without a hold; earlier fit over f1457-f1485 mixed both stages; scratch/v5c2_D_card_top.csv"
+}

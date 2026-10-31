@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.ui-chip-pop.v5c2",
+  "file": "curves/v5.ui-chip-pop.v5c2.csv",
+  "property": "scale",
+  "unit": "chip fill width / its width at f837 (0 = not visible)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_A_chip1_pop.csv",
+  "column": "fill_w_ratio",
+  "sampled_frames": [
+    822,
+    837
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 1.0,
+  "active_frames": [
+    830,
+    837
+  ],
+  "measured_duration_frames": 7,
+  "bezier": {
+    "x1": 0.5733,
+    "y1": 0.9403,
+    "x2": 0.6807,
+    "y2": 0.8436,
+    "durationInFrames": 6,
+    "delay": 0.124,
+    "built_duration_frames": 6,
+    "rmse": 0.0323
+  },
+  "spring": {
+    "stiffness": 2101.845,
+    "damping": 84.601,
+    "mass": 1,
+    "damping_ratio": 0.9227,
+    "built_duration_frames": 7,
+    "rmse": 0.0072
+  },
+  "recommended": "spring",
+  "note": "chip 1 pops in under the prompt pill: fill width 172 -> 332 -> 361 px (f832, f835, f837), height 38 -> 78 -> 81 px, centre fixed at x 376-378 px and 125-127 px below the prompt line; the chip is absent on f830 (0 here means not visible, so the start size is unknown: at most 0.48); camera scale unchanged (prompt line x 90-1361 px on every picture) while the content rises; the next picture f840 is the snap zoom, so the settle after f837 is not visible"
+}

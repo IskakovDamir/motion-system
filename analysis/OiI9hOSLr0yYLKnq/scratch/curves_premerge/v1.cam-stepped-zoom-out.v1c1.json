@@ -1,0 +1,40 @@
+{
+  "technique_id": "v1.cam-stepped-zoom-out.v1c1",
+  "file": "curves/v1.cam-stepped-zoom-out.v1c1.csv",
+  "property": "scale",
+  "unit": "px width of the centre mark (362 px = scale 1.0, 116 px = 0.32)",
+  "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/s2_mark_comp.csv",
+  "column": "w",
+  "sampled_frames": [
+    119,
+    215
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 362.0,
+  "to_value": 116.0,
+  "active_frames": [
+    121,
+    190
+  ],
+  "measured_duration_frames": 69,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.3205,
+    "x2": 0.6016,
+    "y2": 1.0003,
+    "durationInFrames": 76,
+    "delay": -0.0,
+    "built_duration_frames": 67,
+    "rmse": 0.0417
+  },
+  "spring": {
+    "stiffness": 14.263,
+    "damping": 9.132,
+    "mass": 1,
+    "damping_ratio": 1.209,
+    "built_duration_frames": 90,
+    "rmse": 0.0728
+  },
+  "recommended": "bezier",
+  "note": "connected-component width of the centre hex mark while the network grows; whole-frame zoom-out about the frame centre, stepped (quick 2-4 frame steps between slow drift)"
+}

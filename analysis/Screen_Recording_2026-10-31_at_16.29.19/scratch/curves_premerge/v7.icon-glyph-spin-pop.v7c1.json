@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.icon-glyph-spin-pop.v7c1",
+  "file": "curves/v7.icon-glyph-spin-pop.v7c1.csv",
+  "property": "rotation",
+  "unit": "degrees (principal-axis angle relative to rest 36.5 deg; image y down)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s4_glyph_spin.csv",
+  "column": "rotation_deg",
+  "sampled_frames": [
+    419,
+    479
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 80.0,
+  "to_value": 0.0,
+  "active_frames": [
+    419,
+    456
+  ],
+  "measured_duration_frames": 37,
+  "bezier": {
+    "x1": 0.3713,
+    "y1": 1.5391,
+    "x2": 0.2442,
+    "y2": 1.322,
+    "durationInFrames": 38,
+    "delay": -0.117,
+    "built_duration_frames": 37,
+    "rmse": 0.016
+  },
+  "spring": {
+    "stiffness": 94.033,
+    "damping": 8.047,
+    "mass": 1,
+    "damping_ratio": 0.4149,
+    "built_duration_frames": 51,
+    "rmse": 0.0931
+  },
+  "recommended": "bezier",
+  "note": "brand glyph inside the app tile spins into place on a damped spring while growing: rotation offset +80 deg (f419) -> -18.5 deg (f436, undershoot) -> +1 deg (f467, overshoot) -> rest ~f472; size 0.47 -> 1.40 (f434) -> 0.98 (f467) -> 1.0 of its rest size (125 px); second moments of the dark glyph pixels inside the light tile; starts at the hard cut (no rest before; from-value = first picture rounded)"
+}

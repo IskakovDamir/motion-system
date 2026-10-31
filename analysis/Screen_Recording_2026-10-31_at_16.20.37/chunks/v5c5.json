@@ -1,0 +1,1348 @@
+{
+  "video": "Screen_Recording_2026-10-31_at_16.20.37",
+  "key": "v5",
+  "chunk": "v5c5",
+  "frames": [
+    3042,
+    3886
+  ],
+  "cut_decisions": [
+    {
+      "id": "c086",
+      "frame": 3042,
+      "status": "confirmed",
+      "reason": "hard cut: full-frame footage (f3040) -> dark canvas with the headline's liquid smears (f3042); first frame of this chunk, both sides seen here"
+    },
+    {
+      "id": "c087",
+      "frame": 3085,
+      "status": "rejected",
+      "reason": "camera tilt down from the headline to the card row on the same canvas; card 2 rising huge into frame"
+    },
+    {
+      "id": "c088",
+      "frame": 3092,
+      "status": "rejected",
+      "reason": "same tilt: cards settling while the headline leaves at the top"
+    },
+    {
+      "id": "c089",
+      "frame": 3132,
+      "status": "rejected",
+      "reason": "headline line 2, held cut off by the top edge since f3107, leaves upward in this picture step (lowest ink row 37 -> 5, gone f3135) while the card row makes the reframe's fastest step (1.85 % H) and the prompt pill starts to fade in; no picture replacement"
+    },
+    {
+      "id": "c090",
+      "frame": 3167,
+      "status": "rejected",
+      "reason": "UI cursor enters from the right edge, a prompt word appears, a card glows"
+    },
+    {
+      "id": "c091",
+      "frame": 3190,
+      "status": "rejected",
+      "reason": "camera pull-back with motion blur; send button pops in"
+    },
+    {
+      "id": "c092",
+      "frame": 3200,
+      "status": "rejected",
+      "reason": "pull-back settling; cursor gliding to the send button"
+    },
+    {
+      "id": "c093",
+      "frame": 3230,
+      "status": "confirmed",
+      "reason": "anchor of the whip-tilt soft transition f3225-f3242 (board exits up, curved footage panel arrives from below on the same canvas)"
+    },
+    {
+      "id": "c094",
+      "frame": 3237,
+      "status": "rejected",
+      "reason": "second detector hit inside the same whip-tilt f3225-f3242 (panel landing, motion blur); anchored at c093"
+    },
+    {
+      "id": "c095",
+      "frame": 3302,
+      "status": "confirmed",
+      "reason": "anchor of the whip-tilt exit f3292-f3310 (panel rises out of the top edge; empty canvas where the next labels form)"
+    },
+    {
+      "id": "c096",
+      "frame": 3347,
+      "status": "rejected",
+      "reason": "thumbnails flying in from depth and the selector frame moving over the long strip inside the 3D layout"
+    },
+    {
+      "id": "c097",
+      "frame": 3362,
+      "status": "rejected",
+      "reason": "snap pull-back with motion blur (layout flattens) and the particle ring; same composition"
+    },
+    {
+      "id": "c098",
+      "frame": 3370,
+      "status": "rejected",
+      "reason": "headline lines sliding in with horizontal motion blur"
+    },
+    {
+      "id": "c099",
+      "frame": 3507,
+      "status": "confirmed",
+      "reason": "hard cut: graphic layout -> full-frame footage with captions"
+    },
+    {
+      "id": "c100",
+      "frame": 3592,
+      "status": "rejected",
+      "reason": "continuous camera move inside the footage (no picture replacement); caption between phrases"
+    },
+    {
+      "id": "c101",
+      "frame": 3600,
+      "status": "rejected",
+      "reason": "same footage camera move; caption phrase 2 starting to fade in"
+    },
+    {
+      "id": "c102",
+      "frame": 3610,
+      "status": "rejected",
+      "reason": "same footage camera move; caption words of phrase 2"
+    },
+    {
+      "id": "c103",
+      "frame": 3620,
+      "status": "rejected",
+      "reason": "same footage camera move"
+    },
+    {
+      "id": "c104",
+      "frame": 3710,
+      "status": "confirmed",
+      "reason": "hard cut: full-frame footage -> empty dark background (S5)"
+    },
+    {
+      "id": "c105",
+      "frame": 3722,
+      "status": "rejected",
+      "reason": "footage card 1 landing and card 2 entering inside S5"
+    }
+  ],
+  "boundaries": [
+    {
+      "frame": 3042,
+      "type": "hard-cut",
+      "note": "chunk start; the segment before (f3040 and earlier) belongs to v5c4"
+    },
+    {
+      "start": 3225,
+      "end": 3242,
+      "type": "whip-tilt",
+      "frames": 18,
+      "shared": "UI cursor stays screen-fixed at (80.9 % W, 92.8 % H) through the move; board and curved footage panel sit on one rigid canvas 880 px (95.9 % H) apart, both moving up; same dark halftone background",
+      "technique": "v5.trans-whip-tilt",
+      "curve": "v5.trans-whip-tilt.v5c5",
+      "detail": "detail/soft_3225-3242"
+    },
+    {
+      "start": 3292,
+      "end": 3310,
+      "type": "whip-tilt",
+      "frames": 19,
+      "shared": "upward motion and the dark halftone background only; the panel rises out of the top edge (width +2.8 %, vertical motion blur) and the next labels form in place on the empty canvas (first blob f3305 while the panel's last sliver is still in y 0-6 % H)",
+      "technique": "v5.trans-whip-tilt",
+      "curve": "v5.trans-whip-tilt.exit.v5c5",
+      "detail": "detail/soft_3292-3310",
+      "note": "not rigid: from f3297 the panel's outline goes soft (edge ramps about 2 -> 4-7 px) and bulges out where the footage is bright (sides wave and lean by up to 14.5 px, lumpy and sloped lower edge, f3297-3307; v5.fx-liquid-edge-wobble); the arrival whip f3225-3242 keeps a straight, sharp outline"
+    },
+    {
+      "frame": 3507,
+      "type": "hard-cut"
+    },
+    {
+      "frame": 3710,
+      "type": "hard-cut"
+    }
+  ],
+  "segments": [
+    {
+      "id": "v5c5-S1",
+      "start": 3042,
+      "end": 3233,
+      "class": "MIXED",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "one dark canvas: 2-line headline flies in as liquid smears, camera tilts down to 3 rounded picture cards (2 carry still photographs) that fly in staggered (the headline's lower line stays cut off at the top edge), the outer two cards turn as a mirrored pair while the camera reframes up, the cut-off headline line leaves upward in 2 pictures as the prompt pill fades in, prompt pill types word by word with card glows, camera pulls back to show all (the outer cards turn back, the tilted send button scales in from a speck), cursor glides to the send button and clicks (cursor and button squash, tile burst), whip-tilt out"
+    },
+    {
+      "id": "v5c5-S2",
+      "start": 3234,
+      "end": 3301,
+      "class": "MIXED",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "footage in a curved-screen panel (68 % W, top/bottom edges bowed 2.6 % H) that lands from the whip, holds with a slow push-out while the screen-fixed cursor flies out up-right, then rises out of the top edge, its outline going soft and wobbling (bulging where the footage is bright) on the way out"
+    },
+    {
+      "id": "v5c5-S3",
+      "start": 3302,
+      "end": 3506,
+      "class": "MIXED",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "2 right-aligned labels form from liquid blobs and type on, whip pan right across a 3D-tilted layout of a long footage strip and footage thumbnails, a 3D phone-shaped selector frame lands on a thumbnail, snap pull-back flattens the layout while a 2-line headline slides in from opposite edges, selector hops between tiles, slow push-in"
+    },
+    {
+      "id": "v5c5-S4",
+      "start": 3507,
+      "end": 3709,
+      "class": "MIXED",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "summary": "full-frame footage with a rolling word caption in the upper right: words fade in defocused, reach focus one after another 10 frames apart and blur out; 3 phrases"
+    },
+    {
+      "id": "v5c5-S5",
+      "start": 3710,
+      "end": 3886,
+      "class": "MIXED",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": true,
+      "live_confirmed_on": [],
+      "summary": "empty dark canvas with drifting faint light ribbons, 2 rounded footage cards enter from opposite edges, mirrored light streaks sweep to the outer ends where sparkles mark the 2 titles that slide in from those sides with overshoot; each card and title swings into a perspective taper as it lands; cards and titles hold while the background ribbons keep drifting (continues into v5c6, exit there)"
+    }
+  ],
+  "techniques": [
+    {
+      "id": "v5.text-liquid-flyin",
+      "category": "text",
+      "description": "2 headline lines fly in from opposite sides (line 1 from the right, line 2 from the lower left) as liquid-warped wavy smears, converge and resolve into the letterforms while rising into place; starts on the hard cut",
+      "instances": [
+        [
+          3042,
+          3060
+        ]
+      ],
+      "reference_frames": [
+        3042,
+        3045,
+        3047,
+        3050,
+        3055,
+        3060
+      ],
+      "measured": {
+        "duration_frames": 10,
+        "easing": "x: bezier(0.424, 0.846, 0.303, 0.860) D=9 (line 2) / bezier(0.127, 0.739, 0.014, 0.831) D=9 (line 1); y rise: bezier(0.000, 0.789, 0.000, 0.943) D=21 (18 f); spring line 2 x {1915.6, 87.96}",
+        "values": "line 1 left ink edge 79.0 -> 24.8 % W; line 2 centroid 9.1 -> 49.2 % W; line 2 centroid y 90.0 -> 59.4 % H; letterforms readable f3050, clean f3055; afterwards a slow shrink (-2 % width over 20 f)"
+      },
+      "curves": [
+        "v5.text-liquid-flyin.v5c5",
+        "v5.text-liquid-flyin.line1-x.v5c5",
+        "v5.text-liquid-flyin.rise-y.v5c5"
+      ]
+    },
+    {
+      "id": "v5.shape-flare-streak-sweep",
+      "category": "shape",
+      "description": "thin light streak with a 4-point sparkle star at its head sweeps along a title and stops as the sparkle at the title's outer end; used as mirrored pairs that mark where the titles will arrive from",
+      "instances": [
+        [
+          3045,
+          3055
+        ],
+        [
+          3722,
+          3730
+        ],
+        [
+          3725,
+          3747
+        ]
+      ],
+      "reference_frames": [
+        3047,
+        3052,
+        3725,
+        3727,
+        3730,
+        3732,
+        3760
+      ],
+      "measured": {
+        "duration_frames": 17,
+        "easing": "lower streak: bezier(0.233, 1.211, 0.388, 1.050) D=19 (overshoots to the frame edge, settles back)",
+        "values": "S1: star right end 64.2 % (f3045) -> 75.3 % (f3050) -> 80.3 % W (f3052), y 30-37 % H, top-right end of headline line 1; S5 upper streak right -> left along y 20.7 % H: 99.6 % (f3722) -> 82.3 -> 41.7 -> 6.2 % W (f3730); S5 lower streak left -> right along y 78.5 % H: 17.9 -> 97.3 % W, at the frame edge f3737, settled f3747"
+      },
+      "curves": [
+        "v5.shape-flare-streak-sweep.v5c5"
+      ]
+    },
+    {
+      "id": "v5.bg-halftone-glow",
+      "category": "bg",
+      "description": "halftone-dot gradient patches in the dark background's corners fade up just after the cut",
+      "instances": [
+        [
+          3042,
+          3055
+        ]
+      ],
+      "reference_frames": [
+        3042,
+        3050,
+        3055
+      ],
+      "measured": {
+        "duration_frames": 13,
+        "easing": "UNCERTAIN shape (luma samples only)",
+        "values": "top-right patch mean luma 4.9 -> 9.8 over f3042-3055, then constant (9.5-9.8)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v5.cam-slow-push",
+      "category": "cam",
+      "description": "slow linear scale drift of the whole layout during holds (push-in or push-out)",
+      "instances": [
+        [
+          3055,
+          3075
+        ],
+        [
+          3256,
+          3290
+        ],
+        [
+          3380,
+          3500
+        ]
+      ],
+      "reference_frames": [
+        3060,
+        3075,
+        3290,
+        3380,
+        3500
+      ],
+      "measured": {
+        "duration_frames": 120,
+        "easing": "linear",
+        "values": "S1 headline widths -1.8 % / -2.2 % over 20 f with a 1.6 % H rise; S2 panel width -1.6 % over 34 f; S3 strip width x1.037 (886 -> 919 px) and height 150 -> 156 px over 120 f (about +0.03 % per frame)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v5.cam-tilt-reveal",
+      "category": "cam",
+      "description": "camera tilts down from the headline to the card row on one canvas: headline line 1 slides off the top while foreshortening (letter height x0.74) and line 2 stops cut off by the top edge (it leaves later, v5.text-edge-peek-exit); the cards rise into frame; two-phase speed",
+      "instances": [
+        [
+          3077,
+          3105
+        ]
+      ],
+      "reference_frames": [
+        3077,
+        3085,
+        3087,
+        3090,
+        3092,
+        3105
+      ],
+      "measured": {
+        "duration_frames": 28,
+        "easing": "bezier(0.874, 1.073, 0.000, 0.852) D=33; spring {87.9, 14.93} (rmse 0.085)",
+        "values": "card 1 top edge 95.9 -> 20.1 % H (26 % H in f3077-3085, 42 % H in f3085-3092, 5.7 % H over f3092-3105); headline line 1 last-letter bottom 51.0 % -> 1.9 % H at f3095, gone f3097; line 2's ink band (lowest row) 125 (f3095) -> 47 (f3105), then held at the top edge"
+      },
+      "curves": [
+        "v5.cam-tilt-reveal.v5c5"
+      ]
+    },
+    {
+      "id": "v5.text-edge-peek-exit",
+      "category": "text",
+      "description": "a headline line left cut off by the top edge after a camera tilt (only the lower part of its letters in frame) holds there while the cards below reframe, then leaves upward in 2 pictures with a smeared lower edge, on the pictures where the next UI element (prompt pill) starts to fade in",
+      "instances": [
+        [
+          3095,
+          3135
+        ]
+      ],
+      "reference_frames": [
+        3097,
+        3105,
+        3110,
+        3127,
+        3130,
+        3132,
+        3135
+      ],
+      "measured": {
+        "duration_frames": 5,
+        "easing": "2-picture step, no curve (1 picture inside the move); preceded by a 23-frame hold (f3107-3129)",
+        "values": "line 2 ink band (x 520-1099 px, luma > 120; scratch/v5c5_A_headline_l2_exit.csv), lowest row: 125 (f3095) -> 88 (f3097) -> 66 (f3100) -> 54 (f3102) -> 47 (f3105) -> 42-45 = 4.6-4.9 % H held f3107-3129 (lowest 43-46 px of letters 128-131 px tall at rest, scratch/v5c5_A_headline_l2_rest.csv) -> 37 (f3130) -> 5 = 0.5 % H (f3132: dimmed, smeared sliver over the whole word width, peak luma 157 against 199-200, lowest row 13 at luma > 30 against 39 at f3130; scratch/v5c5_A_headline_l2_exit_t30.csv, scratch/v5c5_A_headline_l2_exit_luma.csv) -> gone f3135 (max luma 12); in the hold the band narrows 565 -> 539 px (x0.95, as card 2's template scale 1.00 -> 0.95) while card 2's centre rises 49.7 -> 46.8 % H; in the exit step f3130 -> f3132 the line rises 32 px (3.5 % H) against card 2's 17 px (1.85 % H, row scale 0.92 -> 0.91); pill ROI luma 4.0 -> 6.6 (f3130) -> 8.6 (f3132) -> 46.7 (f3135)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v5.card-scale-settle",
+      "category": "card",
+      "description": "picture cards fly in from near the camera (huge) and shrink to rest while rising, staggered; the third drops in from the top-right corner moving down-left",
+      "instances": [
+        [
+          3077,
+          3105
+        ],
+        [
+          3097,
+          3115
+        ]
+      ],
+      "reference_frames": [
+        3077,
+        3087,
+        3092,
+        3100,
+        3112
+      ],
+      "measured": {
+        "duration_frames": 18,
+        "easing": "card 2 scale bezier(0.000, 0.605, 0.000, 0.648) D=16; card 3 y bezier(0.001, 0.256, 0.349, 1.053) D=18",
+        "values": "card 2 scale 2.26 -> 1.00 (f3087-3105); card 3 centre y 21.9 -> 42.4 % H, x 87.3 -> 79.3 % W, scale 1.12 -> 0.98 (f3100-3115); first appearances card 1 f3077, card 2 f3085, card 3 f3097 (stagger 8, 12); card rest size 23.5 % W x 43.7 % H, corner radius about 35 px (2.2 % W)"
+      },
+      "curves": [
+        "v5.card-scale-settle.v5c5",
+        "v5.card-scale-settle.card3.v5c5"
+      ]
+    },
+    {
+      "id": "v5.cam-reframe-up",
+      "category": "cam",
+      "description": "slow in-out reframe that lifts and shrinks the card row to make room for the prompt pill below",
+      "instances": [
+        [
+          3112,
+          3150
+        ]
+      ],
+      "reference_frames": [
+        3112,
+        3135,
+        3150
+      ],
+      "measured": {
+        "duration_frames": 38,
+        "easing": "bezier(0.700, 0.224, 0.211, 0.855) D=39; spring {71.3, 13.79} (rmse 0.14)",
+        "values": "card 2 centre 49.6 -> 39.4 % H, template scale 1.00 -> 0.85"
+      },
+      "curves": [
+        "v5.cam-reframe-up.v5c5"
+      ]
+    },
+    {
+      "id": "v5.card-mirror-tilt",
+      "category": "card",
+      "description": "the two outer cards of a row turn as a mirrored pair (left card clockwise, right card counter-clockwise) while the camera reframes up, hold the angle, and turn back to almost level during the camera pull-back; the centre card stays level; the labels turn with their cards; the side edges do not follow, so it reads as a 3D turn rather than a flat rotation",
+      "instances": [
+        [
+          3107,
+          3130
+        ],
+        [
+          3177,
+          3202
+        ]
+      ],
+      "reference_frames": [
+        3105,
+        3112,
+        3120,
+        3125,
+        3130,
+        3135,
+        3150,
+        3177,
+        3185,
+        3190,
+        3200
+      ],
+      "measured": {
+        "duration_frames": 23,
+        "easing": "turn: bezier(0.523, -0.032, 0.883, 0.243) D=29 (slow start, abrupt stop); turn back: bezier(0.809, 0.283, 0.070, 0.831) D=23; spring {256.5, 26.43} (rmse 0.16)",
+        "values": "top-edge angles (line fit, sub-pixel): card 1 0.2 -> 9.8 deg and card 3 0.0 -> -9.8 deg over f3107-3130 (within 0.1 deg of each other inside the turn), a 0.65 deg dip at f3135 back to +-9.8 by f3150, hold to f3177, back to +-1.3 deg over f3177-3202; card 2 0.0 deg throughout; card 1's bottom edge 0.2 -> 7.5 (f3130) -> 6.2 (hold) -> -1.6 deg; labels (word-baseline fits) card 1 0.6 -> 7.3 deg, card 3 -0.8 -> -8.3 deg, both about -1 deg at f3200; card 1's left-edge lean 9.1 deg (f3112) -> 4.6 deg (f3150)"
+      },
+      "curves": [
+        "v5.card-mirror-tilt.v5c5",
+        "v5.card-mirror-tilt.return.v5c5"
+      ]
+    },
+    {
+      "id": "v5.text-word-ghost-type",
+      "category": "text",
+      "description": "prompt line builds word by word inside a dark pill: each new word shows for 1-2 pictures as a dim ghost slightly below its place, then snaps up to full; the pill's right end extends in 2-picture steps to fit each word",
+      "instances": [
+        [
+          3130,
+          3183
+        ]
+      ],
+      "reference_frames": [
+        3135,
+        3142,
+        3145,
+        3161,
+        3163,
+        3183
+      ],
+      "measured": {
+        "duration_frames": 5,
+        "easing": "stepwise (2-picture steps, no curve)",
+        "values": "pill fade-in luma 4.0 -> 46.7 (f3130-3135), first token blurred to f3137; word starts f3135, 3142, 3150, 3161, 3167, 3177, 3181 (intervals 7, 8, 11, 6, 10, 4; mean 7.7 f); ghost at about 40-50 % ink and 1.9-2.2 % H low; pill right end 23.4 -> 79.8 % W in 7 steps; cap height 3.6 % H"
+      },
+      "curves": []
+    },
+    {
+      "id": "v5.ui-card-mention-glow",
+      "category": "ui",
+      "description": "the card whose tag is being typed gets a soft halo glow that fades again after a few pictures",
+      "instances": [
+        [
+          3132,
+          3150
+        ],
+        [
+          3167,
+          3181
+        ]
+      ],
+      "reference_frames": [
+        3138,
+        3142,
+        3171,
+        3175
+      ],
+      "measured": {
+        "duration_frames": 15,
+        "easing": "UNCERTAIN shape (luma samples)",
+        "values": "gap luma beside card 1: 0 -> 20.7 (peak f3142) -> 0 (f3150); beside card 2: 0 -> 28 (peak f3175) -> 17.5 (f3181); card 3 masked by the pull-back"
+      },
+      "curves": []
+    },
+    {
+      "id": "v5.cursor-glide-click",
+      "category": "cursor",
+      "description": "UI arrow cursor glides in from the right edge and decelerates onto a card, glides down to the send button, presses (squash; the button squashes with it in the same pictures, see v5.ui-button-pop), stays screen-fixed while the canvas whips under it, then flies out up-right",
+      "instances": [
+        [
+          3167,
+          3225
+        ],
+        [
+          3258,
+          3273
+        ]
+      ],
+      "reference_frames": [
+        3170,
+        3183,
+        3197,
+        3207,
+        3215,
+        3225,
+        3263,
+        3270
+      ],
+      "measured": {
+        "duration_frames": 20,
+        "easing": "glide bezier(0.800, 0.291, 0.177, 0.776) D=19; press bezier(0.598, 0.000, 0.668, 0.578) D=4",
+        "values": "entry: first lock f3170 at 83.2 % W, to (68.5 % W, 55.3 % H) by f3183; glide y 55.2 -> 92.7 % H, x 68.6 -> 80.9 % W (f3185-3205); press scale 1.00 -> 0.70 (f3210-3215), held 2 pictures, back to 1.00 by f3225; exit (80.9, 92.8) -> (99.9 % W, 54.2 % H) f3258-3272, gone f3275"
+      },
+      "curves": [
+        "v5.cursor-glide-click.v5c5",
+        "v5.cursor-glide-click.press.v5c5"
+      ]
+    },
+    {
+      "id": "v5.cam-pull-back",
+      "category": "cam",
+      "description": "slow-in/slow-out camera pull-back that reveals the whole layout (headline re-enters at the top, cards, prompt and button)",
+      "instances": [
+        [
+          3175,
+          3207
+        ]
+      ],
+      "reference_frames": [
+        3177,
+        3185,
+        3190,
+        3200,
+        3207
+      ],
+      "measured": {
+        "duration_frames": 32,
+        "easing": "bezier(0.878, 0.004, 0.115, 0.998) D=42 (delay -6); spring {242.0, 27.30} (rmse 0.16); row y bezier(0.821, 0.321, 0.095, 0.800) D=22",
+        "values": "card 1 to card 3 centre distance 52.4 -> 38.5 % W (x0.74); card row centre 37.0 -> 53.8 % H"
+      },
+      "curves": [
+        "v5.cam-pull-back.v5c5",
+        "v5.cam-pull-back.y.v5c5"
+      ]
+    },
+    {
+      "id": "v5.ui-button-pop",
+      "category": "ui",
+      "description": "send button (rounded square with an arrow icon) scales in from a speck at its centre over 2 pictures while it brightens, during the camera pull-back, with a 7 deg tilt that it keeps until it leaves with the whip; on the click it squashes under the cursor and springs back",
+      "instances": [
+        [
+          3183,
+          3190
+        ],
+        [
+          3210,
+          3222
+        ]
+      ],
+      "reference_frames": [
+        3181,
+        3183,
+        3185,
+        3188,
+        3195,
+        3210,
+        3215,
+        3217,
+        3220,
+        3222
+      ],
+      "measured": {
+        "duration_frames": 5,
+        "easing": "pop-in: 2-picture step (readings, no curve); press: bezier(0.759, 0.092, 0.572, 0.833) D=6 (3 pictures inside the press)",
+        "values": "absent f3181; speck f3183-3184 (max luma 14, about 23 px, at the button's centre); f3185 0.69 of rest size (widest row against the pull-back's canvas scale) and median luma 160; f3188 0.99 and median luma 204 (207 at rest); motion-blurred f3190-3195 riding the pull-back to its 117-118 px rest; top-edge tilt 7.8 deg at f3185, 6.7-7.6 deg through f3222; press: template scale 1.00 (f3210) -> 0.98 -> 0.81 (f3215) -> 0.77 (f3217) -> 0.80 (f3220) -> 1.00 (f3222), in the same pictures as the cursor's 0.70 squash"
+      },
+      "curves": [
+        "v5.ui-button-pop.press.v5c5"
+      ]
+    },
+    {
+      "id": "v5.particle-tile-burst",
+      "category": "particle",
+      "description": "ring of glowing outlined and filled square tiles expands from the pressed or selected element and fades",
+      "instances": [
+        [
+          3215,
+          3229
+        ],
+        [
+          3360,
+          3372
+        ]
+      ],
+      "reference_frames": [
+        3217,
+        3222,
+        3225,
+        3365,
+        3367
+      ],
+      "measured": {
+        "duration_frames": 10,
+        "easing": "UNCERTAIN (expands while fading, no settle)",
+        "values": "S1: ring half-width 51 -> 189 px (3.1 -> 11.7 % W) f3215-3225, max luma 214-236, 128 at f3227, gone f3230; S3: below the selected tile at y 66-73 % H f3362-3370, gone f3372 (radius not measurable)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v5.trans-whip-tilt",
+      "category": "trans",
+      "description": "vertical whip between layouts: the camera moves down a rigid canvas so the current layout exits up and the next arrives from below with motion blur; the second instance exits up onto an empty canvas where the next layout forms afterwards, and is not rigid: the panel's outline goes soft and wobbles on the way out (v5.fx-liquid-edge-wobble)",
+      "instances": [
+        [
+          3225,
+          3242
+        ],
+        [
+          3292,
+          3310
+        ]
+      ],
+      "reference_frames": [
+        3225,
+        3230,
+        3232,
+        3235,
+        3242,
+        3292,
+        3297,
+        3300,
+        3302,
+        3305
+      ],
+      "measured": {
+        "duration_frames": 17,
+        "easing": "bezier(0.713, 0.000, 0.170, 1.004) D=20 (A->B); bezier(0.942, 0.117, 0.097, 0.877) D=19 (exit)",
+        "values": "canvas offset 0 -> -95.8 % H in 17 f (gap between layouts 880 px); exit: panel bottom edge 83.9 -> 0 % H in 18 f with width +2.8 %; exit outline soft and wobbling f3297-3307 (see v5.fx-liquid-edge-wobble)"
+      },
+      "curves": [
+        "v5.trans-whip-tilt.v5c5",
+        "v5.trans-whip-tilt.exit.v5c5"
+      ]
+    },
+    {
+      "id": "v5.footage-curved-panel",
+      "category": "footage",
+      "description": "footage carried by a curved-screen mask: straight vertical sides, top and bottom edges bowed toward the centre, rounded corners",
+      "instances": [
+        [
+          3234,
+          3301
+        ]
+      ],
+      "reference_frames": [
+        3245,
+        3256,
+        3290
+      ],
+      "measured": {
+        "duration_frames": 0,
+        "easing": "static (enters and leaves with the whips)",
+        "values": "x 15.8-84.0 % W (68.2 % W); top 13.7 % H at x 18.5 % -> 16.3 % H at the centre, bottom 86.6 -> 84.0 % H (bow 24 px = 2.6 % H); corner radius about 35 px (2.2 % W)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v5.fx-liquid-edge-wobble",
+      "category": "fx",
+      "description": "while the curved footage panel whips out of the top edge its outline stops being rigid: the edges go soft and bulge out where the footage is bright, so the straight sides wave and lean and the lower edge turns lumpy and sloped; reads as a liquid wobble that leads into the next labels forming from liquid blobs; the arrival whip of the same panel keeps a straight, sharp outline",
+      "instances": [
+        [
+          3297,
+          3307
+        ]
+      ],
+      "reference_frames": [
+        3295,
+        3297,
+        3300,
+        3302,
+        3305,
+        3307
+      ],
+      "measured": {
+        "duration_frames": 10,
+        "easing": "not fitted (a shape change over 3-5 pictures while the panel leaves the frame)",
+        "values": "half-level edges between the black margin and the local footage level (scratch/v5c5_BC_panel_outline.csv, every reading in scratch/v5c5_BC_panel_outline_rows.csv): arrival and hold (f3235-3256, f3285-3295) sides on a straight line within 1.5 px apart from isolated inward dips in rows where the footage right at the edge is darker than just inside it (f3235 within 0.4 px at whip speed), edge ramps 1.5-2.4 px, bottom bow 19-21 px, 0.2-0.7 px off a parabola; f3297 ramps 4.0-4.4 px, left 255.3-263.4 px, right 1356.4-1366.7 px (54 % of right-edge rows more than 2 px off a straight line, max 4.9 px); f3300 ramps 6.3-7.0 px, left 244.6 px (rows 120-150) -> 259.1 px (row 500), right 1363.9-1370.3 px (bulge at rows 380-460), bottom 545-560 px, bow 13 px, 2.9 px off a parabola; f3302 lower edge 154-172 px, right end 7 px lower than the left, flat dip 154-157 px over x 570-870, sides lean in 3.5 / 4.5 deg; f3305-3307 lower edge bowed 17-19 px, 2.4-2.6 px off a parabola; outward edge offset against log footage level r = +0.87 / +0.77 (left / right, f3297) and +0.96 / +0.79 (f3300)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v5.text-liquid-blob-morph",
+      "category": "text",
+      "description": "a liquid lens-shaped blob appears where a label starts and morphs into its first letters, then the label continues as a typewriter; the two labels start 5 frames apart",
+      "instances": [
+        [
+          3305,
+          3315
+        ]
+      ],
+      "reference_frames": [
+        3305,
+        3307,
+        3310,
+        3312,
+        3315
+      ],
+      "measured": {
+        "duration_frames": 10,
+        "easing": "readings only",
+        "values": "label 2: blob 9.0 % W (f3305) -> warped letters 19.1 % W (f3310) -> 21.5 % W letters (f3315); label 1: blob 8.6 % W (f3310) -> 13.7 % W (f3315)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v5.text-typewriter",
+      "category": "text",
+      "description": "label letters type on left to right, about one new letter per captured picture; the second line starts when the first completes",
+      "instances": [
+        [
+          3315,
+          3333
+        ]
+      ],
+      "reference_frames": [
+        3315,
+        3322,
+        3325,
+        3332
+      ],
+      "measured": {
+        "duration_frames": 18,
+        "easing": "stepwise (about 1 letter per picture)",
+        "values": "2-2.5 frames per letter (about 0.45 letters per frame, far slower than the prompt typewriter in v5c2); label 1 line 1 13.7 -> 29.6 % W (f3315-3325), label 2 line 1 21.5 -> 31.6 % W (f3315-3322); second lines f3325-3333; cap height 3.3 % H"
+      },
+      "curves": []
+    },
+    {
+      "id": "v5.footage-strip-open",
+      "category": "footage",
+      "description": "a long footage strip opens to the right from a thin vertical line, accelerating, while the whip pan begins",
+      "instances": [
+        [
+          3317,
+          3332
+        ]
+      ],
+      "reference_frames": [
+        3317,
+        3320,
+        3322,
+        3325,
+        3327,
+        3330,
+        3332
+      ],
+      "measured": {
+        "duration_frames": 15,
+        "easing": "accelerating; no settle in frame",
+        "values": "line at x 50.8 % W, width 4 -> 26 -> 56 -> 108 -> 194 -> 375 px (f3317-3330), past the right frame edge at f3332"
+      },
+      "curves": []
+    },
+    {
+      "id": "v5.cam-whip-pan",
+      "category": "cam",
+      "description": "whip pan to the right (content moves left) with heavy horizontal motion blur across a 3D-tilted layout",
+      "instances": [
+        [
+          3320,
+          3350
+        ]
+      ],
+      "reference_frames": [
+        3320,
+        3335,
+        3337,
+        3340,
+        3350
+      ],
+      "measured": {
+        "duration_frames": 30,
+        "easing": "bezier(0.940, 0.242, 0.104, 0.560) D=33; spring {105.0, 16.67} (rmse 0.21)",
+        "values": "strip left edge 50.8 -> 12.0 % W; blur peak f3335-3340 (184 px between f3335 and f3337); layout plane tilt 5.4 deg at f3342"
+      },
+      "curves": [
+        "v5.cam-whip-pan.v5c5"
+      ]
+    },
+    {
+      "id": "v5.card-depth-flyin",
+      "category": "card",
+      "description": "footage thumbnails fly in from deep in the 3D layout (grow from a speck) and land beside the previous one, 5 frames apart",
+      "instances": [
+        [
+          3337,
+          3355
+        ]
+      ],
+      "reference_frames": [
+        3340,
+        3342,
+        3345,
+        3350
+      ],
+      "measured": {
+        "duration_frames": 10,
+        "easing": "spring {655.1, 47.20} (rmse 0.070); bezier(0.000, 0.395, 0.652, 0.682) D=8",
+        "values": "thumbnail 2 visible width 0 -> 25.5 % W (f3340-3350); thumbnail 3 starts f3345; thumbnail 1 arrives with the whip (f3337)"
+      },
+      "curves": [
+        "v5.card-depth-flyin.v5c5"
+      ]
+    },
+    {
+      "id": "v5.ui-selector-frame-hop",
+      "category": "ui",
+      "description": "3D phone-shaped rounded frame (glossy light rim, small side buttons) flies in from depth, frames the long strip, drops onto a thumbnail with vertical motion blur and later hops between thumbnails (slow-in, blurred middle, slow landing)",
+      "instances": [
+        [
+          3342,
+          3357
+        ],
+        [
+          3383,
+          3397
+        ],
+        [
+          3405,
+          3438
+        ]
+      ],
+      "reference_frames": [
+        3342,
+        3345,
+        3350,
+        3352,
+        3357,
+        3383,
+        3392,
+        3410,
+        3427,
+        3438
+      ],
+      "measured": {
+        "duration_frames": 23,
+        "easing": "hop 2: bezier(1.000, -0.082, 0.000, 0.893) D=36; spring {396.0, 40.00} (rmse 0.13)",
+        "values": "frame on the strip about 37 % W x 38 % H (f3350) -> on a tile about 400 px wide (f3357); hop 1 centre 61.0 -> 77.2 % W (f3383-3397, blurred f3385-3390); hop 2 77.1 -> 40.5 % W (2 tiles, active f3410-3433, blurred f3417-3425)"
+      },
+      "curves": [
+        "v5.ui-selector-frame-hop.v5c5"
+      ]
+    },
+    {
+      "id": "v5.cam-pull-back-snap",
+      "category": "cam",
+      "description": "fast pull-back that flattens a 3D-tilted layout into a front-facing grid, with motion blur in the middle; second technique next to v5.cam-pull-back (faster start, y1 0.48 vs 0.00, blur)",
+      "instances": [
+        [
+          3347,
+          3376
+        ]
+      ],
+      "reference_frames": [
+        3347,
+        3357,
+        3360,
+        3362,
+        3376
+      ],
+      "measured": {
+        "duration_frames": 29,
+        "easing": "bezier(0.744, 0.481, 0.000, 0.871) D=29; spring {175.7, 23.00} (rmse 0.13)",
+        "values": "strip width x0.67 (81.4 % -> 54.6 % W), height x0.70; plane tilt 5.4 deg (f3342) -> 3.0 deg (f3360) -> 0 deg (f3400); fastest f3357-3362 (0.92 -> 0.76)"
+      },
+      "curves": [
+        "v5.cam-pull-back-snap.v5c5"
+      ]
+    },
+    {
+      "id": "v5.text-line-slide-blur",
+      "category": "text",
+      "description": "2 headline lines slide in from opposite frame edges (line 1 from the left, line 2 from the right) as horizontal motion-blur streaks and stop without overshoot",
+      "instances": [
+        [
+          3367,
+          3380
+        ]
+      ],
+      "reference_frames": [
+        3367,
+        3370,
+        3372,
+        3376,
+        3380
+      ],
+      "measured": {
+        "duration_frames": 11,
+        "easing": "line 1 bezier(0.348, 0.999, 0.193, 0.877) D=11; line 2 bezier(0.165, 1.121, 0.000, 0.769) D=10",
+        "values": "line 1 left edge 0 -> 40.8 % W; line 2 centroid 94.9 -> 49.4 % W; both start f3367"
+      },
+      "curves": [
+        "v5.text-line-slide-blur.v5c5",
+        "v5.text-line-slide-blur.line2.v5c5"
+      ]
+    },
+    {
+      "id": "v5.text-line-counter-shift",
+      "category": "text",
+      "description": "after settling, the 2 headline lines kick apart in opposite directions in one blurred picture and lock again (letter sizes unchanged)",
+      "instances": [
+        [
+          3383,
+          3390
+        ]
+      ],
+      "reference_frames": [
+        3383,
+        3385,
+        3387,
+        3390
+      ],
+      "measured": {
+        "duration_frames": 7,
+        "easing": "spring {4029.9, 194.28} (rmse 0.057); bezier(0.295, 1.000, 0.155, 0.914) D=8",
+        "values": "line 1 left edge 40.7 -> 37.4 % W (-3.3 %), line 2 left edge 23.3 -> 27.4 % W (+4.2 %); only 2 pictures inside the move"
+      },
+      "curves": [
+        "v5.text-line-counter-shift.v5c5"
+      ]
+    },
+    {
+      "id": "v5.text-caption-focus-roll",
+      "category": "text",
+      "description": "footage caption words (stacked lines, each indented further right) fade in while defocused, sharpen to a focus peak and immediately defocus and fade out as the next word peaks; the block drifts slowly against the footage",
+      "instances": [
+        [
+          3510,
+          3577
+        ],
+        [
+          3597,
+          3652
+        ],
+        [
+          3655,
+          3709
+        ]
+      ],
+      "reference_frames": [
+        3516,
+        3537,
+        3540,
+        3547,
+        3557,
+        3612,
+        3625,
+        3672,
+        3682
+      ],
+      "measured": {
+        "duration_frames": 25,
+        "easing": "fade-in bezier(0.003, 0.156, 0.783, 1.252) D=18; focus-in bezier(0.459, -0.021, 0.829, 1.261) D=29; out bezier(0.436, -0.057, 0.495, -0.071) D=12",
+        "values": "focus peaks f3537, 3547, 3557 / 3625, 3635 / 3682, 3693 (10-11 f apart); sharpness 3.2 -> 12.6; ink fade-in 23 f, focus-in 25 f, out 10 f starting 5 f after the peak; block drift +0.11 % W and +0.02 % H per frame (footage -0.04 % W per frame); cap height 2.6 % H; line 2 indent 2.7 % W"
+      },
+      "curves": [
+        "v5.text-caption-focus-roll.v5c5",
+        "v5.text-caption-focus-roll.focus.v5c5",
+        "v5.text-caption-focus-roll.out.v5c5"
+      ]
+    },
+    {
+      "id": "v5.footage-card-drop-in",
+      "category": "footage",
+      "description": "2 rounded footage cards enter from opposite frame edges (card 1 from above, card 2 from below 5 frames later) with motion blur; card 1 lands with a small overshoot, card 2 without; each then swings into perspective (v5.3d-perspective-swing)",
+      "instances": [
+        [
+          3717,
+          3747
+        ],
+        [
+          3722,
+          3735
+        ]
+      ],
+      "reference_frames": [
+        3717,
+        3720,
+        3722,
+        3725,
+        3730,
+        3735,
+        3745
+      ],
+      "measured": {
+        "duration_frames": 17,
+        "easing": "card 1 (centre) bezier(0.006, 1.057, 0.478, 1.176) D=17; card 2 (top edge) spring {1906.6, 88.82} (rmse 0.068) / bezier(0.094, 0.807, 0.000, 0.948) D=12",
+        "values": "card 1 vertical centre 34.7 -> 60.8 % H, overshoot 62.7 % H (+1.9 % H) at f3730, undershoot 60.5 % H at f3740-3742, rest by f3747; card 2 top edge 84.9 -> 13.9 % H in 13 f, no overshoot (13.8-14.4 % H from f3735); card widths 44.4 and 45.7 % W; re-measured on swing-free readings (the earlier top-edge readings at x300-420 / x1100-1150 counted part of the perspective swing as overshoot: 2.4 and 1.6 % H)"
+      },
+      "curves": [
+        "v5.footage-card-drop-in.v5c5",
+        "v5.footage-card-drop-in.card2.v5c5"
+      ]
+    },
+    {
+      "id": "v5.text-line-slide-overshoot",
+      "category": "text",
+      "description": "titles slide in from opposite frame edges with horizontal motion blur and overshoot before settling; second technique next to v5.text-line-slide-blur (overshoot, 18-20 f)",
+      "instances": [
+        [
+          3732,
+          3762
+        ],
+        [
+          3737,
+          3760
+        ]
+      ],
+      "reference_frames": [
+        3732,
+        3735,
+        3740,
+        3745,
+        3750,
+        3760
+      ],
+      "measured": {
+        "duration_frames": 18,
+        "easing": "title 2 (ink centre) bezier(0.254, 1.023, 0.272, 1.101) D=20; spring {828.2, 46.89} (rmse 0.24); title 1 (right edge, rows 215-275) bezier(0.000, 0.710, 0.000, 1.140) D=18",
+        "values": "title 1 right edge 13.7 -> 48.0 % W, overshoot 49.0 % W (+0.9 % W) at f3745-3747, undershoot 47.8 % at f3755-3757, rest f3762; title 2 centre 113.8 -> 74.6 % W, overshoot 73.3 % W (-1.3 % W, +-0.4 % W for the pivot of its 13 px narrowing) at f3750, rest f3760; stagger 5 f; re-measured on taper-free readings (the earlier edge readings mixed in the perspective swing that starts right at the overshoot: 1.3 and 1.9 % W)"
+      },
+      "curves": [
+        "v5.text-line-slide-overshoot.v5c5",
+        "v5.text-line-slide-overshoot.title1.v5c5"
+      ]
+    },
+    {
+      "id": "v5.3d-perspective-swing",
+      "category": "3d",
+      "description": "right as each element lands, it swings from flat into a fixed perspective taper (one side taller than the other, x extent unchanged): the cards' inner sides shorten and the titles' inner ends grow, so the titles taper against their cards; staggered like the entrances (card 1, card 2, title 1, title 2), 12-18 frames each, in-out eased",
+      "instances": [
+        [
+          3730,
+          3745
+        ],
+        [
+          3732,
+          3750
+        ],
+        [
+          3740,
+          3752
+        ],
+        [
+          3745,
+          3762
+        ]
+      ],
+      "reference_frames": [
+        3727,
+        3730,
+        3735,
+        3740,
+        3742,
+        3745,
+        3747,
+        3750,
+        3752,
+        3755,
+        3760,
+        3762
+      ],
+      "measured": {
+        "duration_frames": 17,
+        "easing": "title 2 bezier(0.652, 0.292, 0.050, 0.707) D=16; title 1 bezier(0.798, 0.351, 0.123, 0.408) D=12; card 1 bezier(0.706, 0.795, 0.180, 0.737) D=13; card 2 bezier(0.844, 0.835, 0.000, 0.548) D=14",
+        "values": "card 1 bottom-edge slope 0.4 -> 3.9 deg (right side 427 -> 400 px, left side 442 -> 455 px, x edges fixed) f3730-3745; card 2 top-edge slope 0.1 -> 3.9 deg (left end 133 -> 166 px, right end fixed; side heights 425 / 445 px) f3732-3750; title 1 bottom-edge slope 0 -> 2.7 deg (top fixed at y208-209, left end 84 -> 73 px, right end 84 -> 97 px, width fixed 720-722 px) f3740-3752; title 2 top-edge slope 0 -> 3.5 deg (left end 53 -> 60 px rising 645 -> 624, right end 56 -> 38 px, width 711 -> 698 px) f3745-3762; starts 2 / 8 / 5 f apart, each at its element's landing"
+      },
+      "curves": [
+        "v5.3d-perspective-swing.v5c5",
+        "v5.3d-perspective-swing.title1.v5c5",
+        "v5.3d-perspective-swing.card1.v5c5",
+        "v5.3d-perspective-swing.card2.v5c5"
+      ]
+    },
+    {
+      "id": "v5.bg-ribbon-drift",
+      "category": "bg",
+      "description": "faint curved light ribbons in the dark background drift continuously, before the layout arrives, under it and through its hold; too sparse and low-contrast for median optical flow (reads 0), tracked as column-profile peaks",
+      "instances": [
+        [
+          3710,
+          3886
+        ]
+      ],
+      "reference_frames": [
+        3710,
+        3717,
+        3730,
+        3750,
+        3780,
+        3802,
+        3837,
+        3850,
+        3882
+      ],
+      "measured": {
+        "duration_frames": 177,
+        "easing": "continuous, no settle (readings)",
+        "values": "ribbon crossings: x400 y780 -> 823 (f3710-3720, 4.3 px/f); x950 y748 -> 887 (f3730-3750, 7 px/f); x1350 y849 -> 836 -> 887 (f3802-3837), next arc y800 -> 883 (f3850-3882, 2.6 px/f); ribbons luma 5-30 on a 0-15 ground; region x800-1540 y735-918 against f3760: mean abs diff 0.4 (f3762) -> 4.3 (f3860), mean luma 10.8 -> 14.1 (f3855) -> 12.4 (f3885)"
+      },
+      "curves": []
+    }
+  ],
+  "typography_stills": [
+    "type/v5c5-S1-camtilt_f03085.png",
+    "type/v5c5-S1-camtilt_f03087.png",
+    "type/v5c5-S1-camtilt_f03090.png",
+    "type/v5c5-S1-camtilt_f03092.png",
+    "type/v5c5-S1-cards_f03112.png",
+    "type/v5c5-S1-cards_f03135.png",
+    "type/v5c5-S1-cards_f03160.png",
+    "type/v5c5-S1-pill_f03165.png",
+    "type/v5c5-S1-pill_f03183.png",
+    "type/v5c5-S1-prompt_f03142.png",
+    "type/v5c5-S1-prompt_f03145.png",
+    "type/v5c5-S1-prompt_f03161.png",
+    "type/v5c5-S1-prompt_f03163.png",
+    "type/v5c5-S1-prompt_f03190.png",
+    "type/v5c5-S1-title_f03042.png",
+    "type/v5c5-S1-title_f03045.png",
+    "type/v5c5-S1-title_f03047.png",
+    "type/v5c5-S1-title_f03050.png",
+    "type/v5c5-S1-title_f03052.png",
+    "type/v5c5-S1-title_f03055.png",
+    "type/v5c5-S1-title_f03060.png",
+    "type/v5c5-S1-title_f03077.png",
+    "type/v5c5-S1-title_f03082.png",
+    "type/v5c5-S1-title_f03110.png",
+    "type/v5c5-S1-title_f03130.png",
+    "type/v5c5-S1-title_f03132.png",
+    "type/v5c5-S1S2-whip_f03230.png",
+    "type/v5c5-S1S2-whip_f03232.png",
+    "type/v5c5-S1S2-whip_f03235.png",
+    "type/v5c5-S2S3-exit_f03295.png",
+    "type/v5c5-S2S3-exit_f03297.png",
+    "type/v5c5-S2S3-exit_f03300.png",
+    "type/v5c5-S2S3-exit_f03302.png",
+    "type/v5c5-S3-head-in_f03367.png",
+    "type/v5c5-S3-head-in_f03370.png",
+    "type/v5c5-S3-head_f03367.png",
+    "type/v5c5-S3-head_f03370.png",
+    "type/v5c5-S3-head_f03372.png",
+    "type/v5c5-S3-head_f03376.png",
+    "type/v5c5-S3-head_f03390.png",
+    "type/v5c5-S3-head_f03400.png",
+    "type/v5c5-S3-hop_f03352.png",
+    "type/v5c5-S3-hop_f03385.png",
+    "type/v5c5-S3-hop_f03418.png",
+    "type/v5c5-S3-labels_f03310.png",
+    "type/v5c5-S3-labels_f03322.png",
+    "type/v5c5-S3-labels_f03332.png",
+    "type/v5c5-S3-ruler_f03357.png",
+    "type/v5c5-S3-ruler_f03362.png",
+    "type/v5c5-S3-ruler_f03365.png",
+    "type/v5c5-S3-whip_f03337.png",
+    "type/v5c5-S3-whip_f03342.png",
+    "type/v5c5-S3-whip_f03350.png",
+    "type/v5c5-S3-whip_f03357.png",
+    "type/v5c5-S3-whip_f03360.png",
+    "type/v5c5-S3-whip_f03365.png",
+    "type/v5c5-S4-cap_f03516.png",
+    "type/v5c5-S4-cap_f03537.png",
+    "type/v5c5-S4-cap_f03540.png",
+    "type/v5c5-S4-cap_f03547.png",
+    "type/v5c5-S4-cap_f03562.png",
+    "type/v5c5-S4-cap_f03612.png",
+    "type/v5c5-S4-cap_f03635.png",
+    "type/v5c5-S4-cap_f03647.png",
+    "type/v5c5-S4-cap_f03672.png",
+    "type/v5c5-S4-cap_f03690.png",
+    "type/v5c5-S4-cap_f03702.png",
+    "type/v5c5-S5_f03720.png",
+    "type/v5c5-S5_f03725.png",
+    "type/v5c5-S5_f03732.png",
+    "type/v5c5-S5_f03742.png",
+    "type/v5c5-S5_f03747.png",
+    "type/v5c5-S5_f03752.png",
+    "type/v5c5-S5_f03760.png"
+  ],
+  "uncertain": [
+    {
+      "what": "original typefaces",
+      "range": "all text events",
+      "reason": "only the shapes are visible; display type matches a heavy extended grotesk (closest free: Unbounded / Archivo wdth 125), UI text a neutral sans (closest free: Inter)"
+    },
+    {
+      "what": "liquid warp amplitude of the headline fly-in",
+      "range": "f3042-f3055",
+      "reason": "a shape distortion, not a position; only its duration (resolved by f3055) is measured"
+    },
+    {
+      "what": "3D rotation axis of the outer picture cards' turn in S1",
+      "range": "f3107-f3202",
+      "reason": "the top and bottom edge angles are measured (+-9.8 / 6.2 deg in the hold, scratch/v5c5_A_card_turn.csv), but the side edges do not follow (card 1's left-edge lean 9.1 -> 4.6 deg), so the turn's axis and perspective cannot be recovered from the 2D outlines"
+    },
+    {
+      "what": "card 3 mention glow",
+      "range": "f3181-f3200",
+      "reason": "the pull-back moves the cards through the measuring regions"
+    },
+    {
+      "what": "whip-tilt edge positions at f3232-f3235",
+      "range": "f3232-f3235",
+      "reason": "vertical motion blur; panel edges read at luma > 14, up to about 8 % H error"
+    },
+    {
+      "what": "selector frame rotation and its in-flight path",
+      "range": "f3342-f3351, f3385-f3390, f3417-f3425",
+      "reason": "the frame is motion-blurred or turned edge-on; positions only before and after each hop"
+    },
+    {
+      "what": "particle ring radius in S3",
+      "range": "f3360-f3372",
+      "reason": "the ring overlaps the layout while it is pulled back"
+    },
+    {
+      "what": "headline counter-shift easing",
+      "range": "f3383-f3390",
+      "reason": "only 2 captured pictures inside the move (24 fps)"
+    },
+    {
+      "what": "caption word 3 of phrase 1 ink",
+      "range": "f3535-f3577",
+      "reason": "a bright footage element behind it; only its sharpness peak (f3557) is used"
+    },
+    {
+      "what": "starting positions of S5 entrances",
+      "range": "f3717-f3737",
+      "reason": "cards, streaks and titles are first seen already moving at the frame edge; the first visible picture is the curve's start value"
+    },
+    {
+      "what": "pull-back y curve shape (v5.cam-pull-back.y.v5c5)",
+      "range": "f3177-f3200",
+      "reason": "shape rmse 0.137 although the direct residual is <= 0.019: the 2 % window start falls between sparse 24 fps pictures"
+    },
+    {
+      "what": "3D rotation axis and perspective distance of the S5 swing",
+      "range": "f3730-f3762",
+      "reason": "the x extents stay fixed (cards within 1-2 px, title 1 within 2 px, title 2 -13 px), so only edge slopes and side-height ratios are measurable"
+    },
+    {
+      "what": "title 2 slide overshoot magnitude",
+      "range": "f3747-f3760",
+      "reason": "the swing narrows the title by 13 px while it settles; the pivot of that narrowing is unknown, so the ink-centre overshoot (1.3 % W) carries +-0.4 % W"
+    },
+    {
+      "what": "path and speed of the background ribbons between the measured columns",
+      "range": "f3710-f3886",
+      "reason": "the ribbons are faint (luma 5-30) and overlap the cards; only their crossings at x400, x950 and x1350 are tracked"
+    },
+    {
+      "what": "whether headline line 2 rides the card canvas or its own layer",
+      "range": "f3107-f3135",
+      "reason": "it narrows with the reframe (band x0.95, as card 2) but holds while card 2 rises 2.9 % H, then rises 3.5 % H in one step against the row's 1.85 % H: no single canvas move fits both, and only 2 pictures show the exit"
+    },
+    {
+      "what": "mechanism of the exit outline wobble",
+      "range": "f3297-f3307",
+      "reason": "the edge offset follows the footage brightness (r up to +0.96), which a luminance-driven displacement and a glow bleeding from bright footage would both give; only the outline is measurable"
+    },
+    {
+      "what": "corner shape of the footage panel during the exit",
+      "range": "f3297-f3302",
+      "reason": "vertical motion blur and the soft, brightness-dependent edges hide the corner radius"
+    },
+    {
+      "what": "panel width during the exit",
+      "range": "f3297-f3302",
+      "reason": "the side edges sit up to 14.5 px (left) and 6.4 px (right) further out in rows where the footage is bright, so a width read at f3300 depends on the rows used (up to 21 px = 1.9 % of the panel width)"
+    }
+  ],
+  "notes": [
+    "Durations carry +-1 analysis frame of capture jitter and 2-3 frame quantisation (24 fps material on the 60 fps grid).",
+    "Typography stills are named type/v5c5-S<n>-*; tracker samples are scratch/v5c5_*.csv (renamed from A_/B_/C_/D_/E_ prefixes; curve sidecars updated).",
+    "Every bezier in this chunk fits its samples with a direct residual <= 0.034 (counter-shift 0.062); shape rmse above 0.05 comes from 24 fps sampling at the 2 % window ends.",
+    "Per-line counter-tapered display type throughout: in each 2-line headline or title pair one line grows and the other shrinks left to right (S1: 12.3 -> 16.3 % and 14.3 -> 11.2 % H; S3: 5.8 -> 3.5 % and 4.9 -> 9.7 % H; S5: 7.7 -> 11.2 % and 8.9 -> 4.8 % H). In S5 the taper is not a static end state: both titles slide in flat and swing into it as they land (f3740-3752, f3745-3762, v5.3d-perspective-swing), right after the cards do the mirror swing (f3730-3745, f3732-3750).",
+    "Elements arrive in mirrored pairs from opposite sides: headline lines (S1, S3), streaks and titles (S5), cards (S5).",
+    "The UI cursor is a screen-fixed layer: it does not move with the canvas during the whip-tilt f3225-3256.",
+    "No strong audio onset falls near the S1-S3 graphic events; offsets are to beats (32.74 frames). Events within +-2 frames of a beat: headline lock f3052, words f3150/f3177/f3181, press f3212-3215, label blob f3305, thumbnail f3340, cut f3507, caption peaks f3537/f3655, lower streak f3725.",
+    "S5 continues into v5c6; in its hold f3762-f3886 cards and titles stay put (titles at most 3 px, card frames within 2 px) but the background light ribbons keep drifting (v5.bg-ribbon-drift), so the frame is never fully still.",
+    "S5 entrance curves were re-measured on swing-free readings (card 1's centre, card 2's right-end top edge, title 1's constant-width band edge, title 2's ink centre); the earlier edge readings counted part of the perspective swing as overshoot.",
+    "S1: the outer cards' turn and the send button's tilt are part of the camera moves' choreography: the turn starts inside the reframe-up and is undone inside the pull-back; the button arrives already tilted and stays so.",
+    "S1 headline exit: line 1 leaves with the camera tilt (gone f3097); line 2 stays cut off by the top edge (lowest 43-46 px of its letters) until f3129 and leaves upward in 2 pictures (f3130-3134, gone f3135) on the prompt pill's first fade-in pictures (v5.text-edge-peek-exit); cut candidate c089 and the f3132 motion peak fall on this exit step.",
+    "The S2->S3 whip exit is not a rigid move: from f3297 the panel's outline goes soft and bulges where the footage is bright (v5.fx-liquid-edge-wobble), while the arrival whip f3225-3242 keeps a straight, sharp outline (f3235: sides within 0.4 px)."
+  ]
+}

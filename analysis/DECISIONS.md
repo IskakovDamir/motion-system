@@ -75,6 +75,17 @@ Calls made where the brief left room, with the reason. Newest at the bottom of e
   completed review, and hands interrupted inspectors a condensed log of the earlier attempt
   (`<video>/scratch/attempt1_*.md`) to reuse after spot checks. v8c1 and v8c2 had both files written
   before their agents died (the last calls were re-reads), so they go straight to review.
+- **Coverage gap scan after the merge.** Two review rounds per chunk still found issues in round 2,
+  so every merged timeline is checked against the pictures by code: `coverage_gaps.py` lists the runs
+  of changed pictures (> 12 gray levels on >= 4 px at 640 px wide, masks excluded) inside GRAPHICS and
+  MIXED segments that no movement row or transition names (154 runs, 1929 frames over the 8 videos at
+  the first scan). Each run gets a verdict from an agent who looks at the frames (covered by a row
+  whose frames were incomplete, missed and now added, motion inside footage, or noise), recorded in
+  `<video>/scratch/coverage_gaps_review.json`, and an independent critic re-checks every verdict.
+- **Measurement files are committed, frames are not.** The timelines cite tracker and measurement
+  CSVs in `<video>/scratch/` as evidence (412 citations), so `scratch/` CSV, JSON and helper scripts
+  are in git (about 10 MB); sheets, crops, stills and detail frames are frames of third-party video
+  and stay out (`.gitignore`), rebuilt by `scripts/analysis/sheets.py`.
 
 ## Build
 

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.cam-cut-in-settle.v8c1",
+  "file": "curves/v8.cam-cut-in-settle.v8c1.csv",
+  "property": "position-y",
+  "unit": "% of frame height (agent icon centre)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c1_s04_icon_512-606.csv",
+  "column": "cy_pct",
+  "sampled_frames": [
+    512,
+    566
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 61.71,
+  "to_value": 56.373,
+  "active_frames": [
+    512,
+    551
+  ],
+  "measured_duration_frames": 39,
+  "bezier": {
+    "x1": 0.1809,
+    "y1": 0.7235,
+    "x2": 0.2568,
+    "y2": 0.9993,
+    "durationInFrames": 46,
+    "delay": -0.031,
+    "built_duration_frames": 33,
+    "rmse": 0.0498
+  },
+  "spring": {
+    "stiffness": 119.492,
+    "damping": 24.359,
+    "mass": 1,
+    "damping_ratio": 1.1142,
+    "built_duration_frames": 32,
+    "rmse": 0.1077
+  },
+  "recommended": "bezier",
+  "note": "after the hard cut f512 the chat close-up rises 5.3% H while its blur clears and its scale goes 0.94 -> 1.00 (template with scales on the agent icon, scratch/v8c1_s04_icon_512-606.csv); first picture f512 already moving"
+}

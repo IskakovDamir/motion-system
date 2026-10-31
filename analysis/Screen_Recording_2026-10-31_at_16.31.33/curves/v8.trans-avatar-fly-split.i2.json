@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.trans-avatar-fly-split.i2",
+ "file": "curves/v8.trans-avatar-fly-split.i2.csv",
+ "property": "scale",
+ "unit": "scale factor of the avatar slot (1.0 = 81.4 px tile height at rest)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c4_T4_tile_height.csv",
+ "column": "x_slot",
+ "sampled_frames": [
+  2468,
+  2507
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 1.0,
+ "to_value": 4.7643,
+ "active_frames": [
+  2480,
+  2507
+ ],
+ "measured_duration_frames": 27,
+ "bezier": {
+  "x1": 0.7687,
+  "y1": 0.0091,
+  "x2": 1.0,
+  "y2": 0.8675,
+  "durationInFrames": 30,
+  "delay": -3.0,
+  "built_duration_frames": 25,
+  "rmse": 0.0249
+ },
+ "spring": {
+  "stiffness": 84.937,
+  "damping": 117.164,
+  "mass": 1,
+  "damping_ratio": 6.3565,
+  "built_duration_frames": 37,
+  "rmse": 0.4345
+ },
+ "recommended": "bezier",
+ "note": "c4 T4 avatar tile grows while it flies from its slot to the frame centre: tile height from vertical 50% crossings (page 248 / fill 221, outermost, through the tile centre of scratch/v8c4_T4_tile_path.csv) / rest height 81.4 px (f2468-f2478), scratch/v8c4_T4_tile_height.csv; 82 px (f2478) -> 114 (f2490) -> 163 (f2497) -> 251 (f2502) -> 304 (f2505) -> 388 px (f2507, x4.76, the largest picture, first picture of the split); ease-in only, to-value = the f2507 peak, after which the pair shrinks back (curve v8.particle-mascot-split-scale.v8c4). Pictures repeating the previous one exactly (f2501, f2503) are skipped.",
+ "chunk_curve_id": "v8.trans-avatar-fly-split-scale.v8c4"
+}

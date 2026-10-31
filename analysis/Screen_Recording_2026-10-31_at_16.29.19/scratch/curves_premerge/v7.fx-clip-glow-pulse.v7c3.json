@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.fx-clip-glow-pulse.v7c3",
+  "file": "curves/v7.fx-clip-glow-pulse.v7c3.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 of the halo band just above the clip strip (20.8 -> 68.4)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p5_v1_haloabove.csv",
+  "column": "mean",
+  "sampled_frames": [
+    2170,
+    2215
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 20.85,
+  "to_value": 68.4,
+  "active_frames": [
+    2172,
+    2206
+  ],
+  "measured_duration_frames": 34,
+  "bezier": {
+    "x1": 0.5826,
+    "y1": 0.0412,
+    "x2": 0.443,
+    "y2": 0.4106,
+    "durationInFrames": 38,
+    "delay": -4.727,
+    "built_duration_frames": 33,
+    "rmse": 0.0139
+  },
+  "spring": {
+    "stiffness": 29.699,
+    "damping": 7.143,
+    "mass": 1,
+    "damping_ratio": 0.6554,
+    "built_duration_frames": 65,
+    "rmse": 0.4005
+  },
+  "recommended": "bezier",
+  "note": "P5 clip-strip glow, build: a soft white bloom grows around the clip strip (clips 141 -> 206 luma, halo above and below +48 luma) while the gaps between the dropped clips close up (clips shift left to butt together, f2186-f2201) and the viewer footage changes shot (f2196, f2204, f2209); holds f2206-f2220, then decays (v7.fx-clip-glow-pulse-out.v7c3); ROI fixed (window settled after f2181)"
+}

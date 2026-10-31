@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.cursor-fly-in.v5c3",
+  "file": "curves/v5.cursor-fly-in.v5c3.csv",
+  "property": "position-path",
+  "unit": "% of frame width, distance of the cursor centre to its rest point along the path",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c3_P04_cursor_entry.csv",
+  "column": "dist_to_rest_pctW",
+  "sampled_frames": [
+    1835,
+    1860
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 25.993,
+  "to_value": 0.0,
+  "active_frames": [
+    1835,
+    1850
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.0015,
+    "y1": 0.4845,
+    "x2": 0.275,
+    "y2": 1.0075,
+    "durationInFrames": 19,
+    "delay": 0.0,
+    "built_duration_frames": 15,
+    "rmse": 0.0082
+  },
+  "spring": {
+    "stiffness": 700.239,
+    "damping": 94.762,
+    "mass": 1,
+    "damping_ratio": 1.7905,
+    "built_duration_frames": 14,
+    "rmse": 0.1185
+  },
+  "recommended": "bezier",
+  "note": "P04 cursor entrance: 3D arrow cursor flies in on its own from beyond the bottom-right corner along a near-straight diagonal (24 deg above horizontal at entry, flattening to ~5 deg at the end) and decelerates onto the footage card's bottom-right corner; first visible picture f1835 is a motion-blurred streak already in flight (the start of the move lies outside the frame, so the curve covers the visible part only); x alone fits worse (bezier(0.001, 0.510, 0.314, 1.004) D=19, rmse 0.040) because y settles first; masked, blur- and tilt-aware template track (scratch/v5c3_P04_cursor_entry.csv)"
+}

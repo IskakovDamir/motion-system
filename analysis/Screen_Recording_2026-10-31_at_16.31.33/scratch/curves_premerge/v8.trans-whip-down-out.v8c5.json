@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.trans-whip-down-out.v8c5",
+  "file": "curves/v8.trans-whip-down-out.v8c5.csv",
+  "property": "position-y",
+  "unit": "px (picture 918 px high)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c5r_Sc_row.csv",
+  "column": "row_top",
+  "sampled_frames": [
+    3320,
+    3379
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 58.0,
+  "to_value": 497.0,
+  "active_frames": [
+    3348,
+    3379
+  ],
+  "measured_duration_frames": 31,
+  "bezier": {
+    "x1": 0.6059,
+    "y1": 0.0391,
+    "x2": 0.9095,
+    "y2": 0.2577,
+    "durationInFrames": 35,
+    "delay": -4.65,
+    "built_duration_frames": 29,
+    "rmse": 0.0133
+  },
+  "spring": {
+    "stiffness": 71.971,
+    "damping": 115.941,
+    "mass": 1,
+    "damping_ratio": 6.8332,
+    "built_duration_frames": 41,
+    "rmse": 0.4797
+  },
+  "recommended": "bezier",
+  "note": "T2 outgoing half: top edge of the portrait-card row (first row with >50% non-white pixels, scratch/v8c5r_Sc_row.csv). While the row keeps its leftward marquee scroll (7.5 px/f) it starts sinking at f3344 and accelerates down: +1-2 px/f (f3344-f3351), 3-5 (f3352-f3360), 7-11 (f3362-f3366), 17-27 (f3368-f3374), 35 (f3374-f3376) and 50 px/f (f3376-f3379); the horizontal scroll stops at about f3375 (gap tracking and motion.csv flow_dx both about 0). Hidden hard cut f3380 (row still on screen from 54% H down). Ease-in only; to-value = last picture f3379."
+}

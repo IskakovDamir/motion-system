@@ -1,0 +1,1558 @@
+{
+ "video": "Screen_Recording_2026-10-31_at_16.25.03",
+ "key": "v6",
+ "chunk": "v6c1",
+ "frames": [
+  0,
+  888
+ ],
+ "cut_decisions": [
+  {
+   "id": "c001",
+   "frame": 8,
+   "status": "confirmed",
+   "reason": "hard cut of the capture pre-roll: player's black loading frame (f7) -> poster of this post (f8); the previous-post -> black cut at f7 (ffmpeg score 0.51) is folded into this candidate by the merge radius"
+  },
+  {
+   "id": "c002",
+   "frame": 13,
+   "status": "confirmed",
+   "reason": "hard cut: poster (last picture f11) -> first frame of the promo (light field, first letter fragment at the left edge); ffmpeg scene 1.0"
+  },
+  {
+   "id": "c003",
+   "frame": 21,
+   "status": "rejected",
+   "reason": "title letters flying in from the frame edges (same composition)"
+  },
+  {
+   "id": "c004",
+   "frame": 36,
+   "status": "rejected",
+   "reason": "pill rising into the frame and title letters settling"
+  },
+  {
+   "id": "c005",
+   "frame": 106,
+   "status": "rejected",
+   "reason": "static hold of the title lockup (motion diff 0.001); adaptive false positive"
+  },
+  {
+   "id": "c006",
+   "frame": 118,
+   "status": "rejected",
+   "reason": "anticipation dip of the title lockup (moves down 23 px)"
+  },
+  {
+   "id": "c007",
+   "frame": 123,
+   "status": "rejected",
+   "reason": "same anticipation dip (lowest point)"
+  },
+  {
+   "id": "c008",
+   "frame": 128,
+   "status": "confirmed",
+   "reason": "anchor of the vertical push f113-f153: the title lockup accelerates out of the top edge"
+  },
+  {
+   "id": "c009",
+   "frame": 133,
+   "status": "rejected",
+   "reason": "inside the push f113-f153 (lockup leaving with vertical blur)"
+  },
+  {
+   "id": "c010",
+   "frame": 148,
+   "status": "rejected",
+   "reason": "incoming headline settling at the end of the push"
+  },
+  {
+   "id": "c011",
+   "frame": 158,
+   "status": "rejected",
+   "reason": "headline pan with horizontal motion blur (same composition)"
+  },
+  {
+   "id": "c012",
+   "frame": 208,
+   "status": "confirmed",
+   "reason": "anchor of the split morph f206-f223: the centred line splits and footage cards zoom in"
+  },
+  {
+   "id": "c013",
+   "frame": 213,
+   "status": "rejected",
+   "reason": "inside the split morph (cards appear as specks)"
+  },
+  {
+   "id": "c014",
+   "frame": 218,
+   "status": "rejected",
+   "reason": "inside the split morph (cards landing in the row)"
+  },
+  {
+   "id": "c015",
+   "frame": 223,
+   "status": "rejected",
+   "reason": "card row settled and drifting; end of the morph"
+  },
+  {
+   "id": "c016",
+   "frame": 233,
+   "status": "rejected",
+   "reason": "re-layout inside the carousel shot (top words shrink, lower word slides)"
+  },
+  {
+   "id": "c017",
+   "frame": 246,
+   "status": "rejected",
+   "reason": "sub-caption typing + card-row scroll (motion inside the cards)"
+  },
+  {
+   "id": "c018",
+   "frame": 253,
+   "status": "rejected",
+   "reason": "card-row scroll (speed ramp) inside the same composition"
+  },
+  {
+   "id": "c019",
+   "frame": 298,
+   "status": "rejected",
+   "reason": "slow card-row drift; motion inside the footage cards"
+  },
+  {
+   "id": "c020",
+   "frame": 306,
+   "status": "confirmed",
+   "reason": "anchor of the punch-in stutter f303-f323 (first punch-in crop, x1.25)"
+  },
+  {
+   "id": "c021",
+   "frame": 311,
+   "status": "rejected",
+   "reason": "inside the punch-in stutter (second crop, x1.97)"
+  },
+  {
+   "id": "c022",
+   "frame": 341,
+   "status": "rejected",
+   "reason": "line 2 typing and the text block starting to rise (same composition)"
+  },
+  {
+   "id": "c023",
+   "frame": 439,
+   "status": "rejected",
+   "reason": "accelerating pull-back (zoom-out) of the globe layout; the picture is not replaced here; the real hard cut is at f446 (missed by all detectors)"
+  },
+  {
+   "id": "c024",
+   "frame": 473,
+   "status": "rejected",
+   "reason": "text block rising to make room for the diagram"
+  },
+  {
+   "id": "c025",
+   "frame": 533,
+   "status": "confirmed",
+   "reason": "anchor of the vertical push f521-f551 (P08 layout leaving up, phone rising from below)"
+  },
+  {
+   "id": "c026",
+   "frame": 541,
+   "status": "rejected",
+   "reason": "inside the push f521-f551 (phone rising with heavy vertical blur)"
+  },
+  {
+   "id": "c027",
+   "frame": 626,
+   "status": "rejected",
+   "reason": "camera orbit-push on the 3D stack (same composition)"
+  },
+  {
+   "id": "c028",
+   "frame": 683,
+   "status": "rejected",
+   "reason": "camera dolly reframe on the 3D stack"
+  },
+  {
+   "id": "c029",
+   "frame": 811,
+   "status": "rejected",
+   "reason": "3D stack collapsing"
+  },
+  {
+   "id": "c030",
+   "frame": 823,
+   "status": "rejected",
+   "reason": "3D stack fanning out again (rotation); the whip starts right after"
+  },
+  {
+   "id": "c031",
+   "frame": 831,
+   "status": "confirmed",
+   "reason": "anchor of the horizontal whip f823-f853 (stack out to the left, text in from the right)"
+  },
+  {
+   "id": "c032",
+   "frame": 836,
+   "status": "rejected",
+   "reason": "inside the whip (outgoing stack with horizontal motion blur)"
+  },
+  {
+   "id": "c033",
+   "frame": 856,
+   "status": "rejected",
+   "reason": "second word whipping in and line 2 rising inside the P10 closing title"
+  }
+ ],
+ "boundaries": [
+  {
+   "frame": 7,
+   "type": "hard-cut",
+   "note": "capture pre-roll: previous post in the player feed -> player's black loading frame with a play triangle; not a separate candidate (folded into c001); motion.csv diff 0.233"
+  },
+  {
+   "frame": 8,
+   "type": "hard-cut",
+   "anchor_cut": "c001",
+   "note": "capture pre-roll: black loading frame -> poster of this post"
+  },
+  {
+   "frame": 13,
+   "type": "hard-cut",
+   "anchor_cut": "c002",
+   "note": "poster -> first frame of the promo"
+  },
+  {
+   "start": 113,
+   "end": 153,
+   "type": "push",
+   "frames": 41,
+   "shared": "upward motion and the light field: the title lockup dips 36 px (f113-f123) and accelerates out of the top edge (about 86 px per frame at the end, gone f141) while the 2-word headline rises from below the bottom edge (ink centre 741 px at f138 -> 461 px = 50.2% H at f156) with an opacity blink (darkest luma 88/149/207/101/0 at f138/141/143/146/148); the field's blobs fade out in place during the exit (f123-f136, plain field f136-f143) and fade back in during P05 (f143-f166); no graphic element is shared",
+   "technique": "v6.trans-push-up",
+   "curve": "v6.trans-push-up.v6c1",
+   "curve_outgoing": "v6.layout-anticipate-exit-up.v6c1",
+   "detail": "detail/soft_113-153",
+   "anchor_cut": "c008"
+  },
+  {
+   "start": 206,
+   "end": 223,
+   "type": "morph",
+   "frames": 18,
+   "shared": "the headline words: words 1-2 rise 363 px to the top band (x unchanged, same size), word 3 drops 323.5 px and grows x1.10; footage cards zoom in from scattered specks into the opened middle band; same light field",
+   "technique": "v6.trans-split-morph",
+   "curve": "v6.trans-split-morph.v6c1",
+   "detail": "detail/soft_206-223",
+   "anchor_cut": "c012"
+  },
+  {
+   "start": 303,
+   "end": 323,
+   "type": "zoom-through (punch-in stutter)",
+   "frames": 21,
+   "shared": "only the light field; entered with the card row speeding up again (-6.3 / -9.3 / -16.0 px per picture at f298/301/303); each 24 fps picture is a differently centred close crop of the card-carousel layout that holds until the next picture (x1.25 about (174, 852) px lower left at f306 and f308, x1.97 about (1538, 855) px lower right at f311, x3.85 about the same centre (1539, 859) px at f313, x2.30 about (108, 9) px top left at f316), then the empty field f318-f321; the next text appears at f324",
+   "technique": "v6.trans-punch-in-stutter",
+   "curve": "v6.trans-punch-in-stutter.v6c1",
+   "detail": "detail/soft_303-323",
+   "anchor_cut": "c020",
+   "note": "stepped crops: the per-picture keyframes (scale, zoom centre, hold) are the timing and sit in the 'keyframes' list of curves/v6.trans-punch-in-stutter.v6c1.json (samples scratch/v6c1_punchin_keyframes.csv); its bezier is only an envelope of the f303-f313 ramp (rmse 0.062). f313 is x3.85 (grey letters 231 px vs 60 px at rest), not x2.48 as first read"
+  },
+  {
+   "frame": 446,
+   "type": "hard-cut",
+   "note": "missed by all detectors (c023 fired on the pull-back at f439); last picture of the globe layout f443 (scale x0.905, still accelerating), first picture of the P08 title f446; shares the light field"
+  },
+  {
+   "start": 521,
+   "end": 551,
+   "type": "push",
+   "frames": 31,
+   "shared": "upward motion and the light field: the P08 layout drifts up with a long ease-in (f516-f538), then swaps out of the top edge within 2 pictures (f541-f543, about -200 px per frame, vertical blur) while the 3D phone mockup rises from below the bottom edge and decelerates hard (top 891 / 365 / 225 / 189 px at f538/541/543/546), lands at about x1.17 (f546) and settles to x1.0 (f548); the P08 edge lines vanish with the layout at f543",
+   "technique": "v6.trans-push-up-ease-in",
+   "curve": "v6.trans-push-up-ease-in.v6c1",
+   "detail": "detail/soft_521-551",
+   "anchor_cut": "c025",
+   "note": "curve = drift phase f519-f538 (bezier rmse 0.017); the 2-picture swap is values only"
+  },
+  {
+   "start": 823,
+   "end": 853,
+   "type": "whip",
+   "frames": 31,
+   "shared": "leftward motion and the light field: the 3D stack accelerates out to the left with horizontal blur (centre 778.5 -> 403 px, f823-f836), one picture of streaks at the right edge (f838), then the percentage figure arrives from the right at x1.2 and decelerates (centre 895.5 px f841 -> 536 px f856)",
+   "technique": "v6.trans-whip-left",
+   "curve": "v6.trans-whip-left.v6c1",
+   "detail": "detail/soft_823-853",
+   "anchor_cut": "c031"
+  }
+ ],
+ "segments": [
+  {
+   "id": "v6c1-P01",
+   "start": 0,
+   "end": 6,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "capture pre-roll, not part of the promo: the player shows the previous post of the feed (footage with a small burned-in caption, feed side panel with text lines and avatar placeholders); static"
+  },
+  {
+   "id": "v6c1-P02",
+   "start": 7,
+   "end": 7,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "capture pre-roll, not part of the promo: one black loading picture with the player's play triangle"
+  },
+  {
+   "id": "v6c1-P03",
+   "start": 8,
+   "end": 12,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "capture pre-roll, not part of the promo: poster of this post (footage still with a white brand mark and wordmark overlay), play triangle at f8-f9"
+  },
+  {
+   "id": "v6c1-P04",
+   "start": 13,
+   "end": 133,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "title lockup on a near-white field: the brand icon draws on as one stroke, wordmark letters fly in from all four frame edges onto a low line that rises into place, a monospace label drops in, a pill rises from the bottom edge, the brand row types on and re-centres (one echo-trail picture), braces spring in from the sides; slow linear zoom-out drift during the hold while the field blobs breathe and drift (about 70 f per cycle), anticipation dip and accelerating exit up while the blobs fade out"
+  },
+  {
+   "id": "v6c1-P05",
+   "start": 134,
+   "end": 214,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "huge 2-word headline rises from below with an opacity blink, pans left 41.7% W while a third word types on letter by letter just inside the right edge (about 5 f per letter), then zooms out x0.40 to the full centred line with another blink; the field blobs fade back in and drift"
+  },
+  {
+   "id": "v6c1-P06",
+   "start": 215,
+   "end": 313,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "split layout: top words and a big lower word around a flat row of slightly turned, rounded footage cards that scrolls left with a speed ramp and speeds up again in the last 2 pictures before the punch-in stutter; the field blobs keep breathing; re-layout puts the top words in the corner and the lower word bottom left; a 2-line sub-caption types on at the right"
+  },
+  {
+   "id": "v6c1-P07",
+   "start": 314,
+   "end": 445,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "2-line stat headline enters oversized and scales down while it types on left to right (line 1 grey part f324-f328, its black word f331-f337, then line 2), rises to the top band as a footage-tiled globe rises from the bottom edge and spins; a caption types on at the bottom; slow drift, then an accelerating pull-back cut off by a hard cut; the field blobs keep breathing until the cut, after which the field is static"
+  },
+  {
+   "id": "v6c1-P08",
+   "start": 446,
+   "end": 536,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "2-line title: small top line warps in from the top-left corner, big grey word enters oversized with a per-letter fade; the block rises and a 3-node diagram (card, link icon, card with gradient cones) pops in left to right, the left card's icon scaling in with an overshoot; thin edge lines grow in from both frame edges to the cards; long ease-in drift up into the push"
+  },
+  {
+   "id": "v6c1-P09",
+   "start": 537,
+   "end": 838,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "3D phone mockup with a footage screen lands, pushes in, turns about 44 degrees and explodes into 4 parallel UI/footage layers; one layer flashes, wireframe edges draw on; camera orbit-push, dolly reframe, dolly back with parallax and pull-back between holds; the stack collapses, fans out the other way and whips out to the left"
+  },
+  {
+   "id": "v6c1-P10",
+   "start": 839,
+   "end": 888,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": true,
+   "live_confirmed_on": [],
+   "summary": "closing title: the figure whips in from the right, 15 f later the word enters hugely oversized (about x3.6) and shrinks to rest in 10 f, travelling in from the right, the block rises and scales down while the black second line rises and types on, a letter-spaced caption rises in; then a full hold"
+  }
+ ],
+ "techniques": [
+  {
+   "id": "v6.text-letter-converge",
+   "category": "text",
+   "description": "letters of a big wordmark fly in from all four frame edges with motion blur, staggered by side (left f15, top f18, bottom f18-f21, right f28), land on a low line at about x1.15 spacing, then the whole line rises into place while the spacing contracts; per-letter overshoot and settle",
+   "instances": [
+    [
+     15,
+     53
+    ]
+   ],
+   "reference_frames": [
+    18,
+    26,
+    48
+   ],
+   "measured": {
+    "duration_frames": 20,
+    "easing": "line rise bezier(0.453, 0.576, 0.000, 0.696) D=20 rmse 0.033 / spring {322.9, 38.96} rmse 0.036; letter arrivals ease-out with 12-13 px overshoot (values)",
+    "values": "line y 450.5 -> 367.5 px (49.1% -> 40.0% H, 83 px = 9.0% H) f26-f48 (letter J); T from 845.5 px (92.1% H, f21) to 355.5 px overshoot (f42) to 367.5 px (f51); S from x 1370 px (84.5% W, f28) to 1201 px overshoot (f42) to 1214 px (f51); spacing offsets at f28 G -84, E -60, N -42, J -25, T +38 px; cap height 14.3% H"
+   },
+   "curves": [
+    "v6.text-letter-converge.v6c1"
+   ]
+  },
+  {
+   "id": "v6.logo-stroke-draw-on",
+   "category": "logo",
+   "description": "the brand icon draws on in place as one stroke (trim path) from its top-left end, its stroke thickening as it draws, before the brand row assembles",
+   "instances": [
+    [
+     18,
+     26
+    ]
+   ],
+   "reference_frames": [
+    18,
+    21,
+    23,
+    26
+   ],
+   "measured": {
+    "duration_frames": 8,
+    "easing": "values (4 pictures, no fit): 1 / 24 / 68 / 100% drawn at f18/21/23/26, fastest f21-f23",
+    "values": "ink area 12 / 309 / 878 / 1300 px2 (ink < 125 luma, scratch/v6c1_brandicon_drawon.csv); ink box 7 x 6 px (f18, a grey dash at x 788-794, y 224-229) -> 28 x 39 -> 58 x 58 -> 60 x 59 px (complete icon at x 776-835, y 200-258 px, f26); stroke about 4 -> 6-7 -> 11 px (read off crops/crop_765_192_85x75_00018-00028.jpg); sound: starts f18 (beat f20: -2), complete f26 (+6)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v6.text-type-recenter",
+   "category": "text",
+   "description": "brand row (icon + wordmark) types on with letters appearing out of order while the centred row re-centres: the icon starts alone in the centre and slides left as letters are added; its fastest step is drawn in one picture as an echo trail of 3 overlapping semi-transparent blurred copies",
+   "instances": [
+    [
+     26,
+     63
+    ]
+   ],
+   "reference_frames": [
+    26,
+    33,
+    42,
+    63
+   ],
+   "measured": {
+    "duration_frames": 37,
+    "easing": "stepwise (values), about 2.7 f per letter",
+    "values": "icon x 776-835 px alone (f26); icon left edge 776 / 769 / 761 px at f26/28/31, echo trail at f33 (repeated at f35: 3 copies offset diagonally, trail core x 714-780 px below 150 luma, faint parts from x 697, y 197-257 px; scratch/v6c1_brandicon_recentre.csv), f36 one smeared icon (664-727 px), sharp at f38 (647-711 px), 635 px at f42, rest 633 px (-8.8% W); right edge 856 / 901 / 941 / 985 px at f36/42/56/66; cap height 4.9% H"
+   },
+   "curves": []
+  },
+  {
+   "id": "v6.text-label-drop",
+   "category": "text",
+   "description": "a monospace label pops in at full opacity in one picture, overlapping the wordmark, and drops into place against the rising wordmark (counter-motion)",
+   "instances": [
+    [
+     28,
+     42
+    ]
+   ],
+   "reference_frames": [
+    28,
+    42
+   ],
+   "measured": {
+    "duration_frames": 14,
+    "easing": "ease-out (values)",
+    "values": "bottom edge 511 -> 535 -> 581 -> 606 -> 616 -> 617 px (55.7% -> 67.2% H) at f28/31/33/36/38/42; drop 106 px = 11.5% H; cap height 13.9% H"
+   },
+   "curves": []
+  },
+  {
+   "id": "v6.ui-pill-rise",
+   "category": "ui",
+   "description": "dark rounded pill with a white label rises from below the bottom edge into place",
+   "instances": [
+    [
+     33,
+     43
+    ]
+   ],
+   "reference_frames": [
+    33,
+    36,
+    43
+   ],
+   "measured": {
+    "duration_frames": 8,
+    "easing": "bezier(0.042, 0.979, 0.042, 0.844) D=8 rmse 0.042",
+    "values": "centre >= 883 px (96.2% H, f33, cut by the edge) -> 836.5 / 813 / 806 / 804 -> 803.5 px (87.5% H) at f36/38/42/46/51; pill 49.3% W x 10.7% H"
+   },
+   "curves": [
+    "v6.ui-pill-rise.v6c1"
+   ]
+  },
+  {
+   "id": "v6.text-bracket-spring-in",
+   "category": "text",
+   "description": "light-grey curly braces slide in from both sides onto a label (entering faint and blurred from near the frame edges) and settle with a damped overshoot",
+   "instances": [
+    [
+     51,
+     83
+    ]
+   ],
+   "reference_frames": [
+    51,
+    53,
+    63,
+    73,
+    83
+   ],
+   "measured": {
+    "duration_frames": 17,
+    "easing": "bezier(0.189, 0.961, 0.269, 1.109) D=20 rmse 0.011 / spring {1761.2, 84.45} rmse 0.178 (re-tracked from the first faint picture f51)",
+    "values": "left brace darkness-weighted centroid 112.6 (f51, faint) / 339.8 / 526.0 / 589.4 / 603.8 / 625.7 / 625.1 / 615.0 / 605.2 / 601.2 / 607.2 px at f51/53/56/58/61/63/66/68/71/73/83 (travel 494.7 px = 30.5% W, overshoot 18.4 px = 1.1% W at f63-f66, undershoot 6 px at f73-f78, settled f83); right brace centroid 1553.2 (f51) -> 1011.2 px; scratch/v6c1_title_brace_left_centroid.csv"
+   },
+   "curves": [
+    "v6.text-bracket-spring-in.v6c1"
+   ]
+  },
+  {
+   "id": "v6.cam-slow-zoom-drift",
+   "category": "cam",
+   "description": "constant slow scale drift of the whole layout during holds (zoom-out on text holds, push-in on the 3D stack)",
+   "instances": [
+    [
+     51,
+     126
+    ],
+    [
+     371,
+     431
+    ],
+    [
+     586,
+     621
+    ]
+   ],
+   "reference_frames": [
+    51,
+    126,
+    371,
+    431,
+    586,
+    621
+   ],
+   "measured": {
+    "duration_frames": null,
+    "easing": "linear",
+    "values": "title wordmark width 1294 -> 1248 px (-0.56 px/frame = -0.043% per frame); stat line 1285 -> 1256 px (-0.47 px/frame = -0.037% per frame); 3D stack extent 717 -> 732 px (+0.06% per frame)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v6.layout-anticipate-exit-up",
+   "category": "layout",
+   "description": "outgoing layout dips down briefly, then accelerates up and out of the top edge with growing vertical motion blur",
+   "instances": [
+    [
+     113,
+     141
+    ]
+   ],
+   "reference_frames": [
+    111,
+    123,
+    126,
+    138
+   ],
+   "measured": {
+    "duration_frames": 12,
+    "easing": "bezier(0.673, -0.207, 0.663, 0.225) D=21 rmse 0.038 (dip + ease-in, cut off by the frame edge)",
+    "values": "pill centre 797.5 -> 833.5 px (+36 px = 3.9% H) f111-f123, then 821.5 / 772.5 / 666.5 / 493.5 / 241.5 / 66.5 px at f126/128/131/133/136/138; about 86 px (9.4% H) per frame from f131"
+   },
+   "curves": [
+    "v6.layout-anticipate-exit-up.v6c1"
+   ]
+  },
+  {
+   "id": "v6.trans-push-up",
+   "category": "trans",
+   "description": "vertical push: the outgoing layout leaves through the top edge while the incoming text rises from below the bottom edge and decelerates to the centre, blinking (opacity dip) on the way",
+   "instances": [
+    [
+     113,
+     153
+    ]
+   ],
+   "reference_frames": [
+    113,
+    138,
+    148,
+    153
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "incoming spring {434.3, 43.84} rmse 0.047 / bezier(0.045, 0.362, 0.000, 0.759) D=14 rmse 0.073; outgoing see v6.layout-anticipate-exit-up",
+    "values": "incoming ink centre 741 / 622 / 560.5 / 522 / 495 / 477 / 466 / 461 px (80.7% -> 50.2% H) at f138/141/143/146/148/151/153/156; transition 41 frames"
+   },
+   "curves": [
+    "v6.trans-push-up.v6c1"
+   ]
+  },
+  {
+   "id": "v6.fx-opacity-dip",
+   "category": "fx",
+   "description": "while text moves fast it dips to near transparent and returns to full opacity within about 10 frames (a blink)",
+   "instances": [
+    [
+     138,
+     148
+    ],
+    [
+     181,
+     193
+    ]
+   ],
+   "reference_frames": [
+    138,
+    143,
+    148,
+    181,
+    188,
+    193
+   ],
+   "measured": {
+    "duration_frames": 10,
+    "easing": "non-monotonic dip (values, no fit)",
+    "values": "darkest luma 88 / 149 / 207 / 101 / 0 at f138/141/143/146/148; 0 / 38 / 89 / 208 / 101 / 0 at f181/183/186/188/191/193"
+   },
+   "curves": []
+  },
+  {
+   "id": "v6.cam-text-pan",
+   "category": "cam",
+   "description": "ease-in-out pan across a huge headline while the next word types on letter by letter just inside the leading frame edge (v6.text-type-on-pan); the pan does not reveal it",
+   "instances": [
+    [
+     148,
+     176
+    ]
+   ],
+   "reference_frames": [
+    146,
+    158,
+    176
+   ],
+   "measured": {
+    "duration_frames": 25,
+    "easing": "bezier(0.580, 0.010, 0.352, 0.883) D=29 rmse 0.019",
+    "values": "letter M centre 845 -> 168 px (52.1% -> 10.4% W, -677 px = 41.7% W); peak about -57 px (3.5% W) per frame at f156-f161; cap height 27.1% H"
+   },
+   "curves": [
+    "v6.cam-text-pan.v6c1"
+   ]
+  },
+  {
+   "id": "v6.text-type-on-pan",
+   "category": "text",
+   "description": "the next word of a huge line types on one letter at a time just inside the leading frame edge while the camera pans across the line; each letter cuts on at full tone where the picture before showed empty field, then rides the pan; slower than v6.text-type-on (about 5 f per letter instead of 0.6-1.6 f)",
+   "instances": [
+    [
+     161,
+     171
+    ]
+   ],
+   "reference_frames": [
+    158,
+    161,
+    163,
+    166,
+    168,
+    171
+   ],
+   "measured": {
+    "duration_frames": 10,
+    "easing": "stepped: one letter every 2 pictures, about 5 f per letter (values)",
+    "values": "headline rows y 330-620, luma < 120: rightmost ink 1333 px at f158 (word 2; letter 1 would sit near x 1400 px) -> letter 1 at x 1259-1573 px (f161, median ink 43 from the pan blur, core 0) -> letter 2 at x 1410-1479 px (f166, median ink 0; its place x >= 1484 px was empty at f163, min luma 222) -> letter 3 from x 1450 px, cut by the right edge (f171, median ink 0; its place empty at f166 / f168); letter 1 left edge 1259 / 1144 / 1070 / 1022 / 990 / 969 / 956 px at f161-f176 (rides the pan); letters 4-5 beyond the right edge until the zoom-out (f183, f188-f191); sound: f161 / f166 / f171 (beat f149: +12; beat f179: -13 / -8) (scratch/v6c1_P05_word3_letters.csv)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v6.cam-zoom-out",
+   "category": "cam",
+   "description": "zoom-out from a huge close-up to the full line with horizontal motion blur (and an opacity dip)",
+   "instances": [
+    [
+     176,
+     203
+    ]
+   ],
+   "reference_frames": [
+    176,
+    188,
+    199
+   ],
+   "measured": {
+    "duration_frames": 21,
+    "easing": "bezier(0.614, 0.000, 0.373, 1.000) D=24 rmse 0.042 / spring {221.5, 24.44} rmse 0.089 (re-tracked with a multi-scale template)",
+    "values": "template scale (rest = 1.0) 2.53 (f176) -> 2.475 / 2.375 / 2.17 / 1.735 / 1.445 / 1.16 / 1.08 / 1.04 / 1.02 / 1.01 -> 1.00 at f178-f206 about (810, 461) px (scratch/v6c1_headline_zoomout_template.csv); cap height 249 -> 99 px (27.1% -> 10.8% H) = x0.398; line at f199 x 14.5-85.7% W, y 44.8-55.7% H"
+   },
+   "curves": [
+    "v6.cam-zoom-out.v6c1"
+   ]
+  },
+  {
+   "id": "v6.trans-split-morph",
+   "category": "trans",
+   "description": "the centred line splits: first words rise to the top band, the last word drops and grows, opening a band where the next element (footage cards) arrives",
+   "instances": [
+    [
+     206,
+     223
+    ]
+   ],
+   "reference_frames": [
+    206,
+    213,
+    218,
+    221
+   ],
+   "measured": {
+    "duration_frames": 12,
+    "easing": "upper words bezier(0.833, 0.322, 0.112, 0.522) D=12 rmse 0.027",
+    "values": "words 1-2 centre y 460 -> 97 px (50.1% -> 10.6% H, -39.5% H), x 543.5 px, scale 1.0, f206-f218; word 3 centre y 460 -> 783.5 px (+35.2% H), scale x1.00 -> 1.10, f208-f221; transition 18 frames"
+   },
+   "curves": [
+    "v6.trans-split-morph.v6c1"
+   ]
+  },
+  {
+   "id": "v6.card-scatter-zoom-in",
+   "category": "card",
+   "description": "footage cards appear as tiny specks at scattered positions, zoom in with motion and zoom blur, and land in a row",
+   "instances": [
+    [
+     211,
+     223
+    ]
+   ],
+   "reference_frames": [
+    213,
+    216,
+    218,
+    221
+   ],
+   "measured": {
+    "duration_frames": 10,
+    "easing": "ease-in then settle (values; 4 pictures, a coverage fit gave rmse 0.12)",
+    "values": "band luma (x 0-840, y 520-640 px) 248 / 246 / 223 / 159 / 78 / 63 / 61 at f211/213/216/218/221/223/226"
+   },
+   "curves": []
+  },
+  {
+   "id": "v6.card-carousel-speed-ramp",
+   "category": "card",
+   "description": "a flat row of rounded footage cards, each slightly turned about its vertical axis, scrolls left with a speed ramp (slow -> fast -> slow) while the text holds, then speeds up again in the last 2 pictures before the punch-in stutter",
+   "instances": [
+    [
+     223,
+     303
+    ]
+   ],
+   "reference_frames": [
+    231,
+    263,
+    298,
+    301,
+    303
+   ],
+   "measured": {
+    "duration_frames": 60,
+    "easing": "bezier(0.644, 0.087, 0.338, 0.832) D=70 rmse 0.008",
+    "values": "cumulative -756.5 px (46.6% W) f231-f298; per 24 fps picture -6.7 -> -67.7 -> -6.3 px (0.4 -> 4.2 -> 0.4% W, f231-f298), then -9.3 / -16.0 px (0.6 / 1.0% W) at f301 / f303, about x2.5 in 2 pictures into the punch-in stutter (dy about 0, text boxes unchanged through f303, so not the zoom; check on the band y 250-550: -6.2 / -9.3 / -15.9 px, scratch/v6c1_carousel_endramp.csv; values only, outside the curve, which is fitted f228-f298); peak about -27 px (1.7% W) per frame; cards 18.2% W x 49.0% H, gap 1.0% W, pitch 19.4% W; corner radius 32-33 px = 2.0% W (f298, scratch/v6c1_card_corner_f298.csv); no curvature: every card's left edge y 185-645 px and right edge y 199-632 px wherever it is (f226-f298), each card's far edge 0.94 x its near edge (one card the other way, 1.065), unchanged while scrolling (scratch/v6c1_card_edges_tilt.csv)"
+   },
+   "curves": [
+    "v6.card-carousel-speed-ramp.v6c1"
+   ]
+  },
+  {
+   "id": "v6.layout-reflow-slide",
+   "category": "layout",
+   "description": "re-layout: the top words shrink and slide into the corner while the big lower word slides across and grows, freeing space for a sub-caption",
+   "instances": [
+    [
+     226,
+     243
+    ]
+   ],
+   "reference_frames": [
+    226,
+    233,
+    243
+   ],
+   "measured": {
+    "duration_frames": 12,
+    "easing": "top words bezier(0.861, 0.325, 0.143, 0.639) D=12 rmse 0.039",
+    "values": "top words centre x 543.5 -> 258 px, scale x0.64, y 97 px; lower word centre x 1129.5 -> 427.5 px (-43.3% W), scale x1.25, y 785 px"
+   },
+   "curves": [
+    "v6.layout-reflow-slide.v6c1"
+   ]
+  },
+  {
+   "id": "v6.text-type-on",
+   "category": "text",
+   "description": "letters appear left to right in place, the newest ones lighter (fading in), the line already at its final position",
+   "instances": [
+    [
+     236,
+     251
+    ],
+    [
+     324,
+     343
+    ],
+    [
+     369,
+     386
+    ],
+    [
+     448,
+     461
+    ],
+    [
+     861,
+     873
+    ]
+   ],
+   "reference_frames": [
+    238,
+    246,
+    251,
+    324,
+    326,
+    328,
+    331,
+    337,
+    343,
+    371,
+    386,
+    451,
+    458,
+    861,
+    873
+   ],
+   "measured": {
+    "duration_frames": null,
+    "easing": "near-linear; caption f369-f386 linear 71.4 px (4.4% W) per frame (rms 21.8 px)",
+    "values": "sub-caption about 1.25-1.4 f per letter (both lines together); stat line 1 types on through its oversized scale-down: grey part (figure + word) about 1 f per letter, 2 letters per picture (grey ink right edge 404 / 624 / 920 px at f324/326/328 where a complete grey part would end near 960 / 946 / 930 px; no black ink before f331; scratch/v6c1_P07_line1_typeon.csv), then its black word about 1.6 f per letter (f331-f337); line 2 about 0.8 f per letter; caption 0.59 f per character; P08 big word about 1.5 f per letter; P10 line 2 about 1.5 f per letter (45 px per frame)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v6.trans-punch-in-stutter",
+   "category": "trans",
+   "description": "exit by stepped punch-ins: every 24 fps picture is a differently centred close crop of the outgoing layout, held until the next picture, then an empty field before the next text",
+   "instances": [
+    [
+     303,
+     323
+    ]
+   ],
+   "reference_frames": [
+    303,
+    306,
+    311,
+    313,
+    316,
+    318
+   ],
+   "measured": {
+    "duration_frames": 21,
+    "easing": "stepped keyframes (in curves/v6.trans-punch-in-stutter.v6c1.json); envelope bezier(0.525, 0.279, 0.914, -0.330) D=9 rmse 0.062 is not a timing model",
+    "values": "x1.0 to f303; x1.25 about (174, 852) px at f306-f310 (f308 repeats the framing); x1.97 about (1538, 855) px at f311; x3.85 about (1539, 859) px at f313 (grey letters 231 px vs 60 px at rest); x2.30 about (108, 9) px at f316; empty field f318-f323; next text f324 (scratch/v6c1_punchin_keyframes.csv)"
+   },
+   "curves": [
+    "v6.trans-punch-in-stutter.v6c1"
+   ]
+  },
+  {
+   "id": "v6.text-scale-down-settle",
+   "category": "text",
+   "description": "text enters oversized (often blurred, from outside the frame) and scales down to its rest size about its baseline",
+   "instances": [
+    [
+     324,
+     356
+    ],
+    [
+     448,
+     491
+    ],
+    [
+     856,
+     866
+    ]
+   ],
+   "reference_frames": [
+    324,
+    326,
+    351,
+    451,
+    471,
+    856,
+    866
+   ],
+   "measured": {
+    "duration_frames": 25,
+    "easing": "bezier(0.141, 1.309, 0.887, 0.908) D=38 rmse 0.024 (stat line, instance 1)",
+    "values": "instance 1 x1.385 (f326) -> 1.0 (~f356) about (770, 500) px; instance 2 height 218 -> 173 px = x1.26 -> 1.0 over about 40 f; instance 3 x1.20 -> 1.0 over f856-f866: same device, durations differ"
+   },
+   "curves": [
+    "v6.text-scale-down-settle.v6c1"
+   ]
+  },
+  {
+   "id": "v6.layout-rise-make-room",
+   "category": "layout",
+   "description": "a finished text block rises toward the top band to make room for an element that arrives below it",
+   "instances": [
+    [
+     339,
+     356
+    ],
+    [
+     471,
+     493
+    ],
+    [
+     856,
+     868
+    ]
+   ],
+   "reference_frames": [
+    339,
+    348,
+    356,
+    471,
+    481,
+    493,
+    856,
+    866
+   ],
+   "measured": {
+    "duration_frames": 17,
+    "easing": "bezier(0.753, 0.480, 0.167, 0.582) D=14 rmse 0.035 (instance 1)",
+    "values": "instance 1 436.5 -> 133.5 px (-33.0% H) f339-f356; instance 2 543.5 -> 284 px (-28.3% H) f471-f493; instance 3 464 -> 364 px (-10.9% H) f856-f868"
+   },
+   "curves": [
+    "v6.layout-rise-make-room.v6c1"
+   ]
+  },
+  {
+   "id": "v6.3d-globe-rise",
+   "category": "3d",
+   "description": "dome of a globe covered with small footage tiles rises from below the bottom edge, decelerates, then spins at a constant speed about its vertical axis",
+   "instances": [
+    [
+     346,
+     433
+    ]
+   ],
+   "reference_frames": [
+    346,
+    348,
+    376,
+    433
+   ],
+   "measured": {
+    "duration_frames": 25,
+    "easing": "rise bezier(0.000, 0.061, 0.157, 1.004) D=28 rmse 0.024 / spring {193.7, 57.69} rmse 0.090 (re-tracked from the first faint picture f346); spin linear",
+    "values": "top tile 827 (f346, faint) / 691 / 596 / 528 / 480 / 443 / 416 / 396 / 381 / 371 / 364 / 361 / 360 px at f346-f376 (90.1% -> 39.2% H; half-max edge, scratch/v6c1_globe_rise_halfmax.csv); spin +7.2 px per picture = +2.9 px (0.18% W) per frame at the centre, at most about 0.35 degrees per frame (radius >= 469 px from the visible ink width); ink x 21.5-79.3% W"
+   },
+   "curves": [
+    "v6.3d-globe-rise.v6c1"
+   ]
+  },
+  {
+   "id": "v6.cam-pull-back-cut",
+   "category": "cam",
+   "description": "accelerating zoom-out of the whole layout about the frame centre, interrupted by a hard cut",
+   "instances": [
+    [
+     431,
+     445
+    ]
+   ],
+   "reference_frames": [
+    431,
+    443
+   ],
+   "measured": {
+    "duration_frames": 12,
+    "easing": "bezier(0.986, 0.282, 0.712, 0.606) D=11 rmse 0.034",
+    "values": "scale x1.000 / 0.997 / 0.987 / 0.971 / 0.945 / 0.905 at f431/433/436/439/441/443 about (811, 462) px; hard cut f446"
+   },
+   "curves": [
+    "v6.cam-pull-back-cut.v6c1"
+   ]
+  },
+  {
+   "id": "v6.text-warp-fly-in",
+   "category": "text",
+   "description": "a small line flies in diagonally from the top-left corner with a rubbery warp (letters stretched and squeezed unevenly) and motion blur, and settles centred",
+   "instances": [
+    [
+     446,
+     466
+    ]
+   ],
+   "reference_frames": [
+    446,
+    448,
+    451,
+    466
+   ],
+   "measured": {
+    "duration_frames": 17,
+    "easing": "bezier(0.145, 1.003, 0.803, 0.945) D=18 rmse 0.008",
+    "values": "ink-box centre (394, 113.5) px -> (801.5, 385) px = (24.3% W, 12.4% H) -> (49.4% W, 41.9% H); box height 161 px (blurred) -> 77-84 px; cap 8.6% H"
+   },
+   "curves": [
+    "v6.text-warp-fly-in.v6c1"
+   ]
+  },
+  {
+   "id": "v6.ui-node-pop-in",
+   "category": "ui",
+   "description": "diagram nodes grow from dots with blur, the left card first and the link icon and right card about 10 frames later, connected by gradient cones; the left card's icon pops in 7 frames after its card as a complete small icon and scales up with an overshoot",
+   "instances": [
+    [
+     481,
+     513
+    ]
+   ],
+   "reference_frames": [
+    481,
+    486,
+    488,
+    491,
+    496,
+    501,
+    511,
+    513
+   ],
+   "measured": {
+    "duration_frames": 25,
+    "easing": "left-card icon bezier(0.173, 1.364, 0.642, 1.024) D=26 rmse 0.024 (spring rmse 0.342), fitted from scale 0 at the not-visible picture f486; cards and link icon values only (3-5 pictures per growth; fits rmse 0.10-0.14)",
+    "values": "left card ink size 136 / 291 / 313 px at f481/483/486; left-card icon (dark ink < 110 luma) not visible at f486, then width 86 / 141 / 175 / 193 / 201 / 203 / 202 / 199 / 198 / 195 / 193 px at f488/491/493/496/498/501/503/506/508/511/513 = x0.45 / 0.73 / 0.91 / 1.00 / 1.04 / 1.05 / 1.05 / 1.03 / 1.03 / 1.01 / 1.00 about its centre (226, 568) px, heights 78 -> 184 -> 174 px (uniform), rest 193 x 174 px (scratch/v6c1_P08_lefticon_scale.csv); link 1.4 / 19 / 51.5 / 59.7 / 63.3 / 64.8 / 65.7 at f488-f503; right card 15 / 45 / 153 / 209 / 214 at f491-f501; sound: icon f488 (beat f473: +15), full size f496 (beat f504: -8), peak f501 (-3)"
+   },
+   "curves": [
+    "v6.ui-node-pop-in.v6c1"
+   ]
+  },
+  {
+   "id": "v6.shape-edge-lines-grow",
+   "category": "shape",
+   "description": "thin horizontal lines grow in from both frame edges to the outer edges of the two diagram cards (4 per side) and darken; they stay screen-locked while the layout drifts away and vanish with it",
+   "instances": [
+    [
+     513,
+     543
+    ]
+   ],
+   "reference_frames": [
+    513,
+    516,
+    519,
+    526,
+    541,
+    543
+   ],
+   "measured": {
+    "duration_frames": 5,
+    "easing": "values (2 pictures per side): length 14-23 -> 49-50 px in 3 f (right), 16-24 -> 44 -> 48-50 px in 5 f (left); contrast 21-26 -> 61-84 luma over 10 f",
+    "values": "rows y 496 / 574 / 653 / 731 px (78-79 px = 8.5% H apart), 2-3 px thick; right side from f513, left from f516 (3 f later); full length 48-53 px (3.0-3.3% W) from the frame edge to the card (left card edge x 50, right card edge x 1570); unchanged through f541 while the layout drifts up; gone at f543 (scratch/v6c1_P08_edge_lines.csv); sound: f513 (beat f504: +9), f516 (+12)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v6.trans-push-up-ease-in",
+   "category": "trans",
+   "description": "vertical push variant: the outgoing layout drifts up with a long ease-in, then swaps out of the top edge within 2 pictures with blur; the incoming 3D object rises from below, decelerates hard, lands slightly oversized and settles",
+   "instances": [
+    [
+     516,
+     551
+    ]
+   ],
+   "reference_frames": [
+    516,
+    538,
+    541,
+    543,
+    546,
+    548
+   ],
+   "measured": {
+    "duration_frames": 19,
+    "easing": "drift bezier(0.718, 0.012, 1.000, 0.731) D=21 rmse 0.017 / spring rmse 0.412 (f519-f538); swap f541-f543 values only (fits through f541: rmse 0.053-0.068 with x1 = x2 = 1.0)",
+    "values": "big-word centre 285 -> 284 / 283 / 280 / 275 / 269 / 259 / 245 / 224 / 188 px at f519-f538, 118 px at f541; right card top 350 / 281 px at f538/f541, out of the frame at f543 (visible band 24-238 px: about -200 px per frame), sliver at f546; phone top 891 / 365 / 225 / 189 px at f538/541/543/546, lands x1.17 (f546) -> x1.0 (f548); transition 31 frames"
+   },
+   "curves": [
+    "v6.trans-push-up-ease-in.v6c1"
+   ]
+  },
+  {
+   "id": "v6.3d-layer-explode",
+   "category": "3d",
+   "description": "a 3D phone mockup pushes in, turns about its vertical axis (about 44 degrees) and separates into 4 parallel layers spaced along a diagonal (exploded view)",
+   "instances": [
+    [
+     548,
+     606
+    ]
+   ],
+   "reference_frames": [
+    548,
+    558,
+    566,
+    576,
+    586
+   ],
+   "measured": {
+    "duration_frames": 20,
+    "easing": "bezier(0.820, -0.193, 0.026, 0.988) D=34 rmse 0.031 / spring {849.6, 79.47} rmse 0.091 (ink extent, fitted on the turn + separation f558-f596)",
+    "values": "push-in 278 -> 329 px wide f548-f558; turn f558-f563 (extent 329 -> 350 px, left edge 675 -> 753 px), front layer turned about 44 degrees (top-edge width / left-edge height 0.35 at f600 vs 0.49 front-on at f548, weak-perspective estimate, scratch/v6c1_layer_outlines.csv); separation f563-f586: extent 350 -> 717 px (44.2% W), back layer's left edge 753 -> 429 px, front layer's right edge 1102-1145 px; height 558 -> 759 px"
+   },
+   "curves": [
+    "v6.3d-layer-explode.v6c1"
+   ]
+  },
+  {
+   "id": "v6.fx-layer-glow-pulse",
+   "category": "fx",
+   "description": "one layer of the exploded 3D stack lights up for two pictures (its panel brightens and its UI elements glow) while the other layers stay unchanged",
+   "instances": [
+    [
+     578,
+     582
+    ]
+   ],
+   "reference_frames": [
+    576,
+    578,
+    581,
+    583
+   ],
+   "measured": {
+    "duration_frames": 5,
+    "easing": "values (2 pictures): on within one picture, a step down, off",
+    "values": "dashboard layer interior mean luma (x 660-750, y 330-560 px) 30.9 (f576) -> 91.9 (f578-f580) -> 76.1 (f581-f582) -> 34.5 (f583); box maximum 122 -> 210 -> 184 -> 193; code layer interior 19.4 -> 28.7 / 27.8 -> 19.8 (scratch/v6c1_dashboard_pulse_luma.csv, v6c1_codelayer_luma.csv); sound: f578 (beat f564: +14)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v6.shape-wireframe-edges",
+   "category": "shape",
+   "description": "thin lines through the matching corners of the exploded layers draw on as strokes from the back layer toward the front layer, forming a box outline",
+   "instances": [
+    [
+     586,
+     626
+    ]
+   ],
+   "reference_frames": [
+    586,
+    594,
+    599,
+    603,
+    623
+   ],
+   "measured": {
+    "duration_frames": 17,
+    "easing": "bezier(0.984, 0.263, 0.102, 0.264) D=16 rmse 0.048 / spring rmse 0.309 (drawn length of the top edge)",
+    "values": "bottom-left edge: stub at the code layer's bottom-left corner f586 (x 484 px), front 504 / 550 / 640 / 788 / 826 px at f588/592/594/596/599; top edge from the code layer's top-right corner (x 636 px): front 656 / 700 / 778 / 982 / 1078 / 1128 / 1138 px at f588/592/594/596/599/601/603 (ends at the footage layer's top corner); visible to f623, lost in the blur f626-f633 (scratch/v6c1_wireframe_drawon.csv)"
+   },
+   "curves": [
+    "v6.shape-wireframe-edges.v6c1"
+   ]
+  },
+  {
+   "id": "v6.cam-orbit-push",
+   "category": "cam",
+   "description": "camera orbits and pushes in on the exploded stack, near layers blur (depth of field)",
+   "instances": [
+    [
+     623,
+     646
+    ]
+   ],
+   "reference_frames": [
+    623,
+    633,
+    646
+   ],
+   "measured": {
+    "duration_frames": 23,
+    "easing": "bezier(0.599, 0.126, 0.241, 0.552) D=21 rmse 0.028",
+    "values": "stack left edge 421 -> 562 px (+8.7% W); extent 732 -> about 980 px (clipped at the right edge)"
+   },
+   "curves": [
+    "v6.cam-orbit-push.v6c1"
+   ]
+  },
+  {
+   "id": "v6.cam-dolly-reframe",
+   "category": "cam",
+   "description": "camera dollies to reframe on another layer, which comes forward and up",
+   "instances": [
+    [
+     678,
+     708
+    ]
+   ],
+   "reference_frames": [
+    678,
+    688,
+    708
+   ],
+   "measured": {
+    "duration_frames": 30,
+    "easing": "bezier(0.435, -0.008, 0.221, 1.005) D=38 rmse 0.016 / spring {99.2, 17.32} rmse 0.080",
+    "values": "stack left edge 559 -> 339 px (-13.6% W), top edge 92 px -> out of the frame"
+   },
+   "curves": [
+    "v6.cam-dolly-reframe.v6c1"
+   ]
+  },
+  {
+   "id": "v6.cam-dolly-back-parallax",
+   "category": "cam",
+   "description": "camera dollies back from a close view of the two dark layers with strong parallax: the nearer layer shrinks much more than the back one, their on-screen spacing halves and the near layers swing in from the right edge into a full view of the stack",
+   "instances": [
+    [
+     726,
+     743
+    ]
+   ],
+   "reference_frames": [
+    726,
+    733,
+    738,
+    743
+   ],
+   "measured": {
+    "duration_frames": 18,
+    "easing": "bezier(0.749, 0.362, 0.104, 0.288) D=15 rmse 0.044 / spring rmse 0.330 (dashboard layer x)",
+    "values": "dashboard layer (gauge ring): scale 1.00 / 0.95 / 0.89 / 0.85 / 0.82 / 0.755 / 0.74 at f726/731/733/736/738/741/743, centre (696, 291) -> (561.5, 223.5) px (scratch/v6c1_dollyback_gauge.csv); code layer's corner scale 1.00 -> 0.91 by f738, centre y 254 -> 162 px (scratch/v6c1_dollyback_codecorner.csv); layer spacing 276 -> 131 px (scratch/v6c1_dollyback_spacing.csv); near layers' right edge 1423 -> 1243 px (f733-f746); blur f731-f736; motion.csv flow_radial -0.48 at f733; settled f743 (beat f742: +1)"
+   },
+   "curves": [
+    "v6.cam-dolly-back-parallax.v6c1"
+   ]
+  },
+  {
+   "id": "v6.cam-pull-back-wide",
+   "category": "cam",
+   "description": "camera pulls back from a close three-quarter view to the wide exploded view",
+   "instances": [
+    [
+     776,
+     793
+    ]
+   ],
+   "reference_frames": [
+    776,
+    786,
+    793
+   ],
+   "measured": {
+    "duration_frames": 17,
+    "easing": "bezier(0.708, 0.022, 0.238, 0.483) D=19 rmse 0.021",
+    "values": "ink extent 884 -> 751 px (54.5% -> 46.3% W), bottom edge 917 -> 860 px"
+   },
+   "curves": [
+    "v6.cam-pull-back-wide.v6c1"
+   ]
+  },
+  {
+   "id": "v6.3d-stack-collapse",
+   "category": "3d",
+   "description": "the exploded layers slide back into one stack (ease-in, abrupt end), then fan out again turned the other way",
+   "instances": [
+    [
+     801,
+     823
+    ]
+   ],
+   "reference_frames": [
+    801,
+    813,
+    816,
+    823
+   ],
+   "measured": {
+    "duration_frames": 12,
+    "easing": "collapse bezier(0.497, 0.107, 0.754, -0.131) D=13 rmse 0.001; re-fan values",
+    "values": "extent 752 -> 461 px (46.4% -> 28.4% W) f796-f813; re-fan 477 / 630 / 715 / 748 px at f816/818/821/823; the front layer's foreshortening about 40 degrees before the collapse (f801) and about 22-28 degrees after the re-fan (f821), its right edge then the nearer one (767 vs 703 px tall); weak-perspective estimates"
+   },
+   "curves": [
+    "v6.3d-stack-collapse.v6c1"
+   ]
+  },
+  {
+   "id": "v6.trans-whip-left",
+   "category": "trans",
+   "description": "horizontal whip: the outgoing element accelerates out to the left with motion blur, a picture of streaks, then the incoming text arrives from the right and decelerates hard",
+   "instances": [
+    [
+     823,
+     856
+    ]
+   ],
+   "reference_frames": [
+    823,
+    836,
+    838,
+    841,
+    856
+   ],
+   "measured": {
+    "duration_frames": 12,
+    "easing": "incoming bezier(0.000, 0.377, 0.443, 1.003) D=13 rmse 0.027 / spring {763.3, 58.38} rmse 0.083",
+    "values": "outgoing centre 778.5 -> 403 px (48.0% -> 24.8% W) f823-f836; incoming centre 895.5 -> 536 px (55.2% -> 33.0% W) f841-f856 at x1.2; transition 31 frames"
+   },
+   "curves": [
+    "v6.trans-whip-left.v6c1"
+   ]
+  },
+  {
+   "id": "v6.text-word-whip-in",
+   "category": "text",
+   "description": "words of a line whip in from the right one after another and decelerate into place; the second word's travel comes with its shrink-in from about x3.6 (v6.text-word-shrink-in)",
+   "instances": [
+    [
+     838,
+     856
+    ],
+    [
+     853,
+     866
+    ]
+   ],
+   "reference_frames": [
+    841,
+    853,
+    866
+   ],
+   "measured": {
+    "duration_frames": 13,
+    "easing": "ease-out (first word: see curve v6.trans-whip-left.v6c1; second word values)",
+    "values": "second word left edge 1242 (f853, blurred; 1148-1293 px at darkness thresholds 15-60) / 996 / 927 / 890 / 880 / 878 px at f853/856/858/861/863/866, rest 877 px (54.1% W) from f868 (first written as 860 px); this travel matches its shrink-in about x 762-765 px (v6.text-word-shrink-in); stagger 15 f"
+   },
+   "curves": []
+  },
+  {
+   "id": "v6.text-word-shrink-in",
+   "category": "text",
+   "description": "a word enters hugely oversized (only a blurred part of its first letter in the frame) and shrinks uniformly to rest with heavy zoom blur, decelerating; it scales about an anchor left of it on the line's centre line, so it also travels in from the right (the second word of the closing title, far larger than the x1.2 of v6.text-scale-down-settle)",
+   "instances": [
+    [
+     853,
+     868
+    ]
+   ],
+   "reference_frames": [
+    851,
+    853,
+    856,
+    858,
+    863,
+    868
+   ],
+   "measured": {
+    "duration_frames": 10,
+    "easing": "spring {1635.0, 94.74} rmse 0.046 / bezier(0.423, 0.800, 0.011, 0.761) D=10 rmse 0.046 (start value = first picture f853)",
+    "values": "ink height against the empty-field plate f851 (darker by > 25 luma, x >= 870 px) 687 px at f853 (blurred, cut by the right edge; 621-731 px at thresholds 40-15) -> 376 / 272 / 224 / 199 / 195 / 193 px at f856/858/861/863/866/868 = x3.56 (x3.2-3.8) -> 1.95 -> 1.41 -> 1.16 -> 1.03 -> 1.01 -> 1.00; width where uncut x1.42 / 1.12 / 1.02 / 1.00 (f858-f866); rest 415 x 193 px; the left-edge path 1172 / 985 / 923 px (f853-f858) fits a uniform scale about x 762-765 px (47.0% W); centre y follows the line's rise 451 -> 364 px; sound: f853 (beat f860: -7) (scratch/v6c1_P10_word2_scale.csv)"
+   },
+   "curves": [
+    "v6.text-word-shrink-in.v6c1"
+   ]
+  },
+  {
+   "id": "v6.text-rise-in-blur",
+   "category": "text",
+   "description": "a short caption line rises a few pixels into place while its vertical blur clears",
+   "instances": [
+    [
+     861,
+     871
+    ]
+   ],
+   "reference_frames": [
+    863,
+    871
+   ],
+   "measured": {
+    "duration_frames": 10,
+    "easing": "values",
+    "values": "y 824-865 px (f863) -> 812-848 (f866) -> 807-842 px (f871): 17 px rise; cap 3.8% H"
+   },
+   "curves": []
+  },
+  {
+   "id": "v6.bg-soft-field",
+   "category": "bg",
+   "description": "near-white field with soft grey blobs at the edges and a faint static dot grid that stays screen-locked while layouts move over it; through P04-P07 the blobs breathe and drift (non-monotonic luminance and position changes), they fade out in place during the first push and back in; from the hard cut f446 the field is a static plate",
+   "instances": [
+    [
+     13,
+     888
+    ]
+   ],
+   "reference_frames": [
+    15,
+    48,
+    118,
+    136,
+    143,
+    166,
+    321,
+    348,
+    411,
+    446,
+    600,
+    880
+   ],
+   "measured": {
+    "duration_frames": null,
+    "easing": "P04-P07 (f13-f443): breathing drift, non-monotonic, about 63-70 f per cycle (P04 top-left minima f48 / f118, P07 top-strip minima f348 / f411), 4-14 luma swings in text-free boxes, opposite phase at the top-left and bottom-right corners (values, no fit); fade-out in place 13 f (f123-f136) and fade-in 23 f (f143-f166) around the first push; from f446 static",
+    "values": "median luma 244-248; darkest blurred blob 198-199 (corners / top centre); dot grid pitch 68.5 px = 4.2% W at the same positions in f321, f600, f880. Box means (scratch/v6c1_bg_field_luma.csv): P04 top-left (0,0,260,170) 225.6 (f13) -> 214.6 (f48) -> 221.2 (f93) -> 207.7 (f118), bottom-right (1300,700,240,130) 214.1 (f16) -> 225.8 (f51) -> 215.5 (f86) -> 226.9 (f123); top-left blob centroid x 301.6 -> 319.1 -> 305.6 px, y 81.1 -> 94.5 px; push: both corners -> 247.8 at f136 (plain field 248), centroid fixed; P05 top-left 248.2 (f143) -> 217.6 (f166) -> 214.9 (f178) -> 224.1 (f213), blob slides right 304 -> 325 px (f171-f208), bottom-right 248.0 -> 227.8 (f166) -> 221.2 (f208); P06 top strip (450,0,1172,60) 238.7 (f233) -> 234.6 (f253-f271) -> 238.0 (f303); P07 top strip 231.6 (f321) -> 227.8 (f348) -> 233.6 (f379) -> 220.0 (f411) -> 230.4 (f436), bottom-left (0,700,260,130) 241.3 -> 238.8 -> 242.2 -> 240.1 -> 242.4 (f321/328/356/388/426); static from f446: top-left 235.99-236.07 and bottom-right 220.03-220.18 in every uncovered picture f461-f536 and f556-f833 (P08, P09); P10 another static plate: top-left 235.06-235.11 from f838, bottom-right 233.42-233.45 from f856 (the bottom-right box jumps 220.1 -> 233.8 in one picture, f836 -> f838, inside the whip)"
+   },
+   "curves": []
+  }
+ ],
+ "typography_stills": [
+  "type/v6c1-P04-1_f00028.png",
+  "type/v6c1-P04-1_f00066.png",
+  "type/v6c1-P04-1_f00126.png",
+  "type/v6c1-P04-2_f00021.png",
+  "type/v6c1-P04-2_f00026.png",
+  "type/v6c1-P04-2_f00033.png",
+  "type/v6c1-P05-1_f00141.png",
+  "type/v6c1-P05-1_f00151.png",
+  "type/v6c1-P05-1_f00199.png",
+  "type/v6c1-P05-1_f00208.png",
+  "type/v6c1-P05-2_f00161.png",
+  "type/v6c1-P05-2_f00166.png",
+  "type/v6c1-P05-2_f00171.png",
+  "type/v6c1-P06-1_f00241.png",
+  "type/v6c1-P06-1_f00253.png",
+  "type/v6c1-P06-1_f00306.png",
+  "type/v6c1-P07-1_f00324.png",
+  "type/v6c1-P07-1_f00326.png",
+  "type/v6c1-P07-1_f00328.png",
+  "type/v6c1-P07-1_f00361.png",
+  "type/v6c1-P07-1_f00441.png",
+  "type/v6c1-P07-2_f00376.png",
+  "type/v6c1-P07-2_f00400.png",
+  "type/v6c1-P08-1_f00451.png",
+  "type/v6c1-P08-1_f00466.png",
+  "type/v6c1-P08-1_f00538.png",
+  "type/v6c1-P08-2_f00483.png",
+  "type/v6c1-P08-2_f00498.png",
+  "type/v6c1-P08-2_f00511.png",
+  "type/v6c1-P10-1_f00846.png",
+  "type/v6c1-P10-1_f00853.png",
+  "type/v6c1-P10-1_f00856.png",
+  "type/v6c1-P10-1_f00876.png",
+  "type/v6c1-P10-2_f00858.png",
+  "type/v6c1-P10-2_f00863.png"
+ ],
+ "uncertain": [
+  {
+   "what": "pre-roll classification",
+   "range": "f0-f12",
+   "reason": "capture pre-roll (previous post, loading frame, poster) is classed by the definitions but is not part of the promo"
+  },
+  {
+   "what": "punch-in stutter curve",
+   "range": "f303-f323",
+   "reason": "stepped crops (one per picture, each held to the next): the curve file carries per-picture keyframes; its bezier is only an envelope (rmse 0.062); zoom centres from one template match or ink box per picture"
+  },
+  {
+   "what": "paths of the two identical letters U",
+   "range": "f15-f46",
+   "reason": "template tracking confused the two U glyphs; their entry directions are read off the sheets"
+  },
+  {
+   "what": "easing of 2-5-picture events",
+   "range": "f18-f26, f481-f503, f513-f521, f541-f543, f578-f582",
+   "reason": "only 2-5 captured pictures span the icon draw-on, each diagram card and the link icon (fits rmse 0.10-0.14; the left card's icon spans 11 pictures and has a curve, its onset between the pictures f486 and f488 is not captured, so the fit takes the not-visible f486 as scale 0), each side's edge lines, the push's swap and the layer pulse; values only"
+  },
+  {
+   "what": "UI-panel contents",
+   "range": "f548-f838",
+   "reason": "whether the product UI on the layers animates was not checked"
+  },
+  {
+   "what": "3D rotation angles",
+   "range": "f558-f566, f801-f823",
+   "reason": "about 44 degrees (phone turn) and about 40 -> 22-28 degrees (re-fan) are weak-perspective estimates from the front layer's foreshortening; the strong perspective of the view makes them approximate"
+  },
+  {
+   "what": "original typefaces",
+   "range": "f13-f888",
+   "reason": "not identified; free fonts are nearest matches by glyph proportions"
+  },
+  {
+   "what": "opacity dips",
+   "range": "f138-f148, f181-f193",
+   "reason": "measured with the darkest-luma proxy, not true alpha"
+  },
+  {
+   "what": "dot pattern pitch in the title segment",
+   "range": "f13-f133",
+   "reason": "rows about 34 px apart at f60 versus the 68.5 px grid later; not resolved"
+  },
+  {
+   "what": "start scale of the P10 second word",
+   "range": "f853",
+   "reason": "the first picture is so blurred that its extent depends on the darkness threshold (621-731 px tall at 40-15 luma, x3.2-3.8); the shrink-in curve starts from the 25-luma value (x3.56)"
+  },
+  {
+   "what": "field blob breathing",
+   "range": "f13-f443",
+   "reason": "measured as mean luma of text-free boxes and the top-left blob's darkness-weighted centroid; boxes covered by text, cards or the globe are skipped (P06 has only the top strip); the cycle length (about 63-70 f) comes from 1-2 cycles per segment"
+  }
+ ],
+ "notes": [
+  "Promo starts at f13; f0-f12 is capture pre-roll (no techniques).",
+  "24 fps material: per-picture shifts are smooth (globe tiles 7.0-7.6 px per picture whether 2 or 3 frames apart), so per-frame speeds carry 3:2 jitter; durations +-1 frame.",
+  "Most motion starts land within +-4 frames of a beat (117.45 BPM = 30.65 frames per beat): pan f151 (+2), zoom-out f176 (-3), cards f213 (+2), new text f324 (-1), cut f446 (-1), rise f471 (-2), orbit f623 (-1), dolly f678 (-4), pull-back f776 (+3), collapse f801 (-2), whip f829 (-2).",
+  "Detectors missed the hard cut at f446 and folded the f7 capture cut into c001.",
+  "The closing title (P10) holds unchanged from f876 through f903; it continues into v6c2 (next candidate c034 at f911).",
+  "Stills are tagged v6c1-P.. to avoid collisions with v6c2's tags.",
+  "Overview sheets 00000-00045 ... 00864-00909, all cut_c001-c033 windows and all off-cut peak windows f25-f860 were opened; dense sheets dense_00136-00149, dense_00208-00226, dense_00446-00462 and crops crop_0_380_1622x538_00478-00503, crop_150_60_1330x270_00371-00371, crop_300_250_1020x620_00876-00876 were made for fast moments and type.",
+  "Review pass (re-checked on the frames): added the brand icon's stroke draw-on (f18-f26) and the echo trail of its re-centre (f33), the P08 edge lines (f513-f543), the dashboard layer's light pulse (f578-f582), the wireframe stroke draw-on (f586-f603, curve), the f726-f743 camera dolly back with parallax (replaces the earlier rear-layer slide reading; curve), the card corner radius, the flat card row, the P09 rotation estimates, the diagram label cap heights and the missing appear stills. Corrected: f313 of the punch-in stutter is x3.85 about the f311 centre, not x2.48; the left brace is first seen faint at f51, the globe at f346.",
+  "Re-tracked curves (both RMSEs were above 0.05): v6.text-bracket-spring-in 0.063 -> 0.011 (darkness-weighted centroid from f51), v6.3d-globe-rise 0.053 -> 0.024 (half-max edge from f346), v6.cam-zoom-out 0.052 -> 0.042 (multi-scale template), v6.3d-layer-explode 0.057 -> 0.031 (turn + separation only), v6.trans-push-up-ease-in 0.068 -> 0.017 (drift phase only; the 2-picture swap kept as values).",
+  "The field's blobs move only before the hard cut f446 (breathing drift in P04-P07, fade-out and fade-in around the first push); from f446 the field is a static plate (scratch/v6c1_bg_field_luma.csv).",
+  "Review pass 2 (re-checked on the frames): P05 word 3 types on letter by letter during the pan (f161 / f166 / f171, new technique v6.text-type-on-pan), it is not revealed by the pan; the P10 second word enters at about x3.6 and shrinks to rest in 10 f (new technique v6.text-word-shrink-in with a curve); P07 line 1 types on left to right from f324 (grey part f324-f328, then the black word); the field blobs breathe and drift in P04-P07 and the field is static from f446; the P08 left-card icon is a scale pop-in with an overshoot over about 25 f (values and curve v6.ui-node-pop-in.v6c1 replace the 3-frame UNCERTAIN); the card row speeds up again at f301-f303 before the punch-in stutter. Scratch CSVs named after on-screen words were renamed to role names (v6c1_P05_words12_morph, v6c1_P05_word3_morph, v6c1_P06_topwords_reflow, v6c1_P06_lowerword_slide, v6c1_punchin_lowerword, v6c1_P07_line1_scale, v6c1_P07_line1_scale_firstpass, v6c1_P07_line1_slide, v6c1_P08_topline_warp, v6c1_P08_bigword_exit, v6c1_P08_rightcard_exit, v6c1_P08_leftcard_pop, v6c1_P08_link_pop, v6c1_P08_rightcard_pop, v6c1_P10_figure_whip); the curve sidecars and curves/index.json point to them and two curve notes that named layouts by their words now use role names. New samples: scratch/v6c1_P05_word3_letters.csv, v6c1_P10_word2_scale.csv, v6c1_P07_line1_typeon.csv, v6c1_bg_field_luma.csv, v6c1_P08_lefticon_scale.csv, v6c1_carousel_endramp.csv; new stills type/v6c1-P05-2_f00161/f00166/f00171, type/v6c1-P07-1_f00324/f00328, type/v6c1-P10-1_f00853/f00856."
+ ]
+}

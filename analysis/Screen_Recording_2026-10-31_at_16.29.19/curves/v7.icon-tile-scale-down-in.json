@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.icon-tile-scale-down-in",
+  "file": "curves/v7.icon-tile-scale-down-in.csv",
+  "property": "scale",
+  "unit": "scale factor (1.0 = settled tile, 215 px = 13.3% W)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s4_tile_scale.csv",
+  "column": "scale",
+  "sampled_frames": [
+    419,
+    469
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 2.1963,
+  "to_value": 1.0,
+  "active_frames": [
+    419,
+    447
+  ],
+  "measured_duration_frames": 28,
+  "bezier": {
+    "x1": 0.0719,
+    "y1": 1.1383,
+    "x2": 0.7849,
+    "y2": 0.9422,
+    "durationInFrames": 33,
+    "delay": -0.001,
+    "built_duration_frames": 26,
+    "rmse": 0.0178
+  },
+  "spring": {
+    "stiffness": 274.033,
+    "damping": 37.161,
+    "mass": 1,
+    "damping_ratio": 1.1224,
+    "built_duration_frames": 22,
+    "rmse": 0.166
+  },
+  "recommended": "bezier",
+  "note": "app-icon tile appears after the hard cut (f419) already 2.2x and blurred, shrinks about its centre (x 49.4%, y 50.2%) to 1.0 while sharpening; the glyph inside starts small and rotated and grows upright; right edge from the bbox tracker, centre x 801 from centre-row edges; motion starts at the cut (no rest before)"
+}

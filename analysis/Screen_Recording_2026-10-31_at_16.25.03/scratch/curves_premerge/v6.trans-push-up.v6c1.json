@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.trans-push-up.v6c1",
+  "file": "curves/v6.trans-push-up.v6c1.csv",
+  "property": "position-y",
+  "unit": "px (picture 918 px high)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_headline_rise.csv",
+  "column": "cy",
+  "sampled_frames": [
+    138,
+    176
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 741.0,
+  "to_value": 461.0,
+  "active_frames": [
+    138,
+    153
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.0448,
+    "y1": 0.3625,
+    "x2": 0.0,
+    "y2": 0.7591,
+    "durationInFrames": 14,
+    "delay": 1.913,
+    "built_duration_frames": 13,
+    "rmse": 0.0732
+  },
+  "spring": {
+    "stiffness": 434.326,
+    "damping": 43.843,
+    "mass": 1,
+    "damping_ratio": 1.0519,
+    "built_duration_frames": 17,
+    "rmse": 0.0469
+  },
+  "recommended": "spring",
+  "note": "incoming headline of the vertical push transition (title out the top, headline in from the bottom): centre of the ink rows at half-contrast, visible from f138 (centre 741 px = 80.7% H, already moving; it enters from below the frame) to rest 461 px (50.2% H); the headline's darkest luma dips 88 -> 149 -> 207 -> 101 -> 0 at f138/141/143/146/148 (blink) while it rises"
+}

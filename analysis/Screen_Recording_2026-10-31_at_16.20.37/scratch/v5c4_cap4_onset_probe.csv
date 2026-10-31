@@ -1,0 +1,21 @@
+frame,unique,element,spot_x,spot_y,template_ncc,best_dx,best_dy,contrast_luma,method
+2960,1,line1_word1,952,366,-0.086,-1,-5,-20.8,"word template cut on f2982; spot = drift path (+2.6, -3.1) px/f"
+2962,1,line1_word1,957,360,0.218,5,-3,-0.7,"word template cut on f2982; spot = drift path (+2.6, -3.1) px/f"
+2966,1,line1_word1,967,348,0.452,3,5,11.6,"word template cut on f2982; spot = drift path (+2.6, -3.1) px/f"
+2968,1,line1_word1,973,341,0.574,-5,4,6.8,"word template cut on f2982; spot = drift path (+2.6, -3.1) px/f"
+2970,1,line1_word1,978,335,0.688,-1,3,9.5,"word template cut on f2982; spot = drift path (+2.6, -3.1) px/f"
+2972,1,line1_word1,983,329,0.774,2,0,14.3,"word template cut on f2982; spot = drift path (+2.6, -3.1) px/f"
+2975,1,line1_word1,991,320,0.859,0,1,17.7,"word template cut on f2982; spot = drift path (+2.6, -3.1) px/f"
+2977,1,line1_word1,996,314,0.926,1,0,25.1,"word template cut on f2982; spot = drift path (+2.6, -3.1) px/f"
+2966,1,line2_word1,837,391,0.415,5,5,-3.8,"word template cut on f2985; spot = drift path (+2.2, -3.0) px/f"
+2968,1,line2_word1,842,385,0.382,5,2,10.6,"word template cut on f2985; spot = drift path (+2.2, -3.0) px/f"
+2970,1,line2_word1,846,379,0.452,5,5,2.0,"word template cut on f2985; spot = drift path (+2.2, -3.0) px/f"
+2972,1,line2_word1,850,373,0.134,-5,5,-10.3,"word template cut on f2985; spot = drift path (+2.2, -3.0) px/f"
+2975,1,line2_word1,857,364,0.450,-5,-5,-1.0,"word template cut on f2985; spot = drift path (+2.2, -3.0) px/f"
+2977,1,line2_word1,861,358,0.567,-5,-1,19.9,"word template cut on f2985; spot = drift path (+2.2, -3.0) px/f"
+2980,1,line2_word1,868,349,0.713,-5,0,20.7,"word template cut on f2985; spot = drift path (+2.2, -3.0) px/f"
+2982,1,line3_letter1,793,396,,,,11.5,inner-minus-ring luma; high-pass max 65.6; spot read off crops/crop_790_300_260x110_02964-02993.jpg on f2987 and moved with line 2
+2985,1,line3_letter1,805,388,,,,12.4,inner-minus-ring luma; high-pass max 13.8; spot read off crops/crop_790_300_260x110_02964-02993.jpg on f2987 and moved with line 2
+2987,1,line3_letter1,825,381,,,,24.7,inner-minus-ring luma; high-pass max 25.0; spot read off crops/crop_790_300_260x110_02964-02993.jpg on f2987 and moved with line 2
+2990,1,line3_letter1,849,376,,,,27.9,inner-minus-ring luma; high-pass max 27.9; spot read off crops/crop_790_300_260x110_02964-02993.jpg on f2987 and moved with line 2
+2992,1,line3_letter1,882,370,,,,33.2,inner-minus-ring luma; high-pass max 35.2; spot read off crops/crop_790_300_260x110_02964-02993.jpg on f2987 and moved with line 2

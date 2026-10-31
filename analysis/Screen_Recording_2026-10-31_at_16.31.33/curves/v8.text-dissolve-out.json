@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.text-dissolve-out",
+ "file": "curves/v8.text-dissolve-out.csv",
+ "property": "opacity",
+ "unit": "summed headline ink (248 - luma), x1000",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c4_T4_text_ink_u.csv",
+ "column": "headline_ink",
+ "sampled_frames": [
+  2460,
+  2497
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 2240.0,
+ "to_value": 0.0,
+ "active_frames": [
+  2478,
+  2497
+ ],
+ "measured_duration_frames": 19,
+ "bezier": {
+  "x1": 0.6904,
+  "y1": 0.4656,
+  "x2": 0.0,
+  "y2": 0.2462,
+  "durationInFrames": 17,
+  "delay": 1.141,
+  "built_duration_frames": 17,
+  "rmse": 0.0307
+ },
+ "spring": {
+  "stiffness": 110.357,
+  "damping": 14.788,
+  "mass": 1,
+  "damping_ratio": 0.7039,
+  "built_duration_frames": 34,
+  "rmse": 0.3217
+ },
+ "recommended": "bezier",
+ "note": "chat message 2 lines fade out letter by letter, left part first (sub line 2 left half leads by about 4 f); headline ink 2213 -> 42 by f2497 while the avatar tile flies off; ink after f2494 includes the passing tile",
+ "chunk_curve_id": "v8.text-dissolve-out.v8c4"
+}

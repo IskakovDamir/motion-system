@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.logo-spin-while-typing.v7c4",
+  "file": "curves/v7.logo-spin-while-typing.v7c4.csv",
+  "property": "rotation",
+  "unit": "degrees clockwise (unwrapped; the mark is rotationally symmetric with a 60 deg period, so it is matched modulo 60 deg)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_logo1_cx_spin_2342-2440_newpic.csv",
+  "column": "spin_cw_deg",
+  "sampled_frames": [
+    2342,
+    2440
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 11.0,
+  "to_value": 373.5,
+  "active_frames": [
+    2342,
+    2431
+  ],
+  "measured_duration_frames": 89,
+  "bezier": {
+    "x1": 0.0673,
+    "y1": 0.0817,
+    "x2": 0.0,
+    "y2": -0.0004,
+    "durationInFrames": 90,
+    "delay": 0.164,
+    "built_duration_frames": 88,
+    "rmse": 0.0089
+  },
+  "spring": {
+    "stiffness": 5.94,
+    "damping": 6.202,
+    "mass": 1,
+    "damping_ratio": 1.2724,
+    "built_duration_frames": 139,
+    "rmse": 0.2116
+  },
+  "recommended": "bezier",
+  "note": "agent logo icon spins clockwise at a constant 4.0 deg/frame (240 deg/s) from the cut (already turning on the first picture f2342) while its line types, one full turn plus 2 deg (11 -> 373.5 deg), and stops with a short ease-out at ~f2434 (f2429 359.5, f2431 368.5, f2434 373.5, f2436 374, f2440 372); angle = best-match rotation of a 128 px normalised logo patch vs f2369 (0.5 deg steps), unwrapped modulo 60 deg; continuous through the hidden hard cut f2392 (x0.49 pull-back); motion starts before the cut, so there is no rest before and the curve is a near-linear ramp"
+}

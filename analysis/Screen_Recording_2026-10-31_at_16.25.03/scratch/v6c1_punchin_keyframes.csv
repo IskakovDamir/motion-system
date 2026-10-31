@@ -1,0 +1,13 @@
+frame,time_s,unique,scale,zoom_cx,zoom_cy,source
+293,4.8833,1,1.0,,,"full layout (template lower word s1.00, score 1.00)"
+296,4.9333,1,1.0,,,full layout
+298,4.9667,1,1.0,,,full layout
+301,5.0167,1,1.0,,,full layout
+303,5.0500,1,1.0,,,full layout
+306,5.1000,1,1.25,174,852,lower word box 44-936 x 684-852 vs 70-783 x 717-852 at f301 (width x1.251; bottom unchanged)
+308,5.1333,1,1.25,174,852,same framing as f306 (template lower word s1.25 score 1.00)
+311,5.1833,1,1.97,1538,855,template sub-caption s1.97 score 0.97 (v6c1_zoomthrough_subcap)
+313,5.2167,1,3.85,1539,859,grey sub-caption letters rows 309-539 (231 px) vs 716-775 (60 px) at f301; last letter 366-577 vs 1235-1289
+316,5.2667,1,2.30,108,9,"top words box 20-883 wide, bottom 281 vs 70-445, bottom 127 at f298 (width x2.30)"
+318,5.3000,1,,,,empty field (no layout element visible)
+321,5.3500,1,,,,empty field

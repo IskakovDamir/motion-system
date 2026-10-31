@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.card-content-crossfade.out.v4c2",
+  "file": "curves/v4.card-content-crossfade.out.v4c2.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 of a text-only band (44 = text at full opacity, 17 = gone)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/c2_t1_morph_bands.csv",
+  "column": "line1_left_luma",
+  "sampled_frames": [
+    970,
+    1029
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 44.17,
+  "to_value": 17.0,
+  "active_frames": [
+    983,
+    1010
+  ],
+  "measured_duration_frames": 27,
+  "bezier": {
+    "x1": 0.3855,
+    "y1": 1.1261,
+    "x2": 1.0,
+    "y2": 0.9647,
+    "durationInFrames": 28,
+    "delay": 0.583,
+    "built_duration_frames": 24,
+    "rmse": 0.0295
+  },
+  "spring": {
+    "stiffness": 133.86,
+    "damping": 22.338,
+    "mass": 1,
+    "damping_ratio": 0.9653,
+    "built_duration_frames": 28,
+    "rmse": 0.0242
+  },
+  "recommended": "spring",
+  "note": "outgoing monospace text line inside the same card (band x 15-90 / y 74-90, no icon there)"
+}

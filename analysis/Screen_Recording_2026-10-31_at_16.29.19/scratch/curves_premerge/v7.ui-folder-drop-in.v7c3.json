@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.ui-folder-drop-in.v7c3",
+  "file": "curves/v7.ui-folder-drop-in.v7c3.csv",
+  "property": "position-y",
+  "unit": "% of frame height (label of folder 1, zoom-compensated to the f1690 window scale; 23.8% -> 39.0% H)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p2_f1label_comp.csv",
+  "column": "cy_comp_pct",
+  "sampled_frames": [
+    1736,
+    1759
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 23.79,
+  "to_value": 38.984,
+  "active_frames": [
+    1736,
+    1747
+  ],
+  "measured_duration_frames": 11,
+  "bezier": {
+    "x1": 0.4349,
+    "y1": 0.6577,
+    "x2": 0.2554,
+    "y2": 1.0433,
+    "durationInFrames": 16,
+    "delay": -0.004,
+    "built_duration_frames": 11,
+    "rmse": 0.0013
+  },
+  "spring": {
+    "stiffness": 754.754,
+    "damping": 48.382,
+    "mass": 1,
+    "damping_ratio": 0.8805,
+    "built_duration_frames": 10,
+    "rmse": 0.0255
+  },
+  "recommended": "bezier",
+  "note": "P2 content swap, incoming half: the folder grid drops down into place from above (+140 px = +15.2% H in window units) and settles by ~f1749; the first folder label is visible from f1736 (icons hidden until f1740), then the 7 folder icons pop in one per picture in reading order (f1740 x2, f1742, f1744, f1747, f1749, f1751) while the panel glow decays; first picture of each icon is brighter and vertically compressed (template scale ~0.88); template on the folder-1 label (ref f1752, scale search 0.90-1.15), y compensated for the simultaneous centred camera push-in (O = 816, 457 px; zoom from v7c3_p2_rise_scale.csv); motion starts at the first visible picture f1736 (from-value)"
+}

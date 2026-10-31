@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.layout-split-whip-out.v6c2",
+  "file": "curves/v6.layout-split-whip-out.v6c2.csv",
+  "property": "position-x",
+  "unit": "px (left edge of headline line 2; last sample = last picture before it leaves the frame)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c2_P11_exit_split.csv",
+  "column": "l2_left",
+  "sampled_frames": [
+    1051,
+    1068
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 734.0,
+  "to_value": 1256.0,
+  "active_frames": [
+    1061,
+    1068
+  ],
+  "measured_duration_frames": 7,
+  "bezier": {
+    "x1": 0.7246,
+    "y1": 0.1641,
+    "x2": 0.8186,
+    "y2": -0.0,
+    "durationInFrames": 7,
+    "delay": -0.18,
+    "built_duration_frames": 7,
+    "rmse": 0.0123
+  },
+  "spring": {
+    "stiffness": 2021.044,
+    "damping": 39.244,
+    "mass": 1,
+    "damping_ratio": 0.4365,
+    "built_duration_frames": 12,
+    "rmse": 0.6319
+  },
+  "recommended": "bezier",
+  "note": "P11 exit, split whip-out: line 2 (2 words) whips out to the right with growing horizontal blur, accelerating to its last picture f1068 (left edge 1256 px, centroid 1505 px) and gone by f1071; ease-in cut at its fastest picture, so 1.0 = the last measured position, not a rest; line 1 leaves to the left word by word (words start about 2-3 f apart) and the arrow to the right from f1066"
+}

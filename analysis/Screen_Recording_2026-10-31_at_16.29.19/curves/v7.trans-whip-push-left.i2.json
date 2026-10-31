@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-whip-push-left.i2",
+  "file": "curves/v7.trans-whip-push-left.i2.csv",
+  "property": "position-x",
+  "unit": "px of 1622 (template centre of the chip label + send button; 705.5 = 43.5% W -> 521 = 32.1% W)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c2_whip_in_1196_tmpl.csv",
+  "column": "cx",
+  "sampled_frames": [
+    1196,
+    1229
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 705.5,
+  "to_value": 521.0,
+  "active_frames": [
+    1196,
+    1224
+  ],
+  "measured_duration_frames": 28,
+  "bezier": {
+    "x1": 0.0062,
+    "y1": 0.4564,
+    "x2": 0.2945,
+    "y2": 0.9573,
+    "durationInFrames": 27,
+    "delay": 2.888,
+    "built_duration_frames": 23,
+    "rmse": 0.0701
+  },
+  "spring": {
+    "stiffness": 161.732,
+    "damping": 26.198,
+    "mass": 1,
+    "damping_ratio": 1.03,
+    "built_duration_frames": 27,
+    "rmse": 0.0226
+  },
+  "recommended": "spring",
+  "note": "incoming half of the f1196 leftward whip (P3 -> P4 close-up, cut c028): after the hard cut at f1196 the close-up arrives already moving left at about 13 px/frame (52.5 px over the first 4 frames, about the outgoing speed of 12.8 px/frame) with 51 px of horizontal blur and decelerates smoothly to rest by f1224-f1226; template on the chip label + send button (scratch/v7c2_whip_in_1196_tmpl.csv: ref f1221, scales 0.97-1.03; score 0.69 at f1196 in the blur, 0.84-1.0 after); motion starts at the cut. Second variant of the incoming half: the f1487 instance (curve v7.trans-whip-push-left.v7c2) arrives 3.7x faster than its outgoing end and covers 40% of its move in 2 frames; applied to these samples it misses (raw-time rmse 0.10 at D=30, 0.12 at D=25), so this instance is stored separately (probably a second technique: a speed-matched whip-in). The spring damping is loosely constrained (26-34 give shape rmse 0.020-0.023); the inspector's samples (scratch/v7c2_whip_in_1196.csv) and an independent disc track (scratch/review_v7c2_disc.csv) give spring {165.8, 27.95} / {161.9, 26.07}"
+}

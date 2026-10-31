@@ -1,0 +1,676 @@
+{
+  "video": "Z4upJDBR5KbFtmrL",
+  "key": "v4",
+  "chunk": "v4c2",
+  "frames": [
+    930,
+    1687
+  ],
+  "cut_decisions": [],
+  "boundaries": [
+    {
+      "start": 945,
+      "end": 1015,
+      "type": "pull-back-morph",
+      "frames": 71,
+      "shared": "the hub card and its name label stay (same card, hub centre y 575; 318x198 -> 175x109 px as the canvas scales 1.000 -> 0.553 and pans the hub from x 49.9% to 25.6% W); the six card rectangles stay and become icon tiles (their text cross-dissolves into one centred agent logo icon, the hub's content into the brand-mark sphere); dashed spokes stay; a second team slides in from the right edge while fading in, its hub entering the frame at f985-f986 still carrying UI content that cross-dissolves into its avatar icon with the cards; the entering team's terminals stay live (status spinners swapping every 5 f or 6 f, command and status lines appearing in single frames f966-f988) until the cross-dissolve fades their text (f995-f997); the first packet dot pops in on the top-left tile at f990 and crosses the top row to the far-right tile (f990-f1021); the headline is swapped (old fades out in place, new drops in 10 px)",
+      "technique": "v4.trans-pullback-morph",
+      "curve": "v4.cam-pullback.v4c2",
+      "detail": "detail/soft_945-1015",
+      "components": [
+        "v4.text-headline-fade-out",
+        "v4.cam-pullback",
+        "v4.layout-team-stagger-fade",
+        "v4.text-headline-drop-in",
+        "v4.card-content-crossfade"
+      ]
+    },
+    {
+      "start": 1114,
+      "end": 1190,
+      "type": "pull-back-reveal",
+      "frames": 77,
+      "shared": "the whole two-team network stays and becomes the middle-centre pair of a 4x3 team grid (canvas scale 1.000 -> 0.513 about (960, 575), no pan: hub centres 492 -> 720 px and 1427 -> 1200 px, y 575); ten new teams fade in around it, 3 f apart from f1129 (middle row first, then the top row left to right, then the bottom row left to right); the headline is swapped (same position and style)",
+      "technique": "v4.trans-pullback-reveal",
+      "curve": "v4.cam-pullback.wide.v4c2",
+      "detail": "detail/soft_1114-1190",
+      "components": [
+        "v4.text-headline-fade-out",
+        "v4.cam-pullback",
+        "v4.layout-team-stagger-fade",
+        "v4.text-headline-drop-in"
+      ]
+    },
+    {
+      "start": 1294,
+      "end": 1327,
+      "type": "morph",
+      "frames": 34,
+      "shared": "all 84 node centres (12 hubs + 72 tiles) become the centres of 84 dark flat-top hexagons (56-58 x 50-52 px) at the same positions (within 1 px); background; no camera move. f1294: every packet dot and every long inter-team connector is cut in one frame (only the hub-to-tile spokes stay); from f1295 the hub labels and spokes fade; a radial wave (62 px/f) shrinks each card about its centre while it fades and grows a dark hexagon (drawn in front) at the same centre while it fades in; headline fades f1301-f1311",
+      "technique": "v4.trans-tile-hex-morph",
+      "curve": "v4.trans-tile-hex-morph.v4c2",
+      "detail": "detail/soft_1294-1327",
+      "components": [
+        "v4.trans-tile-hex-morph",
+        "v4.text-headline-fade-out"
+      ]
+    },
+    {
+      "frame": 1463,
+      "type": "hard-cut",
+      "note": "jump cut found on the sheets (no detector fired: content_val 0.74): the single hexagon (104x94 px, x 959.5) jumps from y 574.5 to y 499.5 (-75 px = -6.9% H) between f1462 and f1463 and two closed eye bars appear in the same frame",
+      "detail": "detail/cut_1463_jump"
+    }
+  ],
+  "segments": [
+    {
+      "start": 930,
+      "end": 980,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": true,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "provisional_id": "S04",
+      "summary": "hub-and-spoke diagram (white hub card with a 1-word label, six dark agent cards, dashed spokes) under a centred 1-line headline; static f930-f944, then the headline fades out in place (f945-f956) as the pull-back morph begins"
+    },
+    {
+      "start": 981,
+      "end": 1152,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "provisional_id": "S05",
+      "summary": "two-team network at canvas scale 0.553 (two white hubs with 1-word labels, 12 dark icon tiles, dashed connectors) under a new 1-line headline; the first packet hop already crosses the top row in T4 (f990-f1021); camera settles f1015, then packet dots hop node to node and connectors darken with traffic; headline fades out from f1114"
+    },
+    {
+      "start": 1153,
+      "end": 1310,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "provisional_id": "S06",
+      "summary": "4x3 grid of 12 teams (12 hubs, 72 tiles) at canvas scale 0.284 of S04 behind a centred 1-line headline; packets hop again from f1160 during the zoom, camera at rest from f1188, dense packet traffic (11-29 dots); at f1294 every dot and long connector is cut in one frame, from f1295 each card shrinks and fades while a hexagon grows in its place, labels, spokes and headline fade"
+    },
+    {
+      "start": 1311,
+      "end": 1462,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "provisional_id": "S07",
+      "summary": "84 dark hexagons only: short hold, outward-staggered swarm into a honeycomb disc at the frame centre, ring-by-ring collapse into one growing cell"
+    },
+    {
+      "start": 1463,
+      "end": 1687,
+      "class": "GRAPHICS",
+      "continues_from_previous_chunk": false,
+      "continues_into_next_chunk": false,
+      "live_confirmed_on": [],
+      "provisional_id": "S08",
+      "summary": "end card: brand mark (hexagon) with eye bars that open, slides left while the 1-word wordmark's letters fade in and rise 17 px one after another, 1-line grey tagline rises in below, static hold to the last frame"
+    }
+  ],
+  "techniques": [
+    {
+      "id": "v4.text-headline-fade-out",
+      "category": "text",
+      "description": "the top-centre headline leaves in place: opacity 1 -> 0 on an accelerating ease-in, no move, no blur",
+      "instances": [
+        [
+          945,
+          957
+        ],
+        [
+          1114,
+          1125
+        ],
+        [
+          1301,
+          1312
+        ]
+      ],
+      "reference_frames": [
+        1114,
+        1125
+      ],
+      "measured": {
+        "duration_frames": 12,
+        "easing": "bezier(0.519, 0.014, 0.776, 0.479) D=12, rmse 0.0025 (spring does not fit, rmse 0.50)",
+        "values": "opacity 0.996 f1114, 0.952 f1116, 0.808 f1119, 0.498 f1122, 0.186 f1124, 0 f1125; instance f945: 0.994 f945, 0.823 f950, 0.230 f955, 0.045 f956, 0 f957; instance f1301: 0.981 f1301, 0.593 f1308, 0.147 f1311, 0 f1312; centroid fixed (y 78.3)"
+      },
+      "curves": [
+        "v4.text-headline-fade-out.v4c2"
+      ]
+    },
+    {
+      "id": "v4.text-headline-drop-in",
+      "category": "text",
+      "description": "the next 1-line headline appears 9-10 frames after the old one is gone, fades in while dropping 10 px into its rest position (screen-fixed, not part of the zooming canvas)",
+      "instances": [
+        [
+          965,
+          982
+        ],
+        [
+          1135,
+          1150
+        ]
+      ],
+      "reference_frames": [
+        966,
+        982
+      ],
+      "measured": {
+        "duration_frames": 14,
+        "easing": "opacity bezier(0.273, 1.121, 0.468, 0.975) D=24 (built 14 f to 98%), spring {539.5, 46.48, mass 1} (zeta 1.0); y bezier(0.516, 1.108, 1.000, 0.808) D=11",
+        "values": "opacity 0.14 f966, 0.63 f970, 0.85 f973, 0.96 f977, 1.0 f992; y -10 px (-0.93% H) at the first visible frame, whole-pixel steps -10, -8, -7, -5, -4, -3, -3, -2, -1, -1, -1, 0 (f966-f977); second instance f1135-f1150: opacity bezier(0.235, 1.029, 0.414, 1.028) D=24, same 10 px drop (rest f1146)"
+      },
+      "curves": [
+        "v4.text-headline-drop-in.v4c2",
+        "v4.text-headline-drop-in.y.v4c2"
+      ]
+    },
+    {
+      "id": "v4.cam-pullback",
+      "category": "cam",
+      "description": "the whole network canvas zooms out (camera pull-back) on a slow symmetric S-curve to show more of the same network; first instance also pans the hub left, second zooms about a fixed point",
+      "instances": [
+        [
+          959,
+          1015
+        ],
+        [
+          1130,
+          1188
+        ]
+      ],
+      "reference_frames": [
+        961,
+        1014
+      ],
+      "measured": {
+        "duration_frames": 53,
+        "easing": "scale bezier(0.541, 0.089, 0.353, 1.057) D=53 (rmse 0.009; spring rmse 0.12); pan bezier(0.543, 0.250, 0.341, 0.995) D=46 (rmse 0.007); second instance scale bezier(0.543, 0.156, 0.362, 0.993) D=54 (rmse 0.008)",
+        "values": "T4: scale 1.000 -> 0.553 about the hub centre (hub y 574 -> 575.6), hub x 958 -> 491.5 px (49.9% -> 25.6% W), first move f959, fit starts f961.3 (scale) / f963.3 (pan), at rest f1012-f1013, pan peak 22.5 px/f f981-f986; T5: scale 1.000 -> 0.513 about (960, 575) = (50.0% W, 53.2% H), pivot measured 960.0 +-1 px, first move f1130, fit start f1132.2, at rest f1187-f1188, fastest f1158-f1159; combined S04 -> S06 scale 0.284"
+      },
+      "curves": [
+        "v4.cam-pullback.v4c2",
+        "v4.cam-pullback.pan-x.v4c2",
+        "v4.cam-pullback.wide.v4c2"
+      ]
+    },
+    {
+      "id": "v4.layout-team-stagger-fade",
+      "category": "layout",
+      "description": "while the camera pulls back, each new team (a hub plus its six tiles and their connectors) fades in as one unit on an ease-out; in T5 ten teams ripple in on a 3-frame cadence, the middle row first (left, right), then the top row left to right, then the bottom row left to right; the three teams that start off-frame are still fading when they enter the frame and finish on screen",
+      "instances": [
+        [
+          960,
+          977
+        ],
+        [
+          1129,
+          1173
+        ]
+      ],
+      "reference_frames": [
+        1150,
+        1166
+      ],
+      "measured": {
+        "duration_frames": 17,
+        "easing": "bezier(0.288, 0.879, 0.604, 0.972) D=18, rmse 0.020; spring {428.8, 59.34, mass 1} rmse 0.058",
+        "values": "tile-back luma per frame from the start: 210, 179, 150, 126, 107, 88, 74, 61, 51, 44, 37, 30, 26, 22, 19, 18, 17 (bg 246, opaque 17); T4: one team from f960; T5 starts (3 f cadence): middle-left about f1129-f1130 and middle-right about f1132 (inferred: tile luma 25 and 43 when they enter the frame at f1141, estimates f1128.6-f1130.0 and f1131.8-f1133.0), top-left about f1135 (inferred: enters at f1141 at luma 75 = opacity 0.75 and fades on screen 61, 51, 44, 37, 30, 26, 24, 22, 19, 18 to 17 at f1152; estimates f1135.0-f1135.5), then measured directly (246 before, 210 in the first changed frame): top row f1138 (hub x 720), f1141 (1200), f1144 (1680, on screen from f1141), bottom row f1147 (240, on screen from f1141), f1150 (720), f1153 (1200), f1156 (1680); last team opaque f1172-f1173 (scratch/c2_r2_t5_team_fades.csv)"
+      },
+      "curves": [
+        "v4.layout-team-stagger-fade.v4c2"
+      ]
+    },
+    {
+      "id": "v4.card-content-crossfade",
+      "category": "card",
+      "description": "the content of every card and of both hubs cross-dissolves in the same frame: UI text (title, monospace lines, status; on the hubs a header row, a message pill and a status line) fades out while one large centred icon (agent logo on the cards, brand-mark sphere or avatar on the hubs) fades in; the card rectangles keep their size; starts at the fastest point of the pull-back; the second hub is already dissolving when it enters the frame",
+      "instances": [
+        [
+          984,
+          1014
+        ]
+      ],
+      "reference_frames": [
+        984,
+        1014
+      ],
+      "measured": {
+        "duration_frames": 31,
+        "easing": "icon in: bezier(0.318, 0.994, 0.614, 0.906) D=32 (built 30 f), rmse 0.025 / spring {136.5, 30.58, mass 1} (zeta 1.31) rmse 0.030 (re-tracked); text out: spring {133.9, 22.34, mass 1} rmse 0.024 / bezier(0.386, 1.126, 1.000, 0.965) D=28",
+        "values": "icon opacity (projection of the settled icon pattern, six original cards registered per frame by their own edges, mean; spread under 0.015): 0.03 f984, 0.20 f986, 0.49 f990, 0.69 f994, 0.82 f998, 0.89 f1002, 0.94 f1006, 0.96 f1010, 0.99 f1014; 50% f990.1, 90% f1002.8, within 2% from f1014; text band 44 -> 17, gone f1008-f1010; all six original cards, the three entering cards and the hub start at f984 (no stagger); hub pill gone f1009-f1012, sphere solid f1011; second hub (enters the frame f985-f986): avatar 0.19 f986, 0.51 f990, 0.80 f996, 0.94 f1002 of its settled darkness, pill gone f1011, header row gone f1009; the entering cards' status spinners are mid-cycle at f984 (top card dot pattern p4, middle card plus glyph) and keep swapping under the fading text until about f995-f997"
+      },
+      "curves": [
+        "v4.card-content-crossfade.v4c2",
+        "v4.card-content-crossfade.out.v4c2"
+      ]
+    },
+    {
+      "id": "v4.ui-spinner-glyph-cycle",
+      "category": "ui",
+      "description": "(device defined in v4c1) status spinners swap glyphs in place in steps, braille-style dots every 5 f on the second agent kind and a star glyph every 6 f on the first; in T4 the entering second team's spinners keep swapping while the team slides in and while its text cross-dissolves out, so they are still cycling when the dissolve starts",
+      "instances": [
+        [
+          966,
+          995
+        ],
+        [
+          974,
+          997
+        ],
+        [
+          988,
+          996
+        ],
+        [
+          985,
+          996
+        ]
+      ],
+      "reference_frames": [
+        971,
+        992
+      ],
+      "measured": {
+        "duration_frames": 0,
+        "easing": "step",
+        "values": "inner card column of the entering team (S04-canvas x 1907-2207) and the second hub, camera-stabilised (scratch/c2_t1_camera.csv, refined per frame by registering each status label): top card (braille-style dots of v4c1's 10-pattern turn) p1 f966-f970, p2 f971-f975, p3 f976-f980, p4 f981-f985, p5 f986-f990, p6 f991-f995 (swaps f971, f976, f981, f986, f991: every 5 f); middle card (star sequence) dot f974-f979, plus f980-f985, thin star f986-f991, six-point star f992-f997 (swaps f980, f986, f992: every 6 f, the first 6 f after its line appears); bottom card p1 f988-f992, p2 f993-f996 (swap f993); second hub p8 f985-f989, p9 f990-f995, p10 f996 (swaps f990, f996); glyph contrast 70-110 levels at f984, falling with the cross-dissolve to under 6-20 levels after f995-f997; the outer card column enters at f993-f994 with running spinners too, not timed (scratch/c2_r2_t4_spinners.csv, detail/spinner_t4_00964-00999.jpg)"
+      },
+      "curves": []
+    },
+    {
+      "id": "v4.ui-terminal-line-step",
+      "category": "ui",
+      "description": "(device defined in v4c1) terminal and agent-card output appears one whole line per frame at fixed positions; in T4 the entering second team's cards still receive new command and status lines, the status line 3 f after its command line",
+      "instances": [
+        [
+          966,
+          966
+        ],
+        [
+          971,
+          974
+        ],
+        [
+          985,
+          988
+        ]
+      ],
+      "reference_frames": [
+        974,
+        988
+      ],
+      "measured": {
+        "duration_frames": 0,
+        "easing": "step",
+        "values": "top card status line f966 (its glyph cell on screen and empty at f965; its command line still off-frame); middle card command line f971 (absent f970), status line f974; bottom card (prompt sign only until then) command line f985, status line f988, both while the text layer is fading: they appear at its current opacity (command ink 162 at f985 against 175 for the middle card's settled command line, then 149/155, 133/138, 113/119 f986-f988); ink = 98th percentile minus median of each camera-stabilised line box (scratch/c2_r2_t4_lines.csv); stills type/S5-T4lines_f00974.png, type/S5-T4lines_f00988.png"
+      },
+      "curves": []
+    },
+    {
+      "id": "v4.particle-edge-packets",
+      "category": "particle",
+      "description": "packet dots hop between nodes along straight dashed connectors: a dot pops in at full size on the source node, travels with a symmetric ease-in-out and sinks into the destination node; the connector that carries traffic darkens over about 20 f and fades back over about 25 f; traffic starts inside T4 (first hop f990), pauses after about f1108, resumes during the T5 zoom (f1160) and grows with the zoom-out; every dot is cut in one frame at f1294",
+      "instances": [
+        [
+          990,
+          1021
+        ],
+        [
+          1016,
+          1037
+        ],
+        [
+          1027,
+          1055
+        ],
+        [
+          1037,
+          1068
+        ],
+        [
+          1057,
+          1085
+        ],
+        [
+          1160,
+          1293
+        ]
+      ],
+      "reference_frames": [
+        1037,
+        1068
+      ],
+      "measured": {
+        "duration_frames": 32,
+        "easing": "bezier(0.583, 0.024, 0.397, 0.998) D=32, rmse 0.022 (spring rmse 0.34)",
+        "values": "S05 dot 14 px (0.73% W; 25 px at the S04 scale), dark (luma about 40-60) or grey (125-147); first hop in T4: grey dot pops in on the top-left tile centre f990, crosses the top row 1596 px (S05 x 160.7 -> about 1757) in about 31 f, camera-compensated speed 0.7-3.7 px/f f991-f993, peak 128.5 px/f at f1008, landing 39 -> 19 px/f f1016-f1019, merged into the destination icon about f1021; hop 935 px f1037 -> about f1068, peak 70 px/f; hop 320 px f1027-f1055, peak 26 px/f; hop about 1595 px f1057-about f1085, peak 82-90 px/f; 0-2 dots visible in S05 (mean 1.3); during the T5 zoom 1-3 moving dots per frame f1160-f1164 and 6-12 f1165-f1188 (a dark dot f1168-f1177 runs up-left against the zoom, 107 -> 38 S05-canvas px/f); 11-29 in S06 (mean 18.5, 7 px); connector darkness (246 - strip luma) 0 -> 15 in 22 f, held, 15 -> 0 in 26 f; all dots (and every long inter-team connector) removed in one frame at f1294"
+      },
+      "curves": [
+        "v4.particle-edge-packets.v4c2"
+      ]
+    },
+    {
+      "id": "v4.trans-tile-hex-morph",
+      "category": "trans",
+      "description": "composite morph: every packet dot and every long inter-team connector is cut in one frame; then a radial wave from the frame centre reaches each node and its card (tile or white hub card, icon included) shrinks about the node centre while it fades out, while a small dark flat-top hexagon at the same centre, drawn in front, grows while it fades in; edges stay sharp; the hub labels and the remaining spokes fade all at once, the headline fades out",
+      "instances": [
+        [
+          1294,
+          1327
+        ]
+      ],
+      "reference_frames": [
+        1294,
+        1327
+      ],
+      "measured": {
+        "duration_frames": 17,
+        "easing": "card opacity: bezier(0.468, 1.173, 1.000, 0.954) D=19 (built 16 f), rmse 0.029 / spring {230.6, 27.32, mass 1} rmse 0.036; card scale (visible part): bezier(0.520, 0.931, 0.830, 0.853) D=14, rmse 0.022 / spring {244.8, 27.04} rmse 0.042; hexagon scale: bezier(0.351, 0.941, 0.688, 0.974) D=18 (built 15 f), rmse 0.0024 / spring {363.6, 36.84} rmse 0.042; hexagon opacity: spring {296.7, 33.14, mass 1} rmse 0.026 / bezier(0.379, 1.060, 0.950, 0.960) D=18 rmse 0.047; centre luma (icon -> solid hexagon): spring {164.2, 20.76, mass 1} rmse 0.008 / bezier(0.319, 0.308, 0.460, 0.889) D=18",
+        "values": "f1294 cut: 7873 px lighten by more than 20 levels (113 darken; f1295: 723 / 59, the encoder-noise level); per node start f1294.2 + 0.0161 x distance (px) from (960, 575): wave about 62 px/f (3.2% W per frame), centre tiles f1295, hubs at 240 px f1298, corners f1309.5; card 50% opacity f1299.7 (centre, 70 px) and f1314.3 (corner, 979 px); corner card: scale 1 -> 0.56 (86 x 50 -> 48 x 28 px) f1309-f1324 and opacity 0.93 f1310, 0.44 f1315, 0.17 f1320, 0.05 f1324, 0.02 f1325, after which it cannot be sized (the end of the shrink is not visible); hexagon: first sizable at scale 0.58-0.61 (opacity 0.2-0.3; centre node 33 x 30 px at f1297, corner 35 x 32 px at f1312) -> 1.0 = 57 x 52 px (centre f1316, corner within 2% from f1327), opacity 0 -> 1 in about 17 f, fitted blur 0-1.1 px; hub labels 1 -> 0 in place f1295-f1308 (all at once); spokes 8-9 -> 0 darkness f1295-f1304 near the centre, to about f1312 at the top-left hub; outermost hexagons settled f1326-f1327; 84 hexagons 56-58 x 50-52 px"
+      },
+      "curves": [
+        "v4.trans-tile-hex-morph.v4c2",
+        "v4.trans-tile-hex-morph.tile-out.v4c2",
+        "v4.trans-tile-hex-morph.tile-scale.v4c2",
+        "v4.trans-tile-hex-morph.hex-scale.v4c2",
+        "v4.trans-tile-hex-morph.hex-opacity.v4c2"
+      ]
+    },
+    {
+      "id": "v4.particle-swarm-converge",
+      "category": "particle",
+      "description": "the 84 hexagons fly from the grid into a tight honeycomb disc at the frame centre; launches ripple outward from the centre, each flight is a near-straight ease-in-out that lands with an overshoot of about 1 px; because slots are not radially in line with the starts, the cloud reads as a swirl",
+      "instances": [
+        [
+          1329,
+          1386
+        ]
+      ],
+      "reference_frames": [
+        1343,
+        1386
+      ],
+      "measured": {
+        "duration_frames": 49,
+        "easing": "corner hexagon: bezier(0.568, 0.019, 0.356, 1.089) D=49, rmse 0.007 (spring rmse 0.30); no whole-cloud curve (see uncertain)",
+        "values": "first 1.5 px move f1329 (71 px from the centre), f1337 (720 px), f1343 (978 px): launch wave about 65 px/f; corner (1848,166) -> (1217,352), 658 px, peak 37.6 px/f at f1364, rest f1386 (x 1215 f1386-f1390, 1216 f1391-f1392); cloud ink rms 621 px (f1329) -> 249 px (f1383), with an overlap dip to 242 px at f1372 while hexagons merge (84 blobs to f1337, 36 at f1364, 84 again from f1382); honeycomb: 84 cells 57-58 px, pitch 73.7 px (3.8% W), outer centres at r 341 px (17.8% W), centred (959.5, 574.5)"
+      },
+      "curves": [
+        "v4.particle-swarm-converge.v4c2"
+      ]
+    },
+    {
+      "id": "v4.particle-ring-collapse",
+      "category": "particle",
+      "description": "the honeycomb folds ring by ring into one cell: in each step the outermost cells are pulled inward and either fly into the next cell inward and merge with it within 2-3 frames or move into a gap while they shrink to dots and vanish; in the 19 -> 7 step the two halves run one after the other (six corner cells absorbed, then six edge cells shrink away), so the count holds at 13 for 9 frames; the surviving cells grow; the centre cell grows on one smooth S-curve across all steps and becomes the brand mark",
+      "instances": [
+        [
+          1385,
+          1452
+        ]
+      ],
+      "reference_frames": [
+        1393,
+        1449
+      ],
+      "measured": {
+        "duration_frames": 68,
+        "easing": "centre cell width bezier(0.635, 0.018, 0.461, 0.841) D=68, rmse 0.007 (spring rmse 0.35); steps are quick inward pulses on top",
+        "values": "cell count 84 -> 55 -> 31 -> 19 -> 13 -> 7 -> 1 (19 cells f1422-f1427 plus the previous step's 12 dots at f1425-f1426; 13 f1428-f1436, the shrinking edge cells counted until they vanish; 7 f1438-f1444; one from f1445); steps start f1396, f1409, f1419, f1427, f1436 (13, 10, 8, 9 f apart), single cell f1445; radial-flow peaks f1400, f1411, f1421, f1429, f1439; merged blobs and 11-12 shrinking dots appear in every step (f1399-f1407, f1411-f1418, f1421-f1426); f1427 step: six corner cells (r 205 px at f1424, 188 at f1427) absorbed into the six inner-ring cells, merged blobs f1428-f1429, single hexagons again f1430 (19 -> 13); six edge cells move in r 183 -> 90 px and shrink 79 -> 3 px into the gaps, dots from f1434, gone f1437-f1438 (13 -> 7); median cell width 58 -> 62 -> 71 -> 82 -> 88 -> 102 px over the 84-, 55-, 31-, 19-, 13-cell and single-cell states (in the 7-cell state the ring cells shrink 67 -> 5 px around a 98 px centre); last ring 88 -> 5 px (bbox width) moving in from r 117 to 56 px in 9 f (f1435-f1444); scratch/c2_r2_s7_collapse_comps.csv; centre cell area-equivalent width 59.0 -> 106.6 px (3.1% -> 5.6% W), bbox 58x52 -> 104x94"
+      },
+      "curves": [
+        "v4.particle-ring-collapse.v4c2"
+      ]
+    },
+    {
+      "id": "v4.logo-eye-open",
+      "category": "logo",
+      "description": "the brand mark arrives (jump cut) with two short horizontal eye lines, holds them 6 frames, then the lines open vertically about their centre line into tall pills",
+      "instances": [
+        [
+          1463,
+          1478
+        ]
+      ],
+      "reference_frames": [
+        1468,
+        1478
+      ],
+      "measured": {
+        "duration_frames": 10,
+        "easing": "spring {1080.8, 65.55, mass 1} (zeta 1.0) rmse 0.022; bezier(0.289, 1.021, 0.558, 0.997) D=14 rmse 0.052",
+        "values": "bars 10 px wide; height 2 px (f1463-f1468) -> 6, 12, 18, 22, 26, 28, 30, 32 px (f1469-f1476) = 0.2% -> 3.0% H; centre line y 488.5 (11 px above the mark centre), bar centres 4 and 23 px right of the mark centre"
+      },
+      "curves": [
+        "v4.logo-eye-open.v4c2"
+      ]
+    },
+    {
+      "id": "v4.logo-lockup-slide",
+      "category": "logo",
+      "description": "the brand mark slides left to make room for the wordmark, which fades in behind it; the final lockup is centred",
+      "instances": [
+        [
+          1490,
+          1523
+        ]
+      ],
+      "reference_frames": [
+        1490,
+        1523
+      ],
+      "measured": {
+        "duration_frames": 33,
+        "easing": "bezier(0.594, 0.007, 0.406, 0.993) D=35, rmse 0.007 (spring rmse 0.11)",
+        "values": "mark centre x 960 -> 766 px (50.0% -> 39.9% W), y 500 fixed; fit start f1488.5, active f1492-f1520, at rest f1523, peak 14 px/f at f1505-f1506; lockup: mark x 714-818, gap 41 px, wordmark x 859-1203, centre x 958.5"
+      },
+      "curves": [
+        "v4.logo-lockup-slide.v4c2"
+      ]
+    },
+    {
+      "id": "v4.text-letter-stagger-fade",
+      "category": "text",
+      "description": "wordmark letters appear one after another, left to right: each letter fades in while it rises 17 px into place (whole-pixel steps), no x move, no scale, no blur; one critically damped spring fits both the fade and the rise",
+      "instances": [
+        [
+          1503,
+          1528
+        ]
+      ],
+      "reference_frames": [
+        1506,
+        1524
+      ],
+      "measured": {
+        "duration_frames": 19,
+        "easing": "opacity: spring {328.8, 36.30, mass 1} (zeta 1.00) rmse 0.020 / bezier(0.296, 1.019, 0.647, 0.979) D=23 (built 18 f) rmse 0.034; y: bezier(0.475, 1.079, 0.803, 0.833) D=16 rmse 0.017 / spring {329.1, 35.44, mass 1} rmse 0.039",
+        "values": "6 letters; y offset +17 px (+1.6% H) below rest at the first visible frame -> 0 in whole-pixel steps 17, 15, 13, 11, 9, 8, 6, 5, 4, 3, 3, 2, 2, 1, 1, 1, 0 (letter 3, f1506-f1522; letters 2-6 repeat the steps exactly 2 f apart); opacity of letter 3: 0.04 f1506, 0.50 f1510, 0.82 f1515, 0.95 f1520, 0.99 f1524, 1.0 f1528 (active f1505-f1524; 10% -> 90% in about 11.6 f); opacity 50% crossings f1507.9, f1510.0, f1512.1, f1514.2, f1516.3 (letters 2-6) = 2.1 f per letter; glyph height constant (62 px lowercase, 80 px capital); first letter partly behind the sliding mark until f1509 (opacity 0.78, +4 px at f1510)"
+      },
+      "curves": [
+        "v4.text-letter-stagger-fade.v4c2",
+        "v4.text-letter-stagger-fade.y.v4c2"
+      ]
+    },
+    {
+      "id": "v4.text-tagline-rise-in",
+      "category": "text",
+      "description": "the end-card tagline (small, mid grey) fades in under the lockup while rising 13 px into place",
+      "instances": [
+        [
+          1538,
+          1558
+        ]
+      ],
+      "reference_frames": [
+        1538,
+        1558
+      ],
+      "measured": {
+        "duration_frames": 20,
+        "easing": "opacity bezier(0.257, 1.216, 0.556, 0.946) D=36 (built 20 f), spring {247.3, 31.45, mass 1}; y bezier(0.550, 1.222, 1.000, 0.790) D=17",
+        "values": "opacity 0.06 f1538, 0.55 f1543, 0.81 f1548, 0.97 f1555, 0.99 f1561; y +13 px (+1.2% H) -> 0 in whole-pixel steps 13, 11, 10, 9, 7, 6, 5, 4, 4, 3, 2, 2, 2, 1, 1, 1, 1, 0 (f1538-f1555)"
+      },
+      "curves": [
+        "v4.text-tagline-rise-in.v4c2",
+        "v4.text-tagline-rise-in.y.v4c2"
+      ]
+    },
+    {
+      "id": "v4.trans-pullback-morph",
+      "category": "trans",
+      "description": "composite transition: old headline fades out in place, the canvas pulls back with a pan while a new team fades in from the edge, the new headline drops in, every card's content (both hubs included) cross-dissolves into an icon at the move's fastest point, and the first packet hop crosses the top row; the entering team's terminals stay live throughout (spinner glyphs swapping, new command and status lines appearing)",
+      "instances": [
+        [
+          945,
+          1015
+        ]
+      ],
+      "reference_frames": [
+        945,
+        1015
+      ],
+      "measured": {
+        "duration_frames": 71,
+        "easing": "see components",
+        "values": "headline out f945-f956, empty f957-f965, pull-back f959-f1015, team fade f960-f977, headline in f966-f982, cross-dissolve f984-f1014 (second hub entering the frame f985-f986 mid-dissolve), first packet hop f990-f1021; entering team's lines f966 (top status), f971/f974 (middle command/status), f985/f988 (bottom command/status); its card spinners swap every 5 f (top card f971-f991, bottom f993) and 6 f (middle card f980, f986, f992), the second hub's status spinner at f990 and f996"
+      },
+      "curves": []
+    },
+    {
+      "id": "v4.trans-pullback-reveal",
+      "category": "trans",
+      "description": "composite transition: old headline fades out in place, the canvas pulls back about a fixed point while new teams ripple in 3 f apart (middle row, then top row, then bottom row), the new headline drops in and stays in front of the tiles that pass under it",
+      "instances": [
+        [
+          1114,
+          1190
+        ]
+      ],
+      "reference_frames": [
+        1114,
+        1190
+      ],
+      "measured": {
+        "duration_frames": 77,
+        "easing": "see components",
+        "values": "headline out f1114-f1124, empty f1125-f1134, pull-back f1130-f1188, team fades f1129-f1173, headline in f1135-f1150, packets hop again from f1160"
+      },
+      "curves": []
+    }
+  ],
+  "typography_stills": [
+    "type/S4-hlout_f00945.png",
+    "type/S4-hlout_f00951.png",
+    "type/S4-hlout_f00956.png",
+    "type/S4-ref_f00945.png",
+    "type/S4-ref_f00958.png",
+    "type/S5-1_f00966.png",
+    "type/S5-1_f00990.png",
+    "type/S5-1_f01114.png",
+    "type/S5-cardtext_f00984.png",
+    "type/S5-cardtext_f00995.png",
+    "type/S5-T4lines_f00974.png",
+    "type/S5-T4lines_f00988.png",
+    "type/S5-ref_f01016.png",
+    "type/S5-ref_f01100.png",
+    "type/S5-ref_f01110.png",
+    "type/S6-1_f01135.png",
+    "type/S6-1_f01190.png",
+    "type/S6-1_f01301.png",
+    "type/S6-ref_f01200.png",
+    "type/S6-ref_f01290.png",
+    "type/S8-lockup_f01463.png",
+    "type/S8-lockup_f01476.png",
+    "type/S8-lockup_f01505.png",
+    "type/S8-lockup_f01530.png",
+    "type/S8-lockup_f01545.png",
+    "type/S8-lockup_f01600.png",
+    "type/S8-wordmark_f01504.png",
+    "type/S8-wordmark_f01530.png",
+    "type/S8-tagline_f01538.png",
+    "type/S8-tagline_f01560.png",
+    "type/S8-wordmark-rise_f01506.png",
+    "type/S8-wordmark-rise_f01510.png",
+    "type/S8-wordmark-rise_f01514.png",
+    "type/S8-wordmark-rise_f01522.png",
+    "type/S8-wordmark-rise_f01528.png"
+  ],
+  "uncertain": [
+    {
+      "what": "start frames of the T5 team fades that happen off-frame",
+      "range": "f1128-f1136",
+      "reason": "the middle-left (estimates f1128.6-f1130.0), middle-right (f1131.8-f1133.0) and top-left (f1135.0-f1135.5) starts are inferred from the tile luma each team shows from its frame entry at f1141 (25, 43 and 75) matched to the measured 17-frame fade; the middle-left one rests on 4 tail frames whose levels differ by only 1-3, so +-1 f; the other seven starts are measured directly (luma 246 before, 210 in the first changed frame); the order (middle row, top row, bottom row) holds for all ten"
+    },
+    {
+      "what": "late spinner states of the entering team in T4",
+      "range": "f993-f1000",
+      "reason": "the text cross-dissolve takes the glyph contrast from 70-110 levels at f984 to under 6-20 levels by f996-f998, so states after f995 (top card), f997 (middle card) and f996 (bottom card, second hub) are not readable; the second hub's swap at f996 rests on one dot read at 13 levels; the outer card column, which enters at f993-f994 with running spinners, is too faint to time; the top card's command line appears while still off-frame, so its 3 f command-to-status gap cannot be checked"
+    },
+    {
+      "what": "true start offset of the headline drop",
+      "range": "f965-f966, f1134-f1135",
+      "reason": "the text is invisible before its first frame; the first visible frame already sits 10 px above rest (v4c1 extrapolates 11.5-12 px)"
+    },
+    {
+      "what": "packet hop duration versus hop length",
+      "range": "f990-f1293",
+      "reason": "four hops measured: 320 px about 28 f, 935 px 32 f, about 1595 px about 28-30 f, 1596 px about 31 f (the T4 hop, f990 pop to the merge into the destination icon about f1021): durations stay at 28-32 f while lengths vary 5x, but four samples do not fix the rule; dots are invisible while crossing dark tiles (dark dots) and the S06 dots (7 px) were counted, not tracked"
+    },
+    {
+      "what": "individual swarm paths near the centre",
+      "range": "f1340-f1375",
+      "reason": "hexagons overlap in the centre during the swarm; only the outer ones track cleanly (corner top-right scores 0.95-0.99; centre-tile and left-hub tracks drop to 0.53-0.60); the launch-wave rate rests on three distances"
+    },
+    {
+      "what": "corner radius of the S04 cards",
+      "range": "f945",
+      "reason": "read off one edge profile (dark from about 15 px in along the top row and down the left column), +-3 px"
+    },
+    {
+      "what": "whole-cloud convergence curve of the swarm",
+      "range": "f1329-f1383",
+      "reason": "hexagons overlap mid-flight (84 separate blobs to f1337, 36 at f1364, 84 again from f1382), so any ink-based spread (rms of ink, count-weighted blob centroids) dips while they overlap and recovers as they separate; the stored rms curve failed the fit check (bezier 0.168, spring 0.427) and was dropped; optical-flow advection of the 84 centres lands within 4 px of the slots for only 5 of 84, so per-hexagon flights are measured only for the outer corners"
+    },
+    {
+      "what": "hexagon size and opacity in the first frames of each node's morph (T6)",
+      "range": "f1295-f1296 (centre), f1310-f1311 (corner)",
+      "reason": "while the hexagon's opacity is under about 0.2 the model fit cannot separate its size from its opacity and blur (centre node at f1296: scale 0.41 or 0.51 depending on the model variant); the first reliable sizes are 0.577 (f1297) and 0.612 (f1312)"
+    },
+    {
+      "what": "end scale of the shrinking cards (T6)",
+      "range": "f1309-f1310 (centre), f1324-f1325 (corner)",
+      "reason": "the cards are still shrinking (about 0.57) when they become too faint to size (opacity under 0.05); the tile-scale curve covers the visible part only"
+    },
+    {
+      "what": "wordmark letter offset at opacity 0",
+      "range": "f1503-f1506",
+      "reason": "a letter is invisible before its first frame; letter 3 is first visible at f1506 already +17 px below rest (opacity 0.04), so the start offset may be a few px larger"
+    }
+  ],
+  "notes": [
+    "No cut candidates lie in f930-f1687; c001 (f681) is v4c1's. The hard cut at f1463 and the three soft transitions were found on the sheets and in motion.csv; the detectors fired on none of them (the soft ones are slow and the cut moves one small shape).",
+    "Headline A (v4c1's S04) starts to fade at f945 by an opacity projection (0.994 f945, 0.983 f946, 0.958 f947, 0.924 f948); a per-pixel diff above 25 levels sees it only from f951, which is the frame v4c1 quotes.",
+    "S04 shows no designed change in f922-f944; the 3-pixel diffs at f928/f929 and f943/f944 sit on work.mp4 I-frames (every 15 frames: ... 913, 928, 943, 958 ...).",
+    "The diff spikes at f1080 (content_val 0.65) and f1260 (content_val 2.06, every edge changes by a few levels) and the 15-frame periodic tile flicker are encoder requantisation, not design.",
+    "Layer order checked on crops/crop_560_20_800x130_01150-01166.jpg: the headline is in front of the network (black letters over a dark tile vanish and cut gaps into the tile's light icon); packet dots are in front of tiles and hubs; the sliding brand mark is in front of the wordmark.",
+    "The same S-shaped ease (bezier about (0.54-0.59, 0.0-0.16, 0.34-0.41, 0.99-1.06)) drives the two pull-backs, the pan, the packet hops, the swarm flight and the lockup slide; headline, team and tagline entrances use a fast ease-out (y1 above 1); headline exits a steep ease-in.",
+    "Scratch data of this chunk is prefixed c2_ in scratch/ (camera: c2_t1_camera.csv, c2_t2_camera.csv; morph: c2_t1_morph_*.csv, c2_t3_*.csv; teams: c2_t2_tile_fade_rows.csv; swarm/collapse: c2_s4_*.csv; end card: c2_s5_*.csv; headlines: c2_hl*.csv, c2_tagline_in.csv; packets: c2_s2_*.csv, c2_s3_packets_late.csv, c2_s6_packets.csv). The s4/s5 prefixes there are working names, not segment ids.",
+    "Extra inspection material: detail/card_morph_tl_00970-01007.jpg and detail/hub_morph_00976-01011.jpg (camera-stabilised card and hub during the cross-dissolve), detail/t2_cluster_fade_01144-01171.jpg (camera-stabilised team fade), detail/dense_01128-01192_*.jpg, detail/dense_01292-01331_*.jpg, crops/crop_600_30_360x90_00964-00979.jpg, crops/crop_520_30_360x90_00943-00958.jpg, crops/crop_430_30_520x90_01130-01153.jpg, crops/crop_600_30_400x90_01114-01129.jpg, crops/crop_1390_540_80x70_01033-01041.jpg (packet pop-in), crops/crop_900_440_120x200_01459-01478.jpg (eyes), crops/crop_700_440_520x120_01499-01522.jpg (wordmark).",
+    "Provisional segment ids continue v4c1 (S01-S04); transitions are numbered T4-T6 after v4c1's T1-T3.",
+    "Sampling methods: positions from track.py (template: hub label, sphere, far tile, corner hexagons, brand mark; bbox: top-left card, single hexagon); opacities that overlap other moving content were measured per frame with small scripts and written to scratch/ before fitting with fit_easing.py: headline opacity/offset by least-squares projection of the settled headline's darkness (scratch/c2_hl*.csv), card cross-dissolve on camera-stabilised card crops resampled with the measured camera (scratch/c2_t1_morph_bands.csv), team fades and morph timings by sampling each node along its measured zoom path (scratch/c2_t2_tile_fade_rows.csv, scratch/c2_t3_*.csv), packets by blob detection against the hold's temporal median (scratch/c2_s2_packets.csv).",
+    "Review fixes (r1): T6 starts at f1294 (one-frame cut of all dots and long connectors), S06/S07 split moved to f1310/f1311; the T6 cards shrink while they fade (16 f, not 4-5 f: the old corner sample measured the shrink) and the hexagons grow while they fade in (two-layer model fit per frame, scratch/c2_r1_t6_morph_model.csv: centre tile (1030,575), hub (1200,575), corner tile (71,166)); hub labels and spokes fade from f1295; the wordmark letters rise 17 px while fading (scratch/c2_r1_wordmark_letters.csv: per letter, the settled glyph is shifted to its best whole-pixel offset and scaled, so the rise no longer biases the opacity); the first packet hop runs in T4 (scratch/c2_r1_t4_packet.csv, camera-compensated with scratch/c2_t1_camera.csv), the second hub enters with UI content that cross-dissolves (scratch/c2_r1_t4_hub2_morph.csv), packets travel during the T5 zoom (scratch/c2_r1_t5_packets.csv, 33 linked tracks); the icon cross-dissolve curve is re-tracked on six edge-registered cards (scratch/c2_r1_t4_icon_in.csv: the old band sampled through the camera model's half-pixel steps and overshot 3-4% at f1007-f1012); the swarm rms curve is dropped.",
+    "detail/soft_1295-1327 is superseded by detail/soft_1294-1327 (same material, window starts one frame earlier).",
+    "Review fixes (r2): the entering second team in T4 is live, not static: its status spinners keep swapping (v4c1's device: braille dots every 5 f on the top card f971-f991 and the bottom card f993, the second hub's status dots at f990/f996; star glyph every 6 f on the middle card f980, f986, f992) and its cards still receive command/status lines (f966, f971/f974, f985/f988), through the cross-dissolve until the text is too faint (f995-f997) (scratch/c2_r2_t4_spinners.csv, scratch/c2_r2_t4_lines.csv, detail/spinner_t4_00964-00999.jpg; the reviewer's 4-6 f braille rate is exactly 5 f when every frame is read, and its 'six-arm' glyph at f986 is v4c1's thin star); the T5 team order is middle row, top row, bottom row on one 3 f cadence from f1129, and the top-left team enters at opacity 0.75 and finishes its fade on screen (scratch/c2_r2_t5_team_fades.csv: the old f1131 middle-right start used an entry frame of f1144, but its tiles are on screen from f1141); the ring collapse passes a 13-cell state f1428-f1436 (six corner cells absorbed into the inner ring f1427-f1430, six edge cells shrinking to dots until f1437), and the last ring's start width is 88 px, not 50 (the old outer-ring read at f1435 averaged the six ring cells with the six 11-12 px edge dots) (scratch/c2_r2_s7_collapse_comps.csv)."
+  ]
+}

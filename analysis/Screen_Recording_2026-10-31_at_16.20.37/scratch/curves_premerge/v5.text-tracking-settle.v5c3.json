@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-tracking-settle.v5c3",
+  "file": "curves/v5.text-tracking-settle.v5c3.csv",
+  "property": "position-x",
+  "unit": "% of frame width (offset of letter 7 from its rest place)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c3_P05_hl2_letter_dx.csv",
+  "column": "L7_dx_pct",
+  "sampled_frames": [
+    1905,
+    1932
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 3.1504,
+  "to_value": 0.0,
+  "active_frames": [
+    1905,
+    1917
+  ],
+  "measured_duration_frames": 12,
+  "bezier": {
+    "x1": 0.0024,
+    "y1": 0.1758,
+    "x2": 0.4537,
+    "y2": 1.022,
+    "durationInFrames": 14,
+    "delay": -0.0,
+    "built_duration_frames": 12,
+    "rmse": 0.0152
+  },
+  "spring": {
+    "stiffness": 477.365,
+    "damping": 41.353,
+    "mass": 1,
+    "damping_ratio": 0.9464,
+    "built_duration_frames": 15,
+    "rmse": 0.0566
+  },
+  "recommended": "bezier",
+  "note": "per-letter template track (scores >= 0.94 from f1905); letter 7 offset +51.1 px (f1905) -> 0 by f1920; letter 5 follows the same normalised curve (0.36/0.62/0.82/0.93/0.99). First sharp picture f1905 is already mid-settle (letter 7 +115 px at f1902, blurred, bbox)"
+}

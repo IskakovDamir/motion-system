@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.ui-chip-press",
+  "file": "curves/v5.ui-chip-press.csv",
+  "property": "scale",
+  "unit": "scale factor (chip's own scale, camera removed)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_E_chip1_press.csv",
+  "column": "own1",
+  "sampled_frames": [
+    850,
+    865
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.0,
+  "to_value": 0.818,
+  "active_frames": [
+    857,
+    865
+  ],
+  "measured_duration_frames": 8,
+  "bezier": {
+    "x1": 0.5677,
+    "y1": 1.0003,
+    "x2": 0.3436,
+    "y2": 1.0046,
+    "durationInFrames": 8,
+    "delay": 0.874,
+    "built_duration_frames": 5,
+    "rmse": 0.0964
+  },
+  "spring": {
+    "stiffness": 4569.767,
+    "damping": 123.362,
+    "mass": 1,
+    "damping_ratio": 0.9124,
+    "built_duration_frames": 5,
+    "rmse": 0.0748
+  },
+  "recommended": "spring",
+  "note": "chip 1 (menu 1's chip) presses on activation, about its own centre (label template x 815-817 px throughout): own scale = chip-1 label template scale (ref f857) x camera scale at f857 / camera scale (scratch/v5c2_E_chip1_press.csv; camera = distance from the input pill's bottom edge to chip 1's centre, which only the camera changes; 1.000 / 1.000 / 0.992 / 0.966 of f857 on f857 / f860 / f862 / f865; the prompt-line words keep their x positions over f857-f862); 1.007 / 1.007 / 1.014 (f850-f855, rest within 1.5%) -> 1.000 (f857) -> 0.909 (f860) -> 0.831 (f862) -> 0.818 (f865, deepest); 0.830 on f867; chip 2's press reaches the same depth (0.81-0.82 on f930-f935) but its first pictures are under the whip-pan blur"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v3.trans-hex-gather",
+  "file": "curves/v3.trans-hex-gather.csv",
+  "property": "position",
+  "unit": "progress 0-1 along a straight path (third badge: x 809.5 -> 959.5 px, y 659.5 -> 379.5 px = +7.8% W, -25.9% H)",
+  "source_samples": "../../analysis/yI-1xclfzqMRrqfA/scratch/v3c2_gather_tracks.csv",
+  "column": "H3_prog",
+  "sampled_frames": [
+    1130,
+    1199
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 0.0,
+  "to_value": 1.0,
+  "active_frames": [
+    1146,
+    1170
+  ],
+  "measured_duration_frames": 24,
+  "bezier": {
+    "x1": 0.5809,
+    "y1": 0.043,
+    "x2": 0.4033,
+    "y2": 0.9817,
+    "durationInFrames": 31,
+    "delay": -3.192,
+    "built_duration_frames": 25,
+    "rmse": 0.0149
+  },
+  "spring": {
+    "stiffness": 100.065,
+    "damping": 15.727,
+    "mass": 1,
+    "damping_ratio": 0.7861,
+    "built_duration_frames": 21,
+    "rmse": 0.1115
+  },
+  "recommended": "bezier",
+  "note": "black hexagon from the third marquee slot flies straight to the centre cell of the honeycomb; template-peak track (scratch/v3c2_gather_tracks.csv); all 8 hexagons fit the same shape (bezier about (0.585, 0.03, 0.40, 0.99), D 31-32) with starts 2.4 f apart"
+}

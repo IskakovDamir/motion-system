@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-line-slide-blur.i3",
+  "file": "curves/v5.text-line-slide-blur.i3.csv",
+  "property": "position-x",
+  "unit": "% of frame width (ink centroid of headline line 2)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_C_head_in.csv",
+  "column": "l2_cx_pct",
+  "sampled_frames": [
+    3367,
+    3383
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 94.883,
+  "to_value": 49.383,
+  "active_frames": [
+    3367,
+    3380
+  ],
+  "measured_duration_frames": 13,
+  "bezier": {
+    "x1": 0.1651,
+    "y1": 1.1207,
+    "x2": 0.0,
+    "y2": 0.7688,
+    "durationInFrames": 10,
+    "delay": 2.011,
+    "built_duration_frames": 10,
+    "rmse": 0.0786
+  },
+  "spring": {
+    "stiffness": 1967.982,
+    "damping": 94.808,
+    "mass": 1,
+    "damping_ratio": 1.0686,
+    "built_duration_frames": 8,
+    "rmse": 0.1425
+  },
+  "recommended": "bezier",
+  "note": "C headline (2 lines, 2 words each): line 2 enters from the right edge and line 1 from the left edge as horizontal motion-blur streaks (first picture f3367, both already moving), converge and settle by f3380 with a slight perspective taper; line 2 ink centroid x; line 1 left ink edge 0 -> 40.8% W on the same pictures"
+}

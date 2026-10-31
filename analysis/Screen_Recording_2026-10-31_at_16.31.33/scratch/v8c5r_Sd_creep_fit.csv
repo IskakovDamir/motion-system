@@ -1,0 +1,11 @@
+pair,region,best_scale,err_best,err_at_1,err_at_1_01,err_at_1_05
+f3450->f3556,foreground: lockup y330-480,1.0375,8.612,95.551,87.455,49.259
+f3450->f3556,foreground: tag y480-600 x500-1150,1.035,12.493,56.539,47.112,35.562
+f3450->f3556,foreground: mascots top row y40-260,1.0375,7.704,43.468,34.954,18.54
+f3450->f3556,foreground: mascots bottom row y660-900 x0-1500,1.0375,5.122,59.925,48.294,21.864
+f3500->f3556,foreground: lockup y330-480,1.02,5.438,76.274,43.958,87.207
+f3500->f3556,foreground: tag y480-600 x500-1150,1.0175,9.922,41.187,24.551,60.596
+f3500->f3556,foreground: mascots top row y40-260,1.0225,11.578,35.54,24.806,25.395
+f3500->f3556,foreground: mascots bottom row y660-900 x0-1500,1.02,7.656,37.616,20.842,41.965
+f3420->f3556,"background (foreground dilated 30 px, speaker icon and 6 px border masked)",1.0,0.148,0.148,0.347,0.731
+f30->f112 (v8c1 cross-check),"background (foreground dilated 30 px, speaker icon and 6 px border masked)",1.0,0.455,0.455,0.605,1.014

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.logo-eye-open.v4c2",
+  "file": "curves/v4.logo-eye-open.v4c2.csv",
+  "property": "height",
+  "unit": "px eye-bar height (coverage-weighted; 10 px wide bar, closed 2 px, open 32 px = 3.0% H)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/c2_s5_eye_open.csv",
+  "column": "eye_h_cov_px",
+  "sampled_frames": [
+    1463,
+    1488
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 2.25,
+  "to_value": 29.31,
+  "active_frames": [
+    1468,
+    1478
+  ],
+  "measured_duration_frames": 10,
+  "bezier": {
+    "x1": 0.2885,
+    "y1": 1.0208,
+    "x2": 0.5577,
+    "y2": 0.9973,
+    "durationInFrames": 14,
+    "delay": 0.471,
+    "built_duration_frames": 10,
+    "rmse": 0.0518
+  },
+  "spring": {
+    "stiffness": 1080.824,
+    "damping": 65.548,
+    "mass": 1,
+    "damping_ratio": 0.9969,
+    "built_duration_frames": 11,
+    "rmse": 0.0223
+  },
+  "recommended": "spring",
+  "note": "brand mark's two eye bars open vertically about their centre line (y 488.5) after a 6-frame closed hold"
+}

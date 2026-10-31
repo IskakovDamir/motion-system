@@ -1,0 +1,40 @@
+{
+  "technique_id": "v2.grid-hex-radial-pop",
+  "file": "curves/v2.grid-hex-radial-pop.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (cell body; 250 = background, 139 = settled)",
+  "source_samples": "../../analysis/U34UrnYU5VT-pRXi/scratch/v2c1_S02_cell1.csv",
+  "column": "body_luma",
+  "sampled_frames": [
+    1,
+    24
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 250.0,
+  "to_value": 139.0,
+  "active_frames": [
+    6,
+    13
+  ],
+  "measured_duration_frames": 7,
+  "bezier": {
+    "x1": 0.2436,
+    "y1": 1.1265,
+    "x2": 0.8127,
+    "y2": 0.8792,
+    "durationInFrames": 7,
+    "delay": 0.113,
+    "built_duration_frames": 7,
+    "rmse": 0.0159
+  },
+  "spring": {
+    "stiffness": 3780.35,
+    "damping": 151.818,
+    "mass": 1,
+    "damping_ratio": 1.2346,
+    "built_duration_frames": 6,
+    "rmse": 0.0905
+  },
+  "recommended": "bezier",
+  "note": "first hex cell (centre 990, 594.5) popping in: fade (luma 250 -> 139) while it scales 0.59 -> 1 (height 79 -> 133 px) about its own centre; every later cell repeats this pop, started by a radial front at 19.6 px/frame"
+}

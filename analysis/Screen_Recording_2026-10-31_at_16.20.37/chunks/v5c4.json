@@ -1,0 +1,734 @@
+{
+ "video": "Screen_Recording_2026-10-31_at_16.20.37",
+ "key": "v5",
+ "chunk": "v5c4",
+ "frames": [
+  2415,
+  3041
+ ],
+ "cut_decisions": [
+  {
+   "id": "c069",
+   "frame": 2415,
+   "status": "confirmed",
+   "reason": "hard cut: footage (last picture f2412, mean luma 72.4) -> black graphic canvas (f2415, luma 1.3) with the headline already typing and swinging in; chunk-edge boundary shared with v5c3, checked f2400-f2430"
+  },
+  {
+   "id": "c070",
+   "frame": 2453,
+   "status": "rejected",
+   "reason": "motion-blur peak of whip 1 (3D camera yaw + push-in over the same card canvas); card 1 and headline continuous f2451-f2458"
+  },
+  {
+   "id": "c071",
+   "frame": 2497,
+   "status": "rejected",
+   "reason": "motion-blur peak of whip 2 while card 2 seam-reveals; card 1 continuous, same canvas"
+  },
+  {
+   "id": "c072",
+   "frame": 2547,
+   "status": "rejected",
+   "reason": "motion-blur peak of whip 3; card 2 continuous to f2552, card 3 enters on the same canvas"
+  },
+  {
+   "id": "c073",
+   "frame": 2605,
+   "status": "rejected",
+   "reason": "motion-blur peak of the pull-back whip; the full card row is revealed on the same canvas"
+  },
+  {
+   "id": "c074",
+   "frame": 2645,
+   "status": "confirmed",
+   "reason": "anchor of soft transition f2622-f2668 (vertical whip: card row exits up, wide card arrives from below); f2645 = transition midpoint"
+  },
+  {
+   "id": "c075",
+   "frame": 2650,
+   "status": "rejected",
+   "reason": "second detector hit inside the same soft transition f2622-f2668 (wide card arriving); anchor is c074"
+  },
+  {
+   "id": "c076",
+   "frame": 2740,
+   "status": "confirmed",
+   "reason": "hard cut: graphic canvas with the wide card (f2737, luma 23.9) -> full-frame footage (f2740, luma 80.4); first caption line starts fading in on f2740"
+  },
+  {
+   "id": "c077",
+   "frame": 2760,
+   "status": "rejected",
+   "reason": "camera move inside the footage (pull-back starts ~f2756); same shot, caption continuous"
+  },
+  {
+   "id": "c078",
+   "frame": 2787,
+   "status": "rejected",
+   "reason": "camera move inside the footage plus a caption line change; same shot"
+  },
+  {
+   "id": "c079",
+   "frame": 2907,
+   "status": "rejected",
+   "reason": "motion inside the footage; same shot, caption continuous"
+  },
+  {
+   "id": "c080",
+   "frame": 2938,
+   "status": "rejected",
+   "reason": "fast motion inside the footage; same shot"
+  },
+  {
+   "id": "c081",
+   "frame": 2945,
+   "status": "rejected",
+   "reason": "fast motion inside the footage; same shot"
+  },
+  {
+   "id": "c082",
+   "frame": 2952,
+   "status": "rejected",
+   "reason": "luminance burst inside the footage (flash in shot, not a graphic); same shot"
+  },
+  {
+   "id": "c083",
+   "frame": 2972,
+   "status": "rejected",
+   "reason": "luminance settling inside the footage as caption 4 begins; same shot"
+  },
+  {
+   "id": "c084",
+   "frame": 2992,
+   "status": "rejected",
+   "reason": "push-in with motion blur inside the footage; same shot, caption continuous"
+  },
+  {
+   "id": "c085",
+   "frame": 3007,
+   "status": "rejected",
+   "reason": "push-in continues inside the footage; same shot"
+  },
+  {
+   "id": "c086",
+   "frame": 3042,
+   "status": "confirmed",
+   "reason": "hard cut: footage (f3040, luma 75.2) -> black title canvas with a warped 2-line headline forming (f3042, luma 2.1); chunk-edge boundary shared with v5c5, checked f3027-f3057"
+  }
+ ],
+ "boundaries": [
+  {
+   "frame": 2415,
+   "type": "hard-cut",
+   "note": "chunk start; also seen by v5c3"
+  },
+  {
+   "start": 2622,
+   "end": 2668,
+   "type": "whip",
+   "frames": 47,
+   "shared": "one rigid canvas tilts: the 3-card row and headline slide up out of frame while the wide card and its 1-word label slide in from below (row labels still at the top edge f2650-f2652); background not the same: the black ground and the screen-locked corner vignettes carry on, but a new layer of halftone-dot ribbons belonging to the next layout appears inside the move (first faint dots f2645, clear f2647 in margins that were pure black through c4S1, filled by ~f2668) and rises with the canvas (0.8-1.0x of its travel) while it brightens; content moves up at ~131 px/f (14% H/f) at f2645-f2647 with heavy vertical blur f2642-f2650",
+   "technique": "v5.trans-whip-tilt",
+   "curve": "v5.trans-whip-tilt.v5c4",
+   "detail": "detail/soft_2622-2668",
+   "note": "background change inside the move: detail/ribbon_gain8_02642-02737.jpg (luma x8) shows the ribbon layer arriving"
+  },
+  {
+   "frame": 2740,
+   "type": "hard-cut"
+  },
+  {
+   "frame": 3042,
+   "type": "hard-cut",
+   "note": "ends c4S3 at f3041; chunk edge, also seen by v5c5"
+  }
+ ],
+ "segments": [
+  {
+   "id": "c4S1",
+   "start": 2415,
+   "end": 2645,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "black halftone canvas: 1-line caps headline types on with a 3D swing, lifts to a header, card 1 rises in; a 3D camera whips across a curved row of 3 photo cards (card 2 seam-reveals, gray labels type on, halftone beams link cards), pulls back to the full row and tilts down into the next layout"
+  },
+  {
+   "id": "c4S2",
+   "start": 2646,
+   "end": 2739,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "wide concave card carrying footage with a 1-word caps label arrives from below at the end of the tilt and holds with a slow drift; its own halftone-ribbon background arrives with it inside the tilt (f2645-2668); a glow travels along a ribbon; hard cut out"
+  },
+  {
+   "id": "c4S3",
+   "start": 2740,
+   "end": 3041,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "full-frame footage with 4 kinetic caption phrases (2-3 stair-stepped lines each) that fade and sharpen in line by line, drift diagonally and fade out in reading order; the last phrase follows the footage push-in; hard cut out"
+  }
+ ],
+ "techniques": [
+  {
+   "id": "v5.text-type-swing-in",
+   "category": "text",
+   "description": "1-line heavy wide caps headline types on letter by letter (2 letters per picture) while the whole line swings flat from a perspective tilt, sharpens and doubles its cap height; already moving on the cut picture",
+   "instances": [
+    [
+     2415,
+     2425
+    ]
+   ],
+   "reference_frames": [
+    2415,
+    2420,
+    2427
+   ],
+   "measured": {
+    "duration_frames": 10,
+    "easing": "bezier(0.000, 1.072, 0.000, 0.638) D=7 rmse 0.034 (rotation); spring(15081.9, 39.77) rmse 0.133",
+    "values": "baseline tilt 8.1 -> 0 deg (8.06, 1.64, 0.92, 0.24, 0.07, 0.05 deg on f2415-2427); cap height (per-letter ink boxes, luma > 128, median of the visible letters) 41 -> 81 px = 4.5 -> 8.8% H, x2.0 (41, 65, 72, 78, 80, 81 px on f2415, 2417, 2420, 2422, 2425, 2427; all 12 letters 79-83 px on f2427; start value 35.5-45 px for luma thresholds 160-90 because the letters are blurred and tilted; scratch/v5c4_headline_cap_h.csv); 12 letters f2415-2425 (~1.25 f/letter); newest letters luma 213-220 vs 249 settled for one picture; line left edge 18.7 -> 14.1% W"
+   },
+   "curves": [
+    "v5.text-type-swing-in.v5c4"
+   ]
+  },
+  {
+   "id": "v5.text-lift-to-header",
+   "category": "text",
+   "description": "finished headline shrinks to header size while rising, starting on the picture its last letter lands",
+   "instances": [
+    [
+     2425,
+     2442
+    ]
+   ],
+   "reference_frames": [
+    2427,
+    2442,
+    2447
+   ],
+   "measured": {
+    "duration_frames": 17,
+    "easing": "bezier(0.720, 0.290, 0.187, 1.034) D=21 rmse 0.016; spring(290.6, 26.57) rmse 0.136",
+    "values": "ink width 71.7 -> 49.0% W (scale 1.465 -> 1.0); centre y 48.4 -> 23.4% H, centre x 50.4 -> 51.1% W; cap height 8.7 -> 5.9% H; vertical motion blur f2432-2437"
+   },
+   "curves": [
+    "v5.text-lift-to-header.v5c4"
+   ]
+  },
+  {
+   "id": "v5.card-rise-in",
+   "category": "card",
+   "description": "portrait photo card rises from below the frame into its slot with vertical motion blur and a small overshoot",
+   "instances": [
+    [
+     2437,
+     2447
+    ]
+   ],
+   "reference_frames": [
+    2437,
+    2440,
+    2442,
+    2447
+   ],
+   "measured": {
+    "duration_frames": null,
+    "easing": "UNCERTAIN (2 pictures in motion; start below frame)",
+    "values": "top edge 96.1% H (f2437, first visible) -> 52.4% (f2440) -> 28.2% (f2442) -> 27.3% (f2445, overshoot 0.9% H) -> 27.8% (f2447); card 19.6% W x 47.7% H at x 11.6-31.2% W"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.cam-whip-pan",
+   "category": "cam",
+   "description": "3D camera yaws between cards on a curved layout (whips 1 and 3 add a x1.2 push-in): slow creep, 2-picture motion-blur burst, long settle",
+   "instances": [
+    [
+     2442,
+     2467
+    ],
+    [
+     2480,
+     2510
+    ],
+    [
+     2532,
+     2565
+    ]
+   ],
+   "reference_frames": [
+    2480,
+    2495,
+    2497,
+    2510
+   ],
+   "measured": {
+    "duration_frames": 30,
+    "easing": "bezier(0.919, 0.197, 0.049, 0.893) D=35 rmse 0.015 (whip 2, card 1 label track); spring(198.2, 23.72) rmse 0.173; whip 1 bezier(0.854, 0.004, 0.000, 0.792) D=27 active 22 f rmse 0.017 (card 1 label track; spring(634.4, 50.91) rmse 0.128)",
+    "values": "whip 1: card 1 centre 21.4 -> 46.5% W (label 21.8 -> 46.9% W), scale 1.00 -> 1.26, 25 f (fit active f2445-2467, rest value = median of f2442-2447 because the creep starts on landing); whip 2: card 1 46.5 -> ~12.5% W at scale 1.0 (card template clamps at the left frame edge from f2512), label 46.9 -> 11.6% W, 30 f (f2480-2510); whip 3: card 2 50.0% W -> out left, card 3 settles 59.2 -> 52.7% W, push-in x1.22 (card height 59.4 -> 72.2% H), ~33 f (UNCERTAIN); blur bursts f2453-2455, f2495-2497, f2547-2550; settles near beats (-3, +6, -4 f); the earlier card-template fits (whip 2 rmse 0.0503, whip 1 0.051) failed the 0.05 rule and were re-tracked on the label"
+   },
+   "curves": [
+    "v5.cam-whip-pan.v5c4",
+    "v5.cam-whip-pan.whip1.v5c4"
+   ]
+  },
+  {
+   "id": "v5.card-seam-reveal",
+   "category": "card",
+   "description": "card emerges from a vertical seam: one edge pinned on screen, the other sweeps open; content keeps its size and moves with the sweeping edge (mask reveal, not a flip); synced to a whip pan",
+   "instances": [
+    [
+     2485,
+     2507
+    ]
+   ],
+   "reference_frames": [
+    2485,
+    2492,
+    2500,
+    2507
+   ],
+   "measured": {
+    "duration_frames": 22,
+    "easing": "bezier(0.737, 0.008, 0.304, 0.894) D=26 rmse 0.018; spring(194.0, 22.79) rmse 0.104",
+    "values": "width 0 -> 27.8% W (3 -> 452 px); right edge 65.4 -> 64.5% W, left edge 65.3 -> 38.0% W; content 110 px from the left edge throughout; height constant 57-59% H; card 3 probably enters the same way inside whip-3 blur (UNCERTAIN): bright seam at the beam-2 horn's wide end with a faint card edge at x 72.3-72.7% W on f2540, sliver with card content x 70.5-71.9% W on f2542, legible f2552; in both cases a beam glint leads the seam by 3 f (f2482 -> f2485, f2537 -> f2540)"
+   },
+   "curves": [
+    "v5.card-seam-reveal.v5c4"
+   ]
+  },
+  {
+   "id": "v5.text-typewriter",
+   "category": "text",
+   "description": "small gray UI label centred under a card types on in hard per-picture character steps, ~15-18 f per label regardless of length; same device and id as the typewriter in v5c2 (prompt text) and v5c5 (labels)",
+   "instances": [
+    [
+     2497,
+     2512
+    ],
+    [
+     2552,
+     2570
+    ]
+   ],
+   "reference_frames": [
+    2500,
+    2512,
+    2552,
+    2570
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "steps (1-3 characters per picture)",
+    "values": "card 2 label 19 characters in 15 f (~0.8 f/char, ink width 8.6 -> 15.8% W); card 3 label 8 characters in 18 f (~2.3 f/char); label luma max 143-156; cap height 2.5% H (close framing) / 1.7% H (full row)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.shape-halftone-beam",
+   "category": "shape",
+   "description": "dotted horn/bow-tie cone of halftone dots bridges the gap between two cards; it enters as a small glint 3 f before the next card's seam opens and grows into a horn whose wide end sits on that seam; a bright dot cluster oscillates along it",
+   "instances": [
+    [
+     2482,
+     2645
+    ]
+   ],
+   "reference_frames": [
+    2482,
+    2512,
+    2537,
+    2540,
+    2575,
+    2630
+   ],
+   "measured": {
+    "duration_frames": null,
+    "easing": "not fitted (oscillation)",
+    "values": "glint x 62.6-65.0% W, y 50.8-58.4% H, luma <= 95 on f2482, 3 f before card 2 shows; beam 2 bright-cluster centroid x 35.8 -> 31.6 -> 34.5% W over f2560-2587 (4.1% W swing, ~27 f); fills the 8.2-8.4% W gaps between cards; beam 2 entrance: nothing on f2535 (x 1060-1260 px, y 250-700 px max luma 0), glint x 68.1-69.0% W, y 49.0-55.0% H, max luma 92, 346 px > 60 on f2537 (3 f before the card-3 seam f2540, 5 f before the sliver f2542, 15 f before card 3 is legible f2552), horn with its wide end on a bright vertical seam at x 70.5-71.6% W, y 42.7-62.4% H, max 109, 2693 px > 60 on f2540; crops/crop_1060_300_200x460_02535-02545.jpg"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.cam-whip-pullback",
+   "category": "cam",
+   "description": "3D camera dollies back and yaws to frame the whole card row and headline; flows into the next move after ~5 f",
+   "instances": [
+    [
+     2582,
+     2617
+    ]
+   ],
+   "reference_frames": [
+    2582,
+    2602,
+    2617,
+    2630
+   ],
+   "measured": {
+    "duration_frames": 35,
+    "easing": "bezier(0.887, 0.276, 0.110, 0.996) D=42 rmse 0.019 (position); scale bezier(0.812, 0.263, 0.006, 0.998) D=56, active 50 f; spring(104.8, 15.92) rmse 0.310",
+    "values": "card 3 centre 52.7 -> 76.0% W, scale 1.00 -> 0.58; card 2 centre 13.0 -> 49.6% W, scale 1.62 -> 0.97; blur f2600-2607; blur peak on beat (+1 f)"
+   },
+   "curves": [
+    "v5.cam-whip-pullback.v5c4"
+   ]
+  },
+  {
+   "id": "v5.trans-whip-tilt",
+   "category": "trans",
+   "description": "the whole canvas tilts (vertical whip): the current layout exits upward while the next layout, placed below it on the same canvas, arrives from the bottom; blur burst at the middle",
+   "instances": [
+    [
+     2622,
+     2668
+    ]
+   ],
+   "reference_frames": [
+    2622,
+    2642,
+    2647,
+    2668
+   ],
+   "measured": {
+    "duration_frames": 46,
+    "easing": "bezier(0.928, 0.138, 0.000, 0.974) D=60 (built 42 f) rmse 0.044; spring(196.6, 26.50) rmse 0.226",
+    "values": "canvas offset 166.8 -> 80.0% H (travel 86.8% H); peak ~131 px/f (14% H/f) f2645-2647; settles on beat (+1 f)"
+   },
+   "curves": [
+    "v5.trans-whip-tilt.v5c4"
+   ]
+  },
+  {
+   "id": "v5.cam-hold-drift",
+   "category": "cam",
+   "description": "holds between camera moves keep a slow linear drift",
+   "instances": [
+    [
+     2512,
+     2530
+    ],
+    [
+     2680,
+     2737
+    ]
+   ],
+   "reference_frames": [
+    2512,
+    2530,
+    2680,
+    2737
+   ],
+   "measured": {
+    "duration_frames": null,
+    "easing": "linear",
+    "values": "card 2 -0.86 px/f (-0.053% W/f) f2512-2530; wide-card label -0.19 px/f vertical (80.4 -> 79.2% H) and card right edge 78.7 -> 78.2% W over f2680-2737"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.bg-halftone-ribbon-glow",
+   "category": "bg",
+   "description": "black background with screen-locked halftone-dot corner vignettes (whole range); in c4S2 a soft glow travels slowly along one of the halftone ribbons that arrive with the wide-card layout (see v5.bg-ribbon-rise-in)",
+   "instances": [
+    [
+     2415,
+     2739
+    ]
+   ],
+   "reference_frames": [
+    2427,
+    2660,
+    2697,
+    2735
+   ],
+   "measured": {
+    "duration_frames": null,
+    "easing": "not fitted (slow travel)",
+    "values": "background luma 0-2, dots <= 25 (corners, unchanged across whips: top-right region mean 3.7-5.3) and <= 35 (ribbons, present only from f2645: the right margin x 1400-1540 px reads max <= 4 through c4S1); glow centroid x 19.7 -> 6.1 -> 14.9% W, y 46.2 -> 47.5% H over f2660-2735 (1.5-3 px/f)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.bg-ribbon-rise-in",
+   "category": "bg",
+   "description": "the incoming layout brings its own background ornament: a layer of curved halftone-dot ribbons appears inside the whip-tilt on its peak-speed pictures f2645-f2647 (dots not motion-blurred), rides up with the canvas and brightens/lengthens until the arrival settles; the corner vignettes stay screen-locked and unchanged",
+   "instances": [
+    [
+     2645,
+     2668
+    ]
+   ],
+   "reference_frames": [
+    2645,
+    2647,
+    2650,
+    2668
+   ],
+   "measured": {
+    "duration_frames": 23,
+    "easing": "not fitted (dot counts rise in steps); position rides v5.trans-whip-tilt",
+    "values": "side margins luma 0 up to f2642; first faint dots f2645 (max 19 in x 150-320 px, y 470-690 px, just left by card 1); f2647 max 17 (left margin x 0-200 px, y 250-650 px) / 23 (right margin x 1400-1540 px, y 300-600 px), dots > luma 8: 81 / 232; f2668 1002 / 647 dots, max 27-31; left-arm template y 441 -> 300 px over f2647-f2668 vs canvas 923 -> 745 px (0.8x; 0.8-1.0x overall); phase correlation f2647 -> f2650 -61.5 / -61.6 px vs canvas -63 px; dots 4 x 4 px on f2647 (same as at rest) while the wide card is smeared; first clear dots f2647 +13 f after a beat; tracks scratch/v5c4_bg_ribbon_l.csv, v5c4_bg_ribbon_r.csv, v5c4_bg_ribbon_l_tmpl.csv, v5c4_bg_ml.csv, v5c4_bg_mr.csv; detail/ribbon_gain8_02642-02737.jpg"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.text-caption-word-fade",
+   "category": "text",
+   "description": "caption lines (1-3 words) fade and sharpen in one at a time with a soft left-to-right sweep across the letters; next line starts ~9-13 f later, one step down and sideways; same device and id as v5c1/v5c2 (v5c3 calls it v5.text-caption-letter-fade)",
+   "instances": [
+    [
+     2740,
+     2765
+    ],
+    [
+     2789,
+     2830
+    ],
+    [
+     2865,
+     2905
+    ],
+    [
+     2968,
+     3005
+    ]
+   ],
+   "reference_frames": [
+    2865,
+    2880,
+    2895
+   ],
+   "measured": {
+    "duration_frames": 30,
+    "easing": "bezier(0.000, 0.309, 0.773, 1.003) D=30 rmse 0.028; spring(41.4, 10.15) rmse 0.086",
+    "values": "word-box p95 luma 0 -> 240 (phrase 3 line 1, over black); sweep crosses a 6-letter word in ~7 f (~1.2 f/letter); line stagger ~12 f (phrases 1-3), 9 f then 10 f in phrase 4 (first visible f2968, f2977, f2987, sound offsets +9, -15, -5; legible f2970-2972, f2980, f2990; scratch/v5c4_cap4_onset_probe.csv, crops/crop_790_300_260x110_02964-02993.jpg); line pitch 41-45 px (4.5-4.9% H), step sideways 3-6% W; x-height 2.4% H, ascender 3.2% H"
+   },
+   "curves": [
+    "v5.text-caption-word-fade.v5c4"
+   ]
+  },
+  {
+   "id": "v5.text-caption-line-fade-out",
+   "category": "text",
+   "description": "caption lines fade out in reading order while later lines are still fading in, so 2-3 lines are visible as a rolling window",
+   "instances": [
+    [
+     2777,
+     2797
+    ],
+    [
+     2822,
+     2850
+    ],
+    [
+     2897,
+     2933
+    ],
+    [
+     3021,
+     3041
+    ]
+   ],
+   "reference_frames": [
+    2897,
+    2907,
+    2927
+   ],
+   "measured": {
+    "duration_frames": 30,
+    "easing": "spring(56.3, 12.84; zeta 0.86) rmse 0.040; bezier(0.039, 0.527, 0.899, 1.014) D=28 rmse 0.051",
+    "values": "p95 luma 240 -> 0 (phrase 3 line 1); fade-out starts ~2 f after the line peaks; a line lives ~40-60 f; phrase 4 is cut mid-exit: line 1 from ~f3021 (box p99 250 f3020 -> 237 f3022 -> 177 f3040, partly beyond the right edge), line 2 from ~f3031 (p99 251 f3030 -> 232 f3032 -> 217 f3035 -> 201 f3037 -> 192 f3040 vs line-box median 124-139, about half gone at the cut f3042; template score 1.00 -> 0.61), line 3 still full (p99 251); scratch/v5c4_cap4_lines_out_luma.csv"
+   },
+   "curves": [
+    "v5.text-caption-line-fade-out.v5c4"
+   ]
+  },
+  {
+   "id": "v5.text-caption-drift",
+   "category": "text",
+   "description": "each caption block drifts at constant velocity away up its own stair (up-left for left-side phrases, up-right for the right-side phrase); the right-side phrase also scales with the footage push-in",
+   "instances": [
+    [
+     2742,
+     2777
+    ],
+    [
+     2805,
+     2842
+    ],
+    [
+     2877,
+     2913
+    ],
+    [
+     3017,
+     3040
+    ]
+   ],
+   "reference_frames": [
+    2758,
+    2820,
+    2895,
+    3020
+   ],
+   "measured": {
+    "duration_frames": null,
+    "easing": "linear (residual <= 3.2 px)",
+    "values": "phrase 1 (-1.91, -3.68) px/f = (-0.118% W, -0.401% H)/f; phrase 2 (-1.57, -3.19); phrase 3 (-2.12, -3.01); phrase 4 (+2.49, -3.25) after f3017 and (+2.7, -3.3) before f2985; phrase 4 scale 0.75 -> 1.00 (x1.33) and line-2 centre x 59.8% W (f2987; ~61.5% W on f2990) -> 86.7% W (f3017) with the footage push-in f2987-3017 (attachment UNCERTAIN); scale per picture 0.75, 0.77, 0.79, 0.81, 0.83, 0.86, 0.90, 0.93, 0.95, 0.97, 0.97, 0.99, 1.00 on f2987, 2990, 2992, 2995, 2997, 3000, 3002, 3005, 3007, 3010, 3013, 3015, 3017 (line 1 first-word template cut on f3020, scratch/v5c4_cap4_L1W1_chain.csv; the same x1.33 from a template cut on f2982, v5c4_cap4_L1W1_ref2982.csv, from the first-word ink width 68-69 -> 91 px and from the line 1 -> line 2 first-word centre distance 154 -> 204 px); the sideways push starts ~1 picture earlier (13 px per picture on f2982-2985, peak ~48 px per picture f2997-3002)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.layout-caption-staircase",
+   "category": "layout",
+   "description": "caption lines are offset sideways and down from the line above like stairs: in the left-side phrases 1-3 lines step right, in the right-side phrase 4 they step left; each block drifts the other way, up its stair (v5.text-caption-drift)",
+   "instances": [
+    [
+     2740,
+     2797
+    ],
+    [
+     2789,
+     2849
+    ],
+    [
+     2866,
+     2933
+    ],
+    [
+     2968,
+     3041
+    ]
+   ],
+   "reference_frames": [
+    2758,
+    2820,
+    2895,
+    3020
+   ],
+   "measured": {
+    "duration_frames": 0,
+    "easing": "-",
+    "values": "phrases 1-3: lines 2-3 step right by 3-6% W and down by 4.5-4.9% H (line pitch 41-45 px); phrase 4 on f3020 (after its x1.33 push-in): line 2 starts 190 px (11.7% W) left of line 1, line 3 67 px (4.1% W) left of line 2, baselines 214 / 273 / 331 px (pitch 58-59 px = 6.3-6.4% H, i.e. ~44 px = 4.8% H at rest size); on f2985, before the push-in, line 2 starts 143 px left of line 1"
+   },
+   "curves": []
+  }
+ ],
+ "typography_stills": [
+  "type/A-headline_f02415.png",
+  "type/A-headline_f02420.png",
+  "type/A-headline_f02427.png",
+  "type/A-headline_f02447.png",
+  "type/A-headline_f02545.png",
+  "type/A-label_f02500.png",
+  "type/A-label_f02512.png",
+  "type/A-label_f02630.png",
+  "type/A-card3_f02552.png",
+  "type/A-card3_f02557.png",
+  "type/A-card3_f02575.png",
+  "type/B-widecard_f02647.png",
+  "type/B-widecard_f02652.png",
+  "type/B-widecard_f02690.png",
+  "type/B-widecard_f02737.png",
+  "type/C-caption1_f02749.png",
+  "type/C-caption1_f02770.png",
+  "type/C-caption1_f02785.png",
+  "type/C-caption2_f02800.png",
+  "type/C-caption2_f02820.png",
+  "type/C-caption2_f02838.png",
+  "type/C-caption3_f02883.png",
+  "type/C-caption3_f02907.png",
+  "type/C-caption3_f02925.png",
+  "type/C-caption4_f02968.png",
+  "type/C-caption4_f02977.png",
+  "type/C-caption4_f02987.png",
+  "type/C-caption4_f02990.png",
+  "type/C-caption4_f02982.png",
+  "type/C-caption4_f03005.png",
+  "type/C-caption4_f03022.png",
+  "type/C-caption4_f03032.png",
+  "type/C-caption4_f03039.png"
+ ],
+ "uncertain": [
+  {
+   "what": "card 1 rise-in easing",
+   "range": "f2432-f2442",
+   "reason": "card is below the frame before f2437 and only 2 pictures show it moving"
+  },
+  {
+   "what": "whip 3 curve and travel",
+   "range": "f2532-f2565",
+   "reason": "card 2 leaves the frame and card 3 appears inside the blur; no element trackable across the whole move"
+  },
+  {
+   "what": "card 3 entrance mechanism",
+   "range": "f2540-f2552",
+   "reason": "hidden in whip-3 motion blur"
+  },
+  {
+   "what": "headline blur amount during the swing-in",
+   "range": "f2415-f2422",
+   "reason": "blur, perspective and scale change together on 3-4 pictures"
+  },
+  {
+   "what": "caption defocus vs opacity",
+   "range": "f2740-f3041",
+   "reason": "both lower the same luma samples"
+  },
+  {
+   "what": "caption 4 attachment to the footage push-in",
+   "range": "f2987-f3017",
+   "reason": "caption scales x1.33 (single-word template tracks) vs footage x1.4-1.75 (radial-flow estimate), and its offset from the frame centre does not scale like a centred zoom (line 2 centre x offset 158 -> 595 px, y offset -136 -> -197 px, f2987 -> f3017)"
+  },
+  {
+   "what": "wide card corner radius",
+   "range": "f2646-f2739",
+   "reason": "footage at the corners is as dark as the background"
+  },
+  {
+   "what": "typeface originals",
+   "range": "f2415-f3041",
+   "reason": "free stand-ins only (wide heavy grotesk for headline and wide-card label, neutral sans for labels and captions)"
+  },
+  {
+   "what": "card 1 label typewriter",
+   "range": "f2437-f2442",
+   "reason": "label already complete on its first sharp picture"
+  },
+  {
+   "what": "caption line first/last frames",
+   "range": "f2740-f3041",
+   "reason": "read off frame-numbered dense crops, +-2 f plus 24 fps quantisation"
+  },
+  {
+   "what": "halftone ribbon arrival: canvas-locked or slower parallax plane, opacity ramp or growth along the ribbon",
+   "range": "f2645-f2668",
+   "reason": "the dot pattern brightens and lengthens while it moves (measured 0.8-1.0x of the canvas travel)"
+  }
+ ],
+ "notes": [
+  "24 fps material on the 60 fps grid (3:2 cadence, local_fps 23.6-24.6): all durations +-1-3 f.",
+  "Edge boundaries f2415 (c069) and f3042 (c086) decided here by looking 15 frames past each edge; v5c3 and v5c5 see the same cuts.",
+  "c4S1 is MIXED only because its cards carry photographic stills; c4S2 window carries moving footage; c4S3 is full-frame footage with captions. No LIVE segment in range.",
+  "Whip pans f2442-f2617 are 3D camera moves over one curved canvas (side cards turned toward the camera, outer edge ~7% taller; wide card concave, top edge sags 1.6% H), not boundaries; only the vertical whip replaces the layout.",
+  "Camera rhythm in c4S1: whip 25 f - hold 13 - whip 30 - hold 22 - whip ~33 - hold ~17 - pull-back 35 - 5 - tilt 46; settles land within 6 f of a beat (2467 -3, 2510 +6, 2565 -4, 2668 +1).",
+  "Card geometry: portrait cards aspect 0.80-0.83 frontal, corner radius 7-7.5% of card width, no border or shadow; labels centred 7.5-7.9% of card height below.",
+  "Camera moves inside the footage (c4S3, c4S2 window) were not analysed; the speaker icon is ignored.",
+  "Scratch tracks for this chunk are prefixed v5c4_ in scratch/; detail/soft_2622-2668 is the soft-transition window; detail/ribbon_gain8_02642-02737.jpg (luma x8) shows the ribbon layer arriving; crops/crop_1060_300_200x460_02535-02545.jpg shows the beam-2 glint and card-3 seam; dense sheets detail/dense_02412-02447, 02447-02470, 02478-02516, 02532-02575, 02592-02625, 02630-02668.",
+  "Whip-pan curves were re-tracked on card 1's UI label (scratch/v5c4_card1label_whip2.csv, v5c4_card1label_whip1.csv): the card-1 template clamps at the left frame edge from f2512 (old whip-2 fit rmse 0.0503) and the old whip-1 fit had rmse 0.051. Now whip 2 (curves/v5.cam-whip-pan.v5c4) bezier(0.919, 0.197, 0.049, 0.893) D=35, active 30 f, rmse 0.015; whip 1 (curves/v5.cam-whip-pan.whip1.v5c4) bezier(0.854, 0.004, 0.000, 0.792) D=27, active 22 f, rmse 0.017 (no still picture before it: rest value = median of f2442-2447).",
+  "Headline cap heights come from per-letter ink boxes (scratch/v5c4_headline_cap_h.csv); the ink_h_px column of scratch/v5c4_headline_swing.csv is not a letter height and is superseded.",
+  "Technique ids follow the other v5 chunks: the caption fade-in is v5.text-caption-word-fade (v5c1, v5c2; was v5.text-caption-fade-sweep here, curve renamed to curves/v5.text-caption-word-fade.v5c4.*), the card-label typewriter is v5.text-typewriter (v5c2, v5c5; was v5.text-label-typewriter), and the stair layout is filed as v5.layout-caption-staircase (v5c1, v5c2). v5c3's v5.text-caption-letter-fade is the same left-to-right letter blur-fade-in: map it to v5.text-caption-word-fade.",
+  "Phrase 4 corrected: its line onsets had been read on crops starting at x >= 880 px, which cut off lines 2-3 (they start at x ~810-880 px); re-read on crops/crop_790_300_260x110_02964-02993.jpg and probed in scratch/v5c4_cap4_onset_probe.csv (first visible f2968, f2977, f2987). scratch/v5c4_cap4_line2.csv is not on line 2 before f2996 (random spots f2982-2986, line 1 f2987-2995, scores 0.39-0.52), so its early scales 0.45-0.72 are not line-2 sizes. The push-in now comes from chained template tracks scratch/v5c4_cap4_L1W1_chain.csv, v5c4_cap4_L1W1_ref2982.csv, v5c4_cap4_L2W1_chain.csv, v5c4_cap4_L2_chain.csv (f2992 on), v5c4_cap4_L3_chain.csv (f2997 on): the normalised cross-correlation and scale search of track.py template, run from the reference picture with a +-40 px window that follows the element so a faint line cannot jump to its neighbour.",
+  "curves/v5.text-type-swing-in.v5c4.json note now gives the per-letter cap heights (41 -> 81 px, 4.5 -> 8.8% H); its old 28 -> 65 px came from the superseded ink_h_px column."
+ ]
+}

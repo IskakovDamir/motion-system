@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.text-tagline-rise-in.y.v4c2",
+  "file": "curves/v4.text-tagline-rise-in.y.v4c2.csv",
+  "property": "position-y",
+  "unit": "% of frame height (offset from rest, positive = below)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/c2_tagline_in.csv",
+  "column": "dy_pct",
+  "sampled_frames": [
+    1538,
+    1575
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 1.204,
+  "to_value": 0.0,
+  "active_frames": [
+    1538,
+    1555
+  ],
+  "measured_duration_frames": 17,
+  "bezier": {
+    "x1": 0.5497,
+    "y1": 1.2223,
+    "x2": 1.0,
+    "y2": 0.7895,
+    "durationInFrames": 17,
+    "delay": -0.031,
+    "built_duration_frames": 17,
+    "rmse": 0.0205
+  },
+  "spring": {
+    "stiffness": 293.685,
+    "damping": 91.957,
+    "mass": 1,
+    "damping_ratio": 2.6829,
+    "built_duration_frames": 21,
+    "rmse": 0.0496
+  },
+  "recommended": "bezier",
+  "note": "tagline rise: whole-pixel offsets of the best template match; first visible frame f1538 at +13 px"
+}

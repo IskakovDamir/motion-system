@@ -1,0 +1,40 @@
+{
+  "technique_id": "v3.trans-dip-to-bg.v3c1",
+  "file": "curves/v3.trans-dip-to-bg.v3c1.csv",
+  "property": "opacity",
+  "unit": "opacity 0-1 (group ink / settled)",
+  "source_samples": "../../analysis/yI-1xclfzqMRrqfA/scratch/v3c1_s05_fadeout.csv",
+  "column": "opacity",
+  "sampled_frames": [
+    606,
+    620
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 1.0,
+  "to_value": 0.0,
+  "active_frames": [
+    610,
+    618
+  ],
+  "measured_duration_frames": 8,
+  "bezier": {
+    "x1": 0.2118,
+    "y1": 0.1615,
+    "x2": 0.414,
+    "y2": -0.0681,
+    "durationInFrames": 7,
+    "delay": 0.689,
+    "built_duration_frames": 7,
+    "rmse": 0.0262
+  },
+  "spring": {
+    "stiffness": 523.905,
+    "damping": 27.225,
+    "mass": 1,
+    "damping_ratio": 0.5947,
+    "built_duration_frames": 16,
+    "rmse": 0.4992
+  },
+  "recommended": "bezier",
+  "note": "T5 out: icon + 2-word line + URL fade out together in place (no scale), empty f618-f619"
+}

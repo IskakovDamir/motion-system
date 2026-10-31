@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.3d-stack-fan-out",
+ "file": "curves/v8.3d-stack-fan-out.csv",
+ "property": "position-x",
+ "unit": "% of frame width",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c3_stack_extent_2020-2200.csv",
+ "column": "right_x_pct",
+ "sampled_frames": [
+  2026,
+  2076
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 68.933,
+ "to_value": 83.039,
+ "active_frames": [
+  2031,
+  2070
+ ],
+ "measured_duration_frames": 39,
+ "bezier": {
+  "x1": 0.0,
+  "y1": 0.1216,
+  "x2": 0.5808,
+  "y2": 1.2374,
+  "durationInFrames": 40,
+  "delay": 0.0,
+  "built_duration_frames": 39,
+  "rmse": 0.0107
+ },
+ "spring": {
+  "stiffness": 42.47,
+  "damping": 10.082,
+  "mass": 1,
+  "damping_ratio": 0.7736,
+  "built_duration_frames": 49,
+  "rmse": 0.051
+ },
+ "recommended": "bezier",
+ "note": "S06 -> S07 morph, phase B: right (far) extent of the 3D screen stack (column-mean dark-run scan over y 400-500, level 200, scratch/v8c3_stack_xruns_2020-2200.csv -> scratch/v8c3_stack_extent_2020-2200.csv). After the page has shrunk into the front card (phase A), about 11 screen layers fan out behind it toward the upper right: far end 1111 px (68.5% W, f2028) -> peak 1355 px (83.5% W, f2066) -> 1344 px (f2076), peak speed about 12 px per frame at f2046-f2048; the left (front) edge stays at 289-304 px. After f2076 the far end drifts back slowly (1344 -> 1281 px by f2192) while the left edge drifts right (287 -> 338 px): slow continuous turn of the stack (into v8c4).",
+ "chunk_curve_id": "v8.3d-stack-fan-out.v8c3"
+}

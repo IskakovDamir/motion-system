@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-line-slide-blur.v5c5",
+  "file": "curves/v5.text-line-slide-blur.v5c5.csv",
+  "property": "position-x",
+  "unit": "% of frame width (left ink edge of headline line 1)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_C_head_in.csv",
+  "column": "l1_left_pct",
+  "sampled_frames": [
+    3367,
+    3383
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 40.752,
+  "active_frames": [
+    3367,
+    3378
+  ],
+  "measured_duration_frames": 11,
+  "bezier": {
+    "x1": 0.3484,
+    "y1": 0.9993,
+    "x2": 0.1932,
+    "y2": 0.8774,
+    "durationInFrames": 11,
+    "delay": 0.556,
+    "built_duration_frames": 10,
+    "rmse": 0.0218
+  },
+  "spring": {
+    "stiffness": 1936.027,
+    "damping": 89.104,
+    "mass": 1,
+    "damping_ratio": 1.0125,
+    "built_duration_frames": 8,
+    "rmse": 0.103
+  },
+  "recommended": "bezier",
+  "note": "mirror of the line 2 slide: line 1 enters from the left edge (streak x 0-11% W at f3367)"
+}

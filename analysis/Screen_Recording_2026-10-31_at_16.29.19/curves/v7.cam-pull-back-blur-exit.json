@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.cam-pull-back-blur-exit",
+  "file": "curves/v7.cam-pull-back-blur-exit.csv",
+  "property": "scale",
+  "unit": "scale factor (1.0 = page at f401)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c1_s3_exit_scale_retimed_389-417.csv",
+  "column": "scale",
+  "sampled_frames": [
+    391,
+    416
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.0,
+  "to_value": 0.8347,
+  "active_frames": [
+    401,
+    416
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.498,
+    "y1": 0.0487,
+    "x2": 1.0,
+    "y2": 0.4646,
+    "durationInFrames": 15,
+    "delay": -0.0,
+    "built_duration_frames": 14,
+    "rmse": 0.019
+  },
+  "spring": {
+    "stiffness": 71.507,
+    "damping": 0.5,
+    "mass": 1,
+    "damping_ratio": 0.0296,
+    "built_duration_frames": 178,
+    "rmse": 0.8003
+  },
+  "recommended": "bezier",
+  "note": "exit move of S3 into the hard cut at f419: the whole page pulls back (scale 1.0 -> 0.835 by the last picture) about a point near the frame centre (x 48.7% W, y 50.4% H) with growing motion blur, accelerating; scale = horizontal span between the icon-tile template and the CTA-button template (track.py template with scale search, ref f401) divided by its f401 value (the button's own size holds x1.29-1.30 over f401-f410, so its centre is a fixed anchor); no settle (cut): to-value = last picture. Re-timed: the captures f410, f413 and f417 are placed at f409, f411 and f416, the 3:2 cadence of the 24 fps pictures before (f389, 391, 394, 396, 399, 401, 404, 406) and after (f414, cut f419); taken as equally spaced pictures, the per-picture scale steps grow smoothly (0.006, 0.009, 0.014, 0.022, 0.037, 0.077) while the captured stamps give a 1-frame f413-f414 step that would mean a speed spike. Captured stamps unchanged in the column captured_frame. Without re-timing, all captured pictures: bezier rmse 0.103; dropping f414 instead: bezier(0.609, 0.292, 0.864, 0.000) D=13, rmse 0.021"
+}

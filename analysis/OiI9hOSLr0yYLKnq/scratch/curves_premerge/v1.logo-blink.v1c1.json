@@ -1,0 +1,40 @@
+{
+  "technique_id": "v1.logo-blink.v1c1",
+  "file": "curves/v1.logo-blink.v1c1.csv",
+  "property": "scale-y",
+  "unit": "eye-pixel area px^2 (white pixels inside the mark; proportional to the eye-bar height because the bar width does not change): 277 = closed 4 px dashes, 1811 = open 54 px bars",
+  "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/s6_blink_eyes.csv",
+  "column": "area",
+  "sampled_frames": [
+    903,
+    920
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 277.0,
+  "to_value": 1811.0,
+  "active_frames": [
+    906,
+    916
+  ],
+  "measured_duration_frames": 10,
+  "bezier": {
+    "x1": 0.31,
+    "y1": 0.96,
+    "x2": 0.6299,
+    "y2": 0.9724,
+    "durationInFrames": 12,
+    "delay": -0.001,
+    "built_duration_frames": 10,
+    "rmse": 0.0015
+  },
+  "spring": {
+    "stiffness": 1117.54,
+    "damping": 67.986,
+    "mass": 1,
+    "damping_ratio": 1.0169,
+    "built_duration_frames": 11,
+    "rmse": 0.0432
+  },
+  "recommended": "bezier",
+  "note": "mark blink: both eye bars collapse in one frame (f899 open bars y 335-388, 54 px -> f900 4 px dashes at the vertical middle of the bars, y 360-363, centred on the bar centre y 361.5), stay closed f900-f906, then reopen symmetrically about y 361.5 (this curve): bars back to their full 54 px at f916 (scratch/s6_blink_eye_extent.csv), the area creeps up another 1.3% to f918 at the anti-aliased edges; build it as scaleY of each bar about its own centre (y 361.5), not the top; the mark starts its slide at f921"
+}

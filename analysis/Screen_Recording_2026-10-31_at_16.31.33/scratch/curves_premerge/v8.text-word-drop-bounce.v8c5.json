@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.text-word-drop-bounce.v8c5",
+  "file": "curves/v8.text-word-drop-bounce.v8c5.csv",
+  "property": "position-y",
+  "unit": "px (picture 918 px high)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c5r_Sd_drops_fit.csv",
+  "column": "word1_cy",
+  "sampled_frames": [
+    3386,
+    3440
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 179.9,
+  "to_value": 411.0,
+  "active_frames": [
+    3386,
+    3401
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.2112,
+    "y1": 1.8203,
+    "x2": 0.3978,
+    "y2": 1.0485,
+    "durationInFrames": 16,
+    "delay": -0.0,
+    "built_duration_frames": 15,
+    "rmse": 0.0082
+  },
+  "spring": {
+    "stiffness": 1036.26,
+    "damping": 29.566,
+    "mass": 1,
+    "damping_ratio": 0.4592,
+    "built_duration_frames": 16,
+    "rmse": 0.1444
+  },
+  "recommended": "bezier",
+  "note": "S-d end-card lockup: the first wordmark word (cap height 59 px = 6.4% H) drops in from above the frame with vertical motion blur (first picture f3386 already at 19.6% H), overshoots 48 px (5.2% H) below its rest at f3393 and settles at 44.8% H by f3402 (dark-ink component over x 340-580, scratch/v8c5r_Sd_drops.csv -> v8c5r_Sd_drops_fit.csv; pictures whose bottom is clipped by the 480 px window use top + 38 px). The second word follows 2 frames later with the same move (109 px at f3388 -> overshoot 451 px at f3394 -> rest 411.5 px by f3404-f3407). from-value = first picture f3386."
+}

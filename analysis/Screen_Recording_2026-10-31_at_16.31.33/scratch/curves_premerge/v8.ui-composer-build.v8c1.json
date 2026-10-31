@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.ui-composer-build.v8c1",
+  "file": "curves/v8.ui-composer-build.v8c1.csv",
+  "property": "position-y",
+  "unit": "% of frame height",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c1_s05_header_composer_604-673.csv",
+  "column": "composer_cy_pctH",
+  "sampled_frames": [
+    612,
+    673
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 90.5673,
+  "to_value": 87.2944,
+  "active_frames": [
+    612,
+    668
+  ],
+  "measured_duration_frames": 56,
+  "bezier": {
+    "x1": 0.0755,
+    "y1": 0.9415,
+    "x2": 0.0934,
+    "y2": 1.1381,
+    "durationInFrames": 60,
+    "delay": 0.91,
+    "built_duration_frames": 52,
+    "rmse": 0.0293
+  },
+  "spring": {
+    "stiffness": 413.933,
+    "damping": 42.112,
+    "mass": 1,
+    "damping_ratio": 1.0349,
+    "built_duration_frames": 18,
+    "rmse": 0.3014
+  },
+  "recommended": "bezier",
+  "note": "S05 composer outline appears at f612 (blurred with the picture) below its rest and rises into place; centre of the outline's top and bottom lines; f612-f614 lines only 3-4 luma deep (quantised); from-value = first picture f612"
+}

@@ -1,0 +1,2 @@
+frame,time_s,unique,x0,y0,x1,y1,w,h,cx,cy,ink_cx,ink_cy,area,mean_lum
+90,1.5000,1,501,515,517,565,17,51,509.00,540.00,513.17,537.73,362,210.60

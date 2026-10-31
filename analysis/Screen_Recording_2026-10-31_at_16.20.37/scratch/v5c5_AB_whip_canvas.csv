@@ -1,0 +1,19 @@
+frame,unique,offset_px,offset_pct,source
+3212,1,0,0.000,title template (rest)
+3215,1,0,0.000,title template
+3217,1,0,0.000,title template
+3220,1,0.5,0.054,title template
+3222,1,0.5,0.054,title template
+3225,1,-6.5,-0.708,title template
+3227,1,-31.5,-3.431,title template
+3230,1,-89.5,-9.749,title template (score 0.88)
+3232,1,-274,-29.847,window top edge thr14 (motion blur) minus canvas gap 880 px; board smear agrees (-270)
+3235,1,-693,-75.490,window top edge thr14 (motion blur) minus 880
+3237,1,-807.5,-87.963,window centre (top 215 bottom 851) minus 880
+3240,1,-856,-93.246,window centre minus 880
+3242,1,-875.5,-95.370,window centre minus 880
+3245,1,-880,-95.861,window centre (rest)
+3247,1,-880,-95.861,window centre
+3250,1,-879.5,-95.806,window centre
+3252,1,-879.5,-95.806,window centre
+3256,1,-880,-95.861,window centre

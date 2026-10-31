@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.cam-swing-3d-push.v5c2",
+  "file": "curves/v5.cam-swing-3d-push.v5c2.csv",
+  "property": "scale",
+  "unit": "scale factor",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_A_swing_scale.csv",
+  "column": "scale_ref1023",
+  "sampled_frames": [
+    1015,
+    1072
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.0,
+  "to_value": 2.1673,
+  "active_frames": [
+    1022,
+    1067
+  ],
+  "measured_duration_frames": 45,
+  "bezier": {
+    "x1": 0.2942,
+    "y1": 0.0149,
+    "x2": 0.2735,
+    "y2": 1.9234,
+    "durationInFrames": 42,
+    "delay": 2.313,
+    "built_duration_frames": 41,
+    "rmse": 0.0981
+  },
+  "spring": {
+    "stiffness": 58.416,
+    "damping": 5.965,
+    "mass": 1,
+    "damping_ratio": 0.3902,
+    "built_duration_frames": 66,
+    "rmse": 0.3273
+  },
+  "recommended": "bezier",
+  "note": "camera swing from the whole-card view toward the 3D button with a perspective tilt (card top recedes) while the 3D cursor flies in: button template scale relative to f1023 (templates ref f1023 / ref f1060 stitched at f1050; scores 0.65-0.99, lowest 0.65-0.77 during the perspective change f1033-f1050, so the shape RMSE stays ~0.1); push 1.00->peak 2.50 (f1055) then recoil to 2.17 by f1067 (28% overshoot of the 1.17 travel); centre x 46.2%->36.4% (f1035)->49.9%, y 77.9%->58.8%->60.7%. Re-track with bright-fill bbox failed (speaker icon + cursor occlusion)."
+}

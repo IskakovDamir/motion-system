@@ -1,0 +1,15 @@
+frame,unique,panel_bottom_px,panel_bottom_pct,panel_top_px,note
+3280,1,770,83.878,151,rest
+3282,1,770,83.878,152,rest
+3285,1,769,83.769,152,rest
+3287,1,769,83.769,152,rest
+3290,1,769,83.769,152,rest
+3292,1,761,82.898,145,
+3295,1,740,80.610,117,
+3297,1,693,75.490,47,panel 1% wider than rest (zoom-in)
+3300,1,549,59.804,0,top edge out of frame; panel 2.6% wider; vertical motion blur
+3302,1,161,17.538,0,motion blur
+3305,1,55,5.991,0,
+3307,1,24,2.614,0,
+3310,1,0,0.000,0,panel gone (bottom edge at or above the top edge)
+3312,1,0,0.000,0,gone

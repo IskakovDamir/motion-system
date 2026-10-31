@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.3d-globe-rise",
+  "file": "curves/v6.3d-globe-rise.csv",
+  "property": "position-y",
+  "unit": "px (picture 918 px high), top edge of the highest footage tile (half-max edge of the row darkness profile)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_globe_rise_halfmax.csv",
+  "column": "top_y",
+  "sampled_frames": [
+    346,
+    398
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 827.0,
+  "to_value": 360.0,
+  "active_frames": [
+    346,
+    371
+  ],
+  "measured_duration_frames": 25,
+  "bezier": {
+    "x1": 0.0004,
+    "y1": 0.0614,
+    "x2": 0.1565,
+    "y2": 1.004,
+    "durationInFrames": 28,
+    "delay": -0.0,
+    "built_duration_frames": 23,
+    "rmse": 0.0242
+  },
+  "spring": {
+    "stiffness": 193.707,
+    "damping": 57.694,
+    "mass": 1,
+    "damping_ratio": 2.0727,
+    "built_duration_frames": 26,
+    "rmse": 0.0902
+  },
+  "recommended": "bezier",
+  "note": "globe (light-grey sphere with meridian lines and dot texture, covered with small footage tiles) rises from below and decelerates; re-tracked from its first, faint picture f346 (tiles at 827 px, 13 luma dark; taken as the start value) -> 691 / 596 / 528 / 480 / 443 / 416 / 396 / 381 / 371 / 364 / 361 / 360 px at f348-f376 (rest 360 px = 39.2% H from f376); the previous fit started at f348, already mid-move"
+}

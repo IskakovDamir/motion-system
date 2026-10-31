@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.text-letter-stagger-fade.y.v4c2",
+  "file": "curves/v4.text-letter-stagger-fade.y.v4c2.csv",
+  "property": "position-y",
+  "unit": "% of frame height (offset from rest, positive = below)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/c2_r1_wordmark_letters.csv",
+  "column": "L3_dy_pct",
+  "sampled_frames": [
+    1506,
+    1537
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 1.5778,
+  "to_value": 0.0,
+  "active_frames": [
+    1506,
+    1522
+  ],
+  "measured_duration_frames": 16,
+  "bezier": {
+    "x1": 0.4745,
+    "y1": 1.0794,
+    "x2": 0.8026,
+    "y2": 0.8327,
+    "durationInFrames": 16,
+    "delay": 0.159,
+    "built_duration_frames": 16,
+    "rmse": 0.017
+  },
+  "spring": {
+    "stiffness": 329.065,
+    "damping": 35.444,
+    "mass": 1,
+    "damping_ratio": 0.977,
+    "built_duration_frames": 19,
+    "rmse": 0.0392
+  },
+  "recommended": "bezier",
+  "note": "third letter of the wordmark rising into place: vertical offset of the settled glyph that best fits each frame (letters land on whole pixels); first visible frame f1506 at +17 px (+1.58% H, opacity 0.04); the offset at opacity 0 is not visible; letters 2-6 repeat the same whole-pixel steps 2 f apart"
+}

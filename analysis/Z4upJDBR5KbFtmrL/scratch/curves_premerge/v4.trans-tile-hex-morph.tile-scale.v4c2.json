@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.trans-tile-hex-morph.tile-scale.v4c2",
+  "file": "curves/v4.trans-tile-hex-morph.tile-scale.v4c2.csv",
+  "property": "scale",
+  "unit": "scale factor of the tile (1.0 = 86 x 50 px)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/c2_r1_t6_morph_model.csv",
+  "column": "cor71_tile_scale",
+  "sampled_frames": [
+    1302,
+    1324
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 1.0003,
+  "to_value": 0.5612,
+  "active_frames": [
+    1309,
+    1323
+  ],
+  "measured_duration_frames": 14,
+  "bezier": {
+    "x1": 0.5204,
+    "y1": 0.9309,
+    "x2": 0.8297,
+    "y2": 0.8534,
+    "durationInFrames": 14,
+    "delay": 0.298,
+    "built_duration_frames": 14,
+    "rmse": 0.0223
+  },
+  "spring": {
+    "stiffness": 244.78,
+    "damping": 27.04,
+    "mass": 1,
+    "damping_ratio": 0.8641,
+    "built_duration_frames": 17,
+    "rmse": 0.0419
+  },
+  "recommended": "bezier",
+  "note": "top-left corner tile (71,166), same two-layer model fit as the tile-out curve: the tile shrinks about its centre while it fades; visible part only: the shrink is still running when the tile becomes too faint to size (opacity 0.05 at f1324, 0.02 at f1325), so the end value 0.561 is the last measured one, not a rest value; the centre tile (1030,575) gives 1.0 -> 0.574 over f1294-f1308"
+}

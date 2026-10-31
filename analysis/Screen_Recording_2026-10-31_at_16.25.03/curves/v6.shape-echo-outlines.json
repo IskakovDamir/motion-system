@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.shape-echo-outlines",
+  "file": "curves/v6.shape-echo-outlines.csv",
+  "property": "position-x",
+  "unit": "px (left side of the outer left echo outline, stroke centroid on rows 2-8)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c2_P11_echo_entry_defocus.csv",
+  "column": "A_side_x_subpx_rows2_8",
+  "sampled_frames": [
+    976,
+    1008
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 419.1,
+  "to_value": 333.04,
+  "active_frames": [
+    976,
+    1003
+  ],
+  "measured_duration_frames": 27,
+  "bezier": {
+    "x1": 1.0,
+    "y1": -0.0073,
+    "x2": 0.0,
+    "y2": 0.9679,
+    "durationInFrames": 40,
+    "delay": -8.261,
+    "built_duration_frames": 25,
+    "rmse": 0.0846
+  },
+  "spring": {
+    "stiffness": 2047.686,
+    "damping": 98.508,
+    "mass": 1,
+    "damping_ratio": 1.0885,
+    "built_duration_frames": 8,
+    "rmse": 0.1822
+  },
+  "recommended": "bezier",
+  "note": "S11 echo outlines entry: the outer left outline's side moves outward 419 -> 333 px in step with the phone punch-in (scaling 417 px by the phone's x1.004 -> x1.217 about x 810 predicts 334 px; progress within 0.03 of curve v6.ui-mockup-punch-in at f983-f1003), while the outline is revealed down from the top edge (visible lower end 10 / 27 / 55 / 116 px at f976/978/981/983, complete with its rounded bottom corner at y 380 px at f987, double-exposed at x 399 and 368 px); first visible f976 (trace at f974); f987 sample = the stronger of the two strokes"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.icon-pulse.v4c1",
+  "file": "curves/v4.icon-pulse.v4c1.csv",
+  "property": "scale",
+  "unit": "scale factor (sqrt of ink area vs rest)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/s1_icon5_area.csv",
+  "column": "scale_from_area",
+  "sampled_frames": [
+    112,
+    131
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 1.0,
+  "to_value": 1.0573,
+  "active_frames": [
+    122,
+    129
+  ],
+  "measured_duration_frames": 7,
+  "bezier": {
+    "x1": 0.6172,
+    "y1": 1.1182,
+    "x2": 0.6641,
+    "y2": 0.8561,
+    "durationInFrames": 7,
+    "delay": 0.052,
+    "built_duration_frames": 7,
+    "rmse": 0.0077
+  },
+  "spring": {
+    "stiffness": 1894.926,
+    "damping": 81.276,
+    "mass": 1,
+    "damping_ratio": 0.9336,
+    "built_duration_frames": 7,
+    "rmse": 0.0292
+  },
+  "recommended": "bezier",
+  "note": "S1 agent logo icon 5 (cell centre (1240, 748)) pulse up 1.000 -> 1.057 (f122-f130, square root of its ink area), held to f133, back to 1.000 by f139; the same pulse, peaking at 1.05-1.06, on the other five icons: agent logo icon 1 (f22-f38, ink span 118 -> 124 px = x1.051, template x1.056), icon 2 (f47-f62, template x1.057-1.060), icon 3 (f72-f88, logo ink width and height 114 -> 120 px at f75-f85 = x1.053, template x1.056), icon 4 (f98-f113, cell top / bottom edges 547.7 / 739.2 -> 542.1 / 744.8 px at f103-f108, height 191.5 -> 202.7 px = x1.059, template x1.06), icon 6 (f148-f164, x1.057); templates scratch/fix_icon1_pulse_tmpl.csv .. fix_icon6_pulse_tmpl.csv (scale steps of about 0.005), edges scratch/fix_icon3_ink_bbox.csv, fix_icon4_top.csv, fix_icon4_bottom.csv; the ink-area square root under-reads icons 3 and 4, so it is used for icon 5 only"
+}

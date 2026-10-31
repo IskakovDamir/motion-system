@@ -1,0 +1,791 @@
+{
+ "video": "Screen_Recording_2026-10-31_at_16.20.37",
+ "key": "v5",
+ "chunk": "v5c1",
+ "frames": [
+  0,
+  701
+ ],
+ "cut_decisions": [
+  {
+   "id": "c001",
+   "frame": 10,
+   "status": "rejected",
+   "reason": "inside footage shot 1: motion inside the footage and a slight camera pull-back, the picture is never replaced (checked every 2nd frame f0-f38, crops/crop_0_0_1622x918_00000-00038.jpg)"
+  },
+  {
+   "id": "c002",
+   "frame": 17,
+   "status": "rejected",
+   "reason": "same footage shot 1, motion inside the footage and camera move (motion peak f17)"
+  },
+  {
+   "id": "c003",
+   "frame": 30,
+   "status": "rejected",
+   "reason": "same footage shot 1; the first caption letters begin to show at f27-f30"
+  },
+  {
+   "id": "c004",
+   "frame": 192,
+   "status": "confirmed",
+   "reason": "anchor of the soft star-flash transition f166-f200 (frame mean luma peak 137.8 at f192 while the two split stars cover most of the frame); the same static framing of footage shot 1 continues, dimmed, behind it"
+  },
+  {
+   "id": "c005",
+   "frame": 270,
+   "status": "confirmed",
+   "reason": "hard cut of the footage layer (static shot 1 at f268 -> motion-blurred shot 2 at f270); the brand wordmark, sparkles and halftone rings above it continue unchanged"
+  },
+  {
+   "id": "c006",
+   "frame": 282,
+   "status": "rejected",
+   "reason": "motion blur settling inside shot 2 (camera move inside the footage), the wordmark above is static"
+  },
+  {
+   "id": "c007",
+   "frame": 290,
+   "status": "rejected",
+   "reason": "same: the blurred camera move inside shot 2 settles by about f290"
+  },
+  {
+   "id": "c008",
+   "frame": 316,
+   "status": "confirmed",
+   "reason": "anchor of the soft zoom-through f302-f323; the footage is replaced between pictures f312 and f316 under radial blur"
+  },
+  {
+   "id": "c009",
+   "frame": 330,
+   "status": "rejected",
+   "reason": "camera push-in and motion inside footage shot 3 after the zoom-through has cleared (f323)"
+  },
+  {
+   "id": "c010",
+   "frame": 355,
+   "status": "confirmed",
+   "reason": "hard cut, footage shot 3 (f352) -> shot 4 (f355)"
+  },
+  {
+   "id": "c011",
+   "frame": 378,
+   "status": "rejected",
+   "reason": "camera dolly and motion inside footage shot 4"
+  },
+  {
+   "id": "c012",
+   "frame": 387,
+   "status": "rejected",
+   "reason": "same footage shot 4, camera dolly"
+  },
+  {
+   "id": "c013",
+   "frame": 415,
+   "status": "confirmed",
+   "reason": "hard cut, footage shot 4 (f412) -> shot 5 (f415)"
+  },
+  {
+   "id": "c014",
+   "frame": 430,
+   "status": "rejected",
+   "reason": "fast camera push-in inside footage shot 5; caption 3 is revealing at the same time"
+  },
+  {
+   "id": "c015",
+   "frame": 542,
+   "status": "rejected",
+   "reason": "fast camera pull-back inside the same shot: framing changes smoothly picture to picture f527-f560 (detail/cut_c015, cut_c016 sheets); caption 4 keeps drifting through it"
+  },
+  {
+   "id": "c016",
+   "frame": 552,
+   "status": "rejected",
+   "reason": "same pull-back, end of the motion blur"
+  },
+  {
+   "id": "c017",
+   "frame": 650,
+   "status": "confirmed",
+   "reason": "hard cut, footage shot 5 (f647) -> shot 6 (f650)"
+  },
+  {
+   "id": "c018",
+   "frame": 683,
+   "status": "rejected",
+   "reason": "motion inside footage shot 6"
+  },
+  {
+   "id": "c019",
+   "frame": 702,
+   "status": "confirmed",
+   "reason": "hard cut from footage (f700) to a black GRAPHICS title card (f702); boundary sits exactly on the chunk edge, both sides checked (f672-f732); the next segment belongs to v5c2"
+  }
+ ],
+ "boundaries": [
+  {
+   "start": 166,
+   "end": 200,
+   "type": "flash",
+   "frames": 35,
+   "shared": "the frame centre and the same static framing of footage shot 1: a 4-point star drops to the frame centre (x 50.0 %W, y 49.5 %H) while the footage dims to 0.39-0.40 of its luma; at f185 it doubles into two mirror-image stars that slide apart horizontally, symmetric about x 806-809 px (centre spacing 2.7 / 8.7 / 24.0 / 54.4 %W at f185 / 187 / 190 / 192, >= 90 %W at f195) and leave past the left and right edges by f200; the gap between them on row y380 opens 0 -> 14.4 / 60.5 / 93.9 / 100 %W at f192 / 195 / 197 / 200; frame luma peaks at 137.8 (f192) while the stars cover most of the frame; the dimmed shot 1, the serif line's chrome smear (entering at the left edge from f187), the halftone orbit rings (first visible f190, drawn over the stars) and a chrome shard rising at the lower right (f187-f190) are already there while the stars split",
+   "technique": "v5.trans-star-flash",
+   "curve": "v5.trans-star-flash.v5c1",
+   "detail": "detail/soft_166-200",
+   "anchor_cut": "c004",
+   "crops": [
+    "crops/crop_560_0_500x160_00182-00192.jpg",
+    "crops/crop_0_360_1622x200_00190-00200.jpg"
+   ]
+  },
+  {
+   "frame": 270,
+   "type": "hard-cut",
+   "anchor_cut": "c005",
+   "note": "footage layer only: the wordmark overlay holds across the cut (v5.layout-overlay-holds-across-cut)"
+  },
+  {
+   "start": 302,
+   "end": 323,
+   "type": "zoom-through",
+   "frames": 22,
+   "shared": "the frame centre as zoom origin: the wordmark scales 1.035 -> 1.521 about (801, 455) px (f300-f312), its fill fades to a glowing hollow outline (f300-f310) and radial streaks grow (0.20 / 0.23 of the radius at f310 / f312); its last picture f312 is held to f315; the footage cut lands at f316 under the strongest streaks (0.47 of the radius, longest 23.4 %W); the new shot passes through one dark vignetted picture (f318: frame luma 20.8, outer 8 grid cells 17.2 vs centre cell 49.6) and recovers (frame luma 59.3 at f320, 73.9 at f323, 80.5 at f325)",
+   "technique": "v5.trans-zoom-through-radial",
+   "curve": "v5.trans-zoom-through-radial.v5c1",
+   "detail": "detail/soft_302-323",
+   "anchor_cut": "c008",
+   "curves": [
+    "v5.trans-zoom-through-radial.v5c1",
+    "v5.trans-zoom-through-radial.scale.v5c1",
+    "v5.trans-zoom-through-radial.fill.v5c1"
+   ],
+   "crops": [
+    "crops/crop_540_220_560x330_00300-00316.jpg"
+   ]
+  },
+  {
+   "frame": 355,
+   "type": "hard-cut",
+   "anchor_cut": "c010"
+  },
+  {
+   "frame": 415,
+   "type": "hard-cut",
+   "anchor_cut": "c013"
+  },
+  {
+   "frame": 650,
+   "type": "hard-cut",
+   "anchor_cut": "c017"
+  },
+  {
+   "frame": 702,
+   "type": "hard-cut",
+   "anchor_cut": "c019",
+   "note": "chunk edge; the GRAPHICS title card after it is analysed in v5c2"
+  }
+ ],
+ "segments": [
+  {
+   "id": "v5c1-P1",
+   "start": 0,
+   "end": 183,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "static footage (shot 1) with two kinetic subtitle captions in the upper-left: 2-line staircase text that drifts left-up at constant speed, letters blur-fading in left to right, lines blur-fading out top line first; ends in the star-flash transition (a sparkle drops to the centre, doubles and the two stars fly apart off the frame edges)"
+  },
+  {
+   "id": "v5c1-P2",
+   "start": 184,
+   "end": 269,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "footage shot 1 dimmed to about 0.4 luma under a centred 2-line brand wordmark whose lines streak in as chrome smears from opposite edges (serif line from the left from f187, bold line with icon from the right from f202), small sparkles flying in from the edges beside the line ends, and an atom-like rig of 3 halftone-dot orbit rings spinning at a constant 1.5-1.7 deg per frame; the serif line contracts and holds, then the whole lockup scales 0.88 -> 1.00 (f215-f235); then a slow scale creep"
+  },
+  {
+   "id": "v5c1-P3",
+   "start": 270,
+   "end": 312,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "the footage hard-cuts under the unchanged wordmark to shot 2, which starts motion-blurred and settles by f290; the wordmark keeps creeping, then accelerates toward the camera with outline glow and radial streaks (first half of the zoom-through)"
+  },
+  {
+   "id": "v5c1-P4",
+   "start": 313,
+   "end": 354,
+   "class": "LIVE",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [
+    "sheets/overview_00288-00333.jpg",
+    "sheets/overview_00336-00381.jpg",
+    "detail/soft_302-323/sheet.jpg",
+    "detail/cut_c009_f00330/sheet.jpg",
+    "detail/cut_c010_f00355/sheet.jpg"
+   ],
+   "summary": "footage shot 3 with a camera push-in; f313-f323 is the tail of the zoom-through (recorded as the boundary); no designed element after f323"
+  },
+  {
+   "id": "v5c1-P5",
+   "start": 355,
+   "end": 414,
+   "class": "LIVE",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [
+    "sheets/overview_00336-00381.jpg",
+    "sheets/overview_00384-00429.jpg",
+    "detail/cut_c010_f00355/sheet.jpg",
+    "detail/cut_c012_f00387/sheet.jpg",
+    "detail/cut_c013_f00415/sheet.jpg"
+   ],
+   "summary": "footage shot 4 with a camera dolly; a brand mark visible in it is part of the filmed footage, not a designed overlay; no designed element"
+  },
+  {
+   "id": "v5c1-P6",
+   "start": 415,
+   "end": 649,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "footage shot 5 (camera: fast push-in, hold, fast pull-back, pan) with caption 3 (2-line staircase, left, drifting left) and caption 4 (5-line staircase on the right, drifting right-up, lines rolling in and out first-in first-out); no text after f596"
+  },
+  {
+   "id": "v5c1-P7",
+   "start": 650,
+   "end": 701,
+   "class": "LIVE",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [
+    "sheets/overview_00624-00669.jpg",
+    "sheets/overview_00672-00717.jpg",
+    "detail/cut_c017_f00650/sheet.jpg",
+    "detail/cut_c018_f00683/sheet.jpg",
+    "detail/cut_c019_f00702/sheet.jpg"
+   ],
+   "summary": "footage shot 6 with motion inside the shot; no designed element; hard cut at f702 to the black title card of v5c2"
+  }
+ ],
+ "techniques": [
+  {
+   "id": "v5.text-caption-word-fade",
+   "category": "text",
+   "description": "kinetic subtitle reveal: inside each word the letters sweep in left to right, each letter coming up from blurred and transparent to sharp white; words and lines follow the voice-over, so the stagger is irregular; the block is drifting the whole time (v5.text-caption-drift)",
+   "instances": [
+    [
+     27,
+     62
+    ],
+    [
+     108,
+     147
+    ],
+    [
+     420,
+     452
+    ],
+    [
+     496,
+     560
+    ]
+   ],
+   "reference_frames": [
+    27,
+    34,
+    44,
+    57,
+    66,
+    420,
+    425,
+    432,
+    440,
+    452
+   ],
+   "measured": {
+    "duration_frames": 40,
+    "easing": "spring(stiffness 53.0, damping 12.77, mass 1; zeta 0.88) shape rmse 0.032, built 36 f / bezier(0.404, 0.438, 0.148, 0.582) D=33 rmse 0.060 (first word of caption 1, ink-minus-background contrast 5 -> 155, active f27-f67)",
+    "values": "caption 1 per letter (motion-compensated ink contrast, scratch/cap1_chars.csv): t50 34.5 / 37.8 / 37.9 / 40.4 / 43.6 / 44.4 / 47.0 / 49.1 / 53.2 for letters at x 179-418 px -> 0.061 frames per px, about 1.6 frames per letter; each letter 10->90% in 16-25 f (mean about 21 f); whole lines t10/t50/t90: caption 1 L1 31.3/44.1/57.6, L2 41.0/55.8/61.4; caption 2 L1 109.8/120.9/131.0, L2 130.5/141.5/146.6 (line stagger 11.7 and 20.6 f); caption 3 words first visible f420/425/432.5/435.5/440 and sharp 5-10 f later (read every frame, crops/crop_100_330_600x170_00415-00452.jpg); caption 4 lines first visible f496/508/520/536/548 (every 4 f, +-2 f)"
+   },
+   "curves": [
+    "v5.text-caption-word-fade.v5c1"
+   ]
+  },
+  {
+   "id": "v5.text-caption-drift",
+   "category": "text",
+   "description": "the whole caption block slides at a constant velocity along a shallow diagonal for its entire life (already moving on its first visible picture, still moving on its last); captions on the left drift left-up, the caption on the right drifts right-up, opposite to the direction in which its lines step",
+   "instances": [
+    [
+     27,
+     97
+    ],
+    [
+     108,
+     178
+    ],
+    [
+     420,
+     484
+    ],
+    [
+     496,
+     596
+    ]
+   ],
+   "reference_frames": [
+    53,
+    72,
+    127,
+    155,
+    430,
+    460,
+    502,
+    537
+   ],
+   "measured": {
+    "duration_frames": 70,
+    "easing": "linear (constant velocity; straight-line fit RMS 0.0-0.3 px over 8-15 pictures)",
+    "values": "template tracks per 24 fps picture (scratch/cap_*.csv): caption 1 L1 -15.00 / -3.00 px (= -6.00 / -1.20 px per frame = -0.370 %W / -0.131 %H per frame), L2 -14.92 / -2.92; caption 2 L1 -14.87 / -2.89 (-0.367 %W / -0.126 %H per frame); caption 3 L1 -15.00 / -1.74, L2 -15.00 / -1.85 (-0.370 %W / -0.076 %H per frame); caption 4 L1 +13.28 / -2.29, L2 +13.26 / -2.32 (+5.31 / -0.92 px per frame = +0.327 %W / -0.100 %H per frame), L4 +12.43 / -2.21 (4 pictures); left edges ride the same drift: L4 971 -> 1007 px f550-f557 (+5.1 px per frame), L5 876 -> 949 px f562-f577 (+4.9 px per frame), L4 / L5 baselines -0.7 / -0.8 px per frame f562-f575 (scratch/v5c1rev2_cap4_lines.csv); angle 11.3 deg (captions 1-2), 6.8 deg (caption 3), 9.8 deg (caption 4) above horizontal"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.text-caption-line-fade-out",
+   "category": "text",
+   "description": "caption lines leave one at a time, top line first, by fading and defocusing in place while the block keeps drifting; with long text (caption 4) every line leaves about 50 frames after it arrived, so the caption rolls first-in first-out",
+   "instances": [
+    [
+     67,
+     95
+    ],
+    [
+     149,
+     177
+    ],
+    [
+     455,
+     483
+    ],
+    [
+     536,
+     596
+    ]
+   ],
+   "reference_frames": [
+    67,
+    73,
+    78,
+    85,
+    94,
+    460,
+    468
+   ],
+   "measured": {
+    "duration_frames": 25,
+    "easing": "bezier(0.516, -0.392, 0.060, 0.618) D=31 shape rmse 0.033, built 22 f / spring(stiffness 192.5, damping 29.97, mass 1; zeta 1.08) rmse 0.036, built 26 f (caption 1 line 1, normalised line contrast 0.95 -> 0, active f67-f92)",
+    "values": "90 -> 10%: caption 1 L1 f68.7 -> f84.7 (16.0 f), L2 f79.3 -> f94.0 (14.7 f); caption 2 L1 f149.2 -> f162.0 (12.8 f), L2 f167.5 -> f176 (8.5 f); caption 3 L1 f455.2 -> f467.6 (12.4 f), L2 f463.9 -> f482.6 (18.7 f) (caption 3 contrast is disturbed by the push-in); line stagger at t50: 11.3 f (caption 1), 15.7 f (caption 2), 7.9 f (caption 3); caption 4 lines gone at f548 / 560 / 568 / 588 / 596 (every-4-frame crop, +-2 f), 48-52 f after each first appeared"
+   },
+   "curves": [
+    "v5.text-caption-line-fade-out.v5c1"
+   ]
+  },
+  {
+   "id": "v5.layout-caption-staircase",
+   "category": "layout",
+   "description": "each subtitle line is offset sideways from the previous one, so a caption reads down a diagonal staircase; on the left third lines step right, on the right half they step left (toward the frame centre); the first line of a caption can be set larger",
+   "instances": [
+    [
+     27,
+     97
+    ],
+    [
+     108,
+     178
+    ],
+    [
+     420,
+     484
+    ],
+    [
+     496,
+     596
+    ]
+   ],
+   "reference_frames": [
+    65,
+    150,
+    452,
+    532,
+    540,
+    552,
+    557,
+    575
+   ],
+   "measured": {
+    "duration_frames": 0,
+    "easing": "-",
+    "values": "caption 1 (f65): line 2 starts +162 px (+10.0 %W) right of line 1, baseline pitch 57.7 px (6.3 %H), first letter of line 1 at x 181 px (11.2 %W), cap top 137.7 px (15.0 %H); caption 2 (f150): +72 px (+4.4 %W), baseline pitch about 48 px (5.3 %H), line 1 cap 49.7 px vs line 2 ascender 40.0 px; caption 3 (f452): +105 px (+6.5 %W), pitch 62 px (6.75 %H), line 1 at x 123 px (7.6 %W), cap top 359 px (39.1 %H); caption 4: left edges step -207 px (-12.8 %W; -202 to -207 at f530-f532), -100 px (-6.2 %W; -99 to -101 at f530-f545), -115 px (-7.1 %W; -111 to -117 at f550-f557) and -160 px (-9.9 %W; -155 to -167 at f552-f577) for lines 1->2 / 2->3 / 3->4 / 4->5, so the steps are unequal; baseline pitch 57 / 54 / 55 / 59 px (6.2 / 5.9 / 6.0 / 6.4 %H) for the same line pairs (f530-f535, f552, f562-f575; scratch/v5c1rev2_cap4_lines.csv: left edge = first column with luma >= 205, baseline = strongest bright-to-dark step of the row 85th-percentile luma); line 1 at x 1298 px (80.0 %W), cap top 416 px (45.3 %H) at f532"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.shape-star-drop",
+   "category": "shape",
+   "description": "a 4-point sparkle star (concave diamond with long thin spikes) enters at the top edge on the vertical centre line and drops to the frame centre, decelerating, growing as it goes; at f185 it doubles into the two separating stars of v5.trans-star-flash",
+   "instances": [
+    [
+     166,
+     182
+    ]
+   ],
+   "reference_frames": [
+    168,
+    170,
+    172,
+    175,
+    177,
+    180
+   ],
+   "measured": {
+    "duration_frames": 14,
+    "easing": "ease-out, exponential approach with time constant about 4 frames (progress 0 / 0.39 / 0.64 / 0.82 / 0.93 / 1.00 at f168 / 170 / 172 / 175 / 177 / 180); not fitted: the drop starts above the top edge before the first measurable picture (fit_easing shape rmse 0.12-0.14, curve dropped)",
+    "values": "centre x 811 px (50.0 %W) throughout; centre y 173 px (18.8 %H, f168) -> 282.5 -> 354.5 -> 403 -> 434.5 -> 454.5 px (49.5 %H, f180), settled 449-465 px through f192 (scratch/t1_star_drop.csv); star width 69 px (4.3 %W, f168) -> 154 px (9.5 %W, f177) -> 216 px (13.3 %W, f180); only a glow at the top edge is visible at f166; f182 (still one star): width on the centre row 505 px (31.1 %W, >= 180 luma), vertical tip-to-tip 625 px (68.1 %H), apexes at x 808 (scratch/v5c1fix_star_pair.csv)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.trans-star-flash",
+   "category": "trans",
+   "description": "soft transition: the sparkle star that dropped to the centre doubles into two identical, mirror-image bevelled 4-point stars that slide apart horizontally with accelerating speed, symmetric about the vertical centre line, and leave past the left and right frame edges; while they are large they cover most of the frame (a luminance flash), and the next composition (title over the dimmed footage) shows between them as they part",
+   "instances": [
+    [
+     166,
+     200
+    ]
+   ],
+   "reference_frames": [
+    166,
+    177,
+    182,
+    185,
+    187,
+    190,
+    192,
+    195,
+    197,
+    200
+   ],
+   "measured": {
+    "duration_frames": 35,
+    "easing": "opening (gap between the stars' inner edges on row y380, 0 -> 100 %W, rest at both ends): bezier(0.738, 0.734, 0.427, 1.000) D=9 shape rmse 0.047, built 8 f, active f190-f200 / spring(stiffness 695.3, damping 40.26, mass 1) rmse 0.166; separation: accelerating ease-in, x3.3 / x2.8 / x2.3 per picture, not fitted (runs off the frame, no rest after)",
+    "values": "scratch/v5c1fix_star_pair.csv: one star through f182 (apexes at x 808-812); doubles at f185; centre spacing 43 / 141 / 389 / 883 px = 2.7 / 8.7 / 24.0 / 54.4 %W at f185 / 187 / 190 / 192 (spike apexes at f185, spike-envelope centres on rows y20-y900 from f187), 14 -> 49 -> 83 -> 247 px per frame; >= 90 %W at f195 (spike envelopes cut by the frame edges); symmetry axis x 806-809 px; per-star width on the centre row 505 (f182) -> 680 (f185) -> 768 (f187) -> 788 px (f190) = 31.1 -> 41.9 -> 47.3 -> 48.6 %W; vertical tip-to-tip 625 (f182) -> 848 px (f185), past the frame edges from f187; gap between the top spikes on y60: 50 px (f187), 265 px (f190); gap between the inner edges on y380: 0 through f190, 14.4 / 60.5 / 93.9 / 100 %W at f192 / 195 / 197 / 200 (y540: 11.9 / 60.4 / 92.6 / 100); frame mean luma 92.4 (f166) -> 42.7 (f177, footage dimmed) -> 84.7 (f185) -> 126.9 (f190) -> 137.8 (f192) -> 93.6 (f195) -> 46.2 (f197) -> 41.5 (f200) (t1_luma_full.csv)"
+   },
+   "curves": [
+    "v5.trans-star-flash.v5c1"
+   ]
+  },
+  {
+   "id": "v5.fx-footage-dim",
+   "category": "fx",
+   "description": "the footage is darkened to about 0.4 of its luma under the incoming title, starting with the star drop and held for the whole title; it is lifted only by the zoom-through into the next shot (same family as v5.fx-dim-under-caption in v5c6, here slower and before a title)",
+   "instances": [
+    [
+     166,
+     182
+    ]
+   ],
+   "reference_frames": [
+    166,
+    172,
+    177,
+    180
+   ],
+   "measured": {
+    "duration_frames": 16,
+    "easing": "bezier(0.170, -0.049, 0.412, 1.195) D=16 shape rmse 0.024, built 15 f / spring(stiffness 342.4, damping 28.77, mass 1; zeta 0.78) rmse 0.066",
+    "values": "footage ROI x230-430 y480-780: luma 112.2 (f166) -> 44.0 (f180), x0.39; ROI x1200-1400 y480-780: 75.9 -> 28.0, x0.37; held at 45-48 (left ROI) through f235 under the title"
+   },
+   "curves": [
+    "v5.fx-footage-dim.v5c1"
+   ]
+  },
+  {
+   "id": "v5.logo-chrome-smear-in",
+   "category": "logo",
+   "description": "2-line brand wordmark lockup whose lines enter from opposite frame edges as horizontal chrome smears: the serif line from the left (its head with the tailed sparkle runs in first and stops, then its leading capital slides in while the line un-stretches toward the head; extruded chrome bevel for two pictures, then flat), the bold line with the icon from the right as a smear band whose left end sweeps to the line start, resolving left to right and overshooting slightly; small sparkles fly in from the edges as chrome lenses and land beside the line ends as flat 4-point sparkles; the serif line contracts and holds, then the whole lockup grows into place",
+   "instances": [
+    [
+     187,
+     235
+    ]
+   ],
+   "reference_frames": [
+    187,
+    190,
+    195,
+    197,
+    200,
+    202,
+    205,
+    207,
+    210,
+    212,
+    215,
+    217,
+    220,
+    222,
+    226,
+    235,
+    240
+   ],
+   "measured": {
+    "duration_frames": 48,
+    "easing": "serif capital x: spring(stiffness 821.5, damping 55.18, mass 1; zeta 0.96) rmse 0.020, built 12 f / bezier(0.278, 0.669, 0.161, 0.642) D=9 rmse 0.068; bold line left end x: spring(1907.6, 77.31; zeta 0.89) rmse 0.012, built 7 f / bezier(0.456, 1.002, 0.376, 1.011) D=11 rmse 0.053; lockup settle scale f215-f235: bezier(0.417, 0.627, 0.030, 0.918) D=21 rmse 0.037, built 18 f / spring(542.9, 46.89; zeta 1.01) rmse 0.061; bold line's own scale f210-f237: bezier(0.630, 0.441, 0.000, 0.948) D=26 rmse 0.0495 / spring(346.4, 34.69) rmse 0.085",
+    "values": "serif line head (crop, scratch/v5c1fix_serif_entry.csv): striped chrome streak tip at x 140 px (8.6 %W) at f187, visible x 0-210 at f190 (then behind the left star), thin streak to x 1167 (71.9 %W) at f195, blade tip 1242 at f197, tailed sparkle ray tip 1262 / 1280 / 1285 px at f200 / 202 / 205 and 1270-1280 px f207-f215 (128 -> 37 -> 7 px per frame); serif leading capital centre 130 / 331 / 488 / 580 / 630 / 646 px = 8.0 / 20.4 / 30.1 / 35.8 / 38.8 / 39.8 %W at f197 / 200 / 202 / 205 / 207 / 210 (+-10 px), width 210 -> 98 px; flat word at f207 x 560-1222 px (still) at scale 0.92 of its f240 size; bold line smear band (scratch/v5c1fix_bold_band.csv, rows 330-420, frame minus f200 > 10 luma): x 1435-1601 (f202) -> 765-1602 (f205) -> 442-1180 (f207) -> line from 331 (f210) / 328 px (f212): left end 88.5 -> 47.2 -> 27.3 -> 20.4 -> 20.2 %W; sparkles (crop, scratch/v5c1fix_sparkles.csv): right (1495, 438) f197 -> (1477, 454) f200 -> (1387, 482) f202 -> (1319, 501) f205 -> (1290, 512) f207 -> (1277, 515) f210 px (-13.4 %W, +8.4 %H), left (345, 480) f202 -> (442, 492) f212, lower-left (230, 560) f200 -> (502, 560) f210, large left from f212 at (535, 505) -> (502, 525) f226; serif line scale (scratch/v5c1fix_serif_scale.csv, f240 template, scores 0.86-0.98) 0.9175 (f207) -> 0.8875 (f210) -> 0.8775 (f212, f215) -> 0.8975 (f217) -> 0.945 (f220) -> 0.9725 (f222) -> 0.9875 (f226) -> 1.000 (f235), width/height ratio 1.02 at f207-f210 and 1.00 from f217; bold line scale (scratch/logo_l1_scale_fine2.csv) 0.860 (f210) -> 0.866 (f212) -> 0.876 (f215) -> 0.944 (f220) -> 0.974 (f222) -> 0.988 (f226) -> 1.000 (f237), equal to the serif line within 0.003 from f215; lockup scale centre about (811, 462) px; serif centre (869, 515.5) -> (880, 535) px, bold centre (855.5, 399) -> (885, 390) px over f215-f235; relative to that scale the bold line sits 20-35 px further left at f212-f220 (left end 328 / 310 / 297 / 282 px) and is back by f226-f228; rest: bold line x 265-1278 px (16.3-78.8 %W), cap 132.5 px (14.4 %H); serif cap about 120 px (13.1 %H); baseline pitch 157.5 px (17.2 %H)"
+   },
+   "curves": [
+    "v5.logo-chrome-smear-in.serif.v5c1",
+    "v5.logo-chrome-smear-in.bold.v5c1",
+    "v5.logo-chrome-smear-in.settle.v5c1",
+    "v5.logo-chrome-smear-in.v5c1"
+   ]
+  },
+  {
+   "id": "v5.logo-scale-creep",
+   "category": "logo",
+   "description": "after settling, the wordmark keeps growing very slowly about the frame centre (a held push-in), unaffected by the footage cut underneath, and this creep runs straight into the accelerating zoom-through exit",
+   "instances": [
+    [
+     237,
+     300
+    ]
+   ],
+   "reference_frames": [
+    237,
+    260,
+    285,
+    300
+   ],
+   "measured": {
+    "duration_frames": 63,
+    "easing": "near-linear, slightly accelerating (no rest at either end); not fitted",
+    "values": "template scale 1.000 (f237) -> 1.005 (f247) -> 1.010 (f260) -> 1.015 (f268) -> 1.020 (f277) -> 1.025 (f285) -> 1.030 (f295) -> 1.035 (f300), about 0.055% per frame; origin from the centre shift about (813, 447) px, near the frame centre (811, 459)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.shape-halftone-orbit-rings",
+   "category": "shape",
+   "description": "atom-like rig of three halftone-dot circles (dotted bands, semi-transparent white over the dimmed footage) around the wordmark, passing in front of and behind it, spinning together as one rigid unit about a fixed tilted axis at a constant rate; on screen the three ellipses open and close and their major axes turn clockwise; they appear while the stars split (first visible f190, drawn over the stars) and are streaked away by the zoom-through",
+   "instances": [
+    [
+     190,
+     316
+    ]
+   ],
+   "reference_frames": [
+    190,
+    205,
+    212,
+    222,
+    230,
+    235,
+    240,
+    250,
+    255,
+    257,
+    262,
+    268,
+    312
+   ],
+   "measured": {
+    "duration_frames": 63,
+    "easing": "linear: constant spin, 1.58 deg per frame from a rigid-rotation fit of the three ring ellipses f205-f268 (rms 14 px over 65 ellipse samples), 1.69 deg per frame from per-picture rig angles (rms 3.8 deg); window fits 1.50 (f205-f240) and 1.58 (f240-f268) deg per frame, so no speed change; not fitted with fit_easing (no rest at either end)",
+    "values": "3 rings; fitted radius 567 / 582 / 565 px (35.0 / 35.9 / 34.8 %W) for rings A / B / S, larger than half the frame height, so a ring whose major axis is near vertical (ring S) runs past the top and bottom frame edges; ring planes 50 / 68 / 90 deg apart (A-B / A-S / B-S), each plane normal 54-59 deg from the spin axis; spin axis 51 deg from the view axis, its screen projection runs from upper left to lower right 28 deg from vertical (unit vector x 0.37, y 0.69 down, 0.62 along the view axis; the orthographic fit cannot tell whether the axis top leans toward or away from the viewer: mirror solution with the same rms); rig angle -59.5 (f205) -> -0.1 (f240) -> +39.3 deg (f265), about 100 deg over f205-f268 (scratch/v5c1rev2_rings_rig_angle.csv). Per-picture ellipses (coverage fits on each picture minus the median of f212-f268, scratch/v5c1rev2_rings_ellipses.csv): ring S near-circle b/a 0.92 (f205) -> 0.48 (f240) -> 0.15 (f268), semi-minor 552 -> 292 -> 98 px, major axis 62 -> 106 deg (clockwise 0.71 deg per frame); ring B b/a 0.09 (f207) -> 0.33 (widest, f233) -> edge-on, b 4-8 px (f260-f268), major axis 132 -> 199 deg (1.11 deg per frame); ring A edge-on (b 4 px) f228-f235 -> b/a 0.15 (f240) -> 0.64 (f268), major axis 19 (f230) -> 58 deg (f268) (1.02 deg per frame); ellipse centres (edge-on pictures left out) A (756-809, 486-515), B (790-841, 424-451), S (840-893, 438-503) px, up to about 130 px apart (mild perspective or not exactly concentric). Top band rows y30-50 (track.py bbox x 850-1400, luma > border median + 35, scratch/v5c1rev2_rings_topband_x850.csv): f212-f220 two arcs (S and B) at x 1087-1239; then ring S's upper right arc, band centre 1171 (f222) -> 1115 (f230) -> 1052 (f240) -> 1005.5 (f250) -> 995 (f255, f257, turning point) -> 1004 (f262) -> 1023.5 (f268): -5.33 px per frame f222-f255, +2.59 px per frame f257-f268; the ring S ellipse track predicts the same turn (within 5-10 px), so it is a projection effect of the steady spin; ring A enters the band at x 480-606 (f262) -> 442-768 (f268). Dots (scratch/v5c1rev2_rings_dots.csv): band 18-27 px wide at half strength (1.1-1.7 %W), dot pitch 12-14 px (0.74-0.88 %W), isolated dots 2-10 px at the band edges, touching and merged in the core; first visible f190 (dotted arcs at x about 210-460 and 1100-1420 over the two stars; type/S01-star_f00190.png), present through f312, radially streaked f310-f316"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.trans-zoom-through-radial",
+   "category": "trans",
+   "description": "soft transition out of a title: the wordmark (with its rings) accelerates toward the camera about the frame centre while its solid fill fades to a glowing hollow outline, radial streaks grow, the footage cuts under the strongest streaks, and the incoming shot passes through one dark vignetted picture before it recovers to its clear luma",
+   "instances": [
+    [
+     302,
+     323
+    ]
+   ],
+   "reference_frames": [
+    300,
+    302,
+    305,
+    307,
+    310,
+    312,
+    316,
+    318,
+    320,
+    323,
+    325
+   ],
+   "measured": {
+    "duration_frames": 22,
+    "easing": "wordmark scale f300-f312: bezier(1.000, 0.311, 1.000, 0.725) D=11 shape rmse 0.023, built 11 f (very strong ease-in; the end is f312, the last picture the letter templates find, no rest after) / spring not usable (rmse 0.56); fill fading to outline f300-f312 (stroke-centre luma): bezier(1.000, 0.713, 0.000, 0.201) D=12 rmse 0.016, built 12 f / spring(138.7, 12.16) rmse 0.42; luma recovery of the incoming shot f318-f325: bezier(0.108, 0.800, 0.177, 0.693) D=6 shape rmse 0.034, built 6 f (strong ease-out from the darkest picture) / spring(7799.3, 47.26) rmse 0.31",
+    "values": "scale (centre span of the 3rd and 5th letters of the bold line, f240 gradient templates per letter, scores 0.41-0.90; scratch/v5c1rev2_zoom_letter_scale.csv) 1.035 (f300) -> 1.054 (f302) -> 1.091 (f305) -> 1.155 (f307) -> 1.249 (f310) -> 1.521 (f312), x1.018 / x1.035 / x1.059 / x1.081 / x1.218 per picture; the 3rd-5th letters' own sizes read 1.50-1.54 at f312, the middle letter's centre stays at x 801-804 px, so the zoom origin is about (801, 455) px; the whole-line gray template (scratch/logo_l1_scale_fine.csv) reads 1.170 / 1.325 at f307 / f310 because the outer letters are smeared outward by the streaks (outer letters 1.28-1.34 at f310); f312 is held to f315 (next picture f316) and at f316 no letter matches (scores 0.13-0.22, no lock). Fill (scratch/v5c1rev2_zoom_fill.csv): stroke-centre luma of the 2nd-6th letters 179 (rest f290-f297) -> 177 / 165 / 146 / 114 / 93 / 80 at f300 / 302 / 305 / 307 / 310 / 312, outline 191-199 to f307, 181 at f310, 124 at f312, ring 7-12 px outside the letters 59 -> 103 (f300 -> f310): fill gone from f310. Radial streaks (polar run lengths about (801, 455), scratch/v5c1rev2_zoom_streaks.csv): distinct streaks of 60 px or longer 7-11 (f300-f307) -> 28 (f310) -> 66 (f312) -> 24 (f316) -> 5-11 (f318-f323); length / outer radius of the 6 longest 0.13-0.15 (f300-f307 baseline) -> 0.20 (f310) -> 0.23 (f312) -> 0.47 (f316) -> 0.10-0.19 (f318-f323); longest 192 / 350 / 379 px = 11.8 / 21.6 / 23.4 %W, median 72 / 91 / 190 px = 4.4 / 5.6 / 11.7 %W at f310 / 312 / 316. Footage replaced between f312 and f316; frame mean luma 47.8 (f297) -> 62.0 (f310) -> 59.0 (f312) -> 45.3 (f316) -> 20.8 (f318) -> 59.3 (f320) -> 73.9 (f323) -> 80.5 (f325), f325-f330 mean 80.45 (t2_luma_full.csv); 3x3 grid, outer 8 cells / centre cell: 42.1 / 93.6 (f297), 55.7 / 112.4 (f310), 43.8 / 57.5 (f316), 17.2 / 49.6 (f318, ratio 0.35), 57.5 / 73.4 (f320, 0.78), 71.0 / 96.6 (f323), 77.2 / 106.5 (f325) (scratch/v5c1fix_zoom_grid.csv, scratch/v5c1fix_zoom_centre.csv); sharp centre window about 37 %W x 41 %H at f318 (still S03-exit_f00318, +-10 px)"
+   },
+   "curves": [
+    "v5.trans-zoom-through-radial.v5c1",
+    "v5.trans-zoom-through-radial.scale.v5c1",
+    "v5.trans-zoom-through-radial.fill.v5c1"
+   ]
+  },
+  {
+   "id": "v5.layout-overlay-holds-across-cut",
+   "category": "layout",
+   "description": "the title overlay ignores a hard cut of the footage under it: no flash, no jump, its slow creep continues through the cut",
+   "instances": [
+    [
+     268,
+     272
+    ]
+   ],
+   "reference_frames": [
+    268,
+    270
+   ],
+   "measured": {
+    "duration_frames": 0,
+    "easing": "-",
+    "values": "template scale 1.015 at f268, f270, f272, f275 and centre (886, 388.5-389.5) px unchanged while the footage is replaced between f268 and f270"
+   },
+   "curves": []
+  }
+ ],
+ "typography_stills": [
+  "type/S01-1_f00034.png",
+  "type/S01-1_f00066.png",
+  "type/S01-1_f00078.png",
+  "type/S01-2_f00120.png",
+  "type/S01-2_f00150.png",
+  "type/S01-2_f00165.png",
+  "type/S02-logo_f00187.png",
+  "type/S02-logo_f00200.png",
+  "type/S02-logo_f00202.png",
+  "type/S02-logo_f00205.png",
+  "type/S02-logo_f00207.png",
+  "type/S02-logo_f00210.png",
+  "type/S02-logo_f00213.png",
+  "type/S02-logo_f00215.png",
+  "type/S02-logo_f00235.png",
+  "type/S02-logo_f00240.png",
+  "type/S02-logo_f00300.png",
+  "type/S03-exit_f00302.png",
+  "type/S03-exit_f00305.png",
+  "type/S03-exit_f00307.png",
+  "type/S03-exit_f00310.png",
+  "type/S03-exit_f00312.png",
+  "type/S03-exit_f00316.png",
+  "type/S03-exit_f00318.png",
+  "type/S03-exit_f00320.png",
+  "type/S03-exit_f00323.png",
+  "type/S06-cap3_f00425.png",
+  "type/S06-cap3_f00452.png",
+  "type/S06-cap3_f00466.png",
+  "type/S06-cap4_f00505.png",
+  "type/S06-cap4_f00530.png",
+  "type/S06-cap4_f00552.png",
+  "type/S06-cap4_f00557.png",
+  "type/S06-cap4_f00575.png"
+ ],
+ "uncertain": [
+  {
+   "what": "halftone ring geometry outside f205-f268 and ring A before f230",
+   "range": "f190-f204, f269-f316; ring A f190-f229",
+   "reason": "the ring measurement subtracts the median of the static shot-1 pictures f212-f268; before f205 the split stars and the entering wordmark cover the rings, after the footage cut at f270 the footage under them moves; ring A is edge-on or hidden behind the wordmark before f230, so its ellipse is not separable there (the spin is constant over f205-f268, but its continuation to f316 is seen on the sheets, not measured)"
+  },
+  {
+   "what": "lean of the ring rig's spin axis toward or away from the viewer",
+   "range": "f205-f268",
+   "reason": "the rigid fit uses only the projected ellipses (orthographic): a mirror solution with the axis top leaning the other way fits with the same rms (14 px)"
+  },
+  {
+   "what": "start position and start frame of the star drop",
+   "range": "f160-f168",
+   "reason": "the star enters above the top edge; f166 shows only a glow at the edge, so the motion before f168 cannot be measured"
+  },
+  {
+   "what": "precision of the serif line's head and capital positions and of the sparkle paths",
+   "range": "f187-f226",
+   "reason": "smeared, stretched chrome shapes that template and threshold trackers do not hold; positions were read off 1x/2x ruler crops of single pictures (+-5-15 px, given per value); the serif head is hidden behind the left star f190-f195 and the capital before f197, so both paths start truncated"
+  },
+  {
+   "what": "whether a jump cut hides under the flash",
+   "range": "f182-f197",
+   "reason": "the footage framing is identical before and after but the footage content differs after the white frames"
+  },
+  {
+   "what": "whether the motion blur at the start of the f270 shot is in camera or added",
+   "range": "f270-f290",
+   "reason": "the blur affects only the footage layer; the wordmark above is sharp"
+  },
+  {
+   "what": "how dark footage shot 2 is relative to its undimmed level",
+   "range": "f270-f312",
+   "reason": "this shot is only seen under the title, so there is no undimmed reference"
+  },
+  {
+   "what": "caption 3 and 4 reveal/exit timing from contrast",
+   "range": "f415-f596",
+   "reason": "the background changes strongly (cut, push-in, pull-back), so the contrast measure is disturbed; timings were read off frame-numbered crops (caption 3 every frame, caption 4 every 4th frame, +-2 f)"
+  },
+  {
+   "what": "wordmark scale after f312",
+   "range": "f313-f316",
+   "reason": "the picture f312 is held to f315 (next picture f316, a 4-frame gap in the capture); at f316 the title is gone (letter templates score <= 0.14), so the scale curve (v5.trans-zoom-through-radial.scale.v5c1) ends at f312 without a rest"
+  },
+  {
+   "what": "caption 2 line 2 cap height",
+   "range": "f150",
+   "reason": "line 2 has no capital; only the ascender height (40.0 px) was measured"
+  },
+  {
+   "what": "star centres and size after f192",
+   "range": "f195-f200",
+   "reason": "the spike envelopes are cut by the frame edges (spacing only bounded, >= 90 %W at f195), and the halftone rings cross the spikes; the per-star width is measured only while both outer tips are in the frame (to f190)"
+  },
+  {
+   "what": "whether the slanted chrome shard at the lower right (1396, 745) f187 / (1472, 537) f190 is the right sparkle that appears at (1495, 438) at f197",
+   "range": "f187-f197",
+   "reason": "the element is hidden by the right star f192-f195 and changes shape"
+  },
+  {
+   "what": "whether the tiny bright marks at (230, 560) f200 and (400, 564) f202 are the lower-left sparkle arriving",
+   "range": "f200-f207",
+   "reason": "same row and direction as the sparkle that is at (490, 556) at f207, but only a few pixels large and not visible at f205"
+  }
+ ],
+ "notes": [
+  "24 fps material on a 3:2 capture cadence: pictures arrive 2-3 analysis frames apart; durations carry +-1 frame and 2-3 frame quantisation. Caption drifts were fitted per captured picture (positions are linear in picture index, not in analysis frame) and converted with 2.5 frames per picture.",
+  "Motion-compensated ink contrast (opacity proxy) was measured with helper scripts kept outside the repo; the samples are in scratch/cap1_ink.csv, scratch/cap1_chars.csv and scratch/cap_<caption>_<line>.csv (columns x, y, score, contrast, alpha); star measurements in scratch/t1_star_drop.csv, flash luma in scratch/t1_luma_*.csv, zoom-through luma in scratch/t2_luma_*.csv, wordmark scale in scratch/logo_l1_scale_fine.csv (step 0.005, f205-f312) and scratch/logo_l1_scale_fine2.csv (step 0.002, f208-f246).",
+  "Off-cut motion peaks: f17 and f31 (motion inside shot 1 + caption 1 start, crop every 2nd frame f0-f38), f270 (the footage cut), f325 (shot 3 after the zoom-through), f373 (shot 4 dolly), f421 / f448 / f511 / f531 / f547 (shot 5 push-in, hold and pull-back; caption crops every frame f415-f452 and every 4th frame f436-f600), f601 / f607 / f628 (shot 5 pan, crop every 4th frame f588-f652), f676 / f683 / f690 (shot 6): all footage motion, no graphic event missed.",
+  "All 15 overview sheets f0-f717 were opened; every range was re-checked with detail sheets and crops listed above (f96-f166 every 5th frame, f213-f313 every 10th frame).",
+  "Star stills (not typography): type/S01-star_f00168 ... f00197.",
+  "Caption techniques share ids with v5c4 (v5.text-caption-word-fade, v5.text-caption-line-fade-out); the footage dim is the same family as v5.fx-dim-under-caption (v5c6).",
+  "Sound: tempo 109.96 bpm (32.7 frames per beat). Events within +-5 frames of a beat: caption 1 first letter visible f27 (beat f23, +4; strong onset f21, +6), caption 2 first letter f108 (beat f112, -4), star appears f168 (beat f171), wordmark settled f235 (beat f234), footage cut f270 (beat f266), zoom-through cleared f323 (beat f328), cut f355 (beat f358), caption 3 first letter f420 (beat f422). Flash peak f192 is 10 frames before beat f202; captions follow the voice rather than the beat.",
+  "Review fix (rev1): the star flash is two stars splitting apart (from f185), not one star blooming and opening at f192; the old bloom width (t1_star_drop.csv star_w_pct after f182) was the combined width of the separating stars. New measurements: scratch/v5c1fix_star_pair.csv (separation, per-star width, gap on y380/y540; helper script kept outside the repo, rows and thresholds documented in the columns), scratch/v5c1fix_bold_band.csv (bold line band, frame minus f200 in rows 330-420), scratch/v5c1fix_serif_scale.csv (track.py template, f240 template of the serif line), scratch/v5c1fix_zoom_grid.csv (3x3 grid luma) and scratch/v5c1fix_zoom_centre.csv (track.py luma, centre cell); read-offs in scratch/v5c1fix_serif_entry.csv and scratch/v5c1fix_sparkles.csv.",
+  "Review fix (rev1): the zoom-through vignette numbers previously quoted as corner luma (46.4 / 35.7 / 26.1 / 22.9 / 46.9 / 56.5) could not be reproduced from any saved measurement and were replaced by the saved frame, 3x3-grid and centre-cell luma; the top-left corner ROI (x0-300, y0-200, t2_luma_tl.csv) reads 10.0 / 22.0 / 22.7 / 23.3 / 22.7 / 10.4 at f297 / 312 / 316 / 318 / 320 / 323 because dark footage content sits there, so it is not a vignette measure.",
+  "Review fix (rev1): both soft-transition curves were re-tracked on properties with a rest at the end: v5.trans-star-flash.v5c1 = gap between the split stars on row y380 (0 -> 100 %W), v5.trans-zoom-through-radial.v5c1 = frame-luma recovery from the darkest picture f318 (settled f325-f330); the wordmark scale of the zoom-through moved to v5.trans-zoom-through-radial.scale.v5c1 (samples f300-f310). New logo curves: v5.logo-chrome-smear-in.serif.v5c1, .bold.v5c1 and .settle.v5c1.",
+  "Review fix (rev2), rings: each shot-1 picture f197-f268 minus the median of f212-f268 leaves the moving rings (wordmark and sparkles masked); the positive difference blurred (sigma 7 px) was fitted per picture with one ellipse per ring by maximising the mean band strength along the ellipse (local grid search, then Nelder-Mead, tracked picture to picture; helper scripts kept outside the repo), checked on crops/v5c1rev2_rings_fit_00205-00268.jpg; ring ellipses in scratch/v5c1rev2_rings_ellipses.csv (valid = 1 rows used). A rigid-rotation model (3 circles, one fixed axis, constant rate, orthographic) fitted to b, b/a and the major-axis angles gives the spin axis and rate; per-picture rig angles in scratch/v5c1rev2_rings_rig_angle.csv. Top-band crossing from track.py bbox (scratch/v5c1rev2_rings_topband_x850.csv; after f270 the moving footage breaks it). Dot pitch, dot size and band width in scratch/v5c1rev2_rings_dots.csv.",
+  "Review fix (rev2), zoom-through: the wordmark is not destroyed at f310; at f312 the 3rd-5th letters of the bold line are sharp hollow outlines and match f240 gradient templates at x1.50-1.54 (scratch/v5c1rev2_zoom_letter_scale.csv). The scale curve v5.trans-zoom-through-radial.scale.v5c1 was refitted on one consistent measure for all pictures (centre span of the 3rd and 5th letters, nearest the zoom origin) over f292-f312: 1.035 -> 1.521, bezier(1.000, 0.311, 1.000, 0.725) D=11 rmse 0.023 (was 1.035 -> 1.325 from the whole-line template, f300-f310). New curve v5.trans-zoom-through-radial.fill.v5c1 (stroke-centre luma, scratch/v5c1rev2_zoom_fill.csv) and streak measurements (scratch/v5c1rev2_zoom_streaks.csv); evidence crops/crop_540_220_560x330_00300-00316.jpg.",
+  "Review fix (rev2), caption 4: the staircase steps into lines 4 and 5 (-115 and -160 px) and the pitches of lines 3-5 were measured (scratch/v5c1rev2_cap4_lines.csv, crops/crop_780_400_640x290_00550-00577.jpg, stills type/S06-cap4_f00552.png and f00575); a line's left edge is read only while the line is fully revealed and not yet fading (line 5's first letter is still below luma 205 at f552-f557, so its left edge reads 5-15 px right of its later track there)."
+ ]
+}

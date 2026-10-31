@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.particle-mascot-burst-ring.v8c4",
+  "file": "curves/v8.particle-mascot-burst-ring.v8c4.csv",
+  "property": "width",
+  "unit": "px between the outermost mascot centres (1622 px = 100% W)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c4_S4_field_spread.csv",
+  "column": "x_extent",
+  "sampled_frames": [
+    2562,
+    2603
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1125.0,
+  "to_value": 1386.0,
+  "active_frames": [
+    2568,
+    2596
+  ],
+  "measured_duration_frames": 28,
+  "bezier": {
+    "x1": 0.8328,
+    "y1": 0.5308,
+    "x2": 0.2144,
+    "y2": 1.5918,
+    "durationInFrames": 25,
+    "delay": 1.49,
+    "built_duration_frames": 25,
+    "rmse": 0.0281
+  },
+  "spring": {
+    "stiffness": 228.57,
+    "damping": 15.476,
+    "mass": 1,
+    "damping_ratio": 0.5118,
+    "built_duration_frames": 32,
+    "rmse": 0.3746
+  },
+  "recommended": "bezier",
+  "note": "second burst: the 10-mascot ring flies outward (ease-in, radial smear), 12 more pop in sharp at inner positions at f2584, overshoot to 1434 px (f2586, +18%), settle to 1386 px (85.5% W) by f2598; mean mascot width 103 -> 59 px"
+}

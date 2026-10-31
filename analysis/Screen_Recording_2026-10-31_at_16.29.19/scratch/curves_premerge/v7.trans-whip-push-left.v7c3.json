@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-whip-push-left.v7c3",
+  "file": "curves/v7.trans-whip-push-left.v7c3.csv",
+  "property": "position-x",
+  "unit": "% of frame width (midpoint of two window panel labels; 71.0% -> 54.6% W)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p2_whipin_midx.csv",
+  "column": "mid_x_pct",
+  "sampled_frames": [
+    1644,
+    1704
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 71.008,
+  "to_value": 54.562,
+  "active_frames": [
+    1644,
+    1684
+  ],
+  "measured_duration_frames": 40,
+  "bezier": {
+    "x1": 0.0299,
+    "y1": 0.5195,
+    "x2": 0.4343,
+    "y2": 0.9965,
+    "durationInFrames": 47,
+    "delay": -0.0,
+    "built_duration_frames": 38,
+    "rmse": 0.0158
+  },
+  "spring": {
+    "stiffness": 61.914,
+    "damping": 22.788,
+    "mass": 1,
+    "damping_ratio": 1.448,
+    "built_duration_frames": 44,
+    "rmse": 0.0877
+  },
+  "recommended": "bezier",
+  "note": "incoming half of the leftward whip into the editor window (P2): after the hard cut at f1644 the window arrives 268 px (16.6% W) right of its rest, already moving left at ~33 px/frame with horizontal motion blur, and decelerates to rest by ~f1690; no scale or vertical change during the move (label distance constant 719 +-1 px); template on two panel labels (ref f1690, scale search 0.90-1.15); motion starts at the cut (first sample = from-value)"
+}

@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.trans-whip-down.i2",
+ "file": "curves/v8.trans-whip-down.i2.csv",
+ "property": "position-y",
+ "unit": "% of frame height",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c3_wall_scroll_1760-1828.csv",
+ "column": "cum_y_pct",
+ "sampled_frames": [
+  1760,
+  1826
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 0.01,
+ "to_value": 17.491,
+ "active_frames": [
+  1780,
+  1826
+ ],
+ "measured_duration_frames": 46,
+ "bezier": {
+  "x1": 0.7875,
+  "y1": 0.0613,
+  "x2": 0.8523,
+  "y2": 0.4338,
+  "durationInFrames": 54,
+  "delay": -7.981,
+  "built_duration_frames": 45,
+  "rmse": 0.0086
+ },
+ "spring": {
+  "stiffness": 31.103,
+  "damping": 36.729,
+  "mass": 1,
+  "damping_ratio": 3.2929,
+  "built_duration_frames": 61,
+  "rmse": 0.4648
+ },
+ "recommended": "bezier",
+ "note": "S03 -> S04 whip down, outgoing half (hidden cut f1829): integrated vertical content position of the zoomed-out card wall (phase correlation over x 200-1422, y 100-818, scratch/v8c3_wall_scroll_1760-1828.csv; positive = down; 8 duplicate pictures of the 60 Hz capture run dropped). The wall starts drifting down while zoom pulse 2 ends and accelerates without a settle; per-picture displacement grows about 10-20 % per picture: 0.8 px (f1780), 1.7 (f1790), 3.3 (f1802), 6.1 (f1810), 12.5 (f1818), 23.7 px (f1826) = about 12 px per frame at the last picture; growing vertical motion blur (Sobel gy/gx 1.21 -> 0.90). to-value = last picture f1826 (no settle).",
+ "chunk_curve_id": "v8.trans-whip-down-out.v8c3"
+}

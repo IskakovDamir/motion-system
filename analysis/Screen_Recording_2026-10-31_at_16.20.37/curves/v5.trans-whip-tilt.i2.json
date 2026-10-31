@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.trans-whip-tilt.i2",
+  "file": "curves/v5.trans-whip-tilt.i2.csv",
+  "property": "position-y",
+  "unit": "px (outgoing headline line-1 baseline)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_C_exit_lines.csv",
+  "column": "l1_bot",
+  "sampled_frames": [
+    1420,
+    1455
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 296.0,
+  "to_value": 142.0,
+  "active_frames": [
+    1433,
+    1455
+  ],
+  "measured_duration_frames": 22,
+  "bezier": {
+    "x1": 0.3754,
+    "y1": 0.0028,
+    "x2": 1.0,
+    "y2": 0.3571,
+    "durationInFrames": 23,
+    "delay": -2.869,
+    "built_duration_frames": 20,
+    "rmse": 0.0596
+  },
+  "spring": {
+    "stiffness": 119.297,
+    "damping": 144.677,
+    "mass": 1,
+    "damping_ratio": 6.623,
+    "built_duration_frames": 32,
+    "rmse": 0.3938
+  },
+  "recommended": "bezier",
+  "note": "outgoing half of the c2S3 -> c2S4 vertical whip: the camera tilts down after the falling spheres, so the headline (and the corner stars, same per-picture steps) moves up with an ease-in into the hidden cut: line-1 baseline 296-297 (f1420-f1431) -> 294 -> 291 -> 286 -> 279 (f1440) -> 269 -> 257 -> 240 -> 218 -> 188 -> 142 px (f1455, last picture before the cut); speeds 1, 1.5, 2.5, 2.3, 5, 4, 8.5, 7.3, 15, 15.3 px/frame; no rest after (the picture is replaced at f1455 -> f1457, where the incoming card moves at 29 px/frame); scratch/v5c2_C_exit_lines.csv"
+}

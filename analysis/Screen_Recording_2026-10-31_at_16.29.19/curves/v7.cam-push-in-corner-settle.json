@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.cam-push-in-corner-settle",
+  "file": "curves/v7.cam-push-in-corner-settle.csv",
+  "property": "position-y",
+  "unit": "px of 918 (top edge of the page cards; zoom about x 101% W, y 3% H)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c6_p3_menu_page_4216-4279.csv",
+  "column": "page_card_top_px",
+  "sampled_frames": [
+    4216,
+    4261
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 523.03,
+  "to_value": 836.4,
+  "active_frames": [
+    4216,
+    4249
+  ],
+  "measured_duration_frames": 33,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.4784,
+    "x2": 0.4885,
+    "y2": 0.9961,
+    "durationInFrames": 35,
+    "delay": 2.035,
+    "built_duration_frames": 30,
+    "rmse": 0.0482
+  },
+  "spring": {
+    "stiffness": 89.73,
+    "damping": 31.868,
+    "mass": 1,
+    "damping_ratio": 1.6821,
+    "built_duration_frames": 36,
+    "rmse": 0.0361
+  },
+  "recommended": "spring",
+  "note": "P3 camera push-in on the UI page toward its top-right corner (where the dropdown hangs): card top edge 523 -> 836 px (f4216 -> f4254) = page scale x1.00 -> x1.64 (search-field template scale 1.00 / 1.14 / 1.23 / 1.31 / 1.38 / 1.43 at f4216 / 4219 / 4221 / 4224 / 4226 / 4229), zoom centre about (1645, 30) px; the cut lands mid-move (first sample = from-value); after the settle a slow creep continues (+0.24 px/f to f4276) before the whip"
+}

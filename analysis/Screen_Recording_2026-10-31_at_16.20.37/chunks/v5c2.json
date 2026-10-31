@@ -1,0 +1,1447 @@
+{
+ "video": "Screen_Recording_2026-10-31_at_16.20.37",
+ "key": "v5",
+ "chunk": "v5c2",
+ "frames": [
+  702,
+  1599
+ ],
+ "cut_decisions": [
+  {
+   "id": "c019",
+   "frame": 702,
+   "status": "confirmed",
+   "reason": "hard cut from footage (last picture f700) to the black GRAPHICS title card (f702, first headline line already sliding in); chunk edge, both sides checked f687-f717; the footage before it belongs to v5c1"
+  },
+  {
+   "id": "c020",
+   "frame": 716,
+   "status": "rejected",
+   "reason": "text appearing: headline line 2 pops in with a glow inside the same title card"
+  },
+  {
+   "id": "c021",
+   "frame": 722,
+   "status": "rejected",
+   "reason": "text motion: line 2 whoosh, flare streak sweeps and the line-1 size morph"
+  },
+  {
+   "id": "c022",
+   "frame": 767,
+   "status": "rejected",
+   "reason": "camera snap zoom x1.60 inside the same layout (headline and pill continue, directional blur on f767)"
+  },
+  {
+   "id": "c023",
+   "frame": 797,
+   "status": "rejected",
+   "reason": "typewriter text appearing in the pill"
+  },
+  {
+   "id": "c024",
+   "frame": 842,
+   "status": "rejected",
+   "reason": "camera snap zoom x2.9 onto the first chip of the same layout"
+  },
+  {
+   "id": "c025",
+   "frame": 867,
+   "status": "rejected",
+   "reason": "chip 1 presses (x0.82) and its dropdown opens with motion blur while the camera pulls back x0.60 and tilts, inside the same layout"
+  },
+  {
+   "id": "c026",
+   "frame": 902,
+   "status": "rejected",
+   "reason": "vertical camera whip-tilt (content down, f887-f913) and dropdown collapse inside the same layout"
+  },
+  {
+   "id": "c027",
+   "frame": 937,
+   "status": "rejected",
+   "reason": "second dropdown opens: chip 2 presses x0.81 and springs back while the camera only tilts (chip 1 / chip 3 keep their size, no push-in)"
+  },
+  {
+   "id": "c028",
+   "frame": 967,
+   "status": "rejected",
+   "reason": "vertical camera whip-tilt back (content down, f957-f977, no pull-back) and dropdown collapse"
+  },
+  {
+   "id": "c029",
+   "frame": 1002,
+   "status": "rejected",
+   "reason": "snap zoom-out x0.30 to the whole card (same elements and states, blurred jump picture)"
+  },
+  {
+   "id": "c030",
+   "frame": 1042,
+   "status": "rejected",
+   "reason": "3D camera swing toward the button with the 3D cursor flying in"
+  },
+  {
+   "id": "c031",
+   "frame": 1062,
+   "status": "rejected",
+   "reason": "3D cursor spin/turn"
+  },
+  {
+   "id": "c032",
+   "frame": 1085,
+   "status": "rejected",
+   "reason": "click tile burst starts around the pressed button"
+  },
+  {
+   "id": "c033",
+   "frame": 1090,
+   "status": "rejected",
+   "reason": "tile burst expanding"
+  },
+  {
+   "id": "c034",
+   "frame": 1095,
+   "status": "rejected",
+   "reason": "tile burst + button glow"
+  },
+  {
+   "id": "c035",
+   "frame": 1105,
+   "status": "rejected",
+   "reason": "camera push-in through the cursor and button"
+  },
+  {
+   "id": "c036",
+   "frame": 1112,
+   "status": "rejected",
+   "reason": "horizontal flare bloom building before the cut"
+  },
+  {
+   "id": "c037",
+   "frame": 1120,
+   "status": "confirmed",
+   "reason": "hard cut from the exit bloom (brightest picture f1117, frame mean luma 128.8) to footage at normal exposure (57.7)"
+  },
+  {
+   "id": "c038",
+   "frame": 1177,
+   "status": "rejected",
+   "reason": "camera move inside one footage shot"
+  },
+  {
+   "id": "c039",
+   "frame": 1202,
+   "status": "rejected",
+   "reason": "continuous camera move inside the same footage shot (caption 2 on)"
+  },
+  {
+   "id": "c040",
+   "frame": 1258,
+   "status": "rejected",
+   "reason": "camera pull-back inside the same footage shot"
+  },
+  {
+   "id": "c041",
+   "frame": 1272,
+   "status": "rejected",
+   "reason": "same continuous move inside footage"
+  },
+  {
+   "id": "c042",
+   "frame": 1277,
+   "status": "rejected",
+   "reason": "repeated picture at f1275 (diff 0.0006) makes the ffmpeg score spike; same continuous shot"
+  },
+  {
+   "id": "c043",
+   "frame": 1292,
+   "status": "rejected",
+   "reason": "camera move inside footage"
+  },
+  {
+   "id": "c044",
+   "frame": 1327,
+   "status": "rejected",
+   "reason": "motion inside footage"
+  },
+  {
+   "id": "c045",
+   "frame": 1362,
+   "status": "confirmed",
+   "reason": "hard cut from footage (last picture f1359) to the dark title card with a flare point at the left edge (f1362)"
+  },
+  {
+   "id": "c046",
+   "frame": 1372,
+   "status": "rejected",
+   "reason": "flare streak peak + word slide-in inside the title card"
+  },
+  {
+   "id": "c047",
+   "frame": 1390,
+   "status": "rejected",
+   "reason": "logo spheres fly in and the headline lifts"
+  },
+  {
+   "id": "c048",
+   "frame": 1457,
+   "status": "confirmed",
+   "reason": "hidden cut f1455 -> f1457 inside a vertical whip-tilt; anchor of the soft transition f1442-f1470"
+  },
+  {
+   "id": "c049",
+   "frame": 1477,
+   "status": "rejected",
+   "reason": "the merged sphere glow collapses over the chip while the camera pushes in x1.15 (re-frame f1472-f1487)"
+  },
+  {
+   "id": "c050",
+   "frame": 1540,
+   "status": "rejected",
+   "reason": "horizontal whip pan along the same prompt card; it lands on the right end of the same card. Its jump picture (f1537 -> f1540) also re-frames the card (x1.25, centre 13.2% H up, measured on the card rims), but the layout and every element continue, so it is a camera move inside c2S4 (v5.cam-whip-pan-reframe), not a boundary"
+  }
+ ],
+ "boundaries": [
+  {
+   "frame": 702,
+   "type": "hard-cut",
+   "anchor_cut": "c019",
+   "note": "chunk edge; the LIVE footage before it is v5c1-P7"
+  },
+  {
+   "frame": 1120,
+   "type": "hard-cut",
+   "anchor_cut": "c037",
+   "note": "preceded by the v5.fx-flare-bloom-out ramp f1097-f1117 inside c2S1; the cut lands on the brightest picture (beat f1117 +3)"
+  },
+  {
+   "frame": 1362,
+   "type": "hard-cut",
+   "anchor_cut": "c045"
+  },
+  {
+   "start": 1442,
+   "end": 1470,
+   "type": "whip",
+   "frames": 29,
+   "shared": "the three logo spheres keep falling across the hidden cut (same objects, same downward direction, vertical blur) and the camera keeps tilting down (content moving up) on both sides: the headline leaves through the top edge at f1455 while the prompt card enters from below at f1457",
+   "technique": "v5.trans-whip-tilt",
+   "curve": "v5.trans-whip-tilt.v5c2",
+   "detail": "detail/soft_1442-1470",
+   "anchor_cut": "c048",
+   "hidden_cut": [
+    1455,
+    1457
+   ],
+   "full_move": [
+    1433,
+    1472
+   ],
+   "range_rule": "a = first picture with the outgoing headline moving >= 5 px/frame (f1442), b = last picture of the incoming first-stage deceleration (< 5 px/frame after it, f1470); split floor((a+b)/2) = f1456 coincides with the hidden cut",
+   "curves": [
+    "v5.trans-whip-tilt.out.v5c2",
+    "v5.trans-whip-tilt.v5c2"
+   ],
+   "followed_by": "push-in re-frame x1.15 f1472-f1487 without a hold (v5.cam-reframe-pullback, curve v5.cam-reframe-pullback.push.v5c2); it is not part of the transition",
+   "speed_peak": "content speed 15.3 px/frame on the last outgoing picture (f1452-f1455) and 29 px/frame on the first incoming one (f1457-f1460): the peak sits on the hidden cut"
+  }
+ ],
+ "segments": [
+  {
+   "id": "v5c2-c2S1",
+   "start": 702,
+   "end": 1119,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "one product-UI layout on black: 2-line extended-caps headline slides in from opposite edges with blur and glow, flare streaks with sparkle heads park at the line ends, line 1 morphs into a size taper; camera dives with a one-picture snap zoom onto an input pill that fills with luminous pixel squares, a prompt types on, the first option chip pops in alone, snap zoom onto it; each clicked chip presses x0.81-0.83 and springs back as its menu opens (chip 2 slides in during the menu-1 pull-back x0.60), the chosen row presses x0.79-0.81 and springs back and the chip label swaps on the deepest picture; each menu close is a vertical camera whip-tilt (the first chained straight into a horizontal whip pan to chip 2), menu 2 opens with a pure tilt; an accelerating rise into a snap zoom-out to the whole card, 3D camera swing toward a 3D button, chunky 3D cursor flies in, dives and presses it, tile burst, push-in + horizontal flare bloom into a hard cut"
+  },
+  {
+   "id": "v5c2-c2S2",
+   "start": 1120,
+   "end": 1361,
+   "class": "MIXED",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "one footage shot (camera moves inside it, no cut) with two white kinetic captions in its first half: 2-line staircase then 3-line staircase stepping up-right, characters blur-fade in left to right, blocks drift at a constant -6 px/frame, lines fade out first in first out; footage only from f1246 (checked on sheets/overview_01248-01293.jpg, sheets/overview_01296-01341.jpg, sheets/overview_01344-01389.jpg)"
+  },
+  {
+   "id": "v5c2-c2S3",
+   "start": 1362,
+   "end": 1456,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": false,
+   "live_confirmed_on": [],
+   "summary": "dark title card: a flare streak grows from the left edge, a 1-word line rides it in from the right and a 2-word line slides in from the left (caps, centred), two sparkle stars fly from the line ends to opposite corners in step, three glossy logo spheres fly in and settle under the headline while it lifts and compacts into tapered lines, then the spheres fall and the camera whip-tilts down after them; behind everything a faint wireframe of orbit ellipses tumbles continuously"
+  },
+  {
+   "id": "v5c2-c2S4",
+   "start": 1457,
+   "end": 1599,
+   "class": "GRAPHICS",
+   "continues_from_previous_chunk": false,
+   "continues_into_next_chunk": true,
+   "live_confirmed_on": [],
+   "summary": "prompt-box UI arriving from below at the end of the whip: the falling spheres drop onto the chip row, merge into one glow that shrinks to a point and vanishes while the camera pushes in x1.15, a prompt types on, the camera pulls back to the landing framing, whip-pans to the right end of the box (the jump picture also pushes in x1.25 and lifts the card 13.2% H) and opens a 2-option mode dropdown whose selection (the chosen option presses x0.85 and springs back) swaps the mode label; continues into v5c3 (menu collapses f1615-f1623)"
+  }
+ ],
+ "techniques": [
+  {
+   "id": "v5.text-line-slide-blur",
+   "category": "text",
+   "description": "headline lines slide in from opposite frame edges as horizontal motion-blur streaks (a glow halo in c2S1) and lock in with a stiff near-critical spring; second line follows the first",
+   "instances": [
+    [
+     702,
+     716
+    ],
+    [
+     716,
+     730
+    ],
+    [
+     1367,
+     1380
+    ],
+    [
+     1375,
+     1383
+    ]
+   ],
+   "reference_frames": [
+    702,
+    716,
+    730,
+    1367,
+    1383
+   ],
+   "measured": {
+    "duration_frames": 14,
+    "easing": "c2S1 line 2: spring(650.6, 43.02) zeta 0.84 built 10 f (shape 0.066, direct 0.018) / bezier(0.544, 0.165, 0.188, 0.659) D=11 (shape 0.068, direct 0.002); c2S1 line 1: spring(370.4, 30.95) zeta 0.80 / bezier(0.731, 1.016, 0.316, 0.940) D=15 (shape 0.076/0.081); c2S3 line 1: spring(1129.5, 74.37) zeta 1.11 (shape 0.050, 13 f)",
+    "values": "c2S1 line 1 right ink edge 11.8 -> 62.5 %W (f702-f716); line 2 left ink edge 68.2 -> 25.6 %W (f716-f730), stagger 14 f; glow halo luma above line 1 11.7-19.5 (f702-f710) -> 1.3 (f718); c2S3 line 1 left edge 99.0 -> 29.2 %W (f1367-f1380), line 2 from the left edge f1375-f1383 (stagger 8 f)"
+   },
+   "curves": [
+    "v5.text-line-slide-blur.v5c2"
+   ]
+  },
+  {
+   "id": "v5.text-size-taper-morph",
+   "category": "text",
+   "description": "after a headline line lands, its letter size morphs into a linear left-to-right taper (vertical centre kept), giving the block a pseudo-perspective without rotating it",
+   "instances": [
+    [
+     722,
+     737
+    ],
+    [
+     1385,
+     1404
+    ]
+   ],
+   "reference_frames": [
+    722,
+    735,
+    1385,
+    1404
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "bezier(0.720, 0.504, 0.205, 0.819) D=13 (shape 0.042, direct 0.000); spring(456.3, 34.52) zeta 0.81 (shape 0.094)",
+    "values": "c2S1 line 1: first capital 101 -> 129 px (11.0 -> 14.05 %H), second word 95 -> 82 px; result 128 px (13.9 %H) left -> 67 px (7.3 %H) right while line 2 stays flat at 97 px (10.6 %H); c2S3: line 1 flat ~101 px -> 89 -> 69 px left to right, line 2 flat ~101 px -> 72 -> 108 px (tapers up), during the lift"
+   },
+   "curves": [
+    "v5.text-size-taper-morph.v5c2"
+   ]
+  },
+  {
+   "id": "v5.shape-flare-streak-sweep",
+   "category": "shape",
+   "description": "horizontal light streaks with 4-point sparkle heads sweep across the frame in opposite directions and park as ornaments at the ends of the headline lines; in c2S3 the streak grows from a point at the left edge and carries the incoming word, and its two stars then fly diagonally to opposite corners, mirror-symmetric and in step, and drift slowly inward",
+   "instances": [
+    [
+     716,
+     732
+    ],
+    [
+     1362,
+     1407
+    ]
+   ],
+   "reference_frames": [
+    716,
+    720,
+    732,
+    1362,
+    1372,
+    1382,
+    1392,
+    1405,
+    1431
+   ],
+   "measured": {
+    "duration_frames": 12,
+    "easing": "c2S1 right streak: spring(1069.2, 66.53) zeta 1.02 built 11 f (shape 0.074, direct 0.025); bezier fit unusable (start already fast); c2S3 star flight (bottom-left star y): bezier(0.685, 0.282, 0.217, 0.639) D=18 (shape 0.029, direct 0.011), ease-in-out, spring(199.3, 22.28) rejected (0.105)",
+    "values": "c2S1 left streak leading end 68.1 -> 5.5 %W (f716-f730), right streak centroid 8.6 -> 94.9 %W (f720-f732); c2S3 streak band (y 49-52 %H) luma 5.4 (f1362) -> 17.6 (f1367, full width) -> 114.6 (f1372) -> 34.7 (f1382); c2S3 stars (scratch/v5c2_E_stars.csv): bottom-left star (template ref f1410) x/y %W/%H 6.6/50.7 (f1382) -> 5.2/52.0 -> 6.0/54.9 -> 7.1/60.5 (f1390) -> 8.0/69.6 -> 8.6/77.9 (f1395) -> 9.0/82.7 -> 9.4/85.2 (f1400) -> 9.7/86.4 -> 10.0/86.9 (f1405) -> 10.1/86.9 (f1407); top-right star (spike intersection f1382-f1400, cut by the right edge; template after) 97.8/49.7 (f1382) -> 99.1/48.1 -> 98.0/45.4 -> 96.7/40.2 (f1390) -> 95.8/31.3 -> 95.2/23.2 (f1395) -> 94.3/16.3 (f1400) -> 95.0/15.2 -> 94.8/14.8 (f1405); y progress identical on every picture (0.27 / 0.52 / 0.76 / 0.96 at f1390 / f1392 / f1395 / f1400); 35-36 %H and 3.3-3.6 %W (net) each, peak 9.1 %H per picture; template scale 1.02-1.09 in flight, 0.98-1.00 after; inward drift about 0.7 px/frame to f1431 (bottom-left 11.0/86.0, top-right 93.6/15.6)"
+   },
+   "curves": [
+    "v5.shape-flare-streak-sweep.v5c2",
+    "v5.shape-flare-streak-sweep.stars-fly.v5c2"
+   ]
+  },
+  {
+   "id": "v5.cam-snap-zoom",
+   "category": "cam",
+   "description": "camera eases toward a detail with an accelerating, y-only approach, then the scale jumps in a single 24 fps picture (motion-blurred) and the move settles with a ~20 f exponential ease-out; used in and out",
+   "instances": [
+    [
+     745,
+     787
+    ],
+    [
+     834,
+     860
+    ],
+    [
+     982,
+     1022
+    ]
+   ],
+   "reference_frames": [
+    747,
+    765,
+    767,
+    785,
+    837,
+    840,
+    860,
+    982,
+    992,
+    997,
+    1000,
+    1002,
+    1005,
+    1022
+   ],
+   "measured": {
+    "duration_frames": 30,
+    "easing": "snap 1 (y channel incl. the approach): bezier(1.000, 0.294, 0.065, 0.806) D=33 (shape 0.022, direct 0.006); spring(165.5, 21.13) shape 0.170; snap-out approach (y channel, f982-f1000): bezier(1.000, 0.282, 0.990, 0.747) D=14 after a 1.8 f delay (shape 0.070, direct 0.009), an ease-in that ends in the snap; spring rejected (shape 0.93)",
+    "values": "snap 1: template y 58.3 -> 47.1 %H accelerating (f745-f765), scale 1.00 -> 1.60 between f765 and f767, y 33.0 -> 22.7 %H by f785; snap 2: scale 0.36 -> 1.04 between f837 and f840, y 76.3 -> 51.0 %H by f860 (tail 0.39/0.59/0.73/0.82/0.89/0.94/0.98 at +2/+5/+7/+10/+12/+15/+20 f); snap-out: chip pitch 596 -> 178 px (x0.30) between f1000 and f1002, button y 86.9 -> 77.9 %H f1005-f1022 (tail 0.33/0.55/0.72/0.84/0.93/0.99 at +2/+5/+7/+10/+12/+15 f); snap-out approach: after stopping at its lowest point (f980-f982) the content rises, middle-chip template y 470 -> 467 -> 460 -> 451 -> 437 -> 417 -> 388 -> 342 px (f982, f985, f987, f990, f992, f995, f997, f1000) = 51.2 -> 37.3 %H, 128 px (13.9 %H) in 18 f, speed about 1 -> 15 px/frame; template scale 1.00 on every picture (search 0.70-1.08), chip label heights 54-56 px and widths constant, x constant"
+   },
+   "curves": [
+    "v5.cam-snap-zoom.v5c2",
+    "v5.cam-snap-zoom.out-approach.v5c2"
+   ]
+  },
+  {
+   "id": "v5.ui-pill-pixel-fill",
+   "category": "ui",
+   "description": "an input pill materialises out of luminous outlined/filled pixel squares: a band of squares glows under the headline, then the cluster sweeps right to left through the pill, parks at its rounded left end and dims out, after which the prompt types on",
+   "instances": [
+    [
+     757,
+     787
+    ]
+   ],
+   "reference_frames": [
+    757,
+    767,
+    772,
+    780,
+    787
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "spring(1014.5, 64.69) zeta 1.02 built 11 f (shape 0.055, direct 0.010); bezier(0.384, 1.291, 0.918, 0.846) D=12 rejected (shape 0.131)",
+    "values": "square-cluster centroid 64.9 -> 20.3 %W (f767-f782), squares dim out f780-f787; pill left end at 10.9 %W (still f780); pill at the whole-card view x 16.5-83.9 %W, y 50.7-61.4 %H (f1007), fill luma 14 on a 0-10 background"
+   },
+   "curves": [
+    "v5.ui-pill-pixel-fill.v5c2"
+   ]
+  },
+  {
+   "id": "v5.ui-chip-pop",
+   "category": "ui",
+   "description": "an option chip pops in alone under the prompt pill: fill, rim and label scale up together about the chip's centre, the fill at full luma from its first picture, before the rest of the chip row exists",
+   "instances": [
+    [
+     830,
+     837
+    ]
+   ],
+   "reference_frames": [
+    830,
+    832,
+    835,
+    837
+   ],
+   "measured": {
+    "duration_frames": 7,
+    "easing": "spring(2101.8, 84.60) zeta 0.92 built 7 f (shape 0.007) / bezier(0.573, 0.940, 0.681, 0.844) D=6 (shape 0.032); fitted with 0 for the empty pictures f822-f830, so the start size is at most 0.48; anything after f837 is hidden by snap 2",
+    "values": "absent on f830; fill width 172 -> 332 -> 361 px, height 38 -> 78 -> 81 px on f832 / f835 / f837 (0.48 -> 0.92 -> 1.00), label ink width 61 -> 97 -> 100 px, label peak luma 115 -> 149 -> 152, fill luma 11; centre fixed at x 376-378 px (23.2 %W), 125-127 px below the prompt line; camera scale unchanged (prompt line x 90-1361 px on every picture) while the content rises (prompt top 404 -> 340 px, f830-f837); the chip row right of it (x 576-1622 px) is empty on f837 (scratch/v5c2_A_chip1_pop.csv)"
+   },
+   "curves": [
+    "v5.ui-chip-pop.v5c2"
+   ]
+  },
+  {
+   "id": "v5.ui-chip-slide-in",
+   "category": "ui",
+   "description": "the next chip of a chip row slides in from the right frame edge and parks next to the previous chip within one picture, so the row is built one chip at a time; here chip 2 arrives while menu 1 opens under chip 1, and the camera pull-back that opens the menu (x0.60 about chip 1's x) then carries it further across the frame, which reads like a longer slide",
+   "instances": [
+    [
+     862,
+     867
+    ]
+   ],
+   "reference_frames": [
+    860,
+    862,
+    865,
+    867,
+    877,
+    885
+   ],
+   "measured": {
+    "duration_frames": 5,
+    "easing": "UNCERTAIN: one moving picture at 24 fps (89% of the travel between f862 and f865, in place from f867); fast ease-out, no curve. The earlier bezier(0.000, 0.559, 1.000, 1.302) D=13 was measured in chip-1 widths, which chip 1's own press and the camera pull-back both change; curve v5.ui-chip-slide-in.v5c2 dropped",
+    "values": "camera-invariant offset of chip 2's left end from chip 1's centre (x 815.5 px), divided by the camera scale (scratch/v5c2_E_chip1_press.csv), in px of the f880-f1000 framing (rest 313.7 px): +114 (f862, faint, left end 1520 px where the difference f862 - f860 starts) -> +13 (f865, left end 1340 px) -> -3 (f867) -> -19 / -12 / -3 / +2 / +8 / +6 (f870-f882, blurred pictures, noise level) -> +1 (f885) -> 0 (f887-f911); 114 px = 7.0 %W; on screen the left end goes 1520 -> 1340 -> 1279 -> 1209 -> 1170 -> 1154 -> 1145 -> 1138 -> 1133 -> 1130 px (f862-f885), mostly the camera; no own scale change: (label left edge - left end) / camera scale 181.8-190.7 px on f867-f877 vs 181.5-181.9 at rest; gap to chip 1 at rest 31 px (scratch/v5c2_E_chip2_entry.csv)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.ui-chip-press",
+   "category": "ui",
+   "description": "a clicked option chip presses about its own centre before its menu is used: it shrinks to x0.81-0.83 in 5-8 f, its light outline appears at the pressed size and its label brightens, it holds about 3 pictures and springs back in 5-7 f with a 1-4% overshoot; the neighbouring chips keep their size; same press-and-spring family as v5.ui-select-swap",
+   "instances": [
+    [
+     857,
+     887
+    ],
+    [
+     925,
+     953
+    ]
+   ],
+   "reference_frames": [
+    857,
+    860,
+    862,
+    865,
+    877,
+    880,
+    887,
+    927,
+    930,
+    935,
+    937,
+    940,
+    945,
+    953
+   ],
+   "measured": {
+    "duration_frames": 28,
+    "easing": "press (chip 1, camera removed): spring(4569.8, 123.36) zeta 0.91 built 5 f / bezier(0.568, 1.000, 0.344, 1.005) D=8 (2 moving pictures, direct 0.000, shape 0.075 / 0.096); release (chip 2, neighbours as reference): bezier(0.074, 0.827, 0.175, 1.236) D=18 after a 0.7 f delay (shape 0.048, direct 0.008), spring(2672.1, 99.64) rejected (shape 0.243)",
+    "values": "chip 1 own scale (chip-1 label template x camera scale at f857 / camera scale; camera from the input pill's bottom edge to chip 1's centre, then the chip-2 label): 1.00 (f857; 1.007-1.014 on f850-f855) -> 0.909 (f860) -> 0.831 (f862, outline appears) -> 0.818 (f865) -> 0.830 (f867) -> 0.908 (f870) -> 1.003 (f872) -> 1.027 (f875) -> 1.028 (f877) -> 1.036 (f880) -> 1.029 (f882) -> 1.012 (f885) -> 0.998-0.999 (f887-f895); over f857-f862 the prompt-line words keep their x positions (camera scale 0.99) while the chip's glyphs go 61x84 / 59x88 -> 49x71 / 48x71 px; chip 2 own scale (chip-2 label template / chip-1 and chip-3 label templates): 1.00 (f911-f922) -> 0.897 (f927) -> 0.820 (f930) -> 0.813 (f932) -> 0.812 (f935) -> 0.912 (f937) -> 0.985 (f940) -> 1.002 (f942) -> 1.011 (f945, f947) -> 1.010 (f951) -> 1.000 (f953 on); chip 2 outline outer width 468 (f932) -> 573 (f940) -> 588 (f945) -> 581 px (f953; rest 580-581); chip 1 and chip 3 label template scales 0.997-1.005 throughout (1.008-1.009 on the blurred f967 and f1000); label peak luma 130-136 -> 248-253 while the menu is open (chip 1 rising from f862, 251 by f877; chip 2 rising from f930, 249 by f937) -> 144-146 when it closes (f911, f975) (scratch/v5c2_E_chip1_press.csv, scratch/v5c2_E_chip2_press.csv, scratch/v5c2_E_prompt_words.csv, scratch/v5c2_E_chip_row_ink.csv, scratch/v5c2_E_label_luma.csv)"
+   },
+   "curves": [
+    "v5.ui-chip-press.press.v5c2",
+    "v5.ui-chip-press.release.v5c2"
+   ]
+  },
+  {
+   "id": "v5.text-typewriter",
+   "category": "text",
+   "description": "prompt text types on character by character at a constant rate, no cursor glyph; same device as v5c4's v5.text-label-typewriter",
+   "instances": [
+    [
+     785,
+     807
+    ],
+    [
+     1487,
+     1502
+    ]
+   ],
+   "reference_frames": [
+    787,
+    797,
+    807,
+    1491,
+    1502
+   ],
+   "measured": {
+    "duration_frames": 22,
+    "easing": "linear (constant rate); c2S1 bezier(1.000, 1.040, 0.701, 0.570) D=22 (shape 0.010, direct 0.008); c2S4 bezier(0.949, 1.124, 0.638, 0.294) D=12 (shape 0.064, direct 0.002)",
+    "values": "c2S1: 48 characters (9 words) in 22 f = 2.2 characters per frame; c2S4: 41 characters (8 words) in about 13 f = 3.15 characters per frame (counts read off frame-numbered sheets)"
+   },
+   "curves": [
+    "v5.text-typewriter.v5c2",
+    "v5.text-typewriter.fast.v5c2"
+   ]
+  },
+  {
+   "id": "v5.ui-dropdown-reveal",
+   "category": "ui",
+   "description": "a chip (pressed and outlined, v5.ui-chip-press) opens its menu: the menu unfolds below it with motion blur while the camera re-frames to it (pull-back + rise for menu 1, a pure tilt for menu 2, tilt + pull-back for the mode menu); the menu later closes by squashing up into the chip while the camera whips back (v5.cam-whip-tilt)",
+   "instances": [
+    [
+     862,
+     885
+    ],
+    [
+     900,
+     909
+    ],
+    [
+     927,
+     951
+    ],
+    [
+     970,
+     977
+    ],
+    [
+     1555,
+     1575
+    ]
+   ],
+   "reference_frames": [
+    862,
+    865,
+    872,
+    876,
+    880,
+    885,
+    927,
+    930,
+    933,
+    951,
+    1557,
+    1562,
+    1567,
+    1575
+   ],
+   "measured": {
+    "duration_frames": 20,
+    "easing": "camera channel, c2S4: bezier(0.584, 0.010, 0.167, 0.674) D=19 (shape 0.031, direct 0.010), spring(397.8, 37.41) shape 0.100; menu 1 pull-back (camera scale): spring(208.2, 23.37) zeta 0.81 (shape 0.044, direct 0.023) / bezier(1.000, 1.095, 0.133, 0.529) D=15 (shape 0.047, direct 0.009); menu 2 tilt (content y): bezier(0.589, 0.242, 0.168, 0.685) D=19 (shape 0.040, direct 0.009), spring rejected (0.074)",
+    "values": "menu 1 (f862-f885): camera scale relative to the f880-f1000 framing 1.660 (f850-f860) -> 1.647 (f862) -> 1.604 (f865) -> 1.490 (f867) -> 1.336 (f870) -> 1.174 (f872) -> 1.087 (f875) -> 1.042 (f877) -> 1.005 (f880) -> 1.000 (f885 on), x0.60, centred on chip 1's x (815 px; f850-f875 from the distance between the input pill's bottom edge and chip 1's centre, 258.1 px at f857 and 155.5 px at f911; f877 on from the chip-2 label template); content y (chip 1 centre) 459 (50.0 %H, f862) -> 248 (27.0 %H, f872) -> 189 (20.6 %H, f877) -> 169 px (18.4 %H, f885); menu sharp by f876; menu 2 (f927-f951): pure tilt, chip-1 label template y 465 (50.7 %H) -> 289 px (31.5 %H) = 19.2 %H, speeds up to 22.5 px/frame, chip 1 / chip 3 label scales 0.997-1.005 (no push-in); small blurred menu on f930, full on f933; c2S4: send button y 50.4 -> 33.8 %H, scale 1.00 -> 0.85 (f1557-f1575), menu bottom rel. to the button 251 -> 344 px (f1565-f1570); closes f900-f909 and f970-f977 (7-9 f)"
+   },
+   "curves": [
+    "v5.ui-dropdown-reveal.v5c2",
+    "v5.ui-dropdown-reveal.menu1-pullback.v5c2",
+    "v5.ui-dropdown-reveal.menu2-tilt.v5c2"
+   ]
+  },
+  {
+   "id": "v5.ui-select-swap",
+   "category": "ui",
+   "description": "selection change in a menu, staged as a press: the newly chosen row (icon, label, its new check mark and its new highlight) scales about the highlight's centre down to 0.79-0.85 and springs back to 1.00; the new highlight and check appear at the pressed size and grow with the row, the old row's check fades out and its highlight lingers 1-3 pictures, the old label dims and the new one brightens; the chip / mode label swaps in one picture on (or one picture after) the deepest picture",
+   "instances": [
+    [
+     880,
+     897
+    ],
+    [
+     942,
+     960
+    ],
+    [
+     1572,
+     1587
+    ]
+   ],
+   "reference_frames": [
+    880,
+    882,
+    885,
+    887,
+    890,
+    892,
+    895,
+    897,
+    942,
+    951,
+    953,
+    960,
+    1572,
+    1580,
+    1582,
+    1587
+   ],
+   "measured": {
+    "duration_frames": 17,
+    "easing": "menu 1 (clean instance): press bezier(0.313, 0.172, 0.458, 0.740) D=7 (f880-f887, direct 0.018, 3 moving pictures); release spring(807.4, 47.16) zeta 0.83 built 9 f (shape 0.082, direct 0.009) / bezier(0.000, 0.562, 0.818, 0.959) D=7 after a 2.7 f delay (shape 0.164, direct 0.000) (f887-f897); label swap: step",
+    "values": "content scale of the chosen row / an unchanged row (track.py template with scale search): menu 1 1.00 (f880) -> 0.94 (f882) -> 0.83 (f885) -> 0.79 (f887, deepest, chip label swaps) -> 0.84 (f890) -> 0.92 (f892) -> 0.98 (f895) -> 1.00 (f897), icon left edge +41 px and ink height 42 -> 33 px at f887, scaling centre = highlight centre x 803 px; new highlight 389 px = 0.80 of the full 487 px on f887 (luma 23 on the way 11 -> 26, first faint on f885), 0.84 / 0.92 / 0.98 / 1.00 on f890-f897; old row 3 check fades f885-f887, highlight gone on f892, label peak 246 -> 135 (f885-f892) while the new label goes 134 -> 245; menu 2 (new check appears first, f942): 1.00 (f942) -> 0.94 -> 0.84 -> 0.81 (f951, deepest) -> 0.84 (f953, chip label swaps) -> 0.91 -> 0.97 -> 1.00 (f960), new highlight 0.84 / 0.91 / 0.98 / 1.00 (f953-f960), old highlight fades f951-f953; mode menu: 1.00 (f1570) -> 0.99 -> 0.96 -> 0.88 -> 0.85 (f1580, deepest, mode label swaps) -> 0.90 -> 0.97 -> 1.00 (f1587), icon left edge vs option 1 -8 -> +55 -> -8 px, highlights cross-fade on f1580 (old 45 -> 40, new 37 of 32 -> 45), new highlight 0.88 / 0.96 / 1.00 (f1582-f1587); durations 17 f (press 7 + release 10), 18 f (9 + 9), 15 f (8 + 7)"
+   },
+   "curves": [
+    "v5.ui-select-swap.press.v5c2",
+    "v5.ui-select-swap.release.v5c2"
+   ]
+  },
+  {
+   "id": "v5.cam-whip-pan",
+   "category": "cam",
+   "description": "horizontal whip pan along one UI layout: ease-in, 2-3 blurred pictures, ease-out; y and scale stay unchanged through the blur",
+   "instances": [
+    [
+     913,
+     932
+    ]
+   ],
+   "reference_frames": [
+    913,
+    920,
+    925,
+    932
+   ],
+   "measured": {
+    "duration_frames": 19,
+    "easing": "c2S1: bezier(0.824, 0.101, 0.054, 0.719) D=20 (shape 0.027, direct 0.003); spring(537.9, 42.62) shape 0.140",
+    "values": "c2S1: chip 2 centre 87.5 -> 49.7 %W, blur f918-f925; settle progress 0.51/0.74/0.92/0.99 at +3/+5/+8/+10 f; chip-label template y 466 px and scale 0.99-1.03 through the blur f913-f925 (scratch/v5c2_A_whip1_scale.csv): horizontal only"
+   },
+   "curves": [
+    "v5.cam-whip-pan.v5c2"
+   ]
+  },
+  {
+   "id": "v5.cam-whip-tilt",
+   "category": "cam",
+   "description": "vertical camera whip inside one layout: when a menu closes the camera tilts back (content down) with a strong ease-in-out and vertical motion blur at its peak, x and scale unchanged; the menu-1 one follows the menu-1 rise without a hold (direction reversal f885 -> f887) and settles on the first picture of the horizontal whip pan, so two whips are chained; same id as v5c6's crane-following whip (not compared)",
+   "instances": [
+    [
+     887,
+     913
+    ],
+    [
+     957,
+     977
+    ]
+   ],
+   "reference_frames": [
+    885,
+    887,
+    897,
+    900,
+    902,
+    911,
+    913,
+    955,
+    957,
+    965,
+    967,
+    970,
+    977,
+    980
+   ],
+   "measured": {
+    "duration_frames": 26,
+    "easing": "menu-1 close: bezier(0.718, 0.288, 0.138, 0.952) D=26 (shape 0.040, direct 0.010), spring(225.3, 24.96) rejected (0.146); menu-2 close: bezier(0.812, 0.099, 0.255, 0.732) D=23 (shape 0.034, direct 0.010), spring(204.5, 22.39) rejected (0.119)",
+    "values": "menu-1 close: chip-2 label template y 177 (19.3 %H, f885) -> 179 (f887) -> 184 -> 194 -> 213 -> 250 (f897) -> 327.5 (f900) -> 403 (f902) -> 438 -> 456 -> 466 (f911) -> 471 px (51.3 %H, f913), 295 px = 32.1 %H, speeds 1, 1.7, 5, 6.3, 18.5, 25.8, 37.8, 11.7, 9, 2.5, 2.5 px/frame, template x 1430 px and scale 1.000 throughout (scratch/v5c2_E_chip_scales.csv); menu-2 close: chip-1 label template y 290 (31.6 %H, f951-f955) -> 293 (f957) -> 299 -> 310 -> 332 -> 378.5 (f967) -> 424 -> 445 -> 456 -> 462 -> 464 px (50.5 %H, f980-f982), 175 px = 19.1 %H, peak 46.5 px per picture (f965-f967), label template scales 1.000 +-0.008 (scratch/v5c2_E_chip2_press.csv)"
+   },
+   "curves": [
+    "v5.cam-whip-tilt.v5c2",
+    "v5.cam-whip-tilt.close2.v5c2"
+   ]
+  },
+  {
+   "id": "v5.cam-whip-pan-reframe",
+   "category": "cam",
+   "description": "horizontal whip pan whose jump picture also re-frames the layout: under the blur the card is pushed in and lifted in a single picture step, with no scale or vertical motion before or after it; slower settle than v5.cam-whip-pan, of which it is a variant (split off on review)",
+   "instances": [
+    [
+     1522,
+     1557
+    ]
+   ],
+   "reference_frames": [
+    1522,
+    1535,
+    1537,
+    1540,
+    1542,
+    1557
+   ],
+   "measured": {
+    "duration_frames": 35,
+    "easing": "x: UNCERTAIN full curve (no x reference on both sides of the jump); ease-in f1522-f1535, settle progress 0.37/0.60/0.77/0.89/0.97/1.0 at +4/+6/+8/+10/+13/+15 f; scale + y: one-picture step f1537 -> f1540, no curve (0 frames)",
+    "values": "chips row 25.9 -> 13.9 %W (f1522-f1535, ease-in), f1537 last picture of the old framing, f1540 first of the new, send button 92.8 -> 82.1 %W (f1542-f1557); card rim lines (scratch/v5c2_D_whip2_rims.csv): y 239 / 682 px (height 443, centre 460.5 px = 50.2 %H) on every picture f1520-f1537, y 62 / 616 px (height 554, centre 339 px = 36.9 %H) on every picture f1540-f1555: scale x1.25 and centre 121.5 px (13.2 %H) up in the jump picture; on the beat + strong onset f1537 (0/+3)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.cam-swing-3d-push",
+   "category": "cam",
+   "description": "the camera swings into a 3D perspective view of the flat UI plane (card top recedes) and pushes in toward the 3D button, overshoots and recoils",
+   "instances": [
+    [
+     1022,
+     1067
+    ]
+   ],
+   "reference_frames": [
+    1022,
+    1035,
+    1055,
+    1067
+   ],
+   "measured": {
+    "duration_frames": 45,
+    "easing": "bezier(0.294, 0.015, 0.274, 1.923) D=42 (overshoot; shape 0.098, direct 0.025); push-only to 2.45: spring(132.3, 19.04) zeta 0.83 (shape 0.098)",
+    "values": "button scale 1.00 -> 2.50 (f1055) -> 2.17 (f1067), centre x 46.2 -> 36.4 (f1035) -> 49.9 %W, y 77.9 -> 58.8 -> 60.7 %H; template scores 0.65-0.77 during the perspective change"
+   },
+   "curves": [
+    "v5.cam-swing-3d-push.v5c2"
+   ]
+  },
+  {
+   "id": "v5.cursor-3d-dive-click",
+   "category": "cursor",
+   "description": "a chunky extruded 3D arrow cursor flies in from the frame edge, hovers and turns in 3D (one spin), then dives onto the button and presses it",
+   "instances": [
+    [
+     1031,
+     1090
+    ]
+   ],
+   "reference_frames": [
+    1031,
+    1037,
+    1055,
+    1062,
+    1070,
+    1080,
+    1085
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "dive: spring(720.2, 53.88) zeta 1.00 built 14 f (shape 0.018, direct 0.016); bezier(0.561, -0.250, 0.137, 0.926) D=21 (shape 0.025)",
+    "values": "enters at the bottom edge (79 %W, f1031), hovers over the chips row (85 -> 73 %W, 30 -> 21 %H f1037-f1055), spins f1055-f1062, dives x 88.8 -> 54.6 %W, y 18.5 -> 50.9 %H (f1070-f1085); positions read off dense tiles +-10 px"
+   },
+   "curves": [
+    "v5.cursor-3d-dive-click.v5c2"
+   ]
+  },
+  {
+   "id": "v5.ui-button-press",
+   "category": "ui",
+   "description": "the 3D button shrinks under the cursor (chips row unchanged) and stays pressed while the burst fires",
+   "instances": [
+    [
+     1077,
+     1090
+    ]
+   ],
+   "reference_frames": [
+    1077,
+    1082,
+    1090
+   ],
+   "measured": {
+    "duration_frames": 13,
+    "easing": "spring(857.0, 55.14) zeta 0.94 built 11 f (shape 0.137, direct 0.015); bezier(0.213, 0.637, 0.339, 1.086) D=15 (shape 0.167, direct 0.013)",
+    "values": "scale 1.00 -> 0.78 (template ref f1075, step 0.005, scores 0.98-1.0); bright fill width 824 -> 699 px by f1085"
+   },
+   "curves": [
+    "v5.ui-button-press.v5c2"
+   ]
+  },
+  {
+   "id": "v5.particle-tile-burst",
+   "category": "particle",
+   "description": "a ring of glowing outlined and filled squares bursts out of the clicked button and expands past the frame edges at a constant speed while the frame brightens; same device as v5c6",
+   "instances": [
+    [
+     1082,
+     1105
+    ]
+   ],
+   "reference_frames": [
+    1085,
+    1090,
+    1095,
+    1097
+   ],
+   "measured": {
+    "duration_frames": 15,
+    "easing": "near-linear: bezier(0.618, 0.524, 1.000, 0.593) D=15 (shape 0.006, direct 0.005)",
+    "values": "ring radius (radial luma peak around 815,528 px) 0 -> 9.2 %W (f1085) -> 36.4 %W (f1095) -> beyond the frame (f1097), about 44 px (2.7 %W) per frame; frame mean luma 16.9 (f1085) -> 74.2 (f1095) -> 21.1 (f1105)"
+   },
+   "curves": [
+    "v5.particle-tile-burst.v5c2"
+   ]
+  },
+  {
+   "id": "v5.fx-flare-bloom-out",
+   "category": "fx",
+   "description": "exit of the UI layout: the camera pushes through the clicked button with accelerating speed while a horizontal anamorphic flare band blooms and washes the frame bright; the hard cut lands on the brightest picture and the next shot starts at normal exposure",
+   "instances": [
+    [
+     1097,
+     1117
+    ]
+   ],
+   "reference_frames": [
+    1097,
+    1107,
+    1112,
+    1117
+   ],
+   "measured": {
+    "duration_frames": 10,
+    "easing": "UNCERTAIN: ramp ends in the cut (4 pictures); a bezier fit gave rmse 0.16 and was rejected",
+    "values": "push: chips template scale 1.025 (f1097) -> 1.05 -> 1.075 -> 1.125 -> 1.20 -> 1.30 (f1110), button 1.00 -> 1.35 (f1112); flare band y 380-540 px luma 88 -> 186 (f1107-f1112); full frame 32.0 (f1107) -> 35.7 -> 64.6 -> 97.1 -> 128.8 (f1117); incoming footage 57.7"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.text-caption-word-fade",
+   "category": "text",
+   "description": "caption characters blur-fade in left to right through the caption, words overlapping; lines of a caption in reading order",
+   "instances": [
+    [
+     1118,
+     1160
+    ],
+    [
+     1185,
+     1215
+    ]
+   ],
+   "reference_frames": [
+    1122,
+    1132,
+    1147,
+    1187,
+    1200,
+    1213
+   ],
+   "measured": {
+    "duration_frames": 33,
+    "easing": "bezier(0.493, 0.408, 0.114, 0.630) D=31 (shape 0.025, direct 0.018); spring(69.0, 14.35) zeta 0.86 (shape 0.047)",
+    "values": "about 2 f per character; caption 1 words start about f1118/f1123/f1130/f1137, word envelope 33 f (luma 124 -> 244.5); caption 2 lines bottom f1185-f1197, middle f1197-f1205, top f1209-f1215 (about 12 f apart)"
+   },
+   "curves": [
+    "v5.text-caption-word-fade.v5c2"
+   ]
+  },
+  {
+   "id": "v5.text-caption-drift",
+   "category": "text",
+   "description": "the whole caption block slides at constant velocity for its whole life, away from the direction its lines step",
+   "instances": [
+    [
+     1118,
+     1182
+    ],
+    [
+     1185,
+     1247
+    ]
+   ],
+   "reference_frames": [
+    1140,
+    1160,
+    1205,
+    1222
+   ],
+   "measured": {
+    "duration_frames": 64,
+    "easing": "linear (constant velocity)",
+    "values": "template per 24 fps picture: caption 1 -15.0 / -1.75 px = -6.0 / -0.70 px per frame (-0.370 %W / -0.076 %H per frame); caption 2 -15.0 / +2.57 px = -6.0 / +1.03 px per frame (-0.370 %W / +0.112 %H per frame); footage under caption 1 static (flow -0.003 px/frame)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.layout-caption-staircase",
+   "category": "layout",
+   "description": "caption lines are offset sideways and vertically like stairs; the first line may be set larger",
+   "instances": [
+    [
+     1118,
+     1182
+    ],
+    [
+     1185,
+     1247
+    ]
+   ],
+   "reference_frames": [
+    1147,
+    1220
+   ],
+   "measured": {
+    "duration_frames": 0,
+    "easing": "-",
+    "values": "caption 1: line 2 +7.4 %W / +6.2 %H (steps down-right), line 1 caps 48 px vs line 2 ascender 40 px (about 1.2x); caption 2: steps up-right +10.4 %W / -7.7 %H then +6.0 %W / -5.9 %H, first line's baseline tilted about 4 deg up to the right (x-height tops 646 -> 637 px over x 665-787, f1213)"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.text-caption-line-fade-out",
+   "category": "text",
+   "description": "caption lines fade and defocus out first in first out while later lines stay",
+   "instances": [
+    [
+     1153,
+     1182
+    ],
+    [
+     1213,
+     1247
+    ]
+   ],
+   "reference_frames": [
+    1153,
+    1162,
+    1213,
+    1222,
+    1232
+   ],
+   "measured": {
+    "duration_frames": 17,
+    "easing": "bezier(0.312, 0.765, 1.000, 0.769) D=14 (shape 0.050, direct 0.010); spring(189.9, 25.08) zeta 0.91 (shape 0.060)",
+    "values": "caption 2 bottom line luma 240 -> 116 (f1213-f1230), middle +10 f (f1222-f1235), top +20 f (f1232-f1247); caption 1 line 1 245 -> about 150 (f1153-f1165), line 2 f1162-f1175"
+   },
+   "curves": [
+    "v5.text-caption-line-fade-out.v5c2"
+   ]
+  },
+  {
+   "id": "v5.logo-sphere-fly-in",
+   "category": "logo",
+   "description": "three glossy glass logo spheres fly in on curved paths (one from the right edge, two from the top), pass in front of the headline and settle in a row under it; they then drift and fall one after another, converging",
+   "instances": [
+    [
+     1382,
+     1417
+    ],
+    [
+     1417,
+     1455
+    ]
+   ],
+   "reference_frames": [
+    1382,
+    1387,
+    1392,
+    1400,
+    1412,
+    1417,
+    1435
+   ],
+   "measured": {
+    "duration_frames": 25,
+    "easing": "middle sphere: bezier(0.179, 0.348, 0.110, 0.995) D=31 (shape 0.044, direct 0.009); spring(211.7, 30.59) zeta 1.05 (shape 0.091)",
+    "values": "middle sphere y 2.7 -> 60.1 %H (f1387-f1412; f1387-f1397 read off dense tiles +-10 px, f1400 on template); left x 406 -> 487 px, right 1171 -> 1131 px (f1400-f1420); entry stagger: right f1382, left + middle f1387; fall: right first (x 1127 -> 1003 px, f1417-f1435), then left, then middle (y 564 -> 701 px f1431-f1447)"
+   },
+   "curves": [
+    "v5.logo-sphere-fly-in.v5c2"
+   ]
+  },
+  {
+   "id": "v5.text-lift-to-header",
+   "category": "text",
+   "description": "the headline rises and shrinks to make room for content below it (here the logo sphere row); same device as v5c4",
+   "instances": [
+    [
+     1382,
+     1412
+    ]
+   ],
+   "reference_frames": [
+    1382,
+    1395,
+    1404,
+    1412
+   ],
+   "measured": {
+    "duration_frames": 30,
+    "easing": "bezier(0.652, -0.127, 0.153, 1.236) D=38 (small overshoot; shape 0.018, direct 0.009); spring(191.1, 20.38) zeta 0.74 (shape 0.109)",
+    "values": "line 1 baseline 47.9 -> 32.0 %H (3 px overshoot at f1405), letter height 101 -> 89 px (x0.88); sparkle stars move out to the corners at the same time"
+   },
+   "curves": [
+    "v5.text-lift-to-header.v5c2"
+   ]
+  },
+  {
+   "id": "v5.trans-whip-tilt",
+   "category": "trans",
+   "description": "vertical whip: the camera tilts down after falling objects, the old layout exits up with an ease-in, the picture is replaced at the speed peak under the blur (hidden cut), and the new layout arrives from below at full speed and decelerates; here a separate push-in re-frame follows its landing without a hold",
+   "instances": [
+    [
+     1433,
+     1472
+    ]
+   ],
+   "reference_frames": [
+    1431,
+    1433,
+    1442,
+    1452,
+    1455,
+    1457,
+    1460,
+    1470,
+    1472
+   ],
+   "measured": {
+    "duration_frames": 39,
+    "easing": "outgoing (headline baseline, f1433-f1455): bezier(0.375, 0.003, 1.000, 0.357) D=23 (shape 0.060, direct 0.008), an ease-in that ends in the hidden cut (no rest after); incoming (card top, f1457-f1472): spring(447.8, 43.30) zeta 1.02 (shape 0.042, direct 0.027) / bezier(0.029, 0.371, 0.000, 0.736) D=13 (shape 0.083, direct 0.008), starting at full speed on the first new picture; the earlier single fit over f1457-f1485 (bezier(0.345, 0.836, 0.221, 0.213) D=26) mixed in the push-in re-frame and was replaced",
+    "values": "outgoing headline line-1 baseline 296 (f1420-f1431) -> 294 -> 291 -> 286 -> 279 (f1440) -> 269 -> 257 -> 240 -> 218 -> 188 -> 142 px (f1455), speeds 1, 1.5, 2.5, 2.3, 5, 4, 8.5, 7.3, 15, 15.3 px/frame, the corner stars rise by the same steps; incoming card top edge 457.9 (49.9 %H, f1457) -> 369.6 -> 322.4 -> 292.1 -> 270.9 -> 258.5 (f1470) -> 247.1 px (26.9 %H, f1472), speeds 29, 23.6, 10, 10.6, 4.1, 5.7 px/frame (scratch/v5c2_C_exit_lines.csv, scratch/v5c2_D_card_top.csv)"
+   },
+   "curves": [
+    "v5.trans-whip-tilt.out.v5c2",
+    "v5.trans-whip-tilt.v5c2"
+   ]
+  },
+  {
+   "id": "v5.logo-sphere-drop-merge",
+   "category": "logo",
+   "description": "the spheres that fell out of the title card keep falling into the new UI card across the hidden cut, drop onto the chip row, stack into one glowing blob and shrink to a point that vanishes, uncovering the chip (a match across the whip)",
+   "instances": [
+    [
+     1457,
+     1485
+    ]
+   ],
+   "reference_frames": [
+    1457,
+    1460,
+    1462,
+    1467,
+    1470,
+    1475,
+    1480,
+    1482,
+    1485
+   ],
+   "measured": {
+    "duration_frames": 28,
+    "easing": "collapse (bright ink area, f1470-f1485): bezier(0.327, 0.006, 1.000, 0.934) D=14 (shape 0.081, direct 0.007), an accelerating ease-in to zero; spring rejected (0.334); the drop (card-relative, f1462-f1482) decelerates, not fitted",
+    "values": "bright ink (luma > 120, components >= 2000 px, peak >= 200; scratch/v5c2_E_sphere_merge.csv): main blob centroid (858, 208) f1457 (one sphere, the others enter from the top) -> (800, 370) f1460 -> (706, 384) f1462 -> (657, 448) f1465 -> (623, 489) f1467 -> (603, 486) f1470 (one blob) -> (599, 514) f1472 -> (628, 519) f1475 -> (705, 506) f1477 -> (742, 500) f1480 -> (756, 509) px f1482 -> gone f1485; relative to the card's plus button dx/dy 387/-274 (f1462) -> 336/-179 -> 298/-116 -> 270/-105 (f1470) -> 251/-66 -> 250/-48 -> 260/-37 -> 274/-26 -> 277/-6 px (f1482), a 268 px drop onto the chip row; total area 9.4 k px (f1457) -> 20.4 k (f1460) -> 29.3-30.2 k (f1462-f1467, three spheres) -> 29.7 k (f1470, merged) -> 27.6 -> 22.3 -> 17.2 -> 10.0 -> 3.9 k (f1482) -> 0 (f1485)"
+   },
+   "curves": [
+    "v5.logo-sphere-drop-merge.v5c2"
+   ]
+  },
+  {
+   "id": "v5.cam-reframe-pullback",
+   "category": "cam",
+   "description": "slow camera re-frames inside the prompt card: a push-in with a move up/right right after the whip lands (while the sphere glow collapses), then a pull-back that overlaps the end of typing and returns to the landing framing; a second slow re-frame with the mode selection; close to v5c5's v5.cam-reframe-up",
+   "instances": [
+    [
+     1472,
+     1487
+    ],
+    [
+     1493,
+     1517
+    ],
+    [
+     1577,
+     1590
+    ]
+   ],
+   "reference_frames": [
+    1472,
+    1477,
+    1487,
+    1493,
+    1502,
+    1517,
+    1577,
+    1590
+   ],
+   "measured": {
+    "duration_frames": 24,
+    "easing": "bezier(0.568, 0.022, 0.137, 0.846) D=28 (shape 0.020, direct 0.010); spring(253.9, 30.72) zeta 0.96 (shape 0.103); push-in (card plus button template scale): spring(2472.8, 145.71) zeta 1.47 (shape 0.069, direct 0.040) / bezier(0.000, 0.806, 0.000, 0.878) D=13 (shape 0.197, direct 0.004), 79% of the change in 5 f then a 10 f creep",
+    "values": "push-in (f1472-f1487): plus button template scale 0.871 (f1470-f1472) -> 0.907 (f1475) -> 0.972 (f1477) -> 0.985 -> 0.991 -> 0.996 -> 0.998 (f1487) -> 0.999 (f1491) of its f1491 size (x1.15), centre (347.5, 580) -> (497.5, 503) px, card top edge 247.1 -> 121.7 px (scratch/v5c2_E_card_plus.csv); pull-back: chips row y 44.5 -> 51.7 %H, x 37.8 -> 26.2 %W, scale 1.15 -> 1.00 (f1493-f1517, blur on f1502); second instance: send button y 33.2 -> 29.1 %H, x 86.3 -> 89.3 %W, scale 0.875 -> 0.925 (f1577-f1590); after the pull-back the plus button is 0.872-0.883 of its f1491 size (f1517-f1522), the landing framing"
+   },
+   "curves": [
+    "v5.cam-reframe-pullback.push.v5c2",
+    "v5.cam-reframe-pullback.v5c2"
+   ]
+  },
+  {
+   "id": "v5.cam-hold-drift",
+   "category": "cam",
+   "description": "holds are never still: a slow drift or slow push continues until the next move; same id as v5c4",
+   "instances": [
+    [
+     735,
+     747
+    ],
+    [
+     807,
+     837
+    ],
+    [
+     1412,
+     1431
+    ]
+   ],
+   "reference_frames": [
+    735,
+    747,
+    807,
+    837,
+    1412,
+    1431
+   ],
+   "measured": {
+    "duration_frames": 12,
+    "easing": "linear / slowly accelerating",
+    "values": "headline line 1 left edge 204 -> 217 px (about +1.1 px/frame, f735-f747); content flow dy -0.08 -> -0.36 px/frame with radial +0.04 -> +0.20 (f807-f837); spheres and stars drift slowly f1412-f1431"
+   },
+   "curves": []
+  },
+  {
+   "id": "v5.bg-orbit-wireframe-tumble",
+   "category": "bg",
+   "description": "a faint wireframe of thin orbit-like ellipses around a small central blob (luma 5-25 on a 0-15 ground) tumbles in 3D behind a title card for its whole life, independent of the held foreground: each stroke travels on its own path and its axis turns at its own rate; possibly related to v5c1's v5.shape-halftone-orbit-rings (not compared)",
+   "instances": [
+    [
+     1362,
+     1456
+    ]
+   ],
+   "reference_frames": [
+    1362,
+    1365,
+    1377,
+    1387,
+    1402,
+    1407,
+    1420,
+    1435
+   ],
+   "measured": {
+    "duration_frames": 95,
+    "easing": "continuous, no start or settle seen (linear within the noise)",
+    "values": "central blob x 810-930, y 340-460 px on f1365 (contrast-stretched); stroke segments (high-passed, foreground masked, one component followed per track; scratch/v5c2_E_bg_strokes.csv, tracks left_arc and lowerleft_arc in the region x 150-700 / y 450-918, topleft_arc in x 0-480 / y 0-250): left arc centroid (276, 657) -> (367, 705) px, axis 111 -> 118 deg (f1362-f1377, 6.9 px/frame, counter-clockwise 0.5 deg/frame); lower-left arc (553, 784) -> (507, 727) px, axis 27 -> 10 deg (f1387-f1402, 4.9 px/frame, clockwise 1.1 deg/frame); top-left orbit arc (342, 235) -> (442, 40) px, axis -9 -> +25 deg (f1407-f1435, 7.8 px/frame upward, counter-clockwise 1.2 deg/frame, the loop opening up); median stroke speed 1.7-5.0 px/frame (Farneback on the high-passed strokes); a rigid in-plane rotation fits the stroke flow with R2 0.00-0.22 only (f1362-f1427; scratch/v5c2_E_bg_flowfit.csv), so it is a 3D tumble; the headline's ink edges move 5 px over f1407-f1427 (scratch/v5c2_E_headline_hold.csv; detail/v5c2_bgwire_stretch_01362-01437.jpg, detail/v5c2_bgwire_highpass_01362-01437.jpg)"
+   },
+   "curves": []
+  }
+ ],
+ "typography_stills": [
+  "type/v5c2-S1-burst_f01086.png",
+  "type/v5c2-S1-burst_f01092.png",
+  "type/v5c2-S1-burst_f01098.png",
+  "type/v5c2-S1-burst_f01113.png",
+  "type/v5c2-S1-burst_f01116.png",
+  "type/v5c2-S1-chip_f00830.png",
+  "type/v5c2-S1-chip_f00832.png",
+  "type/v5c2-S1-chip_f00835.png",
+  "type/v5c2-S1-chip_f00837.png",
+  "type/v5c2-S1-chip_f00840.png",
+  "type/v5c2-S1-chip_f00845.png",
+  "type/v5c2-S1-chip_f00862.png",
+  "type/v5c2-S1-chip_f00865.png",
+  "type/v5c2-S1-chip_f00867.png",
+  "type/v5c2-S1-chip_f00870.png",
+  "type/v5c2-S1-chip_f00872.png",
+  "type/v5c2-S1-chip_f00875.png",
+  "type/v5c2-S1-chip_f00897.png",
+  "type/v5c2-S1-chip_f00905.png",
+  "type/v5c2-S1-cursor_f01035.png",
+  "type/v5c2-S1-cursor_f01045.png",
+  "type/v5c2-S1-cursor_f01060.png",
+  "type/v5c2-S1-cursor_f01075.png",
+  "type/v5c2-S1-cursor_f01083.png",
+  "type/v5c2-S1-cursor_f01090.png",
+  "type/v5c2-S1-cursor_f01100.png",
+  "type/v5c2-S1-cursor_f01110.png",
+  "type/v5c2-S1-cursor_f01117.png",
+  "type/v5c2-S1-headline_f00702.png",
+  "type/v5c2-S1-headline_f00716.png",
+  "type/v5c2-S1-headline_f00722.png",
+  "type/v5c2-S1-headline_f00729.png",
+  "type/v5c2-S1-headline_f00735.png",
+  "type/v5c2-S1-pan_f00915.png",
+  "type/v5c2-S1-pan_f00921.png",
+  "type/v5c2-S1-pan_f00925.png",
+  "type/v5c2-S1-pan_f00930.png",
+  "type/v5c2-S1-pan_f01000.png",
+  "type/v5c2-S1-pan_f01002.png",
+  "type/v5c2-S1-pan_f01005.png",
+  "type/v5c2-S1-pan_f01027.png",
+  "type/v5c2-S1-push_f00765.png",
+  "type/v5c2-S1-push_f00767.png",
+  "type/v5c2-S1-push_f00770.png",
+  "type/v5c2-S1-push_f00780.png",
+  "type/v5c2-S1-push_f00790.png",
+  "type/v5c2-S1-push_f00812.png",
+  "type/v5c2-S1-select_f00880.png",
+  "type/v5c2-S1-select_f00885.png",
+  "type/v5c2-S1-select_f00887.png",
+  "type/v5c2-S1-select_f00892.png",
+  "type/v5c2-S1-select_f00942.png",
+  "type/v5c2-S1-select_f00951.png",
+  "type/v5c2-S1-select_f00953.png",
+  "type/v5c2-S1-select_f00957.png",
+  "type/v5c2-S1-snapout_f00982.png",
+  "type/v5c2-S1-snapout_f00992.png",
+  "type/v5c2-S1-snapout_f00997.png",
+  "type/v5c2-S1-snapout_f00999.png",
+  "type/v5c2-S1-snapout_f01007.png",
+  "type/v5c2-S2-cap1_f01122.png",
+  "type/v5c2-S2-cap1_f01132.png",
+  "type/v5c2-S2-cap1_f01147.png",
+  "type/v5c2-S2-cap1_f01162.png",
+  "type/v5c2-S2-cap1_f01172.png",
+  "type/v5c2-S2-cap2_f01187.png",
+  "type/v5c2-S2-cap2_f01200.png",
+  "type/v5c2-S2-cap2_f01213.png",
+  "type/v5c2-S2-cap2_f01220.png",
+  "type/v5c2-S2-cap2_f01232.png",
+  "type/v5c2-S2-cap2_f01245.png",
+  "type/v5c2-S3-headline_f01365.png",
+  "type/v5c2-S3-headline_f01372.png",
+  "type/v5c2-S3-headline_f01377.png",
+  "type/v5c2-S3-headline_f01383.png",
+  "type/v5c2-S3-headline_f01392.png",
+  "type/v5c2-S3-headline_f01404.png",
+  "type/v5c2-S3-headline_f01425.png",
+  "type/v5c2-S3-headline_f01452.png",
+  "type/v5c2-S4-select_f01572.png",
+  "type/v5c2-S4-select_f01580.png",
+  "type/v5c2-S4-select_f01582.png",
+  "type/v5c2-S4-select_f01587.png",
+  "type/v5c2-S4-ui_f01458.png",
+  "type/v5c2-S4-ui_f01464.png",
+  "type/v5c2-S4-ui_f01473.png",
+  "type/v5c2-S4-ui_f01485.png",
+  "type/v5c2-S4-ui_f01491.png",
+  "type/v5c2-S4-ui_f01503.png",
+  "type/v5c2-S4-ui_f01512.png",
+  "type/v5c2-S4-ui_f01540.png",
+  "type/v5c2-S4-ui_f01548.png",
+  "type/v5c2-S4-ui_f01566.png",
+  "type/v5c2-S4-ui_f01572.png",
+  "type/v5c2-S4-ui_f01581.png",
+  "type/v5c2-S4-ui_f01596.png",
+  "type/v5c2-S4-whip_f01537.png",
+  "type/v5c2-S4-whip_f01540.png",
+  "type/v5c2-S1-chippress_f00857.png",
+  "type/v5c2-S1-chippress_f00860.png",
+  "type/v5c2-S1-chippress_f00862.png",
+  "type/v5c2-S1-chippress_f00865.png",
+  "type/v5c2-S1-chippress_f00877.png",
+  "type/v5c2-S1-chippress_f00880.png",
+  "type/v5c2-S1-chippress_f00927.png",
+  "type/v5c2-S1-chippress_f00930.png",
+  "type/v5c2-S1-chippress_f00932.png",
+  "type/v5c2-S1-chippress_f00935.png",
+  "type/v5c2-S1-chippress_f00937.png",
+  "type/v5c2-S1-chippress_f00940.png",
+  "type/v5c2-S1-chippress_f00945.png",
+  "type/v5c2-S1-chippress_f00953.png",
+  "type/v5c2-S1-chippress_f00975.png",
+  "type/v5c2-S3-stars_f01382.png",
+  "type/v5c2-S3-stars_f01392.png",
+  "type/v5c2-S3-stars_f01405.png",
+  "type/v5c2-S3-stars_f01431.png",
+  "type/v5c2-S4-merge_f01457.png",
+  "type/v5c2-S4-merge_f01462.png",
+  "type/v5c2-S4-merge_f01470.png",
+  "type/v5c2-S4-merge_f01477.png",
+  "type/v5c2-S4-merge_f01482.png",
+  "type/v5c2-S4-merge_f01485.png"
+ ],
+ "uncertain": [
+  {
+   "what": "one-picture scale jumps treated as camera moves inside one layout (snaps x1.60, x2.9, x0.30; the x1.25 re-frame inside whip pan 2)",
+   "range": "f765-f767, f837-f840, f1000-f1002, f1537-f1540",
+   "reason": "all elements and UI states continue across the jump and the jump picture carries directional motion blur, but a punch-in edit cannot be ruled out at 24 fps"
+  },
+  {
+   "what": "exit bloom ramp shape",
+   "range": "f1107-f1117",
+   "reason": "the ramp ends in the hard cut (no rest after) and spans only 4 pictures; fit rmse 0.16 rejected, luma values given instead"
+  },
+  {
+   "what": "x curve of whip pan 2 across the jump picture",
+   "range": "f1522-f1557",
+   "reason": "the only element seen on both sides of the jump is the card's pair of rim lines, which are horizontal: they give the x1.25 scale and the 13.2 %H rise (measured, scratch/v5c2_D_whip2_rims.csv) but no x; the chips row (before) and the send button (after) are different points of a card wider than the frame"
+  },
+  {
+   "what": "chip 1's start size and settle",
+   "range": "f830-f840",
+   "reason": "it is absent on f830 and already at 0.48 with full fill luma on f832 (start size at most 0.48); the settle after f837 is hidden by the snap (f840)"
+  },
+  {
+   "what": "chip 2's slide easing",
+   "range": "f862-f867",
+   "reason": "only one picture lies inside the move (f862, faint: its fill, luma 11, barely differs from the background light, luma 10-14; left end 1520 px read where the difference f862 - f860 starts); on the blurred pictures f870-f882 its camera-invariant offset scatters -19 to +8 px around its place, which may hide a small overshoot"
+  },
+  {
+   "what": "chip 1's own scale during its release",
+   "range": "f865-f875",
+   "reason": "the camera scale there comes from the distance between the input pill's bottom edge and chip 1's centre under vertical blur (+-2%); the press (f857-f862, prompt words as reference) and the end of the release (f877-f887, chip-2 label as reference) are clean"
+  },
+  {
+   "what": "start of chip 2's press",
+   "range": "f922-f927",
+   "reason": "the whip-pan blur lowers the template scores to 0.35-0.53 on f920-f925; it is already at 0.897 on f927, so the press curve is taken from chip 1"
+  },
+  {
+   "what": "whether chips 3-5 arrive by sliding like chip 2",
+   "range": "f922-f1002",
+   "reason": "chip 3 is first seen under the whip-pan blur moving with the row, chips 4-5 are first in frame at the snap-out"
+  },
+  {
+   "what": "3D swing scale values (+-5%)",
+   "range": "f1022-f1067",
+   "reason": "perspective change lowers template scores to 0.65-0.77 at f1033-f1050; two templates stitched at f1050"
+  },
+  {
+   "what": "cursor path and early sphere positions",
+   "range": "f1031-f1070, f1387-f1397",
+   "reason": "read off frame-numbered dense-sheet tiles (+-10 px); identical spheres confuse the global template search, so the left/right sphere entry paths were not tracked"
+  },
+  {
+   "what": "individual sphere paths inside the stack",
+   "range": "f1457-f1467",
+   "reason": "the falling spheres are motion-blurred and touch; the blob centroid, the card-relative drop and the total area are measured (scratch/v5c2_E_sphere_merge.csv), the single spheres are not separated"
+  },
+  {
+   "what": "c2S3 line-2 slide easing",
+   "range": "f1375-f1383",
+   "reason": "only 3 blurred pictures"
+  },
+  {
+   "what": "start values of moves already running on their first picture",
+   "range": "f702, f720, f767, f862, f1457",
+   "reason": "the true start lies up to one picture (2-3 frames) earlier"
+  },
+  {
+   "what": "typeface originals",
+   "range": "f702-f1599",
+   "reason": "not identifiable from the pictures; free stand-ins chosen by appearance (Archivo expanded black, Inter)"
+  },
+  {
+   "what": "caption 2 middle/top line fade-out curves",
+   "range": "f1222-f1247",
+   "reason": "footage brightness under the lines changes during the fade"
+  },
+  {
+   "what": "rotation axis and angular rate of the background wireframe as a 3D object",
+   "range": "f1362-f1456",
+   "reason": "no single in-plane rotation fits its strokes (rigid-rotation R2 0.00-0.22); stroke speeds and axis turn rates are given instead"
+  }
+ ],
+ "notes": [
+  "Shape RMSE above 0.05 on v5.text-line-slide-blur (0.066), v5.shape-flare-streak-sweep (0.074), v5.cam-swing-3d-push (0.098), v5.ui-button-press (0.137), v5.ui-pill-pixel-fill (0.055), v5.text-typewriter.fast (0.064), v5.ui-select-swap.release (0.082), v5.cam-snap-zoom.out-approach (0.070), v5.ui-chip-press.press (0.075, 2 moving pictures), v5.trans-whip-tilt.out (0.060, ends in the cut), v5.logo-sphere-drop-merge (0.081) and v5.cam-reframe-pullback.push (0.069) comes from the 24 fps window quantisation; their direct residuals (progress vs fit over the CSV samples) are 0.000-0.040.",
+  "Sound sync: tempo 110 bpm (32.7 f per beat). Tight hits: click f1081 = beat + strong onset f1079 (+2); cut f1120 = beat f1117 (+3); whip-pan-2 peak f1538 = beat + strong onset f1537 (+1); 3D swing start f1022 = strong onset f1023 (-1); label swap f953 = weak onset f953 (0); snap-out f1001 = weak onset f1003 (-2); snap 2 f838 = weak onset f837 (+1); caption 2 first line out f1215 = beat + strong onset f1215 (0); whip-tilt fast phase f1442 = beat f1439 (+3). Loose: cut f702 +7, cut f1362 -11 to beats (+5 to a weak onset); no onset detected between f645 and f828 (headline entry and snap 1).",
+  "IDs shared with other chunks on purpose: v5.text-line-slide-blur (v5c5), v5.cam-whip-pan (v5c4, v5c5), v5.cam-whip-tilt (v5c6), v5.trans-whip-tilt (v5c4, v5c5), v5.text-lift-to-header (v5c4), v5.particle-tile-burst (v5c6), v5.text-caption-word-fade / v5.text-caption-drift / v5.text-caption-line-fade-out / v5.layout-caption-staircase (v5c1, v5c4), v5.cam-hold-drift (v5c4).",
+  "Probable merges: v5.text-typewriter ~ v5c4 v5.text-label-typewriter; v5.cam-reframe-pullback ~ v5c5 v5.cam-reframe-up; the snap-out instance of v5.cam-snap-zoom ~ v5c5 v5.cam-pull-back-snap; v5.fx-flare-bloom-out is the ramp-up half of a flash cut at its peak (cf. v5c6 v5.trans-flash-white, v5.fx-anamorphic-flare); v5.cursor-3d-dive-click (large extruded 3D arrow that spins) possibly the same asset as v5c5 v5.cursor-glide-click (not compared).",
+  "Typography stills were renamed with the chunk prefix v5c2-S1..S4 (S1 = c2S1 ...) because the plain tags A-/B-/C-/D- are shared with other chunks.",
+  "Segment classes: c2S2 is MIXED for its first half (captions f1118-f1247) and footage only for f1246-f1361 (same shot, no boundary).",
+  "The X player's speaker icon (bottom right) was ignored everywhere.",
+  "Split on review: the c2S4 whip pan is now v5.cam-whip-pan-reframe (its jump picture also pushes in x1.25 and lifts the card 13.2 %H, measured on the card rims); v5.cam-whip-pan keeps the c2S1 instance (horizontal only). The v5c4 / v5c5 v5.cam-whip-pan instances were not compared with either.",
+  "Added on review: v5.ui-chip-pop and v5.ui-chip-slide-in (the chip row is built one chip at a time), the press-and-spring of v5.ui-select-swap (curves v5.ui-select-swap.press.v5c2 / .release.v5c2, measured on all three menus), the accelerating approach of the snap zoom-out (curve v5.cam-snap-zoom.out-approach.v5c2; no scale change before the jump), and the c2S4 prompt cap height (4.4 %H = 40-41 px on f1512, x-height 3.3 %H = 30 px; it was 2.7 %H). The approach to snap 2 (f830-f837) also rises with an ease-in (prompt top 404 -> 390 -> 371 -> 340 px, scale constant; scratch/v5c2_A_chip1_pop.csv) but was not refitted.",
+  "Review 2 (scratch/v5c2_E_*.csv): (1) each clicked chip presses x0.81-0.83 and springs back on its own (v5.ui-chip-press, new; chip 1 f857-f887 camera-separated, chip 2 f925-f953 against its neighbours); the menu-2 opening is a pure tilt (no push-in) and the menu-2 closing a pure tilt back (no pull-back): chip 1 and chip 3 keep their label size (template scale 0.997-1.005, 1.008-1.009 on the blurred f967 and f1000) on every picture f927-f1000; the camera scale is 1.000 +-0.005 over f880-f1000, so the chip and menu label sizes are given in the typography. (2) Chip 1's press had been read as part of the camera pull-back, and chip 1's width had been the camera-invariant unit for chip 2's slide-in; re-measured against the camera alone (input-pill-to-chip-1 distance, chip-2 label), the pull-back is x0.60 (curve v5.ui-dropdown-reveal.menu1-pullback.v5c2) and chip 2's own slide is 114 px within one picture (curve v5.ui-chip-slide-in.v5c2 dropped). (3) The two menu-closing vertical camera whips have values and curves (v5.cam-whip-tilt, id shared with v5c6); the menu-1 one starts at f887 (not f900), reverses the menu-1 rise with no hold and settles on f913, where the horizontal whip pan starts. (4) c2S3: the sparkle stars' corner flight is measured and fitted (v5.shape-flare-streak-sweep.stars-fly.v5c2); the background wireframe tumbles continuously (v5.bg-orbit-wireframe-tumble, new). (5) c2S4: the sphere drop and merge is measured (blob path, card-relative drop, area) and its collapse fitted (v5.logo-sphere-drop-merge.v5c2). (6) The whip transition is fitted over its own range (outgoing ease-in v5.trans-whip-tilt.out.v5c2, incoming deceleration v5.trans-whip-tilt.v5c2, refitted) and the push-in re-frame that follows it is fitted separately (v5.cam-reframe-pullback.push.v5c2)."
+ ]
+}

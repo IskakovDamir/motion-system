@@ -1,0 +1,40 @@
+{
+  "technique_id": "v1.trans-zoom-through-mark.v1c1",
+  "file": "curves/v1.trans-zoom-through-mark.v1c1.csv",
+  "property": "scale",
+  "unit": "scale factor of the network layer and the centre mark (1.0 = network size before T5; end 1.40)",
+  "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/t5_layer.csv",
+  "column": "scale",
+  "sampled_frames": [
+    864,
+    905
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 1.0,
+  "to_value": 1.3987,
+  "active_frames": [
+    872,
+    895
+  ],
+  "measured_duration_frames": 23,
+  "bezier": {
+    "x1": 0.5705,
+    "y1": 0.1295,
+    "x2": 0.4226,
+    "y2": 0.8155,
+    "durationInFrames": 24,
+    "delay": -0.402,
+    "built_duration_frames": 22,
+    "rmse": 0.0133
+  },
+  "spring": {
+    "stiffness": 116.463,
+    "damping": 16.762,
+    "mass": 1,
+    "damping_ratio": 0.7766,
+    "built_duration_frames": 29,
+    "rmse": 0.2812
+  },
+  "recommended": "bezier",
+  "note": "composite: grid-patch multi-scale template f864-f878 (grid fades out f880-f888), centre-mark template f879-f905 matched at f879 (overlap f879-f887 agrees within 0.01); the layer also rises: mark centre 540 px (50% H) -> 385 px (35.6% H), same timing (see mark_y column)"
+}

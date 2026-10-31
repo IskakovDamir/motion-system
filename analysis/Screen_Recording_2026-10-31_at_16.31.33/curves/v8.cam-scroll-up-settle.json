@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.cam-scroll-up-settle",
+ "file": "curves/v8.cam-scroll-up-settle.csv",
+ "property": "position-y",
+ "unit": "% of frame height",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c4_S2_page_y.csv",
+ "column": "page_y_pct",
+ "sampled_frames": [
+  2255,
+  2314
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 88.78,
+ "to_value": 19.172,
+ "active_frames": [
+  2258,
+  2300
+ ],
+ "measured_duration_frames": 42,
+ "bezier": {
+  "x1": 0.3515,
+  "y1": 0.1526,
+  "x2": 0.0989,
+  "y2": 1.0002,
+  "durationInFrames": 51,
+  "delay": -0.339,
+  "built_duration_frames": 39,
+  "rmse": 0.0152
+ },
+ "spring": {
+  "stiffness": 77.203,
+  "damping": 17.105,
+  "mass": 1,
+  "damping_ratio": 0.9733,
+  "built_duration_frames": 37,
+  "rmse": 0.0567
+ },
+ "recommended": "bezier",
+ "note": "c4S2 page scroll after T1: the flattened page band and the chat block below it scroll up together; tracked on the selected thumbnail chip of the band's bottom row (template, scratch/v8c4_S2_strip_chip_early.csv f2248-f2266 and v8c4_S2_strip_chip.csv f2270-f2308), joined to the headline track minus 235 px from f2311 (scratch/v8c4_S2_headline_word1.csv) in scratch/v8c4_S2_page_y.csv; vertical motion blur f2262-f2280; continues as a linear drift of 0.73 px per frame (0.08% H per frame).",
+ "chunk_curve_id": "v8.cam-scroll-up-settle.v8c4"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.ui-status-pill-grow-type.v8c5",
+  "file": "curves/v8.ui-status-pill-grow-type.v8c5.csv",
+  "property": "width",
+  "unit": "px (picture 1622 px wide)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c5r_Sa_pill_grow.csv",
+  "column": "pill_w",
+  "sampled_frames": [
+    2960,
+    3010
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 806.0,
+  "active_frames": [
+    2962,
+    2982
+  ],
+  "measured_duration_frames": 20,
+  "bezier": {
+    "x1": 0.229,
+    "y1": 0.2107,
+    "x2": 0.2563,
+    "y2": 0.8612,
+    "durationInFrames": 21,
+    "delay": -0.025,
+    "built_duration_frames": 20,
+    "rmse": 0.0102
+  },
+  "spring": {
+    "stiffness": 196.524,
+    "damping": 25.774,
+    "mass": 1,
+    "damping_ratio": 0.9193,
+    "built_duration_frames": 22,
+    "rmse": 0.0232
+  },
+  "recommended": "bezier",
+  "note": "S-a status pill (light grey capsule, fill luma 231, height 130 px = 14.2% H, fully rounded ends) grows to the right out of the mascot it is attached to: width = right end (closed fill-mask component, scratch/v8c5r_Sa_pill3.csv) minus the pill's rest left end (mascot centre + 96 px), scratch/v8c5r_Sa_pill_grow.csv. First picture f2964 a round seed about 105 px wide beside the mascot; 247 px (f2966), 520 (f2970), 669 (f2974), 779 (f2980), 803 (f2984), rest 806 px = 49.7% W from f2987; the growing right end is motion-blurred. The 1-line label types on behind the growing end at about 1.6 characters per frame (typed width 65 px at f2966 -> 661 px at f2987)."
+}

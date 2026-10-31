@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.cursor-glide.i2",
+  "file": "curves/v7.cursor-glide.i2.csv",
+  "property": "position-x",
+  "unit": "px, window-relative at the f1690 framing (push-in removed: O + (p - O) / s, O = (816, 457))",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p2_cursor_path.csv",
+  "column": "x_win",
+  "sampled_frames": [
+    1729,
+    1785
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 584.6,
+  "to_value": 1138.3,
+  "active_frames": [
+    1731,
+    1756
+  ],
+  "measured_duration_frames": 25,
+  "bezier": {
+    "x1": 0.5241,
+    "y1": 0.6965,
+    "x2": 0.2118,
+    "y2": 0.7995,
+    "durationInFrames": 23,
+    "delay": 2.443,
+    "built_duration_frames": 22,
+    "rmse": 0.0717
+  },
+  "spring": {
+    "stiffness": 169.814,
+    "damping": 23.555,
+    "mass": 1,
+    "damping_ratio": 0.9038,
+    "built_duration_frames": 22,
+    "rmse": 0.0487
+  },
+  "recommended": "spring",
+  "note": "P2 cursor flick, x: after a short glide up-left onto thumbnail 1 (f1724-f1731) the arrow cursor is thrown down-right to rest at the lower right of the project panel while the panel content swaps (glow peak f1729, grid drop-out f1731-f1736, folder drop-in f1736-f1749); window-relative x 584.6 -> 1138 px (+553 px = +34.1% W); the vertical part leads (y 16 f vs x 25 f), so the path curves (down first, then right); motion-blur streaks at f1736-f1742 (streak ink centroids); screen track: template ref f1731 (f1724-f1734) and ref f1764 (f1744-f1785), --global; after f1761 the cursor only rides the push-in (screen creep 20 px to f1784). samples scratch/v7c3_p2_cursor_path.csv"
+}

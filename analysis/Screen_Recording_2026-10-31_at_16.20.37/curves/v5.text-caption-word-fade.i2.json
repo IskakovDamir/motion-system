@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-caption-word-fade.i2",
+  "file": "curves/v5.text-caption-word-fade.i2.csv",
+  "property": "opacity",
+  "unit": "luma contrast ink-minus-background (0-255) of the first caption word",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/cap1_ink.csv",
+  "column": "L1W1_c",
+  "sampled_frames": [
+    20,
+    67
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 5.28,
+  "to_value": 155.19,
+  "active_frames": [
+    27,
+    67
+  ],
+  "measured_duration_frames": 40,
+  "bezier": {
+    "x1": 0.4036,
+    "y1": 0.438,
+    "x2": 0.1475,
+    "y2": 0.5822,
+    "durationInFrames": 33,
+    "delay": 1.206,
+    "built_duration_frames": 32,
+    "rmse": 0.0604
+  },
+  "spring": {
+    "stiffness": 53.009,
+    "damping": 12.772,
+    "mass": 1,
+    "damping_ratio": 0.8771,
+    "built_duration_frames": 36,
+    "rmse": 0.032
+  },
+  "recommended": "spring",
+  "note": "caption 1 line 1 word 1 (5 letters): letters blur-fade in left to right inside the word; box moves with the caption drift (-15.0, -3.0 px per 24 fps picture = -6.0, -1.2 px per frame); contrast 5 -> 155"
+}

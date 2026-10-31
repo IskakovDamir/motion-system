@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.particle-swarm-converge",
+  "file": "curves/v4.particle-swarm-converge.csv",
+  "property": "position",
+  "unit": "px travelled along the path (top-right corner hexagon, 657 px from (1848,166) to (1217,352))",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/c2_s4_hex_c_tr_path.csv",
+  "column": "travel_px",
+  "sampled_frames": [
+    1322,
+    1395
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 0.0,
+  "to_value": 657.84,
+  "active_frames": [
+    1347,
+    1380
+  ],
+  "measured_duration_frames": 33,
+  "bezier": {
+    "x1": 0.5684,
+    "y1": 0.0188,
+    "x2": 0.3563,
+    "y2": 1.089,
+    "durationInFrames": 49,
+    "delay": -5.364,
+    "built_duration_frames": 34,
+    "rmse": 0.0071
+  },
+  "spring": {
+    "stiffness": 46.817,
+    "damping": 10.396,
+    "mass": 1,
+    "damping_ratio": 0.7597,
+    "built_duration_frames": 49,
+    "rmse": 0.298
+  },
+  "recommended": "bezier",
+  "note": "one of 84 hexagons flying from the grid into its honeycomb slot (template track, scores 0.95-0.99); paths are near-straight, the slots are not radially aligned with the start points so the cloud seems to swirl"
+}

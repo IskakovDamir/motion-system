@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.text-label-blur-fade-in",
+ "file": "curves/v8.text-label-blur-fade-in.csv",
+ "property": "opacity",
+ "unit": "luma 0-255 (mean of the title box)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c3_title_luma_2012-2060.csv",
+ "column": "mean",
+ "sampled_frames": [
+  2014,
+  2060
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 247.233,
+ "to_value": 206.195,
+ "active_frames": [
+  2017,
+  2050
+ ],
+ "measured_duration_frames": 33,
+ "bezier": {
+  "x1": 0.2285,
+  "y1": 0.1684,
+  "x2": 0.0687,
+  "y2": 0.9946,
+  "durationInFrames": 41,
+  "delay": -0.122,
+  "built_duration_frames": 32,
+  "rmse": 0.0172
+ },
+ "spring": {
+  "stiffness": 120.451,
+  "damping": 22.097,
+  "mass": 1,
+  "damping_ratio": 1.0067,
+  "built_duration_frames": 31,
+  "rmse": 0.0208
+ },
+ "recommended": "bezier",
+ "note": "S07 status label (1 line, 3 words including a number + ellipsis, light weight, top left at x 4.6-24.1% W, y 5.0-9.2% H): mean luma of a fixed 360 x 50 px box over the settled label (scratch/v8c3_title_luma_2012-2060.csv); the label fades and de-blurs in place (template scale 1.00 and centre fixed from f2020, scratch/v8c3_title_tmpl_2016-2040.csv); the middle characters resolve first (f2018), the right end at f2022, the left end at f2024; darkest pixel 241 (f2017) -> 1 (f2050). It starts while the product page is still shrinking (f2017 = 7 frames after the morph starts).",
+ "chunk_curve_id": "v8.text-label-blur-fade-in.v8c3"
+}

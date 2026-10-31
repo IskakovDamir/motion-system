@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-caption-line-fade-out.i2",
+  "file": "curves/v5.text-caption-line-fade-out.i2.csv",
+  "property": "opacity",
+  "unit": "normalised ink contrast of the whole line (1 = settled)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/cap_cap1_L1.csv",
+  "column": "alpha",
+  "sampled_frames": [
+    57,
+    92
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.949,
+  "to_value": 0.0,
+  "active_frames": [
+    67,
+    92
+  ],
+  "measured_duration_frames": 25,
+  "bezier": {
+    "x1": 0.5163,
+    "y1": -0.392,
+    "x2": 0.0603,
+    "y2": 0.6182,
+    "durationInFrames": 31,
+    "delay": -7.093,
+    "built_duration_frames": 22,
+    "rmse": 0.0333
+  },
+  "spring": {
+    "stiffness": 192.463,
+    "damping": 29.974,
+    "mass": 1,
+    "damping_ratio": 1.0803,
+    "built_duration_frames": 26,
+    "rmse": 0.036
+  },
+  "recommended": "bezier",
+  "note": "caption 1 line 1 (2 words) fades and defocuses out while line 2 is still on; box moves with the caption drift; line 2 follows 11 frames later"
+}

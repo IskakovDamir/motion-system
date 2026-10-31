@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.cursor-glide-click.i2",
+  "file": "curves/v5.cursor-glide-click.i2.csv",
+  "property": "scale",
+  "unit": "scale factor (cursor template scale)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_A_cursor_all.csv",
+  "column": "scale",
+  "sampled_frames": [
+    3207,
+    3217
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.0,
+  "to_value": 0.7,
+  "active_frames": [
+    3210,
+    3215
+  ],
+  "measured_duration_frames": 5,
+  "bezier": {
+    "x1": 0.5984,
+    "y1": -0.0,
+    "x2": 0.6677,
+    "y2": 0.5775,
+    "durationInFrames": 4,
+    "delay": 0.189,
+    "built_duration_frames": 4,
+    "rmse": 0.0126
+  },
+  "spring": {
+    "stiffness": 19884.493,
+    "damping": 260.212,
+    "mass": 1,
+    "damping_ratio": 0.9227,
+    "built_duration_frames": 3,
+    "rmse": 0.3459
+  },
+  "recommended": "bezier",
+  "note": "click squash: cursor shrinks to 0.70 in about 5 frames, holds 2 pictures, then springs back to 1.00 by f3225; 0.05 scale steps of the template search"
+}

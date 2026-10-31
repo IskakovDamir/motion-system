@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.trans-melt-implode.v5c6",
+  "file": "curves/v5.trans-melt-implode.v5c6.csv",
+  "property": "scale",
+  "unit": "% of frame width (RMS radius of the luma>200 core)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c6_melt_core_rms.csv",
+  "column": "rms_radius_pct_w",
+  "sampled_frames": [
+    3915,
+    3932
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 26.82,
+  "to_value": 0.06,
+  "active_frames": [
+    3915,
+    3930
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 1.0,
+    "y1": 1.3854,
+    "x2": 0.4089,
+    "y2": 0.2493,
+    "durationInFrames": 11,
+    "delay": 1.399,
+    "built_duration_frames": 11,
+    "rmse": 0.0842
+  },
+  "spring": {
+    "stiffness": 259.634,
+    "damping": 26.469,
+    "mass": 1,
+    "damping_ratio": 0.8213,
+    "built_duration_frames": 15,
+    "rmse": 0.0448
+  },
+  "recommended": "spring",
+  "note": "melt-implode exit of the two-card layer, collapse phase: RMS radius of the bright core (luma > 200) around its centroid, which stays at x 49-53%, y 48-56%; the inflated blob (f3915, 26.8% W) rotates, shrinks and pops into a point flare with a horizontal anamorphic streak (f3925), point gone by f3932-f3937. Before it: liquid warp + bloom f3905-f3915 (frame luma 41->144)"
+}

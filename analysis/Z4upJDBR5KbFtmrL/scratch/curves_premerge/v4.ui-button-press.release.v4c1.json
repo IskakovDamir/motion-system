@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.ui-button-press.release.v4c1",
+  "file": "curves/v4.ui-button-press.release.v4c1.csv",
+  "property": "scale",
+  "unit": "scale factor (sqrt of button ink area vs rest)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/s2_send_press_area.csv",
+  "column": "scale",
+  "sampled_frames": [
+    301,
+    311
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 0.8615,
+  "to_value": 1.0,
+  "active_frames": [
+    301,
+    306
+  ],
+  "measured_duration_frames": 5,
+  "bezier": {
+    "x1": 0.6359,
+    "y1": 0.2326,
+    "x2": 0.703,
+    "y2": 0.8423,
+    "durationInFrames": 4,
+    "delay": 0.728,
+    "built_duration_frames": 4,
+    "rmse": 0.056
+  },
+  "spring": {
+    "stiffness": 3734.247,
+    "damping": 92.048,
+    "mass": 1,
+    "damping_ratio": 0.7531,
+    "built_duration_frames": 6,
+    "rmse": 0.3775
+  },
+  "recommended": "bezier",
+  "note": "S2 send button release 0.862 -> 1.000 (f302-f306)"
+}

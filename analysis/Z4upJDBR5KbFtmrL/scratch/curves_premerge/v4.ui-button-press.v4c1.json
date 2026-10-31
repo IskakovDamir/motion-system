@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.ui-button-press.v4c1",
+  "file": "curves/v4.ui-button-press.v4c1.csv",
+  "property": "scale",
+  "unit": "scale factor (sqrt of button ink area vs rest)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/s2_send_press_area.csv",
+  "column": "scale",
+  "sampled_frames": [
+    290,
+    301
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 1.0,
+  "to_value": 0.8615,
+  "active_frames": [
+    297,
+    301
+  ],
+  "measured_duration_frames": 4,
+  "bezier": {
+    "x1": 0.0155,
+    "y1": 0.4827,
+    "x2": 0.5612,
+    "y2": 0.8222,
+    "durationInFrames": 3,
+    "delay": 0.517,
+    "built_duration_frames": 3,
+    "rmse": 0.0244
+  },
+  "spring": {
+    "stiffness": 6760.546,
+    "damping": 164.572,
+    "mass": 1,
+    "damping_ratio": 1.0008,
+    "built_duration_frames": 5,
+    "rmse": 0.0573
+  },
+  "recommended": "bezier",
+  "note": "S2 send button press down 1.000 -> 0.862 (f297-f301); release 0.862 -> 1.000 f302-f306; the input text is replaced by the placeholder at f303-f304 and the message bubble appears at f304"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.logo-chrome-smear-in.i2",
+  "file": "curves/v5.logo-chrome-smear-in.i2.csv",
+  "property": "position-x",
+  "unit": "% of frame width",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c1fix_serif_entry.csv",
+  "column": "cap_cx_pct",
+  "sampled_frames": [
+    197,
+    215
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 8.01,
+  "to_value": 39.727,
+  "active_frames": [
+    197,
+    210
+  ],
+  "measured_duration_frames": 13,
+  "bezier": {
+    "x1": 0.2781,
+    "y1": 0.6692,
+    "x2": 0.1614,
+    "y2": 0.6424,
+    "durationInFrames": 9,
+    "delay": 1.589,
+    "built_duration_frames": 9,
+    "rmse": 0.0682
+  },
+  "spring": {
+    "stiffness": 821.532,
+    "damping": 55.176,
+    "mass": 1,
+    "damping_ratio": 0.9625,
+    "built_duration_frames": 12,
+    "rmse": 0.0203
+  },
+  "recommended": "spring",
+  "note": "serif line (line 2) of the lockup: centre of its leading capital (base midpoint, read off 1x/2x ruler crops, +-10 px) sliding in from the left edge while the line un-stretches toward its right end, which already sits at x 1240-1285 px from f197; first sample f197 = first picture where the capital is visible (it is hidden behind the left star before), so the start is truncated; the lockup settle that follows (f215-f235) is curves/v5.logo-chrome-smear-in.i4"
+}

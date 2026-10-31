@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.trans-push-up.i2",
+ "file": "curves/v8.trans-push-up.i2.csv",
+ "property": "position-y",
+ "unit": "% of frame height",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c3_ins_headline_tmpl_1954-1985.csv",
+ "column": "cy_pct",
+ "sampled_frames": [
+  1955,
+  1980
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 31.917,
+ "to_value": 7.407,
+ "active_frames": [
+  1960,
+  1980
+ ],
+ "measured_duration_frames": 20,
+ "bezier": {
+  "x1": 0.7064,
+  "y1": 0.1602,
+  "x2": 0.7946,
+  "y2": 0.5266,
+  "durationInFrames": 20,
+  "delay": 0.005,
+  "built_duration_frames": 19,
+  "rmse": 0.0239
+ },
+ "spring": {
+  "stiffness": 31.304,
+  "damping": 0.5,
+  "mass": 1,
+  "damping_ratio": 0.0447,
+  "built_duration_frames": 197,
+  "rmse": 0.8971
+ },
+ "recommended": "bezier",
+ "note": "S05 -> S06 push up, outgoing half: centre y of the bold headline (template from f1958, scores 0.76-1.00 to f1980, scratch/v8c3_ins_headline_tmpl_1954-1985.csv; 7 duplicate pictures dropped). The whole answer block accelerates upward out of rest: per-picture displacement 5 (f1962), 8, 10, 12, 17, 20, 26, 32, 41, 54 px (f1980, about 27 px per frame) with growing vertical motion blur; then it fades out while leaving the top: darkest ink of the region 23 (f1978) -> 37 (f1980) -> 104 (f1983) -> 200 (f1985) -> 217 (f1986-f1987) (scratch only, minluma over x 200-1300, y 0-700). to-value = last tracked picture f1980 (no settle).",
+ "chunk_curve_id": "v8.trans-push-up-out.v8c3"
+}

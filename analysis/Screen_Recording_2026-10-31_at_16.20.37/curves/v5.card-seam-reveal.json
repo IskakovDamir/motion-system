@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.card-seam-reveal",
+  "file": "curves/v5.card-seam-reveal.csv",
+  "property": "width",
+  "unit": "% of frame width (card 2 visible width)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c4_card2_open.csv",
+  "column": "w_pct",
+  "sampled_frames": [
+    2480,
+    2522
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.0,
+  "to_value": 27.805,
+  "active_frames": [
+    2485,
+    2507
+  ],
+  "measured_duration_frames": 22,
+  "bezier": {
+    "x1": 0.7374,
+    "y1": 0.0076,
+    "x2": 0.3037,
+    "y2": 0.8942,
+    "durationInFrames": 26,
+    "delay": -2.73,
+    "built_duration_frames": 20,
+    "rmse": 0.018
+  },
+  "spring": {
+    "stiffness": 194.04,
+    "damping": 22.792,
+    "mass": 1,
+    "damping_ratio": 0.8181,
+    "built_duration_frames": 17,
+    "rmse": 0.1039
+  },
+  "recommended": "bezier",
+  "note": "card 2 emerges from a vertical seam: right edge held at x 1061->1046 px (65.4->64.5 %W) while the left edge sweeps 1059->616 px with the camera pan; content keeps a constant 110 px offset from the left edge (not compressed), so it is a mask reveal, not a flip; width 0 -> 27.8 %W; overlaps whip 2; f2495 dropped (motion-blur merge), f2497 blurred"
+}

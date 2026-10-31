@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.trans-card-zoom-to-center",
+ "file": "curves/v8.trans-card-zoom-to-center.csv",
+ "property": "scale",
+ "unit": "% of frame width (phone card width; 16.95% = x1.0, 33.97% = x2.0)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c4_T6_card_box.csv",
+ "column": "w_pct",
+ "sampled_frames": [
+  2796,
+  2890
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 16.954,
+ "to_value": 33.97,
+ "active_frames": [
+  2812,
+  2860
+ ],
+ "measured_duration_frames": 48,
+ "bezier": {
+  "x1": 0.8602,
+  "y1": 0.0416,
+  "x2": 0.2524,
+  "y2": 0.9373,
+  "durationInFrames": 65,
+  "delay": -9.667,
+  "built_duration_frames": 48,
+  "rmse": 0.011
+ },
+ "spring": {
+  "stiffness": 54.058,
+  "damping": 12.265,
+  "mass": 1,
+  "damping_ratio": 0.8341,
+  "built_duration_frames": 32,
+  "rmse": 0.1766
+ },
+ "recommended": "bezier",
+ "note": "c4 T6: the upright phone card leaves its slot under the chat text and zooms x2.0 while travelling to the frame centre (centre x 24.3% -> 50.0% W, top 55.4% -> 12.1% H; largest dark component, scratch/v8c4_T6_card_box.csv); the chat text block exits up at the same time; the card's screen is black f2800-f2818 and its content fades back in f2818-f2836.",
+ "chunk_curve_id": "v8.trans-card-zoom-to-center.v8c4"
+}

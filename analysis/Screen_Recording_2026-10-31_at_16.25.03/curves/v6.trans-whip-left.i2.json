@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.trans-whip-left.i2",
+  "file": "curves/v6.trans-whip-left.i2.csv",
+  "property": "position-x",
+  "unit": "px (picture 1622 px wide), centre of the incoming percentage figure",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/v6c1_P10_figure_whip.csv",
+  "column": "cx",
+  "sampled_frames": [
+    841,
+    858
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 895.5,
+  "to_value": 536.0,
+  "active_frames": [
+    841,
+    853
+  ],
+  "measured_duration_frames": 12,
+  "bezier": {
+    "x1": 0.0001,
+    "y1": 0.3769,
+    "x2": 0.4433,
+    "y2": 1.0029,
+    "durationInFrames": 13,
+    "delay": 0.0,
+    "built_duration_frames": 11,
+    "rmse": 0.0271
+  },
+  "spring": {
+    "stiffness": 763.315,
+    "damping": 58.38,
+    "mass": 1,
+    "damping_ratio": 1.0565,
+    "built_duration_frames": 13,
+    "rmse": 0.0825
+  },
+  "recommended": "bezier",
+  "note": "horizontal whip into the closing title (S10): the exploded 3D stack accelerates out to the left with horizontal motion blur (stack centre x 778 / 762 / 690 / 642 / 571 / 403 px at f823 / 827 / 829 / 831 / 833 / 836), one picture of streaks at the right edge (f838), and the percentage figure (at x1.2 of its rest size) arrives from the right and decelerates: centre 895.5 px (f841, blurred) -> 536 px (f856); template ref f876 with scale search, score 0.42 -> 1.00"
+}

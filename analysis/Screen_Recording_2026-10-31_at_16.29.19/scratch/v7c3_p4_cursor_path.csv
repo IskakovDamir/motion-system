@@ -1,0 +1,33 @@
+frame,unique,source,score,tip_x,tip_y,speed_px_per_f,note
+2012,1,crop,,480,287,,faint first picture
+2013,1,crop,,490,287,10.0,faint
+2014,1,template_dark,0.8139,538.3,303.3,51.0,
+2016,1,template_dark,0.8116,583.3,325.3,25.0,
+2019,1,template_light,0.7551,625.8,350.8,16.5,
+2024,1,template_light,0.7595,736.8,427.8,27.0,
+2026,1,template_light,0.6753,805.8,479.8,43.2,checked: light 0.675; between f2024 and f2029 on the crop path
+2029,1,template_light,0.7192,888.8,550.8,36.4,
+2031,1,template_light,0.7649,971.8,628.8,56.9,
+2034,1,template_dark,0.6386,1034.8,689.8,29.2,"checked: dark 0.639; crop_300_200_1100x718_02009-02041 f2033 about (990, 644) box"
+2036,1,template_dark,0.7782,1056.3,721.3,19.1,
+2039,1,template_dark,0.8221,1068.3,741.3,7.8,
+2041,1,template_dark,0.7623,1073.0,752.0,5.8,
+2045,1,template_dark,0.7554,1074.0,755.0,0.8,
+2047,1,template_dark,0.7518,1074.0,754.0,0.5,
+2049,1,template_dark,0.7508,1074.0,753.0,0.5,
+2052,1,template_dark,0.7511,1074.0,752.0,0.3,
+2054,1,template_dark,0.7511,1074.0,751.0,0.5,
+2056,1,template_dark,0.7511,1074.0,750.0,0.5,
+2059,1,template_dark,0.748,1074.0,748.0,0.7,
+2061,1,template_dark,0.7311,1074.0,747.0,0.5,
+2064,1,template_dark,0.7357,1074.0,745.0,0.7,
+2066,1,template_dark,0.7555,1071.3,744.3,1.4,
+2069,1,template_dark,0.7826,1070.5,745.5,0.5,
+2071,1,template_dark,0.6126,1067.7,748.7,2.1,checked: dark 0.613; between f2069 and f2074
+2074,1,template_dark,0.7991,1062.5,756.5,3.1,
+2076,1,template_dark,0.6557,1054.7,772.7,9.0,checked: dark 0.656; crop_400_150_1222x768_02059-02089
+2079,1,template_dark,0.8277,1036.5,807.5,13.1,
+2081,1,template_dark,0.7868,1023.5,846.5,20.6,
+2084,1,template_dark,0.8635,1019.5,868.5,7.5,
+2086,1,template_dark,0.6222,1018.8,878.8,5.2,"checked: dark 0.622; crop f2086 tip about (1018, 880)"
+2089,1,crop,,1018,880,0.5,at the bottom edge; templates lose it

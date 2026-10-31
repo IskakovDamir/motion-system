@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.card-scale-settle",
+  "file": "curves/v5.card-scale-settle.csv",
+  "property": "scale",
+  "unit": "scale factor (1.0 = card rest size, 23.5% W)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_A_camtilt_cards.csv",
+  "column": "card2_scale",
+  "sampled_frames": [
+    3087,
+    3117
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 2.26,
+  "to_value": 1.0,
+  "active_frames": [
+    3087,
+    3105
+  ],
+  "measured_duration_frames": 18,
+  "bezier": {
+    "x1": 0.0001,
+    "y1": 0.6047,
+    "x2": 0.0,
+    "y2": 0.6481,
+    "durationInFrames": 16,
+    "delay": 0.0,
+    "built_duration_frames": 16,
+    "rmse": 0.0291
+  },
+  "spring": {
+    "stiffness": 693.996,
+    "damping": 96.125,
+    "mass": 1,
+    "damping_ratio": 1.8244,
+    "built_duration_frames": 14,
+    "rmse": 0.1564
+  },
+  "recommended": "bezier",
+  "note": "card 2 (centre card) enters from below already huge and shrinks to rest while the camera tilt lands; f3087 from the bright-run width at rows 560-600 (approx, card tilted in 3D), f3090+ template scale (scores 0.64-1.0); stagger of first appearance: card 1 f3077 (bottom-left), card 2 f3085 (bottom), card 3 f3097 (drops in from the top-right corner)"
+}

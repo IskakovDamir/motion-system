@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.trans-whip-push-left-pull-back-long.v7c4",
+  "file": "curves/v7.trans-whip-push-left-pull-back-long.v7c4.csv",
+  "property": "position-x",
+  "unit": "% of frame width",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_z3_glide_tile_x0_newpic.csv",
+  "column": "x0_pct",
+  "sampled_frames": [
+    2515,
+    2591
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 30.518,
+  "to_value": 15.351,
+  "active_frames": [
+    2515,
+    2574
+  ],
+  "measured_duration_frames": 59,
+  "bezier": {
+    "x1": 0.0937,
+    "y1": 1.2012,
+    "x2": 0.9419,
+    "y2": 0.9218,
+    "durationInFrames": 67,
+    "delay": -0.088,
+    "built_duration_frames": 57,
+    "rmse": 0.0158
+  },
+  "spring": {
+    "stiffness": 51.284,
+    "damping": 17.877,
+    "mass": 1,
+    "damping_ratio": 1.2482,
+    "built_duration_frames": 48,
+    "rmse": 0.1522
+  },
+  "recommended": "bezier",
+  "note": "incoming half of the leftward whip at the hidden hard cut f2515 (Z3; last old picture f2511, f2512-f2514 are capture repeats in a 60 Hz run; missed by all three detectors): lead-in pan left at the close framing (tile left edge 491 -> 322 px, f2499-f2511, blur peak f2509), then between two consecutive pictures the framing jumps x0.44 (tile 156 -> 68 px); this curve is the long decelerating glide after the cut: app-icon left edge 495 -> 249 px (30.5% -> 15.4% W) over f2515-f2589 while line 2 types in a fast burst, ending with the finished two-line block centred (block centre x about 800 px); same device as the f2392 instance but its glide is 2.5x longer (59 f vs 27 f), a long variant of v7.trans-whip-push-left; y constant (tile top 425-428 px)"
+}

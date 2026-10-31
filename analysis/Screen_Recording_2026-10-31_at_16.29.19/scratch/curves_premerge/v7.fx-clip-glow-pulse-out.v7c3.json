@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.fx-clip-glow-pulse-out.v7c3",
+  "file": "curves/v7.fx-clip-glow-pulse-out.v7c3.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 of the halo band just above the clip strip (68.6 -> 19.6)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p5_v1_haloabove.csv",
+  "column": "mean",
+  "sampled_frames": [
+    2211,
+    2256
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 68.6,
+  "to_value": 19.6,
+  "active_frames": [
+    2220,
+    2254
+  ],
+  "measured_duration_frames": 34,
+  "bezier": {
+    "x1": 0.6837,
+    "y1": 1.1187,
+    "x2": 0.8135,
+    "y2": 0.9117,
+    "durationInFrames": 35,
+    "delay": 0.526,
+    "built_duration_frames": 33,
+    "rmse": 0.0125
+  },
+  "spring": {
+    "stiffness": 40.048,
+    "damping": 9.985,
+    "mass": 1,
+    "damping_ratio": 0.7889,
+    "built_duration_frames": 33,
+    "rmse": 0.0202
+  },
+  "recommended": "bezier",
+  "note": "P5 clip-strip glow, decay: the bloom drains from the strip while two gaps open in it (clips removed, f2220-f2240); ends 1 luma below the pre-glow level; ROI fixed; range stops at f2256 because the pulsing gap placeholders (from f2258) brighten the band again"
+}

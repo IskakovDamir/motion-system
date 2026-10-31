@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-size-taper-morph.v5c2",
+  "file": "curves/v5.text-size-taper-morph.v5c2.csv",
+  "property": "height",
+  "unit": "% of frame height",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c2_morph_S_pct.csv",
+  "column": "h_p",
+  "sampled_frames": [
+    720,
+    740
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 11.002,
+  "to_value": 14.052,
+  "active_frames": [
+    722,
+    737
+  ],
+  "measured_duration_frames": 15,
+  "bezier": {
+    "x1": 0.7204,
+    "y1": 0.5039,
+    "x2": 0.2053,
+    "y2": 0.8191,
+    "durationInFrames": 13,
+    "delay": 1.755,
+    "built_duration_frames": 12,
+    "rmse": 0.0421
+  },
+  "spring": {
+    "stiffness": 456.273,
+    "damping": 34.524,
+    "mass": 1,
+    "damping_ratio": 0.8081,
+    "built_duration_frames": 11,
+    "rmse": 0.0943
+  },
+  "recommended": "bezier",
+  "note": "headline line 1 first capital letter ink height while line 1 morphs into a left-to-right size taper (first word grows, second word shrinks: its height 95->82 px, x0.86); the first capital grows 101->129 px (x1.28); vertical centre of the line kept"
+}

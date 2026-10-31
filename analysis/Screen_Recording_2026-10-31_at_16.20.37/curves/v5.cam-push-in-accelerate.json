@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.cam-push-in-accelerate",
+  "file": "curves/v5.cam-push-in-accelerate.csv",
+  "property": "scale",
+  "unit": "scale factor (button, rest = 1)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c3_ui_btnscale_1650_1689.csv",
+  "column": "scale",
+  "sampled_frames": [
+    1665,
+    1687
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 0.58,
+  "to_value": 2.46,
+  "active_frames": [
+    1667,
+    1687
+  ],
+  "measured_duration_frames": 20,
+  "bezier": {
+    "x1": 0.1813,
+    "y1": 0.0929,
+    "x2": 1.0,
+    "y2": 0.1077,
+    "durationInFrames": 18,
+    "delay": 2.0,
+    "built_duration_frames": 18,
+    "rmse": 0.0231
+  },
+  "spring": {
+    "stiffness": 56.134,
+    "damping": 0.5,
+    "mass": 1,
+    "damping_ratio": 0.0334,
+    "built_duration_frames": 198,
+    "rmse": 0.9398
+  },
+  "recommended": "bezier",
+  "note": "button recovers from the press while the whole UI pushes in on it (pivot = button centre ~50.4 %W, 47.9 %H); hard cut at f1690 at full speed, so the curve ends at the cut (2.46 at f1687)"
+}

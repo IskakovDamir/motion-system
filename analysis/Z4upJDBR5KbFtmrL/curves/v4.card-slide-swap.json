@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.card-slide-swap",
+  "file": "curves/v4.card-slide-swap.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (card interior; 246 = absent, 17 = opaque)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/t2_r_interior.csv",
+  "column": "mean",
+  "sampled_frames": [
+    508,
+    525
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 246.0,
+  "to_value": 17.0,
+  "active_frames": [
+    508,
+    519
+  ],
+  "measured_duration_frames": 11,
+  "bezier": {
+    "x1": 0.3331,
+    "y1": 0.9567,
+    "x2": 0.6817,
+    "y2": 0.9563,
+    "durationInFrames": 13,
+    "delay": -0.579,
+    "built_duration_frames": 12,
+    "rmse": 0.0487
+  },
+  "spring": {
+    "stiffness": 690.714,
+    "damping": 50.775,
+    "mass": 1,
+    "damping_ratio": 0.966,
+    "built_duration_frames": 13,
+    "rmse": 0.0965
+  },
+  "recommended": "bezier",
+  "note": "S2->S3 right card swap, incoming card: first visible f508 at opacity 0.12 and x -20.9 px, settles f521 (x offset and opacity share the progress: 0.379/0.388 at f510, 0.741/0.746 at f513); the outgoing card ran f497-f507 (x 0 -> +21.2 px, opacity 1 -> 0.11, ease-in) and is removed at f508"
+}

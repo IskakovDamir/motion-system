@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.trans-blur-whip-reframe",
+ "file": "curves/v8.trans-blur-whip-reframe.csv",
+ "property": "position-x",
+ "unit": "% of frame width (agent icon centre, after the reframe)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c1_t3_icon_post_606-640.csv",
+ "column": "cx_pct",
+ "sampled_frames": [
+  608,
+  636
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 14.365,
+ "to_value": 24.538,
+ "active_frames": [
+  608,
+  634
+ ],
+ "measured_duration_frames": 26,
+ "bezier": {
+  "x1": 0.1739,
+  "y1": 0.9838,
+  "x2": 0.5356,
+  "y2": 0.922,
+  "durationInFrames": 28,
+  "delay": 0.136,
+  "built_duration_frames": 25,
+  "rmse": 0.0059
+ },
+ "spring": {
+  "stiffness": 261.222,
+  "damping": 33.65,
+  "mass": 1,
+  "damping_ratio": 1.041,
+  "built_duration_frames": 22,
+  "rmse": 0.1361
+ },
+ "recommended": "bezier",
+ "note": "incoming half of the blur whip-reframe T3: after the hidden cut f608 (zoom-out x0.66) the chat panel keeps sliding right, decelerating, while its blur clears (template with scales, scratch/v8c1_t3_icon_post_606-640.csv); first picture f608 already moving; to-value = f636, the drift continues at 1 px/f into the next pan",
+ "chunk_curve_id": "v8.trans-blur-whip-reframe.v8c1"
+}

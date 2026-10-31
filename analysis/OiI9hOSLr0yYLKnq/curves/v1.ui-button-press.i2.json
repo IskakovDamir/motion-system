@@ -1,0 +1,40 @@
+{
+  "technique_id": "v1.ui-button-press.i2",
+  "file": "curves/v1.ui-button-press.i2.csv",
+  "property": "scale",
+  "unit": "scale factor of the send button about its own centre (1620.5, 540.5); 1.0 = 95.9 px diameter",
+  "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/s1_sendbtn_press.csv",
+  "column": "scale_soft",
+  "sampled_frames": [
+    85,
+    97
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 0.9004,
+  "to_value": 1.0001,
+  "active_frames": [
+    87,
+    91
+  ],
+  "measured_duration_frames": 4,
+  "bezier": {
+    "x1": 0.1301,
+    "y1": -0.0,
+    "x2": 0.6757,
+    "y2": 0.0032,
+    "durationInFrames": 4,
+    "delay": -0.51,
+    "built_duration_frames": 4,
+    "rmse": 0.1185
+  },
+  "spring": {
+    "stiffness": 3183.079,
+    "damping": 81.913,
+    "mass": 1,
+    "damping_ratio": 0.7259,
+    "built_duration_frames": 7,
+    "rmse": 0.3984
+  },
+  "recommended": "bezier",
+  "note": "release half of the send-button click (0.900 -> 1.000), same measurement as v1.ui-button-press; back at rest from f91, 10 f before the send-off exit; the release equals the press-down curve (v1.ui-button-press) played backwards, q(f) = 1 - P(171.55 - f), rms 0.006 over f87-f91; the high shape rmse comes from the 2% window rule on a 4-frame move (per-frame residual of this fit < 0.0001)"
+}

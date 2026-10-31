@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-type-swing-in.v5c4",
+  "file": "curves/v5.text-type-swing-in.v5c4.csv",
+  "property": "rotation",
+  "unit": "degrees (baseline tilt of the typed line; first picture is the cut)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c4_headline_swing.csv",
+  "column": "angle_deg",
+  "sampled_frames": [
+    2415,
+    2432
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 8.06,
+  "to_value": 0.03,
+  "active_frames": [
+    2415,
+    2425
+  ],
+  "measured_duration_frames": 10,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 1.0724,
+    "x2": 0.0,
+    "y2": 0.6381,
+    "durationInFrames": 7,
+    "delay": 0.513,
+    "built_duration_frames": 7,
+    "rmse": 0.0341
+  },
+  "spring": {
+    "stiffness": 15081.886,
+    "damping": 39.771,
+    "mass": 1,
+    "damping_ratio": 0.1619,
+    "built_duration_frames": 12,
+    "rmse": 0.1334
+  },
+  "recommended": "bezier",
+  "note": "headline swings flat while typing on: baseline tilt 8.1 -> 0 deg over f2415-2425; per-letter cap height 41 -> 81 px (4.5 -> 8.8% H; median of the visible letters, luma > 128: 41, 65, 72, 78, 80, 81 px on f2415, 2417, 2420, 2422, 2425, 2427; scratch/v5c4_headline_cap_h.csv; the ink_h_px column of scratch/v5c4_headline_swing.csv is not a letter height and is superseded); the move is already running at the cut f2415 (no rest frames before), so the curve covers the visible part only"
+}

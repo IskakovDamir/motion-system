@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.trans-whip-up.i2",
+ "file": "curves/v8.trans-whip-up.i2.csv",
+ "property": "position-y",
+ "unit": "px (picture 918 px high)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c2_T1_out_viewall.csv",
+ "column": "cy",
+ "sampled_frames": [
+  886,
+  912
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 479.0,
+ "to_value": 337.0,
+ "active_frames": [
+  887,
+  912
+ ],
+ "measured_duration_frames": 25,
+ "bezier": {
+  "x1": 0.0313,
+  "y1": 0.0394,
+  "x2": 1.0,
+  "y2": 0.2655,
+  "durationInFrames": 24,
+  "delay": 0.902,
+  "built_duration_frames": 24,
+  "rmse": 0.0149
+ },
+ "spring": {
+  "stiffness": 53.165,
+  "damping": 22.08,
+  "mass": 1,
+  "damping_ratio": 1.5141,
+  "built_duration_frames": 48,
+  "rmse": 0.437
+ },
+ "recommended": "bezier",
+ "note": "S01 exit: the last list row (icon + label in the highlight slot) template centre y (scratch/v8c2_T1_out_viewall.csv); ease-in upward from the base drift to 34 px per frame at the last picture f912 before the hidden cut f914; to-value = last picture (no settle)",
+ "chunk_curve_id": "v8.trans-whip-up-out.v8c2"
+}

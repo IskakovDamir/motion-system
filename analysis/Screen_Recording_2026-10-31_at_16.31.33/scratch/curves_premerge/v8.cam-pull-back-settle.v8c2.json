@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.cam-pull-back-settle.v8c2",
+  "file": "curves/v8.cam-pull-back-settle.v8c2.csv",
+  "property": "position-x",
+  "unit": "px (picture 1622 px wide)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c2_S03_stack_geom.csv",
+  "column": "x1",
+  "sampled_frames": [
+    1178,
+    1223
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1595.0,
+  "to_value": 1223.0,
+  "active_frames": [
+    1178,
+    1216
+  ],
+  "measured_duration_frames": 38,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.3857,
+    "x2": 0.4953,
+    "y2": 0.9338,
+    "durationInFrames": 39,
+    "delay": 2.39,
+    "built_duration_frames": 35,
+    "rmse": 0.0531
+  },
+  "spring": {
+    "stiffness": 55.171,
+    "damping": 29.03,
+    "mass": 1,
+    "damping_ratio": 1.9542,
+    "built_duration_frames": 47,
+    "rmse": 0.048
+  },
+  "recommended": "spring",
+  "note": "S03 after the last card lands (f1174, card fills the frame): right edge x of the front card (largest dark component, scratch/v8c2_S03_stack_geom.csv) while the camera pulls back and the card shrinks to its rest size; f1174-f1176 are clipped by the frame edge, so the samples start at f1178 already moving (from-value = f1178); to-value = rest f1220-f1223 before the stack collapses"
+}

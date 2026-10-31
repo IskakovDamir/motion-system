@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.cam-pull-back-snap.v5c5",
+  "file": "curves/v5.cam-pull-back-snap.v5c5.csv",
+  "property": "scale",
+  "unit": "scale factor (long footage strip width / width at f3345, 81.4% W)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_C_pullback_strip.csv",
+  "column": "strip_w_scale",
+  "sampled_frames": [
+    3345,
+    3400
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.0,
+  "to_value": 0.6715,
+  "active_frames": [
+    3347,
+    3376
+  ],
+  "measured_duration_frames": 29,
+  "bezier": {
+    "x1": 0.7441,
+    "y1": 0.4808,
+    "x2": 0.0,
+    "y2": 0.8705,
+    "durationInFrames": 29,
+    "delay": 2.428,
+    "built_duration_frames": 26,
+    "rmse": 0.0687
+  },
+  "spring": {
+    "stiffness": 175.713,
+    "damping": 23.001,
+    "mass": 1,
+    "damping_ratio": 0.8676,
+    "built_duration_frames": 20,
+    "rmse": 0.1283
+  },
+  "recommended": "bezier",
+  "note": "snap pull-back of the C layout: the camera pulls back and the 3D-tilted label/strip/thumbnail plane flattens to a front-facing grid while the 2-line headline enters below; strip width at its centre row (column x1000-1020 locates the strip, luma > 30); the 3D flattening is part of the measured width change (strip height gives 0.70 instead of 0.67); motion blur f3360-3362; f3365 dropped (particle ring merges with the strip)"
+}

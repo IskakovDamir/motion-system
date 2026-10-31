@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.fx-panel-glow-swap-out.v7c3",
+  "file": "curves/v7.fx-panel-glow-swap-out.v7c3.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 of the empty project-panel area (159 at the peak f1729 -> 30, the new panel background)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c3_p2_glow_luma_top.csv",
+  "column": "top",
+  "sampled_frames": [
+    1729,
+    1759
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 159.46,
+  "to_value": 30.0,
+  "active_frames": [
+    1729,
+    1747
+  ],
+  "measured_duration_frames": 18,
+  "bezier": {
+    "x1": 0.0149,
+    "y1": 0.2724,
+    "x2": 0.3709,
+    "y2": 0.4569,
+    "durationInFrames": 15,
+    "delay": 0.709,
+    "built_duration_frames": 15,
+    "rmse": 0.0533
+  },
+  "spring": {
+    "stiffness": 120.663,
+    "damping": 17.465,
+    "mass": 1,
+    "damping_ratio": 0.795,
+    "built_duration_frames": 20,
+    "rmse": 0.043
+  },
+  "recommended": "spring",
+  "note": "P2 content swap, glow decay: the bloom drains from the panel while the thumbnail grid drops out (f1731-f1736) and the folder grid drops in (f1740-f1749); panel background ends 3 luma darker than before the glow (33 -> 30); ROI rides the centred camera push-in (O = 816, 457 px)"
+}

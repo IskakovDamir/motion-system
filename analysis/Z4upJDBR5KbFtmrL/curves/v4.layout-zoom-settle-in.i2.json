@@ -1,0 +1,40 @@
+{
+  "technique_id": "v4.layout-zoom-settle-in.i2",
+  "file": "curves/v4.layout-zoom-settle-in.i2.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (hub terminal card interior; 246 = absent, 17 = opaque)",
+  "source_samples": "../../analysis/Z4upJDBR5KbFtmrL/scratch/t3_hub_entrance.csv",
+  "column": "card_luma",
+  "sampled_frames": [
+    732,
+    770
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 246.0,
+  "to_value": 17.0,
+  "active_frames": [
+    732,
+    745
+  ],
+  "measured_duration_frames": 13,
+  "bezier": {
+    "x1": 0.2844,
+    "y1": 1.0353,
+    "x2": 0.664,
+    "y2": 0.9885,
+    "durationInFrames": 18,
+    "delay": -0.703,
+    "built_duration_frames": 13,
+    "rmse": 0.0644
+  },
+  "spring": {
+    "stiffness": 476.406,
+    "damping": 41.86,
+    "mass": 1,
+    "damping_ratio": 0.9589,
+    "built_duration_frames": 15,
+    "rmse": 0.1149
+  },
+  "recommended": "bezier",
+  "note": "S4 hub entrance: whole hub layer (6 dark cards, centre card, connectors, label) fades in f731-f748; first visible f732 at opacity 0.135; the layer also scales 1.112 (f732) -> 1.000 (f766) about the hub centre (958, 575), see curves/v4.layout-zoom-settle-in.csv (scale)"
+}

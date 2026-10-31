@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.text-type-letter-fade.v7c4",
+  "file": "curves/v7.text-type-letter-fade.v7c4.csv",
+  "property": "opacity",
+  "unit": "luma 0-255 (97th percentile in the letter box; 18 = background, 249 = white; the grey plateau 210-218 = 0.83-0.86)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/v7c4_line1_letters_2342-2389_newpic.csv",
+  "column": "F",
+  "sampled_frames": [
+    2342,
+    2369
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 18.0,
+  "to_value": 249.0,
+  "active_frames": [
+    2342,
+    2361
+  ],
+  "measured_duration_frames": 19,
+  "bezier": {
+    "x1": 0.8136,
+    "y1": 1.2837,
+    "x2": 0.0,
+    "y2": 0.5587,
+    "durationInFrames": 18,
+    "delay": 1.288,
+    "built_duration_frames": 18,
+    "rmse": 0.0667
+  },
+  "spring": {
+    "stiffness": 367.554,
+    "damping": 39.451,
+    "mass": 1,
+    "damping_ratio": 1.0289,
+    "built_duration_frames": 19,
+    "rmse": 0.0717
+  },
+  "recommended": "bezier",
+  "note": "typewriter line, first letter of line 1 at the close framing (letter box y 402-509 px, riding the canvas: logo centre x per picture), whole reveal from the background to white: the letter fades in place (no blur, no movement) in two stages, background -> light-grey plateau (luma 33 / 75 / 140 / 211 at f2344 / 2346 / 2349 / 2351 = 0.07 / 0.25 / 0.52 / 0.83), a creeping plateau (214 f2354, 218 f2356), then -> white (236 f2359, 249 f2361), held; one ease over both stages (the plateau is not a separate hold in this fit). Re-tracked over the full range to white: the earlier stage-1-only fit (f2342-f2354, 6 pictures) had bezier rmse 0.068. Both stored rmse stay above 0.05 because the 24 fps samples (2-3 frames apart) put the measured window start up to one picture before the onset; shape-matched bezier and the stacked later letters (stage 1 within 2 pictures, stage-2 half level 9.0-10.6 f after the stage-1 half level, 11 letters of P2a and P6a, scratch/v7c4_letters_stacked_2342-2989.csv) are given in chunks/v7c4.md"
+}

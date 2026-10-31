@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.text-letter-pop-tighten",
+ "file": "curves/v8.text-letter-pop-tighten.csv",
+ "property": "position-x",
+ "unit": "px (picture width 1622)",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c5r_Sd_glyph2.csv",
+ "column": "glyph_cx",
+ "sampled_frames": [
+  3401,
+  3446
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 1080.44,
+ "to_value": 958.8,
+ "active_frames": [
+  3401,
+  3424
+ ],
+ "measured_duration_frames": 23,
+ "bezier": {
+  "x1": 0.0,
+  "y1": 1.144,
+  "x2": 0.4698,
+  "y2": 1.1551,
+  "durationInFrames": 22,
+  "delay": 0.043,
+  "built_duration_frames": 21,
+  "rmse": 0.0199
+ },
+ "spring": {
+  "stiffness": 5978.243,
+  "damping": 154.638,
+  "mass": 1,
+  "damping_ratio": 1.0,
+  "built_duration_frames": 5,
+  "rmse": 0.3072
+ },
+ "recommended": "bezier",
+ "note": "S05 label 2 app glyph, ink centroid x (luma < 150, leftmost component in x 860-1500, y 330-480; exact repeat pictures skipped). Fitted from the first picture of the fast slide f3401 (1080.4 px = 66.6% W, glyph 51 px wide, already horizontally blurred) to rest; before it the glyph grows from a 9 px dot at 1129.4 px (69.6% W, f3397) with its right edge held at 1131-1133 px (f3397-f3398). Min 949.1 px (58.5% W, f3412) = 9.3 px past the rest 958.4 px (59.1% W, f3426-f3440); after that only the foreground scale creep (+0.05 px/f). A fit from f3397 fails the shape rule (bezier/spring rmse 0.113/0.113).",
+ "chunk_curve_id": "v8.text-letter-pop-tighten-glyph.v8c5"
+}

@@ -1,0 +1,12 @@
+star,frame,model_x,model_y,peak_luma_12px,peak_x,peak_y,local_bg
+emerging_star,3982,913.9,69.0,5,902,64,0
+emerging_star,3985,921.9,57.4,17,910,45,12
+emerging_star,3990,917.7,45.8,121,917,46,7
+emerging_star,3992,914.9,35.7,210,915,39,18
+emerging_star,3995,921.3,24.0,230,922,28,26
+emerging_star,3997,930.5,8.1,225,930,12,41
+fading_star,3990,1032.7,191.5,189,1033,188,11
+fading_star,3992,1032.7,184.9,191,1034,184,1
+fading_star,3995,1041.1,175.7,187,1042,176,1
+fading_star,3997,1053.0,163.2,129,1053,164,0
+fading_star,4000,1060.9,146.6,2,1049,158,0

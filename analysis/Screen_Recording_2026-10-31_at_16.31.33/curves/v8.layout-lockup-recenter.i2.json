@@ -1,0 +1,41 @@
+{
+ "technique_id": "v8.layout-lockup-recenter.i2",
+ "file": "curves/v8.layout-lockup-recenter.i2.csv",
+ "property": "position-y",
+ "unit": "% of frame height",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c1_icon1_0-118.csv",
+ "column": "cy_pct",
+ "sampled_frames": [
+  30,
+  90
+ ],
+ "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+ "from_value": 50.327,
+ "to_value": 44.771,
+ "active_frames": [
+  40,
+  60
+ ],
+ "measured_duration_frames": 20,
+ "bezier": {
+  "x1": 0.5073,
+  "y1": 0.0094,
+  "x2": 0.4363,
+  "y2": 0.8252,
+  "durationInFrames": 23,
+  "delay": -1.898,
+  "built_duration_frames": 20,
+  "rmse": 0.0072
+ },
+ "spring": {
+  "stiffness": 136.09,
+  "damping": 18.414,
+  "mass": 1,
+  "damping_ratio": 0.7892,
+  "built_duration_frames": 18,
+  "rmse": 0.1128
+ },
+ "recommended": "bezier",
+ "note": "label 1 brand icon centre y while the lockup moves up to admit the tag pill (template, scratch/v8c1_icon1_0-118.csv)",
+ "chunk_curve_id": "v8.layout-lockup-recenter-rise.v8c1"
+}

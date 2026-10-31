@@ -1,0 +1,40 @@
+{
+  "technique_id": "v8.ui-thread-step-scroll.v8c3",
+  "file": "curves/v8.ui-thread-step-scroll.v8c3.csv",
+  "property": "position-y",
+  "unit": "% of frame height",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c3_thread_scroll_1470-1676.csv",
+  "column": "cum_y_pct",
+  "sampled_frames": [
+    1536,
+    1572
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": -99.84,
+  "to_value": -153.702,
+  "active_frames": [
+    1536,
+    1571
+  ],
+  "measured_duration_frames": 35,
+  "bezier": {
+    "x1": 0.5226,
+    "y1": 0.1815,
+    "x2": 0.2023,
+    "y2": 0.8616,
+    "durationInFrames": 37,
+    "delay": -0.293,
+    "built_duration_frames": 33,
+    "rmse": 0.0125
+  },
+  "spring": {
+    "stiffness": 77.456,
+    "damping": 15.036,
+    "mass": 1,
+    "damping_ratio": 0.8542,
+    "built_duration_frames": 28,
+    "rmse": 0.082
+  },
+  "recommended": "bezier",
+  "note": "S02 thread step 2 (clean instance): integrated content position of the thread panel (phase correlation over x 280-1340, scratch/v8c3_thread_scroll_1470-1676.csv, negative = up). While reply 2's last line is still streaming, the thread scrolls up one reply block (494 px = 53.9% H) with an ease-in-out, peak about 34 px per frame (69 px per picture at f1550) with vertical motion blur; the base drift (5-6 px per frame before, 3 px per frame after) is inside the from/to values. Step 1 (f1502-f1530, 336 px = 36.6% H) fits bezier(0.822, 0.553, 0.051, 0.658) D=27, rmse 0.029. Differs from v8.ui-list-step-scroll (v8c2: 21-23 f, ease-out)."
+}

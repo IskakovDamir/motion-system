@@ -1,0 +1,40 @@
+{
+  "technique_id": "v5.text-line-slide-overshoot.title1.v5c5",
+  "file": "curves/v5.text-line-slide-overshoot.title1.v5c5.csv",
+  "property": "position-x",
+  "unit": "% of frame width (right ink edge of title 1, rows 215-275, luma > 150; the title's width stays 720-722 px through the perspective swing, so this edge is free of the taper)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.20.37/scratch/v5c5_E_titles_x.csv",
+  "column": "t1_right_pct",
+  "sampled_frames": [
+    3732,
+    3790
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 13.748,
+  "to_value": 48.027,
+  "active_frames": [
+    3732,
+    3750
+  ],
+  "measured_duration_frames": 18,
+  "bezier": {
+    "x1": 0.0,
+    "y1": 0.7099,
+    "x2": 0.0,
+    "y2": 1.1398,
+    "durationInFrames": 18,
+    "delay": 2.577,
+    "built_duration_frames": 15,
+    "rmse": 0.111
+  },
+  "spring": {
+    "stiffness": 1136.11,
+    "damping": 59.94,
+    "mass": 1,
+    "damping_ratio": 0.8891,
+    "built_duration_frames": 9,
+    "rmse": 0.2153
+  },
+  "recommended": "bezier",
+  "note": "title 1 slides in from the left edge (first visible f3732 as a motion-blurred streak, taken as the start value), overshoots 14-15 px (0.9 % W) at f3745-3747, undershoots 3-4 px at f3755-3757 and rests by f3762; re-measured on a taper-free edge (the earlier rows 252-262 reading followed the last letter's growing height during the perspective swing f3742-3752)"
+}
