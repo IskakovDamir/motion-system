@@ -96,7 +96,9 @@ def check_classification() -> None:
 
 
 def check_coverage(techs: dict, built: dict) -> None:
-    cat = json.loads((ROOT / "src" / "motion" / "catalogue.json").read_text())["techniques"]
+    # the technique -> primitive map comes from the primitive specs themselves (sample_curves.ts),
+    # so a mapping cannot exist without the code that implements it
+    cat = built["catalogue"]
     prims = set(built["primitives"])
     shown = set(built["showcase"])
     missing = [t for t in techs if t not in cat]
