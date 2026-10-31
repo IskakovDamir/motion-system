@@ -1,7 +1,7 @@
 import type React from 'react';
 import {AbsoluteFill, Img, OffthreadVideo, staticFile} from 'remotion';
-import {scheme, type Tone} from '../tokens/colors';
-import {FONT} from '../tokens/type';
+import {scheme, type Tone} from '../../tokens/colors';
+import {FONT} from '../../tokens/type';
 
 // The one place footage enters the system. A slot fills its parent: the card, window or mask
 // around it owns size, radius, clipping and motion, the way the references move masked windows
@@ -70,3 +70,12 @@ export const FootageSlot: React.FC<FootageSlotProps> = ({footage, tone = 'light'
 		</AbsoluteFill>
 	);
 };
+
+/** Isolated demo: an empty slot in a plain frame, as every composition shows it before footage is added. */
+export const Demo: React.FC<{variant: string}> = () => (
+	<AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
+		<div style={{width: '56%', height: '56%', position: 'relative', overflow: 'hidden', borderRadius: 28}}>
+			<FootageSlot label="footage" />
+		</div>
+	</AbsoluteFill>
+);
