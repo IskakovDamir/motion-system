@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Side-by-side grayscale comparison sheets: reference moment left, primitive right.
 
-  .venv/bin/python scripts/compare_sheets.py [--only <technique> ...] [--no-render]
+  .venv/bin/python scripts/compare_sheets.py [--only <technique> ...] [--keep]
   .venv/bin/python scripts/compare_sheets.py --group <group> [--only ...]     (a builder's own sheets)
 
 For every technique in every timeline.md technique index:
@@ -12,7 +12,9 @@ For every technique in every timeline.md technique index:
     technique, over the built curve's active window
   - when the technique has a measured curve: the measured and built progress curves, drawn under
     the frames
-Output: analysis/compare/<technique>/sheet.jpg, renders shared per variant in analysis/compare/_built/.
+Output: analysis/compare/<technique>/sheet.jpg. Renders are shared per variant (only the frames its
+sheets show, from the first to the last) and made BATCH variants at a time into .tmp/compare_built/;
+each batch's frames are deleted once its sheets are written (--keep leaves them).
 With --group, only that group's techniques, bundled on their own (scripts/probe_entry.py), into
 .tmp/probe/<group>/compare/. Frame numbers are burned in: reference frames on the 60 fps analysis
 grid, built frames of the probe composition.
@@ -21,6 +23,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import shutil
 import subprocess
 import sys
@@ -41,6 +44,7 @@ import verify  # noqa: E402
 COMPARE = ROOT / "analysis" / "compare"
 N = 8
 TW, TH = 640, 360
+BATCH = 12
 
 
 def curve_panel(mf, mp, bp, w=TW * 2, h=220):
@@ -61,25 +65,37 @@ def curve_panel(mf, mp, bp, w=TW * 2, h=220):
     return img
 
 
+def frame_files(d: Path) -> dict[int, Path]:
+    """Rendered frame number -> file (renderFrames numbers files by the composition frame)."""
+    out = {}
+    for f in d.glob("*.jp*g"):
+        m = re.search(r"(\d+)\.jpe?g$", f.name)
+        if m:
+            out[int(m.group(1))] = f
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", nargs="*")
     ap.add_argument("--group")
-    ap.add_argument("--no-render", action="store_true")
+    ap.add_argument("--keep", action="store_true", help="keep the rendered frames in .tmp after the sheets are made")
     a = ap.parse_args()
     techs = verify.timeline_techniques()
     if a.group:
         built = group_sample(a.group)
         out_root = ROOT / ".tmp" / "probe" / a.group / "compare"
+        render_root = out_root / "_built"
         entry = str(write_group_entry(a.group).relative_to(ROOT))
     else:
         built = verify.run_sampler()
         out_root = COMPARE
+        render_root = ROOT / ".tmp" / "compare_built"
         entry = None
     cat = built["catalogue"]
     lead = built["probeLead"]
     plan = {}
-    renders: dict[tuple[str, str], int] = {}
+    renders: dict[tuple[str, str], tuple[int, int]] = {}
     for tid, t in sorted(techs.items()):
         if a.only and tid not in a.only:
             continue
@@ -102,62 +118,73 @@ def main():
         else:
             span = (0, max(1, r1 - r0))
         key = (cat[tid]["primitive"], cat[tid]["variant"])
-        plan[tid] = {"ref": (r0, r1), "built": (lead + span[0], lead + span[1]), "key": key}
-        renders[key] = max(renders.get(key, 0), lead + span[1] + 12)
-    bdirs = {k: out_root / "_built" / f"{k[0]}--{k[1]}" for k in renders}
-    if not a.no_render and renders:
+        b0, b1 = lead + span[0], lead + span[1]
+        plan[tid] = {"ref": (r0, r1), "built": (b0, b1), "key": key}
+        lo, hi = renders.get(key, (b0, b1))
+        renders[key] = (min(lo, b0), max(hi, b1))
+    regs = {v.key: v for v in load_registry()}
+    readers = {}
+    made = []
+    keys = sorted(renders)
+    for k0 in range(0, len(keys), BATCH):
+        batch = keys[k0:k0 + BATCH]
+        bdirs = {k: render_root / f"{k[0]}--{k[1]}" for k in batch}
         jobs = []
-        for (prim, var), last in sorted(renders.items()):
-            job = {"id": f"{prim}--{var}", "frames": [0, last], "outDir": str(bdirs[(prim, var)]), "scale": 0.5}
+        for prim, var in batch:
+            lo, hi = renders[(prim, var)]
+            job = {"id": f"{prim}--{var}", "frames": [lo, hi], "outDir": str(bdirs[(prim, var)]), "scale": 0.5}
             if entry:
                 job.update(composition=f"{prim}--{var}")
             else:
                 job.update(composition="PrimitiveProbe", inputProps={"primitive": prim, "variant": var})
             jobs.append(job)
-        jf = out_root / "_jobs.json"
+        jf = render_root / "_jobs.json"
         jf.parent.mkdir(parents=True, exist_ok=True)
         jf.write_text(json.dumps({"entry": entry, "jobs": jobs} if entry else jobs))
         p = subprocess.run(["node", "scripts/render_probe.mjs", str(jf)], cwd=ROOT)
         if p.returncode != 0:
             print("some probe renders failed; sheets for them are skipped")
-    regs = {v.key: v for v in load_registry()}
-    readers = {}
-    made = []
-    for tid, pl in plan.items():
-        t = techs[tid]
-        v = regs[t["video"]]
-        rd = readers.setdefault(v.key, WorkReader(v))
-        files = sorted(bdirs[pl["key"]].glob("*.jp*g"))
-        if not files:
-            continue
-        r0, r1 = pl["ref"]
-        b0, b1 = pl["built"]
-        rows = []
-        for i in range(N):
-            u = i / (N - 1)
-            rf = int(round(r0 + u * (r1 - r0)))
-            bf = int(round(b0 + u * (b1 - b0)))
-            ref = rd.read(rf)
-            ref = cv2.resize(ref, (TW, int(round(ref.shape[0] * TW / ref.shape[1]))), interpolation=cv2.INTER_AREA)
-            ref = cv2.copyMakeBorder(ref, 0, max(0, TH - ref.shape[0]), 0, 0, cv2.BORDER_CONSTANT, value=40)[:TH]
-            bimg = cv2.imread(str(files[min(bf, len(files) - 1)]), cv2.IMREAD_GRAYSCALE)
-            bimg = cv2.resize(bimg, (TW, TH), interpolation=cv2.INTER_AREA)
-            rows.append(np.hstack([label(ref, f"ref {v.key} f{rf}", 0.6), np.full((TH, 6), 0, np.uint8),
-                                   label(bimg, f"built p{bf} m{bf - lead}", 0.6)]))
-        sheet = np.vstack(rows)
-        head = np.full((44, sheet.shape[1]), 255, np.uint8)
-        b = built["techniques"].get(tid, {})
-        title = f"{tid} -> {pl['key'][0]} [{pl['key'][1]}]"
-        cv2.putText(head, title, (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, 0, 2, cv2.LINE_AA)
-        parts = [head, sheet]
-        if t["curve"] and b.get("progress"):
-            data = np.genfromtxt(v.dir / "curves" / f"{t['curve']}.csv", delimiter=",", names=True)
-            parts.append(curve_panel(data["frame"].astype(float), data["progress"].astype(float), np.array(b["progress"]), w=sheet.shape[1]))
-        out = out_root / tid / "sheet.jpg"
-        out.parent.mkdir(parents=True, exist_ok=True)
-        shutil.rmtree(out.parent / "built", ignore_errors=True)
-        cv2.imwrite(str(out), np.vstack(parts), [cv2.IMWRITE_JPEG_QUALITY, 88])
-        made.append(out)
+        for tid, pl in plan.items():
+            if pl["key"] not in bdirs:
+                continue
+            t = techs[tid]
+            v = regs[t["video"]]
+            rd = readers.setdefault(v.key, WorkReader(v))
+            files = frame_files(bdirs[pl["key"]])
+            if not files:
+                continue
+            r0, r1 = pl["ref"]
+            b0, b1 = pl["built"]
+            rows = []
+            for i in range(N):
+                u = i / (N - 1)
+                rf = int(round(r0 + u * (r1 - r0)))
+                bf = int(round(b0 + u * (b1 - b0)))
+                ref = rd.read(rf)
+                ref = cv2.resize(ref, (TW, int(round(ref.shape[0] * TW / ref.shape[1]))), interpolation=cv2.INTER_AREA)
+                ref = cv2.copyMakeBorder(ref, 0, max(0, TH - ref.shape[0]), 0, 0, cv2.BORDER_CONSTANT, value=40)[:TH]
+                bf = min(files, key=lambda n: abs(n - bf)) if bf not in files else bf
+                bimg = cv2.imread(str(files[bf]), cv2.IMREAD_GRAYSCALE)
+                bimg = cv2.resize(bimg, (TW, TH), interpolation=cv2.INTER_AREA)
+                rows.append(np.hstack([label(ref, f"ref {v.key} f{rf}", 0.6), np.full((TH, 6), 0, np.uint8),
+                                       label(bimg, f"built p{bf} m{bf - lead}", 0.6)]))
+            sheet = np.vstack(rows)
+            head = np.full((44, sheet.shape[1]), 255, np.uint8)
+            b = built["techniques"].get(tid, {})
+            title = f"{tid} -> {pl['key'][0]} [{pl['key'][1]}]"
+            cv2.putText(head, title, (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, 0, 2, cv2.LINE_AA)
+            parts = [head, sheet]
+            if t["curve"] and b.get("progress"):
+                data = np.genfromtxt(v.dir / "curves" / f"{t['curve']}.csv", delimiter=",", names=True)
+                parts.append(curve_panel(data["frame"].astype(float), data["progress"].astype(float), np.array(b["progress"]), w=sheet.shape[1]))
+            out = out_root / tid / "sheet.jpg"
+            out.parent.mkdir(parents=True, exist_ok=True)
+            cv2.imwrite(str(out), np.vstack(parts), [cv2.IMWRITE_JPEG_QUALITY, 88])
+            made.append(out)
+        if not a.keep:
+            for d in bdirs.values():
+                shutil.rmtree(d, ignore_errors=True)
+        print(f"batch {k0 // BATCH + 1}/{(len(keys) + BATCH - 1) // BATCH}: {len(made)} sheets so far")
     for r in readers.values():
         r.close()
     print(f"{len(made)} comparison sheets in {out_root.relative_to(ROOT)}")
