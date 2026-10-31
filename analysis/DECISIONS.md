@@ -6,9 +6,9 @@ Calls made where the brief left room, with the reason. Newest at the bottom of e
 
 - **Separate repository.** The work lives in `~/dev/motion-system` (git `main`). The session started
   in `~/dev/agentmash`, whose checkout had 979 staged changes unrelated to this job; committing this
-  there would have swept them in. Creating a GitHub repository for it was blocked by the session's
-  permission check (it would publish data), so `main` has no remote yet; the push waits for an
-  approved remote.
+  there would have swept them in. Creating a GitHub repository for it was first blocked by the
+  session's permission check (it would publish data); after Damir chose a private repository, `main`
+  pushes to github.com/IskakovDamir/motion-system (private).
 - **reference/ is never committed.** The eight videos are third-party promos. They are APFS clones of
   the files in ~/Downloads (byte-identical, made read-only, SHA-256 recorded in `reference/README.md`).
   `.gitignore` also keeps every frame-derived image (contact sheets, detail frames, stills,
