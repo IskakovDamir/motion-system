@@ -1,0 +1,476 @@
+{
+  "video": "OiI9hOSLr0yYLKnq",
+  "present": true,
+  "sample_rate_analysis": 22050,
+  "hop_length": 256,
+  "audio_offset_s": 0.0,
+  "time_base": "seconds from the first video frame; frame = round(time_s * 60)",
+  "duration_s": 17.877,
+  "silent_fraction": 0.001,
+  "tempo_bpm": 126.05,
+  "beat_period_frames_60": 28.561,
+  "beats": [
+    {
+      "time_s": 0.0697,
+      "frame": 4
+    },
+    {
+      "time_s": 0.418,
+      "frame": 25
+    },
+    {
+      "time_s": 0.8591,
+      "frame": 52
+    },
+    {
+      "time_s": 1.2887,
+      "frame": 77
+    },
+    {
+      "time_s": 1.7763,
+      "frame": 107
+    },
+    {
+      "time_s": 2.2407,
+      "frame": 134
+    },
+    {
+      "time_s": 2.6935,
+      "frame": 162
+    },
+    {
+      "time_s": 3.1579,
+      "frame": 189
+    },
+    {
+      "time_s": 3.6223,
+      "frame": 217
+    },
+    {
+      "time_s": 4.0983,
+      "frame": 246
+    },
+    {
+      "time_s": 4.5511,
+      "frame": 273
+    },
+    {
+      "time_s": 5.0387,
+      "frame": 302
+    },
+    {
+      "time_s": 5.4915,
+      "frame": 329
+    },
+    {
+      "time_s": 5.9907,
+      "frame": 359
+    },
+    {
+      "time_s": 6.4203,
+      "frame": 385
+    },
+    {
+      "time_s": 6.9079,
+      "frame": 414
+    },
+    {
+      "time_s": 7.3839,
+      "frame": 443
+    },
+    {
+      "time_s": 7.86,
+      "frame": 472
+    },
+    {
+      "time_s": 8.3127,
+      "frame": 499
+    },
+    {
+      "time_s": 8.7888,
+      "frame": 527
+    },
+    {
+      "time_s": 9.2415,
+      "frame": 554
+    },
+    {
+      "time_s": 9.7408,
+      "frame": 584
+    },
+    {
+      "time_s": 10.182,
+      "frame": 611
+    },
+    {
+      "time_s": 10.658,
+      "frame": 639
+    },
+    {
+      "time_s": 11.1688,
+      "frame": 670
+    },
+    {
+      "time_s": 11.6216,
+      "frame": 697
+    },
+    {
+      "time_s": 12.0628,
+      "frame": 724
+    },
+    {
+      "time_s": 12.5388,
+      "frame": 752
+    },
+    {
+      "time_s": 12.9916,
+      "frame": 779
+    },
+    {
+      "time_s": 13.4792,
+      "frame": 809
+    },
+    {
+      "time_s": 13.932,
+      "frame": 836
+    },
+    {
+      "time_s": 14.4196,
+      "frame": 865
+    },
+    {
+      "time_s": 14.9072,
+      "frame": 894
+    },
+    {
+      "time_s": 15.3368,
+      "frame": 920
+    },
+    {
+      "time_s": 15.7663,
+      "frame": 946
+    },
+    {
+      "time_s": 16.1843,
+      "frame": 971
+    },
+    {
+      "time_s": 16.5558,
+      "frame": 993
+    },
+    {
+      "time_s": 16.9738,
+      "frame": 1018
+    },
+    {
+      "time_s": 17.4382,
+      "frame": 1046
+    }
+  ],
+  "onsets": [
+    {
+      "time_s": 0.058,
+      "frame": 3,
+      "strength": 11.575,
+      "strong": true
+    },
+    {
+      "time_s": 0.4063,
+      "frame": 24,
+      "strength": 2.521,
+      "strong": true
+    },
+    {
+      "time_s": 0.5921,
+      "frame": 36,
+      "strength": 1.734,
+      "strong": false
+    },
+    {
+      "time_s": 0.7663,
+      "frame": 46,
+      "strength": 2.291,
+      "strong": true
+    },
+    {
+      "time_s": 1.2771,
+      "frame": 77,
+      "strength": 2.927,
+      "strong": true
+    },
+    {
+      "time_s": 1.4048,
+      "frame": 84,
+      "strength": 1.596,
+      "strong": false
+    },
+    {
+      "time_s": 1.5441,
+      "frame": 93,
+      "strength": 1.86,
+      "strong": false
+    },
+    {
+      "time_s": 1.7763,
+      "frame": 107,
+      "strength": 1.626,
+      "strong": false
+    },
+    {
+      "time_s": 1.9621,
+      "frame": 118,
+      "strength": 1.613,
+      "strong": false
+    },
+    {
+      "time_s": 2.1478,
+      "frame": 129,
+      "strength": 2.076,
+      "strong": false
+    },
+    {
+      "time_s": 2.2407,
+      "frame": 134,
+      "strength": 1.884,
+      "strong": false
+    },
+    {
+      "time_s": 3.8081,
+      "frame": 228,
+      "strength": 3.271,
+      "strong": true
+    },
+    {
+      "time_s": 4.3421,
+      "frame": 261,
+      "strength": 1.703,
+      "strong": false
+    },
+    {
+      "time_s": 4.5395,
+      "frame": 272,
+      "strength": 2.446,
+      "strong": true
+    },
+    {
+      "time_s": 5.4799,
+      "frame": 329,
+      "strength": 1.963,
+      "strong": false
+    },
+    {
+      "time_s": 5.7005,
+      "frame": 342,
+      "strength": 1.899,
+      "strong": false
+    },
+    {
+      "time_s": 5.9791,
+      "frame": 359,
+      "strength": 1.75,
+      "strong": false
+    },
+    {
+      "time_s": 6.072,
+      "frame": 364,
+      "strength": 1.674,
+      "strong": false
+    },
+    {
+      "time_s": 6.2229,
+      "frame": 373,
+      "strength": 1.586,
+      "strong": false
+    },
+    {
+      "time_s": 6.4087,
+      "frame": 385,
+      "strength": 2.417,
+      "strong": true
+    },
+    {
+      "time_s": 6.6061,
+      "frame": 396,
+      "strength": 1.634,
+      "strong": false
+    },
+    {
+      "time_s": 7.5813,
+      "frame": 455,
+      "strength": 1.67,
+      "strong": false
+    },
+    {
+      "time_s": 8.3011,
+      "frame": 498,
+      "strength": 1.545,
+      "strong": false
+    },
+    {
+      "time_s": 9.2299,
+      "frame": 554,
+      "strength": 2.068,
+      "strong": false
+    },
+    {
+      "time_s": 9.4505,
+      "frame": 567,
+      "strength": 1.729,
+      "strong": false
+    },
+    {
+      "time_s": 9.973,
+      "frame": 598,
+      "strength": 1.829,
+      "strong": false
+    },
+    {
+      "time_s": 10.1587,
+      "frame": 610,
+      "strength": 2.269,
+      "strong": false
+    },
+    {
+      "time_s": 10.3561,
+      "frame": 621,
+      "strength": 1.698,
+      "strong": false
+    },
+    {
+      "time_s": 10.8669,
+      "frame": 652,
+      "strength": 1.751,
+      "strong": false
+    },
+    {
+      "time_s": 11.3197,
+      "frame": 679,
+      "strength": 2.578,
+      "strong": true
+    },
+    {
+      "time_s": 12.98,
+      "frame": 779,
+      "strength": 1.986,
+      "strong": false
+    },
+    {
+      "time_s": 13.2122,
+      "frame": 793,
+      "strength": 1.752,
+      "strong": false
+    },
+    {
+      "time_s": 13.6417,
+      "frame": 819,
+      "strength": 1.783,
+      "strong": false
+    },
+    {
+      "time_s": 13.9204,
+      "frame": 835,
+      "strength": 1.706,
+      "strong": false
+    },
+    {
+      "time_s": 14.5241,
+      "frame": 871,
+      "strength": 3.159,
+      "strong": true
+    },
+    {
+      "time_s": 14.617,
+      "frame": 877,
+      "strength": 2.092,
+      "strong": false
+    },
+    {
+      "time_s": 14.9072,
+      "frame": 894,
+      "strength": 2.244,
+      "strong": false
+    },
+    {
+      "time_s": 15.3368,
+      "frame": 920,
+      "strength": 1.445,
+      "strong": false
+    },
+    {
+      "time_s": 15.7663,
+      "frame": 946,
+      "strength": 1.523,
+      "strong": false
+    },
+    {
+      "time_s": 16.1959,
+      "frame": 972,
+      "strength": 1.598,
+      "strong": false
+    },
+    {
+      "time_s": 16.2656,
+      "frame": 976,
+      "strength": 1.688,
+      "strong": false
+    },
+    {
+      "time_s": 16.312,
+      "frame": 979,
+      "strength": 1.544,
+      "strong": false
+    },
+    {
+      "time_s": 16.4281,
+      "frame": 986,
+      "strength": 2.054,
+      "strong": false
+    },
+    {
+      "time_s": 16.5442,
+      "frame": 993,
+      "strength": 2.589,
+      "strong": true
+    },
+    {
+      "time_s": 16.6603,
+      "frame": 1000,
+      "strength": 2.288,
+      "strong": true
+    },
+    {
+      "time_s": 16.7532,
+      "frame": 1005,
+      "strength": 2.204,
+      "strong": false
+    },
+    {
+      "time_s": 16.9622,
+      "frame": 1018,
+      "strength": 3.513,
+      "strong": true
+    },
+    {
+      "time_s": 17.206,
+      "frame": 1032,
+      "strength": 3.021,
+      "strong": true
+    },
+    {
+      "time_s": 17.4266,
+      "frame": 1046,
+      "strength": 1.785,
+      "strong": false
+    },
+    {
+      "time_s": 17.6704,
+      "frame": 1060,
+      "strength": 2.106,
+      "strong": false
+    }
+  ],
+  "notes": [
+    "librosa onset_detect (no backtrack) and beat_track on the onset envelope; hop 256 @ 22050 Hz = 11.6 ms",
+    "screen recordings carry the captured system audio of the player"
+  ]
+}

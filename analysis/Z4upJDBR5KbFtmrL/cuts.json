@@ -1,0 +1,45 @@
+{
+  "video": "Z4upJDBR5KbFtmrL",
+  "key": "v4",
+  "fps": 60,
+  "frame_convention": "analysis frame = round((pts - first_video_pts) * 60); 'frame' is the first frame of the new shot",
+  "detectors": {
+    "content": {
+      "tool": "PySceneDetect ContentDetector",
+      "threshold": 27.0,
+      "weak_threshold": 14.0
+    },
+    "adaptive": {
+      "tool": "PySceneDetect AdaptiveDetector",
+      "adaptive_threshold": 3.0,
+      "window_width": 2,
+      "min_content_val": 15
+    },
+    "ffmpeg_scene": {
+      "tool": "ffmpeg select scene score",
+      "threshold": 0.3,
+      "weak_threshold": 0.12
+    },
+    "merge_radius_decoded_frames": 2
+  },
+  "cuts": [
+    {
+      "frame": 681,
+      "time_s": 11.35,
+      "last_frame_before": 680,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 8.69,
+      "delta_lum": 16.65,
+      "adaptive_ratio": 98.98,
+      "ffmpeg_scene": 0.147,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c001"
+    }
+  ],
+  "soft_transitions": [],
+  "notes": []
+}

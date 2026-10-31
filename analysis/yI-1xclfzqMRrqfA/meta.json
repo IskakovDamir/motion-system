@@ -1,0 +1,39 @@
+{
+  "video": "yI-1xclfzqMRrqfA",
+  "key": "v3",
+  "reference_file": "reference/yI-1xclfzqMRrqfA.mp4",
+  "kind": "cfr60",
+  "codec": "h264",
+  "profile": "High",
+  "pix_fmt": "yuv420p",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "aspect_ratio": "16:9",
+  "fps": 60.0,
+  "fps_nominal_container": "60/1",
+  "fps_average": 60.0,
+  "frame_count": 1469,
+  "duration_s": 24.512,
+  "video_stream_duration_s": 24.483,
+  "audio": {
+    "present": true,
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "duration_s": 24.512
+  },
+  "analysis": {
+    "grid_fps": 60,
+    "frame_convention": "analysis frame = round((pts - first_video_pts) * 60)",
+    "grid_frame_count": 1469,
+    "picture_crop_xywh": null,
+    "picture_resolution": [
+      1920,
+      1080
+    ],
+    "picture_aspect_ratio": "16:9",
+    "masks_xywh": []
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "video": "U34UrnYU5VT-pRXi",
+  "smoothing": "3-frame box on flow_mag",
+  "peaks": [
+    {
+      "frame": 47,
+      "time_s": 0.7833,
+      "flow_mag": 0.0607,
+      "diff_mean": 0.01363,
+      "prominence": 0.0559,
+      "near_cut_frames": 56,
+      "at_cut": false
+    },
+    {
+      "frame": 106,
+      "time_s": 1.7667,
+      "flow_mag": 2.4931,
+      "diff_mean": 0.17164,
+      "prominence": 2.2868,
+      "near_cut_frames": 3,
+      "at_cut": true
+    },
+    {
+      "frame": 225,
+      "time_s": 3.75,
+      "flow_mag": 0.1064,
+      "diff_mean": 0.01756,
+      "prominence": 0.1486,
+      "near_cut_frames": 122,
+      "at_cut": false
+    },
+    {
+      "frame": 319,
+      "time_s": 5.3167,
+      "flow_mag": 0.3181,
+      "diff_mean": 0.0277,
+      "prominence": 0.276,
+      "near_cut_frames": 216,
+      "at_cut": false
+    },
+    {
+      "frame": 340,
+      "time_s": 5.6667,
+      "flow_mag": 0.0,
+      "diff_mean": 0.0,
+      "prominence": 0.0779,
+      "near_cut_frames": 237,
+      "at_cut": false
+    },
+    {
+      "frame": 396,
+      "time_s": 6.6,
+      "flow_mag": 0.0,
+      "diff_mean": 0.0,
+      "prominence": 0.0998,
+      "near_cut_frames": 293,
+      "at_cut": false
+    },
+    {
+      "frame": 452,
+      "time_s": 7.5333,
+      "flow_mag": 0.0021,
+      "diff_mean": 0.00119,
+      "prominence": 0.184,
+      "near_cut_frames": 337,
+      "at_cut": false
+    },
+    {
+      "frame": 565,
+      "time_s": 9.4167,
+      "flow_mag": 0.0004,
+      "diff_mean": 6e-05,
+      "prominence": 0.186,
+      "near_cut_frames": 224,
+      "at_cut": false
+    },
+    {
+      "frame": 677,
+      "time_s": 11.2833,
+      "flow_mag": 0.0155,
+      "diff_mean": 0.00419,
+      "prominence": 0.4645,
+      "near_cut_frames": 112,
+      "at_cut": false
+    },
+    {
+      "frame": 732,
+      "time_s": 12.2,
+      "flow_mag": 0.001,
+      "diff_mean": 0.0002,
+      "prominence": 0.6355,
+      "near_cut_frames": 57,
+      "at_cut": false
+    },
+    {
+      "frame": 790,
+      "time_s": 13.1667,
+      "flow_mag": 0.005,
+      "diff_mean": 0.00077,
+      "prominence": 0.4355,
+      "near_cut_frames": 1,
+      "at_cut": true
+    },
+    {
+      "frame": 900,
+      "time_s": 15.0,
+      "flow_mag": 0.0027,
+      "diff_mean": 0.00047,
+      "prominence": 0.5109,
+      "near_cut_frames": 1,
+      "at_cut": true
+    },
+    {
+      "frame": 959,
+      "time_s": 15.9833,
+      "flow_mag": 0.0007,
+      "diff_mean": 0.00016,
+      "prominence": 0.1492,
+      "near_cut_frames": 58,
+      "at_cut": false
+    },
+    {
+      "frame": 1097,
+      "time_s": 18.2833,
+      "flow_mag": 0.0,
+      "diff_mean": 1e-05,
+      "prominence": 0.2632,
+      "near_cut_frames": 196,
+      "at_cut": false
+    },
+    {
+      "frame": 1170,
+      "time_s": 19.5,
+      "flow_mag": 0.4613,
+      "diff_mean": 0.04313,
+      "prominence": 0.4525,
+      "near_cut_frames": 269,
+      "at_cut": false
+    },
+    {
+      "frame": 1182,
+      "time_s": 19.7,
+      "flow_mag": 0.0009,
+      "diff_mean": 0.00016,
+      "prominence": 0.1176,
+      "near_cut_frames": 281,
+      "at_cut": false
+    },
+    {
+      "frame": 1227,
+      "time_s": 20.45,
+      "flow_mag": 0.4525,
+      "diff_mean": 0.01556,
+      "prominence": 0.4046,
+      "near_cut_frames": 265,
+      "at_cut": false
+    },
+    {
+      "frame": 1350,
+      "time_s": 22.5,
+      "flow_mag": 0.0001,
+      "diff_mean": 2e-05,
+      "prominence": 0.2051,
+      "near_cut_frames": 142,
+      "at_cut": false
+    },
+    {
+      "frame": 1491,
+      "time_s": 24.85,
+      "flow_mag": 0.0061,
+      "diff_mean": 0.00062,
+      "prominence": 0.5078,
+      "near_cut_frames": 1,
+      "at_cut": true
+    },
+    {
+      "frame": 1551,
+      "time_s": 25.85,
+      "flow_mag": 1.1766,
+      "diff_mean": 0.02756,
+      "prominence": 1.073,
+      "near_cut_frames": 59,
+      "at_cut": false
+    },
+    {
+      "frame": 1611,
+      "time_s": 26.85,
+      "flow_mag": 0.8796,
+      "diff_mean": 0.01398,
+      "prominence": 0.8837,
+      "near_cut_frames": 119,
+      "at_cut": false
+    },
+    {
+      "frame": 1688,
+      "time_s": 28.1333,
+      "flow_mag": 0.0283,
+      "diff_mean": 0.00155,
+      "prominence": 0.1626,
+      "near_cut_frames": 196,
+      "at_cut": false
+    },
+    {
+      "frame": 1802,
+      "time_s": 30.0333,
+      "flow_mag": 0.0052,
+      "diff_mean": 0.00054,
+      "prominence": 0.1039,
+      "near_cut_frames": 310,
+      "at_cut": false
+    }
+  ]
+}

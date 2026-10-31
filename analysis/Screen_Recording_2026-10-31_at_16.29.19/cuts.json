@@ -1,0 +1,1512 @@
+{
+  "video": "Screen_Recording_2026-10-31_at_16.29.19",
+  "key": "v7",
+  "fps": 60,
+  "frame_convention": "analysis frame = round((pts - first_video_pts) * 60); 'frame' is the first frame of the new shot",
+  "detectors": {
+    "content": {
+      "tool": "PySceneDetect ContentDetector",
+      "threshold": 27.0,
+      "weak_threshold": 14.0
+    },
+    "adaptive": {
+      "tool": "PySceneDetect AdaptiveDetector",
+      "adaptive_threshold": 3.0,
+      "window_width": 2,
+      "min_content_val": 15
+    },
+    "ffmpeg_scene": {
+      "tool": "ffmpeg select scene score",
+      "threshold": 0.3,
+      "weak_threshold": 0.12
+    },
+    "merge_radius_decoded_frames": 1
+  },
+  "cuts": [
+    {
+      "frame": 6,
+      "time_s": 0.1,
+      "last_frame_before": 4,
+      "sources": [
+        "content_weak"
+      ],
+      "content_val": 21.1,
+      "delta_lum": 4.43,
+      "adaptive_ratio": 1.5,
+      "ffmpeg_scene": 0.0604,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c001"
+    },
+    {
+      "frame": 16,
+      "time_s": 0.2667,
+      "last_frame_before": 14,
+      "sources": [
+        "adaptive",
+        "content_weak"
+      ],
+      "content_val": 18.28,
+      "delta_lum": 4.7,
+      "adaptive_ratio": 3.02,
+      "ffmpeg_scene": 0.0808,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c002"
+    },
+    {
+      "frame": 151,
+      "time_s": 2.5167,
+      "last_frame_before": 149,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 14.03,
+      "delta_lum": 11.73,
+      "adaptive_ratio": 1.04,
+      "ffmpeg_scene": 0.4414,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c003"
+    },
+    {
+      "frame": 162,
+      "time_s": 2.7,
+      "last_frame_before": 159,
+      "sources": [
+        "content"
+      ],
+      "content_val": 37.26,
+      "delta_lum": 36.36,
+      "adaptive_ratio": 0.92,
+      "ffmpeg_scene": 0.0261,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c004"
+    },
+    {
+      "frame": 168,
+      "time_s": 2.8,
+      "last_frame_before": 167,
+      "sources": [
+        "content"
+      ],
+      "content_val": 78.82,
+      "delta_lum": 90.28,
+      "adaptive_ratio": 2.14,
+      "ffmpeg_scene": 0.0,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c005"
+    },
+    {
+      "frame": 172,
+      "time_s": 2.8667,
+      "last_frame_before": 171,
+      "sources": [
+        "content"
+      ],
+      "content_val": 29.7,
+      "delta_lum": 21.3,
+      "adaptive_ratio": 1.57,
+      "ffmpeg_scene": 0.0002,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c006"
+    },
+    {
+      "frame": 413,
+      "time_s": 6.8833,
+      "last_frame_before": 410,
+      "sources": [
+        "adaptive",
+        "content"
+      ],
+      "content_val": 81.01,
+      "delta_lum": 114.22,
+      "adaptive_ratio": 7.89,
+      "ffmpeg_scene": 0.0022,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c007"
+    },
+    {
+      "frame": 419,
+      "time_s": 6.9833,
+      "last_frame_before": 417,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 5.3,
+      "delta_lum": 6.77,
+      "adaptive_ratio": 0.73,
+      "ffmpeg_scene": 1.0,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c008"
+    },
+    {
+      "frame": 486,
+      "time_s": 8.1,
+      "last_frame_before": 484,
+      "sources": [
+        "adaptive",
+        "content",
+        "ffmpeg_scene"
+      ],
+      "content_val": 64.87,
+      "delta_lum": 100.77,
+      "adaptive_ratio": 7.38,
+      "ffmpeg_scene": 0.092,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c009"
+    },
+    {
+      "frame": 531,
+      "time_s": 8.85,
+      "last_frame_before": 530,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 0.16,
+      "delta_lum": 0.04,
+      "adaptive_ratio": 0.01,
+      "ffmpeg_scene": 0.1698,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c010"
+    },
+    {
+      "frame": 536,
+      "time_s": 8.9333,
+      "last_frame_before": 535,
+      "sources": [
+        "adaptive",
+        "ffmpeg_scene"
+      ],
+      "content_val": 21.33,
+      "delta_lum": 24.16,
+      "adaptive_ratio": 4.33,
+      "ffmpeg_scene": 0.1996,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c011"
+    },
+    {
+      "frame": 540,
+      "time_s": 9.0,
+      "last_frame_before": 538,
+      "sources": [
+        "adaptive",
+        "ffmpeg_scene"
+      ],
+      "content_val": 24.0,
+      "delta_lum": 27.94,
+      "adaptive_ratio": 1.99,
+      "ffmpeg_scene": 0.2083,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c012"
+    },
+    {
+      "frame": 544,
+      "time_s": 9.0667,
+      "last_frame_before": 543,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 26.65,
+      "delta_lum": 31.25,
+      "adaptive_ratio": 2.02,
+      "ffmpeg_scene": 0.2366,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c013"
+    },
+    {
+      "frame": 547,
+      "time_s": 9.1167,
+      "last_frame_before": 545,
+      "sources": [
+        "adaptive",
+        "content"
+      ],
+      "content_val": 27.83,
+      "delta_lum": 33.61,
+      "adaptive_ratio": 2.04,
+      "ffmpeg_scene": 0.2318,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c014"
+    },
+    {
+      "frame": 554,
+      "time_s": 9.2333,
+      "last_frame_before": 552,
+      "sources": [
+        "content_weak",
+        "ffmpeg_scene"
+      ],
+      "content_val": 25.81,
+      "delta_lum": 32.52,
+      "adaptive_ratio": 1.0,
+      "ffmpeg_scene": 0.2523,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c015"
+    },
+    {
+      "frame": 560,
+      "time_s": 9.3333,
+      "last_frame_before": 558,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": null,
+      "delta_lum": null,
+      "adaptive_ratio": null,
+      "ffmpeg_scene": 0.2431,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c016"
+    },
+    {
+      "frame": 626,
+      "time_s": 10.4333,
+      "last_frame_before": 624,
+      "sources": [
+        "adaptive",
+        "content"
+      ],
+      "content_val": 0.18,
+      "delta_lum": 0.08,
+      "adaptive_ratio": 0.01,
+      "ffmpeg_scene": 0.0002,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c017"
+    },
+    {
+      "frame": 631,
+      "time_s": 10.5167,
+      "last_frame_before": 629,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 1.15,
+      "delta_lum": 0.74,
+      "adaptive_ratio": 0.05,
+      "ffmpeg_scene": 0.7518,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c018"
+    },
+    {
+      "frame": 706,
+      "time_s": 11.7667,
+      "last_frame_before": 705,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 0.21,
+      "delta_lum": 0.09,
+      "adaptive_ratio": 0.25,
+      "ffmpeg_scene": 0.5741,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c019"
+    },
+    {
+      "frame": 710,
+      "time_s": 11.8333,
+      "last_frame_before": 709,
+      "sources": [
+        "adaptive",
+        "content"
+      ],
+      "content_val": 55.42,
+      "delta_lum": 64.3,
+      "adaptive_ratio": 106.36,
+      "ffmpeg_scene": 0.0002,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c020"
+    },
+    {
+      "frame": 744,
+      "time_s": 12.4,
+      "last_frame_before": 741,
+      "sources": [
+        "content"
+      ],
+      "content_val": 27.87,
+      "delta_lum": 30.54,
+      "adaptive_ratio": 1.12,
+      "ffmpeg_scene": 0.0171,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c021"
+    },
+    {
+      "frame": 750,
+      "time_s": 12.5,
+      "last_frame_before": 746,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 32.81,
+      "delta_lum": 38.99,
+      "adaptive_ratio": 1.2,
+      "ffmpeg_scene": 0.1224,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c022"
+    },
+    {
+      "frame": 900,
+      "time_s": 15.0,
+      "last_frame_before": 898,
+      "sources": [
+        "adaptive",
+        "content",
+        "ffmpeg_scene"
+      ],
+      "content_val": 52.84,
+      "delta_lum": 62.41,
+      "adaptive_ratio": 49.01,
+      "ffmpeg_scene": 0.5276,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c023"
+    },
+    {
+      "frame": 1079,
+      "time_s": 17.9833,
+      "last_frame_before": 1078,
+      "sources": [
+        "adaptive",
+        "content",
+        "ffmpeg_scene"
+      ],
+      "content_val": 96.74,
+      "delta_lum": 101.5,
+      "adaptive_ratio": 12.55,
+      "ffmpeg_scene": 0.6975,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c024"
+    },
+    {
+      "frame": 1086,
+      "time_s": 18.1,
+      "last_frame_before": 1085,
+      "sources": [
+        "adaptive"
+      ],
+      "content_val": 0.03,
+      "delta_lum": 0.02,
+      "adaptive_ratio": 0.0,
+      "ffmpeg_scene": 0.0041,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c025"
+    },
+    {
+      "frame": 1089,
+      "time_s": 18.15,
+      "last_frame_before": 1088,
+      "sources": [
+        "content_weak",
+        "ffmpeg_scene"
+      ],
+      "content_val": 19.33,
+      "delta_lum": 21.26,
+      "adaptive_ratio": 1.8,
+      "ffmpeg_scene": 0.305,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c026"
+    },
+    {
+      "frame": 1096,
+      "time_s": 18.2667,
+      "last_frame_before": 1095,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 14.6,
+      "delta_lum": 21.1,
+      "adaptive_ratio": 0.94,
+      "ffmpeg_scene": 0.272,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c027"
+    },
+    {
+      "frame": 1196,
+      "time_s": 19.9333,
+      "last_frame_before": 1194,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 4.12,
+      "delta_lum": 7.27,
+      "adaptive_ratio": 0.3,
+      "ffmpeg_scene": 0.3356,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c028"
+    },
+    {
+      "frame": 1202,
+      "time_s": 20.0333,
+      "last_frame_before": 1200,
+      "sources": [
+        "adaptive",
+        "content"
+      ],
+      "content_val": 41.42,
+      "delta_lum": 65.92,
+      "adaptive_ratio": 7.9,
+      "ffmpeg_scene": 0.0348,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c029"
+    },
+    {
+      "frame": 1260,
+      "time_s": 21.0,
+      "last_frame_before": 1259,
+      "sources": [
+        "adaptive",
+        "content",
+        "ffmpeg_scene"
+      ],
+      "content_val": 57.38,
+      "delta_lum": 89.73,
+      "adaptive_ratio": 9.57,
+      "ffmpeg_scene": 0.0002,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c030"
+    },
+    {
+      "frame": 1296,
+      "time_s": 21.6,
+      "last_frame_before": 1294,
+      "sources": [
+        "adaptive",
+        "content_weak"
+      ],
+      "content_val": 26.47,
+      "delta_lum": 27.99,
+      "adaptive_ratio": 3.78,
+      "ffmpeg_scene": 0.0014,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c031"
+    },
+    {
+      "frame": 1466,
+      "time_s": 24.4333,
+      "last_frame_before": 1464,
+      "sources": [
+        "adaptive",
+        "content"
+      ],
+      "content_val": 85.82,
+      "delta_lum": 101.79,
+      "adaptive_ratio": 8.37,
+      "ffmpeg_scene": 0.0012,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c032"
+    },
+    {
+      "frame": 1487,
+      "time_s": 24.7833,
+      "last_frame_before": 1484,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 4.83,
+      "delta_lum": 7.34,
+      "adaptive_ratio": 0.97,
+      "ffmpeg_scene": 0.5561,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c033"
+    },
+    {
+      "frame": 1531,
+      "time_s": 25.5167,
+      "last_frame_before": 1529,
+      "sources": [
+        "adaptive",
+        "content"
+      ],
+      "content_val": 34.35,
+      "delta_lum": 44.25,
+      "adaptive_ratio": 4.02,
+      "ffmpeg_scene": 0.0048,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c034"
+    },
+    {
+      "frame": 1542,
+      "time_s": 25.7,
+      "last_frame_before": 1539,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 4.69,
+      "delta_lum": 5.66,
+      "adaptive_ratio": 0.87,
+      "ffmpeg_scene": 0.165,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c035"
+    },
+    {
+      "frame": 1622,
+      "time_s": 27.0333,
+      "last_frame_before": 1620,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 9.8,
+      "delta_lum": 10.68,
+      "adaptive_ratio": 1.88,
+      "ffmpeg_scene": 0.135,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c036"
+    },
+    {
+      "frame": 1630,
+      "time_s": 27.1667,
+      "last_frame_before": 1629,
+      "sources": [
+        "adaptive",
+        "content"
+      ],
+      "content_val": 74.93,
+      "delta_lum": 95.45,
+      "adaptive_ratio": 8.65,
+      "ffmpeg_scene": 0.0001,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c037"
+    },
+    {
+      "frame": 1644,
+      "time_s": 27.4,
+      "last_frame_before": 1641,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 3.66,
+      "delta_lum": 4.18,
+      "adaptive_ratio": 0.81,
+      "ffmpeg_scene": 0.3868,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c038"
+    },
+    {
+      "frame": 1786,
+      "time_s": 29.7667,
+      "last_frame_before": 1785,
+      "sources": [
+        "adaptive",
+        "content",
+        "ffmpeg_scene"
+      ],
+      "content_val": 0.01,
+      "delta_lum": 0.0,
+      "adaptive_ratio": 0.0,
+      "ffmpeg_scene": 0.7423,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c039"
+    },
+    {
+      "frame": 1799,
+      "time_s": 29.9833,
+      "last_frame_before": 1798,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 8.23,
+      "delta_lum": 11.82,
+      "adaptive_ratio": 1.6,
+      "ffmpeg_scene": 0.1522,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c040"
+    },
+    {
+      "frame": 1809,
+      "time_s": 30.15,
+      "last_frame_before": 1807,
+      "sources": [
+        "content_weak",
+        "ffmpeg_scene"
+      ],
+      "content_val": 10.18,
+      "delta_lum": 13.86,
+      "adaptive_ratio": 0.91,
+      "ffmpeg_scene": 0.142,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c041"
+    },
+    {
+      "frame": 1820,
+      "time_s": 30.3333,
+      "last_frame_before": 1818,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 10.5,
+      "delta_lum": 13.83,
+      "adaptive_ratio": 0.9,
+      "ffmpeg_scene": 0.1673,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c042"
+    },
+    {
+      "frame": 1829,
+      "time_s": 30.4833,
+      "last_frame_before": 1826,
+      "sources": [
+        "content_weak"
+      ],
+      "content_val": 15.93,
+      "delta_lum": 18.78,
+      "adaptive_ratio": 1.47,
+      "ffmpeg_scene": 0.0445,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c043"
+    },
+    {
+      "frame": 1839,
+      "time_s": 30.65,
+      "last_frame_before": 1836,
+      "sources": [
+        "content_weak"
+      ],
+      "content_val": 14.36,
+      "delta_lum": 16.49,
+      "adaptive_ratio": 1.29,
+      "ffmpeg_scene": 0.0235,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c044"
+    },
+    {
+      "frame": 1851,
+      "time_s": 30.85,
+      "last_frame_before": 1849,
+      "sources": [
+        "content_weak"
+      ],
+      "content_val": 14.48,
+      "delta_lum": 16.29,
+      "adaptive_ratio": 1.33,
+      "ffmpeg_scene": 0.0474,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c045"
+    },
+    {
+      "frame": 1864,
+      "time_s": 31.0667,
+      "last_frame_before": 1861,
+      "sources": [
+        "content_weak"
+      ],
+      "content_val": 14.36,
+      "delta_lum": 15.74,
+      "adaptive_ratio": 1.34,
+      "ffmpeg_scene": 0.002,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c046"
+    },
+    {
+      "frame": 1886,
+      "time_s": 31.4333,
+      "last_frame_before": 1884,
+      "sources": [
+        "content_weak"
+      ],
+      "content_val": 14.65,
+      "delta_lum": 15.52,
+      "adaptive_ratio": 1.72,
+      "ffmpeg_scene": 0.0034,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c047"
+    },
+    {
+      "frame": 1989,
+      "time_s": 33.15,
+      "last_frame_before": 1988,
+      "sources": [
+        "adaptive",
+        "content"
+      ],
+      "content_val": 74.96,
+      "delta_lum": 89.49,
+      "adaptive_ratio": 11.93,
+      "ffmpeg_scene": 0.0365,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c048"
+    },
+    {
+      "frame": 2007,
+      "time_s": 33.45,
+      "last_frame_before": 2005,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": null,
+      "delta_lum": null,
+      "adaptive_ratio": null,
+      "ffmpeg_scene": 0.6349,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c049"
+    },
+    {
+      "frame": 2081,
+      "time_s": 34.6833,
+      "last_frame_before": 2079,
+      "sources": [
+        "adaptive",
+        "content"
+      ],
+      "content_val": 53.73,
+      "delta_lum": 70.12,
+      "adaptive_ratio": 7.87,
+      "ffmpeg_scene": 0.0021,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c050"
+    },
+    {
+      "frame": 2091,
+      "time_s": 34.85,
+      "last_frame_before": 2089,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 5.07,
+      "delta_lum": 6.65,
+      "adaptive_ratio": 0.88,
+      "ffmpeg_scene": 0.3387,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c051"
+    },
+    {
+      "frame": 2334,
+      "time_s": 38.9,
+      "last_frame_before": 2333,
+      "sources": [
+        "adaptive",
+        "content"
+      ],
+      "content_val": 44.66,
+      "delta_lum": 68.52,
+      "adaptive_ratio": 19.82,
+      "ffmpeg_scene": 0.03,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c052"
+    },
+    {
+      "frame": 2342,
+      "time_s": 39.0333,
+      "last_frame_before": 2340,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 2.94,
+      "delta_lum": 2.58,
+      "adaptive_ratio": 2.04,
+      "ffmpeg_scene": 0.4094,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c053"
+    },
+    {
+      "frame": 2601,
+      "time_s": 43.35,
+      "last_frame_before": 2599,
+      "sources": [
+        "content_weak"
+      ],
+      "content_val": 14.25,
+      "delta_lum": 11.14,
+      "adaptive_ratio": 1.25,
+      "ffmpeg_scene": 0.0061,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c054"
+    },
+    {
+      "frame": 2656,
+      "time_s": 44.2667,
+      "last_frame_before": 2654,
+      "sources": [
+        "content_weak"
+      ],
+      "content_val": 14.54,
+      "delta_lum": 5.61,
+      "adaptive_ratio": 1.9,
+      "ffmpeg_scene": 0.0015,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c055"
+    },
+    {
+      "frame": 2664,
+      "time_s": 44.4,
+      "last_frame_before": 2661,
+      "sources": [
+        "content_weak"
+      ],
+      "content_val": 15.76,
+      "delta_lum": 13.21,
+      "adaptive_ratio": 1.18,
+      "ffmpeg_scene": 0.0139,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c056"
+    },
+    {
+      "frame": 2696,
+      "time_s": 44.9333,
+      "last_frame_before": 2694,
+      "sources": [
+        "adaptive",
+        "content_weak"
+      ],
+      "content_val": 18.63,
+      "delta_lum": 18.54,
+      "adaptive_ratio": 4.54,
+      "ffmpeg_scene": 0.0101,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c057"
+    },
+    {
+      "frame": 2701,
+      "time_s": 45.0167,
+      "last_frame_before": 2699,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 6.64,
+      "delta_lum": 6.81,
+      "adaptive_ratio": 0.81,
+      "ffmpeg_scene": 0.152,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c058"
+    },
+    {
+      "frame": 2720,
+      "time_s": 45.3333,
+      "last_frame_before": 2719,
+      "sources": [
+        "adaptive",
+        "content_weak"
+      ],
+      "content_val": 24.8,
+      "delta_lum": 24.42,
+      "adaptive_ratio": 4.33,
+      "ffmpeg_scene": 0.0003,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c059"
+    },
+    {
+      "frame": 2736,
+      "time_s": 45.6,
+      "last_frame_before": 2734,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 4.68,
+      "delta_lum": 5.9,
+      "adaptive_ratio": 0.96,
+      "ffmpeg_scene": 0.1537,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c060"
+    },
+    {
+      "frame": 2821,
+      "time_s": 47.0167,
+      "last_frame_before": 2819,
+      "sources": [
+        "adaptive",
+        "content",
+        "ffmpeg_scene"
+      ],
+      "content_val": 74.07,
+      "delta_lum": 71.05,
+      "adaptive_ratio": 31.08,
+      "ffmpeg_scene": 0.0104,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c061"
+    },
+    {
+      "frame": 2927,
+      "time_s": 48.7833,
+      "last_frame_before": 2925,
+      "sources": [
+        "adaptive",
+        "content"
+      ],
+      "content_val": 73.13,
+      "delta_lum": 75.15,
+      "adaptive_ratio": 51.42,
+      "ffmpeg_scene": 0.0007,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c062"
+    },
+    {
+      "frame": 2941,
+      "time_s": 49.0167,
+      "last_frame_before": 2939,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 2.28,
+      "delta_lum": 2.51,
+      "adaptive_ratio": 0.86,
+      "ffmpeg_scene": 0.5854,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c063"
+    },
+    {
+      "frame": 3261,
+      "time_s": 54.35,
+      "last_frame_before": 3259,
+      "sources": [
+        "content_weak"
+      ],
+      "content_val": 15.87,
+      "delta_lum": 21.59,
+      "adaptive_ratio": 1.04,
+      "ffmpeg_scene": 0.0195,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c064"
+    },
+    {
+      "frame": 3324,
+      "time_s": 55.4,
+      "last_frame_before": 3321,
+      "sources": [
+        "content"
+      ],
+      "content_val": 28.35,
+      "delta_lum": 36.21,
+      "adaptive_ratio": 1.83,
+      "ffmpeg_scene": 0.0083,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c065"
+    },
+    {
+      "frame": 3339,
+      "time_s": 55.65,
+      "last_frame_before": 3336,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 9.49,
+      "delta_lum": 8.59,
+      "adaptive_ratio": 0.98,
+      "ffmpeg_scene": 0.1309,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c066"
+    },
+    {
+      "frame": 3376,
+      "time_s": 56.2667,
+      "last_frame_before": 3374,
+      "sources": [
+        "content_weak"
+      ],
+      "content_val": 19.03,
+      "delta_lum": 13.62,
+      "adaptive_ratio": 1.23,
+      "ffmpeg_scene": 0.027,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c067"
+    },
+    {
+      "frame": 3426,
+      "time_s": 57.1,
+      "last_frame_before": 3425,
+      "sources": [
+        "adaptive",
+        "content_weak"
+      ],
+      "content_val": 18.15,
+      "delta_lum": 13.45,
+      "adaptive_ratio": 2.22,
+      "ffmpeg_scene": 0.0424,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c068"
+    },
+    {
+      "frame": 3477,
+      "time_s": 57.95,
+      "last_frame_before": 3475,
+      "sources": [
+        "content_weak"
+      ],
+      "content_val": 18.31,
+      "delta_lum": 15.46,
+      "adaptive_ratio": 1.56,
+      "ffmpeg_scene": 0.0022,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c069"
+    },
+    {
+      "frame": 3579,
+      "time_s": 59.65,
+      "last_frame_before": 3576,
+      "sources": [
+        "content",
+        "ffmpeg_scene"
+      ],
+      "content_val": 46.96,
+      "delta_lum": 46.66,
+      "adaptive_ratio": 1.52,
+      "ffmpeg_scene": 0.0188,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c070"
+    },
+    {
+      "frame": 3587,
+      "time_s": 59.7833,
+      "last_frame_before": 3586,
+      "sources": [
+        "adaptive"
+      ],
+      "content_val": 0.07,
+      "delta_lum": 0.02,
+      "adaptive_ratio": 0.01,
+      "ffmpeg_scene": 0.0004,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c071"
+    },
+    {
+      "frame": 3589,
+      "time_s": 59.8167,
+      "last_frame_before": 3588,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 0.05,
+      "delta_lum": 0.02,
+      "adaptive_ratio": 0.01,
+      "ffmpeg_scene": 0.1399,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c072"
+    },
+    {
+      "frame": 3670,
+      "time_s": 61.1667,
+      "last_frame_before": 3666,
+      "sources": [
+        "adaptive",
+        "content"
+      ],
+      "content_val": 51.13,
+      "delta_lum": 86.57,
+      "adaptive_ratio": 14.07,
+      "ffmpeg_scene": 0.0017,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c073"
+    },
+    {
+      "frame": 3690,
+      "time_s": 61.5,
+      "last_frame_before": 3686,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": null,
+      "delta_lum": null,
+      "adaptive_ratio": null,
+      "ffmpeg_scene": 0.4259,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c074"
+    },
+    {
+      "frame": 3796,
+      "time_s": 63.2667,
+      "last_frame_before": 3795,
+      "sources": [
+        "content_weak"
+      ],
+      "content_val": 15.64,
+      "delta_lum": 17.4,
+      "adaptive_ratio": 1.96,
+      "ffmpeg_scene": 0.0163,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c075"
+    },
+    {
+      "frame": 3871,
+      "time_s": 64.5167,
+      "last_frame_before": 3869,
+      "sources": [
+        "adaptive",
+        "content"
+      ],
+      "content_val": 97.2,
+      "delta_lum": 87.71,
+      "adaptive_ratio": 29.14,
+      "ffmpeg_scene": 0.0,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c076"
+    },
+    {
+      "frame": 3889,
+      "time_s": 64.8167,
+      "last_frame_before": 3887,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 6.24,
+      "delta_lum": 7.19,
+      "adaptive_ratio": 0.99,
+      "ffmpeg_scene": 0.4132,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c077"
+    },
+    {
+      "frame": 4206,
+      "time_s": 70.1,
+      "last_frame_before": 4204,
+      "sources": [
+        "adaptive",
+        "content"
+      ],
+      "content_val": 76.42,
+      "delta_lum": 80.04,
+      "adaptive_ratio": 4.91,
+      "ffmpeg_scene": 0.0037,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c078"
+    },
+    {
+      "frame": 4216,
+      "time_s": 70.2667,
+      "last_frame_before": 4214,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 20.04,
+      "delta_lum": 28.52,
+      "adaptive_ratio": 1.04,
+      "ffmpeg_scene": 0.6293,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c079"
+    },
+    {
+      "frame": 4364,
+      "time_s": 72.7333,
+      "last_frame_before": 4361,
+      "sources": [
+        "adaptive",
+        "content"
+      ],
+      "content_val": 73.5,
+      "delta_lum": 30.68,
+      "adaptive_ratio": 46.56,
+      "ffmpeg_scene": 0.0006,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c080"
+    },
+    {
+      "frame": 4369,
+      "time_s": 72.8167,
+      "last_frame_before": 4367,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 2.77,
+      "delta_lum": 1.26,
+      "adaptive_ratio": 0.13,
+      "ffmpeg_scene": 0.2573,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c081"
+    },
+    {
+      "frame": 4517,
+      "time_s": 75.2833,
+      "last_frame_before": 4516,
+      "sources": [
+        "adaptive",
+        "content"
+      ],
+      "content_val": 134.33,
+      "delta_lum": 189.97,
+      "adaptive_ratio": 174.74,
+      "ffmpeg_scene": 0.0002,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c082"
+    },
+    {
+      "frame": 4522,
+      "time_s": 75.3667,
+      "last_frame_before": 4519,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 1.66,
+      "delta_lum": 0.15,
+      "adaptive_ratio": 0.05,
+      "ffmpeg_scene": 1.0,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c083"
+    },
+    {
+      "frame": 4554,
+      "time_s": 75.9,
+      "last_frame_before": 4552,
+      "sources": [
+        "content_weak"
+      ],
+      "content_val": 18.16,
+      "delta_lum": 4.67,
+      "adaptive_ratio": 2.06,
+      "ffmpeg_scene": 0.0289,
+      "confidence": "low",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c084"
+    },
+    {
+      "frame": 4680,
+      "time_s": 78.0,
+      "last_frame_before": 4678,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 0.07,
+      "delta_lum": 0.02,
+      "adaptive_ratio": 0.01,
+      "ffmpeg_scene": 0.7855,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c085"
+    },
+    {
+      "frame": 4685,
+      "time_s": 78.0833,
+      "last_frame_before": 4682,
+      "sources": [
+        "content"
+      ],
+      "content_val": 37.23,
+      "delta_lum": 36.36,
+      "adaptive_ratio": 1.62,
+      "ffmpeg_scene": 0.0958,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c086"
+    },
+    {
+      "frame": 4687,
+      "time_s": 78.1167,
+      "last_frame_before": 4686,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 0.1,
+      "delta_lum": 0.05,
+      "adaptive_ratio": 0.0,
+      "ffmpeg_scene": 0.9398,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c087"
+    },
+    {
+      "frame": 4691,
+      "time_s": 78.1833,
+      "last_frame_before": 4690,
+      "sources": [
+        "adaptive",
+        "content"
+      ],
+      "content_val": 78.87,
+      "delta_lum": 90.27,
+      "adaptive_ratio": 4.0,
+      "ffmpeg_scene": 0.0001,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c088"
+    },
+    {
+      "frame": 4694,
+      "time_s": 78.2333,
+      "last_frame_before": 4693,
+      "sources": [
+        "adaptive",
+        "content",
+        "ffmpeg_scene"
+      ],
+      "content_val": 0.04,
+      "delta_lum": 0.05,
+      "adaptive_ratio": 0.0,
+      "ffmpeg_scene": 0.4834,
+      "confidence": "high",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c089"
+    },
+    {
+      "frame": 4697,
+      "time_s": 78.2833,
+      "last_frame_before": 4696,
+      "sources": [
+        "ffmpeg_scene"
+      ],
+      "content_val": 0.0,
+      "delta_lum": 0.0,
+      "adaptive_ratio": 0.0,
+      "ffmpeg_scene": 0.5085,
+      "confidence": "medium",
+      "origin": "auto",
+      "status": "candidate",
+      "id": "c090"
+    }
+  ],
+  "soft_transitions": [],
+  "notes": []
+}

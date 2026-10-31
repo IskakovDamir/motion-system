@@ -1,0 +1,96 @@
+{
+  "video": "OiI9hOSLr0yYLKnq",
+  "smoothing": "3-frame box on flow_mag",
+  "peaks": [
+    {
+      "frame": 110,
+      "time_s": 1.8333,
+      "flow_mag": 0.0794,
+      "diff_mean": 0.01185,
+      "prominence": 0.0728,
+      "near_cut_frames": 678,
+      "at_cut": false
+    },
+    {
+      "frame": 146,
+      "time_s": 2.4333,
+      "flow_mag": 0.1434,
+      "diff_mean": 0.02075,
+      "prominence": 0.1656,
+      "near_cut_frames": 642,
+      "at_cut": false
+    },
+    {
+      "frame": 165,
+      "time_s": 2.75,
+      "flow_mag": 0.2165,
+      "diff_mean": 0.03158,
+      "prominence": 0.0959,
+      "near_cut_frames": 623,
+      "at_cut": false
+    },
+    {
+      "frame": 173,
+      "time_s": 2.8833,
+      "flow_mag": 0.2262,
+      "diff_mean": 0.03253,
+      "prominence": 0.3062,
+      "near_cut_frames": 615,
+      "at_cut": false
+    },
+    {
+      "frame": 188,
+      "time_s": 3.1333,
+      "flow_mag": 0.047,
+      "diff_mean": 0.01175,
+      "prominence": 0.0905,
+      "near_cut_frames": 600,
+      "at_cut": false
+    },
+    {
+      "frame": 345,
+      "time_s": 5.75,
+      "flow_mag": 3.1026,
+      "diff_mean": 0.04556,
+      "prominence": 1.159,
+      "near_cut_frames": 443,
+      "at_cut": false
+    },
+    {
+      "frame": 351,
+      "time_s": 5.85,
+      "flow_mag": 2.744,
+      "diff_mean": 0.01471,
+      "prominence": 2.9768,
+      "near_cut_frames": 437,
+      "at_cut": false
+    },
+    {
+      "frame": 559,
+      "time_s": 9.3167,
+      "flow_mag": 2.7262,
+      "diff_mean": 0.06315,
+      "prominence": 2.1071,
+      "near_cut_frames": 229,
+      "at_cut": false
+    },
+    {
+      "frame": 787,
+      "time_s": 13.1167,
+      "flow_mag": 0.109,
+      "diff_mean": 0.05618,
+      "prominence": 0.3904,
+      "near_cut_frames": 1,
+      "at_cut": true
+    },
+    {
+      "frame": 884,
+      "time_s": 14.7333,
+      "flow_mag": 0.9946,
+      "diff_mean": 0.07468,
+      "prominence": 0.9252,
+      "near_cut_frames": 96,
+      "at_cut": false
+    }
+  ]
+}

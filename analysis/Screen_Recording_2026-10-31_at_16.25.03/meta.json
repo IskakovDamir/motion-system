@@ -1,0 +1,64 @@
+{
+  "video": "Screen_Recording_2026-10-31_at_16.25.03",
+  "key": "v6",
+  "reference_file": "reference/Screen Recording 2026-10-31 at 16.25.03.mp4",
+  "kind": "vfr-screen",
+  "codec": "h264",
+  "profile": "Main",
+  "pix_fmt": "yuv420p",
+  "resolution": [
+    1622,
+    936
+  ],
+  "aspect_ratio": "1.7329:1",
+  "fps": null,
+  "fps_nominal_container": "60/1",
+  "fps_average": 24.08,
+  "frame_count": 726,
+  "duration_s": 30.21,
+  "video_stream_duration_s": 30.148,
+  "audio": {
+    "present": true,
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "duration_s": 30.08
+  },
+  "analysis": {
+    "grid_fps": 60,
+    "frame_convention": "analysis frame = round((pts - first_video_pts) * 60)",
+    "grid_frame_count": 1809,
+    "picture_crop_xywh": [
+      0,
+      18,
+      1622,
+      918
+    ],
+    "picture_resolution": [
+      1622,
+      918
+    ],
+    "picture_aspect_ratio": "16:9",
+    "masks_xywh": [
+      [
+        1545,
+        837,
+        68,
+        68
+      ]
+    ]
+  },
+  "vfr": {
+    "unique_frames": 726,
+    "frame_interval_histogram": {
+      "16.7ms": 11,
+      "33.3ms": 374,
+      "50.0ms": 316,
+      "66.7ms": 20,
+      "83.3ms": 4
+    },
+    "timestamps_on_60hz_grid": true,
+    "content_fps_estimate": "24 (3:2 cadence: 33.3/50 ms intervals alternate)",
+    "timing_uncertainty": "+-1 analysis frame (16.7 ms) from display-refresh capture; content steps are 2-3 analysis frames apart in 24 fps material"
+  }
+}
