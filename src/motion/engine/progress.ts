@@ -20,10 +20,12 @@ export const easeAt = (frame: number, duration: number, ease: Ease, fps = REF_FP
 	if (ease.kind === 'linear') {
 		return interpolate(f, [0, duration], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
 	}
+	// a spring token is a shape: durationInFrames stretches it so it settles at `duration`
 	return spring({
 		frame: Math.max(0, f),
 		fps: REF_FPS,
 		config: {stiffness: ease.stiffness, damping: ease.damping, mass: ease.mass},
+		durationInFrames: duration,
 	});
 };
 

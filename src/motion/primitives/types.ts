@@ -2,9 +2,14 @@ import type {Motion} from '../tokens/easing';
 
 export type PrimitiveKind = 'text' | 'transition' | 'ui' | '3d' | 'footage' | 'shape' | 'camera' | 'fx' | 'layout';
 
+/** Measured geometry of a variant: travel in % of frame width or height, scales, degrees, px at 1080p. */
+export type Params = Record<string, number | string | boolean>;
+
 export type VariantSpec = {
 	/** property -> motion token the component animates that property with */
 	motions: Record<string, Motion>;
+	/** measured amplitudes and options the component reads (no timing here: timing lives in motions) */
+	params?: Params;
 	/** property -> technique ids (analysis/<video>/timeline.md) whose measured curve this property reproduces */
 	reproduces?: Record<string, string[]>;
 	/** technique ids that map to this variant without a per-frame curve (layout rules, hard cuts ...) */

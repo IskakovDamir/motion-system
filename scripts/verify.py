@@ -7,7 +7,7 @@ when every check passes.
 Checks
   classification  every segment of every video classified, LIVE segments confirmed on overview
                   sheets (scripts/analysis/validate_analysis.py rules)
-  coverage        every technique in every timeline.md maps (src/motion/catalogue.json) to a named
+  coverage        every technique in every timeline.md maps (the primitive specs, via sample_curves.ts) to a named
                   primitive that exists in the primitive registry and plays in MotionShowcase
   timing          every technique with a measured curve: the built curve sampled from the code
                   (scripts/sample_curves.ts -> progressAt, the function the primitives render with)

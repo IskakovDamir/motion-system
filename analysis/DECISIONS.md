@@ -4,9 +4,11 @@ Calls made where the brief left room, with the reason. Newest at the bottom of e
 
 ## Project and files
 
-- **Separate repository.** The work lives in `~/dev/motion-system` (git `main`, private GitHub repo
-  `IskakovDamir/motion-system`). The session started in `~/dev/agentmash`, whose checkout had 979
-  staged changes unrelated to this job; committing this there would have swept them in.
+- **Separate repository.** The work lives in `~/dev/motion-system` (git `main`). The session started
+  in `~/dev/agentmash`, whose checkout had 979 staged changes unrelated to this job; committing this
+  there would have swept them in. Creating a GitHub repository for it was blocked by the session's
+  permission check (it would publish data), so `main` has no remote yet; the push waits for an
+  approved remote.
 - **reference/ is never committed.** The eight videos are third-party promos. They are APFS clones of
   the files in ~/Downloads (byte-identical, made read-only, SHA-256 recorded in `reference/README.md`).
   `.gitignore` also keeps every frame-derived image (contact sheets, detail frames, stills,
@@ -66,3 +68,17 @@ Calls made where the brief left room, with the reason. Newest at the bottom of e
   quietest frame nearby (`analysis/chunks.json`, 26 chunks). Each chunk is inspected, reviewed by an
   independent critic and fixed; a merge per video then writes the final `cuts.json`, `segments.json`,
   `timeline.md` and `curves/index.json`. Protocol: `analysis/PROTOCOL.md`.
+- **Network outage, 2026-10-31 19:54-20:07.** The API became unreachable mid-run: 16 of the 25 v2-v8
+  chunk inspections and every critic died. The old workflow script read a dead critic as "no issues"
+  and started the v5 merge unreviewed; it was stopped and v5's curves restored from the merge's own
+  pre-rename copy. The recovery run retries dead agents, merges a video only when every chunk has a
+  completed review, and hands interrupted inspectors a condensed log of the earlier attempt
+  (`<video>/scratch/attempt1_*.md`) to reuse after spot checks. v8c1 and v8c2 had both files written
+  before their agents died (the last calls were re-reads), so they go straight to review.
+
+## Build
+
+- **Fonts.** Closest free families named by the inspectors: Inter (for SF Pro UI text), Inter Tight
+  (headlines), Archivo at wdth 125 / wght 900 (wide black display), Unbounded (rounded display) and
+  JetBrains Mono (code, counters). All are local @fontsource files; Archivo and Inter are the variable
+  builds, so width and weight come from the measured values, not the nearest static cut.

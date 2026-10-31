@@ -4,7 +4,8 @@ For each analysis/<v>/curves/<id>.csv (primary curves, no .i2/.i3 instances) the
 duration and progress shape are matched by both model families, scored with the same rule as
 verify.py (curvekit.shape_rmse and the built duration within 1 frame):
   bezier  Easing.bezier(x1, y1, x2, y2) over an integer duration D
-  spring  spring({stiffness, damping, mass: 1}) at 60 fps (natural duration)
+  spring  spring({stiffness, damping, mass: 1}) at 60 fps (natural duration; the build stretches
+          springs with durationInFrames, see cluster_tokens.py)
 The best passing token is written to analysis/tokens_fit.json:
   {"<id>": {"model", "params", "duration", "measured_frames", "built_frames", "rmse", "pass"}}
 

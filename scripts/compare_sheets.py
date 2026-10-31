@@ -4,9 +4,11 @@
   .venv/bin/python scripts/compare_sheets.py [--only <technique> ...] [--no-render]
 
 For every technique in every timeline.md technique index:
-  - reference: 8 moments spread over the technique's reference frames (work.mp4, grayscale)
+  - reference: 8 moments spread over the technique's reference frames (work.mp4, grayscale); for a
+    technique with a measured curve, over the curve's active window
   - built: the same normalised moments of the primitive variant the code maps the technique to,
-    rendered in isolation by the PrimitiveProbe composition (scripts/render_probe.mjs)
+    rendered in isolation by the PrimitiveProbe composition (scripts/render_probe.mjs); for a
+    curve technique, over the built curve's active window
   - when the technique has a measured curve: the measured and built progress curves, drawn under
     the frames
 Output: analysis/compare/<technique>/sheet.jpg (+ built/ frames). Frame numbers are burned in:
@@ -73,13 +75,21 @@ def main():
         r0, r1 = t["reference_frames"]
         lead = built["probeLead"]
         prog = built["techniques"].get(tid, {}).get("progress")
-        if prog:
+        v = next(x for x in load_registry() if x.key == t["video"])
+        cfile = v.dir / "curves" / f"{t['curve']}.csv" if t["curve"] else None
+        if prog and cfile and cfile.exists():
+            # curve techniques: both sides over their own active window, so row i is the same phase
+            d = np.genfromtxt(cfile, delimiter=",", names=True)
+            mf = d["frame"].astype(float)
+            ms, me, _ = active_window(mf, d["progress"].astype(float))
+            r0, r1 = int(mf[ms]), int(mf[me])
             bs, be, _ = active_window(np.arange(len(prog)), np.array(prog))
             span = (bs, be)
         else:
             span = (0, max(1, r1 - r0))
         plan[tid] = {"ref": (r0, r1), "built": (lead + span[0], lead + span[1])}
-        jobs.append({"id": tid, "composition": "PrimitiveProbe", "inputProps": {"technique": tid},
+        jobs.append({"id": tid, "composition": "PrimitiveProbe",
+                     "inputProps": {"primitive": cat[tid]["primitive"], "variant": cat[tid]["variant"]},
                      "frames": [0, lead + span[1] + 12], "outDir": str(COMPARE / tid / "built")})
     if not a.no_render and jobs:
         jf = ROOT / ".tmp" / "probe_jobs.json"

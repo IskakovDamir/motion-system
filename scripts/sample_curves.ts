@@ -15,8 +15,7 @@ import type {Motion} from '../src/motion/tokens/easing';
 
 const settledLength = (m: Motion): number => {
 	// sample until the curve has stayed at its end value for 60 frames
-	const base = m.ease.kind === 'spring' ? 0 : m.duration;
-	let f = Math.ceil(base);
+	let f = Math.ceil(m.duration);
 	let still = 0;
 	let prev = progressAt(f, {...m, delay: 0});
 	while (still < 60 && f < 3000) {
