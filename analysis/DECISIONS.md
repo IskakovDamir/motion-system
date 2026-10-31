@@ -82,3 +82,27 @@ Calls made where the brief left room, with the reason. Newest at the bottom of e
   (headlines), Archivo at wdth 125 / wght 900 (wide black display), Unbounded (rounded display) and
   JetBrains Mono (code, counters). All are local @fontsource files; Archivo and Inter are the variable
   builds, so width and weight come from the measured values, not the nearest static cut.
+- **Ease tokens are shared shapes, fitted per curve.** Each measured curve becomes a motion = one of a
+  small set of ease shapes + an integer duration (`scripts/analysis/cluster_tokens.py`): a greedy set
+  cover over named eases, a coarse bezier grid and each curve's own fits keeps the fewest shapes that
+  reproduce every curve under verify.py's rule (duration within 1 frame, normalised RMSE <= 0.05,
+  confirmed with the exact Remotion maths). Spring tokens are stretched to the duration with
+  `durationInFrames`, so a spring token is only a damping ratio. `measured.ts` holds one motion per
+  curve; `easing.ts` names the shapes by what they do (outSnap, inOutWhip ...).
+- **"One component per technique" = one component per motion device.** The same device measured in
+  several videos (a word pop, a whip pan, a card slide-in) is one primitive; each measured instance is
+  a named variant of it, so every technique of every timeline maps to exactly one primitive variant
+  (`analysis/catalogue.json`, checked by `check_catalogue.py`). A variant reproduces at most one
+  measured curve, because a curve fixes its duration.
+- **Specs are data, components read them.** Each primitive is `<Name>.spec.ts` (variants: motions,
+  measured params, which techniques they reproduce or cover) and `<Name>.tsx` (the component plus an
+  isolated Demo). Components contain no timing or geometry numbers; they read the variant through
+  `engine/anim.ts`. verify.py samples the spec motions through the same `progressAt` the components
+  render with, so the timing it checks is the timing on screen.
+- **Builders work per group, isolated.** `scripts/probe_group.py` bundles one group through its own
+  entry file and `scripts/check_group.py` checks it against the catalogue and the curves, so parallel
+  builders never break each other's renders with half-written files; the global registry is
+  regenerated once all groups are in.
+- **Reference frame column.** A technique whose index row names a single frame (`f830`) has a
+  one-frame reference: verify.py and the comparison sheets read the reference-frames column itself
+  instead of the first frame range anywhere in the row.

@@ -64,10 +64,12 @@ def timeline_techniques() -> dict[str, dict]:
         md = (v.dir / "timeline.md").read_text() if (v.dir / "timeline.md").exists() else ""
         rows = validate_analysis.technique_rows(md) or []
         for tid, cells in rows:
-            ref = re.search(r"f(\d+)\s*-\s*f?(\d+)", " ".join(cells[1:]))
+            # columns: technique | category | segments | reference frames | curve | summary; a single
+            # frame (f830) is a one-frame reference
+            ref = re.search(r"f(\d+)(?:\s*-\s*f?(\d+))?", cells[3] if len(cells) > 3 else "")
             curve = re.search(r"curves/([^\s|`]+)\.csv", " ".join(cells))
             out[tid] = {"video": v.key, "stem": v.stem,
-                        "reference_frames": [int(ref.group(1)), int(ref.group(2))] if ref else None,
+                        "reference_frames": [int(ref.group(1)), int(ref.group(2) or ref.group(1))] if ref else None,
                         "curve": curve.group(1) if curve else None}
     return out
 
