@@ -95,7 +95,7 @@ def typography():
                 if src and src[0]:
                     font, w = f"{src[0]} (as {ref.group(1) if ref else 'the row before'})", w or src[1]
             cap_cell = c.get("cap h %", "")
-            cap = num(cap_cell)
+            cap = measured_number(cap_cell, 0.5, 40)
             out.append({"video": v.key, "segment": seg, "event": c.get("event", ""),
                         "role": role_of(c.get("event", ""), cap), "closest_free": font, "weight": w,
                         "size_pct_h": cap, "tracking_em": tracking_em(c.get("tracking", ""), cap_cell, font, w, type_metrics),
@@ -175,8 +175,26 @@ FAMILY_WORDS = (("mono", "mono"), ("round", "unbounded"), ("wide", "archivo"), (
 
 
 def frames_per_unit(cell: str):
-    """Frames per unit when the speed cell is in frames (not counts per frame)."""
-    return None if re.search(r"counts?\s*/\s*f|per frame", cell) else num(cell)
+    """Frames per unit when the speed cell is in frames (not counts or pixels per frame)."""
+    return None if re.search(r"counts?\s*/\s*f|per frame", cell) else measured_number(cell, 0, 120)
+
+
+NUMBER = re.compile(r"(?<![\w.])(\d+(?:\.\d+)?)(?:\s*-\s*\d+(?:\.\d+)?)?(?![\d.])")
+NOT_A_SIZE_BEFORE = re.compile(r"(?:\bf|\bS|\bx|\blines? |\bscale |\bwords? |\bphrase |\bclip |->\s*)$")
+
+
+def measured_number(cell: str, lo: float, hi: float):
+    """The first number of a free-text cell that is the cell's own measure: not a frame (f1932), a segment
+    (S04), a factor (x0.66), a label index (line 1), a pixel value (36 px) or the end of a change (-> 1.52),
+    and inside [lo, hi]."""
+    for m in NUMBER.finditer(cell):
+        before, after = cell[max(0, m.start() - 8):m.start()], cell[m.end():m.end() + 4]
+        if NOT_A_SIZE_BEFORE.search(before) or re.match(r"\s*(?:px|x\b|%)", after):
+            continue
+        x = float(m.group(1))
+        if lo <= x <= hi:
+            return x
+    return None
 
 
 def num(x):

@@ -17,8 +17,6 @@ export const SHOT = {
 	long: 192,
 	/** p90: holds */
 	hold: 233,
-	/** shot inside an accelerating run of >= 3 short shots: median of 3 measured (range 1-7) */
-	accelerated: 5,
 } as const;
 
 /** How long a movement takes, by technique family: median active-window duration of its measured curves. */
@@ -99,12 +97,12 @@ export const TRANSITION = {
 
 /** Frames between the starts of successive units of one reveal or one build. */
 export const STAGGER = {
-	/** between successive chars: median of 57 measured (range 0.15-85) */
+	/** between successive chars: median of 53 measured (range 0.15-25) */
 	char: 2,
-	/** between successive words: median of 49 measured (range 2-1198) */
+	/** between successive words: median of 48 measured (range 2-17) */
 	word: 7,
-	/** between successive lines: median of 18 measured (range 1-85) */
-	line: 12,
+	/** between successive lines: median of 18 measured (range 2-48) */
+	line: 13,
 	/** between successive items: median of 5 measured (range 3-6) */
 	item: 4,
 } as const;

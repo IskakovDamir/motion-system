@@ -134,3 +134,9 @@ Calls made where the brief left room, with the reason. Newest at the bottom of e
   ContentSwap, DipToBackground). Curve properties are what the component drives: `progress` for masks,
   typed counts and path distance, `scale` for width curves of overall size, `spread` for layer
   separation, `radius` for burst rings, `opacity` for the two luma curves (scrim, vignette).
+- **Free-text cells parsed by context (2026-11-03).** Typography sizes and speeds come from cells such as
+  "at f2111: figures 4.03 (37 px)" or "first ink f1932". `techniques.measured_number` skips frame
+  numbers, segment ids, factors, label indices, pixel values and change end points, and keeps sizes in
+  0.5-40 % H and speeds in 0-120 f per unit. The MOTION_SPEC writer caught the first, naive parse.
+- **No "accelerated" shot token.** The only acceleration the cut detector measured is v6's opening:
+  the screen recording's player pre-roll, not an edit.

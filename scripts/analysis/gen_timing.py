@@ -52,8 +52,11 @@ def main():
         f"\t/** p75 */\n\tlong: {int(round(gt['p75']))},",
         f"\t/** p90: holds */\n\thold: {int(round(gt['p90']))},",
     ]
-    if accel:
-        shot.append(entry("accelerated", accel, "shot inside an accelerating run of >= 3 short shots"))
+    # The only measured acceleration (v6, its first shots) is the capture's player pre-roll, not an edit
+    # (analysis/DECISIONS.md), so no "accelerated" shot token is written from it.
+    if accel and any(v["key"] != "v6" for v in syn["per_video"] for r in v["accelerations"]):
+        shot.append(entry("accelerated", [f for v in syn["per_video"] if v["key"] != "v6" for r in v["accelerations"] for f in r["frames"]],
+                          "shot inside an accelerating run of >= 3 short shots"))
     dur = []
     for cat, d in sorted(syn["curves_by_category"].items()):
         frames = [c["measured_frames"] for c in d["curves"]]

@@ -36,24 +36,24 @@ export type TypeStyle = {font: FontRole; weight: number | null; capHeight: numbe
 
 /** Per text role, what the references set. */
 export const TYPE = {
-	/** 40 typography rows (v1 2, v2 10, v3 7, v5 6, v6 12, v7 3); cap height 8.1-88 % H, weight 400-900, tracking -0.053-0.073 em */
-	display: {font: 'display', weight: 400, capHeight: 10.1, tracking: -0.02, case: 'sentence'},
-	/** 44 typography rows (v1 3, v2 4, v3 5, v4 9, v5 8, v6 1, v7 7, v8 7); cap height 1-7.9 % H, weight 400-900, tracking -0.019-0.042 em */
-	headline: {font: 'display', weight: 400, capHeight: 5.05, tracking: -0.001, case: 'sentence'},
+	/** 42 typography rows (v1 2, v2 9, v3 7, v5 9, v6 12, v7 3); cap height 8.1-27.1 % H, weight 400-900, tracking -0.053-0.073 em */
+	display: {font: 'display', weight: 400, capHeight: 10.6, tracking: -0.019, case: 'sentence'},
+	/** 42 typography rows (v1 3, v2 4, v3 5, v4 9, v5 6, v6 1, v7 7, v8 7); cap height 1-7.9 % H, weight 400-900, tracking -0.019-0.042 em */
+	headline: {font: 'display', weight: 400, capHeight: 5.15, tracking: 0.002, case: 'sentence'},
 	/** 5 typography rows (v3 1, v5 1, v6 1, v7 1, v8 1); cap height 3.1-4.9 % H, weight 400-700, tracking none em */
 	subhead: {font: 'ui', weight: 400, capHeight: 4.4, tracking: null, case: 'mixed'},
 	/** 1 typography rows (v8 1); cap height 2.4 % H, weight 400, tracking -0.004 em */
 	body: {font: 'ui', weight: 400, capHeight: 2.4, tracking: -0.004, case: 'sentence'},
-	/** 48 typography rows (v1 1, v2 2, v4 6, v5 3, v6 1, v7 9, v8 26); cap height 1.035-11.9 % H, weight 400-800, tracking -0.028-0.276 em */
-	ui: {font: 'ui', weight: 400, capHeight: 2.77, tracking: -0.007, case: 'sentence'},
-	/** 73 typography rows (v1 5, v2 7, v3 4, v4 6, v5 10, v6 5, v7 12, v8 24); cap height 0.8-52 % H, weight 400-900, tracking -0.035-0.107 em */
+	/** 48 typography rows (v1 1, v2 3, v4 6, v5 2, v6 1, v7 9, v8 26); cap height 1.3-11.9 % H, weight 400-700, tracking -0.028-0.276 em */
+	ui: {font: 'ui', weight: 400, capHeight: 2.83, tracking: -0.007, case: 'sentence'},
+	/** 73 typography rows (v1 5, v2 7, v3 4, v4 6, v5 10, v6 5, v7 12, v8 24); cap height 0.8-13.9 % H, weight 400-900, tracking -0.035-0.107 em */
 	label: {font: 'ui', weight: 400, capHeight: 3.3, tracking: 0.003, case: 'title'},
-	/** 32 typography rows (v2 5, v5 16, v6 3, v7 6, v8 2); cap height 1-6.5 % H, weight 400-800, tracking 0.009-0.021 em */
-	caption: {font: 'ui', weight: 500, capHeight: 4.4, tracking: 0.014, case: 'sentence'},
-	/** 12 typography rows (v1 1, v4 1, v6 2, v7 8); cap height 1.1-2111 % H, weight 400-800, tracking none em */
-	counter: {font: 'ui', weight: 400, capHeight: 2.19, tracking: null, case: 'mixed'},
+	/** 32 typography rows (v2 5, v5 16, v6 3, v7 6, v8 2); cap height 1.5-6.5 % H, weight 400-800, tracking 0.009-0.021 em */
+	caption: {font: 'ui', weight: 500, capHeight: 4.44, tracking: 0.014, case: 'sentence'},
+	/** 12 typography rows (v1 1, v4 1, v6 2, v7 8); cap height 1.1-13.5 % H, weight 400-800, tracking none em */
+	counter: {font: 'ui', weight: 400, capHeight: 2.18, tracking: null, case: 'mixed'},
 	/** 9 typography rows (v1 3, v3 2, v4 4); cap height 1.1-3.1 % H, weight 400, tracking none em */
-	code: {font: 'mono', weight: 400, capHeight: 3.0, tracking: null, case: 'sentence'},
+	code: {font: 'mono', weight: 400, capHeight: 2.35, tracking: null, case: 'sentence'},
 } as const satisfies Record<string, TypeStyle>;
 
 export type TypeRole = keyof typeof TYPE;
@@ -68,11 +68,11 @@ export const fontSize = (role: TypeRole, height: number): number => {
 export const REVEAL = {
 	/** 11 techniques; frames per unit 6-33, stagger none */
 	blurBlock: {method: 'blur', unit: 'block', framesPerUnit: 20.5, stagger: null},
-	/** 9 techniques; frames per unit 1-85, stagger none */
+	/** 9 techniques; frames per unit 1.8-21.2, stagger none */
 	blurChar: {method: 'blur', unit: 'char', framesPerUnit: 2.05, stagger: null},
-	/** 1 techniques; frames per unit 12, stagger none */
-	blurLine: {method: 'blur', unit: 'line', framesPerUnit: 12.0, stagger: null},
-	/** 3 techniques; frames per unit 3-13, stagger none */
+	/** 1 techniques; frames per unit 48, stagger none */
+	blurLine: {method: 'blur', unit: 'line', framesPerUnit: 48.0, stagger: null},
+	/** 3 techniques; frames per unit 5-13, stagger none */
 	blurWord: {method: 'blur', unit: 'word', framesPerUnit: 10.0, stagger: null},
 	/** 1 techniques; frames per unit none, stagger none */
 	countBlock: {method: 'count', unit: 'block', framesPerUnit: null, stagger: null},
@@ -94,20 +94,20 @@ export const REVEAL = {
 	popBlock: {method: 'pop', unit: 'block', framesPerUnit: 11.5, stagger: null},
 	/** 2 techniques; frames per unit 3.6-3.7, stagger none */
 	popChar: {method: 'pop', unit: 'char', framesPerUnit: 3.65, stagger: null},
-	/** 5 techniques; frames per unit 1-3, stagger none */
-	popLine: {method: 'pop', unit: 'line', framesPerUnit: 1.0, stagger: null},
+	/** 5 techniques; frames per unit 2-3, stagger none */
+	popLine: {method: 'pop', unit: 'line', framesPerUnit: 2.0, stagger: null},
 	/** 31 techniques; frames per unit 2-13, stagger none */
 	popWord: {method: 'pop', unit: 'word', framesPerUnit: 7.0, stagger: null},
-	/** 36 techniques; frames per unit 2.2-1932, stagger none */
+	/** 36 techniques; frames per unit 2.2-28, stagger none */
 	riseBlock: {method: 'rise', unit: 'block', framesPerUnit: 14.0, stagger: null},
-	/** 9 techniques; frames per unit 0.3-60, stagger none */
-	riseChar: {method: 'rise', unit: 'char', framesPerUnit: 2.2, stagger: null},
-	/** 7 techniques; frames per unit 10-85, stagger none */
+	/** 9 techniques; frames per unit 0.3-16, stagger none */
+	riseChar: {method: 'rise', unit: 'char', framesPerUnit: 1.9, stagger: null},
+	/** 7 techniques; frames per unit 10-20, stagger none */
 	riseLine: {method: 'rise', unit: 'line', framesPerUnit: 16.0, stagger: null},
-	/** 12 techniques; frames per unit 2-1198, stagger none */
-	riseWord: {method: 'rise', unit: 'word', framesPerUnit: 10.5, stagger: null},
-	/** 5 techniques; frames per unit 12-483, stagger none */
-	scaleBlock: {method: 'scale', unit: 'block', framesPerUnit: 247.5, stagger: null},
+	/** 12 techniques; frames per unit 4.2-17, stagger none */
+	riseWord: {method: 'rise', unit: 'word', framesPerUnit: 10.0, stagger: null},
+	/** 5 techniques; frames per unit 12, stagger none */
+	scaleBlock: {method: 'scale', unit: 'block', framesPerUnit: 12.0, stagger: null},
 	/** 1 techniques; frames per unit 13, stagger none */
 	scaleLine: {method: 'scale', unit: 'line', framesPerUnit: 13.0, stagger: null},
 	/** 2 techniques; frames per unit none, stagger none */
