@@ -74,3 +74,22 @@ questions.
 - blurLow: the x0.94 start scale is UNCERTAIN in the row; kept with the row's ease over 11 f.
 - ghostCarry: the faded footage sliver inside the band has no measured fade, left out.
 - SteppedZoom pullBack: frames hold between steps; the slow drift between them is not drawn.
+
+## text-motion (6 primitives, 37 variants, 32 curves)
+
+- Blur size not measured, left out: BlurIn inPlace, letterSweep, focusRoll (only a sharpness index),
+  defocusLines' defocus, and motion blur in overshoot, typeAlong, edgeSpring, glyphConverge, allEdges and
+  dropBounce. Motion blur is drawn only where a streak length and a speed were both measured
+  (oppositeEdges, converge, whipIn, springUp).
+- WarpFlyIn: liquid's warp amplitude is UNCERTAIN in the timeline (only the fly-in and rise are built);
+  rubbery's uneven per-letter squeeze is left out (the overall x2.04 -> 1 stretch is built); blobMorph's
+  in-between letter shapes are not drawn, its lens height is set to the cap height; chromeSmear's chrome
+  texture, bevel and sparkles (paths measured, sizes not) and the serif line's own 0.92 -> 0.88 contraction
+  are left out; there is no serif family, so that line uses display 400.
+- Left out: oppositeEdges' glow halo, trackingSettle's white flash on the newest letter, typeRise's
+  outline draw-on, the perspective tapers of the v5 headlines (flat cap height used), cascade's leftward
+  slide (easing not measured).
+- Ease tokens fitted to the rows' samples where no curve exists (named in the spec comments); glyphConverge
+  (timings only) uses outFirm; quickFade is linear over 4 f from two samples.
+- Staggers are means of measured values: wordRise 20 f (10-30 f, voice-led), cascade 9 f, defocusLines 9 f,
+  whipIn 5 f, typeRise 0.65 f per character.
