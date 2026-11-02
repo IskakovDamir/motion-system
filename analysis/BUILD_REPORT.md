@@ -59,3 +59,18 @@ questions.
 - haloPeak is close to invisible: the measured lift is only +20.7 luma.
 - Compare sheets of delayed variants run late by the measured delay (slowBloom 22 f, twoStage 28 f,
   starSplit 5 f, streakSweep 3 f).
+
+## camera-move (4 primitives, 32 variants, 29 curves)
+
+- Motion blur: only v8 measures a smear length (v8.cam-scroll-exit-up: 24 px at 17 px/f, shutter 1.41).
+  That one shutter drives the speed blur of every variant whose rows note blur or whose reference frames
+  show it (v5-v8). Delete `shutter` from a variant to drop it.
+- Scale or zoom centres not measured, frame centre used: reframeOut (y), hoverUp (x), punchBreak, blurLow,
+  oversizeLanding (y; x -16.5 % W derived from scale and right-edge travel), punchIn (prop `focus`).
+- tiltTwoPhase: the leaving headline's squash to x0.74 is a per-element 3D effect with no angle measured.
+- whipReframe: where the hidden jump lands is not measured (the new framing starts where the old one is);
+  the ease-in has only two end points (inAccelerate).
+- pushIntoCut: the bulge warp of the box outline is not built; the centre's drift in the last 7 f dropped.
+- blurLow: the x0.94 start scale is UNCERTAIN in the row; kept with the row's ease over 11 f.
+- ghostCarry: the faded footage sliver inside the band has no measured fade, left out.
+- SteppedZoom pullBack: frames hold between steps; the slow drift between them is not drawn.

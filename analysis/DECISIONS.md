@@ -140,3 +140,6 @@ Calls made where the brief left room, with the reason. Newest at the bottom of e
   0.5-40 % H and speeds in 0-120 f per unit. The MOTION_SPEC writer caught the first, naive parse.
 - **No "accelerated" shot token.** The only acceleration the cut detector measured is v6's opening:
   the screen recording's player pre-roll, not an edit.
+- **One measured shutter for camera motion blur.** Only v8 measures a smear length (24 px at 17 px/f).
+  The camera group uses that ratio (blur = movement over 1.41 frames before each frame) wherever a row
+  notes blur or the reference frames show it, instead of leaving blur out of v5-v7 camera moves.
