@@ -122,3 +122,15 @@ Calls made where the brief left room, with the reason. Newest at the bottom of e
   techniques costs a full agent stage and can only add transcription errors. `scripts/analysis/techniques.py`
   reads the timelines instead (`digest` for the catalogue, `show <id>` for builders, `typography()` for
   `gen_type.py` / `gen_timing.py`), so every number reaches the code exactly as the inspectors measured it.
+- **Catalogue cuts (2026-11-03): 75 primitives, 455 variants, 17 groups.** Calls a reader might question:
+  WhipCut is one device for horizontal, vertical and punch-in whips (axis and scale jump are params,
+  since the whip-left technique already holds scale-jump instances). AccelerateExit is every ease-in
+  that is cut at speed and never settles (exits, push-ins and pull-backs into a cut). ScalePop holds
+  plain and overshooting pops (the overshoot is a curve difference, not a device). SeedGrow joins boxes,
+  rows and capsules that grow out of a seed dash or dot. ScaleFade holds both directions of a slight
+  scale-and-fade. ToneShift joins text tone changes with UI fill darkening. Backdrop is every background
+  behaviour (fields, drifts, glows, knockout zones behind text), with no curves. Counter absorbs the dial
+  fast-forward. Composite transitions without a curve sit with their main component (PullBack,
+  ContentSwap, DipToBackground). Curve properties are what the component drives: `progress` for masks,
+  typed counts and path distance, `scale` for width curves of overall size, `spread` for layer
+  separation, `radius` for burst rings, `opacity` for the two luma curves (scrim, vignette).

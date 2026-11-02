@@ -1,0 +1,7055 @@
+{
+ "groups": [
+  {
+   "name": "text-reveal",
+   "dir": "text-reveal",
+   "primitives": [
+    "Typewriter",
+    "WordPop",
+    "Scramble",
+    "LetterPopBuild",
+    "SoftFrontReveal",
+    "ShimmerSweep"
+   ]
+  },
+  {
+   "name": "text-motion",
+   "dir": "text-motion",
+   "primitives": [
+    "RiseFade",
+    "BlurIn",
+    "BlurSlideIn",
+    "WarpFlyIn",
+    "EdgeRise",
+    "TextFadeOut"
+   ]
+  },
+  {
+   "name": "transition-cut",
+   "dir": "transition-cut",
+   "primitives": [
+    "HardCut",
+    "DipToBackground",
+    "WhipCut",
+    "PushSlide"
+   ]
+  },
+  {
+   "name": "transition-morph",
+   "dir": "transition-morph",
+   "primitives": [
+    "ZoomThrough",
+    "CollapseToPoint",
+    "FlyToSlots",
+    "ShapeSwap",
+    "ContentSwap"
+   ]
+  },
+  {
+   "name": "light-fx",
+   "dir": "light-fx",
+   "primitives": [
+    "LightFlash",
+    "StarFlare",
+    "LumaPulse",
+    "RadialBurst",
+    "PixelBlocks",
+    "ToneShift"
+   ]
+  },
+  {
+   "name": "camera-zoom",
+   "dir": "camera-zoom",
+   "primitives": [
+    "SlowZoom",
+    "PushIn",
+    "PullBack"
+   ]
+  },
+  {
+   "name": "camera-move",
+   "dir": "camera-move",
+   "primitives": [
+    "CanvasPan",
+    "AccelerateExit",
+    "CutInSettle",
+    "SteppedZoom"
+   ]
+  },
+  {
+   "name": "three",
+   "dir": "three",
+   "primitives": [
+    "PerspectiveSwing",
+    "CardSpin3D",
+    "LayerStack",
+    "Camera3D",
+    "GlobeRise",
+    "DepthFlyer",
+    "OrbitRig"
+   ]
+  },
+  {
+   "name": "ui-controls",
+   "dir": "ui-controls",
+   "primitives": [
+    "PressBounce",
+    "SeedGrow",
+    "Dropdown",
+    "Counter"
+   ]
+  },
+  {
+   "name": "ui-feed",
+   "dir": "ui-feed",
+   "primitives": [
+    "ItemRiseIn",
+    "StepScroll",
+    "PageScroll",
+    "Marquee",
+    "BusyIndicator",
+    "FloatingPill"
+   ]
+  },
+  {
+   "name": "cards",
+   "dir": "cards",
+   "primitives": [
+    "SlideSettle",
+    "EdgeEnter",
+    "ScaleFade",
+    "OversizeSettle"
+   ]
+  },
+  {
+   "name": "layout",
+   "dir": "layout",
+   "primitives": [
+    "MakeRoom",
+    "SplitApart",
+    "LockupSlide",
+    "CaptionDrift"
+   ]
+  },
+  {
+   "name": "icons",
+   "dir": "icons",
+   "primitives": [
+    "ScalePop",
+    "SpawnField",
+    "AmbientLoop",
+    "IconFlyIn",
+    "MarkBars"
+   ]
+  },
+  {
+   "name": "shapes",
+   "dir": "shapes",
+   "primitives": [
+    "PacketHop",
+    "LineDraw",
+    "Backdrop"
+   ]
+  },
+  {
+   "name": "cursor",
+   "dir": "cursor",
+   "primitives": [
+    "CursorPath",
+    "CursorState",
+    "DragDrop",
+    "SelectionHighlight"
+   ]
+  },
+  {
+   "name": "footage-frames",
+   "dir": "footage-frames",
+   "primitives": [
+    "FootageCard",
+    "FootageFrame",
+    "MaskReveal"
+   ]
+  },
+  {
+   "name": "footage",
+   "dir": "footage",
+   "primitives": [
+    "FootageSlot"
+   ]
+  }
+ ],
+ "primitives": [
+  {
+   "name": "Typewriter",
+   "group": "text-reveal",
+   "kind": "text",
+   "description": "Characters appear one at a time in their final places, left to right, in hard steps; optionally a solid caret, the newest letters drawn lighter and darkening behind, or each new letter flashing before it settles.",
+   "api": "{text: string; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "framesPerChar",
+     "unit": "frames",
+     "meaning": "mean frames between characters"
+    },
+    {
+     "name": "caret",
+     "unit": "boolean",
+     "meaning": "solid caret after the last character"
+    },
+    {
+     "name": "trailLetters",
+     "unit": "count",
+     "meaning": "newest letters drawn lighter than the settled ones"
+    }
+   ],
+   "default_variant": "fastSteps",
+   "variants": [
+    {
+     "name": "steadyCaret",
+     "techniques": [
+      "v1.text-typewriter-char"
+     ],
+     "curve": null,
+     "params": {
+      "framesPerChar": 1.76,
+      "caret": true
+     }
+    },
+    {
+     "name": "jittered",
+     "techniques": [
+      "v2.text-typewriter-char"
+     ],
+     "curve": null,
+     "params": {
+      "framesPerChar": 2.5,
+      "caret": false
+     },
+     "notes": "uneven gaps of 2-5 f and one long pause"
+    },
+    {
+     "name": "linearRate",
+     "techniques": [
+      "v4.text-typewriter-input"
+     ],
+     "curve": {
+      "technique": "v4.text-typewriter-input",
+      "curve_id": "v4.text-typewriter-input",
+      "property": "progress"
+     },
+     "params": {
+      "framesPerChar": 0.85,
+      "caret": false
+     }
+    },
+    {
+     "name": "fastSteps",
+     "techniques": [
+      "v5.text-typewriter"
+     ],
+     "curve": {
+      "technique": "v5.text-typewriter",
+      "curve_id": "v5.text-typewriter",
+      "property": "progress"
+     },
+     "params": {
+      "caret": false
+     }
+    },
+    {
+     "name": "letterFade",
+     "techniques": [
+      "v7.text-type-letter-fade"
+     ],
+     "curve": {
+      "technique": "v7.text-type-letter-fade",
+      "curve_id": "v7.text-type-letter-fade",
+      "property": "opacity"
+     },
+     "params": {},
+     "notes": "each letter fades in light and steps up to full about 10 f later"
+    },
+    {
+     "name": "fadeTrail",
+     "techniques": [
+      "v8.text-type-on-fade-trail",
+      "v6.text-type-on"
+     ],
+     "curve": null,
+     "params": {},
+     "notes": "two measured instances of the same lighter-trail typing"
+    },
+    {
+     "name": "stretchFade",
+     "techniques": [
+      "v7.text-type-on"
+     ],
+     "curve": null,
+     "params": {},
+     "notes": "per-letter fade or horizontal stretch-in per line"
+    },
+    {
+     "name": "acceleratingDots",
+     "techniques": [
+      "v7.text-typewriter-capsule"
+     ],
+     "curve": null,
+     "params": {
+      "framesPerChar": 1.6
+     },
+     "notes": "types inside a growing capsule, then a dot-by-dot ellipsis"
+    },
+    {
+     "name": "leadingEdge",
+     "techniques": [
+      "v6.text-type-on-pan"
+     ],
+     "curve": null,
+     "params": {
+      "framesPerChar": 5
+     },
+     "notes": "letters cut on just inside the leading frame edge of a pan"
+    },
+    {
+     "name": "flashLetter",
+     "techniques": [
+      "v5.text-type-on"
+     ],
+     "curve": {
+      "technique": "v5.text-type-on",
+      "curve_id": "v5.text-type-on",
+      "property": "progress"
+     },
+     "params": {
+      "framesPerChar": 2.4
+     },
+     "notes": "first letters slide in blurred, the rest type with a flash on the newest"
+    }
+   ]
+  },
+  {
+   "name": "WordPop",
+   "group": "text-reveal",
+   "kind": "text",
+   "description": "Words (or whole lines) of a pre-laid line appear one at a time, each in a single frame at full ink in its final place, with no fade, slide or scale; the cadence in frames per unit carries the rhythm.",
+   "api": "{text: string; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "framesPerWord",
+     "unit": "frames",
+     "meaning": "frames between successive words"
+    },
+    {
+     "name": "unit",
+     "unit": "word|line",
+     "meaning": "what appears at once"
+    }
+   ],
+   "default_variant": "even",
+   "variants": [
+    {
+     "name": "brisk",
+     "techniques": [
+      "v1.text-word-pop"
+     ],
+     "curve": null,
+     "params": {
+      "unit": "word"
+     }
+    },
+    {
+     "name": "even",
+     "techniques": [
+      "v2.text-word-pop"
+     ],
+     "curve": null,
+     "params": {
+      "unit": "word"
+     }
+    },
+    {
+     "name": "spaced",
+     "techniques": [
+      "v3.text-word-pop"
+     ],
+     "curve": null,
+     "params": {
+      "unit": "word"
+     }
+    },
+    {
+     "name": "rapid",
+     "techniques": [
+      "v1.text-stream-words",
+      "v3.ui-text-stream"
+     ],
+     "curve": null,
+     "params": {
+      "unit": "word"
+     },
+     "notes": "fast output streaming at 2-3 f per word"
+    },
+    {
+     "name": "lineSteps",
+     "techniques": [
+      "v4.ui-terminal-line-step"
+     ],
+     "curve": null,
+     "params": {
+      "unit": "line"
+     },
+     "notes": "whole lines at fixed slots, irregular gaps"
+    },
+    {
+     "name": "ghostSnap",
+     "techniques": [
+      "v5.text-word-ghost-type"
+     ],
+     "curve": null,
+     "params": {
+      "unit": "word"
+     },
+     "notes": "each word shows dim just below its place, then snaps up to full"
+    },
+    {
+     "name": "allAtOnce",
+     "techniques": [
+      "v5.text-caption-hard-on"
+     ],
+     "curve": null,
+     "params": {
+      "unit": "line"
+     }
+    }
+   ]
+  },
+  {
+   "name": "Scramble",
+   "group": "text-reveal",
+   "kind": "text",
+   "description": "A word resolves out of order through placeholder bars and dots, letter by letter, until every glyph has settled.",
+   "api": "{text: string; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "framesPerLetter",
+     "unit": "frames",
+     "meaning": "frames between letters settling"
+    }
+   ],
+   "default_variant": "decode",
+   "variants": [
+    {
+     "name": "decode",
+     "techniques": [
+      "v7.text-scramble-decode"
+     ],
+     "curve": null,
+     "params": {
+      "framesPerLetter": 2.7
+     }
+    }
+   ]
+  },
+  {
+   "name": "LetterPopBuild",
+   "group": "text-reveal",
+   "kind": "text",
+   "description": "A short row builds out of order: each letter enters by its own small move (grows from a speck, spins in, splits from a twin, drops and bounces, slides out from behind a neighbour) while the row tightens or re-centres.",
+   "api": "{text: string; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "framesPerLetter",
+     "unit": "frames",
+     "meaning": "mean frames between letter entries"
+    }
+   ],
+   "default_variant": "mixedPops",
+   "variants": [
+    {
+     "name": "mixedPops",
+     "techniques": [
+      "v6.text-letter-pop-mix",
+      "v6.text-type-recenter"
+     ],
+     "curve": null,
+     "params": {},
+     "notes": "the letter moves and the out-of-order typing with re-centring are one build"
+    },
+    {
+     "name": "tighten",
+     "techniques": [
+      "v8.text-letter-pop-tighten"
+     ],
+     "curve": {
+      "technique": "v8.text-letter-pop-tighten",
+      "curve_id": "v8.text-letter-pop-tighten",
+      "property": "x"
+     },
+     "params": {},
+     "notes": "a glyph slides into its slot with overshoot, letters pop in at loose spacing that tightens"
+    }
+   ]
+  },
+  {
+   "name": "SoftFrontReveal",
+   "group": "text-reveal",
+   "kind": "text",
+   "description": "Text is revealed by a soft feathered front moving left to right: letters arrive light and darken behind the front; reversed, lines dissolve away letter-wise, left parts first.",
+   "api": "{text: string; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "frontSpeed",
+     "unit": "px1080/frame",
+     "meaning": "speed of the reveal front"
+    },
+    {
+     "name": "slide",
+     "unit": "%W",
+     "meaning": "sideways slide of the line while it darkens"
+    }
+   ],
+   "default_variant": "fastFront",
+   "variants": [
+    {
+     "name": "fastFront",
+     "techniques": [
+      "v8.text-stream-reveal"
+     ],
+     "curve": {
+      "technique": "v8.text-stream-reveal",
+      "curve_id": "v8.text-stream-reveal",
+      "property": "progress"
+     },
+     "params": {}
+    },
+    {
+     "name": "featherFront",
+     "techniques": [
+      "v8.text-status-type-on"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "fadeSlide",
+     "techniques": [
+      "v8.text-label-fade-slide"
+     ],
+     "curve": {
+      "technique": "v8.text-label-fade-slide",
+      "curve_id": "v8.text-label-fade-slide",
+      "property": "opacity"
+     },
+     "params": {}
+    },
+    {
+     "name": "dissolveOut",
+     "techniques": [
+      "v8.text-dissolve-out"
+     ],
+     "curve": {
+      "technique": "v8.text-dissolve-out",
+      "curve_id": "v8.text-dissolve-out",
+      "property": "opacity"
+     },
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "ShimmerSweep",
+   "group": "text-reveal",
+   "kind": "fx",
+   "description": "A soft band of lighter or darker tone crosses text, a pill, a card or grid lines from left to right and leaves; once, on each rest, or on a loop.",
+   "api": "{children: React.ReactNode; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "period",
+     "unit": "frames",
+     "meaning": "frames between sweeps when looping"
+    },
+    {
+     "name": "bandWidth",
+     "unit": "%W",
+     "meaning": "width of the band"
+    }
+   ],
+   "default_variant": "slantedBand",
+   "variants": [
+    {
+     "name": "slantedBand",
+     "techniques": [
+      "v8.fx-shimmer-sweep"
+     ],
+     "curve": {
+      "technique": "v8.fx-shimmer-sweep",
+      "curve_id": "v8.fx-shimmer-sweep",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "darkBand",
+     "techniques": [
+      "v2.ui-status-text-shimmer"
+     ],
+     "curve": null,
+     "params": {},
+     "notes": "a darker band, stepped like a screen capture"
+    },
+    {
+     "name": "looping",
+     "techniques": [
+      "v8.text-status-fade-sweep"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "once",
+     "techniques": [
+      "v8.text-shimmer-sweep"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "lineLight",
+     "techniques": [
+      "v7.grid-light-sweep"
+     ],
+     "curve": null,
+     "params": {},
+     "notes": "thin grid lines light up and fade as the sweep passes"
+    }
+   ]
+  },
+  {
+   "name": "RiseFade",
+   "group": "text-motion",
+   "kind": "text",
+   "description": "Units (letters, words, lines or a block) fade in while rising or dropping a few pixels into place on one ease-out, on a fixed stagger; with no travel it is a plain fade in place.",
+   "api": "{text?: string; children?: React.ReactNode; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "unit",
+     "unit": "letter|word|line|block",
+     "meaning": "what moves as one"
+    },
+    {
+     "name": "rise",
+     "unit": "%H",
+     "meaning": "travel into place, negative = drop from above"
+    },
+    {
+     "name": "stagger",
+     "unit": "frames",
+     "meaning": "frames between successive units"
+    }
+   ],
+   "default_variant": "wordRise",
+   "variants": [
+    {
+     "name": "wordRise",
+     "techniques": [
+      "v4.text-word-rise-fade"
+     ],
+     "curve": {
+      "technique": "v4.text-word-rise-fade",
+      "curve_id": "v4.text-word-rise-fade",
+      "property": "opacity"
+     },
+     "params": {
+      "unit": "word",
+      "rise": 1.67,
+      "stagger": 4.2
+     }
+    },
+    {
+     "name": "letterRise",
+     "techniques": [
+      "v4.text-letter-rise-fade"
+     ],
+     "curve": {
+      "technique": "v4.text-letter-rise-fade",
+      "curve_id": "v4.text-letter-rise-fade",
+      "property": "opacity"
+     },
+     "params": {
+      "unit": "letter",
+      "stagger": 2.1
+     }
+    },
+    {
+     "name": "softBlockRise",
+     "techniques": [
+      "v4.text-tagline-rise-in"
+     ],
+     "curve": {
+      "technique": "v4.text-tagline-rise-in",
+      "curve_id": "v4.text-tagline-rise-in",
+      "property": "opacity"
+     },
+     "params": {
+      "unit": "block"
+     }
+    },
+    {
+     "name": "dropIn",
+     "techniques": [
+      "v4.text-headline-drop-in"
+     ],
+     "curve": {
+      "technique": "v4.text-headline-drop-in",
+      "curve_id": "v4.text-headline-drop-in",
+      "property": "opacity"
+     },
+     "params": {
+      "unit": "line"
+     }
+    },
+    {
+     "name": "steepStagger",
+     "techniques": [
+      "v6.text-word-rise-stagger"
+     ],
+     "curve": {
+      "technique": "v6.text-word-rise-stagger",
+      "curve_id": "v6.text-word-rise-stagger",
+      "property": "y"
+     },
+     "params": {
+      "unit": "word"
+     }
+    },
+    {
+     "name": "blockRise",
+     "techniques": [
+      "v8.text-block-rise-in"
+     ],
+     "curve": {
+      "technique": "v8.text-block-rise-in",
+      "curve_id": "v8.text-block-rise-in",
+      "property": "y"
+     },
+     "params": {
+      "unit": "block",
+      "rise": 3.3
+     }
+    },
+    {
+     "name": "cascade",
+     "techniques": [
+      "v8.text-list-cascade-fade"
+     ],
+     "curve": {
+      "technique": "v8.text-list-cascade-fade",
+      "curve_id": "v8.text-list-cascade-fade",
+      "property": "opacity"
+     },
+     "params": {
+      "unit": "line"
+     }
+    },
+    {
+     "name": "fadeInPlace",
+     "techniques": [
+      "v2.text-label-fade-in",
+      "v7.icon-mark-fade-in"
+     ],
+     "curve": {
+      "technique": "v2.text-label-fade-in",
+      "curve_id": "v2.text-label-fade-in",
+      "property": "opacity"
+     },
+     "params": {
+      "rise": 0
+     },
+     "notes": "a plain ease-out fade in place, on a label and on a small mark"
+    },
+    {
+     "name": "quickFade",
+     "techniques": [
+      "v8.shape-separator-fade-in"
+     ],
+     "curve": null,
+     "params": {
+      "rise": 0
+     },
+     "notes": "a 2-6 f fade of a thin separator"
+    }
+   ]
+  },
+  {
+   "name": "BlurIn",
+   "group": "text-motion",
+   "kind": "text",
+   "description": "Units fade in from defocused to sharp in their places, optionally rising a few pixels; staggered by letter, word or line, or rolling so each word peaks in focus and defocuses out as the next one peaks.",
+   "api": "{text: string; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "unit",
+     "unit": "letter|word|line|block",
+     "meaning": "what resolves as one"
+    },
+    {
+     "name": "blur",
+     "unit": "%W",
+     "meaning": "starting blur"
+    },
+    {
+     "name": "rise",
+     "unit": "%H",
+     "meaning": "travel into place"
+    },
+    {
+     "name": "stagger",
+     "unit": "frames",
+     "meaning": "frames between successive units"
+    }
+   ],
+   "default_variant": "wordRise",
+   "variants": [
+    {
+     "name": "wordRise",
+     "techniques": [
+      "v7.text-word-blur-rise"
+     ],
+     "curve": {
+      "technique": "v7.text-word-blur-rise",
+      "curve_id": "v7.text-word-blur-rise",
+      "property": "opacity"
+     },
+     "params": {
+      "unit": "word"
+     }
+    },
+    {
+     "name": "overlapWords",
+     "techniques": [
+      "v7.ui-prompt-word-stream"
+     ],
+     "curve": {
+      "technique": "v7.ui-prompt-word-stream",
+      "curve_id": "v7.ui-prompt-word-stream",
+      "property": "opacity"
+     },
+     "params": {
+      "unit": "word"
+     }
+    },
+    {
+     "name": "inPlace",
+     "techniques": [
+      "v8.text-label-blur-fade-in"
+     ],
+     "curve": {
+      "technique": "v8.text-label-blur-fade-in",
+      "curve_id": "v8.text-label-blur-fade-in",
+      "property": "opacity"
+     },
+     "params": {
+      "unit": "block",
+      "rise": 0
+     }
+    },
+    {
+     "name": "letterSweep",
+     "techniques": [
+      "v5.text-caption-word-fade"
+     ],
+     "curve": {
+      "technique": "v5.text-caption-word-fade",
+      "curve_id": "v5.text-caption-word-fade",
+      "property": "opacity"
+     },
+     "params": {
+      "unit": "letter"
+     }
+    },
+    {
+     "name": "focusRoll",
+     "techniques": [
+      "v5.text-caption-focus-roll"
+     ],
+     "curve": {
+      "technique": "v5.text-caption-focus-roll",
+      "curve_id": "v5.text-caption-focus-roll",
+      "property": "opacity"
+     },
+     "params": {
+      "unit": "word"
+     }
+    },
+    {
+     "name": "verticalBlur",
+     "techniques": [
+      "v6.text-rise-in-blur"
+     ],
+     "curve": null,
+     "params": {
+      "unit": "line"
+     }
+    }
+   ]
+  },
+  {
+   "name": "BlurSlideIn",
+   "group": "text-motion",
+   "kind": "text",
+   "description": "Lines, words, letters or glyphs slide in from the frame edges with directional motion blur and lock into place on a hard ease-out or a stiff spring, sometimes overshooting; pairs come from opposite sides.",
+   "api": "{text: string; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "unit",
+     "unit": "letter|word|line|glyph",
+     "meaning": "what slides as one"
+    },
+    {
+     "name": "overshoot",
+     "unit": "%W",
+     "meaning": "travel past rest before settling"
+    },
+    {
+     "name": "stagger",
+     "unit": "frames",
+     "meaning": "frames between successive units"
+    }
+   ],
+   "default_variant": "oppositeEdges",
+   "variants": [
+    {
+     "name": "oppositeEdges",
+     "techniques": [
+      "v5.text-line-slide-blur"
+     ],
+     "curve": {
+      "technique": "v5.text-line-slide-blur",
+      "curve_id": "v5.text-line-slide-blur",
+      "property": "x"
+     },
+     "params": {
+      "unit": "line"
+     }
+    },
+    {
+     "name": "overshoot",
+     "techniques": [
+      "v5.text-line-slide-overshoot"
+     ],
+     "curve": {
+      "technique": "v5.text-line-slide-overshoot",
+      "curve_id": "v5.text-line-slide-overshoot",
+      "property": "x"
+     },
+     "params": {
+      "unit": "line"
+     }
+    },
+    {
+     "name": "converge",
+     "techniques": [
+      "v5.text-converge-slide"
+     ],
+     "curve": {
+      "technique": "v5.text-converge-slide",
+      "curve_id": "v5.text-converge-slide",
+      "property": "x"
+     },
+     "params": {
+      "unit": "word"
+     }
+    },
+    {
+     "name": "typeAlong",
+     "techniques": [
+      "v6.text-line-slide-blur"
+     ],
+     "curve": {
+      "technique": "v6.text-line-slide-blur",
+      "curve_id": "v6.text-line-slide-blur",
+      "property": "x"
+     },
+     "params": {
+      "unit": "line"
+     }
+    },
+    {
+     "name": "whipIn",
+     "techniques": [
+      "v6.text-word-whip-in"
+     ],
+     "curve": {
+      "technique": "v6.text-word-whip-in",
+      "curve_id": "v6.text-word-whip-in",
+      "property": "x"
+     },
+     "params": {
+      "unit": "word"
+     }
+    },
+    {
+     "name": "trackingSettle",
+     "techniques": [
+      "v5.text-tracking-settle"
+     ],
+     "curve": {
+      "technique": "v5.text-tracking-settle",
+      "curve_id": "v5.text-tracking-settle",
+      "property": "x"
+     },
+     "params": {
+      "unit": "line"
+     },
+     "notes": "the line lands stretched and its spacing tightens into place"
+    },
+    {
+     "name": "glyphConverge",
+     "techniques": [
+      "v7.text-glyph-slide-in"
+     ],
+     "curve": null,
+     "params": {
+      "unit": "glyph"
+     }
+    },
+    {
+     "name": "edgeSpring",
+     "techniques": [
+      "v6.text-bracket-spring-in"
+     ],
+     "curve": {
+      "technique": "v6.text-bracket-spring-in",
+      "curve_id": "v6.text-bracket-spring-in",
+      "property": "x"
+     },
+     "params": {
+      "unit": "glyph"
+     }
+    },
+    {
+     "name": "allEdges",
+     "techniques": [
+      "v6.text-letter-converge"
+     ],
+     "curve": {
+      "technique": "v6.text-letter-converge",
+      "curve_id": "v6.text-letter-converge",
+      "property": "y"
+     },
+     "params": {
+      "unit": "letter"
+     },
+     "notes": "letters arrive from all four edges, then the line rises into place"
+    }
+   ]
+  },
+  {
+   "name": "WarpFlyIn",
+   "group": "text-motion",
+   "kind": "text",
+   "description": "Text flies in as a liquid, rubbery or chrome-like warped smear and resolves into its letterforms as it lands; a liquid blob can morph into the first letters.",
+   "api": "{text: string; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "stagger",
+     "unit": "frames",
+     "meaning": "frames between successive units"
+    }
+   ],
+   "default_variant": "liquid",
+   "variants": [
+    {
+     "name": "liquid",
+     "techniques": [
+      "v5.text-liquid-flyin"
+     ],
+     "curve": {
+      "technique": "v5.text-liquid-flyin",
+      "curve_id": "v5.text-liquid-flyin",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "rubbery",
+     "techniques": [
+      "v6.text-warp-fly-in"
+     ],
+     "curve": {
+      "technique": "v6.text-warp-fly-in",
+      "curve_id": "v6.text-warp-fly-in",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "blobMorph",
+     "techniques": [
+      "v5.text-liquid-blob-morph"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "chromeSmear",
+     "techniques": [
+      "v5.logo-chrome-smear-in"
+     ],
+     "curve": {
+      "technique": "v5.logo-chrome-smear-in",
+      "curve_id": "v5.logo-chrome-smear-in",
+      "property": "scale"
+     },
+     "params": {},
+     "notes": "lines arrive as horizontal smears from opposite edges, then the lockup scales up to rest"
+    }
+   ]
+  },
+  {
+   "name": "EdgeRise",
+   "group": "text-motion",
+   "kind": "text",
+   "description": "Text springs in vertically from beyond the frame edge or from far below its slot, overshoots and settles like a damped spring; elements follow on a stagger.",
+   "api": "{text: string; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "overshoot",
+     "unit": "%H",
+     "meaning": "travel past rest"
+    },
+    {
+     "name": "stagger",
+     "unit": "frames",
+     "meaning": "frames between successive units"
+    }
+   ],
+   "default_variant": "springUp",
+   "variants": [
+    {
+     "name": "springUp",
+     "techniques": [
+      "v8.text-spring-rise"
+     ],
+     "curve": {
+      "technique": "v8.text-spring-rise",
+      "curve_id": "v8.text-spring-rise",
+      "property": "y"
+     },
+     "params": {
+      "overshoot": 4.3
+     }
+    },
+    {
+     "name": "dropBounce",
+     "techniques": [
+      "v8.text-word-drop-bounce"
+     ],
+     "curve": {
+      "technique": "v8.text-word-drop-bounce",
+      "curve_id": "v8.text-word-drop-bounce",
+      "property": "y"
+     },
+     "params": {
+      "overshoot": 5.2,
+      "stagger": 2
+     }
+    },
+    {
+     "name": "typeRise",
+     "techniques": [
+      "v8.text-tag-type-rise"
+     ],
+     "curve": {
+      "technique": "v8.text-tag-type-rise",
+      "curve_id": "v8.text-tag-type-rise",
+      "property": "y"
+     },
+     "params": {},
+     "notes": "types on while it rises"
+    },
+    {
+     "name": "popDrop",
+     "techniques": [
+      "v6.text-label-drop"
+     ],
+     "curve": null,
+     "params": {},
+     "notes": "pops on at full ink and drops into its slot, ease-out, no overshoot"
+    }
+   ]
+  },
+  {
+   "name": "TextFadeOut",
+   "group": "text-motion",
+   "kind": "text",
+   "description": "Text fades out in place on an ease-in, all together or line by line in reading order, optionally defocusing as it goes; no move or scale.",
+   "api": "{text: string; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "stagger",
+     "unit": "frames",
+     "meaning": "frames between successive units"
+    }
+   ],
+   "default_variant": "easeIn",
+   "variants": [
+    {
+     "name": "easeIn",
+     "techniques": [
+      "v3.text-fade-out"
+     ],
+     "curve": {
+      "technique": "v3.text-fade-out",
+      "curve_id": "v3.text-fade-out",
+      "property": "opacity"
+     },
+     "params": {}
+    },
+    {
+     "name": "accelerating",
+     "techniques": [
+      "v4.text-headline-fade-out"
+     ],
+     "curve": {
+      "technique": "v4.text-headline-fade-out",
+      "curve_id": "v4.text-headline-fade-out",
+      "property": "opacity"
+     },
+     "params": {}
+    },
+    {
+     "name": "linear",
+     "techniques": [
+      "v7.text-caption-fade-out"
+     ],
+     "curve": {
+      "technique": "v7.text-caption-fade-out",
+      "curve_id": "v7.text-caption-fade-out",
+      "property": "opacity"
+     },
+     "params": {}
+    },
+    {
+     "name": "slowFade",
+     "techniques": [
+      "v8.text-fade-out"
+     ],
+     "curve": {
+      "technique": "v8.text-fade-out",
+      "curve_id": "v8.text-fade-out",
+      "property": "opacity"
+     },
+     "params": {}
+    },
+    {
+     "name": "defocusLines",
+     "techniques": [
+      "v5.text-caption-line-fade-out"
+     ],
+     "curve": {
+      "technique": "v5.text-caption-line-fade-out",
+      "curve_id": "v5.text-caption-line-fade-out",
+      "property": "opacity"
+     },
+     "params": {},
+     "notes": "lines leave one at a time, fading and defocusing"
+    }
+   ]
+  },
+  {
+   "name": "HardCut",
+   "group": "transition-cut",
+   "kind": "transition",
+   "description": "The picture is replaced between two frames; the next layout is complete in the cut frame or builds from the empty canvas; an overlay can hold across the cut, or a move can continue through it in the same direction.",
+   "api": "{from: React.ReactNode; to: React.ReactNode; tone?: Tone; variant?: string}; also <name>Presentation(variant?) and its timing for TransitionSeries",
+   "params": [
+    {
+     "name": "emptyFrames",
+     "unit": "frames",
+     "meaning": "empty canvas frames before the next layout builds"
+    }
+   ],
+   "default_variant": "plain",
+   "variants": [
+    {
+     "name": "plain",
+     "techniques": [
+      "v2.trans-hard-cut"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "motionMatch",
+     "techniques": [
+      "v5.trans-motion-match-cut"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "overlayHold",
+     "techniques": [
+      "v5.layout-overlay-holds-across-cut"
+     ],
+     "curve": null,
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "DipToBackground",
+   "group": "transition-cut",
+   "kind": "transition",
+   "description": "The outgoing layout fades out in place on an ease-in (optionally scaling a few percent), the empty background holds for a few frames, and the next layout builds in.",
+   "api": "{from: React.ReactNode; to: React.ReactNode; tone?: Tone; variant?: string}; also <name>Presentation(variant?) and its timing for TransitionSeries",
+   "params": [
+    {
+     "name": "emptyFrames",
+     "unit": "frames",
+     "meaning": "empty background frames between the layouts"
+    },
+    {
+     "name": "exitScale",
+     "unit": "factor",
+     "meaning": "scale the outgoing layout reaches"
+    }
+   ],
+   "default_variant": "groupFade",
+   "variants": [
+    {
+     "name": "groupFade",
+     "techniques": [
+      "v3.trans-dip-to-bg"
+     ],
+     "curve": {
+      "technique": "v3.trans-dip-to-bg",
+      "curve_id": "v3.trans-dip-to-bg",
+      "property": "opacity"
+     },
+     "params": {}
+    },
+    {
+     "name": "quickDip",
+     "techniques": [
+      "v1.trans-dip-to-bg"
+     ],
+     "curve": {
+      "technique": "v1.trans-dip-to-bg",
+      "curve_id": "v1.trans-dip-to-bg",
+      "property": "opacity"
+     },
+     "params": {}
+    },
+    {
+     "name": "zoomBuild",
+     "techniques": [
+      "v4.trans-dip-to-bg"
+     ],
+     "curve": null,
+     "params": {},
+     "notes": "composite: zoom or shrink fade-out, settle-in of the next layout, headline last"
+    }
+   ]
+  },
+  {
+   "name": "WhipCut",
+   "group": "transition-cut",
+   "kind": "transition",
+   "description": "Whip through a hidden cut: the outgoing view eases in along one axis with growing directional blur, the picture is replaced at speed, and the incoming view (the next layout or a closer framing of the same one) arrives still moving and decelerates on a strong ease-out.",
+   "api": "{from: React.ReactNode; to: React.ReactNode; tone?: Tone; variant?: string}; also <name>Presentation(variant?) and its timing for TransitionSeries",
+   "params": [
+    {
+     "name": "axis",
+     "unit": "x|y",
+     "meaning": "direction of travel"
+    },
+    {
+     "name": "scaleJump",
+     "unit": "factor",
+     "meaning": "framing change at the cut, 1 for none"
+    },
+    {
+     "name": "blur",
+     "unit": "%W",
+     "meaning": "peak directional blur"
+    }
+   ],
+   "default_variant": "pushLeft",
+   "variants": [
+    {
+     "name": "pushLeft",
+     "techniques": [
+      "v7.trans-whip-push-left"
+     ],
+     "curve": {
+      "technique": "v7.trans-whip-push-left",
+      "curve_id": "v7.trans-whip-push-left",
+      "property": "x"
+     },
+     "params": {
+      "axis": "x"
+     }
+    },
+    {
+     "name": "pushRight",
+     "techniques": [
+      "v7.trans-whip-push-right"
+     ],
+     "curve": {
+      "technique": "v7.trans-whip-push-right",
+      "curve_id": "v7.trans-whip-push-right",
+      "property": "x"
+     },
+     "params": {
+      "axis": "x"
+     }
+    },
+    {
+     "name": "blendLeft",
+     "techniques": [
+      "v5.trans-whip-pan"
+     ],
+     "curve": {
+      "technique": "v5.trans-whip-pan",
+      "curve_id": "v5.trans-whip-pan",
+      "property": "x"
+     },
+     "params": {
+      "axis": "x"
+     },
+     "notes": "a few blurred frames blend both shots"
+    },
+    {
+     "name": "streakLeft",
+     "techniques": [
+      "v6.trans-whip-left"
+     ],
+     "curve": {
+      "technique": "v6.trans-whip-left",
+      "curve_id": "v6.trans-whip-left",
+      "property": "x"
+     },
+     "params": {
+      "axis": "x"
+     }
+    },
+    {
+     "name": "creepLeft",
+     "techniques": [
+      "v8.trans-whip-left"
+     ],
+     "curve": {
+      "technique": "v8.trans-whip-left",
+      "curve_id": "v8.trans-whip-left",
+      "property": "x"
+     },
+     "params": {
+      "axis": "x"
+     }
+    },
+    {
+     "name": "blurReframe",
+     "techniques": [
+      "v8.trans-blur-whip-reframe"
+     ],
+     "curve": {
+      "technique": "v8.trans-blur-whip-reframe",
+      "curve_id": "v8.trans-blur-whip-reframe",
+      "property": "x"
+     },
+     "params": {
+      "axis": "x"
+     }
+    },
+    {
+     "name": "layerBlur",
+     "techniques": [
+      "v7.fx-layer-directional-blur"
+     ],
+     "curve": null,
+     "params": {
+      "axis": "x"
+     },
+     "notes": "the blur sits on the content layer only, the frame chrome stays sharp"
+    },
+    {
+     "name": "canvasDown",
+     "techniques": [
+      "v5.trans-whip-tilt"
+     ],
+     "curve": {
+      "technique": "v5.trans-whip-tilt",
+      "curve_id": "v5.trans-whip-tilt",
+      "property": "y"
+     },
+     "params": {
+      "axis": "y"
+     }
+    },
+    {
+     "name": "pushUp",
+     "techniques": [
+      "v7.trans-whip-push-up"
+     ],
+     "curve": {
+      "technique": "v7.trans-whip-push-up",
+      "curve_id": "v7.trans-whip-push-up",
+      "property": "y"
+     },
+     "params": {
+      "axis": "y"
+     }
+    },
+    {
+     "name": "riseUp",
+     "techniques": [
+      "v8.trans-whip-up"
+     ],
+     "curve": {
+      "technique": "v8.trans-whip-up",
+      "curve_id": "v8.trans-whip-up",
+      "property": "y"
+     },
+     "params": {
+      "axis": "y"
+     }
+    },
+    {
+     "name": "sinkDown",
+     "techniques": [
+      "v8.trans-whip-down"
+     ],
+     "curve": {
+      "technique": "v8.trans-whip-down",
+      "curve_id": "v8.trans-whip-down",
+      "property": "y"
+     },
+     "params": {
+      "axis": "y"
+     }
+    },
+    {
+     "name": "punchUp",
+     "techniques": [
+      "v7.trans-punch-in-whip-up"
+     ],
+     "curve": {
+      "technique": "v7.trans-punch-in-whip-up",
+      "curve_id": "v7.trans-punch-in-whip-up",
+      "property": "y"
+     },
+     "params": {
+      "axis": "y"
+     },
+     "notes": "the incoming view is a closer framing of the same layout"
+    },
+    {
+     "name": "punchZoom",
+     "techniques": [
+      "v7.trans-punch-in-whip-zoom"
+     ],
+     "curve": {
+      "technique": "v7.trans-punch-in-whip-zoom",
+      "curve_id": "v7.trans-punch-in-whip-zoom",
+      "property": "y"
+     },
+     "params": {
+      "axis": "y",
+      "scaleJump": 1.7
+     }
+    },
+    {
+     "name": "diagonalZoom",
+     "techniques": [
+      "v7.trans-whip-down-left-zoom-in"
+     ],
+     "curve": {
+      "technique": "v7.trans-whip-down-left-zoom-in",
+      "curve_id": "v7.trans-whip-down-left-zoom-in",
+      "property": "scale"
+     },
+     "params": {
+      "scaleJump": 4.3
+     }
+    }
+   ]
+  },
+  {
+   "name": "PushSlide",
+   "group": "transition-cut",
+   "kind": "transition",
+   "description": "Vertical push: the outgoing layout accelerates up out of the top edge and the next one rises in from below the frame and brakes to rest; the two may sit on one strip, overlap, or swap at a hidden cut.",
+   "api": "{from: React.ReactNode; to: React.ReactNode; tone?: Tone; variant?: string}; also <name>Presentation(variant?) and its timing for TransitionSeries",
+   "params": [
+    {
+     "name": "travel",
+     "unit": "%H",
+     "meaning": "distance the strip travels"
+    }
+   ],
+   "default_variant": "stacked",
+   "variants": [
+    {
+     "name": "stacked",
+     "techniques": [
+      "v8.trans-push-up"
+     ],
+     "curve": {
+      "technique": "v8.trans-push-up",
+      "curve_id": "v8.trans-push-up",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "dipRise",
+     "techniques": [
+      "v6.trans-push-up"
+     ],
+     "curve": {
+      "technique": "v6.trans-push-up",
+      "curve_id": "v6.trans-push-up",
+      "property": "y"
+     },
+     "params": {},
+     "notes": "the incoming element dips to near transparent at its fastest"
+    },
+    {
+     "name": "easeInDrift",
+     "techniques": [
+      "v6.trans-push-up-ease-in"
+     ],
+     "curve": {
+      "technique": "v6.trans-push-up-ease-in",
+      "curve_id": "v6.trans-push-up-ease-in",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "rippleRise",
+     "techniques": [
+      "v8.trans-push-up-columns"
+     ],
+     "curve": {
+      "technique": "v8.trans-push-up-columns",
+      "curve_id": "v8.trans-push-up-columns",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "sharedStrip",
+     "techniques": [
+      "v2.trans-scroll-push"
+     ],
+     "curve": {
+      "technique": "v2.trans-scroll-push",
+      "curve_id": "v2.trans-scroll-push",
+      "property": "y"
+     },
+     "params": {
+      "travel": 111
+     }
+    }
+   ]
+  },
+  {
+   "name": "ZoomThrough",
+   "group": "transition-morph",
+   "kind": "transition",
+   "description": "A zoom on one point accelerates toward the camera and carries through into the next scene, which continues the motion and settles; with radial streaks, a dissolve, a spin, or one dark vignetted picture.",
+   "api": "{from: React.ReactNode; to: React.ReactNode; tone?: Tone; variant?: string}; also <name>Presentation(variant?) and its timing for TransitionSeries",
+   "params": [
+    {
+     "name": "toScale",
+     "unit": "factor",
+     "meaning": "scale reached on the outgoing side"
+    }
+   ],
+   "default_variant": "cutContinue",
+   "variants": [
+    {
+     "name": "cutContinue",
+     "techniques": [
+      "v7.trans-zoom-through-cut"
+     ],
+     "curve": {
+      "technique": "v7.trans-zoom-through-cut",
+      "curve_id": "v7.trans-zoom-through-cut",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "risingZoom",
+     "techniques": [
+      "v1.trans-zoom-through-mark"
+     ],
+     "curve": {
+      "technique": "v1.trans-zoom-through-mark",
+      "curve_id": "v1.trans-zoom-through-mark",
+      "property": "scale"
+     },
+     "params": {
+      "toScale": 1.4
+     }
+    },
+    {
+     "name": "radialStreaks",
+     "techniques": [
+      "v5.trans-zoom-through-radial"
+     ],
+     "curve": {
+      "technique": "v5.trans-zoom-through-radial",
+      "curve_id": "v5.trans-zoom-through-radial",
+      "property": "opacity"
+     },
+     "params": {},
+     "notes": "the curve is the incoming shot recovering from its darkest picture"
+    },
+    {
+     "name": "oversizeLanding",
+     "techniques": [
+      "v6.trans-zoom-through"
+     ],
+     "curve": {
+      "technique": "v6.trans-zoom-through",
+      "curve_id": "v6.trans-zoom-through",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "dissolve",
+     "techniques": [
+      "v8.trans-zoom-through-dissolve"
+     ],
+     "curve": {
+      "technique": "v8.trans-zoom-through-dissolve",
+      "curve_id": "v8.trans-zoom-through-dissolve",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "tunnelExit",
+     "techniques": [
+      "v8.trans-tunnel-exit-zoom-through"
+     ],
+     "curve": {
+      "technique": "v8.trans-tunnel-exit-zoom-through",
+      "curve_id": "v8.footage-card-zoom-to-full",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "spin",
+     "techniques": [
+      "v7.trans-spin-zoom-whip"
+     ],
+     "curve": {
+      "technique": "v7.trans-spin-zoom-whip",
+      "curve_id": "v7.trans-spin-zoom-whip",
+      "property": "rotate"
+     },
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "CollapseToPoint",
+   "group": "transition-morph",
+   "kind": "shape",
+   "description": "A group folds into one point or one cell: a plane wraps into a globe and shrinks to a dot, cells shrink into the centre one by one, rings fold inward step by step, a glowing blob implodes, merged shapes shrink to nothing.",
+   "api": "{items: React.ReactNode[]; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "stepGap",
+     "unit": "frames",
+     "meaning": "frames between successive cells or rings"
+    }
+   ],
+   "default_variant": "cellsInward",
+   "variants": [
+    {
+     "name": "cellsInward",
+     "techniques": [
+      "v3.shape-hex-collapse"
+     ],
+     "curve": {
+      "technique": "v3.shape-hex-collapse",
+      "curve_id": "v3.shape-hex-collapse",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "sphereWrap",
+     "techniques": [
+      "v2.trans-sphere-collapse"
+     ],
+     "curve": {
+      "technique": "v2.trans-sphere-collapse",
+      "curve_id": "v2.trans-sphere-collapse",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "ringFold",
+     "techniques": [
+      "v4.particle-ring-collapse"
+     ],
+     "curve": {
+      "technique": "v4.particle-ring-collapse",
+      "curve_id": "v4.particle-ring-collapse",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "meltImplode",
+     "techniques": [
+      "v5.trans-melt-implode"
+     ],
+     "curve": {
+      "technique": "v5.trans-melt-implode",
+      "curve_id": "v5.trans-melt-implode",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "blobMerge",
+     "techniques": [
+      "v5.logo-sphere-drop-merge"
+     ],
+     "curve": {
+      "technique": "v5.logo-sphere-drop-merge",
+      "curve_id": "v5.logo-sphere-drop-merge",
+      "property": "area"
+     },
+     "params": {}
+    },
+    {
+     "name": "clusterSnap",
+     "techniques": [
+      "v8.particle-mascot-converge"
+     ],
+     "curve": {
+      "technique": "v8.particle-mascot-converge",
+      "curve_id": "v8.particle-mascot-converge",
+      "property": "scale"
+     },
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "FlyToSlots",
+   "group": "transition-morph",
+   "kind": "shape",
+   "description": "A set of elements travels on straight or arced paths into target slots on one shared ease-in-out, optionally scaling to the slot size; staggered starts, so speed scales with distance.",
+   "api": "{items: React.ReactNode[]; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "stagger",
+     "unit": "frames",
+     "meaning": "frames between successive units"
+    },
+    {
+     "name": "toScale",
+     "unit": "factor",
+     "meaning": "scale at the slot"
+    }
+   ],
+   "default_variant": "gather",
+   "variants": [
+    {
+     "name": "gather",
+     "techniques": [
+      "v3.trans-hex-gather"
+     ],
+     "curve": {
+      "technique": "v3.trans-hex-gather",
+      "curve_id": "v3.trans-hex-gather",
+      "property": "progress"
+     },
+     "params": {}
+    },
+    {
+     "name": "converge",
+     "techniques": [
+      "v2.trans-icon-converge-morph"
+     ],
+     "curve": {
+      "technique": "v2.trans-icon-converge-morph",
+      "curve_id": "v2.trans-icon-converge-morph",
+      "property": "y"
+     },
+     "params": {
+      "toScale": 0.64
+     }
+    },
+    {
+     "name": "riseIntoSlots",
+     "techniques": [
+      "v2.trans-hex-fly-into-ui"
+     ],
+     "curve": {
+      "technique": "v2.trans-hex-fly-into-ui",
+      "curve_id": "v2.trans-hex-fly-into-ui",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "swirl",
+     "techniques": [
+      "v4.particle-swarm-converge"
+     ],
+     "curve": {
+      "technique": "v4.particle-swarm-converge",
+      "curve_id": "v4.particle-swarm-converge",
+      "property": "progress"
+     },
+     "params": {}
+    },
+    {
+     "name": "arcToSlot",
+     "techniques": [
+      "v8.trans-mascot-converge-fly"
+     ],
+     "curve": {
+      "technique": "v8.trans-mascot-converge-fly",
+      "curve_id": "v8.trans-mascot-converge-fly",
+      "property": "x"
+     },
+     "params": {
+      "toScale": 2.0
+     }
+    },
+    {
+     "name": "swoopAcross",
+     "techniques": [
+      "v8.trans-avatar-fly-split"
+     ],
+     "curve": {
+      "technique": "v8.trans-avatar-fly-split",
+      "curve_id": "v8.trans-avatar-fly-split",
+      "property": "x"
+     },
+     "params": {},
+     "notes": "one element swoops through the centre to the mirror position, growing"
+    }
+   ]
+  },
+  {
+   "name": "ShapeSwap",
+   "group": "transition-morph",
+   "kind": "shape",
+   "description": "Each element swaps in place for another: the old one shrinks and fades while the new one grows and fades in, all at once or as a wave across the set.",
+   "api": "{items: React.ReactNode[]; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "stagger",
+     "unit": "frames",
+     "meaning": "frames between successive units"
+    },
+    {
+     "name": "fromScale",
+     "unit": "factor",
+     "meaning": "start scale of the incoming shape"
+    }
+   ],
+   "default_variant": "waveSwap",
+   "variants": [
+    {
+     "name": "waveSwap",
+     "techniques": [
+      "v4.trans-tile-hex-morph"
+     ],
+     "curve": {
+      "technique": "v4.trans-tile-hex-morph",
+      "curve_id": "v4.trans-tile-hex-morph",
+      "property": "opacity"
+     },
+     "params": {
+      "fromScale": 0.6
+     }
+    },
+    {
+     "name": "centreOutSwap",
+     "techniques": [
+      "v3.icon-badge-to-hex"
+     ],
+     "curve": {
+      "technique": "v3.icon-badge-to-hex",
+      "curve_id": "v3.icon-badge-to-hex",
+      "property": "scale"
+     },
+     "params": {
+      "fromScale": 0.62,
+      "stagger": 1.8
+     }
+    },
+    {
+     "name": "crossDissolve",
+     "techniques": [
+      "v4.card-content-crossfade"
+     ],
+     "curve": {
+      "technique": "v4.card-content-crossfade",
+      "curve_id": "v4.card-content-crossfade",
+      "property": "opacity"
+     },
+     "params": {}
+    },
+    {
+     "name": "shrinkGrow",
+     "techniques": [
+      "v2.ui-badge-swap-pop"
+     ],
+     "curve": {
+      "technique": "v2.ui-badge-swap-pop",
+      "curve_id": "v2.ui-badge-swap-pop",
+      "property": "scale"
+     },
+     "params": {
+      "fromScale": 0.8
+     }
+    }
+   ]
+  },
+  {
+   "name": "ContentSwap",
+   "group": "transition-morph",
+   "kind": "transition",
+   "description": "Part of a held layout is replaced while the rest stays: a title fades and the next pops into its slot, a panel slides through, a grid drops out and the next drops in, a screen crossfades while its content slides up, or a label or glyph swaps in one frame.",
+   "api": "{from: React.ReactNode; to: React.ReactNode; tone?: Tone; variant?: string}; also <name>Presentation(variant?) and its timing for TransitionSeries",
+   "params": [
+    {
+     "name": "travel",
+     "unit": "%H",
+     "meaning": "slide of the incoming content"
+    }
+   ],
+   "default_variant": "titleFade",
+   "variants": [
+    {
+     "name": "titleFade",
+     "techniques": [
+      "v3.trans-morph-title-swap"
+     ],
+     "curve": {
+      "technique": "v3.trans-morph-title-swap",
+      "curve_id": "v3.text-fade-out",
+      "property": "opacity"
+     },
+     "params": {}
+    },
+    {
+     "name": "slideThrough",
+     "techniques": [
+      "v4.card-slide-swap",
+      "v4.trans-panel-swap"
+     ],
+     "curve": {
+      "technique": "v4.card-slide-swap",
+      "curve_id": "v4.card-slide-swap",
+      "property": "opacity"
+     },
+     "params": {},
+     "notes": "the slide-through of one window and the composite it belongs to"
+    },
+    {
+     "name": "dropThrough",
+     "techniques": [
+      "v7.ui-folder-drop-in",
+      "v7.ui-grid-drop-out"
+     ],
+     "curve": {
+      "technique": "v7.ui-folder-drop-in",
+      "curve_id": "v7.ui-folder-drop-in",
+      "property": "y"
+     },
+     "params": {
+      "travel": 15.2
+     },
+     "notes": "the old grid drops out, the new one drops in"
+    },
+    {
+     "name": "crossfadeSlide",
+     "techniques": [
+      "v8.ui-screen-crossfade-slide"
+     ],
+     "curve": {
+      "technique": "v8.ui-screen-crossfade-slide",
+      "curve_id": "v8.ui-screen-crossfade-slide",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "oneFrame",
+     "techniques": [
+      "v4.ui-label-swap",
+      "v2.ui-send-button-swap",
+      "v8.ui-icon-state-swap"
+     ],
+     "curve": null,
+     "params": {},
+     "notes": "text or a glyph is replaced in a single frame"
+    }
+   ]
+  },
+  {
+   "name": "LightFlash",
+   "group": "light-fx",
+   "kind": "transition",
+   "description": "Light covers the frame and the picture is replaced under it: a white disc grows from a point, a ring blooms into white and the next shot comes down from it, a flare band peaks on the cut, two stars split apart over the next shot, or a ring inverts what it passes.",
+   "api": "{from: React.ReactNode; to: React.ReactNode; tone?: Tone; variant?: string}; also <name>Presentation(variant?) and its timing for TransitionSeries",
+   "params": [
+    {
+     "name": "holdWhite",
+     "unit": "frames",
+     "meaning": "frames held at full white"
+    }
+   ],
+   "default_variant": "iris",
+   "variants": [
+    {
+     "name": "iris",
+     "techniques": [
+      "v7.trans-iris-white"
+     ],
+     "curve": {
+      "technique": "v7.trans-iris-white",
+      "curve_id": "v7.trans-iris-white",
+      "property": "progress"
+     },
+     "params": {
+      "holdWhite": 7
+     }
+    },
+    {
+     "name": "ringBloom",
+     "techniques": [
+      "v5.trans-flash-white",
+      "v5.fx-exposure-recover"
+     ],
+     "curve": {
+      "technique": "v5.trans-flash-white",
+      "curve_id": "v5.trans-flash-white",
+      "property": "opacity"
+     },
+     "params": {},
+     "notes": "the bloom into white and the come-down of the next shot"
+    },
+    {
+     "name": "flareCut",
+     "techniques": [
+      "v5.fx-flare-bloom-out"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "starSplit",
+     "techniques": [
+      "v5.trans-star-flash"
+     ],
+     "curve": {
+      "technique": "v5.trans-star-flash",
+      "curve_id": "v5.trans-star-flash",
+      "property": "progress"
+     },
+     "params": {}
+    },
+    {
+     "name": "invertRipple",
+     "techniques": [
+      "v7.fx-ripple-invert"
+     ],
+     "curve": {
+      "technique": "v7.fx-ripple-invert",
+      "curve_id": "v7.fx-ripple-invert",
+      "property": "progress"
+     },
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "StarFlare",
+   "group": "light-fx",
+   "kind": "fx",
+   "description": "A four-point sparkle star and its light streaks: a star drops in growing, a streak led by a sparkle sweeps along a title and parks at its end, a full-width anamorphic streak through a point light, or stars fixed in depth that ride the camera.",
+   "api": "{tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "travel",
+     "unit": "%W",
+     "meaning": "sweep length"
+    }
+   ],
+   "default_variant": "streakSweep",
+   "variants": [
+    {
+     "name": "streakSweep",
+     "techniques": [
+      "v5.shape-flare-streak-sweep"
+     ],
+     "curve": {
+      "technique": "v5.shape-flare-streak-sweep",
+      "curve_id": "v5.shape-flare-streak-sweep",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "drop",
+     "techniques": [
+      "v5.shape-star-drop"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "anamorphic",
+     "techniques": [
+      "v5.fx-anamorphic-flare"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "depthField",
+     "techniques": [
+      "v5.particle-sparkle-field"
+     ],
+     "curve": null,
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "LumaPulse",
+   "group": "light-fx",
+   "kind": "fx",
+   "description": "A brief luminance pulse on one element: a halo or bloom builds and drains, a layer flashes for two pictures, an element dips to near transparent at its fastest, or a screen flickers through its content swap.",
+   "api": "{children: React.ReactNode; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "peak",
+     "unit": "luma 0-1",
+     "meaning": "pulse peak above rest"
+    }
+   ],
+   "default_variant": "slowBloom",
+   "variants": [
+    {
+     "name": "slowBloom",
+     "techniques": [
+      "v7.fx-clip-glow-pulse"
+     ],
+     "curve": {
+      "technique": "v7.fx-clip-glow-pulse",
+      "curve_id": "v7.fx-clip-glow-pulse",
+      "property": "opacity"
+     },
+     "params": {}
+    },
+    {
+     "name": "bloomCover",
+     "techniques": [
+      "v7.fx-panel-glow-swap"
+     ],
+     "curve": {
+      "technique": "v7.fx-panel-glow-swap",
+      "curve_id": "v7.fx-panel-glow-swap",
+      "property": "opacity"
+     },
+     "params": {},
+     "notes": "the bloom hides a content swap at its peak"
+    },
+    {
+     "name": "haloPeak",
+     "techniques": [
+      "v5.ui-card-mention-glow"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "layerFlash",
+     "techniques": [
+      "v6.fx-layer-glow-pulse"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "opacityDip",
+     "techniques": [
+      "v6.fx-opacity-dip"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "flicker",
+     "techniques": [
+      "v6.ui-screen-swap-flicker"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "fillGlow",
+     "techniques": [
+      "v7.ui-button-press-glow"
+     ],
+     "curve": null,
+     "params": {},
+     "notes": "a pressed fill brightens and a glow spills, no shrink"
+    }
+   ]
+  },
+  {
+   "name": "RadialBurst",
+   "group": "light-fx",
+   "kind": "fx",
+   "description": "Elements burst out radially from a point and expand past the frame edges while fading: glowing square tiles, concentric outline copies, soft shockwave rings, angular shards, a ring band of halftone dots.",
+   "api": "{tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "count",
+     "unit": "count",
+     "meaning": "elements in the burst"
+    }
+   ],
+   "default_variant": "tileRing",
+   "variants": [
+    {
+     "name": "tileRing",
+     "techniques": [
+      "v5.particle-tile-burst"
+     ],
+     "curve": {
+      "technique": "v5.particle-tile-burst",
+      "curve_id": "v5.particle-tile-burst",
+      "property": "radius"
+     },
+     "params": {}
+    },
+    {
+     "name": "echoZoom",
+     "techniques": [
+      "v5.ui-ring-burst"
+     ],
+     "curve": {
+      "technique": "v5.ui-ring-burst",
+      "curve_id": "v5.ui-ring-burst",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "shockRings",
+     "techniques": [
+      "v5.shape-shockwave-ring"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "shardSpray",
+     "techniques": [
+      "v7.particle-shard-burst"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "dotRing",
+     "techniques": [
+      "v7.bg-halftone-ring-burst"
+     ],
+     "curve": {
+      "technique": "v7.bg-halftone-ring-burst",
+      "curve_id": "v7.bg-halftone-ring-burst",
+      "property": "progress"
+     },
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "PixelBlocks",
+   "group": "light-fx",
+   "kind": "fx",
+   "description": "Luminous pixel squares as an ornament: a band of them sweeps across an element and dims out, a soft pixel smear trails behind text, or two squares slide into a corner-to-corner pair.",
+   "api": "{tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "travel",
+     "unit": "%W",
+     "meaning": "sweep length"
+    }
+   ],
+   "default_variant": "parkSweep",
+   "variants": [
+    {
+     "name": "parkSweep",
+     "techniques": [
+      "v5.fx-pixel-sweep"
+     ],
+     "curve": {
+      "technique": "v5.fx-pixel-sweep",
+      "curve_id": "v5.fx-pixel-sweep",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "smearSweep",
+     "techniques": [
+      "v8.fx-pixel-smear-sweep"
+     ],
+     "curve": {
+      "technique": "v8.fx-pixel-smear-sweep",
+      "curve_id": "v8.fx-pixel-smear-sweep",
+      "property": "x"
+     },
+     "params": {
+      "travel": 20.3
+     }
+    },
+    {
+     "name": "pairConverge",
+     "techniques": [
+      "v7.shape-pixel-pair-converge"
+     ],
+     "curve": null,
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "ToneShift",
+   "group": "light-fx",
+   "kind": "fx",
+   "description": "An element's ink or fill changes tone in place: text lightens, or dims and returns, older lines fall back while a new one darkens, a tone sweep runs across a line, a fill darkens to its rest tone.",
+   "api": "{children: React.ReactNode; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "toTone",
+     "unit": "luma 0-1",
+     "meaning": "tone reached"
+    }
+   ],
+   "default_variant": "twoStage",
+   "variants": [
+    {
+     "name": "twoStage",
+     "techniques": [
+      "v7.ui-label-fill-darken"
+     ],
+     "curve": {
+      "technique": "v7.ui-label-fill-darken",
+      "curve_id": "v7.ui-label-fill-darken",
+      "property": "opacity"
+     },
+     "params": {}
+    },
+    {
+     "name": "darkenIn",
+     "techniques": [
+      "v7.ui-dropdown-fill-darken"
+     ],
+     "curve": {
+      "technique": "v7.ui-dropdown-fill-darken",
+      "curve_id": "v7.ui-dropdown-fill-darken",
+      "property": "opacity"
+     },
+     "params": {}
+    },
+    {
+     "name": "lighten",
+     "techniques": [
+      "v6.text-dim-out"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "dimToggle",
+     "techniques": [
+      "v8.text-word-dim-toggle"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "focusShift",
+     "techniques": [
+      "v8.text-focus-dim"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "sweep",
+     "techniques": [
+      "v6.text-tone-sweep"
+     ],
+     "curve": null,
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "SlowZoom",
+   "group": "camera-zoom",
+   "kind": "camera",
+   "description": "Slow zoom or drift during holds so the frame is never still: an eased push-in that settles before the next cut, a near-linear creep, or a constant linear scale or position drift of the whole layout.",
+   "api": "{children: React.ReactNode; variant?: string} (moves the whole layer it wraps)",
+   "params": [
+    {
+     "name": "toScale",
+     "unit": "factor",
+     "meaning": "scale reached"
+    },
+    {
+     "name": "ratePerFrame",
+     "unit": "% per frame",
+     "meaning": "constant drift rate"
+    }
+   ],
+   "default_variant": "layerPush",
+   "variants": [
+    {
+     "name": "layerPush",
+     "techniques": [
+      "v2.ui-slow-push-in"
+     ],
+     "curve": {
+      "technique": "v2.ui-slow-push-in",
+      "curve_id": "v2.ui-slow-push-in",
+      "property": "scale"
+     },
+     "params": {},
+     "notes": "a layer move about a fixed point, not the whole frame"
+    },
+    {
+     "name": "easeOutPush",
+     "techniques": [
+      "v1.cam-slow-push-in"
+     ],
+     "curve": {
+      "technique": "v1.cam-slow-push-in",
+      "curve_id": "v1.cam-slow-push-in",
+      "property": "scale"
+     },
+     "params": {
+      "toScale": 1.035
+     }
+    },
+    {
+     "name": "easedPush",
+     "techniques": [
+      "v7.cam-slow-push-in"
+     ],
+     "curve": {
+      "technique": "v7.cam-slow-push-in",
+      "curve_id": "v7.cam-slow-push-in",
+      "property": "scale"
+     },
+     "params": {
+      "toScale": 1.17
+     }
+    },
+    {
+     "name": "creep",
+     "techniques": [
+      "v7.cam-slow-push-creep"
+     ],
+     "curve": {
+      "technique": "v7.cam-slow-push-creep",
+      "curve_id": "v7.cam-slow-push-creep",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "linearDrift",
+     "techniques": [
+      "v5.cam-hold-drift",
+      "v6.cam-slow-zoom-drift"
+     ],
+     "curve": null,
+     "params": {},
+     "notes": "constant linear drift between moves, two measured instances"
+    },
+    {
+     "name": "groupCreep",
+     "techniques": [
+      "v5.logo-scale-creep",
+      "v8.layout-scale-creep"
+     ],
+     "curve": null,
+     "params": {},
+     "notes": "the held group scales up linearly over a still background"
+    },
+    {
+     "name": "recede",
+     "techniques": [
+      "v5.layout-slow-recede",
+      "v8.cam-slow-pull-back"
+     ],
+     "curve": null,
+     "params": {},
+     "notes": "slow linear shrink until the cut"
+    }
+   ]
+  },
+  {
+   "name": "PushIn",
+   "group": "camera-zoom",
+   "kind": "camera",
+   "description": "The camera pushes in on a region and settles: slow start, a fast blurred middle and an ease-out into a creep, about the frame centre or a point off it; or a scale jump in one picture after an accelerating approach.",
+   "api": "{children: React.ReactNode; variant?: string} (moves the whole layer it wraps)",
+   "params": [
+    {
+     "name": "toScale",
+     "unit": "factor",
+     "meaning": "scale reached"
+    }
+   ],
+   "default_variant": "blurSettle",
+   "variants": [
+    {
+     "name": "blurSettle",
+     "techniques": [
+      "v7.cam-push-in-blur"
+     ],
+     "curve": {
+      "technique": "v7.cam-push-in-blur",
+      "curve_id": "v7.cam-push-in-blur",
+      "property": "scale"
+     },
+     "params": {
+      "toScale": 1.79
+     }
+    },
+    {
+     "name": "cornerSettle",
+     "techniques": [
+      "v7.cam-push-in-corner-settle"
+     ],
+     "curve": {
+      "technique": "v7.cam-push-in-corner-settle",
+      "curve_id": "v7.cam-push-in-corner-settle",
+      "property": "y"
+     },
+     "params": {
+      "toScale": 1.64
+     }
+    },
+    {
+     "name": "pivotBelow",
+     "techniques": [
+      "v8.cam-push-in-pan"
+     ],
+     "curve": {
+      "technique": "v8.cam-push-in-pan",
+      "curve_id": "v8.cam-push-in-pan",
+      "property": "scale"
+     },
+     "params": {
+      "toScale": 1.43
+     }
+    },
+    {
+     "name": "snap",
+     "techniques": [
+      "v5.cam-snap-zoom"
+     ],
+     "curve": {
+      "technique": "v5.cam-snap-zoom",
+      "curve_id": "v5.cam-snap-zoom",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "layerPunch",
+     "techniques": [
+      "v6.ui-mockup-punch-in"
+     ],
+     "curve": {
+      "technique": "v6.ui-mockup-punch-in",
+      "curve_id": "v6.ui-mockup-punch-in",
+      "property": "scale"
+     },
+     "params": {
+      "toScale": 1.22
+     },
+     "notes": "one layer punches in while the text beside it keeps its size"
+    }
+   ]
+  },
+  {
+   "name": "PullBack",
+   "group": "camera-zoom",
+   "kind": "camera",
+   "description": "The camera pulls back to reveal more of the layout on an eased slow-fast-slow move (often eased in log scale), with blur on its fastest pictures, about the frame centre or a point near an edge, sometimes with a pan.",
+   "api": "{children: React.ReactNode; variant?: string} (moves the whole layer it wraps)",
+   "params": [
+    {
+     "name": "toScale",
+     "unit": "factor",
+     "meaning": "scale reached"
+    }
+   ],
+   "default_variant": "reveal",
+   "variants": [
+    {
+     "name": "reveal",
+     "techniques": [
+      "v7.cam-pull-back-reveal"
+     ],
+     "curve": {
+      "technique": "v7.cam-pull-back-reveal",
+      "curve_id": "v7.cam-pull-back-reveal",
+      "property": "scale"
+     },
+     "params": {
+      "toScale": 0.4
+     }
+    },
+    {
+     "name": "logEase",
+     "techniques": [
+      "v3.cam-network-pullback"
+     ],
+     "curve": {
+      "technique": "v3.cam-network-pullback",
+      "curve_id": "v3.cam-network-pullback",
+      "property": "scale"
+     },
+     "params": {
+      "toScale": 0.291
+     }
+    },
+    {
+     "name": "panLead",
+     "techniques": [
+      "v4.cam-pullback",
+      "v4.trans-pullback-morph"
+     ],
+     "curve": {
+      "technique": "v4.cam-pullback",
+      "curve_id": "v4.cam-pullback",
+      "property": "scale"
+     },
+     "params": {
+      "toScale": 0.553
+     },
+     "notes": "with a pan that leads the zoom; the composite transition it drives"
+    },
+    {
+     "name": "centred",
+     "techniques": [
+      "v4.trans-pullback-reveal"
+     ],
+     "curve": null,
+     "params": {
+      "toScale": 0.513
+     },
+     "notes": "the same pull-back without the pan, under a composite transition"
+    },
+    {
+     "name": "centreTail",
+     "techniques": [
+      "v7.cam-pull-back-centre"
+     ],
+     "curve": {
+      "technique": "v7.cam-pull-back-centre",
+      "curve_id": "v7.cam-pull-back-centre",
+      "property": "scale"
+     },
+     "params": {
+      "toScale": 0.832
+     }
+    },
+    {
+     "name": "closeUpOut",
+     "techniques": [
+      "v6.cam-zoom-out"
+     ],
+     "curve": {
+      "technique": "v6.cam-zoom-out",
+      "curve_id": "v6.cam-zoom-out",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "twoPulses",
+     "techniques": [
+      "v8.cam-zoom-out-reveal"
+     ],
+     "curve": {
+      "technique": "v8.cam-zoom-out-reveal",
+      "curve_id": "v8.cam-zoom-out-reveal",
+      "property": "scale"
+     },
+     "params": {
+      "toScale": 0.53
+     }
+    },
+    {
+     "name": "whipReveal",
+     "techniques": [
+      "v5.cam-whip-pullback"
+     ],
+     "curve": {
+      "technique": "v5.cam-whip-pullback",
+      "curve_id": "v5.cam-whip-pullback",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "flatten",
+     "techniques": [
+      "v5.cam-pull-back-snap"
+     ],
+     "curve": {
+      "technique": "v5.cam-pull-back-snap",
+      "curve_id": "v5.cam-pull-back-snap",
+      "property": "scale"
+     },
+     "params": {
+      "toScale": 0.67
+     }
+    },
+    {
+     "name": "speedRamp",
+     "techniques": [
+      "v6.cam-pull-back-ramp"
+     ],
+     "curve": {
+      "technique": "v6.cam-pull-back-ramp",
+      "curve_id": "v6.cam-pull-back-ramp",
+      "property": "scale"
+     },
+     "params": {
+      "toScale": 0.61
+     }
+    },
+    {
+     "name": "recoil",
+     "techniques": [
+      "v7.cam-click-pull-back"
+     ],
+     "curve": {
+      "technique": "v7.cam-click-pull-back",
+      "curve_id": "v7.cam-click-pull-back",
+      "property": "scale"
+     },
+     "params": {
+      "toScale": 0.857
+     }
+    },
+    {
+     "name": "easeBack",
+     "techniques": [
+      "v8.cam-pull-back-settle"
+     ],
+     "curve": {
+      "technique": "v8.cam-pull-back-settle",
+      "curve_id": "v8.cam-pull-back-settle",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "reframe",
+     "techniques": [
+      "v5.cam-reframe-pullback"
+     ],
+     "curve": {
+      "technique": "v5.cam-reframe-pullback",
+      "curve_id": "v5.cam-reframe-pullback",
+      "property": "y"
+     },
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "CanvasPan",
+   "group": "camera-move",
+   "kind": "camera",
+   "description": "The camera pans or tilts across one canvas on an eased curve with directional blur at peak speed, sometimes with a small zoom; whip-like pans start slowly, burst for a few pictures and settle long.",
+   "api": "{children: React.ReactNode; variant?: string} (moves the whole layer it wraps)",
+   "params": [
+    {
+     "name": "travelX",
+     "unit": "%W",
+     "meaning": "horizontal travel"
+    },
+    {
+     "name": "travelY",
+     "unit": "%H",
+     "meaning": "vertical travel"
+    },
+    {
+     "name": "toScale",
+     "unit": "factor",
+     "meaning": "zoom during the pan"
+    }
+   ],
+   "default_variant": "whipX",
+   "variants": [
+    {
+     "name": "whipX",
+     "techniques": [
+      "v5.cam-whip-pan"
+     ],
+     "curve": {
+      "technique": "v5.cam-whip-pan",
+      "curve_id": "v5.cam-whip-pan",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "whipReframe",
+     "techniques": [
+      "v5.cam-whip-pan-reframe"
+     ],
+     "curve": null,
+     "params": {
+      "toScale": 1.25
+     },
+     "notes": "the jump picture also re-frames the layout"
+    },
+    {
+     "name": "whipY",
+     "techniques": [
+      "v5.cam-whip-tilt"
+     ],
+     "curve": {
+      "technique": "v5.cam-whip-tilt",
+      "curve_id": "v5.cam-whip-tilt",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "typingPan",
+     "techniques": [
+      "v6.cam-text-pan"
+     ],
+     "curve": {
+      "technique": "v6.cam-text-pan",
+      "curve_id": "v6.cam-text-pan",
+      "property": "x"
+     },
+     "params": {
+      "travelX": 41.7
+     }
+    },
+    {
+     "name": "panUpZoom",
+     "techniques": [
+      "v7.cam-pan-up-zoom"
+     ],
+     "curve": {
+      "technique": "v7.cam-pan-up-zoom",
+      "curve_id": "v7.cam-pan-up-zoom",
+      "property": "y"
+     },
+     "params": {
+      "travelY": 13.7,
+      "toScale": 1.07
+     }
+    },
+    {
+     "name": "reframeOut",
+     "techniques": [
+      "v7.cam-reframe-pan-out"
+     ],
+     "curve": {
+      "technique": "v7.cam-reframe-pan-out",
+      "curve_id": "v7.cam-reframe-pan-out",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "reveal",
+     "techniques": [
+      "v8.cam-pan-reveal"
+     ],
+     "curve": {
+      "technique": "v8.cam-pan-reveal",
+      "curve_id": "v8.cam-pan-reveal",
+      "property": "x"
+     },
+     "params": {
+      "travelX": 14.5
+     }
+    },
+    {
+     "name": "tiltTwoPhase",
+     "techniques": [
+      "v5.cam-tilt-reveal"
+     ],
+     "curve": {
+      "technique": "v5.cam-tilt-reveal",
+      "curve_id": "v5.cam-tilt-reveal",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "scrollUp",
+     "techniques": [
+      "v7.cam-scroll-up"
+     ],
+     "curve": {
+      "technique": "v7.cam-scroll-up",
+      "curve_id": "v7.cam-scroll-up",
+      "property": "y"
+     },
+     "params": {
+      "travelY": 26,
+      "toScale": 0.88
+     }
+    },
+    {
+     "name": "scrollSettle",
+     "techniques": [
+      "v8.cam-scroll-up-settle"
+     ],
+     "curve": {
+      "technique": "v8.cam-scroll-up-settle",
+      "curve_id": "v8.cam-scroll-up-settle",
+      "property": "y"
+     },
+     "params": {
+      "travelY": 69.6
+     }
+    }
+   ]
+  },
+  {
+   "name": "AccelerateExit",
+   "group": "camera-move",
+   "kind": "camera",
+   "description": "The whole layout (or one block) accelerates out along one axis or in scale on an ease-in with growing motion blur and is cut at speed, with no settle; optionally after an anticipation dip.",
+   "api": "{children: React.ReactNode; variant?: string} (moves the whole layer it wraps)",
+   "params": [
+    {
+     "name": "axis",
+     "unit": "x|y|scale",
+     "meaning": "what accelerates"
+    },
+    {
+     "name": "toScale",
+     "unit": "factor",
+     "meaning": "scale at the cut"
+    }
+   ],
+   "default_variant": "up",
+   "variants": [
+    {
+     "name": "up",
+     "techniques": [
+      "v7.cam-whip-exit-up"
+     ],
+     "curve": {
+      "technique": "v7.cam-whip-exit-up",
+      "curve_id": "v7.cam-whip-exit-up",
+      "property": "y"
+     },
+     "params": {
+      "axis": "y"
+     }
+    },
+    {
+     "name": "driftUp",
+     "techniques": [
+      "v8.cam-scroll-exit-up"
+     ],
+     "curve": {
+      "technique": "v8.cam-scroll-exit-up",
+      "curve_id": "v8.cam-scroll-exit-up",
+      "property": "y"
+     },
+     "params": {
+      "axis": "y"
+     }
+    },
+    {
+     "name": "left",
+     "techniques": [
+      "v8.cam-slide-exit-left"
+     ],
+     "curve": {
+      "technique": "v8.cam-slide-exit-left",
+      "curve_id": "v8.cam-slide-exit-left",
+      "property": "x"
+     },
+     "params": {
+      "axis": "x"
+     }
+    },
+    {
+     "name": "drift",
+     "techniques": [
+      "v7.cam-drift-accelerating-exit"
+     ],
+     "curve": {
+      "technique": "v7.cam-drift-accelerating-exit",
+      "curve_id": "v7.cam-drift-accelerating-exit",
+      "property": "x"
+     },
+     "params": {
+      "axis": "x"
+     }
+    },
+    {
+     "name": "blockUp",
+     "techniques": [
+      "v8.text-block-exit-up"
+     ],
+     "curve": {
+      "technique": "v8.text-block-exit-up",
+      "curve_id": "v8.text-block-exit-up",
+      "property": "y"
+     },
+     "params": {
+      "axis": "y"
+     }
+    },
+    {
+     "name": "anticipateUp",
+     "techniques": [
+      "v6.layout-anticipate-exit-up"
+     ],
+     "curve": {
+      "technique": "v6.layout-anticipate-exit-up",
+      "curve_id": "v6.layout-anticipate-exit-up",
+      "property": "y"
+     },
+     "params": {
+      "axis": "y"
+     },
+     "notes": "dips before it accelerates up"
+    },
+    {
+     "name": "hoverUp",
+     "techniques": [
+      "v5.3d-card-exit-up"
+     ],
+     "curve": {
+      "technique": "v5.3d-card-exit-up",
+      "curve_id": "v5.3d-card-exit-up",
+      "property": "y"
+     },
+     "params": {
+      "axis": "y"
+     }
+    },
+    {
+     "name": "peekSnap",
+     "techniques": [
+      "v5.text-edge-peek-exit"
+     ],
+     "curve": null,
+     "params": {
+      "axis": "y"
+     },
+     "notes": "holds cut off by the edge, then leaves in two pictures"
+    },
+    {
+     "name": "pushIntoCut",
+     "techniques": [
+      "v5.cam-push-in-accelerate"
+     ],
+     "curve": {
+      "technique": "v5.cam-push-in-accelerate",
+      "curve_id": "v5.cam-push-in-accelerate",
+      "property": "scale"
+     },
+     "params": {
+      "axis": "scale"
+     }
+    },
+    {
+     "name": "punchBreak",
+     "techniques": [
+      "v7.cam-push-in-accelerating"
+     ],
+     "curve": {
+      "technique": "v7.cam-push-in-accelerating",
+      "curve_id": "v7.cam-push-in-accelerating",
+      "property": "scale"
+     },
+     "params": {
+      "axis": "scale"
+     }
+    },
+    {
+     "name": "oversizeLanding",
+     "techniques": [
+      "v8.cam-push-in-accelerating"
+     ],
+     "curve": {
+      "technique": "v8.cam-push-in-accelerating",
+      "curve_id": "v8.cam-push-in-accelerating",
+      "property": "scale"
+     },
+     "params": {
+      "axis": "scale",
+      "toScale": 1.62
+     }
+    },
+    {
+     "name": "pullIntoCut",
+     "techniques": [
+      "v6.cam-pull-back-cut"
+     ],
+     "curve": {
+      "technique": "v6.cam-pull-back-cut",
+      "curve_id": "v6.cam-pull-back-cut",
+      "property": "scale"
+     },
+     "params": {
+      "axis": "scale"
+     }
+    },
+    {
+     "name": "blurPullExit",
+     "techniques": [
+      "v7.cam-pull-back-blur-exit"
+     ],
+     "curve": {
+      "technique": "v7.cam-pull-back-blur-exit",
+      "curve_id": "v7.cam-pull-back-blur-exit",
+      "property": "scale"
+     },
+     "params": {
+      "axis": "scale",
+      "toScale": 0.835
+     }
+    }
+   ]
+  },
+  {
+   "name": "CutInSettle",
+   "group": "camera-move",
+   "kind": "camera",
+   "description": "After a hard cut the new view arrives offset, zoomed or blurred and still moving, and settles on a strong ease-out.",
+   "api": "{children: React.ReactNode; variant?: string} (moves the whole layer it wraps)",
+   "params": [
+    {
+     "name": "fromScale",
+     "unit": "factor",
+     "meaning": "scale on the cut frame"
+    },
+    {
+     "name": "fromY",
+     "unit": "%H",
+     "meaning": "offset on the cut frame"
+    }
+   ],
+   "default_variant": "zoomOut",
+   "variants": [
+    {
+     "name": "zoomOut",
+     "techniques": [
+      "v7.cam-zoom-out-settle-in"
+     ],
+     "curve": {
+      "technique": "v7.cam-zoom-out-settle-in",
+      "curve_id": "v7.cam-zoom-out-settle-in",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "blurLow",
+     "techniques": [
+      "v8.cam-cut-in-settle"
+     ],
+     "curve": {
+      "technique": "v8.cam-cut-in-settle",
+      "curve_id": "v8.cam-cut-in-settle",
+      "property": "y"
+     },
+     "params": {
+      "fromY": 5.3,
+      "fromScale": 0.94
+     }
+    },
+    {
+     "name": "throwUp",
+     "techniques": [
+      "v8.cam-whip-in-settle"
+     ],
+     "curve": {
+      "technique": "v8.cam-whip-in-settle",
+      "curve_id": "v8.cam-whip-in-settle",
+      "property": "y"
+     },
+     "params": {
+      "fromY": 60
+     }
+    },
+    {
+     "name": "slideLeft",
+     "techniques": [
+      "v8.cam-slide-in-left-settle"
+     ],
+     "curve": {
+      "technique": "v8.cam-slide-in-left-settle",
+      "curve_id": "v8.cam-slide-in-left-settle",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "zoomDown",
+     "techniques": [
+      "v4.layout-zoom-settle-in"
+     ],
+     "curve": {
+      "technique": "v4.layout-zoom-settle-in",
+      "curve_id": "v4.layout-zoom-settle-in",
+      "property": "scale"
+     },
+     "params": {
+      "fromScale": 1.112
+     }
+    },
+    {
+     "name": "punchIn",
+     "techniques": [
+      "v8.cam-punch-in-cut-settle"
+     ],
+     "curve": {
+      "technique": "v8.cam-punch-in-cut-settle",
+      "curve_id": "v8.cam-punch-in-cut-settle",
+      "property": "y"
+     },
+     "params": {},
+     "notes": "the cut is to a closer framing of the same layout"
+    },
+    {
+     "name": "ghostCarry",
+     "techniques": [
+      "v8.ui-ghost-card-band"
+     ],
+     "curve": null,
+     "params": {},
+     "notes": "an element of the previous layout rides the settle as a pale band"
+    }
+   ]
+  },
+  {
+   "name": "SteppedZoom",
+   "group": "camera-move",
+   "kind": "camera",
+   "description": "A zoom made of quick discrete steps between near-holds, or of stepped, differently centred crops each held to the next picture; the measured curve is the envelope the steps follow.",
+   "api": "{children: React.ReactNode; variant?: string} (moves the whole layer it wraps)",
+   "params": [
+    {
+     "name": "steps",
+     "unit": "count",
+     "meaning": "number of steps"
+    },
+    {
+     "name": "toScale",
+     "unit": "factor",
+     "meaning": "scale reached"
+    }
+   ],
+   "default_variant": "pullBack",
+   "variants": [
+    {
+     "name": "pullBack",
+     "techniques": [
+      "v1.cam-stepped-zoom-out"
+     ],
+     "curve": {
+      "technique": "v1.cam-stepped-zoom-out",
+      "curve_id": "v1.cam-stepped-zoom-out",
+      "property": "scale"
+     },
+     "params": {
+      "steps": 12,
+      "toScale": 0.32
+     }
+    },
+    {
+     "name": "punchStutter",
+     "techniques": [
+      "v6.trans-punch-in-stutter"
+     ],
+     "curve": {
+      "technique": "v6.trans-punch-in-stutter",
+      "curve_id": "v6.trans-punch-in-stutter",
+      "property": "scale"
+     },
+     "params": {
+      "steps": 5
+     }
+    }
+   ]
+  },
+  {
+   "name": "PerspectiveSwing",
+   "group": "three",
+   "kind": "3d",
+   "description": "A flat line or card turns in perspective: it morphs into a keystone taper right after landing, swings flat from a tilt while growing, or a mirrored pair turns its top edges apart and back.",
+   "api": "{children: React.ReactNode; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "angle",
+     "unit": "deg",
+     "meaning": "turn of the top edge"
+    }
+   ],
+   "default_variant": "taper",
+   "variants": [
+    {
+     "name": "taper",
+     "techniques": [
+      "v5.3d-perspective-swing"
+     ],
+     "curve": {
+      "technique": "v5.3d-perspective-swing",
+      "curve_id": "v5.3d-perspective-swing",
+      "property": "taper"
+     },
+     "params": {}
+    },
+    {
+     "name": "swingIn",
+     "techniques": [
+      "v5.text-type-swing-in"
+     ],
+     "curve": {
+      "technique": "v5.text-type-swing-in",
+      "curve_id": "v5.text-type-swing-in",
+      "property": "rotate"
+     },
+     "params": {},
+     "notes": "the line swings flat from its tilt while it types on"
+    },
+    {
+     "name": "mirrorPair",
+     "techniques": [
+      "v5.card-mirror-tilt"
+     ],
+     "curve": {
+      "technique": "v5.card-mirror-tilt",
+      "curve_id": "v5.card-mirror-tilt",
+      "property": "rotate"
+     },
+     "params": {
+      "angle": 9.8
+     }
+    }
+   ]
+  },
+  {
+   "name": "CardSpin3D",
+   "group": "three",
+   "kind": "3d",
+   "description": "A card turns in 3D: a half turn about its vertical axis braking to a frontal rest, a yaw then recede, a push back to rest size, or a light-up while a sheen crosses it.",
+   "api": "{children: React.ReactNode; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "angle",
+     "unit": "deg",
+     "meaning": "yaw reached"
+    },
+    {
+     "name": "fromScale",
+     "unit": "factor",
+     "meaning": "scale before the push back"
+    }
+   ],
+   "default_variant": "halfTurn",
+   "variants": [
+    {
+     "name": "halfTurn",
+     "techniques": [
+      "v5.3d-card-spin-y"
+     ],
+     "curve": {
+      "technique": "v5.3d-card-spin-y",
+      "curve_id": "v5.3d-card-spin-y",
+      "property": "rotate"
+     },
+     "params": {}
+    },
+    {
+     "name": "yawRecede",
+     "techniques": [
+      "v8.3d-card-turn-recede"
+     ],
+     "curve": {
+      "technique": "v8.3d-card-turn-recede",
+      "curve_id": "v8.3d-card-turn-recede",
+      "property": "rotate"
+     },
+     "params": {
+      "angle": 26.5
+     }
+    },
+    {
+     "name": "pushBack",
+     "techniques": [
+      "v5.3d-card-recede"
+     ],
+     "curve": null,
+     "params": {
+      "fromScale": 1.53
+     }
+    },
+    {
+     "name": "lightUp",
+     "techniques": [
+      "v5.3d-card-light-up"
+     ],
+     "curve": {
+      "technique": "v5.3d-card-light-up",
+      "curve_id": "v5.3d-card-light-up",
+      "property": "opacity"
+     },
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "LayerStack",
+   "group": "three",
+   "kind": "3d",
+   "description": "A stack of parallel layers in 3D: it separates along a diagonal, fans out, collapses back, one layer sinks on its own, the rear cards fold into the front one, or new cards land on its front on a fixed interval.",
+   "api": "{items: React.ReactNode[]; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "interval",
+     "unit": "frames",
+     "meaning": "frames between cards landing"
+    }
+   ],
+   "default_variant": "explode",
+   "variants": [
+    {
+     "name": "explode",
+     "techniques": [
+      "v6.3d-layer-explode"
+     ],
+     "curve": {
+      "technique": "v6.3d-layer-explode",
+      "curve_id": "v6.3d-layer-explode",
+      "property": "spread"
+     },
+     "params": {}
+    },
+    {
+     "name": "fanOut",
+     "techniques": [
+      "v8.3d-stack-fan-out"
+     ],
+     "curve": {
+      "technique": "v8.3d-stack-fan-out",
+      "curve_id": "v8.3d-stack-fan-out",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "collapse",
+     "techniques": [
+      "v6.3d-stack-collapse"
+     ],
+     "curve": {
+      "technique": "v6.3d-stack-collapse",
+      "curve_id": "v6.3d-stack-collapse",
+      "property": "spread"
+     },
+     "params": {}
+    },
+    {
+     "name": "layerSink",
+     "techniques": [
+      "v6.3d-layer-sink"
+     ],
+     "curve": {
+      "technique": "v6.3d-layer-sink",
+      "curve_id": "v6.3d-layer-sink",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "fold",
+     "techniques": [
+      "v8.card-stack-collapse"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "slamOn",
+     "techniques": [
+      "v8.card-deck-flip-stack"
+     ],
+     "curve": null,
+     "params": {
+      "interval": 4
+     }
+    }
+   ]
+  },
+  {
+   "name": "Camera3D",
+   "group": "three",
+   "kind": "3d",
+   "description": "The camera moves through a 3D scene: orbits, dollies with parallax, swings into perspective and pushes in, pushes until a layer flattens to the screen, shrinks a flat page into a stack, or flies down a one-point tunnel.",
+   "api": "{items: React.ReactNode[]; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "toScale",
+     "unit": "factor",
+     "meaning": "scale reached"
+    }
+   ],
+   "default_variant": "swingPush",
+   "variants": [
+    {
+     "name": "swingPush",
+     "techniques": [
+      "v5.cam-swing-3d-push"
+     ],
+     "curve": {
+      "technique": "v5.cam-swing-3d-push",
+      "curve_id": "v5.cam-swing-3d-push",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "orbitPush",
+     "techniques": [
+      "v6.cam-orbit-push"
+     ],
+     "curve": {
+      "technique": "v6.cam-orbit-push",
+      "curve_id": "v6.cam-orbit-push",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "dollyReframe",
+     "techniques": [
+      "v6.cam-dolly-reframe"
+     ],
+     "curve": {
+      "technique": "v6.cam-dolly-reframe",
+      "curve_id": "v6.cam-dolly-reframe",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "dollyParallax",
+     "techniques": [
+      "v6.cam-dolly-back-parallax"
+     ],
+     "curve": {
+      "technique": "v6.cam-dolly-back-parallax",
+      "curve_id": "v6.cam-dolly-back-parallax",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "pullWide",
+     "techniques": [
+      "v6.cam-pull-back-wide"
+     ],
+     "curve": {
+      "technique": "v6.cam-pull-back-wide",
+      "curve_id": "v6.cam-pull-back-wide",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "orbitDrift",
+     "techniques": [
+      "v5.cam-orbit-drift"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "pushFlatten",
+     "techniques": [
+      "v8.trans-stack-push-flatten"
+     ],
+     "curve": {
+      "technique": "v8.trans-stack-push-flatten",
+      "curve_id": "v8.trans-stack-push-flatten",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "shrinkIntoStack",
+     "techniques": [
+      "v8.trans-zoom-out-morph"
+     ],
+     "curve": {
+      "technique": "v8.trans-zoom-out-morph",
+      "curve_id": "v8.trans-zoom-out-morph",
+      "property": "scale"
+     },
+     "params": {
+      "toScale": 0.53
+     }
+    },
+    {
+     "name": "tunnelDolly",
+     "techniques": [
+      "v8.3d-tunnel-flythrough"
+     ],
+     "curve": {
+      "technique": "v8.3d-tunnel-flythrough",
+      "curve_id": "v8.3d-tunnel-flythrough",
+      "property": "scale"
+     },
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "GlobeRise",
+   "group": "three",
+   "kind": "3d",
+   "description": "The dome of a globe tiled with footage rises from the bottom edge on a strong ease-out, then spins about its vertical axis at a constant rate.",
+   "api": "{footage?: string[]; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "rise",
+     "unit": "%H",
+     "meaning": "rise from the bottom edge"
+    }
+   ],
+   "default_variant": "riseSpin",
+   "variants": [
+    {
+     "name": "riseSpin",
+     "techniques": [
+      "v6.3d-globe-rise"
+     ],
+     "curve": {
+      "technique": "v6.3d-globe-rise",
+      "curve_id": "v6.3d-globe-rise",
+      "property": "y"
+     },
+     "params": {
+      "rise": 50.9
+     }
+    }
+   ]
+  },
+  {
+   "name": "DepthFlyer",
+   "group": "three",
+   "kind": "3d",
+   "description": "Small folded 3D shapes fly into depth toward a vanishing point, shrinking and decelerating, each pulling a particle trail; or one dives out through the bottom edge.",
+   "api": "{tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "count",
+     "unit": "count",
+     "meaning": "flyers"
+    }
+   ],
+   "default_variant": "converge",
+   "variants": [
+    {
+     "name": "converge",
+     "techniques": [
+      "v5.3d-origami-converge"
+     ],
+     "curve": {
+      "technique": "v5.3d-origami-converge",
+      "curve_id": "v5.3d-origami-converge",
+      "property": "x"
+     },
+     "params": {
+      "count": 3
+     }
+    },
+    {
+     "name": "dive",
+     "techniques": [
+      "v5.3d-origami-dive"
+     ],
+     "curve": null,
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "OrbitRig",
+   "group": "three",
+   "kind": "3d",
+   "description": "A rig of rings orbits a centre as one rigid unit: halftone-dot circles spin about a tilted axis, passing in front of and behind the content, or a faint wireframe of orbit ellipses tumbles behind it.",
+   "api": "{children: React.ReactNode; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "degPerFrame",
+     "unit": "deg/frame",
+     "meaning": "spin rate"
+    }
+   ],
+   "default_variant": "rigidSpin",
+   "variants": [
+    {
+     "name": "rigidSpin",
+     "techniques": [
+      "v5.shape-halftone-orbit-rings"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "tumble",
+     "techniques": [
+      "v5.bg-orbit-wireframe-tumble"
+     ],
+     "curve": null,
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "PressBounce",
+   "group": "ui-controls",
+   "kind": "ui",
+   "description": "A pressed button, chip or row squashes about its centre, holds, and springs back (or stays pressed); state changes land on the deepest picture.",
+   "api": "{children: React.ReactNode; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "pressScale",
+     "unit": "factor",
+     "meaning": "scale at the bottom of the press"
+    },
+    {
+     "name": "hold",
+     "unit": "frames",
+     "meaning": "frames held pressed"
+    }
+   ],
+   "default_variant": "quick",
+   "variants": [
+    {
+     "name": "quick",
+     "techniques": [
+      "v1.ui-button-press"
+     ],
+     "curve": {
+      "technique": "v1.ui-button-press",
+      "curve_id": "v1.ui-button-press",
+      "property": "scale"
+     },
+     "params": {
+      "pressScale": 0.9,
+      "hold": 2
+     }
+    },
+    {
+     "name": "deep",
+     "techniques": [
+      "v4.ui-button-press"
+     ],
+     "curve": {
+      "technique": "v4.ui-button-press",
+      "curve_id": "v4.ui-button-press",
+      "property": "scale"
+     },
+     "params": {
+      "pressScale": 0.86
+     }
+    },
+    {
+     "name": "held",
+     "techniques": [
+      "v5.ui-button-press"
+     ],
+     "curve": {
+      "technique": "v5.ui-button-press",
+      "curve_id": "v5.ui-button-press",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "springBack",
+     "techniques": [
+      "v5.ui-chip-press"
+     ],
+     "curve": {
+      "technique": "v5.ui-chip-press",
+      "curve_id": "v5.ui-chip-press",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "pressSwap",
+     "techniques": [
+      "v5.ui-select-swap"
+     ],
+     "curve": {
+      "technique": "v5.ui-select-swap",
+      "curve_id": "v5.ui-select-swap",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "glowRelease",
+     "techniques": [
+      "v7.ui-button-press"
+     ],
+     "curve": null,
+     "params": {
+      "pressScale": 0.82
+     }
+    },
+    {
+     "name": "longHold",
+     "techniques": [
+      "v8.ui-button-press"
+     ],
+     "curve": null,
+     "params": {
+      "pressScale": 0.54
+     }
+    },
+    {
+     "name": "dropPress",
+     "techniques": [
+      "v7.ui-folder-drop-bounce"
+     ],
+     "curve": null,
+     "params": {
+      "pressScale": 0.78
+     }
+    }
+   ]
+  },
+  {
+   "name": "SeedGrow",
+   "group": "ui-controls",
+   "kind": "ui",
+   "description": "A box or pill is born as a seed (a dot, a dash, a thin line or a blurred speck) and grows to its size along one axis and then the other, on an explosive ease-out or with an overshoot; it can stretch with a typed label and collapse back to a line.",
+   "api": "{children: React.ReactNode; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "overshoot",
+     "unit": "factor",
+     "meaning": "size past rest at the peak"
+    },
+    {
+     "name": "anchor",
+     "unit": "left|centre|right",
+     "meaning": "fixed edge while it grows"
+    }
+   ],
+   "default_variant": "seedPop",
+   "variants": [
+    {
+     "name": "seedPop",
+     "techniques": [
+      "v7.ui-label-pop-in"
+     ],
+     "curve": {
+      "technique": "v7.ui-label-pop-in",
+      "curve_id": "v7.ui-label-pop-in",
+      "property": "width"
+     },
+     "params": {}
+    },
+    {
+     "name": "widenOvershoot",
+     "techniques": [
+      "v7.ui-label-widen-overshoot"
+     ],
+     "curve": {
+      "technique": "v7.ui-label-widen-overshoot",
+      "curve_id": "v7.ui-label-widen-overshoot",
+      "property": "width"
+     },
+     "params": {}
+    },
+    {
+     "name": "cornerFollow",
+     "techniques": [
+      "v7.ui-corner-handles"
+     ],
+     "curve": null,
+     "params": {},
+     "notes": "small squares fly out to the box corners and follow its resize"
+    },
+    {
+     "name": "speckStretch",
+     "techniques": [
+      "v7.ui-row-stretch-in"
+     ],
+     "curve": {
+      "technique": "v7.ui-row-stretch-in",
+      "curve_id": "v7.ui-row-stretch-in",
+      "property": "width"
+     },
+     "params": {}
+    },
+    {
+     "name": "edgeStretch",
+     "techniques": [
+      "v8.ui-card-stretch-in-blur"
+     ],
+     "curve": {
+      "technique": "v8.ui-card-stretch-in-blur",
+      "curve_id": "v8.ui-card-stretch-in-blur",
+      "property": "width"
+     },
+     "params": {
+      "anchor": "left"
+     }
+    },
+    {
+     "name": "dotToPill",
+     "techniques": [
+      "v7.shape-dot-to-pill"
+     ],
+     "curve": {
+      "technique": "v7.shape-dot-to-pill",
+      "curve_id": "v7.shape-dot-to-pill",
+      "property": "height"
+     },
+     "params": {
+      "anchor": "left"
+     }
+    },
+    {
+     "name": "lineToPill",
+     "techniques": [
+      "v7.shape-line-to-pill"
+     ],
+     "curve": {
+      "technique": "v7.shape-line-to-pill",
+      "curve_id": "v7.shape-line-to-pill",
+      "property": "width"
+     },
+     "params": {}
+    },
+    {
+     "name": "pillToLine",
+     "techniques": [
+      "v7.shape-pill-to-line-out"
+     ],
+     "curve": {
+      "technique": "v7.shape-pill-to-line-out",
+      "curve_id": "v7.shape-pill-to-line-out",
+      "property": "width"
+     },
+     "params": {}
+    },
+    {
+     "name": "growType",
+     "techniques": [
+      "v8.ui-status-pill-grow-type"
+     ],
+     "curve": {
+      "technique": "v8.ui-status-pill-grow-type",
+      "curve_id": "v8.ui-status-pill-grow-type",
+      "property": "width"
+     },
+     "params": {
+      "anchor": "left"
+     }
+    },
+    {
+     "name": "chainIn",
+     "techniques": [
+      "v8.ui-callout-pop-in"
+     ],
+     "curve": {
+      "technique": "v8.ui-callout-pop-in",
+      "curve_id": "v8.ui-callout-pop-in",
+      "property": "scale"
+     },
+     "params": {},
+     "notes": "anchor dot, leader line, then the pill grows from a speck"
+    },
+    {
+     "name": "chainOut",
+     "techniques": [
+      "v8.ui-callout-collapse-out"
+     ],
+     "curve": {
+      "technique": "v8.ui-callout-collapse-out",
+      "curve_id": "v8.ui-callout-collapse-out",
+      "property": "scale"
+     },
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "Dropdown",
+   "group": "ui-controls",
+   "kind": "ui",
+   "description": "A menu opens from its anchor: it unfolds or scales up with motion blur while the camera re-frames to it, and closes by squashing back into its anchor.",
+   "api": "{items: React.ReactNode[]; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "fromScale",
+     "unit": "factor",
+     "meaning": "menu scale when it starts to open"
+    }
+   ],
+   "default_variant": "unfold",
+   "variants": [
+    {
+     "name": "unfold",
+     "techniques": [
+      "v5.ui-dropdown-reveal"
+     ],
+     "curve": {
+      "technique": "v5.ui-dropdown-reveal",
+      "curve_id": "v5.ui-dropdown-reveal",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "scaleIn",
+     "techniques": [
+      "v7.ui-dropdown-scale-in"
+     ],
+     "curve": {
+      "technique": "v7.ui-dropdown-scale-in",
+      "curve_id": "v7.ui-dropdown-scale-in",
+      "property": "scale"
+     },
+     "params": {
+      "fromScale": 0.58
+     }
+    }
+   ]
+  },
+  {
+   "name": "Counter",
+   "group": "ui-controls",
+   "kind": "ui",
+   "description": "A number changes in place: it counts with an accelerating rate, ticks as a real-time timer, steps on events, swaps readings once per picture, or a dial knob fast-forwards around its ring while its digits count.",
+   "api": "{from: number; to: number; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "angle",
+     "unit": "deg",
+     "meaning": "knob travel"
+    }
+   ],
+   "default_variant": "accelerating",
+   "variants": [
+    {
+     "name": "accelerating",
+     "techniques": [
+      "v1.counter-accelerating-count"
+     ],
+     "curve": {
+      "technique": "v1.counter-accelerating-count",
+      "curve_id": "v1.counter-accelerating-count",
+      "property": "value"
+     },
+     "params": {}
+    },
+    {
+     "name": "realTime",
+     "techniques": [
+      "v3.counter-elapsed-timer"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "stepOnArrival",
+     "techniques": [
+      "v4.counter-step"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "perPictureSwap",
+     "techniques": [
+      "v7.counter-ui-readout-step"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "fastForward",
+     "techniques": [
+      "v6.counter-dial-fastforward"
+     ],
+     "curve": {
+      "technique": "v6.counter-dial-fastforward",
+      "curve_id": "v6.counter-dial-fastforward",
+      "property": "rotate"
+     },
+     "params": {
+      "angle": 175
+     }
+    }
+   ]
+  },
+  {
+   "name": "ItemRiseIn",
+   "group": "ui-feed",
+   "kind": "ui",
+   "description": "List or feed items appear one at a time below the earlier ones: each fades in while rising a few pixels on an ease-out, or pops in at full value one per picture, in reading order.",
+   "api": "{items: React.ReactNode[]; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "rise",
+     "unit": "px1080",
+     "meaning": "rise of each item"
+    },
+    {
+     "name": "stagger",
+     "unit": "frames",
+     "meaning": "frames between successive units"
+    }
+   ],
+   "default_variant": "riseFade",
+   "variants": [
+    {
+     "name": "riseFade",
+     "techniques": [
+      "v2.ui-list-item-rise-fade"
+     ],
+     "curve": {
+      "technique": "v2.ui-list-item-rise-fade",
+      "curve_id": "v2.ui-list-item-rise-fade",
+      "property": "opacity"
+     },
+     "params": {}
+    },
+    {
+     "name": "makeRoomRise",
+     "techniques": [
+      "v4.ui-chat-item-rise-fade-in"
+     ],
+     "curve": {
+      "technique": "v4.ui-chat-item-rise-fade-in",
+      "curve_id": "v4.ui-chat-item-rise-fade-in",
+      "property": "opacity"
+     },
+     "params": {}
+    },
+    {
+     "name": "fadeInPlace",
+     "techniques": [
+      "v3.ui-row-fade-in"
+     ],
+     "curve": {
+      "technique": "v3.ui-row-fade-in",
+      "curve_id": "v3.ui-row-fade-in",
+      "property": "opacity"
+     },
+     "params": {
+      "rise": 0
+     }
+    },
+    {
+     "name": "quickFade",
+     "techniques": [
+      "v1.ui-chat-bubble-in"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "popStagger",
+     "techniques": [
+      "v7.ui-list-stagger-in"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "fadeAcross",
+     "techniques": [
+      "v7.ui-card-stagger-fade"
+     ],
+     "curve": {
+      "technique": "v7.ui-card-stagger-fade",
+      "curve_id": "v7.ui-card-stagger-fade",
+      "property": "opacity"
+     },
+     "params": {}
+    },
+    {
+     "name": "lateFade",
+     "techniques": [
+      "v8.ui-reply-meta-fade-in"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "blurSlide",
+     "techniques": [
+      "v8.ui-thumb-slide-in-blur"
+     ],
+     "curve": {
+      "technique": "v8.ui-thumb-slide-in-blur",
+      "curve_id": "v8.ui-thumb-slide-in-blur",
+      "property": "y"
+     },
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "StepScroll",
+   "group": "ui-feed",
+   "kind": "ui",
+   "description": "A list moves up by one item's height as a new item arrives: in a single frame, or as an eased step over a slow base drift.",
+   "api": "{items: React.ReactNode[]; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "baseDrift",
+     "unit": "%H per frame",
+     "meaning": "slow drift between steps"
+    }
+   ],
+   "default_variant": "eased",
+   "variants": [
+    {
+     "name": "eased",
+     "techniques": [
+      "v8.ui-list-step-scroll"
+     ],
+     "curve": {
+      "technique": "v8.ui-list-step-scroll",
+      "curve_id": "v8.ui-list-step-scroll",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "thread",
+     "techniques": [
+      "v8.ui-thread-step-scroll"
+     ],
+     "curve": {
+      "technique": "v8.ui-thread-step-scroll",
+      "curve_id": "v8.ui-thread-step-scroll",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "jump",
+     "techniques": [
+      "v3.ui-chat-step-scroll"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "jumpBottom",
+     "techniques": [
+      "v4.ui-chat-list-step-scroll"
+     ],
+     "curve": null,
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "PageScroll",
+   "group": "ui-feed",
+   "kind": "ui",
+   "description": "Page content scrolls inside a still frame on a smooth ease-in-out, on a momentum curve with a long deceleration, or arrives mid-scroll and decelerates to rest.",
+   "api": "{children: React.ReactNode; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "travel",
+     "unit": "%H",
+     "meaning": "scroll distance"
+    }
+   ],
+   "default_variant": "easeInOut",
+   "variants": [
+    {
+     "name": "easeInOut",
+     "techniques": [
+      "v2.ui-page-scroll"
+     ],
+     "curve": {
+      "technique": "v2.ui-page-scroll",
+      "curve_id": "v2.ui-page-scroll",
+      "property": "y"
+     },
+     "params": {
+      "travel": 51.9
+     }
+    },
+    {
+     "name": "momentum",
+     "techniques": [
+      "v7.ui-page-scroll-momentum"
+     ],
+     "curve": {
+      "technique": "v7.ui-page-scroll-momentum",
+      "curve_id": "v7.ui-page-scroll-momentum",
+      "property": "y"
+     },
+     "params": {
+      "travel": 104
+     }
+    },
+    {
+     "name": "decelerate",
+     "techniques": [
+      "v7.ui-scroll-settle"
+     ],
+     "curve": {
+      "technique": "v7.ui-scroll-settle",
+      "curve_id": "v7.ui-scroll-settle",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "slowBack",
+     "techniques": [
+      "v6.ui-code-scroll"
+     ],
+     "curve": null,
+     "params": {},
+     "notes": "scrolls back to the first line, slowing"
+    }
+   ]
+  },
+  {
+   "name": "Marquee",
+   "group": "ui-feed",
+   "kind": "ui",
+   "description": "A row scrolls sideways at a constant speed: it arrives fast and brakes into its cruise, ramps its speed between holds, or stops dead after a number of slots.",
+   "api": "{items: React.ReactNode[]; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "speed",
+     "unit": "%W per frame",
+     "meaning": "cruise speed"
+    }
+   ],
+   "default_variant": "constant",
+   "variants": [
+    {
+     "name": "constant",
+     "techniques": [
+      "v8.layout-marquee-scroll"
+     ],
+     "curve": null,
+     "params": {
+      "speed": 0.455
+     }
+    },
+    {
+     "name": "brakeIn",
+     "techniques": [
+      "v8.layout-marquee-whip-in"
+     ],
+     "curve": {
+      "technique": "v8.layout-marquee-whip-in",
+      "curve_id": "v8.layout-marquee-whip-in",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "deadStop",
+     "techniques": [
+      "v3.ui-logo-marquee"
+     ],
+     "curve": {
+      "technique": "v3.ui-logo-marquee",
+      "curve_id": "v3.ui-logo-marquee",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "speedRamp",
+     "techniques": [
+      "v6.card-carousel-speed-ramp"
+     ],
+     "curve": {
+      "technique": "v6.card-carousel-speed-ramp",
+      "curve_id": "v6.card-carousel-speed-ramp",
+      "property": "x"
+     },
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "BusyIndicator",
+   "group": "ui-feed",
+   "kind": "ui",
+   "description": "A working indicator loops while something is pending: a glyph or dot spinner steps through its frames, an arc spins at a constant rate, an icon pulses its tone, a placeholder flashes on and off, or a mark makes one full turn and stops.",
+   "api": "{tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "stepFrames",
+     "unit": "frames",
+     "meaning": "frames per spinner step"
+    },
+    {
+     "name": "degPerFrame",
+     "unit": "deg/frame",
+     "meaning": "rotation rate"
+    }
+   ],
+   "default_variant": "glyphCycle",
+   "variants": [
+    {
+     "name": "glyphCycle",
+     "techniques": [
+      "v4.ui-spinner-glyph-cycle"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "dotCycle",
+     "techniques": [
+      "v3.icon-dot-spinner"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "cycleWithTimer",
+     "techniques": [
+      "v1.ui-status-timer"
+     ],
+     "curve": null,
+     "params": {
+      "stepFrames": 5
+     }
+    },
+    {
+     "name": "constantSpin",
+     "techniques": [
+      "v7.ui-spinner-rotate"
+     ],
+     "curve": null,
+     "params": {
+      "degPerFrame": 6.8
+     }
+    },
+    {
+     "name": "turning",
+     "techniques": [
+      "v8.icon-activity-spinner"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "tonePulse",
+     "techniques": [
+      "v2.ui-status-avatar-pulse"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "onOff",
+     "techniques": [
+      "v7.ui-gap-placeholder-blink"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "fullTurn",
+     "techniques": [
+      "v7.logo-spin-while-typing"
+     ],
+     "curve": {
+      "technique": "v7.logo-spin-while-typing",
+      "curve_id": "v7.logo-spin-while-typing",
+      "property": "rotate"
+     },
+     "params": {
+      "degPerFrame": 4.0
+     }
+    }
+   ]
+  },
+  {
+   "name": "FloatingPill",
+   "group": "ui-feed",
+   "kind": "ui",
+   "description": "A floating status pill or toast with its icon: it enters (drops along a curve, rises through the bottom edge with an overshoot, whips up), drifts against the layer under it, and leaves (smears out, fades and slides, lifts and drops away).",
+   "api": "{children: React.ReactNode; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "overshoot",
+     "unit": "%H",
+     "meaning": "travel past rest"
+    }
+   ],
+   "default_variant": "dropIn",
+   "variants": [
+    {
+     "name": "dropIn",
+     "techniques": [
+      "v8.ui-status-pill-drop-in"
+     ],
+     "curve": {
+      "technique": "v8.ui-status-pill-drop-in",
+      "curve_id": "v8.ui-status-pill-drop-in",
+      "property": "progress"
+     },
+     "params": {}
+    },
+    {
+     "name": "riseLevel",
+     "techniques": [
+      "v8.ui-status-pill-rise-level"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "whipUp",
+     "techniques": [
+      "v8.ui-status-pill-whip-in-up"
+     ],
+     "curve": {
+      "technique": "v8.ui-status-pill-whip-in-up",
+      "curve_id": "v8.ui-status-pill-whip-in-up",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "counterDrift",
+     "techniques": [
+      "v8.ui-status-pill-drift"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "trackFootage",
+     "techniques": [
+      "v8.ui-overlay-follow-footage"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "smearOut",
+     "techniques": [
+      "v8.fx-overlay-vertical-smear-out"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "edgeRise",
+     "techniques": [
+      "v6.ui-pill-rise"
+     ],
+     "curve": {
+      "technique": "v6.ui-pill-rise",
+      "curve_id": "v6.ui-pill-rise",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "overshootRise",
+     "techniques": [
+      "v8.ui-prompt-pill-rise-in"
+     ],
+     "curve": {
+      "technique": "v8.ui-prompt-pill-rise-in",
+      "curve_id": "v8.ui-prompt-pill-rise-in",
+      "property": "y"
+     },
+     "params": {
+      "overshoot": 2.0
+     }
+    },
+    {
+     "name": "liftDrop",
+     "techniques": [
+      "v8.ui-pill-anticipate-drop-out"
+     ],
+     "curve": {
+      "technique": "v8.ui-pill-anticipate-drop-out",
+      "curve_id": "v8.ui-pill-anticipate-drop-out",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "toastIn",
+     "techniques": [
+      "v8.ui-toast-fade-in"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "toastOut",
+     "techniques": [
+      "v8.ui-toast-fade-slide-out"
+     ],
+     "curve": {
+      "technique": "v8.ui-toast-fade-slide-out",
+      "curve_id": "v8.ui-toast-fade-slide-out",
+      "property": "opacity"
+     },
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "SlideSettle",
+   "group": "cards",
+   "kind": "layout",
+   "description": "An element shifts a short distance into place while it fades in or sharpens, on a long ease-out; more follow on a stagger.",
+   "api": "{items: React.ReactNode[]; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "fromX",
+     "unit": "%W",
+     "meaning": "horizontal offset at the start"
+    },
+    {
+     "name": "fromY",
+     "unit": "%H",
+     "meaning": "vertical offset at the start"
+    },
+    {
+     "name": "stagger",
+     "unit": "frames",
+     "meaning": "frames between successive units"
+    }
+   ],
+   "default_variant": "fadeSlide",
+   "variants": [
+    {
+     "name": "fadeSlide",
+     "techniques": [
+      "v1.card-slide-fade-in"
+     ],
+     "curve": {
+      "technique": "v1.card-slide-fade-in",
+      "curve_id": "v1.card-slide-fade-in",
+      "property": "x"
+     },
+     "params": {
+      "fromX": 8.6,
+      "stagger": 3
+     }
+    },
+    {
+     "name": "longThrow",
+     "techniques": [
+      "v8.layout-header-slide-left"
+     ],
+     "curve": {
+      "technique": "v8.layout-header-slide-left",
+      "curve_id": "v8.layout-header-slide-left",
+      "property": "x"
+     },
+     "params": {
+      "fromX": 28
+     }
+    },
+    {
+     "name": "onePicture",
+     "techniques": [
+      "v5.ui-chip-slide-in"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "deblurRise",
+     "techniques": [
+      "v8.ui-card-rise-deblur-in"
+     ],
+     "curve": {
+      "technique": "v8.ui-card-rise-deblur-in",
+      "curve_id": "v8.ui-card-rise-deblur-in",
+      "property": "y"
+     },
+     "params": {
+      "fromY": 7.1
+     }
+    },
+    {
+     "name": "fadeRise",
+     "techniques": [
+      "v8.card-rise-fade-in"
+     ],
+     "curve": {
+      "technique": "v8.card-rise-fade-in",
+      "curve_id": "v8.card-rise-fade-in",
+      "property": "opacity"
+     },
+     "params": {
+      "fromY": 4.7
+     }
+    },
+    {
+     "name": "fanOut",
+     "techniques": [
+      "v8.card-column-fan-out"
+     ],
+     "curve": {
+      "technique": "v8.card-column-fan-out",
+      "curve_id": "v8.card-column-fan-out",
+      "property": "y"
+     },
+     "params": {
+      "fromY": 12
+     }
+    },
+    {
+     "name": "dropSettle",
+     "techniques": [
+      "v8.ui-sidebar-drop-in"
+     ],
+     "curve": {
+      "technique": "v8.ui-sidebar-drop-in",
+      "curve_id": "v8.ui-sidebar-drop-in",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "riseBuild",
+     "techniques": [
+      "v8.ui-composer-build"
+     ],
+     "curve": {
+      "technique": "v8.ui-composer-build",
+      "curve_id": "v8.ui-composer-build",
+      "property": "y"
+     },
+     "params": {
+      "fromY": 3.4
+     }
+    }
+   ]
+  },
+  {
+   "name": "EdgeEnter",
+   "group": "cards",
+   "kind": "layout",
+   "description": "An element enters from beyond a frame edge with directional motion blur and lands on a hard ease-out, sometimes with a small overshoot.",
+   "api": "{children: React.ReactNode; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "overshoot",
+     "unit": "%H",
+     "meaning": "travel past rest"
+    }
+   ],
+   "default_variant": "hardLand",
+   "variants": [
+    {
+     "name": "hardLand",
+     "techniques": [
+      "v5.card-rise-drop-in"
+     ],
+     "curve": {
+      "technique": "v5.card-rise-drop-in",
+      "curve_id": "v5.card-rise-drop-in",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "smearRise",
+     "techniques": [
+      "v7.card-rise-in"
+     ],
+     "curve": {
+      "technique": "v7.card-rise-in",
+      "curve_id": "v7.card-rise-in",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "dropDecelerate",
+     "techniques": [
+      "v7.ui-window-drop-in"
+     ],
+     "curve": {
+      "technique": "v7.ui-window-drop-in",
+      "curve_id": "v7.ui-window-drop-in",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "blurSlide",
+     "techniques": [
+      "v6.ui-dial-slide-in"
+     ],
+     "curve": {
+      "technique": "v6.ui-dial-slide-in",
+      "curve_id": "v6.ui-dial-slide-in",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "trailSlide",
+     "techniques": [
+      "v6.shape-arrow-slide-in"
+     ],
+     "curve": null,
+     "params": {},
+     "notes": "a long arrow with ghost trails"
+    },
+    {
+     "name": "streakDrop",
+     "techniques": [
+      "v7.shape-arrow-drop-in"
+     ],
+     "curve": {
+      "technique": "v7.shape-arrow-drop-in",
+      "curve_id": "v7.shape-arrow-drop-in",
+      "property": "y"
+     },
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "ScaleFade",
+   "group": "cards",
+   "kind": "layout",
+   "description": "A group fades in while growing slightly about its centre (and rising) on an ease-out, or fades out while shrinking or zooming slightly on an ease-in.",
+   "api": "{items: React.ReactNode[]; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "fromScale",
+     "unit": "factor",
+     "meaning": "scale at the start of an entrance"
+    },
+    {
+     "name": "toScale",
+     "unit": "factor",
+     "meaning": "scale at the end of an exit"
+    },
+    {
+     "name": "rise",
+     "unit": "%H",
+     "meaning": "vertical travel"
+    },
+    {
+     "name": "stagger",
+     "unit": "frames",
+     "meaning": "frames between successive units"
+    }
+   ],
+   "default_variant": "growIn",
+   "variants": [
+    {
+     "name": "growIn",
+     "techniques": [
+      "v3.ui-panel-grow-fade-in"
+     ],
+     "curve": {
+      "technique": "v3.ui-panel-grow-fade-in",
+      "curve_id": "v3.ui-panel-grow-fade-in",
+      "property": "opacity"
+     },
+     "params": {
+      "fromScale": 0.973
+     }
+    },
+    {
+     "name": "centreGrowIn",
+     "techniques": [
+      "v1.ui-prompt-pop-in"
+     ],
+     "curve": {
+      "technique": "v1.ui-prompt-pop-in",
+      "curve_id": "v1.ui-prompt-pop-in",
+      "property": "opacity"
+     },
+     "params": {
+      "fromScale": 0.977
+     }
+    },
+    {
+     "name": "riseGrowIn",
+     "techniques": [
+      "v4.card-rise-scale-fade-in"
+     ],
+     "curve": {
+      "technique": "v4.card-rise-scale-fade-in",
+      "curve_id": "v4.card-rise-scale-fade-in",
+      "property": "opacity"
+     },
+     "params": {
+      "fromScale": 0.97,
+      "rise": 2.8,
+      "stagger": 3
+     }
+    },
+    {
+     "name": "staggerIn",
+     "techniques": [
+      "v4.layout-team-stagger-fade"
+     ],
+     "curve": {
+      "technique": "v4.layout-team-stagger-fade",
+      "curve_id": "v4.layout-team-stagger-fade",
+      "property": "opacity"
+     },
+     "params": {
+      "stagger": 3
+     }
+    },
+    {
+     "name": "shrinkOut",
+     "techniques": [
+      "v3.ui-panel-shrink-fade-out"
+     ],
+     "curve": {
+      "technique": "v3.ui-panel-shrink-fade-out",
+      "curve_id": "v3.ui-panel-shrink-fade-out",
+      "property": "opacity"
+     },
+     "params": {
+      "toScale": 0.97
+     }
+    },
+    {
+     "name": "shrinkCut",
+     "techniques": [
+      "v1.card-shrink-fade-out"
+     ],
+     "curve": {
+      "technique": "v1.card-shrink-fade-out",
+      "curve_id": "v1.card-shrink-fade-out",
+      "property": "opacity"
+     },
+     "params": {
+      "toScale": 0.966
+     }
+    },
+    {
+     "name": "riseZoomOut",
+     "techniques": [
+      "v1.layout-send-off-exit"
+     ],
+     "curve": {
+      "technique": "v1.layout-send-off-exit",
+      "curve_id": "v1.layout-send-off-exit",
+      "property": "y"
+     },
+     "params": {
+      "rise": 3.4
+     }
+    },
+    {
+     "name": "zoomOut",
+     "techniques": [
+      "v4.layout-zoom-fade-out"
+     ],
+     "curve": {
+      "technique": "v4.layout-zoom-fade-out",
+      "curve_id": "v4.layout-zoom-fade-out",
+      "property": "opacity"
+     },
+     "params": {
+      "toScale": 1.032
+     }
+    },
+    {
+     "name": "shrinkEach",
+     "techniques": [
+      "v4.layout-shrink-fade-out"
+     ],
+     "curve": {
+      "technique": "v4.layout-shrink-fade-out",
+      "curve_id": "v4.layout-shrink-fade-out",
+      "property": "opacity"
+     },
+     "params": {
+      "toScale": 0.944
+     }
+    }
+   ]
+  },
+  {
+   "name": "OversizeSettle",
+   "group": "cards",
+   "kind": "layout",
+   "description": "An element enters oversized (often blurred and cut by the frame edge) and shrinks to rest about its anchor on a fast-start ease-out.",
+   "api": "{children: React.ReactNode; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "fromScale",
+     "unit": "factor",
+     "meaning": "scale on the first frame"
+    }
+   ],
+   "default_variant": "settle",
+   "variants": [
+    {
+     "name": "settle",
+     "techniques": [
+      "v6.text-scale-down-settle"
+     ],
+     "curve": {
+      "technique": "v6.text-scale-down-settle",
+      "curve_id": "v6.text-scale-down-settle",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "hugeShrink",
+     "techniques": [
+      "v6.text-word-shrink-in"
+     ],
+     "curve": {
+      "technique": "v6.text-word-shrink-in",
+      "curve_id": "v6.text-word-shrink-in",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "blurShrink",
+     "techniques": [
+      "v7.icon-tile-scale-down-in"
+     ],
+     "curve": {
+      "technique": "v7.icon-tile-scale-down-in",
+      "curve_id": "v7.icon-tile-scale-down-in",
+      "property": "scale"
+     },
+     "params": {
+      "fromScale": 2.2
+     }
+    },
+    {
+     "name": "quickSettle",
+     "techniques": [
+      "v7.ui-button-oversize-settle"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "riseSettle",
+     "techniques": [
+      "v5.card-scale-settle"
+     ],
+     "curve": {
+      "technique": "v5.card-scale-settle",
+      "curve_id": "v5.card-scale-settle",
+      "property": "scale"
+     },
+     "params": {
+      "fromScale": 2.26
+     }
+    }
+   ]
+  },
+  {
+   "name": "MakeRoom",
+   "group": "layout",
+   "kind": "layout",
+   "description": "A settled block moves, shrinks or re-centres to make room for what arrives next: it rises to the top band, slides and shrinks aside, re-centres as content is inserted, or opens a gap inside a line.",
+   "api": "{children: React.ReactNode; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "travelX",
+     "unit": "%W",
+     "meaning": "horizontal travel"
+    },
+    {
+     "name": "travelY",
+     "unit": "%H",
+     "meaning": "vertical travel"
+    },
+    {
+     "name": "toScale",
+     "unit": "factor",
+     "meaning": "scale reached"
+    }
+   ],
+   "default_variant": "riseTop",
+   "variants": [
+    {
+     "name": "riseTop",
+     "techniques": [
+      "v6.layout-rise-make-room"
+     ],
+     "curve": {
+      "technique": "v6.layout-rise-make-room",
+      "curve_id": "v6.layout-rise-make-room",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "riseShort",
+     "techniques": [
+      "v7.layout-rise-make-room"
+     ],
+     "curve": {
+      "technique": "v7.layout-rise-make-room",
+      "curve_id": "v7.layout-rise-make-room",
+      "property": "y"
+     },
+     "params": {
+      "travelY": 3.9
+     }
+    },
+    {
+     "name": "shrinkAside",
+     "techniques": [
+      "v6.layout-slide-make-room"
+     ],
+     "curve": {
+      "technique": "v6.layout-slide-make-room",
+      "curve_id": "v6.layout-slide-make-room",
+      "property": "x"
+     },
+     "params": {
+      "travelX": 26.4,
+      "toScale": 0.64
+     }
+    },
+    {
+     "name": "openGap",
+     "techniques": [
+      "v7.layout-slide-make-room"
+     ],
+     "curve": {
+      "technique": "v7.layout-slide-make-room",
+      "curve_id": "v7.layout-slide-make-room",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "reflow",
+     "techniques": [
+      "v6.layout-reflow-slide"
+     ],
+     "curve": {
+      "technique": "v6.layout-reflow-slide",
+      "curve_id": "v6.layout-reflow-slide",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "liftShrink",
+     "techniques": [
+      "v5.text-lift-to-header"
+     ],
+     "curve": {
+      "technique": "v5.text-lift-to-header",
+      "curve_id": "v5.text-lift-to-header",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "recenter",
+     "techniques": [
+      "v8.layout-lockup-recenter"
+     ],
+     "curve": {
+      "technique": "v8.layout-lockup-recenter",
+      "curve_id": "v8.layout-lockup-recenter",
+      "property": "x"
+     },
+     "params": {
+      "travelX": 14.9
+     }
+    },
+    {
+     "name": "centreSlide",
+     "techniques": [
+      "v5.ui-box-slide"
+     ],
+     "curve": {
+      "technique": "v5.ui-box-slide",
+      "curve_id": "v5.ui-box-slide",
+      "property": "x"
+     },
+     "params": {
+      "travelX": 25.7
+     }
+    },
+    {
+     "name": "groupSnap",
+     "techniques": [
+      "v5.ui-group-reframe"
+     ],
+     "curve": {
+      "technique": "v5.ui-group-reframe",
+      "curve_id": "v5.ui-group-reframe",
+      "property": "y"
+     },
+     "params": {
+      "travelY": 14.8
+     }
+    }
+   ]
+  },
+  {
+   "name": "SplitApart",
+   "group": "layout",
+   "kind": "layout",
+   "description": "Parts of a block move apart: lines slide to opposite sides, a line splits up and down, split lines whip out in their directions, grid spacing opens, settled lines kick apart and lock again, or one element becomes a mirrored pair.",
+   "api": "{items: React.ReactNode[]; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "separation",
+     "unit": "%W",
+     "meaning": "final separation"
+    }
+   ],
+   "default_variant": "splitShift",
+   "variants": [
+    {
+     "name": "splitShift",
+     "techniques": [
+      "v6.layout-line-split-shift"
+     ],
+     "curve": {
+      "technique": "v6.layout-line-split-shift",
+      "curve_id": "v6.layout-line-split-shift",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "splitMorph",
+     "techniques": [
+      "v6.trans-split-morph"
+     ],
+     "curve": {
+      "technique": "v6.trans-split-morph",
+      "curve_id": "v6.trans-split-morph",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "whipOut",
+     "techniques": [
+      "v6.layout-split-whip-out"
+     ],
+     "curve": {
+      "technique": "v6.layout-split-whip-out",
+      "curve_id": "v6.layout-split-whip-out",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "gridSpread",
+     "techniques": [
+      "v6.grid-spread-out"
+     ],
+     "curve": {
+      "technique": "v6.grid-spread-out",
+      "curve_id": "v6.grid-spread-out",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "kickApart",
+     "techniques": [
+      "v5.text-line-counter-shift"
+     ],
+     "curve": {
+      "technique": "v5.text-line-counter-shift",
+      "curve_id": "v5.text-line-counter-shift",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "mirrorPair",
+     "techniques": [
+      "v8.particle-mascot-split"
+     ],
+     "curve": {
+      "technique": "v8.particle-mascot-split",
+      "curve_id": "v8.particle-mascot-split",
+      "property": "x"
+     },
+     "params": {
+      "separation": 38.4
+     }
+    }
+   ]
+  },
+  {
+   "name": "LockupSlide",
+   "group": "layout",
+   "kind": "layout",
+   "description": "A mark slides aside on a symmetric ease-in-out (optionally shrinking) to make room for the wordmark, which appears in its place as the slide ends.",
+   "api": "{children: React.ReactNode; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "travelX",
+     "unit": "%W",
+     "meaning": "slide distance"
+    },
+    {
+     "name": "toScale",
+     "unit": "factor",
+     "meaning": "mark scale at the end"
+    }
+   ],
+   "default_variant": "medium",
+   "variants": [
+    {
+     "name": "medium",
+     "techniques": [
+      "v1.logo-lockup-slide"
+     ],
+     "curve": {
+      "technique": "v1.logo-lockup-slide",
+      "curve_id": "v1.logo-lockup-slide",
+      "property": "x"
+     },
+     "params": {
+      "travelX": 13.5
+     }
+    },
+    {
+     "name": "shrinkWide",
+     "techniques": [
+      "v2.logo-lockup-slide"
+     ],
+     "curve": {
+      "technique": "v2.logo-lockup-slide",
+      "curve_id": "v2.logo-lockup-slide",
+      "property": "x"
+     },
+     "params": {
+      "travelX": 33.3,
+      "toScale": 0.404
+     }
+    },
+    {
+     "name": "wide",
+     "techniques": [
+      "v3.logo-lockup-slide"
+     ],
+     "curve": {
+      "technique": "v3.logo-lockup-slide",
+      "curve_id": "v3.logo-lockup-slide",
+      "property": "x"
+     },
+     "params": {
+      "travelX": 28.5
+     }
+    },
+    {
+     "name": "short",
+     "techniques": [
+      "v4.logo-lockup-slide"
+     ],
+     "curve": {
+      "technique": "v4.logo-lockup-slide",
+      "curve_id": "v4.logo-lockup-slide",
+      "property": "x"
+     },
+     "params": {
+      "travelX": 10.1
+     }
+    }
+   ]
+  },
+  {
+   "name": "CaptionDrift",
+   "group": "layout",
+   "kind": "layout",
+   "description": "Caption lines stand offset like stairs and the whole block slides at a constant velocity for its whole life, away from the direction its lines step.",
+   "api": "{text: string; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "velocityX",
+     "unit": "%W per frame",
+     "meaning": "drift speed"
+    },
+    {
+     "name": "velocityY",
+     "unit": "%H per frame",
+     "meaning": "drift speed"
+    }
+   ],
+   "default_variant": "stairDrift",
+   "variants": [
+    {
+     "name": "stairDrift",
+     "techniques": [
+      "v5.text-caption-drift",
+      "v5.layout-caption-staircase"
+     ],
+     "curve": null,
+     "params": {},
+     "notes": "the stair layout and its drift are one caption device"
+    }
+   ]
+  },
+  {
+   "name": "ScalePop",
+   "group": "icons",
+   "kind": "ui",
+   "description": "An element scales up from small about its own centre while it fades in, on a strong ease-out or on a spring that overshoots and settles; a tilt or spin can straighten with it.",
+   "api": "{children: React.ReactNode; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "fromScale",
+     "unit": "factor",
+     "meaning": "scale on the first frame"
+    },
+    {
+     "name": "peakScale",
+     "unit": "factor",
+     "meaning": "overshoot peak"
+    },
+    {
+     "name": "fromAngle",
+     "unit": "deg",
+     "meaning": "starting tilt"
+    }
+   ],
+   "default_variant": "strongOut",
+   "variants": [
+    {
+     "name": "strongOut",
+     "techniques": [
+      "v2.logo-mark-pop-in"
+     ],
+     "curve": {
+      "technique": "v2.logo-mark-pop-in",
+      "curve_id": "v2.logo-mark-pop-in",
+      "property": "scale"
+     },
+     "params": {
+      "fromScale": 0.32
+     }
+    },
+    {
+     "name": "fadeGrow",
+     "techniques": [
+      "v1.logo-mark-pop-in"
+     ],
+     "curve": {
+      "technique": "v1.logo-mark-pop-in",
+      "curve_id": "v1.logo-mark-pop-in",
+      "property": "opacity"
+     },
+     "params": {
+      "fromScale": 0.765
+     }
+    },
+    {
+     "name": "spinTilt",
+     "techniques": [
+      "v2.logo-spin-scale-in"
+     ],
+     "curve": {
+      "technique": "v2.logo-spin-scale-in",
+      "curve_id": "v2.logo-spin-scale-in",
+      "property": "scale"
+     },
+     "params": {
+      "fromScale": 0.66,
+      "fromAngle": 17
+     }
+    },
+    {
+     "name": "longTail",
+     "techniques": [
+      "v7.icon-voice-badge-pop"
+     ],
+     "curve": {
+      "technique": "v7.icon-voice-badge-pop",
+      "curve_id": "v7.icon-voice-badge-pop",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "sliverGrow",
+     "techniques": [
+      "v7.icon-tile-pop-in"
+     ],
+     "curve": {
+      "technique": "v7.icon-tile-pop-in",
+      "curve_id": "v7.icon-tile-pop-in",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "rideIn",
+     "techniques": [
+      "v8.icon-mascot-pop-slide"
+     ],
+     "curve": {
+      "technique": "v8.icon-mascot-pop-slide",
+      "curve_id": "v8.icon-mascot-pop-slide",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "discGrow",
+     "techniques": [
+      "v8.icon-avatar-grow-in"
+     ],
+     "curve": {
+      "technique": "v8.icon-avatar-grow-in",
+      "curve_id": "v8.icon-avatar-grow-in",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "glowGrow",
+     "techniques": [
+      "v7.icon-glow-in"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "cellByCell",
+     "techniques": [
+      "v8.icon-grid-cell-pop"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "threeStep",
+     "techniques": [
+      "v5.ui-chip-pop"
+     ],
+     "curve": {
+      "technique": "v5.ui-chip-pop",
+      "curve_id": "v5.ui-chip-pop",
+      "property": "scale"
+     },
+     "params": {
+      "fromScale": 0.48
+     }
+    },
+    {
+     "name": "glowSettle",
+     "techniques": [
+      "v7.ui-folder-pop-in"
+     ],
+     "curve": {
+      "technique": "v7.ui-folder-pop-in",
+      "curve_id": "v7.ui-folder-pop-in",
+      "property": "scale"
+     },
+     "params": {
+      "fromScale": 0.62
+     }
+    },
+    {
+     "name": "twoPicture",
+     "techniques": [
+      "v5.ui-button-pop"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "overshootPeak",
+     "techniques": [
+      "v3.icon-node-pop-in"
+     ],
+     "curve": {
+      "technique": "v3.icon-node-pop-in",
+      "curve_id": "v3.icon-node-pop-in",
+      "property": "scale"
+     },
+     "params": {
+      "fromScale": 0.87,
+      "peakScale": 1.026
+     }
+    },
+    {
+     "name": "springDip",
+     "techniques": [
+      "v8.icon-mascot-pop-in"
+     ],
+     "curve": {
+      "technique": "v8.icon-mascot-pop-in",
+      "curve_id": "v8.icon-mascot-pop-in",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "blurOvershoot",
+     "techniques": [
+      "v6.ui-node-pop-in"
+     ],
+     "curve": {
+      "technique": "v6.ui-node-pop-in",
+      "curve_id": "v6.ui-node-pop-in",
+      "property": "scale"
+     },
+     "params": {
+      "fromScale": 0.45,
+      "peakScale": 1.05
+     }
+    },
+    {
+     "name": "spinSpring",
+     "techniques": [
+      "v7.icon-glyph-spin-pop"
+     ],
+     "curve": {
+      "technique": "v7.icon-glyph-spin-pop",
+      "curve_id": "v7.icon-glyph-spin-pop",
+      "property": "rotate"
+     },
+     "params": {
+      "fromAngle": 80,
+      "peakScale": 1.4
+     }
+    }
+   ]
+  },
+  {
+   "name": "SpawnField",
+   "group": "icons",
+   "kind": "shape",
+   "description": "Many elements appear by a spawn pattern, each with the same small pop: one by one in reading order, as opposite pairs around a ring, on a radial front, at random spots, at the edges of a growing lattice, or in radial bursts.",
+   "api": "{items: React.ReactNode[]; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "fromScale",
+     "unit": "factor",
+     "meaning": "pop start scale"
+    },
+    {
+     "name": "stagger",
+     "unit": "frames",
+     "meaning": "frames between successive units"
+    }
+   ],
+   "default_variant": "radialFront",
+   "variants": [
+    {
+     "name": "radialFront",
+     "techniques": [
+      "v2.grid-hex-radial-pop"
+     ],
+     "curve": {
+      "technique": "v2.grid-hex-radial-pop",
+      "curve_id": "v2.grid-hex-radial-pop",
+      "property": "opacity"
+     },
+     "params": {
+      "fromScale": 0.59
+     }
+    },
+    {
+     "name": "readingOrder",
+     "techniques": [
+      "v1.icon-stagger-pop-in"
+     ],
+     "curve": {
+      "technique": "v1.icon-stagger-pop-in",
+      "curve_id": "v1.icon-stagger-pop-in",
+      "property": "opacity"
+     },
+     "params": {
+      "fromScale": 0.68,
+      "stagger": 3
+     }
+    },
+    {
+     "name": "gridOrder",
+     "techniques": [
+      "v2.icon-stagger-pop-in"
+     ],
+     "curve": {
+      "technique": "v2.icon-stagger-pop-in",
+      "curve_id": "v2.icon-stagger-pop-in",
+      "property": "opacity"
+     },
+     "params": {
+      "stagger": 3.6
+     }
+    },
+    {
+     "name": "ringPairs",
+     "techniques": [
+      "v2.icon-ring-pop-in"
+     ],
+     "curve": {
+      "technique": "v2.icon-ring-pop-in",
+      "curve_id": "v2.icon-ring-pop-in",
+      "property": "scale"
+     },
+     "params": {
+      "fromScale": 0.585,
+      "stagger": 1.57
+     }
+    },
+    {
+     "name": "randomScatter",
+     "techniques": [
+      "v2.particle-hex-scatter-pop"
+     ],
+     "curve": {
+      "technique": "v2.particle-hex-scatter-pop",
+      "curve_id": "v2.particle-hex-scatter-pop",
+      "property": "scale"
+     },
+     "params": {
+      "fromScale": 0.46,
+      "stagger": 1.5
+     }
+    },
+    {
+     "name": "latticeGrow",
+     "techniques": [
+      "v1.grid-hex-network-grow"
+     ],
+     "curve": {
+      "technique": "v1.grid-hex-network-grow",
+      "curve_id": "v1.grid-hex-network-grow",
+      "property": "opacity"
+     },
+     "params": {}
+    },
+    {
+     "name": "burstRing",
+     "techniques": [
+      "v8.particle-mascot-burst-ring"
+     ],
+     "curve": {
+      "technique": "v8.particle-mascot-burst-ring",
+      "curve_id": "v8.particle-mascot-burst-ring",
+      "property": "radius"
+     },
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "AmbientLoop",
+   "group": "icons",
+   "kind": "shape",
+   "description": "Continuous cyclic motion on held elements: a sine float with its own phase per element, a scale pulse that takes turns, a squash pulse, level bars following the audio, or elements riding an ellipse at a constant angular speed.",
+   "api": "{items: React.ReactNode[]; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "amplitude",
+     "unit": "%H",
+     "meaning": "float amplitude"
+    },
+    {
+     "name": "period",
+     "unit": "frames",
+     "meaning": "loop period"
+    },
+    {
+     "name": "degPerFrame",
+     "unit": "deg/frame",
+     "meaning": "orbit rate"
+    }
+   ],
+   "default_variant": "sineFloat",
+   "variants": [
+    {
+     "name": "sineFloat",
+     "techniques": [
+      "v1.icon-idle-float"
+     ],
+     "curve": {
+      "technique": "v1.icon-idle-float",
+      "curve_id": "v1.icon-idle-float",
+      "property": "y"
+     },
+     "params": {
+      "amplitude": 0.93,
+      "period": 156.9
+     }
+    },
+    {
+     "name": "pulseTurns",
+     "techniques": [
+      "v4.icon-pulse"
+     ],
+     "curve": {
+      "technique": "v4.icon-pulse",
+      "curve_id": "v4.icon-pulse",
+      "property": "scale"
+     },
+     "params": {
+      "period": 25.2
+     }
+    },
+    {
+     "name": "squashPulse",
+     "techniques": [
+      "v8.icon-mascot-idle-bounce"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "audioLevel",
+     "techniques": [
+      "v7.icon-voice-meter"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "ellipseOrbit",
+     "techniques": [
+      "v2.icon-ring-orbit"
+     ],
+     "curve": null,
+     "params": {
+      "degPerFrame": 0.3565
+     }
+    }
+   ]
+  },
+  {
+   "name": "IconFlyIn",
+   "group": "icons",
+   "kind": "shape",
+   "description": "An icon enters along a path and lands: it darts in from beyond an edge, drops into a card with a damped bounce, decelerates along an arc, or a chain follows its leader along an arc and dives into the target.",
+   "api": "{items: React.ReactNode[]; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "stagger",
+     "unit": "frames",
+     "meaning": "frames between successive units"
+    }
+   ],
+   "default_variant": "arcIn",
+   "variants": [
+    {
+     "name": "arcIn",
+     "techniques": [
+      "v8.icon-mascot-fly-in-arc"
+     ],
+     "curve": {
+      "technique": "v8.icon-mascot-fly-in-arc",
+      "curve_id": "v8.icon-mascot-fly-in-arc",
+      "property": "progress"
+     },
+     "params": {}
+    },
+    {
+     "name": "dart",
+     "techniques": [
+      "v8.icon-mascot-dart-in"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "dropBounce",
+     "techniques": [
+      "v8.icon-mascot-drop-into-card"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "curvedStagger",
+     "techniques": [
+      "v5.logo-sphere-fly-in"
+     ],
+     "curve": {
+      "technique": "v5.logo-sphere-fly-in",
+      "curve_id": "v5.logo-sphere-fly-in",
+      "property": "y"
+     },
+     "params": {
+      "stagger": 5
+     }
+    },
+    {
+     "name": "chainArc",
+     "techniques": [
+      "v7.particle-mascot-chain-arc"
+     ],
+     "curve": {
+      "technique": "v7.particle-mascot-chain-arc",
+      "curve_id": "v7.particle-mascot-chain-arc",
+      "property": "progress"
+     },
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "MarkBars",
+   "group": "icons",
+   "kind": "shape",
+   "description": "The two bars inside a mark move as one: they squash shut and reopen, slide together to a new position with a squash mid-move, open from closed dashes after a hold, slide, hold and slide back, or swap glyphs in one frame.",
+   "api": "{tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "closedScale",
+     "unit": "factor",
+     "meaning": "bar height when shut"
+    },
+    {
+     "name": "hold",
+     "unit": "frames",
+     "meaning": "frames held shut or closed"
+    }
+   ],
+   "default_variant": "slideSquash",
+   "variants": [
+    {
+     "name": "slideSquash",
+     "techniques": [
+      "v2.logo-eye-glance"
+     ],
+     "curve": {
+      "technique": "v2.logo-eye-glance",
+      "curve_id": "v2.logo-eye-glance",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "squashShut",
+     "techniques": [
+      "v1.logo-blink"
+     ],
+     "curve": {
+      "technique": "v1.logo-blink",
+      "curve_id": "v1.logo-blink",
+      "property": "scaleY"
+     },
+     "params": {
+      "closedScale": 0.074,
+      "hold": 7
+     }
+    },
+    {
+     "name": "squashPair",
+     "techniques": [
+      "v2.logo-eye-blink"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "openFromDash",
+     "techniques": [
+      "v3.logo-eyes-open"
+     ],
+     "curve": {
+      "technique": "v3.logo-eyes-open",
+      "curve_id": "v3.logo-eyes-open",
+      "property": "height"
+     },
+     "params": {
+      "hold": 6
+     }
+    },
+    {
+     "name": "openToPills",
+     "techniques": [
+      "v4.logo-eye-open"
+     ],
+     "curve": {
+      "technique": "v4.logo-eye-open",
+      "curve_id": "v4.logo-eye-open",
+      "property": "height"
+     },
+     "params": {
+      "hold": 6
+     }
+    },
+    {
+     "name": "slideHoldReturn",
+     "techniques": [
+      "v8.icon-mascot-eye-glance"
+     ],
+     "curve": {
+      "technique": "v8.icon-mascot-eye-glance",
+      "curve_id": "v8.icon-mascot-eye-glance",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "glyphSwap",
+     "techniques": [
+      "v8.icon-mascot-eye-swap"
+     ],
+     "curve": null,
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "PacketHop",
+   "group": "shapes",
+   "kind": "shape",
+   "description": "Small dots travel between nodes along connectors: hop centre to centre on an ease-in-out whose length hardly depends on distance, relay node to node, dispatch once to a receiver, or ping-pong linearly on a shared period.",
+   "api": "{tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "period",
+     "unit": "frames",
+     "meaning": "ping-pong period"
+    }
+   ],
+   "default_variant": "easedHop",
+   "variants": [
+    {
+     "name": "easedHop",
+     "techniques": [
+      "v4.particle-edge-packets"
+     ],
+     "curve": {
+      "technique": "v4.particle-edge-packets",
+      "curve_id": "v4.particle-edge-packets",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "straightCarry",
+     "techniques": [
+      "v1.particle-packet-hop"
+     ],
+     "curve": {
+      "technique": "v1.particle-packet-hop",
+      "curve_id": "v1.particle-packet-hop",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "relay",
+     "techniques": [
+      "v3.particle-packet-relay"
+     ],
+     "curve": {
+      "technique": "v3.particle-packet-relay",
+      "curve_id": "v3.particle-packet-relay",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "dispatch",
+     "techniques": [
+      "v3.particle-packet-dispatch"
+     ],
+     "curve": {
+      "technique": "v3.particle-packet-dispatch",
+      "curve_id": "v3.particle-packet-dispatch",
+      "property": "progress"
+     },
+     "params": {}
+    },
+    {
+     "name": "dwellHop",
+     "techniques": [
+      "v1.particle-edge-packets"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "pingPong",
+     "techniques": [
+      "v2.particle-packet-pingpong"
+     ],
+     "curve": null,
+     "params": {
+      "period": 42
+     }
+    }
+   ]
+  },
+  {
+   "name": "LineDraw",
+   "group": "shapes",
+   "kind": "shape",
+   "description": "A line or stroke draws on along its path: connectors grow edge to edge, a bracket draws out with rounded turns, edge ticks grow in, wireframe edges draw from back to front, an outline closes around a pill, a path draws on while its stroke thickens, or outline copies are revealed one after another.",
+   "api": "{tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "stagger",
+     "unit": "frames",
+     "meaning": "frames between successive units"
+    }
+   ],
+   "default_variant": "edgeToEdge",
+   "variants": [
+    {
+     "name": "edgeToEdge",
+     "techniques": [
+      "v3.shape-connector-draw-on"
+     ],
+     "curve": {
+      "technique": "v3.shape-connector-draw-on",
+      "curve_id": "v3.shape-connector-draw-on",
+      "property": "progress"
+     },
+     "params": {}
+    },
+    {
+     "name": "roundedTurns",
+     "techniques": [
+      "v5.shape-connector-draw"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "growInward",
+     "techniques": [
+      "v6.shape-edge-lines-grow"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "backToFront",
+     "techniques": [
+      "v6.shape-wireframe-edges"
+     ],
+     "curve": {
+      "technique": "v6.shape-wireframe-edges",
+      "curve_id": "v6.shape-wireframe-edges",
+      "property": "progress"
+     },
+     "params": {}
+    },
+    {
+     "name": "rightToLeft",
+     "techniques": [
+      "v8.shape-divider-draw-on"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "closeLoop",
+     "techniques": [
+      "v8.ui-pill-outline-draw"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "trimThicken",
+     "techniques": [
+      "v6.logo-stroke-draw-on"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "trimSteps",
+     "techniques": [
+      "v7.icon-stroke-draw-on"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "echoReveal",
+     "techniques": [
+      "v6.shape-echo-outlines"
+     ],
+     "curve": {
+      "technique": "v6.shape-echo-outlines",
+      "curve_id": "v6.shape-echo-outlines",
+      "property": "x"
+     },
+     "params": {},
+     "notes": "outline copies revealed down from the top edge, then widened with the layer they echo"
+    }
+   ]
+  },
+  {
+   "name": "Backdrop",
+   "group": "shapes",
+   "kind": "fx",
+   "description": "The background field and its ambient changes: soft blobs breathe, fade in or clear, a dot grid drifts, halftone glows swell and travel, ribbons rise or drift, a diagonal split rides the camera, a dotted beam bridges two elements, or a feathered zone clears the field behind text.",
+   "api": "{children: React.ReactNode; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "period",
+     "unit": "frames",
+     "meaning": "breathing or glow period"
+    }
+   ],
+   "default_variant": "breathe",
+   "variants": [
+    {
+     "name": "breathe",
+     "techniques": [
+      "v6.bg-soft-field"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "clear",
+     "techniques": [
+      "v6.bg-clear-fade"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "blobFadeIn",
+     "techniques": [
+      "v6.bg-blob-fade-in"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "dotGridDrift",
+     "techniques": [
+      "v8.bg-dot-grid-drift"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "diagonalSplit",
+     "techniques": [
+      "v7.bg-diagonal-split"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "travellingGlow",
+     "techniques": [
+      "v5.bg-halftone-ribbon-glow"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "cornerFadeUp",
+     "techniques": [
+      "v5.bg-halftone-glow"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "ribbonRise",
+     "techniques": [
+      "v5.bg-ribbon-rise-in"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "ribbonDrift",
+     "techniques": [
+      "v5.bg-ribbon-drift"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "beamGrow",
+     "techniques": [
+      "v5.shape-halftone-beam"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "clearZone",
+     "techniques": [
+      "v1.layout-text-knockout"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "glowZone",
+     "techniques": [
+      "v3.bg-headline-knockout"
+     ],
+     "curve": null,
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "CursorPath",
+   "group": "cursor",
+   "kind": "ui",
+   "description": "A pointer travels on its own: it flies in from beyond an edge and decelerates onto a target, glides between targets (thrown fast and eased out, or in-out), winds up and swoops, or accelerates off the frame.",
+   "api": "{tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "tilt",
+     "unit": "deg",
+     "meaning": "pointer tilt in flight"
+    }
+   ],
+   "default_variant": "flyUp",
+   "variants": [
+    {
+     "name": "flyUp",
+     "techniques": [
+      "v7.cursor-fly-in"
+     ],
+     "curve": {
+      "technique": "v7.cursor-fly-in",
+      "curve_id": "v7.cursor-fly-in",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "diagonalIn",
+     "techniques": [
+      "v5.cursor-fly-in"
+     ],
+     "curve": {
+      "technique": "v5.cursor-fly-in",
+      "curve_id": "v5.cursor-fly-in",
+      "property": "progress"
+     },
+     "params": {
+      "tilt": 30
+     }
+    },
+    {
+     "name": "dive",
+     "techniques": [
+      "v5.cursor-3d-dive-click"
+     ],
+     "curve": {
+      "technique": "v5.cursor-3d-dive-click",
+      "curve_id": "v5.cursor-3d-dive-click",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "throw",
+     "techniques": [
+      "v7.cursor-glide"
+     ],
+     "curve": {
+      "technique": "v7.cursor-glide",
+      "curve_id": "v7.cursor-glide",
+      "property": "progress"
+     },
+     "params": {}
+    },
+    {
+     "name": "glideClick",
+     "techniques": [
+      "v5.cursor-glide-click"
+     ],
+     "curve": {
+      "technique": "v5.cursor-glide-click",
+      "curve_id": "v5.cursor-glide-click",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "windUp",
+     "techniques": [
+      "v5.cursor-swoop"
+     ],
+     "curve": {
+      "technique": "v5.cursor-swoop",
+      "curve_id": "v5.cursor-swoop",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "constant",
+     "techniques": [
+      "v8.cursor-glide"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "flyOut",
+     "techniques": [
+      "v7.cursor-fly-out"
+     ],
+     "curve": null,
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "CursorState",
+   "group": "cursor",
+   "kind": "ui",
+   "description": "The pointer changes form or marks a click: it glows up and swaps for a 3D pointer that turns frontal, sharpens and dims to rest, swaps in one picture hidden in a fast move, or leaves a small expanding ring.",
+   "api": "{tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "ringGrow",
+     "unit": "px1080",
+     "meaning": "ring growth"
+    }
+   ],
+   "default_variant": "glowMorph",
+   "variants": [
+    {
+     "name": "glowMorph",
+     "techniques": [
+      "v7.cursor-glow-morph-3d"
+     ],
+     "curve": {
+      "technique": "v7.cursor-glow-morph-3d",
+      "curve_id": "v7.cursor-glow-morph-3d",
+      "property": "opacity"
+     },
+     "params": {}
+    },
+    {
+     "name": "hiddenSwap",
+     "techniques": [
+      "v7.cursor-swap-in-blur"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "pressRipple",
+     "techniques": [
+      "v8.cursor-tap-ripple"
+     ],
+     "curve": null,
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "DragDrop",
+   "group": "cursor",
+   "kind": "ui",
+   "description": "Items are dragged and dropped: a file is carried along a path and shrinks into its target, outline copies travel as one grid, a selected block is dragged out accelerating, a dropped strip docks and splits into clips, or clips butt together and gaps open.",
+   "api": "{items: React.ReactNode[]; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "stagger",
+     "unit": "frames",
+     "meaning": "frames between successive units"
+    }
+   ],
+   "default_variant": "carryIn",
+   "variants": [
+    {
+     "name": "carryIn",
+     "techniques": [
+      "v7.cursor-drag-file-in"
+     ],
+     "curve": {
+      "technique": "v7.cursor-drag-file-in",
+      "curve_id": "v7.cursor-drag-file-in",
+      "property": "y"
+     },
+     "params": {}
+    },
+    {
+     "name": "ghostTrail",
+     "techniques": [
+      "v7.ui-ghost-drag-to-timeline"
+     ],
+     "curve": {
+      "technique": "v7.ui-ghost-drag-to-timeline",
+      "curve_id": "v7.ui-ghost-drag-to-timeline",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "dragOut",
+     "techniques": [
+      "v7.ui-drag-group-out"
+     ],
+     "curve": {
+      "technique": "v7.ui-drag-group-out",
+      "curve_id": "v7.ui-drag-group-out",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "stripDock",
+     "techniques": [
+      "v7.ui-clip-strip-slide-in"
+     ],
+     "curve": {
+      "technique": "v7.ui-clip-strip-slide-in",
+      "curve_id": "v7.ui-clip-strip-slide-in",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "rippleEdit",
+     "techniques": [
+      "v7.ui-clip-ripple-edit"
+     ],
+     "curve": null,
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "SelectionHighlight",
+   "group": "cursor",
+   "kind": "ui",
+   "description": "A selection or hover state moves onto an element: a highlight pill fades in and widens, a card lifts with an outline and shadow, tiles light row by row, a slot holds while rows pass through it, the selection jumps to a new chip, or a selector frame hops between items.",
+   "api": "{items: React.ReactNode[]; tone?: Tone; variant?: string}",
+   "params": [
+    {
+     "name": "liftScale",
+     "unit": "factor",
+     "meaning": "scale of the lifted element"
+    }
+   ],
+   "default_variant": "fadeWiden",
+   "variants": [
+    {
+     "name": "fadeWiden",
+     "techniques": [
+      "v7.ui-hover-highlight"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "lift",
+     "techniques": [
+      "v7.ui-hover-lift"
+     ],
+     "curve": {
+      "technique": "v7.ui-hover-lift",
+      "curve_id": "v7.ui-hover-lift",
+      "property": "scale"
+     },
+     "params": {
+      "liftScale": 1.3
+     }
+    },
+    {
+     "name": "rowSweep",
+     "techniques": [
+      "v7.ui-tile-select-sweep"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "holdSlot",
+     "techniques": [
+      "v8.ui-sticky-highlight-slot"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "jump",
+     "techniques": [
+      "v8.ui-chip-select-swap"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "hop",
+     "techniques": [
+      "v5.ui-selector-frame-hop"
+     ],
+     "curve": {
+      "technique": "v5.ui-selector-frame-hop",
+      "curve_id": "v5.ui-selector-frame-hop",
+      "property": "x"
+     },
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "FootageCard",
+   "group": "footage-frames",
+   "kind": "footage",
+   "description": "A card carrying footage moves as one unit: it zooms from a small card to fill the frame, flies in on a diagonal and snaps into place, shrinks to become a node, grows from a speck in depth, or zooms in from scattered specks into a row.",
+   "api": "{footage?: string; tone?: Tone; variant?: string} (a FootageSlot inside)",
+   "params": [
+    {
+     "name": "toScale",
+     "unit": "factor",
+     "meaning": "scale reached"
+    },
+    {
+     "name": "stagger",
+     "unit": "frames",
+     "meaning": "frames between successive units"
+    }
+   ],
+   "default_variant": "zoomToFull",
+   "variants": [
+    {
+     "name": "zoomToFull",
+     "techniques": [
+      "v8.footage-card-zoom-to-full"
+     ],
+     "curve": {
+      "technique": "v8.footage-card-zoom-to-full",
+      "curve_id": "v8.footage-card-zoom-to-full",
+      "property": "scale"
+     },
+     "params": {}
+    },
+    {
+     "name": "zoomFill",
+     "techniques": [
+      "v8.trans-card-zoom-fill"
+     ],
+     "curve": {
+      "technique": "v8.trans-card-zoom-fill",
+      "curve_id": "v8.trans-card-zoom-fill",
+      "property": "scale"
+     },
+     "params": {
+      "toScale": 1.41
+     }
+    },
+    {
+     "name": "zoomToCentre",
+     "techniques": [
+      "v8.trans-card-zoom-to-center"
+     ],
+     "curve": {
+      "technique": "v8.trans-card-zoom-to-center",
+      "curve_id": "v8.trans-card-zoom-to-center",
+      "property": "scale"
+     },
+     "params": {
+      "toScale": 2.0
+     }
+    },
+    {
+     "name": "diagonalSnap",
+     "techniques": [
+      "v5.footage-card-fly-in"
+     ],
+     "curve": {
+      "technique": "v5.footage-card-fly-in",
+      "curve_id": "v5.footage-card-fly-in",
+      "property": "x"
+     },
+     "params": {}
+    },
+    {
+     "name": "shrinkToNode",
+     "techniques": [
+      "v5.trans-morph-tree"
+     ],
+     "curve": {
+      "technique": "v5.trans-morph-tree",
+      "curve_id": "v5.trans-morph-tree",
+      "property": "scale"
+     },
+     "params": {
+      "toScale": 0.34
+     }
+    },
+    {
+     "name": "depthGrow",
+     "techniques": [
+      "v5.card-depth-flyin"
+     ],
+     "curve": {
+      "technique": "v5.card-depth-flyin",
+      "curve_id": "v5.card-depth-flyin",
+      "property": "scale"
+     },
+     "params": {
+      "stagger": 5
+     }
+    },
+    {
+     "name": "scatterZoom",
+     "techniques": [
+      "v6.card-scatter-zoom-in"
+     ],
+     "curve": null,
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "FootageFrame",
+   "group": "footage-frames",
+   "kind": "footage",
+   "description": "Footage carried by a fixed window or mask: the footage cuts inside it while the layout holds (single cuts or a quick burst), a curved-screen mask whose edges can wobble as it whips out, footage fading in from the card fill, or a scrim that dims the footage under text.",
+   "api": "{footage?: string; tone?: Tone; variant?: string} (a FootageSlot inside)",
+   "params": [
+    {
+     "name": "dimTo",
+     "unit": "factor",
+     "meaning": "footage luma under the scrim"
+    }
+   ],
+   "default_variant": "innerCuts",
+   "variants": [
+    {
+     "name": "innerCuts",
+     "techniques": [
+      "v7.footage-viewer-playback"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "cutBurst",
+     "techniques": [
+      "v7.footage-viewer-cut-burst"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "singleCut",
+     "techniques": [
+      "v5.footage-window-swap"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "curvedHold",
+     "techniques": [
+      "v5.footage-curved-panel"
+     ],
+     "curve": null,
+     "params": {}
+    },
+    {
+     "name": "wobbleExit",
+     "techniques": [
+      "v5.fx-liquid-edge-wobble"
+     ],
+     "curve": null,
+     "params": {},
+     "notes": "the mask edges go soft and bulge while the panel whips out"
+    },
+    {
+     "name": "contentFade",
+     "techniques": [
+      "v8.footage-card-content-fade-in"
+     ],
+     "curve": {
+      "technique": "v8.footage-card-content-fade-in",
+      "curve_id": "v8.footage-card-content-fade-in",
+      "property": "opacity"
+     },
+     "params": {}
+    },
+    {
+     "name": "dimIn",
+     "techniques": [
+      "v5.fx-footage-dim"
+     ],
+     "curve": {
+      "technique": "v5.fx-footage-dim",
+      "curve_id": "v5.fx-footage-dim",
+      "property": "opacity"
+     },
+     "params": {}
+    },
+    {
+     "name": "heldDim",
+     "techniques": [
+      "v7.text-static-headline-dim-footage"
+     ],
+     "curve": null,
+     "params": {},
+     "notes": "static scrim under a held headline"
+    }
+   ]
+  },
+  {
+   "name": "MaskReveal",
+   "group": "footage-frames",
+   "kind": "footage",
+   "description": "Footage (or an edited version of it) is revealed inside a card by a moving mask: a glowing dot-matrix ring expands from a point, a light scan band sweeps across, a seam sweeps open with the content riding its edge, or a strip opens from a thin line.",
+   "api": "{footage?: string; tone?: Tone; variant?: string} (a FootageSlot inside)",
+   "params": [
+    {
+     "name": "bandWidth",
+     "unit": "%W",
+     "meaning": "width of the scan band"
+    }
+   ],
+   "default_variant": "dotRing",
+   "variants": [
+    {
+     "name": "dotRing",
+     "techniques": [
+      "v7.mask-dot-ring-reveal"
+     ],
+     "curve": {
+      "technique": "v7.mask-dot-ring-reveal",
+      "curve_id": "v7.mask-dot-ring-reveal",
+      "property": "progress"
+     },
+     "params": {}
+    },
+    {
+     "name": "scanBand",
+     "techniques": [
+      "v7.mask-scan-band-reveal"
+     ],
+     "curve": {
+      "technique": "v7.mask-scan-band-reveal",
+      "curve_id": "v7.mask-scan-band-reveal",
+      "property": "progress"
+     },
+     "params": {}
+    },
+    {
+     "name": "seamOpen",
+     "techniques": [
+      "v5.card-seam-reveal"
+     ],
+     "curve": {
+      "technique": "v5.card-seam-reveal",
+      "curve_id": "v5.card-seam-reveal",
+      "property": "width"
+     },
+     "params": {}
+    },
+    {
+     "name": "stripOpen",
+     "techniques": [
+      "v5.footage-strip-open"
+     ],
+     "curve": null,
+     "params": {}
+    }
+   ]
+  },
+  {
+   "name": "FootageSlot",
+   "group": "footage",
+   "kind": "footage",
+   "description": "The footage carrier: fills the card, window or mask around it with the user footage, or with a gray plate when none is given. Motion belongs to the frame that holds it.",
+   "api": "{footage?: string; fit?: 'cover' | 'contain'}",
+   "params": [
+    {
+     "name": "fit",
+     "unit": "cover|contain",
+     "meaning": "how the footage fills the slot"
+    }
+   ],
+   "default_variant": "plate",
+   "variants": [
+    {
+     "name": "plate",
+     "techniques": [],
+     "curve": null,
+     "params": {
+      "fit": "cover"
+     }
+    }
+   ]
+  }
+ ]
+}
