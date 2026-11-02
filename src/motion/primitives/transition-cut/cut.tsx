@@ -211,7 +211,7 @@ const nodeOf = (layer: Layer, nodes: Nodes, reframe?: Reframe): React.ReactNode 
 export const LayerView: React.FC<{layer: Layer; f: number; node: React.ReactNode}> = ({layer, f, node}) => {
 	const {cam, vel} = layer.shutter ? sample(layer.rig, f, layer.shutter) : {cam: layer.rig(f, clamped), vel: undefined};
 	return (
-		<AbsoluteFill style={{visibility: layer.on(f) ? 'visible' : 'hidden', clipPath: layer.clip}}>
+		<AbsoluteFill style={{visibility: layer.on(f) ? 'inherit' : 'hidden', clipPath: layer.clip}}>
 			<CameraLayer cam={cam} vel={vel} shutter={layer.shutter}>
 				{node}
 			</CameraLayer>

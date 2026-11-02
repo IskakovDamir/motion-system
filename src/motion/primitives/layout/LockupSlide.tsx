@@ -62,7 +62,7 @@ export const LockupSlide: React.FC<LockupSlideProps> = ({children, wordmark, ton
 		const pieces = splitText(wordmark, 'word');
 		const shown = unitsShown(frame, pieces.filter((pc) => !pc.space).length, wordAt, wordStep);
 		word = pieces.map((pc, k) => (
-			<span key={k} style={{visibility: pc.space || pc.index < shown ? 'visible' : 'hidden'}}>
+			<span key={k} style={{visibility: pc.space || pc.index < shown ? 'inherit' : 'hidden'}}>
 				{pc.text}
 			</span>
 		));

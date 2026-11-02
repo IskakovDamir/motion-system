@@ -51,7 +51,7 @@ export const MakeRoom: React.FC<MakeRoomProps> = ({children, incoming, variant, 
 	const units = incoming ? (
 		<div style={{display: 'flex', alignItems: 'baseline', whiteSpace: 'nowrap'}}>
 			{(slot === 'below' ? incoming.slice(0, shown) : incoming).map((u, k) => (
-				<div key={k} style={{visibility: (reverse ? incoming.length - 1 - k : k) < shown ? 'visible' : 'hidden', display: 'flex'}}>
+				<div key={k} style={{visibility: (reverse ? incoming.length - 1 - k : k) < shown ? 'inherit' : 'hidden', display: 'flex'}}>
 					{u}
 				</div>
 			))}

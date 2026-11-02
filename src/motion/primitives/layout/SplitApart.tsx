@@ -59,7 +59,7 @@ export const SplitApart: React.FC<SplitApartProps> = ({items, variant, layout = 
 		const m = v.motions[xm];
 		const left = gone && m !== undefined && frame > d + m.delay + m.duration;
 		return (
-			<div key={key} style={{transform: `translate(${dx}px, ${dy}px) scale(${scale})`, visibility: left ? 'hidden' : 'visible', flexShrink: 0}}>
+			<div key={key} style={{transform: `translate(${dx}px, ${dy}px) scale(${scale})`, visibility: left ? 'hidden' : 'inherit', flexShrink: 0}}>
 				{node}
 			</div>
 		);

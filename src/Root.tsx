@@ -2,6 +2,7 @@ import type React from 'react';
 import {Composition} from 'remotion';
 import {MotionShowcase, showcaseLength} from './compositions/MotionShowcase';
 import {PrimitiveProbe, type ProbeProps, probeMetadata} from './compositions/PrimitiveProbe';
+import {StyleDemo, styleDemoLength} from './compositions/StyleDemo';
 import {loadFonts} from './motion/engine/loadFonts';
 import {REF_FPS} from './motion/tokens/timing';
 
@@ -22,5 +23,6 @@ export const Root: React.FC = () => (
 			width={1920}
 			height={1080}
 		/>
+		<Composition id="StyleDemo" component={StyleDemo} durationInFrames={styleDemoLength()} fps={REF_FPS} width={1920} height={1080} />
 	</>
 );

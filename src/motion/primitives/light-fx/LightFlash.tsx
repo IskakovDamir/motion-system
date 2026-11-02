@@ -35,7 +35,7 @@ const lengthOf = (name: string, v: VariantSpec): number =>
 	name === 'iris' ? end(v.motions.progress) + num(v, 'holdWhite') : Math.max(...Object.values(v.motions).map(end));
 
 const layer = (node: React.ReactNode, style?: React.CSSProperties) => <AbsoluteFill style={style}>{node}</AbsoluteFill>;
-const shown = (on: boolean): React.CSSProperties => ({visibility: on ? 'visible' : 'hidden'});
+const shown = (on: boolean): React.CSSProperties => ({visibility: on ? 'inherit' : 'hidden'});
 
 const picture = (name: string, v: VariantSpec, f: number, size: Size, s: Scheme, o: Origin): Picture => {
 	const p = (prop: string) => progressAt(f, mot(v, prop));
@@ -64,7 +64,7 @@ const picture = (name: string, v: VariantSpec, f: number, size: Size, s: Scheme,
 						height: 2 * r,
 						borderRadius: '50%',
 						backgroundColor: s.flash,
-						visibility: before ? 'visible' : 'hidden',
+						visibility: before ? 'inherit' : 'hidden',
 					}}
 				/>
 			),
