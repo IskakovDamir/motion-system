@@ -259,3 +259,20 @@ questions.
   words 2-3 use word 1's 15.0 % W.
 - CaptionDrift: only S06 caption 3 is built; the right-side mirror, the x1.2 first line and S19's x1.33
   growth (uncertain attachment) are not.
+
+## cursor (4 primitives, 22 variants, 13 curves)
+
+- The pointer is a plain arrow (flat or outline), and for 3D pointers an extruded notched arrowhead.
+- Pointer size measured only for v7 S11 (22.3 % H), v7 S31's 3D pointer (15.7 % H) and v5 S14 (about 6 % W);
+  other demos pick their own size.
+- Rotation: v7 fly-in's turn is UNCERTAIN (none built); v7 fly-out's tumble not measured (the smear is);
+  v5 swoop's "40-60 deg" built as 50 with the tilt following the speed.
+- v5 3D dive-click: hover and spin before the dive not fitted, the dive is a straight line (two ends).
+- v7 glow-morph: outline thickening, the turn to face front, the start blur and the card's 2-picture
+  brightening have no amounts. v7 swap-in-blur: the double image is drawn as softness only, derived from
+  edge-gradient ratios assuming a 1 px sharp edge.
+- Not measured: line widths of rings and outlines (2 px hairline), hover-lift's shadow, the highlight pill's
+  end dot and widening origin, the ripple edit's clip splits (f2201-f2218), the selector frame's size at the
+  hops (400 px drop-in width used; hop 1 reuses hop 2's ease).
+- Straight paths where only ends are measured: flyUp, dive, glideClick, dragOut's drift. glideClick's release
+  uses outFirm (8 f, not fitted); the sticky slot's list drift uses 0.3 % H/f, the middle of the range.
