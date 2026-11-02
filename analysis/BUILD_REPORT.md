@@ -131,3 +131,24 @@ questions.
   picture, shrinkCut's sub-pixel precursor, quickSettle's x1.25-1.30 hold before f376.
 - Approximations: fadeRise's rise shares the fade's curve; growIn staggers 2 f (S03), not S06's 1-3 f;
   shrinkCut's measured curve has no pause at 87 %, so the reference's last picture (opacity 0.13) differs.
+
+## text-reveal (6 primitives, 29 variants, 9 curves)
+
+- Typewriter: steadyCaret's caret size not measured (the font's own bar glyph); jittered's per-gap list not
+  measured (seeded jitter inside the measured 2-5 f around the 2.32 f mean, 8 f pause at 21 f);
+  letterFade runs the first letter's curve for every letter (later letters arrive fainter than the
+  reference), S20/S27 speed ramps and the 21 f stall not built; fadeTrail's period holding mid grey not
+  built; stretchFade's 14 f stretch uses outFirm (not fitted), its 0.19 first level derived from luma
+  215 vs 207 against an estimated rest of about 250; acceleratingDots' capsule clipping and exit
+  un-typing not built (pill not measured); leadingEdge's pan blur and later zoom-out not built.
+- WordPop: lineSteps' cap 1.35 % H is the middle of the uncertain 1.2-1.5; overprinted lines, rapid's row
+  highlight, ghostSnap's pill fade-in and first-token blur not built.
+- Scramble: placeholder glyph shapes, their hold time and the order are not measured (seeded order).
+- LetterPopBuild: echo trail, slide blur and stem streaks not built; slide and split distances are the
+  reference's pixels in cap units; the dot drop applies to i only; tighten's loose start spacing not
+  quantified.
+- SoftFrontReveal: arrival blur, line cascades and the trailing ellipsis not built; featherFront's ramp is
+  linear (not fitted); fadeSlide's slide uses the .i2 instance's 2.48 % W; feathers of 2.3 and 2.9 line
+  widths are derived from half-ink times.
+- ShimmerSweep: darkBand and once borrow the looping band's 5.2 % W; looping assumes a symmetric pass;
+  slantedBand's .i2 card instance and .i3 growth out of the pill are not built.
