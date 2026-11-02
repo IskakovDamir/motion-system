@@ -242,3 +242,20 @@ questions.
 - PushSlide: stacked's mask inset and hand-off, dipRise's anticipation (none in its instance),
   easeInDrift's final two-picture jump (replaced by its end speed) are not built; rippleRise splits the
   incoming scene at the measured gutters.
+
+## layout (4 primitives, 20 variants, 19 curves)
+
+- Motions without their own curve: splitShift's line 1 (inOutWhip2 27 f, rmse 0.013) and reflow's lower
+  word (inOutWhipOver 20 f, rmse 0.012) fitted to their values; splitMorph, groupSnap, openGap and
+  shrinkAside reuse their technique's curve with measured delays; LockupSlide short's letters use the v4
+  letter-rise-fade curves 2.1 f apart.
+- Motion blur amount measured only for openGap (1.45 f of travel, capped at the measured 44 px); no blur on
+  riseTop, shrinkAside, reflow, liftShrink, recenter, centreSlide, splitMorph, whipOut, kickApart.
+- Not measured, left out: riseShort's box growth on twos (top edge only); openGap's box widening (word 2's
+  edge may move up to about 0.7 % W more than measured) and its decode order (last to first assumed);
+  recenter's label-2 tightening (rides at 14.9 % W, not 17.4); splitShift's arrow slide and tone sweep;
+  whipOut's final streak; gridSpread's row pitch; LockupSlide tracking outside v2 (-0.015 em).
+- whipOut: the arrow uses line 2's 32.2 % W (agrees with its tip and shaft readings within about 30 %);
+  words 2-3 use word 1's 15.0 % W.
+- CaptionDrift: only S06 caption 3 is built; the right-side mirror, the x1.2 first line and S19's x1.33
+  growth (uncertain attachment) are not.
