@@ -38,8 +38,8 @@ export type TypeStyle = {font: FontRole; weight: number | null; capHeight: numbe
 export const TYPE = {
 	/** 42 typography rows (v1 2, v2 9, v3 7, v5 9, v6 12, v7 3); cap height 8.1-27.1 % H, weight 400-900, tracking -0.053-0.073 em */
 	display: {font: 'display', weight: 400, capHeight: 10.6, tracking: -0.019, case: 'sentence'},
-	/** 42 typography rows (v1 3, v2 4, v3 5, v4 9, v5 6, v6 1, v7 7, v8 7); cap height 1-7.9 % H, weight 400-900, tracking -0.019-0.042 em */
-	headline: {font: 'display', weight: 400, capHeight: 5.15, tracking: 0.002, case: 'sentence'},
+	/** 42 typography rows (v1 3, v2 4, v3 5, v4 9, v5 6, v6 1, v7 7, v8 7); cap height 1.6-7.9 % H, weight 400-900, tracking -0.019-0.042 em */
+	headline: {font: 'display', weight: 400, capHeight: 5.2, tracking: 0.002, case: 'sentence'},
 	/** 5 typography rows (v3 1, v5 1, v6 1, v7 1, v8 1); cap height 3.1-4.9 % H, weight 400-700, tracking none em */
 	subhead: {font: 'ui', weight: 400, capHeight: 4.4, tracking: null, case: 'mixed'},
 	/** 1 typography rows (v8 1); cap height 2.4 % H, weight 400, tracking -0.004 em */

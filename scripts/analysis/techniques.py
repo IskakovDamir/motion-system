@@ -189,7 +189,7 @@ def measured_number(cell: str, lo: float, hi: float):
     and inside [lo, hi]."""
     for m in NUMBER.finditer(cell):
         before, after = cell[max(0, m.start() - 8):m.start()], cell[m.end():m.end() + 4]
-        if NOT_A_SIZE_BEFORE.search(before) or re.match(r"\s*(?:px|x\b|%)", after):
+        if NOT_A_SIZE_BEFORE.search(before) or re.match(r"\s*(?:px|x\b|%|-\s*(?:word|line|letter|char))", cell[m.end():m.end() + 10]):
             continue
         x = float(m.group(1))
         if lo <= x <= hi:

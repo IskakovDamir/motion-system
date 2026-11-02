@@ -1,4 +1,5 @@
-"""Render analysis/catalogue.json as analysis/catalogue.md (generated; edit the JSON, not the markdown).
+"""Render analysis/catalogue.json as analysis/catalogue.md and as section 10 (primitive map) of MOTION_SPEC.md
+(generated; edit the JSON, not the markdown).
 
 One section per group: each primitive with kind, description, api and param schema, then one line per
 variant: its techniques (the curve technique first, with the curve and the property it drives) and
@@ -6,7 +7,7 @@ the measured ease and duration of that curve from analysis/tokens.json.
 
   python catalogue_md.py
 """
-from common import ANALYSIS, load_json
+from common import ANALYSIS, ROOT, load_json
 
 
 def main():
@@ -44,7 +45,29 @@ def main():
                 out.append(f"| {name} | {curve} | {', '.join(f'`{t}`' for t in techs) or '-'} |")
             out.append("")
     (ANALYSIS / "catalogue.md").write_text("\n".join(out) + "\n")
+    spec_map(cat, prims)
     print(f"catalogue.md: {len(cat['groups'])} groups, {len(prims)} primitives, {nvar} variants, {ntech} techniques")
+
+
+def spec_map(cat, prims):
+    """Replace section 10 of MOTION_SPEC.md: technique families -> primitive -> variants."""
+    spec = ROOT / "MOTION_SPEC.md"
+    if not spec.exists():
+        return
+    rows = ["## 10. Primitive map", "",
+            "Generated from `analysis/catalogue.json` by `scripts/analysis/catalogue_md.py`; every variant with its",
+            "techniques and curve is in `analysis/catalogue.md`. Families are the technique id categories.", "",
+            "| group | primitive | kind | technique families | variants |", "|---|---|---|---|---|"]
+    for g in cat["groups"]:
+        for n in g["primitives"]:
+            p = prims.get(n, {})
+            vs = p.get("variants", [])
+            fams = sorted({t.split(".", 1)[1].split("-", 1)[0] for v in vs for t in v.get("techniques", []) if "." in t})
+            rows.append(f"| {g['name']} | {n} | {p.get('kind', '')} | {', '.join(fams) or '-'} | "
+                        f"{len(vs)}: {', '.join(v['name'] for v in vs)} |")
+    md = spec.read_text()
+    head = md.split("## 10. Primitive map")[0]
+    spec.write_text(head + "\n".join(rows) + "\n")
 
 
 if __name__ == "__main__":
