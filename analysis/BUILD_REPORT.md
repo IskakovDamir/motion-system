@@ -202,3 +202,22 @@ questions.
 - ringFold: corner cells (2-3 f) and edge cells (about 10 f) are one 9 f fold with inOutWhip.
 - Duration-only, linear: tunnelExit's wash (early ease-out), risingZoom's cell fade and 7 f crossfade,
   dropThrough's per-picture pops.
+
+## shapes (3 primitives, 27 variants, 7 curves)
+
+- PacketHop: straightCarry's return packet is UNCERTAIN (start bounded at 33-45 f); relay's 3-4 dot burst
+  and the hop shrinking with the plane (camera) left out; dwellHop's "about 10-16 f" hop is 13 f with the
+  house packet ease (not fitted); dot sizes not measured for dwellHop and pingPong (props); easedHop uses
+  S01's 18 px dot only.
+- LineDraw: stroke widths and corner radii not measured (props) for roundedTurns, backToFront, rightToLeft
+  and echoReveal; roundedTurns' first phase depends on other elements and its ease is chosen
+  (inOutGlideOver); closeLoop uses S01's 12 f (linear, rmse 0.035), not S26's 36 f replay; faint first
+  pictures, trimThicken's light first dash, growInward's vanishing with the layout, echoReveal's bottom
+  growth (no centre), outline R2 (partial reading) and field darkening are not built.
+- Backdrop: blob sizes and wander phases not measured (props; blob centres are measurement-box centres);
+  dot size and contrast of grids not measured except dotGridDrift's (from pixel area), whose bowed rows and
+  edge speeds (UNCERTAIN) are left out; diagonalSplit, clearZone and glowZone have no rows (angle, zone and
+  feather are props); travellingGlow's ribbon path, halftone and patch slide not measured; cornerFadeUp is
+  linear (ease not measured), reproduces the x2 luma ratio only, and adds a bottom-left patch that the
+  frames show but no row measures; ribbon paths, width and pitch are props; beamGrow's grow is linear, its
+  cluster size assumed (the beam's waist) and its 27 f swing approximate.
