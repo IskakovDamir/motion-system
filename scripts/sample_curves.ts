@@ -48,7 +48,9 @@ const groupSpecs = async (g: string): Promise<PrimitiveSpec[]> => {
 
 const specs: PrimitiveSpec[] = group ? await groupSpecs(group) : (await import('../src/motion/primitives/specs')).SPECS;
 
-type Entry = {primitive: string; variant: string; property: string | null};
+/** start: frames into the variant where the technique's motion begins (the curve's delay, or for a covered
+ * technique the earliest delay of the variant's motions), so comparison sheets line both sides up. */
+type Entry = {primitive: string; variant: string; property: string | null; start: number};
 const catalogue: Record<string, Entry> = {};
 const techniques: Record<string, Entry & {progress: number[]}> = {};
 
@@ -64,13 +66,14 @@ for (const spec of specs) {
 			const progress = Array.from({length: n}, (_, f) => progressAt(f, {...m, delay: 0}));
 			for (const id of ids) {
 				if (catalogue[id]) problems.push(`${id} mapped twice (${catalogue[id].primitive}, ${spec.name})`);
-				catalogue[id] = {primitive: spec.name, variant, property};
-				techniques[id] = {primitive: spec.name, variant, property, progress};
+				catalogue[id] = {primitive: spec.name, variant, property, start: m.delay};
+				techniques[id] = {primitive: spec.name, variant, property, start: m.delay, progress};
 			}
 		}
+		const first = Math.min(...Object.values(v.motions).map((m) => m.delay));
 		for (const id of v.covers ?? []) {
 			if (catalogue[id]) problems.push(`${id} mapped twice (${catalogue[id].primitive}, ${spec.name})`);
-			catalogue[id] = {primitive: spec.name, variant, property: null};
+			catalogue[id] = {primitive: spec.name, variant, property: null, start: Number.isFinite(first) ? first : 0};
 		}
 	}
 }

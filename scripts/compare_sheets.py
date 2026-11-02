@@ -118,7 +118,8 @@ def main():
         else:
             span = (0, max(1, r1 - r0))
         key = (cat[tid]["primitive"], cat[tid]["variant"])
-        b0, b1 = lead + span[0], lead + span[1]
+        start = int(round(cat[tid].get("start") or 0))  # the motion's delay inside the variant
+        b0, b1 = lead + start + span[0], lead + start + span[1]
         plan[tid] = {"ref": (r0, r1), "built": (b0, b1), "key": key}
         lo, hi = renders.get(key, (b0, b1))
         renders[key] = (min(lo, b0), max(hi, b1))
