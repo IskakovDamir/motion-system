@@ -183,3 +183,22 @@ questions.
   S17 readings.
 - cornerFollow's handle fly-out and exit have two poses each (linear); chainOut's swell uses outFirm (two
   points); scaleIn's blur is weaker than the reference's smear, as the measured v7 shutter gives.
+
+## transition-morph (5 primitives, 28 variants, 27 curves)
+
+- No blur amount measured: oversizeLanding's radial zoom blur, the growing motion blur of dissolve, spin
+  and clusterSnap, tunnelExit's halo, crossfadeSlide's vertical blur (radialStreaks' streaks are measured
+  and built).
+- spin: the barrel bend is not quantified; the cursor's x3.42 depth plane cannot apply to a flat incoming
+  scene, so the whole scene uses the background's x2.58.
+- radialStreaks: the title's fill fading to an outline is text-specific, not built.
+- oversizeLanding: the near-linear 1.0 -> 0.97 landing tail is dropped so the incoming scene ends at size.
+- dissolve: the incoming tunnel's own forward motion is not measured.
+- meltImplode: wave displacement and glow have no amplitude; its 5 f rotation is UNCERTAIN (linear).
+- sphereWrap: globe shading not measured; the curl's pace is linear with scale corrected to hold the
+  measured silhouette curve.
+- blobMerge: spheres two and three arrive before f1462 without a card-relative path (starts with all three
+  in); the merge into one blob is linear.
+- ringFold: corner cells (2-3 f) and edge cells (about 10 f) are one 9 f fold with inOutWhip.
+- Duration-only, linear: tunnelExit's wash (early ease-out), risingZoom's cell fade and 7 f crossfade,
+  dropThrough's per-picture pops.
