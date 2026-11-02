@@ -2,8 +2,156 @@
 // (MotionShowcase, PrimitiveProbe).
 import type React from 'react';
 import type {DemoProps} from './types';
+import {Demo as Typewriter} from './text-reveal/Typewriter';
+import {Demo as WordPop} from './text-reveal/WordPop';
+import {Demo as Scramble} from './text-reveal/Scramble';
+import {Demo as LetterPopBuild} from './text-reveal/LetterPopBuild';
+import {Demo as SoftFrontReveal} from './text-reveal/SoftFrontReveal';
+import {Demo as ShimmerSweep} from './text-reveal/ShimmerSweep';
+import {Demo as RiseFade} from './text-motion/RiseFade';
+import {Demo as BlurIn} from './text-motion/BlurIn';
+import {Demo as BlurSlideIn} from './text-motion/BlurSlideIn';
+import {Demo as WarpFlyIn} from './text-motion/WarpFlyIn';
+import {Demo as EdgeRise} from './text-motion/EdgeRise';
+import {Demo as TextFadeOut} from './text-motion/TextFadeOut';
+import {Demo as HardCut} from './transition-cut/HardCut';
+import {Demo as DipToBackground} from './transition-cut/DipToBackground';
+import {Demo as WhipCut} from './transition-cut/WhipCut';
+import {Demo as PushSlide} from './transition-cut/PushSlide';
+import {Demo as ZoomThrough} from './transition-morph/ZoomThrough';
+import {Demo as CollapseToPoint} from './transition-morph/CollapseToPoint';
+import {Demo as FlyToSlots} from './transition-morph/FlyToSlots';
+import {Demo as ShapeSwap} from './transition-morph/ShapeSwap';
+import {Demo as ContentSwap} from './transition-morph/ContentSwap';
+import {Demo as LightFlash} from './light-fx/LightFlash';
+import {Demo as StarFlare} from './light-fx/StarFlare';
+import {Demo as LumaPulse} from './light-fx/LumaPulse';
+import {Demo as RadialBurst} from './light-fx/RadialBurst';
+import {Demo as PixelBlocks} from './light-fx/PixelBlocks';
+import {Demo as ToneShift} from './light-fx/ToneShift';
+import {Demo as SlowZoom} from './camera-zoom/SlowZoom';
+import {Demo as PushIn} from './camera-zoom/PushIn';
+import {Demo as PullBack} from './camera-zoom/PullBack';
+import {Demo as CanvasPan} from './camera-move/CanvasPan';
+import {Demo as AccelerateExit} from './camera-move/AccelerateExit';
+import {Demo as CutInSettle} from './camera-move/CutInSettle';
+import {Demo as SteppedZoom} from './camera-move/SteppedZoom';
+import {Demo as PerspectiveSwing} from './three/PerspectiveSwing';
+import {Demo as CardSpin3D} from './three/CardSpin3D';
+import {Demo as LayerStack} from './three/LayerStack';
+import {Demo as Camera3D} from './three/Camera3D';
+import {Demo as GlobeRise} from './three/GlobeRise';
+import {Demo as DepthFlyer} from './three/DepthFlyer';
+import {Demo as OrbitRig} from './three/OrbitRig';
+import {Demo as PressBounce} from './ui-controls/PressBounce';
+import {Demo as SeedGrow} from './ui-controls/SeedGrow';
+import {Demo as Dropdown} from './ui-controls/Dropdown';
+import {Demo as Counter} from './ui-controls/Counter';
+import {Demo as ItemRiseIn} from './ui-feed/ItemRiseIn';
+import {Demo as StepScroll} from './ui-feed/StepScroll';
+import {Demo as PageScroll} from './ui-feed/PageScroll';
+import {Demo as Marquee} from './ui-feed/Marquee';
+import {Demo as BusyIndicator} from './ui-feed/BusyIndicator';
+import {Demo as FloatingPill} from './ui-feed/FloatingPill';
+import {Demo as SlideSettle} from './cards/SlideSettle';
+import {Demo as EdgeEnter} from './cards/EdgeEnter';
+import {Demo as ScaleFade} from './cards/ScaleFade';
+import {Demo as OversizeSettle} from './cards/OversizeSettle';
+import {Demo as MakeRoom} from './layout/MakeRoom';
+import {Demo as SplitApart} from './layout/SplitApart';
+import {Demo as LockupSlide} from './layout/LockupSlide';
+import {Demo as CaptionDrift} from './layout/CaptionDrift';
+import {Demo as ScalePop} from './icons/ScalePop';
+import {Demo as SpawnField} from './icons/SpawnField';
+import {Demo as AmbientLoop} from './icons/AmbientLoop';
+import {Demo as IconFlyIn} from './icons/IconFlyIn';
+import {Demo as MarkBars} from './icons/MarkBars';
+import {Demo as PacketHop} from './shapes/PacketHop';
+import {Demo as LineDraw} from './shapes/LineDraw';
+import {Demo as Backdrop} from './shapes/Backdrop';
+import {Demo as CursorPath} from './cursor/CursorPath';
+import {Demo as CursorState} from './cursor/CursorState';
+import {Demo as DragDrop} from './cursor/DragDrop';
+import {Demo as SelectionHighlight} from './cursor/SelectionHighlight';
+import {Demo as FootageCard} from './footage-frames/FootageCard';
+import {Demo as FootageFrame} from './footage-frames/FootageFrame';
+import {Demo as MaskReveal} from './footage-frames/MaskReveal';
 import {Demo as FootageSlot} from './footage/FootageSlot';
 
 export const COMPONENTS: Record<string, React.FC<DemoProps>> = {
+	Typewriter: Typewriter,
+	WordPop: WordPop,
+	Scramble: Scramble,
+	LetterPopBuild: LetterPopBuild,
+	SoftFrontReveal: SoftFrontReveal,
+	ShimmerSweep: ShimmerSweep,
+	RiseFade: RiseFade,
+	BlurIn: BlurIn,
+	BlurSlideIn: BlurSlideIn,
+	WarpFlyIn: WarpFlyIn,
+	EdgeRise: EdgeRise,
+	TextFadeOut: TextFadeOut,
+	HardCut: HardCut,
+	DipToBackground: DipToBackground,
+	WhipCut: WhipCut,
+	PushSlide: PushSlide,
+	ZoomThrough: ZoomThrough,
+	CollapseToPoint: CollapseToPoint,
+	FlyToSlots: FlyToSlots,
+	ShapeSwap: ShapeSwap,
+	ContentSwap: ContentSwap,
+	LightFlash: LightFlash,
+	StarFlare: StarFlare,
+	LumaPulse: LumaPulse,
+	RadialBurst: RadialBurst,
+	PixelBlocks: PixelBlocks,
+	ToneShift: ToneShift,
+	SlowZoom: SlowZoom,
+	PushIn: PushIn,
+	PullBack: PullBack,
+	CanvasPan: CanvasPan,
+	AccelerateExit: AccelerateExit,
+	CutInSettle: CutInSettle,
+	SteppedZoom: SteppedZoom,
+	PerspectiveSwing: PerspectiveSwing,
+	CardSpin3D: CardSpin3D,
+	LayerStack: LayerStack,
+	Camera3D: Camera3D,
+	GlobeRise: GlobeRise,
+	DepthFlyer: DepthFlyer,
+	OrbitRig: OrbitRig,
+	PressBounce: PressBounce,
+	SeedGrow: SeedGrow,
+	Dropdown: Dropdown,
+	Counter: Counter,
+	ItemRiseIn: ItemRiseIn,
+	StepScroll: StepScroll,
+	PageScroll: PageScroll,
+	Marquee: Marquee,
+	BusyIndicator: BusyIndicator,
+	FloatingPill: FloatingPill,
+	SlideSettle: SlideSettle,
+	EdgeEnter: EdgeEnter,
+	ScaleFade: ScaleFade,
+	OversizeSettle: OversizeSettle,
+	MakeRoom: MakeRoom,
+	SplitApart: SplitApart,
+	LockupSlide: LockupSlide,
+	CaptionDrift: CaptionDrift,
+	ScalePop: ScalePop,
+	SpawnField: SpawnField,
+	AmbientLoop: AmbientLoop,
+	IconFlyIn: IconFlyIn,
+	MarkBars: MarkBars,
+	PacketHop: PacketHop,
+	LineDraw: LineDraw,
+	Backdrop: Backdrop,
+	CursorPath: CursorPath,
+	CursorState: CursorState,
+	DragDrop: DragDrop,
+	SelectionHighlight: SelectionHighlight,
+	FootageCard: FootageCard,
+	FootageFrame: FootageFrame,
+	MaskReveal: MaskReveal,
 	FootageSlot: FootageSlot,
 };

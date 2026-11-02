@@ -10,7 +10,7 @@ export type VariantSpec = {
 	motions: Record<string, Motion>;
 	/** measured amplitudes and options the component reads (no timing here: timing lives in motions) */
 	params?: Params;
-	/** property -> technique ids (analysis/<video>/timeline.md) whose measured curve this property reproduces */
+	/** property -> technique ids (the timelines' technique index) whose measured curve this property reproduces */
 	reproduces?: Record<string, string[]>;
 	/** technique ids that map to this variant without a per-frame curve (layout rules, hard cuts ...) */
 	covers?: string[];
