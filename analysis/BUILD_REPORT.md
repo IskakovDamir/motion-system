@@ -152,3 +152,19 @@ questions.
   widths are derived from half-ink times.
 - ShimmerSweep: darkBand and once borrow the looping band's 5.2 % W; looping assumes a symmetric pass;
   slantedBand's .i2 card instance and .i3 growth out of the pill are not built.
+
+## camera-zoom (3 primitives, 25 variants, 21 curves)
+
+- Pivots: measured where the rows give them; worked out from measured start and end positions for
+  blurSettle (6.3, 71.8 %), reframe (-51.1, 100.0 %) and speedRamp's y (50.5 % H); frame centre where not
+  measured: linearDrift and flatten (both axes), snap and speedRamp (x), whipReveal, twoPulses and
+  centreTail (y).
+- easeBack has no scale: only the card's right edge is measured (98.3 -> 75.4 % W), no scale or pivot, so it
+  moves sideways only; the reference visibly shrinks the card.
+- closeUpOut: the opacity dip is named and visible but its depth and timing are not measured.
+- flatten: the 5.4 -> 0 degree tilt has no axis or direction measured; whipReveal's yaw is not built.
+- linearDrift: v5's direction-changing drift has no single rate; it uses v6's -0.042 % per frame over 63 f.
+- reframe starts at x1.15; the push-in before it in S11 is a separate move, not chained.
+- Ease tokens chosen where no curve is stored: twoPulses' second pulse (outSoft, rmse 0.034 to the stored
+  fit), whipReveal's scale (inOutWhip, rmse 0.054, starts about 2 f late), centreTail's tail (outFirm,
+  matched to the hand-off speed).
