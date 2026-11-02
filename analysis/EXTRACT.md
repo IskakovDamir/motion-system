@@ -6,62 +6,32 @@ How the final timelines become the data the primitives are built from. Inputs ar
 people, grayscale (luminance; colour only when it drives motion), never guess, no on-screen words,
 no brand names, nothing written to `reference/`.
 
-## 1. Technique records: `analysis/<stem>/techniques.json`
+## 1. Technique data: read from the timelines
 
-One record per row of the video's technique index, in index order: `{"video": "v5", "techniques": [...]}`.
-Large videos are written in parts (`scratch/techniques_part<k>.json`, same format, only the part's ids)
-and merged with `check_techniques.py <key> --merge`. `scripts/analysis/check_techniques.py` is the
-format check; its docstring is the contract.
+There is no second copy of the measurements. `scripts/analysis/techniques.py` reads every timeline.md:
 
-| field | content |
-|---|---|
-| `id` | the technique id of the index row |
-| `concept` | 2-5 neutral words naming the device: "word pop-in", "stepped zoom-out", "dip to background". No content words. |
-| `segments` | segment ids from the index row |
-| `reference_frames` | `[first, last]` exactly as the index row's reference-frames column (a single frame `fN` is `[N, N]`) |
-| `curve_id`, `curve_property` | the curve the index row cites and its sidecar `property` (`curves/<id>.json`), else `null` |
-| `moves` | every movement row of the timeline that names the technique, in every segment (below) |
-| `geometry` | optional: rest positions and sizes of the elements, `{element: {"x0", "y0", "x1", "y1", "radius_pct_h", "stroke_px1080", ...}}` in % of the picture |
-| `look` | neutral description of the elements: shapes, layer order, text roles, blur, mask, shadow, corner radius, stroke. No content, brands or people. |
-| `typography` | `null`, or the text record below |
-| `sound` | the sync note of the technique's moves (offset in frames to the nearest beat or onset), else `null` |
-| `uncertain` | every `UNCERTAIN` item of the timeline about this technique, with reason and range, else `null` |
+- `techniques.py digest` writes `analysis/techniques_digest.md`: one line per technique index row
+  (segments, reference frames, the curve's property, measured frames and ease token, the number of
+  movement rows, the inspector's summary).
+- `techniques.py show <id> ...` prints what a builder needs for one technique: its index row, every
+  movement row whose technique column names it (all segments, every cell as written), the typography
+  rows of those segments, and the curve sidecar with its token.
+- `typography()` parses the typography rows (role from the event name, family, weight, cap height in %
+  of H, tracking in em from the measured letter gap and flat cap via `type_metrics.py`, unit, method,
+  frames per unit) for `gen_type.py` and `gen_timing.py`. A cell that gives no number stays `None`.
 
-**A move** is `{"element", "property", "from", "to", "unit", "frames", "start", "delay", "stagger", "ease", "note"}`:
-element in neutral role words ("card", "headline word", "icon badge", "cursor", "footage plate");
-from / to numbers; frames = duration; start = first analysis frame; delay = frames after the
-technique's first move; stagger = frames between instances (a number or the measured list); ease =
-the measured fit as the timeline writes it (`bezier(x1, y1, x2, y2) D=n`, `spring damping ratio z`,
-`linear`, `step`, or the sample list); note = sub-steps, holds, envelopes, speed changes. Copy numbers
-exactly. A number the timeline does not give stays `null` and goes to `uncertain`.
+**Units.** Timelines give pixels of the analysed picture: v1-v4 are 1920 x 1080; v5-v8 (screen
+recordings, cropped) are 1622 x 918. Specs turn them into % of W (x, widths), % of H (y, heights) or
+px1080 = px x 1080 / H (strokes, radii, small offsets). Scales are factors, rotations degrees, opacity
+0-1, blur in % of W.
 
-**Units.** Pixels become % of the picture: x and widths in % of W, y and heights in % of H, or
-`px1080` = px x 1080 / H for strokes, radii and small offsets. Keep the px value in the note when the
-timeline gives px. Pictures: v1-v4 are 1920 x 1080; v5-v8 (screen recordings, cropped) are 1622 x 918.
-Scales are factors, rotations degrees, opacity 0-1, luminance 0-255, blur in % of W (radius px / W x
-100), speeds in % of W (or H) per frame.
-
-**Typography** (text techniques):
-
-| field | content |
-|---|---|
-| `role` | one of display, headline, subhead, body, ui, label, caption, counter, code |
-| `closest_free` | Inter / Inter Tight / Archivo wdth N / Unbounded / JetBrains Mono, as the timeline names it |
-| `original` | "not identified" unless the timeline identifies it |
-| `weight` | a number from the stem ratio: `type_metrics.py weights <family> [--set upper|digits] [--wdth N]` lists stem / cap per weight of the local font; take the weight whose ratio is closest to the measured one (timeline, or measure it: stem width at the 50% ink level / flat cap height on the still) |
-| `size_pct_h`, `size_range_pct_h` | flat cap height in % of H, a number measured on a still; the range over the technique's events |
-| `tracking_em` | a number: measure the median gap between adjacent letters at the 50% ink level on a still, then `type_metrics.py tracking <family> --cap-px C --gap-px G --weight W [--set upper]`. `null` + uncertain only when no still shows separable letters |
-| `case`, `align` | upper / lower / sentence / title / mixed; left / centre / right |
-| `reveal_unit`, `reveal_method` | char, word, line, block; typewriter, fade, slide, blur, scale, mask, scramble, swap, count ... |
-| `frames_per_unit`, `stagger` | frames, or `null` |
-
-Tools run from `scripts/analysis/` with `../../.venv/bin/python`. Write only inside `analysis/<stem>/`.
+Tools run from `scripts/analysis/` with `../../.venv/bin/python`.
 
 ## 2. The catalogue: `analysis/catalogue.json`
 
 The map from every technique to the primitive that rebuilds it. `scripts/analysis/check_catalogue.py`
 is the format check (its docstring and rules are the contract); `analysis/techniques_digest.md`
-(`digest_techniques.py`) is the one-line-per-technique overview.
+(`techniques.py digest`) is the one-line-per-technique overview.
 
 - **A primitive is one motion device**, rebuilt by one React component: a text reveal method, a
   transition type, a camera move, a UI behaviour, a counter, a 3D object move, an effect. The same

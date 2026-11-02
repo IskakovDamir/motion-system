@@ -117,3 +117,8 @@ Calls made where the brief left room, with the reason. Newest at the bottom of e
 - **Reference frame column.** A technique whose index row names a single frame (`f830`) has a
   one-frame reference: verify.py and the comparison sheets read the reference-frames column itself
   instead of the first frame range anywhere in the row.
+- **No second copy of the measurements (2026-11-03).** The plan was a JSON record per technique
+  (`techniques.json`, re-typed from the timelines by extraction agents). It is dropped: re-typing 468
+  techniques costs a full agent stage and can only add transcription errors. `scripts/analysis/techniques.py`
+  reads the timelines instead (`digest` for the catalogue, `show <id>` for builders, `typography()` for
+  `gen_type.py` / `gen_timing.py`), so every number reaches the code exactly as the inspectors measured it.

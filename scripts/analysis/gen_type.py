@@ -3,8 +3,8 @@ height, tracking and case the references set, and per reveal method the unit, fr
 
   python gen_type.py
 
-Medians over the typography records of analysis/<video>/techniques.json; each comment gives n and the
-range. Cap height is in % of frame height (measured on full-res stills). CAP_RATIO (cap height / font size
+Medians over the typography rows of every timeline.md (parsed by techniques.typography()); each comment
+gives n and the range. Cap height is in % of frame height (measured on full-res stills). CAP_RATIO (cap height / font size
 of each family, read from the local font files) turns it into a font size: fontSize(role, frameHeight).
 A family the inspectors named that none of the five local families stands for is reported, not guessed.
 """
@@ -14,7 +14,8 @@ from collections import Counter
 import numpy as np
 from fontTools.ttLib import TTFont
 
-from common import ROOT, load_registry, load_json
+from common import ROOT
+from techniques import typography
 
 NODE = ROOT / "node_modules"
 FAMILIES = {  # FONT key -> (CSS family list, file the cap height is read from, what it sets)
@@ -48,6 +49,17 @@ def num(x):
     return float(m.group()) if m else None
 
 
+METHODS = [("typewriter", r"typewriter|type-on|types? on"), ("scramble", r"scramble|shuffle"), ("count", r"count|value"),
+           ("pop", r"pop"), ("rise", r"rise|slide|drop"), ("blur", r"blur|defocus"), ("mask", r"mask|wipe|reveal"),
+           ("scale", r"scale|zoom"), ("swap", r"swap|replace"), ("fade", r"fade")]
+
+
+def method_of(x):
+    """The reveal method an inspector's method cell names (first match), else None."""
+    s = str(x or "").lower()
+    return next((m for m, rx in METHODS if re.search(rx, s)), None)
+
+
 def case_of(x):
     s = str(x or "").lower()
     for c in ("upper", "lower", "sentence", "title"):
@@ -70,10 +82,8 @@ def main():
         t = TTFont(NODE / f)
         cap[k] = round(t["OS/2"].sCapHeight / t["head"].unitsPerEm, 4)
     recs = []
-    for v in load_registry():
-        for r in load_json(v.dir / "techniques.json", {"techniques": []})["techniques"]:
-            if r.get("typography"):
-                recs.append((v.key, r["id"], r["typography"]))
+    for t in typography():
+        recs.append((t["video"], t["segment"], t))
     unmapped = Counter(str(t.get("closest_free")) for _, _, t in recs if not family_of(t.get("closest_free")))
     styles = []
     for role in ROLES:
@@ -91,7 +101,7 @@ def main():
         if not caps:
             continue
         vids = Counter(k for k, _, _ in rs)
-        doc = (f"{len(rs)} text techniques ({', '.join(f'{k} {n}' for k, n in sorted(vids.items()))}); "
+        doc = (f"{len(rs)} typography rows ({', '.join(f'{k} {n}' for k, n in sorted(vids.items()))}); "
                f"cap height {rng(caps)} % H, weight {rng(weights)}, tracking {rng(tracks)} em")
         fields = [f"font: '{fams.most_common(1)[0][0]}'", f"weight: {int(med(weights, 0)) if weights else 400}" if weights else "weight: null",
                   f"capHeight: {med(caps, 2)}", f"tracking: {med(tracks, 3) if tracks else 'null'}",
@@ -101,11 +111,11 @@ def main():
         styles.append(f"\t/** {doc} */\n\t{role}: {{{', '.join(fields)}}},")
     reveals = {}
     for k, i, t in recs:
-        meth = re.sub(r"[^a-z]+", "-", str(t.get("reveal_method") or "").lower()).strip("-")
-        unit = UNIT.get(str(t.get("reveal_unit") or "").lower())
+        meth = method_of(t.get("reveal_method"))
+        unit = UNIT.get(str(t.get("reveal_unit") or "").lower().split()[0] if t.get("reveal_unit") else "")
         if not meth or not unit:
             continue
-        reveals.setdefault((meth.split("-")[0], unit), []).append(t)
+        reveals.setdefault((meth, unit), []).append(t)
     rev = []
     for (meth, unit), ts in sorted(reveals.items()):
         fpu = [x for x in (num(t.get("frames_per_unit")) for t in ts) if x is not None and x > 0]
@@ -138,7 +148,7 @@ def main():
         "export const REVEAL = {\n" + "\n".join(rev) + "\n} as const;\n"
     )
     (ROOT / "src" / "motion" / "tokens" / "type.ts").write_text(body)
-    print(f"type.ts: {len(styles)} roles, {len(rev)} reveals from {len(recs)} text techniques; cap ratios {cap}")
+    print(f"type.ts: {len(styles)} roles, {len(rev)} reveals from {len(recs)} typography rows; cap ratios {cap}")
     if unmapped:
         print("families with no local stand-in (decide, do not guess):", dict(unmapped))
 

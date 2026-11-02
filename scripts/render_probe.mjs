@@ -34,7 +34,8 @@ for (const job of jobs) {
 			imageFormat: 'jpeg',
 			jpegQuality: 90,
 			scale: job.scale ?? 1,
-			concurrency: job.concurrency ?? null,
+			// several builders render at once on a 10-core, 17 GB machine: 2 tabs each unless PROBE_CONCURRENCY says otherwise
+			concurrency: job.concurrency ?? Number(process.env.PROBE_CONCURRENCY ?? 2),
 			frameRange: [job.frames[0], last],
 			chromiumOptions: {gl: 'angle'},
 			timeoutInMilliseconds: 120000,

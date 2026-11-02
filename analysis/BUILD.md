@@ -2,7 +2,8 @@
 
 How a primitive is written, so every group reads the same. The catalogue (`analysis/catalogue.json`)
 decides which primitives exist, their variants and which techniques each variant carries; the
-measurements (`analysis/<stem>/techniques.json`, `timeline.md`, `curves/<id>.json`) give every number.
+measurements (`timeline.md` rows, printed per technique by `scripts/analysis/techniques.py show <id>`, and
+`curves/<id>.json`) give every number.
 
 ## Files
 
@@ -44,7 +45,7 @@ export const spec: PrimitiveSpec = {
   `measured(id, delay)` if that move starts later inside the variant). That motion is what verify.py
   samples, and the component must animate that property with exactly that progress.
 - Every other motion is `motion(<frames>, EASE.<token>, <delay>)` with the frames measured in
-  techniques.json / the timeline and the EASE token whose shape is closest to the measured fit (read
+  timeline's movement rows and the EASE token whose shape is closest to the measured fit (read
   the shape notes in `easing.ts`; `measured.ts` shows which token each curve of that family got).
 - `params` hold the measured amplitudes and counts: travel in % of frame width or height, scale
   factors, degrees, opacity, blur (% of frame width), px at 1080p, staggers and holds in frames,
