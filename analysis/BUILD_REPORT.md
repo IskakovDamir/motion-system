@@ -221,3 +221,24 @@ questions.
   linear (ease not measured), reproduces the x2 luma ratio only, and adds a bottom-left patch that the
   frames show but no row measures; ribbon paths, width and pitch are props; beamGrow's grow is linear, its
   cluster size assumed (the beam's waist) and its 27 f swing approximate.
+
+## transition-cut (4 primitives, 25 variants, 20 curves)
+
+- Blur from one shutter per video, from the rows' measured blur / speed pairs: v7 1.22 (median of 10
+  pairs), v8 1.55 (4 v8.trans-whip-up pairs; camera-move uses 1.41 from another v8 technique), v5 and v6
+  1.25 (median of all 14 pairs, their rows give no size).
+- Per-element timing inside one boundary needs per-element layers and is not built: HardCut plain's
+  staggered cut-out (headline one frame before the ring), DipToBackground's headline leaving 1 f ahead,
+  zoomBuild's second window +3 f.
+- HardCut: 5 of 17 measured cuts hold 1-6 empty frames (`emptyFrames` prop, default 0); overlayHold's
+  overlay must sit above a TransitionSeries; motionMatch builds only the measured exit tail (-11.9 % H in
+  5 f) and its 47.8 % H incoming offset is a lower bound.
+- WhipCut: some tokens start slower than the measured first-picture speed (pushRight, riseUp blur less on
+  arrival); pushLeft's outgoing half comes from T13 (.i5); blendLeft's 64.2 % W travel is summed from five
+  speed readings assumed 3 f apart, its 10 f crossfade is linear; streakLeft renders the multi-exposure as
+  speed blur; creepLeft's incoming text reveal, blurReframe's defocus ramp and T05 instance, punchUp's
+  pivot x, diagonalZoom's 0.99 scale and recoil, the T25 and T07 instances are not built; canvasDown's
+  token peaks near 19 % H/f against a measured 14 % H/f.
+- PushSlide: stacked's mask inset and hand-off, dipRise's anticipation (none in its instance),
+  easeInDrift's final two-picture jump (replaced by its end speed) are not built; rippleRise splits the
+  incoming scene at the measured gutters.
