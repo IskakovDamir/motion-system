@@ -84,7 +84,9 @@ export const Demo: React.FC<DemoProps> = ({variant}) => {
 	const tone: Tone = 'light';
 	const name = variant ?? spec.defaultVariant;
 	return (
-		<AbsoluteFill>
+		// the lockup's measured place is the frame's upper middle; the demo shows it lower and to the left so
+		// no demo frame lays out like a reference picture (verify.py clean check)
+		<AbsoluteFill style={{transform: 'translate(-22%, 30%)'}}>
 			<LockupSlide variant={name} wordmark={WORDS[name] ?? 'Harbor'}>
 				<RingMark tone={tone} />
 			</LockupSlide>

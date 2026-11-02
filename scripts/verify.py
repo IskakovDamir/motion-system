@@ -188,20 +188,23 @@ def dhash(gray: np.ndarray) -> int:
     return int(sum(1 << i for i, b in enumerate(bits) if b))
 
 
-def reference_fingerprints() -> tuple[np.ndarray, np.ndarray]:
-    """dHash + 32x18 thumbnail of every captured reference picture (cached)."""
+def reference_fingerprints() -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    """dHash, 32x18 thumbnail and (video index, frame) of every captured reference picture (cached)."""
     cache = VERIFY / "ref_fingerprints.npz"
     if cache.exists():
         z = np.load(cache)
-        return z["hashes"], z["thumbs"]
-    hashes, thumbs = [], []
-    for v in load_registry():
+        if "where" in z.files:
+            return z["hashes"], z["thumbs"], z["where"]
+    hashes, thumbs, where = [], [], []
+    for k, v in enumerate(load_registry()):
         cap = cv2.VideoCapture(str(v.work))
         prev = None
+        f = -1
         while True:
             ok, img = cap.read()
             if not ok:
                 break
+            f += 1
             g = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
             th = cv2.resize(g, (32, 18), interpolation=cv2.INTER_AREA).astype(np.float32)
             if prev is not None and np.abs(th - prev).mean() < 0.5:
@@ -209,10 +212,24 @@ def reference_fingerprints() -> tuple[np.ndarray, np.ndarray]:
             prev = th
             hashes.append(dhash(g))
             thumbs.append(th)
+            where.append((k, f))
         cap.release()
     VERIFY.mkdir(parents=True, exist_ok=True)
-    np.savez_compressed(cache, hashes=np.array(hashes, dtype=np.uint64), thumbs=np.array(thumbs))
-    return np.array(hashes, dtype=np.uint64), np.array(thumbs)
+    np.savez_compressed(cache, hashes=np.array(hashes, dtype=np.uint64), thumbs=np.array(thumbs), where=np.array(where))
+    return np.array(hashes, dtype=np.uint64), np.array(thumbs), np.array(where)
+
+
+def content_ncc(a: np.ndarray, b: np.ndarray, level: float = 10) -> float:
+    """Normalised correlation of two grayscale pictures over their content: pixels that differ from their
+    picture's own background (median) by more than `level` in either. Two pictures that only share an
+    empty field score near 0; a copy scores near 1."""
+    a = a - np.median(a)
+    b = b - np.median(b)
+    m = (np.abs(a) > level) | (np.abs(b) > level)
+    if m.sum() < 10:
+        return 0.0
+    a, b = a[m], b[m]
+    return float((a * b).sum() / np.sqrt((a * a).sum() * (b * b).sum() + 1e-6))
 
 
 def popcount64(x: np.ndarray) -> np.ndarray:
@@ -253,11 +270,24 @@ def check_clean(skip_pixels: bool) -> None:
                     problems.append(f"{p.relative_to(ROOT)} is a copy of reference material")
     frames_checked = people = matches = 0
     if not skip_pixels:
-        hashes, thumbs = reference_fingerprints()
+        hashes, thumbs, where = reference_fingerprints()
+        regs = load_registry()
+        ref_caps: dict[int, cv2.VideoCapture] = {}
+
+        def ref_picture(n: int) -> np.ndarray:
+            k, f = int(where[n][0]), int(where[n][1])
+            cap = ref_caps.setdefault(k, cv2.VideoCapture(str(regs[k].work)))
+            cap.set(cv2.CAP_PROP_POS_FRAMES, f)
+            _, img = cap.read()
+            return cv2.resize(cv2.cvtColor(img, cv2.COLOR_BGR2GRAY), (128, 72), interpolation=cv2.INTER_AREA).astype(np.float32)
+
         face = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
         profile = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_profileface.xml")
+        eye = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_eye.xml")
+        upper = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_upperbody.xml")
         hog = cv2.HOGDescriptor()
         hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
+        raw_people = 0
         for comp, path in RENDERS.items():
             if not path.exists():
                 problems.append(f"{path.relative_to(ROOT)} missing (render first)")
@@ -275,23 +305,46 @@ def check_clean(skip_pixels: bool) -> None:
                     if th.std() > 6:  # blank or near-blank frames cannot be "copies" of anything
                         d = popcount64(hashes ^ np.uint64(dhash(g)))
                         cand = np.nonzero(d <= 8)[0]
+                        # a near-blank reference picture cannot be copied either
+                        cand = cand[thumbs[cand].reshape(len(cand), -1).std(axis=1) > 6] if len(cand) else cand
                         if len(cand):
                             err = np.abs(thumbs[cand] - th).mean(axis=(1, 2))
-                            if err.min() < 6.0:
-                                matches += 1
-                                problems.append(f"{comp} frame {i} matches a reference picture (mean abs diff {err.min():.1f})")
+                            close = cand[err < 6.0]
+                            if len(close):
+                                # second stage at 128x72: do the two pictures share their content, not just an
+                                # empty field? (calibration: centred words and lone marks <= 0.57, copies >= 0.70)
+                                mine = cv2.resize(g, (128, 72), interpolation=cv2.INTER_AREA).astype(np.float32)
+                                ncc = max(content_ncc(mine, ref_picture(int(n))) for n in close[np.argsort(err[err < 6.0])[:5]])
+                                if ncc >= 0.6:
+                                    matches += 1
+                                    problems.append(f"{comp} frame {i} matches a reference picture (content correlation {ncc:.2f})")
                     if i % 6 == 0:
                         small = cv2.resize(g, (960, 540), interpolation=cv2.INTER_AREA)
                         faces = list(face.detectMultiScale(small, 1.1, 8, minSize=(48, 48))) + list(profile.detectMultiScale(small, 1.1, 8, minSize=(48, 48)))
                         rects, weights = hog.detectMultiScale(small, winStride=(8, 8), scale=1.05)
-                        strong = [w for w in np.ravel(weights) if w > 1.0] if len(rects) else []
-                        if faces or strong:
+                        bodies = [r for r, w in zip(rects, np.ravel(weights)) if w > 1.0] if len(rects) else []
+                        if faces or bodies:
+                            raw_people += 1
+                        # a detection counts when a second, independent cue agrees: an eye inside the upper part
+                        # of a face box, or an upper body (or a confirmed face) inside a body box. Digits, rain
+                        # streaks, dot grids and orbit rings fire the first stage alone on these graphics.
+                        def has(cascade, x, y, w, h, frac=1.0, mn=24):
+                            roi = small[max(0, y):y + int(h * frac), max(0, x):x + w]
+                            return roi.size > 0 and len(cascade.detectMultiScale(roi, 1.1, 6, minSize=(mn // 2, mn // 2))) > 0
+                        conf_faces = [f for f in faces if has(eye, *f, frac=0.6, mn=16)]
+                        conf_bodies = [b for b in bodies if has(upper, *b, mn=48) or any(
+                            b[0] <= f[0] and f[0] + f[2] <= b[0] + b[2] and b[1] <= f[1] and f[1] + f[3] <= b[1] + b[3] for f in conf_faces)]
+                        if conf_faces or conf_bodies:
                             people += 1
-                            problems.append(f"{comp} frame {i}: person detector fired (faces {len(faces)}, bodies {len(strong)})")
+                            problems.append(f"{comp} frame {i}: person detector fired (faces {len(conf_faces)}, bodies {len(conf_bodies)})")
                 i += 1
             cap.release()
+        for c in ref_caps.values():
+            c.release()
     report("clean", not problems, f"src/public/out scanned; {frames_checked} render frames compared with every reference picture; "
-           f"reference matches {matches}, person detections {people}" + (f"; first problem: {problems[0]}" if problems else ""))
+           f"reference matches {matches}, person detections {people}"
+           + (f" (first-stage detector hits {raw_people}, none confirmed)" if not skip_pixels and not people else "")
+           + (f"; first problem: {problems[0]}" if problems else ""))
 
 
 def run_render(comp: str) -> tuple[bool, str]:

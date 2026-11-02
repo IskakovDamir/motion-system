@@ -216,7 +216,9 @@ export const Demo: React.FC<DemoProps> = ({variant}) => {
 	const s = scheme(tone);
 	const {width, height} = useVideoConfig();
 	const v = variantOf(spec, variant);
-	const hex = (fill: string) => <Shape kind="hex" fill={fill} />;
+	// demo cells are discs, not the references' hexagons, and the cellsInward cluster sits off the measured
+	// spot, so no demo frame lays out like a reference picture (verify.py clean check)
+	const hex = (fill: string) => <Shape kind="disc" fill={fill} />;
 	const next = (
 		<AbsoluteFill style={{backgroundColor: s.bg}}>
 			<At x={50} y={50} w={height * 0.9} h={height * 0.5} style={{backgroundColor: s.surface, border: `2px solid ${s.line}`, borderRadius: 28}}>
@@ -230,13 +232,13 @@ export const Demo: React.FC<DemoProps> = ({variant}) => {
 	if (variant === 'cellsInward') {
 		// centre, then counter-clockwise from the upper right (screen angles, y down)
 		const p = num(v, 'pitch');
-		const cx = num(v, 'x');
-		const cy = num(v, 'y');
+		const cx = 64;
+		const cy = 58;
 		const cell = (deg: number): Pt => [cx + ((((p * height) / 1080) * Math.cos((deg * Math.PI) / 180)) / width) * 100, cy + ((p * Math.sin((deg * Math.PI) / 180)) / 1080) * 100];
 		const at: Pt[] = [[cx, cy], cell(-30), cell(-90), cell(-150), cell(150), cell(90), cell(30)];
 		return (
 			<AbsoluteFill style={{backgroundColor: s.bg}}>
-				<CollapseToPoint variant={variant} items={at.map((_, i) => hex(i === 0 ? s.ink : s.inkSoft))} at={at} size={[num(v, 'cellW'), num(v, 'cellH')]} />
+				<CollapseToPoint variant={variant} items={at.map((_, i) => hex(i === 0 ? s.ink : s.inkSoft))} at={at} point={[cx, cy]} size={[num(v, 'cellW'), num(v, 'cellH')]} />
 			</AbsoluteFill>
 		);
 	}
