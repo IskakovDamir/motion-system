@@ -1,0 +1,3162 @@
+[
+ {
+  "technique": "v1.cam-slow-push-in",
+  "primitive": "SlowZoom",
+  "variant": "easeOutPush",
+  "property": "scale",
+  "measured_frames": 97.0,
+  "built_frames": 96.0,
+  "rmse": 0.0231,
+  "ok": true
+ },
+ {
+  "technique": "v1.cam-stepped-zoom-out",
+  "primitive": "SteppedZoom",
+  "variant": "pullBack",
+  "property": "scale",
+  "measured_frames": 69.0,
+  "built_frames": 68.0,
+  "rmse": 0.0477,
+  "ok": true
+ },
+ {
+  "technique": "v1.card-shrink-fade-out",
+  "primitive": "ScaleFade",
+  "variant": "shrinkCut",
+  "property": "opacity",
+  "measured_frames": 9.0,
+  "built_frames": 10.0,
+  "rmse": 0.0415,
+  "ok": true
+ },
+ {
+  "technique": "v1.card-slide-fade-in",
+  "primitive": "SlideSettle",
+  "variant": "fadeSlide",
+  "property": "x",
+  "measured_frames": 13.0,
+  "built_frames": 13.0,
+  "rmse": 0.0148,
+  "ok": true
+ },
+ {
+  "technique": "v1.counter-accelerating-count",
+  "primitive": "Counter",
+  "variant": "accelerating",
+  "property": "value",
+  "measured_frames": 92.0,
+  "built_frames": 91.0,
+  "rmse": 0.0249,
+  "ok": true
+ },
+ {
+  "technique": "v1.grid-hex-network-grow",
+  "primitive": "SpawnField",
+  "variant": "latticeGrow",
+  "property": "opacity",
+  "measured_frames": 8.0,
+  "built_frames": 8.0,
+  "rmse": 0.0166,
+  "ok": true
+ },
+ {
+  "technique": "v1.icon-idle-float",
+  "primitive": "AmbientLoop",
+  "variant": "sineFloat",
+  "property": "y",
+  "measured_frames": 65.0,
+  "built_frames": 66.0,
+  "rmse": 0.0179,
+  "ok": true
+ },
+ {
+  "technique": "v1.icon-stagger-pop-in",
+  "primitive": "SpawnField",
+  "variant": "readingOrder",
+  "property": "opacity",
+  "measured_frames": 10.0,
+  "built_frames": 11.0,
+  "rmse": 0.0285,
+  "ok": true
+ },
+ {
+  "technique": "v1.layout-send-off-exit",
+  "primitive": "ScaleFade",
+  "variant": "riseZoomOut",
+  "property": "y",
+  "measured_frames": 10.0,
+  "built_frames": 9.0,
+  "rmse": 0.0361,
+  "ok": true
+ },
+ {
+  "technique": "v1.logo-blink",
+  "primitive": "MarkBars",
+  "variant": "squashShut",
+  "property": "scaleY",
+  "measured_frames": 10.0,
+  "built_frames": 9.0,
+  "rmse": 0.0141,
+  "ok": true
+ },
+ {
+  "technique": "v1.logo-lockup-slide",
+  "primitive": "LockupSlide",
+  "variant": "medium",
+  "property": "x",
+  "measured_frames": 20.0,
+  "built_frames": 21.0,
+  "rmse": 0.0309,
+  "ok": true
+ },
+ {
+  "technique": "v1.logo-mark-pop-in",
+  "primitive": "ScalePop",
+  "variant": "fadeGrow",
+  "property": "opacity",
+  "measured_frames": 9.0,
+  "built_frames": 8.0,
+  "rmse": 0.0192,
+  "ok": true
+ },
+ {
+  "technique": "v1.particle-packet-hop",
+  "primitive": "PacketHop",
+  "variant": "straightCarry",
+  "property": "x",
+  "measured_frames": 12.0,
+  "built_frames": 11.0,
+  "rmse": 0.0266,
+  "ok": true
+ },
+ {
+  "technique": "v1.trans-dip-to-bg",
+  "primitive": "DipToBackground",
+  "variant": "quickDip",
+  "property": "opacity",
+  "measured_frames": 9.0,
+  "built_frames": 10.0,
+  "rmse": 0.014,
+  "ok": true
+ },
+ {
+  "technique": "v1.trans-zoom-through-mark",
+  "primitive": "ZoomThrough",
+  "variant": "risingZoom",
+  "property": "scale",
+  "measured_frames": 23.0,
+  "built_frames": 22.0,
+  "rmse": 0.0262,
+  "ok": true
+ },
+ {
+  "technique": "v1.ui-button-press",
+  "primitive": "PressBounce",
+  "variant": "quick",
+  "property": "scale",
+  "measured_frames": 4.0,
+  "built_frames": 3.0,
+  "rmse": 0.0099,
+  "ok": true
+ },
+ {
+  "technique": "v1.ui-prompt-pop-in",
+  "primitive": "ScaleFade",
+  "variant": "centreGrowIn",
+  "property": "opacity",
+  "measured_frames": 12.0,
+  "built_frames": 11.0,
+  "rmse": 0.0179,
+  "ok": true
+ },
+ {
+  "technique": "v2.grid-hex-radial-pop",
+  "primitive": "SpawnField",
+  "variant": "radialFront",
+  "property": "opacity",
+  "measured_frames": 7.0,
+  "built_frames": 7.0,
+  "rmse": 0.0129,
+  "ok": true
+ },
+ {
+  "technique": "v2.icon-ring-pop-in",
+  "primitive": "SpawnField",
+  "variant": "ringPairs",
+  "property": "scale",
+  "measured_frames": 8.0,
+  "built_frames": 7.0,
+  "rmse": 0.0139,
+  "ok": true
+ },
+ {
+  "technique": "v2.icon-stagger-pop-in",
+  "primitive": "SpawnField",
+  "variant": "gridOrder",
+  "property": "opacity",
+  "measured_frames": 11.0,
+  "built_frames": 12.0,
+  "rmse": 0.0322,
+  "ok": true
+ },
+ {
+  "technique": "v2.logo-eye-glance",
+  "primitive": "MarkBars",
+  "variant": "slideSquash",
+  "property": "x",
+  "measured_frames": 8.0,
+  "built_frames": 9.0,
+  "rmse": 0.016,
+  "ok": true
+ },
+ {
+  "technique": "v2.logo-lockup-slide",
+  "primitive": "LockupSlide",
+  "variant": "shrinkWide",
+  "property": "x",
+  "measured_frames": 10.0,
+  "built_frames": 9.0,
+  "rmse": 0.0283,
+  "ok": true
+ },
+ {
+  "technique": "v2.logo-mark-pop-in",
+  "primitive": "ScalePop",
+  "variant": "strongOut",
+  "property": "scale",
+  "measured_frames": 16.0,
+  "built_frames": 16.0,
+  "rmse": 0.0176,
+  "ok": true
+ },
+ {
+  "technique": "v2.logo-spin-scale-in",
+  "primitive": "ScalePop",
+  "variant": "spinTilt",
+  "property": "scale",
+  "measured_frames": 24.0,
+  "built_frames": 23.0,
+  "rmse": 0.0173,
+  "ok": true
+ },
+ {
+  "technique": "v2.particle-hex-scatter-pop",
+  "primitive": "SpawnField",
+  "variant": "randomScatter",
+  "property": "scale",
+  "measured_frames": 7.0,
+  "built_frames": 6.0,
+  "rmse": 0.0113,
+  "ok": true
+ },
+ {
+  "technique": "v2.text-label-fade-in",
+  "primitive": "RiseFade",
+  "variant": "fadeInPlace",
+  "property": "opacity",
+  "measured_frames": 14.0,
+  "built_frames": 15.0,
+  "rmse": 0.0093,
+  "ok": true
+ },
+ {
+  "technique": "v2.trans-hex-fly-into-ui",
+  "primitive": "FlyToSlots",
+  "variant": "riseIntoSlots",
+  "property": "y",
+  "measured_frames": 15.0,
+  "built_frames": 15.0,
+  "rmse": 0.0154,
+  "ok": true
+ },
+ {
+  "technique": "v2.trans-icon-converge-morph",
+  "primitive": "FlyToSlots",
+  "variant": "converge",
+  "property": "y",
+  "measured_frames": 13.0,
+  "built_frames": 13.0,
+  "rmse": 0.0297,
+  "ok": true
+ },
+ {
+  "technique": "v2.trans-scroll-push",
+  "primitive": "PushSlide",
+  "variant": "sharedStrip",
+  "property": "y",
+  "measured_frames": 17.0,
+  "built_frames": 18.0,
+  "rmse": 0.0189,
+  "ok": true
+ },
+ {
+  "technique": "v2.trans-sphere-collapse",
+  "primitive": "CollapseToPoint",
+  "variant": "sphereWrap",
+  "property": "scale",
+  "measured_frames": 13.0,
+  "built_frames": 12.0,
+  "rmse": 0.0283,
+  "ok": true
+ },
+ {
+  "technique": "v2.ui-badge-swap-pop",
+  "primitive": "ShapeSwap",
+  "variant": "shrinkGrow",
+  "property": "scale",
+  "measured_frames": 7.0,
+  "built_frames": 6.0,
+  "rmse": 0.018,
+  "ok": true
+ },
+ {
+  "technique": "v2.ui-list-item-rise-fade",
+  "primitive": "ItemRiseIn",
+  "variant": "riseFade",
+  "property": "opacity",
+  "measured_frames": 5.0,
+  "built_frames": 4.0,
+  "rmse": 0.0119,
+  "ok": true
+ },
+ {
+  "technique": "v2.ui-page-scroll",
+  "primitive": "PageScroll",
+  "variant": "easeInOut",
+  "property": "y",
+  "measured_frames": 16.0,
+  "built_frames": 17.0,
+  "rmse": 0.0098,
+  "ok": true
+ },
+ {
+  "technique": "v2.ui-slow-push-in",
+  "primitive": "SlowZoom",
+  "variant": "layerPush",
+  "property": "scale",
+  "measured_frames": 97.0,
+  "built_frames": 96.0,
+  "rmse": 0.0219,
+  "ok": true
+ },
+ {
+  "technique": "v3.cam-network-pullback",
+  "primitive": "PullBack",
+  "variant": "logEase",
+  "property": "scale",
+  "measured_frames": 72.0,
+  "built_frames": 73.0,
+  "rmse": 0.031,
+  "ok": true
+ },
+ {
+  "technique": "v3.icon-badge-to-hex",
+  "primitive": "ShapeSwap",
+  "variant": "centreOutSwap",
+  "property": "scale",
+  "measured_frames": 13.0,
+  "built_frames": 14.0,
+  "rmse": 0.0095,
+  "ok": true
+ },
+ {
+  "technique": "v3.icon-node-pop-in",
+  "primitive": "ScalePop",
+  "variant": "overshootPeak",
+  "property": "scale",
+  "measured_frames": 11.0,
+  "built_frames": 10.0,
+  "rmse": 0.0416,
+  "ok": true
+ },
+ {
+  "technique": "v3.logo-eyes-open",
+  "primitive": "MarkBars",
+  "variant": "openFromDash",
+  "property": "height",
+  "measured_frames": 11.0,
+  "built_frames": 12.0,
+  "rmse": 0.0171,
+  "ok": true
+ },
+ {
+  "technique": "v3.logo-lockup-slide",
+  "primitive": "LockupSlide",
+  "variant": "wide",
+  "property": "x",
+  "measured_frames": 21.0,
+  "built_frames": 22.0,
+  "rmse": 0.0262,
+  "ok": true
+ },
+ {
+  "technique": "v3.particle-packet-dispatch",
+  "primitive": "PacketHop",
+  "variant": "dispatch",
+  "property": "progress",
+  "measured_frames": 11.0,
+  "built_frames": 12.0,
+  "rmse": 0.0252,
+  "ok": true
+ },
+ {
+  "technique": "v3.particle-packet-relay",
+  "primitive": "PacketHop",
+  "variant": "relay",
+  "property": "x",
+  "measured_frames": 15.0,
+  "built_frames": 16.0,
+  "rmse": 0.0319,
+  "ok": true
+ },
+ {
+  "technique": "v3.shape-connector-draw-on",
+  "primitive": "LineDraw",
+  "variant": "edgeToEdge",
+  "property": "progress",
+  "measured_frames": 9.0,
+  "built_frames": 9.0,
+  "rmse": 0.0248,
+  "ok": true
+ },
+ {
+  "technique": "v3.shape-hex-collapse",
+  "primitive": "CollapseToPoint",
+  "variant": "cellsInward",
+  "property": "scale",
+  "measured_frames": 23.0,
+  "built_frames": 22.0,
+  "rmse": 0.03,
+  "ok": true
+ },
+ {
+  "technique": "v3.text-fade-out",
+  "primitive": "TextFadeOut",
+  "variant": "easeIn",
+  "property": "opacity",
+  "measured_frames": 9.0,
+  "built_frames": 9.0,
+  "rmse": 0.0122,
+  "ok": true
+ },
+ {
+  "technique": "v3.trans-dip-to-bg",
+  "primitive": "DipToBackground",
+  "variant": "groupFade",
+  "property": "opacity",
+  "measured_frames": 8.0,
+  "built_frames": 9.0,
+  "rmse": 0.0177,
+  "ok": true
+ },
+ {
+  "technique": "v3.trans-hex-gather",
+  "primitive": "FlyToSlots",
+  "variant": "gather",
+  "property": "progress",
+  "measured_frames": 24.0,
+  "built_frames": 25.0,
+  "rmse": 0.0283,
+  "ok": true
+ },
+ {
+  "technique": "v3.trans-morph-title-swap",
+  "primitive": "ContentSwap",
+  "variant": "titleFade",
+  "property": "opacity",
+  "measured_frames": 9.0,
+  "built_frames": 9.0,
+  "rmse": 0.0122,
+  "ok": true
+ },
+ {
+  "technique": "v3.ui-logo-marquee",
+  "primitive": "Marquee",
+  "variant": "deadStop",
+  "property": "x",
+  "measured_frames": 217.0,
+  "built_frames": 216.0,
+  "rmse": 0.0271,
+  "ok": true
+ },
+ {
+  "technique": "v3.ui-panel-grow-fade-in",
+  "primitive": "ScaleFade",
+  "variant": "growIn",
+  "property": "opacity",
+  "measured_frames": 12.0,
+  "built_frames": 12.0,
+  "rmse": 0.0205,
+  "ok": true
+ },
+ {
+  "technique": "v3.ui-panel-shrink-fade-out",
+  "primitive": "ScaleFade",
+  "variant": "shrinkOut",
+  "property": "opacity",
+  "measured_frames": 9.0,
+  "built_frames": 8.0,
+  "rmse": 0.0296,
+  "ok": true
+ },
+ {
+  "technique": "v3.ui-row-fade-in",
+  "primitive": "ItemRiseIn",
+  "variant": "fadeInPlace",
+  "property": "opacity",
+  "measured_frames": 8.0,
+  "built_frames": 8.0,
+  "rmse": 0.048,
+  "ok": true
+ },
+ {
+  "technique": "v4.cam-pullback",
+  "primitive": "PullBack",
+  "variant": "panLead",
+  "property": "scale",
+  "measured_frames": 39.0,
+  "built_frames": 38.0,
+  "rmse": 0.0321,
+  "ok": true
+ },
+ {
+  "technique": "v4.card-content-crossfade",
+  "primitive": "ShapeSwap",
+  "variant": "crossDissolve",
+  "property": "opacity",
+  "measured_frames": 31.0,
+  "built_frames": 31.0,
+  "rmse": 0.0326,
+  "ok": true
+ },
+ {
+  "technique": "v4.card-rise-scale-fade-in",
+  "primitive": "ScaleFade",
+  "variant": "riseGrowIn",
+  "property": "opacity",
+  "measured_frames": 14.0,
+  "built_frames": 15.0,
+  "rmse": 0.0137,
+  "ok": true
+ },
+ {
+  "technique": "v4.card-slide-swap",
+  "primitive": "ContentSwap",
+  "variant": "slideThrough",
+  "property": "opacity",
+  "measured_frames": 11.0,
+  "built_frames": 12.0,
+  "rmse": 0.0398,
+  "ok": true
+ },
+ {
+  "technique": "v4.icon-pulse",
+  "primitive": "AmbientLoop",
+  "variant": "pulseTurns",
+  "property": "scale",
+  "measured_frames": 7.0,
+  "built_frames": 8.0,
+  "rmse": 0.0181,
+  "ok": true
+ },
+ {
+  "technique": "v4.layout-shrink-fade-out",
+  "primitive": "ScaleFade",
+  "variant": "shrinkEach",
+  "property": "opacity",
+  "measured_frames": 11.0,
+  "built_frames": 12.0,
+  "rmse": 0.0253,
+  "ok": true
+ },
+ {
+  "technique": "v4.layout-team-stagger-fade",
+  "primitive": "ScaleFade",
+  "variant": "staggerIn",
+  "property": "opacity",
+  "measured_frames": 16.0,
+  "built_frames": 15.0,
+  "rmse": 0.014,
+  "ok": true
+ },
+ {
+  "technique": "v4.layout-zoom-fade-out",
+  "primitive": "ScaleFade",
+  "variant": "zoomOut",
+  "property": "opacity",
+  "measured_frames": 10.0,
+  "built_frames": 9.0,
+  "rmse": 0.0366,
+  "ok": true
+ },
+ {
+  "technique": "v4.layout-zoom-settle-in",
+  "primitive": "CutInSettle",
+  "variant": "zoomDown",
+  "property": "scale",
+  "measured_frames": 26.0,
+  "built_frames": 26.0,
+  "rmse": 0.0129,
+  "ok": true
+ },
+ {
+  "technique": "v4.logo-eye-open",
+  "primitive": "MarkBars",
+  "variant": "openToPills",
+  "property": "height",
+  "measured_frames": 10.0,
+  "built_frames": 9.0,
+  "rmse": 0.018,
+  "ok": true
+ },
+ {
+  "technique": "v4.logo-lockup-slide",
+  "primitive": "LockupSlide",
+  "variant": "short",
+  "property": "x",
+  "measured_frames": 28.0,
+  "built_frames": 29.0,
+  "rmse": 0.0202,
+  "ok": true
+ },
+ {
+  "technique": "v4.particle-edge-packets",
+  "primitive": "PacketHop",
+  "variant": "easedHop",
+  "property": "x",
+  "measured_frames": 18.0,
+  "built_frames": 17.0,
+  "rmse": 0.0269,
+  "ok": true
+ },
+ {
+  "technique": "v4.particle-ring-collapse",
+  "primitive": "CollapseToPoint",
+  "variant": "ringFold",
+  "property": "scale",
+  "measured_frames": 56.0,
+  "built_frames": 57.0,
+  "rmse": 0.0272,
+  "ok": true
+ },
+ {
+  "technique": "v4.particle-swarm-converge",
+  "primitive": "FlyToSlots",
+  "variant": "swirl",
+  "property": "progress",
+  "measured_frames": 33.0,
+  "built_frames": 33.0,
+  "rmse": 0.0303,
+  "ok": true
+ },
+ {
+  "technique": "v4.text-headline-drop-in",
+  "primitive": "RiseFade",
+  "variant": "dropIn",
+  "property": "opacity",
+  "measured_frames": 14.0,
+  "built_frames": 15.0,
+  "rmse": 0.0137,
+  "ok": true
+ },
+ {
+  "technique": "v4.text-headline-fade-out",
+  "primitive": "TextFadeOut",
+  "variant": "accelerating",
+  "property": "opacity",
+  "measured_frames": 11.0,
+  "built_frames": 12.0,
+  "rmse": 0.0386,
+  "ok": true
+ },
+ {
+  "technique": "v4.text-letter-rise-fade",
+  "primitive": "RiseFade",
+  "variant": "letterRise",
+  "property": "opacity",
+  "measured_frames": 19.0,
+  "built_frames": 20.0,
+  "rmse": 0.0156,
+  "ok": true
+ },
+ {
+  "technique": "v4.text-tagline-rise-in",
+  "primitive": "RiseFade",
+  "variant": "softBlockRise",
+  "property": "opacity",
+  "measured_frames": 21.0,
+  "built_frames": 20.0,
+  "rmse": 0.0135,
+  "ok": true
+ },
+ {
+  "technique": "v4.text-typewriter-input",
+  "primitive": "Typewriter",
+  "variant": "linearRate",
+  "property": "progress",
+  "measured_frames": 52.0,
+  "built_frames": 52.0,
+  "rmse": 0.0409,
+  "ok": true
+ },
+ {
+  "technique": "v4.text-word-rise-fade",
+  "primitive": "RiseFade",
+  "variant": "wordRise",
+  "property": "opacity",
+  "measured_frames": 20.0,
+  "built_frames": 19.0,
+  "rmse": 0.0139,
+  "ok": true
+ },
+ {
+  "technique": "v4.trans-tile-hex-morph",
+  "primitive": "ShapeSwap",
+  "variant": "waveSwap",
+  "property": "opacity",
+  "measured_frames": 18.0,
+  "built_frames": 17.0,
+  "rmse": 0.0071,
+  "ok": true
+ },
+ {
+  "technique": "v4.ui-button-press",
+  "primitive": "PressBounce",
+  "variant": "deep",
+  "property": "scale",
+  "measured_frames": 4.0,
+  "built_frames": 3.0,
+  "rmse": 0.0073,
+  "ok": true
+ },
+ {
+  "technique": "v4.ui-chat-item-rise-fade-in",
+  "primitive": "ItemRiseIn",
+  "variant": "makeRoomRise",
+  "property": "opacity",
+  "measured_frames": 12.0,
+  "built_frames": 11.0,
+  "rmse": 0.0145,
+  "ok": true
+ },
+ {
+  "technique": "v5.3d-card-exit-up",
+  "primitive": "AccelerateExit",
+  "variant": "hoverUp",
+  "property": "y",
+  "measured_frames": 40.0,
+  "built_frames": 41.0,
+  "rmse": 0.0101,
+  "ok": true
+ },
+ {
+  "technique": "v5.3d-card-light-up",
+  "primitive": "CardSpin3D",
+  "variant": "lightUp",
+  "property": "opacity",
+  "measured_frames": 17.0,
+  "built_frames": 18.0,
+  "rmse": 0.0277,
+  "ok": true
+ },
+ {
+  "technique": "v5.3d-card-spin-y",
+  "primitive": "CardSpin3D",
+  "variant": "halfTurn",
+  "property": "rotate",
+  "measured_frames": 18.0,
+  "built_frames": 19.0,
+  "rmse": 0.0253,
+  "ok": true
+ },
+ {
+  "technique": "v5.3d-origami-converge",
+  "primitive": "DepthFlyer",
+  "variant": "converge",
+  "property": "x",
+  "measured_frames": 27.0,
+  "built_frames": 27.0,
+  "rmse": 0.0475,
+  "ok": true
+ },
+ {
+  "technique": "v5.3d-perspective-swing",
+  "primitive": "PerspectiveSwing",
+  "variant": "taper",
+  "property": "taper",
+  "measured_frames": 17.0,
+  "built_frames": 17.0,
+  "rmse": 0.0104,
+  "ok": true
+ },
+ {
+  "technique": "v5.cam-pull-back-snap",
+  "primitive": "PullBack",
+  "variant": "flatten",
+  "property": "scale",
+  "measured_frames": 29.0,
+  "built_frames": 29.0,
+  "rmse": 0.0302,
+  "ok": true
+ },
+ {
+  "technique": "v5.cam-push-in-accelerate",
+  "primitive": "AccelerateExit",
+  "variant": "pushIntoCut",
+  "property": "scale",
+  "measured_frames": 20.0,
+  "built_frames": 20.0,
+  "rmse": 0.0281,
+  "ok": true
+ },
+ {
+  "technique": "v5.cam-reframe-pullback",
+  "primitive": "PullBack",
+  "variant": "reframe",
+  "property": "y",
+  "measured_frames": 24.0,
+  "built_frames": 25.0,
+  "rmse": 0.0147,
+  "ok": true
+ },
+ {
+  "technique": "v5.cam-snap-zoom",
+  "primitive": "PushIn",
+  "variant": "snap",
+  "property": "y",
+  "measured_frames": 30.0,
+  "built_frames": 30.0,
+  "rmse": 0.0305,
+  "ok": true
+ },
+ {
+  "technique": "v5.cam-swing-3d-push",
+  "primitive": "Camera3D",
+  "variant": "swingPush",
+  "property": "scale",
+  "measured_frames": 45.0,
+  "built_frames": 45.0,
+  "rmse": 0.0404,
+  "ok": true
+ },
+ {
+  "technique": "v5.cam-tilt-reveal",
+  "primitive": "CanvasPan",
+  "variant": "tiltTwoPhase",
+  "property": "y",
+  "measured_frames": 28.0,
+  "built_frames": 28.0,
+  "rmse": 0.0241,
+  "ok": true
+ },
+ {
+  "technique": "v5.cam-whip-pan",
+  "primitive": "CanvasPan",
+  "variant": "whipX",
+  "property": "x",
+  "measured_frames": 30.0,
+  "built_frames": 30.0,
+  "rmse": 0.0398,
+  "ok": true
+ },
+ {
+  "technique": "v5.cam-whip-pullback",
+  "primitive": "PullBack",
+  "variant": "whipReveal",
+  "property": "x",
+  "measured_frames": 35.0,
+  "built_frames": 36.0,
+  "rmse": 0.0266,
+  "ok": true
+ },
+ {
+  "technique": "v5.cam-whip-tilt",
+  "primitive": "CanvasPan",
+  "variant": "whipY",
+  "property": "y",
+  "measured_frames": 26.0,
+  "built_frames": 27.0,
+  "rmse": 0.0358,
+  "ok": true
+ },
+ {
+  "technique": "v5.card-depth-flyin",
+  "primitive": "FootageCard",
+  "variant": "depthGrow",
+  "property": "scale",
+  "measured_frames": 10.0,
+  "built_frames": 11.0,
+  "rmse": 0.0255,
+  "ok": true
+ },
+ {
+  "technique": "v5.card-mirror-tilt",
+  "primitive": "PerspectiveSwing",
+  "variant": "mirrorPair",
+  "property": "rotate",
+  "measured_frames": 23.0,
+  "built_frames": 22.0,
+  "rmse": 0.0396,
+  "ok": true
+ },
+ {
+  "technique": "v5.card-rise-drop-in",
+  "primitive": "EdgeEnter",
+  "variant": "hardLand",
+  "property": "y",
+  "measured_frames": 10.0,
+  "built_frames": 10.0,
+  "rmse": 0.0164,
+  "ok": true
+ },
+ {
+  "technique": "v5.card-scale-settle",
+  "primitive": "OversizeSettle",
+  "variant": "riseSettle",
+  "property": "scale",
+  "measured_frames": 18.0,
+  "built_frames": 18.0,
+  "rmse": 0.0347,
+  "ok": true
+ },
+ {
+  "technique": "v5.card-seam-reveal",
+  "primitive": "MaskReveal",
+  "variant": "seamOpen",
+  "property": "width",
+  "measured_frames": 22.0,
+  "built_frames": 23.0,
+  "rmse": 0.0181,
+  "ok": true
+ },
+ {
+  "technique": "v5.cursor-3d-dive-click",
+  "primitive": "CursorPath",
+  "variant": "dive",
+  "property": "x",
+  "measured_frames": 15.0,
+  "built_frames": 15.0,
+  "rmse": 0.0117,
+  "ok": true
+ },
+ {
+  "technique": "v5.cursor-fly-in",
+  "primitive": "CursorPath",
+  "variant": "diagonalIn",
+  "property": "progress",
+  "measured_frames": 15.0,
+  "built_frames": 14.0,
+  "rmse": 0.0273,
+  "ok": true
+ },
+ {
+  "technique": "v5.cursor-glide-click",
+  "primitive": "CursorPath",
+  "variant": "glideClick",
+  "property": "y",
+  "measured_frames": 20.0,
+  "built_frames": 20.0,
+  "rmse": 0.0151,
+  "ok": true
+ },
+ {
+  "technique": "v5.cursor-swoop",
+  "primitive": "CursorPath",
+  "variant": "windUp",
+  "property": "x",
+  "measured_frames": 20.0,
+  "built_frames": 21.0,
+  "rmse": 0.035,
+  "ok": true
+ },
+ {
+  "technique": "v5.footage-card-fly-in",
+  "primitive": "FootageCard",
+  "variant": "diagonalSnap",
+  "property": "x",
+  "measured_frames": 17.0,
+  "built_frames": 17.0,
+  "rmse": 0.016,
+  "ok": true
+ },
+ {
+  "technique": "v5.fx-footage-dim",
+  "primitive": "FootageFrame",
+  "variant": "dimIn",
+  "property": "opacity",
+  "measured_frames": 16.0,
+  "built_frames": 15.0,
+  "rmse": 0.0315,
+  "ok": true
+ },
+ {
+  "technique": "v5.fx-pixel-sweep",
+  "primitive": "PixelBlocks",
+  "variant": "parkSweep",
+  "property": "x",
+  "measured_frames": 15.0,
+  "built_frames": 16.0,
+  "rmse": 0.0333,
+  "ok": true
+ },
+ {
+  "technique": "v5.logo-chrome-smear-in",
+  "primitive": "WarpFlyIn",
+  "variant": "chromeSmear",
+  "property": "scale",
+  "measured_frames": 25.0,
+  "built_frames": 26.0,
+  "rmse": 0.0335,
+  "ok": true
+ },
+ {
+  "technique": "v5.logo-sphere-drop-merge",
+  "primitive": "CollapseToPoint",
+  "variant": "blobMerge",
+  "property": "area",
+  "measured_frames": 15.0,
+  "built_frames": 14.0,
+  "rmse": 0.0231,
+  "ok": true
+ },
+ {
+  "technique": "v5.logo-sphere-fly-in",
+  "primitive": "IconFlyIn",
+  "variant": "curvedStagger",
+  "property": "y",
+  "measured_frames": 25.0,
+  "built_frames": 24.0,
+  "rmse": 0.0195,
+  "ok": true
+ },
+ {
+  "technique": "v5.particle-tile-burst",
+  "primitive": "RadialBurst",
+  "variant": "tileRing",
+  "property": "radius",
+  "measured_frames": 15.0,
+  "built_frames": 14.0,
+  "rmse": 0.0405,
+  "ok": true
+ },
+ {
+  "technique": "v5.shape-flare-streak-sweep",
+  "primitive": "StarFlare",
+  "variant": "streakSweep",
+  "property": "x",
+  "measured_frames": 17.0,
+  "built_frames": 17.0,
+  "rmse": 0.0335,
+  "ok": true
+ },
+ {
+  "technique": "v5.text-caption-focus-roll",
+  "primitive": "BlurIn",
+  "variant": "focusRoll",
+  "property": "opacity",
+  "measured_frames": 23.0,
+  "built_frames": 22.0,
+  "rmse": 0.03,
+  "ok": true
+ },
+ {
+  "technique": "v5.text-caption-line-fade-out",
+  "primitive": "TextFadeOut",
+  "variant": "defocusLines",
+  "property": "opacity",
+  "measured_frames": 12.0,
+  "built_frames": 12.0,
+  "rmse": 0.0314,
+  "ok": true
+ },
+ {
+  "technique": "v5.text-caption-word-fade",
+  "primitive": "BlurIn",
+  "variant": "letterSweep",
+  "property": "opacity",
+  "measured_frames": 33.0,
+  "built_frames": 32.0,
+  "rmse": 0.028,
+  "ok": true
+ },
+ {
+  "technique": "v5.text-converge-slide",
+  "primitive": "BlurSlideIn",
+  "variant": "converge",
+  "property": "x",
+  "measured_frames": 5.0,
+  "built_frames": 5.0,
+  "rmse": 0.0041,
+  "ok": true
+ },
+ {
+  "technique": "v5.text-lift-to-header",
+  "primitive": "MakeRoom",
+  "variant": "liftShrink",
+  "property": "scale",
+  "measured_frames": 17.0,
+  "built_frames": 17.0,
+  "rmse": 0.0185,
+  "ok": true
+ },
+ {
+  "technique": "v5.text-line-counter-shift",
+  "primitive": "SplitApart",
+  "variant": "kickApart",
+  "property": "x",
+  "measured_frames": 7.0,
+  "built_frames": 6.0,
+  "rmse": 0.0217,
+  "ok": true
+ },
+ {
+  "technique": "v5.text-line-slide-blur",
+  "primitive": "BlurSlideIn",
+  "variant": "oppositeEdges",
+  "property": "x",
+  "measured_frames": 11.0,
+  "built_frames": 10.0,
+  "rmse": 0.0186,
+  "ok": true
+ },
+ {
+  "technique": "v5.text-line-slide-overshoot",
+  "primitive": "BlurSlideIn",
+  "variant": "overshoot",
+  "property": "x",
+  "measured_frames": 18.0,
+  "built_frames": 17.0,
+  "rmse": 0.0284,
+  "ok": true
+ },
+ {
+  "technique": "v5.text-liquid-flyin",
+  "primitive": "WarpFlyIn",
+  "variant": "liquid",
+  "property": "x",
+  "measured_frames": 10.0,
+  "built_frames": 9.0,
+  "rmse": 0.0123,
+  "ok": true
+ },
+ {
+  "technique": "v5.text-tracking-settle",
+  "primitive": "BlurSlideIn",
+  "variant": "trackingSettle",
+  "property": "x",
+  "measured_frames": 12.0,
+  "built_frames": 12.0,
+  "rmse": 0.031,
+  "ok": true
+ },
+ {
+  "technique": "v5.text-type-on",
+  "primitive": "Typewriter",
+  "variant": "flashLetter",
+  "property": "progress",
+  "measured_frames": 12.0,
+  "built_frames": 11.0,
+  "rmse": 0.0412,
+  "ok": true
+ },
+ {
+  "technique": "v5.text-type-swing-in",
+  "primitive": "PerspectiveSwing",
+  "variant": "swingIn",
+  "property": "rotate",
+  "measured_frames": 10.0,
+  "built_frames": 10.0,
+  "rmse": 0.0188,
+  "ok": true
+ },
+ {
+  "technique": "v5.text-typewriter",
+  "primitive": "Typewriter",
+  "variant": "fastSteps",
+  "property": "progress",
+  "measured_frames": 22.0,
+  "built_frames": 22.0,
+  "rmse": 0.0428,
+  "ok": true
+ },
+ {
+  "technique": "v5.trans-flash-white",
+  "primitive": "LightFlash",
+  "variant": "ringBloom",
+  "property": "opacity",
+  "measured_frames": 18.0,
+  "built_frames": 19.0,
+  "rmse": 0.0425,
+  "ok": true
+ },
+ {
+  "technique": "v5.trans-melt-implode",
+  "primitive": "CollapseToPoint",
+  "variant": "meltImplode",
+  "property": "scale",
+  "measured_frames": 15.0,
+  "built_frames": 16.0,
+  "rmse": 0.0442,
+  "ok": true
+ },
+ {
+  "technique": "v5.trans-morph-tree",
+  "primitive": "FootageCard",
+  "variant": "shrinkToNode",
+  "property": "scale",
+  "measured_frames": 18.0,
+  "built_frames": 18.0,
+  "rmse": 0.0312,
+  "ok": true
+ },
+ {
+  "technique": "v5.trans-star-flash",
+  "primitive": "LightFlash",
+  "variant": "starSplit",
+  "property": "progress",
+  "measured_frames": 10.0,
+  "built_frames": 11.0,
+  "rmse": 0.0424,
+  "ok": true
+ },
+ {
+  "technique": "v5.trans-whip-pan",
+  "primitive": "WhipCut",
+  "variant": "blendLeft",
+  "property": "x",
+  "measured_frames": 12.0,
+  "built_frames": 11.0,
+  "rmse": 0.0213,
+  "ok": true
+ },
+ {
+  "technique": "v5.trans-whip-tilt",
+  "primitive": "WhipCut",
+  "variant": "canvasDown",
+  "property": "y",
+  "measured_frames": 46.0,
+  "built_frames": 46.0,
+  "rmse": 0.0207,
+  "ok": true
+ },
+ {
+  "technique": "v5.trans-zoom-through-radial",
+  "primitive": "ZoomThrough",
+  "variant": "radialStreaks",
+  "property": "opacity",
+  "measured_frames": 7.0,
+  "built_frames": 6.0,
+  "rmse": 0.0247,
+  "ok": true
+ },
+ {
+  "technique": "v5.ui-box-slide",
+  "primitive": "MakeRoom",
+  "variant": "centreSlide",
+  "property": "x",
+  "measured_frames": 25.0,
+  "built_frames": 26.0,
+  "rmse": 0.0206,
+  "ok": true
+ },
+ {
+  "technique": "v5.ui-button-press",
+  "primitive": "PressBounce",
+  "variant": "held",
+  "property": "scale",
+  "measured_frames": 13.0,
+  "built_frames": 14.0,
+  "rmse": 0.0151,
+  "ok": true
+ },
+ {
+  "technique": "v5.ui-chip-pop",
+  "primitive": "ScalePop",
+  "variant": "threeStep",
+  "property": "scale",
+  "measured_frames": 7.0,
+  "built_frames": 6.0,
+  "rmse": 0.011,
+  "ok": true
+ },
+ {
+  "technique": "v5.ui-chip-press",
+  "primitive": "PressBounce",
+  "variant": "springBack",
+  "property": "scale",
+  "measured_frames": 8.0,
+  "built_frames": 8.0,
+  "rmse": 0.0121,
+  "ok": true
+ },
+ {
+  "technique": "v5.ui-dropdown-reveal",
+  "primitive": "Dropdown",
+  "variant": "unfold",
+  "property": "y",
+  "measured_frames": 20.0,
+  "built_frames": 19.0,
+  "rmse": 0.0203,
+  "ok": true
+ },
+ {
+  "technique": "v5.ui-group-reframe",
+  "primitive": "MakeRoom",
+  "variant": "groupSnap",
+  "property": "y",
+  "measured_frames": 13.0,
+  "built_frames": 12.0,
+  "rmse": 0.0168,
+  "ok": true
+ },
+ {
+  "technique": "v5.ui-ring-burst",
+  "primitive": "RadialBurst",
+  "variant": "echoZoom",
+  "property": "scale",
+  "measured_frames": 12.0,
+  "built_frames": 12.0,
+  "rmse": 0.0412,
+  "ok": true
+ },
+ {
+  "technique": "v5.ui-select-swap",
+  "primitive": "PressBounce",
+  "variant": "pressSwap",
+  "property": "scale",
+  "measured_frames": 7.0,
+  "built_frames": 6.0,
+  "rmse": 0.0247,
+  "ok": true
+ },
+ {
+  "technique": "v5.ui-selector-frame-hop",
+  "primitive": "SelectionHighlight",
+  "variant": "hop",
+  "property": "x",
+  "measured_frames": 23.0,
+  "built_frames": 23.0,
+  "rmse": 0.0066,
+  "ok": true
+ },
+ {
+  "technique": "v6.3d-globe-rise",
+  "primitive": "GlobeRise",
+  "variant": "riseSpin",
+  "property": "y",
+  "measured_frames": 25.0,
+  "built_frames": 25.0,
+  "rmse": 0.0288,
+  "ok": true
+ },
+ {
+  "technique": "v6.3d-layer-explode",
+  "primitive": "LayerStack",
+  "variant": "explode",
+  "property": "spread",
+  "measured_frames": 20.0,
+  "built_frames": 20.0,
+  "rmse": 0.0348,
+  "ok": true
+ },
+ {
+  "technique": "v6.3d-layer-sink",
+  "primitive": "LayerStack",
+  "variant": "layerSink",
+  "property": "y",
+  "measured_frames": 35.0,
+  "built_frames": 36.0,
+  "rmse": 0.0475,
+  "ok": true
+ },
+ {
+  "technique": "v6.3d-stack-collapse",
+  "primitive": "LayerStack",
+  "variant": "collapse",
+  "property": "spread",
+  "measured_frames": 12.0,
+  "built_frames": 13.0,
+  "rmse": 0.041,
+  "ok": true
+ },
+ {
+  "technique": "v6.cam-dolly-back-parallax",
+  "primitive": "Camera3D",
+  "variant": "dollyParallax",
+  "property": "x",
+  "measured_frames": 18.0,
+  "built_frames": 17.0,
+  "rmse": 0.0234,
+  "ok": true
+ },
+ {
+  "technique": "v6.cam-dolly-reframe",
+  "primitive": "Camera3D",
+  "variant": "dollyReframe",
+  "property": "x",
+  "measured_frames": 30.0,
+  "built_frames": 30.0,
+  "rmse": 0.0287,
+  "ok": true
+ },
+ {
+  "technique": "v6.cam-orbit-push",
+  "primitive": "Camera3D",
+  "variant": "orbitPush",
+  "property": "x",
+  "measured_frames": 23.0,
+  "built_frames": 24.0,
+  "rmse": 0.0302,
+  "ok": true
+ },
+ {
+  "technique": "v6.cam-pull-back-cut",
+  "primitive": "AccelerateExit",
+  "variant": "pullIntoCut",
+  "property": "scale",
+  "measured_frames": 20.0,
+  "built_frames": 20.0,
+  "rmse": 0.013,
+  "ok": true
+ },
+ {
+  "technique": "v6.cam-pull-back-ramp",
+  "primitive": "PullBack",
+  "variant": "speedRamp",
+  "property": "scale",
+  "measured_frames": 25.0,
+  "built_frames": 25.0,
+  "rmse": 0.0377,
+  "ok": true
+ },
+ {
+  "technique": "v6.cam-pull-back-wide",
+  "primitive": "Camera3D",
+  "variant": "pullWide",
+  "property": "scale",
+  "measured_frames": 17.0,
+  "built_frames": 18.0,
+  "rmse": 0.0383,
+  "ok": true
+ },
+ {
+  "technique": "v6.cam-text-pan",
+  "primitive": "CanvasPan",
+  "variant": "typingPan",
+  "property": "x",
+  "measured_frames": 25.0,
+  "built_frames": 26.0,
+  "rmse": 0.025,
+  "ok": true
+ },
+ {
+  "technique": "v6.cam-zoom-out",
+  "primitive": "PullBack",
+  "variant": "closeUpOut",
+  "property": "scale",
+  "measured_frames": 21.0,
+  "built_frames": 22.0,
+  "rmse": 0.023,
+  "ok": true
+ },
+ {
+  "technique": "v6.card-carousel-speed-ramp",
+  "primitive": "Marquee",
+  "variant": "speedRamp",
+  "property": "x",
+  "measured_frames": 60.0,
+  "built_frames": 60.0,
+  "rmse": 0.0252,
+  "ok": true
+ },
+ {
+  "technique": "v6.counter-dial-fastforward",
+  "primitive": "Counter",
+  "variant": "fastForward",
+  "property": "rotate",
+  "measured_frames": 38.0,
+  "built_frames": 37.0,
+  "rmse": 0.0441,
+  "ok": true
+ },
+ {
+  "technique": "v6.grid-spread-out",
+  "primitive": "SplitApart",
+  "variant": "gridSpread",
+  "property": "x",
+  "measured_frames": 23.0,
+  "built_frames": 22.0,
+  "rmse": 0.0165,
+  "ok": true
+ },
+ {
+  "technique": "v6.layout-anticipate-exit-up",
+  "primitive": "AccelerateExit",
+  "variant": "anticipateUp",
+  "property": "y",
+  "measured_frames": 12.0,
+  "built_frames": 13.0,
+  "rmse": 0.0359,
+  "ok": true
+ },
+ {
+  "technique": "v6.layout-line-split-shift",
+  "primitive": "SplitApart",
+  "variant": "splitShift",
+  "property": "x2",
+  "measured_frames": 20.0,
+  "built_frames": 20.0,
+  "rmse": 0.0405,
+  "ok": true
+ },
+ {
+  "technique": "v6.layout-reflow-slide",
+  "primitive": "MakeRoom",
+  "variant": "reflow",
+  "property": "x",
+  "measured_frames": 12.0,
+  "built_frames": 13.0,
+  "rmse": 0.02,
+  "ok": true
+ },
+ {
+  "technique": "v6.layout-rise-make-room",
+  "primitive": "MakeRoom",
+  "variant": "riseTop",
+  "property": "y",
+  "measured_frames": 17.0,
+  "built_frames": 16.0,
+  "rmse": 0.0276,
+  "ok": true
+ },
+ {
+  "technique": "v6.layout-slide-make-room",
+  "primitive": "MakeRoom",
+  "variant": "shrinkAside",
+  "property": "x",
+  "measured_frames": 25.0,
+  "built_frames": 24.0,
+  "rmse": 0.0295,
+  "ok": true
+ },
+ {
+  "technique": "v6.layout-split-whip-out",
+  "primitive": "SplitApart",
+  "variant": "whipOut",
+  "property": "x",
+  "measured_frames": 7.0,
+  "built_frames": 6.0,
+  "rmse": 0.0174,
+  "ok": true
+ },
+ {
+  "technique": "v6.shape-echo-outlines",
+  "primitive": "LineDraw",
+  "variant": "echoReveal",
+  "property": "x",
+  "measured_frames": 27.0,
+  "built_frames": 27.0,
+  "rmse": 0.0345,
+  "ok": true
+ },
+ {
+  "technique": "v6.shape-wireframe-edges",
+  "primitive": "LineDraw",
+  "variant": "backToFront",
+  "property": "progress",
+  "measured_frames": 17.0,
+  "built_frames": 17.0,
+  "rmse": 0.0229,
+  "ok": true
+ },
+ {
+  "technique": "v6.text-bracket-spring-in",
+  "primitive": "BlurSlideIn",
+  "variant": "edgeSpring",
+  "property": "x",
+  "measured_frames": 17.0,
+  "built_frames": 17.0,
+  "rmse": 0.023,
+  "ok": true
+ },
+ {
+  "technique": "v6.text-letter-converge",
+  "primitive": "BlurSlideIn",
+  "variant": "allEdges",
+  "property": "y",
+  "measured_frames": 20.0,
+  "built_frames": 21.0,
+  "rmse": 0.0332,
+  "ok": true
+ },
+ {
+  "technique": "v6.text-line-slide-blur",
+  "primitive": "BlurSlideIn",
+  "variant": "typeAlong",
+  "property": "x",
+  "measured_frames": 13.0,
+  "built_frames": 12.0,
+  "rmse": 0.0166,
+  "ok": true
+ },
+ {
+  "technique": "v6.text-scale-down-settle",
+  "primitive": "OversizeSettle",
+  "variant": "settle",
+  "property": "scale",
+  "measured_frames": 25.0,
+  "built_frames": 25.0,
+  "rmse": 0.0364,
+  "ok": true
+ },
+ {
+  "technique": "v6.text-warp-fly-in",
+  "primitive": "WarpFlyIn",
+  "variant": "rubbery",
+  "property": "y",
+  "measured_frames": 17.0,
+  "built_frames": 17.0,
+  "rmse": 0.0311,
+  "ok": true
+ },
+ {
+  "technique": "v6.text-word-rise-stagger",
+  "primitive": "RiseFade",
+  "variant": "steepStagger",
+  "property": "y",
+  "measured_frames": 18.0,
+  "built_frames": 17.0,
+  "rmse": 0.0105,
+  "ok": true
+ },
+ {
+  "technique": "v6.text-word-shrink-in",
+  "primitive": "OversizeSettle",
+  "variant": "hugeShrink",
+  "property": "scale",
+  "measured_frames": 10.0,
+  "built_frames": 9.0,
+  "rmse": 0.0183,
+  "ok": true
+ },
+ {
+  "technique": "v6.text-word-whip-in",
+  "primitive": "BlurSlideIn",
+  "variant": "whipIn",
+  "property": "x",
+  "measured_frames": 15.0,
+  "built_frames": 16.0,
+  "rmse": 0.0212,
+  "ok": true
+ },
+ {
+  "technique": "v6.trans-punch-in-stutter",
+  "primitive": "SteppedZoom",
+  "variant": "punchStutter",
+  "property": "scale",
+  "measured_frames": 10.0,
+  "built_frames": 9.0,
+  "rmse": 0.0383,
+  "ok": true
+ },
+ {
+  "technique": "v6.trans-push-up",
+  "primitive": "PushSlide",
+  "variant": "dipRise",
+  "property": "y",
+  "measured_frames": 23.0,
+  "built_frames": 22.0,
+  "rmse": 0.0375,
+  "ok": true
+ },
+ {
+  "technique": "v6.trans-push-up-ease-in",
+  "primitive": "PushSlide",
+  "variant": "easeInDrift",
+  "property": "y",
+  "measured_frames": 19.0,
+  "built_frames": 20.0,
+  "rmse": 0.0314,
+  "ok": true
+ },
+ {
+  "technique": "v6.trans-split-morph",
+  "primitive": "SplitApart",
+  "variant": "splitMorph",
+  "property": "y",
+  "measured_frames": 12.0,
+  "built_frames": 13.0,
+  "rmse": 0.0244,
+  "ok": true
+ },
+ {
+  "technique": "v6.trans-whip-left",
+  "primitive": "WhipCut",
+  "variant": "streakLeft",
+  "property": "x",
+  "measured_frames": 23.0,
+  "built_frames": 23.0,
+  "rmse": 0.0301,
+  "ok": true
+ },
+ {
+  "technique": "v6.trans-zoom-through",
+  "primitive": "ZoomThrough",
+  "variant": "oversizeLanding",
+  "property": "scale",
+  "measured_frames": 10.0,
+  "built_frames": 10.0,
+  "rmse": 0.0468,
+  "ok": true
+ },
+ {
+  "technique": "v6.ui-dial-slide-in",
+  "primitive": "EdgeEnter",
+  "variant": "blurSlide",
+  "property": "x",
+  "measured_frames": 15.0,
+  "built_frames": 16.0,
+  "rmse": 0.0306,
+  "ok": true
+ },
+ {
+  "technique": "v6.ui-mockup-punch-in",
+  "primitive": "PushIn",
+  "variant": "layerPunch",
+  "property": "scale",
+  "measured_frames": 27.0,
+  "built_frames": 27.0,
+  "rmse": 0.037,
+  "ok": true
+ },
+ {
+  "technique": "v6.ui-node-pop-in",
+  "primitive": "ScalePop",
+  "variant": "blurOvershoot",
+  "property": "scale",
+  "measured_frames": 25.0,
+  "built_frames": 24.0,
+  "rmse": 0.0337,
+  "ok": true
+ },
+ {
+  "technique": "v6.ui-pill-rise",
+  "primitive": "FloatingPill",
+  "variant": "edgeRise",
+  "property": "y",
+  "measured_frames": 8.0,
+  "built_frames": 7.0,
+  "rmse": 0.0182,
+  "ok": true
+ },
+ {
+  "technique": "v7.bg-halftone-ring-burst",
+  "primitive": "RadialBurst",
+  "variant": "dotRing",
+  "property": "progress",
+  "measured_frames": 55.0,
+  "built_frames": 54.0,
+  "rmse": 0.022,
+  "ok": true
+ },
+ {
+  "technique": "v7.cam-click-pull-back",
+  "primitive": "PullBack",
+  "variant": "recoil",
+  "property": "scale",
+  "measured_frames": 20.0,
+  "built_frames": 19.0,
+  "rmse": 0.022,
+  "ok": true
+ },
+ {
+  "technique": "v7.cam-drift-accelerating-exit",
+  "primitive": "AccelerateExit",
+  "variant": "drift",
+  "property": "x",
+  "measured_frames": 80.0,
+  "built_frames": 81.0,
+  "rmse": 0.0433,
+  "ok": true
+ },
+ {
+  "technique": "v7.cam-pan-up-zoom",
+  "primitive": "CanvasPan",
+  "variant": "panUpZoom",
+  "property": "y",
+  "measured_frames": 30.0,
+  "built_frames": 31.0,
+  "rmse": 0.0258,
+  "ok": true
+ },
+ {
+  "technique": "v7.cam-pull-back-blur-exit",
+  "primitive": "AccelerateExit",
+  "variant": "blurPullExit",
+  "property": "scale",
+  "measured_frames": 15.0,
+  "built_frames": 16.0,
+  "rmse": 0.0168,
+  "ok": true
+ },
+ {
+  "technique": "v7.cam-pull-back-centre",
+  "primitive": "PullBack",
+  "variant": "centreTail",
+  "property": "scale",
+  "measured_frames": 48.0,
+  "built_frames": 47.0,
+  "rmse": 0.0293,
+  "ok": true
+ },
+ {
+  "technique": "v7.cam-pull-back-reveal",
+  "primitive": "PullBack",
+  "variant": "reveal",
+  "property": "scale",
+  "measured_frames": 54.0,
+  "built_frames": 54.0,
+  "rmse": 0.0172,
+  "ok": true
+ },
+ {
+  "technique": "v7.cam-push-in-accelerating",
+  "primitive": "AccelerateExit",
+  "variant": "punchBreak",
+  "property": "scale",
+  "measured_frames": 42.0,
+  "built_frames": 43.0,
+  "rmse": 0.0351,
+  "ok": true
+ },
+ {
+  "technique": "v7.cam-push-in-blur",
+  "primitive": "PushIn",
+  "variant": "blurSettle",
+  "property": "scale",
+  "measured_frames": 22.0,
+  "built_frames": 21.0,
+  "rmse": 0.0194,
+  "ok": true
+ },
+ {
+  "technique": "v7.cam-push-in-corner-settle",
+  "primitive": "PushIn",
+  "variant": "cornerSettle",
+  "property": "y",
+  "measured_frames": 33.0,
+  "built_frames": 32.0,
+  "rmse": 0.0129,
+  "ok": true
+ },
+ {
+  "technique": "v7.cam-reframe-pan-out",
+  "primitive": "CanvasPan",
+  "variant": "reframeOut",
+  "property": "x",
+  "measured_frames": 45.0,
+  "built_frames": 45.0,
+  "rmse": 0.0369,
+  "ok": true
+ },
+ {
+  "technique": "v7.cam-scroll-up",
+  "primitive": "CanvasPan",
+  "variant": "scrollUp",
+  "property": "y",
+  "measured_frames": 23.0,
+  "built_frames": 24.0,
+  "rmse": 0.0412,
+  "ok": true
+ },
+ {
+  "technique": "v7.cam-slow-push-creep",
+  "primitive": "SlowZoom",
+  "variant": "creep",
+  "property": "scale",
+  "measured_frames": 16.0,
+  "built_frames": 16.0,
+  "rmse": 0.0238,
+  "ok": true
+ },
+ {
+  "technique": "v7.cam-slow-push-in",
+  "primitive": "SlowZoom",
+  "variant": "easedPush",
+  "property": "scale",
+  "measured_frames": 83.0,
+  "built_frames": 84.0,
+  "rmse": 0.0217,
+  "ok": true
+ },
+ {
+  "technique": "v7.cam-whip-exit-up",
+  "primitive": "AccelerateExit",
+  "variant": "up",
+  "property": "y",
+  "measured_frames": 27.0,
+  "built_frames": 27.0,
+  "rmse": 0.0189,
+  "ok": true
+ },
+ {
+  "technique": "v7.cam-zoom-out-settle-in",
+  "primitive": "CutInSettle",
+  "variant": "zoomOut",
+  "property": "scale",
+  "measured_frames": 26.0,
+  "built_frames": 27.0,
+  "rmse": 0.0375,
+  "ok": true
+ },
+ {
+  "technique": "v7.card-rise-in",
+  "primitive": "EdgeEnter",
+  "variant": "smearRise",
+  "property": "y",
+  "measured_frames": 22.0,
+  "built_frames": 21.0,
+  "rmse": 0.0249,
+  "ok": true
+ },
+ {
+  "technique": "v7.cursor-drag-file-in",
+  "primitive": "DragDrop",
+  "variant": "carryIn",
+  "property": "y",
+  "measured_frames": 28.0,
+  "built_frames": 27.0,
+  "rmse": 0.0183,
+  "ok": true
+ },
+ {
+  "technique": "v7.cursor-fly-in",
+  "primitive": "CursorPath",
+  "variant": "flyUp",
+  "property": "y",
+  "measured_frames": 23.0,
+  "built_frames": 24.0,
+  "rmse": 0.0231,
+  "ok": true
+ },
+ {
+  "technique": "v7.cursor-glide",
+  "primitive": "CursorPath",
+  "variant": "throw",
+  "property": "progress",
+  "measured_frames": 25.0,
+  "built_frames": 26.0,
+  "rmse": 0.0325,
+  "ok": true
+ },
+ {
+  "technique": "v7.cursor-glow-morph-3d",
+  "primitive": "CursorState",
+  "variant": "glowMorph",
+  "property": "opacity",
+  "measured_frames": 43.0,
+  "built_frames": 44.0,
+  "rmse": 0.0245,
+  "ok": true
+ },
+ {
+  "technique": "v7.fx-clip-glow-pulse",
+  "primitive": "LumaPulse",
+  "variant": "slowBloom",
+  "property": "opacity",
+  "measured_frames": 34.0,
+  "built_frames": 33.0,
+  "rmse": 0.0192,
+  "ok": true
+ },
+ {
+  "technique": "v7.fx-panel-glow-swap",
+  "primitive": "LumaPulse",
+  "variant": "bloomCover",
+  "property": "opacity",
+  "measured_frames": 45.0,
+  "built_frames": 44.0,
+  "rmse": 0.0378,
+  "ok": true
+ },
+ {
+  "technique": "v7.fx-ripple-invert",
+  "primitive": "LightFlash",
+  "variant": "invertRipple",
+  "property": "progress",
+  "measured_frames": 20.0,
+  "built_frames": 21.0,
+  "rmse": 0.0218,
+  "ok": true
+ },
+ {
+  "technique": "v7.icon-glyph-spin-pop",
+  "primitive": "ScalePop",
+  "variant": "spinSpring",
+  "property": "rotate",
+  "measured_frames": 37.0,
+  "built_frames": 37.0,
+  "rmse": 0.0442,
+  "ok": true
+ },
+ {
+  "technique": "v7.icon-tile-pop-in",
+  "primitive": "ScalePop",
+  "variant": "sliverGrow",
+  "property": "scale",
+  "measured_frames": 15.0,
+  "built_frames": 16.0,
+  "rmse": 0.0194,
+  "ok": true
+ },
+ {
+  "technique": "v7.icon-tile-scale-down-in",
+  "primitive": "OversizeSettle",
+  "variant": "blurShrink",
+  "property": "scale",
+  "measured_frames": 28.0,
+  "built_frames": 27.0,
+  "rmse": 0.0164,
+  "ok": true
+ },
+ {
+  "technique": "v7.icon-voice-badge-pop",
+  "primitive": "ScalePop",
+  "variant": "longTail",
+  "property": "scale",
+  "measured_frames": 37.0,
+  "built_frames": 37.0,
+  "rmse": 0.0446,
+  "ok": true
+ },
+ {
+  "technique": "v7.layout-rise-make-room",
+  "primitive": "MakeRoom",
+  "variant": "riseShort",
+  "property": "y",
+  "measured_frames": 17.0,
+  "built_frames": 18.0,
+  "rmse": 0.0242,
+  "ok": true
+ },
+ {
+  "technique": "v7.layout-slide-make-room",
+  "primitive": "MakeRoom",
+  "variant": "openGap",
+  "property": "x",
+  "measured_frames": 10.0,
+  "built_frames": 9.0,
+  "rmse": 0.0232,
+  "ok": true
+ },
+ {
+  "technique": "v7.logo-spin-while-typing",
+  "primitive": "BusyIndicator",
+  "variant": "fullTurn",
+  "property": "rotate",
+  "measured_frames": 89.0,
+  "built_frames": 88.0,
+  "rmse": 0.0234,
+  "ok": true
+ },
+ {
+  "technique": "v7.mask-dot-ring-reveal",
+  "primitive": "MaskReveal",
+  "variant": "dotRing",
+  "property": "progress",
+  "measured_frames": 38.0,
+  "built_frames": 39.0,
+  "rmse": 0.0487,
+  "ok": true
+ },
+ {
+  "technique": "v7.mask-scan-band-reveal",
+  "primitive": "MaskReveal",
+  "variant": "scanBand",
+  "property": "progress",
+  "measured_frames": 15.0,
+  "built_frames": 15.0,
+  "rmse": 0.039,
+  "ok": true
+ },
+ {
+  "technique": "v7.particle-mascot-chain-arc",
+  "primitive": "IconFlyIn",
+  "variant": "chainArc",
+  "property": "progress",
+  "measured_frames": 47.0,
+  "built_frames": 48.0,
+  "rmse": 0.0438,
+  "ok": true
+ },
+ {
+  "technique": "v7.shape-arrow-drop-in",
+  "primitive": "EdgeEnter",
+  "variant": "streakDrop",
+  "property": "y",
+  "measured_frames": 22.0,
+  "built_frames": 21.0,
+  "rmse": 0.0344,
+  "ok": true
+ },
+ {
+  "technique": "v7.shape-dot-to-pill",
+  "primitive": "SeedGrow",
+  "variant": "dotToPill",
+  "property": "height",
+  "measured_frames": 22.0,
+  "built_frames": 21.0,
+  "rmse": 0.0352,
+  "ok": true
+ },
+ {
+  "technique": "v7.shape-line-to-pill",
+  "primitive": "SeedGrow",
+  "variant": "lineToPill",
+  "property": "width",
+  "measured_frames": 23.0,
+  "built_frames": 23.0,
+  "rmse": 0.0287,
+  "ok": true
+ },
+ {
+  "technique": "v7.shape-pill-to-line-out",
+  "primitive": "SeedGrow",
+  "variant": "pillToLine",
+  "property": "width",
+  "measured_frames": 24.0,
+  "built_frames": 24.0,
+  "rmse": 0.0472,
+  "ok": true
+ },
+ {
+  "technique": "v7.text-caption-fade-out",
+  "primitive": "TextFadeOut",
+  "variant": "linear",
+  "property": "opacity",
+  "measured_frames": 19.0,
+  "built_frames": 20.0,
+  "rmse": 0.0488,
+  "ok": true
+ },
+ {
+  "technique": "v7.text-type-letter-fade",
+  "primitive": "Typewriter",
+  "variant": "letterFade",
+  "property": "opacity",
+  "measured_frames": 19.0,
+  "built_frames": 20.0,
+  "rmse": 0.0461,
+  "ok": true
+ },
+ {
+  "technique": "v7.text-word-blur-rise",
+  "primitive": "BlurIn",
+  "variant": "wordRise",
+  "property": "opacity",
+  "measured_frames": 16.0,
+  "built_frames": 15.0,
+  "rmse": 0.0282,
+  "ok": true
+ },
+ {
+  "technique": "v7.trans-iris-white",
+  "primitive": "LightFlash",
+  "variant": "iris",
+  "property": "progress",
+  "measured_frames": 16.0,
+  "built_frames": 17.0,
+  "rmse": 0.0107,
+  "ok": true
+ },
+ {
+  "technique": "v7.trans-punch-in-whip-up",
+  "primitive": "WhipCut",
+  "variant": "punchUp",
+  "property": "y",
+  "measured_frames": 20.0,
+  "built_frames": 21.0,
+  "rmse": 0.0176,
+  "ok": true
+ },
+ {
+  "technique": "v7.trans-punch-in-whip-zoom",
+  "primitive": "WhipCut",
+  "variant": "punchZoom",
+  "property": "y",
+  "measured_frames": 18.0,
+  "built_frames": 17.0,
+  "rmse": 0.0298,
+  "ok": true
+ },
+ {
+  "technique": "v7.trans-spin-zoom-whip",
+  "primitive": "ZoomThrough",
+  "variant": "spin",
+  "property": "rotate",
+  "measured_frames": 21.0,
+  "built_frames": 20.0,
+  "rmse": 0.0272,
+  "ok": true
+ },
+ {
+  "technique": "v7.trans-whip-down-left-zoom-in",
+  "primitive": "WhipCut",
+  "variant": "diagonalZoom",
+  "property": "scale",
+  "measured_frames": 33.0,
+  "built_frames": 34.0,
+  "rmse": 0.0314,
+  "ok": true
+ },
+ {
+  "technique": "v7.trans-whip-push-left",
+  "primitive": "WhipCut",
+  "variant": "pushLeft",
+  "property": "x",
+  "measured_frames": 29.0,
+  "built_frames": 30.0,
+  "rmse": 0.0426,
+  "ok": true
+ },
+ {
+  "technique": "v7.trans-whip-push-right",
+  "primitive": "WhipCut",
+  "variant": "pushRight",
+  "property": "x",
+  "measured_frames": 32.0,
+  "built_frames": 32.0,
+  "rmse": 0.0342,
+  "ok": true
+ },
+ {
+  "technique": "v7.trans-whip-push-up",
+  "primitive": "WhipCut",
+  "variant": "pushUp",
+  "property": "y",
+  "measured_frames": 15.0,
+  "built_frames": 15.0,
+  "rmse": 0.0161,
+  "ok": true
+ },
+ {
+  "technique": "v7.trans-zoom-through-cut",
+  "primitive": "ZoomThrough",
+  "variant": "cutContinue",
+  "property": "scale",
+  "measured_frames": 21.0,
+  "built_frames": 21.0,
+  "rmse": 0.0263,
+  "ok": true
+ },
+ {
+  "technique": "v7.ui-card-stagger-fade",
+  "primitive": "ItemRiseIn",
+  "variant": "fadeAcross",
+  "property": "opacity",
+  "measured_frames": 13.0,
+  "built_frames": 13.0,
+  "rmse": 0.0211,
+  "ok": true
+ },
+ {
+  "technique": "v7.ui-clip-strip-slide-in",
+  "primitive": "DragDrop",
+  "variant": "stripDock",
+  "property": "x",
+  "measured_frames": 19.0,
+  "built_frames": 20.0,
+  "rmse": 0.0242,
+  "ok": true
+ },
+ {
+  "technique": "v7.ui-drag-group-out",
+  "primitive": "DragDrop",
+  "variant": "dragOut",
+  "property": "x",
+  "measured_frames": 30.0,
+  "built_frames": 31.0,
+  "rmse": 0.02,
+  "ok": true
+ },
+ {
+  "technique": "v7.ui-dropdown-fill-darken",
+  "primitive": "ToneShift",
+  "variant": "darkenIn",
+  "property": "opacity",
+  "measured_frames": 15.0,
+  "built_frames": 14.0,
+  "rmse": 0.0347,
+  "ok": true
+ },
+ {
+  "technique": "v7.ui-dropdown-scale-in",
+  "primitive": "Dropdown",
+  "variant": "scaleIn",
+  "property": "scale",
+  "measured_frames": 33.0,
+  "built_frames": 34.0,
+  "rmse": 0.0246,
+  "ok": true
+ },
+ {
+  "technique": "v7.ui-folder-drop-in",
+  "primitive": "ContentSwap",
+  "variant": "dropThrough",
+  "property": "y",
+  "measured_frames": 11.0,
+  "built_frames": 11.0,
+  "rmse": 0.0102,
+  "ok": true
+ },
+ {
+  "technique": "v7.ui-folder-pop-in",
+  "primitive": "ScalePop",
+  "variant": "glowSettle",
+  "property": "scale",
+  "measured_frames": 15.0,
+  "built_frames": 14.0,
+  "rmse": 0.0346,
+  "ok": true
+ },
+ {
+  "technique": "v7.ui-ghost-drag-to-timeline",
+  "primitive": "DragDrop",
+  "variant": "ghostTrail",
+  "property": "x",
+  "measured_frames": 22.0,
+  "built_frames": 23.0,
+  "rmse": 0.02,
+  "ok": true
+ },
+ {
+  "technique": "v7.ui-hover-lift",
+  "primitive": "SelectionHighlight",
+  "variant": "lift",
+  "property": "scale",
+  "measured_frames": 20.0,
+  "built_frames": 21.0,
+  "rmse": 0.0148,
+  "ok": true
+ },
+ {
+  "technique": "v7.ui-label-fill-darken",
+  "primitive": "ToneShift",
+  "variant": "twoStage",
+  "property": "opacity",
+  "measured_frames": 15.0,
+  "built_frames": 16.0,
+  "rmse": 0.0223,
+  "ok": true
+ },
+ {
+  "technique": "v7.ui-label-pop-in",
+  "primitive": "SeedGrow",
+  "variant": "seedPop",
+  "property": "width",
+  "measured_frames": 23.0,
+  "built_frames": 24.0,
+  "rmse": 0.0261,
+  "ok": true
+ },
+ {
+  "technique": "v7.ui-label-widen-overshoot",
+  "primitive": "SeedGrow",
+  "variant": "widenOvershoot",
+  "property": "width",
+  "measured_frames": 25.0,
+  "built_frames": 26.0,
+  "rmse": 0.0351,
+  "ok": true
+ },
+ {
+  "technique": "v7.ui-page-scroll-momentum",
+  "primitive": "PageScroll",
+  "variant": "momentum",
+  "property": "y",
+  "measured_frames": 83.0,
+  "built_frames": 82.0,
+  "rmse": 0.0253,
+  "ok": true
+ },
+ {
+  "technique": "v7.ui-prompt-word-stream",
+  "primitive": "BlurIn",
+  "variant": "overlapWords",
+  "property": "opacity",
+  "measured_frames": 21.0,
+  "built_frames": 20.0,
+  "rmse": 0.0325,
+  "ok": true
+ },
+ {
+  "technique": "v7.ui-row-stretch-in",
+  "primitive": "SeedGrow",
+  "variant": "speckStretch",
+  "property": "width",
+  "measured_frames": 30.0,
+  "built_frames": 29.0,
+  "rmse": 0.0353,
+  "ok": true
+ },
+ {
+  "technique": "v7.ui-scroll-settle",
+  "primitive": "PageScroll",
+  "variant": "decelerate",
+  "property": "y",
+  "measured_frames": 41.0,
+  "built_frames": 42.0,
+  "rmse": 0.0286,
+  "ok": true
+ },
+ {
+  "technique": "v7.ui-window-drop-in",
+  "primitive": "EdgeEnter",
+  "variant": "dropDecelerate",
+  "property": "y",
+  "measured_frames": 30.0,
+  "built_frames": 31.0,
+  "rmse": 0.0382,
+  "ok": true
+ },
+ {
+  "technique": "v8.3d-card-turn-recede",
+  "primitive": "CardSpin3D",
+  "variant": "yawRecede",
+  "property": "rotate",
+  "measured_frames": 53.0,
+  "built_frames": 54.0,
+  "rmse": 0.0174,
+  "ok": true
+ },
+ {
+  "technique": "v8.3d-stack-fan-out",
+  "primitive": "LayerStack",
+  "variant": "fanOut",
+  "property": "x",
+  "measured_frames": 39.0,
+  "built_frames": 39.0,
+  "rmse": 0.0477,
+  "ok": true
+ },
+ {
+  "technique": "v8.3d-tunnel-flythrough",
+  "primitive": "Camera3D",
+  "variant": "tunnelDolly",
+  "property": "scale",
+  "measured_frames": 27.0,
+  "built_frames": 27.0,
+  "rmse": 0.0443,
+  "ok": true
+ },
+ {
+  "technique": "v8.cam-cut-in-settle",
+  "primitive": "CutInSettle",
+  "variant": "blurLow",
+  "property": "y",
+  "measured_frames": 39.0,
+  "built_frames": 40.0,
+  "rmse": 0.0427,
+  "ok": true
+ },
+ {
+  "technique": "v8.cam-pan-reveal",
+  "primitive": "CanvasPan",
+  "variant": "reveal",
+  "property": "x",
+  "measured_frames": 30.0,
+  "built_frames": 29.0,
+  "rmse": 0.024,
+  "ok": true
+ },
+ {
+  "technique": "v8.cam-pull-back-settle",
+  "primitive": "PullBack",
+  "variant": "easeBack",
+  "property": "x",
+  "measured_frames": 38.0,
+  "built_frames": 39.0,
+  "rmse": 0.0224,
+  "ok": true
+ },
+ {
+  "technique": "v8.cam-punch-in-cut-settle",
+  "primitive": "CutInSettle",
+  "variant": "punchIn",
+  "property": "y",
+  "measured_frames": 21.0,
+  "built_frames": 21.0,
+  "rmse": 0.0478,
+  "ok": true
+ },
+ {
+  "technique": "v8.cam-push-in-accelerating",
+  "primitive": "AccelerateExit",
+  "variant": "oversizeLanding",
+  "property": "scale",
+  "measured_frames": 28.0,
+  "built_frames": 29.0,
+  "rmse": 0.0266,
+  "ok": true
+ },
+ {
+  "technique": "v8.cam-push-in-pan",
+  "primitive": "PushIn",
+  "variant": "pivotBelow",
+  "property": "scale",
+  "measured_frames": 74.0,
+  "built_frames": 74.0,
+  "rmse": 0.0138,
+  "ok": true
+ },
+ {
+  "technique": "v8.cam-scroll-exit-up",
+  "primitive": "AccelerateExit",
+  "variant": "driftUp",
+  "property": "y",
+  "measured_frames": 22.0,
+  "built_frames": 23.0,
+  "rmse": 0.029,
+  "ok": true
+ },
+ {
+  "technique": "v8.cam-scroll-up-settle",
+  "primitive": "CanvasPan",
+  "variant": "scrollSettle",
+  "property": "y",
+  "measured_frames": 42.0,
+  "built_frames": 43.0,
+  "rmse": 0.0231,
+  "ok": true
+ },
+ {
+  "technique": "v8.cam-slide-exit-left",
+  "primitive": "AccelerateExit",
+  "variant": "left",
+  "property": "x",
+  "measured_frames": 25.0,
+  "built_frames": 24.0,
+  "rmse": 0.0289,
+  "ok": true
+ },
+ {
+  "technique": "v8.cam-slide-in-left-settle",
+  "primitive": "CutInSettle",
+  "variant": "slideLeft",
+  "property": "x",
+  "measured_frames": 25.0,
+  "built_frames": 24.0,
+  "rmse": 0.0198,
+  "ok": true
+ },
+ {
+  "technique": "v8.cam-whip-in-settle",
+  "primitive": "CutInSettle",
+  "variant": "throwUp",
+  "property": "y",
+  "measured_frames": 26.0,
+  "built_frames": 25.0,
+  "rmse": 0.0271,
+  "ok": true
+ },
+ {
+  "technique": "v8.cam-zoom-out-reveal",
+  "primitive": "PullBack",
+  "variant": "twoPulses",
+  "property": "scale",
+  "measured_frames": 32.0,
+  "built_frames": 33.0,
+  "rmse": 0.0348,
+  "ok": true
+ },
+ {
+  "technique": "v8.card-column-fan-out",
+  "primitive": "SlideSettle",
+  "variant": "fanOut",
+  "property": "y",
+  "measured_frames": 14.0,
+  "built_frames": 13.0,
+  "rmse": 0.0476,
+  "ok": true
+ },
+ {
+  "technique": "v8.card-rise-fade-in",
+  "primitive": "SlideSettle",
+  "variant": "fadeRise",
+  "property": "opacity",
+  "measured_frames": 20.0,
+  "built_frames": 19.0,
+  "rmse": 0.0299,
+  "ok": true
+ },
+ {
+  "technique": "v8.footage-card-content-fade-in",
+  "primitive": "FootageFrame",
+  "variant": "contentFade",
+  "property": "opacity",
+  "measured_frames": 18.0,
+  "built_frames": 17.0,
+  "rmse": 0.0404,
+  "ok": true
+ },
+ {
+  "technique": "v8.footage-card-zoom-to-full",
+  "primitive": "FootageCard",
+  "variant": "zoomToFull",
+  "property": "scale",
+  "measured_frames": 26.0,
+  "built_frames": 27.0,
+  "rmse": 0.0383,
+  "ok": true
+ },
+ {
+  "technique": "v8.fx-pixel-smear-sweep",
+  "primitive": "PixelBlocks",
+  "variant": "smearSweep",
+  "property": "x",
+  "measured_frames": 22.0,
+  "built_frames": 22.0,
+  "rmse": 0.0307,
+  "ok": true
+ },
+ {
+  "technique": "v8.fx-shimmer-sweep",
+  "primitive": "ShimmerSweep",
+  "variant": "slantedBand",
+  "property": "x",
+  "measured_frames": 16.0,
+  "built_frames": 16.0,
+  "rmse": 0.0329,
+  "ok": true
+ },
+ {
+  "technique": "v8.icon-avatar-grow-in",
+  "primitive": "ScalePop",
+  "variant": "discGrow",
+  "property": "scale",
+  "measured_frames": 19.0,
+  "built_frames": 19.0,
+  "rmse": 0.03,
+  "ok": true
+ },
+ {
+  "technique": "v8.icon-mascot-eye-glance",
+  "primitive": "MarkBars",
+  "variant": "slideHoldReturn",
+  "property": "x",
+  "measured_frames": 19.0,
+  "built_frames": 19.0,
+  "rmse": 0.0143,
+  "ok": true
+ },
+ {
+  "technique": "v8.icon-mascot-fly-in-arc",
+  "primitive": "IconFlyIn",
+  "variant": "arcIn",
+  "property": "progress",
+  "measured_frames": 44.0,
+  "built_frames": 45.0,
+  "rmse": 0.0228,
+  "ok": true
+ },
+ {
+  "technique": "v8.icon-mascot-pop-in",
+  "primitive": "ScalePop",
+  "variant": "springDip",
+  "property": "scale",
+  "measured_frames": 20.0,
+  "built_frames": 19.0,
+  "rmse": 0.032,
+  "ok": true
+ },
+ {
+  "technique": "v8.icon-mascot-pop-slide",
+  "primitive": "ScalePop",
+  "variant": "rideIn",
+  "property": "scale",
+  "measured_frames": 24.0,
+  "built_frames": 24.0,
+  "rmse": 0.017,
+  "ok": true
+ },
+ {
+  "technique": "v8.layout-header-slide-left",
+  "primitive": "SlideSettle",
+  "variant": "longThrow",
+  "property": "x",
+  "measured_frames": 30.0,
+  "built_frames": 29.0,
+  "rmse": 0.0221,
+  "ok": true
+ },
+ {
+  "technique": "v8.layout-lockup-recenter",
+  "primitive": "MakeRoom",
+  "variant": "recenter",
+  "property": "x",
+  "measured_frames": 21.0,
+  "built_frames": 21.0,
+  "rmse": 0.0141,
+  "ok": true
+ },
+ {
+  "technique": "v8.layout-marquee-whip-in",
+  "primitive": "Marquee",
+  "variant": "brakeIn",
+  "property": "x",
+  "measured_frames": 44.0,
+  "built_frames": 44.0,
+  "rmse": 0.0365,
+  "ok": true
+ },
+ {
+  "technique": "v8.particle-mascot-burst-ring",
+  "primitive": "SpawnField",
+  "variant": "burstRing",
+  "property": "radius",
+  "measured_frames": 28.0,
+  "built_frames": 28.0,
+  "rmse": 0.0275,
+  "ok": true
+ },
+ {
+  "technique": "v8.particle-mascot-converge",
+  "primitive": "CollapseToPoint",
+  "variant": "clusterSnap",
+  "property": "scale",
+  "measured_frames": 17.0,
+  "built_frames": 17.0,
+  "rmse": 0.0311,
+  "ok": true
+ },
+ {
+  "technique": "v8.particle-mascot-split",
+  "primitive": "SplitApart",
+  "variant": "mirrorPair",
+  "property": "x",
+  "measured_frames": 17.0,
+  "built_frames": 17.0,
+  "rmse": 0.0175,
+  "ok": true
+ },
+ {
+  "technique": "v8.text-block-exit-up",
+  "primitive": "AccelerateExit",
+  "variant": "blockUp",
+  "property": "y",
+  "measured_frames": 33.0,
+  "built_frames": 34.0,
+  "rmse": 0.0458,
+  "ok": true
+ },
+ {
+  "technique": "v8.text-block-rise-in",
+  "primitive": "RiseFade",
+  "variant": "blockRise",
+  "property": "y",
+  "measured_frames": 23.0,
+  "built_frames": 23.0,
+  "rmse": 0.0371,
+  "ok": true
+ },
+ {
+  "technique": "v8.text-dissolve-out",
+  "primitive": "SoftFrontReveal",
+  "variant": "dissolveOut",
+  "property": "opacity",
+  "measured_frames": 19.0,
+  "built_frames": 20.0,
+  "rmse": 0.0438,
+  "ok": true
+ },
+ {
+  "technique": "v8.text-fade-out",
+  "primitive": "TextFadeOut",
+  "variant": "slowFade",
+  "property": "opacity",
+  "measured_frames": 26.0,
+  "built_frames": 25.0,
+  "rmse": 0.0298,
+  "ok": true
+ },
+ {
+  "technique": "v8.text-label-blur-fade-in",
+  "primitive": "BlurIn",
+  "variant": "inPlace",
+  "property": "opacity",
+  "measured_frames": 33.0,
+  "built_frames": 33.0,
+  "rmse": 0.0207,
+  "ok": true
+ },
+ {
+  "technique": "v8.text-label-fade-slide",
+  "primitive": "SoftFrontReveal",
+  "variant": "fadeSlide",
+  "property": "opacity",
+  "measured_frames": 51.0,
+  "built_frames": 51.0,
+  "rmse": 0.0285,
+  "ok": true
+ },
+ {
+  "technique": "v8.text-letter-pop-tighten",
+  "primitive": "LetterPopBuild",
+  "variant": "tighten",
+  "property": "x",
+  "measured_frames": 23.0,
+  "built_frames": 22.0,
+  "rmse": 0.0157,
+  "ok": true
+ },
+ {
+  "technique": "v8.text-list-cascade-fade",
+  "primitive": "RiseFade",
+  "variant": "cascade",
+  "property": "opacity",
+  "measured_frames": 28.0,
+  "built_frames": 29.0,
+  "rmse": 0.0284,
+  "ok": true
+ },
+ {
+  "technique": "v8.text-spring-rise",
+  "primitive": "EdgeRise",
+  "variant": "springUp",
+  "property": "y",
+  "measured_frames": 17.0,
+  "built_frames": 17.0,
+  "rmse": 0.0421,
+  "ok": true
+ },
+ {
+  "technique": "v8.text-stream-reveal",
+  "primitive": "SoftFrontReveal",
+  "variant": "fastFront",
+  "property": "progress",
+  "measured_frames": 14.0,
+  "built_frames": 13.0,
+  "rmse": 0.0374,
+  "ok": true
+ },
+ {
+  "technique": "v8.text-tag-type-rise",
+  "primitive": "EdgeRise",
+  "variant": "typeRise",
+  "property": "y",
+  "measured_frames": 27.0,
+  "built_frames": 26.0,
+  "rmse": 0.0337,
+  "ok": true
+ },
+ {
+  "technique": "v8.text-word-drop-bounce",
+  "primitive": "EdgeRise",
+  "variant": "dropBounce",
+  "property": "y",
+  "measured_frames": 15.0,
+  "built_frames": 15.0,
+  "rmse": 0.0206,
+  "ok": true
+ },
+ {
+  "technique": "v8.trans-avatar-fly-split",
+  "primitive": "FlyToSlots",
+  "variant": "swoopAcross",
+  "property": "x",
+  "measured_frames": 31.0,
+  "built_frames": 30.0,
+  "rmse": 0.0312,
+  "ok": true
+ },
+ {
+  "technique": "v8.trans-blur-whip-reframe",
+  "primitive": "WhipCut",
+  "variant": "blurReframe",
+  "property": "x",
+  "measured_frames": 26.0,
+  "built_frames": 25.0,
+  "rmse": 0.0254,
+  "ok": true
+ },
+ {
+  "technique": "v8.trans-card-zoom-fill",
+  "primitive": "FootageCard",
+  "variant": "zoomFill",
+  "property": "scale",
+  "measured_frames": 21.0,
+  "built_frames": 21.0,
+  "rmse": 0.0356,
+  "ok": true
+ },
+ {
+  "technique": "v8.trans-card-zoom-to-center",
+  "primitive": "FootageCard",
+  "variant": "zoomToCentre",
+  "property": "scale",
+  "measured_frames": 48.0,
+  "built_frames": 49.0,
+  "rmse": 0.0104,
+  "ok": true
+ },
+ {
+  "technique": "v8.trans-mascot-converge-fly",
+  "primitive": "FlyToSlots",
+  "variant": "arcToSlot",
+  "property": "x",
+  "measured_frames": 33.0,
+  "built_frames": 34.0,
+  "rmse": 0.0157,
+  "ok": true
+ },
+ {
+  "technique": "v8.trans-push-up",
+  "primitive": "PushSlide",
+  "variant": "stacked",
+  "property": "y",
+  "measured_frames": 19.0,
+  "built_frames": 19.0,
+  "rmse": 0.0213,
+  "ok": true
+ },
+ {
+  "technique": "v8.trans-push-up-columns",
+  "primitive": "PushSlide",
+  "variant": "rippleRise",
+  "property": "y",
+  "measured_frames": 26.0,
+  "built_frames": 25.0,
+  "rmse": 0.0227,
+  "ok": true
+ },
+ {
+  "technique": "v8.trans-stack-push-flatten",
+  "primitive": "Camera3D",
+  "variant": "pushFlatten",
+  "property": "x",
+  "measured_frames": 31.0,
+  "built_frames": 30.0,
+  "rmse": 0.0363,
+  "ok": true
+ },
+ {
+  "technique": "v8.trans-tunnel-exit-zoom-through",
+  "primitive": "ZoomThrough",
+  "variant": "tunnelExit",
+  "property": "scale",
+  "measured_frames": 26.0,
+  "built_frames": 27.0,
+  "rmse": 0.0383,
+  "ok": true
+ },
+ {
+  "technique": "v8.trans-whip-down",
+  "primitive": "WhipCut",
+  "variant": "sinkDown",
+  "property": "y",
+  "measured_frames": 29.0,
+  "built_frames": 28.0,
+  "rmse": 0.0139,
+  "ok": true
+ },
+ {
+  "technique": "v8.trans-whip-left",
+  "primitive": "WhipCut",
+  "variant": "creepLeft",
+  "property": "x",
+  "measured_frames": 27.0,
+  "built_frames": 27.0,
+  "rmse": 0.0188,
+  "ok": true
+ },
+ {
+  "technique": "v8.trans-whip-up",
+  "primitive": "WhipCut",
+  "variant": "riseUp",
+  "property": "y",
+  "measured_frames": 20.0,
+  "built_frames": 19.0,
+  "rmse": 0.0238,
+  "ok": true
+ },
+ {
+  "technique": "v8.trans-zoom-out-morph",
+  "primitive": "Camera3D",
+  "variant": "shrinkIntoStack",
+  "property": "scale",
+  "measured_frames": 20.0,
+  "built_frames": 20.0,
+  "rmse": 0.0334,
+  "ok": true
+ },
+ {
+  "technique": "v8.trans-zoom-through-dissolve",
+  "primitive": "ZoomThrough",
+  "variant": "dissolve",
+  "property": "scale",
+  "measured_frames": 17.0,
+  "built_frames": 16.0,
+  "rmse": 0.0324,
+  "ok": true
+ },
+ {
+  "technique": "v8.ui-callout-collapse-out",
+  "primitive": "SeedGrow",
+  "variant": "chainOut",
+  "property": "scale",
+  "measured_frames": 20.0,
+  "built_frames": 19.0,
+  "rmse": 0.0205,
+  "ok": true
+ },
+ {
+  "technique": "v8.ui-callout-pop-in",
+  "primitive": "SeedGrow",
+  "variant": "chainIn",
+  "property": "scale",
+  "measured_frames": 18.0,
+  "built_frames": 17.0,
+  "rmse": 0.0341,
+  "ok": true
+ },
+ {
+  "technique": "v8.ui-card-rise-deblur-in",
+  "primitive": "SlideSettle",
+  "variant": "deblurRise",
+  "property": "y",
+  "measured_frames": 26.0,
+  "built_frames": 25.0,
+  "rmse": 0.0366,
+  "ok": true
+ },
+ {
+  "technique": "v8.ui-card-stretch-in-blur",
+  "primitive": "SeedGrow",
+  "variant": "edgeStretch",
+  "property": "width",
+  "measured_frames": 23.0,
+  "built_frames": 23.0,
+  "rmse": 0.0197,
+  "ok": true
+ },
+ {
+  "technique": "v8.ui-composer-build",
+  "primitive": "SlideSettle",
+  "variant": "riseBuild",
+  "property": "y",
+  "measured_frames": 56.0,
+  "built_frames": 55.0,
+  "rmse": 0.04,
+  "ok": true
+ },
+ {
+  "technique": "v8.ui-list-step-scroll",
+  "primitive": "StepScroll",
+  "variant": "eased",
+  "property": "y",
+  "measured_frames": 21.0,
+  "built_frames": 21.0,
+  "rmse": 0.024,
+  "ok": true
+ },
+ {
+  "technique": "v8.ui-pill-anticipate-drop-out",
+  "primitive": "FloatingPill",
+  "variant": "liftDrop",
+  "property": "y",
+  "measured_frames": 9.0,
+  "built_frames": 10.0,
+  "rmse": 0.0153,
+  "ok": true
+ },
+ {
+  "technique": "v8.ui-prompt-pill-rise-in",
+  "primitive": "FloatingPill",
+  "variant": "overshootRise",
+  "property": "y",
+  "measured_frames": 18.0,
+  "built_frames": 17.0,
+  "rmse": 0.0282,
+  "ok": true
+ },
+ {
+  "technique": "v8.ui-screen-crossfade-slide",
+  "primitive": "ContentSwap",
+  "variant": "crossfadeSlide",
+  "property": "y",
+  "measured_frames": 13.0,
+  "built_frames": 13.0,
+  "rmse": 0.0189,
+  "ok": true
+ },
+ {
+  "technique": "v8.ui-sidebar-drop-in",
+  "primitive": "SlideSettle",
+  "variant": "dropSettle",
+  "property": "y",
+  "measured_frames": 21.0,
+  "built_frames": 21.0,
+  "rmse": 0.0303,
+  "ok": true
+ },
+ {
+  "technique": "v8.ui-status-pill-drop-in",
+  "primitive": "FloatingPill",
+  "variant": "dropIn",
+  "property": "progress",
+  "measured_frames": 17.0,
+  "built_frames": 17.0,
+  "rmse": 0.0219,
+  "ok": true
+ },
+ {
+  "technique": "v8.ui-status-pill-grow-type",
+  "primitive": "SeedGrow",
+  "variant": "growType",
+  "property": "width",
+  "measured_frames": 20.0,
+  "built_frames": 20.0,
+  "rmse": 0.0284,
+  "ok": true
+ },
+ {
+  "technique": "v8.ui-status-pill-whip-in-up",
+  "primitive": "FloatingPill",
+  "variant": "whipUp",
+  "property": "y",
+  "measured_frames": 8.0,
+  "built_frames": 9.0,
+  "rmse": 0.0162,
+  "ok": true
+ },
+ {
+  "technique": "v8.ui-thread-step-scroll",
+  "primitive": "StepScroll",
+  "variant": "thread",
+  "property": "y",
+  "measured_frames": 35.0,
+  "built_frames": 34.0,
+  "rmse": 0.0218,
+  "ok": true
+ },
+ {
+  "technique": "v8.ui-thumb-slide-in-blur",
+  "primitive": "ItemRiseIn",
+  "variant": "blurSlide",
+  "property": "y",
+  "measured_frames": 10.0,
+  "built_frames": 9.0,
+  "rmse": 0.0057,
+  "ok": true
+ },
+ {
+  "technique": "v8.ui-toast-fade-slide-out",
+  "primitive": "FloatingPill",
+  "variant": "toastOut",
+  "property": "opacity",
+  "measured_frames": 16.0,
+  "built_frames": 16.0,
+  "rmse": 0.0396,
+  "ok": true
+ }
+]

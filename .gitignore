@@ -29,3 +29,7 @@ analysis/verify/frames/
 # renders
 out/
 .DS_Store
+
+# verify: the reference thumbnails are derived frames, the render logs are noise
+analysis/verify/ref_fingerprints.npz
+analysis/verify/render_*.log

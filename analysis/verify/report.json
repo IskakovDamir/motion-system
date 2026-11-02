@@ -1,0 +1,42 @@
+[
+ {
+  "check": "classification",
+  "ok": true,
+  "detail": "{'GRAPHICS': 99, 'MIXED': 50, 'LIVE': 8}"
+ },
+ {
+  "check": "coverage",
+  "ok": true,
+  "detail": "468 techniques -> 74 primitives, 100.0% mapped"
+ },
+ {
+  "check": "timing",
+  "ok": true,
+  "detail": "316 measured curves, 316 within 1 frame and RMSE <= 0.05"
+ },
+ {
+  "check": "tempo",
+  "ok": true,
+  "detail": "StyleDemo median 117.0 f over 13 shots vs references 117.0 f (0.0% off, limit 15%); MOTION_SPEC matches segments.json: True"
+ },
+ {
+  "check": "render MotionShowcase",
+  "ok": true,
+  "detail": "skipped; using the last render"
+ },
+ {
+  "check": "render StyleDemo",
+  "ok": true,
+  "detail": "skipped; using the last render"
+ },
+ {
+  "check": "clean",
+  "ok": true,
+  "detail": "src/public/out scanned; 3117 render frames compared with every reference picture; reference matches 0, person detections 0 (first-stage detector hits 135, none confirmed); highest content correlation 0.73 (copy limit 0.85)"
+ },
+ {
+  "check": "compare",
+  "ok": true,
+  "detail": "468/468 techniques have analysis/compare/<technique>/sheet.jpg"
+ }
+]
