@@ -157,3 +157,7 @@ Calls made where the brief left room, with the reason. Newest at the bottom of e
   judged by eye on the flagged frames (the two moved demos, and ScalePop's lone hexagon became a square); (c) counts a face only
   with an eye inside its upper part and a body only with an upper body or a confirmed face inside it, and
   prints how many first-stage hits it saw.
+- **One measured curve has no shared ease.** `v7.text-caption-fade-out.i2` (an 11 f near-linear opacity
+  fade, an extra instance of a technique whose own curve is covered) matches no token within RMSE 0.05
+  (its own bezier fit is 0.0526). Instance curves are not technique curves, so verify's timing check is
+  unaffected; it is listed in MOTION_SPEC section 9.
