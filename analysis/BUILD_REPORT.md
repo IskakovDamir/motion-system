@@ -113,3 +113,21 @@ questions.
   (the token has no overshoot); mirrorPair's 0.65 degree dip and hold drift.
 - Weak sources: the near flyer takes the top flyer's scale (its template was lost); dollyParallax's nearer
   layers take the second layer's values; collapse's re-fan is 25 degrees, the middle of 22-28.
+
+## cards (4 primitives, 28 variants, 25 curves)
+
+- Corner radius and stroke: no row of the 28 techniques measures them; cards don't impose them.
+- No blur amount measured, no blur: longThrow (a "12 % wider" pill without px), dropSettle's first-picture
+  header blur, settle's blurred first pictures, hugeShrink's zoom blur, blurShrink's blur at the cut.
+- Shutter borrowed within the camera-blur decision: smearRise and streakDrop use v7.ui-window-drop-in's
+  1.25 f from the same video; blurSlide (v6) uses it across videos. hardLand (1.32 f) and dropDecelerate
+  measure their own.
+- trailSlide: count and spacing of the chevron ghosts not measured; built as a smear over the measured
+  first 5 f. streakDrop: the arrow's grey-to-black change has no values.
+- riseSettle: the rise while shrinking has no amount or anchor (shrinks about its centre); the 8 and 12 f
+  card stagger and card 3's drop need several children and are not built.
+- riseBuild: the plus-disc fade (248 -> 239) and the glyph steps are not built.
+- Left out: dropDecelerate's 0.73 -> 1 opacity (a by-product of the blur fit), onePicture's faint first
+  picture, shrinkCut's sub-pixel precursor, quickSettle's x1.25-1.30 hold before f376.
+- Approximations: fadeRise's rise shares the fade's curve; growIn staggers 2 f (S03), not S06's 1-3 f;
+  shrinkCut's measured curve has no pause at 87 %, so the reference's last picture (opacity 0.13) differs.
