@@ -168,3 +168,18 @@ questions.
 - Ease tokens chosen where no curve is stored: twoPulses' second pulse (outSoft, rmse 0.034 to the stored
   fit), whipReveal's scale (inOutWhip, rmse 0.054, starts about 2 f late), centreTail's tail (outFirm,
   matched to the hand-off speed).
+
+## ui-controls (4 primitives, 26 variants, 19 curves)
+
+- Ease tokens fitted to the rows' values where no curve exists (rmse in the spec comments): press and
+  release of glowRelease, longHold and dropPress; seedPop's height; widenOvershoot's content scale and
+  second-line height; edgeStretch's fade; dotToPill's stretch; chainOut's squash; springBack's label
+  brightening; unfold's open and close. Motion blur uses each video's measured shutter (v7 1.25 f, v8 1.41 f).
+- Left out: glowRelease's glow size; held's S11 echo trail and S20 spring-back (other moments); dropPress's
+  chip shrink and folder swap have windows but no ease (linear, hard swap); v7's posing on twos (would
+  change the measured progress); speckStretch's height; dotToPill's width before the circle finishes and
+  its 6 f trail; pillToLine's irregular per-letter steps (2.4 f average used); unfold's blur and its
+  close's fade (v5 has no measured shutter); fastForward's knob smear (v6 has no shutter); perPictureSwap's
+  S17 readings.
+- cornerFollow's handle fly-out and exit have two poses each (linear); chainOut's swell uses outFirm (two
+  points); scaleIn's blur is weaker than the reference's smear, as the measured v7 shutter gives.
