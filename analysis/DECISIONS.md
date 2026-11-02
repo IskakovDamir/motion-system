@@ -150,7 +150,10 @@ Calls made where the brief left room, with the reason. Newest at the bottom of e
   laid its hexagon cluster out like v3's mark, and the LockupSlide demo put its lockup where v1's sits;
   both demos were moved (discs off the measured spot; the lockup lower left). verify.py now (a) skips
   near-blank reference pictures as well as near-blank renders, (b) confirms a 32x18 candidate at 128x72
-  by the correlation of the two pictures' content (pixels off their own background): the two real cases
-  scored 0.70-0.97, centred words and lone marks at most 0.57, so the limit is 0.6; (c) counts a face only
+  by the correlation of the two pictures' content (pixels off their own background). The demo laid out
+  like v3's mark scored 0.97, the lockup 0.70, while unrelated sparse frames scored up to 0.73 (a cursor
+  beside three tiles against a lone mark at the same spot), so correlation at this size separates copies,
+  not layouts: the copy limit is 0.85 and verify prints the highest score it saw. Layout likeness is
+  judged by eye on the flagged frames (the two moved demos, and ScalePop's lone hexagon became a square); (c) counts a face only
   with an eye inside its upper part and a body only with an upper body or a confirmed face inside it, and
   prints how many first-stage hits it saw.

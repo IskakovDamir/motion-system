@@ -111,10 +111,10 @@ export const Demo: React.FC<DemoProps> = ({variant}) => {
 	let width: number | undefined;
 	switch (variant) {
 		case 'strongOut':
-			content = <Box size={rest(0)}><Shape kind="hex" fill={s.ink} /></Box>;
+			content = <Box size={rest(0)}><Shape kind="square" fill={s.ink} /></Box>;
 			break;
 		case 'fadeGrow':
-			content = <Box size={px(220)}><Shape kind="hex" fill={s.ink} /></Box>;
+			content = <Box size={px(220)}><Shape kind="square" fill={s.ink} /></Box>;
 			break;
 		case 'spinTilt':
 			content = <Box size={rest(0)}><Tile kind="plus" tile={s.ink} mark={s.onAccent} /></Box>;

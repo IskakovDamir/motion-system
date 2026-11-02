@@ -47,6 +47,7 @@ RENDERS = {"MotionShowcase": OUT / "MotionShowcase.mp4", "StyleDemo": OUT / "Sty
 RMSE_MAX = 0.05
 DUR_TOL = 1
 TEMPO_TOL = 0.15
+NCC_COPY = 0.85
 
 results: list[tuple[str, bool, str]] = []
 
@@ -288,6 +289,7 @@ def check_clean(skip_pixels: bool) -> None:
         hog = cv2.HOGDescriptor()
         hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
         raw_people = 0
+        top_ncc = 0.0
         for comp, path in RENDERS.items():
             if not path.exists():
                 problems.append(f"{path.relative_to(ROOT)} missing (render first)")
@@ -312,10 +314,13 @@ def check_clean(skip_pixels: bool) -> None:
                             close = cand[err < 6.0]
                             if len(close):
                                 # second stage at 128x72: do the two pictures share their content, not just an
-                                # empty field? (calibration: centred words and lone marks <= 0.57, copies >= 0.70)
+                                # empty field? Calibration (analysis/DECISIONS.md): a demo laid out like a reference
+                                # mark scored 0.97; unrelated sparse frames (a word, a cursor, a lone mark on an empty
+                                # field) scored up to 0.73. A copy is 0.85 and above.
                                 mine = cv2.resize(g, (128, 72), interpolation=cv2.INTER_AREA).astype(np.float32)
                                 ncc = max(content_ncc(mine, ref_picture(int(n))) for n in close[np.argsort(err[err < 6.0])[:5]])
-                                if ncc >= 0.6:
+                                top_ncc = max(top_ncc, ncc)
+                                if ncc >= NCC_COPY:
                                     matches += 1
                                     problems.append(f"{comp} frame {i} matches a reference picture (content correlation {ncc:.2f})")
                     if i % 6 == 0:
@@ -343,7 +348,8 @@ def check_clean(skip_pixels: bool) -> None:
             c.release()
     report("clean", not problems, f"src/public/out scanned; {frames_checked} render frames compared with every reference picture; "
            f"reference matches {matches}, person detections {people}"
-           + (f" (first-stage detector hits {raw_people}, none confirmed)" if not skip_pixels and not people else "")
+           + (f" (first-stage detector hits {raw_people}, none confirmed); highest content correlation {top_ncc:.2f} "
+              f"(copy limit {NCC_COPY})" if not skip_pixels and not people else "")
            + (f"; first problem: {problems[0]}" if problems else ""))
 
 
