@@ -143,3 +143,14 @@ Calls made where the brief left room, with the reason. Newest at the bottom of e
 - **One measured shutter for camera motion blur.** Only v8 measures a smear length (24 px at 17 px/f).
   The camera group uses that ratio (blur = movement over 1.41 frames before each frame) wherever a row
   notes blur or the reference frames show it, instead of leaving blur out of v5-v7 camera moves.
+- **Clean check: content, not empty fields (2026-11-03).** The first full run flagged 610 render frames as
+  matching a reference picture and 135 as people. Looking at them: most matches were a sparse frame (one
+  word or mark on a light field) against a near-blank reference picture, and every person hit was a
+  digit "6", rain streaks, dot grids, orbit rings or card stacks. Two were real: the CollapseToPoint demo
+  laid its hexagon cluster out like v3's mark, and the LockupSlide demo put its lockup where v1's sits;
+  both demos were moved (discs off the measured spot; the lockup lower left). verify.py now (a) skips
+  near-blank reference pictures as well as near-blank renders, (b) confirms a 32x18 candidate at 128x72
+  by the correlation of the two pictures' content (pixels off their own background): the two real cases
+  scored 0.70-0.97, centred words and lone marks at most 0.57, so the limit is 0.6; (c) counts a face only
+  with an eye inside its upper part and a body only with an upper body or a confirmed face inside it, and
+  prints how many first-stage hits it saw.
