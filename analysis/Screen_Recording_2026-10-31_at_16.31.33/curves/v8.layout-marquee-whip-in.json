@@ -2,8 +2,8 @@
  "technique_id": "v8.layout-marquee-whip-in",
  "file": "curves/v8.layout-marquee-whip-in.csv",
  "property": "position-x",
- "unit": "px (picture 1622 px wide), row position minus the constant marquee drift of -7.5 px/f",
- "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c5r_Sc_row_corr.csv",
+ "unit": "px (picture 1622 px wide), row position minus the constant marquee drift of -7.37 px/f",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/fix_S25_row_x_3242-3376.csv",
  "column": "row_x_minus_marquee",
  "sampled_frames": [
   3242,
@@ -11,31 +11,31 @@
  ],
  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
  "from_value": 0.0,
- "to_value": -1623.0,
+ "to_value": -1630.47,
  "active_frames": [
-  3243,
+  3242,
   3286
  ],
- "measured_duration_frames": 43,
+ "measured_duration_frames": 44,
  "bezier": {
-  "x1": 0.0015,
-  "y1": 0.8356,
-  "x2": 0.3634,
-  "y2": 0.9284,
-  "durationInFrames": 49,
-  "delay": 0.0,
+  "x1": 0.0,
+  "y1": 0.5273,
+  "x2": 0.0135,
+  "y2": 1.0012,
+  "durationInFrames": 61,
+  "delay": 1.169,
   "built_duration_frames": 42,
-  "rmse": 0.0207
+  "rmse": 0.027
  },
  "spring": {
-  "stiffness": 132.076,
-  "damping": 43.193,
+  "stiffness": 92.174,
+  "damping": 22.527,
   "mass": 1,
-  "damping_ratio": 1.8792,
-  "built_duration_frames": 30,
-  "rmse": 0.2163
+  "damping_ratio": 1.1732,
+  "built_duration_frames": 36,
+  "rmse": 0.1758
  },
  "recommended": "bezier",
- "note": "S-c: after the hard cut f3242 the row of portrait footage cards (card 457 px = 28.2% W wide, 818 px = 89.1% H tall, gap 30 px, pitch 487.5 px = 30.1% W, top 6.3% H) arrives from the right at about 290 px/f and decelerates into a constant leftward marquee scroll of 7.5 px/f (0.46% W per frame), reached by about f3300. Row x integrated from the white gaps between cards (scratch/v8c5r_Sc_row.csv); the fitted column subtracts the steady 7.5 px/f so the ease-out settles to a constant (-1623 px). Speeds: 290 (f3242-f3244), 146 (to f3246), 83 (to f3248), 59 (to f3250), 31-78 (f3250-f3254, capture jitter), 34 (f3256), 27 (f3260), 21.5 (f3264), 17 (f3270), 14 (f3278), 11 (f3286), 9 (f3298), 7.5 px/f from f3300.",
+ "note": "S25: after the hard cut f3242 the row of portrait footage cards (card 457 px = 28.2% W wide, 818 px = 89.1% H tall, gap 30 px, pitch 487.6 px = 30.1% W, top 6.3% H) arrives from the right at about 291 px/f and brakes into a constant leftward marquee of 7.37 px/f (0.455% W per frame; least squares over f3306-f3374, residual rms 0.03 px), reached at f3306. Row x from the sub-pixel centres of the white gaps between cards (two 50% crossings of the column-mean profile, rows 120-830; 420-900 from f3330), integrated over new pictures only (the zero-difference repeats f3243-f3251 are left out; scratch/fix_S25_row_x_3242-3376.csv); the fitted column adds back the steady 7.37 px/f so the ease-out settles to a constant (-1630.5 px). Speeds: 291 (f3242-f3244), 146 (to f3246), 82 (to f3248), 59 (to f3250), 34 (f3256), 26.5 (f3260), 21.9 (f3264), 16.3 (f3272), 13.6 (f3278), 11.0 (f3286), 10.5 (f3288), 10.1 (f3290), 9.6 (f3292), 8.5 (f3298), 8.2 (f3300), 7.8 (f3302), 7.5 (f3304), 7.37 px/f from f3306; pictures stamped one frame late (f3253, f3281, f3295) carry 1 f of capture jitter.",
  "chunk_curve_id": "v8.layout-marquee-whip-in.v8c5"
 }

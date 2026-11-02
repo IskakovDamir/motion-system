@@ -1744,7 +1744,7 @@
    "end": 200,
    "frames": 37,
    "type": "zoom-through",
-   "shared": "frame centre: the tunnel's vanishing point is where the footage card appears (82 x 46 px, centred x 49.9% / y 50.2%, with a soft zoom-blur halo); forward motion continues (mascots fly past the camera and out of frame f164-f179, the card zooms from 5.1% W to full frame f174-f200, ease-out); the tunnel walls pale to white (pure 248 from f179), which is the field around the card",
+   "shared": "frame centre: the tunnel's vanishing point is where the footage card appears (82 x 46 px, centred x 49.9% / y 50.2%, with a soft zoom-blur halo); forward motion continues (mascots fly past the camera and out of frame f164-f179, the card zooms from 5.1% W (f174) to 99.1% W at f200, its 2% point, then to full width at f202 and full frame at f206, ease-out); the tunnel walls pale to white (pure 248 from f179), which is the field around the card",
    "technique": "v8.trans-tunnel-exit-zoom-through",
    "detail": "detail/soft_164-200",
    "cut_frame": 174,

@@ -1,0 +1,782 @@
+{
+ "video": "Z4upJDBR5KbFtmrL",
+ "key": "v4",
+ "scan": "scratch/coverage_gaps.json before the review: 38 runs (234 frames); after the edits the rerun prints 1 run (f1), listed here as noise; after the round-1 critic: 21 covered, 16 missed, 1 noise (the S02 terminal overprint, the S03 chat spinner and two S05 hold hops were in no row, so their runs are missed, not covered); after the round-2 critic the verdicts stand (21 covered, 16 missed, 1 noise) and seven row errors are fixed: the S02 and S03 chat spinners arrive already cycling (steps from f321 and f578), both dot spinners use a 2 x 3 cell, the S03 status line changes pixels to f589, the S02 working line appears at f331, the S05 949 px hop is hidden at f1091-f1092 and f1097, the S08 slide runs f1488-f1525 with re-measured onset values, and T03 starts on its first changed frame f718 (f718-f766)",
+ "gaps": [
+  {
+   "start": 1,
+   "end": 1,
+   "verdict": "noise",
+   "rows": [],
+   "reason": "f1 is the first B-frame after the I-frame f0 (source.mp4 f0-f4 are I, B, B, B, P; the next I-frame is f180): 120 full-res pixels differ from f0 by more than 8 levels (max 66), scattered edge pixels over icons 1, 3, 5 and 6 (3, 22, 66 and 29 px) that persist as drift from the I-frame (142, 163 and 196 px differ from f0 at f2, f3 and f4); the scan's 4 px are 1 + 3 px of up to 21 levels at icons 5 and 3, and the crops show the icons, badges and grid outlines unchanged f0-f3, so it is codec noise; the rerun still prints it.",
+   "evidence": [
+    "crops/crop_1150_600_600x260_00000-00003.jpg",
+    "crops/crop_1250_680_200x50_00000-00003.jpg",
+    "scratch/fix_f0001_source.csv",
+    "scratch/gap_review/f00001_diff.jpg",
+    "scratch/gap_s01_f0001_region.csv"
+   ]
+  },
+  {
+   "start": 41,
+   "end": 71,
+   "verdict": "covered",
+   "rows": [
+    "v4.text-word-rise-fade",
+    "v4.icon-pulse",
+    "v4.particle-edge-packets"
+   ],
+   "reason": "The 31 frames hold three S01 moves the rows describe but whose frame columns named only f9-f29 (words), f22-f38 plus parts of icons 3 and 5 (pulses) and no start frame for the dots: the second headline line rising in word by word (last word's final 1 px step f65, ink within 0.2% from f69, last 14-level speck f70), icon 2's pulse (outline ring f47-f64, up to 3248 px) and dot hops (pairs of about 75 px at up to 240 levels) that start with a dot popping on icon 3 at f36 and hopping from f37; the rows now state f9-f70, the per-icon ring spans and traffic f36-f215.",
+   "evidence": [
+    "detail/dense_00041-00071_00.jpg",
+    "detail/gap_f00049/sheet.jpg",
+    "crops/crop_1530_250_140x110_00044-00103.jpg",
+    "crops/crop_1340_560_140x120_00036-00047.jpg",
+    "crops/crop_1395_600_50x50_00033-00046.jpg",
+    "scratch/gap_s01_last_word_settle.csv",
+    "scratch/gap_s01_icon_pulse_spans.csv",
+    "scratch/gap_s01_first_hop_icon3.csv",
+    "scratch/gap_scan_components.csv"
+   ]
+  },
+  {
+   "start": 130,
+   "end": 130,
+   "verdict": "covered",
+   "rows": [
+    "v4.icon-pulse"
+   ],
+   "reason": "f130 is the last sub-pixel step of icon 5's scale-up (292 full-res px above 8 levels on the icon's outline ring, max 120; f130 and f131 identical, return from f132 with 123 px), which the pulse row listed only as f122-f129 and f132-f139; the row now gives icon 5 f123-f140.",
+   "evidence": [
+    "scratch/gap_review/f00130_icon5_diff.jpg",
+    "crops/crop_1168_676_144x144_00127-00133.jpg",
+    "scratch/gap_s01_icon_pulse_spans.csv"
+   ]
+  },
+  {
+   "start": 140,
+   "end": 213,
+   "verdict": "covered",
+   "rows": [
+    "v4.particle-edge-packets",
+    "v4.icon-pulse"
+   ],
+   "reason": "Every change is an S01 dot hop (pairs of 70-80 px at up to 240 levels: at least eight hops, e.g. icon 5 -> icon 3 f146-f170, icon 6 -> icon 2 f153-f177 cutting into icon 6's light bars, icon 1 -> icon 4 landing f215), icon 5's return tail (469 px at f140) or icon 6's pulse (outline ring f148-f165, up to 2644 px), plus 1-5 px specks of 13-17 levels on the static headline; the dots row now states traffic f36-f215 and the pulse row icon 6 f148-f165, nothing after f165.",
+   "evidence": [
+    "detail/dense_00140-00213_00.jpg",
+    "detail/dense_00140-00213_01.jpg",
+    "detail/dense_00140-00213_02.jpg",
+    "detail/gap_f00149/sheet.jpg",
+    "crops/crop_1130_230_770x630_00140-00213.jpg",
+    "crops/crop_1540_680_120x130_00146-00179.jpg",
+    "scratch/gap_s01_icon_pulse_spans.csv",
+    "scratch/gap_scan_components.csv"
+   ]
+  },
+  {
+   "start": 346,
+   "end": 349,
+   "verdict": "covered",
+   "rows": [
+    "v4.ui-spinner-glyph-cycle"
+   ],
+   "reason": "f346 is a chat status spinner step (4 px at 246-267 x 759-777, up to 64 levels) and f349 a terminal star-glyph step (7 px at 1032-1056 x 768-789); both spinners have S02 rows whose frame columns gave only their start (chat f316, terminal f331), so the rows now state the glyph cells' active ranges f316-f456 (steps 5, 4, 6 f) and f331-f448 (steps every 6 f, f337-f445) with the measured step frames. Round-2 critic: the S02 chat spinner row now also lists the glyph's two steps inside its status line's rise-fade: the glyph arrives at f316 already cycling (pattern p1: top pair + middle-left dot) and steps at f321 (top pair + middle-right) and f325 (the bottom-right dot added) before f331, the 5, 4, 6 f cadence counting from the arrival (dot centroids on source.mp4, scratch/rv3_s02_chat_spinner_dots.csv; crops/crop_240_752_32x36_00314-00335.jpg).",
+   "evidence": [
+    "crops/crop_246_754_20x26_00331-00390.jpg",
+    "crops/crop_236_748_40x40_00390-00458.jpg",
+    "crops/crop_1034_766_20x22_00331-00446.jpg",
+    "scratch/gap_s02_chat_spinner_cell.csv",
+    "scratch/gap_s02_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s02_chat_spinner_dots.csv",
+    "crops/crop_240_752_32x36_00314-00335.jpg",
+    "scratch/rv2_s02_chat_glyph_tmpl.csv"
+   ]
+  },
+  {
+   "start": 354,
+   "end": 355,
+   "verdict": "covered",
+   "rows": [
+    "v4.ui-terminal-line-step",
+    "v4.ui-spinner-glyph-cycle"
+   ],
+   "reason": "f354 is the terminal's block-1 header line appearing whole in one frame (195 px at 1032-1236 x 519-549, up to 173 levels), listed in the S02 line row whose frame columns named only f321, and f355 the next 6 f star-glyph and chat spinner steps (12 + 2 px); the line row now states f321-f448 and the spinner rows their ranges. Round-2 critic: the S02 working line appears at f331, not f330 (its rows change 0 px above 8 levels at f330 and 1652 px at f331, scratch/rv3_s02_working_line_onset.csv, crops/crop_1030_755_420x45_00328-00333.jpg), so the line row's gaps now read 10, 23, 5, 4, 2, 3, 19, 5, 19, 21, 15 f, the seconds digit steps 60 f after the line appears (f331 -> f391, as S03's f588 -> f648) and the sound-sync line gives the working line +1 vs beat f330.",
+   "evidence": [
+    "crops/crop_1020_500_780x60_00352-00356.jpg",
+    "crops/crop_1034_766_20x22_00331-00446.jpg",
+    "scratch/gap_s02_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s02_working_line_onset.csv",
+    "crops/crop_1030_755_420x45_00328-00333.jpg"
+   ]
+  },
+  {
+   "start": 359,
+   "end": 373,
+   "verdict": "covered",
+   "rows": [
+    "v4.ui-terminal-line-step",
+    "v4.ui-spinner-glyph-cycle"
+   ],
+   "reason": "One-frame terminal line steps listed in the S02 line row (sub-line f359, 332 px; three diff lines on grey bands f363, f365, f368, 1792, 843 and 368 px) plus spinner steps at f361, f367, f370 and f373 (4-12 px); the line row now names f321-f448 and the spinner rows f316-f456 and f331-f448. Round-2 critic: the S02 working line appears at f331, not f330 (its rows change 0 px above 8 levels at f330 and 1652 px at f331, scratch/rv3_s02_working_line_onset.csv, crops/crop_1030_755_420x45_00328-00333.jpg), so the line row's gaps now read 10, 23, 5, 4, 2, 3, 19, 5, 19, 21, 15 f, the seconds digit steps 60 f after the line appears (f331 -> f391, as S03's f588 -> f648) and the sound-sync line gives the working line +1 vs beat f330.",
+   "evidence": [
+    "crops/crop_1020_540_780x130_00358-00374.jpg",
+    "crops/crop_1034_766_20x22_00331-00446.jpg",
+    "scratch/gap_s02_chat_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s02_working_line_onset.csv",
+    "crops/crop_1030_755_420x45_00328-00333.jpg"
+   ]
+  },
+  {
+   "start": 379,
+   "end": 379,
+   "verdict": "covered",
+   "rows": [
+    "v4.ui-spinner-glyph-cycle"
+   ],
+   "reason": "f379 is a terminal star-glyph step (7 px at 1032-1056 x 768-789, up to 35 levels); both spinners have S02 rows whose frame columns gave only their start (chat f316, terminal f331), so the rows now state the glyph cells' active ranges f316-f456 (steps 5, 4, 6 f) and f331-f448 (steps every 6 f, f337-f445) with the measured step frames. Round-2 critic: the S02 chat spinner row now also lists the glyph's two steps inside its status line's rise-fade: the glyph arrives at f316 already cycling (pattern p1: top pair + middle-left dot) and steps at f321 (top pair + middle-right) and f325 (the bottom-right dot added) before f331, the 5, 4, 6 f cadence counting from the arrival (dot centroids on source.mp4, scratch/rv3_s02_chat_spinner_dots.csv; crops/crop_240_752_32x36_00314-00335.jpg).",
+   "evidence": [
+    "crops/crop_246_754_20x26_00331-00390.jpg",
+    "crops/crop_236_748_40x40_00390-00458.jpg",
+    "crops/crop_1034_766_20x22_00331-00446.jpg",
+    "scratch/gap_s02_chat_spinner_cell.csv",
+    "scratch/gap_s02_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s02_chat_spinner_dots.csv",
+    "crops/crop_240_752_32x36_00314-00335.jpg",
+    "scratch/rv2_s02_chat_glyph_tmpl.csv"
+   ]
+  },
+  {
+   "start": 385,
+   "end": 387,
+   "verdict": "covered",
+   "rows": [
+    "v4.ui-terminal-line-step",
+    "v4.ui-spinner-glyph-cycle"
+   ],
+   "reason": "f385 holds the terminal and chat spinner steps (4 + 3 px) and f387 the block-2 header line (247 px at 1032-1293 x 663-693), a one-frame step of the S02 line row; the rows now state f321-f448, f331-f448 and f316-f456. Round-2 critic: the S02 working line appears at f331, not f330 (its rows change 0 px above 8 levels at f330 and 1652 px at f331, scratch/rv3_s02_working_line_onset.csv, crops/crop_1030_755_420x45_00328-00333.jpg), so the line row's gaps now read 10, 23, 5, 4, 2, 3, 19, 5, 19, 21, 15 f, the seconds digit steps 60 f after the line appears (f331 -> f391, as S03's f588 -> f648) and the sound-sync line gives the working line +1 vs beat f330.",
+   "evidence": [
+    "crops/crop_1020_655_780x150_00384-00393.jpg",
+    "scratch/gap_s02_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s02_working_line_onset.csv",
+    "crops/crop_1030_755_420x45_00328-00333.jpg"
+   ]
+  },
+  {
+   "start": 391,
+   "end": 392,
+   "verdict": "covered",
+   "rows": [
+    "v4.ui-terminal-line-step",
+    "v4.ui-spinner-glyph-cycle"
+   ],
+   "reason": "f391 is the working line's elapsed-seconds digit stepping +1 (15 px at 1170-1191 x 762-792) with the 6 f glyph and chat spinner steps, f392 the block-2 sub-line (374 px), all in the S02 rows (digit at f391, line at f392) whose frame columns did not name them; the working-line row now states f331-f448 and the line row f321-f448. Round-2 critic: the S02 working line appears at f331, not f330 (its rows change 0 px above 8 levels at f330 and 1652 px at f331, scratch/rv3_s02_working_line_onset.csv, crops/crop_1030_755_420x45_00328-00333.jpg), so the line row's gaps now read 10, 23, 5, 4, 2, 3, 19, 5, 19, 21, 15 f, the seconds digit steps 60 f after the line appears (f331 -> f391, as S03's f588 -> f648) and the sound-sync line gives the working line +1 vs beat f330.",
+   "evidence": [
+    "crops/crop_1020_655_780x150_00384-00393.jpg",
+    "crops/crop_1034_766_20x22_00331-00446.jpg",
+    "scratch/gap_s02_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s02_working_line_onset.csv",
+    "crops/crop_1030_755_420x45_00328-00333.jpg"
+   ]
+  },
+  {
+   "start": 396,
+   "end": 397,
+   "verdict": "covered",
+   "rows": [
+    "v4.ui-spinner-glyph-cycle"
+   ],
+   "reason": "f396 is a chat spinner step (4 px, up to 64 levels) and f397 a terminal star-glyph step (9 px); both spinners have S02 rows whose frame columns gave only their start (chat f316, terminal f331), so the rows now state the glyph cells' active ranges f316-f456 (steps 5, 4, 6 f) and f331-f448 (steps every 6 f, f337-f445) with the measured step frames. Round-2 critic: the S02 chat spinner row now also lists the glyph's two steps inside its status line's rise-fade: the glyph arrives at f316 already cycling (pattern p1: top pair + middle-left dot) and steps at f321 (top pair + middle-right) and f325 (the bottom-right dot added) before f331, the 5, 4, 6 f cadence counting from the arrival (dot centroids on source.mp4, scratch/rv3_s02_chat_spinner_dots.csv; crops/crop_240_752_32x36_00314-00335.jpg).",
+   "evidence": [
+    "crops/crop_246_754_20x26_00331-00390.jpg",
+    "crops/crop_236_748_40x40_00390-00458.jpg",
+    "crops/crop_1034_766_20x22_00331-00446.jpg",
+    "scratch/gap_s02_chat_spinner_cell.csv",
+    "scratch/gap_s02_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s02_chat_spinner_dots.csv",
+    "crops/crop_240_752_32x36_00314-00335.jpg",
+    "scratch/rv2_s02_chat_glyph_tmpl.csv"
+   ]
+  },
+  {
+   "start": 403,
+   "end": 403,
+   "verdict": "covered",
+   "rows": [
+    "v4.ui-spinner-glyph-cycle"
+   ],
+   "reason": "f403 is a terminal star-glyph step (4 px at 1032-1056 x 768-789, up to 46 levels); both spinners have S02 rows whose frame columns gave only their start (chat f316, terminal f331), so the rows now state the glyph cells' active ranges f316-f456 (steps 5, 4, 6 f) and f331-f448 (steps every 6 f, f337-f445) with the measured step frames. Round-2 critic: the S02 chat spinner row now also lists the glyph's two steps inside its status line's rise-fade: the glyph arrives at f316 already cycling (pattern p1: top pair + middle-left dot) and steps at f321 (top pair + middle-right) and f325 (the bottom-right dot added) before f331, the 5, 4, 6 f cadence counting from the arrival (dot centroids on source.mp4, scratch/rv3_s02_chat_spinner_dots.csv; crops/crop_240_752_32x36_00314-00335.jpg).",
+   "evidence": [
+    "crops/crop_246_754_20x26_00331-00390.jpg",
+    "crops/crop_236_748_40x40_00390-00458.jpg",
+    "crops/crop_1034_766_20x22_00331-00446.jpg",
+    "scratch/gap_s02_chat_spinner_cell.csv",
+    "scratch/gap_s02_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s02_chat_spinner_dots.csv",
+    "crops/crop_240_752_32x36_00314-00335.jpg",
+    "scratch/rv2_s02_chat_glyph_tmpl.csv"
+   ]
+  },
+  {
+   "start": 409,
+   "end": 411,
+   "verdict": "covered",
+   "rows": [
+    "v4.ui-terminal-line-step",
+    "v4.ui-spinner-glyph-cycle"
+   ],
+   "reason": "f409 is a terminal glyph step (6 px), f411 the block-3 header line (180 px at 1032-1224 x 720-753) with a chat spinner step (2 px), both described in the S02 rows; the line row now names f321-f448 and the spinner rows their ranges. Round-2 critic: the S02 working line appears at f331, not f330 (its rows change 0 px above 8 levels at f330 and 1652 px at f331, scratch/rv3_s02_working_line_onset.csv, crops/crop_1030_755_420x45_00328-00333.jpg), so the line row's gaps now read 10, 23, 5, 4, 2, 3, 19, 5, 19, 21, 15 f, the seconds digit steps 60 f after the line appears (f331 -> f391, as S03's f588 -> f648) and the sound-sync line gives the working line +1 vs beat f330.",
+   "evidence": [
+    "crops/crop_1020_700_780x60_00408-00412.jpg",
+    "scratch/gap_s02_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s02_working_line_onset.csv",
+    "crops/crop_1030_755_420x45_00328-00333.jpg"
+   ]
+  },
+  {
+   "start": 415,
+   "end": 415,
+   "verdict": "covered",
+   "rows": [
+    "v4.ui-spinner-glyph-cycle"
+   ],
+   "reason": "f415 is a simultaneous terminal glyph step (12 px) and chat spinner step (3 px); both spinners have S02 rows whose frame columns gave only their start (chat f316, terminal f331), so the rows now state the glyph cells' active ranges f316-f456 (steps 5, 4, 6 f) and f331-f448 (steps every 6 f, f337-f445) with the measured step frames. Round-2 critic: the S02 chat spinner row now also lists the glyph's two steps inside its status line's rise-fade: the glyph arrives at f316 already cycling (pattern p1: top pair + middle-left dot) and steps at f321 (top pair + middle-right) and f325 (the bottom-right dot added) before f331, the 5, 4, 6 f cadence counting from the arrival (dot centroids on source.mp4, scratch/rv3_s02_chat_spinner_dots.csv; crops/crop_240_752_32x36_00314-00335.jpg).",
+   "evidence": [
+    "crops/crop_246_754_20x26_00331-00390.jpg",
+    "crops/crop_236_748_40x40_00390-00458.jpg",
+    "crops/crop_1034_766_20x22_00331-00446.jpg",
+    "scratch/gap_s02_chat_spinner_cell.csv",
+    "scratch/gap_s02_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s02_chat_spinner_dots.csv",
+    "crops/crop_240_752_32x36_00314-00335.jpg",
+    "scratch/rv2_s02_chat_glyph_tmpl.csv"
+   ]
+  },
+  {
+   "start": 421,
+   "end": 421,
+   "verdict": "covered",
+   "rows": [
+    "v4.ui-spinner-glyph-cycle"
+   ],
+   "reason": "f421 is a simultaneous terminal glyph step (6 px) and chat spinner step (4 px); both spinners have S02 rows whose frame columns gave only their start (chat f316, terminal f331), so the rows now state the glyph cells' active ranges f316-f456 (steps 5, 4, 6 f) and f331-f448 (steps every 6 f, f337-f445) with the measured step frames. Round-2 critic: the S02 chat spinner row now also lists the glyph's two steps inside its status line's rise-fade: the glyph arrives at f316 already cycling (pattern p1: top pair + middle-left dot) and steps at f321 (top pair + middle-right) and f325 (the bottom-right dot added) before f331, the 5, 4, 6 f cadence counting from the arrival (dot centroids on source.mp4, scratch/rv3_s02_chat_spinner_dots.csv; crops/crop_240_752_32x36_00314-00335.jpg).",
+   "evidence": [
+    "crops/crop_246_754_20x26_00331-00390.jpg",
+    "crops/crop_236_748_40x40_00390-00458.jpg",
+    "crops/crop_1034_766_20x22_00331-00446.jpg",
+    "scratch/gap_s02_chat_spinner_cell.csv",
+    "scratch/gap_s02_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s02_chat_spinner_dots.csv",
+    "crops/crop_240_752_32x36_00314-00335.jpg",
+    "scratch/rv2_s02_chat_glyph_tmpl.csv"
+   ]
+  },
+  {
+   "start": 427,
+   "end": 427,
+   "verdict": "covered",
+   "rows": [
+    "v4.ui-spinner-glyph-cycle"
+   ],
+   "reason": "f427 is a terminal star-glyph step (6 px at 1032-1056 x 768-789, up to 29 levels); both spinners have S02 rows whose frame columns gave only their start (chat f316, terminal f331), so the rows now state the glyph cells' active ranges f316-f456 (steps 5, 4, 6 f) and f331-f448 (steps every 6 f, f337-f445) with the measured step frames. Round-2 critic: the S02 chat spinner row now also lists the glyph's two steps inside its status line's rise-fade: the glyph arrives at f316 already cycling (pattern p1: top pair + middle-left dot) and steps at f321 (top pair + middle-right) and f325 (the bottom-right dot added) before f331, the 5, 4, 6 f cadence counting from the arrival (dot centroids on source.mp4, scratch/rv3_s02_chat_spinner_dots.csv; crops/crop_240_752_32x36_00314-00335.jpg).",
+   "evidence": [
+    "crops/crop_246_754_20x26_00331-00390.jpg",
+    "crops/crop_236_748_40x40_00390-00458.jpg",
+    "crops/crop_1034_766_20x22_00331-00446.jpg",
+    "scratch/gap_s02_chat_spinner_cell.csv",
+    "scratch/gap_s02_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s02_chat_spinner_dots.csv",
+    "crops/crop_240_752_32x36_00314-00335.jpg",
+    "scratch/rv2_s02_chat_glyph_tmpl.csv"
+   ]
+  },
+  {
+   "start": 432,
+   "end": 433,
+   "verdict": "missed",
+   "rows": [
+    "v4.ui-terminal-line-step",
+    "v4.ui-spinner-glyph-cycle"
+   ],
+   "reason": "Missed text behaviour: f432 is the result line appearing whole (221 px at the scan's scale; ink y 754-773, x 1070-1374 on source.mp4) in the next slot of the terminal's 29 px line pitch while the working line is still drawn 13 px lower (ink y 770-786; ink centres 765.0 and 778.3), so the two overprint, sharing 4 ink rows with both legible, until the working line is cleared at f448; the line row said only that lines appear at fixed positions without scrolling, so the overprint was in no row. f433 is the working line's next 6 f star-glyph step (14 px), covered by the spinner row. The S02 line row now gives the slot pitch and both overprints with their measured rows, the S02 typography row, graphic-elements note, sound-sync line and the technique index row of v4.ui-terminal-line-step name them, and stills were made at f432 and f448. Round-2 critic: the S02 working line appears at f331, not f330 (its rows change 0 px above 8 levels at f330 and 1652 px at f331, scratch/rv3_s02_working_line_onset.csv, crops/crop_1030_755_420x45_00328-00333.jpg), so the line row's gaps now read 10, 23, 5, 4, 2, 3, 19, 5, 19, 21, 15 f, the seconds digit steps 60 f after the line appears (f331 -> f391, as S03's f588 -> f648) and the sound-sync line gives the working line +1 vs beat f330.",
+   "evidence": [
+    "crops/crop_1030_735_440x115_00429-00450.jpg",
+    "type/S2-3_f00432.png",
+    "type/S2-3_f00448.png",
+    "scratch/fix_s02_terminal_rows.csv",
+    "scratch/gap_s02_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s02_working_line_onset.csv",
+    "crops/crop_1030_755_420x45_00328-00333.jpg"
+   ]
+  },
+  {
+   "start": 439,
+   "end": 439,
+   "verdict": "covered",
+   "rows": [
+    "v4.ui-spinner-glyph-cycle"
+   ],
+   "reason": "f439 is a terminal star-glyph step (7 px at 1032-1056 x 768-789, up to 36 levels); both spinners have S02 rows whose frame columns gave only their start (chat f316, terminal f331), so the rows now state the glyph cells' active ranges f316-f456 (steps 5, 4, 6 f) and f331-f448 (steps every 6 f, f337-f445) with the measured step frames. Round-2 critic: the S02 chat spinner row now also lists the glyph's two steps inside its status line's rise-fade: the glyph arrives at f316 already cycling (pattern p1: top pair + middle-left dot) and steps at f321 (top pair + middle-right) and f325 (the bottom-right dot added) before f331, the 5, 4, 6 f cadence counting from the arrival (dot centroids on source.mp4, scratch/rv3_s02_chat_spinner_dots.csv; crops/crop_240_752_32x36_00314-00335.jpg).",
+   "evidence": [
+    "crops/crop_246_754_20x26_00331-00390.jpg",
+    "crops/crop_236_748_40x40_00390-00458.jpg",
+    "crops/crop_1034_766_20x22_00331-00446.jpg",
+    "scratch/gap_s02_chat_spinner_cell.csv",
+    "scratch/gap_s02_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s02_chat_spinner_dots.csv",
+    "crops/crop_240_752_32x36_00314-00335.jpg",
+    "scratch/rv2_s02_chat_glyph_tmpl.csv"
+   ]
+  },
+  {
+   "start": 445,
+   "end": 449,
+   "verdict": "missed",
+   "rows": [
+    "v4.ui-terminal-line-step",
+    "v4.ui-spinner-glyph-cycle"
+   ],
+   "reason": "Missed text behaviour: f445 holds both spinner steps (4 + 4 px, covered by the spinner rows); f447 is the summary line (615 px; ink y 814-831, x 1039-1763), printed two line slots below the result line, inside the outlined prompt box (outline rows 806 and 860), over the top of the prompt sign (y 830-838) and of the block cursor (y 825-844), which stay drawn under it until the window slides out (f497-f507); f448 clears the overprinted working line (288 px; the result line then stands alone); f449 (14 px of 13-19 levels) is encoder refinement of the f447 step (ink mean 185.4-185.7). Lines printed over other UI and a covered line cleared later were in no row; the S02 line row, its typography row, the graphic-elements note, the sound-sync line and the technique index row now describe both overprints with the measured rows. Round-2 critic: the S02 working line appears at f331, not f330 (its rows change 0 px above 8 levels at f330 and 1652 px at f331, scratch/rv3_s02_working_line_onset.csv, crops/crop_1030_755_420x45_00328-00333.jpg), so the line row's gaps now read 10, 23, 5, 4, 2, 3, 19, 5, 19, 21, 15 f, the seconds digit steps 60 f after the line appears (f331 -> f391, as S03's f588 -> f648) and the sound-sync line gives the working line +1 vs beat f330.",
+   "evidence": [
+    "crops/crop_1010_740_400x130_00445-00449.jpg",
+    "crops/crop_1030_735_440x115_00429-00450.jpg",
+    "type/S2-3_f00447.png",
+    "type/S2-3_f00448.png",
+    "scratch/fix_s02_terminal_rows.csv",
+    "scratch/gap_s02_summary_line_ink.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s02_working_line_onset.csv",
+    "crops/crop_1030_755_420x45_00328-00333.jpg"
+   ]
+  },
+  {
+   "start": 574,
+   "end": 588,
+   "verdict": "missed",
+   "rows": [
+    "v4.ui-chat-item-rise-fade-in",
+    "v4.ui-terminal-line-step",
+    "v4.ui-spinner-glyph-cycle"
+   ],
+   "reason": "Missed UI change: f574-f587 is the S03 status line's rise-fade: its label and spinner glyph reach their places in whole-pixel steps by f583, while its agent icon, resampled at sub-pixel positions, makes its last rise steps f584-f589 at full resolution (206, 142, 82, 50, 22 and 9 px above 8 levels, none from f590; ink centroid within 0.21 px of rest from f584) and to f587 at the scan level (1 px of 13 levels) (covered: its row named only f573 and now states f573-f589); f579 is the terminal request line on its grey band (3461 px) and f588 the working line (305 px), both in the line row (now f579-f663); f578, f583 and f588 are also steps of the S03 chat status spinner, a braille-style dot glyph (3-4 dots of a 2 x 3 cell) that arrives with the status line at f573 already cycling (pattern p1: top pair + middle-left dot) and steps in place every 5 f (f578 top pair + middle-right, f583 the bottom-right dot added, f588 right column ... f663, f668, then the check glyph at f672; 8-17 px above 30 levels once risen, 35-40 px at f578 and f583 while the line still rises, up to 150 levels, in its 32 x 36 px glyph cell on source.mp4), which no movement row described: the S03 block named it only in its graphic-elements note. A movement row now gives it (arrival f573, steps every 5 f f578-f668, check glyph f672), mapped to the existing v4.ui-spinner-glyph-cycle, whose technique index row names the S03 chat status. Round-2 critic: the first versions of the two rows put the spinner's first step at f583 and the status line's last change at f586; dot centroids (scratch/rv3_s03_chat_spinner_dots.csv) and per-element diffs of the status line (scratch/rv3_s03_status_line_tail.csv) put them at f578 and at f589 (f587 at the scan level).",
+   "evidence": [
+    "crops/crop_190_740_250x70_00572-00589.jpg",
+    "crops/crop_1005_415_815x385_00578-00589.jpg",
+    "crops/crop_236_748_40x40_00580-00674.jpg",
+    "crops/crop_236_748_40x40_00588-00670.jpg",
+    "crops/crop_1034_764_20x24_00588-00662.jpg",
+    "scratch/fix_s03_spinner_cells_source.csv",
+    "scratch/gap_s03_chat_spinner_cell.csv",
+    "scratch/gap_s03_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s03_chat_spinner_dots.csv",
+    "scratch/rv3_s03_status_line_tail.csv",
+    "crops/crop_240_752_32x36_00571-00592.jpg",
+    "crops/crop_240_752_32x36_00573-00584.jpg",
+    "crops/crop_200_745_45x50_00580-00591.jpg",
+    "scratch/rv3_s03_term_spinner_dots.csv"
+   ]
+  },
+  {
+   "start": 593,
+   "end": 593,
+   "verdict": "missed",
+   "rows": [
+    "v4.ui-spinner-glyph-cycle",
+    "v4.ui-terminal-line-step"
+   ],
+   "reason": "Missed UI change: f593 is a joint step of the terminal working-line spinner (11 px above 30 levels, max 127; in the line row, which now names its glyph cell f588-f663) and of the S03 chat status spinner, a braille-style dot glyph (3-4 dots of a 2 x 3 cell) that arrives with its status line at f573 already cycling (pattern p1: top pair + middle-left dot) and steps in place every 5 f (f578, f583, f588 ... f663, f668, then the check glyph at f672; 8-17 px above 30 levels once risen, 35-40 px at f578 and f583 while the line still rises, up to 150 levels, in its 32 x 36 px glyph cell on source.mp4), which no movement row described: the S03 block named it only in its graphic-elements note. A movement row now gives it (arrival f573, steps every 5 f f578-f668, check glyph f672), mapped to the existing v4.ui-spinner-glyph-cycle, whose technique index row names the S03 chat status. Round-2 critic: the first version of that row put the first step at f583 (10 f after the arrival); dot centroids on source.mp4 (scratch/rv3_s03_chat_spinner_dots.csv; crops/crop_240_752_32x36_00571-00592.jpg) show the glyph arriving on p1 at f573 and stepping from f578, as S02's (f316 -> f321) and S04's (f759 -> f764) do; the terminal's dot spinner, which the row cites, uses a 2 x 3 cell too (scratch/rv3_s03_term_spinner_dots.csv), not 2 x 4.",
+   "evidence": [
+    "crops/crop_236_748_40x40_00580-00674.jpg",
+    "crops/crop_236_748_40x40_00588-00670.jpg",
+    "crops/crop_1034_764_20x24_00588-00662.jpg",
+    "scratch/fix_s03_spinner_cells_source.csv",
+    "scratch/gap_s03_chat_spinner_cell.csv",
+    "scratch/gap_s03_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s03_chat_spinner_dots.csv",
+    "scratch/rv3_s03_term_spinner_dots.csv",
+    "crops/crop_240_752_32x36_00571-00592.jpg",
+    "crops/crop_240_752_32x36_00573-00584.jpg"
+   ]
+  },
+  {
+   "start": 598,
+   "end": 598,
+   "verdict": "missed",
+   "rows": [
+    "v4.ui-spinner-glyph-cycle",
+    "v4.ui-terminal-line-step"
+   ],
+   "reason": "Missed UI change: f598 is a joint 5 f step of the terminal working-line spinner (6 px, max 123; in the line row, glyph cell f588-f663) and of the S03 chat status spinner, a braille-style dot glyph (3-4 dots of a 2 x 3 cell) that arrives with its status line at f573 already cycling (pattern p1: top pair + middle-left dot) and steps in place every 5 f (f578, f583, f588 ... f663, f668, then the check glyph at f672; 8-17 px above 30 levels once risen, 35-40 px at f578 and f583 while the line still rises, up to 150 levels, in its 32 x 36 px glyph cell on source.mp4), which no movement row described: the S03 block named it only in its graphic-elements note. A movement row now gives it (arrival f573, steps every 5 f f578-f668, check glyph f672), mapped to the existing v4.ui-spinner-glyph-cycle, whose technique index row names the S03 chat status. Round-2 critic: the first version of that row put the first step at f583 (10 f after the arrival); dot centroids on source.mp4 (scratch/rv3_s03_chat_spinner_dots.csv; crops/crop_240_752_32x36_00571-00592.jpg) show the glyph arriving on p1 at f573 and stepping from f578, as S02's (f316 -> f321) and S04's (f759 -> f764) do; the terminal's dot spinner, which the row cites, uses a 2 x 3 cell too (scratch/rv3_s03_term_spinner_dots.csv), not 2 x 4.",
+   "evidence": [
+    "crops/crop_236_748_40x40_00580-00674.jpg",
+    "crops/crop_236_748_40x40_00588-00670.jpg",
+    "crops/crop_1034_764_20x24_00588-00662.jpg",
+    "scratch/fix_s03_spinner_cells_source.csv",
+    "scratch/gap_s03_chat_spinner_cell.csv",
+    "scratch/gap_s03_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s03_chat_spinner_dots.csv",
+    "scratch/rv3_s03_term_spinner_dots.csv",
+    "crops/crop_240_752_32x36_00571-00592.jpg",
+    "crops/crop_240_752_32x36_00573-00584.jpg"
+   ]
+  },
+  {
+   "start": 603,
+   "end": 603,
+   "verdict": "missed",
+   "rows": [
+    "v4.ui-spinner-glyph-cycle",
+    "v4.ui-terminal-line-step"
+   ],
+   "reason": "Missed UI change: f603 is a joint 5 f step of the terminal working-line spinner (6 px, max 121; in the line row, glyph cell f588-f663) and of the S03 chat status spinner, a braille-style dot glyph (3-4 dots of a 2 x 3 cell) that arrives with its status line at f573 already cycling (pattern p1: top pair + middle-left dot) and steps in place every 5 f (f578, f583, f588 ... f663, f668, then the check glyph at f672; 8-17 px above 30 levels once risen, 35-40 px at f578 and f583 while the line still rises, up to 150 levels, in its 32 x 36 px glyph cell on source.mp4), which no movement row described: the S03 block named it only in its graphic-elements note. A movement row now gives it (arrival f573, steps every 5 f f578-f668, check glyph f672), mapped to the existing v4.ui-spinner-glyph-cycle, whose technique index row names the S03 chat status. Round-2 critic: the first version of that row put the first step at f583 (10 f after the arrival); dot centroids on source.mp4 (scratch/rv3_s03_chat_spinner_dots.csv; crops/crop_240_752_32x36_00571-00592.jpg) show the glyph arriving on p1 at f573 and stepping from f578, as S02's (f316 -> f321) and S04's (f759 -> f764) do; the terminal's dot spinner, which the row cites, uses a 2 x 3 cell too (scratch/rv3_s03_term_spinner_dots.csv), not 2 x 4.",
+   "evidence": [
+    "crops/crop_236_748_40x40_00580-00674.jpg",
+    "crops/crop_236_748_40x40_00588-00670.jpg",
+    "crops/crop_1034_764_20x24_00588-00662.jpg",
+    "scratch/fix_s03_spinner_cells_source.csv",
+    "scratch/gap_s03_chat_spinner_cell.csv",
+    "scratch/gap_s03_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s03_chat_spinner_dots.csv",
+    "scratch/rv3_s03_term_spinner_dots.csv",
+    "crops/crop_240_752_32x36_00571-00592.jpg",
+    "crops/crop_240_752_32x36_00573-00584.jpg"
+   ]
+  },
+  {
+   "start": 609,
+   "end": 609,
+   "verdict": "covered",
+   "rows": [
+    "v4.ui-terminal-line-step"
+   ],
+   "reason": "f609 is the terminal's header line appearing whole with its bullet (99 + 4 px at 1035-1158 x 501-531, up to 174 levels), a one-frame step listed in the S03 line row whose frame columns named only f579; the row now states f579-f663.",
+   "evidence": [
+    "crops/crop_1020_490_780x130_00607-00614.jpg",
+    "scratch/gap_scan_components.csv"
+   ]
+  },
+  {
+   "start": 613,
+   "end": 613,
+   "verdict": "missed",
+   "rows": [
+    "v4.ui-terminal-line-step",
+    "v4.ui-spinner-glyph-cycle"
+   ],
+   "reason": "Missed UI change: f613 is the header's sub-line (253 px at 1059-1386 x 525-561, covered by the line row, now f579-f663) with a joint step of the terminal spinner (6 px, max 128) and of the S03 chat status spinner, a braille-style dot glyph (3-4 dots of a 2 x 3 cell) that arrives with its status line at f573 already cycling (pattern p1: top pair + middle-left dot) and steps in place every 5 f (f578, f583, f588 ... f663, f668, then the check glyph at f672; 8-17 px above 30 levels once risen, 35-40 px at f578 and f583 while the line still rises, up to 150 levels, in its 32 x 36 px glyph cell on source.mp4), which no movement row described: the S03 block named it only in its graphic-elements note. A movement row now gives it (arrival f573, steps every 5 f f578-f668, check glyph f672), mapped to the existing v4.ui-spinner-glyph-cycle, whose technique index row names the S03 chat status. Round-2 critic: the first version of that row put the first step at f583 (10 f after the arrival); dot centroids on source.mp4 (scratch/rv3_s03_chat_spinner_dots.csv; crops/crop_240_752_32x36_00571-00592.jpg) show the glyph arriving on p1 at f573 and stepping from f578, as S02's (f316 -> f321) and S04's (f759 -> f764) do; the terminal's dot spinner, which the row cites, uses a 2 x 3 cell too (scratch/rv3_s03_term_spinner_dots.csv), not 2 x 4.",
+   "evidence": [
+    "crops/crop_1020_490_780x130_00607-00614.jpg",
+    "crops/crop_236_748_40x40_00580-00674.jpg",
+    "crops/crop_236_748_40x40_00588-00670.jpg",
+    "crops/crop_1034_764_20x24_00588-00662.jpg",
+    "scratch/fix_s03_spinner_cells_source.csv",
+    "scratch/gap_s03_chat_spinner_cell.csv",
+    "scratch/gap_s03_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s03_chat_spinner_dots.csv",
+    "scratch/rv3_s03_term_spinner_dots.csv",
+    "crops/crop_240_752_32x36_00571-00592.jpg",
+    "crops/crop_240_752_32x36_00573-00584.jpg"
+   ]
+  },
+  {
+   "start": 618,
+   "end": 618,
+   "verdict": "missed",
+   "rows": [
+    "v4.ui-spinner-glyph-cycle",
+    "v4.ui-terminal-line-step"
+   ],
+   "reason": "Missed UI change: f618 is a joint 5 f step of the terminal working-line spinner (10 px, max 128; in the line row, glyph cell f588-f663) and of the S03 chat status spinner, a braille-style dot glyph (3-4 dots of a 2 x 3 cell) that arrives with its status line at f573 already cycling (pattern p1: top pair + middle-left dot) and steps in place every 5 f (f578, f583, f588 ... f663, f668, then the check glyph at f672; 8-17 px above 30 levels once risen, 35-40 px at f578 and f583 while the line still rises, up to 150 levels, in its 32 x 36 px glyph cell on source.mp4), which no movement row described: the S03 block named it only in its graphic-elements note. A movement row now gives it (arrival f573, steps every 5 f f578-f668, check glyph f672), mapped to the existing v4.ui-spinner-glyph-cycle, whose technique index row names the S03 chat status. Round-2 critic: the first version of that row put the first step at f583 (10 f after the arrival); dot centroids on source.mp4 (scratch/rv3_s03_chat_spinner_dots.csv; crops/crop_240_752_32x36_00571-00592.jpg) show the glyph arriving on p1 at f573 and stepping from f578, as S02's (f316 -> f321) and S04's (f759 -> f764) do; the terminal's dot spinner, which the row cites, uses a 2 x 3 cell too (scratch/rv3_s03_term_spinner_dots.csv), not 2 x 4.",
+   "evidence": [
+    "crops/crop_236_748_40x40_00580-00674.jpg",
+    "crops/crop_236_748_40x40_00588-00670.jpg",
+    "crops/crop_1034_764_20x24_00588-00662.jpg",
+    "scratch/fix_s03_spinner_cells_source.csv",
+    "scratch/gap_s03_chat_spinner_cell.csv",
+    "scratch/gap_s03_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s03_chat_spinner_dots.csv",
+    "scratch/rv3_s03_term_spinner_dots.csv",
+    "crops/crop_240_752_32x36_00571-00592.jpg",
+    "crops/crop_240_752_32x36_00573-00584.jpg"
+   ]
+  },
+  {
+   "start": 628,
+   "end": 628,
+   "verdict": "missed",
+   "rows": [
+    "v4.ui-spinner-glyph-cycle",
+    "v4.ui-terminal-line-step"
+   ],
+   "reason": "Missed UI change: f628 is a joint 5 f step of the terminal working-line spinner (6 px, max 124; in the line row, glyph cell f588-f663) and of the S03 chat status spinner, a braille-style dot glyph (3-4 dots of a 2 x 3 cell) that arrives with its status line at f573 already cycling (pattern p1: top pair + middle-left dot) and steps in place every 5 f (f578, f583, f588 ... f663, f668, then the check glyph at f672; 8-17 px above 30 levels once risen, 35-40 px at f578 and f583 while the line still rises, up to 150 levels, in its 32 x 36 px glyph cell on source.mp4), which no movement row described: the S03 block named it only in its graphic-elements note. A movement row now gives it (arrival f573, steps every 5 f f578-f668, check glyph f672), mapped to the existing v4.ui-spinner-glyph-cycle, whose technique index row names the S03 chat status. Round-2 critic: the first version of that row put the first step at f583 (10 f after the arrival); dot centroids on source.mp4 (scratch/rv3_s03_chat_spinner_dots.csv; crops/crop_240_752_32x36_00571-00592.jpg) show the glyph arriving on p1 at f573 and stepping from f578, as S02's (f316 -> f321) and S04's (f759 -> f764) do; the terminal's dot spinner, which the row cites, uses a 2 x 3 cell too (scratch/rv3_s03_term_spinner_dots.csv), not 2 x 4.",
+   "evidence": [
+    "crops/crop_236_748_40x40_00580-00674.jpg",
+    "crops/crop_236_748_40x40_00588-00670.jpg",
+    "crops/crop_1034_764_20x24_00588-00662.jpg",
+    "scratch/fix_s03_spinner_cells_source.csv",
+    "scratch/gap_s03_chat_spinner_cell.csv",
+    "scratch/gap_s03_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s03_chat_spinner_dots.csv",
+    "scratch/rv3_s03_term_spinner_dots.csv",
+    "crops/crop_240_752_32x36_00571-00592.jpg",
+    "crops/crop_240_752_32x36_00573-00584.jpg"
+   ]
+  },
+  {
+   "start": 633,
+   "end": 636,
+   "verdict": "missed",
+   "rows": [
+    "v4.ui-terminal-line-step",
+    "v4.ui-spinner-glyph-cycle"
+   ],
+   "reason": "Missed UI change: f636 is the second header line (130 px at 1056-1203 x 558-591 plus its 4 px bullet, covered by the line row, now f579-f663) and f633 a joint step of the terminal spinner (7 px, max 127) and of the S03 chat status spinner, a braille-style dot glyph (3-4 dots of a 2 x 3 cell) that arrives with its status line at f573 already cycling (pattern p1: top pair + middle-left dot) and steps in place every 5 f (f578, f583, f588 ... f663, f668, then the check glyph at f672; 8-17 px above 30 levels once risen, 35-40 px at f578 and f583 while the line still rises, up to 150 levels, in its 32 x 36 px glyph cell on source.mp4), which no movement row described: the S03 block named it only in its graphic-elements note. A movement row now gives it (arrival f573, steps every 5 f f578-f668, check glyph f672), mapped to the existing v4.ui-spinner-glyph-cycle, whose technique index row names the S03 chat status. Round-2 critic: the first version of that row put the first step at f583 (10 f after the arrival); dot centroids on source.mp4 (scratch/rv3_s03_chat_spinner_dots.csv; crops/crop_240_752_32x36_00571-00592.jpg) show the glyph arriving on p1 at f573 and stepping from f578, as S02's (f316 -> f321) and S04's (f759 -> f764) do; the terminal's dot spinner, which the row cites, uses a 2 x 3 cell too (scratch/rv3_s03_term_spinner_dots.csv), not 2 x 4.",
+   "evidence": [
+    "crops/crop_1020_550_780x75_00632-00644.jpg",
+    "crops/crop_236_748_40x40_00580-00674.jpg",
+    "crops/crop_236_748_40x40_00588-00670.jpg",
+    "crops/crop_1034_764_20x24_00588-00662.jpg",
+    "scratch/fix_s03_spinner_cells_source.csv",
+    "scratch/gap_s03_chat_spinner_cell.csv",
+    "scratch/gap_s03_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s03_chat_spinner_dots.csv",
+    "scratch/rv3_s03_term_spinner_dots.csv",
+    "crops/crop_240_752_32x36_00571-00592.jpg",
+    "crops/crop_240_752_32x36_00573-00584.jpg"
+   ]
+  },
+  {
+   "start": 640,
+   "end": 643,
+   "verdict": "missed",
+   "rows": [
+    "v4.ui-terminal-line-step",
+    "v4.ui-spinner-glyph-cycle"
+   ],
+   "reason": "Missed UI change: f640 is the second sub-line (217 px at 1059-1362 x 585-618, covered by the line row, now f579-f663) and f643 a joint step of the terminal spinner (10 px, max 128) and of the S03 chat status spinner, a braille-style dot glyph (3-4 dots of a 2 x 3 cell) that arrives with its status line at f573 already cycling (pattern p1: top pair + middle-left dot) and steps in place every 5 f (f578, f583, f588 ... f663, f668, then the check glyph at f672; 8-17 px above 30 levels once risen, 35-40 px at f578 and f583 while the line still rises, up to 150 levels, in its 32 x 36 px glyph cell on source.mp4), which no movement row described: the S03 block named it only in its graphic-elements note. A movement row now gives it (arrival f573, steps every 5 f f578-f668, check glyph f672), mapped to the existing v4.ui-spinner-glyph-cycle, whose technique index row names the S03 chat status. Round-2 critic: the first version of that row put the first step at f583 (10 f after the arrival); dot centroids on source.mp4 (scratch/rv3_s03_chat_spinner_dots.csv; crops/crop_240_752_32x36_00571-00592.jpg) show the glyph arriving on p1 at f573 and stepping from f578, as S02's (f316 -> f321) and S04's (f759 -> f764) do; the terminal's dot spinner, which the row cites, uses a 2 x 3 cell too (scratch/rv3_s03_term_spinner_dots.csv), not 2 x 4.",
+   "evidence": [
+    "crops/crop_1020_550_780x75_00632-00644.jpg",
+    "crops/crop_236_748_40x40_00580-00674.jpg",
+    "crops/crop_236_748_40x40_00588-00670.jpg",
+    "crops/crop_1034_764_20x24_00588-00662.jpg",
+    "scratch/fix_s03_spinner_cells_source.csv",
+    "scratch/gap_s03_chat_spinner_cell.csv",
+    "scratch/gap_s03_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s03_chat_spinner_dots.csv",
+    "scratch/rv3_s03_term_spinner_dots.csv",
+    "crops/crop_240_752_32x36_00571-00592.jpg",
+    "crops/crop_240_752_32x36_00573-00584.jpg"
+   ]
+  },
+  {
+   "start": 648,
+   "end": 648,
+   "verdict": "missed",
+   "rows": [
+    "v4.ui-terminal-line-step",
+    "v4.ui-spinner-glyph-cycle"
+   ],
+   "reason": "Missed UI change: f648 is the working line's elapsed-seconds digit stepping +1 (14 px at 1158-1182 x 765-792, the line row's f648 digit) with a joint step of the terminal spinner (6 px, max 124) and of the S03 chat status spinner, a braille-style dot glyph (3-4 dots of a 2 x 3 cell) that arrives with its status line at f573 already cycling (pattern p1: top pair + middle-left dot) and steps in place every 5 f (f578, f583, f588 ... f663, f668, then the check glyph at f672; 8-17 px above 30 levels once risen, 35-40 px at f578 and f583 while the line still rises, up to 150 levels, in its 32 x 36 px glyph cell on source.mp4), which no movement row described: the S03 block named it only in its graphic-elements note. A movement row now gives it (arrival f573, steps every 5 f f578-f668, check glyph f672), mapped to the existing v4.ui-spinner-glyph-cycle, whose technique index row names the S03 chat status. Round-2 critic: the first version of that row put the first step at f583 (10 f after the arrival); dot centroids on source.mp4 (scratch/rv3_s03_chat_spinner_dots.csv; crops/crop_240_752_32x36_00571-00592.jpg) show the glyph arriving on p1 at f573 and stepping from f578, as S02's (f316 -> f321) and S04's (f759 -> f764) do; the terminal's dot spinner, which the row cites, uses a 2 x 3 cell too (scratch/rv3_s03_term_spinner_dots.csv), not 2 x 4.",
+   "evidence": [
+    "crops/crop_1020_640_780x160_00646-00664.jpg",
+    "crops/crop_236_748_40x40_00580-00674.jpg",
+    "crops/crop_236_748_40x40_00588-00670.jpg",
+    "crops/crop_1034_764_20x24_00588-00662.jpg",
+    "scratch/fix_s03_spinner_cells_source.csv",
+    "scratch/gap_s03_chat_spinner_cell.csv",
+    "scratch/gap_s03_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s03_chat_spinner_dots.csv",
+    "scratch/rv3_s03_term_spinner_dots.csv",
+    "crops/crop_240_752_32x36_00571-00592.jpg",
+    "crops/crop_240_752_32x36_00573-00584.jpg"
+   ]
+  },
+  {
+   "start": 653,
+   "end": 653,
+   "verdict": "missed",
+   "rows": [
+    "v4.ui-spinner-glyph-cycle",
+    "v4.ui-terminal-line-step"
+   ],
+   "reason": "Missed UI change: f653 is a joint 5 f step of the terminal working-line spinner (7 px, max 119; in the line row, glyph cell f588-f663) and of the S03 chat status spinner, a braille-style dot glyph (3-4 dots of a 2 x 3 cell) that arrives with its status line at f573 already cycling (pattern p1: top pair + middle-left dot) and steps in place every 5 f (f578, f583, f588 ... f663, f668, then the check glyph at f672; 8-17 px above 30 levels once risen, 35-40 px at f578 and f583 while the line still rises, up to 150 levels, in its 32 x 36 px glyph cell on source.mp4), which no movement row described: the S03 block named it only in its graphic-elements note. A movement row now gives it (arrival f573, steps every 5 f f578-f668, check glyph f672), mapped to the existing v4.ui-spinner-glyph-cycle, whose technique index row names the S03 chat status. Round-2 critic: the first version of that row put the first step at f583 (10 f after the arrival); dot centroids on source.mp4 (scratch/rv3_s03_chat_spinner_dots.csv; crops/crop_240_752_32x36_00571-00592.jpg) show the glyph arriving on p1 at f573 and stepping from f578, as S02's (f316 -> f321) and S04's (f759 -> f764) do; the terminal's dot spinner, which the row cites, uses a 2 x 3 cell too (scratch/rv3_s03_term_spinner_dots.csv), not 2 x 4.",
+   "evidence": [
+    "crops/crop_236_748_40x40_00580-00674.jpg",
+    "crops/crop_236_748_40x40_00588-00670.jpg",
+    "crops/crop_1034_764_20x24_00588-00662.jpg",
+    "scratch/fix_s03_spinner_cells_source.csv",
+    "scratch/gap_s03_chat_spinner_cell.csv",
+    "scratch/gap_s03_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s03_chat_spinner_dots.csv",
+    "scratch/rv3_s03_term_spinner_dots.csv",
+    "crops/crop_240_752_32x36_00571-00592.jpg",
+    "crops/crop_240_752_32x36_00573-00584.jpg"
+   ]
+  },
+  {
+   "start": 663,
+   "end": 663,
+   "verdict": "missed",
+   "rows": [
+    "v4.ui-terminal-line-step",
+    "v4.ui-spinner-glyph-cycle"
+   ],
+   "reason": "Missed UI change: f663 is the 2-line result paragraph appearing whole (954 px at 1032-1773 x 645-705) and the working line's removal (299 px; 24 px in its glyph cell), both covered by the line row (now f579-f663), with a step (8 px, max 149) of the S03 chat status spinner, a braille-style dot glyph (3-4 dots of a 2 x 3 cell) that arrives with its status line at f573 already cycling (pattern p1: top pair + middle-left dot) and steps in place every 5 f (f578, f583, f588 ... f663, f668, then the check glyph at f672; 8-17 px above 30 levels once risen, 35-40 px at f578 and f583 while the line still rises, up to 150 levels, in its 32 x 36 px glyph cell on source.mp4), which no movement row described: the S03 block named it only in its graphic-elements note. A movement row now gives it (arrival f573, steps every 5 f f578-f668, check glyph f672), mapped to the existing v4.ui-spinner-glyph-cycle, whose technique index row names the S03 chat status. Round-2 critic: the first version of that row put the first step at f583 (10 f after the arrival); dot centroids on source.mp4 (scratch/rv3_s03_chat_spinner_dots.csv; crops/crop_240_752_32x36_00571-00592.jpg) show the glyph arriving on p1 at f573 and stepping from f578, as S02's (f316 -> f321) and S04's (f759 -> f764) do; the terminal's dot spinner, which the row cites, uses a 2 x 3 cell too (scratch/rv3_s03_term_spinner_dots.csv), not 2 x 4.",
+   "evidence": [
+    "crops/crop_1020_640_780x160_00646-00664.jpg",
+    "crops/crop_236_748_40x40_00580-00674.jpg",
+    "crops/crop_236_748_40x40_00588-00670.jpg",
+    "crops/crop_1034_764_20x24_00588-00662.jpg",
+    "scratch/fix_s03_spinner_cells_source.csv",
+    "scratch/gap_s03_chat_spinner_cell.csv",
+    "scratch/gap_s03_term_spinner_cell.csv",
+    "scratch/gap_scan_components.csv",
+    "scratch/rv3_s03_chat_spinner_dots.csv",
+    "scratch/rv3_s03_term_spinner_dots.csv",
+    "crops/crop_240_752_32x36_00571-00592.jpg",
+    "crops/crop_240_752_32x36_00573-00584.jpg"
+   ]
+  },
+  {
+   "start": 718,
+   "end": 718,
+   "verdict": "covered",
+   "rows": [
+    "v4.layout-shrink-fade-out"
+   ],
+   "reason": "f718 is the exit's first change, one frame before the shrink-fade row's first edge-track value (scale 0.99971 at f719): a sub-pixel first shrink step. A least-squares fit of a scale about each window's centre to the image gradients against f717 gives 0.99997 (chat) and 0.99991 (terminal) at f718 and 0.99972 / 0.99947 at f719, within 0.000006 of 1 at f713-f717 (scratch/rv3_t03_exit_onset_scale.csv); its 590 (chat) and 1557 (terminal) px above 8 levels on source.mp4 (672 and 1726 on work.mp4, max 113; 139 px at the scan level) lie farther from the window centres than the windows' edges as a whole (median radius 364 vs 254 px, 342 vs 317 px) and 98.6-99.4% of them keep their sign at f719; the frames look identical and the edge tracks, interior luma and landmark templates resolve the shrink only from f719. The row now starts at f718 (f718-f731). Round-2 critic: the first version kept T03 at f719-f766 although this change is the exit's first step; T03 now starts on it, as T01 (f214) and T02 (f495) start on their first changed frames: f718-f766, 49 f, in segments.json, cuts.json (detail/soft_718-766), the header boundary list, the S03 transition and sound-sync lines and the technique index; the S03/S04 segment edge stays at f742 (floor((718 + 766) / 2)).",
+   "evidence": [
+    "scratch/gap_review/f00718_windows_diff.jpg",
+    "detail/gap_f00718/sheet.jpg",
+    "crops/crop_1000_150_820x780_00716-00719.jpg",
+    "scratch/gap_s03_exit_onset.csv",
+    "scratch/rv3_t03_exit_onset_scale.csv",
+    "detail/soft_718-766/sheet.jpg"
+   ]
+  },
+  {
+   "start": 784,
+   "end": 796,
+   "verdict": "covered",
+   "rows": [
+    "v4.particle-edge-packets",
+    "v4.ui-terminal-line-step",
+    "v4.ui-spinner-glyph-cycle",
+    "v4.ui-label-swap"
+   ],
+   "reason": "Outbound dark packets in flight (pairs of 60-65 px at up to 240 levels; the f789 bottom-right one shows to f807: over the light background to f802, then cutting across its tile's light agent icon f803-f805 and divider line f805-f807, nothing of it f808-f812), tile command lines at f789 and f795 (194 and 240 px), status lines at f786 and f792 and 5 f / 6 f spinner steps (centre f784, f789, f794; top-left tile f792), all listed in the S04 rows by start frame only; the rows now state the flights f759-f812 (their landings are hidden over the dark tiles, so the 23 f flight and the last landing f812 are marked as inferred, UNCERTAIN f808-f812), lines f783-f813, status lines f786-f896 and the centre spinner f759-f903.",
+   "evidence": [
+    "detail/dense_00783-00797_00.jpg",
+    "crops/crop_795_395_330x285_00744-00803.jpg",
+    "crops/crop_1400_780_200x100_00801-00814.jpg",
+    "crops/crop_1390_770_110x90_00801-00808.jpg",
+    "scratch/fix_s04_br_tile_source.csv",
+    "scratch/gap_s04_br_outbound_tile.csv",
+    "scratch/gap_s04_centre_spinner_cell.csv",
+    "scratch/gap_scan_components.csv"
+   ]
+  },
+  {
+   "start": 897,
+   "end": 921,
+   "verdict": "covered",
+   "rows": [
+    "v4.particle-edge-packets",
+    "v4.ui-terminal-line-step"
+   ],
+   "reason": "f897 is the bottom-right result line with its return dot popping on over the tile text (231 px), f897-f903 the middle-right return dot landing at the hub, f903 the final label swap (214 px), and f905-f921 the last dark return dot crossing to the hub and gone at f921, plus tile-edge flicker of 1-31 px at up to 17 levels (largest at the source I-frame f900); the return row now states f813-f921.",
+   "evidence": [
+    "crops/crop_900_520_720x420_00897-00921.jpg",
+    "crops/crop_920_545_100x60_00898-00923.jpg",
+    "crops/crop_900_630_140x32_00864-00906.jpg",
+    "scratch/gap_scan_components.csv"
+   ]
+  },
+  {
+   "start": 1070,
+   "end": 1072,
+   "verdict": "missed",
+   "rows": [
+    "v4.particle-edge-packets"
+   ],
+   "reason": "Missed hop: f1070-f1072 hold the dark 935 px hop resting on the first hub's sphere (notching its highlight f1067-f1072, popped off f1073) and the long grey hop in flight (f1056-f1086), which the hop rows describe, and the first changes of a further grey hop (1097,575) -> (822,740), 321 px, that no row listed: it pops on hidden in the same-luma grey centre of its source tile's icon (one edge pixel brightens 9, 10 and 11 levels at f1069-f1071 while the rest of its 80 x 70 px box changes at most 3 levels; the first change above 12 levels is at f1071, 5 px of up to 42 levels, then 14 px of up to 119 at f1072), shows beside the icon from f1073-f1075, rests on its target f1102-f1103 and is popped off at f1104. It is now in the S05 hop row with these frames, its speeds (4.7 -> 26.1 px/f f1076-f1086, 22.8 -> 0.2 px/f f1087-f1102) and a fit of its visible track with the device's S05 shape (D=31.9 from f1069.6, rmse 0.5 px = 0.0016 of the hop), as v4.particle-edge-packets; with it the row's dot count reads 1-3 on screen at once (three at f1037, f1055-f1056, f1069-f1072 and f1086).",
+   "evidence": [
+    "crops/crop_1060_545_70x60_01066-01077.jpg",
+    "crops/crop_460_540_80x60_01063-01074.jpg",
+    "crops/crop_1010_540_110x90_01070-01081.jpg",
+    "detail/dense_01068-01116_00.jpg",
+    "scratch/fix_s05_hop321_onset.csv",
+    "scratch/fix_s05_hop_ends_source.csv",
+    "scratch/fix_s05_hop_fits.json",
+    "scratch/fix_s05_dot_census.csv",
+    "scratch/gap_s05_hop_speeds.csv",
+    "scratch/c2_s2_packets.csv"
+   ]
+  },
+  {
+   "start": 1107,
+   "end": 1113,
+   "verdict": "missed",
+   "rows": [
+    "v4.particle-edge-packets"
+   ],
+   "reason": "Missed hop: a further dark hold hop (822,410) -> (1757,575), 949 px, that no row listed: it pops on at f1086 cutting into its source tile's light icon (f1086-f1090), is hidden over that dark tile f1091-f1092, comes out past its right edge at f1093 and runs over the light background f1094-f1096, is hidden again at f1097 where its connector passes under the dark tile at (1097,410) (the dot centre lies inside that tile for about 196-275 px of the 949), is partly visible at that tile's bottom edge at f1098 (101 of a whole dot's 151-172 px), runs over the light background f1099-f1108 (peak 75.6 px/f at f1101), is hidden over the dark target tile f1109-f1110 (all but a sliver under 10 px at its edge at f1109) and cuts into its light icon f1111-f1117 (up to 128 px of 239 levels at f1113 in an 80 x 70 px box), its last change f1117. It is now in the S05 hop row with these frames, its speeds (25 -> 76 px/f f1094-f1101, 74 -> 31 px/f f1102-f1108) and a fit of its visible track with the device's S05 shape (D=32.0 from f1085.2, rmse 1.8 px = 0.0019 of the hop), as v4.particle-edge-packets; the row states the hold traffic f1016-f1117. Round-2 critic: the first version said it ran over the light background f1093-f1108, and the dot census counted it visible at f1091, f1092 and f1097; an along-connector track against f1080 (scratch/rv3_s05_hop949_visibility.csv) finds no dot on the line in those frames, so the row now gives the whole visibility sequence and scratch/fix_s05_dot_census.csv marks the hop hidden there (n_visible 1, as its detector column reads).",
+   "evidence": [
+    "crops/crop_790_375_80x70_01084-01091.jpg",
+    "crops/crop_1560_520_220x80_01104-01118.jpg",
+    "crops/crop_790_380_80x70_01082-01093.jpg",
+    "crops/crop_780_700_80x70_01096-01107.jpg",
+    "detail/dense_01068-01116_00.jpg",
+    "scratch/fix_s05_hop_ends_source.csv",
+    "scratch/fix_s05_hop_fits.json",
+    "scratch/gap_s05_hop_speeds.csv",
+    "scratch/gap_s05_hop_ends.csv",
+    "scratch/rv3_s05_hop949_visibility.csv",
+    "scratch/fix_s05_dot_census.csv",
+    "crops/crop_800_380_400x100_01089-01099.jpg",
+    "crops/crop_960_400_180x90_01094-01099.jpg",
+    "crops/crop_1620_530_160x70_01106-01118.jpg"
+   ]
+  },
+  {
+   "start": 1489,
+   "end": 1489,
+   "verdict": "covered",
+   "rows": [
+    "v4.logo-lockup-slide"
+   ],
+   "reason": "The brand mark's slide starts with sub-pixel steps before the row's first whole-pixel step f1490 (fit start f1488.5): the centre of the mark's left and right 50% crossings, read per row at y 515-535, is -0.04 px off rest at f1488 and -0.22 px at f1489 (349 full-res px above 8 levels on its outline at f1489 on work.mp4), then -0.58 and -1.19 px at f1490-f1491; the row now starts at f1488. Round-2 critic: the first version gave -0.13 px at f1489 and -1.08 px at f1491 from a mean-profile edge read that was up to 0.1 px off (source.mp4 and work.mp4 and levels 80, 131.5 and 190 agree within 0.02 px on the per-row values), and still ended the slide at f1523, where the mark is 0.19 px from rest; counted like the start, its last sub-pixel steps run to f1525 (0.04 px from rest at f1524, 0.006 px at f1525 with 76 full-res px above 8 levels and 1 px of 13 levels at the scan level, 0.000 from f1526), so the row, the S08 speed line and the technique index now give f1488-f1525, 37 f (scratch/rv3_s08_mark_edges_rows515-535.csv, scratch/rv3_s08_mark_slide_centre.csv); a refit on the sub-pixel left-edge track returns the stored curve (bezier(0.597, 0.004, 0.407, 0.992) D=35 from f1488.4 against (0.594, 0.007, 0.406, 0.993) D=35 from f1488.5), so the curve file is unchanged.",
+   "evidence": [
+    "scratch/gap_review/f01489_mark_slide_onset_diff.jpg",
+    "crops/crop_760_430_420x120_01486-01530.jpg",
+    "scratch/gap_s08_mark_slide_onset.csv",
+    "scratch/rv3_s08_mark_edges_rows515-535.csv",
+    "scratch/rv3_s08_mark_slide_centre.csv"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+  "video": "yI-1xclfzqMRrqfA",
+  "key": "v3",
+  "scan": "scratch/coverage_gaps.json before the review: 2 runs (f14, f518-f520); the f518-f520 run is split by verdict into f518-f519 (covered: the mark row ends at f519) and f520 (noise); after the edits the rerun finds 1 run (f520, 4 px, one picture), listed here as noise; second fix round: the S05 mark row now cites v3.icon-node-pop-in with the same frames, and the rerun again finds only the f520 run",
+  "gaps": [
+    {
+      "start": 14,
+      "end": 14,
+      "verdict": "covered",
+      "rows": [
+        "v3.icon-node-pop-in"
+      ],
+      "reason": "202 of the 226 changed px at f14 are a uniform edge ring of the bottom-left node's dark icon shrinking from 1.0115 to 1.0038 (sub-pixel template; 1.0005 at f15, at rest from f16; ink-area scale 1.0105 -> 1.0039 -> 1.0006) and 13 px are the bottom-right node edge going 1.0256 -> 1.0230, i.e. the overshoot settle of the S01 node pop whose row named only f1 + 11 (the top-right curve) although the nodes start at f1, f1, f3 and f6, so the row now lists the measured active ranges top-left f1-f13, top-right f1-f12, bottom-left f3-f15 and bottom-right f6-f18; the other 11 px are codec residue of two kinds (corrected at the second fix round, mapped from the 640-px scan back to source.mp4, which the scan reads): 7 px on the top-right icon are one-way steps that hold, not flicker, and 4 px on the foot of the headline's first letter are a one-frame flicker. The icon steps: the column x 1581 at y 213-223 and 240-245 goes from 249-255 (f8-f13) to 189-197 at f14 (steps of 57-64 levels) and holds at 186-197 to f100 apart from the frames a packet passes over it (f38-f39, f79, f94; crops/crop_1540_200_120x80_00036-00040.jpg, crop_1540_200_120x80_00092-00095.jpg); the rows y 224-238 of the same column made the same step at f12 ((1581, 230) 255 -> 193; row 239 at f13); and (1692, 248) goes 39 -> 222 at f14 (+183), 183 at f15 and 187-188 from f16 to f100 while the 8x8 blocks at x 1688-1695, y 240-255 update in pieces over f14-f16. The steps follow the macroblock rows (y 208-223 and 240-255 at f14, y 224-239 at f12-f13): they deliver the last 1-px shift of a stroke edge of the settling icon in those blocks after the icon has come to rest (sub-pixel scale 1.0001 -> 1.0000; outer edges at f13 -> f14: left 1548.99 -> 1548.99, top 178.47 -> 178.48, scratch/r3_tr_edgeL.csv, r3_tr_edgeT.csv; crops/r3_tr_codec_steps_00012-00016.jpg shows the outline rings of the settle at f12 and f13 and only isolated block streaks at f14). The foot flicker: the antialiased top row of the foot (x 210-221, y 573) reads 66-70 at f11-f13, 17 at f14 and 67-70 again at f15 (full-res max 50-53), a one-frame dip of one row, not a move (crops/r3_h1_foot_flicker_00011-00016.jpg). Fix round after the critic: the row's from -> to and easing columns, its curve and the technique index still gave the 0.0025-step template's 1.0225 held f6-f9 for the top-right node, which contradicted the row's own stagger column; measured, that node peaks sharply at f7-f8 (sub-pixel 1.0263 / 1.0259, scratch/gap_f14_pop_TR.csv; outer icon edges 1.0266 / 1.0262, scratch/audit_f14_tr_edgeL.csv, edgeR, edgeT, edgeB; summed |difference| to the rest frame f24 of 468k, 556k, 545k and 461k gray levels at f6-f9, crops/fix_tr_vs_rest_00004-00015.jpg), so the row now reads 0.868 -> 1.026 -> 1.000 and curves/v3.icon-node-pop-in.csv is refitted on scratch/gap_f14_pop_TR.csv (f1-f20): bezier(0.310, 1.526, 0.588, 1.256) D=11, rmse 0.006, built peak progress 1.197 against the measured 1.199 (was bezier(0.257, 1.274, 0.492, 1.360), peak 1.181, shape rmse 0.011 on the same samples); the active range f1-f12 and this verdict do not change.",
+      "evidence": [
+        "crops/crop_1530_160_172x172_00001-00014.jpg",
+        "crops/fix_tr_vs_rest_00004-00015.jpg",
+        "detail/gap_f14/sheet.jpg",
+        "detail/dense_00006-00023_00.jpg",
+        "crops/crop_200_205_1500x760_00012-00016.jpg",
+        "crops/crop_150_690_300x280_00009-00017.jpg",
+        "crops/crop_1470_700_300x270_00011-00019.jpg",
+        "crops/crop_1540_170_160x160_00011-00017.jpg",
+        "crops/diff_bl_icon_00012-00016.jpg",
+        "crops/diff_tr_sliver_00012-00016.jpg",
+        "crops/diff_h1_foot_00011-00017.jpg",
+        "crops/r3_tr_codec_steps_00012-00016.jpg",
+        "crops/crop_1544_176_160x96_00011-00016.jpg",
+        "crops/r3_h1_foot_flicker_00011-00016.jpg",
+        "crops/crop_1540_200_120x80_00036-00040.jpg",
+        "crops/crop_1540_200_120x80_00092-00095.jpg"
+      ]
+    },
+    {
+      "start": 518,
+      "end": 519,
+      "verdict": "covered",
+      "rows": [
+        "v3.icon-node-pop-in"
+      ],
+      "reason": "f518 (132 px) and f519 (69 px) are uniform outline rings of the brand mark shrinking out of its pop-in overshoot, 1.0044 -> 1.0019 -> 1.0002 (sub-pixel template; ink-area scale 1.004 -> 1.001 -> 1.0002), which the mark row described but closed at f517 because the 0.0025 template grid read the tail as 1.010 held f513-f516 and 0.998 settled, so the row now runs f508 + 11 (active f508-f519, peak 1.013 at f514) with the curve refitted on the sub-pixel samples to bezier(0.343, 1.726, 0.665, 1.033) D=11, rmse 0.007 (was D=9, rmse 0.022). The entry ends at f519, where the row ends: the 4 px flagged at f520 lie on the line word below, outside the mark (mark 1.0001), and are the noise run below (fix round after the critic: this entry first ran to f520, which gave f520 two verdicts). The mark is settled by the row's 2% rule at f519, not f517: its outer edges (scratch/audit_f518_mark_edgeL.csv, edgeR, edgeT; rest width 149.61 px) read 1.0025-1.0040 at f517 (progress 1.03-1.05), 1.0015-1.0017 at f518 and 1.0004-1.0005 at f519, and the summed |difference| to the rest frame f535 falls 86k, 50k, 26k, 23k gray levels at f517-f520 against a codec floor of 22k at f521-f523 (crops/fix_mark_vs_rest_00512-00523.jpg: full outline rings to f518, faint at f519, codec texture from f520); cuts.json T04, which still said settled f517, now says f519. Second fix round: the mark pop is now an instance of v3.icon-node-pop-in at half the scale amplitude (scratch/r3_pop_crossfit.json: against the S01 bottom-left and bottom-right nodes, first seen at the same opacity 0.217 / 0.229 vs 0.216, the mark has the same opacity ramp within 0.05, the same overshoot over start offset 0.165 vs 0.166 / 0.164, an 11 f window vs 12 f and shapes that cross-fit within 0.006-0.012, while its start offset 0.079 and overshoot 0.013 are half theirs), so this verdict's row is the S05 node-pop row and its curve is curves/v3.icon-node-pop-in.i3.csv (renamed from v3.logo-mark-pop-in, same fit); the covered frames f508-f519 do not change.",
+      "evidence": [
+        "crops/fix_mark_vs_rest_00512-00523.jpg",
+        "crops/fix_scan640_00517-00521.jpg",
+        "detail/gap_f518-520/sheet.jpg",
+        "detail/dense_00510-00527_00.jpg",
+        "crops/crop_870_240_180x170_00514-00521.jpg",
+        "crops/diff_mark_00515-00522.jpg",
+        "crops/crop_870_240_180x170_00507-00521.jpg",
+        "crops/crop_150_690_300x280_00002-00016.jpg"
+      ]
+    },
+    {
+      "start": 520,
+      "end": 520,
+      "verdict": "noise",
+      "rows": [],
+      "reason": "New run after the edits: the only change at f520 (a B-frame) is a 1-px column on the inner edge of the last letter's right stem of the S05 line word that popped at f514 (x 876-879, y 546-558; 18 full-res px over 12 levels, max 28, mean signed -0.10), the same flicker seen at f516, f517 and f519 (max 18-44 levels, mean signed -0.31 to +0.05) while the letter's ink and position stay fixed, so it is codec residual and no designed element changes. Fix round: f520 now carries only this verdict (the covered mark entry above ends at f519). In source.mp4, which the scan reads, the flickering column is x 877, y 528-559: 17 px over 12 levels, max 37 (the 18 px and max 28 above are work.mp4). At full resolution the brand mark above also shows 82 scattered specks along its outline between f519 and f520 (source.mp4, max 91 levels, summed |change| 6.1k against 35.1k at f519; correlation with the f518 + f519 shrink-ring pattern +0.11, against +0.41 to +0.43 for the shrinking f516 and f517) while its edges move at most 0.03 px (left 884.66 -> 884.67, right 1034.34 -> 1034.31, top 251.60 -> 251.60) and its sub-pixel scale reads 1.0002 -> 1.0001, inside the row's 2% band; none of those specks pass 12 levels at 640 px, so the 4 px the scan flags are the stem column alone (crops/fix_scan640_00517-00521.jpg).",
+      "evidence": [
+        "crops/fix_scan640_00517-00521.jpg",
+        "detail/gap_f518-520/sheet.jpg",
+        "crops/crop_830_500_100x100_00514-00522.jpg",
+        "crops/diff_w1_end_00513-00523.jpg"
+      ]
+    }
+  ]
+}

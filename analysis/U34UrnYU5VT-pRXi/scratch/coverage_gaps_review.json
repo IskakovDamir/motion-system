@@ -1,0 +1,593 @@
+{
+  "gaps": [
+    {
+      "start": 248,
+      "end": 252,
+      "verdict": "covered",
+      "rows": [
+        "v2.logo-mark-pop-in"
+      ],
+      "reason": "S04: the mascot pop-in's scale keeps creeping sub-pixel past the row's 2% point, outline width 371.8, 373.8, 374.7 px at f245, f248, f252 against 375.3 px at rest (0.991, 0.996, 0.999; 1.000 from f258; the 1-px-quantised top and bottom tracks hold from f251, but multi-column crossings show the height creeping too, 335.99 px at f251 to 336.17 px at f258, and the outline keeps changing at full res under glance 1 in f253-f256 and f258, f257 repeating f256: scratch/fix3_S04_outline.csv, second pass) with outline-only diffs round the hexagon and the eyes, while the fill is settled at luma 17.2-17.3 from f247 (scratch/gap_S04_pop_L.csv, gap_S04_pop_R.csv, gap_S04_pop_T.csv, gap_S04_pop_B.csv, gap_S04_fill_luma.csv); the scale row now states moving f227-f258.",
+      "evidence": [
+        "scratch/gap_review/gap01_S04_f248-252_mascot.jpg",
+        "scratch/gap_review/fix3_S04_f251-259_outline.jpg"
+      ]
+    },
+    {
+      "start": 263,
+      "end": 263,
+      "verdict": "covered",
+      "rows": [
+        "v2.logo-eye-glance"
+      ],
+      "reason": "S04: f263 is glance 1's last frame, the eye bars finishing their squash recovery (eye ink area 8216 -> 8239 px, centroid x 915.37 -> 914.97 px; scratch/gap_S04_eyes_bbox.csv) and still from f264, so the glance row (D=9 bezier) now states moving f254-f263.",
+      "evidence": [
+        "scratch/gap_review/gap02_S04_f263_eyes.jpg"
+      ]
+    },
+    {
+      "start": 284,
+      "end": 284,
+      "verdict": "covered",
+      "rows": [
+        "v2.logo-eye-glance"
+      ],
+      "reason": "S04 (corrected in the second pass; this entry first covered the scan run f284-f289): f284 is glance 2's last change, the whole outline of both eye bars moving (inner bar edges 999.08 -> 998.49 and 1031.70 -> 1032.50 px by mid-level crossings; 891 px above 12 levels at full res, 198 px at 640 w), and the glance row now states moving f275-f284. The first pass read f285-f288 as a sub-pixel settle of the bar width; it is encoder flicker on the bars' outermost columns, recorded as noise in its own entry (f286-f289).",
+      "evidence": [
+        "scratch/gap_review/fix3_S04_f284-290_eyes.jpg",
+        "scratch/fix3_S04_eyebars.csv"
+      ]
+    },
+    {
+      "start": 286,
+      "end": 289,
+      "verdict": "noise",
+      "rows": [],
+      "reason": "S04 (rescan, second pass): after glance 2's last change at f284 only the outermost anti-aliased column of each eye bar changes (x 962 and x 1069; 11, 136, 0, 32 and 25 px above 12 levels at full res f285-f289, max 61; 2, 45, 0, 11 and 8 px at 640 w, so f285 stays under the scan's 4 px floor), in 16-row blocks whose mean flips between about 72 and 13-20 luma in both directions (x 962, y 544-559: 71, 76, 75, 18, 18 f285-f289; y 592-607: 72, 19, 19, 19, 76), while the inner edge columns and the bar ends stay unchanged (inner edges 998.49 and 1032.50 px in every frame from f284 to f289) and f287, a P frame between the B frames f286 and f288, repeats f286 (max 3 levels). The 2nd-moment bar width toggles (36.27, 36.27, 36.05, 36.04, 35.99, 36.04 px f284-f289, 36.22 at f298) rather than settling, so the pair holds still from f285 to f289.",
+      "evidence": [
+        "scratch/gap_review/fix3_S04_f284-290_eyes.jpg",
+        "scratch/fix3_S04_eyebars.csv",
+        "crops/crop_950_500_130x130_00282-00299.jpg"
+      ]
+    },
+    {
+      "start": 298,
+      "end": 298,
+      "verdict": "noise",
+      "rows": [],
+      "reason": "S04: only the left edge of the left eye bar shifts, 962.443 -> 962.326 px (-0.12), while the other three bar edges stay within 0.003 px and the dark level under the band jumps 12.2 -> 15.1 luma (a re-quantised block): 16 px at 640 w, max 63 levels, between the blink (to f297, its last sub-pixel opening step on both ends of both bars; second pass) and glance 3 (from f299, when all four edges move; scratch/gap_S04_f292-300_eyebar_edges.csv); the right bar's end rows re-quantise by up to 28 levels (16 and 13 px at full res) while the left bar's ends barely change (4 px, max 19), which no designed move of the pair would do (scratch/fix3_S04_eyebars.csv).",
+      "evidence": [
+        "scratch/gap_review/gap03_S04_f284-298_eyes.jpg",
+        "scratch/gap_review/fix3_S04_f295-299_blink_end.jpg"
+      ]
+    },
+    {
+      "start": 308,
+      "end": 311,
+      "verdict": "covered",
+      "rows": [
+        "v2.logo-eye-glance",
+        "v2.logo-lockup-slide"
+      ],
+      "reason": "S04: f308 is glance 3's last frame (bar edges 953.75 -> 954.51 px, 208 px at 640 w; still f309-f310) and f311 the lockup slide's first sub-pixel frame (right vertex 1147.09 -> 1147.06 px with a faint outline diff round the whole hexagon, 5 px at 640 w; first 1 px move f312; scratch/gap_S04_f304-316_vertex_edges.csv), so glance 3 now states moving f299-f308 and the slide starts at f311.",
+      "evidence": [
+        "scratch/gap_review/gap05_S04_f308-311_mascot.jpg"
+      ]
+    },
+    {
+      "start": 325,
+      "end": 329,
+      "verdict": "covered",
+      "rows": [
+        "v2.logo-lockup-slide"
+      ],
+      "reason": "S04: the slide row's 2%-rule window ends at f324 with the mark still 10.3 px from rest at its left vertex (255.53 px vs 245.19 px from f330), and the mark finishes with whole-pixel steps at f325 and f326 (left vertex 255.53 -> 248.47 -> 245.81 px, steps -7.06 and -2.66 px; right vertex 398.46 -> 394.63 px at f326; 738 and 387 px at 640 w, max 253 and 250 levels) and sub-pixel ones at f327 and f328 (-0.57 and -0.06 px; 237 and 8 px at 640 w), still from f329 (scratch/fix_S04_markL_edge.csv, fix_S04_markR_edge.csv, gap_S04_f318-334_mark_edges.csv); the slide row now describes this tail as it is and states moving f311-f328; the leftover f329 (4 px, one column at x 589 inside the static lockup word) is compression noise with its own entry.",
+      "evidence": [
+        "crops/crop_220_440_220x200_00322-00330.jpg",
+        "scratch/gap_review/gap06_S04_f325-329_mark.jpg",
+        "scratch/gap_review/gap06_S04_f325-329_word.jpg"
+      ]
+    },
+    {
+      "start": 329,
+      "end": 329,
+      "verdict": "noise",
+      "rows": [],
+      "reason": "S04 (rescan): one pixel column at x 589 inside the static lockup word flickers (13 px at full res, max 62 levels; 4 px at 640 w) after the mark's last sub-pixel move at f328.",
+      "evidence": [
+        "scratch/gap_review/gap06_S04_f325-329_word.jpg"
+      ]
+    },
+    {
+      "start": 340,
+      "end": 341,
+      "verdict": "noise",
+      "rows": [],
+      "reason": "S05: after the cut f339 one pixel column at x 642 on a letter stem of word 1 flickers by up to 59 levels (43 and 16 px at full res, 8 and 4 px at 640 w) while the word stays in place; the same x 642 column flickers through S06 (f403-f428), an encoder artefact rather than a designed change (it now lies inside the line's named build range f339-f353).",
+      "evidence": [
+        "scratch/gap_review/gap07_S05_f340-341.jpg",
+        "crops/crop_500_470_920x130_00344-00354.jpg"
+      ]
+    },
+    {
+      "start": 346,
+      "end": 346,
+      "verdict": "covered",
+      "rows": [
+        "v2.text-word-pop"
+      ],
+      "reason": "S05: word 2 pops in one frame at f346 (470 px at 640 w, x 738-832; nothing changes in f347-f352), as the word-pop row's stagger already listed; the row now names the line's build range f339-f353.",
+      "evidence": [
+        "crops/crop_500_470_920x130_00344-00354.jpg"
+      ]
+    },
+    {
+      "start": 353,
+      "end": 353,
+      "verdict": "covered",
+      "rows": [
+        "v2.text-word-pop"
+      ],
+      "reason": "S05: word 3 pops in one frame at f353 (2203 px at 640 w, x 870-1398), listed in the row's stagger; the row now names the build range f339-f353.",
+      "evidence": [
+        "crops/crop_500_470_920x130_00344-00354.jpg"
+      ]
+    },
+    {
+      "start": 401,
+      "end": 406,
+      "verdict": "covered",
+      "rows": [
+        "v2.text-word-pop"
+      ],
+      "reason": "S06: words 2 and 3 pop at f401 and f406 (1273 and 840 px at 640 w) as the row's stagger lists; the two pictures between (f403 and f404, 6 px each) are the x 642 column flicker; the row now names the build range f395-f422.",
+      "evidence": [
+        "crops/crop_200_470_1530x140_00400-00425.jpg"
+      ]
+    },
+    {
+      "start": 411,
+      "end": 412,
+      "verdict": "covered",
+      "rows": [
+        "v2.text-word-pop"
+      ],
+      "reason": "S06: word 4 pops at f411 (1338 px at 640 w); f412 (4 px at 640 w, max 59 levels on the new word's edges) is encoder refinement inside the row's named build range f395-f422.",
+      "evidence": [
+        "crops/crop_200_470_1530x140_00400-00425.jpg"
+      ]
+    },
+    {
+      "start": 417,
+      "end": 424,
+      "verdict": "covered",
+      "rows": [
+        "v2.text-word-pop"
+      ],
+      "reason": "S06: words 5 and 6 pop at f417 and f422 (553 and 768 px at 640 w); f419 (4 px) is a column flicker inside the build range f395-f422 now named in the row, and the leftover f424 (4 px) is compression noise with its own entry.",
+      "evidence": [
+        "crops/crop_200_470_1530x140_00400-00425.jpg",
+        "scratch/gap_review/gap12_S06_f424.jpg"
+      ]
+    },
+    {
+      "start": 424,
+      "end": 424,
+      "verdict": "noise",
+      "rows": [],
+      "reason": "S06 (rescan): flickers along letter stems between x 642 and x 1693 (162 px at full res, max 48 levels; 4 px at 640 w) two frames after the last word pop at f422, with the line static.",
+      "evidence": [
+        "scratch/gap_review/gap12_S06_f424.jpg"
+      ]
+    },
+    {
+      "start": 741,
+      "end": 741,
+      "verdict": "covered",
+      "rows": [
+        "v2.text-word-pop"
+      ],
+      "reason": "S10: word 2 pops in one frame at f741 (427 px at 640 w, x 868-968), listed in the row's stagger; the row now names the build range f733-f748.",
+      "evidence": [
+        "crops/crop_600_470_720x130_00740-00751.jpg"
+      ]
+    },
+    {
+      "start": 748,
+      "end": 750,
+      "verdict": "covered",
+      "rows": [
+        "v2.text-word-pop"
+      ],
+      "reason": "S10: word 3 pops at f748 (1169 px at 640 w, x 1003-1293), inside the build range f733-f748 now named in the row; the leftover f750 (7 px of speckles on the new word's edges) is compression noise with its own entry.",
+      "evidence": [
+        "crops/crop_600_470_720x130_00740-00751.jpg",
+        "scratch/gap_review/gap14_S10_f750.jpg"
+      ]
+    },
+    {
+      "start": 750,
+      "end": 750,
+      "verdict": "noise",
+      "rows": [],
+      "reason": "S10 (rescan): scattered speckles on the edges of word 3 two frames after its pop at f748 (60 px at full res, max 52 levels; 7 px at 640 w); the word does not move.",
+      "evidence": [
+        "scratch/gap_review/gap14_S10_f750.jpg"
+      ]
+    },
+    {
+      "start": 840,
+      "end": 871,
+      "verdict": "covered",
+      "rows": [
+        "v2.ui-slow-push-in",
+        "v2.ui-list-item-rise-fade"
+      ],
+      "reason": "S11: the whole chat window is still in its push-in (scale 1.01979 at f840, 1.02677 at f870; scratch/v2c1_S11_win_tm.csv) and message 3 fades in over f847-f853 (the peak 5095 px at f848); a zoom-compensated change map shows only the new messages and single-glyph re-rasters, so the push-in row now states 108 f (f789-f897) and the message row its four fade ranges.",
+      "evidence": [
+        "scratch/gap_review/gap15_S11_stab_838-900.jpg"
+      ]
+    },
+    {
+      "start": 879,
+      "end": 900,
+      "verdict": "covered",
+      "rows": [
+        "v2.ui-slow-push-in"
+      ],
+      "reason": "S11: the push-in's tail, scale 1.02855 at f880 to 1.02969 at f897 with glyph re-rasters (up to 1136 px at 640 w) and 1.02970 from f898, now named f789-f897 in the row; the leftover f900 (9 px, a faint uniform re-quantisation with no scale or position change) is noise with its own entry.",
+      "evidence": [
+        "scratch/gap_review/gap15_S11_stab_838-900.jpg",
+        "scratch/gap_review/gap16_S11_f900.jpg"
+      ]
+    },
+    {
+      "start": 900,
+      "end": 900,
+      "verdict": "noise",
+      "rows": [],
+      "reason": "S11 (rescan): a faint uniform change over all window text (782 px above 12 levels at full res, max 66, mean 0.25; 9 px at 640 w) with no scale or position change (window scale 1.02970 and translation within 0.003 px over f898-f900; scratch/v2c1_S11_win_tm.csv), a re-quantisation in the last frame before the cut.",
+      "evidence": [
+        "scratch/gap_review/gap16_S11_f900.jpg"
+      ]
+    },
+    {
+      "start": 1106,
+      "end": 1107,
+      "verdict": "covered",
+      "rows": [
+        "v2.text-word-pop"
+      ],
+      "reason": "S14: headline word 2 pops at f1106 (303 px at 640 w, x 734-861) as the row lists; f1107 (9 px at 640 w, max 63 levels on the new word's edges) is encoder refinement inside the build range f1098-f1113 now named in the row.",
+      "evidence": [
+        "crops/crop_600_70_720x90_01105-01108.jpg"
+      ]
+    },
+    {
+      "start": 1124,
+      "end": 1141,
+      "verdict": "covered",
+      "rows": [
+        "v2.icon-stagger-pop-in"
+      ],
+      "reason": "S14: logo icons 5-9 pop in (first visible f1125, f1128, f1132, f1136, f1139) while the earlier ones keep creeping towards scale 1.00 (1580-3127 px per frame at 640 w), exactly the stagger pop of the S14 rows; the scale row now names the grid's active range f1110-f1160.",
+      "evidence": [
+        "detail/dense_01124-01141_00.jpg"
+      ]
+    },
+    {
+      "start": 1160,
+      "end": 1162,
+      "verdict": "covered",
+      "rows": [
+        "v2.icon-stagger-pop-in",
+        "v2.trans-icon-converge-morph"
+      ],
+      "reason": "S14: f1160 is the icons' last creep step (12 px at 640 w, outline-only diffs) and f1161-f1162 are the first frames of the T14 convergence (ink centroids +0.16 px for icon 5 in x and +0.03 px for icon 1 in y at f1161, +1.13 and +0.37 px by f1162; scratch/gap_S14_f1150-1168_icon1_moments.csv, gap_S14_f1150-1168_icon5_moments.csv, gap_S14_f1150-1168_icon9_moments.csv), so the scale row now ends at f1160 and T14 starts at f1161 instead of f1163 in segments.json, cuts.json and timeline.md (S14 f1098-f1172, S15 f1173-f1226).",
+      "evidence": [
+        "scratch/gap_review/gap19_S14_f1158-1161_grid.jpg",
+        "scratch/gap_review/gap19_S14_f1160-1162_icon5.jpg",
+        "detail/soft_1161-1183/sheet.jpg"
+      ]
+    },
+    {
+      "start": 1184,
+      "end": 1184,
+      "verdict": "covered",
+      "rows": [
+        "v2.trans-icon-converge-morph"
+      ],
+      "reason": "S15 (second pass; hidden from the first scan because the T14-tail row gave its duration as 'to f1182', which the scan reads as 1182 frames): f1184 is the last frame of the T14 crossfade, the faint logo-stroke remnants at the hexes' lower corners fading out (slot 2 lower-left corner box luma 166.0, 180.1, 197.9, 208.0 f1181-f1184, then 208.1; slot 5 lower-right 151.9, 160.1, 168.2, 175.8, then 175.9; 138 px at 640 w, all at hex corners and edges where remnants had been, most on slots 2, 3 and 5; f1185-f1187 change little more than a single column on the headline). T14 now ends at f1184 in segments.json, cuts.json and timeline.md (boundary f1172 unchanged), and the tail row states 11 (f1173-f1184).",
+      "evidence": [
+        "scratch/gap_review/fix3_S15_f1182-1186_T14_tail.jpg",
+        "crops/crop_640_690_230x140_01179-01186.jpg",
+        "scratch/fix3_S15_T14_remnants.csv",
+        "detail/soft_1161-1184/sheet.jpg"
+      ]
+    },
+    {
+      "start": 1185,
+      "end": 1187,
+      "verdict": "noise",
+      "rows": [],
+      "reason": "S15 (second pass; printed by a rescan that read the 'to f1182' cell as an end frame, before the headline row named its build range): one pixel column at x 541 on a stem of headline word 1 (popped at f1183) flickers in 8-row blocks between about 197 and 255 luma in both directions (47-58 px at full res, max 58-60; 15, 18 and 17 px at 640 w) while the word's ink centroid stays at (532.63-532.65, 531.78-531.81) px; the mascot row is unchanged (f1185 also has 1-16 px specks on eye-bar edges, max 38); it now lies inside the headline row's build range f1183-f1201, so the final rescan no longer prints it.",
+      "evidence": [
+        "scratch/gap_review/fix3_S15_f1185-1194_headline.jpg",
+        "scratch/fix3_S15_flicker.csv"
+      ]
+    },
+    {
+      "start": 1189,
+      "end": 1189,
+      "verdict": "covered",
+      "rows": [
+        "v2.text-word-pop"
+      ],
+      "reason": "S15 (second pass, hidden by the 'to f1182' cell): headline word 2 pops in one frame (1730 px at 640 w), listed in the headline row, which now names the build range f1183-f1201.",
+      "evidence": [
+        "detail/soft_1161-1184/sheet.jpg"
+      ]
+    },
+    {
+      "start": 1193,
+      "end": 1194,
+      "verdict": "noise",
+      "rows": [],
+      "reason": "S15 (second pass; printed by the same rescan): one pixel column at x 866 on a stem of headline word 2 (popped at f1189) flickers between about 67 and 15 luma in 8-row blocks (16 px at full res, max 52; 4 px at 640 w each), with a fainter column at x 1101 at the word's end (max 30) at f1193; the word does not move; it now lies inside the headline row's build range f1183-f1201.",
+      "evidence": [
+        "scratch/gap_review/fix3_S15_f1185-1194_headline.jpg",
+        "scratch/fix3_S15_flicker.csv"
+      ]
+    },
+    {
+      "start": 1203,
+      "end": 1211,
+      "verdict": "covered",
+      "rows": [
+        "v2.logo-eye-glance"
+      ],
+      "reason": "S15 (second pass, hidden by the 'to f1182' cell): the glance wave's later hexes, already listed by start in the glance row (hexes 1-6 change f1195-f1202, f1197-f1204, f1198-f1205, f1200-f1207, f1202-f1209, f1204-f1211; all still f1212); the row now names the wave's range f1195-f1211.",
+      "evidence": [
+        "scratch/fix3_S15_glance_wave.csv",
+        "detail/soft_1216-1237/sheet.jpg"
+      ]
+    },
+    {
+      "start": 1236,
+      "end": 1237,
+      "verdict": "covered",
+      "rows": [
+        "v2.trans-hex-fly-into-ui"
+      ],
+      "reason": "S16 (second pass; hidden by the T15-tail row's 'to f1235' cell and the push-in row's 'at rest f1235-f1237' range): the tile logo and the avatars still settle in sub-pixel steps (tile-logo ink centroid y 164.35, 162.68, 161.63, 161.26, 161.25 px and avatar 1 356.38, 354.93, 354.06, 353.81, 353.81 px f1234-f1238; 489 and 137 px at 640 w at f1236 and f1237, all on the tile logo and the avatars; still from f1238). T15 now ends at f1237, and also starts one frame earlier, at f1216, where every hex outline first changes whole (black hex edges 699.69 / 813.32 -> 699.03 / 812.66 px); T15 = f1216-f1237 in segments.json, cuts.json and timeline.md (boundary f1226 unchanged).",
+      "evidence": [
+        "scratch/fix3_S16_landing.csv",
+        "scratch/fix3_S15_hex_edges.csv",
+        "scratch/gap_review/fix3_S15_f1213-1217_blackhex.jpg",
+        "detail/soft_1216-1237/sheet.jpg"
+      ]
+    },
+    {
+      "start": 1353,
+      "end": 1353,
+      "verdict": "noise",
+      "rows": [],
+      "reason": "S17 (second pass; the S17 hold row said 'constant', a word the scan reads as covering the whole segment, so S17 was never scanned; printed by a rescan without that reading): scattered specks on the glyph edges of headline word 1 two frames after the cut (39 px at full res, max 52; 5 px at 640 w); the line's ink mass changes by 0.04% and its centroid by 0.02 px; it now lies inside the words row's build range f1351-f1366.",
+      "evidence": [
+        "scratch/gap_review/fix3_S17_f1352-1354_word1.jpg",
+        "scratch/fix3_S17_line_ink.csv"
+      ]
+    },
+    {
+      "start": 1359,
+      "end": 1359,
+      "verdict": "covered",
+      "rows": [
+        "v2.text-word-pop"
+      ],
+      "reason": "S17 (second pass, hidden by the hold row's 'constant'): headline word 2 pops in one frame (554 px at 640 w), listed in the words row, which now names the build range f1351-f1366.",
+      "evidence": [
+        "scratch/fix3_S17_line_ink.csv"
+      ]
+    },
+    {
+      "start": 1419,
+      "end": 1431,
+      "verdict": "covered",
+      "rows": [
+        "v2.particle-hex-scatter-pop",
+        "v2.text-word-pop"
+      ],
+      "reason": "S18: mascot births f1420-f1430 (one every 1.5 f, each a 9 f pop) and headline word 2 at f1419, all in the rows' stagger lists; the births row now states 44 f of births and the crowd's build range f1409-f1464 (the last-born mascot's ink settles f1462-f1464; scratch/gap_S18_f1451-1468_lastbirth_moments.csv) and the headline row f1411-f1419.",
+      "evidence": [
+        "detail/dense_01419-01431_00.jpg"
+      ]
+    },
+    {
+      "start": 1487,
+      "end": 1491,
+      "verdict": "covered",
+      "rows": [
+        "v2.logo-eye-glance",
+        "v2.logo-eye-blink"
+      ],
+      "reason": "S18: the last glances (starts f1481-f1486) and the third blink (from f1489, bar height 72 -> 26 px at f1491) of scratch/v2c2_S7_scatter_glances.csv. As in S04 and S22 the squash recovery outlasts the position settle (eye-bar heights stop 1-3 f after the 0.5 px settle, median 2): the glance from f1482 (listed settled f1489) recovers until f1490 (bar height 50, 53, 56 px f1488-f1490, rest 56, unchanged in f1491), and three glances still change in the cut frame f1491, the two from f1485 and f1486 in position (dy 6.63 -> 9.53 and 0.29 -> 3.41 px) and the one from f1483 (listed settled f1489) in its squash recovery (bar height 46, 50, 52 px f1489-f1491 against 51 before the glance; scratch/v2c2_S7_scatter_eyes.csv, fix_S18_m25_eyes.csv, fix_S18_m21_eyes.csv). With the blinking mascot and a 15 px trace at the bar tips of the glance from f1481 in f1490 (nothing of it in f1491), these are all the diff components of 3 px or more (above 12 levels at full res) of f1490-f1491 besides a 16 px single-column flicker at x 1117 on a static eye bar in f1491; all are eye-sized, no hexagon moves. The glance row now states f1432-f1491 with these ends and the blink row f1468-f1474, f1478-f1484 and f1489-f1491.",
+      "evidence": [
+        "crops/crop_1370_150_130x120_01484-01491.jpg",
+        "crops/crop_350_270_110x100_01484-01491.jpg",
+        "crops/crop_1090_940_150x140_01484-01491.jpg",
+        "crops/crop_1350_870_150x120_01484-01491.jpg",
+        "crops/crop_1770_210_170x170_01486-01491.jpg",
+        "crops/crop_20_870_120x120_01485-01491.jpg"
+      ]
+    },
+    {
+      "start": 1499,
+      "end": 1499,
+      "verdict": "covered",
+      "rows": [
+        "v2.text-word-pop"
+      ],
+      "reason": "S19: caption word 2 pops in one frame at f1499 (530 px at 640 w, x 760-965) as the row lists; the caption row now names its build range f1492-f1507.",
+      "evidence": [
+        "crops/crop_650_60_620x100_01498-01500.jpg"
+      ]
+    },
+    {
+      "start": 1507,
+      "end": 1513,
+      "verdict": "covered",
+      "rows": [
+        "v2.text-word-pop"
+      ],
+      "reason": "S19: caption word 3 pops at f1507 (623 px at 640 w), inside the build range f1492-f1507 now named in the row; f1508-f1513 (4-8 px at 640 w) are flickers on one letter stem near x 1100 with no visible change of the word, recorded as their own noise entry.",
+      "evidence": [
+        "scratch/gap_review/gap23_S19_f1507-1513_word3.jpg"
+      ]
+    },
+    {
+      "start": 1508,
+      "end": 1513,
+      "verdict": "noise",
+      "rows": [],
+      "reason": "S19 (rescan): one letter stem of caption word 3 near x 1100-1108 flickers at f1508, f1509, f1512 and f1513 (17-40 px at full res, max 47-64 levels; 4-8 px at 640 w) with no visible change of the word.",
+      "evidence": [
+        "scratch/gap_review/gap23_S19_f1507-1513_word3.jpg"
+      ]
+    },
+    {
+      "start": 1536,
+      "end": 1538,
+      "verdict": "noise",
+      "rows": [],
+      "reason": "S19 (rescan): the same caption letter stem near x 1100 flickers (20 px at full res, 4 px at 640 w) at f1536 and f1538 while page and caption are still (phase-correlation shifts of 0.000-0.002 px; scratch/gap_S19_f1535-1545_caption_shift.csv).",
+      "evidence": [
+        "scratch/gap_review/gap24_S19_f1536-1539_page.jpg"
+      ]
+    },
+    {
+      "start": 1536,
+      "end": 1539,
+      "verdict": "covered",
+      "rows": [
+        "v2.ui-page-scroll"
+      ],
+      "reason": "S19: f1539 is the page scroll's first frame, the page content below the caption shifting -0.15 px by phase correlation (998 px at 640 w) while the pixel-snapped caption holds until its first whole-pixel step at f1540 (scratch/gap_S19_f1535-1545_page_shift.csv, gap_S19_f1535-1545_caption_shift.csv), so the scroll row now starts at f1539 (0 vs beat f1539); f1536 and f1538 (4 px each, a caption letter flicker) are noise with their own entry.",
+      "evidence": [
+        "scratch/gap_review/gap24_S19_f1536-1539_page.jpg"
+      ]
+    },
+    {
+      "start": 1562,
+      "end": 1562,
+      "verdict": "covered",
+      "rows": [
+        "v2.ui-page-scroll"
+      ],
+      "reason": "S19 (second pass; hidden by the hold row 'f1561 | 41 (to f1601)'): f1562 is the page scroll's last, sub-pixel step (-0.235 px by phase correlation of the page, -0.22 to -0.28 px on three sub-regions; 2653 px at 640 w), still from f1563 (0.000 px, 0 px at 640 w). The scroll row now states 23 (f1539-f1562) and the hold row f1563 | 38 (f1563-f1600).",
+      "evidence": [
+        "scratch/gap_review/fix3_S19_f1561-1563_f1600-1602_page.jpg",
+        "scratch/fix3_S19_page_shift.csv",
+        "crops/crop_540_700_520x120_01559-01564.jpg"
+      ]
+    },
+    {
+      "start": 1601,
+      "end": 1601,
+      "verdict": "covered",
+      "rows": [
+        "v2.trans-scroll-push"
+      ],
+      "reason": "S19 (second pass; hidden by the same hold row): T19 already moves the page at f1601 (-0.286 px by phase correlation, -0.24 to -0.34 px on three sub-regions, 0.000 at f1600; 2784 px at 640 w), below the 1 px resolution of the integer strip track; T19 now starts at f1601 (f1601-f1627, 27 f) in segments.json, cuts.json and timeline.md (boundary f1614 unchanged).",
+      "evidence": [
+        "scratch/gap_review/fix3_S19_f1561-1563_f1600-1602_page.jpg",
+        "scratch/fix3_S19_page_shift.csv",
+        "crops/crop_540_700_520x120_01598-01603.jpg",
+        "detail/soft_1601-1627/sheet.jpg"
+      ]
+    },
+    {
+      "start": 1633,
+      "end": 1676,
+      "verdict": "covered",
+      "rows": [
+        "v2.particle-packet-pingpong",
+        "v2.text-word-pop"
+      ],
+      "reason": "S20 (second pass; hidden by the T19-tail row's 'to f1627' cell): the runs f1633-f1634, f1648 and f1675-f1676 are the packet dots (6-8 dot-sized changes, up to about 870 px each at full res, in every frame f1628-f1688) and, at f1634, headline word 3; the packets row now names f1615-f1688 (the dots move in every frame to the cut) and the headline row its build range f1623-f1650.",
+      "evidence": [
+        "detail/soft_1601-1627/sheet.jpg"
+      ]
+    },
+    {
+      "start": 1699,
+      "end": 1709,
+      "verdict": "covered",
+      "rows": [
+        "v2.text-word-pop"
+      ],
+      "reason": "S21: words 2 and 3 pop at f1699 and f1705 (350 and 1260 px at 640 w); the other pictures (f1700-f1701, f1704, f1708-f1709, 4-20 px) are column flickers at x 973 on a letter stem; the line-1 row now names the 2-line block's build range f1692-f1738.",
+      "evidence": [
+        "scratch/gap_review/gap25_S21_f1699-1709_word2.jpg"
+      ]
+    },
+    {
+      "start": 1718,
+      "end": 1718,
+      "verdict": "covered",
+      "rows": [
+        "v2.text-word-pop"
+      ],
+      "reason": "S21: word 5 pops in one frame at f1718 (813 px at 640 w, x 603-783), listed in the line-2 row and inside the block's build range f1692-f1738.",
+      "evidence": [
+        "crops/crop_300_420_1320x250_01717-01733.jpg"
+      ]
+    },
+    {
+      "start": 1725,
+      "end": 1733,
+      "verdict": "covered",
+      "rows": [
+        "v2.text-word-pop"
+      ],
+      "reason": "S21: words 6 and 7 pop at f1725 and f1732 (1014 and 1034 px at 640 w); f1726-f1729 and f1733 (5-16 px) are flickers on the new words' edges; all inside the build range f1692-f1738.",
+      "evidence": [
+        "crops/crop_300_420_1320x250_01717-01733.jpg"
+      ]
+    },
+    {
+      "start": 1827,
+      "end": 1834,
+      "verdict": "covered",
+      "rows": [
+        "v2.logo-spin-scale-in"
+      ],
+      "reason": "S22: the end-card logo's entrance creeps sub-pixel after its 24 f active window, outline height 166.42 px at f1826, 167.19 at f1830, 167.35 at f1834 and 167.47-167.50 from f1842, the fill going from luma 20 to 17 by f1832 (scratch/gap_S22_f1824-1852_logo_topbottom.csv, scratch/v2c2_S11_mascot_clean.csv); the scale row now states moving f1802-f1842.",
+      "evidence": [
+        "scratch/gap_review/gap28_S22_f1827-1834_logo.jpg"
+      ]
+    },
+    {
+      "start": 1854,
+      "end": 1855,
+      "verdict": "noise",
+      "rows": [],
+      "reason": "S22: after the URL label's fade settled (ink 9766-9768 px at f1852-f1853) the label ink stays at 9768-9774 px (within 0.06%), and the 5 px at 640 w are single-column flickers on letter stems (x 1058 at f1854, 16 px at full res, max 53 levels; 35 scattered px at f1855; scratch/gap_S22_f1846-1862_label_ink.csv).",
+      "evidence": [
+        "crops/crop_630_585_660x70_01852-01856.jpg"
+      ]
+    },
+    {
+      "start": 1888,
+      "end": 1889,
+      "verdict": "covered",
+      "rows": [
+        "v2.logo-eye-glance"
+      ],
+      "reason": "S22: the logo's first glance finishes its squash recovery at f1888-f1889 (eye-pair centroid x 955.96 -> 955.82 px, 2nd-moment bar height 54.2 -> 56.6 px, still from f1890; scratch/gap_S22_f1878-1894_eyes_moments.csv), so the row now states moving f1880-f1889.",
+      "evidence": [
+        "scratch/gap_review/gap30_S22_f1888-1889_eyes.jpg"
+      ]
+    }
+  ]
+}

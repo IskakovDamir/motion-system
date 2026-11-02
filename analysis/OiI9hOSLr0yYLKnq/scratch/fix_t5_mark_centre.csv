@@ -1,0 +1,43 @@
+frame,mark_cy,mark_cx,top,bottom,left,right,height,width,source
+864,540.00,,,,,,,,grid-patch template (t5_layer.csv); mark hidden in the band
+865,540.00,,,,,,,,grid-patch template (t5_layer.csv); mark hidden in the band
+866,540.00,,,,,,,,grid-patch template (t5_layer.csv); mark hidden in the band
+867,540.00,,,,,,,,grid-patch template (t5_layer.csv); mark hidden in the band
+868,540.00,,,,,,,,grid-patch template (t5_layer.csv); mark hidden in the band
+869,540.00,,,,,,,,grid-patch template (t5_layer.csv); mark hidden in the band
+870,540.00,,,,,,,,grid-patch template (t5_layer.csv); mark hidden in the band
+871,539.00,,,,,,,,grid-patch template (t5_layer.csv); mark hidden in the band
+872,539.00,,,,,,,,grid-patch template (t5_layer.csv); mark hidden in the band
+873,536.00,,,,,,,,grid-patch template (t5_layer.csv); mark hidden in the band
+874,535.00,,,,,,,,grid-patch template (t5_layer.csv); mark hidden in the band
+875,530.50,,,,,,,,grid-patch template (t5_layer.csv); mark hidden in the band
+876,526.50,,,,,,,,grid-patch template (t5_layer.csv); mark hidden in the band
+877,522.00,,,,,,,,grid-patch template (t5_layer.csv); mark hidden in the band
+878,515.84,959.50,458.18,573.50,896.59,1022.41,115.32,125.82,mark edges (50% crossings)
+879,508.85,959.48,450.33,567.37,895.69,1023.27,117.05,127.58,mark edges (50% crossings)
+880,500.39,959.45,440.72,560.06,894.54,1024.36,119.34,129.82,mark edges (50% crossings)
+881,490.63,959.51,429.75,551.50,893.25,1025.77,121.75,132.51,mark edges (50% crossings)
+882,479.42,959.52,417.34,541.49,891.64,1027.40,124.15,135.76,mark edges (50% crossings)
+883,466.41,959.48,402.51,530.31,889.76,1029.20,127.80,139.43,mark edges (50% crossings)
+884,452.53,959.49,386.74,518.32,887.65,1031.34,131.58,143.70,mark edges (50% crossings)
+885,439.71,959.50,372.34,507.08,885.67,1033.33,134.74,147.66,mark edges (50% crossings)
+886,428.41,959.52,359.31,497.51,883.84,1035.20,138.20,151.37,mark edges (50% crossings)
+887,418.67,959.48,348.31,489.02,882.37,1036.59,140.72,154.21,mark edges (50% crossings)
+888,410.25,959.54,338.46,482.03,880.96,1038.12,143.57,157.16,mark edges (50% crossings)
+889,403.25,959.54,330.46,476.03,879.82,1039.26,145.57,159.44,mark edges (50% crossings)
+890,397.37,959.53,323.71,471.03,878.83,1040.23,147.32,161.40,mark edges (50% crossings)
+891,392.48,959.53,318.32,466.63,877.94,1041.12,148.31,163.18,mark edges (50% crossings)
+892,388.60,959.54,313.70,463.50,877.42,1041.65,149.80,164.23,mark edges (50% crossings)
+893,385.70,959.46,310.33,461.07,876.74,1042.18,150.74,165.44,mark edges (50% crossings)
+894,383.28,959.53,307.50,459.07,876.54,1042.52,151.57,165.98,mark edges (50% crossings)
+895,381.66,959.52,305.66,457.66,876.19,1042.85,152.01,166.67,mark edges (50% crossings)
+896,380.59,959.50,304.51,456.67,875.88,1043.12,152.16,167.24,mark edges (50% crossings)
+897,380.01,959.51,303.66,456.36,875.82,1043.19,152.70,167.37,mark edges (50% crossings)
+898,379.68,959.51,303.34,456.02,875.79,1043.24,152.69,167.44,mark edges (50% crossings)
+899,379.51,959.50,303.34,455.68,875.77,1043.24,152.34,167.47,mark edges (50% crossings)
+900,379.51,959.50,303.34,455.68,875.77,1043.23,152.34,167.47,mark edges (50% crossings)
+901,379.51,959.50,303.34,455.68,875.77,1043.23,152.34,167.47,mark edges (50% crossings)
+902,379.50,959.50,303.33,455.67,875.77,1043.24,152.34,167.47,mark edges (50% crossings)
+903,379.50,959.50,303.33,455.67,875.77,1043.24,152.34,167.47,mark edges (50% crossings)
+904,379.50,959.50,303.33,455.67,875.77,1043.24,152.34,167.47,mark edges (50% crossings)
+905,379.50,959.50,303.33,455.67,875.77,1043.24,152.34,167.47,mark edges (50% crossings)

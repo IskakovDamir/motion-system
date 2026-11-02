@@ -1,0 +1,40 @@
+{
+  "technique_id": "v7.cam-slow-push-creep",
+  "file": "curves/v7.cam-slow-push-creep.csv",
+  "property": "scale",
+  "unit": "scale factor (1.0 = the page at f331, where the S03 push-in's per-picture steps have decayed to the creep rate)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.29.19/scratch/fix_s03_creep_ecc_ref331_326-352.csv",
+  "column": "scale",
+  "sampled_frames": [
+    331,
+    347
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 1.0,
+  "to_value": 1.0115,
+  "active_frames": [
+    331,
+    347
+  ],
+  "measured_duration_frames": 16,
+  "bezier": {
+    "x1": 1.0,
+    "y1": 0.987,
+    "x2": 0.2858,
+    "y2": 0.3736,
+    "durationInFrames": 15,
+    "delay": 0.351,
+    "built_duration_frames": 15,
+    "rmse": 0.0183
+  },
+  "spring": {
+    "stiffness": 243.5,
+    "damping": 34.5,
+    "mass": 1,
+    "damping_ratio": 1.1055,
+    "built_duration_frames": 23,
+    "rmse": 0.172
+  },
+  "recommended": "bezier",
+  "note": "S03 slow push-in creep about the frame centre (ECC fixed points 804-811, 456-467 px over f334-f344): x1.0115 over f331-f347, an even x1.0019-1.0021 per 24 fps picture (x1.0016 at f347, which also carries the scroll's first lift); no rest before (the push-in decays into it) and no settle after (the scroll takes over), so 0 and 1 are the first and last creep pictures; a straight ramp in effect: the bezier stays within 0.036 of y = x and its wiggle is the 3:2 capture cadence (a linear ramp scores shape rmse 0.031 on the captured frames, D=16, and 0.012 with the pictures placed on the 2.5 f cadence of 24 fps material, D=15; a straight line through the 7 pictures leaves 0.00016 in scale by picture index, 0.00045 by captured frame); ECC affine on the page, query text and speaker icon masked, every picture registered to f331 (scratch/critic_fix_tools/ecc_reg.py); captured pictures only (duplicate captures f343, f345 dropped)"
+}

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.text-line-slide-blur",
+  "file": "curves/v6.text-line-slide-blur.csv",
+  "property": "position-x",
+  "unit": "px (picture width 1622)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/cgr3_S06_subcap_line2_subpix.csv",
+  "column": "cx",
+  "sampled_frames": [
+    238,
+    261
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 997.61,
+  "to_value": 867.0,
+  "active_frames": [
+    238,
+    251
+  ],
+  "measured_duration_frames": 13,
+  "bezier": {
+    "x1": 0.5197,
+    "y1": 0.6789,
+    "x2": 0.015,
+    "y2": 0.4512,
+    "durationInFrames": 11,
+    "delay": 0.28,
+    "built_duration_frames": 11,
+    "rmse": 0.0396
+  },
+  "spring": {
+    "stiffness": 661.608,
+    "damping": 53.045,
+    "mass": 1,
+    "damping_ratio": 1.0311,
+    "built_duration_frames": 14,
+    "rmse": 0.0225
+  },
+  "recommended": "spring",
+  "note": "S06 sub-caption line 2 slides in from the right while it types on: sub-pixel template centre (correlation peak refined with a parabola) of its first 2 letters, ref f253, box 832,790,70x66; score 0.55 at f238 (the first picture that shows the line, 2 blurred light letters), then 0.79-1.00; from-value = that first sample (997.61 px), so the curve starts at the line's first visible picture; line 1 follows the same path about 5 f earlier (914.1 -> 867.0 px, f238-f246, scratch/cgr3_S06_subcap_line1_subpix.csv); S17 f1745-f1760 repeats the values (scratch/cgr3_S17_subcap_line2_subpix.csv)"
+}

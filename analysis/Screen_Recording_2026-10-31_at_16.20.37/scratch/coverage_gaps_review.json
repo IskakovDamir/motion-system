@@ -1,0 +1,313 @@
+{
+  "gaps": [
+    {
+      "start": 2,
+      "end": 22,
+      "verdict": "footage",
+      "rows": [],
+      "reason": "Only footage shot 1 changes, and its plate fills the frame (0-100 %W x 0-100 %H): 54382-121447 changed px per picture spread over the whole frame (peak f10), frame mean luma 92.6-96.1 with no fade (scratch/cg_s01_luma_full.csv, checked against the frames). The run used to end on f25, but that picture already carries caption 1's first letter as a faint defocused blob: signed step +18.0 gray levels in its box x405-440 y185-225 px, confined to its rows (10-row bands +7.6 / +20.2 / +24.1 / +19.2 / +5.8 on y180-230), against -1.5 in the footage beside it, -2.1 / -1.2 above and below and -2.5 in the same box on f22 (scratch/fix3_s01_cap1_start.csv); f27 shows the same footage picture as f25 (the scan counts 231 changed px on f27, 223 of them inside the first letter's box x400-440 y180-230). Both S01 caption 1 rows now start at f25, so the footage run ends at f22.",
+      "evidence": [
+        "detail/cgr_peak_f00010/sheet.jpg",
+        "detail/dense_00000-00030_00.jpg",
+        "crops/cgr_diff_00000-00030.jpg",
+        "crops/crop_360_150_160x100_00020-00030.jpg",
+        "crops/fix3_s01_cap1_start_00020-00027.jpg",
+        "scratch/fix3_s01_cap1_start.csv"
+      ]
+    },
+    {
+      "start": 417,
+      "end": 417,
+      "verdict": "covered",
+      "rows": [
+        "v5.text-caption-drift",
+        "v5.text-caption-word-fade"
+      ],
+      "reason": "The first picture after the f415 cut already carries caption 3's first word, faint and defocused, over the full-frame shot-5 footage starting its own fast push-in (162181 changed px, 70 % of the picture): a blurred high-pass template of its first two letters cut from f420 finds its best match on f417 exactly one drift step back (+15 / +1.7 px), best of 4961 offsets (NCC 0.47 against p95 0.24), and the f435 whole-word template also ranks that place first; on the cut picture f415 the predicted place ranks 69th and the best match lies 3 px off the drift path (scratch/fix3_s06_cap3_start.csv, drift from scratch/fix3_s06_cap3_word1_track.csv). The earlier footage verdict (first word only on f420) was wrong: both S06 caption 3 rows now start at f417 and cover this picture.",
+      "evidence": [
+        "crops/crop_250_320_480x200_00412-00425.jpg",
+        "crops/fix3_s06_cap3_start_00412-00420.jpg",
+        "scratch/fix3_s06_cap3_start.csv",
+        "scratch/fix3_s06_cap3_word1_track.csv",
+        "detail/cgr_peak_f00417/sheet.jpg",
+        "detail/dense_00410-00425_00.jpg"
+      ]
+    },
+    {
+      "start": 2122,
+      "end": 2150,
+      "verdict": "covered",
+      "rows": [
+        "v5.text-caption-line-fade-out",
+        "v5.text-caption-word-fade"
+      ],
+      "reason": "Caption B's last line keeps fading after the row's old end f2120: a band that follows the line's drift (its template box, 315 x 58 px, -5.19 / -0.59 px per frame) keeps darkening, 66 / 74 / 81 / 88 / 93 / 97 / 99.4 % of its luma drop from f2105 at f2120 / 2122 / 2125 / 2127 / 2130 / 2132 / 2135 (last net step -1.4 gray levels on f2135 with a 0.0 control step, then -0.1 on f2137), and the signed diffs show its blurred line-shaped darkening through f2135 and none on f2137, so the caption-B row of S16 now runs to f2135 (dur 83; f2132 at 97 % is outside the 2 % end rule now used for the B, C and E remnants); the rest of the run splits: f2137-f2142 (the band's steps stay within 0.4 gray levels and caption C's first-letter box steps at most +0.4 net of its control) is the footage's own change and comes back as a new footage run, and from f2145 caption C's first letter starts to brighten (step +8.4 gray levels, in its stroke shape from f2147, scratch/fix3_s16_capC_start.csv), so the C row now starts at f2145; the earlier claim that no caption-C pixel changes before f2152 was wrong.",
+      "evidence": [
+        "scratch/cgr2_s16_capB_tail.csv",
+        "crops/cgr2_sdiff_capB_02117-02145.jpg",
+        "crops/cgr_diff_02110-02160.jpg",
+        "crops/crop_0_120_760x260_02112-02130.jpg",
+        "crops/cgr_diff_capB_line3_02107-02132.jpg",
+        "crops/cgr_sdiff_capB_02112-02137.jpg",
+        "crops/cgr_hp_capB_02112-02137.jpg",
+        "detail/cgr_peak_f02150/sheet.jpg",
+        "scratch/fix3_s16_capC_start.csv",
+        "scratch/fix3_s16_capC_letters.csv",
+        "crops/fix3_s16_capC_start_02142-02152.jpg"
+      ]
+    },
+    {
+      "start": 2220,
+      "end": 2225,
+      "verdict": "covered",
+      "rows": [
+        "v5.text-caption-line-fade-out",
+        "v5.text-caption-word-fade"
+      ],
+      "reason": "Caption C's last line is still fading on f2220 and f2222 and keeps fading through caption D's start: a band on the left 160 px of the line's x-height (its template box, 240 x 56 px, following the drift of -5.22 / -0.59 px per frame; this part stays clear of caption D's lines) darkens by net -1.92 / -2.50 / -2.94 / -2.45 / -2.07 / -1.99 / -1.41 gray levels on f2220 / 2222 / 2225 / 2227 / 2230 / 2232 / 2235 against control steps of -0.72 to +0.28, then -0.04 on f2237 (43 / 54 / 66 / 77 / 85 / 94 / 99.8 % of its drop since f2212). The signed diffs show blob-shaped darkening inside the band to f2235 and none on f2237, a residual against f2240 shows the band lighter than its final state to f2232 and flat on f2235, and the footage there is calm (three bright footage areas next to the band move <= 0.7 px and change <= 0.7 luma per picture over f2225-f2240; this control is written under the S16 movement table, not in the C row, so the C row names only its own frames). So the C row now ends at f2235 (dur 90 from its start f2145; the earlier end f2222 and its UNCERTAIN about footage moving under the band are withdrawn) and C overlaps D by 13 f; caption D's first letter starts to brighten on f2222 (D row start 2222, dur 62), so the run is covered by both rows. Measuring D by the same reading also moved its second line's start from f2238 to f2232 (first-letter band step +9.7 gray levels).",
+      "evidence": [
+        "scratch/cgr2_s16_capC_tail.csv",
+        "crops/cgr2_sdiff_capC_02207-02245.jpg",
+        "crops/cgr2_resid_capC_02207-02240.jpg",
+        "scratch/cgr2_s16_capC_footage_control.csv",
+        "scratch/cgr2_s16_capD2_start.csv",
+        "crops/cgr2_sdiff_capD2_02225-02245.jpg",
+        "crops/cgr_diff_02205-02235.jpg",
+        "crops/crop_0_150_700x230_02212-02230.jpg",
+        "crops/cgr_diff_capC_line3_02207-02227.jpg",
+        "crops/cgr_sdiff_capC_02207-02230.jpg",
+        "crops/cgr_hp_capC_02210-02232.jpg",
+        "detail/cgr_peak_f02220/sheet.jpg"
+      ]
+    },
+    {
+      "start": 2287,
+      "end": 2295,
+      "verdict": "covered",
+      "rows": [
+        "v5.text-caption-word-fade"
+      ],
+      "reason": "Caption E's first two letters are already faint and defocused on picture f2292: a blurred high-pass template of the word cut from f2310 finds its best match on f2292 exactly at the drift-predicted place, best of 3131 offsets (NCC 0.62 for the first two letters against p95 0.34), while on f2290 the predicted place ranks 293rd (scratch/fix3_s16_capE_start.csv). The E row now starts at f2292 (it gave f2296, a repeat of picture f2295, and then f2295: one picture late either way); f2287-f2290 are the footage's fast pull-back with radial blur (142573 / 152030 changed px over the whole frame) and come back as a new footage run, and caption D's last line no longer shows on f2285 (high-pass crop).",
+      "evidence": [
+        "crops/cgr_diff_02270-02300.jpg",
+        "crops/crop_0_120_760x260_02276-02300.jpg",
+        "crops/cgr_hp_capDE_02277-02300.jpg",
+        "crops/cgr_diff_capDE_02277-02300.jpg",
+        "crops/crop_280_130_360x170_02285-02305.jpg",
+        "crops/fix3_s16_capE_start_02287-02297.jpg",
+        "scratch/fix3_s16_capE_start.csv",
+        "detail/cgr_peak_f02295/sheet.jpg"
+      ]
+    },
+    {
+      "start": 2370,
+      "end": 2412,
+      "verdict": "covered",
+      "rows": [
+        "v5.text-caption-line-fade-out"
+      ],
+      "reason": "Caption E's last line keeps fading after the row's old end f2366: its drift-following band (the line's template box, net of a control band 10 px below) darkens by -2.78 / -2.91 / -1.63 / -2.40 gray levels on f2372 / 2375 / 2378 / 2380, reaching 74 / 85 / 91 / 99 % of its drop from f2365, then 99.5 / 100.5 % on f2382 / 2385 (scratch/cgr2_s16_capE_tail.csv; f2380 is the first picture within 2 % of the final level), with its blurred shape in the signed-diff crops, so the E row now ends at f2380 (start 2292, dur 88); f2382-f2412 is the footage's own camera move (19519-93687 changed px per picture over the whole frame) and comes back as a new footage run. The fixed-band file scratch/cgr_s16_capE_tail.csv, which normalises to f2380 itself, is no longer cited.",
+      "evidence": [
+        "scratch/cgr2_s16_capE_tail.csv",
+        "crops/cgr_diff_02355-02415.jpg",
+        "crops/cgr_diff_capE_02352-02380.jpg",
+        "crops/cgr_sdiff_capE_02357-02380.jpg",
+        "detail/cgr_peak_f02390/sheet.jpg"
+      ]
+    },
+    {
+      "start": 2470,
+      "end": 2477,
+      "verdict": "covered",
+      "rows": [
+        "v5.cam-whip-pan"
+      ],
+      "reason": "The 3D camera never stops between whip 1 and whip 2: card 1 and the headline move together, 756 -> 759 -> 760 px (headline 1096 -> 1099 -> 1100 px) at f2467 / 2470 / 2472 to a turning point and back to 757 px (headline 1096) by f2477, all inside the two whip curves' 2 % bands, so the whip-1 row now runs f2442-f2472 (dur 30) and the whip-2 row names its creep f2472-f2480.",
+      "evidence": [
+        "crops/cgr_diff_02460-02485.jpg",
+        "detail/cgr_peak_f02470/sheet.jpg"
+      ]
+    },
+    {
+      "start": 3502,
+      "end": 3505,
+      "verdict": "covered",
+      "rows": [
+        "v5.cam-hold-drift"
+      ],
+      "reason": "The slow linear push-in of the whole layout runs on to the hard cut: headline template scale 1.014 / 1.020 / 1.020 / 1.022 at f3480 / 3500 / 3502 / 3505 against f3440, centre moving 724 -> 726 px down, so the push-in row now lasts 126 f to f3506 (6240-6968 changed px per picture, the footage inside the strip and thumbnails moving as well). The S22 Speed changes line now names the same 126-frame push-in (f3380-f3506).",
+      "evidence": [
+        "crops/cgr_diff_03490-03507.jpg",
+        "detail/cgr_peak_f03502/sheet.jpg"
+      ]
+    },
+    {
+      "start": 3512,
+      "end": 3515,
+      "verdict": "covered",
+      "rows": [
+        "v5.text-caption-focus-roll"
+      ],
+      "reason": "Phrase 1's first word is already a faint defocused smudge on the cut picture f3507 and fades in and sharpens over f3510-f3517 (high-pass crops), so the focus-roll rows now start phrase 1 at f3507 (drift row start 3510 -> 3507, phrase life f3507-f3580); the footage drifts under it (10031-12212 changed px per picture).",
+      "evidence": [
+        "crops/crop_1000_40_600x300_03507-03520.jpg",
+        "crops/cgr_hp_s23_word1_03507-03522.jpg",
+        "crops/cgr_diff_03507-03522.jpg",
+        "detail/dense_03505-03520_00.jpg",
+        "detail/cgr_peak_f03515/sheet.jpg"
+      ]
+    },
+    {
+      "start": 3565,
+      "end": 3682,
+      "verdict": "covered",
+      "rows": [
+        "v5.text-caption-focus-roll"
+      ],
+      "reason": "The focus-roll rows measured only phrase 1's second word; this run holds phrase 1's last word fading (faint smudge to f3580, gone f3582), phrase 2 (first word from f3597, band step +4.9 gray levels, 0.00 on f3595) and phrase 3 (first word from f3652, +7.6), both drifting right at +2.06-2.11 px per frame (0.127-0.130 %W; first-word templates over f3602-f3640 and f3660-f3695, scratch/cgr_s23_phrase2_word1.csv, scratch/cgr_s23_phrase3_word1.csv), about 1.2x the +1.72 px per frame (0.106 %W) of phrase 1 (scratch/v5c5_D_cap_word2.csv over f3530-f3562), so the drift row now gives the phrase lives f3507-f3580, f3597-f3654 and f3652-f3709; the caption-free f3582-f3595 is the footage's own camera move and comes back as a new footage run.",
+      "evidence": [
+        "crops/cgr_sdiff_s23_03562-03612.jpg",
+        "crops/cgr_hp_s23_03567-03600.jpg",
+        "crops/crop_1000_120_420x140_03570-03606.jpg",
+        "crops/cgr_hp_s23_p2start_03590-03605.jpg",
+        "crops/crop_820_130_520x180_03646-03668.jpg",
+        "crops/crop_1100_110_400x160_03560-03640.jpg",
+        "detail/cgr_peak_f03620/sheet.jpg"
+      ]
+    },
+    {
+      "start": 3686,
+      "end": 3707,
+      "verdict": "covered",
+      "rows": [
+        "v5.text-caption-focus-roll"
+      ],
+      "reason": "Phrase 3 rolls here over the moving footage (focus peaks f3682 / f3693, its lines leaving from f3690 into the f3710 cut, first-word template drifting +2.09 px per frame to f3695); the rows named only single peak frames and the drift row now gives phrase 3's life f3652-f3709.",
+      "evidence": [
+        "crops/crop_1100_110_400x160_03640-03712.jpg",
+        "crops/crop_820_130_520x180_03646-03668.jpg",
+        "detail/cgr_peak_f03705/sheet.jpg"
+      ]
+    },
+    {
+      "start": 4197,
+      "end": 4197,
+      "verdict": "covered",
+      "rows": [
+        "v5.layout-slow-recede",
+        "v5.bg-halftone-ribbon-glow"
+      ],
+      "reason": "Two recorded movements change this picture. The window group's slow recede has started (caption template 692 -> 690 px between f4195 and f4197, scratch/cgr_s29_caption_scale_fine.csv; recede row from f4195, dur 157). The rest is the background: 250 of the scan's 1710 changed px lie outside the window group (box x 225-1400, y 35-918 px) in the halftone corner patches, whose lit dots swell, fade and travel through a fixed dot grid all through S29 (lit-dot energy of the upper-left patch 104.0k -> 109.3k and of the lower-right patch 19.4k -> 22.9k between f4195 and f4197; 69 of the 74 pictures f4170-f4352 change on >= 4 px there, none after f4340; grid shift within 0.5 px of f4200). The earlier reason (changes only on faint edges of the caption and window) and the 'static' S29 background were wrong: S29 now has a background row (f4170-f4347, v5.bg-halftone-ribbon-glow) and its layers line says the grid stays put while the lit dots move.",
+      "evidence": [
+        "crops/cgr_diff_04185-04210.jpg",
+        "detail/cgr_peak_f04197/sheet.jpg",
+        "scratch/cgr2_s29_bg_halftone.csv",
+        "crops/cgr2_s29_bg_patches_04170-04352.jpg",
+        "crops/crop_0_150_300x280_04185-04265.jpg"
+      ]
+    },
+    {
+      "start": 4357,
+      "end": 4410,
+      "verdict": "footage",
+      "rows": [],
+      "reason": "Before the dim (f4412) and the end caption (f4420) only the full-frame footage plate (0-100 %W x 0-100 %H) changes: content inside the shot moves (5765-14045 changed px per picture over f4357-f4372, in one area of the plate) and the camera pull-back inside the footage speeds up to 65940 px at f4410; no designed element is on screen.",
+      "evidence": [
+        "crops/cgr_diff_04355-04415.jpg",
+        "detail/cgr_peak_f04410/sheet.jpg"
+      ]
+    },
+    {
+      "start": 4430,
+      "end": 4457,
+      "verdict": "footage",
+      "rows": [],
+      "reason": "The end caption is static (template centre (810, 460) px, scale 1.000, scores 0.956-1.000 over f4422-f4582, scratch/cgr_s30_caption_static.csv), so the 31065-34642 changed px per picture are the dimmed full-frame footage's own motion (plate 0-100 %W x 0-100 %H). The frame also keeps darkening after the dim row ends at f4427 (frame mean 32.6 -> 27.4 over f4427-f4457, every region darker but unevenly, at most 0.63 gray levels per picture in the frame mean; scratch/fix3_s30_region_luma.csv); whether that is a slow tail of the designed dim or the footage itself cannot be told apart, so it is the S30 UNCERTAIN line f4427-f4582, not a footage attribution.",
+      "evidence": [
+        "detail/cgr_peak_f04447/sheet.jpg",
+        "detail/dense_04427-04583_00.jpg",
+        "scratch/cgr_s30_caption_static.csv",
+        "scratch/fix3_s30_region_luma.csv"
+      ]
+    },
+    {
+      "start": 4461,
+      "end": 4517,
+      "verdict": "footage",
+      "rows": [],
+      "reason": "Same state: the caption stays static (template unchanged, scores >= 0.956) while the dimmed full-frame footage (plate 0-100 %W x 0-100 %H) keeps moving, 23322-29336 changed px per picture; the slow whole-frame darkening (frame mean 26.9 -> 22.2 over f4461-f4517, scratch/fix3_s30_region_luma.csv) falls under the S30 UNCERTAIN line f4427-f4582 (tail of the dim or the footage).",
+      "evidence": [
+        "detail/cgr_peak_f04461/sheet.jpg",
+        "detail/dense_04427-04583_00.jpg",
+        "scratch/fix3_s30_region_luma.csv"
+      ]
+    },
+    {
+      "start": 4521,
+      "end": 4582,
+      "verdict": "footage",
+      "rows": [],
+      "reason": "Static caption over the dimmed full-frame footage's own motion (10556-24146 changed px per picture); the slow whole-frame darkening (frame mean 21.8 -> 16.2 over f4521-f4582, scratch/fix3_s30_region_luma.csv) falls under the S30 UNCERTAIN line f4427-f4582 (tail of the dim or the footage); the only other change is the capture tool's dashed selection frame appearing on f4531 (942 px, all along the picture edges: 251 px in the left 12 px column, 251 in the right one, 462 in the bottom 12 px row, 6 in the top one, corners counted twice), a capture artifact, not design.",
+      "evidence": [
+        "detail/cgr_peak_f04523/sheet.jpg",
+        "detail/dense_04427-04583_00.jpg",
+        "scratch/fix3_s30_region_luma.csv"
+      ]
+    },
+    {
+      "start": 2137,
+      "end": 2142,
+      "verdict": "footage",
+      "rows": [],
+      "reason": "Between caption B's end (its drift-following band reaches its final level on f2135 and its steps stay within 0.4 gray levels from f2137, scratch/cgr2_s16_capB_tail.csv) and caption C's first brightening on f2145 no caption pixel changes: C's drift-following first-letter box steps +0.4 / +0.4 / +0.2 gray levels net of its control on f2137 / 2140 / 2142 (scratch/fix3_s16_capC_start.csv), while the full-frame footage (plate 0-100 %W x 0-100 %H) changes 7667 / 13111 / 21983 px per picture. The run used to reach f2150; f2145-f2150 carry caption C's first letter (a faint defocused blob on f2145, in its stroke shape from f2147), with the second and third letters following in their stroke shapes from f2150 and f2155 (scratch/fix3_s16_capC_letters.csv), now covered by the C row from f2145.",
+      "evidence": [
+        "scratch/cgr2_s16_capB_tail.csv",
+        "scratch/fix3_s16_capC_start.csv",
+        "scratch/fix3_s16_capC_letters.csv",
+        "crops/fix3_s16_capC_start_02142-02152.jpg",
+        "crops/crop_230_150_330x150_02142-02160.jpg",
+        "crops/cgr2_sdiff_capB_02117-02145.jpg",
+        "crops/cgr_diff_02110-02160.jpg",
+        "crops/cgr_sdiff_capCstart_02140-02160.jpg"
+      ]
+    },
+    {
+      "start": 2287,
+      "end": 2290,
+      "verdict": "footage",
+      "rows": [],
+      "reason": "The full-frame footage's fast pull-back with radial blur (142573 / 152030 changed px at f2287 / 2290, in-camera per the c066 decision); caption D's last line no longer reads from f2285, and caption E's first two letters appear on f2292, not before (on f2290 their drift-predicted place ranks 293rd of 3131 offsets, on f2292 first; scratch/fix3_s16_capE_start.csv); whether D's faint remnant lasts into these pictures cannot be measured under the blur (S16 UNCERTAIN line f2285-f2292).",
+      "evidence": [
+        "crops/cgr_diff_02270-02300.jpg",
+        "crops/cgr_hp_capDE_02277-02300.jpg",
+        "crops/fix3_s16_capE_start_02287-02297.jpg",
+        "scratch/fix3_s16_capE_start.csv",
+        "detail/cgr_peak_f02292/sheet.jpg"
+      ]
+    },
+    {
+      "start": 2382,
+      "end": 2412,
+      "verdict": "footage",
+      "rows": [],
+      "reason": "New after the rescan: after caption E's remnant ends (f2380) no caption is on screen to the f2415 cut; the full-frame footage's own camera move changes 19519-93687 px per picture (in-footage movement per the c068 decision).",
+      "evidence": [
+        "crops/cgr_diff_02355-02415.jpg",
+        "detail/cgr_peak_f02390/sheet.jpg"
+      ]
+    },
+    {
+      "start": 3582,
+      "end": 3595,
+      "verdict": "footage",
+      "rows": [],
+      "reason": "New after the rescan: no caption is on screen between phrase 1 (gone f3582) and phrase 2 (first band step +4.9 on f3597, 0.00 on f3595); the full-frame footage's own camera move changes 51005-57404 px per picture.",
+      "evidence": [
+        "crops/crop_1000_120_420x140_03570-03606.jpg",
+        "crops/cgr_hp_s23_03567-03600.jpg",
+        "crops/cgr_hp_s23_p2start_03590-03605.jpg",
+        "detail/cgr_peak_f03592/sheet.jpg"
+      ]
+    }
+  ]
+}

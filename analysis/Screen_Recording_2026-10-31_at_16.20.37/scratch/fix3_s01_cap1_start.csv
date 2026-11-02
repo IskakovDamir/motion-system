@@ -1,0 +1,10 @@
+# caption 1 first letter: signed step (raw luma) since the previous captured picture; letter box x405-440 y185-225 px (left of the bright footage edge at x >= 444; the letter's drift-predicted box on f25 is x418-458 y179-231, -15 / -3 px per picture from scratch/fix3_s01_cap1_letter1_track.csv f35-f62); footage beside it x340-395 same rows; same columns above (y100-170) and below (y230-320); 10-row bands y180-189 .. y220-229 of the letter columns; changed px = the coverage scan's count (> 12 gray levels at 640 px wide) inside x400-440 y180-230 and in the whole picture
+frame,prev_frame,letter_box_step,beside_step,above_step,below_step,band_y180,band_y190,band_y200,band_y210,band_y220,changed_px_letter,changed_px_picture
+12,10,-3.22,-2.05,-1.17,-2.91,-3.6,-3.7,-3.6,-3.0,-1.6,0,94513
+15,12,-0.35,-1.98,-0.94,-0.76,2.2,-0.1,-0.6,-0.8,-1.2,0,112005
+17,15,1.08,-1.49,-0.18,0.26,0.7,2.7,0.9,-0.0,-0.5,1,112774
+20,17,0.6,-0.82,-1.98,0.22,-1.1,-1.4,1.9,2.2,1.1,5,104768
+22,20,-2.51,-1.33,-2.93,-0.93,-1.7,-1.5,-3.7,-3.7,-0.3,8,101042
+25,22,18.01,-1.47,-2.14,-1.18,7.6,20.2,24.1,19.2,5.8,152,99305
+27,25,23.58,0.41,-0.56,0.21,18.6,29.9,31.7,20.4,2.1,223,240
+30,27,4.83,8.68,-1.2,-0.58,3.1,6.8,12.5,3.1,-5.1,160,84931

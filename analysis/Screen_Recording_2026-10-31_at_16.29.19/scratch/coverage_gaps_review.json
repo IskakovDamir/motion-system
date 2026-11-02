@@ -1,0 +1,204 @@
+{
+  "video": "Screen_Recording_2026-10-31_at_16.29.19",
+  "key": "v7",
+  "scan": "scratch/coverage_gaps.json as committed (24 runs, 536 frames; level 12, min 4 px, 640 px wide)",
+  "gaps": [
+    {
+      "start": 201,
+      "end": 204,
+      "verdict": "covered",
+      "rows": ["v7.cam-zoom-out-settle-in", "v7.cam-pan-up-zoom"],
+      "reason": "The S02 zoom-out settle has not stopped at f199: ECC on the menu gives per-picture scale steps x0.9956 / 0.9976 / 0.9990 at f201 / f204 / f206 (together 0.8%, 1.3% of the x1.59 -> 1.0 move, under the 2% rule) while the header ink left edge moves 389 -> 391 -> 392 -> 393 px and its ink top 157 -> 158 -> 159 -> 157 px at f199 / f201 / f204 / f206 (half-level top edge 157.5 / 158.7 / 159.2 / 157.7 px): the header sinks 1.7 px with the tail and turns upward at f206 (ink top 159 -> 157 -> 152 px at f204 / f206 / f209) without a hold; the settle row now names its tail f199-f206 and the pan row and speed changes drop the 7 f hold. Critic round: the settle row had three ink tops for its four frames; it now gives four, the last (157 at f206) matching the pan row.",
+      "evidence": ["detail/gap_s02_f201/sheet.jpg", "scratch/gap_review/gap_diff_s02_190-212.jpg", "scratch/gap_review/gap_s02_ecc_186-240.csv", "scratch/gap_s02_header_bbox_186-245.csv", "scratch/fix_s02_header_T_top_194-214.csv", "crops/crop_380_145_340x70_00197-00211.jpg"]
+    },
+    {
+      "start": 339,
+      "end": 347,
+      "verdict": "missed",
+      "rows": ["v7.cam-slow-push-creep"],
+      "reason": "What S03 recorded as a hold with 0.3 px/f drift is a slow push-in creep about the frame centre that no row named: ECC on the page (query text and speaker icon masked, every picture registered to f331) finds an even x1.0019-1.0021 scale step on every new picture f334-f347 (x1.00190 / 1.00193 / 1.00198 / 1.00205 / 1.00198 / 1.00162; x1.0115 over f331-f347, fixed points 804-811, 456-467 px), into which the push-in decays (steps x1.039 / 1.023 / 1.013 / 1.006 / 1.0025 at f321-f331) instead of settling; the magnifier ink centre drifts 283.2 -> 277.8 px with y fixed at 459 px, the title 412.7, 124.3 -> 407.9, 120.9 px, and the scroll takes over from f347 (first lift: magnifier y -1.25 px at f347; first full scroll picture f349). Added as a S03 row f331-f347 of the existing v7.cam-slow-push-creep, with the speed-change, sound-sync and technique-index lines. Critic round: the creep is now fitted with fit_easing.py (curves/v7.cam-slow-push-creep.csv: bezier(1.000, 0.987, 0.286, 0.374) D=15, rmse 0.018, within 0.036 of a straight line; a straight ramp scores 0.031 on the captured frames and 0.012 on the 2.5 f cadence, so the row calls it linear), the technique index names the curve, and the scroll row's leftover 12 f hold is replaced by no hold. Critic round 2: the creep row stacked on a push-in row and curve that already held it (push-in x1.0 -> x1.81 to f336, its curve reaching 1.81 at f341 and calling f339-f348 settled), so the two rows built about x1.83 at f347 against the measured x1.81 (subtitle ink width 643.5 px at rest, 1152 px at f331 = x1.790, 1165 px at f347 = x1.810; scratch/r4_s03_subtitle_t40_319-352.csv). The push-in now ends at x1.79 on f331 (27 f, title centre 26.0% / 12.7%), re-tracked with 0.002 scale steps (scratch/r4_s03_title_fine_296-352.csv) and refitted on samples f296-f331 (curves/v7.cam-push-in-blur.csv: bezier(0.531, 0.095, 0.260, 0.838) D=26, shape rmse 0.012, raw-time 0.013, through scratch/v7c5_tools/refit_shape.py after fit_easing.py's raw-time fit scored 0.065 on the shape metric); the creep row says it stacks on that x1.79 to x1.81, the typography row's f336 scale reads x1.80, and the technique index, the speed-change line and the S03 summary in segments.json follow.",
+      "evidence": ["detail/gap_s03_f343/sheet.jpg", "scratch/gap_review/gap_diff_s03_326-352.jpg", "crops/crop_180_380_360x160_00329-00349.jpg", "scratch/gap_review/gap_s03_ecc_318-352.csv", "scratch/gap_s03_magnifier_326-352.csv", "scratch/gap_s03_title_326-352.csv", "scratch/fix_s03_creep_ecc_ref331_326-352.csv", "curves/v7.cam-slow-push-creep.csv", "scratch/critic_fix_tools/ecc_reg.py", "detail/dense_00299-00347_00.jpg", "scratch/r4_s03_title_fine_296-352.csv", "scratch/r4_s03_subtitle_rest_t40_296-304.csv", "scratch/r4_s03_subtitle_t40_319-352.csv", "scratch/r4_s03_subtitle_t80_319-352.csv", "curves/v7.cam-push-in-blur.csv"]
+    },
+    {
+      "start": 1426,
+      "end": 1431,
+      "verdict": "covered",
+      "rows": ["v7.trans-whip-push-left", "v7.shape-dot-to-pill"],
+      "reason": "Two movements share this run, both now named. (1) The S11 foreground (3D pointer, capsule, label) starts its outgoing whip as a slow drift at f1426, not f1433: pointer template centre x 485 -> 483 / 481 / 479 / 475 / 471 px at f1425 / 1426 / 1429 / 1431 / 1434 / 1436 (score 0.995-0.998), the label ink and the capsule's left end the same (label centre 941 -> 939 / 937 / 934 px, left end 621.9 -> 620.4 / 618.3 / 615.3 px at f1425 / 1426 / 1429 / 1431), while the defocused background moves at most 0.25 px through f1433; the whip row starts at f1426 with 58 f (its fitted bezier already starts at f1425, delay -8 against the 2% window f1433-f1484) and the speed changes lose the hold f1425-f1433. (2) Critic round: the capsule keeps widening for 6 f after the third ellipsis dot (f1425): width 627.9 -> 633.9 / 636.9 / 637.7 px at f1425 / 1426 / 1429 / 1431, then 637.4-637.7 px to f1441, its right end running out 1249.9 -> 1254.3 -> 1255.2 px while the label ink stays 447 px wide (no zoom); the capsule width row (v7.shape-dot-to-pill) now runs to f1431 and the 3D line gives the rest size 637.7 x 125.8 px from f1431. The whip row's capsule numbers, first taken with a whole-capsule template that locks on the label, are now the edge-measured centre 935.9 -> 937.3 / 936.7 / 934.1 / 930.7 / 926.6 / 921.7 / 916.0 px, and T11's range in segments.json and cuts.json starts at f1426 (89 f) so the transition holds the movement the timeline gives it.",
+      "evidence": ["detail/gap_s11_f1429/sheet.jpg", "scratch/gap_review/gap_diff_s11_1414-1446.jpg", "type/gap-s11_f01425.png", "scratch/gap_s11_pointer_1414-1456.csv", "scratch/gap_s11_capsule_1414-1456.csv", "scratch/gap_review/gap_s11_bg_bottom_1414-1456.csv", "scratch/gap_review/gap_s11_bg_chips_1414-1486.csv", "scratch/fix_s11_capsule_left_1410-1450.csv", "scratch/fix_s11_capsule_right_1410-1450.csv", "scratch/fix_s11_label_ink_1410-1450.csv", "scratch/fix_s11_capsule_top_1410-1446.csv", "scratch/fix_s11_capsule_bottom_1410-1446.csv", "crops/crop_1196_405_100x140_01421-01436.jpg"]
+    },
+    {
+      "start": 3849,
+      "end": 3859,
+      "verdict": "covered",
+      "rows": ["v7.cam-push-in-blur"],
+      "reason": "The tail of the S31 push-in, which its row described (a long tail, at rest about f3861) but named only as f3795-f3846: with the 2D cursor box (x 800-980, y 440-680) and the speaker icon masked, ECC registers every picture to the still f3864 and gives per-picture scale steps x1.00103 / 1.00074 / 1.00063 / 1.00036 / 1.00030 / 1.00023 at f3849 / 3851 / 3854 / 3856 / 3859 / 3861, a smooth decay from x1.0057 at f3829 (fixed points 2283-2394, 852-989 px over f3826-f3854), still from f3864 (changed pixels 5858 -> 571 -> 0); the row now states 78 f (f3783-f3861: creep, 2% window, tail f3846-f3861) with these steps. Critic round: the first numbers (x1.0012 / 1.0011 / 1.0010 / 1.0004 / 1.0003 / 1.0002) came from an unmasked ECC, which the cursor's own one-picture jumps (f3834-f3843) and sharpening (edge gradient 440 -> 584 over f3849-f3854) bias; the cursor itself rides the tail within 1.4 px of the camera from f3844, now in the pointer-swap row. The label-based curve of the same push-in (curves/v7.cam-push-in-blur.i3.csv, ln scale +0.0010 / 0.0008 / 0.0005 / 0.0005 / 0.0002 / 0.0002 over the same pictures) agrees with the masked steps. Critic round 2: the pointer-swap row read f3841-f3844 as an 8 px rise into rest; with the camera taken out (this masked ECC applied to the cursor's rest spot) the cursor jumps by single pictures, 8-10 px low at f3834, 1-4 px high at f3839, 6-8 px low at f3841 and on its spot from f3844 (each range spans four trackers: templates ref f3864 / f3844 / f3841 and the dark-fill centroid), so f3841 is a one-picture dip from the height of f3839 and f3844 (raw template centre y 557 / 566 / 558 px); of the 21 px the cursor sits right of its final place at f3834, 18 px are the push-in's tail (the camera alone carries its spot that far) and 3 px its own offset, not a separate jump. The row, the S31 speed-change line and the technique index now say so.",
+      "evidence": ["detail/gap_s31_f3851/sheet.jpg", "scratch/gap_review/gap_diff_s31_3844-3866.jpg", "scratch/gap_review/gap_s31_ecc_3834-3870.csv", "scratch/fix_s31_tail_ecc_ref3864_cursormasked_3826-3870.csv", "scratch/fix_s31_tail_ecc_ref3864_nomask_3826-3870.csv", "scratch/fix_s31_cursor_tmpl_ref3864_3816-3870.csv", "scratch/fix_s31_cursor_sharpness_3826-3870.csv", "crops/crop_812_456_140x200_03834-03864.jpg", "curves/v7.cam-push-in-blur.i3.csv", "scratch/r4_s31_cursor_tmpl_ref3864_3826-3870.csv", "scratch/r4_s31_cursor_tmpl_ref3844_3826-3870.csv", "scratch/r4_s31_cursor_fill_t70_3826-3870.csv", "scratch/r4_s31_cursor_outline_t70_3826-3870.csv", "crops/crop_820_450_140x200_03830-03851.jpg", "crops/crop_826_458_60x70_03834-03846.jpg"]
+    },
+    {
+      "start": 3892,
+      "end": 3921,
+      "verdict": "footage",
+      "rows": [],
+      "reason": "Motion inside S32's full-frame footage plate (0-100% W x 0-100% H, no designed element over f3889-f4070): one continuous camera move with 32-43k changed pixels per picture (peak 42579 at f3921), no cut-sized jump (the cuts at f3889 / f4216 change 191k / 202k), change masks only on the filmed picture.",
+      "evidence": ["sheets/overview_03888-03933.jpg", "scratch/gap_review/gap_diff_s32_3916-3949.jpg", "scratch/gap_review/picture_diffs.csv"]
+    },
+    {
+      "start": 3925,
+      "end": 3941,
+      "verdict": "footage",
+      "rows": [],
+      "reason": "Same continuous footage move inside the full-frame plate (0-100% W x 0-100% H, no designed element): 43-49k changed pixels per picture (peak 49276 at f3941) spread over the whole filmed picture, no graphic and no cut.",
+      "evidence": ["sheets/overview_03888-03933.jpg", "sheets/overview_03936-03981.jpg", "scratch/gap_review/gap_diff_s32_3916-3949.jpg", "scratch/gap_review/picture_diffs.csv"]
+    },
+    {
+      "start": 3945,
+      "end": 3961,
+      "verdict": "footage",
+      "rows": [],
+      "reason": "Same footage move inside the full-frame plate (0-100% W x 0-100% H), now captured partly at 60 Hz (pictures 1-3 f apart): 45-50k changed pixels per picture (peak 49752 at f3945), all on the filmed picture.",
+      "evidence": ["sheets/overview_03936-03981.jpg", "scratch/gap_review/gap_diff_s32_3916-3949.jpg", "scratch/gap_review/picture_diffs.csv"]
+    },
+    {
+      "start": 3965,
+      "end": 4016,
+      "verdict": "footage",
+      "rows": [],
+      "reason": "Footage motion inside the full-frame plate (0-100% W x 0-100% H, no designed element): the camera move slows, changed pixels fall smoothly 45315 (f3965) -> 14857 (f4016) per picture with no jump, nothing graphic on overview_03936-03981 / overview_03984-04029.",
+      "evidence": ["sheets/overview_03936-03981.jpg", "sheets/overview_03984-04029.jpg", "scratch/gap_review/picture_diffs.csv"]
+    },
+    {
+      "start": 4020,
+      "end": 4066,
+      "verdict": "footage",
+      "rows": [],
+      "reason": "Footage motion inside the full-frame plate (0-100% W x 0-100% H) before the voice badge appears at f4071: 7.6-15.2k changed pixels per picture (peak 15166 at f4039), change masks only on the filmed picture.",
+      "evidence": ["sheets/overview_04032-04077.jpg", "scratch/gap_review/gap_diff_s32_4029-4069.jpg", "scratch/gap_review/picture_diffs.csv"]
+    },
+    {
+      "start": 4119,
+      "end": 4121,
+      "verdict": "footage",
+      "rows": [],
+      "reason": "Footage motion inside the full-frame plate: of the 9209 / 5854 changed pixels at f4119 / f4121, 0 fall in the voice badge box (x 770-850, y 705-785 px; silence dots static, disc mean abs difference 0.64 / 0.17 luma, 49 white pixels) and 0 in the caption box (x 600-1020, y 780-850 px; caption 1 holds at full strength f4091-f4140).",
+      "evidence": ["scratch/gap_review/gap_diff_s32_4112-4176.jpg", "crops/crop_700_690_220x170_04112-04176.jpg", "scratch/gap_review/gap_s32_regions_4110-4216.csv", "scratch/gap_review/s32_badge_bars_4069-4215.csv"]
+    },
+    {
+      "start": 4125,
+      "end": 4137,
+      "verdict": "footage",
+      "rows": [],
+      "reason": "Footage motion inside the full-frame plate: 5449 / 5245 / 4652 / 2700 / 2779 / 2794 changed pixels at f4125 / 4127 / 4130 / 4131 / 4134 / 4137, none in the badge box or the caption box (badge disc 0.0-1.9 luma mean abs difference, white pixels fixed at 49 = the silence dots; caption 1 static).",
+      "evidence": ["scratch/gap_review/gap_diff_s32_4112-4176.jpg", "crops/crop_700_690_220x170_04112-04176.jpg", "scratch/gap_review/gap_s32_regions_4110-4216.csv", "scratch/gap_review/s32_badge_bars_4069-4215.csv"]
+    },
+    {
+      "start": 4171,
+      "end": 4171,
+      "verdict": "covered",
+      "rows": ["v7.icon-voice-meter"],
+      "reason": "Besides footage motion (21972 of 23473 changed pixels outside the badge and caption boxes, 1275 on the footage inside the caption box around the static first caption word), the voice-badge level bars take a new value at f4171 (white pixels inside the disc 325 -> 404, tallest column 25 -> 34 px, disc mean abs difference 13.4 luma, 278 changed pixels in the badge box); the meter row described this audio-reactive change but named only f4080 and a few ranges, it now states f4080-f4215 to the cut with the measured bar (f4079-f4111, f4149-f4214) and dot (f4114-f4148) stretches.",
+      "evidence": ["scratch/gap_review/gap_diffcrop_s32_4164-4176.jpg", "crops/crop_700_690_220x170_04112-04176.jpg", "scratch/gap_review/s32_badge_bars_4069-4215.csv", "scratch/gap_review/gap_s32_regions_4110-4216.csv"]
+    },
+    {
+      "start": 4371,
+      "end": 4411,
+      "verdict": "footage",
+      "rows": [],
+      "reason": "Motion inside S35's dimmed full-frame footage plate (0-100% W x 0-100% H) under the static headline (x 18.1-81.8% W, y 48.7-51.6% H): 3.2-32.8k changed pixels per picture as the filmed camera starts moving; the headline does not change (ECC on its glyphs dx and dy within 0.08 px, scale 0.9986-1.0016, core glyph luma 246.6-247.7 over f4369-f4519) and no glyph appears in the change masks.",
+      "evidence": ["scratch/gap_review/gap_diff_s35_4369-4417.jpg", "crops/crop_280_425_260x70_04369-04519.jpg", "crops/crop_1080_425_260x70_04369-04519.jpg", "scratch/gap_review/gap_s35_headline_geometry_4369-4519.csv", "scratch/gap_review/s35_headline_static_4369-4519.csv"]
+    },
+    {
+      "start": 4415,
+      "end": 4466,
+      "verdict": "footage",
+      "rows": [],
+      "reason": "Same continuous footage camera move inside the dimmed full-frame plate (0-100% W x 0-100% H): 30.9-38.7k changed pixels per picture (peak 38690 at f4434), no cut-sized jump, the headline static (see f4371-f4411).",
+      "evidence": ["sheets/overview_04416-04461.jpg", "crops/crop_280_425_260x70_04369-04519.jpg", "crops/crop_1080_425_260x70_04369-04519.jpg", "scratch/gap_review/gap_s35_headline_geometry_4369-4519.csv"]
+    },
+    {
+      "start": 4470,
+      "end": 4481,
+      "verdict": "footage",
+      "rows": [],
+      "reason": "Footage camera move inside the dimmed full-frame plate (0-100% W x 0-100% H): 37.4-42.2k changed pixels per picture (peak 42213 at f4479), change masks only on the filmed picture, headline unchanged.",
+      "evidence": ["scratch/gap_review/gap_diff_s35_4470-4519.jpg", "scratch/gap_review/gap_s35_headline_geometry_4369-4519.csv"]
+    },
+    {
+      "start": 4485,
+      "end": 4501,
+      "verdict": "footage",
+      "rows": [],
+      "reason": "Footage camera move inside the dimmed full-frame plate (0-100% W x 0-100% H), partly captured at 60 Hz: 23.6-38.6k changed pixels per picture, falling, no designed element changes.",
+      "evidence": ["scratch/gap_review/gap_diff_s35_4470-4519.jpg", "scratch/gap_review/gap_s35_headline_geometry_4369-4519.csv"]
+    },
+    {
+      "start": 4505,
+      "end": 4509,
+      "verdict": "footage",
+      "rows": [],
+      "reason": "The footage move slowing inside the dimmed full-frame plate (0-100% W x 0-100% H): 18.2-20.6k changed pixels at f4505 / 4506 / 4509, all on the filmed picture.",
+      "evidence": ["scratch/gap_review/gap_diff_s35_4470-4519.jpg", "scratch/gap_review/gap_s35_headline_geometry_4369-4519.csv"]
+    },
+    {
+      "start": 4513,
+      "end": 4516,
+      "verdict": "footage",
+      "rows": [],
+      "reason": "Last pictures of the footage move inside the dimmed full-frame plate (0-100% W x 0-100% H): 15.8k / 12.7k / 9.4k changed pixels at f4513 / 4514 / 4516, then 0 at f4519 before the loop cut; headline unchanged.",
+      "evidence": ["scratch/gap_review/gap_diff_s35_4470-4519.jpg", "crops/crop_280_425_260x70_04369-04519.jpg", "scratch/gap_review/gap_s35_headline_geometry_4369-4519.csv"]
+    },
+    {
+      "start": 4527,
+      "end": 4527,
+      "verdict": "covered",
+      "rows": ["v7.ui-label-pop-in"],
+      "reason": "The 8 changed pixels at the frame centre (49.7-50.3% W, 50.0-50.6% H) are the label's seed dash appearing (13 x 7 px, luma 210), which S36's label row describes from f4527; none of S36's rows counted because its table header carried a parenthesis after the word Movements, which the scan does not read: the header is now plain and the note sits on its own line.",
+      "evidence": ["detail/gap_s36_f4532/sheet.jpg", "scratch/gap_review/picture_diffs.csv"]
+    },
+    {
+      "start": 4532,
+      "end": 4532,
+      "verdict": "covered",
+      "rows": ["v7.ui-label-pop-in"],
+      "reason": "217 changed pixels at 48.3-51.9% W, 48.9-51.9% H: the seed dash grows into the 56 x 27 px bar, the f4532 pose of S36's label row, counted once the block header was fixed.",
+      "evidence": ["detail/gap_s36_f4532/sheet.jpg", "scratch/gap_review/picture_diffs.csv"]
+    },
+    {
+      "start": 4537,
+      "end": 4569,
+      "verdict": "covered",
+      "rows": ["v7.ui-label-pop-in", "v7.ui-label-fill-darken", "v7.bg-halftone-ring-burst", "v7.ui-corner-handles", "v7.icon-stroke-draw-on", "v7.text-type-on", "v7.ui-label-widen-overshoot", "v7.layout-slide-make-room", "v7.text-scramble-decode", "v7.shape-arrow-drop-in", "v7.shape-pixel-pair-converge", "v7.layout-rise-make-room"],
+      "reason": "The loop replay of S01 f2-f34 (every picture within 0.24-0.43 luma of the S01 picture 4535 f earlier): S36's pop, fill and ring rows (begun in the frames the recording missed) and its corner-handle, brand-mark and first-letter rows (S01 f1-f9 again) cover f4537-f4547, and the single see-S01 row was replaced by replay rows with their +4535 frames (widen f4546-f4591, slide apart f4551-f4564, word 1 f4554-f4581, arrow f4551-f4579, pixel pair f4551-f4571, fill stage 2 f4564-f4579, line-1 rise f4569-f4586); peak 50591 px at f4542 is the box pop. Critic round 2: the replay mapping (f4537 / 4539 / 4542 / 4544 = S01 f1 / f4 / f6 / f9) means the first play shows those events too: S01 now has a brand-mark draw-on row (f4-f9: path 222 -> 309 -> 349 px, stroke 4 -> 8 -> 11 px, 12 px by f11; scratch/r4_s01_brandmark_stroke_in_t15_1-5.csv, scratch/r4_s01_brandmark_stroke_t15_6-16.csv) and its word-2 type-on row starts with the faint first letter at f1 (215 against a 207 box fill); the S36 handle, brand-mark and first-letter rows say as S01 instead of claiming S01 lacks them (the handle row had said S01 lists them from f16; S01 lists them from f1), and the technique index lists v7.icon-stroke-draw-on in S01 and S36 from f4-f9 without the de-blur UNCERTAIN: the thin first stroke is sharp and the stroke gets longer along its path.",
+      "evidence": ["detail/gap_s36_f4532/sheet.jpg", "scratch/gap_review/gap_s36_s37_replay.csv", "crops/crop_600_400_260x130_00001-00011.jpg", "crops/crop_680_420_160x90_00000-00014.jpg", "crops/crop_760_420_140x90_00000-00005.jpg", "crops/crop_700_400_220x120_04522-04549.jpg", "scratch/r4_s01_brandmark_stroke_t15_6-16.csv", "scratch/r4_s36_brandmark_stroke_t15_4542-4551.csv", "scratch/r4_s01_word2_letter1_luma_0-6.csv", "scratch/r4_s36_word2_letter1_luma_4535-4541.csv", "scratch/r4_tools/mark_stroke.py"]
+    },
+    {
+      "start": 4573,
+      "end": 4624,
+      "verdict": "covered",
+      "rows": ["v7.ui-label-widen-overshoot", "v7.layout-rise-make-room", "v7.ui-corner-handles", "v7.text-scramble-decode", "v7.ui-label-fill-darken", "v7.shape-arrow-drop-in", "v7.bg-halftone-ring-burst", "v7.icon-glow-in", "v7.text-type-on", "v7.text-glyph-slide-in", "v7.icon-mark-fade-in", "v7.particle-mascot-chain-arc", "v7.cam-push-in-accelerating"],
+      "reason": "The replay of S01 f38-f89 (0.14-0.25 luma per picture against S01 + 4535): box height f4571-f4591, line-1 rise to f4586, handle exit f4591-f4601, halftone ring to f4591, app icon f4584-f4599, line 2 f4584-f4604, chevrons f4586-f4616, mark fade f4612-f4621, chain from f4616 and push-in from f4624, now each a S36 row; peak 23994 px at f4573 is the ring band with the growing box.",
+      "evidence": ["detail/dense_04569-04627_00.jpg", "scratch/gap_review/gap_s36_s37_replay.csv"]
+    },
+    {
+      "start": 4628,
+      "end": 4677,
+      "verdict": "covered",
+      "rows": ["v7.particle-mascot-chain-arc", "v7.cam-push-in-accelerating", "v7.fx-ripple-invert", "v7.particle-shard-burst"],
+      "reason": "The replay of S01 f93-f142 (0.14-0.43 luma per picture against S01 + 4535): mascot chain f4616-f4689, push-in, punch and drift f4624-f4691, inverting rings f4664-f4686 and shards f4674-f4694, now S36 rows; peak 185488 px at f4677 is the luminance-inverting ring sweeping the frame.",
+      "evidence": ["detail/gap_s36_f4652/sheet.jpg", "scratch/gap_review/gap_s36_s37_replay.csv"]
+    },
+    {
+      "start": 4707,
+      "end": 4764,
+      "verdict": "covered",
+      "rows": ["v7.cam-zoom-out-settle-in", "v7.ui-list-stagger-in", "v7.cam-pan-up-zoom"],
+      "reason": "The replay of S02 f172-f229 (0.34-0.37 luma per picture against S02 + 4535): menu settle from f4704, rows first seen at f4709 / 4712 / 4714 / 4717 / 4722, the settle tail f4734-f4742 (header ink left edge 389 -> 393 px, ink top 157 -> 158 -> 159 -> 157 px at f4734 / 4737 / 4739 / 4742, half-level top edge 157.5 / 158.7 / 159.2 / 157.7 px) and the pan from f4742 (ink top 159 at f4739, 157 at f4742, 40 px by f4764) were prose under a Movements line the scan cannot read; they are now a Movements table with these frames, and the hold it claimed at f4734-f4741 is the settle tail. Critic round: the settle row had three ink tops for its four frames; it now gives four. Critic round 2: segments.json's S37 summary still said hold before the pan-up; it now says the slow tail runs straight into the pan-up (no hold), and the S37 block has its own Speed changes line (tail f4734-f4742, the pan speeding up to 22 px per picture at f4749-f4754 and slowing until the recording ends; scratch/r4_s37_header_bbox_4726-4765.csv, the same numbers as S02 f199-f229 in scratch/r4_s02_header_bbox_191-230.csv).",
+      "evidence": ["detail/gap_s37_f4734/sheet.jpg", "scratch/gap_s37_header_bbox_4726-4765.csv", "scratch/gap_review/gap_s36_s37_replay.csv", "scratch/fix_s37_header_T_top_4729-4749.csv", "crops/crop_370_120_420x90_04729-04749.jpg", "scratch/r4_s37_header_bbox_4726-4765.csv", "scratch/r4_s02_header_bbox_191-230.csv"]
+    }
+  ],
+  "notes": [
+    "Critic round (2026-11-02), 7 issues, all confirmed on the pictures and fixed: S11 capsule catch-up f1425-f1431 (width row to f1431, whip row capsule numbers from both edges, rest size in the 3D line); T11 range f1426-f1514 in segments.json and cuts.json; S03 scroll row's leftover hold removed; S03 creep fitted (curves/v7.cam-slow-push-creep.csv, index row names it); S31 tail steps re-measured with the cursor masked; S02 / S37 settle rows give four ink tops for four frames; S31 pointer-swap row (outside the reviewed runs): the 2D cursor is soft and double-edged to f3840, sharp from f3841, rises 8 px on its own f3841-f3844 and rides the push-in tail to f3861.",
+    "Measurement scripts for this round: scratch/critic_fix_tools/ecc_reg.py (masked ECC to one reference picture) and scratch/critic_fix_tools/cursor_sharpness.py; every other CSV named fix_*.csv comes from track.py.",
+    "Critic round 2 (2026-11-03), 4 issues, each checked on the pictures: (1) S03: the push-in row and curve ran to x1.81 and the creep row stacked x1.0115 on top: the push-in now ends at x1.79 on f331 (curve refitted), the creep carries it to x1.81; (2) S31: f3841 is a one-picture dip of the 2D cursor, not a rise into rest: row, speed line and index rewritten with the camera taken out; the critic's 15 px right jump at f3834 is the push-in's tail carrying the cursor (18 px), recorded as camera motion plus the cursor's own 8-10 px dip; (3) S01 lacked the brand-mark draw-on (f4-f9) and word 2's faint first letter (f1-f3) that S36 replays: added to S01, the S36 rows and the index corrected; (4) S37: summary and Speed changes line fixed. Measurements of this round: track.py CSVs named r4_*.csv and scratch/r4_tools/mark_stroke.py (brand-mark path length and stroke width)."
+  ]
+}

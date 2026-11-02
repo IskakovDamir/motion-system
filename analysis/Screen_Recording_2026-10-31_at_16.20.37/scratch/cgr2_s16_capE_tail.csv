@@ -1,0 +1,15 @@
+# caption E last line: template box 240x56 px at (400, 250) on f2340, drift -4.707 / -0.511 px per frame (template track f2327-f2352); band = the whole box; signed step of Gaussian(3) luma since the previous captured picture, mean over a band that follows the line drift (template box of the line, union of its positions on the two pictures), minus the same step in a control band of the same size 10 px below it; cum counted from f2365 (the line exits from f2352; f2357-f2362 carry a footage change in the control band); from f2387 the footage camera move dominates; final level = mean cum over f2382/f2385 = -28.30; done = cum / final
+frame,prev_frame,band_x0,band_y0,band_x1,band_y1,band_step,control_step,step,cum,done
+2362,2360,296,239,546,296,-3.101,4.771,-7.871,0.000,0.000
+2365,2362,282,237,536,295,-9.297,-0.838,-8.458,-8.458,0.299
+2367,2365,273,236,522,293,-8.134,-1.138,-6.996,-15.455,0.546
+2370,2367,259,235,513,292,-3.814,-0.989,-2.825,-18.280,0.646
+2372,2370,249,234,499,291,-3.593,-0.809,-2.784,-21.064,0.744
+2375,2372,235,232,489,290,-4.250,-1.343,-2.907,-23.971,0.847
+2378,2375,221,231,475,288,-2.291,-0.658,-1.633,-25.604,0.905
+2380,2378,212,230,461,287,-2.587,-0.191,-2.396,-28.000,0.989
+2382,2380,202,229,452,286,0.046,0.214,-0.168,-28.167,0.995
+2385,2382,188,227,442,285,0.078,0.351,-0.273,-28.441,1.005
+2387,2385,179,226,428,283,-0.894,0.818,-1.712,-30.152,1.065
+2390,2387,165,224,419,282,-0.078,1.844,-1.922,-32.074,1.133
+2392,2390,155,223,405,280,0.379,0.864,-0.485,-32.559,1.150

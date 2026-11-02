@@ -1,0 +1,360 @@
+{
+ "gaps": [
+  {
+   "start": 206,
+   "end": 216,
+   "verdict": "covered",
+   "rows": [
+    "v8.footage-card-zoom-to-full"
+   ],
+   "reason": "f206 is the footage card's last zoom step: the card sits 0.2% H low, so white page rows stay above its top edge 4 (f202) -> 1 (f204) -> 0 (f206) (scratch/gaps_S03_card_edges_196-210.csv) while the card row named only f174-f204; the row now states full height at f206 (f174-f206); f208-f216 are camera motion inside the footage and come back as the new run f208-f216. Second critic follow-up: the other places that stated the card's full-frame point still said f200 or f202 (the S02 card row, S02's transition-out, the S03 layers line, the S03 card row's duration, S03 speed changes and sound sync, the technique index and the T02 'shared' text in cuts.json); they now say 99.1% W at f200 (the zoom's 2% point and T02's end; white margins of 8 / 4 / 5 / 7 px at the top / bottom / left / right), full width at f202 (4 white rows left at the top) and full frame at f206 (scratch/gaps_S03_card_edges_196-210.csv, scratch/v8c1_card_scale_174-206.csv, detail/dense_00198-00206_00.jpg); S03 sound sync adds full frame f206 = beat f203 +3. T02 keeps its window f164-f200, which ends at the zoom's 2% point.",
+   "evidence": [
+    "crops/crop_0_0_1622x24_00200-00208.jpg",
+    "detail/gap_206-230/sheet.jpg",
+    "detail/dense_00204-00232_00.jpg",
+    "scratch/gaps_S03_card_edges_196-210.csv",
+    "detail/dense_00198-00206_00.jpg"
+   ]
+  },
+  {
+   "start": 220,
+   "end": 226,
+   "verdict": "footage",
+   "rows": [],
+   "reason": "No graphic layer on screen (card full frame from f206, pill first visible at f230, bottom rows dark at f226-f228) and the footage plate fills the whole picture (0-100% W x 0-100% H) from f206 to f511; the pictures differ by a camera move inside the footage: ORB zoom x1.011-1.016 and pan -5.0 to -5.6 px per picture (scratch/gaps_S03_globalsim_194-232.csv), with regional zooms disagreeing (f216-f222 top x1.040 vs right x1.014; f222-f230 x1.079 vs x1.023: parallax, scratch/gaps_S03_regionsim_204-230.csv).",
+   "evidence": [
+    "detail/dense_00204-00232_00.jpg",
+    "detail/gap_206-230/sheet.jpg"
+   ]
+  },
+  {
+   "start": 230,
+   "end": 230,
+   "verdict": "covered",
+   "rows": [
+    "v8.ui-prompt-pill-rise-in"
+   ],
+   "reason": "f230 is the prompt pill's first picture: only its blurred top edge in the bottom rows (first row above luma 150 at y 910 = 99.1% H, row means 181-249 in the bottom 6 rows; top at 93.0% H by f233; scratch/gaps_S03_pill_entry_top_226-240.csv), while the rise-in row started at <=233; the row now starts at f230. Critic follow-up (pill values kept by this edit): re-measured from the pill's top and bottom 50% edges in 4 glyph-free column bands, cross-checked on the black mic disc's edges (scratch/fix_S03_pill_centre_226-300.csv): the centre is 71.1% H at f240 (not 70.6%), 68.6% at f244 and 68.46% H at the peak f247 (628.5 px, 18.0 px = 2.0% H above the rest 646.4 px = 70.4% H, not 2.1%), 70.4% H at f252 (not 70.5%), and 89.9% H at f234 by the two edges, 90.1% H by the top edge + half height, under 44-49 px of vertical blur whose bottom ramp the frame edge cuts (the old 89.2% was a light-area centroid with a +7 px offset); the rise-in row, the S03 element line, the anticipation row's rest value and the technique index now carry these values, and curves/v8.ui-prompt-pill-rise-in was re-fitted on this series: bezier(0.000, 1.200, 0.732, 1.176) D=16, rmse 0.045 (was bezier(0.000, 1.203, 0.702, 1.192), rmse 0.051). The run itself (f230, the pill's first picture) stays covered.",
+   "evidence": [
+    "crops/crop_100_858_1200x60_00228-00234.jpg",
+    "detail/gap_206-230/sheet.jpg",
+    "scratch/fix_S03_pill_centre_226-300.csv",
+    "crops/crop_1070_540_120x200_00240-00258.jpg"
+   ]
+  },
+  {
+   "start": 266,
+   "end": 276,
+   "verdict": "covered",
+   "rows": [
+    "v8.text-type-on-fade-trail",
+    "v8.ui-prompt-pill-rise-in"
+   ],
+   "reason": "Inside the pill (eroded 4 px), f266 is a step of sentence 1's trail (the final period, light grey at f264, darkens half-way: darkest pixel 118 -> 63, mean over its ink pixels 155.2 -> 96.8, scratch/fix_S03_trail_glyphs_256-352.csv; it holds that mid grey until sentence 2's first character arrives at f324, inside the sentence 2 row, and takes it to 39 / 79.0; 134 px over 12 levels, max 86) and f268-f272 the pill's damped settle (mic button centre 646.08 -> 646.19 -> 646.30 -> 646.42 px, rest from f272; 274-922 px of glyph-edge change, max 28-35) (scratch/gaps_S03_pillmask_252-430.csv, scratch/gaps_S03_pill_micbutton_y_240-386.csv, scratch/fix_S03_trail_glyphs_256-352.csv); the rows now name f247-f266 and f252-f272; f275-f276 (0 px in the pill) are footage and come back as the new run f275-f276. Critic follow-up: the settle values above are confirmed by the pill's own top and bottom edges, 646.13 / 646.21 / 646.34 / 646.43 px at f266 / f268 / f270 / f272 (mic disc edges 646.07 / 646.19 / 646.30 / 646.40), with 646.4 / 648.8 / 646.1 px at f252 / f256 / f264 (scratch/fix_S03_pill_centre_226-300.csv); the mic-button centroid CSV (scratch/gaps_S03_pill_micbutton_y_240-386.csv) clips the top of the button disc at f244-f248 (its bbox stops at y0 600 while the disc top, centre minus the 41.5 px radius, is at about 587-593 px; cy reads 633.1 / 632.2 px at f244 / f247 against 630.0 / 628.5 px from the disc edges), so the rise-in row now takes its values from scratch/fix_S03_pill_centre_226-300.csv; overshoot 2.0% H (18.0 px), f240 71.1% H, f252 70.4% H. Second critic follow-up (raised on sentence 2's period; the same box fault is here): the earlier period box (x 626-639) began at the last letter's right stroke (x 626-629), so its ink figures (59.8 -> 66.5, 'unchanged after') mixed that letter, already dark at f264, with the period and missed the period's last step at f324; the figures above are on each glyph's own ink mask, and the S03 sentence 1 row, its typography row, the S03 speed changes and the technique index now say that the period stays mid grey until f324 (crops/crop_560_615_120x60_00260-00270.jpg, crops/crop_560_615_120x60_00318-00328.jpg). The run stays covered.",
+   "evidence": [
+    "scratch/gap_review/S03_pill_diff_262-276.jpg",
+    "scratch/gap_review/S03_text1_tail_diff_258-270.jpg",
+    "detail/dense_00258-00276_00.jpg",
+    "scratch/fix_S03_pill_centre_226-300.csv",
+    "scratch/fix_S03_trail_glyphs_256-352.csv",
+    "crops/crop_560_615_120x60_00260-00270.jpg"
+   ]
+  },
+  {
+   "start": 280,
+   "end": 286,
+   "verdict": "footage",
+   "rows": [],
+   "reason": "The prompt pill is unchanged (at most 3 px over 12 levels (max 14, compression flicker at f284) inside the eroded pill shape on every picture, mic button centre 646.38-646.42 px; scratch/gaps_S03_pillmask_252-430.csv, scratch/gaps_S03_pill_micbutton_y_240-386.csv) and the footage plate fills the whole picture (0-100% W x 0-100% H) from f206 to f511; the change is the camera move inside the footage around the pill: ORB zoom x1.006-1.008, pan -4.1 to -6.0 px per picture (scratch/gaps_S03_globalsim_266-386.csv).",
+   "evidence": [
+    "detail/dense_00274-00322_00.jpg"
+   ]
+  },
+  {
+   "start": 290,
+   "end": 296,
+   "verdict": "footage",
+   "rows": [],
+   "reason": "The prompt pill is unchanged (0 px over 12 levels (max 3) inside the eroded pill shape on every picture, mic button centre 646.38-646.42 px; scratch/gaps_S03_pillmask_252-430.csv, scratch/gaps_S03_pill_micbutton_y_240-386.csv) and the footage plate fills the whole picture (0-100% W x 0-100% H) from f206 to f511; the change is the camera move inside the footage around the pill: ORB zoom x1.007-1.016, pan -3.4 to -6.8 px per picture (scratch/gaps_S03_globalsim_266-386.csv).",
+   "evidence": [
+    "detail/dense_00274-00322_00.jpg"
+   ]
+  },
+  {
+   "start": 300,
+   "end": 306,
+   "verdict": "footage",
+   "rows": [],
+   "reason": "The prompt pill is unchanged (0 px over 12 levels (max 4) inside the eroded pill shape on every picture, mic button centre 646.38-646.42 px; scratch/gaps_S03_pillmask_252-430.csv, scratch/gaps_S03_pill_micbutton_y_240-386.csv) and the footage plate fills the whole picture (0-100% W x 0-100% H) from f206 to f511; the change is the camera move inside the footage around the pill: ORB zoom x1.004-1.008, pan -3.3 to -4.8 px per picture (scratch/gaps_S03_globalsim_266-386.csv).",
+   "evidence": [
+    "detail/dense_00274-00322_00.jpg"
+   ]
+  },
+  {
+   "start": 310,
+   "end": 320,
+   "verdict": "footage",
+   "rows": [],
+   "reason": "The prompt pill is unchanged (0 px over 12 levels (max 3) inside the eroded pill shape on every picture, mic button centre 646.38-646.42 px; scratch/gaps_S03_pillmask_252-430.csv, scratch/gaps_S03_pill_micbutton_y_240-386.csv) and the footage plate fills the whole picture (0-100% W x 0-100% H) from f206 to f511; the change is the camera move inside the footage around the pill: ORB zoom x1.006-1.022, pan +3.7 to -6.8 px per picture (scratch/gaps_S03_globalsim_266-386.csv).",
+   "evidence": [
+    "detail/dense_00274-00322_00.jpg"
+   ]
+  },
+  {
+   "start": 342,
+   "end": 342,
+   "verdict": "covered",
+   "rows": [
+    "v8.text-type-on-fade-trail"
+   ],
+   "reason": "First step of sentence 2's trail: the last letter goes from light grey to dark (darkest pixel 139 at f340 -> 33 at f342, mean over its ink pixels 163.8 -> 73.7) and the letter before it finishes darkening (mean 88.4 -> 71.8), while the final period darkens only half-way (darkest pixel 143 -> 90, mean 164.9 -> 121.6) (each glyph on its own ink mask, scratch/fix_S03_trail_glyphs_256-352.csv); 537 px over 12 levels (max 133) in x 840-982 px of the text line (scratch/gaps_S03_pillmask_252-430.csv); the type-on row named f322-f340 and now names f322-f346; the rest of the picture is footage. Second critic follow-up: the earlier figures (period darkest pixel 141 -> 39, box ink 36.1 -> 57.7) came from a box (x 970-982) that began at the last letter's right stroke (x 970-972); the 39 was that stroke, light grey with the rest of the letter at f340, so on the period alone the darkening splits into half at f342 and the rest at f346 (crops/crop_900_615_120x60_00337-00349.jpg). The verdict stays covered; the sentence 2 row and its typography row now give these values.",
+   "evidence": [
+    "scratch/gap_review/S03_text2_tail_diff_336-350.jpg",
+    "sheets/overview_00336-00381.jpg",
+    "scratch/fix_S03_trail_glyphs_256-352.csv",
+    "crops/crop_900_615_120x60_00337-00349.jpg"
+   ]
+  },
+  {
+   "start": 346,
+   "end": 346,
+   "verdict": "covered",
+   "rows": [
+    "v8.text-type-on-fade-trail"
+   ],
+   "reason": "Second step of sentence 2's trail: the final period goes from half-dark to dark (darkest pixel 90 -> 38, mean over its ink pixels 121.6 -> 77.9; 32 px over 12 levels, max 53, x 976-982 px), unchanged after (f347-f352) (scratch/fix_S03_trail_glyphs_256-352.csv, scratch/gaps_S03_pillmask_252-430.csv); covered by the type-on row's new range f322-f346. Second critic follow-up: the earlier box-ink figures (57.7 -> 64.5) were taken on a box that included the last letter's right stroke (x 970-972); the values above are on the period's own ink mask.",
+   "evidence": [
+    "scratch/gap_review/S03_text2_tail_diff_336-350.jpg",
+    "sheets/overview_00336-00381.jpg",
+    "scratch/fix_S03_trail_glyphs_256-352.csv",
+    "crops/crop_900_615_120x60_00337-00349.jpg"
+   ]
+  },
+  {
+   "start": 350,
+   "end": 356,
+   "verdict": "footage",
+   "rows": [],
+   "reason": "The prompt pill is unchanged (at most 1 px over 12 levels (max 13) inside the eroded pill shape, mic button centre 646.367-646.368 px until the press at f387; scratch/gaps_S03_pillmask_252-430.csv, scratch/gaps_S03_pill_micbutton_y_240-386.csv) and the footage plate fills the whole picture (0-100% W x 0-100% H) from f206 to f511; the change is the footage camera tilting down inside the plate: ORB content moving up 3.4-23.5 px per picture with zoom x1.021-1.030 (scratch/gaps_S03_globalsim_266-386.csv; cut candidates here were already rejected as camera moves).",
+   "evidence": [
+    "detail/dense_00348-00386_00.jpg",
+    "sheets/overview_00336-00381.jpg"
+   ]
+  },
+  {
+   "start": 360,
+   "end": 366,
+   "verdict": "footage",
+   "rows": [],
+   "reason": "The prompt pill is unchanged (0 px over 12 levels (max 12) inside the eroded pill shape, mic button centre 646.367-646.368 px until the press at f387; scratch/gaps_S03_pillmask_252-430.csv, scratch/gaps_S03_pill_micbutton_y_240-386.csv) and the footage plate fills the whole picture (0-100% W x 0-100% H) from f206 to f511; the change is the footage camera tilting down inside the plate: ORB content moving up 11.9-15.0 px per picture, zoom x1.010-1.019 (scratch/gaps_S03_globalsim_266-386.csv; cut candidates here were already rejected as camera moves).",
+   "evidence": [
+    "detail/dense_00348-00386_00.jpg",
+    "sheets/overview_00336-00381.jpg"
+   ]
+  },
+  {
+   "start": 371,
+   "end": 376,
+   "verdict": "footage",
+   "rows": [],
+   "reason": "The prompt pill is unchanged (0 px over 12 levels (max 8) inside the eroded pill shape, mic button centre 646.367-646.368 px until the press at f387; scratch/gaps_S03_pillmask_252-430.csv, scratch/gaps_S03_pill_micbutton_y_240-386.csv) and the footage plate fills the whole picture (0-100% W x 0-100% H) from f206 to f511; the change is the footage camera tilting down inside the plate: ORB content moving up 6.9-22.1 px per picture, zoom x1.000-1.043 (scratch/gaps_S03_globalsim_266-386.csv; cut candidates here were already rejected as camera moves).",
+   "evidence": [
+    "detail/dense_00348-00386_00.jpg",
+    "sheets/overview_00336-00381.jpg"
+   ]
+  },
+  {
+   "start": 380,
+   "end": 384,
+   "verdict": "footage",
+   "rows": [],
+   "reason": "The prompt pill is unchanged (0 px over 12 levels (max 11) inside the eroded pill shape, mic button centre 646.367-646.368 px until the press at f387; scratch/gaps_S03_pillmask_252-430.csv, scratch/gaps_S03_pill_micbutton_y_240-386.csv) and the footage plate fills the whole picture (0-100% W x 0-100% H) from f206 to f511; the change is the footage camera tilting down inside the plate: ORB content moving up 14.6-23.1 px per picture, zoom x1.009-1.016 (scratch/gaps_S03_globalsim_266-386.csv; cut candidates here were already rejected as camera moves).",
+   "evidence": [
+    "detail/dense_00348-00386_00.jpg",
+    "sheets/overview_00336-00381.jpg"
+   ]
+  },
+  {
+   "start": 424,
+   "end": 426,
+   "verdict": "covered",
+   "rows": [
+    "v8.fx-pixel-smear-sweep"
+   ],
+   "reason": "f424 is the pixel smear's last fade step: darkening of the pill background against the clean pill f429, 99th percentile, 12 (f422) -> 5 (f424) -> 0 levels (f426), 399 px over 12 levels at full res in x 635-740 px (scratch/gaps_S03_smear_tail_energy_384-430.csv, scratch/gaps_S03_pillmask_252-430.csv); the smear row already said gone f424 but named f396-f422, now f396-f424; f426 (7 px of glyph-edge flicker in the pill, max 14) is footage and comes back as the new run f426.",
+   "evidence": [
+    "scratch/gap_review/S03_pill_smear_tail_diff_418-429.jpg",
+    "detail/dense_00416-00430_00.jpg"
+   ]
+  },
+  {
+   "start": 448,
+   "end": 466,
+   "verdict": "covered",
+   "rows": [
+    "v8.ui-pill-anticipate-drop-out"
+   ],
+   "reason": "f448-f452 are the pill's drop out through the bottom edge: white pill rows 736-855 px (f446) -> 843-917 (f448) -> 901-917 (f450) -> none (f452) (scratch/gaps_S03_pill_dropout_rows_438-458.csv), while the drop row (dur 6 + 4) named f440-f446; it now names f440-f452; f454-f466 are footage only and come back as the new run f454-f466.",
+   "evidence": [
+    "detail/dense_00444-00511_00.jpg"
+   ]
+  },
+  {
+   "start": 470,
+   "end": 476,
+   "verdict": "footage",
+   "rows": [],
+   "reason": "No designed element after the pill leaves (f452) and the footage plate fills the whole picture (0-100% W x 0-100% H) from f206 to f511; the change is camera motion inside the footage, continuous by the fixed-ROI phase correlation (x 0-400, y 100-800): shifts +19.6/+0.2 (f470, response 0.29), -3.8/-1.2 (f473), -3.8/-1.4 (f474), -6.1/-4.0 px (f476, response 0.70) (scratch/v8c1_footage_tail_phasecorr_462-510.csv, checked against the dense sheet).",
+   "evidence": [
+    "detail/dense_00444-00511_00.jpg"
+   ]
+  },
+  {
+   "start": 480,
+   "end": 486,
+   "verdict": "footage",
+   "rows": [],
+   "reason": "No designed element after the pill leaves (f452) and the footage plate fills the whole picture (0-100% W x 0-100% H) from f206 to f511; the change is camera motion inside the footage, continuous by the fixed-ROI phase correlation (x 0-400, y 100-800): shifts -2.0 to -2.9 / -3.5 to -4.7 px, responses 0.70-0.84 (scratch/v8c1_footage_tail_phasecorr_462-510.csv, checked against the dense sheet).",
+   "evidence": [
+    "detail/dense_00444-00511_00.jpg"
+   ]
+  },
+  {
+   "start": 490,
+   "end": 496,
+   "verdict": "footage",
+   "rows": [],
+   "reason": "No designed element after the pill leaves (f452) and the footage plate fills the whole picture (0-100% W x 0-100% H) from f206 to f511; the change is camera motion inside the footage, continuous by the fixed-ROI phase correlation (x 0-400, y 100-800): shifts -1.9 to -2.5 / -5.7 to -7.3 px, responses 0.64-0.86 (scratch/v8c1_footage_tail_phasecorr_462-510.csv, checked against the dense sheet).",
+   "evidence": [
+    "detail/dense_00444-00511_00.jpg"
+   ]
+  },
+  {
+   "start": 500,
+   "end": 506,
+   "verdict": "footage",
+   "rows": [],
+   "reason": "No designed element after the pill leaves (f452) and the footage plate fills the whole picture (0-100% W x 0-100% H) from f206 to f511; the change is camera motion inside the footage, continuous by the fixed-ROI phase correlation (x 0-400, y 100-800): shifts -2.4 to -3.1 / -9.1 to -10.0 px, responses 0.68-0.74 (scratch/v8c1_footage_tail_phasecorr_462-510.csv, checked against the dense sheet).",
+   "evidence": [
+    "detail/dense_00444-00511_00.jpg"
+   ]
+  },
+  {
+   "start": 510,
+   "end": 510,
+   "verdict": "footage",
+   "rows": [],
+   "reason": "No designed element after the pill leaves (f452) and the footage plate fills the whole picture (0-100% W x 0-100% H) from f206 to f511; the change is camera motion inside the footage, continuous by the fixed-ROI phase correlation (x 0-400, y 100-800): shifts -2.6/-11.1 px, response 0.69 (scratch/v8c1_footage_tail_phasecorr_462-510.csv, checked against the dense sheet).",
+   "evidence": [
+    "detail/dense_00444-00511_00.jpg"
+   ]
+  },
+  {
+   "start": 1860,
+   "end": 1868,
+   "verdict": "covered",
+   "rows": [
+    "v8.trans-whip-down"
+   ],
+   "reason": "The landing post card's last 16 px after the whip's 2% point, inside the card's bbox (x 25.3-74.5% W): bottom edge 806.2 (f1858) -> 810.9 (f1860) -> 814.3 -> 817.1 -> 818.9 -> 820.3 px (f1868) -> 822.3 px at rest (f1876), 4.7 -> 1.4 px per picture in the run (scratch/gaps_S14_card_bottom_1852-1884.csv, matching scratch/v8c3_reel_offset_1829-1924.csv); the landing row named f1829-f1858 and now f1829-f1876, the hold row starts at f1876. Critic follow-up: the hold is one still picture, not about 5 f. The bottom edge reaches rest at f1876 (822.3 px), and the left edge, steady within 0.05 px over f1857-f1876 (the right edge drifting 0.1 px there), moves left with the right edge from the next picture: left 410.80 -> 410.71 -> 410.62 -> 410.32 px, right 1205.82 -> 1205.76 -> 1205.60 -> 1205.32 px at f1876 / f1878 / f1880 / f1882 (scratch/fix_S14_card_left_y450-700_1856-1900.csv, scratch/fix_S14_card_right_y450-700_1856-1900.csv; against f1876, the mean absolute difference in the card's left-edge columns (x 408-414, y 450-700) is 1.9 at f1874 and 6.2 at f1878 (12.9 at f1880) while the card interior beside it changes alike at both (6.0 / 5.4 levels, the landing's last vertical step and then the creep), so the edge itself moves at f1878 and not at f1874; scratch/gap_review/S14_card_edge_diff_vs_f1876_1868-1886.png shows this difference x6 for the left-edge strip x 395-430 and the right-edge strip x 1185-1220). The hold row is now f1876-f1877 (2 f), the whip-left row starts at f1878 (sub-pixel creep) with the centre 808.3 px at f1876 (it said f1880, where the hold row had 807.7 px), and the S14 speed changes, sound sync, segments.json summary, technique index and the note of curves/v8.trans-whip-left.i2 say the same. Second critic follow-up: the centre first written here (807.9 px at f1876) came from the coarse scratch/v8c3_reel_card_x_1840-1926.csv, whose right edge drifts 1206.0 -> 1205.0 px over f1850-f1876 while the card is still (sub-pixel 1205.96 -> 1205.82), a false -0.45 px on the centre; between the 50% edges in the band y 450-700 the centre is 808.3 px at f1876 (scratch/fix_S14_card_centre_y450-700_1840-1926.csv, which reproduces both fix_S14 edge files to 0.01 px). curves/v8.trans-whip-left.i2 had been fitted on that coarse series (from-value 808.10 px, inside the drift), so it was re-fitted on the edge-measured centre: bezier(0.706, 0.041, 0.861, 0.264) D=43 (built start f1881), rmse 0.0060 (was bezier(0.714, 0.031, 0.865, 0.251) D=45, rmse 0.0091); its 2% point moves from f1888 to f1890 (1.98% at f1890, 1.41% at f1888) and the measured ease-in from 36 to 34 f. The whip-left row (808.3 -> 646.9 px, per-picture steps 0.8 / 2.0 / 4.1 / 7.5 / 15.3 / 27.6 / 36.1 px from the same series), the S14 speed changes, sound sync (2% point f1890 = beat f1894 -4), the curves line and the technique index now carry these values; the bottom edge, the creep and the hold frames are unchanged.",
+   "evidence": [
+    "detail/gap_1860-1868/sheet.jpg",
+    "scratch/gap_review/S14_card_bottom_diff_1858-1872.jpg",
+    "scratch/fix_S14_card_left_y450-700_1856-1900.csv",
+    "scratch/fix_S14_card_right_y450-700_1856-1900.csv",
+    "scratch/gap_review/S14_card_edge_diff_vs_f1876_1868-1886.png",
+    "scratch/fix_S14_card_centre_y450-700_1840-1926.csv"
+   ]
+  },
+  {
+   "start": 2862,
+   "end": 2864,
+   "verdict": "covered",
+   "rows": [
+    "v8.trans-card-zoom-to-center",
+    "v8.ui-screen-crossfade-slide"
+   ],
+   "reason": "The phone card's zoom settle past T21's 2% point, inside the card (x 32.7-66.9% W): width 546.5 (f2860) -> 548.2 (f2862) -> 549.3 (f2864) -> 550.1 (f2866) -> 551.1 px (f2870), top 115.4 -> 110.5 px (scratch/gaps_S22_card_settle_2852-2880.csv), carried screen unchanged (p99 244); the zoom row now names f2861-f2870, the hold row starts at f2870, and the measured screen crossfade starts at f2868 (inner mean 44.8 -> 43.7, scratch/v8c4_S6_xfade_luma.csv) instead of f2870. Critic follow-up: the crossfade has three mixed pictures, not two. On 553 pixels bright in screen A (f2866) and at least 12 px from every pixel screen B lights along its slide (f2875-f2884), screen A's share is 0.95 (f2868), 0.49 (f2870-f2871), 0.05 (f2872-f2874; f2873 repeats f2872) and 0 from f2875 (probe luma 18.8 at f2872 against 6.4-6.8 once clean; scratch/fix_S22_xfade_screenA_share_2860-2890.csv); the outgoing heading and header row are visible as a faint ghost at f2872-f2874 and gone at f2875 (crops/crop_540_105_420x230_02866-02878.jpg). The inner mean of scratch/v8c4_S6_xfade_luma.csv could not show this because screen B slides up during the change. The crossfade row, the S22 speed changes and sound sync, the segments.json summary and the technique index (one to three mixed pictures) now say so; the dissolve is symmetric about f2870 (progress 0.05 / 0.51 / 0.95) and stays unfitted (3 mixed pictures; a fitted bezier passes through all of them with a shape rmse of 0.11). Second critic follow-up: the zoom row and S21's transition-out still ended the zoom at 551 px at f2866, a value of the integer card box (scratch/v8c4_T6_card_box.csv reads 551 at f2866 and 550 at f2868); by the luma-140 edges the card is 550.1 px wide at f2866 and reaches 551.1 px at f2870 (scratch/gaps_S22_card_settle_2852-2880.csv; the corner keeps moving to f2870 in crops/crop_1050_95_50x40_02858-02872.jpg), so both now end the zoom at rest at f2870, with 546 px at the 2% point f2860.",
+   "evidence": [
+    "detail/gap_2862-2864/sheet.jpg",
+    "scratch/gap_review/S22_card_top_diff_2858-2872.jpg",
+    "scratch/fix_S22_xfade_screenA_share_2860-2890.csv",
+    "crops/crop_540_105_420x230_02866-02878.jpg",
+    "crops/crop_1050_95_50x40_02858-02872.jpg"
+   ]
+  },
+  {
+   "start": 3288,
+   "end": 3298,
+   "verdict": "covered",
+   "rows": [
+    "v8.layout-marquee-whip-in"
+   ],
+   "reason": "The portrait card row is still braking into the marquee: leftward speed 10.5 (f3288) -> 10 (f3290-f3292) -> 8.5 (f3298) -> 8 (f3300-f3302) -> 7.5 px/f from f3304, measured on the white gap centres (scratch/gaps_S25_row_gaps_3276-3312.csv, consistent with scratch/v8c5r_Sc_row.csv); the whip-in row named f3243-f3286 (its 2% point) and now also f3286-f3300. Critic follow-up: the steady marquee speed is 7.37 px/f, not 7.5, and the braking reaches it at f3306, not f3300. Sub-pixel gap centres (two 50% crossings per gap) give leftward speeds 10.5 (f3288), 10.1 (f3290), 9.6 (f3292), 8.5 (f3298), 8.2 (f3300), 7.8 (f3302), 7.5 (f3304), then 7.37 px/f from f3306 (least squares over f3306-f3374, residual rms 0.03 px; scratch/fix_S25_row_x_3242-3376.csv), and the row stops without easing after f3374. The old 7.5 comes from 0.5 px-resolution trackers: scratch/v8c5r_Sc_row.csv steps 15.0 per 2-frame picture throughout f3306-f3320 (105.0 px against 103.2 px from the sub-pixel centres, which move 14.7-14.8 per picture), and scratch/gaps_S25_row_gaps_3276-3312.csv lists 15.0 at f3312 as the median of its gap steps 14.5 / 15.0 / 15.0 / 15.0. The whip-in row now eases into the marquee until f3306 (f3286-f3306), the marquee row runs f3306-f3375 at 7.37 px/f (0.455% W per frame), and curves/v8.layout-marquee-whip-in was re-fitted on the sub-pixel row minus the 7.37 px/f drift (new pictures only): bezier(0.000, 0.527, 0.014, 1.001) D=61 (built 42 f), rmse 0.027.",
+   "evidence": [
+    "detail/gap_3288-3298/sheet.jpg",
+    "scratch/fix_S25_row_x_3242-3376.csv",
+    "scratch/fix_S25_row_gaps_3270-3350.csv",
+    "sheets/overview_03264-03309.jpg"
+   ]
+  },
+  {
+   "start": 208,
+   "end": 216,
+   "verdict": "footage",
+   "rows": [],
+   "reason": "New run in the rerun (f206-f216 without f206, which is the card's last zoom step): no graphic layer and the footage plate fills the whole picture (0-100% W x 0-100% H) from f206 to f511; f208 is a near-duplicate picture (ORB x1.0006, 1810 of 2110 matches inliers), f210-f216 the camera move inside the footage, ORB zoom x1.012-1.014 and pan -4.1 to -5.6 px per picture, regional zooms disagreeing (f210-f216 top x1.061 vs right x1.007, scratch/gaps_S03_regionsim_204-230.csv).",
+   "evidence": [
+    "detail/dense_00204-00232_00.jpg",
+    "detail/gap_206-230/sheet.jpg"
+   ]
+  },
+  {
+   "start": 275,
+   "end": 276,
+   "verdict": "footage",
+   "rows": [],
+   "reason": "New run in the rerun (rest of f266-f276): the pill is unchanged (0 px over 12 levels inside it, mic button centre 646.41 px) and the footage plate fills the whole picture (0-100% W x 0-100% H) from f206 to f511; ORB zoom x1.012-1.015, pan -1.8 to -3.6 px per picture (scratch/gaps_S03_globalsim_266-386.csv).",
+   "evidence": [
+    "detail/dense_00274-00322_00.jpg",
+    "scratch/gap_review/S03_pill_diff_262-276.jpg"
+   ]
+  },
+  {
+   "start": 426,
+   "end": 426,
+   "verdict": "footage",
+   "rows": [],
+   "reason": "New run in the rerun (rest of f424-f426): the smear is gone (pill background darkening 0 levels at the 99th percentile); 7 px over 12 levels (max 14) of glyph-edge flicker inside the pill against 255655 px of change in the footage around it; the footage plate fills the whole picture (0-100% W x 0-100% H) from f206 to f511.",
+   "evidence": [
+    "scratch/gap_review/S03_pill_smear_tail_diff_418-429.jpg",
+    "detail/dense_00416-00430_00.jpg"
+   ]
+  },
+  {
+   "start": 454,
+   "end": 466,
+   "verdict": "footage",
+   "rows": [],
+   "reason": "New run in the rerun (rest of f448-f466): the pill is gone from f452 (no white pill rows, scratch/gaps_S03_pill_dropout_rows_438-458.csv) and the footage plate fills the whole picture (0-100% W x 0-100% H) from f206 to f511; the camera moves inside the footage (phase correlation f464 +7.3/-0.6 px, f466 +12.1/-0.9 px, scratch/v8c1_footage_tail_phasecorr_462-510.csv; continuous on the dense sheet).",
+   "evidence": [
+    "detail/dense_00444-00511_00.jpg"
+   ]
+  },
+  {
+   "start": 2912,
+   "end": 2912,
+   "verdict": "covered",
+   "rows": [
+    "v8.cam-push-in-pan"
+   ],
+   "reason": "Surfaced in an intermediate rerun once the S22 hold row no longer used the word constant (the scan had read the old hold row as continuous to f3046): f2912 is the camera push-in's first measurable picture: the card's top edge moves 110.46 -> 110.32 px (-0.13 to -0.14 px in five column bands, within 0.015 px of rest at f2910) and on to 109.57 px at f2914, the left edge holds 534.16 px until f2912 and is 533.74 px at f2914, the phase correlation of the card's upper region against f2898 reads -0.06 / -0.14 px at f2912 against +0.007 / -0.012 px at f2910, and the change covers the whole card (12751 px over 12 levels, x 534-1085, y 110-917) where f2910 has 378 px of glyph-edge and corner-arc change (3 px at the scan's 640 px) (scratch/fix_S22_pushin_start_2890-2920.csv, scratch/gaps_S22_pushin_edges_2894-2930.csv, scratch/gap_review/S22_card_diff_2906-2914.jpg); the camera row starts at f2912 (2% start still f2914) and the final rerun no longer lists it. S22 records UNCERTAIN: f2910-f2912 for the first picture, because a gradient fit of a scale about the push-in's fixed point already reads -0.03 / -0.05 px at the card's top-left corner at f2910. Second critic follow-up: the row had started the creep at f2910 on the whole-card ECC corner values (scratch/gaps_S22_pushin_ecc_2898-2920.csv: -0.02 / -0.02 px at f2908, where the picture is at rest, -0.03 / -0.08 px at f2910, -0.17 / -0.37 px at f2912), which read more than the edges (-0.13 px at f2912); the row, S22 speed changes, sound sync (first measurable creep f2912 = beat f2913 -1, 5 f before the tap) and the technique index (sub-pixel start 2 f before the 14 f creep) now say f2912.",
+   "evidence": [
+    "detail/gap_2912/sheet.jpg",
+    "scratch/gap_review/S22_card_diff_2906-2914.jpg",
+    "scratch/fix_S22_pushin_start_2890-2920.csv",
+    "scratch/gaps_S22_pushin_edges_2894-2930.csv"
+   ]
+  }
+ ]
+}

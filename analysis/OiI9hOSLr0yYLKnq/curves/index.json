@@ -244,6 +244,46 @@
       "recommended": "bezier",
       "note": "counter digits read off frame-numbered crops f114-f225; count 1 at f114 to 100 at f222, accelerating"
     },
+    "v1.grid-hex-network-grow": {
+      "technique_id": "v1.grid-hex-network-grow",
+      "file": "curves/v1.grid-hex-network-grow.csv",
+      "property": "opacity",
+      "unit": "luma 0-255",
+      "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/fix_s2_cellE_patch.csv",
+      "column": "mean",
+      "sampled_frames": [
+        208,
+        232
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 246.0,
+      "to_value": 17.0,
+      "active_frames": [
+        215,
+        223
+      ],
+      "measured_duration_frames": 8,
+      "bezier": {
+        "x1": 0.2018,
+        "y1": 0.801,
+        "x2": 0.372,
+        "y2": 0.9893,
+        "durationInFrames": 10,
+        "delay": 0.114,
+        "built_duration_frames": 8,
+        "rmse": 0.0152
+      },
+      "spring": {
+        "stiffness": 2422.362,
+        "damping": 107.182,
+        "mass": 1,
+        "damping_ratio": 1.0889,
+        "built_duration_frames": 8,
+        "rmse": 0.0495
+      },
+      "recommended": "bezier",
+      "note": "S02 agent cell fade-in: 10x10 px patch inside the dark icon of the top-edge cell at x 1065-1144 (first visible f216) while the camera rests (f195-f225); the patch stays inside the icon at every scale, so it reads opacity only (scale 0.72 -> 1.00 f216-f222 runs alongside, scratch/fix_s2_cellE_tpl.csv)"
+    },
     "v1.icon-idle-float": {
       "technique_id": "v1.icon-idle-float",
       "file": "curves/v1.icon-idle-float.csv",
@@ -564,6 +604,46 @@
       "recommended": "bezier",
       "note": "T02 outgoing side: the whole network + counter fade to the empty background with no scale change (template scale 1.000 f324-f336); f337 is a single empty frame; incoming cards: v1.card-slide-fade-in"
     },
+    "v1.trans-zoom-through-mark.i2": {
+      "technique_id": "v1.trans-zoom-through-mark.i2",
+      "file": "curves/v1.trans-zoom-through-mark.i2.csv",
+      "property": "position-y",
+      "unit": "px (mark centre y)",
+      "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/fix_t5_mark_centre.csv",
+      "column": "mark_cy",
+      "sampled_frames": [
+        864,
+        905
+      ],
+      "sampling": "every frame (60 fps)",
+      "from_value": 540.0,
+      "to_value": 379.5,
+      "active_frames": [
+        872,
+        895
+      ],
+      "measured_duration_frames": 23,
+      "bezier": {
+        "x1": 0.5586,
+        "y1": 0.099,
+        "x2": 0.4003,
+        "y2": 0.97,
+        "durationInFrames": 27,
+        "delay": -1.286,
+        "built_duration_frames": 22,
+        "rmse": 0.0137
+      },
+      "spring": {
+        "stiffness": 111.425,
+        "damping": 16.302,
+        "mass": 1,
+        "damping_ratio": 0.7722,
+        "built_duration_frames": 30,
+        "rmse": 0.2705
+      },
+      "recommended": "bezier",
+      "note": "T05 rise of the centre mark (the end-card logo): centre y = midpoint of the sub-pixel top and bottom edges of the mark f878-f905 (fix_tools/t5_mark_centre.py), grid-patch value of t5_layer.csv while the mark is hidden in the band (f864-f877); 540 -> 379.5 px, x stays at 959.5 px"
+    },
     "v1.trans-zoom-through-mark": {
       "technique_id": "v1.trans-zoom-through-mark",
       "file": "curves/v1.trans-zoom-through-mark.csv",
@@ -602,7 +682,7 @@
         "rmse": 0.2812
       },
       "recommended": "bezier",
-      "note": "composite: grid-patch multi-scale template f864-f878 (grid fades out f880-f888), centre-mark template f879-f905 matched at f879 (overlap f879-f887 agrees within 0.01); the layer also rises: mark centre 540 px (50% H) -> 385 px (35.6% H), same timing (see mark_y column)"
+      "note": "composite: grid-patch multi-scale template f864-f878 (grid fades out f880-f888), centre-mark template f879-f905 matched at f879 (overlap f879-f887 agrees within 0.01); the layer also rises: mark centre 540 px (50% H) -> 379.5 px (35.1% H, edge midpoints), same timing, curve v1.trans-zoom-through-mark.i2 (the mark_y column of t5_layer.csv is a template-box centre that sits 4.1-5.7 px lower than the mark's edge midpoint from f880 on)"
     },
     "v1.ui-button-press.i2": {
       "technique_id": "v1.ui-button-press.i2",

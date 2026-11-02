@@ -79,13 +79,13 @@
     },
     {
       "id": "T03",
-      "start": 719,
+      "start": 718,
       "end": 766,
-      "frames": 48,
-      "type": "dip-to-bg (shrink-fade exit 12 f, no empty frame, the hub layout zoom-settles in from 1.11, headline drops in last)",
-      "shared": "nothing but the background; both windows shrink to 0.944 about their own centres and fade out (f719-f731, ease-in), the headline fades in place (f720-f731); f731 old layout at about 0.05, f732 the hub layer at 0.135 already scaled 1.112 about the hub centre (958, 575), fade done f748, zoom settles f766; new headline drops in f743-f757",
+      "frames": 49,
+      "type": "dip-to-bg (shrink-fade exit: shrink 13 f from a sub-pixel first step at f718, fade 12 f from f719; no empty frame, the hub layout zoom-settles in from 1.11, headline drops in last)",
+      "shared": "nothing but the background; both windows shrink to 0.944 about their own centres (first, sub-pixel step f718: scale 0.99997 / 0.99991 by a gradient fit against f717, scratch/rv3_t03_exit_onset_scale.csv) and fade out (f719-f731, ease-in), the headline fades in place (f720-f731); f731 old layout at about 0.05, f732 the hub layer at 0.135 already scaled 1.112 about the hub centre (958, 575), fade done f748, zoom settles f766; new headline drops in f743-f757",
       "technique": "v4.trans-dip-to-bg",
-      "detail": "detail/soft_719-766"
+      "detail": "detail/soft_718-766"
     },
     {
       "id": "T04",
@@ -120,7 +120,7 @@
   ],
   "notes": [
     "Merged 2026-11-01 from chunks v4c1 (f0-f929) and v4c2 (f930-f1687). The only auto candidate, c001 (f681, ffmpeg_scene only, confidence low), is a one-frame chat-list step scroll inside S03 and is rejected.",
-    "Detector misses: the hard cut m001 (f1463, a jump cut of the single hexagon; content_val 0.74) and all six soft transitions T01 f214-f248, T02 f495-f525, T03 f719-f766, T04 f945-f1015, T05 f1114-f1190 and T06 f1294-f1327 were found on the overview sheets and in motion.csv, luma, edge and template tracks; none of them crossed a detector threshold. The detector fields of m001 are the scene_metrics.csv values at the cut frame; its confidence is 'manual'.",
+    "Detector misses: the hard cut m001 (f1463, a jump cut of the single hexagon; content_val 0.74) and all six soft transitions T01 f214-f248, T02 f495-f525, T03 f718-f766, T04 f945-f1015, T05 f1114-f1190 and T06 f1294-f1327 were found on the overview sheets and in motion.csv, luma, edge and template tracks; none of them crossed a detector threshold. The detector fields of m001 are the scene_metrics.csv values at the cut frame; its confidence is 'manual'.",
     "Soft transition ids match the transition ids in segments.json (T01-T06); T07 is the hard cut m001. T02 stays a boundary at the merge although the chat window and the conversation continue across it: the headline and the right window are replaced (a new scene beat), as T04 and T05 replace the headline and grow the network while the hub card stays.",
     "Nothing changes at the chunk edge f929/f930: the hub diagram of S04 holds completely still f922-f944 (sheets/overview_00912-00957.jpg) and its headline starts to fade at f945, so S04 runs f743-f980 across the edge."
   ]

@@ -1,0 +1,40 @@
+{
+  "technique_id": "v1.grid-hex-network-grow",
+  "file": "curves/v1.grid-hex-network-grow.csv",
+  "property": "opacity",
+  "unit": "luma 0-255",
+  "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/fix_s2_cellE_patch.csv",
+  "column": "mean",
+  "sampled_frames": [
+    208,
+    232
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 246.0,
+  "to_value": 17.0,
+  "active_frames": [
+    215,
+    223
+  ],
+  "measured_duration_frames": 8,
+  "bezier": {
+    "x1": 0.2018,
+    "y1": 0.801,
+    "x2": 0.372,
+    "y2": 0.9893,
+    "durationInFrames": 10,
+    "delay": 0.114,
+    "built_duration_frames": 8,
+    "rmse": 0.0152
+  },
+  "spring": {
+    "stiffness": 2422.362,
+    "damping": 107.182,
+    "mass": 1,
+    "damping_ratio": 1.0889,
+    "built_duration_frames": 8,
+    "rmse": 0.0495
+  },
+  "recommended": "bezier",
+  "note": "S02 agent cell fade-in: 10x10 px patch inside the dark icon of the top-edge cell at x 1065-1144 (first visible f216) while the camera rests (f195-f225); the patch stays inside the icon at every scale, so it reads opacity only (scale 0.72 -> 1.00 f216-f222 runs alongside, scratch/fix_s2_cellE_tpl.csv)"
+}

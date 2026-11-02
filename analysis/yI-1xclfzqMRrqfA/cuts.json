@@ -112,7 +112,7 @@
    "end": 512,
    "frames": 14,
    "type": "dip-to-bg (word fade-out 7 f, empty f506-f507, brand-mark pop-in)",
-   "shared": "nothing but the background (2 empty frames); the outgoing single word fades in place (bbox fixed); the incoming brand mark pops in on x 960 above where the word was (mark centre y 325 vs word centre y 546), opaque at f512, overshoot settled f517",
+   "shared": "nothing but the background (2 empty frames); the outgoing single word fades in place (bbox fixed); the incoming brand mark pops in on x 960 above where the word was (mark centre y 325 vs word centre y 546), opaque at f512, overshoot settled f519",
    "technique": "v3.trans-dip-to-bg",
    "detail": "detail/soft_499-512"
   },

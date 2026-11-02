@@ -1,0 +1,133 @@
+{
+ "shape": {
+  "from": "curves/v4.particle-edge-packets.i2.json",
+  "bezier": [
+   0.5831,
+   0.0236,
+   0.3973,
+   0.9984
+  ]
+ },
+ "grey_321": {
+  "length_px": 320.3,
+  "samples": [
+   1078,
+   1079,
+   1080,
+   1081,
+   1082,
+   1083,
+   1084,
+   1085,
+   1086,
+   1087,
+   1088,
+   1089,
+   1090,
+   1091,
+   1092,
+   1093,
+   1094,
+   1095,
+   1096,
+   1097,
+   1098,
+   1099,
+   1100,
+   1101,
+   1102,
+   1103
+  ],
+  "shape_fit": {
+   "start_frame": 1069.63,
+   "D": 31.93,
+   "end_frame": 1101.55,
+   "rmse_px": 0.52,
+   "rmse_of_length": 0.0016
+  },
+  "free_bezier": {
+   "bezier": [
+    0.622,
+    -0.0,
+    0.427,
+    0.945
+   ],
+   "start_frame": 1068.55,
+   "D": 31.7,
+   "rmse_px": 0.46,
+   "rmse_of_length": 0.0014
+  },
+  "excluded": {
+   "1075": {
+    "measured_px": 13.6,
+    "shape_fit_px": 13.0
+   },
+   "1076": {
+    "measured_px": 18.2,
+    "shape_fit_px": 18.5
+   },
+   "1077": {
+    "measured_px": 25.7,
+    "shape_fit_px": 25.4
+   }
+  }
+ },
+ "dark_949": {
+  "length_px": 949.4,
+  "samples": [
+   1088,
+   1093,
+   1094,
+   1095,
+   1096,
+   1098,
+   1099,
+   1100,
+   1101,
+   1102,
+   1103,
+   1104,
+   1105,
+   1106,
+   1107,
+   1108
+  ],
+  "shape_fit": {
+   "start_frame": 1085.18,
+   "D": 32.02,
+   "end_frame": 1117.2,
+   "rmse_px": 1.78,
+   "rmse_of_length": 0.0019
+  },
+  "free_bezier": {
+   "bezier": [
+    0.609,
+    0.107,
+    0.431,
+    0.815
+   ],
+   "start_frame": 1086.6,
+   "D": 26.92,
+   "rmse_px": 1.09,
+   "rmse_of_length": 0.0012
+  },
+  "excluded": {
+   "1087": {
+    "measured_px": 9.2,
+    "shape_fit_px": 5.3
+   },
+   "1089": {
+    "measured_px": 19.5,
+    "shape_fit_px": 19.6
+   },
+   "1090": {
+    "measured_px": 31.4,
+    "shape_fit_px": 30.8
+   },
+   "1112": {
+    "measured_px": 919.1,
+    "shape_fit_px": 921.7
+   }
+  }
+ }
+}

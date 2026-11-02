@@ -2087,9 +2087,9 @@
     },
     {
       "id": "T11",
-      "start": 1433,
+      "start": 1426,
       "end": 1514,
-      "frames": 82,
+      "frames": 89,
       "type": "whip",
       "shared": "leftward motion (out ends at 24 px per frame left and 14 px per frame up; in starts at about 88 px per frame left) and the pointer motif (glowing 3D pointer -> small dark 3D pointer); incoming grid blurred 91 px, chrome sharp",
       "technique": "v7.trans-whip-push-left",

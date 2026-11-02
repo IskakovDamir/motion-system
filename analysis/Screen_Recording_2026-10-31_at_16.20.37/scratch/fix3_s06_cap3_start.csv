@@ -1,0 +1,9 @@
+# caption 3 first word: drift -15 / -1.7 px per captured picture (scratch/fix3_s06_cap3_word1_track.csv f430-f465); templates = Gaussian(2)-blurred high-pass (sigma 8) of the first two letters (95x50 px at (314, 376) on f420) and of the whole first word (162x50 px at (224, 366) on f435), placed back along the drift (pred x, y); NCC with each picture's high-pass over a +-60 x +-20 px window: score at the predicted place, its rank among all offsets, offset and score of the window maximum, p95
+frame,f420_pred_x,f420_pred_y,first2_pred,first2_rank,offsets,first2_max_dx,first2_max_dy,first2_max,first2_p95,f435_pred_x,f435_pred_y,word_pred,word_rank,offsets2,word_max_dx,word_max_dy,word_max,word_p95
+405,404,386,-0.101,4270,4961,16,8,0.217,0.138,404,386,-0.067,4353,4961,15,11,0.194,0.096
+407,389,384,-0.031,3291,4961,32,10,0.225,0.148,389,385,0.064,751,4961,32,12,0.189,0.095
+410,374,383,-0.038,3328,4961,47,10,0.225,0.146,374,383,0.009,2265,4961,47,12,0.181,0.095
+412,359,381,0.112,583,4961,4,5,0.205,0.143,359,381,0.085,421,4961,60,14,0.174,0.101
+415,344,379,0.195,69,4961,0,3,0.24,0.131,344,380,0.123,196,4961,1,4,0.185,0.114
+417,329,378,0.466,1,4961,0,0,0.466,0.236,329,378,0.205,1,4961,0,0,0.205,0.104
+420,314,376,0.988,1,4961,0,0,0.988,0.328,314,376,0.469,7,4961,0,1,0.476,0.19

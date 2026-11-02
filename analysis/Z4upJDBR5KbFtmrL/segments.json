@@ -109,9 +109,9 @@
     {
       "id": "T03",
       "type": "dip-to-bg",
-      "start": 719,
+      "start": 718,
       "end": 766,
-      "frames": 48,
+      "frames": 49,
       "from": "S03",
       "to": "S04",
       "technique": "v4.trans-dip-to-bg"

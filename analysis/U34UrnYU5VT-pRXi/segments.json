@@ -137,18 +137,18 @@
     {
       "id": "S14",
       "start": 1098,
-      "end": 1173,
-      "length_frames": 76,
+      "end": 1172,
+      "length_frames": 75,
       "class": "GRAPHICS",
       "boundary_in": "T13",
       "boundary_out": "T14",
-      "summary": "small top headline word pops; 9 agent logo icons in two centred rows (4 + 5) pop in (fade + scale from 0.5) every 3.6 f in reading order; from f1163 they converge into a mascot row (T14)"
+      "summary": "small top headline word pops; 9 agent logo icons in two centred rows (4 + 5) pop in (fade + scale from 0.5) every 3.6 f in reading order; from f1161 (sub-pixel, 1 px at f1162) they converge into a mascot row (T14)"
     },
     {
       "id": "S15",
-      "start": 1174,
+      "start": 1173,
       "end": 1226,
-      "length_frames": 53,
+      "length_frames": 54,
       "class": "GRAPHICS",
       "boundary_in": "T14",
       "boundary_out": "T15",
@@ -359,9 +359,9 @@
     {
       "id": "T14",
       "type": "morph",
-      "start": 1163,
-      "end": 1183,
-      "frames": 21,
+      "start": 1161,
+      "end": 1184,
+      "frames": 24,
       "from": "S14",
       "to": "S15",
       "technique": "v2.trans-icon-converge-morph"
@@ -369,9 +369,9 @@
     {
       "id": "T15",
       "type": "morph",
-      "start": 1217,
-      "end": 1235,
-      "frames": 19,
+      "start": 1216,
+      "end": 1237,
+      "frames": 22,
       "from": "S15",
       "to": "S16",
       "technique": "v2.trans-hex-fly-into-ui"
@@ -409,9 +409,9 @@
     {
       "id": "T19",
       "type": "push",
-      "start": 1602,
+      "start": 1601,
       "end": 1627,
-      "frames": 26,
+      "frames": 27,
       "from": "S19",
       "to": "S20",
       "technique": "v2.trans-scroll-push"

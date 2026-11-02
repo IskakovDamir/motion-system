@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.3d-layer-sink",
+  "file": "curves/v6.3d-layer-sink.csv",
+  "property": "position-y",
+  "unit": "px (picture 918 px high), y of the gauge-ring centre on the dashboard layer",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/cgr_S09_h3_gauge.csv",
+  "column": "cy",
+  "sampled_frames": [
+    741,
+    776
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 225.9,
+  "to_value": 310.41,
+  "active_frames": [
+    741,
+    776
+  ],
+  "measured_duration_frames": 35,
+  "bezier": {
+    "x1": 0.17,
+    "y1": 0.1052,
+    "x2": 0.3652,
+    "y2": 0.5259,
+    "durationInFrames": 34,
+    "delay": -0.025,
+    "built_duration_frames": 34,
+    "rmse": 0.0163
+  },
+  "spring": {
+    "stiffness": 50.594,
+    "damping": 19.677,
+    "mass": 1,
+    "damping_ratio": 1.3832,
+    "built_duration_frames": 49,
+    "rmse": 0.1535
+  },
+  "recommended": "bezier",
+  "note": "S09 dashboard layer sinking on its own behind the white panel after the dolly back (sub-pixel template on the gauge ring, ref f761, scale searched 0.85-1.05): y 225.90 (f741, the turning point after the dolly back lifted it) -> 310.41 px (f776) = +84.5 px (9.2% H); the white panel and the footage layer hold to f768 and f773; cut while still moving by the pull-back, which shrinks every layer from f776 (the y turns at f778), so the curve ends with speed (y2 < 1). Own track.py run scratch/cgr2_S09_gauge_756.csv gives bezier(0.179, 0.118, 0.336, 0.488) D=34 rmse 0.018."
+}

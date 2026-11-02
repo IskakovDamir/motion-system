@@ -1,0 +1,198 @@
+{
+  "video": "OiI9hOSLr0yYLKnq",
+  "key": "v1",
+  "scan": "coverage_gaps.py v1 before the review: 8 runs, 54 frames; after the timeline edits and two rounds of critic fixes: 2 runs (f472-f476, f740-f776), both noise",
+  "gaps": [
+    {
+      "start": 223,
+      "end": 225,
+      "verdict": "covered",
+      "rows": ["v1.grid-hex-network-grow", "v1.particle-edge-packets"],
+      "reason": "The 2070, 2025 and 1996 px changes at f223-f225 are network cells still fading in, their connector lines drawing on and packet dots hopping, all described by the S02 cell, line and packet rows. 13 cells first visible f216-f222 are still fading in after the counter stops at f222, the late ones on the outer ring at the frame edges, the last two at f222 (x 493-563 at the top edge and x 499-557 at the bottom edge); each fades in over 8-9 f by the 2% rule (opacity read on a patch inside a dark icon, curve v1.grid-hex-network-grow, while it scales from about 0.7 to 1 in 6-7 f), so the top one of the last two is within 2% of full at f229. Three faint bottom-edge cells (x 499-557, 811-822, 1219-1282) darken further after that, but not by their fade-in: they sit under the soft lower edge of the counter label's cleared zone, which does not scale with the network (the label's ink box x 668-1266 / y 896-1010 and centroid (968.8, 952.2) hold within 0.15 px f222-f328), and the push-in (f226-f333) carries them down and out from under it. Their fixed boxes darken 0.33, 0.48 and 0.62 levels/f over f229-f240 and go on darkening through the push-in (x 811-822 holds 239.0-239.4 while the camera rests f222-f225, darkens from the push-in's first frame f226, 0.65 levels/f over f240-f260, to 205.4 at f328); with the push-in removed (frames scaled back to f225 about the frame centre) the same parts of x 499-557 and 1219-1282 still darken to f328 (231.2 -> 211.6, 235.6 -> 208.1), and in x 499-557 the rows nearest the label gain ink while its lowest row keeps its own (ink depth 34.7 -> 99.5 at y 1036, 103.9 -> 101.8 at y 1060, rows at their f225 place), which a uniform opacity fade cannot do, while the top- and left-edge late cells stay within 2% of their f328 value from f229 except under a dwelling packet dot (f251-f259). The cells row now says this instead of a fade-in tail ending at f240, and the push-in row, the knockout note and the knockout's index row name the uncovering. Their lines draw on 10-11 f after them (f222-f223 at about (1680, 165), f231-f232 for the cell first seen at f220, f233-f234 for the top cell first seen at f222), and packet traffic runs continuously from f180, when the first dot appears on the icon at about (640, 540). The rows now state f125-f229 (cells, with the full list of the 13 late cells), f136-f234 (lines) and f180-f336 (packets).",
+      "evidence": [
+        "detail/covgap_00223-00225/sheet.jpg",
+        "detail/dense_00222-00226_00.jpg",
+        "detail/dense_00219-00230_00.jpg",
+        "crops/crop_440_0_1060x110_00212-00225.jpg",
+        "crops/crop_440_980_1060x100_00212-00225.jpg",
+        "crops/crop_440_990_900x90_00218-00241.jpg",
+        "crops/crop_1040_0_400x100_00216-00231.jpg",
+        "crops/crop_1760_730_140x120_00216-00231.jpg",
+        "crops/crop_30_230_140x120_00214-00229.jpg",
+        "crops/crop_1630_490_100x100_00196-00209.jpg",
+        "crops/crop_1060_0_100x90_00214-00227.jpg",
+        "crops/crop_1600_120_160x140_00220-00227.jpg",
+        "crops/crop_440_0_260x130_00224-00237.jpg",
+        "crops/crop_430_0_300x140_00226-00237.jpg",
+        "crops/crop_1720_700_200x180_00224-00237.jpg",
+        "crops/crop_560_460_160x160_00172-00187.jpg",
+        "crops/crop_1190_430_130x120_00180-00189.jpg",
+        "crops/crop_560_760_320x110_00170-00177.jpg",
+        "crops/crop_880_470_160x140_00320-00333.jpg",
+        "curves/v1.grid-hex-network-grow.csv",
+        "scratch/fix_s2_cellE_patch.csv",
+        "scratch/fix_s2_cellG_patch.csv",
+        "scratch/fix_s2_cellE_tpl.csv",
+        "scratch/fix_s2_cellG_tpl.csv",
+        "scratch/fix_s2_late_cells.csv",
+        "scratch/fix_s2_cell_top_x493.csv",
+        "scratch/fix_s2_cell_top_x1355.csv",
+        "scratch/fix_s2_cell_bot_x499.csv",
+        "scratch/fix_s2_cell_bot_x811.csv",
+        "scratch/fix_s2_cell_bot_x1219.csv",
+        "scratch/fix_s2_first_packets.csv",
+        "scratch/fix_tools/first_packets.py",
+        "scratch/covgap_s2_cellA.csv",
+        "scratch/covgap_s2_cellC.csv",
+        "scratch/covgap_s2_cellG.csv",
+        "scratch/rv4_s2_bottom_cells.csv",
+        "scratch/rv4_s2_bottom_rows.csv",
+        "scratch/rv4_tools/s2_bottom_cells.py",
+        "scratch/rv4_tools/s2_bottom_rows.py",
+        "scratch/rv4_tools/s2_bottom_comp_sheet.py",
+        "crops/rv4_s2_bottom_comp_00222-00328.jpg",
+        "crops/crop_440_900_900x180_00222-00330.jpg",
+        "crops/crop_450_985_880x95_00220-00330.jpg",
+        "crops/crop_730_990_200x90_00229-00329.jpg",
+        "crops/crop_1330_0_130x100_00248-00260.jpg",
+        "crops/crop_40_240_110x110_00248-00260.jpg"
+      ]
+    },
+    {
+      "start": 417,
+      "end": 417,
+      "verdict": "covered",
+      "rows": ["v1.text-stream-words"],
+      "reason": "f417 (223 px at x 420-570, y 507-540) is the 7th and last one-frame word pop of card 1's tool-call line (pops at f404, 406, 408, 411, 413, 415, 417, as the row lists), but the row's dur of 13 counted from the bullet at f402 ended at f415, so the dur is now 15 (f402-f417). Its S04 twin, card 1's tool-call line there (bullet f629, words f631, 633, 635, 637, 639, 641, 643), had the same short dur (12, so f629-f641) and its last word at f643 was hidden from the scan only by a tracker window written as a range in the S04 packet row; the row now states 14 (f629-f643) and the window is written without a range. The three reply rows of the same tables had the same mismatch: their dur 15 counted from the first word while their start is the bullet, so start + dur ended 3 f before the last word (S03 card 2 f450 + 15 = f465, last word f468; S03 card 1 f480 + 15 = f495, last word f498; S04 card 1 f719 + 15 = f734, last word f737), covered only by the ranges in their stagger cells. Remeasured on full-res pictures (pixels that get lighter by more than 12 levels from one frame to the next, as new text on the dark card does): bullets at f450, f480 and f719, then one word every 3 f, the sixth on the second line at f468, f498 and f737; each reply row now counts from its bullet as well, 18 (f450-f468, f480-f498, f719-f737), and lists its word frames.",
+      "evidence": [
+        "detail/covgap_00417/sheet.jpg",
+        "crops/crop_60_380_860x180_00400-00419.jpg",
+        "crops/crop_60_430_840x130_00402-00419.jpg",
+        "crops/crop_60_430_840x130_00629-00646.jpg",
+        "scratch/fix_s4_toolcall_bullet.csv",
+        "scratch/fix_s4_toolcall_words.csv",
+        "scratch/rv4_reply_words.csv",
+        "scratch/rv4_tools/reply_words.py",
+        "crops/crop_1000_505_660x110_00449-00469.jpg",
+        "crops/crop_60_645_760x110_00479-00499.jpg",
+        "crops/crop_60_645_760x110_00718-00738.jpg"
+      ]
+    },
+    {
+      "start": 472,
+      "end": 476,
+      "verdict": "noise",
+      "rows": [],
+      "reason": "After card 2's last reply word pops at f468, 15-17 full-res pixels along the glyph bottoms (x 1083-1321, y 595-606, max difference 57-67 levels) flicker at f472, f475 and f476 while the region mean stays at 28.77-28.80 and a 3x crop shows no change: codec settling of the freshly drawn word.",
+      "evidence": [
+        "detail/covgap_00472-00476/sheet.jpg",
+        "crops/crop_1070_585_260x30_00466-00478.jpg",
+        "scratch/covgap_s3_f466-f480_card2_text.csv"
+      ]
+    },
+    {
+      "start": 552,
+      "end": 552,
+      "verdict": "covered",
+      "rows": ["v1.card-shrink-fade-out"],
+      "reason": "f552 (228 px) is the card text re-snapping one frame before the S03 exit's visible fade and shrink (f553): all 18 changed glyph clusters of 20 px or more shift 0.04-0.15 px (median 0.10 px) toward their own card centre in x with a y shift of at most 0.05 px, and the shift does not grow with the distance from the centre, so it is not a uniform scale (one giving these x shifts would move the top-row glyphs by up to 0.21 px in y; they move 0.03 px at most). The card edges do not move (card 1 left 39.49 px, card 2 right 1879.51 px in three row bands) and the card mean luma is unchanged (27.321 -> 27.324). The affine ECC scale (card 1 x 0.99992 / y 0.99999, card 2 0.99996 / 1.00000, against 0.99997-1.00000 on the no-change frames f549 to f551) cannot separate a scale step that small from the text shift, so the exit row names f552 as the re-snap (active f552-f562) and gives any scale step there as UNCERTAIN: 0.9999-1.0000; T03 keeps its first visible frame f553, as T01 does.",
+      "evidence": [
+        "detail/covgap_00552/sheet.jpg",
+        "crops/crop_236_250_50x56_00549-00554.jpg",
+        "scratch/fix_exit_resnap_glyphs.csv",
+        "scratch/fix_exit_resnap_edges.csv",
+        "scratch/fix_tools/exit_resnap.py",
+        "scratch/covgap_exit_precursor_cards.csv",
+        "scratch/covgap_s3_exit_c1_leftedge.csv"
+      ]
+    },
+    {
+      "start": 580,
+      "end": 580,
+      "verdict": "covered",
+      "rows": ["v1.card-slide-fade-in"],
+      "reason": "f580 (1286 px, all on the card edges and the header text) is the sub-pixel tail of the S04 cards' slide-in (card 1 left edge 40.20 -> 39.83 px, card 2 right edge 1880.50 -> 1879.90 px; both at rest from f584, 21 f after card 1's first visible frame), which the entrance row's 13-14 f (within 2% of rest) did not reach, so the row now states f563-f584. S03's card 1 row now gives the same tail too (within 2% of rest at f351, then sub-pixel steps 41.87 -> 39.50 px to rest at 39.48 px from f359, active f338-f359) instead of its old rest f351-f355, which came from the integer-pixel template.",
+      "evidence": [
+        "detail/covgap_00580/sheet.jpg",
+        "crops/crop_20_520_60x80_00574-00586.jpg",
+        "scratch/covgap_s4_in_c1_left.csv",
+        "scratch/covgap_s4_in_c2_right.csv",
+        "scratch/verify_s4_in_c1_left_y600.csv",
+        "scratch/verify_s4_in_c2_right_y600.csv",
+        "scratch/covgap_s3_in_c1_left.csv",
+        "scratch/covgap_s3_in_c2_right.csv",
+        "scratch/t2_card1_x.csv"
+      ]
+    },
+    {
+      "start": 740,
+      "end": 776,
+      "verdict": "noise",
+      "rows": [],
+      "reason": "New run from the rescan (the f740-f777 run without its exit frame): a 1-px column on the left anti-aliased edge of a letter stem in the reply bubble text (x 1154, y 656-671; at f760 the ink runs of the bubble text rows are x 1114-1140, 1144-1151 and 1155-1161 for the letters and x 1174-1197 and 1201-1223 for the digits further right) flickers with the source's picture types: source.mp4 has a P frame every 4th frame (f740, f744 ... f776) and B frames between, and the column reads 187 on every P frame and 243 on every B frame of the run; in work.mp4, which the scan reads, it reads 190-198 on those P frames, 186-188 on the B frames f741-f742, f749, f753, f757, f765, f769 and f773, and 242-243 on the other B frames. The rest is 2-9 px of settling under card 1's last reply word at f739-f742 (max difference 21-39); the hold is static on the dense sheet and on 4x and 8x crops: codec flicker.",
+      "evidence": [
+        "detail/dense_00740-00777_00.jpg",
+        "crops/crop_1100_640_100x45_00739-00750.jpg",
+        "crops/crop_990_600_400x120_00736-00741.jpg",
+        "crops/crop_60_690_140x45_00737-00743.jpg",
+        "scratch/covgap_s4_f736-f780_hold.csv",
+        "scratch/covgap_s4_f736-f780_bubble_digit.csv",
+        "scratch/covgap_s4_f736-f744_card1_text.csv",
+        "scratch/covgap_s4_hold_bar.csv",
+        "crops/crop_1134_646_44x36_00734-00745.jpg",
+        "crops/crop_1100_640_160x50_00760-00761.jpg",
+        "scratch/rv4_bubble_column.csv",
+        "scratch/rv4_tools/bubble_column.py"
+      ]
+    },
+    {
+      "start": 777,
+      "end": 777,
+      "verdict": "covered",
+      "rows": ["v1.card-shrink-fade-out"],
+      "reason": "f777 (158 px), the peak of the run f740-f777 the first scan printed, is the S04 card text re-snapping one frame before the exit's visible fade (f778), as at f552: 12 of the 13 changed glyph clusters of 20 px or more shift 0.07-0.19 px (median 0.11 px) toward their own card centre in x with a y shift of at most 0.05 px, while the card edges do not move (card 1 left 39.49-39.53 px in three row bands, card 2 right 1878.48 px) and card 1's mean luma stays 27.403 -> 27.407. The exit row names it (active f777-f787) with any scale step there UNCERTAIN: 0.9999-1.0000. The other 19 pictures of that run (f740-f776) are codec flicker, the noise entry below.",
+      "evidence": [
+        "detail/covgap_00740-00777/sheet.jpg",
+        "crops/crop_236_250_50x56_00774-00779.jpg",
+        "scratch/fix_exit_resnap_glyphs.csv",
+        "scratch/fix_exit_resnap_edges.csv",
+        "scratch/fix_tools/exit_resnap.py",
+        "scratch/covgap_exit_precursor_cards.csv",
+        "scratch/covgap_s4_exit_c1_leftedge.csv"
+      ]
+    },
+    {
+      "start": 896,
+      "end": 899,
+      "verdict": "covered",
+      "rows": ["v1.trans-zoom-through-mark"],
+      "reason": "f896-f899 (235, 183, 110, 45 px, all on the mark) are the last 2.2 px of the zoom-through's rise after the T05 curves' 2% end at f895: the mark centre (midpoint of its top and bottom edges) goes 381.66 -> 380.59, 380.01, 379.68, 379.51 px, steps of 1.07, 0.58, 0.33 and 0.17 px (top edge 1.15, 0.85, 0.32 px, so not a sub-pixel tail), and its width 166.67 -> 167.47 px, at rest from f899 at (959.5, 379.5) px. The S06 mark row starts at f896 with dur 3; it, T05 and the technique index now use this edge centre (a rise of 540 -> 379.5 px = 14.9% H, refit as curve v1.trans-zoom-through-mark.i2) instead of 385 px, which was the centre of a template box sitting 4.1-5.7 px lower.",
+      "evidence": [
+        "detail/covgap_00896-00899/sheet.jpg",
+        "crops/crop_860_290_200x180_00893-00900.jpg",
+        "crops/crop_860_290_200x180_00894-00901.jpg",
+        "scratch/fix_t5_mark_centre.csv",
+        "scratch/fix_tools/t5_mark_centre.py",
+        "scratch/covgap_s6_mark_bbox.csv",
+        "scratch/t5_layer.csv",
+        "curves/v1.trans-zoom-through-mark.i2.csv"
+      ]
+    },
+    {
+      "start": 918,
+      "end": 918,
+      "verdict": "covered",
+      "rows": ["v1.logo-blink"],
+      "reason": "f918 (6 px at y 384-390) is the last sub-pixel step of the blink's reopen (eye bar bottom edge 387.56 -> 387.69 px, top edge 335.36 -> 335.24 px, unchanged from f918 to the slide at f921), one frame past the row's f907 + 10, so the reopen row now gives 11 f (f907-f918).",
+      "evidence": [
+        "detail/covgap_00918/sheet.jpg",
+        "crops/crop_945_325_70x75_00913-00920.jpg",
+        "scratch/covgap_s6_eye1_top.csv",
+        "scratch/covgap_s6_eye1_bottom.csv",
+        "scratch/covgap_s6_eye2_top.csv",
+        "scratch/covgap_s6_eye2_bottom.csv",
+        "scratch/covgap_s6_eyes_luma.csv"
+      ]
+    }
+  ]
+}

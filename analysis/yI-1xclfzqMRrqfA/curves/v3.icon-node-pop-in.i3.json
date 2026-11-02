@@ -1,0 +1,40 @@
+{
+  "technique_id": "v3.icon-node-pop-in.i3",
+  "file": "curves/v3.icon-node-pop-in.i3.csv",
+  "property": "scale",
+  "unit": "scale factor about the mark centre (959.5, 324.5); 1.000 = settled size",
+  "source_samples": "../../analysis/yI-1xclfzqMRrqfA/scratch/gap_f518_mark_scale_fine.csv",
+  "column": "scale",
+  "sampled_frames": [
+    508,
+    530
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 0.9209,
+  "to_value": 1.0,
+  "active_frames": [
+    508,
+    519
+  ],
+  "measured_duration_frames": 11,
+  "bezier": {
+    "x1": 0.3426,
+    "y1": 1.7263,
+    "x2": 0.6654,
+    "y2": 1.0334,
+    "durationInFrames": 11,
+    "delay": -0.0,
+    "built_duration_frames": 11,
+    "rmse": 0.0068
+  },
+  "spring": {
+    "stiffness": 1040.178,
+    "damping": 31.977,
+    "mass": 1,
+    "damping_ratio": 0.4957,
+    "built_duration_frames": 16,
+    "rmse": 0.0832
+  },
+  "recommended": "bezier",
+  "note": "S05 brand mark instance of the node pop (v3.icon-node-pop-in) at half the scale amplitude; fitted as v3.logo-mark-pop-in at the coverage review and merged into the node pop at the second fix round (same opacity ramp, same overshoot over start offset 0.165 vs 0.164-0.166 for the bottom S01 nodes at the same first-visible opacity, same 11-12 f window, shapes cross-fit within 0.006-0.012, scratch/r3_pop_crossfit.json; start offset 0.079 and overshoot 0.013 are half the nodes'). S05 brand mark (150x146 px) pop-in after the empty frames, sub-pixel scale (gap_tools/mark_pop_fine.py: warpAffine about the ink-box centre, half-size 76, rest template f535, step 0.0005 + parabola): first visible f508 at 0.921 (opacity 0.22), 0.953, 0.977, 0.995, 1.004, 1.012, peak 1.013 f514, 1.012, 1.009, 1.004, 1.002, 1.0002 f519 (settled; ink-area check scratch/gap_f518_mark_ink.csv gives the same settle); opacity 0.22, 0.54, 0.78, 0.95, 1.00 (f508-f512). Replaces the D=9 fit on the 0.0025 template grid, which read the tail as 1.010 held f513-f516 and settled at f517"
+}

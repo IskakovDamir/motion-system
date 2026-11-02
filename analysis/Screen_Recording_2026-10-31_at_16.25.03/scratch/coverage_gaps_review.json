@@ -1,0 +1,219 @@
+{
+  "gaps": [
+    {
+      "start": 2,
+      "end": 5,
+      "verdict": "footage",
+      "rows": [],
+      "reason": "S01 capture pre-roll: the 13333 / 15223 changed px (640 px wide) at f2 / f5 lie inside the previous post's video plate in the player (plate edges at x 345 and 1271 px = 21.3-78.4% W, full height; changed pixels at x 21.4-78.4% W, y 2-100% H), apart from 2 isolated single pixels with 15-level compression flicker in the side panel's text at f2 (the scan's bbox edge at 90% W); the burned-in caption and the side panel do not move, so this is filmed content only.",
+      "evidence": [
+        "crops/crop_340_0_940x918_00000-00006.jpg",
+        "detail/dense_00000-00012_00.jpg"
+      ]
+    },
+    {
+      "start": 10,
+      "end": 10,
+      "verdict": "missed",
+      "rows": [
+        "S03 play triangle row (the X player's overlay on the poster; player UI, no technique)"
+      ],
+      "reason": "S03 capture pre-roll; not noise but a real picture change: the X player's white play triangle (ink x 755-877, y 392-519 px = 46.5-54.1% W, 42.7-56.6% H; one component of 1536 px at 640 px wide, 9634 px at full size) is cut off between the picture f8 (held to f9; mean luma 220.8 over its area) and f10 (29.7, the poster under it, f10 = f11), with no fade; nothing else changes (compression specks of at most 92 px at full size). Missed: the committed timeline had no movement row for it (S03 said only 'Movements: none apart from the play triangle disappearing'), so no row named f10; the S03 Movements table and its row (start f10, one picture) were added in the previous round. It is the player's UI, not the design, so the row carries no technique.",
+      "evidence": [
+        "crops/crop_690_330_240x240_00007-00012.jpg",
+        "detail/dense_00000-00012_00.jpg"
+      ]
+    },
+    {
+      "start": 648,
+      "end": 663,
+      "verdict": "missed",
+      "rows": [
+        "v6.ui-code-scroll",
+        "v6.cam-orbit-push",
+        "v6.cam-slow-zoom-drift"
+      ],
+      "reason": "Unrecorded UI scroll: inside the still code panel (window dots within 3 px) the code lines move down under the fixed tab bar: the block of lines 3-5 against the panel's header (window dots + tab), scale-normalised to f656, -7.5 -> 0.0 -> +4.9 px at f646/656/663 (0.75 px per frame in f646-f656), part of the scroll that runs from f586 to a stop in f693-f713 (+29.0 px at the far size in f586-f621, +20.7 px in f646-f681, at rest at +25.0 +- 1.4 px over f701-f728, about 2.0 lines from f646; line 2 enters f661-f672), which no row described; added as v6.ui-code-scroll with a Typography row (product UI code text: line-number digits 6-9 px, line pitch 15.7-17 px, block scroll, 22 / 29 / 37 f per line in f646-f681) and no curve (no rest before it, a 25 f blur gap inside it and its stop in the reframe blur, so fits swing with the rest level); the orbit-push's last 3-5 px (gauge ring 841 -> 845 px x, f646-f651) and the +0.05% per frame push-in drift (f651-f671, dots-to-pill distance 506.4 -> 512.2 px) are named in their rows; the footage inside the footage layer also changes.",
+      "evidence": [
+        "crops/crop_560_150_260x200_00646-00693.jpg",
+        "crops/crop_545_170_240x190_00646-00681.jpg",
+        "crops/crop_425_150_170x140_00576-00626.jpg",
+        "detail/dense_00646-00678_00.jpg",
+        "scratch/cgr2_S09_codescroll_rel.csv",
+        "type/S09-1_f00656.png"
+      ]
+    },
+    {
+      "start": 667,
+      "end": 676,
+      "verdict": "missed",
+      "rows": [
+        "v6.ui-code-scroll",
+        "v6.cam-slow-zoom-drift",
+        "v6.cam-dolly-reframe"
+      ],
+      "reason": "The code scroll continues (block +5.6 -> +11.2 px against the panel's header, scale-normalised to f656, f667-f676; line number 2 fully in by f672) while the panel holds within 3 px: covered by the v6.ui-code-scroll row. The push-in drift ends at f671 (dots-to-pill distance 506.4 -> 512.2 px, gauge ring at (845, 620-621) px) and the reframe starts at f673, one picture earlier than first written: the dashboard layer moves 1-2 px up (pill 460 -> 458 -> 455, gauge ring 621 -> 620 -> 617, top-right corner 417.5 -> 415.5 -> 411.5 px y at f671/673/676; sub-pixel 459.8 -> 458.1 and 621.4 -> 620.3 px against at most 0.3 px of change per picture in f653-f671 (the gauge ring drifting +0.2 px per picture with the push-in)), the code layer follows at f678 (window dots 593.2, 209.2 -> 590.2, 208.0 px); the drift row (f651-f671), the reframe row (first motion f673, all layers f673-f723), its technique index entry and the sound sync now say so.",
+      "evidence": [
+        "crops/crop_560_150_260x200_00646-00693.jpg",
+        "crops/crop_960_400_200x120_00669-00678.jpg",
+        "detail/dense_00646-00678_00.jpg",
+        "scratch/cgr2_S09_reframe_start_subpix.csv"
+      ]
+    },
+    {
+      "start": 711,
+      "end": 721,
+      "verdict": "missed",
+      "rows": [
+        "v6.3d-layer-sink",
+        "v6.cam-dolly-reframe"
+      ],
+      "reason": "Not a camera drift: after the reframe lifted it the back (code) layer slides down on its own, window dots y 189.2 -> 231.1 px in f711-f721 (part of 96.5 -> 241.1 px = +15.8% H, f693-f726, about 6.7 px per frame over f698-f708, easing out). The other layers do not simply hold: over f693-f708 they still finish the reframe upward and sideways (gauge ring (724.0, 304.0) -> (696.5, 290.5), white panel corner (1331.5, 413.5) -> (1310.0, 374.0), footage corner (1315, 769) -> (1385, 726) px); over f708-f718 the dashboard and white layers hold (within 1.5 and 2.5 px) and from f721 they move again with the onset of the dolly back (white panel corner y 371.5 -> 367 -> 356.5 px at f718/721/723), while the footage layer slides right to f723 (1385 -> 1403 px). Recorded as v6.3d-layer-sink (curves/v6.3d-layer-sink.i2.csv: bezier(0.284, 0.193, 0.380, 0.684) D=29, rmse 0.043, on the panel's corner 95.0 -> 238.5 px between the two turning points); the front layer's last 11 px of the reframe (corner x 1387.8 -> 1399.0 px, f711-f721, settled f723) are in the reframe row; the footage inside the footage layer also changes.",
+      "evidence": [
+        "crops/crop_300_0_1000x918_00693-00728.jpg",
+        "detail/dense_00703-00728_00.jpg",
+        "scratch/audit_S09_gauge_711.csv",
+        "scratch/audit_S09_white_711.csv",
+        "scratch/audit_S09_foot_711.csv",
+        "scratch/cgr2_S09_codeTL_716.csv"
+      ]
+    },
+    {
+      "start": 748,
+      "end": 773,
+      "verdict": "missed",
+      "rows": [
+        "v6.3d-layer-sink"
+      ],
+      "reason": "Not a camera drift: after the dolly back the dashboard layer slides down behind the white panel, gauge ring y 245.2 -> 306.9 px in f748-f773 (part of 225.9 -> 310.4 px = +9.2% H, f741-f776; curves/v6.3d-layer-sink.csv: bezier(0.170, 0.105, 0.365, 0.526) D=34, rmse 0.016) with the code layer +20.4 px (f743-f776), while the white panel and the footage layer hold (templates within 0.2 px f746-f768). Then the white panel slides down on its own too, at constant scale, while the footage layer in front of it holds: its corner, dot and icon move +5.0-5.3 px at f771 and +14.8-15.3 px by f773 with corner-to-icon 392.0 -> 391.5 -> 390.6 px (within 0.4%), the grey card on it moves down with it (top 435.0 -> 439.3 -> 448.3 px), and the footage layer's corner stays at y 387.5 -> 387.4 px; that is a third v6.3d-layer-sink instance, now its own row. The earlier reading of f771-f773 as a 5 f lead of the pull-back was wrong (a pull-back shrinks every layer and moves the nearest one most), and its 'card rises 465.2 -> 459.1 px' is what a whole-card template gives when its box also takes in the footage layer's dark corner: a 135 x 120 px box at (812, 405) px (luma 45-115 in its lower right at f768) re-tracked reads 465.0 -> 466.9 -> 464.8 -> 461.1 px at f768/771/773/776, held by the corner, which stays to f773 and rises from f776, while a template on the card's top alone moves down with the panel; the pull-back starts at f776 for every layer (ink extent 884 -> 883 px, corner-to-icon -1.4%, footage corner 387.4 -> 383.8 px), so its row and index entry now start at f776; the footage inside the footage layer also changes.",
+      "evidence": [
+        "crops/crop_300_0_1000x918_00741-00781.jpg",
+        "crops/crop_790_30_300x520_00766-00778.jpg",
+        "detail/dense_00743-00778_00.jpg",
+        "scratch/cgr2_S09_white_768_subpix.csv"
+      ]
+    },
+    {
+      "start": 1522,
+      "end": 1562,
+      "verdict": "missed",
+      "rows": [
+        "v6.text-letter-converge",
+        "v6.logo-stroke-draw-on",
+        "v6.text-type-recenter",
+        "v6.text-letter-pop-mix",
+        "v6.text-label-drop",
+        "v6.ui-pill-rise",
+        "v6.text-bracket-spring-in",
+        "v6.cam-slow-zoom-drift",
+        "v6.bg-soft-field"
+      ],
+      "reason": "Picture-for-picture replay of S04's lockup build (each picture matches f15-f113 at an offset of 1502-1508 f, mean difference 0.10-0.21 luma): letters f1517-f1560, icon draw-on f1525-f1532 (ink 12 -> 1306 px²), brand row f1533-f1570 (its first glyph already on the echo-trail picture f1540, as S04's f33), label f1535-f1549, pill f1540-f1550, braces from f1557; S15 had named these only in prose ('as S04 shifted'), and they are table rows since the previous round. Missed inside the run, in S04, S14 and S15 alike: how each brand-row letter enters. The rows called the row a stepwise out-of-order type-on, but on the crops each letter has its own small animation: one glyph doubles and its copies slide 17 px apart into two identical letters (S04 f42-f48; f1547-f1555), a letter scales up from a 4 x 7 px speck (x0.1 -> 1.24 -> 1.0) while spinning about 210 deg counter-clockwise from upside down with a +27 / -16 deg swing (rotated template; S04 f33-f63, in S15 measured f1540-f1560), a stem grows up from the baseline (4.4 -> 46.2 px, S04 f42-f48; f1547-f1555), the dots of the two dotted stems pop up out of their stretched stems, hang x1.4 above the row, drop back, sink into the stem 17% past rest and rebound 11% (letter 2's dot rests from S04 f71 / f1577, letter 7's from S04 f79 / f1585, both after the row's 'complete f63 / f1570'), a letter scales up from a speck on its baseline with a 15% overshoot (S04 f53-f71), and three letters slide out sideways from behind a neighbouring stem with horizontal blur (S04 f53-f63). Now technique v6.text-letter-pop-mix with measured rows in S04 (7 rows), S14 and S15, the brand row's typography method and speed, the type-recenter rows' end note, sound sync, uncertain lines, the technique index and the S04 / S14 / S15 summaries in segments.json; values only (the dot's drop and bounce fits neither a bezier, rmse 0.071, nor a spring, 0.080; letter 8's scale pop 0.077 / 0.085).",
+      "evidence": [
+        "detail/dense_01517-01640_00.jpg",
+        "crops/crop_620_185_400x85_01537-01546.jpg",
+        "crops/crop_620_185_400x85_00031-00037.jpg",
+        "crops/crop_620_160_380x120_00031-00056.jpg",
+        "crops/crop_620_160_380x120_00056-00083.jpg",
+        "crops/crop_620_160_380x120_01331-01358.jpg",
+        "crops/crop_620_160_380x120_01540-01566.jpg",
+        "scratch/cgr3_S04_brandrow_glyph_boxes.csv",
+        "scratch/cgr3_S04_brandrow_dots.csv",
+        "scratch/cgr3_S04_brandrow_letter5_spin.csv",
+        "scratch/cgr3_S04_brandrow_letter8_scale.csv",
+        "scratch/cgr3_S14_brandrow_glyph_boxes.csv",
+        "scratch/cgr3_S14_brandrow_dots.csv",
+        "scratch/cgr3_S14_brandrow_letter5_spin.csv",
+        "scratch/cgr3_S15_brandrow_glyph_boxes.csv",
+        "scratch/cgr3_S15_brandrow_dots.csv"
+      ]
+    },
+    {
+      "start": 1566,
+      "end": 1617,
+      "verdict": "missed",
+      "rows": [
+        "v6.text-letter-pop-mix",
+        "v6.text-bracket-spring-in",
+        "v6.text-type-recenter",
+        "v6.cam-slow-zoom-drift",
+        "v6.bg-soft-field"
+      ],
+      "reason": "The braces' spring-in (f1557-f1574, settled f1590), the brand row's last letters (placed by f1570) and the lockup's slow zoom-out drift (template scale 1.025 -> 1.005 f1575-f1621, -0.042% per frame, row f1558-f1621): the 2856-7227 changed px per picture sit on the edges of the wordmark, the braces, the pill and the brand row; table rows of S15 since the previous round. Missed in this run: the brand row's per-letter animations continue past the row's f1570 (S04's f63): letter 10 slides out from behind letter 9 at f1568-f1570, letter 2's dot rebounds to 48.1 px above the baseline at f1570 and rests from f1577, letter 7's dot lands in its stem at f1570, rebounds to 47.0 px at f1577 and rests from f1585 (sub-pixel column profiles, scratch/cgr3_S15_brandrow_dots.csv); now the S15 row of v6.text-letter-pop-mix (f1540-f1585, as S04 f33-f79). The run ends at f1617, the last rest picture before the anticipation dip (pill centre 792.9 px, = S04's f111); the dip's first moved picture is f1621 (794.9 px, = S04's f113), so the S15 dip row now starts at f1621 (9 f, f1621-f1630) instead of f1617, and f1617 stays covered by the drift row (f1558-f1621).",
+      "evidence": [
+        "detail/dense_01517-01640_00.jpg",
+        "crops/crop_620_160_380x120_01566-01590.jpg",
+        "scratch/cgr3_S15_brandrow_dots.csv",
+        "scratch/cgr3_S15_brandrow_glyph_boxes.csv",
+        "scratch/cgr2_S15_pill_edges.csv"
+      ]
+    },
+    {
+      "start": 1662,
+      "end": 1677,
+      "verdict": "covered",
+      "rows": [
+        "v6.trans-push-up",
+        "v6.cam-text-pan",
+        "v6.text-type-on-pan",
+        "v6.bg-blob-fade-in"
+      ],
+      "reason": "Replay of S05 (offset 1505-1508 f, mean difference 0.06-0.14 luma): the end of the rise (462.6 px at f1662), the pan left f1655-f1683 and word 3 typing on at f1667 / f1672 / f1677 (about 5 f per letter), measured in S16's prose but without a movement table; now table rows (the y 5.2% bbox edge comes from 1-2 isolated pixels at f1672). Its sound-sync line now agrees with the rows: the pan from f1655 (beat f1655: 0, the replay of S05's f148, word 2 moving -6 px from f1653; the line had said 'pan f1662', which is where the rise settles), and S05's own line now gives the pan start f148 (-1) as its row and curve do (it had said f151).",
+      "evidence": [
+        "detail/dense_01660-01715_00.jpg"
+      ]
+    },
+    {
+      "start": 1681,
+      "end": 1712,
+      "verdict": "covered",
+      "rows": [
+        "v6.cam-text-pan",
+        "v6.cam-zoom-out",
+        "v6.fx-opacity-dip",
+        "v6.bg-soft-field"
+      ],
+      "reason": "The pan's end (to f1683), the zoom-out f1683-f1710 (cap height 243 -> 99 px) with its blink f1687-f1700 (darkest luma 0 -> 197 -> 0) and the line settling at rows 411-510 px f1707-f1712: S05's moves at their replay frames, now table rows. Its sound-sync line now gives the zoom-out from f1683 (beat f1685: -2), the replay of S05's f176 (picture match MAD 0.09), with the blink from f1687 (+2); it had said 'zoom-out f1687'.",
+      "evidence": [
+        "detail/dense_01660-01715_00.jpg"
+      ]
+    },
+    {
+      "start": 1732,
+      "end": 1777,
+      "verdict": "missed",
+      "rows": [
+        "v6.layout-reflow-slide",
+        "v6.text-type-on",
+        "v6.text-line-slide-blur",
+        "v6.card-carousel-speed-ramp",
+        "v6.bg-soft-field"
+      ],
+      "reason": "Replay of S06 (offset 1505-1508 f, mean difference 0.37-0.49 luma): the re-layout (top words f1732-f1745, cap 95 -> 60 px; lower word f1735-f1750), the sub-caption type-on and the card row from f1732: it lands already gliding left (-13.1 / -9.2 / -6.8 px per picture at f1732/1735/1737 in a band phase correlation, as S06's -12.5 / -9.2 / -6.7 px at f226/228/231) and then scrolls with the speed ramp (peak about f1770); table rows since the previous round. Missed in S06 and S17 alike: both sub-caption lines slide in from the right with horizontal blur while they type on (the rows said 'type-on', the index 'in place'): sub-pixel template centres of their first letters, line 1 914.2 / 884.4 / 870.3 -> 867.0 px at f1745/1747/1750/1752 (-47 px = 2.9% W), line 2 997.7 / 947.1 / 911.9 / 889.1 / 875.5 / 868.8 -> 867.0 px at f1745/1747/1750/1752/1755/1757/1760 (-131 px = 8.1% W), identical to S06's f238-f253; now technique v6.text-line-slide-blur with rows in S06 and S17 and curves/v6.text-line-slide-blur.csv (S06 line 2: spring {661.6, 53.05}, rmse 0.023). The type-on's last letters are grey at f1757 (median ink 90) and black only at f1760 (S06: f251 / f253), so the type-on rows now end at f1760 / f253; the S17 sound sync now gives the sub-caption from f1742 (beat f1748: -6), as its row, and the re-layout from f1732 / f1735.",
+      "evidence": [
+        "detail/dense_01730-01808_00.jpg",
+        "crops/crop_0_180_1622x520_01727-01740.jpg",
+        "scratch/cgr2_S06_S17_cardband_phase.csv",
+        "crops/crop_800_700_760x170_00236-00256.jpg",
+        "crops/crop_800_700_760x170_01742-01762.jpg",
+        "scratch/cgr3_S06_subcap_line1_subpix.csv",
+        "scratch/cgr3_S06_subcap_line2_subpix.csv",
+        "scratch/cgr3_S17_subcap_line1_subpix.csv",
+        "scratch/cgr3_S17_subcap_line2_subpix.csv",
+        "curves/v6.text-line-slide-blur.json"
+      ]
+    },
+    {
+      "start": 1781,
+      "end": 1807,
+      "verdict": "covered",
+      "rows": [
+        "v6.card-carousel-speed-ramp"
+      ],
+      "reason": "The card row's scroll slowing toward f1805 and speeding up again in the last picture f1807 (S06 f231-f301 replayed): all changed areas lie in the card band (y 20-71% H) apart from one isolated pixel at f1800 (the 5.2% H bbox edge). The block's claimed capture-rate drop is a local_fps window artefact (its 61-frame window runs past the last frame), not a drop in the capture rate: inside this run f1777-f1781 is a 4-frame gap and f1781-f1782 a 1-frame step, as elsewhere in the capture (725 intervals: 374 of 2 f, 316 of 3 f, 20 of 4 f, 4 of 5 f, 11 of 1 f, motion.csv unique == 1), and the last pictures f1795-f1807 are 2-3 frames apart; the header and the S17 replay line now say so.",
+      "evidence": [
+        "detail/dense_01730-01808_00.jpg"
+      ]
+    }
+  ]
+}

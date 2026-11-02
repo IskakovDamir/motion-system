@@ -1,0 +1,8 @@
+# caption C first letter: per step, the 40x52 px box (centre x, y) with the largest mean signed step of Gaussian(3) luma in the left 650 px of the picture (x 0-649), its value, the median and p99 over all box centres there, and the drift-predicted centre of the first letter
+frame,prev_frame,max_box_cx,max_box_cy,max_step,median_step,p99_step,pred_letter_cx,pred_letter_cy
+2137,2135,571,917,6.51,0.01,1.6,482.0,216.0
+2140,2137,649,672,8.22,-0.0,2.38,469.0,214.6
+2142,2140,649,684,10.12,-0.05,3.77,456.0,213.3
+2145,2142,439,204,12.09,-0.05,4.89,443.0,212.0
+2147,2145,429,207,16.46,-0.11,7.85,430.0,210.7
+2150,2147,209,554,17.26,0.07,12.68,417.0,209.3

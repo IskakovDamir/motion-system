@@ -3,15 +3,15 @@
  "file": "curves/v8.ui-prompt-pill-rise-in.csv",
  "property": "position-y",
  "unit": "% of frame height (pill centre)",
- "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/v8c1_pill_entry_y.csv",
- "column": "cy_pct",
+ "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.31.33/scratch/fix_S03_pill_centre_226-300.csv",
+ "column": "pill_centre_pct",
  "sampled_frames": [
   234,
-  270
+  280
  ],
  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
- "from_value": 89.196,
- "to_value": 70.479,
+ "from_value": 89.939,
+ "to_value": 70.418,
  "active_frames": [
   234,
   252
@@ -19,23 +19,23 @@
  "measured_duration_frames": 18,
  "bezier": {
   "x1": 0.0,
-  "y1": 1.2029,
-  "x2": 0.7017,
-  "y2": 1.1923,
+  "y1": 1.1996,
+  "x2": 0.7322,
+  "y2": 1.1761,
   "durationInFrames": 16,
-  "delay": 1.02,
+  "delay": 0.961,
   "built_duration_frames": 16,
-  "rmse": 0.0506
+  "rmse": 0.0448
  },
  "spring": {
-  "stiffness": 736.487,
-  "damping": 36.94,
+  "stiffness": 2633.216,
+  "damping": 105.206,
   "mass": 1,
-  "damping_ratio": 0.6806,
-  "built_duration_frames": 14,
-  "rmse": 0.172
+  "damping_ratio": 1.0251,
+  "built_duration_frames": 7,
+  "rmse": 0.2584
  },
  "recommended": "bezier",
- "note": "prompt pill rises in from below the frame edge (first picture f233 shows only its top edge at the bottom); samples f234-f238 light-area centroid (+7 px offset), f240+ template on the pill's left end (scratch/v8c1_pill_entry_y.csv); curve covers the visible part, already moving at f234; overshoot 2.1% H above rest",
+ "note": "prompt pill rises in from below the frame edge (f230 only its blurred top edge, f233 its top at 93.0% H); pill centre = midpoint of the pill's top and bottom 50% edge crossings (local levels) in 4 glyph-free column bands x 690-710 / 750-770 / 990-1010 / 1030-1050 (median), scratch/fix_S03_pill_centre_226-300.csv; the black mic disc's edge centre agrees within 0.9 px from f236 (column disc_centre). f234 (89.94% H) is the first picture with both edges in frame, under heavy vertical blur (10-90% edge width 44-49 px); top edge + half height gives 90.08% H. Curve covers the visible part, already moving at f234. Peak f247 628.5 px = 68.46% H, 18.0 px (2.0% H) above the rest 646.4 px = 70.42% H; settle 646.4 (f252) -> 648.8 (f256) -> 646.1 (f264-f266) -> 646.4 px from f272 (not fitted).",
  "chunk_curve_id": "v8.ui-prompt-pill-rise-in.v8c1"
 }

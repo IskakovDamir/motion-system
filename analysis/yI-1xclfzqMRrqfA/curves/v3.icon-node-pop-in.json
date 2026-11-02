@@ -2,15 +2,15 @@
   "technique_id": "v3.icon-node-pop-in",
   "file": "curves/v3.icon-node-pop-in.csv",
   "property": "scale",
-  "unit": "scale factor about the icon centre (from the first visible frame)",
-  "source_samples": "../../analysis/yI-1xclfzqMRrqfA/scratch/v3c1_icon_pop_TR_fine_alpha.csv",
+  "unit": "scale factor about the node centre (from the first visible frame)",
+  "source_samples": "../../analysis/yI-1xclfzqMRrqfA/scratch/gap_f14_pop_TR.csv",
   "column": "scale",
   "sampled_frames": [
     1,
-    24
+    20
   ],
   "sampling": "every frame (60 fps)",
-  "from_value": 0.8675,
+  "from_value": 0.8681,
   "to_value": 1.0,
   "active_frames": [
     1,
@@ -18,23 +18,23 @@
   ],
   "measured_duration_frames": 11,
   "bezier": {
-    "x1": 0.257,
-    "y1": 1.2739,
-    "x2": 0.4922,
-    "y2": 1.3601,
+    "x1": 0.3097,
+    "y1": 1.5264,
+    "x2": 0.5879,
+    "y2": 1.2562,
     "durationInFrames": 11,
-    "delay": -0.005,
+    "delay": -0.003,
     "built_duration_frames": 11,
-    "rmse": 0.0116
+    "rmse": 0.0061
   },
   "spring": {
-    "stiffness": 956.894,
-    "damping": 28.932,
+    "stiffness": 941.922,
+    "damping": 27.926,
     "mass": 1,
-    "damping_ratio": 0.4676,
+    "damping_ratio": 0.455,
     "built_duration_frames": 17,
-    "rmse": 0.1073
+    "rmse": 0.1103
   },
   "recommended": "bezier",
-  "note": "S01 top-right node (white hexagon badge + agent logo icon) pop-in: template scale (step 0.0025); first visible f1 at 0.8675 with opacity 0.34 (f0 empty), 0.9225, 0.960, 0.9925, 1.0075, overshoot 1.0225 held f6-f9, 1.015, 1.0075, rest 1.000 from f12; opacity in v3.icon-node-pop-in.i2"
+  "note": "S01 top-right node (white hexagon badge + agent logo icon) pop-in, sub-pixel scale (scratch/gap_tools/mark_pop_fine.py: warpAffine about the badge centre, step 0.0005 + parabola): first visible f1 at 0.868 (opacity 0.33; f0 empty), 0.921, 0.962, 0.991, 1.011, 1.021, peak 1.026 f7, 1.026 f8, 1.021, 1.015, 1.006, 1.0024 f12 (within 2% of rest), 1.0001 f13, rest from f13; edge check on the four outer icon edges (scratch/audit_f14_tr_edge*.csv, rest width 137.79 px): 1.011, 1.023, 1.027, 1.026, 1.022, 1.015, 1.009, 1.003, 1.000 (f5-f13). Replaces the fit on the 0.0025-step template (whole-pixel template sizes), which read the peak as 1.0225 held f6-f9; opacity in v3.icon-node-pop-in.i2"
 }

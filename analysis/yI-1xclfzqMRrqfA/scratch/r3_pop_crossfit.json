@@ -1,0 +1,273 @@
+{
+ "rule": "samples normalised from the first visible frame to 1.0; fit_easing.fit_bezier + refit_bezier_int; curvekit.shape_rmse",
+ "instances": {
+  "S01 top-right node (main curve)": {
+   "samples": "scratch/gap_f14_pop_TR.csv",
+   "column": "scale",
+   "first_visible_frame": 1,
+   "first_visible_scale": 0.8681,
+   "first_visible_opacity": 0.331,
+   "opacity_first_5": [
+    0.331,
+    0.606,
+    0.82,
+    0.963,
+    1.001
+   ],
+   "peak_scale": 1.0263,
+   "peak_frame": 7,
+   "peak_vertex_frames_after_first_visible": 6.44,
+   "start_offset": 0.1319,
+   "overshoot": 0.0263,
+   "overshoot_over_start_offset": 0.199,
+   "normalised_peak": 1.199,
+   "active_frames": [
+    1,
+    12
+   ],
+   "active_duration_frames": 11,
+   "bezier": [
+    0.31,
+    1.526,
+    0.588,
+    1.256
+   ],
+   "D": 11,
+   "built_peak_progress": 1.197,
+   "self_shape_rmse": 0.0061
+  },
+  "S01 top-left node": {
+   "samples": "scratch/gap_f14_pop_TL.csv",
+   "column": "scale",
+   "first_visible_frame": 1,
+   "first_visible_scale": 0.8264,
+   "first_visible_opacity": 0.145,
+   "opacity_first_5": [
+    0.145,
+    0.462,
+    0.691,
+    0.851,
+    0.995
+   ],
+   "peak_scale": 1.0249,
+   "peak_frame": 8,
+   "peak_vertex_frames_after_first_visible": 7.0,
+   "start_offset": 0.1736,
+   "overshoot": 0.0249,
+   "overshoot_over_start_offset": 0.143,
+   "normalised_peak": 1.143,
+   "active_frames": [
+    1,
+    13
+   ],
+   "active_duration_frames": 12,
+   "bezier": [
+    0.304,
+    1.459,
+    0.568,
+    1.173
+   ],
+   "D": 12,
+   "built_peak_progress": 1.144,
+   "self_shape_rmse": 0.003
+  },
+  "S01 bottom-left node": {
+   "samples": "scratch/gap_f14_pop_BL.csv",
+   "column": "scale",
+   "first_visible_frame": 3,
+   "first_visible_scale": 0.8419,
+   "first_visible_opacity": 0.217,
+   "opacity_first_5": [
+    0.217,
+    0.507,
+    0.74,
+    0.902,
+    0.999
+   ],
+   "peak_scale": 1.0263,
+   "peak_frame": 10,
+   "peak_vertex_frames_after_first_visible": 6.79,
+   "start_offset": 0.1581,
+   "overshoot": 0.0263,
+   "overshoot_over_start_offset": 0.166,
+   "normalised_peak": 1.166,
+   "active_frames": [
+    3,
+    15
+   ],
+   "active_duration_frames": 12,
+   "bezier": [
+    0.325,
+    1.637,
+    0.641,
+    1.104
+   ],
+   "D": 12,
+   "built_peak_progress": 1.165,
+   "self_shape_rmse": 0.0033
+  },
+  "S01 bottom-right node": {
+   "samples": "scratch/gap_f14_pop_BR.csv",
+   "column": "scale",
+   "first_visible_frame": 6,
+   "first_visible_scale": 0.8436,
+   "first_visible_opacity": 0.229,
+   "opacity_first_5": [
+    0.229,
+    0.518,
+    0.734,
+    0.91,
+    0.998
+   ],
+   "peak_scale": 1.0256,
+   "peak_frame": 13,
+   "peak_vertex_frames_after_first_visible": 6.72,
+   "start_offset": 0.1564,
+   "overshoot": 0.0256,
+   "overshoot_over_start_offset": 0.164,
+   "normalised_peak": 1.164,
+   "active_frames": [
+    6,
+    18
+   ],
+   "active_duration_frames": 12,
+   "bezier": [
+    0.327,
+    1.615,
+    0.618,
+    1.117
+   ],
+   "D": 12,
+   "built_peak_progress": 1.163,
+   "self_shape_rmse": 0.0022
+  },
+  "S02 lattice node (384.6, 961.7)": {
+   "samples": "scratch/v3c1_lattice_popfine_j3km3.csv",
+   "column": "pop_scale",
+   "first_visible_frame": 178,
+   "first_visible_scale": 0.8475,
+   "first_visible_opacity": 0.225,
+   "opacity_first_5": [
+    0.225,
+    0.504,
+    0.713,
+    0.908,
+    0.979
+   ],
+   "peak_scale": 1.0275,
+   "peak_frame": 184,
+   "peak_vertex_frames_after_first_visible": 6.5,
+   "start_offset": 0.1525,
+   "overshoot": 0.0275,
+   "overshoot_over_start_offset": 0.18,
+   "normalised_peak": 1.18,
+   "active_frames": [
+    178,
+    190
+   ],
+   "active_duration_frames": 12,
+   "bezier": [
+    0.319,
+    1.532,
+    0.558,
+    1.194
+   ],
+   "D": 12,
+   "built_peak_progress": 1.172,
+   "self_shape_rmse": 0.0101
+  },
+  "S05 brand mark": {
+   "samples": "scratch/gap_f518_mark_scale_fine.csv",
+   "column": "scale",
+   "first_visible_frame": 508,
+   "first_visible_scale": 0.9209,
+   "first_visible_opacity": 0.216,
+   "opacity_first_5": [
+    0.216,
+    0.536,
+    0.776,
+    0.95,
+    1.002
+   ],
+   "peak_scale": 1.0131,
+   "peak_frame": 514,
+   "peak_vertex_frames_after_first_visible": 6.09,
+   "start_offset": 0.0791,
+   "overshoot": 0.0131,
+   "overshoot_over_start_offset": 0.165,
+   "normalised_peak": 1.165,
+   "active_frames": [
+    508,
+    519
+   ],
+   "active_duration_frames": 11,
+   "bezier": [
+    0.343,
+    1.726,
+    0.665,
+    1.033
+   ],
+   "D": 11,
+   "built_peak_progress": 1.165,
+   "self_shape_rmse": 0.0068
+  }
+ },
+ "cross_shape_rmse": {
+  "rows": "samples",
+  "cols": "built curve",
+  "S01 top-right node (main curve)": {
+   "S01 top-right node (main curve)": 0.006,
+   "S01 top-left node": 0.04,
+   "S01 bottom-left node": 0.026,
+   "S01 bottom-right node": 0.027,
+   "S02 lattice node (384.6, 961.7)": 0.021,
+   "S05 brand mark": 0.028
+  },
+  "S01 top-left node": {
+   "S01 top-right node (main curve)": 0.033,
+   "S01 top-left node": 0.003,
+   "S01 bottom-left node": 0.016,
+   "S01 bottom-right node": 0.015,
+   "S02 lattice node (384.6, 961.7)": 0.021,
+   "S05 brand mark": 0.014
+  },
+  "S01 bottom-left node": {
+   "S01 top-right node (main curve)": 0.022,
+   "S01 top-left node": 0.017,
+   "S01 bottom-left node": 0.003,
+   "S01 bottom-right node": 0.004,
+   "S02 lattice node (384.6, 961.7)": 0.008,
+   "S05 brand mark": 0.007
+  },
+  "S01 bottom-right node": {
+   "S01 top-right node (main curve)": 0.022,
+   "S01 top-left node": 0.016,
+   "S01 bottom-left node": 0.002,
+   "S01 bottom-right node": 0.002,
+   "S02 lattice node (384.6, 961.7)": 0.008,
+   "S05 brand mark": 0.006
+  },
+  "S02 lattice node (384.6, 961.7)": {
+   "S01 top-right node (main curve)": 0.018,
+   "S01 top-left node": 0.023,
+   "S01 bottom-left node": 0.012,
+   "S01 bottom-right node": 0.012,
+   "S02 lattice node (384.6, 961.7)": 0.01,
+   "S05 brand mark": 0.016
+  },
+  "S05 brand mark": {
+   "S01 top-right node (main curve)": 0.029,
+   "S01 top-left node": 0.024,
+   "S01 bottom-left node": 0.011,
+   "S01 bottom-right node": 0.012,
+   "S02 lattice node (384.6, 961.7)": 0.014,
+   "S05 brand mark": 0.007
+  }
+ },
+ "main_curve_built_from_mark_first_scale": {
+  "first_scale": 0.9209,
+  "built_peak_progress": 1.197,
+  "built_peak_scale": 1.0156,
+  "measured_peak_scale": 1.0131
+ }
+}

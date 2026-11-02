@@ -36,5 +36,5 @@
     "rmse": 0.2812
   },
   "recommended": "bezier",
-  "note": "composite: grid-patch multi-scale template f864-f878 (grid fades out f880-f888), centre-mark template f879-f905 matched at f879 (overlap f879-f887 agrees within 0.01); the layer also rises: mark centre 540 px (50% H) -> 385 px (35.6% H), same timing (see mark_y column)"
+  "note": "composite: grid-patch multi-scale template f864-f878 (grid fades out f880-f888), centre-mark template f879-f905 matched at f879 (overlap f879-f887 agrees within 0.01); the layer also rises: mark centre 540 px (50% H) -> 379.5 px (35.1% H, edge midpoints), same timing, curve v1.trans-zoom-through-mark.i2 (the mark_y column of t5_layer.csv is a template-box centre that sits 4.1-5.7 px lower than the mark's edge midpoint from f880 on)"
 }

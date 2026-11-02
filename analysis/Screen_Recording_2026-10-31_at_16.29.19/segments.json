@@ -12,7 +12,7 @@
       "class": "GRAPHICS",
       "boundary_in": "video-start",
       "boundary_out": "T01",
-      "summary": "opening title card on a light field with blurred grey spheres and a halftone dot ring that expands out through the frame edges (f0-f56): a black label box pops in with two corner handles flying out of its corners, widens with overshoot and types/decodes a 2-line title (brand mark + 2 words: the brand mark and the typed word slide apart to admit the decoded word, then the line rises for line 2; then chevrons + app icon + 2 words); a thin down-arrow drops in at the right; a 5-ball mascot chain arcs in from the left and dives into the label centre, two expanding halo rings invert then restore the luminance, shards burst outward, and a white iris covers the frame"
+      "summary": "opening title card on a light field with blurred grey spheres and a halftone dot ring that expands out through the frame edges (f0-f56): a black label box pops in with two corner handles flying out of its corners, widens with overshoot and types/decodes a 2-line title (brand mark + 2 words: the typed word's first letter fades in with the box, the brand mark draws on along its path, then the brand mark and the typed word slide apart to admit the decoded word, then the line rises for line 2; then chevrons + app icon + 2 words); a thin down-arrow drops in at the right; a 5-ball mascot chain arcs in from the left and dives into the label centre, two expanding halo rings invert then restore the luminance, shards burst outward, and a white iris covers the frame"
     },
     {
       "id": "S02",
@@ -32,7 +32,7 @@
       "class": "GRAPHICS",
       "boundary_in": "T02",
       "boundary_out": "T03",
-      "summary": "product UI page (title, subtitle, search field) arrives on the whip and settles, camera pushes in x1.81 with motion blur onto the field, a query types on, the page scrolls up while a result row stretches in from a speck with overshoot while its CTA button arrives oversized and settles on its own, the row gets a hover lift (button grows back, card outline and shadow fade in), then the page pulls back with blur into a hard cut"
+      "summary": "product UI page (title, subtitle, search field) arrives on the whip and settles, camera pushes in x1.79 with motion blur onto the field and creeps on to x1.81 without settling, a query types on, the page scrolls up while a result row stretches in from a speck with overshoot while its CTA button arrives oversized and settles on its own, the row gets a hover lift (button grows back, card outline and shadow fade in), then the page pulls back with blur into a hard cut"
     },
     {
       "id": "S04",
@@ -392,7 +392,7 @@
       "class": "GRAPHICS",
       "boundary_in": "T36",
       "boundary_out": "video-end",
-      "summary": "replay of S02: white hold, the menu UI enters zoomed x1.59 and blurred and settles while its rows pop in, hold, then the pan-up starts; the recording ends at f4765 mid-pan"
+      "summary": "replay of S02: white hold, the menu UI enters zoomed x1.59 and blurred and settles while its rows pop in, its slow tail runs straight into the pan-up (no hold); the recording ends at f4765 mid-pan"
     }
   ],
   "transitions": [
@@ -502,9 +502,9 @@
     {
       "id": "T11",
       "type": "whip",
-      "start": 1433,
+      "start": 1426,
       "end": 1514,
-      "frames": 82,
+      "frames": 89,
       "from": "S11",
       "to": "S12",
       "technique": "v7.trans-whip-push-left",

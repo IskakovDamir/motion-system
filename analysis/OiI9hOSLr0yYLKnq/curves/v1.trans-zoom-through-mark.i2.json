@@ -1,0 +1,40 @@
+{
+  "technique_id": "v1.trans-zoom-through-mark.i2",
+  "file": "curves/v1.trans-zoom-through-mark.i2.csv",
+  "property": "position-y",
+  "unit": "px (mark centre y)",
+  "source_samples": "../../analysis/OiI9hOSLr0yYLKnq/scratch/fix_t5_mark_centre.csv",
+  "column": "mark_cy",
+  "sampled_frames": [
+    864,
+    905
+  ],
+  "sampling": "every frame (60 fps)",
+  "from_value": 540.0,
+  "to_value": 379.5,
+  "active_frames": [
+    872,
+    895
+  ],
+  "measured_duration_frames": 23,
+  "bezier": {
+    "x1": 0.5586,
+    "y1": 0.099,
+    "x2": 0.4003,
+    "y2": 0.97,
+    "durationInFrames": 27,
+    "delay": -1.286,
+    "built_duration_frames": 22,
+    "rmse": 0.0137
+  },
+  "spring": {
+    "stiffness": 111.425,
+    "damping": 16.302,
+    "mass": 1,
+    "damping_ratio": 0.7722,
+    "built_duration_frames": 30,
+    "rmse": 0.2705
+  },
+  "recommended": "bezier",
+  "note": "T05 rise of the centre mark (the end-card logo): centre y = midpoint of the sub-pixel top and bottom edges of the mark f878-f905 (fix_tools/t5_mark_centre.py), grid-patch value of t5_layer.csv while the mark is hidden in the band (f864-f877); 540 -> 379.5 px, x stays at 959.5 px"
+}

@@ -1,0 +1,12 @@
+# caption D line 2 first letter: template box 195x44 px at (250, 228) on f2258, drift -5.182 / -0.586 px per frame (template track f2245-f2265, rms 1.3 / 0.1 px), extrapolated back; band = box columns 0-45 (first letter), union of its positions on the two pictures; signed step of Gaussian(3) luma since the previous captured picture minus the same step in a control band 10 px below; the negative steps before f2232 are caption C last-line remnant, whose right end shares this band
+frame,prev_frame,band_x0,band_y0,band_x1,band_y1,band_step,control_step,step
+2222,2220,437,249,492,294,-2.263,0.093,-2.356
+2225,2222,421,247,482,293,-1.571,-0.720,-0.851
+2227,2225,411,246,466,291,-0.998,-0.691,-0.307
+2230,2227,395,244,456,290,-2.043,-0.471,-1.572
+2232,2230,385,243,440,288,9.710,0.064,9.646
+2235,2232,369,241,430,287,9.915,-0.677,10.592
+2237,2235,359,240,414,285,13.701,-0.176,13.877
+2240,2237,343,239,404,284,12.473,-0.009,12.483
+2243,2240,328,237,388,283,14.248,-0.136,14.384
+2245,2243,317,236,373,281,16.077,0.014,16.063

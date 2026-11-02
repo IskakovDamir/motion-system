@@ -32,7 +32,7 @@
    "class": "MIXED",
    "boundary_in": "T02",
    "boundary_out": "T03",
-   "summary": "a frame-aspect footage card emerges at the centre on white and zooms to full frame; over the full-frame footage a white prompt pill (plus circle, text, black mic button) rises in from below with an overshoot, types two sentences with a light trailing fade, the mic button presses in and a soft grey pixel smear sweeps right to left behind the text, then the pill lifts and drops out of frame; footage only from f451 to the cut"
+   "summary": "a frame-aspect footage card emerges at the centre on white and zooms to full frame; over the full-frame footage a white prompt pill (plus circle, text, black mic button) rises in from below with an overshoot, types two sentences with a light trailing fade, the mic button presses in and a soft grey pixel smear sweeps right to left behind the text, then the pill lifts and drops out of frame; footage only from f452 to the cut"
   },
   {
    "id": "S04",
@@ -142,7 +142,7 @@
    "class": "MIXED",
    "boundary_in": "T13",
    "boundary_out": "T14",
-   "summary": "a vertical reel of large post cards whips down and lands one card centred (49% W) in 29 f, holds about 10 f, then the card eases in to the left with horizontal blur into a whip"
+   "summary": "a vertical reel of large post cards whips down and lands one card centred (49% W) in 29 f to within 2% (at rest at f1876), holds for one picture (f1876-f1877), then the card creeps (from f1878) and eases in to the left with horizontal blur into a whip"
   },
   {
    "id": "S15",
@@ -222,7 +222,7 @@
    "class": "MIXED",
    "boundary_in": "T21",
    "boundary_out": "T22",
-   "summary": "a dark phone card with product UI centred on the white page: it finishes its x2.0 zoom to the centre (T21), its screen recording fades back in, holds and changes screens with a one-picture crossfade; a tap ripple selects a filter chip, the grid empties and refills with thumbnails sliding in with directional blur, the camera pushes in x1.43 about a point below the frame, a mascot sweeps in from the bottom edge on an arc and a status pill grows out of it while its label types; the device page crossfades and slides to a detail page; then the whole layer pushes up out (T22) while the mascot and pill smear vertically"
+   "summary": "a dark phone card with product UI centred on the white page: it finishes its x2.0 zoom to the centre (T21), its screen recording fades back in, holds and changes screens with a three-picture crossfade (clean from f2875); a tap ripple selects a filter chip, the grid empties and refills with thumbnails sliding in with directional blur, the camera pushes in x1.43 about a point below the frame, a mascot sweeps in from the bottom edge on an arc and a status pill grows out of it while its label types; the device page crossfades and slides to a detail page; then the whole layer pushes up out (T22) while the mascot and pill smear vertically"
   },
   {
    "id": "S23",
@@ -252,7 +252,7 @@
    "class": "MIXED",
    "boundary_in": "T24",
    "boundary_out": "T25",
-   "summary": "a row of portrait footage cards on a white page arrives after a hard cut at 290 px/f, brakes into a constant leftward marquee (7.5 px/f), then sinks with an ease-in into a hidden two-step cut (whip-down f3348-f3394: the end card's background replaces the page under the row at f3379, the row is removed at f3380; by the tiling rule its last sinking pictures f3372-f3379 open S26)"
+   "summary": "a row of portrait footage cards on a white page arrives after a hard cut at 290 px/f, brakes into a constant leftward marquee (7.37 px/f from f3306), then sinks with an ease-in into a hidden two-step cut (whip-down f3348-f3394: the end card's background replaces the page under the row at f3379, the row is removed at f3380; by the tiling rule its last sinking pictures f3372-f3379 open S26)"
   },
   {
    "id": "S26",

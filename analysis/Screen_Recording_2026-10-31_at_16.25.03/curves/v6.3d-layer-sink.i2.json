@@ -1,0 +1,40 @@
+{
+  "technique_id": "v6.3d-layer-sink.i2",
+  "file": "curves/v6.3d-layer-sink.i2.csv",
+  "property": "position-y",
+  "unit": "px (picture 918 px high), y of the code panel's top-left corner (window dots and tab)",
+  "source_samples": "../../analysis/Screen_Recording_2026-10-31_at_16.25.03/scratch/cgr2_S09_codeTL_716.csv",
+  "column": "cy",
+  "sampled_frames": [
+    693,
+    726
+  ],
+  "sampling": "captured pictures only (24/30 fps cadence on the 60 fps grid)",
+  "from_value": 95.0,
+  "to_value": 238.5,
+  "active_frames": [
+    696,
+    726
+  ],
+  "measured_duration_frames": 30,
+  "bezier": {
+    "x1": 0.2842,
+    "y1": 0.1931,
+    "x2": 0.3796,
+    "y2": 0.6842,
+    "durationInFrames": 29,
+    "delay": -0.358,
+    "built_duration_frames": 28,
+    "rmse": 0.0428
+  },
+  "spring": {
+    "stiffness": 41.196,
+    "damping": 9.308,
+    "mass": 1,
+    "damping_ratio": 0.7251,
+    "built_duration_frames": 55,
+    "rmse": 0.205
+  },
+  "recommended": "bezier",
+  "note": "S09 code layer sinking on its own after the dolly reframe (track.py template ref f716, scales 0.90-1.15): y 95.0 (f693, the turning point after the reframe lifted it) -> 238.5 px (f726, the turning point where the dolly back lifts it again) = +143.5 px (15.6% H); in f693-f708 the dashboard, white and footage layers still finish the reframe in other directions (up), from f708 the dashboard and white layers hold (to f718) and the footage layer slides right to f723. A second easing of the same device: it eases in over 3 pictures from a reversal and settles at the next turning point, where the dashboard instance (main curve) starts at speed and is cut still moving; these samples against the main curve's shape give rmse 0.065."
+}

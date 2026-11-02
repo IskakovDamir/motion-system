@@ -321,38 +321,40 @@
     },
     {
       "id": "T14",
-      "start": 1163,
-      "end": 1183,
-      "frames": 21,
-      "type": "morph (9 logo icons converge on straight lines into a centred row of 6 hex mascots, shrink 1.00 -> 0.64 and crossfade into them; the top headline is swapped for the next headline's word 1 in the last frame)",
-      "shared": "the icons become the mascots of the next layout: each travels on a straight line to a row slot (icon 1 (465, 450) -> (584, 757)) on one ease-in-out; f1182 shows the finished mascot row under the old headline, f1183 the same row under the new word 1",
+      "start": 1161,
+      "end": 1184,
+      "frames": 24,
+      "type": "morph (9 logo icons converge on straight lines into a centred row of 6 hex mascots, shrink 1.00 -> 0.64 and crossfade into them; the top headline is swapped for the next headline's word 1 at f1183, one frame before the crossfade's last faint remnants go at f1184)",
+      "shared": "the icons become the mascots of the next layout: each travels on a straight line to a row slot (icon 1 (465, 450) -> (584, 757)) on one ease-in-out; f1182 shows the mascot row under the old headline with faint logo-stroke remnants at the hexes' lower corners, f1183 the same row under the new word 1, and the remnants are gone at f1184 (slot 2 lower-left corner luma 180.1, 197.9, 208.0 f1182-f1184, then 208.1; scratch/fix3_S15_T14_remnants.csv)",
       "technique": "v2.trans-icon-converge-morph",
-      "detail": "detail/soft_1163-1183"
+      "detail": "detail/soft_1161-1184"
     },
     {
       "id": "T15",
-      "start": 1217,
-      "end": 1235,
-      "frames": 19,
-      "type": "morph / fly-in (the mascot row flies on a rising wave into the matching avatar slots of an app sidebar panel that fades in behind it; the headline is cut at f1221)",
+      "start": 1216,
+      "end": 1237,
+      "frames": 22,
+      "type": "morph / fly-in (the mascot row flies on a rising wave into the matching avatar slots of an app sidebar panel that fades in behind it; the headline is cut at f1221; first whole-outline move of every hex f1216, sub-pixel landing steps of the tile logo and the avatars to f1237)",
       "shared": "the 6 mascots become the panel's avatars: the black one (885, 757) w126 -> tile logo (960, 160) w94, the grey ones -> the 5 row avatars at x 735-741 (w56) in row order (fills 129, 105, 133, 100, 131 = row mascots 1, 2, 4, 5, 6); the panel's own faint avatars are already in place as landing targets (toolbar fade 250 -> 239 f1219-f1235)",
       "technique": "v2.trans-hex-fly-into-ui",
-      "detail": "detail/soft_1217-1235"
+      "detail": "detail/soft_1216-1237"
     },
     {
       "id": "T19",
-      "start": 1602,
+      "start": 1601,
       "end": 1627,
-      "frames": 26,
-      "type": "push (vertical scroll-push: the article page and the network diagram lie on one strip 940 px apart; it scrolls 1200 px up)",
+      "frames": 27,
+      "type": "push (vertical scroll-push: the article page and the network diagram lie on one strip 940 px apart; it scrolls 1200 px up; the first frame f1601 moves the page 0.29 px)",
       "shared": "one continuous upward motion: the page accelerates out of the top while the network rises in from the bottom and decelerates; at the changeover (f1613-f1614, 152 px/f) both are on screen with an empty gap between them; no element is shared",
       "technique": "v2.trans-scroll-push",
-      "detail": "detail/soft_1602-1627"
+      "detail": "detail/soft_1601-1627"
     }
   ],
   "notes": [
     "Merged 2026-11-01 from chunks v2c1 (f0-f900) and v2c2 (f901-f1970). All four auto candidates are confirmed: c002 f789, c003 f901 and c004 f1492 are hard cuts, c001 f103 is the anchor of the soft sphere-collapse T02 f95-f114. c003 sits exactly on the chunk edge; both chunks found it, and f900 / f901 share nothing (detail/cut_c003_f00901/sheet.jpg, sheets/overview_00864-00909.jpg), so no segment continues across the edge.",
     "Detector misses: 14 hard cuts (manual entries m001-m014: f1, f226, f339, f395, f451, f564, f676, f733, f958, f1098, f1351, f1408, f1689, f1801) are light canvas to light canvas or card to card (content_val 0.64-7.97, ffmpeg_scene 0.010-0.116); v2c1 found its eight in motion.csv as single-frame gray-diff spikes with zero diff on both neighbours, v2c2 its six on the overview sheets and in the off-cut motion-peak and hard_ / dense_ detail windows. Three of the four soft transitions (T14, T15, T19) read as ordinary motion to the detectors (content_val under 6); T02 was caught only in its middle (c001). The detector fields of the manual entries are the scene_metrics.csv values at the cut frame; their confidence is 'manual'.",
-    "Soft transition ids match the transition ids in segments.json (T02, T14, T15, T19); every hard cut's reason names its T id too."
+    "Soft transition ids match the transition ids in segments.json (T02, T14, T15, T19); every hard cut's reason names its T id too.",
+    "Coverage review 2026-11-02 (scratch/coverage_gaps_review.json): T14 starts at f1161, not f1163. The icons' convergence begins sub-pixel there (ink centroids +0.16 px for icon 5 and +0.03 px for icon 1 at f1161, +1.13 / +0.37 px by f1162; scratch/gap_S14_f1150-1168_icon*_moments.csv), while the integer-pixel template track first moves at f1163. By the boundary rule S14 now ends at f1172 and S15 starts at f1173; detail window detail/soft_1161-1183.",
+    "Coverage review, second pass 2026-11-03 (scratch/coverage_gaps_review.json, measurements scratch/fix3_*.csv): T14 ends at f1184, not f1183 (faint logo-stroke remnants at the hexes' lower corners fade out over f1182-f1184; scratch/fix3_S15_T14_remnants.csv); T15 is f1216-f1237, not f1217-f1235 (every hex outline changes whole from f1216, the black hex's edges 699.69 / 813.32 -> 699.03 / 812.66 px; the tile logo and the avatars settle in sub-pixel steps to f1237; scratch/fix3_S15_hex_edges.csv, scratch/fix3_S16_landing.csv); T19 starts at f1601, not f1602 (the page moves -0.286 px by phase correlation at f1601, 0.000 at f1600; scratch/fix3_S19_page_shift.csv). By the boundary rule the segment edges stay f1172 / f1173, f1226 / f1227 and f1614 / f1615; detail windows detail/soft_1161-1184, detail/soft_1216-1237, detail/soft_1601-1627."
   ]
 }

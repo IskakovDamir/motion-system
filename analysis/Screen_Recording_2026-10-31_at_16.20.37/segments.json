@@ -192,7 +192,7 @@
       "class": "MIXED",
       "boundary_in": "T15",
       "boundary_out": "T16",
-      "summary": "full-frame footage (own push and fast pull-back, not analysed) with four kinetic caption groups at the upper left (1/2/3, 1/2/2, 1/1, 1/2/2 words) using the same cascade-in / drift / line fade-out device; nothing graphic after f2366; hard cut at f2415"
+      "summary": "full-frame footage (own push and fast pull-back, not analysed) with four kinetic caption groups at the upper left (1/2/3, 1/2/2, 1/1, 1/2/2 words) using the same cascade-in / drift / line fade-out device, each last line leaving a blurred remnant for 28-31 f (caption C's overlaps caption D's start by 13 f); nothing graphic after f2380; hard cut at f2415"
     },
     {
       "id": "S17",
@@ -322,7 +322,7 @@
       "class": "MIXED",
       "boundary_in": "T28",
       "boundary_out": "T29",
-      "summary": "large rounded footage window with a 3-word extended-caps caption under it rises from below as one group (strong ease-out), then drifts very slowly down and smaller; footage inside not analysed"
+      "summary": "large rounded footage window with a 3-word extended-caps caption under it rises from below as one group (strong ease-out), then drifts very slowly down and smaller; behind it the screen-locked halftone arcs keep a fixed dot grid while lit-dot pulses travel along them until f4347; footage inside not analysed"
     },
     {
       "id": "S30",
@@ -332,7 +332,7 @@
       "class": "MIXED",
       "boundary_in": "T29",
       "boundary_out": "T30",
-      "summary": "full-frame footage (slow camera pull-back); at f4420 a single centred caption line snaps on while the footage darkens to about 27%"
+      "summary": "full-frame footage (slow camera pull-back); at f4420 a single centred caption line snaps on while the footage darkens to about 27% in 15 f; after that the frame keeps darkening slowly to the cut (tail of the dim or the footage itself: UNCERTAIN)"
     },
     {
       "id": "S31",

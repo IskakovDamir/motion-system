@@ -42,7 +42,7 @@
       "class": "GRAPHICS",
       "boundary_in": "T03",
       "boundary_out": "T04",
-      "summary": "title lockup on a near-white dotted field: the brand icon draws on as one stroke, wordmark letters fly in from all four frame edges onto a low line that rises into place, a monospace label drops in, a pill rises from the bottom edge, the brand row types on and re-centres (one echo-trail picture), braces spring in from the sides; slow linear zoom-out drift during the hold while the field blobs breathe and drift (about 70 f per cycle); anticipation dip and accelerating exit up while the blobs and the dense dot grid fade out"
+      "summary": "title lockup on a near-white dotted field: the brand icon draws on as one stroke, wordmark letters fly in from all four frame edges onto a low line that rises into place, a monospace label drops in, a pill rises from the bottom edge, the brand row types on and re-centres (one echo-trail picture), each letter entering by its own small move (a glyph splits in two, one spins in from a speck, the dots pop out of their stems and drop back with a bounce, letters slide out from behind stems), braces spring in from the sides; slow linear zoom-out drift during the hold while the field blobs breathe and drift (about 70 f per cycle); anticipation dip and accelerating exit up while the blobs and the dense dot grid fade out"
     },
     {
       "id": "S05",
@@ -62,7 +62,7 @@
       "class": "MIXED",
       "boundary_in": "T05",
       "boundary_out": "T06",
-      "summary": "split layout: top words and a big lower word around a flat row of slightly turned, rounded footage cards that scrolls left with a speed ramp and speeds up again in the last 2 pictures before the punch-in stutter; the field blobs keep breathing; re-layout puts the top words in the corner and the lower word bottom left; a 2-line sub-caption types on at the right"
+      "summary": "split layout: top words and a big lower word around a flat row of slightly turned, rounded footage cards that scrolls left with a speed ramp and speeds up again in the last 2 pictures before the punch-in stutter; the field blobs keep breathing; re-layout puts the top words in the corner and the lower word bottom left; a 2-line sub-caption types on at the right while its lines slide in from the right with horizontal blur"
     },
     {
       "id": "S07",
@@ -92,7 +92,7 @@
       "class": "MIXED",
       "boundary_in": "T08",
       "boundary_out": "T09",
-      "summary": "3D phone mockup with a footage screen lands, pushes in, turns about 44 degrees and explodes into 4 parallel UI/footage layers; one layer flashes, wireframe edges draw on; camera orbit-push, dolly reframe, dolly back with parallax and pull-back between holds; the stack collapses, fans out the other way and whips out to the left"
+      "summary": "3D phone mockup with a footage screen lands, pushes in, turns about 44 degrees and explodes into 4 parallel UI/footage layers; one layer flashes, wireframe edges draw on; camera orbit-push, dolly reframe, dolly back with parallax and pull-back between holds, while the code panel's text scrolls back to its first line and single layers slide down on their own between the camera moves (code layer, dashboard layer, white panel); the stack collapses, fans out the other way and whips out to the left"
     },
     {
       "id": "S10",
@@ -142,7 +142,7 @@
       "class": "GRAPHICS",
       "boundary_in": "T13",
       "boundary_out": "T14",
-      "summary": "closing title of the promo, re-running the opening lockup build of S04 (letters converge from the frame edges from the cut picture f1311, brand icon stroke draw-on f1313-f1323, label drop, pill rise, brand row type-on, braces spring in); long hold with a slow zoom-out drift, background blobs and dots fade out, the wordmark dims, anticipation dip and exit up, empty field"
+      "summary": "closing title of the promo, re-running the opening lockup build of S04 (letters converge from the frame edges from the cut picture f1311, brand icon stroke draw-on f1313-f1323, label drop, pill rise, brand row type-on with its per-letter pops, spin, split and bouncing dots, braces spring in); long hold with a slow zoom-out drift, background blobs and dots fade out, the wordmark dims, anticipation dip and exit up, empty field"
     },
     {
       "id": "S15",
@@ -152,7 +152,7 @@
       "class": "GRAPHICS",
       "boundary_in": "T14",
       "boundary_out": "T15",
-      "summary": "player loop: picture-for-picture replay of S04 (f15-f133): lockup build (letters, brand icon draw-on f1525-f1532, label, pill, brand row, braces), hold with drift, anticipation exit into the push while the blobs and dots fade out"
+      "summary": "player loop: picture-for-picture replay of S04 (f15-f133): lockup build (letters, brand icon draw-on f1525-f1532, label, pill, brand row with its per-letter entries, braces), hold with drift, anticipation exit into the push while the blobs and dots fade out"
     },
     {
       "id": "S16",
@@ -172,7 +172,7 @@
       "class": "MIXED",
       "boundary_in": "T16",
       "boundary_out": "video-end",
-      "summary": "replay of S06 (f216-f301): words around a flat row of slightly turned, rounded footage cards; re-layout, sub-caption type-on, card row scroll with a speed ramp; the recording ends inside it"
+      "summary": "replay of S06 (f216-f301): words around a flat row of slightly turned, rounded footage cards; re-layout, sub-caption type-on with the lines sliding in from the right, card row scroll with a speed ramp; the recording ends inside it"
     }
   ],
   "transitions": [
