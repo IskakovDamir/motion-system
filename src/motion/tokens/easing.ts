@@ -18,70 +18,92 @@ export const linear: Ease = {kind: 'linear'};
 export const motion = (duration: number, ease: Ease, delay = 0): Motion => ({duration, delay, ease});
 
 export const EASE = {
-	/** fast start, long settle: half way at 18% of the duration. 37 measured curves (trans 15, ui 5, card 3, cam 3). */
-	outStrong: bezier(0.1, 0.4, 0.3, 1),
-	/** slow start, fast end: half way at 84% of the duration. 24 measured curves (trans 15, cam 5, ui 2, card 1). */
-	inAccelerate: bezier(0.9, 0, 1, 1),
-	/** fast start, long settle: half way at 10% of the duration. 24 measured curves (trans 5, text 4, ui 4, cam 3). */
+	/** S curve, half way at 46%, peak speed 4.2x the average, overshoots to 101%. 49 measured curves (cam 13, trans 9, logo 6, particle 5). */
+	inOutWhipOver: bezier(0.7, 0, 0.2, 1.1),
+	/** fast start, long settle: half way at 19% of the duration. 41 measured curves (trans 13, ui 5, card 5, text 5). */
+	outStrong: bezier(0.2, 0.8, 0.6, 1),
+	/** fast start, long settle: half way at 22% of the duration. 41 measured curves (text 12, ui 9, icon 5, card 3). */
+	outFirm: bezier(0.2, 0.4, 0.3, 1),
+	/** fast start, long settle: half way at 13% of the duration. 37 measured curves (trans 8, text 6, ui 5, icon 4). */
+	outStrong2: bezier(0.2, 0.8, 0.2, 1),
+	/** slow start, fast end: half way at 82% of the duration. 31 measured curves (trans 13, cam 5, card 3, text 3). */
+	inAccelerate: bezier(0.7, 0, 0.9, 0.6),
+	/** S curve, half way at 44%, peak speed 1.4x the average, overshoots to 101%. 26 measured curves (text 7, ui 3, fx 3, cam 2). */
+	inOutGlideOver: bezier(0.5, 0.4, 0.7, 1.1),
+	/** fast start, long settle: half way at 10% of the duration. 23 measured curves (trans 5, icon 4, ui 4, text 3). */
 	outSnap: bezier(0.0719, 1.1383, 0.7849, 0.9422),
-	/** fast start, long settle: half way at 20% of the duration, overshoots to 101%. 18 measured curves (ui 4, text 3, trans 3, cam 2). */
-	outFirmOver: bezier(0, 0.2, 0.4, 1.1),
-	/** S curve, half way at 49%, peak speed 1.2x the average. 16 measured curves (text 6, ui 2, cam 1, icon 1). */
-	inOutGlide: bezier(0.5, 0.4, 0.8, 1),
-	/** fast start, long settle: half way at 34% of the duration, overshoots to 101%. 15 measured curves (ui 5, cam 3, text 2, trans 2). */
-	outSoftOver: bezier(0.4, 0, 0.2, 1.1),
-	/** S curve, half way at 48%, peak speed 3.0x the average. 13 measured curves (cam 3, trans 2, ui 2, logo 1). */
-	inOutSweep: bezier(0.7, 0.2, 0.3, 1),
-	/** S curve, half way at 54%, peak speed 6.7x the average. 12 measured curves (cam 7, trans 2, cursor 1, text 1). */
-	inOutWhip: bezier(0.9, 0, 0.2, 1),
-	/** slow start, fast end: half way at 67% of the duration, overshoots to 101%. 11 measured curves (trans 2, ui 2, cam 2, fx 2). */
+	/** slow start, fast end: half way at 89% of the duration. 19 measured curves (trans 12, cam 6, 3d 1). */
+	inLaunch: bezier(0.8, 0, 1, 0.6),
+	/** S curve, half way at 42%, peak speed 3.4x the average. 18 measured curves (ui 7, cam 5, trans 2, layout 2). */
+	inOutWhip: bezier(0.6, 0, 0.2, 1),
+	/** spring, damping ratio 0.80: a small overshoot. 18 measured curves (ui 4, trans 3, fx 3, cam 2). */
+	springFirm: springEase(100, 16, 1),
+	/** slow start, fast end: half way at 67% of the duration, overshoots to 101%. 17 measured curves (layout 3, trans 3, fx 3, text 2). */
 	inGentleOver: bezier(0.8, 0, 0.7, 1.1),
-	/** slow start, fast end: half way at 90% of the duration. 11 measured curves (trans 7, cam 3, text 1). */
-	inLaunch: bezier(0.7, 0, 0.84, 0),
-	/** S curve, half way at 46%, peak speed 5.4x the average. 10 measured curves (cam 6, particle 1, text 1, trans 1). */
-	inOutWhip2: bezier(0.8, 0.2, 0.1, 0.8),
-	/** fast start, long settle: half way at 31% of the duration. 9 measured curves (cam 3, fx 2, shape 2, text 1). */
-	outSoft: bezier(0.4, 0, 0.1, 1),
-	/** fast start, long settle: half way at 28% of the duration. 8 measured curves (text 3, cursor 2, cam 1, ui 1). */
-	outFirm: bezier(0.3, 0, 0.1, 1),
-	/** fast start, long settle: half way at 28% of the duration. 8 measured curves (ui 4, cam 2, logo 1, text 1). */
-	outFirm2: bezier(0.5, 0.6, 0.1, 1),
-	/** fast start, long settle: half way at 32% of the duration. 7 measured curves (text 2, trans 1, ui 1, cursor 1). */
-	outSoft2: bezier(0, 0.2, 0.7, 1),
-	/** S curve, half way at 50%, peak speed 7.7x the average. 7 measured curves (trans 3, cam 1, card 1, cursor 1). */
-	inOutWhip3: bezier(0.87, 0, 0.13, 1),
-	/** fast start, long settle: half way at 9% of the duration, overshoots to 105%. 6 measured curves (text 2, ui 2, footage 1, shape 1). */
-	outSnapOver: bezier(0.2, 1.4, 0.4, 1),
-	/** spring, damping ratio 0.78: a small overshoot. 5 measured curves (text 2, logo 1, cursor 1, ui 1). */
-	springFirm: springEase(100, 15.506, 1),
-	/** fast start, long settle: half way at 34% of the duration. 5 measured curves (cam 1, 3d 1, text 1, fx 1). */
-	outSoft3: bezier(0.61, 1, 0.88, 1),
-	/** slow start, fast end: half way at 89% of the duration. 4 measured curves (trans 3, cam 1). */
-	inLaunch2: bezier(0.8, 0, 1, 0.6),
-	/** fast start, long settle: half way at 2% of the duration. 4 measured curves (text 2, fx 1, trans 1). */
+	/** fast start, long settle: half way at 22% of the duration. 14 measured curves (cursor 3, text 3, icon 2, ui 2). */
+	outFirm2: bezier(0.3, 0.4, 0.1, 1),
+	/** fast start, long settle: half way at 23% of the duration, overshoots to 101%. 13 measured curves (ui 6, text 4, trans 2, logo 1). */
+	outFirmOver: bezier(0.3, 0.4, 0.2, 1.1),
+	/** S curve, half way at 45%, peak speed 14.8x the average. 11 measured curves (cam 5, trans 1, layout 1, shape 1). */
+	inOutWhip2: bezier(0.8736, 0.0731, 0, 0.9495),
+	/** S curve, half way at 54%, peak speed 6.7x the average. 11 measured curves (cam 6, trans 2, cursor 1, counter 1). */
+	inOutWhip3: bezier(0.9, 0, 0.2, 1),
+	/** S curve, half way at 44%, peak speed 4.6x the average. 10 measured curves (cam 5, ui 2, 3d 1, trans 1). */
+	inOutWhip4: bezier(0.7, 0, 0.1, 0.8),
+	/** S curve, half way at 50%, peak speed 50.7x the average. 8 measured curves (trans 2, layout 2, cam 1, card 1). */
+	inOutWhip5: bezier(1, -0.0027, 0, 0.9943),
+	/** fast start, long settle: half way at 35% of the duration. 7 measured curves (text 2, ui 2, cursor 2, fx 1). */
+	outSoft: bezier(0.5, 0, 0.1, 1),
+	/** S curve, half way at 61%, peak speed 1.9x the average. 7 measured curves (ui 3, trans 2, shape 1, fx 1). */
+	inOutGlide: bezier(0.6, 0, 0.7, 1),
+	/** fast start, long settle: half way at 2% of the duration. 7 measured curves (text 3, ui 2, shape 1, trans 1). */
 	outSnap2: bezier(0, 1, 0.1, 1),
-	/** fast start, long settle: half way at 37% of the duration, overshoots to 103%. 3 measured curves (text 1, cam 1, icon 1). */
-	outSoftOver2: bezier(0.6, 0, 0.1, 1.25),
-	/** S curve, half way at 48%, peak speed 3.4x the average, overshoots to 101%. 3 measured curves (fx 1, 3d 1, text 1). */
-	inOutWhipOver: bezier(0.8, 0.4, 0.3, 1.1),
-	/** fast start, long settle: half way at 14% of the duration, overshoots to 103%. 2 measured curves (cam 1, text 1). */
-	outStrongOver: bezier(0.2, 1, 0.6, 1.1),
-	/** S curve, half way at 39%, peak speed 2.4x the average, overshoots to 104%. 2 measured curves (3d 1, text 1). */
-	inOutSweepOver: bezier(0.5, 0.2, 0.4, 1.25),
-	/** fast start, long settle: half way at 10% of the duration, overshoots to 120%. 2 measured curves (icon 2). */
-	outSnapOver2: bezier(0.3607, 2.1104, 0.4157, 0.7379),
-	/** slow start, fast end: half way at 66% of the duration. 1 measured curves (particle 1). */
-	inGentle: bezier(0.7, 0.6, 1, 0.6),
-	/** fast start, long settle: half way at 4% of the duration, overshoots to 109%. 1 measured curves (footage 1). */
-	outSnapOver3: bezier(0, 1, 0.4, 1.25),
+	/** fast start, long settle: half way at 12% of the duration. 7 measured curves (card 2, trans 2, text 1, cam 1). */
+	outStrong3: bezier(0.2, 0.8, 0.1, 0.8),
+	/** fast start, long settle: half way at 8% of the duration, overshoots to 107%. 6 measured curves (ui 5, text 1). */
+	outSnapOver: bezier(0.1, 0.8, 0.2, 1.25),
+	/** fast start, long settle: half way at 13% of the duration, overshoots to 106%. 6 measured curves (text 5, shape 1). */
+	outStrongOver: bezier(0.2, 1.2, 0.8, 1.1),
+	/** fast start, long settle: half way at 20% of the duration, overshoots to 101%. 6 measured curves (cam 1, card 1, text 1, trans 1). */
+	outStrongOver2: bezier(0, 0.6, 0.9, 1.1),
+	/** slow start, fast end: half way at 80% of the duration. 6 measured curves (trans 5, cam 1). */
+	inAccelerate2: bezier(0.6, 0.2, 1, 0.6),
+	/** S curve, half way at 38%, peak speed 2.4x the average, overshoots to 103%. 5 measured curves (ui 2, fx 1, text 1, icon 1). */
+	inOutSweepOver: bezier(0.4, 0, 0.4, 1.25),
+	/** S curve, half way at 48%, peak speed 1.5x the average, overshoots to 103%. 5 measured curves (particle 1, cam 1, fx 1, text 1). */
+	inOutGlideOver2: bezier(0.3, 0, 0.8, 1.25),
+	/** slow start, fast end: half way at 69% of the duration. 4 measured curves (counter 1, text 1, cam 1, particle 1). */
+	inGentle: bezier(0.2, 0, 0.9, 0.6),
+	/** fast start, long settle: half way at 11% of the duration, overshoots to 116%. 4 measured curves (icon 3, trans 1). */
+	outSnapOver2: bezier(0.3, 1.4, 0.3, 1.25),
+	/** slow start, fast end: half way at 93% of the duration. 4 measured curves (trans 3, layout 1). */
+	inLaunch2: bezier(0, 0.1572, 0.9908, -0.304),
+	/** slow start, fast end: half way at 66% of the duration. 4 measured curves (ui 1, text 1, layout 1, 3d 1). */
+	inGentle2: bezier(0.12, 0, 0.39, 0),
+	/** fast start, long settle: half way at 37% of the duration. 4 measured curves (fx 1, logo 1, 3d 1, cam 1). */
+	outSoft2: bezier(0.6325, 0.0004, 0, 0.9049),
+	/** fast start, long settle: half way at 22% of the duration. 4 measured curves (text 2, logo 1, cam 1). */
+	outFirm3: bezier(0.4171, 0.6267, 0.0299, 0.9184),
+	/** fast start, long settle: half way at 4% of the duration, overshoots to 106%. 3 measured curves (text 2, card 1). */
+	outSnapOver3: bezier(0, 1.2, 0.4, 1.1),
+	/** fast start, long settle: half way at 34% of the duration. 3 measured curves (ui 2, cam 1). */
+	outSoft3: bezier(0.9, 1.2, 0.1, 0.8),
+	/** S curve, half way at 59%, peak speed 3.8x the average. 2 measured curves (3d 1, ui 1). */
+	inOutWhip6: bezier(0.9, 0.2, 0.4, 1),
+	/** fast start, long settle: half way at 37% of the duration, overshoots to 103%. 1 measured curves (text 1). */
+	outSoftOver: bezier(0.6, 0, 0.1, 1.25),
+	/** fast start, long settle: half way at 8% of the duration, overshoots to 116%. 1 measured curves (text 1). */
+	outSnapOver4: bezier(0.2, 1.4, 0.2, 1.25),
+	/** fast start, long settle: half way at 35% of the duration. 1 measured curves (cursor 1). */
+	outSoft4: bezier(0, 0.4, 0.6, 0.6),
 	/** S curve, half way at 48%, peak speed 10.2x the average, overshoots to 104%. 1 measured curves (trans 1). */
 	inOutWhipOver2: bezier(0.9, 0.2, 0.1, 1.25),
-	/** fast start, long settle: half way at 11% of the duration, overshoots to 116%. 1 measured curves (icon 1). */
-	outSnapOver4: bezier(0.3, 1.4, 0.2, 1.25),
-	/** slow start, fast end: half way at 93% of the duration. 1 measured curves (trans 1). */
-	inLaunch3: bezier(0, 0.1572, 0.9908, -0.304),
+	/** fast start, long settle: half way at 22% of the duration, overshoots to 103%. 1 measured curves (ui 1). */
+	outFirmOver2: bezier(0.5, 1, 0.2, 1.1),
 	/** S curve, half way at 41%, peak speed 5.5x the average, overshoots to 117%. 1 measured curves (particle 1). */
 	inOutWhipOver3: bezier(0.8328, 0.5308, 0.2144, 1.5918),
+	/** fast start, long settle: half way at 10% of the duration, overshoots to 120%. 1 measured curves (icon 1). */
+	outSnapOver5: bezier(0.3607, 2.1104, 0.4157, 0.7379),
 	/** S curve, half way at 49%, peak speed 5.6x the average, overshoots to 124%, pulls back to -5% first. 1 measured curves (cam 1). */
 	inOutWhipOverAnticipate: bezier(0.7345, -0.3999, 0.3409, 1.9956),
 } satisfies Record<string, Ease>;

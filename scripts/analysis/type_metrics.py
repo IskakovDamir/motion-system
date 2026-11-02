@@ -8,7 +8,8 @@
       tracking in em = G / font size - default gap of that set, with font size = C / cap ratio.
       C: flat cap height in px on the still; G: median gap between adjacent letters at the 50% ink level
 
-families: ui (Inter), display (Inter Tight), wide (Archivo), round (Unbounded), mono (JetBrains Mono).
+families: ui (Inter), display (Inter Tight), wide (Archivo), round (Unbounded), mono (JetBrains Mono),
+square (Saira).
 The default gap is right side bearing + next left side bearing, median over every ordered pair of the
 set (kerning is not applied, so a value within about +-0.01 em of 0 means "the family's own spacing").
 No on-screen text is needed: the gaps are measured on the still and compared with the family's own.
@@ -31,6 +32,7 @@ FILES = {
     "wide": ("var", "@fontsource-variable/archivo/files/archivo-latin-standard-normal.woff2"),
     "round": ("static", "@fontsource/unbounded/files/unbounded-latin-{w}-normal.woff2"),
     "mono": ("static", "@fontsource/jetbrains-mono/files/jetbrains-mono-latin-{w}-normal.woff2"),
+    "square": ("var", "@fontsource-variable/saira/files/saira-latin-standard-normal.woff2"),
 }
 SETS = {"lower": string.ascii_lowercase, "upper": string.ascii_uppercase, "digits": string.digits}
 STEM = {"lower": "l", "upper": "I", "digits": "1"}

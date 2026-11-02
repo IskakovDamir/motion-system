@@ -15,7 +15,7 @@ import numpy as np
 from fontTools.ttLib import TTFont
 
 from common import ROOT
-from techniques import typography
+from techniques import family_key as family_of, typography
 
 NODE = ROOT / "node_modules"
 FAMILIES = {  # FONT key -> (CSS family list, file the cap height is read from, what it sets)
@@ -29,17 +29,11 @@ FAMILIES = {  # FONT key -> (CSS family list, file the cap height is read from, 
               "rounded geometric display"),
     "mono": ("'JetBrains Mono', ui-monospace, monospace", "@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2",
              "code, counters, timers"),
+    "square": ("'Saira Variable', 'Inter Tight', sans-serif", "@fontsource-variable/saira/files/saira-latin-standard-normal.woff2",
+               "squarish grotesque display (Saira, wdth 50-125)"),
 }
 ROLES = ["display", "headline", "subhead", "body", "ui", "label", "caption", "counter", "code"]
 UNIT = {"char": "char", "letter": "char", "character": "char", "glyph": "char", "word": "word", "line": "line", "block": "block"}
-
-
-def family_of(name):
-    s = str(name or "").lower()
-    for key, word in (("mono", "mono"), ("round", "unbounded"), ("wide", "archivo"), ("display", "inter tight"), ("ui", "inter")):
-        if word in s:
-            return key
-    return None
 
 
 def num(x):
@@ -97,13 +91,16 @@ def main():
         caps = [c for c in (num(t.get("size_pct_h")) for _, _, t in rs) if c]
         tracks = [x for x in (t.get("tracking_em") for _, _, t in rs) if isinstance(x, (int, float))]
         cases = Counter(c for c in (case_of(t.get("case")) for _, _, t in rs) if c)
-        wdth = [float(m.group(1)) for _, _, t in rs for m in [re.search(r"wdth\s*(\d+)", str(t.get("closest_free")))] if m]
+        font = fams.most_common(1)[0][0]
+        # a stretch only from rows set in the role's own family (an Archivo wdth 125 row says nothing about Inter)
+        wdth = [float(m.group(1)) for _, _, t in rs if family_of(t.get("closest_free")) == font
+                for m in [re.search(r"(?:wdth|width)\s*(\d+)", str(t.get("closest_free")))] if m]
         if not caps:
             continue
         vids = Counter(k for k, _, _ in rs)
         doc = (f"{len(rs)} typography rows ({', '.join(f'{k} {n}' for k, n in sorted(vids.items()))}); "
                f"cap height {rng(caps)} % H, weight {rng(weights)}, tracking {rng(tracks)} em")
-        fields = [f"font: '{fams.most_common(1)[0][0]}'", f"weight: {int(med(weights, 0)) if weights else 400}" if weights else "weight: null",
+        fields = [f"font: '{font}'", f"weight: {int(med(weights, 0)) if weights else 400}" if weights else "weight: null",
                   f"capHeight: {med(caps, 2)}", f"tracking: {med(tracks, 3) if tracks else 'null'}",
                   f"case: '{cases.most_common(1)[0][0] if cases else 'mixed'}'"]
         if wdth:

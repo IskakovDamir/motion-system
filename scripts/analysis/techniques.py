@@ -75,20 +75,45 @@ def typography():
     import type_metrics
     out = []
     for v in load_registry():
-        for b in blocks(v.key):
-            head, rows = table(b["body"], "Typography")
-            for r in rows:
-                c = dict(zip(head, r))
-                font = c.get("font (free / original)", "").split(" / ")[0].strip()
-                cap_cell = c.get("cap h %", "")
-                cap = num(cap_cell)
-                w = next((float(x) for x in re.findall(r"\b(\d{3})\b", c.get("weight", "")) if 100 <= float(x) <= 1000), None)
-                out.append({"video": v.key, "segment": b["segment"], "event": c.get("event", ""),
-                            "role": role_of(c.get("event", ""), cap), "closest_free": font, "weight": w,
-                            "size_pct_h": cap, "tracking_em": tracking_em(c.get("tracking", ""), cap_cell, font, w, type_metrics),
-                            "case": c.get("case", ""), "reveal_unit": c.get("unit", ""), "reveal_method": c.get("method", ""),
-                            "frames_per_unit": frames_per_unit(c.get("speed f/unit", "")), "raw": c})
+        rows = [(b["segment"], dict(zip(head, r))) for b in blocks(v.key) for head, rs in [table(b["body"], "Typography")] for r in rs]
+        named = {}  # segment -> first (family name, weight) a row of it names
+        for seg, c in rows:
+            f = font_name(c.get("font (free / original)", ""))
+            if family_key(f):
+                named.setdefault(seg, (f, weight_of(c)))
+        prev = (None, None)
+        for seg, c in rows:
+            cell = c.get("font (free / original)", "")
+            font, w = font_name(cell), weight_of(c)
+            if not family_key(font):
+                # "same", "as above", "as S05 word 3", "see S20", "as the title lockup (S14)": the row names no
+                # family itself, so it takes the family of the segment it points to, else of the row before it
+                ref = re.search(r"\b(S\d+)", cell)
+                src = named.get(ref.group(1)) if ref and ref.group(1) != seg else None
+                if not src and re.match(r"(same|as |see |sans \()", cell.strip().lower()):
+                    src = prev
+                if src and src[0]:
+                    font, w = f"{src[0]} (as {ref.group(1) if ref else 'the row before'})", w or src[1]
+            cap_cell = c.get("cap h %", "")
+            cap = num(cap_cell)
+            out.append({"video": v.key, "segment": seg, "event": c.get("event", ""),
+                        "role": role_of(c.get("event", ""), cap), "closest_free": font, "weight": w,
+                        "size_pct_h": cap, "tracking_em": tracking_em(c.get("tracking", ""), cap_cell, font, w, type_metrics),
+                        "case": c.get("case", ""), "reveal_unit": c.get("unit", ""), "reveal_method": c.get("method", ""),
+                        "frames_per_unit": frames_per_unit(c.get("speed f/unit", "")), "raw": c})
+            if family_key(font):
+                prev = (font, w)
     return out
+
+
+def font_name(cell: str) -> str:
+    """The free family a font cell names: its 'closest free X' clause, else the part before ' / '."""
+    m = re.search(r"closest free\s+(?!for\b)([^/;]+)", cell)
+    return (m.group(1) if m else cell.split(" / ")[0]).strip()
+
+
+def weight_of(c: dict):
+    return next((float(x) for x in re.findall(r"\b(\d{3})\b", c.get("weight", "")) if 100 <= float(x) <= 1000), None)
 
 
 ROLE_WORDS = [  # first match wins: the inspectors' event names
@@ -138,10 +163,15 @@ def tracking_em(cell: str, cap_cell: str, font: str, weight, tm):
 
 def family_key(name: str):
     s = name.lower()
-    for key, word in (("mono", "mono"), ("round", "unbounded"), ("wide", "archivo"), ("display", "inter tight"), ("ui", "inter")):
+    for key, word in FAMILY_WORDS:
         if word in s:
             return key
     return None
+
+
+# FONT key -> the word that names its family in a font cell (first match wins: "inter tight" before "inter")
+FAMILY_WORDS = (("mono", "mono"), ("round", "unbounded"), ("wide", "archivo"), ("square", "saira"),
+                ("display", "inter tight"), ("ui", "inter"))
 
 
 def frames_per_unit(cell: str):
