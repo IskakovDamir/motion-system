@@ -41,3 +41,21 @@ questions.
   but no positions are given.
 - Compare sheets of variants that hold before their curve (squashShut 7 f, openFromDash and openToPills 5 f,
   curvedStagger 5 f, slideHoldReturn 28 f) run early by the hold; their curve panels match.
+
+## light-fx (6 primitives, 30 variants, 14 curves)
+
+- Not measured, left out: the iris's soft edge; the halo glow around the inverting ring; ringBloom's cross
+  glare and focus pull; bevel and glow on the split stars; depth-field sparkle halos and the rise with the
+  tilt; bloomCover's spill past the panel border; fillGlow's top-bar glow; layerFlash's UI glow; the second
+  set of streaks in anamorphic; the halftone texture growth and its stepping on twos; blur on the smear
+  squares; the blurred bar at the start of pairConverge.
+- Choices: invertRipple brings the incoming scene in under the second ring (the reference never swaps
+  pictures); opacityDip assumes a white background (background luma not measured); focusShift darkens the
+  new line linearly over the measured 45 f (its own timing is not measured).
+- Ease tokens with measured durations but no measured shape: haloPeak, starSplit's wash, echoZoom's twist,
+  shardSpray, parkSweep's dim, fillGlow's fall, anamorphic's rise, smearSweep's rise.
+- tileRing and parkSweep take their 20-40 px tile size from the pixel-sweep row; the burst tiles look
+  larger in the reference. Unmeasured drawing sizes are defaults in light-fx/draw.ts, overridable by props.
+- haloPeak is close to invisible: the measured lift is only +20.7 luma.
+- Compare sheets of delayed variants run late by the measured delay (slowBloom 22 f, twoStage 28 f,
+  starSplit 5 f, streakSweep 3 f).
