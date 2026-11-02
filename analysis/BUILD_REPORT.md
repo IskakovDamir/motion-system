@@ -93,3 +93,23 @@ questions.
   (timings only) uses outFirm; quickFade is linear over 4 f from two samples.
 - Staggers are means of measured values: wordRise 20 f (10-30 f, voice-led), cascade 9 f, defocusLines 9 f,
   whipIn 5 f, typeRise 0.65 f per character.
+
+## three (7 primitives, 27 variants, 20 curves)
+
+- Three.js (@remotion/three) for shapes made in code (folded flyers, rings, tunnel walls); CSS 3D and
+  projective transforms for layers that carry React content and for the globe, whose tiles stay
+  FootageSlots.
+- Borrowed: the only measured focal length (v8 card turn, 2618 px = 161.4 % W) is the perspective for v5
+  and v6 too; the v8 screen-layer yaw (UNCERTAIN in the rows) takes that card's 26.5 degrees.
+- Derived: OrbitRig ring normals and phase fitted to the measured plane angles and ellipse ratios; fanOut's
+  halo blur and darkness solved from its two measured points; the tunnel's dolly speed from the 2.3 % W/f
+  edge flow and its vanishing point from the one tracked item.
+- Not measured, left out: every blur (swingIn, halfTurn, Camera3D depth-of-field and zoom blur,
+  shrinkIntoStack, pushFlatten); swingPush's tilt, orbitPush's orbit angle, the v6 camera elevation,
+  dollyReframe's dashboard growth; lightUp's sheen; the globe's meridians and halftone; the tunnel's wall
+  texture; DepthFlyer's trails and the crossing cranes.
+- Values without a fit, not built: explode's push-in before the turn, slamOn's zoom 609 -> 668 -> 485 px and
+  4/5/3 f jitter, layerSink's 2-picture panel slide, pushFlatten's fading shadow; pushBack's dip to 0.9875
+  (the token has no overshoot); mirrorPair's 0.65 degree dip and hold drift.
+- Weak sources: the near flyer takes the top flyer's scale (its template was lost); dollyParallax's nearer
+  layers take the second layer's values; collapse's re-fan is 25 degrees, the middle of 22-28.
