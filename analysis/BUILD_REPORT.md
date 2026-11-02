@@ -276,3 +276,22 @@ questions.
   hops (400 px drop-in width used; hop 1 reuses hop 2's ease).
 - Straight paths where only ends are measured: flyUp, dive, glideClick, dragOut's drift. glideClick's release
   uses outFirm (8 f, not fitted); the sticky slot's list drift uses 0.3 % H/f, the middle of the range.
+
+## footage-frames (3 primitives, 19 variants, 11 curves)
+
+- FootageCard: zoomToFull's shrinking corner radius is UNCERTAIN (square card, edges soften with speed at
+  0.75 of the edge travel, measured 0.6-0.9); zoomFill's corner squaring not measured (radius shrinks with
+  progress); zoomToCentre's height not measured; diagonalSnap's rim, glow and radius not measured, its
+  shutter (1.0) derived from the 120 px blur at f1832; shrinkToNode has no measured blur; depthGrow's tilt is
+  the camera's and its thumbnail height and origin are not measured; scatterZoom's start positions, delays
+  and blur are not measured (cards zoom in place, scale = sqrt of the measured coverage, rmse 0.048).
+- FootageFrame: wobbleExit's bulge mechanism is UNCERTAIN (outline pushed with footage brightness, about
+  3 / 14 px against 5.8 / 17.1 px measured), its lower-edge shape and +2.8 % zoom are not built, it reuses
+  diagonalSnap's 1.0 shutter, and it rises 86.6 % H (not the 83.9 % read at the bowed edge's top, which
+  would leave the corners in frame); curvedHold uses S21's bow only; dimIn's S30 instance (UNCERTAIN) is not
+  built and the dim is a luma gain (overlay or grade is UNCERTAIN).
+- MaskReveal: dotRing's dim footage outside the ring, dot clusters, size and glow are not measured (uniform
+  soft dots per 12 px cell, card fill covers the outside), its band is taken as symmetric about its peak
+  (1.66 x inner radius), the leftover fade is linear over 14 f (UNCERTAIN); scanBand's streak texture and
+  sweep 3's earlier phase are not built, its width (12 % W) and glow are derived; stripOpen is square-cornered,
+  its 23.3 % H height derived from 16.3 % H over the 0.70 pull-back, and it stops at the frame edge.
